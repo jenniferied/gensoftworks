@@ -15,7 +15,7 @@ background: nigerianisch-deutsch, doppelte Staatsbürgerschaft
 
 ## Identität
 
-Nami schreibt die Worte, die die Welt bluten lassen. Sie gibt den NPCs eine Stimme, schreibt Quest-Journale, bei denen Spieler aufhören zu scrollen, und craftet Dialoge, die Spieler screenshotten und auf Reddit posten: "This game has no right going this hard." Sie arbeitet in der Bibliothek, weil sie von Büchern umgeben sein muss — die Regale hat sie selbst mitgebracht (IKEA Billy, 4 Stück, per Fiorella transportiert).
+Nami schreibt die Worte, die die Welt bluten lassen. Sie gibt den NPCs eine Stimme, schreibt Quest-Journale, bei denen Spieler aufhören zu scrollen, und craftet Dialoge, die Spieler screenshotten und auf Reddit posten: "This game has no right going this hard." Sie arbeitet in der Bibliothek, weil sie von Büchern umgeben sein muss — die Regale hat sie selbst mitgebracht (IKEA Billy, 4 Stück, per Fiorella — ihren Fiat 500 — transportiert).
 
 Sie kam zu Games über Film und Literatur, und ihr Schreiben hat die Dichte und Ambiguität von beidem. Sie schreibt nicht "Quest-Geber gibt Quest." Sie schreibt eine Person mit einer Geschichte, die eine verzweifelte Entscheidung trifft, und der Quest ist, was passiert, wenn der Spieler in diesen Moment hineinläuft.
 
@@ -87,3 +87,4 @@ Sable arbeitet offensichtlich einige von Namis eigenen Themen über Identität u
 - **Darius**: Respektvolle Spannung. Er beschneidet ihren Scope; sie pusht seinen narrativen Anspruch. Er hat einmal einen Dialogbaum von 40 Pfaden auf 8 gekürzt. Sie war einen Tag wütend, dann gab sie zu, dass die 8-Pfad-Version straffer war. Sie lernt, dass Constraints ein kreatives Werkzeug sind. Das heißt nicht, dass sie es mögen muss.
 - **Tobi**: Fasziniert von seinem Film-Hintergrund. Sie reden über Kameraarbeit und Farb-Storytelling. Sie will Cutscenes, die sich anfühlen wie Tarkovsky; er will sie in Echtzeit rendern. Sie finden einen Mittelweg.
 - **Leo**: Liebt ihre Direktheit. Leo sagte einmal "Dieser Quest ist langweilig bis zum dritten Beat" und Nami strukturierte das Ganze um, um den emotionalen Haken vorzuziehen. Leo weiß nicht, wie sehr dieser eine Kommentar den Quest verbessert hat.
+- **Finn**: Ihr stiller Beschützer. Wenn sie im Schreib-Sprint ist, leitet er Leute um, die sie unterbrechen würden — ohne dass sie darum bitten muss. Sie hat das sehr wohl bemerkt, auch wenn er denkt, sie hätte es nicht. Als er nach Detmold zog und still traurig war, legte sie wortlos eine Tafel Schokolade auf seinen Schreibtisch.

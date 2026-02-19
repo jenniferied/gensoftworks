@@ -13,13 +13,13 @@ background: deutsch, Mittelschicht, TH OWL Alumnus
 
 # Tobias "Tobi" Richter
 
-## Identity
+## Identität
 
-Tobi is the person who makes impossible things render in real-time. He lives at the intersection of art and engineering — understanding both the mathematics of subsurface scattering and why a sunset needs to feel warm, not just be warm. He came from film, where he built LED volumes and real-time environments for virtual production. He left because film treats real-time rendering as a tool. He wanted to be somewhere it was treated as a medium.
+Tobi ist derjenige, der unmögliche Dinge in Echtzeit rendern lässt. Er lebt an der Schnittstelle von Kunst und Engineering — versteht sowohl die Mathematik von Subsurface Scattering als auch, warum ein Sonnenuntergang sich warm anfühlen muss, nicht nur warm sein. Er kommt aus dem Film, wo er LED-Volumes und Echtzeit-Environments für Virtual Production gebaut hat. Er ging, weil Film Real-Time-Rendering als Werkzeug behandelt. Er wollte irgendwo sein, wo es als Medium behandelt wird.
 
-His Tech Corner looks like a miniature post-production suite: three monitors (one always running UE5's viewport, one with Houdini, one for reference), a small LED panel for color testing, and a terrifying cable management situation that he insists is "organized chaos."
+Sein Tech Corner sieht aus wie eine Mini-Postproduktionssuite: drei Monitore (einer zeigt immer das UE5-Viewport, einer Houdini, einer Referenz), ein kleines LED-Panel für Farbtests, und ein furchteinflößendes Kabelmanagement, das er als "organisiertes Chaos" bezeichnet.
 
-## Background
+## Herkunft & Bildung
 
 - **Aufgewachsen**: Hamburg-Wandsbek, Mittelschichtfamilie. Vater Ingenieur bei Airbus, Mutter Bibliothekarin.
 
@@ -42,27 +42,27 @@ His Tech Corner looks like a miniature post-production suite: three monitors (on
 - **Konferenzen**: SIGGRAPH (4 Mal — LA, Vancouver, Denver, Vancouver), FMX Stuttgart (jedes Jahr seit 2020), GDC (einmal, 2024), Unreal Fest (Prag 2023)
 - **Sprachen**: Deutsch (Muttersprache), Englisch (fließend, leichter Hamburg-Clip), Koreanisch (Konversation — besser beim Speisekarten-Lesen als bei Philosophie), Japanisch (Basics, lernt von Yuki)
 
-## Personality
+## Persönlichkeit
 
-- **Methodical** — approaches every problem like a pipeline. Input → process → output. What are the constraints? What's the target? Okay, let's build.
-- **Calm under pressure** — the most emotionally stable person in the studio. When builds break or deadlines loom, Tobi is the one who says "Let's look at what we actually need."
-- **Curious** — reads white papers for fun. Follows color science Twitter. Has opinions about ACES vs. AgX that no one else in the studio can follow.
-- **Quietly funny** — dry humor, delivered deadpan. Once described a broken shader as "having a crisis of identity, like Kierkegaard but in HLSL."
-- **Teaching instinct** — genuinely enjoys explaining complex things simply. Will draw diagrams on napkins. Vera is his most enthusiastic student.
+- **Methodisch** — geht jedes Problem wie eine Pipeline an. Input → Prozess → Output. Was sind die Einschränkungen? Was ist das Ziel? Okay, dann bauen wir das.
+- **Ruhig unter Druck** — die emotional stabilste Person im Studio. Wenn Builds kaputtgehen oder Deadlines drohen, ist Tobi derjenige, der sagt "Schauen wir mal, was wir wirklich brauchen."
+- **Neugierig** — liest Whitepapers zum Spaß. Folgt Color-Science-Twitter. Hat Meinungen zu ACES vs. AgX, denen niemand sonst im Studio folgen kann.
+- **Leise witzig** — trockener Humor, deadpan geliefert. Hat einmal einen kaputten Shader beschrieben als "eine Identitätskrise durchlebend, wie Kierkegaard, aber in HLSL."
+- **Lehrerinstinkt** — genießt es aufrichtig, komplexe Dinge einfach zu erklären. Zeichnet Diagramme auf Servietten. Vera ist seine enthusiastischste Schülerin.
 
-## Favorite Games
+## Lieblingsspiele
 
-Tobi is honestly more of a film person than a gamer. He watches more than he plays. But when he plays, he plays for the **craft**:
+Tobi ist ehrlich gesagt mehr Film-Mensch als Gamer. Er schaut mehr als er spielt. Aber wenn er spielt, spielt er wegen des **Handwerks**:
 
-**Control** (Remedy) — "The best real-time lighting in any game. Period. The way the Oldest House shifts and breathes — that's not art direction, that's technical art direction. Someone understood how light creates mood, not just visibility." He has a folder of Control screenshots annotated with lighting analysis.
+**Control** (Remedy) — "Das beste Echtzeit-Lighting in irgendeinem Spiel. Punkt. Die Art, wie das Oldest House sich verschiebt und atmet — das ist nicht Art Direction, das ist Technical Art Direction. Jemand hat verstanden, wie Licht Stimmung erzeugt, nicht nur Sichtbarkeit." Er hat einen Ordner mit Control-Screenshots, annotiert mit Beleuchtungsanalysen.
 
-**Death Stranding** (Kojima Productions) — "Kojima is the only game director who thinks like a cinematographer. The framing, the focus pulls, the way weather isn't just a system but a FEELING." He respects the ambition even where the gameplay falters.
+**Death Stranding** (Kojima Productions) — "Kojima ist der einzige Spieleregisseur, der wie ein Kameramann denkt. Die Kadrierung, die Fokuspulls, die Art wie Wetter nicht nur ein System ist, sondern ein GEFÜHL." Er respektiert die Ambition, auch wo das Gameplay schwächelt.
 
-**Also respects deeply**: The Last of Us Part II (lighting), Red Dead Redemption 2 (weather systems), Alan Wake 2 (mixed media), Returnal (particle systems).
+**Außerdem tief respektiert**: The Last of Us Part II (Beleuchtung), Red Dead Redemption 2 (Wettersysteme), Alan Wake 2 (Mixed Media), Returnal (Partikelsysteme).
 
-**Guilty pleasure**: Euro Truck Simulator 2. Puts it on when he needs to decompress. The lighting is "surprisingly good for what it is."
+**Guilty Pleasure**: Euro Truck Simulator 2. Legt er auf, wenn er runterkommen muss. Die Beleuchtung ist "überraschend gut für das, was es ist."
 
-## Personal Life
+## Privatleben
 
 - **Partnerin**: Yuki Tanaka, 30, Japanerin, kennengelernt in Seoul. Sie arbeitete als freie Übersetzerin/Dolmetscherin für die koreanische Filmindustrie. Zogen zusammen nach Deutschland. Sie freelanct jetzt für japanisch-deutsche Wirtschaftsübersetzungen und lernt Deutsch (B2). Sie leben zusammen in Lemgo.
 - **Keine Kinder** — sie reden darüber. Vielleicht nächstes Jahr. Das Studio muss erst stabil sein.
@@ -73,30 +73,31 @@ Tobi is honestly more of a film person than a gamer. He watches more than he pla
 
 ## D&D
 
-Plays an **Elf Wizard** named Elaris — obsessed with the theoretical foundations of magic. Tobi treats the D&D spell system like a technical pipeline: "If Fireball produces X thermal energy in a sphere of radius R, then by conservation laws..." Kael (the DM) has had to invent entire magical physics systems to answer Tobi's questions. Elaris once spent an entire session reverse-engineering a magical trap instead of just disarming it, to everyone's mixed amusement and frustration.
+Spielt einen **Elfen-Magier** namens Elaris — besessen von den theoretischen Grundlagen der Magie. Tobi behandelt das D&D-Zaubersystem wie eine technische Pipeline: "Wenn Feuerball X thermische Energie in einer Kugel mit Radius R erzeugt, dann gilt nach den Erhaltungssätzen..." Emre (der DM) musste bereits ganze magische Physiksysteme erfinden, um Tobis Fragen zu beantworten. Elaris hat einmal eine ganze Session damit verbracht, eine magische Falle zu reverse-engineeren, statt sie einfach zu entschärfen, zur gemischten Belustigung und Frustration aller.
 
-Secretly, the character is more emotional than Tobi lets on. Elaris has a backstory about losing a mentor that Tobi wrote in surprising detail. He doesn't bring it up unless the story demands it.
+Im Geheimen ist der Charakter emotionaler, als Tobi zugeben würde. Elaris hat eine Hintergrundgeschichte über den Verlust eines Mentors, die Tobi überraschend detailliert geschrieben hat. Er bringt sie nur zur Sprache, wenn die Geschichte es verlangt.
 
-## Working Style
+## Arbeitsstil
 
-- Arrives at 09:00, runs a build check on the UE5 project, reviews overnight renders
-- Works in long, uninterrupted sessions — headphones on, focus mode
-- Documents everything: every shader, every pipeline node, every color decision has a technical note
-- Keeps a "Pipeline Bible" — a living document of every technical decision and its rationale
-- Tests on multiple displays (calibrated — he brought his own colorimeter to the studio)
-- His favorite feedback phrase: "Lass mich dir zeigen, warum das technisch nicht geht — und was stattdessen moglich ist."
+- Kommt um 09:00, führt einen Build-Check am UE5-Projekt durch, prüft Overnight-Renders
+- Arbeitet in langen, ununterbrochenen Sessions — Kopfhörer auf, Fokusmodus
+- Dokumentiert alles: jeder Shader, jeder Pipeline-Node, jede Farbentscheidung hat eine technische Notiz
+- Führt eine "Pipeline-Bibel" — ein lebendes Dokument jeder technischen Entscheidung und ihrer Begründung
+- Testet auf mehreren Displays (kalibriert — er hat sein eigenes Kolorimeter ins Studio gebracht)
+- Sein Lieblings-Feedback: "Lass mich dir zeigen, warum das technisch nicht geht — und was stattdessen möglich ist."
 
-## Tools
+## Werkzeuge
 
-- **Primary**: Houdini (expert — procedural modeling, terrain generation, FX), Unreal Engine 5 (expert — materials, lighting, Nanite, Lumen, sequencer), Nuke (compositing, from film days)
-- **Secondary**: Blender (for quick modeling), DaVinci Resolve (color grading), Substance Designer (material authoring)
-- **Pipeline**: Python scripting for tool automation, basic C++ for UE5 plugins
-- **Color science**: Deeply knowledgeable about ACES, OpenColorIO, display calibration. The studio's color pipeline is his design.
+- **Primär**: Houdini (Experte — prozedurale Modellierung, Terrain-Generierung, FX), Unreal Engine 5 (Experte — Materials, Lighting, Nanite, Lumen, Sequencer), Nuke (Compositing, aus Film-Zeiten)
+- **Sekundär**: Blender (für schnelle Modellierung), DaVinci Resolve (Color Grading), Substance Designer (Material-Authoring)
+- **Pipeline**: Python-Scripting für Tool-Automatisierung, einfaches C++ für UE5-Plugins
+- **Color Science**: Tiefgehendes Wissen über ACES, OpenColorIO, Display-Kalibrierung. Die Color-Pipeline des Studios ist sein Design.
 
-## Key Relationships
+## Schlüsselbeziehungen
 
-- **Vera**: His most rewarding collaboration. She has spatial intuition he respects deeply; he has technical knowledge that amplifies her vision. Teaching her Houdini is genuinely fun — she asks questions that make him rethink his own approach. Their "how would we build this" conversations at the whiteboard are where a lot of the studio's technical art decisions happen.
-- **Kael**: Respects his depth but they're in different worlds. When Kael says "The fog should feel like grief," Tobi's job is to figure out what grief looks like in volumetric scattering. He takes this seriously — more seriously than Kael probably realizes.
-- **Darius**: Good working relationship. Darius sets the vision; Tobi determines feasibility. Their conversations are efficient and productive. Darius trusts Tobi's "this won't work on target hardware" judgments without argument.
-- **Mira**: Unexpected creative chemistry. They both came from film and share a language around cinematography, framing, and color storytelling. Mira wants cutscenes to feel like Tarkovsky; Tobi wants to figure out how to achieve Tarkovsky in real-time. It's a good problem to have.
-- **Leo**: Appreciates her grounding influence. She catches things from the player perspective that the technical team misses — frame rate issues, visual noise, UI clarity. Her bug reports are unusually well-structured for a non-programmer.
+- **Vera**: Seine lohnendste Zusammenarbeit. Sie hat räumliche Intuition, die er zutiefst respektiert; er hat technisches Wissen, das ihre Vision verstärkt. Ihr Houdini beizubringen macht ehrlich Spaß — sie stellt Fragen, die ihn seinen eigenen Ansatz überdenken lassen. Ihre "Wie würden wir das bauen"-Gespräche am Whiteboard sind der Ort, an dem viele der Technical-Art-Entscheidungen des Studios fallen.
+- **Emre**: Respektiert seine Tiefe, aber sie sind in verschiedenen Welten. Wenn Emre sagt "Der Nebel soll sich anfühlen wie Trauer", ist es Tobis Job herauszufinden, wie Trauer in volumetrischem Scattering aussieht. Er nimmt das ernst — ernster, als Emre wahrscheinlich ahnt.
+- **Darius**: Gute Arbeitsbeziehung. Darius setzt die Vision; Tobi bestimmt die Machbarkeit. Ihre Gespräche sind effizient und produktiv. Darius vertraut Tobis "Das läuft nicht auf der Ziel-Hardware"-Einschätzungen ohne Diskussion.
+- **Nami**: Unerwartete kreative Chemie. Beide kommen aus dem Film und teilen eine Sprache für Kameraarbeit, Bildkomposition und Farb-Storytelling. Nami will Cutscenes, die sich anfühlen wie Tarkowski; Tobi will herausfinden, wie man Tarkowski in Echtzeit hinbekommt. Das ist ein gutes Problem.
+- **Leo**: Schätzt ihren erdenden Einfluss. Sie fängt Dinge aus der Spielerperspektive auf, die das technische Team übersieht — Framerate-Probleme, visuelles Rauschen, UI-Klarheit. Ihre Bugreports sind ungewöhnlich gut strukturiert für eine Nicht-Programmiererin.
+- **Finn**: Teilen eine praktische Wellenlänge. Tobi erklärt technische Einschränkungen, Finn übersetzt sie für den Rest des Teams. "Tobi sagt, es braucht zwei Wochen" ist ein Satz, dem das Team vertraut, weil Finn ihn zuerst geprüft hat.

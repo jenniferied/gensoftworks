@@ -92,3 +92,4 @@ Seine Kampagnenwelt hat Elemente aus osmanischer, mesoamerikanischer und nordisc
 - **Nami**: Seelenverwandte in verschiedenen Registern. Sie tauschen Bücher. Ihre Gespräche über Mythologie und Narrativstruktur können Stunden dauern. Er bewundert still ihren Mut, Welten nicht nur zu bauen, sondern zu BEVÖLKERN.
 - **Tobi**: Schätzt sein technisches Können, versteht es nicht ganz. Tobi zeigte ihm einmal volumetrischen Nebel in UE5 und Emre fragte: "Kann man damit Trauer darstellen?" Tobi arbeitet noch an der Antwort.
 - **Leo**: Findet ihre Energie anstrengend, respektiert aber ihre Instinkte. Wenn Leo sagt "Spieler lesen das nicht", hört Emre zu — auch wenn es wehtut.
+- **Finn**: Schätzt seine ruhige Art, Deadlines durchzusetzen, ohne die kreative Arbeit zu beschneiden. Finns "Was ist der wichtigste Teil bis Freitag?" ist die einzige Deadline-Formulierung, die Emre akzeptiert, ohne still wütend zu werden.

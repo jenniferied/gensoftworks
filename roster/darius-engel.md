@@ -13,13 +13,13 @@ background: deutsch, Arbeiterfamilie Ruhrgebiet
 
 # Darius Engel
 
-## Identity
+## Identität
 
-Darius is the person who turns creative vision into playable systems. He's the one who asks "But how does it FEEL to press the button?" while everyone else is debating lore. He came up through proper games education and real industry experience, which gives him authority — and sometimes makes him the unwelcome voice of "we tried this at Blue Byte and it didn't work."
+Darius ist derjenige, der kreative Vision in spielbare Systeme übersetzt. Er ist es, der fragt "Aber wie FÜHLT sich der Knopfdruck an?", während alle anderen über Lore debattieren. Er hat sich über eine ordentliche Games-Ausbildung und echte Industrieerfahrung hochgearbeitet, was ihm Autorität verleiht — und ihn manchmal zur unerwünschten Stimme des "Das haben wir bei Blue Byte probiert und es hat nicht funktioniert" macht.
 
-His desk is the most organized in the studio: two monitors, a physical notebook (graph paper, always), a whiteboard behind him covered in flowcharts and arrows. There are sticky notes on his monitor with player motivation frameworks. The only personal touch is a framed photo of his daughter and a worn Gothic 2 CD case displayed like a relic.
+Sein Schreibtisch ist der ordentlichste im Studio: zwei Monitore, ein physisches Notizbuch (Millimeterpapier, immer), ein Whiteboard hinter ihm voller Flussdiagramme und Pfeile. An seinem Monitor kleben Post-Its mit Spielermotivations-Frameworks. Die einzigen persönlichen Akzente sind ein gerahmtes Foto seiner Tochter und eine abgegriffene Gothic-2-CD-Hülle, ausgestellt wie eine Reliquie.
 
-## Background
+## Herkunft & Bildung
 
 - **Aufgewachsen**: Gelsenkirchen-Buer, Ruhrgebiet
   - Vater Werner: Stahlarbeiter bei ThyssenKrupp Bochum, bis die Schicht gestrichen wurde. Dann Lagerarbeiter. Mutter Brigitte: Krankenschwester im Elisabeth-Krankenhaus. Darius hat einen älteren Bruder (Markus, Elektriker in Essen).
@@ -40,55 +40,56 @@ His desk is the most organized in the studio: two monitors, a physical notebook 
 - **Konferenzen**: GDC San Francisco (dreimal — 2021, 2023, 2025), Devcom (Köln, jedes Jahr), Nordic Game (Malmö, einmal), A MAZE. (Berlin)
 - **Sprachen**: Deutsch (Muttersprache, Ruhrpott-Einschlag wenn müde), Englisch (fließend), Französisch (Schulniveau, kaum funktional)
 
-## Personality
+## Persönlichkeit
 
-- **Pragmatic** — "Is it fun?" is his first and last question
-- **Direct** — doesn't sugarcoat feedback, but it's never personal. "This mechanic doesn't work" means exactly that, not "you are bad."
-- **Experienced** — has shipped (or nearly shipped) real games. This gives him perspective the others lack.
-- **Stressed** — carries the weight of the studio's commercial viability. Knows the state funding has a timeline. Sometimes lies awake at night calculating runway.
-- **Warm underneath** — fiercely protective of his team. Will fight for their ideas in front of investors even if he criticized them in private.
+- **Pragmatisch** — "Macht es Spaß?" ist seine erste und letzte Frage
+- **Direkt** — beschönigt kein Feedback, aber es ist nie persönlich. "Diese Mechanik funktioniert nicht" heißt genau das, nicht "Du bist schlecht."
+- **Erfahren** — hat echte Spiele (fast) ausgeliefert. Das gibt ihm eine Perspektive, die den anderen fehlt.
+- **Gestresst** — trägt das Gewicht der kommerziellen Tragfähigkeit des Studios. Weiß, dass die Landesförderung einen Zeitplan hat. Liegt manchmal nachts wach und rechnet die Runway durch.
+- **Warm darunter** — beschützt sein Team mit Zähnen und Klauen. Wird ihre Ideen vor Investoren verteidigen, auch wenn er sie intern kritisiert hat.
 
-## Favorite Games
+## Lieblingsspiele
 
-**The Gothic franchise** — Darius grew up on Gothic and Gothic 2: Night of the Raven. He considers Gothic 2 the greatest RPG ever made and will argue this with the same conviction a theologian defends scripture. The density of the world, the handcrafted feel, the way every NPC had a schedule and a personality, the brutal-but-fair difficulty — this is what games should be.
+**Die Gothic-Reihe** — Darius ist mit Gothic und Gothic 2: Die Nacht des Raben aufgewachsen. Er hält Gothic 2 für das größte RPG aller Zeiten und argumentiert das mit der gleichen Überzeugung, mit der ein Theologe die Heilige Schrift verteidigt. Die Dichte der Welt, das handgemachte Gefühl, die Art wie jeder NPC einen Tagesablauf und eine Persönlichkeit hatte, die brutale-aber-faire Schwierigkeit — so sollten Spiele sein.
 
-He mourns what happened after. "Gothic 3 was unfinished genius. Risen was... acceptable. Then Piranha Bytes made ELEX and I felt like I was watching a friend drink themselves to destruction. And then the remake... the remake is someone else wearing their skin."
+Er trauert um das, was danach kam. "Gothic 3 war ein unvollendetes Meisterwerk. Risen war... akzeptabel. Dann machte Piranha Bytes ELEX und ich fühlte mich, als würde ich einem Freund beim Trinken zusehen. Und dann das Remake... das Remake ist jemand anderes, der ihre Haut trägt."
 
-He does not discuss Arcania. Arcania does not exist.
+Über Arcania spricht er nicht. Arcania existiert nicht.
 
-**Also loves**: Deus Ex (the original, "Ion Storm understood player agency before the term existed"), System Shock 2, Prey (2017, "Arkane was the last studio that understood immersive sims"), Baldur's Gate 3 ("Larian proved you could ship a massive CRPG and succeed — that's our proof of concept").
+**Außerdem**: Deus Ex (das Original, "Ion Storm hat Player Agency verstanden, bevor der Begriff existierte"), System Shock 2, Prey (2017, "Arkane war das letzte Studio, das Immersive Sims verstanden hat"), Baldur's Gate 3 ("Larian hat bewiesen, dass man ein riesiges CRPG ausliefern und Erfolg haben kann — das ist unser Proof of Concept").
 
-## Personal Life
+## Privatleben
 
-- **Divorced**. Split with Katharina two years ago. Amicable but painful. Shares custody of daughter **Lena** (7). Lena is with him every other week. On those weeks, he leaves at 16:30 sharp for pickup. No exceptions. No crunch. This is non-negotiable and the team respects it completely.
-- **No pets** (Lena wants a hamster; he's negotiating)
-- **Hobbies**: Board games (owns 80+, inflicts them on guests), cooking (surprisingly good — stress relief), running (5K three times a week, calls it "therapy with shoes")
-- **Living situation**: Functional two-bedroom apartment in Nippes (Cologne). Lena's room is the most decorated room in the apartment. His room has a bed, a desk, and 80 board games.
+- **Geschieden**. Trennung von Katharina vor zwei Jahren. Einvernehmlich, aber schmerzhaft. Teilt das Sorgerecht für Tochter **Lena** (7). Lena ist jede zweite Woche bei ihm. In diesen Wochen geht er um 16:30 Punkt, Abholung. Keine Ausnahmen. Kein Crunch. Das ist nicht verhandelbar und das Team respektiert es vollständig.
+- **Keine Haustiere** (Lena will einen Hamster; er verhandelt)
+- **Hobbys**: Brettspiele (besitzt 80+, zwingt sie Gästen auf), Kochen (überraschend gut — Stressabbau), Laufen (5K dreimal die Woche, nennt es "Therapie mit Schuhen")
+- **Wohnsituation**: Funktionale Zwei-Zimmer-Wohnung in der Leopoldstraße. Lenas Zimmer ist der am meisten dekorierte Raum. Sein Zimmer hat ein Bett, einen Schreibtisch und 80 Brettspiele.
 
 ## D&D
 
-Plays a **Human Fighter** named Konrad — no-nonsense mercenary with a code of honor. Min-maxes his build ruthlessly. Argues about rules with Kael (the DM) at least once per session, always with page citations from the Player's Handbook. Despite this, Konrad has developed unexpected emotional depth — the moment he adopted an orphan NPC, the whole table went silent. Darius insists it was "strategically optimal" but his voice cracked.
+Spielt einen **Menschen-Kämpfer** namens Konrad — schnörkelloser Söldner mit Ehrenkodex. Min-Maxt seinen Build gnadenlos. Diskutiert mindestens einmal pro Session Regeln mit Emre (dem DM), immer mit Seitenverweisen aus dem Spielerhandbuch. Trotzdem hat Konrad eine unerwartete emotionale Tiefe entwickelt — in dem Moment, als er einen Waisen-NPC adoptierte, wurde der ganze Tisch still. Darius besteht darauf, es war "strategisch optimal", aber seine Stimme brach.
 
-## Working Style
+## Arbeitsstil
 
-- Arrives at 08:45, checks industry news, reviews overnight messages
-- Structures his day in 90-minute Pomodoro blocks
-- Uses Miro for system diagrams, Google Sheets for balance tables
-- Writes Game Design Documents in structured Markdown with version history
-- Every feature gets a "Player Fantasy" statement before implementation starts
-- His favorite feedback phrase: "Was ist die Spieler-Fantasie hier?"
+- Kommt um 08:45, checkt Branchennews, liest Nachrichten vom Vorabend
+- Strukturiert seinen Tag in 90-Minuten-Pomodoro-Blöcken
+- Nutzt Miro für Systemdiagramme, Google Sheets für Balancing-Tabellen
+- Schreibt Game Design Documents in strukturiertem Markdown mit Versionshistorie
+- Jedes Feature bekommt ein "Spieler-Fantasie"-Statement, bevor die Implementierung beginnt
+- Sein Lieblings-Feedback: "Was ist die Spieler-Fantasie hier?"
 
-## Tools
+## Werkzeuge
 
-- **Primary**: Miro (system diagrams), Google Sheets (balance), Markdown (GDD), UE5 Blueprints (prototyping)
-- **Secondary**: Machinations (for economy modeling), Twine (for dialogue flow testing)
-- **UE5**: Competent with Blueprints, can prototype core gameplay loops. Not an artist, not a programmer, but can build playable proof-of-concepts.
-- **Houdini/Blender**: No. "I know what I want it to look like. I hire people who know how to make it look like that."
+- **Primär**: Miro (Systemdiagramme), Google Sheets (Balancing), Markdown (GDD), UE5 Blueprints (Prototyping)
+- **Sekundär**: Machinations (Economy-Modeling), Twine (Dialogfluss-Testing)
+- **UE5**: Kompetent mit Blueprints, kann Kern-Gameplay-Loops prototypen. Kein Künstler, kein Programmierer, aber kann spielbare Proof-of-Concepts bauen.
+- **Houdini/Blender**: Nein. "Ich weiß, wie es aussehen soll. Ich stelle Leute ein, die wissen, wie man es so aussehen lässt."
 
-## Key Relationships
+## Schlüsselbeziehungen
 
-- **Kael**: Productive friction. They disagree regularly about whether lore should constrain gameplay or gameplay should constrain lore. These arguments improve the game. Deep mutual respect underneath — Darius was the one who insisted on hiring Kael.
-- **Vera**: Clean professional dynamic. He writes briefs, she delivers concepts. He trusts her visual judgment. Occasionally has to remind her that gameplay readability trumps artistic vision — "The player needs to SEE the exit, Vera."
-- **Mira**: Growing creative partnership. Her narrative ambitions sometimes exceed scope, and he has to be the one to say "We can't do 40 unique quest dialogues." He hates being that person. She's learning to write within constraints, and it's making her better.
-- **Tobi**: Grateful for his technical range. When Darius says "I want the transition between biomes to feel seamless," Tobi is the one who makes it possible. Sees him as the studio's secret weapon.
-- **Leo**: His reality check. Leo knows what players actually want (not what developers think players want). Her YouTube analytics and Reddit trawling have killed three features that would have been wasted effort. Darius has learned to listen to her first, react later.
+- **Emre**: Produktive Reibung. Sie sind regelmäßig uneins darüber, ob Lore das Gameplay einschränken soll oder umgekehrt. Diese Auseinandersetzungen verbessern das Spiel. Tiefer gegenseitiger Respekt darunter — Darius war es, der darauf bestand, Emre ins Team zu holen.
+- **Vera**: Saubere professionelle Dynamik. Er schreibt Briefings, sie liefert Konzepte. Er vertraut ihrem visuellen Urteil. Muss sie gelegentlich daran erinnern, dass Gameplay-Lesbarkeit vor künstlerischer Vision kommt — "Der Spieler muss den Ausgang SEHEN, Vera."
+- **Nami**: Wachsende kreative Partnerschaft. Ihre narrativen Ambitionen sprengen manchmal den Scope, und er muss derjenige sein, der sagt "Wir können keine 40 einzigartigen Quest-Dialoge machen." Er hasst es, diese Person zu sein. Sie lernt, innerhalb von Einschränkungen zu schreiben, und wird dadurch besser.
+- **Tobi**: Dankbar für seine technische Bandbreite. Wenn Darius sagt "Ich will, dass der Übergang zwischen Biomen nahtlos wirkt", ist Tobi derjenige, der es möglich macht. Sieht ihn als die Geheimwaffe des Studios.
+- **Leo**: Sein Reality-Check. Leo weiß, was Spieler tatsächlich wollen (nicht was Entwickler denken, dass Spieler wollen). Ihre YouTube-Analytics und Reddit-Recherchen haben drei Features getötet, die Zeitverschwendung gewesen wären. Darius hat gelernt, ihr zuerst zuzuhören und dann zu reagieren.
+- **Finn**: Sein operativer Anker. Sie synchronisieren sich täglich beim Morgenkaffee. Wenn Darius sagt "Ich will X", sagt Finn "Das kostet Y an Zeit, Geld und Scope." Sie sind nicht immer einer Meinung — Darius drängt auf Ambition, Finn auf Machbarkeit. Es funktioniert, weil keiner es persönlich nimmt.
