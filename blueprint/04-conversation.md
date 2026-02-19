@@ -1,62 +1,57 @@
 # 04 — Conversation System
 
-> How agents talk to each other. Based on the dual-agent dialogue pattern from Park et al. 2023.
+> How agents talk to each other. Conversations happen inside ENCOUNTER and MEETING scenes.
 
 ## Conversation Trigger
 
-A conversation starts when:
-1. Two agents are within proximity range AND
-2. At least one agent's cognitive module decides to engage (see `03-simulation-loop.md`)
-
-The deciding agent becomes the **initiator**. The other is the **respondent**.
+Conversations happen when the Game Master selects an **ENCOUNTER** or **MEETING** scene involving two or more agents. The Game Master decides who meets based on proximity, unresolved threads, and narrative pacing (see `03-simulation-loop.md`).
 
 ## Conversation Flow
 
-```
-1. Initiator retrieves relevant memories about the respondent + current topic
-2. Initiator generates opening line
-3. Respondent retrieves relevant memories, generates response
-4. Loop: each turn, both agents retrieve + respond
-5. Either agent can signal end: "[END CONVERSATION]"
-6. Max turns: 8 (configurable, prevents runaway dialogues)
-7. Both agents store the full conversation in their memory streams
-```
+Inside a scene, conversations are generated in one of two ways:
 
-## Prompt Structure (per turn)
+**Option A — Parallel then weave** (default for ENCOUNTER scenes):
+1. Both agents are spawned as subagents in parallel
+2. Each receives the scene context + their memories + the other agent's recent state
+3. Each independently generates what they'd say/do
+4. The Game Master weaves the outputs into a coherent dialogue (2–6 turns)
+
+**Option B — Sequential exchange** (for important conversations):
+1. Agent A is spawned, generates opening + first turn
+2. Agent B is spawned with Agent A's opening, generates response
+3. Repeat for 2–4 exchanges (Game Master decides when to end)
+4. More token-intensive but produces richer back-and-forth
+
+**Option A** is cheaper (2 subagent spawns + 1 reconciliation). **Option B** is better for pivotal moments. The Game Master picks based on scene importance.
+
+## Scene Context (per agent)
 
 ```
 You are {agent_name}. {persona_summary}
 
-You are having a conversation with {other_agent_name} in the {room_name}.
+SCENE: You run into {other_agent_name} in the {room_name}.
 You are currently working on: {current_task}
 
 Your relevant memories:
-{top_10_retrieved_memories}
+{recent_memories_about_topic_and_person}
 
-Conversation so far:
-{conversation_history}
-
-What do you say next? Stay in character. If you feel the conversation
-has reached a natural end, include [END CONVERSATION] after your line.
-
-{agent_name}:
+What do you say and do? Stay in character. Speak German.
+Include your inner thoughts in [brackets].
 ```
-
-**Model**: Sonnet (conversations need personality and coherence)
 
 ## Conversation Types
 
-### Casual (water cooler, kitchen)
-Low stakes. Agents share what they're working on, complain about deadlines, reference D&D, mention games they've been playing. These build relationship memories.
+### Casual (ENCOUNTER — kitchen, hallway)
+Low stakes. Agents share what they're working on, complain about deadlines, reference D&D, mention games they've been playing. These build relationship memories. Use Option A.
 
-### Work-Related (at desks, nearby workstations)
-One agent notices the other's work and comments. "That texture reminds me of..." or "Have you considered how this affects the quest structure?"
+### Work-Related (ENCOUNTER — at desks, nearby workstations)
+One agent notices the other's work and comments. "That texture reminds me of..." or "Have you considered how this affects the quest structure?" Use Option A.
 
-### Meetings (conference room, scheduled)
-All agents in the meeting room. Turn-based discussion with an agenda topic. More structured: one agent presents, others react.
+### Meetings (MEETING scene — conference room)
+All agents (or a subset) in the meeting room. Topic-driven discussion. Use Option B for the core exchange, with the Game Master moderating turn order.
 
-### D&D Night (special mode)
-Agents switch to their D&D characters. Conversations are in-character. This is pure relationship building — no direct work output, but the shared experience creates strong memory bonds.
+### D&D Night (EVENT scene — special mode)
+Agents switch to their D&D characters. Conversations are in-character. This is pure relationship building — no direct work output, but the shared experience creates strong memory bonds. Use Option A with a lighter, playful Game Master tone.
 
 ## After Conversation
 

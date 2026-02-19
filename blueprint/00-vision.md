@@ -46,6 +46,6 @@ The simulation produces **real artifacts** that flow into the master-thesis repo
 1. **Organic over orchestrated** — Casual encounters produce ideas. Scheduled meetings refine them.
 2. **Memory makes personality** — An agent's accumulated experience IS their character.
 3. **Research-grounded, not research-bound** — Every system cites its source, but we adapt freely.
-4. **Observable** — The human can watch the simulation unfold in real-time (2D visualization) or review logs afterward.
+4. **Observable** — The human can watch scenes unfold interactively (Claude Code terminal + Phaser.js 2D view) or review logs afterward.
 5. **Productive** — This isn't just a tech demo. The output feeds a real thesis project.
-6. **Affordable** — Tiered model usage (Haiku for routine, Sonnet for reflection) keeps costs manageable.
+6. **Subscription-friendly** — Runs entirely on Claude Pro/Max. No API keys, no per-token billing.

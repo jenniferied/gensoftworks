@@ -6,31 +6,33 @@ AI Creative Studio Simulator — multi-agent generative system inspired by Stanf
 
 - **Design docs**: `blueprint/` (00–08, numbered)
 - **Characters**: `roster/` (one `.md` per agent with YAML frontmatter)
-- **Simulation code**: `workshop/` (Python, Pygame + Claude API)
+- **Agent defs**: `.claude/agents/` (subagent definitions)
+- **State**: `state/` (world.json, agents/*.json, memories/*.jsonl)
 - **Reference shelf**: `library/` (papers, artbooks, GDDs, WBBs)
 - **Tracking**: `pinwall/ROADMAP.md` + `pinwall/COMPLETED.md`
-- **Logs**: `logbook/` (daily simulation logs, exportable)
+- **Logs**: `logbook/` (scene logs per day, exportable)
 - **Output**: `gallery/` (generated lore, concepts, designs)
 
-## Build & Run
+## Run
 
-```bash
-uv run studio          # Launch simulation
-uv run studio --day 5  # Resume from day 5
-uv run export-log      # Export logbook as PDF/HTML
+```
+/scene              # Run next scene (interactive)
+/day                # Run full day (autopilot)
+/brief "message"    # Post Creative Director feedback
 ```
 
 ## Tech Stack
 
 | Component | Tool |
 |-----------|------|
-| Language | Python 3.12+ |
-| Viz | Pygame + PyTMX + Tiled |
-| LLM | Claude API (Haiku routine, Sonnet reflection) |
-| Embeddings | OpenAI text-embedding-3-small |
-| Memory DB | SQLite + ChromaDB |
-| Images | Fal.ai API |
+| Engine | Claude Code (subscription) |
+| Game Master | Main Claude Code session |
+| Agents | Custom subagents (`.claude/agents/`) |
+| State | JSON/JSONL files |
+| Viz | Phaser.js + Tiled (browser) |
+| Images | Fal.ai (via prompts from Vera) |
 | Map editor | Tiled |
+| Export | Jinja2 + WeasyPrint |
 
 ## Guardrails
 

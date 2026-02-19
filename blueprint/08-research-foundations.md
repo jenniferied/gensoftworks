@@ -66,10 +66,11 @@
 ### 6. Concordia (Google DeepMind)
 - **Repository**: github.com/google-deepmind/concordia
 - **What it is**: Pure Python agent simulation library using a "Game Master" pattern from tabletop RPGs.
-- **What we borrow**:
-  - Entity-component architecture for agent state
-  - Game Master as narrator/arbiter pattern
-  - The idea that a simulation can be text-only internally with a separate visualization layer
+- **What we borrow** (heavily — this is our closest architectural ancestor):
+  - **Game Master as narrator/arbiter** — our main Claude Code session IS the Game Master
+  - **Scene-based progression** — not clock ticks, but narrative beats selected by the Game Master
+  - **Text-only simulation with separate visualization** — Claude writes state, Phaser.js renders it
+  - Entity-component architecture for agent state (our `state/agents/*.json`)
 
 ## Research Mapping
 
@@ -86,7 +87,9 @@
 | Role prompting | Li et al. 2023 | CAMEL — inception prompting |
 | Cost optimization | AGA 2024 | Tiered model usage |
 | Experiential learning | Qian et al. 2024 | ChatDev Co-Learning |
+| Scene-based progression | DeepMind 2024 | Concordia — Game Master selects narrative beats |
 | Game Master pattern | DeepMind 2024 | Concordia — `game_master.py` |
+| Text-only sim + separate viz | DeepMind 2024 | Concordia — decoupled rendering |
 
 ## Further Reading
 

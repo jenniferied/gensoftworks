@@ -1,12 +1,10 @@
 # 06 — Visualization
 
-> The 2D view of GenSoftworks. Pygame + Tiled.
+> The 2D view of GenSoftworks. Phaser.js + Tiled in the browser.
 
 ## Tech Choice
 
-**Pygame + PyTMX + Tiled** — 100% Python, proven pattern (Stanford's Generative Agents used Phaser.js + Django; we stay in Python for tighter LLM integration).
-
-**Upgrade path**: Phaser.js + FastAPI web frontend for shareable demos (Phase 7+).
+**Phaser.js + Tiled** — Browser-based, same stack as Stanford's Generative Agents (Apache 2.0). The visualization reads `state/` files and renders independently from the simulation. No tight coupling needed — the simulation (Claude Code) writes state, the viz reads it.
 
 ## Map Design (Tiled)
 
@@ -64,7 +62,7 @@ The studio floorplan is designed in **Tiled** (free, visual tilemap editor) and 
 
 **Option C**: Minimal geometric style (colored rectangles, clear but not pixel-art). Fastest to implement.
 
-**Recommendation**: Start with Option C for prototyping, upgrade to A or B for polish.
+**Decision**: Purchased tileset (16x16, modern interior — e.g., LimeZu Modern Interiors or similar).
 
 ## Agent Sprites
 
@@ -116,8 +114,18 @@ Each agent needs:
 - Click agent: follow mode (camera tracks that agent)
 - Click room: zoom to room
 
+## State Connection
+
+The viz reads from `state/` (file polling or WebSocket bridge):
+
+```
+state/world.json      → Clock display, day counter
+state/agents/*.json   → Agent positions, current actions, status
+logbook/day-XXX.jsonl → Speech/thought bubbles from recent scenes
+```
+
+Since scenes are discrete (not continuous ticks), the viz shows the **last known state** and animates transitions when state files update. Between scenes, agents are at their positions doing their declared tasks — a static but living tableau.
+
 ## Performance
 
-The visualization runs on a separate thread from the simulation. The sim produces state snapshots per tick, the renderer interpolates between them for smooth animation.
-
-At 6 agents with simple sprites, Pygame handles this trivially — no performance concerns.
+Phaser.js handles 7 sprites on a tile map trivially. The bottleneck is scene processing speed (Claude thinking time), not rendering.

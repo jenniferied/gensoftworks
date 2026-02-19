@@ -8,67 +8,63 @@ Generative Agents (Smallville) agents "do things" in text form only: "Isabella i
 
 ## Artifact Types
 
-| Agent | Artifact | Format | Tool |
-|-------|----------|--------|------|
-| Kael (Worldbuilder) | Lore entries, geography, naming tables | Markdown | Claude API |
-| Vera (Concept Artist) | Concept sketches, mood boards, style refs | PNG via Fal.ai | Fal.ai API |
-| Darius (Game Director) | Mechanics specs, quest outlines, balance docs | Markdown | Claude API |
-| Mira (Narrative Designer) | Dialogue drafts, quest narratives, character bios | Markdown | Claude API |
-| Tobi (Tech Artist) | Lighting notes, pipeline specs, shader concepts | Markdown + diagrams | Claude API |
-| Leo (QA/Community) | Playtest notes, player perspective docs, feature reviews | Markdown | Claude API |
+| Agent | Artifact | Format | Mechanism |
+|-------|----------|--------|-----------|
+| Emre (Worldbuilder) | Lore entries, geography, naming tables | Markdown | Subagent writes to gallery/ |
+| Vera (Concept Artist) | Concept sketches, mood boards, style refs | PNG via Fal.ai | Subagent generates prompt, Fal.ai MCP or manual |
+| Darius (Game Director) | Mechanics specs, quest outlines, balance docs | Markdown | Subagent writes to gallery/ |
+| Nami (Narrative Designer) | Dialogue drafts, quest narratives, character bios | Markdown | Subagent writes to gallery/ |
+| Tobi (Tech Artist) | Lighting notes, pipeline specs, shader concepts | Markdown + diagrams | Subagent writes to gallery/ |
+| Leo (QA/Community) | Playtest notes, player perspective docs, feature reviews | Markdown | Subagent writes to gallery/ |
 
 ## Production Flow
 
+Artifacts are produced in **WORK scenes** (see `03-simulation-loop.md`):
+
 ```
-1. Agent decides to create (from daily plan or inspiration)
-2. Agent retrieves relevant memories (past work, feedback, style decisions)
-3. Agent generates artifact via LLM call with full creative context
-4. Artifact is saved to gallery/{type}/
-5. Artifact metadata enters agent's memory stream
-6. Nearby agents observe the creation event
-7. If artifact triggers feedback from another agent → conversation
+1. Game Master selects a WORK scene for an agent with a creative task
+2. Agent subagent is spawned with: persona, memories, task context, CD feedback
+3. Subagent generates the artifact (writes Markdown to gallery/)
+4. Artifact metadata enters agent's memory stream
+5. Game Master adds observation memories to other agents present
+6. If artifact is noteworthy → Game Master may schedule an ENCOUNTER scene
+   where another agent reacts
 ```
 
-## Creative Context Prompt (for text artifacts)
+## Creative Context (Subagent Prompt)
+
+The WORK scene provides the agent subagent with:
 
 ```
 You are {agent_name}, {role} at GenSoftworks.
 {persona_summary}
 
 Your relevant creative memories:
-{top_15_retrieved_memories}
+{recent_memories_about_task}
 
 Recent team decisions:
-{shared_bulletin_board_items}
+{bulletin_board}
 
 Creative Director's latest feedback:
-{most_recent_cd_feedback}
-
-Reference material you've reviewed:
-{recent_library_references}
+{cd_feedback_if_any}
 
 TASK: {specific_creative_task}
-Write in German. Be specific, vivid, and consistent with
-established lore/design decisions.
+Write the artifact in German. Be specific, vivid, and consistent with
+established lore/design decisions. Save it to gallery/{type}/.
 ```
+
+The subagent has Write access to `gallery/` and produces the artifact directly as a file.
 
 ## Image Generation (Concept Artist)
 
-Vera's creative process:
-1. She formulates a concept based on her current task + memories
-2. The LLM generates a detailed Fal.ai prompt (in English, for model quality)
-3. Fal.ai generates 2–4 variations
-4. The LLM (as Vera) selects the best and explains why
-5. Selected image saved, rejected ones logged as "sketches"
+Vera's WORK scenes produce image prompts, not images directly:
 
-```python
-# Simplified
-concept_brief = vera.generate_concept_brief(task, memories)
-fal_prompt = vera.translate_to_image_prompt(concept_brief)
-images = fal_ai.generate(fal_prompt, num_images=3)
-selection = vera.evaluate_and_select(images, concept_brief)
-save_artifact(selection, "gallery/concepts/")
-```
+1. Vera subagent formulates a concept based on task + memories
+2. Subagent writes a detailed Fal.ai prompt (in English) + concept brief (in German)
+3. The Creative Director (or a hook) runs the prompt through Fal.ai
+4. Results are saved to `gallery/concepts/` and added to Vera's memories
+
+This keeps image generation in human hands (curation) while the creative thinking is Vera's.
 
 ## Library Integration
 

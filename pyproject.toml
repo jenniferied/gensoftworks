@@ -4,14 +4,7 @@ version = "0.1.0"
 description = "AI Creative Studio Simulator — multi-agent generative system for collaborative worldbuilding and game design"
 requires-python = ">=3.12"
 dependencies = [
-    "anthropic>=0.40.0",
-    "openai>=1.50.0",          # for embeddings only
-    "chromadb>=0.5.0",
-    "pygame>=2.6.0",
-    "pytmx>=3.32",
-    "numpy>=1.26.0",
     "pyyaml>=6.0",
-    "rich>=13.0",              # terminal logging
     "jinja2>=3.1",             # log export templates
     "weasyprint>=62.0",        # PDF export
 ]
@@ -26,7 +19,6 @@ fal = [
 ]
 
 [project.scripts]
-studio = "workshop.main:run"
 export-log = "workshop.export:main"
 
 [tool.ruff]

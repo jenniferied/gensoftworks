@@ -1,266 +1,176 @@
 # 02 — Memory System
 
-> Based on Park et al. 2023, "Generative Agents: Interactive Simulacra of Human Behavior" (UIST 2023). Adapted for creative production agents.
+> Based on Park et al. 2023, adapted for scene-based simulation running inside Claude Code. No external database or embedding service — Claude itself is the retrieval engine.
 
 ## Overview
 
-Each agent maintains a **Memory Stream** — a chronological database of every observation, reflection, plan, and created artifact. This is the single most important component: an agent's memory IS their personality over time.
+Each agent maintains a **Memory Stream** — a JSONL file of observations, reflections, plans, conversations, and artifacts. This is the core of the system: an agent's accumulated memory IS their personality over time.
+
+The key simplification from the Stanford architecture: there is no vector database. When an agent needs to recall something, Claude reads their memory file and selects what's relevant. For 7 agents generating ~10–20 memories per simulated day, this scales comfortably for months of simulation.
 
 ## Memory Node Schema
 
-```sql
-CREATE TABLE memories (
-    id            TEXT PRIMARY KEY,
-    agent_id      TEXT NOT NULL,
-    created       TIMESTAMP NOT NULL,
-    last_accessed TIMESTAMP NOT NULL,
-    type          TEXT NOT NULL,     -- observation | reflection | plan | artifact | conversation
-    depth         INTEGER DEFAULT 0, -- 0=observation, 1+=reflection layers
-    description   TEXT NOT NULL,     -- natural language
-    subject       TEXT,              -- triplet: who/what
-    predicate     TEXT,              -- triplet: did what
-    object        TEXT,              -- triplet: to whom/what
-    importance    INTEGER NOT NULL,  -- 1-10 (LLM-scored)
-    keywords      TEXT,              -- JSON array
-    evidence_ids  TEXT,              -- JSON array (for reflections: source node IDs)
-    metadata      TEXT,              -- JSON blob (artifact_path, style_tags, etc.)
-    embedding_key TEXT               -- reference into ChromaDB
-);
+Each line in `state/memories/{agent}.jsonl`:
 
-CREATE INDEX idx_agent_time ON memories(agent_id, created DESC);
-CREATE INDEX idx_agent_type ON memories(agent_id, type);
-CREATE INDEX idx_importance ON memories(agent_id, importance DESC);
+```json
+{
+    "id": "emre-042",
+    "created": "day-003/scene-04",
+    "type": "observation",
+    "depth": 0,
+    "description": "Vera hat ein Konzeptbild der Knochentürme gezeigt — organisch, dunkel, wie gewachsen statt gebaut.",
+    "importance": 7,
+    "tags": ["ashen-wastes", "bone-towers", "vera", "concept-art"],
+    "evidence": [],
+    "metadata": {}
+}
 ```
 
-## Retrieval: The Scoring Function
+### Fields
 
-When an agent needs to recall relevant memories (for conversation, planning, or creative work), the retrieval function scores every memory against the current query:
+| Field | Purpose |
+|-------|---------|
+| `id` | `{agent}-{sequence_number}` |
+| `created` | Scene reference: `day-XXX/scene-YY` |
+| `type` | `observation`, `reflection`, `plan`, `artifact`, `conversation` |
+| `depth` | 0 = direct experience, 1+ = reflection layers |
+| `description` | Natural language, in German |
+| `importance` | 1–10, scored by the agent subagent at creation time |
+| `tags` | Keywords for quick scanning |
+| `evidence` | For reflections: IDs of source memories |
+| `metadata` | Extra data (artifact path, conversation partner, etc.) |
 
-```
-score(memory, query) = 0.5 * recency + 3.0 * relevance + 2.0 * importance
-```
+## Retrieval: Claude as the Search Engine
 
-All three components are min-max normalized to [0, 1] before combination.
+When an agent subagent is spawned for a scene, it receives its recent memories as context. The Game Master selects which memories to include:
 
-### Recency (exponential decay)
+**Default strategy** — last 50 memories (chronological) + all reflections (depth > 0). This keeps recent context fresh while preserving synthesized insights.
 
-```python
-decay_rate = 0.995  # per simulated hour
-hours_since = (now - memory.last_accessed).total_seconds() / 3600
-recency = decay_rate ** hours_since
-```
+**Focused retrieval** — When a scene has a clear topic (e.g., "meeting about the Ashen Wastes"), the Game Master can grep the memory file for relevant tags and include those memories instead.
 
-Source: Park et al. use 0.995 decay per sandbox game hour. Memories accessed recently score higher. Accessing a memory during retrieval updates `last_accessed`, creating a "the rich get richer" effect — frequently recalled memories stay accessible.
+**Why this works without embeddings**: With ~10–20 memories per day and a target of weeks-to-months of simulation, an agent accumulates hundreds of memories, not thousands. Claude can read and reason over hundreds of structured entries. The tag system enables fast pre-filtering before Claude even sees the content.
 
-### Importance (LLM-scored, 1–10)
+### Comparison to Stanford
 
-Scored once at creation time. Prompt adapted for creative context:
+| Aspect | Stanford (Park et al.) | GenSoftworks |
+|--------|----------------------|--------------|
+| Storage | SQLite + ChromaDB | JSONL files |
+| Retrieval | Cosine similarity on embeddings | Claude reads + selects |
+| Scoring | `0.5*recency + 3.0*relevance + 2.0*importance` | Claude weighs naturally |
+| Scale | ~30 memories/agent/day, thousands total | ~10–20/agent/day, hundreds total |
+| Cost | Embedding API calls | Zero (included in subscription) |
 
-```
-On the scale of 1 to 10, where 1 is purely routine
-(e.g., refilling coffee, opening a file) and 10 is a
-breakthrough creative moment (e.g., discovering a unifying
-visual motif, a lore revelation that recontextualizes the
-entire world), rate the creative significance of:
+The tradeoff: Stanford's approach scales to thousands of memories with mathematical precision. Ours is simpler, cheaper, and sufficient for our scale. If memory files grow too large, we can summarize older entries into compressed "era summaries."
 
-"{memory_description}"
+## Importance Scoring
 
-Rating:
-```
+When an agent creates a new memory, the subagent scores it 1–10 as part of its scene response. No separate LLM call needed — the agent is already "thinking" about the event.
 
-**Model**: Haiku (cheap, fast — this runs for every observation)
-
-### Relevance (cosine similarity of embeddings)
-
-```python
-query_embedding = embed(query_text)       # text-embedding-3-small
-memory_embedding = chromadb.get(memory.embedding_key)
-relevance = cosine_similarity(query_embedding, memory_embedding)
-```
-
-Every memory's `description` is embedded at creation time and stored in ChromaDB. Retrieval embeds the current query and computes cosine similarity against all memories.
-
-### Weight Rationale
-
-The weights (recency=0.5, relevance=3.0, importance=2.0) come from the Stanford implementation's actual code (`retrieve.py`), where they apply multipliers of 0.5x, 3x, and 2x on top of the base alphas. This strongly favors **relevance** (what's topically related) and **importance** (what mattered), with recency as a tiebreaker.
-
-For creative agents, this is correct: a breakthrough insight from two weeks ago should still surface when relevant, not be buried by recent trivia.
+Scale (adapted for creative context):
+- **1–2**: Routine (refilled coffee, opened a file, walked to desk)
+- **3–4**: Minor work (continued writing, reviewed notes)
+- **5–6**: Notable (received feedback, had a relevant conversation)
+- **7–8**: Significant (creative breakthrough, disagreement that produced insight)
+- **9–10**: Pivotal (Creative Director brief that reframes the project, artistic epiphany)
 
 ## Reflection
 
 ### Trigger
 
-Each agent tracks an `importance_accumulator` (starts at 0). Every new observation adds its importance score. When the accumulator exceeds `REFLECTION_THRESHOLD = 150`, reflection fires and the accumulator resets.
+Each agent's state (`state/agents/{name}.json`) tracks an `importance_accumulator`. New memories add their importance score. When the accumulator exceeds **100** (lowered from Stanford's 150 to account for fewer observations per day), the Game Master schedules a REFLECTION scene for that agent.
 
-With an average importance of ~5, this means reflection triggers roughly every 30 observations — about once per simulated day.
+With average importance ~5, this triggers roughly every 2–3 simulated days — appropriate for scene-based pacing.
 
 ### Process
 
-**Step 1 — Generate focal points** (what to reflect on):
+The reflection scene works like any other scene, but the agent subagent receives a special prompt:
 
-```
-Given these recent experiences:
-{numbered list of last 100 observations/thoughts}
-
-What are 3 salient high-level questions or themes
-emerging from these experiences?
-1)
-```
-
-**Step 2 — Retrieve evidence** per focal point:
-
-Each focal point question goes through the standard retrieval function, pulling the top 20 most relevant memories.
-
-**Step 3 — Synthesize insights**:
-
-```
-{numbered list of retrieved memories}
-
-What 5 high-level creative insights or principles can you
-infer from the above? Format each as:
-insight (because of 1, 5, 3)
-```
-
-The parenthetical references link to evidence node IDs.
-
-**Step 4 — Store reflections**:
-
-Each insight becomes a new memory node with:
-- `type = "reflection"`
-- `depth = max(evidence_depths) + 1`
-- `evidence_ids = [referenced node IDs]`
-- Own importance score and embedding
-
-**Model**: Sonnet (reflections require reasoning quality)
+1. **Input**: Last ~30 memories since previous reflection
+2. **Task**: "What 3–5 higher-level insights or creative principles emerge from these experiences?"
+3. **Output**: New reflection memories with `depth = max(evidence_depths) + 1` and `evidence` linking to source memory IDs
 
 ### Reflection Hierarchy
 
-Reflections can reference other reflections, creating a hierarchy:
+Reflections can build on other reflections:
 
 ```
-Depth 0: "Vera showed me her bone-tower concept art"
-Depth 0: "Darius wants a dungeon in the Ashen Wastes"
-Depth 1: "The Ashen Wastes are becoming central — Vera's organic
-          aesthetic + Darius' dungeon → living structures" (from 0, 0)
-Depth 0: "Creative Director said living towers need biology"
-Depth 2: "The towers could grow from a dead titan's nervous system —
-          this connects geology and mythology" (from 1, 0)
+Depth 0: "Vera hat ein Konzeptbild der Knochentürme gezeigt"
+Depth 0: "Darius will einen Dungeon in den Aschen-Einöden"
+Depth 1: "Die Aschen-Einöden werden zentral — Veras organische
+          Ästhetik + Darius' Dungeon = lebende Strukturen" (from 0, 0)
+Depth 0: "Creative Director sagt: lebende Türme brauchen Biologie"
+Depth 2: "Die Türme könnten aus dem Nervensystem eines toten Titanen
+          wachsen — das verbindet Geologie und Mythologie" (from 1, 0)
 ```
 
 ## Planning
 
-### Daily Plan Generation (morning)
+### Daily Plan (ARRIVAL scene)
 
-```
-{agent_persona_summary}
-{yesterday's summary — 5 most important reflections}
-{current date, day of week, weather, any scheduled events}
+Each morning's ARRIVAL scene asks agents to declare their plan:
 
-What is {agent_name}'s plan for today? List 5-7 broad
-activities with approximate times.
-```
+- What they want to work on today
+- Who they want to talk to (if anyone)
+- Whether they want to consult the library
 
-Output: `["Review lore notes (09:00)", "Work on Ashen Wastes geography (10:00)", ...]`
-
-### Hourly Decomposition
-
-Each broad activity is decomposed into 15-minute tasks:
-
-```
-{agent_name} plans to "{broad_activity}" from {start} to {end}.
-Break this into specific 15-minute tasks:
-```
+Plans are stored in `state/agents/{name}.json` as `today_plan` and inform the Game Master's scene selection for the rest of the day.
 
 ### Reactive Re-Planning
 
-When an agent perceives something unexpected (another agent initiating conversation, Creative Director feedback, a new artifact from a colleague), the planner evaluates:
-
-```
-{agent_name} is currently doing: "{current_task}"
-They just noticed: "{new_observation}"
-Should they: (a) continue current task, (b) briefly respond then continue,
-(c) abandon current task to engage with this?
-```
-
-If (c), the remaining schedule is regenerated from the current time.
+If something unexpected happens mid-day (Creative Director feedback, a colleague's artifact that changes context), the Game Master can include a re-planning prompt in the next scene: "Given what just happened, does your plan for today change?"
 
 ## Creative Memory Adaptations
 
 ### Artifact Memories
 
-When an agent creates something (lore text, concept image, design doc), the artifact itself enters the memory stream:
+When an agent creates something, it becomes a memory with rich metadata:
 
-```python
-memory_stream.add(
-    type="artifact",
-    description="Created concept sketch: Ashen Wastes bone-towers, "
-                "organic architecture, dark palette, 3 variations",
-    metadata={
-        "artifact_type": "concept_art",
-        "artifact_path": "gallery/concepts/day03_bone_towers_v1.png",
-        "style_tags": ["organic", "dark_fantasy", "architectural"],
-        "project_context": "wbb/ashen_wastes",
-        "fal_prompt": "the actual prompt used",
+```json
+{
+    "id": "vera-028",
+    "created": "day-003/scene-04",
+    "type": "artifact",
+    "depth": 0,
+    "description": "Konzeptskizze erstellt: Knochentürme der Aschen-Einöden, organische Architektur, dunkle Palette, 3 Varianten.",
+    "importance": 8,
+    "tags": ["ashen-wastes", "bone-towers", "concept-art", "own-work"],
+    "evidence": [],
+    "metadata": {
+        "artifact_path": "gallery/concepts/day-003_bone-towers_v1.png",
+        "style_tags": ["organic", "dark-fantasy", "architectural"]
     }
-)
+}
 ```
 
 ### Cross-Agent Observation
 
-When Agent A creates an artifact, all agents in the same room receive an observation:
+When an agent creates an artifact, the Game Master adds an observation to other agents who were present:
 
-```
-"Vera just finished a concept sketch of bone-towers for the Ashen Wastes.
-The style is organic and dark, with structures that look grown rather
-than built."
-```
-
-This is how creative ideas spread organically — not through direct assignment, but through observation and memory.
-
-### Shared Aesthetic Memory
-
-Over time, agents accumulate overlapping memories about style decisions. Reflections on these shared experiences create an emergent **studio aesthetic** — not programmed, but grown from repeated reinforcement:
-
-```
-Day 1:  "Vera used a dark palette for the first concept"
-Day 3:  "Kael described the world as 'drained of color'"
-Day 5:  REFLECTION: "The team gravitates toward desaturated,
-         dark palettes — this could be the visual signature"
-Day 8:  "Darius suggested UI should match the world's palette"
-Day 12: REFLECTION: "Desaturation is now a design principle,
-         not just a preference — it extends from art to UI"
+```json
+{
+    "id": "emre-043",
+    "type": "observation",
+    "description": "Vera hat gerade eine Konzeptskizze der Knochentürme fertiggestellt. Der Stil ist organisch und dunkel — die Strukturen sehen gewachsen aus, nicht gebaut.",
+    "importance": 6,
+    "tags": ["vera", "bone-towers", "concept-art", "ashen-wastes"]
+}
 ```
 
-## Storage Architecture
+This is how ideas spread organically — not through assignment, but through observation and memory.
+
+## State File Structure
 
 ```
-data/
-├── studio.db           # SQLite — all agent memories
-├── embeddings/         # ChromaDB persistent storage
-│   ├── kael/
-│   ├── vera/
-│   ├── darius/
-│   ├── mira/
-│   ├── tobi/
-│   └── leo/
-└── snapshots/          # Daily state dumps for resumability
-    ├── day_001.json
-    ├── day_002.json
+state/
+├── memories/
+│   ├── emre.jsonl          # ~10-20 new entries per simulated day
+│   ├── vera.jsonl
+│   ├── darius.jsonl
+│   ├── nami.jsonl
+│   ├── tobi.jsonl
+│   ├── leo.jsonl
+│   └── finn.jsonl
+└── agents/
+    ├── emre.json           # includes importance_accumulator, today_plan
     └── ...
 ```
-
-## Performance Considerations
-
-| Operation | Frequency | Model | Estimated Cost |
-|-----------|-----------|-------|----------------|
-| Importance scoring | ~30/agent/day | Haiku | ~$0.50/day total |
-| Embedding | ~30/agent/day | text-embedding-3-small | ~$0.001/day |
-| Retrieval (similarity search) | ~50/agent/day | ChromaDB (local) | Free |
-| Reflection (3 focal points + synthesis) | ~1/agent/day | Sonnet | ~$3.00/day total |
-| Planning (daily + hourly) | 1/agent/day | Haiku | ~$0.30/day total |
-| Conversation (multi-turn) | ~3/agent/day | Sonnet | ~$9.00/day total |
-| Creative output | ~2/agent/day | Sonnet | ~$4.00/day total |
-
-**Estimated total: ~$17–25 per simulated day with 6 agents.**
-
-With prompt caching (persona descriptions, system prompts): **~$12–18/day**.

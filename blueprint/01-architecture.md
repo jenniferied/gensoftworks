@@ -7,132 +7,172 @@
                     │   CREATIVE DIRECTOR │
                     │   (Human — You)     │
                     └─────────┬──────────┘
-                              │ Briefings, Feedback, Observation
+                              │ Briefings, Feedback, Intervention
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                     SIMULATION ENGINE                        │
+│                     GAME MASTER                              │
+│              (Main Claude Code Session)                       │
 │                                                              │
-│  ┌──────────┐  ┌──────────────┐  ┌────────────────────────┐│
-│  │ CLOCK    │  │ WORLD        │  │ EVENT SYSTEM           ││
-│  │          │  │              │  │                        ││
-│  │ Tick     │  │ Rooms        │  │ Proximity triggers     ││
-│  │ Day/Night│  │ Positions    │  │ Scheduled meetings     ││
-│  │ Seasons  │  │ Pathfinding  │  │ External events        ││
-│  │          │  │ Collision    │  │ (GamesBomb, deadlines) ││
-│  └──────────┘  └──────────────┘  └────────────────────────┘│
+│  Reads world state → Determines next scene →                 │
+│  Spawns agent subagents → Reconciles results →               │
+│  Updates state → Writes logbook → Asks CD for input          │
 └──────────────────────┬──────────────────────────────────────┘
                        │
 ┌──────────────────────▼──────────────────────────────────────┐
-│                     AGENT LAYER                              │
+│                     AGENT SUBAGENTS                           │
+│              (Spawned per scene via Task tool)                │
 │                                                              │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
-│  │ PERSONA      │  │ MEMORY       │  │ COGNITIVE     │      │
-│  │              │  │ STREAM       │  │ MODULES       │      │
-│  │ Identity     │  │              │  │               │      │
-│  │ Traits       │  │ Observations │  │ Perceive      │      │
-│  │ Preferences  │  │ Reflections  │  │ Retrieve      │      │
-│  │ Relationships│  │ Plans        │  │ Reflect       │      │
-│  │ Skills       │  │ Artifacts    │  │ Plan          │      │
-│  └──────────────┘  └──────────────┘  │ Act           │      │
-│                                       │ Converse      │      │
-│                                       └──────────────┘      │
+│  │ PERSONA      │  │ MEMORY       │  │ SCENE        │      │
+│  │              │  │ STREAM       │  │ RESPONSE     │      │
+│  │ .claude/     │  │              │  │              │      │
+│  │ agents/      │  │ memories/    │  │ Action       │      │
+│  │ {name}.md    │  │ {name}.jsonl │  │ Dialogue     │      │
+│  │              │  │              │  │ Thoughts     │      │
+│  │ Identity     │  │ Observations │  │ Artifacts    │      │
+│  │ Traits       │  │ Reflections  │  │ New memories │      │
+│  │ Preferences  │  │ Artifacts    │  │ Position     │      │
+│  │ Relationships│  │ Plans        │  │              │      │
+│  └──────────────┘  └──────────────┘  └──────────────┘      │
+└──────────────────────┬──────────────────────────────────────┘
+                       │
+┌──────────────────────▼──────────────────────────────────────┐
+│                     STATE LAYER (Files)                       │
+│                                                              │
+│  state/world.json  ·  state/agents/*.json  ·                 │
+│  state/memories/*.jsonl  ·  state/bulletin.json              │
 └──────────────────────┬──────────────────────────────────────┘
                        │
 ┌──────────────────────▼──────────────────────────────────────┐
 │                     OUTPUT LAYER                             │
 │                                                              │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────────┐ │
-│  │ CREATIVE │  │ IMAGE    │  │ LOGBOOK  │  │ VISUALIZER │ │
-│  │ PIPELINE │  │ GEN      │  │          │  │            │ │
-│  │          │  │          │  │ JSON per │  │ Pygame     │ │
-│  │ WBB text │  │ Fal.ai   │  │ tick     │  │ + Tiled    │ │
-│  │ GDD text │  │ concepts │  │ PDF/HTML │  │ 2D top-    │ │
-│  │ Design   │  │ moods    │  │ export   │  │ down view  │ │
-│  │ decisions│  │ refs     │  │          │  │            │ │
+│  │ GALLERY  │  │ LOGBOOK  │  │ PHASER   │  │ EXPORT     │ │
+│  │          │  │          │  │ VIZ      │  │            │ │
+│  │ lore/    │  │ scene    │  │          │  │ PDF/HTML   │ │
+│  │ concepts/│  │ logs per │  │ Reads    │  │ via Jinja2 │ │
+│  │ designs/ │  │ day      │  │ state/   │  │ + Weasy    │ │
+│  │ writing/ │  │          │  │ renders  │  │            │ │
 │  └──────────┘  └──────────┘  └──────────┘  └────────────┘ │
 └─────────────────────────────────────────────────────────────┘
-                       │
-┌──────────────────────▼──────────────────────────────────────┐
-│                     STORAGE LAYER                            │
-│                                                              │
-│  SQLite (memories)  ·  ChromaDB (embeddings)  ·  Filesystem │
-└─────────────────────────────────────────────────────────────┘
 ```
+
+## Key Design Decision: Claude Code IS the Engine
+
+There is no separate Python simulation server. The Claude Code session (on subscription) acts as both the **Game Master** and the **runtime**:
+
+- The Game Master reads state files, decides what scene happens next, spawns agent subagents (up to 7 in parallel via the Task tool), reconciles their outputs, and updates state.
+- Each agent is a **custom subagent** defined in `.claude/agents/{name}.md` with personality, role, memory access, and restricted tools.
+- The simulation advances when the Creative Director triggers it (`/scene`, `/day`) or Claude suggests the next beat.
+- All state lives in JSON/JSONL files — no database, no embedding service, no API keys.
+
+This means the simulation runs on a **Claude Pro/Max subscription** with zero additional cost.
 
 ## Component Breakdown
 
-### Simulation Engine
+### Game Master (Main Session)
 
-**Clock** — Manages simulated time. One "tick" = 15 simulated minutes. A full day = 96 ticks. The simulation can run at variable speed: real-time observation or fast-forward.
+The orchestrator. Responsible for:
 
-**World** — The physical 2D space. Loaded from a Tiled `.tmx` file. Contains rooms with named zones (desks, meeting areas, kitchen). Agents have positions (x, y) and move between locations using A* pathfinding on the collision layer.
+1. **Scene selection** — What happens next? (See `03-simulation-loop.md`)
+2. **Agent dispatch** — Spawn relevant subagents for the scene
+3. **Reconciliation** — If two agents are in the same scene, merge their outputs into coherent interaction
+4. **State updates** — Write new positions, memories, artifacts to state files
+5. **Logging** — Append scene to `logbook/`
+6. **Creative Director interface** — Present results, ask for input, accept feedback
 
-**Event System** — Three event types:
-1. **Proximity events** — Two agents within interaction radius. Memory-based decision: talk or not?
-2. **Scheduled events** — Weekly D&D night, daily standup, monthly GamesBomb visit
-3. **External events** — Creative Director posts feedback, deadline pressure increases, new reference material arrives
+### Agent Subagents
 
-### Agent Layer
+Each of the 7 agents is defined as a `.claude/agents/{name}.md` file with YAML frontmatter:
 
-**Persona** — Static identity (name, background, personality traits, favorite games, relationships) loaded from `roster/*.md` YAML frontmatter. Does not change during simulation.
+```yaml
+---
+name: emre-worldbuilder
+description: "Emre Yilmaz — Worldbuilder at GenSoftworks"
+tools:
+  - Read      # read own memories, world state, library references
+  - Write     # write artifacts to gallery/
+  - Glob      # find relevant files
+---
+```
 
-**Memory Stream** — The core innovation from Park et al. 2023. Chronological database of every observation, reflection, and plan. Retrieved via weighted scoring: `0.5 * recency + 3.0 * relevance + 2.0 * importance`. See `02-memory-system.md`.
+When spawned for a scene, a subagent receives:
+- Its persona (from the agent definition + `roster/{name}.md`)
+- Its recent memories (last ~50 entries from `state/memories/{name}.jsonl`)
+- The scene context (who's present, where, what's happening)
+- The bulletin board (Creative Director feedback, shared decisions)
 
-**Cognitive Modules** — Five functions that mirror the Generative Agents architecture:
+The subagent returns a structured response: what they do, say, think, and create.
 
-| Module | Input | Output | LLM Model |
-|--------|-------|--------|-----------|
-| **Perceive** | World state, nearby agents/objects | New observations added to memory | — (no LLM, just sensing) |
-| **Retrieve** | Current situation/query | Top-K relevant memories | Embeddings only |
-| **Reflect** | Accumulated importance > threshold | Higher-order insights | Sonnet |
-| **Plan** | Morning context + recent reflections | Daily schedule, hourly tasks | Haiku |
-| **Act** | Current plan + perceived situation | Movement, creation, conversation | Haiku (routine) / Sonnet (creative) |
-| **Converse** | Proximity trigger + retrieved memories | Multi-turn dialogue with other agent | Sonnet |
+### State Layer
+
+```
+state/
+├── world.json              # Day counter, time of day, scene log, scheduled events
+├── agents/
+│   ├── emre.json           # Position, current task, today's plan, mood
+│   ├── vera.json
+│   ├── darius.json
+│   ├── nami.json
+│   ├── tobi.json
+│   ├── leo.json
+│   └── finn.json
+├── memories/
+│   ├── emre.jsonl          # Chronological memory stream
+│   ├── vera.jsonl
+│   └── ...
+└── bulletin.json           # Creative Director posts, team decisions, deadlines
+```
 
 ### Output Layer
 
-**Creative Pipeline** — Transforms agent work into actual artifacts:
-- Worldbuilder writes lore → saved as Markdown in `gallery/lore/`
-- Concept Artist generates prompts → Fal.ai → images in `gallery/concepts/`
-- Game Director writes mechanics → saved in `gallery/designs/`
-- All artifacts enter the agents' memory streams as shared observations
+**Gallery** — Real artifacts in `gallery/`, same structure as `05-creative-pipeline.md`.
 
-**Logbook** — Every tick produces a JSON log entry: agent positions, observations, conversations, reflections, artifacts created. Exportable to PDF (via WeasyPrint + Jinja2 templates) or HTML for web viewing.
+**Logbook** — One JSONL file per simulated day (`logbook/day-001.jsonl`), one entry per scene.
 
-**Visualizer** — Pygame renders the studio in real-time: agent sprites walking, speech bubbles for conversations, thought bubbles for reflections, artifact thumbnails when created.
+**Phaser.js Visualization** — Browser-based, reads `state/` files, renders the Tiled map with agent sprites. Independent layer — the viz doesn't need Claude to run. See `06-visualization.md`.
 
-## Data Flow (One Tick)
+**Export** — PDF/HTML from logbook data via Jinja2 + WeasyPrint.
+
+## Data Flow (One Scene)
 
 ```
-1. Clock advances (+15 min)
-2. For each agent (parallel where possible):
-   a. PERCEIVE: What's nearby? Who's here? What changed?
-   b. RETRIEVE: What memories are relevant to current situation?
-   c. DECIDE: Follow plan? React to something? Start conversation?
-   d. ACT: Move, work, talk, create
-   e. OBSERVE: Log what happened to memory stream
-   f. CHECK REFLECTION: Has importance accumulated past threshold?
-      → If yes: REFLECT, store insights
-3. Log tick state to logbook
-4. Render frame to visualization
-5. Check for Creative Director input
+1. Game Master reads state/world.json → decides scene type and participants
+2. Game Master reads relevant agent states + recent memories
+3. Spawn involved agents as subagents (parallel via Task tool)
+   Each subagent:
+   a. Reads its persona + memories + scene context
+   b. Decides: what do I do/say/think in this scene?
+   c. Returns: actions, dialogue, thoughts, new memories, artifacts (if any)
+4. Game Master reconciles outputs:
+   - If two agents interact → weave their dialogue together
+   - If an agent creates an artifact → save to gallery/
+   - Update all agent positions and states
+5. Append new memories to state/memories/*.jsonl
+6. Write scene to logbook/day-XXX.jsonl
+7. Update state/world.json (advance time, increment scene counter)
+8. Present scene summary to Creative Director
+9. Creative Director: continue? intervene? skip to next day?
 ```
 
 ## Integration Points
 
 ### With master-thesis repo
-- `gallery/` artifacts can be copied/linked into `master-thesis/project/`
-- The simulation itself is documented in the thesis (methodology chapter)
+- `gallery/` artifacts flow into `master-thesis/project/`
+- The simulation methodology is documented in the thesis
+- Logbook exports become thesis appendix material
 
-### With Claude Code
-- The simulation calls Claude API directly (not Claude Code CLI)
-- But development happens IN Claude Code with agents, skills, hooks
-- Hooks could validate agent outputs, enforce style guides
-- MCP servers provide access to Semantic Scholar, Fal.ai
+### With Phaser.js visualization
+- Viz reads `state/` directory (polling or file-watch)
+- Completely decoupled — can run without viz, or viz can replay past days
+- WebSocket bridge optional for live updates (Phase 3+)
 
-### Cost Control
-- **Haiku** ($1/$5 per 1M in/out): Perceive, Plan, routine Act
-- **Sonnet** ($3/$15 per 1M in/out): Reflect, Converse, creative Act
-- **Prompt caching**: Agent personas cached (90% discount on repeated input)
-- **Embedding**: text-embedding-3-small at $0.02/1M (negligible)
-- **Target**: ~$20–30 per simulated day with 6 agents
+### With Claude Code ecosystem
+- **Subagents**: 7 agent definitions in `.claude/agents/`
+- **Skills**: `/scene`, `/day`, `/brief` for Creative Director commands
+- **Hooks**: Validate artifacts, enforce German language, auto-log
+- **MCP**: Optional — could expose world state as MCP tools for richer agent interaction
+
+## Cost
+
+**Zero additional cost.** Everything runs on the Claude Pro/Max subscription. Token usage comes from the subscription allowance. Scene-based simulation minimizes token usage: 3–6 scenes per day instead of 36–96 ticks.
