@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large, local only)
+data/memories/*.db
+data/embeddings/
+
+# Secrets
+.env
+*.key
+
+# Logs (keep structure, ignore contents)
+logbook/daily/*.json
+logbook/exports/*.pdf
+logbook/exports/*.html
+
+# Generated gallery items (keep structure)
+gallery/concepts/*.png
+gallery/concepts/*.jpg
+
+# Library (large PDFs + local symlinks, local only — structure is committed)
+library/papers/**/*.pdf
+library/artbooks/*.pdf
+library/gdds/*.pdf
+library/wbbs/*.pdf
+library/bibliography.bib
+
+# Tiled backup files
+*.tmx~
