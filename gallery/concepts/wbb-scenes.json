@@ -1,0 +1,128 @@
+[
+    {
+        "name": "felltraeger-silk-road-traders",
+        "prompt": "Fantasy character concept art: three beast-folk merchants in a medieval market setting. NOT tribal, NOT primitive. They are wealthy TRADERS wearing layered silk brocade robes over thick fur, hidden pockets sewn into flowing garments, jewelry that doubles as currency — gold chains, amber pendants, obsidian rings. One carries a leather satchel heavy with goods. Urban-nomadic aesthetic, Silk Road meets Venice. Rich fabrics: deep crimson, saffron yellow, emerald green over natural brown and grey fur. Clean, sophisticated, slightly alien facial features — feline-canine hybrid, dignified bearing. Medieval high fashion. No bones, no feathers, no tribal markings. Cinematic lighting, painted concept art style.",
+        "negative_prompt": "tribal, primitive, bones, feathers, leather straps, dirt, mud, savage, anime, cartoon, text, watermark, steampunk, steam, pipes",
+        "category": "characters",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "innenvolk-biotech-laboratory",
+        "prompt": "Fantasy concept art: an organic medieval laboratory built from bone, sinew and translucent membrane instead of glass and steel. Distillation apparatus that looks like internal organs — bulbous vessels connected by vein-like tubes, bioluminescent green liquid flowing through. Chitin containers, keratin shelves. A hooded figure examining a glowing substance. Architecture feels like being inside a living body. Dark atmospheric lighting with scattered bioluminescent accents in green, amber, and deep violet. NOT steampunk — no gears, no steam, no metal pipes. Organic biotechnology in a medieval setting. Painted concept art style.",
+        "negative_prompt": "steampunk, gears, steam, pipes, metal, industrial, modern, sci-fi, anime, cartoon, text, watermark, bright cheerful",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "kuestenvolk-vertical-city",
+        "prompt": "Fantasy concept art: a coastal settlement built vertically into sea cliffs, two distinct layers of construction — ancient stone arches and columns from a forgotten era below, newer patchwork timber and rope structures above. Fishing boats in a narrow harbor. Salt-weathered wood, oxidized copper-green rooftops, white chalk cliffs visible in the background. Fog rolling in from the sea. The architecture tells two stories: the old civilization and the new settlers building on top. Muted palette: grey stone, weathered wood, copper-green, sea-foam white. Vertical composition. Low fantasy, grounded medieval, cinematic painted style.",
+        "negative_prompt": "anime, cartoon, bright colors, magic, glowing, text, watermark, high fantasy, steampunk, modern",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "vulkanvolk-hidden-settlement",
+        "prompt": "Fantasy concept art: a volcanic landscape where a settlement is barely visible — only 30 percent of the architecture shows above ground. Organic horizontal structures half-buried in volcanic terrain, rounded doorways in hillsides, smoke rising from hidden vents. Basalt formations, dark grey-green moss, warm amber light glowing from within rock crevices. The settlement is designed to be invisible from a distance — you only see it when you are inside it. Germanic mythological atmosphere: carved runes on doorframe stones, offerings at a volcanic spring. Low fantasy, grounded, atmospheric. Painted concept art style.",
+        "negative_prompt": "anime, cartoon, bright colors, obvious buildings, high fantasy, magic towers, text, watermark, steampunk",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "underground-bazaar-hohlenvolk",
+        "prompt": "Fantasy concept art: a vast underground cavern converted into a busy marketplace bazaar. Organic tunnel architecture — curved walls, no right angles, multiple hidden exits. Bioluminescent fungi and hanging lanterns provide warm amber light. Beast-folk merchants behind stalls displaying exotic goods: vials of glowing substances, rare fabrics, smuggled weapons. The architecture is optimized for escape and concealment — narrow side passages, curtained alcoves, trapdoors. Rich atmosphere of secrecy and commerce. Dark tones with warm amber and green bioluminescent accents. Medieval underground market, NOT a dungeon. Painted concept art style.",
+        "negative_prompt": "dungeon, monsters, combat, anime, cartoon, text, watermark, steampunk, modern, bright sterile",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "biotech-armor-detail",
+        "prompt": "Fantasy concept art closeup: medieval armor with organic biotechnology integrated. Steel plate armor with visible organic veins running beneath the surface, pulsing with faint bioluminescent light. Chitin reinforcement plates over leather, keratin shoulder guards with a living texture. The armor looks like it has a nervous system — thin luminous lines tracing pathways under the metal surface. NOT steampunk — no gears, no pipes. Clean medieval craftsmanship with something alive underneath. Dark anthracite metal, aubergine leather, copper-green bioluminescent veins. High fashion medieval meets HR Giger organic aesthetic. Detail study, concept art style.",
+        "negative_prompt": "steampunk, gears, steam, pipes, rusty, worn-out, dirty, anime, cartoon, text, watermark, bright",
+        "category": "characters",
+        "tier": 1,
+        "aspect_ratio": "square",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "scherben-quarter-zerbrochene",
+        "prompt": "Fantasy concept art: a cramped quarter in the outer ring of a massive medieval fortress. Makeshift shelters built from salvaged materials — broken carts as walls, torn sails as roofs, crates as furniture. The people here are the Broken Ones — displaced, factionless, wearing mismatched clothes from all cultures of the island. A melancholic but resilient atmosphere. Behind the improvised shelters, the massive stone walls of the inner fortress loom. Laundry lines between buildings, a shared cooking fire, children playing. Poverty but dignity. Muted palette, overcast sky, atmospheric. Painted concept art style.",
+        "negative_prompt": "anime, cartoon, bright cheerful, magic, text, watermark, steampunk, modern, apocalyptic zombie",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "island-geographic-overview",
+        "prompt": "Fantasy concept art: bird's eye view of a dark fantasy island showing distinct geographic zones. Central plateau with a massive fortress-castle complex. Volcanic highlands to the north with dark basalt formations. Coastal cliffs with vertical settlements to the west. Dense mixed forest and moorland in the interior. Chalk cliffs and beaches to the south where ships approach. The island is roughly oval, surrounded by grey-green sea. Each zone has distinct coloring: dark volcanic grey-red in the north, weathered grey-green coast to the west, warm golden-brown forests in the center, white chalk in the south. Atmospheric, overcast, low fantasy. Map-like composition but painted realistically, not a flat map.",
+        "negative_prompt": "flat map, simple, cartoon, grid, anime, text labels, watermark, bright saturated, high fantasy, floating islands",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "square",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "fortress-hub-golden-hour",
+        "prompt": "Fantasy concept art: the central fortress of a dark fantasy island at golden hour. Mont-Saint-Michel inspired vertical layering — village and market at the base, military fortifications in the middle tiers, the ruling keep at the summit. Built from dark basalt with obsidian accent stones, asymmetric growth over centuries visible in the different construction styles. Warm golden light from the setting sun illuminates the western face while the eastern side falls into deep blue shadow. Smoke rising from the village chimneys. A road leads up from the surrounding fields. Imposing but lived-in — this is where power and daily life coexist. Detailed painted concept art, cinematic composition.",
+        "negative_prompt": "anime, cartoon, bright colors, magic, glowing, text, watermark, steampunk, modern, sci-fi",
+        "category": "fortress",
+        "tier": 2,
+        "aspect_ratio": "landscape_16_9",
+        "model": "nano-banana-pro"
+    },
+    {
+        "name": "five-factions-lineup",
+        "prompt": "Fantasy character concept art: five figures standing side by side representing five distinct factions of a dark fantasy island. Left to right: (1) A coastal dweller in salt-stained leather and patched naval coat, tools and rope. (2) A volcanic zone mystic in dark organic robes with basalt jewelry. (3) A human settler knight in clean angular plate armor, blocky practical engineering. (4) A beast-folk merchant in rich silk brocade over fur, gold jewelry. (5) An Innenvolk alchemist in a hooded cloak with visible bioluminescent vial containers. Each figure's silhouette is distinct at distance. Dark anthracite palette with faction-specific accent colors. Medieval high fashion. Concept lineup, painted style.",
+        "negative_prompt": "anime, cartoon, matching uniforms, bright colors, magic, text, watermark, steampunk, modern, tribal primitive",
+        "category": "characters",
+        "tier": 2,
+        "aspect_ratio": "landscape_16_9",
+        "model": "nano-banana-pro"
+    },
+    {
+        "name": "nervensystem-character-screen",
+        "prompt": "Dark fantasy UI concept art: a character screen showing a semi-transparent human figure with three visible body systems layered. The outermost layer shows medieval armor plates fading to transparency. Below the skin, three color-coded networks are visible: RED pulsing cardiovascular system (heart, arteries, veins), BLUE static musculoskeletal system (bones, muscle fibers), GREEN flowing lymphatic system (nodes, vessels). Bioluminescent lines trace each system. The figure stands in a T-pose against a dark background. Small rune-like interface elements surround the figure for selecting which system to upgrade. Medieval dark fantasy aesthetic applied to a medical visualization. Concept art, clean design.",
+        "negative_prompt": "modern UI, sci-fi hologram, anime, cartoon, bright white background, text, watermark, realistic photograph",
+        "category": "ui",
+        "tier": 2,
+        "aspect_ratio": "portrait_9_16",
+        "model": "nano-banana-pro"
+    },
+    {
+        "name": "stranger-arrival-shore",
+        "prompt": "Dark fantasy concept art: a lone figure seen from behind, standing on a grey pebble beach at dawn, facing an island rising from morning mist. The figure wears a torn, simple cloak — they own nothing. In the shallow water behind them, wreckage of a small boat. Before them, a rough path leads up through sea grass toward distant fortress towers barely visible through fog. The mood is isolation, vulnerability, and the beginning of something. Low fantasy atmosphere — grey sea, overcast sky, muted earth tones. The island ahead is simultaneously threatening and inviting. This is the moment before the story begins. Cinematic wide shot, painted concept art style.",
+        "negative_prompt": "anime, cartoon, bright colors, magic, glowing, text, watermark, warrior, armed, confident pose, high fantasy",
+        "category": "environment",
+        "tier": 2,
+        "aspect_ratio": "landscape_16_9",
+        "model": "nano-banana-pro"
+    },
+    {
+        "name": "hero-biotech-warrior",
+        "prompt": "Dark fantasy hero shot: a warrior figure in advanced medieval armor that incorporates organic biotechnology. Steel plate armor with visible organic nervous-system veins glowing faintly beneath the surface in copper-green bioluminescence. The armor is clean and sophisticated — high fashion medieval, not worn or rusty. Alexander McQueen meets HR Giger aesthetic. The figure holds a finely crafted sword with a chitin-wrapped handle. Background: the interior of the fortress great hall, dark stone with warm firelight. The character is human but enhanced — the biotech is subtle, almost beautiful, not grotesque. Cinematic lighting, painted concept art, dark atmospheric.",
+        "negative_prompt": "steampunk, gears, steam, rusty, worn, dirty, anime, cartoon, text, watermark, bright, sci-fi, modern, tribal",
+        "category": "characters",
+        "tier": 3,
+        "aspect_ratio": "landscape_16_9",
+        "model": "gpt-image-1-5"
+    },
+    {
+        "name": "hero-island-from-sea",
+        "prompt": "Dark fantasy hero shot: a dramatic view of the island from an approaching ship at dawn. The island rises from grey-green sea, multiple distinct zones visible: white chalk cliffs in the south with a beach, dark volcanic highlands to the north smoking faintly, mixed forest covering the interior, and dominating the center — the fortress-castle complex on its plateau, towers catching the first golden light of sunrise while the rest of the island remains in blue morning shadow. The ship's bow frame is visible in the foreground — weathered dark wood with rope. A sense of arrival, destiny, the unknown. The island is beautiful and threatening simultaneously. Cinematic composition, painted concept art, atmospheric.",
+        "negative_prompt": "anime, cartoon, bright saturated, magic, floating islands, text, watermark, steampunk, modern, sci-fi",
+        "category": "environment",
+        "tier": 3,
+        "aspect_ratio": "landscape_16_9",
+        "model": "gpt-image-1-5"
+    }
+]

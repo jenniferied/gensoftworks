@@ -72,13 +72,17 @@
 
 - [x] Acquire tileset (48x48, LimeZu Modern Interiors)
 - [x] Acquire/create character sprites (7 agents)
-- [ ] Build studio map in Tiled from floorplan design
-- [ ] Phaser.js frontend setup (renders map + agents in browser)
-- [ ] State file reader (polls `state/` for updates)
-- [ ] Agent sprites + position rendering
+- [x] Build studio map in Tiled from floorplan design
+- [x] Phaser.js frontend setup (renders map + agents in browser)
+- [x] Furniture tilesets integrated (8 sets, placeable in Tiled)
+- [x] Agent sprites + idle animations (4 directions, corrected frame mapping)
+- [x] UI sidebar (day/scene selector, scene info, agent detail panel)
+- [x] Scene data viewer (loads simulation.json, navigates days/scenes)
+- [x] Agent click → sidebar detail with mood, reaction, memories
+- [x] Zone labels (HTML overlay, always sharp)
+- [ ] Further iteration: polish layout, tweak positions, improve sidebar UX
 - [ ] Speech bubbles from logbook scene data
 - [ ] Thought bubbles for reflections
-- [ ] UI overlay (day counter, scene info, agent status)
 
 ## Phase 4 — Creative Pipeline
 

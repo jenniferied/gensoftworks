@@ -1,0 +1,289 @@
+% LaTeX Template for GenSoftworks Logbook
+% A4 Portrait, Chronological Scene Narrative
+% LuaLaTeX required
+% Fonts from master-thesis/assets/fonts/
+
+\documentclass[10pt, a4paper, oneside]{article}
+
+% ==========================================================================
+%   PACKAGES & FONTS
+% ==========================================================================
+
+\usepackage{fontspec}
+
+% Font path — shared with master-thesis repo (same parent directory)
+\def\fontpath{../../master-thesis/assets/fonts/}
+
+% Body: Lora 10pt
+\setmainfont{Lora}[
+  Path = \fontpath,
+  UprightFont = {Lora-Variable.ttf},
+  ItalicFont = {Lora-Italic-Variable.ttf},
+  BoldFont = {Lora-Variable.ttf},
+  BoldItalicFont = {Lora-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+\setsansfont{OpenSans}[
+  Path = \fontpath,
+  UprightFont = {OpenSans-Variable.ttf},
+  ItalicFont = {OpenSans-Italic-Variable.ttf},
+  BoldFont = {OpenSans-Variable.ttf},
+  BoldItalicFont = {OpenSans-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+\setmonofont{JetBrainsMono}[
+  Path = \fontpath,
+  UprightFont = {JetBrainsMono-Variable.ttf},
+  ItalicFont = {JetBrainsMono-Italic-Variable.ttf},
+  BoldFont = {JetBrainsMono-Variable.ttf},
+  BoldItalicFont = {JetBrainsMono-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700},
+  Scale = 0.85
+]
+
+% Heading font: Source Serif 4 Italic
+\newfontfamily\headingfont{SourceSerif4}[
+  Path = \fontpath,
+  UprightFont = {SourceSerif4-Variable.ttf},
+  ItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFont = {SourceSerif4-Variable.ttf},
+  BoldItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+\let\titlefont\headingfont
+
+\usepackage{polyglossia}
+\setdefaultlanguage{$if(lang)$$lang$$else$german$endif$}
+
+% Page layout — generous margins for readability
+\usepackage[a4paper, left=25mm, right=25mm, top=25mm, bottom=25mm]{geometry}
+
+% Colors (must load before pagecolor)
+\usepackage{xcolor}
+
+% Background color (defined but not applied as page background to avoid font embedding issues)
+\definecolor{pagewhite}{HTML}{FCFCFC}
+\definecolor{black}{HTML}{1A1A1A}
+\definecolor{gray}{HTML}{888888}
+\definecolor{lightgray}{HTML}{BBBBBB}
+\definecolor{boxbg}{HTML}{F5F5F5}
+\definecolor{border}{HTML}{DDDDDD}
+\definecolor{thoughttint}{HTML}{EDE8F0}    % Soft lavender — agent inner thoughts
+\definecolor{reflecttint}{HTML}{E8F0ED}    % Soft sage — reflections
+\definecolor{artifacttint}{HTML}{F0EDE8}   % Soft amber — artifacts produced
+\definecolor{scenelabel}{HTML}{666666}
+
+% ==========================================================================
+%   SPACING
+% ==========================================================================
+
+\usepackage{setspace}
+\setstretch{1.3}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5mm}
+
+% ==========================================================================
+%   HEADINGS
+% ==========================================================================
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{gray}\thepage}
+\fancyhead[R]{\small\color{lightgray}\itshape GenSoftworks Logbuch}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+
+% H1 — Day header (Source Serif 4 Italic 28pt)
+\titleformat{\section}
+  {\headingfont\fontsize{28pt}{34pt}\selectfont\itshape\color{black}}
+  {}{0em}{}
+\titlespacing*{\section}{0pt}{8mm}{4mm}
+
+\newcommand{\sectionbreak}{\clearpage}
+
+% H2 — Scene header (Source Serif 4 Italic 16pt)
+\titleformat{\subsection}
+  {\headingfont\fontsize{16pt}{20pt}\selectfont\itshape\color{black}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{6mm}{2mm}
+
+% H3 — Sub-sections within scenes
+\titleformat{\subsubsection}
+  {\bfseries\fontsize{11pt}{13pt}\selectfont\color{black}}
+  {}{0em}{}
+\titlespacing*{\subsubsection}{0pt}{3mm}{1mm}
+
+% ==========================================================================
+%   LINKS & GRAPHICS
+% ==========================================================================
+
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=gray, pdfusetitle]{hyperref}
+
+\usepackage{graphicx}
+\usepackage{float}
+\floatplacement{figure}{H}
+
+\providecommand{\pandocbounded}[1]{#1}
+
+% ==========================================================================
+%   TABLES
+% ==========================================================================
+
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+
+\usepackage{caption}
+\captionsetup{font={small}, labelfont={bf}, format=plain, skip=2mm}
+
+% ==========================================================================
+%   CUSTOM ENVIRONMENTS — Scene elements
+% ==========================================================================
+
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Scene metadata line (location, time, participants)
+\newenvironment{scenemeta}{%
+  \vspace{1mm}%
+  {\small\color{scenelabel}\sffamily%
+}{%
+  \par}%
+  \vspace{2mm}%
+}
+
+% Agent inner thought — lavender tint, left border
+\newtcolorbox{thought}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{thoughttint!80!black},
+  colback=thoughttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\itshape\small}
+
+% Agent reflection — sage tint, left border
+\newtcolorbox{reflection}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{reflecttint!80!black},
+  colback=reflecttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\itshape\small}
+
+% Artifact produced — amber tint, left border
+\newtcolorbox{artifact}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{artifacttint!80!black},
+  colback=artifacttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\small}
+
+% Quote blocks
+\renewenvironment{quote}{%
+  \vspace{2mm}
+  \begin{tcolorbox}[enhanced, frame hidden,
+    borderline west={2pt}{0pt}{thoughttint!80!black},
+    colback=thoughttint!30,
+    left=8mm, right=8mm, top=4mm, bottom=4mm,
+    before skip=3mm, after skip=3mm, breakable]
+  \itshape
+}{%
+  \end{tcolorbox}
+}
+
+% Scene divider
+\newcommand{\scenedivider}{%
+  \vspace{4mm}%
+  \noindent\makebox[\linewidth]{\color{border}\rule{0.3\linewidth}{0.4pt}}%
+  \vspace{4mm}%
+}
+
+% ==========================================================================
+%   PANDOC COMPATIBILITY
+% ==========================================================================
+
+\newlength{\cslhangindent}\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2]
+ {\begin{list}{}{\setlength{\itemindent}{0pt}\setlength{\leftmargin}{0pt}\setlength{\parsep}{0pt}
+  \ifodd #1 \setlength{\leftmargin}{\cslhangindent}\setlength{\itemindent}{-1\cslhangindent}\fi
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=5mm, itemsep=0.5mm, topsep=0pt}
+\setlist[enumerate]{leftmargin=5mm, itemsep=0.5mm, topsep=0pt}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+  commandchars=\\\{\}, fontsize=\small, frame=single, rulecolor=\color{border}
+}
+
+% ==========================================================================
+%   METADATA
+% ==========================================================================
+
+$if(title)$\title{$title$}$endif$
+$if(author)$\author{$for(author)$$author$$sep$ \and $endfor$}$endif$
+$if(date)$\date{$date$}$else$\date{}$endif$
+
+\hypersetup{pdftitle={$if(title)$$title$$endif$}, pdfauthor={$for(author)$$author$$sep$; $endfor$}}
+
+% ==========================================================================
+%   COVER PAGE
+% ==========================================================================
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \thispagestyle{empty}
+  \null
+  \vfill
+  \begin{center}
+    {\titlefont\fontsize{36pt}{42pt}\selectfont\itshape\@title\par}
+    \vspace{8mm}
+    $if(subtitle)$
+    {\titlefont\fontsize{14pt}{18pt}\selectfont $subtitle$\par}
+    \vspace{8mm}
+    $endif$
+    {\small\color{gray} \@author\quad·\quad\@date\par}
+  \end{center}
+  \vfill
+  \newpage
+}
+\makeatother
+
+% ==========================================================================
+%   DOCUMENT
+% ==========================================================================
+
+\begin{document}
+
+$if(title)$\maketitle$endif$
+
+$if(toc)$
+\thispagestyle{empty}
+\hypersetup{linkcolor=black}
+\tableofcontents
+\newpage
+$endif$
+
+$body$
+
+\end{document}

@@ -1,0 +1,112 @@
+% GenSoftworks Logbook — extra header for Pandoc default template
+% Included via --include-in-header
+
+% Heading font
+\newfontfamily\headingfont{SourceSerif4}[
+  Path = ../../master-thesis/assets/fonts/,
+  UprightFont = {SourceSerif4-Variable.ttf},
+  ItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFont = {SourceSerif4-Variable.ttf},
+  BoldItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+% Colors
+\definecolor{thoughttint}{HTML}{EDE8F0}
+\definecolor{reflecttint}{HTML}{E8F0ED}
+\definecolor{artifacttint}{HTML}{F0EDE8}
+\definecolor{scenelabel}{HTML}{666666}
+\definecolor{border}{HTML}{DDDDDD}
+\definecolor{lightgray}{HTML}{BBBBBB}
+
+% Agent sprite icons
+\newcommand{\agenticon}[1]{%
+  \raisebox{-4pt}{\includegraphics[height=16pt]{icons/#1.png}}\,%
+}
+
+% Bubble type icons
+\newcommand{\thoughtbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-thought.png}}\,%
+}
+\newcommand{\speechbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-speech.png}}\,%
+}
+\newcommand{\planbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-plan.png}}\,%
+}
+\newcommand{\reflectionbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-reflection.png}}\,%
+}
+\newcommand{\artifactbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-artifact.png}}\,%
+}
+
+% Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{gray}\thepage}
+\fancyhead[R]{\small\color{lightgray}\itshape GenSoftworks Logbuch}
+
+% Heading styles
+\usepackage{titlesec}
+\setcounter{secnumdepth}{0}
+
+\titleformat{\section}
+  {\headingfont\fontsize{28pt}{34pt}\selectfont\itshape}
+  {}{0em}{}
+\titlespacing*{\section}{0pt}{8mm}{4mm}
+
+\newcommand{\sectionbreak}{\clearpage}
+
+\titleformat{\subsection}
+  {\headingfont\fontsize{16pt}{20pt}\selectfont\itshape}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{6mm}{2mm}
+
+% Scene boxes
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newenvironment{scenemeta}{%
+  \vspace{1mm}{\small\color{scenelabel}\sffamily%
+}{%
+  \par}\vspace{2mm}%
+}
+
+\newtcolorbox{thought}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{thoughttint!80!black},
+  colback=thoughttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\itshape\small}
+
+\newtcolorbox{reflection}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{reflecttint!80!black},
+  colback=reflecttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\itshape\small}
+
+\newtcolorbox{artifact}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{artifacttint!80!black},
+  colback=artifacttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\small}
+
+% Creative Director directive — distinct dark box
+\newtcolorbox{directive}{enhanced, frame hidden,
+  borderline west={3pt}{0pt}{black!70},
+  colback=black!8,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=4mm, after skip=4mm, breakable,
+  fontupper=\small\sffamily}
+
+\newcommand{\scenedivider}{%
+  \vspace{4mm}%
+  \noindent\makebox[\linewidth]{\color{border}\rule{0.3\linewidth}{0.4pt}}%
+  \vspace{4mm}%
+}
