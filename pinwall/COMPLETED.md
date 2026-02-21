@@ -2,6 +2,16 @@
 
 > What's been done. Newest first.
 
+## 2026-02-21 — Logbook Viewer (Phase 3)
+
+- [x] `build-viewer-data.py` — reads logbook + memories → `simulation.json` (3 Tage, 19 Szenen)
+- [x] Sidebar redesign: Tag/Szene-Dropdowns, Vor/Zurück-Buttons, responsive layout
+- [x] Agent-Karten pro Szene: Stimmung, Reaktion, Einflüsse, Erinnerungen (auto-expanded)
+- [x] Phaser scene loading: Tween-basierte Agentenbewegung, Alpha-Dimming für Nicht-Teilnehmer
+- [x] Event-System: `viewer:scene-change`, `viewer:agent-click`, `viewer:data-ready`
+- [x] `npm run build:data` Script in package.json
+- [x] Roadmap aktualisiert mit weiteren Viewer-Ideen
+
 ## 2026-02-20 — Architecture Decisions + Phase 0 Complete
 
 - [x] Researched Claude Agent SDK capabilities vs Agent Teams (CLI-only, not SDK)

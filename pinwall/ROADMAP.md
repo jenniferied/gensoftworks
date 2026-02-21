@@ -81,8 +81,12 @@
 - [x] Agent click → sidebar detail with mood, reaction, memories
 - [x] Zone labels (HTML overlay, always sharp)
 - [ ] Further iteration: polish layout, tweak positions, improve sidebar UX
+- [ ] Agent movement animations (walk cycle during scene transitions)
+- [ ] Highlight active room (tint or glow on room where scene takes place)
+- [ ] Scene auto-play mode (step through scenes on timer)
 - [ ] Speech bubbles from logbook scene data
 - [ ] Thought bubbles for reflections
+- [ ] Artifact preview in sidebar (link to gallery files)
 
 ## Phase 4 — Creative Pipeline
 

@@ -27,3 +27,6 @@ dist-ssr
 public/assets/tilesets/
 public/assets/furniture/
 public/assets/characters/
+
+# Generated data (built from logbook via build-viewer-data.py)
+public/data/simulation.json
