@@ -1,0 +1,11 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Test files
+test-*.pdf
+test-*.aux
+test-*.log
