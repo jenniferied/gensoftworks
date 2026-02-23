@@ -35,6 +35,7 @@
       }
       #sidebar .nav-btn:hover { border-color: #556699; color: #aac8e8; }
       #sidebar .nav-btn:disabled { opacity: 0.3; cursor: default; }
+      #sidebar .nav-btn.playing { color: #e8a84c; border-color: #e8a84c; }
       #sidebar select {
         flex: 1 1 0; min-width: 0; background: #1a1a2e; color: #ccc; border: 1px solid #333355;
         padding: 4px 6px; font-family: monospace; font-size: 12px; border-radius: 3px;
@@ -74,6 +75,20 @@
         border-left: 2px solid #c8a86e; word-wrap: break-word;
       }
 
+      /* Artifacts */
+      .artifacts-title {
+        font-size: 10px; color: #556; text-transform: uppercase; letter-spacing: 1px;
+        margin-top: 8px; margin-bottom: 4px;
+      }
+      .artifact-item {
+        display: flex; align-items: center; gap: 4px;
+        font-size: 10px; color: #889; padding: 2px 0;
+      }
+      .artifact-icon { color: #556; font-size: 9px; flex-shrink: 0; }
+      .artifact-name {
+        color: #7a9ab8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      }
+
       /* Agent details list */
       .agent-card { margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #1a1a2e; }
       .agent-card-header { display: flex; align-items: baseline; gap: 5px; margin-bottom: 2px; flex-wrap: wrap; }
@@ -101,6 +116,29 @@
       .memory-item .mem-importance { color: #c8a86e; font-size: 9px; float: right; }
 
       .agent-card.dimmed { opacity: 0.4; }
+
+      /* v2: Dialogue lines */
+      .dialogue-section { margin-top: 4px; }
+      .dialogue-line {
+        font-size: 10px; color: #aac8e8; font-style: italic;
+        padding: 2px 0 2px 8px; border-left: 2px solid #334466;
+        margin-bottom: 2px; word-wrap: break-word; overflow-wrap: break-word;
+      }
+
+      /* v2: Thoughts */
+      .agent-thought {
+        font-size: 10px; color: #b8a8c8; font-style: italic;
+        padding: 3px 6px; margin-top: 3px; background: #1a1a2e; border-radius: 3px;
+        border-left: 2px solid #4a3a5a; word-wrap: break-word; overflow-wrap: break-word;
+      }
+
+      /* v2: Feedback */
+      .agent-feedback {
+        font-size: 10px; padding: 3px 6px; margin-top: 3px; border-radius: 3px;
+        word-wrap: break-word; overflow-wrap: break-word;
+      }
+      .agent-feedback.given { color: #8ab; background: #1a2030; border-left: 2px solid #3a5a6a; }
+      .agent-feedback.received { color: #ab8; background: #201a1a; border-left: 2px solid #5a4a3a; }
     </style>
   </head>
   <body>
@@ -115,6 +153,7 @@
           <select id="day-select"></select>
           <select id="scene-select"></select>
           <button class="nav-btn" id="btn-next" title="Nächste Szene">&rsaquo;</button>
+          <button class="nav-btn" id="btn-play" title="Autoplay">&#9654;</button>
         </div>
         <div class="divider"></div>
 
@@ -129,6 +168,7 @@
           <div class="divider"></div>
           <div class="scene-summary" id="scene-summary"></div>
           <div class="key-moment" id="key-moment"></div>
+          <div id="artifact-list" style="display: none;"></div>
         </div>
 
         <div class="divider"></div>

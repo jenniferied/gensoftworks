@@ -10,8 +10,11 @@ AI Creative Studio Simulator — multi-agent generative system inspired by Stanf
 - **State**: `state/` (world.json, agents/*.json, memories/*.jsonl)
 - **Reference shelf**: `library/` (papers, artbooks, GDDs, WBBs)
 - **Tracking**: `pinwall/ROADMAP.md` + `pinwall/COMPLETED.md`
-- **Logs**: `logbook/` (scene logs per day, exportable)
-- **Output**: `gallery/` (generated lore, concepts, designs)
+- **Logs**: `logbook/` (scene logs per day, v2 schema)
+- **Output**: `gallery/` (gdd/, wbb/, concepts/, writing/)
+- **Archive**: `simulation-1/` (completed sim 1 data)
+- **Viewer**: `frontend/` (Phaser.js + Tiled browser viewer)
+- **Scripts**: `scripts/` (build-viewer-data.py, export-logbook.py, capture-scenes.mjs)
 
 ## Run
 
@@ -32,12 +35,13 @@ AI Creative Studio Simulator — multi-agent generative system inspired by Stanf
 | Viz | Phaser.js + Tiled (browser) |
 | Images | Fal.ai (via prompts from Vera) |
 | Map editor | Tiled |
-| Export | Jinja2 + WeasyPrint |
+| Export | Pandoc + XeLaTeX |
 
 ## Guardrails
 
-- **Design-first**: All architecture in `blueprint/` before code in `workshop/`
+- **Design-first**: All architecture in `blueprint/` before code
 - **Research-grounded**: Every system must cite its academic basis
 - **Log everything**: Every agent thought, observation, reflection → `logbook/`
+- **v2 schema**: All fields in every scene, no compound types (see `blueprint/07-logging.md`)
 - **Never invent citations** — same rule as master-thesis
 - **German content, English code** — agents speak German in-sim

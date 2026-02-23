@@ -1,51 +1,7 @@
 {
-    "posts": [
-        {
-            "from": "Creative Director",
-            "day": 1,
-            "scene": 7,
-            "type": "brief",
-            "content": "Dark Fantasy CRPG. Skyrim mit Rassen. Wenig Magie, High-Tech-Mittelalter, Cyberpunk-Ästhetik. Cinematisch, gemalter Look."
-        },
-        {
-            "from": "Creative Director",
-            "day": 1,
-            "scene": 8,
-            "type": "course-correction",
-            "content": "KURSKORREKTUR: (1) WELT: Mischung aus prozedural (Houdini/PCG für große Landschaften) und handgebaut (dicht wo es zählt). Erste Iteration: EINE INSEL. Impressive Landscapes zwischen Städten, Traversal per Kutsche/Pferde/Fähigkeiten. (2) TITANEN-RETHINK: Zu High Fantasy. Soll sich an GERMANISCHER MYTHOLOGIE orientieren. Keine sichtbaren Titanenkörper in der Landschaft. Vielleicht Legenden, Riesen, versteckte Überreste. Materialien ja, aber biologisch erklärbar. Alles muss irgendwie biologisch Sinn machen. Nicht wie Ancient Magus' Bride wo man Riesenskelette sieht. Bodenständiger. (3) TEAM-INPUT erwünscht, aber Richtung ist Low Fantasy + germanische Mythologie. (4) Skyrim 11/11/11 Trailer als emotionaler Nordstern."
-        },
-        {
-            "from": "Creative Director",
-            "day": 2,
-            "scene": 8,
-            "type": "vision-update",
-            "content": "ARCHITEKTUR-VISION: Die Insel hat ENTWICKELTE ZIVILISATION. Schlösser, hohe mittelalterliche Technologie, weitentwickelte Städte. Nicht primitive Hütten — das ist eine Welt mit Geschichte und Infrastruktur. Zentral auf der Insel: eine richtige Festungsanlage/Burg mit Dorf davor. Eine Anlage die man sieht und denkt: hier regiert jemand. Leise, imposant, mittelalterliche Hochkultur."
-        },
-        {
-            "from": "Creative Director",
-            "day": 3,
-            "scene": 1,
-            "type": "feedback+deadlines",
-            "content": "CONCEPT-ART-FEEDBACK: fortress-tower-vertical und coastal-ruins-settlement sind GOLD — an die Pinwall. Rassen-Konzepte cool, aber Tiervolk zu tribal. ART DIRECTION: Mehr futuristisch pushen, weniger heruntergekommen. LORE: Titanenmodus ist nicht mein Ding, aber germanische Mythologie JA — alles auf Deutsch. DEADLINES: GDD-Entwurf in 2 Tagen (Donnerstag). WBB-Entwurf in 3 Tagen (Freitag). Das Team soll MIR Fragen stellen — mindestens 3 heute."
-        }
-        },
-        {
-            "from": "Creative Director",
-            "day": 3,
-            "scene": 2,
-            "type": "answers-to-team",
-            "content": "CD BEANTWORTET TEAM-FRAGEN: (1) KAMERA: Definitiv à la Skyrim — First und Third Person nahtlos umschaltbar, 'zoombar'. Customizable Rüstung/Kleidung. (2) VERTICAL SLICE: Hauptquest + zwei Nebenquests in einer Region. (3) MONETARISIERUNG: GANZ KLASSISCH. Alpha free für exklusive Streamer. Beta auf Steam — 1 Jahr bis Final. Fairer Preis, keine Mikrotransaktionen. Extensive DLCs, Artbooks, HIGH QUALITY MERCH. (4) MYTHOLOGIE: Low Fantasy à la Game of Thrones mit Spice. Skyrim als Referenz (Elder Scrolls etwas spicier). Nah an germanischer Mythologie bleiben, gucken wie 'cringe' es wird. Dekonstruieren ja, aber nicht um Flair hinzuzufügen. 3–6 Fraktionen. (5) FUTURISTISCH: Schwerter, Bögen, Armbrüste, Schilde, Rüstung von simpel bis krass. KEIN STEAMPUNK (kein Dampf!), aber chemische Reaktionen, echtes Gift, echte Leistungsverstärker (Drogen, Amphetamine). Architektur mittelalterlich aber manchmal ziemlich krass. High Fashion Mittelalter ohne too much. Denkt Cyber/Biotech statt Steampunk. (6) CHARACTER SCREEN: Halbtransparente Sicht aufs Nervensystem beim Leveln. Herz-Kreislauf/Atmung (Ausdauer, Unterwasser-Atmen), Muskel/Skelett, Lymphsystem (Gift-/Krankheitsresistenz). Echte Biologie ins Mittelalter bringen. (7) ANDERE RASSEN: Menschliche Ingenieurskunst (clean), leicht alien bei anderen Rassen. Tiermenschen NICHT handwerklich — gute HÄNDLER (und Diebe). (8) GDD: Vollständiges Dokument, kein Skeleton. (9) ARCHITEKTUR: Beides — generell menschliche Ingenieurskunst, aber leicht alien bei anderen Rassen. SUPER MITTELALTER in Architektur, Mode und Rüstung."
-        }
-    ],
-    "team_decisions": [
-        {"day": 3, "scene": 2, "decision": "Kamera: Skyrim FP/TP nahtlos umschaltbar, zoombar"},
-        {"day": 3, "scene": 2, "decision": "Monetarisierung: Klassisch Premium, keine MTX, DLCs + Merch"},
-        {"day": 3, "scene": 2, "decision": "Mythologie: Low Fantasy GoT-Level, germanisch, 3-6 Fraktionen"},
-        {"day": 3, "scene": 2, "decision": "Futuristisch = Biotech/Chemie, NICHT Steampunk"},
-        {"day": 3, "scene": 2, "decision": "Character Leveling: Nervensystem-Visualisierung (Cardio, Muskel, Lymph)"},
-        {"day": 3, "scene": 2, "decision": "Tiermenschen = Händler/Diebe, nicht Handwerker"},
-        {"day": 3, "scene": 2, "decision": "GDD: Vollständiges Dokument bis Donnerstag"},
-        {"day": 3, "scene": 2, "decision": "Rassen-Architektur: Menschlich = clean, Andere = leicht alien"}
-    ],
-    "creative_director_notes": "Baut mir eine Welt. Rassen definieren. Character Creation ist Herzstück. DAS SPIEL HEISST RELICS. Die Insel hat Schlösser und hohe mittelalterliche Technologie. Eine zentrale Festungsanlage mit Dorf. MEHR FUTURISTISCH, WENIGER HERUNTERGEKOMMEN. Germanische Mythologie statt Titanen. GDD bis Donnerstag (VOLLSTÄNDIG), WBB bis Freitag. KAMERA: Skyrim FP/TP zoombar. MONETARISIERUNG: Klassisch Premium. FUTURISTISCH = Biotech/Chemie, nicht Steampunk. CHARACTER LEVELING: Nervensystem-Sicht. TIERMENSCHEN = Händler nicht Handwerker. SUPER MITTELALTER."
+    "posts": [],
+    "team_decisions": [],
+    "creative_director_notes": "",
+    "deliverables": [],
+    "cd_feedback_log": []
 }

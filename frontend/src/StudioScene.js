@@ -52,11 +52,22 @@ const ZONES = [
 
 // Character animation frame map (48×96 frames, 56 cols per combined row)
 const CHAR_ANIMS = {
+  // Walk animations (first row: frames 0–23)
+  walk_down:  { start: 0,  count: 6 },
+  walk_left:  { start: 6,  count: 6 },
+  walk_right: { start: 12, count: 6 },
+  walk_up:    { start: 18, count: 6 },
+  // Idle animations (second row: frames 56+)
   idle_left:  { start: CHAR_COLS + 0,   count: 6 },
   idle_up:    { start: CHAR_COLS + 6,   count: 6 },
   idle_right: { start: CHAR_COLS + 12,  count: 6 },
   idle_down:  { start: CHAR_COLS + 18,  count: 6 },
 };
+
+// Room highlight color
+const HIGHLIGHT_COLOR = 0x4488cc;
+const HIGHLIGHT_ALPHA = 0.07;
+const HIGHLIGHT_BORDER_ALPHA = 0.25;
 
 
 export class StudioScene extends Phaser.Scene {
@@ -85,6 +96,13 @@ export class StudioScene extends Phaser.Scene {
         frameWidth: T, frameHeight: T * 2,
       });
     }
+
+    // Bubble icons (shown above agents in v2 scenes)
+    this.load.image('bubble_speech',     'assets/icons/bubble-speech.png');
+    this.load.image('bubble_thought',    'assets/icons/bubble-thought.png');
+    this.load.image('bubble_artifact',   'assets/icons/bubble-artifact.png');
+    this.load.image('bubble_reflection', 'assets/icons/bubble-reflection.png');
+    this.load.image('bubble_plan',       'assets/icons/bubble-plan.png');
   }
 
   create() {
@@ -114,6 +132,10 @@ export class StudioScene extends Phaser.Scene {
       const layer = map.createLayer(name, allTilesets);
       if (layer) layer.setDepth(depth);
     }
+
+    // --- Room highlight (between floor and furniture) ---
+    this.roomHighlight = this.add.graphics();
+    this.roomHighlight.setDepth(-8);
 
     // --- Zone labels (HTML overlay — always sharp, behind characters) ---
     const overlay = document.getElementById('zone-overlay');
@@ -145,7 +167,7 @@ export class StudioScene extends Phaser.Scene {
         }));
       });
 
-      this.agentSprites[agent.key] = { sprite, agent };
+      this.agentSprites[agent.key] = { sprite, agent, bubble: null };
     }
 
     // --- Camera ---
@@ -157,15 +179,6 @@ export class StudioScene extends Phaser.Scene {
     cam.setZoom(this.fitZoom);
     cam.centerOn((MAP_W * T) / 2, (MAP_H * T) / 2);
 
-    this.input.on('wheel', (_p, _go, _dx, dy) => {
-      cam.setZoom(Phaser.Math.Clamp(cam.zoom - dy * 0.001, this.fitZoom * 0.5, 3));
-    });
-    this.input.on('pointermove', (p) => {
-      if (p.isDown && p.button === 0) {
-        cam.scrollX -= (p.x - p.prevPosition.x) / cam.zoom;
-        cam.scrollY -= (p.y - p.prevPosition.y) / cam.zoom;
-      }
-    });
 
     // --- Listen for scene changes from sidebar ---
     window.addEventListener('viewer:scene-change', (e) => {
@@ -182,12 +195,18 @@ export class StudioScene extends Phaser.Scene {
     }
   }
 
-  /** Move agents to scene positions with tweens, dim non-participants. */
+  /** Move agents to scene positions with walk animations, dim non-participants. */
   loadScene(dayIndex, sceneIndex) {
     const data = window.__simData;
     if (!data) return;
     const scene = data.days[dayIndex]?.scenes[sceneIndex];
     if (!scene) return;
+
+    // Update room highlight
+    this.updateRoomHighlight(scene.active_room);
+
+    // Clear existing bubbles
+    this.clearBubbles();
 
     for (const [key, { sprite, agent }] of Object.entries(this.agentSprites)) {
       const pos = scene.positions[key];
@@ -197,20 +216,112 @@ export class StudioScene extends Phaser.Scene {
       const targetY = pos.y * T + T / 2;
       const targetAlpha = pos.state === 'active' ? 1.0 : 0.3;
 
-      // Tween position
+      // Determine movement direction
+      const dx = targetX - sprite.x;
+      const dy = targetY - sprite.y;
+      const absDx = Math.abs(dx);
+      const absDy = Math.abs(dy);
+      const isMoving = absDx > T / 2 || absDy > T / 2;
+
+      let walkDir = 'down';
+      if (absDx > absDy) {
+        walkDir = dx > 0 ? 'right' : 'left';
+      } else if (absDy > 0) {
+        walkDir = dy > 0 ? 'down' : 'up';
+      }
+
+      const spriteKey = agent.sprite;
+
+      // Play walk animation if moving a meaningful distance
+      if (isMoving) {
+        sprite.play(`${spriteKey}_walk_${walkDir}`);
+      }
+
       this.tweens.add({
         targets: sprite,
         x: targetX,
         y: targetY,
         alpha: targetAlpha,
-        duration: 500,
+        duration: isMoving ? 800 : 300,
         ease: 'Power2',
         onUpdate: () => {
-          // Keep depth sorted by Y position during movement
           sprite.setDepth(sprite.y);
+        },
+        onComplete: () => {
+          sprite.play(`${spriteKey}_idle_${walkDir}`);
+          // Show bubble icon after agent settles (v2 scenes)
+          if (pos.state === 'active') {
+            this.showBubble(key, scene, sprite);
+          }
         },
       });
     }
+  }
+
+  /** Determine and show the appropriate bubble icon above an agent. */
+  showBubble(agentKey, scene, sprite) {
+    // Pick bubble type based on v2 fields (priority: feedback > dialogue > thoughts > artifacts)
+    let bubbleKey = null;
+    if (scene.feedback?.some(f => f.from === agentKey || f.to === agentKey)) {
+      bubbleKey = 'bubble_speech';
+    } else if (scene.dialogue?.some(d => d.who === agentKey)) {
+      bubbleKey = 'bubble_speech';
+    } else if (scene.thoughts?.some(t => t.who === agentKey)) {
+      bubbleKey = 'bubble_thought';
+    } else if (scene.artifacts?.length > 0 && scene.participants?.includes(agentKey)) {
+      bubbleKey = 'bubble_artifact';
+    }
+
+    if (!bubbleKey || !this.textures.exists(bubbleKey)) return;
+
+    const bubble = this.add.image(sprite.x, sprite.y - T * 1.5, bubbleKey)
+      .setScale(0.5)
+      .setAlpha(0)
+      .setDepth(9999);
+
+    // Float animation
+    this.tweens.add({
+      targets: bubble,
+      alpha: 0.9,
+      y: bubble.y - 4,
+      duration: 400,
+      ease: 'Power2',
+      yoyo: true,
+      repeat: -1,
+      hold: 2000,
+    });
+
+    this.agentSprites[agentKey].bubble = bubble;
+  }
+
+  /** Remove all bubble sprites. */
+  clearBubbles() {
+    for (const entry of Object.values(this.agentSprites)) {
+      if (entry.bubble) {
+        entry.bubble.destroy();
+        entry.bubble = null;
+      }
+    }
+  }
+
+  /** Draw highlight rectangle on the active room. */
+  updateRoomHighlight(roomKey) {
+    this.roomHighlight.clear();
+    if (!roomKey || !ROOMS[roomKey]) return;
+
+    const r = ROOMS[roomKey];
+    const x = r.x1 * T;
+    const y = r.y1 * T;
+    const w = (r.x2 - r.x1 + 1) * T;
+    const h = (r.y2 - r.y1 + 1) * T;
+
+    // Semi-transparent fill
+    this.roomHighlight.fillStyle(HIGHLIGHT_COLOR, HIGHLIGHT_ALPHA);
+    this.roomHighlight.fillRect(x, y, w, h);
+
+    // Glow border
+    this.roomHighlight.lineStyle(2, HIGHLIGHT_COLOR, HIGHLIGHT_BORDER_ALPHA);
+    this.roomHighlight.strokeRect(x, y, w, h);
   }
 
   update() {

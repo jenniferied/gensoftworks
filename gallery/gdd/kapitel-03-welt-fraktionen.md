@@ -1,20 +1,4 @@
----
-agents: [emre, nami]
-day: 3
-task: "GDD Kapitel 3 — Welt & Fraktionen (Sync-Session Besprechungsraum)"
-memories_referenced: [emre-022, emre-025, emre-026, emre-027, emre-028, emre-030, nami-021, nami-024, nami-027, nami-028]
-feedback_received: [cd-day3-morning]
-status: draft
----
-
-# RELICS — Game Design Document
 # Kapitel 3: Welt & Fraktionen
-
-> *Autoren: Emre Yilmaz (Worldbuilder), Nami Okafor (Narrative Design)*
-> *Version: v1.0 — Tag 3 Vormittag*
-> *Status: GDD-Entwurf, zur Review durch Darius freigegeben*
-
----
 
 ## 3.1 Die Insel
 
@@ -103,195 +87,95 @@ Es gibt **fünf Fraktionen**, plus einen Nicht-Status (die Zerbrochenen) als Aus
 
 ### I. DAS HÖHLENVOLK — *"Alles hat seinen Preis."*
 
-**Alternativname**: Die Fahrenden, die Tunnelhändler, *Marktkin* (Selbstbezeichnung)
+**Rasse**: Tiermenschen — humanoid mit tierischen Merkmalen (Fell, Ohren, Nachtsicht). Varianten: fuchsartig, dachsartig, fledermausartig.
 
-**Rasse**: Tiermenschen — humanoid mit tierischen Merkmalen (Fell, Ohren, Nachtsicht, Geruchssinn). Keine einheitliche Tierart; die Varianz ist groß (fuchsartig, dachsartig, fledermausartig). Leicht alien, aber nicht monströs.
-
-**Weltsicht**: Die Welt ist ein Marktplatz. Alles — Erz, Information, Loyalität, Stille — hat einen Preis. Wert ist nicht inhärent, Wert wird verhandelt. Wer den Preis kennt, hat Macht. Wer ihn vergisst, ist tot.
+**Weltsicht**: Die Welt ist ein Marktplatz. Alles hat einen Preis. Wert wird verhandelt, nicht zugewiesen.
 
 **Zone**: Die Unterwelt (Zone 5), mit Knotenpunkten unter jeder Oberflächenzone.
 
-**Architektur-Signatur**:
-- **Material**: Ausgehöhlter Kalkstein, Pilzholz (gehärtete Pilzstrukturen), gewebte Wurzelfasern
-- **Form**: Organisch-asymmetrisch. Keine rechten Winkel. Tunnel optimiert auf Flucht und Durchfluss, nicht auf Repräsentation. Die Form folgt dem Weg, nicht dem Raum
-- **Kennzeichen**: Unterirdische Basare mit Biolumineszenz-Beleuchtung. Ware hängt von der Decke. Wände sind Lagerfläche. Jeder Basar hat mindestens drei Fluchttunnel. Kein Eingang ist offensichtlich
-- **Vera-Notiz**: Seidenstraßen-Ästhetik unter der Erde. Schmuck statt Rüstung. Stoffbahnen in den Tunneln als Wegmarkierung. Nomaden-Eleganz, nicht Höhlenmensch
+**Identität**: Distribution. Das Höhlenvolk produziert fast nichts — es BEWEGT alles. Erz, Kräuter, Information. Währung ist Vertrauen und Schulden. Monopol: Tunnelnetz-Wissen. Karawanen-Clans statt Dörfer. Seidenstraßen-Ästhetik unter der Erde.
 
-**Wirtschaft**:
-- **Funktion**: Distribution. Das Höhlenvolk produziert fast nichts — es BEWEGT alles. Erz vom Vulkan zur Küste. Kräuter vom Hinterland zum Innenvolk. Information überallhin
-- **Währung**: Vertrauen und Schulden. Physisches Geld existiert (Festungsprägung), aber das Höhlenvolk bevorzugt Gegenleistungen. "Ich schulde dir" ist wertvoller als Gold
-- **Monopol**: Tunnelnetz-Wissen. Kein Außenstehender kennt den vollständigen Weg. Das ist ihre Lebensversicherung
-- **Schmuggel**: Die Grenze zwischen Handel und Schmuggel ist fließend. Das Höhlenvolk sieht darin keinen moralischen Unterschied — nur einen preislichen
+**Konfliktlinie**: Kontrolle vs. Freiheit. Die Festung will regulieren, das Höhlenvolk will handeln. Handel/Schmuggel-Grenze ist fließend.
 
-**Kultur**:
-- **Sozialstruktur**: Karawanen-Clans, nicht Dörfer. Ein Clan = eine Handelsroute. Status kommt durch das Netzwerk, nicht durch Besitz
-- **Geburtsritual**: Neugeborene bekommen keinen festen Namen. Der Name kommt mit dem ersten abgeschlossenen Geschäft
-- **Totenkultur**: Verstorbene werden an den Tunnel-Kreuzungen begraben. Ihre Knochen werden zu Wegmarkern — die Toten zeigen den Weg
-- **Tabu**: Eine Schuld nicht begleichen. Schlimmer als Mord
-- **Sprache**: Sprichwort-reich, indirekt, metaphorisch. "Man sagt in meiner Karawane..." Humor als Verhandlungstaktik. Leises Sprechen — in Tunneln trägt der Schall weit
+**Spieler-Relevanz**: Zugang zu seltenen Waren, Schwarzmarkt, Informationsnetzwerk. Tauschhandel und Gefälligkeiten statt Gold. Langfristiger Handel verbessert Angebote.
 
-**Beziehung zur Festung**: Ambivalent. Die Festung ist der größte Markt der Insel — gutes Geschäft. Aber die Festung will Kontrolle, und das Höhlenvolk hasst Kontrolle. Sie handeln dort, aber sie wohnen dort nicht. Die Festungswache toleriert sie, weil sie unverzichtbar sind, und misstraut ihnen, weil sie unkontrollierbar sind.
-
-**Germanische Mythologie**: Die Zwerge der Edda — Handwerker und Trickster, unterirdisch, reich, unheimlich. Aber dekonstruiert: Keine Schmiede, sondern Händler. Nicht die, die machen, sondern die, die bewegen. Andvari mit seinem Gold, Brokk mit seinen Deals — die Edda-Zwerge waren immer auch Geschäftsleute.
+**Mythologische Wurzel**: Edda-Zwerge — dekonstruiert als Händler statt Schmiede.
 
 ---
 
 ### II. DAS KÜSTENVOLK — *"Die Welt wartet auf Deutung."*
 
-**Alternativname**: Die Deuter, die Chronisten, *Strandgeborne* (Selbstbezeichnung)
+**Rasse**: Elfisch-inspiriert — hochgewachsen, blass, langlebig (150+ Jahre). Lichtempfindliche Augen. Akademisch, leicht entrückt.
 
-**Rasse**: Elfisch-inspiriert — hochgewachsen, blass, langlebig (nicht unsterblich, aber 150+ Jahre möglich). Dünnes Haar, lichtempfindliche Augen (deshalb der Nebel der Küste als Lebensraum). Kein Tolkien-Adel — eher: abgenutzt, akademisch, leicht entrückt.
+**Weltsicht**: Die Welt ist ein Text. Jedes Relikt, jede Gesteinsschicht ist ein Zeichen. Die Vergangenheit ist realer als die Gegenwart.
 
-**Weltsicht**: Die Welt ist ein Text, der gelesen werden will. Jedes Relikt, jede Ruine, jede Gesteinsschicht ist ein Zeichen. Die Vergangenheit ist realer als die Gegenwart — weil die Gegenwart nur eine flüchtige Interpretation der Vergangenheit ist.
+**Zone**: Die Küste (Zone 1) — Häfen, Leuchtturm-Akademien, Ruinen.
 
-**Zone**: Die Küste (Zone 1), konzentriert um Häfen, Leuchtturm-Akademien und Ruinen.
+**Identität**: Seehandel und Wissensmonopol. Kartographie, Übersetzung, Archivierung. Akademien als Machtbasis. Vertikale Flickwerk-Architektur — jede Generation baut eine Etage drauf. Gaudí trifft Fischerdorf.
 
-**Architektur-Signatur**:
-- **Material**: Treibholz, Seetang-Beton (ein Gemisch aus Seetang, Kalk und Muschelsplitt — erstaunlich haltbar), Basalt
-- **Form**: Vertikal, schmal, Flickwerk. Gebäude wachsen nach oben, nicht in die Breite. Jede Generation baut eine Etage drauf, in leicht anderem Stil. Man SIEHT die Geschichte des Gebäudes an seiner Fassade
-- **Kennzeichen**: Bibliotheken in Leuchtturm-Ruinen. Chronik-Tafeln an jeder Hauswand (wer hier wohnte, wann, warum). Fernrohre auf jedem Dach — das Küstenvolk schaut nach draußen, immer
-- **Vera-Notiz**: Gaudí trifft Fischerdorf. Organisch gewachsen, asymmetrisch, nie fertig. Farbpalette: Grau, Meeresgrün, verblasstes Blau. Kein Prunk, aber eine stille Schönheit im Verfall
+**Konfliktlinie**: Vergangenheit vs. Fortschritt (gegen Siedlervolk). Produzieren keine Nahrung — abhängig vom Hinterland.
 
-**Wirtschaft**:
-- **Funktion**: Seehandel und Wissensmonopol. Jedes Schiff von und zur Insel legt an ihren Häfen an. Zölle finanzieren die Akademien
-- **Export**: Deutungen. Das klingt abstrakt, ist es aber nicht — das Küstenvolk kartographiert, übersetzt, archiviert. Wer eine Ruine datieren will, braucht einen Küstendeuter. Wer ein Relikt identifizieren will, ebenso
-- **Import**: Alles, was die Außenwelt hat und die Insel nicht — Nachrichten, fremde Bücher, seltene Materialien
-- **Schwäche**: Produzieren fast keine Nahrung. Abhängig vom Hinterland und vom Höhlenvolk-Netzwerk
+**Spieler-Relevanz**: Lore-Zugang, Relikt-Identifikation, Seehandel. Wissen als Währung. Drei Schlüssel-NPCs (Nornen-Echo) führen in die Weltgeschichte ein — und widersprechen sich.
 
-**Kultur**:
-- **Sozialstruktur**: Akademien als Machtbasis. Jede Hafenstadt hat eine Akademie; die Akademie-Leitung ist de facto die Stadtregierung
-- **Geburtsritual**: Neugeborene werden mit der aktuellen Gezeitenposition registriert. Nicht Datum, nicht Uhrzeit — Gezeitenstand. Die See misst die Zeit, nicht die Sonne
-- **Totenkultur**: Seebestattung. Die Toten gehören dem Wasser, nicht dem Land
-- **Tabu**: Ein Dokument fälschen. Schlimmer noch: ein Dokument vernichten
-- **Sprache**: Präzise, leicht archaisch, zitat-schwer. "In der Vierten Chronik steht..." Rhetorische Fragen als Denkwerkzeug. Lange Sätze, Nebensätze, die sich selbst kommentieren
-
-**Beziehung zur Festung**: Distanziert-kooperativ. Das Küstenvolk sieht die Festung als interessantes Studienobjekt — wer hat sie gebaut? warum? welche Schichten? — aber nicht als politische Heimat. Sie zahlen Tribut, aber sie fühlen sich nicht zugehörig. Ihre wahre Heimat ist der Horizont.
-
-**Germanische Mythologie**: Die Nornen, die am Brunnen Urds sitzen und das Schicksal einritzen. Das Küstenvolk liest, was geschrieben wurde — aber wer hat geschrieben? Die Runen-Tradition der Edda: Odin opfert sein Auge für Wissen. Das Küstenvolk opfert Gegenwart für Vergangenheit. Der Preis des Wissens.
+**Mythologische Wurzel**: Die Nornen am Brunnen Urds. Odin opfert sein Auge für Wissen.
 
 ---
 
 ### III. DAS SIEDLERVOLK — *"Die Welt gehört dem, der sie nimmt."*
 
-**Alternativname**: Die Nehmer, die Gründer, *Festungskinder* (Selbstbezeichnung)
+**Rasse**: Menschen. Keine übernatürlichen Merkmale. Ethnisch vielfältig — verbunden durch Ideologie, nicht Blut.
 
-**Rasse**: Menschen. Keine übernatürlichen Merkmale. Vielfältig in Erscheinung (verschiedene Ethnien — die Siedler kamen über Generationen von überall her). Was sie verbindet, ist nicht Blut, sondern Ideologie.
+**Weltsicht**: Die Welt ist Ressource. Fortschritt legitimiert sich selbst. Stillstand ist Rückschritt.
 
-**Weltsicht**: Die Welt ist Ressource. Was da ist, darf genutzt werden — muss genutzt werden. Fortschritt legitimiert sich selbst. Stillstand ist Rückschritt. Die Vergangenheit ist Material, nicht Heiligtum.
+**Zone**: Die Festung und das Hinterland (Zonen 3 und 4). Größte territoriale Ausdehnung.
 
-**Zone**: Die Festung und das Hinterland (Zonen 3 und 4). Die größte territoriale Ausdehnung aller Fraktionen.
+**Identität**: Landwirtschaft, Handwerk, Verwaltung. Größte Bevölkerung. Gilden-Oligarchie. Blockhaft-rechtwinklige Architektur — Rothenburg ob der Tauber, funktional statt pittoresk. Beschriften die Welt: Straßennamen, Verordnungen, Preislisten.
 
-**Architektur-Signatur**:
-- **Material**: Stein (gebrochen, nicht gewachsen), Holz, Ziegel. Später: Knochenmetall-Legierungen aus Vulkan-Importen
-- **Form**: Blockhaft, rechtwinklig, symmetrisch. Mauern, Türme, Straßenraster. Funktion vor Form. Jedes Gebäude sagt: "Hier ist jemand, der bleibt"
-- **Kennzeichen**: Stadtmauern (auch um Dörfer), gepflasterte Straßen, Markthallen, Kasernen. Schilder an jeder Ecke — Straßennamen, Verordnungen, Preislisten. Die Siedler beschriften die Welt
-- **Vera-Notiz**: Hochmittelalterlich-clean. Rothenburg ob der Tauber, aber funktional statt pittoresk. Farbpalette: Ocker, Steingrau, Fahnenrot. Sauber — verdächtig sauber
+**Konfliktlinie**: Anspruch auf Führung durch Besatzung der Festung (die sie nicht gebaut haben). Abhängig von Rohstoff-Importen. Meritokratie als Ideologie, Nepotismus als Praxis.
 
-**Wirtschaft**:
-- **Funktion**: Landwirtschaft, Handwerk, Verwaltung. Die Siedler produzieren Nahrung, verarbeiten Rohstoffe, organisieren Märkte
-- **Stärke**: Selbstversorgung und Bevölkerungsgröße. Es gibt schlicht mehr Siedler als alle anderen zusammen
-- **Schwäche**: Brauchen Rohstoffe von außerhalb — Erz vom Vulkan, Wissen von der Küste, Biotech-Produkte vom Innenvolk. Ohne Handelspartner stagnieren sie
-- **Machtmittel**: Die Festung. Wer die Festung kontrolliert, kontrolliert den zentralen Markt, die Gerichtsbarkeit und die Straßen des Hinterlandes
+**Spieler-Relevanz**: Dominante politische Macht, Questgeber-Hub, regulierter Markt. Vertragsbasierte Kultur — Vertragsbruch ist das größte Tabu.
 
-**Kultur**:
-- **Sozialstruktur**: Gilden und Stadträte. Kein König, kein Adel — aber eine de-facto-Oligarchie der mächtigsten Gildenmeister. Meritokratie als Ideologie, Nepotismus als Praxis
-- **Geburtsritual**: Registrierung im Stadtbuch. Name, Datum, Eltern, Gilde-Zugehörigkeit des Vaters/der Mutter. Existenz beginnt mit Bürokratie
-- **Totenkultur**: Bestattung in Familiengräbern innerhalb der Stadtmauern. Land ist wertvoll — Grabplätze sind Statussymbole. Wer kein Grab leisten kann, kommt auf den Ascheacker vor der Mauer
-- **Tabu**: Vertragsbruch. Die Siedlerkultur basiert auf schriftlichen Vereinbarungen. Mündliche Versprechen zählen nicht
-- **Sprache**: Direkt, sachlich, bürokratisch. Dekrete statt Geschichten. "Laut Stadtordnung §14..." Nicht humorlos, aber ihr Humor ist trocken und auf Effizienz getrimmt. Keine Metaphern — Metaphern verschwenden Zeit
-
-**Beziehung zur Festung**: DIE Festung IST das Siedlervolk — oder das behaupten sie. Sie haben die Festung nicht gebaut (niemand weiß, wer das tat), aber sie haben sie besetzt, ausgebaut und zum Zentrum der Insel gemacht. Die Festung legitimiert ihren Anspruch auf Führung.
-
-**Germanische Mythologie**: Die Asen — Götter der Ordnung, des Gesetzes, der Zivilisation. Thor mit seinem Hammer ist ein Baumeister so viel wie ein Krieger. Asgards Mauern, von einem Riesen gebaut — die Siedler bauen auf Fundamenten, die sie nicht verstehen, und nennen sie trotzdem ihr Eigen. Odin als Allvater: der Anspruch, über alle zu herrschen, weil man sich als Erster hingesetzt hat.
+**Mythologische Wurzel**: Die Asen — Götter der Ordnung. Bauen auf Fundamenten, die sie nicht verstehen.
 
 ---
 
 ### IV. DAS INNENVOLK — *"Der Körper ist die letzte Grenze."*
 
-**Alternativname**: Die Destillateure, die Körperkundigen, *Nervengeher* (Selbstbezeichnung)
+**Rasse**: Rassenübergreifend. Keine biologische Gruppe, sondern eine ideologische. Verbunden durch Praxis: Selbstexperiment.
 
-> **Design-Entscheidung (Emre + Nami, Tag 3)**:
-> Emres "Destillateure" und Namis "Innenvolk" sind **dieselbe Fraktion**, betrachtet aus zwei Winkeln. Emre beschreibt die ökologische Nische (Biotech-Produktion, Substanzen, Gewächshäuser), Nami die philosophische Position (der Körper als Forschungsgegenstand, Nervensystem-Leveling als deren Technologie). Das Ergebnis: **Innenvolk** als Fraktionsname, **Destillateure** als Berufsbezeichnung innerhalb der Fraktion — so wie "Schmiede" kein Volksname ist, aber jeden beschreibt der in einer Esse arbeitet.
+**Weltsicht**: Die Wahrheit liegt im Körper, nicht in der Welt. Der Körper erinnert sich an Dinge, die der Geist vergessen hat.
 
-**Rasse**: Rassenübergreifend. Jede Rasse hat Innenvolk-Mitglieder — das ist keine biologische Gruppe, sondern eine ideologische. Was sie verbindet, ist die Praxis: Selbstexperiment.
+**Zone**: Kein festes Territorium — loses Netzwerk über alle Zonen. Schwerpunkte: Vulkanland (Rohstoffe), Unterwelt (Labore), Festung (Absatzmarkt).
 
-**Weltsicht**: Die Wahrheit liegt nicht in der Welt — sie liegt im Körper. Die Insel, die Ruinen, die Relikte — alles Äußerlichkeiten. Was zählt, ist das Nervensystem, das Blut, die Chemie. Der Körper erinnert sich an Dinge, die der Geist vergessen hat. Wer sich selbst erforscht, erforscht die Grundlagen der Welt.
+**Identität**: Produktion von Biotech-Substanzen: Verstärker (*Sporen*), Gifte (*Tinkturen*), Drogen (*Tiefstoffe*), Heilmittel (*Balsame*). Meister-Schüler-Struktur. Initiation durch Selbstversuch. Giger trifft mittelalterliche Apotheke. "Destillateure" ist die Berufsbezeichnung innerhalb der Fraktion.
 
-**Zone**: Kein festes Territorium — ein **loses Netzwerk**, verteilt über alle Zonen. Schwerpunkte: Vulkanland (Rohstoffe für Destillation), Unterwelt (verborgene Labore), Festung (Absatzmärkte). Überall dort, wo man ungestört arbeiten kann.
+**Konfliktlinie**: Parasitär-symbiotisch mit der Festung — offiziell verboten, inoffiziell Hauptkunde. Labore tarnen sich als "Apotheken."
 
-**Architektur-Signatur**:
-- **Material**: Knochen, Haut (tierisch, gegerbt), Chitin, Keratin, Biolumineszenz-Pilze als Lichtquelle. Organische Materialien, die atmen und riechen
-- **Form**: Gewächshäuser aus Rippenbögen. Destillationsapparate, die aussehen wie Organe. Labore, die aussehen wie das Innere eines Tieres. Nichts ist rechtwinklig; alles ist feucht
-- **Kennzeichen**: Geruch. Man riecht ein Innenvolk-Labor bevor man es sieht — Schwefel, Kräuter, etwas Süßlich-Fauliges. Schläuche statt Rohre. Membranen statt Türen
-- **Vera-Notiz**: Giger trifft mittelalterliche Apotheke. Farbpalette: Bernstein, Fleischrot, Knochengelb, Violett (Biolumineszenz). Schön auf eine verstörende Weise. Fashion: High Fashion Mittelalter — Innenvolk-Mitglieder kleiden sich exzessiv, weil Kleidung auch Experiment ist (Haut-kontakt-Stoffe, imprägnierte Gewebe)
+**Spieler-Relevanz**: Quelle des Nervensystem-Levelings. Substanzen als mächtiges aber riskantes Werkzeug. Sucht als Gameplay-Konsequenz. Zugang zu verstecktem Wissen.
 
-**Wirtschaft**:
-- **Funktion**: Produktion von Biotech-Substanzen. Alles, was der Körper braucht oder fürchtet, stellt das Innenvolk her
-- **Produkte**:
-  - **Verstärker** (*Sporen*): Temporäre Leistungssteigerung — Ausdauer, Reflexe, Nachtsicht. Legaler Markt an der Festung
-  - **Gifte** (*Tinkturen*): Waffen, Fallen, Assassinen-Werkzeug. Illegaler Markt über das Höhlenvolk
-  - **Drogen** (*Tiefstoffe*): Bewusstseinserweiternde Substanzen. Manche ermöglichen Zugang zu Nervensystem-Schichten, die sonst verschlossen sind. Suchtgefahr. Rechtliche Grauzone
-  - **Heilmittel** (*Balsame*): Medizin. Die beste auf der Insel. Teuer
-- **Monopol**: Niemand sonst versteht die biochemischen Prozesse. Rezepturen werden mündlich weitergegeben — nichts Schriftliches (zum Ärger des Küstenvolks)
-- **Abhängigkeit**: Brauchen Rohstoffe aus dem Vulkanland (Schwefel, Mineralien, thermophile Pilze) und aus der Unterwelt (seltene Pilzarten, Höhlenwasser)
-
-**Kultur**:
-- **Sozialstruktur**: Meister-Schüler-Beziehungen, keine formale Hierarchie. Ein Destillateur wird nicht gewählt oder ernannt — er wird anerkannt, wenn seine Substanzen wirken
-- **Initiation**: Selbstversuch. Wer Innenvolk werden will, muss eine selbst hergestellte Substanz an sich selbst testen. Manche bestehen. Manche nicht
-- **Totenkultur**: Dissektion. Die Toten werden seziert, ihre Organe studiert, ihre Chemie analysiert. Der Tod ist die letzte Datenerhebung. Für Außenstehende barbarisch — für das Innenvolk der höchste Respekt
-- **Tabu**: Eine Substanz verkaufen, deren Wirkung man nicht am eigenen Körper getestet hat
-- **Sprache**: Klinisch, fasziniert, leicht verstörend. Beschreiben Schmerz als Daten. Reden über Gift wie Sommeliers über Wein. "Eine exquisite Dosis — spürst du, wie dein Sehnerv reagiert?" Fachvokabular, das anderen kryptisch erscheint
-
-**Beziehung zur Festung**: Parasitär-symbiotisch. Die Festung braucht Heilmittel und Verstärker (die Stadtwache kauft in Massen). Das Innenvolk braucht Absatzmärkte und Schutz vor Verfolgung. Man duldet sich. Man vertraut sich nicht. Die Innenvolk-Labore innerhalb der Festungsmauern sind offiziell "Apotheken." Alle wissen, dass das nicht stimmt.
-
-**Germanische Mythologie**: Die Völva — die Seherin, die durch Trance und Substanzen Zugang zu verborgenem Wissen findet. Odins Selbstopfer am Weltenbaum: neun Tage hängend, durchbohrt, zwischen Leben und Tod — um die Runen zu empfangen. Das Innenvolk hängt sich nicht an Bäume, aber das Prinzip ist dasselbe: Wissen durch Selbstverletzung. Auch Loki, der Gestaltwandler, der seinen eigenen Körper verändert. Der Körper als Werkzeug, nicht als Tempel.
+**Mythologische Wurzel**: Die Völva (Seherin durch Trance). Odins Selbstopfer am Weltenbaum — Wissen durch Selbstverletzung.
 
 ---
 
 ### V. DIE ZERBROCHENEN — *"Ich bin, was übrig bleibt."*
 
-**Alternativname**: Keine. Sie haben keinen Kollektivnamen, weil sie kein Kollektiv sind.
+**Rasse**: Alle. Keine Ethnie, keine Organisation. Ein **Zustand**. Exilierte, Überläufer, Entwurzelte, Fremde.
 
-**Rasse**: Alle. Die Zerbrochenen sind keine Ethnie, keine Kultur, keine Organisation. Sie sind ein **Zustand**.
+**Zone**: Überall und nirgends. Armenviertel *die Scherben* in der Festung (offiziell nicht existent).
 
-**Weltsicht**: Es gibt keine richtige Weltsicht. Oder: es gab eine, aber sie ist verloren. Die Zerbrochenen stehen zwischen allen Positionen — Exilierte, Überläufer, Entwurzelte, Fremde.
+**Identität**: Keine eigene Architektur, keine Sozialstruktur. Improvisierte Lager, umfunktionierte Ruinen. Manche hochqualifiziert, aber ohne Netzwerk wertlos.
 
-**Zone**: Überall und nirgends. Auf den Straßen, in verlassenen Häusern, an den Rändern jeder Siedlung. Am sichtbarsten: in der Festung, wo die Entwurzelten sich sammeln.
+**Spieler-Relevanz**: **Der Spielercharakter startet als Zerbrochener.** Ohne Zugehörigkeit, ohne Geschichte. Der gesamte Spielverlauf ist der Prozess, von Zerbrochen zu Zugehörig zu werden — oder bewusst zerbrochen zu bleiben. Companions kommen überproportional aus dieser Gruppe.
 
-**Architektur-Signatur**: Keine eigene. Zerbrochene besetzen, was andere verlassen haben. Improvisierte Lager, umfunktionierte Ruinen, gestapelte Kisten als Wände. Die Ästhetik der Notlösung.
-
-**Wirtschaft**: Gelegenheitsarbeit, Betteln, Kleinkriminalität. Manche Zerbrochene sind hochqualifiziert (ehemalige Akademiker des Küstenvolks, ehemalige Destillateure) — aber ohne Netzwerk ist Qualifikation wertlos.
-
-**Kultur**:
-- **Sozialstruktur**: Keine. Temporäre Zweckbündnisse, die zerbrechen, sobald der Zweck erfüllt ist
-- **Sprache**: Fragmentarisch, persönlich, ohne Formel. Keine Sprichwörter, keine Zitate, keine Rhetorik. "Ich war mal..." und "Ich weiß nicht mehr..."
-- **Companions**: Kommen überproportional aus dieser Gruppe. Die interessantesten Geschichten der Insel gehören denen, die alles verloren haben
-
-**Beziehung zur Festung**: Die Festung toleriert Zerbrochene als billige Arbeitskraft und ignoriert sie als politische Größe. Es gibt ein Armenviertel im Außenring — *die Scherben* — das offiziell nicht existiert.
-
-**Spieler-Relevanz**: **Der Spielercharakter startet als Zerbrochener.** Ein Fremder, der per Schiff auf die Insel kommt — ohne Zugehörigkeit, ohne Geschichte, ohne Weltsicht. Der gesamte Spielverlauf ist der Prozess, von Zerbrochen zu Zugehörig zu werden. Oder eben nicht. Manche Spieler werden bewusst zerbrochen bleiben.
-
-**Germanische Mythologie**: Die Riesen nach Ragnarök. Die Jötunn, die zwischen den Welten stehen. Aber auch: der Wanderer. Odin selbst, in Verkleidung, der sich unter die Sterblichen mischt. Der Spieler als Unbekannter, der mehr sein könnte als er scheint — oder auch nicht. Die Edda ist voller Figuren, die erst herausfinden müssen, wer sie sind.
+**Mythologische Wurzel**: Der Wanderer Odin in Verkleidung. Figuren, die erst herausfinden müssen, wer sie sind.
 
 ---
 
 ## 3.3 Die Festung
 
-### Was sie ist
+Zentraler Hub der Spielwelt. Plateau leicht südlich der Inselmitte, Sichtlinien zu allen Zonen. Groß genug für eine Stadt, alt genug für Geheimnisse.
 
-Die Festung ist der **zentrale Hub** der Spielwelt — der Ort, an den der Spieler immer zurückkehrt. Geographisch liegt sie auf einem Plateau leicht südlich der Inselmitte, mit Sichtlinien zu allen Zonen. Sie ist groß genug für eine Stadt, alt genug für Geheimnisse und umkämpft genug für Politik.
-
-### Wer hat sie gebaut?
-
-Niemand weiß es. Das ist kein Plothole — das ist der Plot.
-
-Die Festung ist älter als jede lebende Erinnerung, älter als das Küstenvolk-Archiv, älter als die tiefsten Tunnelmarkierungen des Höhlenvolks. Die Bauweise passt zu keiner bekannten Kultur auf der Insel:
-- Zu groß für die Siedler (die sie nur besetzt und ausgebaut haben)
-- Zu geometrisch für das Höhlenvolk (das organisch baut)
-- Zu alt für das Küstenvolk (das erst später kam)
-- Zu materiell für das Innenvolk (das kein Interesse an Stein hat)
-
-Die Festung ist aus einem Material gebaut, das nirgendwo sonst auf der Insel vorkommt — ein dunkler, fast schwarzer Stein, glatt wie Obsidian, aber deutlich härter. Das Küstenvolk nennt ihn *Grundstein*. Das Innenvolk hat ihn analysiert und Spuren organischer Verbindungen gefunden. Niemand spricht gerne darüber, was das bedeuten könnte.
+**Herkunft**: Unbekannt. Das ist kein Plothole — das ist der Plot. Älter als jedes Archiv, passt zu keiner bekannten Kultur. Gebaut aus *Grundstein* — schwarzer Stein, glatter als Obsidian, härter, mit Spuren organischer Verbindungen.
 
 ### Struktur
 
@@ -328,118 +212,35 @@ Die Festung wird regiert durch den **Rat der Gilden** — ein Gremium aus den Me
 
 ## 3.4 Biotech-Ökologie
 
-### Prinzip
+Keine Dampfmaschinen, keine Zahnräder. Technologie ist **biologisch** — gewachsen, destilliert, fermentiert. Das ist ein Designprinzip, das jede Textur, jedes Item, jede Werkbank betrifft.
 
-In RELICS gibt es keinen Steampunk, keine Dampfmaschinen, keine Zahnräder. Die Technologie der Insel ist **biologisch** — gewachsen, destilliert, fermentiert, extrahiert. Das ist kein Flavor; das ist ein Designprinzip, das jede Textur, jedes Item, jede Werkbank betrifft.
+**Produktionskette**: Schwellstellen (Vulkan) → Rohmaterial → Höhlenvolk-Distribution → Innenvolk-Labore → Vier Kategorien: Verstärker (Sporen), Gifte (Tinkturen), Drogen (Tiefstoffe), Heilmittel (Balsame).
 
-### Woher kommen die Substanzen?
+**Nervensystem-Leveling**: Im Worldbuilding verankert, nicht nur UI-Mechanik. Das Innenvolk hat entdeckt, dass der Körper "Schichten" hat, die durch Tiefstoffe sichtbar und trainierbar werden. Die Leveling-UI ist IN DER SPIELWELT eine Innenvolk-Technik.
 
-Die Insel hat eine einzigartige biochemische Grundlage. Der Vulkan im Nordosten produziert nicht nur Hitze und Mineralien, sondern auch **Schwellstellen** — Orte, an denen organisches Material aus der Tiefe an die Oberfläche tritt. Dieses Material ist alt. Sehr alt. Was genau es ist, darüber streiten sich die Fraktionen (natürlich).
-
-**Die Produktionskette**:
-
-```
-Schwellstellen (Vulkan, tief)
-    │
-    ▼
-Rohmaterial — Mineralien, thermophile Pilze, Schwellflüssigkeit
-    │
-    ├──→ Vulkansiedlungen: Erz-Verhüttung, Obsidian-Werkzeuge
-    │
-    ├──→ Höhlenvolk-Distribution: Transport in alle Zonen
-    │
-    ▼
-Innenvolk-Labore (verteilt)
-    │
-    ├──→ VERSTÄRKER (Sporen): Temporäre Buffs
-    │    Beispiel: "Wolfslunge" — +30% Ausdauer, 4h, leichte Übelkeit
-    │
-    ├──→ GIFTE (Tinkturen): Waffen-Coating, Fallen
-    │    Beispiel: "Stille Zunge" — Paralyse, 30 Sek., beschaffbar beim Höhlenvolk
-    │
-    ├──→ DROGEN (Tiefstoffe): Bewusstseinsveränderung, Nervensystem-Zugang
-    │    Beispiel: "Tiefblick" — zeigt das eigene Nervensystem (Leveling-UI!), 1h, Suchtrisiko
-    │
-    └──→ HEILMITTEL (Balsame): Wundheilung, Entgiftung, Regeneration
-         Beispiel: "Fleischwort" — heilt 50% HP über 30 Sek., teuer, schmeckt bitter
-```
-
-### Nervensystem-Leveling und Biotech
-
-Das **Nervensystem-Leveling** (siehe GDD Kapitel 5) ist nicht nur eine UI-Mechanik — es ist im Worldbuilding verankert:
-
-- Das Innenvolk hat entdeckt, dass der Körper "Schichten" hat, die normalerweise unzugänglich sind
-- Durch gezielte Substanzen (Tiefstoffe) können diese Schichten sichtbar und trainierbar gemacht werden
-- Was der Spieler als **Leveling-UI** sieht (halbtransparente Nervensystem-Sicht, drei Bahnen: Kardio, Muskel-Skelett, Lymph), ist IN DER SPIELWELT eine Innenvolk-Technik
-- NPCs anderer Fraktionen reagieren unterschiedlich darauf:
-  - Siedlervolk: "Nützlich. Was kostet es?"
-  - Küstenvolk: "Faszinierend. Was bedeutet es?"
-  - Höhlenvolk: "Tiefstoffe? Kann ich dir besorgen. Hat seinen Preis."
-  - Zerbrochene: "Ich habe das mal gemacht. Ich kann mich nicht erinnern warum."
-
-### Sucht und Risiko
-
-Biotech-Substanzen sind nicht kostenlos. Das Lymphsystem im Leveling-UI trackt die **Belastung**:
-
-| Belastungsstufe | Lymph-Zustand | Effekt |
-|---|---|---|
-| 0 — Sauber | Klar, ruhig | Keine Debuffs |
-| 1 — Angereichert | Leicht verfärbt | +5% Substanz-Wirkung, -5% Regeneration |
-| 2 — Belastet | Sichtbare Schwellung | Abhängigkeit beginnt: ohne Nachschub Debuffs |
-| 3 — Vergiftet | Dunkel, pulsierend | Permanente Stat-Reduktion ohne Innenvolk-Behandlung |
-| 4 — Zerbrochen | Schwarz, rissig | Fraktionswechsel erzwungen: Du wirst Zerbrochener |
-
-**Designprinzip**: Biotech ist mächtig, aber es hat Konsequenzen. Das ist kein Moralsystem — es ist Biologie. Der Körper erinnert sich an alles, was man ihm antut.
+**Sucht-Mechanik**: Lymphsystem trackt Belastung in 5 Stufen (Sauber → Zerbrochen). Stufe 4 erzwingt Fraktionswechsel zu den Zerbrochenen. Details in Kapitel 4.
 
 ---
 
 ## 3.5 Germanische Mythologie — Wie sie in der Welt lebt
 
-### Designprinzip
+Germanische Mythologie ist **kein Setting-Dressing**. Götter existieren nicht (oder es gibt keine Beweise). Mythen sind Erklärungsversuche — Low Fantasy, germanisch, dekonstruiert. Nie aufgelöst: Der Spieler findet Hinweise in beide Richtungen.
 
-Germanische Mythologie in RELICS ist **kein Setting-Dressing**. Die Götter existieren nicht — oder: es gibt keine Beweise dafür. Was existiert, sind die Geschichten, die die Inselbewohner sich erzählen. Mythen sind Erklärungsversuche für Dinge, die biologisch oder geologisch erklärbar WÄREN — wenn jemand die richtige Erklärung hätte. Niemand hat sie.
+**Fünf mythologische Schichten**:
+1. **Ymir**: Insel als Riesenkörper. Schwellstellen = Adern. Vulkan = letzter Atemzug. Hauptquest-Treiber.
+2. **Nornen**: Drei Schlüssel-NPCs an der Küste (Lesende, Spinnende, Schneidende). Widersprechen sich absichtlich.
+3. **Odin**: Spielercharakter als Wanderer-Echo. Nervensystem-Leveling als Selbstopfer-Parallele.
+4. **Ragnarök**: Biologische Eskalation als Ticking Clock — Schwellstellen werden aktiver, Festung zeigt Risse.
+5. **Loki**: Grenzüberschreitung als Prinzip. Innenvolk verkörpert dies am stärksten.
 
-Das ist **Low Fantasy, germanisch, dekonstruiert**: Die Mythologie wird ernst genommen als kulturelle Kraft, ohne dass sie buchstäblich wahr sein muss.
-
-### Mythologische Schichten in der Spielwelt
-
-**Schicht 1 — Ymir und die Schöpfung**
-- Die Insel selbst wird von manchen (besonders dem Küstenvolk) als Fragment eines Urwesens gedeutet — eines Riesen, aus dessen Körper die Welt entstand
-- Die Schwellstellen? "Ymirs Adern." Die Vulkanaktivität? "Ymirs letzter Atemzug." Das Grundstein-Material der Festung? "Ymirs Knochen."
-- Das Siedlervolk nennt das Aberglaube. Das Innenvolk findet es interessant, weil die biochemische Zusammensetzung der Schwellstellen tatsächlich organischen Ursprungs zu sein scheint
-- **Design**: Nie aufgelöst. Der Spieler findet Hinweise in beide Richtungen. Die Wahrheit bleibt offen
-
-**Schicht 2 — Die Drei Nornen und das Schicksal**
-- Das Küstenvolk verehrt drei Schwestern-Figuren — die Lesenden, die Spinnenden, die Schneidenden — die angeblich in der ältesten Ruine der Insel leben. Oder lebten. Oder nie existiert haben
-- Spielrelevant: Drei Schlüssel-NPCs an der Küste, die den Spieler in die Lore einführen. Sie widersprechen sich. Absichtlich
-- Die Nornen als Metapher für: Die Vergangenheit (was gelesen wird), die Gegenwart (was gesponnen wird) und die Zukunft (was abgeschnitten wird)
-
-**Schicht 3 — Odin als Wanderer**
-- Der Spielercharakter als Odin-Echo: Ein Fremder, der auf die Insel kommt, alles beobachtet, Wissen sammelt — und einen Preis dafür zahlt
-- Parallele zum Selbstopfer: Das Nervensystem-Leveling als Odins Aufhängung an Yggdrasil — Wissen durch Selbstverletzung
-- Der einäugige Wanderer als wiederkehrendes Motiv in NPC-Dialogen: "Ein Auge für die Wahrheit. Was gibst du?"
-
-**Schicht 4 — Ragnarök als Ticking Clock**
-- Ragnarök ist kein kosmisches Ereignis, sondern eine **biologische Eskalation**: Die Schwellstellen werden aktiver. Der Vulkan unruhiger. Etwas unter der Insel wacht auf — oder stirbt endgültig
-- Kein Weltuntergang durch Götterkrieg, sondern durch tektonisch-biochemische Kettenreaktion
-- Der Spieler erlebt die Anzeichen im Spielverlauf: Erst subtil (NPCs reden über seltsame Erdbeben), dann deutlich (Schwellstellen brechen in besiedelten Gebieten auf), dann drängend (die Festung selbst zeigt Risse im Grundstein)
-- **Die zentrale Frage der Hauptquest**: Kann Ragnarök aufgehalten werden? Soll es? Was, wenn das Ende der Insel auch ein Anfang ist?
-
-**Schicht 5 — Loki und die Grenzüberschreitung**
-- Loki ist kein Charakter, sondern ein **Prinzip**: Die Grenzüberschreitung, die Verwandlung, der Betrug, der auch Wahrheit ist
-- Das Innenvolk verkörpert Loki am stärksten — ihre Selbstexperimente sind Grenzüberschreitungen. Aber auch das Höhlenvolk (Trickster-Handel) und die Zerbrochenen (unfreiwillige Verwandlung)
-- Spieler, die sich dem Innenvolk nähern, begegnen Loki-Motiven: Veränderung, Verlust der Form, die Frage ob Identität an den Körper gebunden ist
-
-### Mythos vs. Realität — Tabelle für Level Designer
-
-| Mythologisches Motiv | In-World-Deutung (gläubig) | In-World-Deutung (rational) | Design-Einsatz |
+| Motiv | Gläubige Deutung | Rationale Deutung | Design-Einsatz |
 |---|---|---|---|
-| Ymir | Insel ist Riesenkörper | Geologische Formation | Environmental Storytelling, Schwellstellen-Design |
-| Nornen | Drei Schicksalsfrauen in der Ruine | Drei Akademikerinnen, die Geschichte kontrollieren | Quest-NPCs an der Küste |
-| Odin | Der einäugige Wanderer kehrt zurück | Fremder mit zu vielen Fragen | Spielercharakter-Echo |
-| Ragnarök | Die Welt endet im Feuer | Vulkanische Aktivität eskaliert | Hauptquest Ticking Clock |
-| Loki | Gott der Verwandlung lebt in uns | Biotech verändert den Körper | Innenvolk-Quests, Nervensystem-Leveling |
-| Midgardschlange | Etwas lebt unter der Insel | Tektonische Verwerfungen | Kern-Mysterium der Festung |
+| Ymir | Insel ist Riesenkörper | Geologische Formation | Environmental Storytelling |
+| Nornen | Schicksalsfrauen | Akademikerinnen | Quest-NPCs |
+| Odin | Wanderer kehrt zurück | Fremder mit Fragen | Spielercharakter-Echo |
+| Ragnarök | Welt endet im Feuer | Vulkan eskaliert | Hauptquest Ticking Clock |
+| Loki | Verwandlungsgott | Biotech verändert Körper | Innenvolk-Quests |
+| Midgardschlange | Etwas lebt unter der Insel | Tektonische Verwerfungen | Festungs-Mysterium |
 
 ---
 
@@ -475,16 +276,10 @@ HÖHLENVOLK ──Handel── SIEDLERVOLK
 
 ## Anhang: Vertical-Slice-Reduktion
 
-Für den Vertical Slice (Hauptquest + 2 Nebenquests in einer Region) wird **die Festung und ihr unmittelbares Umland** als Startregion vorgeschlagen:
+Für den Vertical Slice: **die Festung und ihr unmittelbares Umland** als Startregion.
 
-**Aktive Fraktionen im Slice**: Siedlervolk (dominant), Höhlenvolk (Händler-Karawane am Markt), Küstenvolk (Akademie-Außenstelle)
+**Aktive Fraktionen**: Siedlervolk (dominant), Höhlenvolk (Händler-Karawane), Küstenvolk (Akademie-Außenstelle)
 
-**Angedeutete Fraktionen**: Innenvolk (eine "Apotheke" im Mittleren Ring, ein NPC, ein Hinweis auf die Unterwelt), Zerbrochene (die Scherben als begehbares Armenviertel)
+**Angedeutete Fraktionen**: Innenvolk (eine "Apotheke", ein NPC), Zerbrochene (die Scherben als begehbares Armenviertel)
 
-**Hauptquest-Hook**: Der Spieler kommt als Fremder zur Festung. Der Kern ist verschlossen. Jemand will ihn öffnen. Jemand will ihn versiegelt lassen. Der Spieler muss entscheiden, wem er vertraut — und was er dafür aufgibt.
-
----
-
-*Dieses Kapitel wurde im Besprechungsraum erarbeitet, Tag 3 Vormittag, mit drei Tassen Tee (Emre) und zwei Flat Whites (Nami). Der Kompromiss Innenvolk/Destillateure wurde um 10:47 erreicht, nach 23 Minuten produktivem Streit. Die Festungs-Frage ("Wer hat gebaut?") ist absichtlich offen — wir haben beschlossen, dass sie es bleiben soll.*
-
-*— E. Yilmaz & N. Okafor*
+**Hauptquest-Hook**: Der Spieler kommt als Fremder zur Festung. Der Kern ist verschlossen. Jemand will ihn öffnen. Jemand will ihn versiegelt lassen.

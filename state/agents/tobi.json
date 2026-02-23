@@ -1,14 +1,9 @@
 {
-    "name": "Tobias Richter",
-    "position": "tech-corner",
-    "current_task": "GDD Kapitel 07 Technik geliefert. Pipeline-Spec mit Kamera, Material, VFX, Performance.",
-    "today_plan": [
-        "DONE: GDD Kapitel 07 — Technische Spezifikation",
-        "DONE: Performance-Budget definiert (RTX 4060, 60fps@1440p)",
-        "OFFEN: FP/TP Visibility-Maske Prototyp in UE5",
-        "OFFEN: Vera-Briefing für Anatomie-Concepts"
-    ],
-    "mood": "zufrieden-methodisch",
-    "importance_accumulator": 39,
+    "name": "Tobi Richter",
+    "position": "7c",
+    "current_task": null,
+    "today_plan": [],
+    "mood": "neutral",
+    "importance_accumulator": 0,
     "last_reflection": null
 }

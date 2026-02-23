@@ -1,16 +1,9 @@
 {
     "name": "Finn Bergmann",
-    "position": "produktionsbuero",
-    "current_task": "GDD-Sprint: 8/9 Kapitel geliefert. Zusammenbau heute Abend. Kapitel 02 morgen früh.",
-    "today_plan": [
-        "DONE: GDD Kapitel 00 — Vorwort & Inhaltsverzeichnis",
-        "DONE: GDD Kapitel 09 — Risiken, Entscheidungen & Timeline",
-        "DONE: Sprint koordiniert — 8/9 Kapitel eingegangen",
-        "OFFEN: GDD zusammenbauen (heute Abend)",
-        "OFFEN: Emre Kapitel 02 eintreiben (morgen früh)",
-        "OFFEN: Final Edit + CD-Übergabe (morgen)"
-    ],
-    "mood": "erleichtert-wachsam",
-    "importance_accumulator": 47,
-    "last_reflection": "finn-022"
+    "position": "7",
+    "current_task": null,
+    "today_plan": [],
+    "mood": "neutral",
+    "importance_accumulator": 0,
+    "last_reflection": null
 }

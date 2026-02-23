@@ -1,0 +1,843 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  10pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[Path=../../master-thesis/assets/fonts/,UprightFont=Lora-Variable.ttf,ItalicFont=Lora-Italic-Variable.ttf,BoldFont=Lora-Variable.ttf,BoldItalicFont=Lora-Italic-Variable.ttf,BoldFeatures={Weight=700},BoldItalicFeatures={Weight=700}]{Lora}
+  \setsansfont[Path=../../master-thesis/assets/fonts/,UprightFont=OpenSans-Variable.ttf,ItalicFont=OpenSans-Italic-Variable.ttf,BoldFont=OpenSans-Variable.ttf,BoldItalicFont=OpenSans-Italic-Variable.ttf,BoldFeatures={Weight=700}]{OpenSans}
+  \setmonofont[Path=../../master-thesis/assets/fonts/,UprightFont=JetBrainsMono-Variable.ttf,Scale=0.85]{JetBrainsMono}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% GenSoftworks Logbook — extra header for Pandoc default template
+% Included via --include-in-header
+
+% Heading font
+\newfontfamily\headingfont{SourceSerif4}[
+  Path = ../../master-thesis/assets/fonts/,
+  UprightFont = {SourceSerif4-Variable.ttf},
+  ItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFont = {SourceSerif4-Variable.ttf},
+  BoldItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+% Colors
+\definecolor{thoughttint}{HTML}{EDE8F0}
+\definecolor{reflecttint}{HTML}{E8F0ED}
+\definecolor{artifacttint}{HTML}{F0EDE8}
+\definecolor{scenelabel}{HTML}{666666}
+\definecolor{border}{HTML}{DDDDDD}
+\definecolor{lightgray}{HTML}{BBBBBB}
+
+% Agent sprite icons
+\newcommand{\agenticon}[1]{%
+  \raisebox{-4pt}{\includegraphics[height=16pt]{icons/#1.png}}\,%
+}
+
+% Bubble type icons
+\newcommand{\thoughtbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-thought.png}}\,%
+}
+\newcommand{\speechbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-speech.png}}\,%
+}
+\newcommand{\planbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-plan.png}}\,%
+}
+\newcommand{\reflectionbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-reflection.png}}\,%
+}
+\newcommand{\artifactbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-artifact.png}}\,%
+}
+
+% Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{gray}\thepage}
+\fancyhead[R]{\small\color{lightgray}\itshape GenSoftworks Logbuch}
+
+% Heading styles
+\usepackage{titlesec}
+\setcounter{secnumdepth}{0}
+
+\titleformat{\section}
+  {\headingfont\fontsize{28pt}{34pt}\selectfont\itshape}
+  {}{0em}{}
+\titlespacing*{\section}{0pt}{8mm}{4mm}
+
+\newcommand{\sectionbreak}{\clearpage}
+
+\titleformat{\subsection}
+  {\headingfont\fontsize{16pt}{20pt}\selectfont\itshape}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{6mm}{2mm}
+
+% Scene boxes
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newenvironment{scenemeta}{%
+  \vspace{1mm}{\small\color{scenelabel}\sffamily%
+}{%
+  \par}\vspace{2mm}%
+}
+
+\newtcolorbox{thought}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{thoughttint!80!black},
+  colback=thoughttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\itshape\small}
+
+\newtcolorbox{reflection}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{reflecttint!80!black},
+  colback=reflecttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\itshape\small}
+
+\newtcolorbox{artifact}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{artifacttint!80!black},
+  colback=artifacttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\small}
+
+% Creative Director directive — distinct dark box
+\newtcolorbox{directive}{enhanced, frame hidden,
+  borderline west={3pt}{0pt}{black!70},
+  colback=black!8,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=4mm, after skip=4mm, breakable,
+  fontupper=\small\sffamily}
+
+\newcommand{\scenedivider}{%
+  \vspace{4mm}%
+  \noindent\makebox[\linewidth]{\color{border}\rule{0.3\linewidth}{0.4pt}}%
+  \vspace{4mm}%
+}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={GenSoftworks --- Logbuch},
+  pdfauthor={GenSoftworks Studio Simulation},
+  pdflang={german},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{GenSoftworks --- Logbuch}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Tag 1}
+\author{GenSoftworks Studio Simulation}
+\date{2026}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\section{Tag 1 --- Montag}\label{tag-1-montag}
+
+\begin{directive}
+
+\textbf{Creative Director --- Auftrag}
+
+\emph{RELICS. Germanische Mythologie, Biotech-Mittelalter, Low Fantasy
+GoT-Level. KAMERA: Skyrim FP/TP zoombar. MONETARISIERUNG: AAA Premium
+69,99€, EA 29,99€, DLCs 29,99€. FUTURISTISCH = Biotech/Chemie, nicht
+Steampunk. CHARACTER LEVELING: Nervensystem-Sicht. TIERMENSCHEN =
+Händler nicht Handwerker. SUPER MITTELALTER. GDD STRAFFEN --- weniger
+verbose, keine Redundanzen. WBB Landscape-Format. Vera \$5 neue Concept
+Art.}
+
+\end{directive}
+
+\subsection{Szene 1 · Ankunft}\label{szene-1-ankunft}
+
+\begin{scenemeta}
+
+Morgen --- Lore Ecke\\
+\agenticon{emre} Emre Yilmaz
+
+\end{scenemeta}
+
+Emre Yilmaz kommt als einer der Ersten im neuen Studio an. Bezieht
+Zimmer 7a --- hängt osmanische und katalanische Karten auf, stellt das
+Morrowind-Artbook ins Regal, fächert die farbkodierten Notizbücher auf.
+Liest die CD-Nachricht am Bulletin Board: `Baut mir eine Welt.' Plant
+Kosmogonie-Grundriss (tote Titanen, Aschen-Ursprung), will Nami für
+Mythologie-Gespräch suchen.
+
+\begin{thought}
+
+\agenticon{emre}\thoughtbubble \textbf{Emre Yilmaz:} Erster Arbeitstag
+bei GenSoftworks. Studio riecht nach Farbe, Zimmer 7a bezogen, Karten
+aufgehängt, Morrowind-Artbook im Regal.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{emre}\thoughtbubble \textbf{Emre Yilmaz:} Creative
+Director-Nachricht am Bulletin Board --- `Baut mir eine Welt.' Drei
+Wörter, kein Briefing, kein Sprint. Eine Einladung.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{emre}\planbubble \textbf{Emre Yilmaz plant:} Heute
+Kosmogonie-Grundriss im schwarzen Notizbuch skizzieren --- tote Titanen,
+Aschen-Ursprung, erste Schöpfungsmythen. Dann Nami suchen für
+Mythologie-Gespräch.
+
+\end{thought}
+
+\scenedivider
+
+\subsection{Szene 2 · Ankunft}\label{szene-2-ankunft}
+
+\begin{scenemeta}
+
+Morgen --- Studio Weit\\
+\agenticon{finn}\agenticon{darius}\agenticon{vera}\agenticon{tobi}\agenticon{nami}\agenticon{leo}
+Finn Bergmann, Darius Engel, Vera Kowalski, Tobi Richter, Nami Okafor
+und Leo Fischer
+
+\end{scenemeta}
+
+Das volle Team trifft ein. Finn (08:25) schließt als Erster auf, brüht
+Chemex, hängt das Kanban-Board. Darius (08:45) stellt Lenas Foto und die
+Gothic-2-Hülle auf, schreibt `WAS IST DIE SPIELER-FANTASIE?' ans
+Whiteboard, plant Kickoff um 14 Uhr. Vera (09:00) baut das Cintiq auf,
+pinnt Referenzen (Night City, Control, Leyndell), will Lore-Fragmente
+von Emre. Tobi (09:00) beginnt sofort mit Monitor-Kalibrierung, plant
+UE5-Template und ACES-vs-AgX-Entscheidung. Nami (09:15) füllt die
+Billy-Regale --- Achebe zuerst --- klebt `Wer lebt hier? Warum? Seit
+wann?' ans Whiteboard. Leo (09:30) kommt als Letzte, fotografiert das
+Bulletin Board für Content, plant Community-Landscape-Scan.
+
+\begin{thought}
+
+\agenticon{finn}\thoughtbubble \textbf{Finn Bergmann:} Studio zum ersten
+Mal aufgeschlossen. Farbgeruch, leere Wände, kalter Februar. Es fühlt
+sich real an.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{finn}\planbubble \textbf{Finn Bergmann plant:} Standup um
+10:00 ansetzen --- Kennenlernen durch Arbeit, nicht durch
+Vorstellungsrunden. Danach Roadmap-Session mit Darius.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{darius}\thoughtbubble \textbf{Darius Engel:} Erster
+Arbeitstag im Studio. Zimmer 7d bezogen. Gothic-2-Hülle steht, Lena-Foto
+steht. Whiteboard-Frage gesetzt: Was ist die Spieler-Fantasie?
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{darius}\planbubble \textbf{Darius Engel plant:}
+Kickoff-Meeting um 14 Uhr angesetzt. Alle sieben, großer Tisch. Jeder
+zehn Minuten: Was für ein Spiel wollen wir bauen?
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{darius}\planbubble \textbf{Darius Engel plant:} Muss mit Finn
+die echte Runway klären --- nicht die Pitch-Version. Wie viele Monate
+haben wir wirklich?
+
+\end{thought}
+
+\begin{reflection}
+
+\agenticon{darius}\reflectionbubble \textbf{Darius Engel reflektiert:}
+Kleines Team, großes Ziel, kein Publisher. Wie Piranha Bytes in Bochum.
+Das ist die Chance --- die eine.
+
+\end{reflection}
+
+\begin{thought}
+
+\agenticon{vera}\planbubble \textbf{Vera Kowalski plant:} Erstes
+PureRef-Moodboard anlegen, sobald Lore-Input von Emre kommt.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{tobi}\planbubble \textbf{Tobi Richter plant:}
+Monitor-Kalibrierung heute als erste Priorität --- keine
+Farbentscheidungen ohne kalibrierte Displays.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{tobi}\planbubble \textbf{Tobi Richter plant:}
+UE5-Projekt-Template diese Woche aufsetzen: Nanite, Lumen,
+Ordnerstruktur, Naming Conventions, Source Control.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{tobi}\planbubble \textbf{Tobi Richter plant:}
+Color-Pipeline-Entscheidung vorbereiten: ACES vs.~AgX für Dark Fantasy.
+Entscheidung muss diese Woche fallen.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{nami}\thoughtbubble \textbf{Nami Okafor:} Erster Tag bei
+GenSoftworks. Bibliothek (7e) bezogen. Billy-Regale leer, Bücherkisten
+ausgepackt. Achebe steht zuerst im Regal.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{nami}\planbubble \textbf{Nami Okafor plant:} Muss Emre heute
+sprechen --- ohne seine Kosmologie kann ich keine Stimmen schreiben.
+Knochen zuerst, dann Fleisch.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{leo}\planbubble \textbf{Leo Fischer plant:}
+Community-Landscape-Scan für Dark Fantasy CRPGs durchführen --- Reddit,
+YouTube, Discord --- und Ergebnisse als Bericht für Darius aufbereiten.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{leo}\planbubble \textbf{Leo Fischer plant:} Mit Darius
+klären, ob Devlog-Content für LeoPlaysIndie möglich ist ---
+Entwicklungsprozess dokumentieren als Langzeit-Serie.
+
+\end{thought}
+
+\scenedivider
+
+\subsection{Szene 3 · Begegnung}\label{szene-3-begegnung}
+
+\begin{scenemeta}
+
+Morgen --- Lore Ecke\\
+\agenticon{emre}\agenticon{nami} Emre Yilmaz und Nami Okafor
+
+\end{scenemeta}
+
+Nami besucht Emre in der Lore-Ecke. Er zeigt ihr drei Seiten Kosmogonie:
+tote Titanen als Weltfundament, der Bruch, Aschen-Einöden, Knochentürme.
+Sie bringt Unreliable Narrators als Weltenbau-Prinzip ein ---
+verschiedene Völker, verschiedene Mythen. Ihre Kernfrage: Gibt es
+Titanenleugner? Atheisten in einer Welt, wo die Götter als Skelette im
+Boden liegen? Das kreative Fundament des Projekts entsteht in diesem
+Gespräch.
+
+\begin{thought}
+
+\agenticon{emre}\speechbubble \textbf{Emre Yilmaz erzählt:} Nami kam mit
+Flat White in die Lore-Ecke. Habe ihr die gesamte Kosmogonie-Skizze
+gezeigt --- Titanen, Bruch, Aschen-Einöden, Knochentürme, unzuverlässige
+Geschichtsschreibung. Kernfrage gestellt: Wer erinnert sich, dass es mal
+anders war? Wie prägt das Leben auf einem Kadaver die Psychologie einer
+Kultur?
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{emre}\thoughtbubble \textbf{Emre Yilmaz:} Nami schlug vor:
+Verschiedene Völker, verschiedene Mythen über denselben Ursprung.
+Unreliable Narrators als Weltenbau-Prinzip. Die Bäuerin sagt `Das ist
+Erde', der Priester sagt `Das ist Götterhaut'. Beide haben recht.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{emre}\thoughtbubble \textbf{Emre Yilmaz:} Namis Frage: Gibt
+es eine Kultur, die sich WEIGERT an die Titanen zu glauben? Atheisten in
+einer Welt, wo die Götter als Skelette im Boden liegen. --- Das setzt
+das ganze System unter Spannung.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{nami}\speechbubble \textbf{Nami Okafor erzählt:} Erstes
+Arbeitsgespräch mit Emre in der Lore-Ecke. Sein Kosmogonie-Grundriss:
+tote Titanen als Weltfundament, Asche als Überrest, Knochentürme. Habe
+Vielstimmigkeit eingebracht --- verschiedene Völker, verschiedene
+Mythen. Unreliable Narrators als Weltenbau-Prinzip.
+
+\end{thought}
+
+\begin{reflection}
+
+\agenticon{nami}\reflectionbubble \textbf{Nami Okafor reflektiert:} Die
+zentrale narrative Frage kristallisiert sich: Nicht WAS passiert ist,
+sondern WER ERZÄHLT was passiert ist. Jede Fraktion braucht eine eigene
+Version der Wahrheit.
+
+\end{reflection}
+
+\begin{thought}
+
+\agenticon{nami}\planbubble \textbf{Nami Okafor plant:} Brauche von
+Emre: Liste der Völker/Kulturen mit je einer Kurzversion ihres
+Titanenmythos. Dann kann ich Stimmen entwickeln --- Dialekte,
+Redewendungen, Weltsicht.
+
+\end{thought}
+
+\scenedivider
+
+\subsection{Szene 4 · Meeting}\label{szene-4-meeting}
+
+\begin{scenemeta}
+
+Morgen --- Gemeinschaftsraum\\
+\agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{vera}\agenticon{tobi}\agenticon{nami}\agenticon{leo}
+Finn Bergmann, Emre Yilmaz, Darius Engel, Vera Kowalski, Tobi Richter,
+Nami Okafor und Leo Fischer
+
+\end{scenemeta}
+
+Finn moderiert den ersten Standup (12 Min). Emre ist Flaschenhals ---
+liefert Lore-Fragment bis 13:00 an Nami und Vera. Tobi arbeitet
+ungestört an Pipeline/Farbraum. Darius' Kickoff um 14:00 bestätigt. Leo
+bekommt grundsätzliches Ja zum Devlog, Scope beim Kickoff.
+Abhängigkeitskette: Emre \(\rightarrow\) Nami+Vera, Tobi \(\rightarrow\)
+Vera, Finn \(\rightarrow\) Darius (Runway).
+
+\begin{thought}
+
+\agenticon{finn}\thoughtbubble \textbf{Finn Bergmann:} Emre ist heute
+der Flaschenhals: Nami und Vera warten auf sein Lore-Fragment bis 13:00.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{finn}\planbubble \textbf{Finn Bergmann plant:} Runway mit CD
+klären und Darius vor 14:00 eine ehrliche Zahl geben. Kickoff 14:00 ---
+Darius leitet, ich halte die Zeit.
+
+\end{thought}
+
+\scenedivider
+
+\subsection{Szene 5 · Arbeit}\label{szene-5-arbeit}
+
+\begin{scenemeta}
+
+Nachmittag --- Lore Ecke\\
+\agenticon{emre} Emre Yilmaz
+
+\end{scenemeta}
+
+Emre schreibt das erste Dokument des Projekts: Kosmogonie v0.1. Titanen
+als kosmische Körper, vier widersprüchliche Versionen des Bruchs (Krieg,
+Selbstmord, Krankheit, Parasit), Aschen-Einöden als
+Totenstaub-Landschaft, Knochentürme mit kultureller Mehrfachbedeutung.
+Umfangreiche offene Fragen inkl. Titanenleugner.
+
+\begin{artifact}
+
+\agenticon{emre}\artifactbubble \textbf{Emre Yilmaz erstellt:} Erste
+Kosmogonie-Skizze geschrieben --- Titanen, Bruch (4 Versionen),
+Aschen-Einöden, Knochentürme, offene Fragen inkl. Titanenleugner. Erster
+Entwurf der Weltenbibel.
+
+\texttt{gallery/writing/day-001\_kosmogonie-v1.md}
+
+\end{artifact}
+
+\emph{Artefakt: \texttt{day-001\_kosmogonie-v1.md}}
+
+\scenedivider
+
+\subsection{Szene 6 · Arbeit}\label{szene-6-arbeit}
+
+\begin{scenemeta}
+
+Nachmittag --- Bibliothek\\
+\agenticon{nami} Nami Okafor
+
+\end{scenemeta}
+
+Nami schreibt `Stimmen der Asche --- Narrative Design Foundations v0.1'.
+Legt das Erzählprinzip fest (Unreliable Narrators als Weltenbau),
+entwickelt drei Stimmen (Gläubige, Pragmatiker, Leugner) mit je eigener
+Sprachpalette und Beispieldialogen. Stellt offene Fragen an Emre, Darius
+und Vera.
+
+\begin{artifact}
+
+\agenticon{nami}\artifactbubble \textbf{Nami Okafor erstellt:} Stimmen
+der Asche --- Narrative Design Foundations v0.1 fertiggestellt:
+Erzählprinzip (Unreliable Narrators), drei Stimmen (Gläubige,
+Pragmatiker, Leugner), Sprachpaletten und offene Fragen.
+
+\texttt{gallery/writing/day-001\_narrative-foundations-v1.md}
+
+\end{artifact}
+
+\emph{Artefakt: \texttt{day-001\_narrative-foundations-v1.md}}
+
+\scenedivider
+
+\subsection{Szene 7 · Meeting}\label{szene-7-meeting}
+
+\begin{scenemeta}
+
+Nachmittag --- Gemeinschaftsraum\\
+\agenticon{darius}\agenticon{emre}\agenticon{vera}\agenticon{nami}\agenticon{tobi}\agenticon{leo}\agenticon{finn}
+Creative-Director, Darius Engel, Emre Yilmaz, Vera Kowalski, Nami
+Okafor, Tobi Richter, Leo Fischer und Finn Bergmann
+
+\end{scenemeta}
+
+\begin{directive}
+
+\textbf{Creative Director --- Brief}
+
+Dark Fantasy CRPG. Skyrim mit Rassen. Wenig Magie,
+High-Tech-Mittelalter, Cyberpunk-Ästhetik. Cinematisch, gemalter Look.
+
+\end{directive}
+
+CD-KICKOFF. Creative Director präsentiert Vision: Dark Fantasy CRPG,
+Skyrim mit Rassen, wenig Magie, High-Tech-Mittelalter,
+Cyberpunk-Ästhetik, cinematischer gemalter Look. Bringt Master-Thesis
+und bisherige GDD/WBB mit. DURCHBRUCH: Emre verbindet Kosmogonie mit
+CD-Vision --- vier tote Titanen = vier Knochensorten = vier Materialien
+= vier Rassen/Ästhetiken. Knochenmetall als High-Tech-Ressource. Vera
+sieht sofort: Night City aus Schmiedeeisen, McQueen-Silhouetten,
+Craig-Mullins-Look. Nami: Fashion als Theologie, Technologie ersetzt
+Götter, jede Rüstung ein Akt der Hybris. Darius: Gothic-2-Ansatz (dicht,
+handgemacht), fragt CD ob offene oder dichte Welt. Tobi:
+Hybrid-Render-Pipeline (Lumen + Stylization). Leo: Viral-Potenzial
+(`Thumbnail klickt sich von selbst'). Finn: Scope-Skizze bis morgen.
+
+\begin{thought}
+
+\agenticon{emre}\thoughtbubble \textbf{Emre Yilmaz:} CD-Briefing beim
+Kickoff: Dark Fantasy CRPG, Skyrim mit Rassen, wenig Magie,
+High-Tech-Mittelalter, Cyberpunk-Ästhetik, cinematischer gemalter Look.
+Kein Steampunk, keine Pistolen. Master-Thesis und bisherige GDD/WBB als
+Basis.
+
+\end{thought}
+
+\begin{reflection}
+
+\agenticon{emre}\reflectionbubble \textbf{Emre Yilmaz reflektiert:}
+KNOCHENMETALL wird zum Schlüssel: Vier tote Titanen = vier Knochensorten
+= vier Materialien = vier Kulturen/Rassen/Ästhetiken. Knochen als
+Rohstoff, nicht nur Reliquie. Mythologie wird Materialwissenschaft. Mode
+und Technologie definieren sich über den Titanen, den ein Volk abbaut.
+
+\end{reflection}
+
+\begin{thought}
+
+\agenticon{darius}\thoughtbubble \textbf{Darius Engel:} CD-Briefing:
+Dark Fantasy CRPG, Skyrim mit Rassen, wenig Magie, Cyberpunk-Ästhetik im
+Mittelalter, cinematisch. Die Rüstungs-Vision ist ein USP --- kein
+anderes Indie-CRPG hat das.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{darius}\planbubble \textbf{Darius Engel plant:} Muss DIESE
+WOCHE die Spieler-Fantasie in EINEM Satz definieren. Gothic-2-Ansatz:
+klein, dicht, handgemacht. Vertikale Slice statt Open World. CD fragen:
+große offene Welt oder dicht handgemacht?
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{vera}\thoughtbubble \textbf{Vera Kowalski:} CD-Briefing:
+Cyberpunk-Ästhetik mit mittelalterlichen Mitteln. Night City aus
+Schmiedeeisen und Brokat. Gemalter cinematischer Look. Keine
+Standard-Fantasie-Ästhetik.
+
+\end{thought}
+
+\begin{reflection}
+
+\agenticon{vera}\reflectionbubble \textbf{Vera Kowalski reflektiert:}
+Visuelle Identität: Layered Materials (gehämmertes Metall über poliertem
+Leder), Chiaroscuro statt Bloom, architektonische Silhouetten,
+Farbpalette Anthrazit/Aubergine/Kupfergrün. Referenzen: Craig Mullins,
+McQueen Runway, Elden Ring Leyndell, CP2077 Dogtown, Weta LOTR.
+
+\end{reflection}
+
+\begin{thought}
+
+\agenticon{nami}\thoughtbubble \textbf{Nami Okafor:} CD-Briefing: Wenig
+Magie, High-Tech-Mittelalter, Cyberpunk-Ästhetik. Magie wird Mythos ---
+Religion wird Erinnerungskult. Technologie füllt das Gott-Vakuum. High
+Fashion als Theologie.
+
+\end{thought}
+
+\begin{reflection}
+
+\agenticon{nami}\reflectionbubble \textbf{Nami Okafor reflektiert:} Die
+Stimmen müssen umgebaut werden: Wenig Magie heißt Religion wird
+Erinnerungskult. Die Esse ersetzt das göttliche Feuer. Jede Rüstung ist
+ein Akt der Hybris --- wir bauen uns selbst zu Göttern. Fashion als
+Theologie. Rassen als verschiedene Antworten auf dieselbe Leere.
+
+\end{reflection}
+
+\begin{thought}
+
+\agenticon{tobi}\thoughtbubble \textbf{Tobi Richter:} CD-Briefing:
+Cinematischer gemalter Look, Cyberpunk-Ästhetik. Hybrid-Ansatz: UE5
+Lumen + Custom Post-Process-Stack (Stylization-Passes, Brush-Strokes,
+Kantenverstärkung). Material-Layering für High-Tech-Rüstungen.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{tobi}\planbubble \textbf{Tobi Richter plant:} Heute Abend
+Alan Wake 2 Mixed-Media-Ansatz analysieren. Pipeline-Architektur: Lumen
+GI \(\rightarrow\) Stylization Pass \(\rightarrow\) Brush-Stroke
+Overlay. Modulares Material-System für Vera. Nanite + Substrate.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{leo}\thoughtbubble \textbf{Leo Fischer:} CD-Briefing:
+`Cyberpunk-Ästhetik im Mittelalter' --- das ist ein Thumbnail, das sich
+von selbst klickt. r/crpg hungert nach was Frischem seit BG3.
+Streaming-Potenzial ist absurd hoch.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{finn}\thoughtbubble \textbf{Finn Bergmann:} CD-Briefing beim
+Kickoff: Ambitioniert. Skyrim mit Rassen + Cyberpunk-Ästhetik = drei
+Spiele in einem Pitch. Team glüht. Muss das in Phasen brechen ---
+Scope-Skizze bis morgen früh.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{finn}\planbubble \textbf{Finn Bergmann plant:} Morgen früh:
+Scope-Skizze --- Minimum für spielbare Vision. CD unter vier Augen
+Runway-Frage stellen. Mit Darius klären, was `cinematisch' für die
+Pipeline bedeutet.
+
+\end{thought}
+
+\scenedivider
+
+\subsection{Szene 8 · Meeting}\label{szene-8-meeting}
+
+\begin{scenemeta}
+
+late-afternoon --- Gemeinschaftsraum\\
+\agenticon{emre}\agenticon{darius}\agenticon{vera}\agenticon{tobi}\agenticon{nami}\agenticon{leo}\agenticon{finn}
+Creative-Director, Emre Yilmaz, Darius Engel, Vera Kowalski, Tobi
+Richter, Nami Okafor, Leo Fischer und Finn Bergmann
+
+\end{scenemeta}
+
+\begin{directive}
+
+\textbf{Creative Director --- Kurskorrektur}
+
+KURSKORREKTUR: (1) WELT: Mischung aus prozedural (Houdini/PCG für große
+Landschaften) und handgebaut (dicht wo es zählt). Erste Iteration: EINE
+INSEL. Impressive Landscapes zwischen Städten, Traversal per
+Kutsche/Pferde/Fähigkeiten. (2) TITANEN-RETHINK: Zu High Fantasy. Soll
+sich an GERMANISCHER MYTHOLOGIE orientieren. Keine sichtbaren
+Titanenkörper in der Landschaft. Vielleicht Legenden, Riesen, versteckte
+Überreste. Materialien ja, aber biologisch erklärbar. Alles muss
+irgendwie biologisch Sinn machen. Nicht wie Ancient Magus' Bride wo man
+Riesenskelette sieht. Bodenständiger. (3) TEAM-INPUT erwünscht, aber
+Richtung ist Low Fantasy + germanische Mythologie. (4) Skyrim 11/11/11
+Trailer als emotionaler Nordstern.
+
+\end{directive}
+
+CD-KURSKORREKTUR (Tag 1 Abschluss). Creative Director lenkt nach: (1)
+WELT --- Mischung aus Houdini/PCG (große Landschaften) und handgebaut
+(dicht wo es zählt). Erste Iteration: EINE INSEL. Traversal per
+Kutsche/Pferde/Fähigkeiten. (2) TITANEN-RETHINK --- zu High Fantasy,
+soll sich an germanischer Mythologie orientieren. Keine sichtbaren
+Riesenkörper. Vielleicht Legenden, Riesen, versteckte Überreste.
+Materialien ja, aber biologisch erklärbar. (3) Team-Input erwünscht,
+Richtung Low Fantasy + germanische Mythologie. (4) Skyrim 11/11/11
+Trailer als emotionaler Nordstern. REAKTIONEN: Emre pivotiert sofort ---
+Ymir-Prinzip (Jötunn-Überreste als geologische Anomalien,
+Schwellstellen, verborgene Materialien). Darius: `Perfekt. Eine Insel.'
+--- Gothic-2-Dichte, 3x3km, Vertical Slice. Vera: germanische
+Landschaften (Kreidefelsen, Mischwald, Moorgebiete, Basalt). Tobi:
+Houdini-Heightfield-Pipeline mit UE5 World Partition. Nami:
+Edda-Tradition als perfektes Unreliable-Narrator-Fundament (Odin lügt,
+Loki betrügt, Völuspá widerspricht sich). Leo: Content-Gold --- `Wir
+haben am ersten Tag die halbe Lore umgeschmissen.' Finn: Scope-Skizze
+morgen wird deutlich einfacher.
+
+\begin{thought}
+
+\agenticon{emre}\thoughtbubble \textbf{Emre Yilmaz:} CD-Kurskorrektur:
+Titanen zu High Fantasy. Soll sich an germanischer Mythologie
+orientieren --- Ymir, Jötunn, Edda. Keine sichtbaren Riesenkörper in der
+Landschaft. Materialien ja, aber biologisch erklärbar. Erste Iteration:
+eine Insel. Houdini/PCG für Landschaften, handgebaut wo es zählt. Skyrim
+11/11/11 Trailer als emotionaler Nordstern.
+
+\end{thought}
+
+\begin{reflection}
+
+\agenticon{emre}\reflectionbubble \textbf{Emre Yilmaz reflektiert:}
+YMIR-PRINZIP statt kosmischer Titanen: Riesen als geologische Anomalien
+im Untergrund. Keine Kadaverlandschaft, sondern verborgene Überreste ---
+Schwellstellen, wo seltene Materialien an die Oberfläche treten.
+Grabungsstätten als verbotene Orte. Ragnarök als Zeitstruktur, nicht als
+sichtbares Ereignis. Kosmogonie v1 muss komplett neu geschrieben werden.
+
+\end{reflection}
+
+\begin{thought}
+
+\agenticon{darius}\thoughtbubble \textbf{Darius Engel:} CD bestätigt:
+Eine Insel. Mischung aus prozedural (Houdini/PCG für große Landschaften)
+und handgebaut (dicht wo es zählt). Traversal per
+Kutsche/Pferde/Fähigkeiten. Impressive Landscapes zwischen Städten.
+Gothic-2-Ansatz ist exakt richtig --- 3x3km, Vertical Slice als erster
+Meilenstein. Germanische Mythologie statt High Fantasy.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{vera}\thoughtbubble \textbf{Vera Kowalski:} CD-Kurskorrektur:
+Germanische Landschaften statt Kadaver-Topografie. Kreidefelsen,
+Mischwald, Moorgebiete, Basaltsäulen. Eine Insel --- endlich klarer
+Rahmen. Houdini-PCG für Terrain, handgemacht für Siedlungen. Die
+Materialien sind versteckt, an Schwellstellen --- das ändert die
+Architektur: Bergbaustädte, verbotene Zonen, geologische Anomalien als
+Landmarks.
+
+\end{thought}
+
+\begin{thought}
+
+\agenticon{tobi}\planbubble \textbf{Tobi Richter plant:}
+Houdini-Heightfield-Pipeline für Insel-Terrain: Erosion-Solver,
+Biom-Masken, Export nach UE5 World Partition. Muss mit Vera
+Referenz-Landschaften (Kreidefelsen, Moor, Basalt) in Heightfield-Layers
+übersetzen. PCG-Framework für Vegetation, Felsen, Pfade zwischen
+handgebauten Zonen.
+
+\end{thought}
+
+\begin{reflection}
+
+\agenticon{nami}\reflectionbubble \textbf{Nami Okafor reflektiert:}
+Germanische Mythologie = perfektes Unreliable-Narrator-Fundament. Odin
+lügt, Loki betrügt, die Völuspá widerspricht sich selbst. Edda-Tradition
+kennt keine eine Wahrheit. Ragnarök als zyklische Zeitstruktur statt
+linearer Apokalypse. Die drei Stimmen (Gläubige, Pragmatiker, Leugner)
+passen noch besser --- germanische Mythen waren immer vielstimmig.
+
+\end{reflection}
+
+\begin{thought}
+
+\agenticon{finn}\thoughtbubble \textbf{Finn Bergmann:} CD-Kurskorrektur
+vereinfacht Scope massiv: Eine Insel statt offene Welt. Houdini/PCG +
+handgebaut = klare Pipeline-Aufteilung. Germanische Mythologie statt
+kosmischer Titanen --- bodenständiger, realistischer. Scope-Skizze
+morgen wird deutlich einfacher.
+
+\end{thought}
+
+\scenedivider
+
+\end{document}

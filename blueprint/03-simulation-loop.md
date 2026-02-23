@@ -14,14 +14,22 @@ The simulation advances in **scenes** — narrative beats that the Game Master (
 
 | Type | What Happens | Who's Involved | Typical Count/Day |
 |------|-------------|----------------|-------------------|
-| **ARRIVAL** | Agents arrive, declare daily plans | All agents | 1 (morning) |
-| **ENCOUNTER** | Two agents cross paths, may talk | 2 agents | 1–3 |
-| **WORK** | Agent produces an artifact or makes progress | 1 agent (+ observers) | 1–2 |
+| **ARRIVAL** | Agents arrive, declare daily plans | All agents | 1 (mandatory) |
+| **ENCOUNTER** | Two agents cross paths, exchange feedback | 2–3 agents | 1–3 (min 1) |
+| **WORK** | Agent produces an artifact or makes progress | 1–3 agents | 1–2 |
 | **MEETING** | Scheduled or spontaneous group discussion | 2–7 agents | 0–1 |
 | **EVENT** | External trigger changes the day | Varies | 0–1 |
 | **REFLECTION** | Agent synthesizes accumulated experience | 1 agent | 0–1 |
 
-A typical day: **3–6 scenes**. A busy day (Creative Director gives a brief, two encounters, an artifact, a meeting): **6–8 scenes**.
+### Scene Minimums (v2)
+
+- **Minimum 5 scenes per day** (simulation 1 dropped to 3 — insufficient granularity)
+- **Mandatory**: 1 ARRIVAL + at least 1 ENCOUNTER per day
+- **No compound types**: `WORK+REFLECTION` is not valid — use separate scenes
+- **WORK scenes**: max 3 participants (solo or small group focus)
+- **Feedback required**: ENCOUNTER and MEETING scenes must include the `feedback` field (see `blueprint/07-logging.md`)
+
+A typical day: **5–8 scenes**. A busy day: **8+ scenes**.
 
 ## Scene Flow (Pseudocode)
 

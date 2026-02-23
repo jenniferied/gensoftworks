@@ -1,14 +1,9 @@
 {
     "name": "Vera Kowalski",
     "position": "art-station",
-    "current_task": "GDD Kapitel 06 Art Direction geliefert. Biotech-Materialsprache + Nervensystem-UI definiert.",
-    "today_plan": [
-        "DONE: GDD Kapitel 06 — Art Direction (362 Zeilen, Biotech-Mittelalter, Nervensystem-UI)",
-        "OFFEN: Fellträger-Redesign Silhouetten (Seidenstraßen-Händler)",
-        "OFFEN: Nervensystem-UI-Proof-of-Concept als Concept-Art",
-        "OFFEN: Anatomie-Sheets für Tobi (Flowmap-Vorlagen)"
-    ],
-    "mood": "stolz-produktiv",
-    "importance_accumulator": 62,
-    "last_reflection": "vera-016"
+    "current_task": null,
+    "today_plan": [],
+    "mood": "neutral",
+    "importance_accumulator": 0,
+    "last_reflection": null
 }

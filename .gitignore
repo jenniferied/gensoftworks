@@ -26,21 +26,47 @@ data/embeddings/
 .env
 *.key
 
-# Logs (keep structure, ignore contents)
-logbook/daily/*.json
-logbook/exports/*.pdf
-logbook/exports/*.html
+# Gallery images (generated, large)
+gallery/concepts/*/
+gallery/wbb/images*/
+gallery/wbb/*.pdf
+gallery/gdd/*.pdf
 
-# Generated gallery items (keep structure)
-gallery/concepts/*.png
-gallery/concepts/*.jpg
-
-# Library (large PDFs + local symlinks, local only — structure is committed)
+# Library (large PDFs + local symlinks)
 library/papers/**/*.pdf
 library/artbooks/*.pdf
 library/gdds/*.pdf
 library/wbbs/*.pdf
 library/bibliography.bib
 
+# Export build artifacts
+export/*.pdf
+export/*.aux
+export/*.log
+export/*.out
+export/*.toc
+
+# Screenshots (generated)
+screenshots/
+
 # Tiled backup files
 *.tmx~
+
+# Frontend licensed assets (not committed)
+frontend/public/assets/tilesets/
+frontend/public/assets/furniture/
+frontend/public/assets/characters/
+frontend/test-results/
+
+# Simulation 1 archive — large/generated files
+simulation-1/gallery/concepts/*/
+simulation-1/gallery/wbb/images*/
+simulation-1/gallery/wbb/*.pdf
+simulation-1/gallery/gdd/*.pdf
+simulation-1/export/*.pdf
+simulation-1/export/*.aux
+simulation-1/export/*.log
+simulation-1/export/*.out
+simulation-1/export/*.toc
+simulation-1/screenshots/
+simulation-1/viewer-data/

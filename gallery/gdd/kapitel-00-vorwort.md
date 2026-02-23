@@ -1,17 +1,8 @@
----
-agent: finn
-day: 3
-task: "GDD-Rahmenkapitel: Vorwort & Inhaltsverzeichnis"
-memories_referenced: [finn-014, finn-018, finn-022]
-feedback_received: [cd-day2-kernvision, cd-day3-morning]
-status: draft
----
-
 # RELICS — Game Design Document
 
 **Dark Fantasy CRPG**
 
-Version: v0.1 (Entwurf)
+Version: v0.2
 Datum: Tag 4 / Donnerstag
 Studio: GenSoftworks (7 Personen)
 
@@ -38,23 +29,7 @@ Dieses GDD folgt dem Planescape-Prinzip: Jedes System wird benannt und eingeordn
 
 ---
 
-## Inhaltsverzeichnis
-
-| Nr. | Kapitel | Verantwortlich | Status |
-|-----|---------|----------------|--------|
-| 1 | Kernvision & Core Loop | Darius | Entwurf |
-| 2 | Vorwort: Die Welt von RELICS | Emre | Entwurf |
-| 3 | Welt & Fraktionen | Emre + Nami | Entwurf |
-| 4 | Gameplay-Systeme | Darius | Offen |
-| 5 | Vertical Slice & Walkthrough | Leo + Darius | Offen |
-| 6 | Art Direction | Vera | Offen |
-| 7 | Technische Spezifikation | Tobi | Offen |
-| 8 | Monetarisierung & Community | Leo | Offen |
-| 9 | Risiken, Entscheidungen & Timeline | Finn | Entwurf |
-
----
-
-### Kapitel-Übersicht
+## Kapitel-Übersicht
 
 **Kapitel 1 — Kernvision & Core Loop** (Darius)
 Was ist RELICS in einem Satz? Was tut der Spieler Sekunde für Sekunde, Minute für Minute, Stunde für Stunde? Der Core Loop, die Kernfrage ("Wer bin ich, wenn ich vergesse, wer ich war?"), die Spielerphantasie, die wir bedienen.
@@ -85,8 +60,3 @@ Was ist entschieden, was ist offen. Risikomatrix. Meilensteine. Nächste Schritt
 
 ---
 
-*Das ist der Rahmen. Das Skelett — passend zum Thema. Morgen füllen wir die Knochen mit Fleisch.*
-
-*Post-It am Kanban-Board: "GDD v0.1 — JEDER schreibt sein Kapitel bis morgen Abend. Keine Ausnahmen. Auch du, Emre."*
-
-— Finn

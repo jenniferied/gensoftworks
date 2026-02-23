@@ -1,16 +1,4 @@
----
-agent: finn
-day: 3
-task: "GDD Kapitel 9: Risiken, Entscheidungen & Timeline"
-memories_referenced: [finn-014, finn-018, finn-022, finn-025]
-feedback_received: [cd-day2-kernvision, cd-day3-morning, cd-day3-biotech]
-status: draft
----
-
 # Kapitel 9 — Risiken, Entscheidungen & Timeline
-
-> *Das hier ist das Kapitel, das niemand gern schreibt und das alle brauchen. Ich bin Producer. Das IST mein Job.*
-> *— F. Bergmann, Tag 3*
 
 ---
 
@@ -81,62 +69,24 @@ Wie groß ist die Startregion? Wie bewegt sich der Spieler? Reittiere? Schnellre
 | R5 | Biotech/Drogen-Thematik: USK | Mittel | Niedrig | **LOW-MEDIUM** | Leo + Finn |
 
 ### R1 — Skyrim-Kamera FP/TP (HIGH)
-
-**Was**: RELICS soll wie Skyrim zwischen First Person und Third Person wechselbar sein. Das klingt einfach. Es ist es nicht.
-
-**Warum HIGH**: Jedes Feature, jedes UI-Element, jeder Kampfmove muss in BEIDEN Perspektiven funktionieren und getestet werden. Das verdoppelt nicht den Aufwand — aber es erhöht ihn um geschätzt 30-40% bei allem, was mit Kamera, Animation und UI zu tun hat.
-
-**Mitigation**:
-- Tobi erstellt einen Kamera-Prototyp als erstes technisches Deliverable
-- Fallback-Option: Eine Perspektive als "primär" definieren, die andere als eingeschränkt (z.B. FP nur in Interiors, TP in Open World)
-- CD-Entscheidung nötig, falls Fallback greift
+Jedes Feature muss in beiden Perspektiven funktionieren (+30-40% Aufwand).
+**Mitigation**: Kamera-Prototyp als erstes Deliverable. Fallback: eine Perspektive primär.
 
 ### R2 — MetaHuman Fellträger Kopf-Swap (MEDIUM)
-
-**Was**: Die Tiermenschen (Höhlenvolk) sollen MetaHuman-Körper mit nicht-menschlichen Köpfen haben. Fellträger mit Tier-Features. Das ist kein Standard-MetaHuman-Workflow.
-
-**Warum MEDIUM**: Technisch machbar (Mesh-Swap, Custom-Bones), aber es gibt keine fertige Pipeline dafür. Tobi braucht R&D-Zeit, und Vera braucht die technischen Constraints, bevor sie Concept Art finalisiert.
-
-**Mitigation**:
-- Tobi: 2-Tage-Spike für Head-Swap-Prototyp
-- Vera: Concept Art in zwei Varianten (mit/ohne technische Einschränkungen)
-- Fallback: Subtilere Tiermenschen (Ohren, Augen, Zähne statt voller Tierkopf)
+Keine fertige Pipeline für nicht-menschliche Köpfe auf MetaHuman-Körpern.
+**Mitigation**: 2-Tage-Spike. Fallback: subtilere Tiermenschen (Ohren/Augen statt voller Tierkopf).
 
 ### R3 — Nervensystem-Leveling UI (HIGH)
+Neues UI-Paradigma ohne Referenzdesign. Muss intuitiv sein.
+**Mitigation**: Papier-Prototyp → Spielertest → Tech-Prototyp.
 
-**Was**: Das Nervensystem als Skill-Tree-Visualisierung ist ein völlig neues UI-Paradigma. Es gibt keine Referenz, die man nachbauen kann. Kein Spiel hat das gemacht.
-
-**Warum HIGH**: Kein Referenzdesign bedeutet: Trial and Error. Spieler müssen intuitiv verstehen, was sie tun. Wenn die UI nicht sofort klar ist, stirbt das ganze System — egal wie gut die Mechanik dahinter ist.
-
-**Mitigation**:
-- Darius: Papier-Prototyp des Nervensystem-UI bis Ende Woche
-- Leo: Spielertest mit dem Papier-Prototyp (sie hat Zugang zu ihrer Community)
-- Tobi: Technischer Prototyp erst NACH positivem Spielertest
-- Vera: Art Direction für die UI parallel zur Mechanik-Definition
-
-### R4 — Scope: Vollständige Insel vs. Region (MEDIUM)
-
-**Was**: Bauen wir die gesamte Insel für den Vertical Slice — oder nur eine Region? Die CD hat von einer Startregion gesprochen, aber die Ambitionen im Team tendieren zur ganzen Insel.
-
-**Warum MEDIUM**: Eine ganze Insel ist Monate mehr Arbeit. Eine Region ist in Wochen machbar. Die Entscheidung bestimmt den gesamten Zeitplan.
-
-**Mitigation**:
-- Vertical Slice = EINE Region. Punkt.
-- Die Region muss repräsentativ sein: mindestens drei Fraktionen sichtbar, ein Knochenturm, eine Siedlung, ein Dungeon
-- Emre und Nami planen die Welt so, dass sie modular erweiterbar ist
-- CD-Entscheidung: Ist der Vertical Slice eine Stunde Gameplay oder drei?
+### R4 — Scope: Insel vs. Region (MEDIUM)
+Ganze Insel = Monate. Eine Region = Wochen. Vertical Slice = EINE Region.
+**Mitigation**: Modulare Weltplanung. CD-Entscheidung zum Slice-Scope nötig.
 
 ### R5 — Biotech/Drogen-Thematik: USK (LOW-MEDIUM)
-
-**Was**: Das Innenvolk arbeitet mit Giften, Drogen, Amphetaminen, Körpermodifikation. Die CD hat das bewusst als Feature gesetzt. Aber: USK-Rating.
-
-**Warum LOW-MEDIUM**: In Deutschland ist Drogenkonsum in Spielen ein Rating-Thema. Nicht verboten, aber es kann den Unterschied zwischen USK 16 und USK 18 machen. Das beeinflusst Marketing und Zielgruppe.
-
-**Mitigation**:
-- Leo: Recherche zu USK-Präzedenzfällen (Cyberpunk 2077, Disco Elysium)
-- Narrativ: Drogen als Konsequenz zeigen, nicht als Verherrlichung — das ist ohnehin Namis und Emres Ansatz
-- Fallback: "Substanzen" statt "Drogen", abstrakte Darstellung statt grafische
-- Frühzeitig USK-Beratung einholen (kostet nichts, spart Überraschungen)
+Kann USK 16 vs. 18 beeinflussen.
+**Mitigation**: Frühzeitige USK-Beratung. Drogen als Konsequenz, nicht Verherrlichung.
 
 ---
 
@@ -234,16 +184,3 @@ Wie groß ist die Startregion? Wie bewegt sich der Spieler? Reittiere? Schnellre
 
 ---
 
-## 6. Was dieses Kapitel nicht ist
-
-Dieses Kapitel ist kein Pessimismus. Die Risiken sind real, aber keines davon ist ein Showstopper. Wir haben ein Team, das seine Arbeit versteht. Wir haben eine Creative Director, die klare Entscheidungen trifft. Und wir haben einen Zeitplan, der ambitioniert ist, aber nicht unmöglich.
-
-Mein Job ist es, die Probleme zu sehen, bevor sie Probleme werden. Dieses Kapitel ist mein Werkzeug dafür. Wenn in drei Wochen jemand fragt "Hat uns niemand vor dem Kamera-Problem gewarnt?" — dann schlage ich Seite 1 auf und sage: Doch. Haben wir.
-
----
-
-*Karteikarte ans Kanban-Board: "RISIKEN SIND KEINE AUSREDEN. RISIKEN SIND ARBEIT, DIE NOCH KEINEN TERMIN HAT."*
-
-*Zweite Karteikarte, kleiner: "Emre, dein Kapitel ist morgen fällig. Ich meine es ernst. Mit Liebe, aber ernst."*
-
-— Finn

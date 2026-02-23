@@ -1,14 +1,9 @@
 {
-    "name": "Leonie Fischer",
-    "position": "gemeinschaftsraum",
-    "current_task": "GDD Kapitel 05 + 08 geliefert. Walkthrough v0.2 + Monetarisierung/Community.",
-    "today_plan": [
-        "DONE: GDD Kapitel 05 — Vertical Slice Walkthrough v0.2",
-        "DONE: GDD Kapitel 08 — Monetarisierung & Community",
-        "OFFEN: Streamer-Alpha-Programm ausdetaillieren",
-        "OFFEN: Kontroversen-Playbook finalisieren"
-    ],
-    "mood": "zufrieden-energisch",
-    "importance_accumulator": 32,
-    "last_reflection": "leo-022"
+    "name": "Leo Fischer",
+    "position": "7f",
+    "current_task": null,
+    "today_plan": [],
+    "mood": "neutral",
+    "importance_accumulator": 0,
+    "last_reflection": null
 }

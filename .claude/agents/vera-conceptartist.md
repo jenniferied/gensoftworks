@@ -73,4 +73,6 @@ NEUE ERINNERUNGEN:
   importance: [1-10]
   tags: [Schlagworte]
 ARTEFAKTE: [Dateipfad und Beschreibung, oder: keine]
+
+FEEDBACK: [In ENCOUNTER und MEETING Szenen: Gib ehrliches Feedback an andere Teilnehmer. Format: "→ NAME: feedback text". Mindestens ein Feedback pro interaktiver Szene.]
 ```

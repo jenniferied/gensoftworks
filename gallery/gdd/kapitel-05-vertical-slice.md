@@ -1,17 +1,4 @@
----
-agent: leo
-day: 3
-task: "GDD Kapitel 05 — Vertical Slice Walkthrough"
-version: v0.2
-basis: walkthrough-v0.1 (Tag 2), CD-Feedback Tag 3, Fraktionsmodell v2
-memories_referenced: [leo-015, leo-016, leo-017, leo-018]
-status: draft
----
-
 # Kapitel 05 — Vertical Slice Walkthrough
-
-> *Nicht Feature-Liste. Nicht Systemdiagramm. Walkthrough. Du ERLEBST das Spiel. Wie im Diablo Pitch von 1994: Wenn der Leser es nicht fühlt, existiert es nicht.*
-> *— L. Fischer, Tag 3*
 
 ---
 
@@ -193,10 +180,6 @@ Es ist kein Skill-Tree. Es ist ein *Körpersystem*. Drei Schichten (Tobis Flowma
 
 Der Spieler wählt nicht "Skill +1." Er wählt, welche *Bahn* sich verstärkt. Die Visualisierung zeigt es: Eine leuchtende Linie wird breiter, heller, verzweigt sich weiter. Andere werden dafür schwächer.
 
-**Warum das der virale Moment ist:**
-
-Ein Streamer sieht zum ersten Mal sein Nervensystem aufleuchten. Chat flippt aus. "DUDE, SCHAU DIR DEINE ADERN AN." Jeder Spieler hat ein *anderes* Nervensystem. Screenshots vergleichen. TikTok-Clips: "Level 1 vs. Level 30 — mein Nervensystem." Reddit-Posts: Tier-Lists der besten Bahnen. Das ist nicht geplantes Marketing — das ist emergentes Community-Content.
-
 ---
 
 ## 7. Kamera-Regie
@@ -220,19 +203,3 @@ Ein Streamer sieht zum ersten Mal sein Nervensystem aufleuchten. Chat flippt aus
 
 ---
 
-## 8. Offene Fragen
-
-- [ ] Fraktionsnamen: "Höhlenvolk", "Küstenvolk", "Siedlervolk" sind Arbeitstitel. Emre liefert finale Namen.
-- [ ] Leiche am Strand: Welche Fraktion? Welches Geschlecht? Was hat das Gesicht zerstört? (Horror-Potenzial oder lore-relevant?)
-- [ ] Substanz-Design: Wie sieht "Tiefe Resonanz" visuell aus? Vera muss das definieren.
-- [ ] Nervensystem-UI: Tobis Flowmap-Layer-Prototyp als Grundlage. Wann erster Tech-Test?
-- [ ] Kampf: Dieser Walkthrough hat bewusst keinen Combat-Moment. Wann und wie der erste Kampf stattfindet, muss Darius klären.
-- [ ] Vampir-Hinweis: Kann in den ersten 30 Minuten ein subtiler Hint auf die Hidden-Content-Schicht eingebaut werden?
-
----
-
-*Der Diablo Pitch hatte 8 Seiten und hat ein Genre erschaffen. Dieser Walkthrough hat ein paar mehr, aber das Prinzip ist dasselbe: Wenn du es nicht ERLEBST, existiert es nicht. Features sind Versprechungen. Ein Walkthrough ist ein Vertrag.*
-
-*Gelbes Post-It: "WAS BRINGST DU MIT?" — die beste Torwache-Frage aller Zeiten. Die kommt auf jedes Marketing-Material.*
-
-— Leo

@@ -1,20 +1,4 @@
----
-agent: emre
-day: 3
-task: "GDD Kapitel 02 — Vorwort: Die Welt von RELICS"
-memories_referenced: [emre-022, emre-025, emre-026, emre-027, emre-030]
-feedback_received: [cd-day3-morning]
-status: draft
----
-
-# RELICS — Game Design Document
 # Kapitel 2: Die Welt von RELICS
-
-> *Autor: Emre Yilmaz (Lead Worldbuilder)*
-> *Version: v1.0 — Tag 3 Abend*
-> *Status: GDD-Entwurf*
-
----
 
 Es gibt eine Insel im grauen Meer.
 
@@ -93,10 +77,3 @@ Aber er ist da. Und jetzt muss er entscheiden, wem er glaubt.
 ---
 
 *Die Welt von RELICS ist kein Rätsel, das gelöst werden will. Sie ist ein Ort, der bewohnt werden will — mit all seinen Widersprüchen, seinen Giften, seinen grauen Himmeln und seinem schwarzen Stein. Wer hierherkommt, wird nicht die Wahrheit finden. Wer hierherkommt, wird eine Version davon wählen müssen.*
-
-*Und damit leben.*
-
----
-
-> *Emre Yilmaz, Lead Worldbuilder*
-> *GenSoftworks — Tag 3, Abend*

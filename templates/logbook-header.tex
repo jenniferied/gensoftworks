@@ -41,6 +41,12 @@
 \newcommand{\artifactbubble}{%
   \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-artifact.png}}\,%
 }
+\newcommand{\feedbackbubble}{%
+  \raisebox{-3pt}{\includegraphics[height=12pt]{icons/bubble-speech.png}}\,%
+}
+
+% Importance stars (v2)
+\newcommand{\stmark}[1]{★#1}
 
 % Header
 \usepackage{fancyhdr}
@@ -93,6 +99,16 @@
 \newtcolorbox{artifact}{enhanced, frame hidden,
   borderline west={2pt}{0pt}{artifacttint!80!black},
   colback=artifacttint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\small}
+
+% Feedback box (v2 — agent-to-agent feedback)
+\definecolor{feedbacktint}{HTML}{E8EDF0}
+
+\newtcolorbox{feedbackbox}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{feedbacktint!80!black},
+  colback=feedbacktint!30,
   left=6mm, right=6mm, top=3mm, bottom=3mm,
   before skip=3mm, after skip=3mm, breakable,
   fontupper=\small}

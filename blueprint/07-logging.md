@@ -1,118 +1,110 @@
-# 07 — Logging & Export System
+# 07 — Logging & Export System (v2)
 
-> Every scene, every conversation, every creative decision — observable and exportable.
+> Single source of truth. Every field in every scene, no exceptions.
 
-## Philosophy
+## v2 Scene Schema
 
-The simulation is only as valuable as its observability. A Creative Director (or thesis author) needs to:
-1. **Watch interactively** — see scene results as they happen
-2. **Review afterward** — browse daily summaries, search for moments
-3. **Export for publication** — PDF or HTML for thesis appendix or demo
-
-## Log Structure
-
-Each simulated day produces one log file: `logbook/day-XXX.jsonl`
-
-Each line is one scene:
+Each simulated day produces one log file: `logbook/day-XXX.jsonl`. Each line is one scene:
 
 ```json
 {
-    "scene_number": 3,
-    "scene_type": "ENCOUNTER",
-    "time_of_day": "morning",
-    "location": "kitchen",
-    "participants": ["emre", "vera"],
-    "summary": "Emre und Vera treffen sich in der Küche. Vera zeigt ihr neues Konzeptbild der Knochentürme. Emre schlägt vor, die Türme könnten aus einem toten Titanen gewachsen sein.",
-    "dialogue": [
-        {"agent": "vera", "text": "Schau mal, die neue Version der Türme..."},
-        {"agent": "emre", "text": "Die sehen aus als wären sie gewachsen! Was wenn sie tatsächlich organisch sind?"},
-        {"agent": "vera", "text": "Du meinst... lebendig? Das würde die Textur erklären."}
-    ],
-    "thoughts": [
-        {"agent": "emre", "thought": "Das verbindet Geologie und Biologie — genau was der Creative Director wollte."}
-    ],
-    "artifacts_created": [],
-    "memories_added": [
-        {"agent": "emre", "id": "emre-043", "importance": 7},
-        {"agent": "vera", "id": "vera-029", "importance": 6}
-    ],
-    "cd_feedback": null
+  "scene": 3,
+  "type": "ENCOUNTER",
+  "time": "morning",
+  "location": "kueche",
+  "participants": ["emre", "vera"],
+  "summary": "Narrative summary of what happens in this scene.",
+  "dialogue": [
+    {"who": "vera", "says": "Schau mal, die neue Version..."},
+    {"who": "emre", "says": "Die sehen aus als wären sie gewachsen!"}
+  ],
+  "thoughts": [
+    {"who": "emre", "thinks": "Das verbindet Geologie und Biologie."}
+  ],
+  "mood": {
+    "emre": {"before": "nachdenklich", "after": "aufgeregt"},
+    "vera": {"before": "neugierig", "after": "inspiriert"}
+  },
+  "feedback": [
+    {"from": "vera", "to": "emre", "type": "honest", "text": "Die organische Idee ist stark, aber die Skalierung stimmt noch nicht."}
+  ],
+  "memories": [
+    {"who": "emre", "id": "emre-043", "importance": 7, "text": "Vera findet die organische Turm-Idee stark, will aber Skalierung überarbeiten."}
+  ],
+  "artifacts": [],
+  "cd_feedback": null,
+  "key_moment": "Emres spontane Idee der organischen Türme öffnet eine neue Designrichtung."
 }
 ```
 
-## Terminal Output
+### Rules
 
-During interactive mode, each scene is presented in the Claude Code terminal as a narrative summary:
+- **ALL fields in EVERY scene** — empty = `[]` or `null`, never omitted
+- **No compound types** (`WORK+REFLECTION`) — one type per scene
+- `dialogue` replaces both `narrative_transcript` and summary-only approaches
+- `memories` includes `text` inline (no cross-referencing memory files)
+- `feedback` required in ENCOUNTER and MEETING scenes (may be empty `[]` in others)
+- `mood` keyed by participant agent ID, always has `before` and `after`
+
+### Valid Scene Types
+
+| Type | Description |
+|------|-------------|
+| `ARRIVAL` | Agents arrive, declare daily plans |
+| `ENCOUNTER` | Two or more agents cross paths |
+| `WORK` | Agent produces artifact or makes progress (max 3 participants) |
+| `MEETING` | Scheduled or spontaneous group discussion |
+| `REFLECTION` | Agent synthesizes accumulated experience |
+| `EVENT` | External trigger changes the day |
+
+### Field Reference
+
+| Field | Type | Required | Notes |
+|-------|------|----------|-------|
+| `scene` | int | yes | Sequential scene number within the day |
+| `type` | string | yes | One of the valid types above |
+| `time` | string | yes | `morning`, `late-morning`, `afternoon`, `late-afternoon`, `evening` |
+| `location` | string | yes | Room key (e.g. `kueche`, `gemeinschaftsraum`, `studio-weit`) |
+| `participants` | string[] | yes | Agent IDs. Never includes `creative-director`. |
+| `summary` | string | yes | Narrative summary in German |
+| `dialogue` | object[] | yes | `{who, says}` — empty `[]` if no dialogue |
+| `thoughts` | object[] | yes | `{who, thinks}` — empty `[]` if none |
+| `mood` | object | yes | `{agent_id: {before, after}}` for each participant |
+| `feedback` | object[] | yes | `{from, to, type, text}` — required in ENCOUNTER/MEETING |
+| `memories` | object[] | yes | `{who, id, importance, text}` — text inline |
+| `artifacts` | string[] | yes | File paths, or `[]` |
+| `cd_feedback` | string\|null | yes | Creative Director feedback text, or `null` |
+| `key_moment` | string\|null | yes | Highlight of the scene, or `null` |
+
+## Terminal Display
+
+Rendered from the same v2 fields. This is what the Game Master outputs in Claude Code:
 
 ```
-━━━ Day 5, Wednesday — Scene 3: ENCOUNTER (Kitchen) ━━━
+━━━ Tag X, Szene Y: TYPE (Location) ━━━
 
-Emre und Vera treffen sich in der Küche.
+[summary]
 
-VERA: "Schau mal, die neue Version der Türme..."
-EMRE: "Die sehen aus als wären sie gewachsen! Was wenn sie
-       tatsächlich organisch sind?"
-VERA: "Du meinst... lebendig? Das würde die Textur erklären."
+💬 VERA: "dialogue.says"
+💬 EMRE: "dialogue.says"
 
-💭 Emre denkt: Das verbindet Geologie und Biologie.
-📝 Neue Erinnerungen: emre-043 (★7), vera-029 (★6)
+💭 EMRE denkt: thoughts.thinks
 
-[Continue] [Intervene] [Skip to next day]
-```
+🗣️ VERA → EMRE: feedback.text
 
-This is plain text output from Claude Code — no Rich library needed. The formatting IS the presentation.
-
-## Daily Summary
-
-At the end of each simulated day (or when requested), the Game Master produces a summary:
-
-```json
-{
-    "day": 5,
-    "day_of_week": "Wednesday",
-    "scenes": 5,
-    "summary": "Ein produktiver Tag. Emres Idee der organischen Türme hat Vera inspiriert. Darius und Nami haben den ersten Dungeon-Entwurf besprochen. Leo hat Community-Feedback zu ähnlichen Spielen gesammelt.",
-    "highlights": [
-        "Emre + Vera: Knochentürme könnten organisch sein (scene 3)",
-        "Darius: Erster Dungeon-Entwurf für die Aschen-Einöden (scene 4)",
-        "Leo: r/crpg-Analyse zu Dark Fantasy CRPGs (scene 5)"
-    ],
-    "artifacts_created": [
-        "gallery/lore/day-005_organic-towers.md",
-        "gallery/designs/day-005_dungeon-draft.md"
-    ],
-    "reflections": [
-        {"agent": "emre", "insight": "Organische Architektur als Leitprinzip der Aschen-Einöden"}
-    ],
-    "open_threads": [
-        "Vera will die organischen Türme als Konzeptbild umsetzen",
-        "Creative Director Brief zu Biologie steht noch aus"
-    ]
-}
+📊 Stimmung: EMRE (before → after)
+📝 Erinnerungen: id (★importance)
+⭐ key_moment
 ```
 
 ## PDF Export
 
-Using Jinja2 templates + WeasyPrint:
+Via `scripts/export-logbook.py` → Pandoc + XeLaTeX. Reads the same v2 fields. Uses `templates/logbook-header.tex` for styling with tcolorbox environments for thoughts, reflections, artifacts, feedback, and directives.
 
-### Daily Report Template
-- Header: Day number, simulated date, day of week
-- Scene timeline with dialogue and thought bubbles
-- Artifact thumbnails with creation context
-- Reflections highlighted as insight boxes
-- Open threads for next day
+## Backward Compatibility
 
-### Week Summary Template
-- Overview of all 5 workdays + special events
-- Relationship graph (who talked to whom, how often)
-- Creative progress (artifacts produced, themes emerging)
-- Key reflections and emerging studio aesthetic
+`scripts/build-viewer-data.py` detects schema version:
+- **v1** (simulation 1): `agent_details` field present → old rendering path
+- **v2** (simulation 2+): `mood` field present → new rendering path
 
-## HTML Export
-
-Interactive web page (Jinja2 template):
-- Day picker (navigate between days)
-- Agent filter (show only one agent's perspective)
-- Searchable (find topics in conversations)
-- Memory timeline (scrollable, color-coded by type)
-- Embedded images for concept art artifacts
+Use `--sim-dir simulation-1` to point scripts at the archived data.

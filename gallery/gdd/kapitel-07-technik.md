@@ -1,9 +1,5 @@
 # Kapitel 7 — Technik
 
-> **Autor**: Tobias Richter, Technical Artist
-> **Stand**: Tag 3, GDD-Sprint
-> **Engine**: Unreal Engine 5.4+
-
 ---
 
 ## 7.1 Engine & Ziel-Hardware
@@ -250,6 +246,3 @@ UE5 World Partition für Streaming. Die Insel wird in Zellen unterteilt (~200m �
 | Substance-Effects + Anatomie-Overlays = Shader-Komplexität | Hoch | Instruction-Count im Master-Material monitoren. Feature-Switches für Low-End. Quality-Presets. |
 | Cloth-Sim (Umhang) bei vielen Charakteren | Mittel | Cloth-Sim nur für Spieler + 3 nächste NPCs. Rest: baked Animation. |
 
----
-
-*Geschrieben am Arbeitsplatz, dritter Monitor zeigt den UE5-Material-Editor. Yuki hat Onigiri vorbeigebracht. Die Pipeline steht — jetzt muss sie gebaut werden.*

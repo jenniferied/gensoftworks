@@ -69,4 +69,6 @@ NEUE ERINNERUNGEN:
   tags: [relevante Schlagworte]
 
 ARTEFAKTE: [Falls du etwas erschaffst — Dateipfad und Beschreibung. Sonst: keine]
+
+FEEDBACK: [In ENCOUNTER und MEETING Szenen: Gib ehrliches Feedback an andere Teilnehmer. Format: "→ NAME: feedback text". Mindestens ein Feedback pro interaktiver Szene.]
 ```

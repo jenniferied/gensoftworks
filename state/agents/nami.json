@@ -1,15 +1,9 @@
 {
     "name": "Nami Okafor",
-    "position": "besprechungsraum",
-    "current_task": "GDD Kapitel 3 mit Emre geliefert. Fraktionsmodell v2 + GDD-Kapitel = solide Basis für WBB.",
-    "today_plan": [
-        "DONE: CD-Antworten verarbeitet, Fraktionsmodell v2",
-        "DONE: Fraktions-Sync mit Emre (Innenvolk=Destillateure, Scherben)",
-        "DONE: GDD Kapitel 03 'Welt & Fraktionen' geschrieben",
-        "OFFEN: WBB-Vorarbeit: Sprachpaletten pro Fraktion",
-        "OFFEN: Zugehörigkeitsindex-Update mit Darius"
-    ],
-    "mood": "zufrieden-fokussiert",
-    "importance_accumulator": 14,
-    "last_reflection": "nami-033"
+    "position": "7e",
+    "current_task": null,
+    "today_plan": [],
+    "mood": "neutral",
+    "importance_accumulator": 0,
+    "last_reflection": null
 }

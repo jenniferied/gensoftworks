@@ -7,12 +7,14 @@
     "build:data": "python3 ../scripts/build-viewer-data.py",
     "dev": "vite",
     "build": "python3 ../scripts/build-viewer-data.py && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "capture": "vite build && vite preview & sleep 2 && node ../scripts/capture-scenes.mjs --port 4173; kill %1"
   },
   "devDependencies": {
     "vite": "^7.3.1"
   },
   "dependencies": {
-    "phaser": "^3.90.0"
+    "phaser": "^3.90.0",
+    "playwright": "^1.58.2"
   }
 }

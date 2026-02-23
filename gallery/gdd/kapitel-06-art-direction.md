@@ -1,18 +1,12 @@
 # Kapitel 06 — Art Direction
 
-> **Autorin**: Vera Kowalski, Concept Artist & Environment Designer
-> **Stand**: Tag 3, GDD-Sprint
-> **Status**: Erster vollständiger Entwurf
-
 ---
 
 ## 1. Visuelle Identität: Biotech-Mittelalter
 
-Das hier ist kein Steampunk. Kein Zahnrad, kein Dampf, kein viktorianisches Messinggefrickel. Steampunk ist retrospektive Industrieromantik — wir machen das Gegenteil.
+Technologie wurde nie mechanisch, sondern biologisch. Statt Maschinen: gezüchtete Organismen. Statt Schaltkreisen: Nervenbahnen. Statt Stahl: Chitin. Ästhetik zwischen gotischer Kathedrale und lebendem Korallenriff.
 
-**Biotech-Mittelalter** bedeutet: Eine Welt, in der Technologie nie mechanisch wurde, sondern biologisch. Statt Maschinen hat diese Zivilisation *Organismen gezüchtet*. Statt Schaltkreisen verlaufen Nervenbahnen. Statt Stahl wächst Chitin. Die Ästhetik liegt irgendwo zwischen gotischer Kathedrale und lebendem Korallenriff — monumental, aber atmend.
-
-**Visueller Leitgedanke**: Stell dir vor, jemand hätte das Mittelalter mit CRISPR statt mit dem Webstuhl industrialisiert.
+**Leitgedanke**: Das Mittelalter, industrialisiert mit CRISPR statt mit dem Webstuhl.
 
 ---
 
@@ -163,114 +157,23 @@ Was das bedeutet:
 
 ## 5. Rassen-Ästhetik
 
-### 5.1 Eisenmenschen (Menschen)
-
-**Leitbild**: Präzise. Ingenieursmäßig. Funktional. MetaHuman-nah.
-
-Die Eisenmenschen sind die technisch-rationale Spezies. Ihr Design kommuniziert Kontrolle.
-
-- **Körperbau**: Realistische menschliche Proportionen. Keine Fantasy-Übertreibung. MetaHuman-Qualität als Baseline.
-- **Gesichter**: Kantig bis oval, klare Knochenstruktur. Ethnische Vielfalt innerhalb der Fraktion.
-- **Kleidung**: Sauber geschnittene Stoffe, präzise Nähte, sichtbare Knöpfe und Schnallen aus poliertem Chitin. Uniforme Elemente selbst in Zivilkleidung — Kragenspiegel, Manschetten, Gürtelschnallen mit Fraktions-Insignien.
-- **Rüstung**: Geometrisch, plattenartig. Klare Kanten, präzise Passform. Die einzige Fraktion, bei der Rüstungsteile *geschliffen* aussehen statt gewachsen.
-- **Haare**: Praktisch. Kurz, hochgesteckt, unter Helmen passend. Freie Haare = Off-Duty.
-- **Farbpalette**: Stahl, Anthrazit, Dunkelblau. Rote Akzente für Offiziere. Weiß für Gelehrte.
-
-### 5.2 Spitzen (Elfen)
-
-**Leitbild**: Leicht alien. Organische Kurven. Perlmutt und Chitin als zweite Haut.
-
-Die Spitzen sind die biologisch fortschrittlichste Spezies — ihr Design kommuniziert eine Zivilisation, die sich selbst *gezüchtet* hat.
-
-- **Körperbau**: Schlanker als Menschen, 5–15 cm größer im Schnitt. Längere Finger, längerer Hals. Nicht zerbrechlich — *effizient*. Wie Windhunde.
-- **Gesichter**: Hohe Wangenknochen, leicht vergrößerte Augen (110% Menschengröße, nicht mehr). Pupillen vertikal wie Katzen. Hauttöne mit leichtem Perlmutt-Schimmer bei bestimmtem Lichteinfall.
-- **Kleidung**: Drapiert, fließend, mehrlagig. Haider-Ackermann-Ästhetik. Asymmetrische Wickelgewänder aus Materialien, die lebendig wirken — leichtes Schimmern, minimale Texturänderung bei Bewegung.
-- **Rüstung**: Chitin-Platten, die wie natürliche Verlängerungen des Körpers wirken. Nahtlose Übergänge zwischen Haut und Panzer. Bei Elite-Einheiten ist unklar, ob die Rüstung getragen oder *gewachsen* ist.
-- **Schmuck**: Perlmutt-Einlagen, Keratin-Ornamente, biolumineszente Linien an Schläfen und Handgelenken (kosmetisch? funktional? beides?).
-- **Farbpalette**: Elfenbein, Perlmutt, blasses Violett. Dunkle Varianten in Schwarz-Irisierend für Krieger.
-
-### 5.3 Schlackige (Orks)
-
-**Leitbild**: Massiv. Vulkanisch. Basalt-Texturen. Hochofen-Patina.
-
-Die Schlackigen sind eine Spezies, die Hitze und Druck als Heimat empfindet. Ihr Design kommuniziert geologische Kraft.
-
-- **Körperbau**: Breit, schwer, niedriger Schwerpunkt. 180–220 cm, aber wirken breiter als hoch. Massive Unterarme und Kiefer. Kurze Beine relativ zum Torso.
-- **Haut**: Grafit- bis basaltfarben, mit sichtbarer *Textur* — nicht glatt, sondern wie gekühlte Lava. An Gelenken und Narben schimmert manchmal ein schwaches Orange durch (als wäre unter der Haut noch Glut).
-- **Gesichter**: Breite Kiefer, schwere Brauen, flache Nasen. Keine Stoßzähne (kein Tolkien-Ork-Klischee). Stattdessen: verhärtete Hautplatten an Stirn und Wangenknochen, wie natürlicher Helm.
-- **Kleidung**: Schwere Lederschürzen, Schmiedekleidung als Alltag. Ketten statt Schnallen. Eisenringe als Schmuck. Praktisch bis zur Rohheit.
-- **Rüstung**: Geschichtete Platten mit Hammerschlag-Textur. Rost ist bei den Schlackigen *kein Verfall* — es ist Patina, bewusst zugelassen, ein Zeichen, dass die Rüstung Feuer gesehen hat.
-- **Architektur-Echo**: Ihre Gebäude sehen aus wie sie — blockhaft, horizontal, hitzebeständig, mit schwach glühenden Fugen.
-- **Farbpalette**: Dunkelgrau, Anthrazit, verbranntes Orange. Messingakzente bei Anführern.
-
-### 5.4 Fellträger (Tiermenschen)
-
-**Leitbild**: HÄNDLER-ÄSTHETIK. Seidenstraße. Brokat und Pelz. Versteckter Reichtum. Urban-nomadisch.**
-
-**NICHT TRIBAL.** Keine Knochen-Halsketten, keine Lendenschurze, keine "edle Wilde"-Klischees. Die Fellträger sind die *ökonomische Macht* dieser Welt.
-
-- **Körperbau**: Vielfältig — von fuchsartig-schlank bis bärenartig-massiv. Das Gemeinsame: dichtes, gepflegtes Fell als natürliche Isolation und Statussymbol.
-- **Gesichter**: Tierische Grundzüge (Schnauze, Ohrenform, Augenstellung variieren je nach Linie), aber *ausdrucksfähig* — die Mimik muss Emotionen im Spiel transportieren können.
-- **Kleidung**: Das ist der Kern. Die Fellträger kleiden sich wie **Seidenstraßen-Händler auf dem Höhepunkt ihres Reichtums**:
-  - Mehrlagige Gewänder aus Brokat, Seide, besticktem Leinen
-  - Pelz als Besatz, nicht als Hauptmaterial (sie tragen Pelz *über* Pelz — das ist ein bewusstes Luxussignal)
-  - Versteckte Taschen, eingenähte Fächer, Gürtel mit Dutzend kleinen Beuteln (sie tragen ihr Vermögen am Körper)
-  - Turbane, Hauben, Kapuzen mit Ohraussparungen — praktisch und dekorativ
-- **Rüstung**: Leicht, unter Kleidung getragen. Chitin-Plättchen in Textil eingenäht, wie historische Brigandine. Panzer sieht aus wie Mantel. Das ist Absicht — Fellträger zeigen Stärke nie offen.
-- **Schmuck**: Schwer, filigran, überall. Ohrgehänge, Armreife, Ketten mit Handelsmarken, gravierte Chitin-Plaketten. Schmuck *ist* Währung.
-- **Farbpalette**: Warme Erdtöne — Sand, Zimt, Terrakotta. Dazu: tiefes Indigo und Purpur als Akzente. Gold-Einschläge bei Wohlhabenden.
+| Rasse | Leitbild | Körperbau | Farbpalette | Rüstungs-Stil |
+|-------|----------|-----------|-------------|---------------|
+| **Eisenmenschen** (Menschen) | Präzise, funktional, MetaHuman-nah | Realistische Proportionen, ethnisch vielfältig | Stahl, Anthrazit, Dunkelblau | Geometrisch, plattenartig, geschliffen |
+| **Spitzen** (Elfen) | Alien, organisch, Perlmutt | Schlank, 5–15cm größer, vertikale Pupillen | Elfenbein, Perlmutt, blasses Violett | Chitin-Platten als Körperverlängerung, Haider-Ackermann-Drapierung |
+| **Schlackige** (Orks) | Massiv, vulkanisch, Basalt | Breit, 180–220cm, Haut wie gekühlte Lava | Dunkelgrau, verbranntes Orange | Hammerschlag-Platten, Rost als Patina |
+| **Fellträger** (Tiermenschen) | Seidenstraßen-Händler, NICHT tribal | Vielfältig (fuchsartig bis bärenartig) | Sand, Zimt, Terrakotta, Indigo | Leichte Chitin-Brigandine unter Brokat, Schmuck ist Währung |
 
 ---
 
 ## 6. Architektur pro Zone
 
-### 6.1 Küste — Vertikale Flickwerk-Stadt
-
-**Referenzen**: Kowloon Walled City + Leyndell (Elden Ring) + Dogtown (Cyberpunk 2077)
-
-Eine Stadt, die zweimal gebaut wurde. Die untere Schicht: alte Steinarchitektur, zerbrochen, verwittert, mit Meeressalz-Patina und Muschelbewuchs. Die obere Schicht: Biotech-Konstruktionen, die aus den Ruinen wachsen wie Korallen aus einem gesunkenen Schiff.
-
-- **Vertikalität**: 5–8 Stockwerke, verbunden durch Außentreppen, Brücken, Seilzüge
-- **Flickwerk**: Kein einheitlicher Baustil. Jedes Stockwerk hat andere Materialien, andere Fensterformen, andere Dachneigung. Die Stadt ist ein Querschnitt durch Generationen.
-- **Zwei Zeitschichten**: Unten Stein+Rost (alt, tot), oben Chitin+Biolumineszenz (neu, lebendig). Die Grenze verläuft nicht horizontal — sie ist gezackt, willkürlich, ein Kampf zwischen Verfall und Wachstum.
-- **Licht**: Tageslicht erreicht den Boden kaum. Biolumineszente Adern an Wänden ersetzen Straßenlaternen. Marktplätze haben offene Decken.
-- **Sound-Implikation**: Holz knarrt, Wasser tropft, Wind pfeift durch Spalten. Diese Stadt *klingt* lebendig.
-
-### 6.2 Vulkan — Organische Höhlenstadt der Schlackigen
-
-**Referenzen**: Petra (Jordanien) + Nidavellir (MCU) + Ironforge (WoW, aber horizontal)
-
-Nicht auf dem Vulkan — *im* Vulkan. Nur 30% der Stadt ist von außen sichtbar. Der Rest erstreckt sich in Lavahöhlen und gegrabenen Tunneln.
-
-- **Organisch**: Wände sind geglättet, aber nicht rechtwinklig. Räume folgen der Geologie, nicht dem Reißbrett. Korridore verengen und weiten sich wie Arterien.
-- **Horizontal**: Keine Türme. Alles breitet sich seitwärts aus. Decken sind niedrig (2,5–3m, damit Schlackige sich wohlfühlen, Spitzen sich ducken müssen).
-- **30% sichtbar**: Von außen: massive Portalöffnungen in der Felswand, mit Hammer-Relief-Rahmen, schwach orange glühende Fugen. Das Versprechen: *hier geht es weiter*.
-- **Hitze als Designelement**: Metalloberflächen haben Anlauffarben. Wasser verdampft in Kanälen. Kristallisierte Mineralien wachsen an Wänden.
-- **Licht**: Glutrot von unten (Magma-Kanäle unter Gitterrosten), Fackelgelb in Werkstätten, Dunkelheit dazwischen.
-
-### 6.3 Siedler-Festung — Menschliche Ingenieurskunst
-
-**Referenzen**: Minas Tirith + Carcassonne + Vauban-Festungen
-
-Die Eisenmenschen bauen, wie sie denken: gerade, rechtwinklig, imposant. Ihre Festungen sind Manifestationen von Kontrolle über eine feindliche Landschaft.
-
-- **Blockhaft**: Quaderförmige Grundrisse, klare Kanten, metrische Wiederholung. Fenster in Reih und Glied. Türme in gleichmäßigen Abständen.
-- **Rechtwinklig**: Keine organischen Kurven. Jeder Winkel 90°. Wo Biotech-Elemente integriert sind, werden sie in rechtwinklige Rahmen *gezwungen* — ein Spannungsfeld zwischen lebender Technologie und menschlichem Ordnungswillen.
-- **Imposant**: Mauern 8–12m hoch, 3m dick. Tore mit doppelten Fallgittern. Die Botschaft: *Wir bleiben*.
-- **Ingenieurskunst**: Sichtbare Baulogik — Strebepfeiler, Wasserableitungen, Belagerungsrampen. Jedes Element hat eine Funktion. Dekoration ist *auch* funktional (Reliefs dienen als Handgriffe für Reparaturen).
-- **Licht**: Fackeln und Öllampen. Die Eisenmenschen nutzen wenig Biotech-Beleuchtung — kulturelle Entscheidung, nicht technische Limitation.
-
-### 6.4 Untergrund — Fellträger-Basare
-
-**Referenzen**: Großer Basar Istanbul + Derinkuyu (Kappadokien) + Novigrad-Unterwelt (Witcher 3)
-
-Unter der sichtbaren Welt liegt das Nervensystem des Handels.
-
-- **Basare**: Gewölbte Gänge, an beiden Seiten Verkaufsnischen. Stoffe hängen von der Decke als Raumteiler. Laternen (biolumineszent in Keratinkäfigen) alle 5m. Gerüche werden Teil des Designs — Gewürze, Leder, Räucherwerk (als Partikeleffekte darstellbar).
-- **Geheimgänge**: Hinter Wandteppichen, unter Bodenfliesen, durch drehbare Regale. Die Fellträger bauen *immer* einen zweiten Weg. Jeder Raum hat mindestens zwei Ausgänge — sichtbar oder nicht.
-- **Organische Tunnel**: Zwischen den bebauten Bereichen verlaufen naturbelassene Tunnelsysteme — Wurzelwerk, tropfendes Wasser, Pilz-Biolumineszenz. Hier verliert sich der menschliche Einfluss. Perfekte Schmuggelrouten.
-- **Licht**: Warm, gedämpft, golden. Die Fellträger nutzen Biolumineszenz in Amber-Tönen — Behaglichkeit als Verkaufsstrategie. Dunkle Ecken nur in den Geheimgängen.
-- **Sound-Implikation**: Stimmengewirr, Münzklirren, gedämpfter Gesang. Das Echo verrät die Raumgröße.
+| Zone | Referenzen | Kernmerkmale | Licht |
+|------|-----------|--------------|-------|
+| **Küste** | Kowloon + Leyndell + Dogtown | Vertikales Flickwerk, 5–8 Stockwerke. Unten Stein+Rost, oben Chitin+Biolumineszenz. Generationen-Schichtung. | Biolumineszente Adern statt Laternen |
+| **Vulkan** | Petra + Nidavellir | *Im* Vulkan. 30% sichtbar. Horizontal, niedrige Decken. Wände folgen Geologie. Hitze als Designelement. | Glutrot von unten, Fackelgelb in Werkstätten |
+| **Festung** | Minas Tirith + Vauban | Blockhaft, rechtwinklig, imposant. Mauern 8–12m, 3m dick. Biotech in rechtwinklige Rahmen gezwungen. | Fackeln und Öllampen (kulturelle Entscheidung) |
+| **Untergrund** | Großer Basar Istanbul + Derinkuyu | Gewölbte Basare, Amber-Biolumineszenz. Jeder Raum hat mindestens zwei Ausgänge. Organische Tunnel als Schmuggelrouten. | Warm, gedämpft, golden |
 
 ---
 
@@ -338,25 +241,12 @@ Das Nervensystem-UI muss in zwei Spielperspektiven funktionieren:
 
 ## 8. Referenzen
 
-| Referenz | Relevanz für dieses Projekt |
-|----------|---------------------------|
-| **Craig Mullins** | Atmosphärische Beleuchtung, Farbtemperatur-Kontraste, das Gefühl von *Ort*. Jedes Environment-Concept muss Mullins' Lichtqualität anstreben. |
-| **Elden Ring — Leyndell** | Vertikale Stadt, architektonische Schichtung, Verfall als Welterzählung. Unsere Küstenzone lernt von Leyndell. |
-| **Cyberpunk 2077 — Dogtown** | Architektonische Dichte, kulturelles Layering, wie eng bebaute Räume sich anfühlen. Vorbild für die Flickwerk-Ästhetik. |
-| **Alexander McQueen — Runway** | Skulpturale Mode, Natur-als-Material, Brutalität und Schönheit in einem Atemzug. Rüstungsdesign-Philosophie. |
-| **HR Giger** | Biomechanische Verschmelzung, organisch-technische Grenzauflösung. Hochstufige Rüstungen und Spitzen-Architektur. |
-| **Haider Ackermann** | Drapierung, monochromes Layering, textiles Understatement. Fellträger-Mode und zivile Kleidung aller Fraktionen. |
-
-### Ergänzende visuelle Quellen
-
-- **Zdzisław Beksiński** — Verfalls-Ästhetik, Knochen-Architektur, traumartige Ruinen
-- **Kentaro Miura (Berserk)** — Rüstungsdesign, Körper-unter-Panzer-Spannung, dunkle Monumentalität
-- **Moebius (Jean Giraud)** — Weltweite, klare Linien in komplexen Environments, Farbe als Emotion
-- **Petra, Jordanien** — Reale Felsenarchitektur als Referenz für die Vulkanzone
-- **Großer Basar, Istanbul** — Raumgefühl, Lichtstimmung, Dichte der Untergrund-Basare
-
----
-
-> *"Jeder Frame ist eine Komposition. Jede Silhouette erzählt. Jedes Material hat eine Geschichte. Wenn der Spieler anhält, um einen Screenshot zu machen — nicht wegen eines Questmarkers, sondern weil der Ort schön ist — dann haben wir gewonnen."*
->
-> — V.K., Art Station, Mittwochabend
+| Referenz | Relevanz |
+|----------|----------|
+| Craig Mullins | Atmosphärische Beleuchtung, Farbtemperatur-Kontraste |
+| Elden Ring — Leyndell | Vertikale Stadt, Verfall als Welterzählung |
+| Alexander McQueen | Skulpturale Mode, Natur-als-Material |
+| HR Giger | Biomechanische Verschmelzung, organisch-technische Grenzauflösung |
+| Haider Ackermann | Drapierung, monochromes Layering |
+| Beksiński | Verfalls-Ästhetik, Knochen-Architektur |
+| Kentaro Miura (Berserk) | Rüstungsdesign, dunkle Monumentalität |

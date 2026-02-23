@@ -1,27 +1,12 @@
 {
-    "day": 3,
-    "day_of_week": "Mittwoch",
-    "time_of_day": "evening",
-    "scenes_today": 3,
-    "scenes_total": 19,
-    "scheduled_events": [
-        {"day": 3, "event": "GDD-Entwurf Deadline in 1 Tag", "time": "all-day"},
-        {"day": 4, "event": "GDD-Entwurf fällig + D&D Night", "time": "evening"},
-        {"day": 5, "event": "WBB-Entwurf fällig", "time": "end-of-day"}
-    ],
-    "active_briefs": [
-        "RELICS — Dark Fantasy CRPG. Eine Insel, 3-6 Fraktionen, Low Fantasy GoT-Level, Biotech-Mittelalter.",
-        "Spieler-Fantasie: Ein Fremder als Niemand kommt auf die Insel. Offenes Rollenspiel.",
-        "KAMERA: Skyrim FP/TP nahtlos umschaltbar, zoombar. Customizable Rüstung/Kleidung.",
-        "FUTURISTISCH = Biotech/Chemie (Gift, Drogen, Amphetamine), NICHT Steampunk. Super Mittelalter.",
-        "CHARACTER LEVELING: Halbtransparente Nervensystem-Sicht (Cardio, Muskel/Skelett, Lymph).",
-        "TIERMENSCHEN: Händler und Diebe, NICHT Handwerker. Leicht alien vs. menschlich clean.",
-        "MONETARISIERUNG: Klassisch Premium. Alpha free für Streamer, Beta Steam, DLCs + Merch.",
-        "MYTHOLOGIE: Germanisch, Low Fantasy, dekonstruieren aber nah an der Quelle. 3-6 Fraktionen.",
-        "VERTICAL SLICE: Hauptquest + 2 Nebenquests in einer Region.",
-        "ART DIRECTION: Mehr futuristisch, weniger heruntergekommen. High Fashion Mittelalter.",
-        "DEADLINE: GDD-Entwurf Donnerstag (VOLLSTÄNDIG). WBB-Entwurf Freitag."
-    ],
-    "artifacts_today": ["gallery/writing/day-003_fraktionsmodell-v2.md", "gallery/gdd/kapitel-00-vorwort.md", "gallery/gdd/kapitel-01-kernvision.md", "gallery/gdd/kapitel-03-welt-fraktionen.md", "gallery/gdd/kapitel-04-gameplay-systeme.md", "gallery/gdd/kapitel-05-vertical-slice.md", "gallery/gdd/kapitel-06-art-direction.md", "gallery/gdd/kapitel-07-technik.md", "gallery/gdd/kapitel-08-monetarisierung.md", "gallery/gdd/kapitel-09-risiken-timeline.md"],
-    "studio_status": "Tag 3 Abend. GDD-SPRINT: 8 von 9 Kapiteln GELIEFERT. Nur Kapitel 02 (Emre Welt-Vorwort) fehlt. Finn baut zusammen. Morgen früh: Emre liefert Kap 02, Final Edit, CD-Übergabe. 10 Artefakte heute — produktivster Tag bisher."
+    "simulation": 2,
+    "day": 0,
+    "day_of_week": null,
+    "time_of_day": null,
+    "scenes_today": 0,
+    "scenes_total": 0,
+    "scheduled_events": [],
+    "active_briefs": [],
+    "artifacts_today": [],
+    "studio_status": "Simulation 2 bereit. Agents warten auf Tag 1."
 }

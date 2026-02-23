@@ -1,16 +1,4 @@
----
-agent: darius
-day: 3
-task: "GDD Kapitel 01 — Kernvision & Core Loop"
-memories_referenced: [darius-008, darius-012, darius-015, darius-019, nami-021, emre-005]
-feedback_received: [cd-day3-morning]
-status: draft
----
-
 # Kapitel 01 — Kernvision & Core Loop
-
-> *"Bevor eine einzige Zeile Code geschrieben wird, muss jeder im Team dieses Dokument gelesen haben. Alles, was wir bauen, dient dem, was hier steht. Wenn ein Feature nicht auf dieses Kapitel zurückführbar ist, hat es im Spiel nichts verloren."*
-> *— D. Engel, Game Director, Tag 3*
 
 ---
 
@@ -44,8 +32,6 @@ Der Spielercharakter hat keinen Hintergrund. Nicht, weil wir zu faul waren, eine
 
 ### Erkunden → Begegnen → Handeln → Konsequenz
 
-Das ist kein Diagramm für eine Präsentation. Das ist das Herz des Spiels. Jede einzelne Spielminute muss in diesen Loop einzahlbar sein.
-
 ```
 ┌──────────────┐
 │   ERKUNDEN   │ ── Der Spieler bewegt sich durch die Welt.
@@ -72,63 +58,44 @@ Das ist kein Diagramm für eine Präsentation. Das ist das Herz des Spiels. Jede
 
 ### 1.3.1 ERKUNDEN
 
-**Was es ist**: Freie Bewegung durch eine offene, handgefertigte Welt. Kein prozeduraler Füllstoff. Jeder Ort existiert, weil er eine Geschichte erzählt oder ein Gameplay-Ziel hat.
-
-**Was der Spieler fühlt**: Neugier. Unbehagen. "Was ist hinter dem nächsten Hügel?" — und die Antwort ist nie generisch. Hinter dem Hügel ist eine verlassene Karawane des Höhlenvolks, und die Ladung fehlt, und die Spuren führen in zwei Richtungen.
+Freie Bewegung durch eine offene, handgefertigte Welt. Kein prozeduraler Füllstoff. Jeder Ort existiert, weil er eine Geschichte erzählt oder ein Gameplay-Ziel hat.
 
 **Designregeln**:
-- **Keine Fragezeichen auf der Karte.** Der Spieler erkundet, weil die Welt ihn einlädt — nicht, weil ein Icon blinkt. Gothic hat das 2001 hinbekommen. Wir bekommen das 2026 hin.
-- **Sichtlinien als Leitsystem.** Knochentürme sind von überall sichtbar. Sie sind gleichzeitig Orientierung, Lore und Gameplay-Ziel. Jeder Knochenturm am Horizont ist ein Versprechen.
-- **Vertikale Exploration.** Klettern ist kein Minigame — es ist eine Kernbewegung. Die Welt hat Tiefe (Titanenadern, unterirdische Labore des Innenvolks) und Höhe (Knochenturmspitzen, Klippenöden).
-- **Dichteprüfung**: Wenn ein Spieler 90 Sekunden laufen kann, ohne etwas Interessantes zu sehen, haben wir versagt. Kein Dead Space. Jeder Quadratmeter hat eine Funktion.
-
-**Referenz**: Gothic 2 — Khorinis ist keine große Welt, aber jeder Meter ist handgemacht. Morrowind — jede Richtung ist ein Abenteuer, keine Checkliste.
+- **Keine Fragezeichen auf der Karte.** Der Spieler erkundet, weil die Welt ihn einlädt — nicht, weil ein Icon blinkt.
+- **Sichtlinien als Leitsystem.** Knochentürme sind von überall sichtbar — Orientierung, Lore und Gameplay-Ziel zugleich.
+- **Vertikale Exploration.** Klettern ist Kernbewegung. Tiefe (Titanenadern, unterirdische Labore) und Höhe (Knochenturmspitzen, Klippenöden).
+- **Dichteprüfung**: Max. 90 Sekunden ohne interessanten Kontaktpunkt.
 
 ### 1.3.2 BEGEGNEN
 
-**Was es ist**: Kontaktpunkte zwischen Spieler und Welt. Nicht nur Kampf — Begegnungen sind NPCs, Umwelträtsel, Fraktions-Checkpoints, Entdeckungen, Gerüchte, Fallen.
-
-**Was der Spieler fühlt**: Spannung. "Was will diese Person?" — und die Antwort ist nie sofort klar. Ein Wachposten, der den Weg versperrt, könnte korrupt, pflichtbewusst, verängstigt oder gelangweilt sein. Jede Begegnung ist ein Micro-Rätsel.
+Kontaktpunkte zwischen Spieler und Welt. Nicht nur Kampf — Begegnungen sind NPCs, Umwelträtsel, Fraktions-Checkpoints, Entdeckungen, Gerüchte, Fallen.
 
 **Designregeln**:
-- **NPCs haben Tagesabläufe.** Wie in Gothic. Der Schmied arbeitet tagsüber und trinkt abends. Der Wachposten am Tor wechselt die Schicht. Der Händler des Höhlenvolks ist nur bei Neumond da. Wer die Rhythmen kennt, hat Vorteile.
-- **Begegnungen eskalieren basierend auf Ruf.** Ein Fremder wird ignoriert. Ein Bekannter wird gegrüßt. Ein Feind wird angegriffen. Das System ist granular — nicht "Freund/Feind", sondern ein Spektrum.
-- **Zufallsbegegnungen mit Logik.** Kein Bandit im Vakuum. Banditen operieren an Handelsrouten, weil dort die Beute ist. Wölfe jagen in Rudeln nahe Wasserquellen. Die Welt folgt ökologischen und ökonomischen Regeln.
-- **Stille als Begegnung.** Manchmal begegnet der Spieler: nichts. Ein leeres Dorf. Ein frisch ausgehobenes Grab. Stille erzählt Geschichten.
-
-**Referenz**: Morrowind — der Ashlander, der dich anspricht und eine Geschichte erzählt, die nichts mit deiner Quest zu tun hat. Und drei Stunden später ist sie relevant. Deus Ex — jeder Raum hat mehrere Wege hinein und mehrere Gründe, dort zu sein.
+- **NPCs haben Tagesabläufe.** Der Schmied arbeitet tagsüber und trinkt abends. Der Händler des Höhlenvolks ist nur bei Neumond da. Wer die Rhythmen kennt, hat Vorteile.
+- **Begegnungen eskalieren basierend auf Ruf.** Nicht "Freund/Feind", sondern ein Spektrum.
+- **Zufallsbegegnungen mit Logik.** Kein Bandit im Vakuum. Banditen operieren an Handelsrouten, Wölfe jagen nahe Wasserquellen. Die Welt folgt ökologischen und ökonomischen Regeln.
+- **Stille als Begegnung.** Ein leeres Dorf. Ein frisch ausgehobenes Grab. Stille erzählt Geschichten.
 
 ### 1.3.3 HANDELN
 
-**Was es ist**: Der Moment der Spielerentscheidung. Jede Begegnung hat mindestens zwei, idealerweise drei oder mehr Handlungsoptionen. Keine davon ist "die richtige."
-
-**Was der Spieler fühlt**: Macht und Verantwortung. "Ich KANN das tun — aber soll ich?" Der Spieler hat immer Optionen, aber nie Sicherheit über die Konsequenzen.
+Jede Begegnung hat mindestens zwei Handlungsoptionen. Keine davon ist "die richtige."
 
 **Designregeln**:
 - **Drei Säulen des Handelns**: Gewalt, Verhandlung, Subversion. Jede Begegnung muss mindestens zwei der drei unterstützen.
-  - **Gewalt**: Kampf. Direkt, brutal, riskant. Immer eine Option, nie die einfachste.
-  - **Verhandlung**: Dialog, Bestechung, Einschüchterung, Überzeugung. Abhängig von Ruf, Wissen und Ausrüstung.
-  - **Subversion**: Schleichen, Stehlen, Sabotage, alternative Wege. Abhängig von Fähigkeiten und Weltwissen.
-- **Keine moralische Bewertung durch das Spiel.** Kein Karma-System. Kein "Du hast etwas Böses getan"-Popup. Die Welt reagiert — das Spiel urteilt nicht.
-- **Wissen als Handlungsoption.** Wer die Lore kennt, hat Dialogoptionen, die andere nicht haben. Wer das Nervensystem des Innenvolks studiert hat, erkennt Vergiftungssymptome. Wer die Handelsrouten des Höhlenvolks kennt, kann abkürzen.
-- **Unterlassung ist eine Handlung.** Manchmal ist "nichts tun" die stärkste Entscheidung. Ein NPC bittet um Hilfe. Der Spieler geht weiter. Der NPC stirbt. Oder überlebt allein — und erinnert sich, dass der Spieler gegangen ist.
-
-**Referenz**: Deus Ex — Gunther Hermann bitten, seinen Killphrase zu vergessen, oder ihn damit töten. Beides gültig. Beides hat Konsequenzen. Game of Thrones — "When you play the game of thrones, you win or you die." Jede Handlung ist ein Einsatz.
+- **Keine moralische Bewertung durch das Spiel.** Kein Karma-System. Die Welt reagiert — das Spiel urteilt nicht.
+- **Wissen als Handlungsoption.** Wer die Lore kennt, hat Dialogoptionen, die andere nicht haben.
+- **Unterlassung ist eine Handlung.** Ein NPC bittet um Hilfe. Der Spieler geht weiter. Der NPC stirbt — oder überlebt allein und erinnert sich.
 
 ### 1.3.4 KONSEQUENZ
 
-**Was es ist**: Die Welt reagiert auf Spielerhandlungen. Nicht sofort, nicht immer sichtbar, aber immer real.
-
-**Was der Spieler fühlt**: Gewicht. "Das hat Konsequenzen gehabt." Der Spieler soll das Gefühl haben, dass seine Entscheidungen die Welt BEWEGEN — nicht nur ein Schalter, der umgelegt wird.
+Die Welt reagiert auf Spielerhandlungen. Nicht sofort, nicht immer sichtbar, aber immer real.
 
 **Designregeln**:
-- **Sofortige + verzögerte Konsequenzen.** Ein Mord hat sofortige Folgen (Wachen, Ruf-Verlust) UND verzögerte (die Familie des Opfers drei Stunden später, der Händler, der nicht mehr verkauft, die Quest-Linie, die sich schließt).
-- **Konsequenzen sind nicht binär.** Nicht "gut" oder "schlecht" — sondern komplex. Einem Händler des Höhlenvolks zu helfen verbessert den Ruf bei Händlern, verschlechtert ihn beim Siedlervolk (das Tiermenschen misstraut), und ist dem Küstenvolk egal.
-- **Konsequenz-Kaskaden.** Große Entscheidungen haben Fernwirkungen, die der Spieler nicht vorhersehen kann. Nicht als Bestrafung — als emergente Narration. "Ich habe den Schmied nicht gerettet. Jetzt hat das Dorf keine Waffen. Jetzt hat der Banditenüberfall funktioniert. Jetzt gibt es kein Dorf mehr."
-- **Erinnerung ist Konsequenz.** NPCs vergessen nicht. Wer einmal gelogen hat, dem wird misstraut. Wer einmal geholfen hat, an den wird man sich erinnern. Das Gedächtnis der Welt ist lang.
-- **Physische Konsequenz.** Die Welt verändert sich visuell. Ein niedergebranntes Dorf bleibt niedergebrannt. Ein gebauter Handelsposten bleibt stehen. Die Welt akkumuliert die Spuren des Spielers.
-
-**Referenz**: Gothic — wer den falschen NPC bestiehlt, hat einen Feind fürs ganze Spiel. Fallout: New Vegas — die Konsequenzen des Spielerentscheidungen formen buchstäblich das Ende. Nicht EIN Ende, sondern ein Mosaik aus den Folgen jeder einzelnen Wahl.
+- **Sofortige + verzögerte Konsequenzen.** Ein Mord hat sofortige Folgen (Wachen, Ruf-Verlust) UND verzögerte (die Familie des Opfers drei Stunden später, die Quest-Linie, die sich schließt).
+- **Konsequenzen sind nicht binär.** Einem Händler des Höhlenvolks zu helfen verbessert den Ruf bei Händlern, verschlechtert ihn beim Siedlervolk, und ist dem Küstenvolk egal.
+- **Konsequenz-Kaskaden.** Große Entscheidungen haben Fernwirkungen. "Ich habe den Schmied nicht gerettet. Jetzt hat das Dorf keine Waffen. Jetzt gibt es kein Dorf mehr."
+- **Erinnerung ist Konsequenz.** NPCs vergessen nicht. Das Gedächtnis der Welt ist lang.
+- **Physische Konsequenz.** Ein niedergebranntes Dorf bleibt niedergebrannt. Die Welt akkumuliert die Spuren des Spielers.
 
 ---
 
@@ -136,19 +103,11 @@ Das ist kein Diagramm für eine Präsentation. Das ist das Herz des Spiels. Jede
 
 ### "Ich bin ein Fremder. Ich bin Niemand. Und genau deshalb kann ich alles werden."
 
-Der Spieler beginnt als Tabula Rasa — keine Klasse, kein Stand, keine Zugehörigkeit. Das ist keine Einschränkung, das ist die Fantasie. In einer Welt voller Fraktionen, Zugehörigkeiten und Identitäten ist der Spieler der einzige Mensch, der frei ist. Und diese Freiheit ist gleichzeitig Fluch und Geschenk.
+Der Spieler beginnt als Tabula Rasa — keine Klasse, kein Stand, keine Zugehörigkeit. In einer Welt voller Fraktionen und Identitäten ist der Spieler der einzige Mensch, der frei ist. Freiheit als Fluch und Geschenk.
 
-Die Spieler-Fantasie ist NICHT:
-- "Ich bin der Auserwählte" (Skyrim)
-- "Ich bin der verlorene Erbe" (Witcher)
-- "Ich rette die Welt" (jedes zweite RPG)
-
-Die Spieler-Fantasie IST:
 - "Ich bin Niemand, und die Welt zwingt mich, jemand zu werden"
 - "Jede Fraktion will mich für sich — aber keine will mich als Gleichen"
 - "Ich baue mir meinen Ruf aus dem Nichts — durch Taten, nicht durch Titel"
-
-**Referenz**: Gothic 1 — der Namenlose Held im Minental. Jeder verachtet dich. Jeder will dich benutzen. Dein Status ist null. Und genau deshalb fühlt sich jeder Fortschritt echt an. Das ist die Fantasie, die wir verkaufen.
 
 ---
 
@@ -156,22 +115,11 @@ Die Spieler-Fantasie IST:
 
 ### Low Fantasy. Germanische Mythologie. Bodenständig mit Spice.
 
-**Was "Low Fantasy" für uns bedeutet**:
-- Magie existiert, aber sie ist selten, teuer und gefährlich. Kein Feuerball-Spam. Kein Mana-Pool. Magie ist etwas, das die Welt verbiegt — und die Welt wehrt sich.
-- Monster sind keine Erfahrungspunkt-Piñatas. Jedes Wesen hat einen ökologischen Platz. Warum ist dieser Troll hier? Weil unter der Brücke eine Titanenader liegt und der Troll das Knochenmetall frisst.
-- Politik ist wichtiger als Prophezeiungen. Wer die Knochenmetall-Minen kontrolliert, kontrolliert die Region. Das ist das echte Endgame.
+**Low Fantasy**: Magie ist selten, teuer und gefährlich. Monster haben einen ökologischen Platz. Politik ist wichtiger als Prophezeiungen.
 
-**Was "Germanische Mythologie" für uns bedeutet**:
-- Nicht die Marvel-Version von Wikinger-Ästhetik. Die echte, dreckige, ambivalente Mythologie. Odin ist ein Betrüger. Loki hat recht (manchmal). Die Götter sterben am Ende.
-- Titans als Ymir-Parallele: Aus dem Fleisch des Urwesens wird die Welt gebaut. Das ist 1:1 nordische Kosmogonie. Wir stehen auf der Schulter dieser Tradition — buchstäblich.
-- Ehre ist relativ. Es gibt kein universelles Wertesystem. Was das Siedlervolk "Fortschritt" nennt, nennt das Höhlenvolk "Raub". Beide haben recht.
+**Germanische Mythologie**: Nicht Marvel-Wikinger. Echte, ambivalente Mythologie. Titanen als Ymir-Parallele — aus dem Fleisch des Urwesens wird die Welt gebaut. Ehre ist relativ: Was das Siedlervolk "Fortschritt" nennt, nennt das Höhlenvolk "Raub".
 
-**Was "Bodenständig mit Spice" bedeutet**:
-- Die Basis ist Dreck, Schweiß und Pragmatismus. Rüstungen rosten. Schwerter werden stumpf. Essen verdirbt. Regen macht nass.
-- Der "Spice" ist das Fremde, das Unerklärliche, das Unbehagliche. Ein Knochenturm, der bei Berührung summt. Ein Fluss aus titanischem Blut, der seit tausend Jahren fließt und nie gerinnt. Das Innenvolk, das durch chemische Eingriffe Dinge sieht, die andere nicht sehen können.
-- Wir sind nicht Game of Thrones (zu zynisch) und nicht Lord of the Rings (zu edel). Wir sind irgendwo dazwischen — eine Welt, in der Menschen menschlich sind, aber das Land unter ihren Füßen es nicht ist.
-
-**Referenz**: Gothic — dreckig, direkt, kein Pathos. Morrowind — alien genug, um nie vertraut zu werden. Deus Ex — jedes System hat eine Logik, auch wenn die Logik unbequem ist. Game of Thrones (Seasons 1-4) — politische Konsequenzen, die wehtun, weil sie glaubwürdig sind.
+**Bodenständig mit Spice**: Die Basis ist Dreck, Schweiß und Pragmatismus. Der Spice ist das Unerklärliche — ein Knochenturm, der bei Berührung summt, ein Fluss aus titanischem Blut, der nie gerinnt. Nicht Game of Thrones (zu zynisch), nicht Lord of the Rings (zu edel).
 
 ---
 
@@ -190,19 +138,9 @@ Die Spieler-Fantasie IST:
 
 ## 1.7 Was dieses Spiel NICHT ist
 
-Klarheit ist wichtiger als Ambition. Was wir nicht machen:
-
-- **Kein Open-World-Füllstoff.** Keine Ubisoft-Türme, keine kopierten Camps, keine "Sammle 50 Ascheproben"-Quests.
-- **Kein Auserwählten-Narrativ.** Der Spieler ist kein Held der Prophezeiung. Er ist ein Mensch in einer Welt, die ihn nicht braucht.
-- **Kein Moralsystem.** Keine Gut/Böse-Achse. Kein Paragon/Renegade. Die Welt reagiert — sie bewertet nicht.
-- **Kein Steampunk.** Keine Zahnräder, kein Dampf, keine viktorianische Ästhetik. Biotech. Chemie. Körper.
-- **Kein Power-Fantasy-Endgame.** Der Spieler wird stärker, aber die Welt wird nicht schwächer. Am Ende ist der Spieler kompetent, nicht allmächtig. Gothic, nicht Diablo.
-- **Keine Handholding-UI.** Kein Quest-Kompass, keine glühenden Pfade, keine "Drücke X um zu gewinnen"-Prompts. Wenn der Spieler nicht weiß, wohin — dann ist das ein Feature.
-
----
-
-*Erster Entwurf. Millimeterpapier ist voll. Die Vision steht. Ab hier wird alles spezifisch. Nächstes Kapitel: Weltenstruktur. Danach: Gameplay-Systeme. Alles zahlt auf dieses Kapitel ein.*
-
-*Post-It am Monitor: "KERNFRAGE AN JEDEM FEATURE PRÜFEN: Beantwortet es die Frage des Fremden?"*
-
-— Darius Engel, Game Director
+- **Kein Open-World-Füllstoff.** Keine Ubisoft-Türme, keine kopierten Camps.
+- **Kein Auserwählten-Narrativ.** Der Spieler ist ein Mensch in einer Welt, die ihn nicht braucht.
+- **Kein Moralsystem.** Keine Gut/Böse-Achse. Die Welt reagiert — sie bewertet nicht.
+- **Kein Steampunk.** Biotech. Chemie. Körper.
+- **Kein Power-Fantasy-Endgame.** Kompetent, nicht allmächtig. Gothic, nicht Diablo.
+- **Keine Handholding-UI.** Kein Quest-Kompass, keine glühenden Pfade.

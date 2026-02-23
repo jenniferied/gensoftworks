@@ -1,14 +1,9 @@
 {
     "name": "Darius Engel",
-    "position": "bibliothek",
-    "current_task": "GDD Kapitel 01 + 04 geliefert. Kernvision + alle Gameplay-Systeme dokumentiert.",
-    "today_plan": [
-        "DONE: GDD Kapitel 01 — Kernvision & Core Loop",
-        "DONE: GDD Kapitel 04 — Gameplay-Systeme (8 vernetzte Systeme)",
-        "OFFEN: Balancing-Tabellen für Nervensystem-Leveling",
-        "OFFEN: Review mit Finn beim Zusammenbau"
-    ],
-    "mood": "pragmatisch-erleichtert",
-    "importance_accumulator": 59,
-    "last_reflection": "darius-028"
+    "position": "7d",
+    "current_task": null,
+    "today_plan": [],
+    "mood": "neutral",
+    "importance_accumulator": 0,
+    "last_reflection": null
 }
