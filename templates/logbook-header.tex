@@ -121,6 +121,26 @@
   before skip=4mm, after skip=4mm, breakable,
   fontupper=\small\sffamily}
 
+% Agent detail box (emotional arcs per agent)
+\definecolor{agentdetailtint}{HTML}{F0F0E8}
+
+\newtcolorbox{agentdetail}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{agentdetailtint!80!black},
+  colback=agentdetailtint!30,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  before skip=3mm, after skip=3mm, breakable,
+  fontupper=\small}
+
+% Narrative transcript box (screenplay-format dialogue)
+\definecolor{transcripttint}{HTML}{F5F5F5}
+
+\newtcolorbox{transcript}{enhanced, frame hidden,
+  borderline west={2pt}{0pt}{transcripttint!60!black},
+  colback=transcripttint!50,
+  left=6mm, right=6mm, top=4mm, bottom=4mm,
+  before skip=4mm, after skip=4mm, breakable,
+  fontupper=\small\ttfamily}
+
 \newcommand{\scenedivider}{%
   \vspace{4mm}%
   \noindent\makebox[\linewidth]{\color{border}\rule{0.3\linewidth}{0.4pt}}%

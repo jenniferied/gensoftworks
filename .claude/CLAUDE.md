@@ -1,47 +1,39 @@
 # GenSoftworks
 
-AI Creative Studio Simulator — multi-agent generative system inspired by Stanford's Generative Agents (Park et al. 2023). Seven agents live and work in a virtual 2D game studio, building a dark fantasy CRPG's worldbuilding bible and game design document through organic interaction. The human user is the Creative Director.
+Seven role-based AI agents (ChatDev) interact in scene-based encounters (Park et al. 2023) to produce text and images (fal.ai) for a dark fantasy CRPG's game design document and worldbuilding bible. Open scenes instead of a rigid pipeline allow spontaneous creative ideas. The human user is the Creative Director.
 
-## Architecture
+## How a Day Works
 
-- **Design docs**: `blueprint/` (00–08, numbered)
-- **Characters**: `roster/` (one `.md` per agent with YAML frontmatter)
-- **Agent defs**: `.claude/agents/` (subagent definitions)
-- **State**: `state/` (world.json, agents/*.json, memories/*.jsonl)
-- **Reference shelf**: `library/` (papers, artbooks, GDDs, WBBs)
-- **Tracking**: `pinwall/ROADMAP.md` + `pinwall/COMPLETED.md`
-- **Logs**: `logbook/` (scene logs per day, v2 schema)
-- **Output**: `gallery/` (gdd/, wbb/, concepts/, writing/)
-- **Archive**: `simulation-1/` (completed sim 1 data)
-- **Viewer**: `frontend/` (Phaser.js + Tiled browser viewer)
-- **Scripts**: `scripts/` (build-viewer-data.py, export-logbook.py, capture-scenes.mjs)
+1. **Briefing** — CD posts vision/feedback in `simulation-2/briefing.md`
+2. **Scenes** — Game Master runs 5+ scenes (TALK, WORK, REVIEW) with agent subprocesses
+3. **Feedback** — CD reviews artifacts, gives direction for next day
 
-## Run
+## Where Things Live
 
+| Path | Content |
+|------|---------|
+| `roster/` | Character bios (7 agents, YAML frontmatter) |
+| `.claude/agents/` | Agent prompt definitions |
+| `library/` | Reference material (papers, artbooks, GDDs, WBBs) |
+| `simulation-2/` | Active sim: logbook/, gallery/, state/, pinwall/ |
+| `ARCHIVE-SIM1.md` | Reference doc for archived simulation 1 |
+| `frontend/` | Phaser.js + Tiled browser viewer |
+| `assets/` | Icons (bubble/agent PNGs for export + viewer) |
+| `scripts/` | build-viewer-data.py, export-logbook.py |
+| `templates/` | LaTeX export templates |
+
+## Logbook Schema (v3 — simplified)
+
+```json
+{"scene": 1, "type": "TALK|WORK|REVIEW", "time": "morning|afternoon|evening",
+ "location": "kueche|lore-ecke|art-station|...", "participants": ["vera","emre"],
+ "summary": "...", "dialogue": [{"who":"vera","says":"..."}],
+ "artifacts": [], "cd_feedback": null}
 ```
-/scene              # Run next scene (interactive)
-/day                # Run full day (autopilot)
-/brief "message"    # Post Creative Director feedback
-```
-
-## Tech Stack
-
-| Component | Tool |
-|-----------|------|
-| Engine | Claude Code (subscription) |
-| Game Master | Main Claude Code session |
-| Agents | Custom subagents (`.claude/agents/`) |
-| State | JSON/JSONL files |
-| Viz | Phaser.js + Tiled (browser) |
-| Images | Fal.ai (via prompts from Vera) |
-| Map editor | Tiled |
-| Export | Pandoc + XeLaTeX |
 
 ## Guardrails
 
-- **Design-first**: All architecture in `blueprint/` before code
-- **Research-grounded**: Every system must cite its academic basis
-- **Log everything**: Every agent thought, observation, reflection → `logbook/`
-- **v2 schema**: All fields in every scene, no compound types (see `blueprint/07-logging.md`)
-- **Never invent citations** — same rule as master-thesis
 - **German content, English code** — agents speak German in-sim
+- **Never invent citations** — if unsure, say so
+- **Log everything** — every scene → `simulation-2/logbook/`
+- **Logbook IS the memory** — no separate memory system, last scenes = agent context

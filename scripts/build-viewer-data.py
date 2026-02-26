@@ -126,13 +126,18 @@ TYPE_LABELS = {
     "BRIEF+REACTION": "Briefing",
     "REFLECTION": "Reflexion",
     "EVENT": "Ereignis",
+    # v3 simplified types
+    "TALK": "Gespraech",
+    "REVIEW": "Review",
 }
 
 
 def detect_schema(entry):
-    """Detect whether entry uses v1 or v2 schema."""
+    """Detect whether entry uses v1, v2, or v3 schema."""
     if "mood" in entry and isinstance(entry["mood"], dict):
         return "v2"
+    if entry.get("type") in ("TALK", "WORK", "REVIEW") and "agent_details" not in entry:
+        return "v3"
     return "v1"
 
 
@@ -352,7 +357,7 @@ def main():
                 continue
             entry = json.loads(line)
             schema = detect_schema(entry)
-            if schema == "v2":
+            if schema in ("v2", "v3"):
                 scenes.append(build_scene_v2(entry))
             else:
                 scenes.append(build_scene_v1(entry, all_memories))

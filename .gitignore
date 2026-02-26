@@ -1,72 +1,34 @@
+# OS
+.DS_Store
+
 # Python
 __pycache__/
 *.py[cod]
-*.egg-info/
-dist/
-build/
 .venv/
 venv/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Data (large, local only)
-data/memories/*.db
-data/embeddings/
+# Node
+node_modules/
 
 # Secrets
 .env
 *.key
 
-# Gallery images (generated, large)
-gallery/concepts/*/
-gallery/wbb/images*/
-gallery/wbb/*.pdf
-gallery/gdd/*.pdf
+# Large PDFs (library reference material)
+library/**/*.pdf
 
-# Library (large PDFs + local symlinks)
-library/papers/**/*.pdf
-library/artbooks/*.pdf
-library/gdds/*.pdf
-library/wbbs/*.pdf
-library/bibliography.bib
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
 
-# Export build artifacts
-export/*.pdf
-export/*.aux
-export/*.log
-export/*.out
-export/*.toc
-
-# Screenshots (generated)
-screenshots/
-
-# Tiled backup files
-*.tmx~
-
-# Frontend licensed assets (not committed)
+# Frontend licensed assets (purchased, not redistributable)
 frontend/public/assets/tilesets/
 frontend/public/assets/furniture/
 frontend/public/assets/characters/
 frontend/test-results/
 
-# Simulation 1 archive — large/generated files
-simulation-1/gallery/concepts/*/
-simulation-1/gallery/wbb/images*/
-simulation-1/gallery/wbb/*.pdf
-simulation-1/gallery/gdd/*.pdf
-simulation-1/export/*.pdf
-simulation-1/export/*.aux
-simulation-1/export/*.log
-simulation-1/export/*.out
-simulation-1/export/*.toc
-simulation-1/screenshots/
-simulation-1/viewer-data/
+# Tiled backup files
+*.tmx~

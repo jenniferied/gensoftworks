@@ -862,7 +862,7 @@ def build_pdf(md_path, output_path, header_path, tex_only=False):
                        / "master-thesis" / "assets" / "fonts") + "/"
 
         # Patch header template with absolute font/icon paths
-        icons_dir = str((PROJECT_ROOT / "export" / "icons").resolve()) + "/"
+        icons_dir = str((PROJECT_ROOT / "assets" / "icons").resolve()) + "/"
         header_text = header_path.read_text()
         header_text = header_text.replace(
             "Path = ../../master-thesis/assets/fonts/,",

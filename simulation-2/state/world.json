@@ -1,12 +1,4 @@
 {
-    "simulation": 2,
-    "day": 0,
-    "day_of_week": null,
-    "time_of_day": null,
-    "scenes_today": 0,
-    "scenes_total": 0,
-    "scheduled_events": [],
-    "active_briefs": [],
-    "artifacts_today": [],
-    "studio_status": "Simulation 2 bereit. Agents warten auf Tag 1."
+  "simulation": 2,
+  "day": 0
 }

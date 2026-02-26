@@ -12,13 +12,17 @@
  *   node scripts/capture-scenes.mjs --out simulation-1/screenshots
  */
 
-import { chromium } from 'playwright';
+import { createRequire } from 'module';
 import { mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = resolve(__dirname, '..');
+
+// Playwright is installed in frontend/node_modules
+const require = createRequire(resolve(PROJECT_ROOT, 'frontend', 'package.json'));
+const { chromium } = require('playwright');
 
 // Parse args
 const args = process.argv.slice(2);

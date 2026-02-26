@@ -1,5 +1,5 @@
 [project]
-name = "studio-arcana"
+name = "gensoftworks"
 version = "0.1.0"
 description = "AI Creative Studio Simulator — multi-agent generative system for collaborative worldbuilding and game design"
 requires-python = ">=3.12"
