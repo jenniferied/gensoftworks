@@ -890,14 +890,13 @@ def build_pdf(md_path, output_path, header_path, tex_only=False):
         filter_path.write_text(LUA_FILTER)
 
         tex_path = output_path.with_suffix(".tex")
-        fontpath = str(Path(__file__).resolve().parent.parent.parent
-                       / "master-thesis" / "assets" / "fonts") + "/"
+        fontpath = str((PROJECT_ROOT / "assets" / "fonts").resolve()) + "/"
 
         # Patch header template with absolute font/icon paths
         icons_dir = str((PROJECT_ROOT / "assets" / "icons").resolve()) + "/"
         header_text = header_path.read_text()
         header_text = header_text.replace(
-            "Path = ../../master-thesis/assets/fonts/,",
+            "Path = ../assets/fonts/,",
             f"Path = {fontpath},",
         )
         header_text = header_text.replace(

@@ -29,6 +29,7 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy CRPG (Park et al.
 5. Write logbook entry → `logbook/dayDD-sceneS.json`
 6. Update `world.json` (increment scene; after scene 6: increment day, reset scene to 0)
 7. **After scene 6**: Write `logbook/dayDD-summary.json` (day overview for PDF/Phaser)
+8. **Log metrics**: After each agent spawn, capture `total_tokens` + `duration_ms` from Task result. Write to logbook `metrics` field.
 
 ## Traces (mandatory per agent)
 
@@ -38,17 +39,28 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy CRPG (Park et al.
 
 Sequential turn-taking. NOT everyone speaks — Finn opens, 2-3 agents respond. Each agent spawned separately.
 
+## Concept Art (Vera)
+
+- Vera generates images via fal.ai in WORK scenes
+- Daily budget: 5 images (Seedream $0.04 explore, Nano $0.15 refine)
+- Other agents can request images → Vera writes prompt + generates
+- All images: NEVER with text (negative_prompt enforced)
+- Output: `gallery/concepts/{KK-kategorie}/{name}.png`
+- Approved images → `pinwall/favorites/`
+
 ## Artifacts & Naming
 
-**GDD** (`gallery/gdd/KK-titel.md`): 01-spieluebersicht, 02-kernmechaniken, 03-erzaehlkonzept, 04-schluesselfiguren, 05-designsprache, 06-technik-produktion
+**GDD** (`gallery/gdd/KK-titel-vN.md`): 01-spieluebersicht, 02-kernmechaniken, 03-erzaehlkonzept, 04-schluesselfiguren, 05-designsprache, 06-technik-produktion
 
-**WBB** (`gallery/wbb/KK-titel.md`): 01-mythos, 02-topos, 03-ethos
+**WBB** (`gallery/wbb/KK-titel-vN.md`): 01-mythos, 02-topos, 03-ethos
 
 ## Outputs (after each day)
 
 - **Day summary**: `logbook/dayDD-summary.json` — phase, title, summary, cd_decisions, artifacts, key_moments
 - **Logbook PDF**: `Meier_KIComputerRollenspiele_Sim2Test_Logbuch_2026.pdf` (via `scripts/export-logbook.py`)
 - **Phaser viewer**: `scripts/build-viewer-data.py --sim-dir simulation-2-test` → `viewer-data/simulation.json`
+- **GDD PDF**: `scripts/export-gdd.py --sim-dir simulation-2-test`
+- **WBB PDF**: `scripts/export-wbb.py --sim-dir simulation-2-test`
 
 ## Guardrails
 

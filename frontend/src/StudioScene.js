@@ -129,7 +129,7 @@ export class StudioScene extends Phaser.Scene {
     map.createLayer('walls', allTilesets).setDepth(-5);
 
     // Furniture & decoration layers (painted in Tiled, stacked bottom→top)
-    for (const [name, depth] of [['misc4', -3], ['furniture', -2], ['misc', -1], ['misc2', 0], ['misc3', 1]]) {
+    for (const [name, depth] of [['misc4', -3], ['furniture', -2], ['misc', -1], ['misc2', 0], ['misc3', 1], ['misc5', 2]]) {
       const layer = map.createLayer(name, allTilesets);
       if (layer) layer.setDepth(depth);
     }
