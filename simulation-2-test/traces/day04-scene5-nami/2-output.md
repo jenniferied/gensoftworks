@@ -43,4 +43,4 @@ Abschnitt 5.2 ueberarbeitet. Die drei Zustaende sind jetzt explizit an die Haute
 
 ---
 
-*Nami Okafor, Bibliothek, Tag 4 Nachmittag -- Der Ungefuege hat mir den Nachmittag gerettet. Manchmal braucht ein Dokument nur einen Schatten, der alles verschiebt.*
+*Nami Okafor, Schreibstube, Tag 4 Nachmittag -- Der Ungefuege hat mir den Nachmittag gerettet. Manchmal braucht ein Dokument nur einen Schatten, der alles verschiebt.*

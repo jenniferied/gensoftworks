@@ -11,7 +11,7 @@ const AGENT_META = {
   vera:   { name: 'Vera Morozova',    role: 'Concept Artist',     room: 'Zimmer 12b', gender: '\u2640', flag: '\uD83C\uDDF5\uD83C\uDDF1\uD83C\uDDE9\uD83C\uDDEA' },
   tobi:   { name: 'Tobias Richter',   role: 'Tech Lead',          room: 'Zimmer 12c', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
   darius: { name: 'Darius Varga',     role: 'Game Director',      room: 'Zimmer 12d', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
-  nami:   { name: 'Nami Osei',        role: 'Narrative Designer', room: 'Zimmer 12e', gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
+  nami:   { name: 'Nami Osei',        role: 'Narrative Designer', room: 'Schreibstube (12e)', gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
   leo:    { name: 'Leo Ferretti',     role: 'Community Manager',  room: 'Zimmer 12f', gender: '\u2640', flag: '\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEE\uD83C\uDDF7' },
   finn:   { name: 'Finn Calloway',    role: 'Producer',           room: 'Zimmer 12 (CD-Büro)', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
 };

@@ -360,6 +360,6 @@ Diese Figuren sind als Bedarf identifiziert, aber noch nicht ausgearbeitet. V2 s
 
 ---
 
-*Nami Okafor, Bibliothek, Tag 5 Freitag. Alle fuenf Figuren haben Stimmen. Ich habe Aldine Vors letzten Dialog laut vorgelesen — zweimal. Er klingt richtig. Das ist selten genug.*
+*Nami Okafor, Schreibstube, Tag 5 Freitag. Alle fuenf Figuren haben Stimmen. Ich habe Aldine Vors letzten Dialog laut vorgelesen — zweimal. Er klingt richtig. Das ist selten genug.*
 
 *Nines hat die Handnotizen zum Seher vom Tisch geworfen. Der Seher haette das verstanden.*

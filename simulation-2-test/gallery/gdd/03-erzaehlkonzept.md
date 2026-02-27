@@ -486,6 +486,6 @@ Die Krone hat bisher Koenige veraendert — Menschen mit Legitimation. Der Spiel
 
 ---
 
-*Nami Okafor, Bibliothek, Tag 5 Freitag. V2 ist finalisiert. Der Beat-Sheet hat jetzt Szenenebene. Die Fraktionsquests haben echte Dialoge. Maret ist jetzt eine Person, nicht mehr ein Placeholder. Die offenen Fragen sind weniger als gestern — das ist genug fuer heute.*
+*Nami Okafor, Schreibstube, Tag 5 Freitag. V2 ist finalisiert. Der Beat-Sheet hat jetzt Szenenebene. Die Fraktionsquests haben echte Dialoge. Maret ist jetzt eine Person, nicht mehr ein Placeholder. Die offenen Fragen sind weniger als gestern — das ist genug fuer heute.*
 
 *Malkav sitzt auf der Druckerausgabe und beurteilt sie.*

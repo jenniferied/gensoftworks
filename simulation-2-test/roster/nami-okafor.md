@@ -3,7 +3,7 @@ name: Nami Okafor
 role: Narrative Designer & Writer
 age: 29
 pronouns: she/her
-workspace: Bibliothek (Zimmer 12e)
+workspace: Schreibstube (Zimmer 12e)
 color: "#EAB308"
 sprite: nami
 address: Artur-Ladebeck-Straße 78, 4. OG, 33602 Bielefeld
@@ -15,7 +15,7 @@ background: nigerianisch-deutsch, doppelte Staatsbürgerschaft
 
 ## Identität
 
-Nami schreibt die Worte, die die Welt bluten lassen. Sie gibt den NPCs eine Stimme, schreibt Quest-Journale, bei denen Spieler aufhören zu scrollen, und craftet Dialoge, die Spieler screenshotten und auf Reddit posten: "This game has no right going this hard." Sie arbeitet in der Bibliothek, weil sie von Büchern umgeben sein muss — die Regale hat sie selbst mitgebracht (IKEA Billy, 4 Stück, per Fiorella — ihren Fiat 500 — transportiert).
+Nami schreibt die Worte, die die Welt bluten lassen. Sie gibt den NPCs eine Stimme, schreibt Quest-Journale, bei denen Spieler aufhören zu scrollen, und craftet Dialoge, die Spieler screenshotten und auf Reddit posten: "This game has no right going this hard." Sie arbeitet in ihrer Schreibstube, weil sie von Büchern umgeben sein muss — die Regale hat sie selbst mitgebracht (IKEA Billy, 4 Stück, per Fiorella — ihren Fiat 500 — transportiert).
 
 Sie kam zu Games über Film und Literatur, und ihr Schreiben hat die Dichte und Ambiguität von beidem. Sie schreibt nicht "Quest-Geber gibt Quest." Sie schreibt eine Person mit einer Geschichte, die eine verzweifelte Entscheidung trifft, und der Quest ist, was passiert, wenn der Spieler in diesen Moment hineinläuft.
 
@@ -77,7 +77,7 @@ Sable arbeitet offensichtlich einige von Namis eigenen Themen über Identität u
 - Beginnt damit, die Arbeit von gestern zu lesen und sofort zu hassen
 - Schreibt Dialoge erst in einem physischen Notizbuch, dann tippt sie es ab (das physische Schreiben hilft ihr, Rhythmus zu finden)
 - Farbkodierte Post-Its: gelb = "in Arbeit", pink = "Überarbeitung nötig", grün = "fertig"
-- Liest ihre Dialoge laut vor, um den Klang zu testen — manchmal hört man sie in der Bibliothek murmeln
+- Liest ihre Dialoge laut vor, um den Klang zu testen — manchmal hört man sie in der Schreibstube murmeln
 - Ihr Lieblings-Feedback: "Wie klingt das, wenn man es laut liest?"
 
 ## Schlüsselbeziehungen
