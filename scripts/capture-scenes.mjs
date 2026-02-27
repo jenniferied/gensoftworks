@@ -2,9 +2,13 @@
 /**
  * Capture Phaser viewer screenshots for every scene.
  *
+ * Pixel-perfect: viewport sized so game-container = exactly 1056×672
+ * (half of 44×28 tiles @ 48px = 2112×1344). Zoom = exactly 0.5.
+ * After capture, PIL crops dark exterior from the bottom.
+ *
  * Prerequisites:
- *   - `npm run build:data` (or --sim-dir equivalent) to populate simulation.json
- *   - Vite preview running on http://localhost:4173 (or dev on 5173)
+ *   - simulation.json built via build-viewer-data.py
+ *   - Vite preview running (npm run preview in frontend/)
  *
  * Usage:
  *   node scripts/capture-scenes.mjs                          # default port 4173
@@ -13,7 +17,7 @@
  */
 
 import { createRequire } from 'module';
-import { mkdirSync, existsSync } from 'fs';
+import { mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -34,21 +38,46 @@ const outDir = outIdx >= 0
   : resolve(PROJECT_ROOT, 'screenshots');
 
 const BASE_URL = `http://localhost:${port}`;
-const SETTLE_MS = 800; // wait for agent tweens
+const SETTLE_MS = 1500;
+
+// Map dimensions
+const T = 48, MAP_W = 44, MAP_H = 28;
+const HALF_W = (MAP_W * T) / 2; // 1056
+const HALF_H = (MAP_H * T) / 2; // 672
+
+// Layout offsets: sidebar (340 + 2px border), audio-bar + title-bar (~51px)
+const SIDEBAR_W = 340;
+const BARS_H = 51;
 
 async function main() {
   mkdirSync(outDir, { recursive: true });
 
   const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+
+  // Viewport sized so game-container = 1056×672 CSS px → zoom 0.5.
+  // deviceScaleFactor: 2 → screenshot at 2112×1344 device px = native tileset res.
+  const page = await browser.newPage({
+    viewport: { width: HALF_W + SIDEBAR_W, height: HALF_H + BARS_H },
+    deviceScaleFactor: 2,
+  });
 
   console.log(`Navigating to ${BASE_URL}...`);
   await page.goto(BASE_URL, { waitUntil: 'networkidle' });
 
   // Wait for simulation data to load
   await page.waitForFunction(() => window.__simData != null, { timeout: 15000 });
-  const simData = await page.evaluate(() => window.__simData);
 
+  // Log actual game-container size for debugging
+  const containerSize = await page.evaluate(() => {
+    const c = document.getElementById('game-container');
+    return { w: c.clientWidth, h: c.clientHeight };
+  });
+  console.log(`Game container: ${containerSize.w}×${containerSize.h} (target: ${HALF_W}×${HALF_H})`);
+
+  // Wait for initial scene to fully render
+  await page.waitForTimeout(2000);
+
+  const simData = await page.evaluate(() => window.__simData);
   console.log(`Found ${simData.days.length} days, ${simData.days.reduce((s, d) => s + d.scenes.length, 0)} scenes total`);
 
   for (let dayIdx = 0; dayIdx < simData.days.length; dayIdx++) {
@@ -60,34 +89,16 @@ async function main() {
       const sceneType = scene.type.replace(/[+]/g, '-');
       const filename = `day-${dayNum}-scene-${sceneNum}-${sceneType}.png`;
 
-      // Dispatch scene change event
+      // Dispatch scene change
       await page.evaluate(({ di, si }) => {
         window.dispatchEvent(new CustomEvent('viewer:scene-change', {
           detail: { dayIndex: di, sceneIndex: si },
         }));
       }, { di: dayIdx, si: sceneIdx });
 
-      // Also update sidebar selects
-      await page.evaluate(({ di, si }) => {
-        const daySelect = document.getElementById('day-select');
-        const sceneSelect = document.getElementById('scene-select');
-        if (daySelect) {
-          daySelect.value = di;
-          daySelect.dispatchEvent(new Event('change'));
-        }
-        // Wait a tick for scene select to populate
-        setTimeout(() => {
-          if (sceneSelect) {
-            sceneSelect.value = si;
-            sceneSelect.dispatchEvent(new Event('change'));
-          }
-        }, 50);
-      }, { di: dayIdx, si: sceneIdx });
-
-      // Wait for tweens to settle
       await page.waitForTimeout(SETTLE_MS);
 
-      // Screenshot the game container only (not sidebar)
+      // Screenshot game container only
       const gameContainer = await page.$('#game-container');
       if (gameContainer) {
         const filepath = resolve(outDir, filename);

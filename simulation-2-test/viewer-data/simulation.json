@@ -2919,8 +2919,8 @@
           "type_label": "D&D",
           "time_of_day": "afternoon",
           "time_label": "Nachmittag",
-          "location": "gemeinschaftsraum",
-          "location_label": "Gemeinschaftsraum",
+          "location": "bibliothek",
+          "location_label": "Bibliothek",
           "participants": [
             "emre",
             "nami",
@@ -2934,42 +2934,42 @@
           "key_moment": null,
           "positions": {
             "emre": {
-              "x": 26,
-              "y": 3,
+              "x": 25,
+              "y": 16,
               "state": "active"
             },
             "vera": {
-              "x": 32,
-              "y": 2,
+              "x": 31,
+              "y": 18,
               "state": "active"
             },
             "tobi": {
               "x": 27,
-              "y": 5,
+              "y": 21,
               "state": "active"
             },
             "darius": {
-              "x": 25,
-              "y": 3,
+              "x": 27,
+              "y": 18,
               "state": "active"
             },
             "nami": {
-              "x": 32,
-              "y": 3,
+              "x": 33,
+              "y": 16,
               "state": "active"
             },
             "leo": {
-              "x": 29,
-              "y": 5,
+              "x": 32,
+              "y": 21,
               "state": "active"
             },
             "finn": {
-              "x": 31,
-              "y": 5,
+              "x": 25,
+              "y": 26,
               "state": "active"
             }
           },
-          "active_room": "conference",
+          "active_room": "lounge",
           "artifacts": [],
           "dialogue": [
             {

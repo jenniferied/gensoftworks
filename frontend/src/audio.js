@@ -49,7 +49,10 @@ function playRandomTyping() {
   if (muted || !started || typingSounds.length === 0) return;
   const sound = typingSounds[Math.floor(Math.random() * typingSounds.length)];
   const clone = sound.cloneNode();
-  const targetVol = Math.min(volume * 3.5, 1.0);
+  // Occasionally louder bursts (20% chance: 5-7x, otherwise 2.5-4x base volume)
+  const loud = Math.random() < 0.2;
+  const mult = loud ? 5 + Math.random() * 2 : 2.5 + Math.random() * 1.5;
+  const targetVol = Math.min(volume * mult, 1.0);
   fadeIn(clone, targetVol, FADE_MS);
   // Fade out before clip ends
   const dur = sound.duration || 8;

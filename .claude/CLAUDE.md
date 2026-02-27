@@ -18,7 +18,7 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 | 5 | 14:00 | WORK | alle 7 | Parallel: Mo/Di Recherche+Konzeption, Mi-Fr Produktion |
 | 6 | 16:00 | REVIEW | all 7 | Present results, open questions for CD |
 
-**Thursday**: Scene 6 = D&D (Emre is DM).
+**Thursday**: Scene 6 = D&D (Emre is DM). Location: Bibliothek.
 
 ## GM Checklist (per scene)
 
