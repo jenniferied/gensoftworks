@@ -14,6 +14,7 @@ Use --sim-dir to point at a simulation directory.
 import argparse
 import json
 import re
+import shutil
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -656,6 +657,55 @@ def main():
 
     # Load concept art
     concept_art = load_concept_art(gallery_dir, days)
+
+    # Copy traces and add references to scenes
+    if args.sim_dir:
+        traces_dir = sim_root / "traces"
+        if traces_dir.exists():
+            sim_id = args.sim_dir.replace("/", "-")
+            traces_dest = ROOT / "frontend" / "public" / "traces" / sim_id
+            # Map scene type → trace dir suffix for conversation scenes
+            conv_type_suffix = {
+                "BRIEFING": "briefing",
+                "MEETING": "meeting",
+                "PAUSE": "pause",
+                "REVIEW": "review",
+                "DND": "dnd",
+            }
+            for day_entry in days:
+                day_num = day_entry["day"]
+                for sc in day_entry["scenes"]:
+                    scene_num = sc["scene"]
+                    prefix = f"day{day_num:02d}-scene{scene_num}"
+                    scene_type = sc["type"]
+                    traces = {}
+
+                    if scene_type in conv_type_suffix:
+                        # Conversation scene → single shared trace dir
+                        suffix = conv_type_suffix[scene_type]
+                        src = traces_dir / f"{prefix}-{suffix}"
+                        if src.exists():
+                            rel = f"traces/{sim_id}/{src.name}/"
+                            dest = traces_dest / src.name
+                            if not dest.exists():
+                                shutil.copytree(src, dest)
+                            traces["_shared"] = rel
+                    else:
+                        # WORK scene → per-agent trace dirs
+                        for agent in ALL_AGENTS:
+                            src = traces_dir / f"{prefix}-{agent}"
+                            if src.exists():
+                                rel = f"traces/{sim_id}/{src.name}/"
+                                dest = traces_dest / src.name
+                                if not dest.exists():
+                                    shutil.copytree(src, dest)
+                                traces[agent] = rel
+
+                    if traces:
+                        sc["traces"] = traces
+
+            copied = sum(1 for d in traces_dest.iterdir() if d.is_dir()) if traces_dest.exists() else 0
+            print(f"Traces: {copied} Verzeichnisse kopiert nach {traces_dest}")
 
     data = {"days": days}
     if agent_memories:

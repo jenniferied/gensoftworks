@@ -325,6 +325,27 @@ function renderArtifacts(artifacts) {
   artifactList.innerHTML = html;
 }
 
+const TRACE_FILES = [
+  { key: '0-prompt.md', label: 'Prompt' },
+  { key: '1-reasoning.md', label: 'Reasoning' },
+  { key: '2-output.md', label: 'Output' },
+];
+
+function renderTraceBlock(idPrefix, tracePath) {
+  let html = '<div class="trace-block">';
+  html += '<div class="trace-block-label">TRACES</div>';
+  for (const tf of TRACE_FILES) {
+    const bodyId = `${idPrefix}-${tf.key.replace('.', '-')}`;
+    const url = `${BASE}${tracePath}${tf.key}`;
+    html += `<button class="trace-toggle" data-target="${bodyId}" data-url="${url}">`;
+    html += `<span class="arrow">&#9654;</span> ${tf.label}`;
+    html += `</button>`;
+    html += `<div class="trace-body" id="${bodyId}"><span class="loading">Laden...</span></div>`;
+  }
+  html += '</div>';
+  return html;
+}
+
 function renderAgentCards(scene) {
   const participants = scene.participants;
   const allAgents = Object.keys(AGENT_META);
@@ -337,6 +358,12 @@ function renderAgentCards(scene) {
   const isV2 = scene.mood && typeof scene.mood === 'object' && !Array.isArray(scene.mood);
 
   let html = '';
+
+  // Shared trace block for conversation scenes (BRIEFING, MEETING, etc.)
+  if (scene.traces?._shared) {
+    html += renderTraceBlock('trace-shared', scene.traces._shared);
+  }
+
   for (const key of ordered) {
     const meta = AGENT_META[key];
     const isActive = participants.includes(key);
@@ -437,12 +464,47 @@ function renderAgentCards(scene) {
           }
         }
       }
+
+      // Per-agent trace block (WORK scenes)
+      if (scene.traces?.[key]) {
+        html += renderTraceBlock(`trace-${key}`, scene.traces[key]);
+      }
     }
 
     html += `</div>`;
   }
 
   agentList.innerHTML = html;
+
+  // Wire up trace toggle buttons with lazy fetch
+  agentList.querySelectorAll('.trace-toggle').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const target = document.getElementById(btn.dataset.target);
+      const arrow = btn.querySelector('.arrow');
+      if (target.classList.contains('open')) {
+        target.classList.remove('open');
+        arrow.classList.remove('open');
+        return;
+      }
+      arrow.classList.add('open');
+      // Lazy fetch on first open
+      if (target.dataset.loaded !== 'true') {
+        try {
+          const resp = await fetch(btn.dataset.url);
+          if (resp.ok) {
+            const md = await resp.text();
+            target.innerHTML = renderMarkdownFull(md);
+          } else {
+            target.innerHTML = '<span class="loading">Nicht gefunden.</span>';
+          }
+        } catch {
+          target.innerHTML = '<span class="loading">Fehler beim Laden.</span>';
+        }
+        target.dataset.loaded = 'true';
+      }
+      target.classList.add('open');
+    });
+  });
 }
 
 // --- Document Bar ---
@@ -482,7 +544,7 @@ function getVisibleVersions(ch) {
 }
 
 function renderDocumentBar() {
-  const bar = document.getElementById('document-bar');
+  const bar = document.getElementById('document-bar-content');
   const chapters = simData?.chapters;
   if (!chapters || (!chapters.gdd?.length && !chapters.wbb?.length)) {
     bar.innerHTML = '';
@@ -521,6 +583,13 @@ function renderDocumentBar() {
       openDocumentModal(el.dataset.docType, el.dataset.chapterId);
     });
   });
+
+  // Update gallery icon state + counter
+  const artCount = getVisibleArt().length;
+  const galBtn = document.getElementById('btn-gallery');
+  const galCount = document.getElementById('gallery-count');
+  if (galBtn) galBtn.classList.toggle('has-art', artCount > 0);
+  if (galCount) galCount.textContent = artCount > 0 ? artCount : '';
 }
 
 function openDocumentModal(docType, chapterId) {
