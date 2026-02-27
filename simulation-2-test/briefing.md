@@ -116,6 +116,10 @@ Wolfs neun Infrastrukturen imaginärer Welten als Prüfwerkzeug — jedes WBB-Ka
 - [ ] Philosophie (Weltsicht, Ethik, Wertesysteme)
 - [ ] Verknüpfung (Wechselwirkungen zwischen den Infrastrukturen)
 
+## Seitenbudget
+
+Beide Dokumente sollen jeweils **30–45 Seiten** umfassen (inkl. Concept Art). Die Agenten steuern Tiefe und Detailgrad eigenverantwortlich innerhalb dieses Rahmens. Quests: Hauptquests und Nebenquests ausgearbeitet, restliche Quest-Outlines als Stichpunkte.
+
 ## Inspiration
 
 **The Elder Scrolls** Serie – Open-World Sandbox, jede Iteration versucht einen technischen Meilenstein zu setzen; konsistente High-Fantasy Welt
