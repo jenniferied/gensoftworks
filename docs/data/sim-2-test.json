@@ -3082,8 +3082,416 @@
           "mood": {},
           "feedback": [],
           "cd_feedback": "V2 finalisieren. Leo Konsistenz-Check. GDD-04 und WBB-02 Outlines weiter. Abends Wochen-Review."
+        },
+        {
+          "scene": 2,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "alle-stationen",
+          "location_label": "Alle Stationen",
+          "participants": [
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "V2-Finalisierung. Darius: GDD-01 V2 (7 Design-Saeulen, Konsequenz-Typen-Matrix, Scope-Klarheit). Emre: WBB-01 V2 finalisiert + WBB-02 V1 Outline (7 Kapitel, Topos als Emer-Anatomie). Nami: GDD-03 V2 (Beat-Sheet auf Szenenebene) + GDD-04 V1 (5 Schluesselfiguren). Leo: Konsistenz-Check — Stufentabelle divergiert noch in GDD-03 (Risse bis 80 statt 75), Ymir-Ausrutscher in GDD-02. Vera: GDD-05 V2 finalisiert (Stufe-0-Baseline, ACES-Validierung, Gameplay-Orte, Dominanzprinzip). Tobi: GDD-06 V2 finalisiert (Hauten-Shader, Drei-Schichten-Rendering, Hex-Codes 1:1, Halluzinations-Start 76). Finn: Wochen-Review-Agenda vorbereitet, Dokumentenstatus erfasst, Blocker identifiziert.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "gallery/gdd/01-spieluebersicht.md (V2)",
+            "gallery/gdd/03-erzaehlkonzept.md (V2)",
+            "gallery/gdd/04-schluesselfiguren.md (V1)",
+            "gallery/gdd/05-designsprache.md (V2)",
+            "gallery/gdd/06-technik-produktion.md (V2)",
+            "gallery/wbb/01-mythos.md (V2)",
+            "gallery/wbb/02-topos.md (V1)"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 3,
+          "type": "MEETING",
+          "type_label": "Meeting",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "leo",
+            "nami",
+            "emre",
+            "darius",
+            "vera",
+            "tobi"
+          ],
+          "summary": "Freitag-Standup. Leo praesentiert Konsistenz-Befunde: GDD-03 hat Risse bis 80 statt 75 (Nami narrativ motiviert, muss mit Darius oder CD geklaert werden), GDD-02 hat Ymir statt Emer (Einzeiler-Fix, Leo uebernimmt). V2-Status: GDD-01/03/05/06 und WBB-01 V2 fertig, GDD-04 und WBB-02 V1 fertig. Drei CD-Fragen fuer Review: Stufenzahl Risse, GDD-04 Figur-3 Kompanion-Status, WBB-02 Topos-Metapher.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "nami": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "leo": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Letzter Standup der Woche. Leo, du faengst an mit deinen Konsistenz-Befunden."
+            },
+            {
+              "who": "leo",
+              "says": "Zwei Dinge. GDD-03 hat Risse bis 80, GDD-02 sagt 75. Und GDD-02 nutzt noch Ymir statt Emer."
+            },
+            {
+              "who": "nami",
+              "says": "Die 80 ist narrativ motiviert — spaeter im Spiel, hoehe Stakes. Hab die Zahl aber nicht mit Darius abgestimmt."
+            },
+            {
+              "who": "emre",
+              "says": "Emer ist in WBB-01 V2 kanonisch. GDD-02 braucht einen Einzeiler-Fix."
+            },
+            {
+              "who": "finn",
+              "says": "Leo fixt Ymir. Stufenzahl, Figur-3-Status und Topos-Metapher gehen auf die CD-Agenda fuer den Review."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 4,
+          "type": "PAUSE",
+          "type_label": "Pause",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "vera",
+            "tobi"
+          ],
+          "summary": "Mittagspause. Vera und Tobi ueber Rho (Tiervolk-Design: Balancepunkt, Kopfbewegung, Passform als Fremdheitssignal) und Emres Schweigehaus (innen groesser als aussen — keine Erklaerung, Fehler-als-Weltaussage, Lumen-Schatten als Irritation). Wochenend-Plaene: Vera zurueck nach Koeln, Tobi ins Kino. Naechste Woche: Rho-Varianten fuer Nami, Schweigehaus-Konzept.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "vera": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "dimmed"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "vera",
+              "says": "Rho. Tiervolk-Haendler, raptor-artig. Leicht alien heisst: Balancepunkt anders, Kopf dreht sich mehr als Schultern. Passform der Kleidung als subtilstes Signal — faellt an einem anderen Koerper einfach anders."
+            },
+            {
+              "who": "tobi",
+              "says": "Fuer Rho brauchen wir eigene Clothing Physics — die Standard-Parameter passen dann nicht."
+            },
+            {
+              "who": "vera",
+              "says": "Das Schweigehaus: Von aussen Orden-typisch introvertiert. Innen — nicht moeglicher Groesse. Keine Fanfare. Der Spieler rechnet nach und kommt zu keinem Ergebnis."
+            },
+            {
+              "who": "tobi",
+              "says": "Lumen-Schatten, die geometrisch nicht zur Aussen-Huelle passen. Der Spieler liest es nicht als Bug, sondern als Fehler in der Welt."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 5,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "alle-stationen",
+          "location_label": "Alle Stationen",
+          "participants": [
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Nachmittags-Arbeit: Review-Vorbereitung und letzte Fixes. Leo: Ymir durch Emer in GDD-02 ersetzt (2 Stellen) + QA-Abschlussbericht. Nami: Akzeptiert Risse-Grenze 75, bereitet GDD-04 Figurenpitch vor. Darius: GDD-01/02 V2 Kurzpitch. Emre: WBB-01/02 Pitch + Topos-Metapher erklaerbar machen. Vera: GDD-05 Pitch + erste Rho-Skizze. Tobi: GDD-06 Pitch. Finn: Review-Agenda finalisiert, Woche-2-Ausblick.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "gallery/gdd/02-kernmechaniken.md (Ymir→Emer Fix)"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 6,
+          "type": "REVIEW",
+          "type_label": "Review",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Wochen-Review. Finn: 8 Artefakte, 5 in V2. Emre pitcht WBB-02 Topos-Metapher (Emer-Anatomie als Geographie). Nami pitcht GDD-04 (5 Schluesselfiguren, Figur 3 Kompanion-Frage offen). Leo lobt Tiervolk-Haendlerin. Zwei CD-Fragen: Figur-3-Status (bis Mittwoch), Emer-Anatomie (bis Dienstag). Freelancer: Blue-Byte letzte Chance Montag, Plan B bereit. Hauten-Segment-Slot Dienstag gebucht. Guter Wochenabschluss.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Woche 1 mit acht Artefakten abgeschlossen, fuenf in V2. Zwei offene Punkte fuer die CD."
+            },
+            {
+              "who": "emre",
+              "says": "WBB-02: Ich schlage vor, die Geographie um die Anatomie von Emer zu strukturieren. Brustkorb = Kernregion, Lunge = Sumpfgebiet, Wirbelsaeule = Gebirgszug. Ist das konzeptionell freigegeben?"
+            },
+            {
+              "who": "nami",
+              "says": "GDD-04: Fuenf Figuren mit eigener Stimme. Figur 3 ist die offene Frage — Kompanion mit Party-Mechanik oder NPC? Brauche die Antwort bis Mittwoch."
+            },
+            {
+              "who": "finn",
+              "says": "Das war Woche 1. Schoenes Wochenende."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "CD-Entscheidungen noetig: (1) GDD-04 Figur 3 Kompanion vs. NPC bis Mittwoch. (2) WBB-02 Emer-Anatomie als Topos-Fundament bis Dienstag."
         }
-      ]
+      ],
+      "summary": {
+        "day": 5,
+        "weekday": "friday",
+        "phase": "Produktion (V2-Finalisierung)",
+        "title": "Woche 1 abgeschlossen — V2 komplett, Wochen-Review",
+        "summary": "Letzter Tag der Woche. Vormittags V2-Finalisierung: alle sechs GDD-Kapitel und WBB-01 in V2, WBB-02 als V1-Outline, GDD-04 als V1. Leo macht Konsistenz-Check (Stufenzahl 75 vs. 80, Ymir→Emer Fix). Nachmittags Review-Vorbereitung. Abends Wochen-Review: Emre pitcht Emer-Anatomie als Topos-Strukturprinzip, Nami stellt 5 Schluesselfiguren vor. Zwei CD-Fragen: Figur-3 Kompanion-Status und Emer-Anatomie Freigabe.",
+        "cd_decisions": [
+          "Risse-Stufenzahl: Nami akzeptiert 75 (CD-Entscheidung)",
+          "CD-Frage: GDD-04 Figur 3 Kompanion oder NPC? (bis Mittwoch)",
+          "CD-Frage: WBB-02 Emer-Anatomie als Topos-Fundament? (bis Dienstag)"
+        ],
+        "artifacts": [
+          "gallery/gdd/01-spieluebersicht.md (V2)",
+          "gallery/gdd/02-kernmechaniken.md (V2, Ymir→Emer Fix)",
+          "gallery/gdd/03-erzaehlkonzept.md (V2)",
+          "gallery/gdd/04-schluesselfiguren.md (V1)",
+          "gallery/gdd/05-designsprache.md (V2)",
+          "gallery/gdd/06-technik-produktion.md (V2)",
+          "gallery/wbb/01-mythos.md (V2)",
+          "gallery/wbb/02-topos.md (V1 Outline)"
+        ],
+        "key_moments": [
+          "Vera und Tobi entwickeln in der Pause das Schweigehaus-Konzept: 'Fehler-als-Weltaussage' statt Bug",
+          "Emre pitcht Emer-Anatomie als Geographie — Team beeindruckt",
+          "Nami formuliert Kompanion-Frage selbst und klar im Review",
+          "Leo lobt Namis Tiervolk-Haendlerin, will ersten Satz bei V2 hoeren"
+        ]
+      }
     }
   ],
   "agent_memories": {
@@ -3201,6 +3609,36 @@
         "scene": 5,
         "type": "WORK",
         "text": "GDD-02 V2 fertig. Alle sieben Punkte umgesetzt: Drei-Zonen-Tabelle (Rauschen 1-40, Risse 41-75, Schwelle 76-100), Emer-Material+Große Flechtung durchgehend, Nervensystem-Äste mit kosmologischem Einzeiler, Kontrollverlust=narrativ (Wahrnehmung unzuverlässig, Steuerung bleibt), Schatten-Ast als eigener 3.5, Trainer als Fraktions-Erzähler, Infizierte Feinde als Spiegel.\n\n## Tag 4, Szene 6 (D&D)\nOne-Shot \"Die Scherbe von Veld\". Versuchte Toves wie ein Spielsystem zu lösen — Sackgasse. Der Typ hat kein lösbares Design. Muss darüber nachdenken, ob das ein Feature oder ein Problem ist."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. Finn: V2 finalisieren, Leo Konsistenz-Check, abends Wochen-Review. Mein Fokus: GDD-01/02/03 V2 finalisieren."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-01 V2 fertig. Fünf Korrekturen: Scope-Klarheit (Serienversprechen vs. Vertical-Slice-Deliverables getrennt), Zielgruppe 25-40 präzisiert, Kamera als eigenständige Säule 3 (FP/TP = Identitätsversprechen), Tiervolk+Biotech als Säulen 5+6, Konsequenz-Typen-Matrix (sofort/kurzfristig/langfristig/körperlich). Insgesamt 7 Design-Säulen jetzt."
+      },
+      {
+        "day": 5,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. Leo: Mein GDD-02 hat noch Ymir statt Emer — Leo fixt das. Stufenzahl 75 vs. 80 offen — Nami will 80 für narrative Beats, CD hatte 75 gesetzt. Muss mit Nami klären oder zur CD eskalieren. Review-Vorbereitung nachmittags."
+      },
+      {
+        "day": 5,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Review-Vorbereitung. GDD-01/02 V2 Kurzpitch fertig. Nami akzeptiert 75 — kein Eskalationsbedarf. Leo hat Ymir→Emer gefixt."
+      },
+      {
+        "day": 5,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Wochen-Review. Emres Emer-Anatomie beeindruckend. Freelancer: Plan B von Finn bis Montag. Gute Woche — GDD-01/02 in V2, Team kohärent."
       }
     ],
     "emre": [
@@ -3317,6 +3755,36 @@
         "scene": 5,
         "type": "WORK",
         "text": "WBB-01 V2 Updates: Flechtfest in Kap. 7 (drei Fraktionsvarianten, kosmologische Funktion), zwei Schattenfieber-Farbprofile (Stillfeld-kalt, Hohlicht-warm), Ungefüge als durchlaufendes Muster, Gastrecht als Mikro-Flechtungsakt. WBB-02 Topos Outline: 7 Kapitel (Emer-Körper als Geographie). 5 Schlüsselorte für Tobi: Schwellenmine, Bluthafen, Die Naht, Emers Wirbel, Flechtfeld.\n\n## Tag 4, Szene 6 (D&D)\nOne-Shot \"Die Scherbe von Veld\". Toves als NPC funktioniert — fraktionslos, motivlos, repariert Armbrust mit Adersaft. Vera erkennt instinktiv den RELICS-Bezug. Ungefüge-Prototyp bestätigt: Die Störung im System erzeugt die stärkste Reaktion."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: WBB-01/02 V2 + WBB-02 Outline ausbauen."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "WBB-01 V2 finalisiert — alle Kapitel jetzt Fließtext. Vier Updates: Ungefüge als Muster, Schattenfieber-Farbprofile, Flechtfest kosmologisch wirksam, Gastrecht als Mikro-Flechtungsakt. Widerspruchs-Log #002 geschlossen. WBB-02 V1 Outline angelegt: 7 Kapitel, Topos als Emer-Anatomie. Neue Widerspruchs-Logs #006/#007."
+      },
+      {
+        "day": 5,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. Ymir→Emer-Fix: Leo übernimmt den Einzeiler in GDD-02. Leo fragt ob WBB-02 Topos-Metapher (\"Emer-Anatomie\") zu hermetisch ist. Meine Antwort: bewusst als Tiefenschicht, Codex-Eintrag, keine Lore-Dump. Erkläre das im Review. Stufenzahl 75 vs. 80 offen — Nami will 80 für narrative Stakes."
+      },
+      {
+        "day": 5,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Review-Vorbereitung. WBB-01/02 Pitch fertig. Topos-Metapher zugänglich formuliert: Geographie IST Kosmologie, Spieler erlebt kohärente Welt. Ginnungagap-Ersatz noch nicht gesetzt — nächste Woche."
+      },
+      {
+        "day": 5,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Emer-Anatomie gepitcht. Team nimmt es gut auf. CD-Frage: Strukturprinzip freigeben bis Dienstag, weil Vera Mittwoch mit Concept Art anfängt. Hauten-Segment-Slot mit Tobi Dienstag. Ginnungagap nächste Woche. Gute Woche."
       }
     ],
     "finn": [
@@ -3421,6 +3889,36 @@
         "scene": 5,
         "type": "WORK",
         "text": "ROADMAP V1.3: CD-Entscheidung #12 (Stufentabelle), V2-Status aller Dokumente, GDD-04/WBB-02 Outlines als neue Einträge. Freelancer: Blue-Byte angeschrieben, Eskalation Montag über Tobis Netzwerk. Risiko-Register: Asset-Bottleneck HOCH (Vertikalitäts-Säule), Maßnahme: Houdini-Pipeline priorisieren, modulare Kit-Spezifikation bis Tag 6.\n\n## Tag 4, Szene 6 (D&D)\nD&D mit dem Team. Toves mit Käse bestochen — hat nicht geklappt. Gutes Team-Bonding nach einem arbeitsintensiven Tag."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag-Briefing moderiert. Drei Fokuspunkte: V2 finalisieren, Leo Konsistenz-Check, Outlines weiter. Abends Wochen-Review. Tageszuordnung verteilt."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Wochen-Review-Agenda vorbereitet. Dokumentenstatus: V2 fertig = GDD-01 (Darius), GDD-03 (Nami), GDD-05 (Vera), GDD-06 (Tobi), WBB-01 (Emre). Outlines: GDD-04 (Nami), WBB-02 (Emre). Fehlt noch: GDD-02 V2 (Darius). Blocker nächste Woche: Budget-Freigabe, WBB-03 Kickoff. Freelancer: Blue-Byte noch keine Antwort, Eskalation Montag."
+      },
+      {
+        "day": 5,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup moderiert. Leo: Zwei Konsistenz-Befunde — Stufenzahl 75 vs. 80 (Nami narrativ motiviert), Ymir statt Emer (Einzeiler-Fix, Leo übernimmt). V2-Status stark: 5 von 6 GDD + WBB-01 in V2. Drei CD-Fragen für Review: Stufenzahl, Figur-3 Kompanion-Status, Topos-Metapher. Nami und Darius sollen Stufenzahl klären oder eskalieren. Team gut aufgestellt für Wochen-Review."
+      },
+      {
+        "day": 5,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Review-Agenda finalisiert. Nami akzeptiert 75 — ein CD-Punkt weniger. Verbleibend: Figur-3-Status, Topos-Metapher. Freelancer: keine Antwort, Eskalation Montag. Woche-1-Bilanz: 6 GDD (5×V2, 1×V1) + 2 WBB (1×V2, 1×V1)."
+      },
+      {
+        "day": 5,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Wochen-Review moderiert. Emre pitcht Emer-Anatomie — Team beeindruckt. Nami pitcht 5 Figuren, Kompanion-Frage klar formuliert. Leo lobt Tiervolk-Händlerin. Zwei CD-Fragen auf Pinnwand: Figur-3 (bis Mi), Emer-Anatomie (bis Di). Freelancer: letzte Mail Montag, Plan B bereit (2 Namen an Darius). Hauten-Slot Di gebucht. Team geht mit gutem Gefühl ins Wochenende. Woche 1 geschafft."
       }
     ],
     "leo": [
@@ -3531,6 +4029,36 @@
         "scene": 5,
         "type": "WORK",
         "text": "V2-Konsistenz-Check vorbereitet. QA-Checkliste für morgen: Stufentabelle (Rauschen/Risse/Schwelle) in allen Dokumenten identisch?, Emer-Terminologie durchgehend?, Farbpaletten-Hex-Codes konsistent?, Ungefüge eingebaut?, Flechtfest kanonisiert? Spielerperspektiv-Bericht aktualisiert mit Peer-Review-Erkenntnissen.\n\n## Tag 4, Szene 6 (D&D)\nD&D. Zweimal in eigene Falle gefallen. Team lacht immer noch. Guter Abend."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, mein Job: Konsistenz-Check alle V2-Docs. Stufengrenzen-Abgleich."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Konsistenz-Check V2 durchgeführt. HOCH: Stufentabelle immer noch inkonsistent — GDD-03 hat Risse bis 80 statt 75. NIEDRIG: GDD-02 Kap. 2.7 noch \"Ymir-Material\" statt \"Emer-Material\". OK: Hex-Codes GDD-05 intern konsistent. HINWEIS: Ungefüge in WBB-01 kanonisiert, aber kein GDD-Dokument referenziert ihn. Brücke Lore→Narrativ fehlt."
+      },
+      {
+        "day": 5,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Befunde im Standup vorgestellt. Ymir→Emer: Übernehme den Fix selbst, 5 Minuten. Stufenzahl 75 vs. 80: Namis 80 ist narrativ motiviert (spätes Spiel, hohe Stakes), aber widerspricht CD-Entscheidung (Risse bis 75). Geht auf CD-Agenda. Emres Topos-Metapher (\"Emer-Anatomie\") angefragt — könnte zu hermetisch sein. Er sagt: bewusste Tiefenschicht, Codex-Eintrag. Nachmittags Ymir-Fix und Review-Vorbereitung."
+      },
+      {
+        "day": 5,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Ymir→Emer in GDD-02 gefixt (2 Stellen: Kap. 2.7 + 6.1). Ginnungagap bewusst gelassen — Emres Job. QA-Abschlussbericht Woche 1 geschrieben: Drei CD-Fragen für Review (Kontrollverlust-Scope, Narrativ-Schicht-Scope, Ginnungagap-Ersatz)."
+      },
+      {
+        "day": 5,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Wochen-Review. Namis Tiervolk-Händlerin ist stark — will den ersten Satz hören bei V2. Emres Emer-Anatomie braucht CD-Okay. Gute Woche. Konsistenz besser als nach Tag 3, aber GDD-03 Risse-Fix noch ausstehend."
       }
     ],
     "nami": [
@@ -3647,6 +4175,36 @@
         "scene": 5,
         "type": "WORK",
         "text": "GDD-03 V2 Updates: Ungefüge als zweiter mythologischer Schatten neben Halvard-Wanderer verankert. Flechtfest als kanonisches Krone-Fest. Schattenfieber-Mapping explizit an Hauten-Kosmologie gekoppelt (Rauschen=Membran spüren, Risse=Durchscheinen, Schwelle=an Membran stehen). Stufengrenzen auf CD-Tabelle. GDD-04 Schlüsselfiguren Outline: 9 Abschnitte — Designprinzipien, Fraktionsfiguren, Seher-NPC.\n\n## Tag 4, Szene 6 (D&D)\nSable redet eine Stunde mit Toves und bekommt nichts heraus — nur das Gefühl, dass er schon immer da war. Genau so muss der Ungefüge in RELICS wirken."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-03/04 V2 finalisieren + GDD-04 Outline ausbauen."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-03 V2 finalisiert — Beat-Sheet auf Szenenebene (10 Beats), Fraktionsquests ausformuliert, Charakter-Quest geschlossen: Figur ist Maret. GDD-04 V1 erstellt: 5 Schlüsselfiguren mit Stimme, Funktion, Widerspruch — Aldine Vor (Krone), Cress (Gilden), Cassius (Orden), Maret (Seher), Rho (Tiervolk). Offene Abhängigkeiten: Cassius-Visionen (Emre/CD), Aldine-Schlussdialog (CD-Probe), Rho-Äußeres (Vera)."
+      },
+      {
+        "day": 5,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. Meine 80 in GDD-03 (Risse-Grenze) wurde von Leo bemängelt — weicht von CD-75 ab. Ich hab argumentiert: narrativ motiviert, spätes Spiel, höhere Stakes. Geht auf CD-Agenda. Muss mit Darius klären oder CD entscheiden lassen. Außerdem: GDD-04 Figur 3 (Maret/Cassius) — Kompanion oder NPC? Auch für CD."
+      },
+      {
+        "day": 5,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Akzeptiere 75 — mechanisch kann ich den Unterschied nicht belegen, Fehler war fehlendes Alignment mit Darius. GDD-03 bekommt Einzeiler-Fix nach Review. GDD-04 Figurenpitch vorbereitet: Verbindendes Prinzip ist aufrichtige Überzeugung aller Figuren. Maret exemplarisch ausgearbeitet."
+      },
+      {
+        "day": 5,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "GDD-04 gepitcht. 5 Figuren, Kompanion-Frage klar formuliert. Finn: CD-Antwort bis Mittwoch, sonst zu ihm kommen. Leo findet Tiervolk-Händlerin stark, will ersten Satz hören bei V2. Gutes Wochengefühl. Ab Mittwoch GDD-04 V2 — wenn CD-Entscheidung da ist."
       }
     ],
     "tobi": [
@@ -3763,6 +4321,42 @@
         "scene": 5,
         "type": "WORK",
         "text": "GDD-06 V2: Hex-Codes aus GDD-05 1:1 übernommen, Module auf ~60 (20 neutral + 40 fraktionsspezifisch), Drei-Schichten-Rendering (Mittelgrund=Level, Hohlicht/Stillfeld=PP-Layer + 3-5 handgebaute Segmente), Hauten-Shader (SSS + WPO + Spieler-Reaktivität, Nanite-Ausnahme), zwei Schattenfieber-Farbprofile (Stillfeld-kalt, Hohlicht-warm), Halluzinations-Start auf 76 korrigiert.\n\n## Tag 4, Szene 6 (D&D)\nD&D-Session. Entspannt. Emres NPC Toves war interessant — fraktionslos. Leos doppelte 1 war der Comedy-Moment des Tages."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-06 V2 finalisieren."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-06 V2 finalisiert. Korrekturen: Halluzinations-Start von 70 auf 76, Stufen-Tabelle auf CD-Grenzen (1-40/41-75/76-100). Neu: Hauten-Shader-Architektur (Burley-SSS + WPO, Nanite-Ausnahmen), Drei-Schichten-Rendering (5 PP-Volume-Profile), Hex-Code-Tabellen 1:1 aus GDD-05, Anforderungsprofil Gameplay-Programmer (GAS als Ausschlusskriterium). Offener Punkt: Hauten-Segmentanzahl 3 oder 5 — braucht Emres Bestätigung."
+      },
+      {
+        "day": 5,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. GDD-06 V2 sauber, keine Beanstandungen. Ymir→Emer Fix in GDD-02 übernimmt Leo. Stufenzahl offen. Nachmittags Review-Vorbereitung."
+      },
+      {
+        "day": 5,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Vera. Rho: Vera plant Balancepunkt-Design — anderer Schwerpunkt, Kopf dreht sich statt Schultern. Clothing Physics müssen custom sein. Schweigehaus: Veras \"Fehler-als-Weltaussage\" ist stark. Mein Beitrag: Lumen-Schatten, die geometrisch nicht zur Außen-Hülle passen. Spieler liest es als Fehler in der Welt, nicht als Bug. Nächste Woche zusammen an Schweigehaus-Konzept."
+      },
+      {
+        "day": 5,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-06 V2 Pitch vorbereitet. Hauten-Segmentanzahl (3 oder 5) noch offen — Emre nächste Woche."
+      },
+      {
+        "day": 5,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Wochen-Review. Hauten-Segment-Slot Dienstag mit Emre, 30 Min, Finn bucht. GDD-06 V2 steht. Gute Woche."
       }
     ],
     "vera": [
@@ -3873,6 +4467,42 @@
         "scene": 5,
         "type": "WORK",
         "text": "GDD-05 V2: Stufe-0-Baseline als neuer Abschnitt 7.0 (kontrolliertes Biotech, ruhige Adern, reine Fraktionsarchitektur). Stufengrenzen auf 3er-Tabelle. Gameplay-Orte visuell definiert (Alchemie-Station, Trainer, Händler mit Fraktionsvarianten). Gemischte Sets: Dominanzprinzip + fraktionsspezifische Silhouetten-Elemente. Hex-Codes als verbindliche Produktionsreferenz bestätigt.\n\n## Tag 4, Szene 6 (D&D)\nD&D-Session. Toves — Emres NPC — hat sofort RELICS-Vibes ausgestrahlt. Fraktionslos, Adersaft-Biotech. Das ist visuell interessant: Wie sieht jemand aus, der keiner Fraktion gehört?"
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-05 V2 finalisieren."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-05 V2 finalisiert. Fünf Punkte: (1) Stufengrenzen als verbindliche Referenztabelle (Rauschen/Risse/Schwelle + narrativ/mechanisch/visuell nebeneinander). (2) Stufe-0-Baseline komplett (Körper, Umgebung, Gameplay — kontrolliertes Biotech ohne Schattenfieber). (3) ACES-Validierungshinweis bei Hex-Codes. (4) Gameplay-Orte: 3 Typen × 4 Fraktionsvarianten (Alchemie-Station, Trainer, Händler). (5) Dominanzprinzip: Torso-Primat-Regel, Schattenfieber überschreibt ab 41."
+      },
+      {
+        "day": 5,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. Stufenzahl-Diskrepanz (75 vs. 80) offen — geht auf CD-Agenda. Ymir→Emer Fix trivial. GDD-05 V2 sauber, kein Feedback im Standup. Nachmittags Review-Vorbereitung."
+      },
+      {
+        "day": 5,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Tobi. Rho-Design durchdacht: Balancepunkt (Raptor-Gewicht vorne), Kopfbewegung statt Schulterdrehen, Passform als subtilstes Fremdheitssignal — gleiche Kleidung, anderer Körper, anders fallend. Kein tribal, kein Kostümsignal. Tobi sagt: eigene Clothing Physics nötig. Schweigehaus besprochen: \"innen größer als außen\" = keine Erklärung, Fehler-als-Weltaussage. Tobi: Lumen-Schatten passen nicht zur Außen-Hülle. Skizziert. Nächste Woche: drei Rho-Varianten für Nami, Schweigehaus-Konzept."
+      },
+      {
+        "day": 5,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-05 V2 Pitch vorbereitet. Erste Rho-Rohskizze: Balancepunkt, Passform. Drei Varianten nächste Woche."
+      },
+      {
+        "day": 5,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Wochen-Review. Concept Art ab Mittwoch — brauche Emres Topos-Entscheidung bis Dienstag. Finn bestätigt: CD antwortet bis Di. Gute Woche, GDD-05 V2 steht sauber."
       }
     ]
   },

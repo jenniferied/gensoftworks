@@ -70,3 +70,9 @@ GDD-01 V2 fertig. Fünf Korrekturen: Scope-Klarheit (Serienversprechen vs. Verti
 
 ## Tag 5, Szene 3 (MEETING)
 Standup. Leo: Mein GDD-02 hat noch Ymir statt Emer — Leo fixt das. Stufenzahl 75 vs. 80 offen — Nami will 80 für narrative Beats, CD hatte 75 gesetzt. Muss mit Nami klären oder zur CD eskalieren. Review-Vorbereitung nachmittags.
+
+## Tag 5, Szene 5 (WORK)
+Review-Vorbereitung. GDD-01/02 V2 Kurzpitch fertig. Nami akzeptiert 75 — kein Eskalationsbedarf. Leo hat Ymir→Emer gefixt.
+
+## Tag 5, Szene 6 (REVIEW)
+Wochen-Review. Emres Emer-Anatomie beeindruckend. Freelancer: Plan B von Finn bis Montag. Gute Woche — GDD-01/02 in V2, Team kohärent.

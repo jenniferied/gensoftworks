@@ -374,3 +374,49 @@ V2-Finalisierung. Darius: GDD-01 V2 (7 Design-Saeulen, Konsequenz-Typen-Matrix, 
 *Artefakt: `02-topos.md (V1)`*
 
 ---
+
+## Szene 3 · Meeting
+
+::: {.scenemeta}
+ — Kueche\
+\agenticon{finn}\agenticon{leo}\agenticon{nami}\agenticon{emre}\agenticon{darius}\agenticon{vera}\agenticon{tobi} Finn Bergmann, Leo Fischer, Nami Okafor, Emre Yilmaz, Darius Engel, Vera Kowalski und Tobi Richter
+:::
+
+Freitag-Standup. Leo praesentiert Konsistenz-Befunde: GDD-03 hat Risse bis 80 statt 75 (Nami narrativ motiviert, muss mit Darius oder CD geklaert werden), GDD-02 hat Ymir statt Emer (Einzeiler-Fix, Leo uebernimmt). V2-Status: GDD-01/03/05/06 und WBB-01 V2 fertig, GDD-04 und WBB-02 V1 fertig. Drei CD-Fragen fuer Review: Stufenzahl Risse, GDD-04 Figur-3 Kompanion-Status, WBB-02 Topos-Metapher.
+
+---
+
+## Szene 4 · Pause
+
+::: {.scenemeta}
+ — Kueche\
+\agenticon{vera}\agenticon{tobi} Vera Kowalski und Tobi Richter
+:::
+
+Mittagspause. Vera und Tobi ueber Rho (Tiervolk-Design: Balancepunkt, Kopfbewegung, Passform als Fremdheitssignal) und Emres Schweigehaus (innen groesser als aussen — keine Erklaerung, Fehler-als-Weltaussage, Lumen-Schatten als Irritation). Wochenend-Plaene: Vera zurueck nach Koeln, Tobi ins Kino. Naechste Woche: Rho-Varianten fuer Nami, Schweigehaus-Konzept.
+
+---
+
+## Szene 5 · Arbeit
+
+::: {.scenemeta}
+ — Alle Stationen\
+\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo}\agenticon{finn} Darius Engel, Emre Yilmaz, Nami Okafor, Vera Kowalski, Tobi Richter, Leo Fischer und Finn Bergmann
+:::
+
+Nachmittags-Arbeit: Review-Vorbereitung und letzte Fixes. Leo: Ymir durch Emer in GDD-02 ersetzt (2 Stellen) + QA-Abschlussbericht. Nami: Akzeptiert Risse-Grenze 75, bereitet GDD-04 Figurenpitch vor. Darius: GDD-01/02 V2 Kurzpitch. Emre: WBB-01/02 Pitch + Topos-Metapher erklaerbar machen. Vera: GDD-05 Pitch + erste Rho-Skizze. Tobi: GDD-06 Pitch. Finn: Review-Agenda finalisiert, Woche-2-Ausblick.
+
+*Artefakt: `02-kernmechaniken.md (Ymir→Emer Fix)`*
+
+---
+
+## Szene 6 · REVIEW
+
+::: {.scenemeta}
+ — Kueche\
+\agenticon{finn}\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Darius Engel, Emre Yilmaz, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer
+:::
+
+Wochen-Review. Finn: 8 Artefakte, 5 in V2. Emre pitcht WBB-02 Topos-Metapher (Emer-Anatomie als Geographie). Nami pitcht GDD-04 (5 Schluesselfiguren, Figur 3 Kompanion-Frage offen). Leo lobt Tiervolk-Haendlerin. Zwei CD-Fragen: Figur-3-Status (bis Mittwoch), Emer-Anatomie (bis Dienstag). Freelancer: Blue-Byte letzte Chance Montag, Plan B bereit. Hauten-Segment-Slot Dienstag gebucht. Guter Wochenabschluss.
+
+---

@@ -70,3 +70,9 @@ Standup. Stufenzahl-Diskrepanz (75 vs. 80) offen — geht auf CD-Agenda. Ymir→
 
 ## Tag 5, Szene 4 (PAUSE)
 Mittagspause mit Tobi. Rho-Design durchdacht: Balancepunkt (Raptor-Gewicht vorne), Kopfbewegung statt Schulterdrehen, Passform als subtilstes Fremdheitssignal — gleiche Kleidung, anderer Körper, anders fallend. Kein tribal, kein Kostümsignal. Tobi sagt: eigene Clothing Physics nötig. Schweigehaus besprochen: "innen größer als außen" = keine Erklärung, Fehler-als-Weltaussage. Tobi: Lumen-Schatten passen nicht zur Außen-Hülle. Skizziert. Nächste Woche: drei Rho-Varianten für Nami, Schweigehaus-Konzept.
+
+## Tag 5, Szene 5 (WORK)
+GDD-05 V2 Pitch vorbereitet. Erste Rho-Rohskizze: Balancepunkt, Passform. Drei Varianten nächste Woche.
+
+## Tag 5, Szene 6 (REVIEW)
+Wochen-Review. Concept Art ab Mittwoch — brauche Emres Topos-Entscheidung bis Dienstag. Finn bestätigt: CD antwortet bis Di. Gute Woche, GDD-05 V2 steht sauber.

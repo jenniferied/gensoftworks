@@ -67,3 +67,9 @@ Konsistenz-Check V2 durchgeführt. HOCH: Stufentabelle immer noch inkonsistent �
 
 ## Tag 5, Szene 3 (MEETING)
 Befunde im Standup vorgestellt. Ymir→Emer: Übernehme den Fix selbst, 5 Minuten. Stufenzahl 75 vs. 80: Namis 80 ist narrativ motiviert (spätes Spiel, hohe Stakes), aber widerspricht CD-Entscheidung (Risse bis 75). Geht auf CD-Agenda. Emres Topos-Metapher ("Emer-Anatomie") angefragt — könnte zu hermetisch sein. Er sagt: bewusste Tiefenschicht, Codex-Eintrag. Nachmittags Ymir-Fix und Review-Vorbereitung.
+
+## Tag 5, Szene 5 (WORK)
+Ymir→Emer in GDD-02 gefixt (2 Stellen: Kap. 2.7 + 6.1). Ginnungagap bewusst gelassen — Emres Job. QA-Abschlussbericht Woche 1 geschrieben: Drei CD-Fragen für Review (Kontrollverlust-Scope, Narrativ-Schicht-Scope, Ginnungagap-Ersatz).
+
+## Tag 5, Szene 6 (REVIEW)
+Wochen-Review. Namis Tiervolk-Händlerin ist stark — will den ersten Satz hören bei V2. Emres Emer-Anatomie braucht CD-Okay. Gute Woche. Konsistenz besser als nach Tag 3, aber GDD-03 Risse-Fix noch ausstehend.

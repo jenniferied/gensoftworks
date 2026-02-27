@@ -70,3 +70,9 @@ WBB-01 V2 finalisiert — alle Kapitel jetzt Fließtext. Vier Updates: Ungefüge
 
 ## Tag 5, Szene 3 (MEETING)
 Standup. Ymir→Emer-Fix: Leo übernimmt den Einzeiler in GDD-02. Leo fragt ob WBB-02 Topos-Metapher ("Emer-Anatomie") zu hermetisch ist. Meine Antwort: bewusst als Tiefenschicht, Codex-Eintrag, keine Lore-Dump. Erkläre das im Review. Stufenzahl 75 vs. 80 offen — Nami will 80 für narrative Stakes.
+
+## Tag 5, Szene 5 (WORK)
+Review-Vorbereitung. WBB-01/02 Pitch fertig. Topos-Metapher zugänglich formuliert: Geographie IST Kosmologie, Spieler erlebt kohärente Welt. Ginnungagap-Ersatz noch nicht gesetzt — nächste Woche.
+
+## Tag 5, Szene 6 (REVIEW)
+Emer-Anatomie gepitcht. Team nimmt es gut auf. CD-Frage: Strukturprinzip freigeben bis Dienstag, weil Vera Mittwoch mit Concept Art anfängt. Hauten-Segment-Slot mit Tobi Dienstag. Ginnungagap nächste Woche. Gute Woche.

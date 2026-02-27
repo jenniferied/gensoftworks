@@ -64,3 +64,9 @@ Wochen-Review-Agenda vorbereitet. Dokumentenstatus: V2 fertig = GDD-01 (Darius),
 
 ## Tag 5, Szene 3 (MEETING)
 Standup moderiert. Leo: Zwei Konsistenz-Befunde — Stufenzahl 75 vs. 80 (Nami narrativ motiviert), Ymir statt Emer (Einzeiler-Fix, Leo übernimmt). V2-Status stark: 5 von 6 GDD + WBB-01 in V2. Drei CD-Fragen für Review: Stufenzahl, Figur-3 Kompanion-Status, Topos-Metapher. Nami und Darius sollen Stufenzahl klären oder eskalieren. Team gut aufgestellt für Wochen-Review.
+
+## Tag 5, Szene 5 (WORK)
+Review-Agenda finalisiert. Nami akzeptiert 75 — ein CD-Punkt weniger. Verbleibend: Figur-3-Status, Topos-Metapher. Freelancer: keine Antwort, Eskalation Montag. Woche-1-Bilanz: 6 GDD (5×V2, 1×V1) + 2 WBB (1×V2, 1×V1).
+
+## Tag 5, Szene 6 (REVIEW)
+Wochen-Review moderiert. Emre pitcht Emer-Anatomie — Team beeindruckt. Nami pitcht 5 Figuren, Kompanion-Frage klar formuliert. Leo lobt Tiervolk-Händlerin. Zwei CD-Fragen auf Pinnwand: Figur-3 (bis Mi), Emer-Anatomie (bis Di). Freelancer: letzte Mail Montag, Plan B bereit (2 Namen an Darius). Hauten-Slot Di gebucht. Team geht mit gutem Gefühl ins Wochenende. Woche 1 geschafft.

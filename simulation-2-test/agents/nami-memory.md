@@ -70,3 +70,9 @@ GDD-03 V2 finalisiert — Beat-Sheet auf Szenenebene (10 Beats), Fraktionsquests
 
 ## Tag 5, Szene 3 (MEETING)
 Standup. Meine 80 in GDD-03 (Risse-Grenze) wurde von Leo bemängelt — weicht von CD-75 ab. Ich hab argumentiert: narrativ motiviert, spätes Spiel, höhere Stakes. Geht auf CD-Agenda. Muss mit Darius klären oder CD entscheiden lassen. Außerdem: GDD-04 Figur 3 (Maret/Cassius) — Kompanion oder NPC? Auch für CD.
+
+## Tag 5, Szene 5 (WORK)
+Akzeptiere 75 — mechanisch kann ich den Unterschied nicht belegen, Fehler war fehlendes Alignment mit Darius. GDD-03 bekommt Einzeiler-Fix nach Review. GDD-04 Figurenpitch vorbereitet: Verbindendes Prinzip ist aufrichtige Überzeugung aller Figuren. Maret exemplarisch ausgearbeitet.
+
+## Tag 5, Szene 6 (REVIEW)
+GDD-04 gepitcht. 5 Figuren, Kompanion-Frage klar formuliert. Finn: CD-Antwort bis Mittwoch, sonst zu ihm kommen. Leo findet Tiervolk-Händlerin stark, will ersten Satz hören bei V2. Gutes Wochengefühl. Ab Mittwoch GDD-04 V2 — wenn CD-Entscheidung da ist.

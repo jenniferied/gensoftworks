@@ -73,3 +73,9 @@ Standup. GDD-06 V2 sauber, keine Beanstandungen. Ymir→Emer Fix in GDD-02 über
 
 ## Tag 5, Szene 4 (PAUSE)
 Mittagspause mit Vera. Rho: Vera plant Balancepunkt-Design — anderer Schwerpunkt, Kopf dreht sich statt Schultern. Clothing Physics müssen custom sein. Schweigehaus: Veras "Fehler-als-Weltaussage" ist stark. Mein Beitrag: Lumen-Schatten, die geometrisch nicht zur Außen-Hülle passen. Spieler liest es als Fehler in der Welt, nicht als Bug. Nächste Woche zusammen an Schweigehaus-Konzept.
+
+## Tag 5, Szene 5 (WORK)
+GDD-06 V2 Pitch vorbereitet. Hauten-Segmentanzahl (3 oder 5) noch offen — Emre nächste Woche.
+
+## Tag 5, Szene 6 (REVIEW)
+Wochen-Review. Hauten-Segment-Slot Dienstag mit Emre, 30 Min, Finn bucht. GDD-06 V2 steht. Gute Woche.
