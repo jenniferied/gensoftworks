@@ -25,13 +25,13 @@ const ROOMS = {
 
 // --- Agent definitions ---
 const AGENTS = [
-  { key: 'emre',   name: 'Emre Kaya',       role: 'Worldbuilder',       room: '7a', sprite: 'char_05', deskX: 4,  deskY: 3,  facing: 'right' },
-  { key: 'vera',   name: 'Vera Morozova',    role: 'Concept Artist',     room: '7b', sprite: 'char_01', deskX: 12, deskY: 3,  facing: 'left'  },
-  { key: 'tobi',   name: 'Tobias Richter',   role: 'Tech Lead',          room: '7c', sprite: 'char_03', deskX: 20, deskY: 3,  facing: 'right' },
-  { key: 'darius', name: 'Darius Varga',     role: 'Game Director',      room: '7d', sprite: 'char_04', deskX: 4,  deskY: 16, facing: 'right' },
-  { key: 'nami',   name: 'Nami Osei',        role: 'Narrative Designer', room: '7e', sprite: 'char_02', deskX: 12, deskY: 16, facing: 'left'  },
-  { key: 'leo',    name: 'Leo Ferretti',     role: 'Community Manager',  room: '7f', sprite: 'char_06', deskX: 20, deskY: 16, facing: 'right' },
-  { key: 'finn',   name: 'Finn Calloway',    role: 'Producer',           room: '7',  sprite: 'char_07', deskX: 8,  deskY: 23, facing: 'right' },
+  { key: 'emre',   name: 'Emre Kaya',       role: 'Worldbuilder',       room: '7a', sprite: 'char_05', deskX: 4,  deskY: 3,  facing: 'right', gender: '\u2642', flag: '\uD83C\uDDF9\uD83C\uDDF7\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'vera',   name: 'Vera Morozova',    role: 'Concept Artist',     room: '7b', sprite: 'char_01', deskX: 12, deskY: 3,  facing: 'left',  gender: '\u2640', flag: '\uD83C\uDDF5\uD83C\uDDF1\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'tobi',   name: 'Tobias Richter',   role: 'Tech Lead',          room: '7c', sprite: 'char_03', deskX: 20, deskY: 3,  facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'darius', name: 'Darius Varga',     role: 'Game Director',      room: '7d', sprite: 'char_04', deskX: 4,  deskY: 16, facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'nami',   name: 'Nami Osei',        role: 'Narrative Designer', room: '7e', sprite: 'char_02', deskX: 12, deskY: 16, facing: 'left',  gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'leo',    name: 'Leo Ferretti',     role: 'Community Manager',  room: '7f', sprite: 'char_06', deskX: 20, deskY: 16, facing: 'right', gender: '\u2640', flag: '\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEE\uD83C\uDDF7' },
+  { key: 'finn',   name: 'Finn Calloway',    role: 'Producer',           room: '7',  sprite: 'char_07', deskX: 8,  deskY: 23, facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
 ];
 
 const ZONES = [
@@ -149,7 +149,9 @@ export class StudioScene extends Phaser.Scene {
 
     // --- Agent tooltip (HTML, stays sharp over pixelArt canvas) ---
     this.tooltip = document.getElementById('agent-tooltip');
-    this.tooltipName = this.tooltip.querySelector('.tt-name');
+    this.tooltipGender = this.tooltip.querySelector('.tt-gender');
+    this.tooltipLabel = this.tooltip.querySelector('.tt-label');
+    this.tooltipFlag = this.tooltip.querySelector('.tt-flag');
     this.tooltipRole = this.tooltip.querySelector('.tt-role');
 
     // --- Agents ---
@@ -166,7 +168,9 @@ export class StudioScene extends Phaser.Scene {
 
       // Hover → show tooltip
       sprite.on('pointerover', () => {
-        this.tooltipName.textContent = agent.name;
+        this.tooltipGender.textContent = agent.gender;
+        this.tooltipLabel.textContent = agent.name;
+        this.tooltipFlag.textContent = agent.flag;
         this.tooltipRole.textContent = agent.role;
         this.tooltip.classList.add('visible');
       });
@@ -220,6 +224,11 @@ export class StudioScene extends Phaser.Scene {
 
     // Update room highlight
     this.updateRoomHighlight(scene.active_room);
+
+    // Kill pending walk tweens (prevents stale onComplete from spawning bubbles)
+    for (const { sprite } of Object.values(this.agentSprites)) {
+      this.tweens.killTweensOf(sprite);
+    }
 
     // Clear existing bubbles
     this.clearBubbles();
