@@ -1,6 +1,6 @@
 # GenSoftworks
 
-Seven role-based AI agents produce a GDD and WBB for a fantasy CRPG (Park et al. 2023). Human user = Creative Director (CD).
+Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollenspiel (Park et al. 2023). Human user = Creative Director (CD).
 
 ## Models
 

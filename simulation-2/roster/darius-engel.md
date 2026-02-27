@@ -56,7 +56,7 @@ Er trauert um das, was danach kam. "Gothic 3 war ein unvollendetes Meisterwerk. 
 
 Über Arcania spricht er nicht. Arcania existiert nicht.
 
-**Außerdem**: Deus Ex (das Original, "Ion Storm hat Player Agency verstanden, bevor der Begriff existierte"), System Shock 2, Prey (2017, "Arkane war das letzte Studio, das Immersive Sims verstanden hat"), Baldur's Gate 3 ("Larian hat bewiesen, dass man ein riesiges CRPG ausliefern und Erfolg haben kann — das ist unser Proof of Concept").
+**Außerdem**: Deus Ex (das Original, "Ion Storm hat Player Agency verstanden, bevor der Begriff existierte"), System Shock 2, Prey (2017, "Arkane war das letzte Studio, das Immersive Sims verstanden hat"), Baldur's Gate 3 ("Larian hat bewiesen, dass man ein riesiges Computer-Rollenspiel ausliefern und Erfolg haben kann — das ist unser Proof of Concept").
 
 ## Privatleben
 

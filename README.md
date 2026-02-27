@@ -23,7 +23,7 @@
 
 ## 💡 Was ist das hier?
 
-**GenSoftworks** ist ein simuliertes Indie-Spielestudio, in dem sieben 🤖 KI-Agenten gemeinsam ein 📄 Game Design Document (GDD) und eine 🌍 World Building Bible (WBB) für ein 🎮 Fantasy-CRPG entwickeln.
+**GenSoftworks** ist ein simuliertes Indie-Spielestudio, in dem sieben 🤖 KI-Agenten gemeinsam ein 📄 Game Design Document (GDD) und eine 🌍 World Building Bible (WBB) für ein 🎮 Fantasy-Computer-Rollenspiel entwickeln.
 
 Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.de/) (Medienproduktion) und untersucht, wie multi-agentenbasierte 🧠 KI-Systeme kreativ kollaborieren — inspiriert von generativen Agenten-Architekturen aus der aktuellen 📚 Forschung.
 
@@ -189,7 +189,7 @@ Energiegeladen, meinungsstark, empathisch. Bartagame Clementine ist Internet-ber
 
 ## ⚔️ Das Spiel: RELICS
 
-Die Agenten arbeiten an **RELICS** — einem 🎮 Fantasy-CRPG mit 🧬 Biotech-Futurismus, ⚡ germanischer Mythologie und feudaler Brutalität.
+Die Agenten arbeiten an **RELICS** — einem 🎮 Fantasy-Computer-Rollenspiel mit 🧬 Biotech-Futurismus, ⚡ germanischer Mythologie und feudaler Brutalität.
 
 | | |
 |---|---|

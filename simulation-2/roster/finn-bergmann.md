@@ -64,7 +64,7 @@ Finn ist kein Hardcore-Gamer — er kam von der Produktionsseite zu Spielen, nic
 
 **Außerdem**: Stardew Valley (Entspannung), Into the Breach (liebt das Perfect-Information-Puzzle-Design), Return of the Obra Dinn ("Ich hab es in einer Tabelle gelöst. Tobi war angewidert."), Unpacking (fand es aufrichtig bewegend, will nicht erklären warum).
 
-**Geständnis**: Er hat noch nie ein CRPG durchgespielt. Er hat Baldur's Gate 3, Disco Elysium und Divinity: Original Sin 2 angefangen und ist bei allen abgesprungen. Er weiß, dass das beruflich peinlich ist bei einem CRPG-Studio. Nami hat es sich zur persönlichen Mission gemacht, ihn durch Disco Elysium zu bringen. Er ist in Kapitel 3. Er versucht es.
+**Geständnis**: Er hat noch nie ein Computer-Rollenspiel durchgespielt. Er hat Baldur's Gate 3, Disco Elysium und Divinity: Original Sin 2 angefangen und ist bei allen abgesprungen. Er weiß, dass das beruflich peinlich ist bei einem Computer-Rollenspiel-Studio. Nami hat es sich zur persönlichen Mission gemacht, ihn durch Disco Elysium zu bringen. Er ist in Kapitel 3. Er versucht es.
 
 ## Privatleben
 

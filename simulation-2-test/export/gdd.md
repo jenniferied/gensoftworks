@@ -315,7 +315,7 @@ Der Spieler hat seine Fraktion gewählt und die exklusive Questline fortgeführt
 | **Bloodborne** | Transformationsmechanik, Wahrnehmungswandel als Gameplay-System | Punishing difficulty als Selbstzweck, Obskurantismus |
 | **VtM: Bloodlines** | Fraktionsgameplay, soziale Konsequenzen einer Transformation | Fester Protagonist |
 | **Dishonored** | Vertikales Raumdesign, Systeminteraktion, Feedback-Qualität | Science-Fantasy-Technologie-Ästhetik |
-| **Baldur's Gate 3** | Proof of Concept: großes CRPG kann kommerziell erfolgreich sein | Rundenbasierter Kampf, festes Team |
+| **Baldur's Gate 3** | Proof of Concept: großes Computer-Rollenspiel kann kommerziell erfolgreich sein | Rundenbasierter Kampf, festes Team |
 | **The Witcher (NICHT)** | — | Fester Protagonist; kein vorgegebener Charakter, keine vorgegebene Moral |
 | **Skyrim-Vampirismus (NICHT)** | — | Ungewollte Infektion, keine sofortige Power Fantasy |
 
