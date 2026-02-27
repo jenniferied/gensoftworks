@@ -12,16 +12,48 @@ let muted = false;
 let started = false;
 let volume = 0.15;
 
+const FADE_MS = 600;
+
 function randomInterval() {
-  return 4000 + Math.random() * 10000; // 4-14s
+  return 2000 + Math.random() * 6000; // 2-8s
+}
+
+function fadeIn(audio, target, ms) {
+  audio.volume = 0;
+  audio.play().catch(() => {});
+  const steps = 20;
+  const step = target / steps;
+  const dt = ms / steps;
+  let i = 0;
+  const id = setInterval(() => {
+    i++;
+    audio.volume = Math.min(step * i, target);
+    if (i >= steps) clearInterval(id);
+  }, dt);
+}
+
+function fadeOut(audio, ms) {
+  const start = audio.volume;
+  const steps = 20;
+  const step = start / steps;
+  const dt = ms / steps;
+  let i = 0;
+  const id = setInterval(() => {
+    i++;
+    audio.volume = Math.max(start - step * i, 0);
+    if (i >= steps) { clearInterval(id); audio.pause(); }
+  }, dt);
 }
 
 function playRandomTyping() {
   if (muted || !started || typingSounds.length === 0) return;
   const sound = typingSounds[Math.floor(Math.random() * typingSounds.length)];
   const clone = sound.cloneNode();
-  clone.volume = Math.min(volume * 2, 1.0);
-  clone.play().catch(() => {});
+  const targetVol = Math.min(volume * 3.5, 1.0);
+  fadeIn(clone, targetVol, FADE_MS);
+  // Fade out before clip ends
+  const dur = sound.duration || 8;
+  setTimeout(() => fadeOut(clone, FADE_MS), Math.max((dur - 0.8) * 1000, 1000));
   typingTimer = setTimeout(playRandomTyping, randomInterval());
 }
 
