@@ -33,6 +33,8 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 
 ## 🏢 Das Studio
 
+<img src="assets/hobart-building.png" width="720" alt="Kreativquartier Hobart, Detmold — Gebäude 7">
+
 <table>
 <tr><td>
 <strong>GenSoftworks GbR</strong><br>
