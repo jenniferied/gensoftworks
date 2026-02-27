@@ -277,6 +277,99 @@
       #audio-bar .audio-credit { flex: 1; text-align: right; color: #334; font-size: 9px; }
       #audio-bar .audio-credit a { color: #445; text-decoration: none; }
       #audio-bar .audio-credit a:hover { color: #667; }
+
+      /* --- Document Bar --- */
+      #document-bar {
+        display: flex; align-items: center; gap: 0;
+        padding: 4px 10px; background: #0d0d1a; border-top: 1px solid #222233;
+        overflow-x: auto; min-height: 0;
+      }
+      #document-bar:empty { display: none; }
+      .doc-group {
+        display: flex; align-items: center; gap: 6px; padding: 0 10px;
+      }
+      .doc-group + .doc-group { border-left: 1px solid #222233; }
+      .doc-group-label {
+        font-size: 9px; color: #556; text-transform: uppercase; letter-spacing: 1px;
+        writing-mode: horizontal-tb; flex-shrink: 0;
+      }
+      .doc-stack {
+        display: flex; flex-direction: column; align-items: center; gap: 1px;
+        cursor: pointer; flex-shrink: 0;
+      }
+      .doc-stack:hover .doc-page:last-child { background: #48442e; border-color: #5a5438; }
+      .doc-pages {
+        position: relative; width: 18px; height: 22px;
+      }
+      .doc-page {
+        position: absolute; width: 14px; height: 18px;
+        background: #2a2820; border: 1px solid #3d3828; border-radius: 1px;
+      }
+      .doc-page:last-child {
+        background: #38352a; z-index: 2;
+      }
+      .doc-page:last-child::after {
+        content: ''; position: absolute; top: 0; right: 0;
+        width: 4px; height: 4px;
+        background: linear-gradient(225deg, #0d0d1a 50%, #48442e 50%);
+      }
+      .doc-label {
+        font-size: 8px; color: #556; text-align: center; line-height: 1;
+        margin-top: 1px;
+      }
+
+      /* --- Document Modal --- */
+      #document-overlay {
+        position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+        z-index: 200; display: none; align-items: center; justify-content: center;
+      }
+      #document-overlay.open { display: flex; }
+      #document-modal {
+        background: #f5f0e8; border: 1px solid #d8d0c0; border-radius: 6px;
+        width: 680px; max-width: 90vw; max-height: 85vh; overflow-y: auto;
+        padding: 28px 36px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: #2a2a2a; position: relative;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      }
+      .doc-modal-close {
+        position: absolute; top: 10px; right: 14px;
+        background: none; border: none; color: #999; font-size: 20px;
+        cursor: pointer; font-family: sans-serif; line-height: 1;
+      }
+      .doc-modal-close:hover { color: #555; }
+      .doc-modal-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+      .doc-modal-badge { font-size: 10px; }
+      .doc-modal-badge.gdd { background: #2a4a6a; }
+      .doc-modal-badge.wbb { background: #4a2a5a; }
+      .doc-modal-title { font-size: 15px; font-weight: 600; color: #1a1a1a; }
+      .doc-modal-version { font-size: 11px; color: #888; margin-left: auto; flex-shrink: 0; }
+      .doc-modal-nav { display: flex; align-items: center; gap: 6px; margin-bottom: 14px; }
+      .doc-modal-nav-btn {
+        background: #ebe6dc; border: 1px solid #d0c8b8; color: #666;
+        font-family: monospace; font-size: 13px; padding: 2px 8px;
+        border-radius: 3px; cursor: pointer; line-height: 1;
+      }
+      .doc-modal-nav-btn:hover { border-color: #aaa; color: #333; }
+      .doc-modal-nav-btn:disabled { opacity: 0.25; cursor: default; }
+      .doc-modal-nav-label { font-size: 12px; color: #777; }
+      .doc-modal-content {
+        font-size: 13px; color: #333; line-height: 1.8; word-wrap: break-word;
+        overflow-wrap: break-word; max-width: 60ch; margin: 0 auto;
+      }
+      .doc-modal-content h1 { font-size: 18px; font-weight: 600; color: #1a1a1a; margin: 24px 0 12px; border-bottom: 1px solid #d8d0c0; padding-bottom: 6px; }
+      .doc-modal-content h2 { font-size: 15px; font-weight: 600; color: #2a4a6a; margin: 20px 0 10px; }
+      .doc-modal-content h3 { font-size: 13px; font-weight: 600; color: #4a6a8a; margin: 16px 0 8px; }
+      .doc-modal-content p { margin-bottom: 12px; }
+      .doc-modal-content ul, .doc-modal-content ol { margin: 8px 0 14px 22px; padding: 0; }
+      .doc-modal-content li { margin-bottom: 5px; }
+      .doc-modal-content blockquote {
+        border-left: 3px solid #c8c0b0; padding: 8px 16px; margin: 12px 0;
+        color: #555; background: #ede8e0; border-radius: 2px;
+      }
+      .doc-modal-content hr { border: none; border-top: 1px solid #d8d0c0; margin: 20px 0; }
+      .doc-modal-content strong { color: #1a1a1a; font-weight: 600; }
+      .doc-modal-content em { color: #555; }
+      .doc-modal-content code { background: #ede8e0; padding: 2px 5px; border-radius: 3px; font-size: 12px; font-family: monospace; color: #6a4a2a; }
     </style>
   </head>
   <body>
@@ -299,9 +392,28 @@
       </div>
     </div>
 
+    <!-- Document chapter modal -->
+    <div id="document-overlay">
+      <div id="document-modal">
+        <button class="doc-modal-close" id="doc-modal-close">&times;</button>
+        <div class="doc-modal-header">
+          <span class="badge doc-modal-badge" id="doc-modal-badge"></span>
+          <span class="doc-modal-title" id="doc-modal-title"></span>
+          <span class="doc-modal-version" id="doc-modal-version"></span>
+        </div>
+        <div class="doc-modal-nav" id="doc-modal-nav" style="display:none;">
+          <button class="doc-modal-nav-btn" id="doc-ver-prev" title="Ältere Version">&lsaquo;</button>
+          <span class="doc-modal-nav-label" id="doc-ver-label"></span>
+          <button class="doc-modal-nav-btn" id="doc-ver-next" title="Neuere Version">&rsaquo;</button>
+        </div>
+        <div class="doc-modal-content" id="doc-modal-content"></div>
+      </div>
+    </div>
+
     <div id="wrapper">
       <div id="left">
         <div id="game-container"><div id="zone-overlay"></div></div>
+        <div id="document-bar"></div>
         <div id="audio-bar">
           <div class="audio-controls">
             <button class="audio-btn active" id="btn-audio-toggle" title="Ton an/aus">&#9834;</button>
@@ -310,6 +422,7 @@
           <div class="audio-credit">
             Music: <a href="https://freesound.org/people/Seth_Makes_Sounds/sounds/670039/" target="_blank">Seth_Makes_Sounds</a> (CC0)
             &middot; Typing: <a href="https://freesound.org/people/stu556/sounds/450281/" target="_blank">stu556</a> (CC0)
+            &middot; Paper: <a href="https://freesound.org/people/davidbain/sounds/136778/" target="_blank">davidbain</a> (CC0)
           </div>
         </div>
         <div id="title-bar">GENSOFTWORKS — Gebäude 12, Obergeschoss</div>

@@ -146,6 +146,75 @@ TYPE_LABELS = {
 }
 
 
+def load_chapters(gallery_dir, days):
+    """Scan gallery/gdd/ and gallery/wbb/ for versioned markdown chapters.
+
+    Filename pattern: KK-title-vN.md (e.g. 01-spieluebersicht-v2.md)
+    Cross-references scene artifacts to determine when each version appeared.
+    Returns dict: {"gdd": [...], "wbb": [...]} with all versions per chapter.
+    """
+    file_pattern = re.compile(r"^(\d{2})-(.+)-v(\d+)\.md$")
+    result = {}
+
+    # Build artifact timeline: scan all scenes for gallery/ references
+    # Artifact strings like: "gallery/gdd/01-spielübersicht.md (V2)"
+    # or plain: "gallery/gdd/01-spielübersicht.md"
+    art_gallery_re = re.compile(r"gallery/(gdd|wbb)/(\d{2})-")
+    art_version_re = re.compile(r"\((?:.*?V|v)(\d+)\)")
+    timeline = {}  # (doc_type, chapter_num, version) -> (day, scene)
+    for day_entry in days:
+        day_num = day_entry["day"]
+        for sc in day_entry["scenes"]:
+            scene_num = sc.get("scene", 0)
+            for art in sc.get("artifacts", []):
+                gm = art_gallery_re.search(art)
+                if not gm:
+                    continue
+                doc_type_match = gm.group(1)
+                chapter_num = gm.group(2)
+                vm = art_version_re.search(art)
+                version = int(vm.group(1)) if vm else 1
+                key = (doc_type_match, chapter_num, version)
+                if key not in timeline:
+                    timeline[key] = {"day": day_num, "scene": scene_num}
+
+    for doc_type in ("gdd", "wbb"):
+        doc_dir = gallery_dir / doc_type
+        if not doc_dir.exists():
+            continue
+        chapters = {}
+        for f in sorted(doc_dir.glob("*.md")):
+            m = file_pattern.match(f.name)
+            if not m:
+                continue
+            chapter_num = m.group(1)
+            chapter_slug = m.group(2)
+            version = int(m.group(3))
+            chapter_id = f"{chapter_num}-{chapter_slug}"
+            content = f.read_text()
+            title = chapter_id
+            for line in content.splitlines():
+                if line.startswith("# "):
+                    title = line[2:].strip()
+                    break
+            if chapter_id not in chapters:
+                chapters[chapter_id] = {"id": chapter_id, "title": title, "versions": []}
+            ver_entry = {
+                "version": version,
+                "filename": f.name,
+                "content": content,
+            }
+            # Add appearance time from artifact timeline
+            tl_key = (doc_type, chapter_num, version)
+            if tl_key in timeline:
+                ver_entry["appeared"] = timeline[tl_key]
+            chapters[chapter_id]["versions"].append(ver_entry)
+        for ch in chapters.values():
+            ch["versions"].sort(key=lambda v: v["version"])
+        result[doc_type] = sorted(chapters.values(), key=lambda c: c["id"])
+    return result
+
+
 def load_roster(roster_dir):
     """Parse YAML frontmatter from roster markdown files.
 
@@ -462,12 +531,14 @@ def main():
         memories_dir = sim_root / "state" / "memories"
         agents_dir = sim_root / "agents"
         roster_dir = sim_root / "roster"
+        gallery_dir = sim_root / "gallery"
         out_file = Path(args.out) if args.out else sim_root / "viewer-data" / "simulation.json"
     else:
         logbook_dir = ROOT / "logbook"
         memories_dir = ROOT / "state" / "memories"
         agents_dir = ROOT / "agents"
         roster_dir = ROOT / "roster"
+        gallery_dir = ROOT / "gallery"
         out_file = Path(args.out) if args.out else ROOT / "frontend" / "public" / "data" / "simulation.json"
 
     all_memories = load_memories(memories_dir)
@@ -525,11 +596,16 @@ def main():
     # Load roster profiles
     roster = load_roster(roster_dir)
 
+    # Load GDD/WBB chapters (needs days for artifact timeline)
+    chapters = load_chapters(gallery_dir, days)
+
     data = {"days": days}
     if agent_memories:
         data["agent_memories"] = agent_memories
     if roster:
         data["roster"] = roster
+    if chapters:
+        data["chapters"] = chapters
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2))

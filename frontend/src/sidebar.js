@@ -104,6 +104,26 @@ export async function initSidebar() {
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) overlay.classList.remove('open');
   });
+
+  // Close document modal
+  const docOverlay = document.getElementById('document-overlay');
+  const closeDocModal = () => { docOverlay.classList.remove('open'); docModalState = null; };
+  document.getElementById('doc-modal-close').addEventListener('click', closeDocModal);
+  docOverlay.addEventListener('click', (e) => {
+    if (e.target === docOverlay) closeDocModal();
+  });
+
+  // Document version arrow buttons
+  document.getElementById('doc-ver-prev').addEventListener('click', () => docModalNavigate(-1));
+  document.getElementById('doc-ver-next').addEventListener('click', () => docModalNavigate(1));
+
+  // Keyboard: arrows left/right to switch version, Escape to close
+  document.addEventListener('keydown', (e) => {
+    if (!docOverlay.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); docModalNavigate(-1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); docModalNavigate(1); }
+    if (e.key === 'Escape') { e.preventDefault(); closeDocModal(); }
+  });
 }
 
 async function loadSimulation(filename) {
@@ -129,6 +149,7 @@ async function loadSimulation(filename) {
 
   populateScenes();
   selectScene();
+  renderDocumentBar();
 
   // Signal Phaser that data is ready
   window.dispatchEvent(new CustomEvent('viewer:data-ready'));
@@ -428,6 +449,195 @@ function renderAgentCards(scene) {
   }
 
   agentList.innerHTML = html;
+}
+
+// --- Document Bar ---
+
+// Paper sound — place paper-turn.mp3 in public/audio/
+const paperSound = new Audio(`${BASE}audio/paper-turn.mp3`);
+paperSound.preload = 'auto';
+
+function playPaperSound() {
+  const clone = paperSound.cloneNode();
+  clone.volume = 0.3;
+  clone.play().catch(() => {});
+}
+
+// Active modal state for keyboard nav
+let docModalState = null; // {docType, chapter, versionIdx}
+
+function renderDocumentBar() {
+  const bar = document.getElementById('document-bar');
+  const chapters = simData?.chapters;
+  if (!chapters || (!chapters.gdd?.length && !chapters.wbb?.length)) {
+    bar.innerHTML = '';
+    return;
+  }
+
+  let html = '';
+  for (const docType of ['gdd', 'wbb']) {
+    const list = chapters[docType];
+    if (!list?.length) continue;
+    html += `<div class="doc-group">`;
+    html += `<span class="doc-group-label">${docType.toUpperCase()}</span>`;
+    for (const ch of list) {
+      const latest = ch.versions[ch.versions.length - 1];
+      const pageCount = Math.min(ch.versions.length + 1, 4);
+      html += `<div class="doc-stack" data-doc-type="${docType}" data-chapter-id="${ch.id}" title="${ch.title}">`;
+      html += `<div class="doc-pages">`;
+      for (let i = 0; i < pageCount; i++) {
+        html += `<div class="doc-page" style="left:${i * 2}px;bottom:${i}px;"></div>`;
+      }
+      html += `</div>`;
+      html += `<div class="doc-label">${ch.id.slice(0, 2)} v${latest.version}</div>`;
+      html += `</div>`;
+    }
+    html += `</div>`;
+  }
+
+  bar.innerHTML = html;
+
+  bar.querySelectorAll('.doc-stack').forEach(el => {
+    el.addEventListener('click', () => {
+      openDocumentModal(el.dataset.docType, el.dataset.chapterId);
+    });
+  });
+}
+
+function openDocumentModal(docType, chapterId) {
+  const chapters = simData?.chapters?.[docType];
+  if (!chapters) return;
+  const chapter = chapters.find(c => c.id === chapterId);
+  if (!chapter || !chapter.versions.length) return;
+
+  playPaperSound();
+
+  document.getElementById('doc-modal-badge').textContent = docType.toUpperCase();
+  document.getElementById('doc-modal-badge').className = `badge doc-modal-badge ${docType}`;
+  document.getElementById('doc-modal-title').textContent = chapter.title;
+
+  // Start at highest version
+  docModalState = { docType, chapter, versionIdx: chapter.versions.length - 1 };
+  renderDocModalVersion();
+
+  document.getElementById('document-overlay').classList.add('open');
+}
+
+function renderDocModalVersion() {
+  if (!docModalState) return;
+  const { chapter, versionIdx } = docModalState;
+  const v = chapter.versions[versionIdx];
+  const total = chapter.versions.length;
+
+  const contentEl = document.getElementById('doc-modal-content');
+  const navEl = document.getElementById('doc-modal-nav');
+  const versionEl = document.getElementById('doc-modal-version');
+  const prevBtn = document.getElementById('doc-ver-prev');
+  const nextBtn = document.getElementById('doc-ver-next');
+  const labelEl = document.getElementById('doc-ver-label');
+
+  contentEl.innerHTML = renderMarkdownFull(v.content);
+  versionEl.textContent = `V${v.version}`;
+
+  if (total > 1) {
+    navEl.style.display = 'flex';
+    labelEl.textContent = `V${v.version} von ${chapter.versions[total - 1].version}`;
+    prevBtn.disabled = versionIdx === 0;
+    nextBtn.disabled = versionIdx === total - 1;
+  } else {
+    navEl.style.display = 'none';
+  }
+
+  // Scroll to top
+  document.getElementById('document-modal').scrollTop = 0;
+}
+
+function docModalNavigate(dir) {
+  if (!docModalState) return;
+  const newIdx = docModalState.versionIdx + dir;
+  if (newIdx < 0 || newIdx >= docModalState.chapter.versions.length) return;
+  docModalState.versionIdx = newIdx;
+  playPaperSound();
+  renderDocModalVersion();
+}
+
+/** Extended markdown → HTML for document chapters. */
+function renderMarkdownFull(md) {
+  const lines = md.split('\n');
+  let html = '';
+  let inList = false;
+  let listType = 'ul';
+  let inBlockquote = false;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    // Empty line
+    if (!trimmed) {
+      if (inList) { html += `</${listType}>`; inList = false; }
+      if (inBlockquote) { html += '</blockquote>'; inBlockquote = false; }
+      continue;
+    }
+
+    // Horizontal rule
+    if (/^[-*_]{3,}$/.test(trimmed)) {
+      if (inList) { html += `</${listType}>`; inList = false; }
+      html += '<hr>';
+      continue;
+    }
+
+    // Headings
+    if (trimmed.startsWith('### ')) {
+      if (inList) { html += `</${listType}>`; inList = false; }
+      html += `<h3>${inlineFormat(trimmed.slice(4))}</h3>`;
+      continue;
+    }
+    if (trimmed.startsWith('## ')) {
+      if (inList) { html += `</${listType}>`; inList = false; }
+      html += `<h2>${inlineFormat(trimmed.slice(3))}</h2>`;
+      continue;
+    }
+    if (trimmed.startsWith('# ')) {
+      if (inList) { html += `</${listType}>`; inList = false; }
+      html += `<h1>${inlineFormat(trimmed.slice(2))}</h1>`;
+      continue;
+    }
+
+    // Blockquote
+    if (trimmed.startsWith('> ')) {
+      if (inList) { html += `</${listType}>`; inList = false; }
+      if (!inBlockquote) { html += '<blockquote>'; inBlockquote = true; }
+      html += `<p>${inlineFormat(trimmed.slice(2))}</p>`;
+      continue;
+    }
+    if (inBlockquote) { html += '</blockquote>'; inBlockquote = false; }
+
+    // Unordered list
+    if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+      if (inList && listType !== 'ul') { html += `</${listType}>`; inList = false; }
+      if (!inList) { html += '<ul>'; inList = true; listType = 'ul'; }
+      html += `<li>${inlineFormat(trimmed.slice(2))}</li>`;
+      continue;
+    }
+
+    // Ordered list
+    const olMatch = trimmed.match(/^(\d+)\.\s+(.+)/);
+    if (olMatch) {
+      if (inList && listType !== 'ol') { html += `</${listType}>`; inList = false; }
+      if (!inList) { html += '<ol>'; inList = true; listType = 'ol'; }
+      html += `<li>${inlineFormat(olMatch[2])}</li>`;
+      continue;
+    }
+
+    if (inList) { html += `</${listType}>`; inList = false; }
+
+    // Paragraph
+    html += `<p>${inlineFormat(trimmed)}</p>`;
+  }
+
+  if (inList) html += `</${listType}>`;
+  if (inBlockquote) html += '</blockquote>';
+  return html;
 }
 
 /** Lightweight markdown → HTML for profile sections. */

@@ -426,7 +426,7 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
             img_path = matches[0]
             if crop_dir:
                 img_path = crop_screenshot(img_path, crop_dir)
-            lines.append(f"![Szene {scene_num}]({img_path}){{ width=100% }}")
+            lines.append(f"![Szene {scene_num}]({img_path}){{ width=40% }}")
             lines.append("")
 
     # Trigger
@@ -533,7 +533,7 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None):
             img_path = matches[0]
             if crop_dir:
                 img_path = crop_screenshot(img_path, crop_dir)
-            lines.append(f"![Szene {scene_num}]({img_path}){{ width=100% }}")
+            lines.append(f"![Szene {scene_num}]({img_path}){{ width=40% }}")
             lines.append("")
 
     # Trigger
@@ -778,7 +778,7 @@ def build_markdown(logbook_dir, memories_dir, world_path, bulletin_path,
 
     lines = []
     lines.append("---")
-    lines.append('title: "GenSoftworks — Logbuch (Vollständig)"')
+    lines.append('title: "GenSoftworks — Logbuch"')
     lines.append(f'subtitle: "{subtitle}"')
     lines.append('author: "GenSoftworks Studio Simulation"')
     lines.append('date: "2026"')
@@ -916,15 +916,14 @@ def build_pdf(md_path, output_path, header_path, tex_only=False):
             "--pdf-engine=xelatex",
             "--toc",
             "--toc-depth=2",
-            "-V", f"mainfont=Lora",
+            "-V", "mainfont=OpenSans",
             "-V", (f"mainfontoptions=Path={fontpath},"
-                   "UprightFont=Lora-Variable.ttf,"
-                   "ItalicFont=Lora-Italic-Variable.ttf,"
-                   "BoldFont=Lora-Variable.ttf,"
-                   "BoldItalicFont=Lora-Italic-Variable.ttf,"
-                   "BoldFeatures={Weight=700},"
-                   "BoldItalicFeatures={Weight=700}"),
-            "-V", f"sansfont=OpenSans",
+                   "UprightFont=OpenSans-Variable.ttf,"
+                   "ItalicFont=OpenSans-Italic-Variable.ttf,"
+                   "BoldFont=OpenSans-Variable.ttf,"
+                   "BoldItalicFont=OpenSans-Italic-Variable.ttf,"
+                   "BoldFeatures={Weight=700}"),
+            "-V", "sansfont=OpenSans",
             "-V", (f"sansfontoptions=Path={fontpath},"
                    "UprightFont=OpenSans-Variable.ttf,"
                    "ItalicFont=OpenSans-Italic-Variable.ttf,"
@@ -935,7 +934,7 @@ def build_pdf(md_path, output_path, header_path, tex_only=False):
             "-V", (f"monofontoptions=Path={fontpath},"
                    "UprightFont=JetBrainsMono-Variable.ttf,"
                    "Scale=0.85"),
-            "-V", "fontsize=10pt",
+            "-V", "fontsize=9pt",
             "-V", "geometry:margin=25mm",
         ]
 
@@ -1006,7 +1005,7 @@ def main() -> int:
     if args.day:
         base_name = f"logbook-tag-{args.day:03d}"
     else:
-        base_name = "logbook"
+        base_name = "Meier_KIComputerRollenspiele_Sim2Test_Logbuch_2026"
 
     md_path = export_dir / f"{base_name}.md"
     md_path.write_text(md_content)

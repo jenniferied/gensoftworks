@@ -116,14 +116,13 @@ def build_pdf(md_path: Path, output_path: Path, header_path: Path,
             "--pdf-engine=xelatex",
             "--toc",
             "--toc-depth=3",
-            "-V", "mainfont=Lora",
+            "-V", "mainfont=OpenSans",
             "-V", (f"mainfontoptions=Path={fontpath},"
-                   "UprightFont=Lora-Variable.ttf,"
-                   "ItalicFont=Lora-Italic-Variable.ttf,"
-                   "BoldFont=Lora-Variable.ttf,"
-                   "BoldItalicFont=Lora-Italic-Variable.ttf,"
-                   "BoldFeatures={Weight=700},"
-                   "BoldItalicFeatures={Weight=700}"),
+                   "UprightFont=OpenSans-Variable.ttf,"
+                   "ItalicFont=OpenSans-Italic-Variable.ttf,"
+                   "BoldFont=OpenSans-Variable.ttf,"
+                   "BoldItalicFont=OpenSans-Italic-Variable.ttf,"
+                   "BoldFeatures={Weight=700}"),
             "-V", "sansfont=OpenSans",
             "-V", (f"sansfontoptions=Path={fontpath},"
                    "UprightFont=OpenSans-Variable.ttf,"
@@ -135,7 +134,7 @@ def build_pdf(md_path: Path, output_path: Path, header_path: Path,
             "-V", (f"monofontoptions=Path={fontpath},"
                    "UprightFont=JetBrainsMono-Variable.ttf,"
                    "Scale=0.85"),
-            "-V", "fontsize=10pt",
+            "-V", "fontsize=9pt",
             "-V", "geometry:margin=25mm",
         ]
 
@@ -189,7 +188,7 @@ def main() -> int:
     md_content = build_markdown(gallery_dir, doc_title)
 
     export_dir.mkdir(parents=True, exist_ok=True)
-    base_name = args.output_name or "gdd"
+    base_name = args.output_name or "Meier_KIComputerRollenspiele_Sim2Test_GDD_2026"
     md_path = export_dir / f"{base_name}.md"
     md_path.write_text(md_content)
     print(f"  Markdown: {md_path}")
