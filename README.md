@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.png" width="520" alt="GenSoftworks Logo">
+<img src="assets/logo.png" width="480" alt="GenSoftworks Logo">
 
 ### Ein KI-Spielestudio in Detmold
 
@@ -33,7 +33,7 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 
 ## 🏢 Das Studio
 
-<img src="assets/hobart-building.png" width="720" alt="Kreativquartier Hobart, Detmold — Gebäude 12">
+<img src="assets/hobart-building.png" width="480" alt="Kreativquartier Hobart, Detmold — Gebäude 12">
 
 <table>
 <tr><td>
@@ -309,7 +309,7 @@ gensoftworks/
 
 <div align="center">
 
-*Gebaut mit Neugier, Koffein und einer fragwürdigen Menge an Worldbuilding.*
+*Gebaut mit 🔍 Neugier, ☕ Koffein und einer fragwürdigen Menge an 🌍 Worldbuilding.*
 
 **GenSoftworks** — Kreativquartier Hobart, Detmold
 
