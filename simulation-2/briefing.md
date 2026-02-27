@@ -95,7 +95,7 @@ Grobe Quest-Skripts:
 **Dishonored** Serie – Vertikalität im Level Design
 
 **NICHT** **The Witcher** – ein exzellentes geschriebenes Rollenspiel, man spielt aber einen bestimmten Charakter
-**NICHT **Baldur's Gate 3** – ein exzellentes Rollenspiel, allerdings spielt man rundenbasiert und mit einem Team von Charakteren
+**NICHT** **Baldur's Gate 3** – ein exzellentes Rollenspiel, allerdings spielt man rundenbasiert und mit einem Team von Charakteren
 
 ## Kernanweisungen
 
