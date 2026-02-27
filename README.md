@@ -88,6 +88,7 @@ Sieben Persönlichkeiten, sieben Perspektiven — jeder 🤖 Agent hat einen eig
 <td align="center" width="110">
 <img src="assets/icons/darius.png" width="64"><br>
 <strong>Darius Engel</strong><br>
+<sub>♂️ 🇩🇪</sub><br>
 <sub>🎯 Game Director</sub>
 </td>
 <td>
@@ -101,6 +102,7 @@ Pragmatisch, direkt, erfahren. Gothic-2-Devotee. Besitzt 80+ Brettspiele. Läuft
 <td align="center" width="110">
 <img src="assets/icons/emre.png" width="64"><br>
 <strong>Emre Yilmaz</strong><br>
+<sub>♂️ 🇹🇷🇩🇪</sub><br>
 <sub>🌍 Lead Worldbuilder</sub>
 </td>
 <td>
@@ -114,6 +116,7 @@ Introvertiert, obsessiv konsistent, leise stur. Kater Nerevar (Mama nennt ihn "N
 <td align="center" width="110">
 <img src="assets/icons/finn.png" width="64"><br>
 <strong>Finn Bergmann</strong><br>
+<sub>♂️ 🇩🇪</sub><br>
 <sub>📋 Producer</sub>
 </td>
 <td>
@@ -127,6 +130,7 @@ Entspannt, anti-autoritär, effizient. Macht jeden Morgen den Studiokaffee. Viny
 <td align="center" width="110">
 <img src="assets/icons/vera.png" width="64"><br>
 <strong>Vera Kowalski</strong><br>
+<sub>♀️ 🇵🇱🇩🇪</sub><br>
 <sub>🎨 Concept Artist</sub>
 </td>
 <td>
@@ -140,6 +144,7 @@ Visuell impulsiv, direkt, kompetitiv mit sich selbst. Pendelt Di–Do aus Köln.
 <td align="center" width="110">
 <img src="assets/icons/tobi.png" width="64"><br>
 <strong>Tobi Richter</strong><br>
+<sub>♂️ 🇩🇪</sub><br>
 <sub>⚙️ Technical Artist</sub>
 </td>
 <td>
@@ -153,6 +158,7 @@ Methodisch, ruhig, trockener Humor. Liest Whitepapers zum Spaß. Sein Custom-Key
 <td align="center" width="110">
 <img src="assets/icons/nami.png" width="64"><br>
 <strong>Nami Okafor</strong><br>
+<sub>♀️ 🇳🇬🇩🇪</sub><br>
 <sub>✍️ Narrative Designer</sub>
 </td>
 <td>
@@ -166,6 +172,7 @@ Poetisch, detail-besessen, selbstkritisch. Liest Dialoge laut vor. Zwei Katzen: 
 <td align="center" width="110">
 <img src="assets/icons/leo.png" width="64"><br>
 <strong>Leo Fischer</strong><br>
+<sub>♀️ 🇩🇪🇮🇷</sub><br>
 <sub>🎬 QA Lead & Content Creator</sub>
 </td>
 <td>
