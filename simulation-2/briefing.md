@@ -1,14 +1,7 @@
 # RELICS — Creative Director's Briefing
 
-> Qualität vor Quantität. Immer fragen statt erfinden, wenn unklar.
-
-## Verbindliche Ausschlüsse
-
-- **KEIN** Steampunk (keine Dampfmaschinen, keine Zahnrad-Ästhetik)
-- **KEIN** High Fantasy (keine Elfen, keine Orks, keine Zauberer mit Stäben)
-- **KEIN** Science-Fantasy (keine vergessene Hochtechnologie, keine Alien-Artefakte)
-- **KEINE** Anachronismen (kein Schießpulver, kein Buchdruck, keine mechanischen Uhren außer Gilden-Prototypen)
-- **KEINE** klassische Magie
+> **NORDSTERN** — Dieses Dokument ist die unveränderliche kreative Vision. Alle Artefakte (Game Design Document, World Building Bible, Concept Art) müssen sich an diesem Briefing orientieren. Abweichungen nur mit expliziter Creative Director-Freigabe.
+> Immer fragen statt erfinden, wenn unklar.
 
 ## Vision
 
@@ -18,7 +11,7 @@ RELICS spielt in einer **in sich konsistenten Welt**, jeweils zu einem historisc
 
 Das Namensformat jeder Iteration ist: RELICS: *Relikt-Name*
 
-Der **Spielercharakter** ist jedes mal ein Unbekannter, der auf mysteröse Art und Weise in die Handlung eingewickelt wird. Niemals ein spezifischer Charakter.
+Der **Spielercharakter** ist bei jeder Iteration ein Unbekannter, der auf mysteriöse Art und Weise in die Handlung eingewickelt wird. Niemals ein spezifischer Charakter.
 
 Zu Beginn des Spieles erstellt man seinen eigenen **Spielercharakter**.
 
@@ -26,7 +19,15 @@ Zu Beginn des Spieles erstellt man seinen eigenen **Spielercharakter**.
 
 ## Game Feel
 
-Ich betrete als Fremder eine "Sandbox".
+Ich betrete als Fremder eine aufregende "Sandbox".
+
+## Verbindliche Ausschlüsse
+
+- **KEIN** Steampunk (keine Dampfmaschinen, keine Zahnrad-Ästhetik)
+- **KEIN** High Fantasy (keine Elfen, keine Orks, keine Zauberer mit Stäben)
+- **KEIN** Science-Fantasy (keine vergessene Hochtechnologie, keine Alien-Artefakte)
+- **KEINE** Anachronismen (kein Schießpulver, kein Buchdruck, keine mechanischen Uhren außer Gilden-Prototypen)
+- **KEINE** klassische Magie.
 
 ## Genre
 
@@ -51,9 +52,7 @@ Germanische Mythologie als Inspiration
 - Mehr futuristisch, weniger heruntergekommen
 - Tiervolk weniger tribal, leicht alien vs. menschlich clean
 - Tiervolk: Händler und Diebe, NICHT Handwerker
-
-- Kernentscheidungen zu Kamera, Combat, Leveling, Tiervolk, Monetarisierung sind gefallen
-- Übernatürliches: Nur das Schattenfieber — eine Seuche, die Opfer verändert. Alles bleibt mehrdeutig.
+- Übernatürliches: Nur das Schattenfieber — eine Seuche, die Opfer verändert
 
 ## Drei Fraktionen (keine ist "gut" oder "böse")
 
@@ -67,18 +66,16 @@ Germanische Mythologie als Inspiration
 - Schwerter, Bögen, Armbrüste, Schilde
 - Keine Magie → Alchemie, Schattenfieber-Fähigkeiten (mit Kosten)
 - Leveling: Halbtransparente Nervensystem-Sicht (Cardio, Muskel, Lymph)
-- Monetarisierung: Klassisch Premium
+- Monetarisierung: Klassisch Premium, keine Mikrotransaktionen
 
-## Deliverables
+## DELIVERABLES
 
-- Vorschläge für **Historischer Wendepunkt**, **Relikt** und **Schauplatz**
-
-- Vertical Slice
+- **Historischer Wendepunkt**, **Relikt** und **Schauplatz**
 - Vertiefung der Kernregion, Fraktionen ausarbeiten
 - Concept Art
 - High Fashion Mittelalter + Biotech-Elemente
 
-Grobe Quest-Skripts:
+Grobe Quest-Skript (Vorschlag):
 - Intro-Sequenz / Tutorial Quest
 - Hauptquest Strang (Relikt)
 - Fraktionsquest-Outlines (3)
@@ -86,20 +83,50 @@ Grobe Quest-Skripts:
 - Charakter-Quest (1)
 - Kleinere Seitenquests (3)
 
+## Struktur: Game Design Document
+
+Basierend auf Schell (2010, S. 381–387): Ein GDD umfasst Spielübersicht, Kernmechaniken, Erzählkonzept, technische Spezifikation und visuelle Designsprache.
+
+1. **Spielübersicht & Design-Säulen** — Vision, Alleinstellungsmerkmale, Spielerfahrung
+2. **Kernmechaniken** — Combat, Crafting, Progression, Nervensystem-Leveling
+3. **Erzählkonzept** — Hauptquest, Nebenquests, Quest-Skripts
+4. **Schlüsselfiguren & NPCs** — Zentrale Charaktere, Fraktionsvertreter, Begleiter
+5. **Visuelle Designsprache & Art Direction** — Stil, Farbpalette, Architektur, Materialsprache
+6. **Technische Spezifikation & Produktion** — Engine, Kamera, UI, Scope, Meilensteine
+
+## Struktur: World Building Bible
+
+Basierend auf Klastrup/Tosca (2004, S. 413): Transmediale Welten lassen sich über die Trias Mythos, Topos und Ethos erfassen.
+
+1. **Mythos** — Kosmologie, Schöpfung, Mythologie, Götter/Wesen, Schattenfieber-Ursprung
+2. **Topos** — Geographie, Kernregion, Architektur, Klima, Orte
+3. **Ethos** — Völker, Kulturen, Fraktionen, Gesellschaftsordnung, Alltagsleben
+
+### Vollständigkeits-Checkliste (Wolf 2013, S. 154–197)
+
+Wolfs neun Infrastrukturen imaginärer Welten als Prüfwerkzeug — jedes WBB-Kapitel sollte die jeweils relevanten Infrastrukturen abdecken:
+
+- [ ] Karten (Topografie, Klima, räumliche Ordnung)
+- [ ] Zeitleisten (Geschichte, Konflikte, Wendepunkte)
+- [ ] Genealogien (Figurennetze, Dynastien)
+- [ ] Natur (Flora, Fauna, Ökologie)
+- [ ] Kultur (Bräuche, Kunst, Religion, Alltagsleben)
+- [ ] Sprache (Namenssysteme, Dialekte)
+- [ ] Mythologie (Schöpfungsmythen, Legenden, Prophezeiungen)
+- [ ] Philosophie (Weltsicht, Ethik, Wertesysteme)
+- [ ] Verknüpfung (Wechselwirkungen zwischen den Infrastrukturen)
+
 ## Inspiration
 
 **The Elder Scrolls** Serie – Open-World Sandbox, jede Iteration versucht einen technischen Meilenstein zu setzen; konsistente High-Fantasy Welt
-
 **Vampires the Masquerade: Bloodlines** – Fraktionsgameplay
 **Gothic** Serie – Dichte, statt Breite
 **Dishonored** Serie – Vertikalität im Level Design
-
 **NICHT** **The Witcher** – ein exzellentes geschriebenes Rollenspiel, man spielt aber einen bestimmten Charakter
-**NICHT** **Baldur's Gate 3** – ein exzellentes Rollenspiel, allerdings spielt man rundenbasiert und mit einem Team von Charakteren
+**NICHT** **Baldur's Gate 3** – ein exzellentes Rollenspiel, allerdings spielt man rundenbasiert und mit einem variablen Team von Charakteren
 
 ## Kernanweisungen
 
-- Qualität vor Quantitaet
+- Qualität vor Quantitätt
 - Immer fragen statt erfinden, wenn unklar
 - Alles muss gegen dieses Briefing konsistent sein
-- GDD wird ein vollständiges Dokument, kein Skeleton
