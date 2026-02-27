@@ -21,72 +21,72 @@
 
 ---
 
-## Was ist das hier?
+## 💡 Was ist das hier?
 
-**GenSoftworks** ist ein simuliertes Indie-Spielestudio, in dem sieben KI-Agenten gemeinsam ein Game Design Document (GDD) und eine World Building Bible (WBB) für ein Fantasy-CRPG entwickeln.
+**GenSoftworks** ist ein simuliertes Indie-Spielestudio, in dem sieben 🤖 KI-Agenten gemeinsam ein 📄 Game Design Document (GDD) und eine 🌍 World Building Bible (WBB) für ein 🎮 Fantasy-CRPG entwickeln.
 
-Das Projekt ist Teil einer Masterarbeit an der [TH OWL](https://www.th-owl.de/) (Medienproduktion) und untersucht, wie multi-agentenbasierte KI-Systeme kreativ kollaborieren — inspiriert von generativen Agenten-Architekturen aus der aktuellen Forschung.
+Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.de/) (Medienproduktion) und untersucht, wie multi-agentenbasierte 🧠 KI-Systeme kreativ kollaborieren — inspiriert von generativen Agenten-Architekturen aus der aktuellen 📚 Forschung.
 
-> Die Agenten sprechen Deutsch, haben eigene Persönlichkeiten, Meinungen, Arbeitsplätze und Tagesrhythmen. Sie streiten, einigen sich, entwerfen Mechaniken und bauen Welten — sechs Szenen am Tag, fünf Tage die Woche.
+> Die Agenten sprechen 🇩🇪 Deutsch, haben eigene Persönlichkeiten, Meinungen, Arbeitsplätze und Tagesrhythmen. Sie streiten, einigen sich, entwerfen Mechaniken und bauen Welten — sechs Szenen am Tag, fünf Tage die Woche.
 
 ---
 
-## Das Studio
+## 🏢 Das Studio
 
 <table>
 <tr><td>
 <strong>GenSoftworks GbR</strong><br>
-Kreativquartier Hobart<br>
-Gebäude 7, Obergeschoss<br>
-32756 Detmold, Kreis Lippe<br>
-Nordrhein-Westfalen
+📍 Kreativquartier Hobart<br>
+🏠 Gebäude 7, Obergeschoss<br>
+🗺️ 32756 Detmold, Kreis Lippe<br>
+🇩🇪 Nordrhein-Westfalen
 </td></tr>
 </table>
 
-Das Studio existiert in einer Pixel-Art-Simulation — ein ganzes Stockwerk mit Arbeitsecken, Konferenzraum, Lounge, Küche und Bibliothek. Die Agenten bewegen sich durch die Räume, treffen sich zu Meetings und arbeiten an ihren Schreibtischen.
+Das Studio existiert in einer 🕹️ Pixel-Art-Simulation — ein ganzes Stockwerk mit 💻 Arbeitsecken, 🪑 Konferenzraum, ☕ Lounge, 🍳 Küche und 📖 Bibliothek. Die Agenten bewegen sich durch die Räume, treffen sich zu 🗣️ Meetings und arbeiten an ihren Schreibtischen.
 
 <details>
-<summary><strong>Konferenzraum</strong> — Hier fallen die großen Entscheidungen</summary>
+<summary>🪑 <strong>Konferenzraum</strong> — Hier fallen die großen Entscheidungen</summary>
 <br>
 <img src="frontend/test-results/z-conference.png" width="720" alt="Konferenzraum">
 </details>
 
 <details>
-<summary><strong>Lounge</strong> — Mittagspause, Smalltalk, spontane Ideen</summary>
+<summary>☕ <strong>Lounge</strong> — Mittagspause, Smalltalk, spontane Ideen</summary>
 <br>
 <img src="frontend/test-results/z-lounge.png" width="720" alt="Lounge">
 </details>
 
 <details>
-<summary><strong>Küche & Vorratskammer</strong> — Finns Chemex steht bereit</summary>
+<summary>🍳 <strong>Küche & Vorratskammer</strong> — Finns Chemex steht bereit</summary>
 <br>
 <img src="frontend/test-results/z-kitchen.png" width="720" alt="Küche">
 </details>
 
 <details>
-<summary><strong>Art Station & Tech Corner</strong> — Wo Vera und Tobi arbeiten</summary>
+<summary>🎨 <strong>Art Station & Tech Corner</strong> — Wo Vera und Tobi arbeiten</summary>
 <br>
 <img src="frontend/test-results/z-artstation.png" width="720" alt="Art Station">
 </details>
 
 <details>
-<summary><strong>Zimmer 7 — Produktionsbüro</strong> — Finn und die Creative Director</summary>
+<summary>📋 <strong>Zimmer 7 — Produktionsbüro</strong> — Finn und die Creative Director</summary>
 <br>
 <img src="frontend/test-results/z-room7.png" width="720" alt="Zimmer 7">
 </details>
 
 ---
 
-## Das Team
+## 👥 Das Team
 
-Sieben Persönlichkeiten, sieben Perspektiven — jeder Agent hat einen eigenen Hintergrund, Werkzeuge und eine Meinung zu allem.
+Sieben Persönlichkeiten, sieben Perspektiven — jeder 🤖 Agent hat einen eigenen Hintergrund, 🛠️ Werkzeuge und eine Meinung zu allem.
 
 <table>
 <tr>
 <td align="center" width="110">
 <img src="assets/icons/darius.png" width="64"><br>
 <strong>Darius Engel</strong><br>
-<sub>Game Director</sub>
+<sub>🎯 Game Director</sub>
 </td>
 <td>
 <em>35, Gelsenkirchen. BA Game Design (Cologne Game Lab), MA Game Studies (UdK Berlin). 4 Jahre Blue Byte.</em><br>
@@ -99,7 +99,7 @@ Pragmatisch, direkt, erfahren. Gothic-2-Devotee. Besitzt 80+ Brettspiele. Läuft
 <td align="center" width="110">
 <img src="assets/icons/emre.png" width="64"><br>
 <strong>Emre Yilmaz</strong><br>
-<sub>Lead Worldbuilder</sub>
+<sub>🌍 Lead Worldbuilder</sub>
 </td>
 <td>
 <em>31, Duisburg. BA Geschichte (Bochum), MA Digital Humanities (Köln). GDC-Talk 2024.</em><br>
@@ -112,7 +112,7 @@ Introvertiert, obsessiv konsistent, leise stur. Kater Nerevar (Mama nennt ihn "N
 <td align="center" width="110">
 <img src="assets/icons/finn.png" width="64"><br>
 <strong>Finn Bergmann</strong><br>
-<sub>Producer</sub>
+<sub>📋 Producer</sub>
 </td>
 <td>
 <em>30, Hamburg. BA Medienmanagement (HAW Hamburg). Ex FKP Scorpio (Hurricane, Deichbrand).</em><br>
@@ -125,7 +125,7 @@ Entspannt, anti-autoritär, effizient. Macht jeden Morgen den Studiokaffee. Viny
 <td align="center" width="110">
 <img src="assets/icons/vera.png" width="64"><br>
 <strong>Vera Kowalski</strong><br>
-<sub>Concept Artist</sub>
+<sub>🎨 Concept Artist</sub>
 </td>
 <td>
 <em>28, Aachen → Köln. BA Architektur (RWTH), MA Game Arts (Cologne Game Lab). SIGGRAPH Art Gallery 2024.</em><br>
@@ -138,7 +138,7 @@ Visuell impulsiv, direkt, kompetitiv mit sich selbst. Pendelt Di–Do aus Köln.
 <td align="center" width="110">
 <img src="assets/icons/tobi.png" width="64"><br>
 <strong>Tobi Richter</strong><br>
-<sub>Technical Artist</sub>
+<sub>⚙️ Technical Artist</sub>
 </td>
 <td>
 <em>32, Lemgo. BA Medienproduktion (TH OWL). 2 Jahre XRIS Studio Seoul. SIGGRAPH-Veteran.</em><br>
@@ -151,7 +151,7 @@ Methodisch, ruhig, trockener Humor. Liest Whitepapers zum Spaß. Sein Custom-Key
 <td align="center" width="110">
 <img src="assets/icons/nami.png" width="64"><br>
 <strong>Nami Okafor</strong><br>
-<sub>Narrative Designer</sub>
+<sub>✍️ Narrative Designer</sub>
 </td>
 <td>
 <em>29, Hamburg → Bielefeld. BA Film Studies (Madrid), MA Creative Writing (Mittweida, Note 1.0).</em><br>
@@ -164,7 +164,7 @@ Poetisch, detail-besessen, selbstkritisch. Liest Dialoge laut vor. Zwei Katzen: 
 <td align="center" width="110">
 <img src="assets/icons/leo.png" width="64"><br>
 <strong>Leo Fischer</strong><br>
-<sub>QA Lead & Content Creator</sub>
+<sub>🎬 QA Lead & Content Creator</sub>
 </td>
 <td>
 <em>26, Bielefeld. BA Media Management (TH Köln). YouTube: LeoPlaysIndie (~47K Abonnenten).</em><br>
@@ -174,26 +174,26 @@ Energiegeladen, meinungsstark, empathisch. Bartagame Clementine ist Internet-ber
 </tr>
 </table>
 
-> Jeden Donnerstagabend spielen alle D&D. Emre ist der Dungeon Master.
+> 🎲 Jeden Donnerstagabend spielen alle D&D. Emre ist der Dungeon Master.
 
 ---
 
-## Das Spiel: RELICS
+## ⚔️ Das Spiel: RELICS
 
-Die Agenten arbeiten an **RELICS** — einem Fantasy-CRPG mit Biotech-Futurismus, germanischer Mythologie und feudaler Brutalität.
+Die Agenten arbeiten an **RELICS** — einem 🎮 Fantasy-CRPG mit 🧬 Biotech-Futurismus, ⚡ germanischer Mythologie und feudaler Brutalität.
 
 | | |
 |---|---|
-| **Kamera** | First-/Third-Person, nahtlos umschaltbar (Skyrim-Referenz) |
-| **Welt** | Open World, Mitteleuropa, spätes Hochmittelalter |
-| **Tonalität** | Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität |
-| **Magie** | Low-Magic, High-Tech. Biotech & Alchemie, **kein** Steampunk |
-| **Mythologie** | Germanisch, Low Fantasy (GoT-Level), 3–6 Fraktionen |
-| **Kampf** | Real-time Action. Schwerter, Bögen, Armbrüste, Schilde |
+| 📷 **Kamera** | First-/Third-Person, nahtlos umschaltbar (Skyrim-Referenz) |
+| 🗺️ **Welt** | Open World, Mitteleuropa, spätes Hochmittelalter |
+| 🌑 **Tonalität** | Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität |
+| 🧪 **Magie** | Low-Magic, High-Tech. Biotech & Alchemie, **kein** Steampunk |
+| ⚡ **Mythologie** | Germanisch, Low Fantasy (GoT-Level), 3–6 Fraktionen |
+| ⚔️ **Kampf** | Real-time Action. Schwerter, Bögen, Armbrüste, Schilde |
 
 ---
 
-## Architektur
+## 🏗️ Architektur
 
 ```
                ┌─────────────┐
@@ -210,44 +210,44 @@ Die Agenten arbeiten an **RELICS** — einem Fantasy-CRPG mit Biotech-Futurismus
    └─────────┘  └─────────┘  └─────────┘
 ```
 
-### Tagesablauf (6 Szenen)
+### 🕐 Tagesablauf (6 Szenen)
 
 | Szene | Zeit | Typ | Wer | Was |
 |:---:|:---:|---|---|---|
-| 1 | 09:00 | **Briefing** | Alle 7 | CD-Feedback + Tagesziele |
-| 2 | 10:00 | **Arbeit** | Alle 7 | Parallele Produktion |
-| 3 | 11:30 | **Meeting** | Alle 7 | Standup: Ergebnisse, Fragen |
-| 4 | 12:30 | **Pause** | 2–3 | Soziales, Spontanes |
-| 5 | 14:00 | **Arbeit** | Alle 7 | Parallele Produktion |
-| 6 | 16:00 | **Review** | Alle 7 | Ergebnisse präsentieren |
+| 1 | 09:00 | 📣 **Briefing** | Alle 7 | CD-Feedback + Tagesziele |
+| 2 | 10:00 | 💻 **Arbeit** | Alle 7 | Parallele Produktion |
+| 3 | 11:30 | 🗣️ **Meeting** | Alle 7 | Standup: Ergebnisse, Fragen |
+| 4 | 12:30 | ☕ **Pause** | 2–3 | Soziales, Spontanes |
+| 5 | 14:00 | 💻 **Arbeit** | Alle 7 | Parallele Produktion |
+| 6 | 16:00 | 🔍 **Review** | Alle 7 | Ergebnisse präsentieren |
 
 > **Wochenrhythmus:** Mo/Di = Recherche & Konzeption, Mi–Fr = Produktion (V1 → V2 → V3)
 
-### Outputs
+### 📦 Outputs
 
 Jeder simulierte Tag produziert:
 
-- **Logbuch** — `logbook/dayDD-sceneS.json` (jede Szene dokumentiert)
-- **Tages-Summary** — `logbook/dayDD-summary.json` (Übersicht für Viewer & PDF)
-- **Traces** — `traces/dayDD-sceneS-name/` (Rohdaten: Prompt, Reasoning, Output)
-- **Artefakte** — GDD-Kapitel, WBB-Kapitel, Concept Art Beschreibungen
+- 📖 **Logbuch** — `logbook/dayDD-sceneS.json` (jede Szene dokumentiert)
+- 📊 **Tages-Summary** — `logbook/dayDD-summary.json` (Übersicht für Viewer & PDF)
+- 🔬 **Traces** — `traces/dayDD-sceneS-name/` (Rohdaten: Prompt, Reasoning, Output)
+- 📄 **Artefakte** — GDD-Kapitel, WBB-Kapitel, Concept Art Beschreibungen
 
 ---
 
-## Viewer
+## 🖥️ Viewer
 
-Ein **Phaser.js**-basierter Pixel-Art-Viewer visualisiert das Studio und die Simulation in Echtzeit:
+Ein **Phaser.js**-basierter 🕹️ Pixel-Art-Viewer visualisiert das Studio und die Simulation in Echtzeit:
 
 <img src="frontend/test-results/02-conference-day3.png" width="720" alt="Viewer — Meeting Tag 3">
 
-- Agenten bewegen sich durch das Studio
-- Sprechblasen-Icons zeigen Aktivität (Sprechen, Denken, Artefakte, Planen)
-- Sidebar mit Szenen-Navigation, Agenten-Details und Stimmungen
-- Szene-für-Szene durchklickbar
+- 🚶 Agenten bewegen sich durch das Studio
+- 💬 Sprechblasen-Icons zeigen Aktivität (Sprechen, Denken, Artefakte, Planen)
+- 📊 Sidebar mit Szenen-Navigation, Agenten-Details und Stimmungen
+- ▶️ Szene-für-Szene durchklickbar
 
 ---
 
-## Akademischer Hintergrund
+## 📚 Akademischer Hintergrund
 
 Dieses Projekt baut auf zwei Schlüsselarbeiten auf:
 
@@ -271,7 +271,7 @@ LLM-Agenten in spezialisierten Rollen (CEO, CTO, Programmierer, Tester) entwicke
 
 ---
 
-## Projektstruktur
+## 📁 Projektstruktur
 
 ```
 gensoftworks/
