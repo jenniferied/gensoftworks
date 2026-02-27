@@ -45,7 +45,7 @@ const T = 48, MAP_W = 44, MAP_H = 28;
 const HALF_W = (MAP_W * T) / 2; // 1056
 const HALF_H = (MAP_H * T) / 2; // 672
 
-// Layout offsets: sidebar (340 + 2px border), audio-bar + title-bar (~51px)
+// Layout offsets: sidebar=340px, bars=51px
 const SIDEBAR_W = 340;
 const BARS_H = 51;
 

@@ -4676,7 +4676,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 2,
+          "scene": 2
+        }
       },
       {
         "id": "02-kernmechaniken",
@@ -4691,7 +4695,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 2,
+          "scene": 2
+        }
       },
       {
         "id": "03-erzaehlkonzept",
@@ -4706,7 +4714,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 2,
+          "scene": 2
+        }
       },
       {
         "id": "04-schluesselfiguren",
@@ -4721,7 +4733,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 5,
+          "scene": 2
+        }
       },
       {
         "id": "05-designsprache",
@@ -4736,7 +4752,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 2,
+          "scene": 2
+        }
       },
       {
         "id": "06-technik-produktion",
@@ -4751,7 +4771,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 2,
+          "scene": 2
+        }
       }
     ],
     "wbb": [
@@ -4768,7 +4792,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 2,
+          "scene": 2
+        }
       },
       {
         "id": "02-topos",
@@ -4783,7 +4811,11 @@
               "scene": 2
             }
           }
-        ]
+        ],
+        "first_appeared": {
+          "day": 5,
+          "scene": 2
+        }
       }
     ]
   }

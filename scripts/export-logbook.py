@@ -231,27 +231,10 @@ def esc(text):
 # ---------------------------------------------------------------------------
 
 def crop_screenshot(src_path: Path, dst_dir: Path) -> Path:
-    """Crop dark borders from Phaser canvas screenshots.
-
-    Removes a 1px dark top line and gray bottom rows (canvas background
-    below the game tiles). Saves the cropped copy into dst_dir.
-    """
-    img = Image.open(src_path)
-    w, h = img.size
-    px = img.load()
-
-    # Find last content row from bottom (brightness > 110)
-    content_bottom = h - 1
-    for y in range(h - 1, max(h - 40, 0), -1):
-        avg = sum(sum(px[x, y][:3]) / 3 for x in range(w)) / w
-        if avg > 110:
-            content_bottom = y
-            break
-
-    # Crop: skip top 1px dark line, trim gray bottom
-    cropped = img.crop((0, 1, w, content_bottom + 1))
+    """Copy screenshot to dst_dir (no cropping — capture-scenes.mjs handles sizing)."""
+    import shutil
     dst_path = dst_dir / src_path.name
-    cropped.save(dst_path)
+    shutil.copy2(src_path, dst_path)
     return dst_path
 
 

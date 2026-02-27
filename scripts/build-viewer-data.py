@@ -211,7 +211,62 @@ def load_chapters(gallery_dir, days):
             chapters[chapter_id]["versions"].append(ver_entry)
         for ch in chapters.values():
             ch["versions"].sort(key=lambda v: v["version"])
+            # Compute first_appeared: earliest artifact reference for this chapter
+            # across ALL versions (including ones without files on disk)
+            chapter_num = ch["id"][:2]
+            earliest = None
+            for tl_key, tl_val in timeline.items():
+                if tl_key[0] == doc_type and tl_key[1] == chapter_num:
+                    if earliest is None or (tl_val["day"], tl_val["scene"]) < (earliest["day"], earliest["scene"]):
+                        earliest = tl_val
+            if earliest:
+                ch["first_appeared"] = earliest
         result[doc_type] = sorted(chapters.values(), key=lambda c: c["id"])
+    return result
+
+
+def load_concept_art(gallery_dir, days):
+    """Scan gallery/concepts/ for images and build timeline from artifacts.
+
+    Returns list of {filename, category, path, appeared: {day, scene}} sorted by appearance.
+    """
+    concepts_dir = gallery_dir / "concepts"
+    if not concepts_dir.exists():
+        return []
+
+    # Collect all image files recursively
+    images = {}
+    for ext in ("*.png", "*.jpg", "*.jpeg", "*.webp"):
+        for f in concepts_dir.rglob(ext):
+            rel = f.relative_to(gallery_dir)
+            # Category from subdirectory (e.g. concepts/KK-kategorie/name.png)
+            parts = f.relative_to(concepts_dir).parts
+            category = parts[0] if len(parts) > 1 else "allgemein"
+            images[str(rel)] = {
+                "filename": f.name,
+                "category": category,
+                "path": f"gallery/{rel}",
+            }
+
+    # Build timeline from scene artifacts
+    art_img_re = re.compile(r"gallery/concepts/")
+    for day_entry in days:
+        day_num = day_entry["day"]
+        for sc in day_entry["scenes"]:
+            scene_num = sc.get("scene", 0)
+            for art in sc.get("artifacts", []):
+                if not art_img_re.search(art):
+                    continue
+                # Match against known images by filename
+                for key, img in images.items():
+                    if img["filename"] in art and "appeared" not in img:
+                        img["appeared"] = {"day": day_num, "scene": scene_num}
+
+    # Sort by appearance, then filename
+    result = sorted(images.values(),
+                    key=lambda i: (i.get("appeared", {}).get("day", 999),
+                                   i.get("appeared", {}).get("scene", 999),
+                                   i["filename"]))
     return result
 
 
@@ -599,6 +654,9 @@ def main():
     # Load GDD/WBB chapters (needs days for artifact timeline)
     chapters = load_chapters(gallery_dir, days)
 
+    # Load concept art
+    concept_art = load_concept_art(gallery_dir, days)
+
     data = {"days": days}
     if agent_memories:
         data["agent_memories"] = agent_memories
@@ -606,6 +664,8 @@ def main():
         data["roster"] = roster
     if chapters:
         data["chapters"] = chapters
+    if concept_art:
+        data["concept_art"] = concept_art
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2))

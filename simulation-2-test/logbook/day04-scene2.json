@@ -27,6 +27,9 @@
       "says": "Namis GDD-03 ist lore-konsistent. Kein Widerspruch zu WBB-01, das passiert selten. Aber der Ungefüge fehlt komplett — das ist unsere Loki-Referenz, der Katalysator. Muss in V2 als mythologischer Schatten in die Hauptquest."
     }
   ],
-  "artifacts": [],
+  "artifacts": [
+    "gallery/concepts/environment/vulkanvolk-ritual-caldera_seedream-4-5.png",
+    "gallery/concepts/characters/zerbrochene-portrait-trio_seedream-4-5.png"
+  ],
   "cd_feedback": null
 }

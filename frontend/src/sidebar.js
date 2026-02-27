@@ -20,10 +20,6 @@ let simData = null;
 let currentDayIdx = 0;
 let currentSceneIdx = 0;
 
-// Autoplay state
-let autoplayTimer = null;
-const AUTOPLAY_INTERVAL = 4000; // ms between scenes
-
 // DOM refs
 const simSelect = document.getElementById('sim-select');
 const daySelect = document.getElementById('day-select');
@@ -39,7 +35,6 @@ const daySummaryEl = document.getElementById('day-summary');
 const agentList = document.getElementById('agent-list');
 const btnPrev = document.getElementById('btn-prev');
 const btnNext = document.getElementById('btn-next');
-const btnPlay = document.getElementById('btn-play');
 
 export async function initSidebar() {
   // Try loading manifest for multi-sim support
@@ -88,9 +83,6 @@ export async function initSidebar() {
   btnPrev.addEventListener('click', () => navigate(-1));
   btnNext.addEventListener('click', () => navigate(1));
 
-  // Autoplay button
-  btnPlay.addEventListener('click', toggleAutoplay);
-
   // Listen for agent clicks from Phaser — open profile modal
   window.addEventListener('viewer:agent-click', (e) => {
     openAgentProfile(e.detail.agentKey);
@@ -119,17 +111,31 @@ export async function initSidebar() {
 
   // Keyboard: arrows left/right to switch version, Escape to close
   document.addEventListener('keydown', (e) => {
-    if (!docOverlay.classList.contains('open')) return;
-    if (e.key === 'ArrowLeft') { e.preventDefault(); docModalNavigate(-1); }
-    if (e.key === 'ArrowRight') { e.preventDefault(); docModalNavigate(1); }
-    if (e.key === 'Escape') { e.preventDefault(); closeDocModal(); }
+    if (!docOverlay.classList.contains('open') && !galOverlay.classList.contains('open')) return;
+    if (docOverlay.classList.contains('open')) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); docModalNavigate(-1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); docModalNavigate(1); }
+      if (e.key === 'Escape') { e.preventDefault(); closeDocModal(); }
+    }
+    if (galOverlay.classList.contains('open') && e.key === 'Escape') {
+      e.preventDefault(); closeGallery();
+    }
+    if (galLightbox.classList.contains('open') && e.key === 'Escape') {
+      e.preventDefault(); galLightbox.classList.remove('open');
+    }
   });
+
+  // Gallery button + close
+  const galOverlay = document.getElementById('gallery-overlay');
+  const galLightbox = document.getElementById('gallery-lightbox');
+  const closeGallery = () => galOverlay.classList.remove('open');
+  document.getElementById('btn-gallery').addEventListener('click', openGallery);
+  document.getElementById('gallery-close').addEventListener('click', closeGallery);
+  galOverlay.addEventListener('click', (e) => { if (e.target === galOverlay) closeGallery(); });
+  galLightbox.addEventListener('click', () => galLightbox.classList.remove('open'));
 }
 
 async function loadSimulation(filename) {
-  // Stop autoplay if running
-  if (autoplayTimer) toggleAutoplay();
-
   const resp = await fetch(`${BASE}data/${filename}`);
   simData = await resp.json();
   window.__simData = simData;
@@ -153,32 +159,6 @@ async function loadSimulation(filename) {
 
   // Signal Phaser that data is ready
   window.dispatchEvent(new CustomEvent('viewer:data-ready'));
-}
-
-function toggleAutoplay() {
-  if (autoplayTimer) {
-    // Stop
-    clearInterval(autoplayTimer);
-    autoplayTimer = null;
-    btnPlay.textContent = '\u25B6'; // ▶
-    btnPlay.title = 'Autoplay';
-    btnPlay.classList.remove('playing');
-  } else {
-    // Start
-    btnPlay.textContent = '\u2016'; // ‖ (pause)
-    btnPlay.title = 'Pause';
-    btnPlay.classList.add('playing');
-    autoplayTimer = setInterval(() => {
-      const day = simData.days[currentDayIdx];
-      const isLast = currentDayIdx === simData.days.length - 1 &&
-        currentSceneIdx === day.scenes.length - 1;
-      if (isLast) {
-        toggleAutoplay(); // stop at end
-        return;
-      }
-      navigate(1);
-    }, AUTOPLAY_INTERVAL);
-  }
 }
 
 function navigate(dir) {
@@ -257,6 +237,9 @@ function selectScene() {
   // Render all agent cards (participants first, then dimmed non-participants)
   renderAgentCards(scene);
 
+  // Update document bar for current time
+  renderDocumentBar();
+
   // Dispatch scene change to Phaser
   window.dispatchEvent(new CustomEvent('viewer:scene-change', {
     detail: { dayIndex: currentDayIdx, sceneIndex: currentSceneIdx },
@@ -277,11 +260,13 @@ function renderDaySummary() {
   }
 
   let html = '';
-  html += `<div class="day-summary-header">`;
-  html += `<span class="day-summary-icon">&#128203;</span>`; // 📋 — clipboard/summary icon
+  html += `<div class="day-summary-header" id="day-summary-toggle">`;
+  html += `<span class="arrow">&#9654;</span>`;
+  html += `<span class="day-summary-icon">&#128203;</span>`;
   html += `ZUSAMMENFASSUNG — Tag ${summary.day || day.day}`;
   html += `</div>`;
 
+  html += `<div class="day-summary-body" id="day-summary-body">`;
   if (summary.phase) {
     html += `<span class="day-summary-phase">${summary.phase}</span> `;
   }
@@ -306,9 +291,18 @@ function renderDaySummary() {
     }
     html += `</div>`;
   }
+  html += `</div>`;
 
   daySummaryEl.innerHTML = html;
   daySummaryEl.style.display = 'block';
+
+  // Wire up toggle
+  document.getElementById('day-summary-toggle').addEventListener('click', () => {
+    const body = document.getElementById('day-summary-body');
+    const arrow = document.querySelector('#day-summary-toggle .arrow');
+    body.classList.toggle('open');
+    arrow.classList.toggle('open');
+  });
 }
 
 function renderArtifacts(artifacts) {
@@ -456,15 +450,36 @@ function renderAgentCards(scene) {
 // Paper sound — place paper-turn.mp3 in public/audio/
 const paperSound = new Audio(`${BASE}audio/paper-turn.mp3`);
 paperSound.preload = 'auto';
+paperSound.volume = 0.7;
 
 function playPaperSound() {
-  const clone = paperSound.cloneNode();
-  clone.volume = 0.3;
-  clone.play().catch(() => {});
+  paperSound.currentTime = 0;
+  paperSound.play().catch(() => {});
 }
 
 // Active modal state for keyboard nav
 let docModalState = null; // {docType, chapter, versionIdx}
+
+/** Check if a timestamp is at or before the current day/scene. */
+function isBeforeOrAtCurrent(ap) {
+  if (!ap) return false;
+  const curDay = simData.days[currentDayIdx]?.day || 1;
+  const curScene = simData.days[currentDayIdx]?.scenes[currentSceneIdx]?.scene || 1;
+  return ap.day < curDay || (ap.day === curDay && ap.scene <= curScene);
+}
+
+/** Check if a chapter exists at the current point (uses first_appeared). */
+function chapterVisible(ch) {
+  return isBeforeOrAtCurrent(ch.first_appeared);
+}
+
+/** Get versions visible at current time. Falls back to all versions if chapter is visible. */
+function getVisibleVersions(ch) {
+  if (!chapterVisible(ch)) return [];
+  const filtered = ch.versions.filter(v => isBeforeOrAtCurrent(v.appeared));
+  // If chapter appeared but no specific version has timeline data, show all available
+  return filtered.length > 0 ? filtered : ch.versions;
+}
 
 function renderDocumentBar() {
   const bar = document.getElementById('document-bar');
@@ -478,11 +493,15 @@ function renderDocumentBar() {
   for (const docType of ['gdd', 'wbb']) {
     const list = chapters[docType];
     if (!list?.length) continue;
+    // Filter to chapters that exist at current point in time
+    const visible = list.filter(chapterVisible);
+    if (!visible.length) continue;
     html += `<div class="doc-group">`;
     html += `<span class="doc-group-label">${docType.toUpperCase()}</span>`;
-    for (const ch of list) {
-      const latest = ch.versions[ch.versions.length - 1];
-      const pageCount = Math.min(ch.versions.length + 1, 4);
+    for (const ch of visible) {
+      const visVers = getVisibleVersions(ch);
+      const latest = visVers[visVers.length - 1];
+      const pageCount = Math.min(visVers.length + 1, 4);
       html += `<div class="doc-stack" data-doc-type="${docType}" data-chapter-id="${ch.id}" title="${ch.title}">`;
       html += `<div class="doc-pages">`;
       for (let i = 0; i < pageCount; i++) {
@@ -508,7 +527,9 @@ function openDocumentModal(docType, chapterId) {
   const chapters = simData?.chapters?.[docType];
   if (!chapters) return;
   const chapter = chapters.find(c => c.id === chapterId);
-  if (!chapter || !chapter.versions.length) return;
+  if (!chapter) return;
+  const visVers = getVisibleVersions(chapter);
+  if (!visVers.length) return;
 
   playPaperSound();
 
@@ -516,8 +537,8 @@ function openDocumentModal(docType, chapterId) {
   document.getElementById('doc-modal-badge').className = `badge doc-modal-badge ${docType}`;
   document.getElementById('doc-modal-title').textContent = chapter.title;
 
-  // Start at highest version
-  docModalState = { docType, chapter, versionIdx: chapter.versions.length - 1 };
+  // Start at highest visible version
+  docModalState = { docType, chapter, versions: visVers, versionIdx: visVers.length - 1 };
   renderDocModalVersion();
 
   document.getElementById('document-overlay').classList.add('open');
@@ -525,9 +546,9 @@ function openDocumentModal(docType, chapterId) {
 
 function renderDocModalVersion() {
   if (!docModalState) return;
-  const { chapter, versionIdx } = docModalState;
-  const v = chapter.versions[versionIdx];
-  const total = chapter.versions.length;
+  const { versions, versionIdx } = docModalState;
+  const v = versions[versionIdx];
+  const total = versions.length;
 
   const contentEl = document.getElementById('doc-modal-content');
   const navEl = document.getElementById('doc-modal-nav');
@@ -541,7 +562,7 @@ function renderDocModalVersion() {
 
   if (total > 1) {
     navEl.style.display = 'flex';
-    labelEl.textContent = `V${v.version} von ${chapter.versions[total - 1].version}`;
+    labelEl.textContent = `V${v.version} von ${versions[total - 1].version}`;
     prevBtn.disabled = versionIdx === 0;
     nextBtn.disabled = versionIdx === total - 1;
   } else {
@@ -555,10 +576,70 @@ function renderDocModalVersion() {
 function docModalNavigate(dir) {
   if (!docModalState) return;
   const newIdx = docModalState.versionIdx + dir;
-  if (newIdx < 0 || newIdx >= docModalState.chapter.versions.length) return;
+  if (newIdx < 0 || newIdx >= docModalState.versions.length) return;
   docModalState.versionIdx = newIdx;
   playPaperSound();
   renderDocModalVersion();
+}
+
+// --- Concept Art Gallery ---
+
+function getVisibleArt() {
+  const art = simData?.concept_art;
+  if (!art?.length) return [];
+  const curDay = simData.days[currentDayIdx]?.day || 1;
+  const curScene = simData.days[currentDayIdx]?.scenes[currentSceneIdx]?.scene || 1;
+  return art.filter(a => {
+    const ap = a.appeared;
+    if (!ap) return false; // no timeline → hidden until referenced
+    return ap.day < curDay || (ap.day === curDay && ap.scene <= curScene);
+  });
+}
+
+function renderGalleryBoard() {
+  const visible = getVisibleArt();
+  const grid = document.getElementById('gallery-grid');
+  const empty = document.getElementById('gallery-empty');
+  const btn = document.getElementById('btn-gallery');
+
+  // Toggle icon highlight
+  btn.classList.toggle('has-art', visible.length > 0);
+
+  if (!visible.length) {
+    empty.style.display = 'block';
+    grid.innerHTML = '';
+    return;
+  }
+  empty.style.display = 'none';
+
+  // Adaptive thumb size: fewer images → bigger
+  const thumbSize = visible.length <= 4 ? 260 : visible.length <= 12 ? 180 : 130;
+  grid.style.setProperty('--gallery-thumb', `${thumbSize}px`);
+
+  let html = '';
+  for (const img of visible) {
+    html += `<div class="gallery-card" data-path="${img.path}">`;
+    html += `<img src="${BASE}${img.path}" alt="${img.filename}" loading="lazy">`;
+    html += `<div class="gallery-card-label">`;
+    html += `<span class="gallery-card-category">${img.category}</span> ${img.filename}`;
+    html += `</div></div>`;
+  }
+  grid.innerHTML = html;
+
+  // Click → lightbox
+  grid.querySelectorAll('.gallery-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const lb = document.getElementById('gallery-lightbox');
+      document.getElementById('gallery-lightbox-img').src = `${BASE}${card.dataset.path}`;
+      lb.classList.add('open');
+    });
+  });
+}
+
+function openGallery() {
+  playPaperSound();
+  renderGalleryBoard();
+  document.getElementById('gallery-overlay').classList.add('open');
 }
 
 /** Extended markdown → HTML for document chapters. */

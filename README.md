@@ -8,7 +8,7 @@
 
 <br>
 
-<img src="frontend/test-results/z-overview.png" width="720" alt="GenSoftworks Studio — Gebäude 12, Obergeschoss">
+<img src="assets/office-overview.png" width="720" alt="GenSoftworks Studio — Gebäude 12, Obergeschoss">
 
 <br>
 
@@ -247,7 +247,7 @@ Jeder simulierte Tag produziert:
 
 Ein **Phaser.js**-basierter 🕹️ Pixel-Art-Viewer visualisiert das Studio und die Simulation in Echtzeit:
 
-<img src="frontend/test-results/02-conference-day3.png" width="720" alt="Viewer — Meeting Tag 3">
+🔗 [**Live-Viewer öffnen**](https://jenniferied.github.io/gensoftworks/)
 
 - 🚶 Agenten bewegen sich durch das Studio
 - 💬 Sprechblasen-Icons zeigen Aktivität (Sprechen, Denken, Artefakte, Planen)
