@@ -18,15 +18,15 @@ Aus dem Briefing: **Spielermarkt und Community-Erwartungen an Dark Fantasy CRPGs
 - Referenzen: Gothic, Skyrim, VtM Bloodlines, Dishonored
 - Anti-Referenzen: Witcher (fester Charakter), BG3 (rundenbasiert)
 - Monetarisierung: Klassisch Premium
-- Zielmarkt: CRPG/Action-RPG Spieler, die Gothic/Skyrim/Dishonored schaetzen
+- Zielmarkt: CRPG/Action-RPG Spieler, die Gothic/Skyrim/Dishonored schätzen
 - Medium-Fantasy, Low-Magic, kein Steampunk, keine klassische Magie, germanische Mythologie
 
 ## Eingangsmaterial
 
 - Briefing gelesen (briefing.md)
 - Briefing-Output von Finn (day01-scene1-briefing)
-- Eigenes Profil und Rollenverstaendnis
+- Eigenes Profil und Rollenverständnis
 
 ## Mein Ansatz
 
-Ich recherchiere "wie eine Spielerin" — nicht aus der Theorie, sondern aus echten Community-Daten. Meine Quellen sind die Orte, an denen ich selbst jeden Morgen unterwegs bin: Reddit, YouTube, Steam. Ich schaue, was Spieler tatsaechlich sagen, nicht was Publisher behaupten.
+Ich recherchiere "wie eine Spielerin" — nicht aus der Theorie, sondern aus echten Community-Daten. Meine Quellen sind die Orte, an denen ich selbst jeden Morgen unterwegs bin: Reddit, YouTube, Steam. Ich schaue, was Spieler tatsächlich sagen, nicht was Publisher behaupten.

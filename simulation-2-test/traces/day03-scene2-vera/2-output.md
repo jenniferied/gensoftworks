@@ -4,7 +4,7 @@
 
 ## Ergebnis
 
-GDD-05 Designsprache V1 fertiggestellt. Vollstaendig ausformulierter Art Direction Text, ca. 4500 Woerter.
+GDD-05 Designsprache V1 fertiggestellt. Vollständig ausformulierter Art Direction Text, ca. 4500 Wörter.
 
 ## Artefakt
 
@@ -12,39 +12,39 @@ GDD-05 Designsprache V1 fertiggestellt. Vollstaendig ausformulierter Art Directi
 
 ## Struktur
 
-1. **Art Direction Ueberblick** — Visuelle Vision, Aesthetische Saeulen, Lebende Krone als Leitmotiv, Referenzkorridor
-2. **Fraktionsvisuals** — Drei Dialekte (Krone: Grandeur im Zerfall, Gilden: Organischer Brutalismus, Orden: Makellose Luege). Mit Architektur, Materialsprache, Ikonographie.
-3. **Biotech-Grammatik** — Uebersetzungsregeln, Sichtbarkeitsgrade, Skala (Mikro/Meso/Makro)
+1. **Art Direction Überblick** — Visuelle Vision, Ästhetische Säulen, Lebende Krone als Leitmotiv, Referenzkorridor
+2. **Fraktionsvisuals** — Drei Dialekte (Krone: Grandeur im Zerfall, Gilden: Organischer Brutalismus, Orden: Makellose Lüge). Mit Architektur, Materialsprache, Ikonographie.
+3. **Biotech-Grammatik** — Übersetzungsregeln, Sichtbarkeitsgrade, Skala (Mikro/Meso/Makro)
 4. **Farbsystem** — 70/20/10-Paletten pro Fraktion mit Hex-Codes, globale Akzente, vier Farbregeln
-5. **Mode & Ruestung** — High Fashion Mittelalter + Biotech-Layer, Fraktionsmode, Ruestungsphilosophie, Customization
-6. **Tiervolk** — Alien-Elegant, Koerperdesign, Kleidung als Biografie, Farbpalette
-7. **Schattenfieber** — Drei Stufen (Rauschen/Risse/Schwelle), am Koerper + in der Umgebung, drei Designregeln
-8. **Environments** — Sechs Regionstypen, Vertikalitaet, Beleuchtungslogik
+5. **Mode & Rüstung** — High Fashion Mittelalter + Biotech-Layer, Fraktionsmode, Rüstungsphilosophie, Customization
+6. **Tiervolk** — Alien-Elegant, Körperdesign, Kleidung als Biografie, Farbpalette
+7. **Schattenfieber** — Drei Stufen (Rauschen/Risse/Schwelle), am Körper + in der Umgebung, drei Designregeln
+8. **Environments** — Sechs Regionstypen, Vertikalität, Beleuchtungslogik
 
-## Was neu ist gegenueber V0
+## Was neu ist gegenüber V0
 
 - Fliesstext statt Stichpunkte — das Dokument ist jetzt LESBAR, nicht nur parsebar
 - Lebende Krone als visuelles Leitmotiv eingebaut (aus WBB-01)
 - Orden-Symbolik konkretisiert: Halvards Auge, Raben, doppelte Architektur
-- Krone-Symbolik konkretisiert: Sigvalts Hand, einhaendige Statuen
+- Krone-Symbolik konkretisiert: Sigvalts Hand, einhändige Statuen
 - Gilden-Symbolik konkretisiert: Erthags Waage, Flechtung als Handwerksmotiv
 - Emers Namenssystem integriert (Galt, Emer, Mittelgrund, Hauten, Flechtung, Tharm)
 - Schattenfieber-Stufen mit Darius/Nami synchronisiert (3 narrative x 5 mechanische)
-- Environments mit kosmologischer Logik verbunden (Mittelgrund als Emer-Koerper)
-- Ruestungsphilosophie ausgearbeitet (gezuechtet, nicht geschmiedet)
-- Beleuchtungskonzept (Biolumineszenz fraktionsabhaengig)
+- Environments mit kosmologischer Logik verbunden (Mittelgrund als Emer-Körper)
+- Rüstungsphilosophie ausgearbeitet (gezüchtet, nicht geschmiedet)
+- Beleuchtungskonzept (Biolumineszenz fraktionsabhängig)
 
 ## Was offen bleibt
 
 - Regionale Architektur-Differenzierung (brauche WBB-02 Topos)
-- Ruestungsklassen im Detail (brauche Leo/Darius)
-- Schluesselcharakter-Designs (brauche Nami GDD-04)
+- Rüstungsklassen im Detail (brauche Leo/Darius)
+- Schlüsselcharakter-Designs (brauche Nami GDD-04)
 - Nervensystem-UI Wireframe (bilateral mit Darius)
 - Technische Constraints (Tobi)
 - Concept Art / Thumbnail-Skizzen (V2)
 
-## Selbsteinschaetzung
+## Selbsteinschätzung
 
-Das ist ein solides V1. Es liest sich wie ein Art Direction Dokument und nicht wie eine Feature-Liste. Die Lore-Integration (Emer, Flechtung, Hauten) gibt dem visuellen Design eine Begruendung, die ueber Aesthetik hinausgeht: WARUM sieht die Welt so aus? Weil sie ein Koerper ist. Das ist keine Metapher — das ist Worldbuilding. Bin zufrieden.
+Das ist ein solides V1. Es liest sich wie ein Art Direction Dokument und nicht wie eine Feature-Liste. Die Lore-Integration (Emer, Flechtung, Hauten) gibt dem visuellen Design eine Begründung, die über Ästhetik hinausgeht: WARUM sieht die Welt so aus? Weil sie ein Körper ist. Das ist keine Metapher — das ist Worldbuilding. Bin zufrieden.
 
-Fuer V2 brauche ich Emres Topos und Namis Figuren. Dann kann ich Environments und Charaktere spezifisch machen.
+Für V2 brauche ich Emres Topos und Namis Figuren. Dann kann ich Environments und Charaktere spezifisch machen.

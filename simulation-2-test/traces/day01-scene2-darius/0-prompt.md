@@ -9,10 +9,10 @@ Strukturierter Referenzspiel-Vergleich entlang der Design Pillars von RELICS. An
 - Real-time Action Combat (Skyrim-Referenz), Melee-fokussiert
 - Third/First Person nahtlos umschaltbar
 - Open-World / Semi-Open-World
-- Kein Magie -> Alchemie, Schattenfieber-Faehigkeiten (mit Kosten)
+- Kein Magie -> Alchemie, Schattenfieber-Fähigkeiten (mit Kosten)
 - Nervensystem-Leveling
-- Drei Fraktionen (Krone, Gilden, Orden) -- keine ist gut oder boese
-- Tonalitaet: duester, geerdet, politisch
+- Drei Fraktionen (Krone, Gilden, Orden) -- keine ist gut oder böse
+- Tonalität: düster, geerdet, politisch
 - Medium-Fantasy, Low-Magic, High-Tech (Biotech-Futurismus)
 
 ## Leitfrage
@@ -23,4 +23,4 @@ Strukturierter Referenzspiel-Vergleich entlang der Design Pillars von RELICS. An
 
 - briefing.md (Creative Director's Briefing)
 - Eigene Erfahrung mit den Referenztiteln
-- Industrieerfahrung (Blue Byte / Ubisoft Duesseldorf)
+- Industrieerfahrung (Blue Byte / Ubisoft Düsseldorf)

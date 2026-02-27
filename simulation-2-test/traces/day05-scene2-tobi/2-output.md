@@ -27,7 +27,7 @@
 - **KORRIGIERT Kap. 5.3:** Stufengrenzen auf CD-Lock (Rauschen 1-40, Risse 41-75, Schwelle 76-100)
 - **KORRIGIERT Kap. 5.4:** Halluzinations-Interpolationsformel: Start bei 76, nicht 70
 - **ERWEITERT Kap. 8.2:** Anforderungsprofil Gameplay-Programmer, GAS als Pflicht-Kriterium explizit
-- **Aenderungslog:** V2-Eintrag gesetzt
+- **Änderungslog:** V2-Eintrag gesetzt
 
 ---
 

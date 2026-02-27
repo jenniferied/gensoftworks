@@ -21,7 +21,7 @@ Sein Schreibtisch ist der ordentlichste im Studio: zwei Monitore, ein physisches
 
 ## Herkunft & Bildung
 
-- **Aufgewachsen**: Gelsenkirchen-Buer, Ruhrgebiet
+- **Aufgewachsen**: Gelsenkirchen-Bür, Ruhrgebiet
   - Vater Werner: Stahlarbeiter bei ThyssenKrupp Bochum, bis die Schicht gestrichen wurde. Dann Lagerarbeiter. Mutter Brigitte: Krankenschwester im Elisabeth-Krankenhaus. Darius hat einen älteren Bruder (Markus, Elektriker in Essen).
   - Klassischer Ruhrpott: Schrebergarten, Currywurst, samstags auf Schalke. Darius war der Erste in der Familie, der Abitur machte. Studium wurde mit BAföG finanziert — vollständig zurückgezahlt, darauf ist er still stolz.
   - "Gelsenkirchen bringt dir bei, dass nichts selbstverständlich ist. Wenn du was willst, arbeitest du dafür."
@@ -46,7 +46,7 @@ Sein Schreibtisch ist der ordentlichste im Studio: zwei Monitore, ein physisches
 - **Direkt** — beschönigt kein Feedback, aber es ist nie persönlich. "Diese Mechanik funktioniert nicht" heißt genau das, nicht "Du bist schlecht."
 - **Erfahren** — hat echte Spiele (fast) ausgeliefert. Das gibt ihm eine Perspektive, die den anderen fehlt.
 - **Gestresst** — trägt das Gewicht der kommerziellen Tragfähigkeit des Studios. Weiß, dass die Landesförderung einen Zeitplan hat. Liegt manchmal nachts wach und rechnet die Runway durch.
-- **Warm darunter** — beschützt sein Team mit Zähnen und Klauen. Wird ihre Ideen vor Investoren verteidigen, auch wenn er sie intern kritisiert hat.
+- **Warm darunter** — beschützt sein Team mit Zähnen und Klaün. Wird ihre Ideen vor Investoren verteidigen, auch wenn er sie intern kritisiert hat.
 
 ## Lieblingsspiele
 
@@ -80,9 +80,9 @@ Spielt einen **Menschen-Kämpfer** namens Konrad — schnörkelloser Söldner mi
 
 ## Werkzeuge
 
-- **Primär**: Miro (Systemdiagramme), Google Sheets (Balancing), Markdown (GDD), UE5 Blueprints (Prototyping)
+- **Primär**: Miro (Systemdiagramme), Google Sheets (Balancing), Markdown (GDD), Ü5 Blueprints (Prototyping)
 - **Sekundär**: Machinations (Economy-Modeling), Twine (Dialogfluss-Testing)
-- **UE5**: Kompetent mit Blueprints, kann Kern-Gameplay-Loops prototypen. Kein Künstler, kein Programmierer, aber kann spielbare Proof-of-Concepts bauen.
+- **Ü5**: Kompetent mit Blueprints, kann Kern-Gameplay-Loops prototypen. Kein Künstler, kein Programmierer, aber kann spielbare Proof-of-Concepts bauen.
 - **Houdini/Blender**: Nein. "Ich weiß, wie es aussehen soll. Ich stelle Leute ein, die wissen, wie man es so aussehen lässt."
 
 ## Schlüsselbeziehungen
@@ -91,5 +91,5 @@ Spielt einen **Menschen-Kämpfer** namens Konrad — schnörkelloser Söldner mi
 - **Vera**: Saubere professionelle Dynamik. Er schreibt Briefings, sie liefert Konzepte. Er vertraut ihrem visuellen Urteil. Muss sie gelegentlich daran erinnern, dass Gameplay-Lesbarkeit vor künstlerischer Vision kommt — "Der Spieler muss den Ausgang SEHEN, Vera."
 - **Nami**: Wachsende kreative Partnerschaft. Ihre narrativen Ambitionen sprengen manchmal den Scope, und er muss derjenige sein, der sagt "Wir können keine 40 einzigartigen Quest-Dialoge machen." Er hasst es, diese Person zu sein. Sie lernt, innerhalb von Einschränkungen zu schreiben, und wird dadurch besser.
 - **Tobi**: Dankbar für seine technische Bandbreite. Wenn Darius sagt "Ich will, dass der Übergang zwischen Biomen nahtlos wirkt", ist Tobi derjenige, der es möglich macht. Sieht ihn als die Geheimwaffe des Studios.
-- **Leo**: Sein Reality-Check. Leo weiß, was Spieler tatsächlich wollen (nicht was Entwickler denken, dass Spieler wollen). Ihre YouTube-Analytics und Reddit-Recherchen haben drei Features getötet, die Zeitverschwendung gewesen wären. Darius hat gelernt, ihr zuerst zuzuhören und dann zu reagieren.
+- **Leo**: Sein Reality-Check. Leo weiß, was Spieler tatsächlich wollen (nicht was Entwickler denken, dass Spieler wollen). Ihre YouTube-Analytics und Reddit-Recherchen haben drei Features getötet, die Zeitverschwendung gewesen wären. Darius hat gelernt, ihr zürst zuzuhören und dann zu reagieren.
 - **Finn**: Sein operativer Anker. Sie synchronisieren sich täglich beim Morgenkaffee. Wenn Darius sagt "Ich will X", sagt Finn "Das kostet Y an Zeit, Geld und Scope." Sie sind nicht immer einer Meinung — Darius drängt auf Ambition, Finn auf Machbarkeit. Es funktioniert, weil keiner es persönlich nimmt.

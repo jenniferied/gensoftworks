@@ -3,25 +3,25 @@
 <!-- GM aktualisiert diese Datei nach jeder Szene aus Tobis Perspektive -->
 
 ## Tag 1, Szene 1 (BRIEFING)
-Habe nach Engine-Festlegung gefragt. Arbeite mit UE5 als Annahme.
+Habe nach Engine-Festlegung gefragt. Arbeite mit Ü5 als Annahme.
 
 ## Tag 1, Szene 2 (WORK)
 Machbarkeitsanalyse V0.1 fertig. Drei kritische Engpässe: (1) Kein Gameplay-Programmer — Melee Combat braucht Middleware oder Freelancer. (2) Asset-Produktion — Vera allein reicht nicht, modulares Design + Marketplace + prozedurale Systeme sind Pflicht. (3) Scope — empfehle Semi-Open-World (4-6 km², Gothic-Stil). Kamerasystem: TP als Primärmodus, echtes FP verdoppelt Animationsaufwand.
 
 ## Tag 1, Szene 3 (MEETING)
-UE5 bestätigt. Semi-Open-World bestätigt. TP Primärmodus bestätigt, FP ist V2. Alle drei lösen meine größten Scope-Concerns. Heute Nachmittag: Pipeline-Architektur beginnen. Modulare Asset-Pipeline mit Nanite, Houdini-Terrain, PCG-Vegetation als Kern.
+Ü5 bestätigt. Semi-Open-World bestätigt. TP Primärmodus bestätigt, FP ist V2. Alle drei lösen meine größten Scope-Concerns. Heute Nachmittag: Pipeline-Architektur beginnen. Modulare Asset-Pipeline mit Nanite, Houdini-Terrain, PCG-Vegetation als Kern.
 
 ## Tag 1, Szene 5 (WORK)
 Pipeline-Architektur V0.1 fertig: Nanite hybrid (Hard-Surface + traditionelle Vegetation), Lumen GI (HW RT Shipping, Software Fallback), Spring Arm Kamera mit drei Kontext-Modi, GAS als Combat-Basis, Motion Matching. Schattenfieber als eigener Post-Processing-Layer.
 
 ## Tag 1, Szene 6 (REVIEW)
-CD: PC first, Konsolen Stretch Goal. Freelancer-Budget für Gameplay-Programmer. Singleplayer bestätigt (implizit). Morgen: Pipeline-Bibel V1 beginnen, Kamera-Prototyp in UE5 skizzieren.
+CD: PC first, Konsolen Stretch Goal. Freelancer-Budget für Gameplay-Programmer. Singleplayer bestätigt (implizit). Morgen: Pipeline-Bibel V1 beginnen, Kamera-Prototyp in Ü5 skizzieren.
 
 ## Tag 2, Szene 1 (BRIEFING)
 Konzeptionstag. GDD-06 Technik & Produktion als V1-Outline vorbereiten.
 
 ## Tag 2, Szene 2 (WORK)
-GDD-06 Outline: 8 Kapitel — Engine & Rendering (UE5, Nanite, Lumen), Kamerasystem (Spring Arm, 4 Modi), Combat-Architektur (GAS), Asset-Pipeline (Houdini, modulares Kit), Schattenfieber-Tech (Post-Processing), Performance (3 Tiers), Produktions-Pipeline, Meilensteine + Budget.
+GDD-06 Outline: 8 Kapitel — Engine & Rendering (Ü5, Nanite, Lumen), Kamerasystem (Spring Arm, 4 Modi), Combat-Architektur (GAS), Asset-Pipeline (Houdini, modulares Kit), Schattenfieber-Tech (Post-Processing), Performance (3 Tiers), Produktions-Pipeline, Meilensteine + Budget.
 
 ## Tag 2, Szene 3 (MEETING)
 Pipeline-Architektur vorgestellt. Darius fragt nach GAS-Flexibilität für Schattenfieber-Abilities. Antwort: GAS kann das, braucht aber eigene Ability-Kategorie.
@@ -36,7 +36,7 @@ CD akzeptiert 45k Budget-Schätzung. Morgen: GDD-06 als vollständige V1 schreib
 Produktionstag. GDD-06 Technik V1 schreiben.
 
 ## Tag 3, Szene 2 (WORK)
-GDD-06 Technik & Produktion V1 fertig. 8 Kapitel komplett: Engine (UE5.3+, Nanite hybrid, Lumen GI), Kamera (Spring Arm, 4 Kontext-Modi), Combat (GAS-basiert, Motion Matching), Asset-Pipeline (Houdini-Terrain, modulare Kits), Schattenfieber-Tech (5 Shader-Stufen), Performance (3 Tiers: 1080p30 bis 4K60), Produktions-Pipeline, Meilensteine + 45k EUR Budget.
+GDD-06 Technik & Produktion V1 fertig. 8 Kapitel komplett: Engine (Ü5.3+, Nanite hybrid, Lumen GI), Kamera (Spring Arm, 4 Kontext-Modi), Combat (GAS-basiert, Motion Matching), Asset-Pipeline (Houdini-Terrain, modulare Kits), Schattenfieber-Tech (5 Shader-Stufen), Performance (3 Tiers: 1080p30 bis 4K60), Produktions-Pipeline, Meilensteine + 45k EUR Budget.
 
 ## Tag 3, Szene 4 (PAUSE)
 Mittagspause mit Finn und Darius. Freelancer-Profil diskutiert: GAS-Erfahrung Pflicht, Motion Matching Bonus, Melee-Combat ideal. Darius kennt Ex-Blue-Byte-Kollegen. Finn kontaktiert den heute Abend.

@@ -4,10 +4,10 @@
 Tag 1, Montag, 14:00 Uhr, Tech Corner. Nachmittags-Recherche.
 
 ## Auftrag
-Pipeline-Architektur fuer RELICS in UE5 skizzieren. Bestaetigt im Meeting (Szene 3):
+Pipeline-Architektur für RELICS in Ü5 skizzieren. Bestätigt im Meeting (Szene 3):
 - Engine: Unreal Engine 5
 - Scope: Semi-Open-World (4-6 km², Gothic-Dichte)
-- Kamera: Third Person Primaermodus mit Zoom, FP ist V2
+- Kamera: Third Person Primärmodus mit Zoom, FP ist V2
 - Combat: Real-time Action, Melee-fokussiert
 - Biotech-Futurismus, kein Steampunk
 - Nanite, Lumen, World Partition als technische Basis

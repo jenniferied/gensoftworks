@@ -2,15 +2,38 @@
   "scene": 3,
   "type": "MEETING",
   "time": "morning",
-  "location": "kueche",
-  "participants": ["finn", "leo", "nami", "emre", "darius", "vera", "tobi"],
-  "summary": "Freitag-Standup. Leo praesentiert Konsistenz-Befunde: GDD-03 hat Risse bis 80 statt 75 (Nami narrativ motiviert, muss mit Darius oder CD geklaert werden), GDD-02 hat Ymir statt Emer (Einzeiler-Fix, Leo uebernimmt). V2-Status: GDD-01/03/05/06 und WBB-01 V2 fertig, GDD-04 und WBB-02 V1 fertig. Drei CD-Fragen fuer Review: Stufenzahl Risse, GDD-04 Figur-3 Kompanion-Status, WBB-02 Topos-Metapher.",
+  "location": "küche",
+  "participants": [
+    "finn",
+    "leo",
+    "nami",
+    "emre",
+    "darius",
+    "vera",
+    "tobi"
+  ],
+  "summary": "Freitag-Standup. Leo präsentiert Konsistenz-Befunde: GDD-03 hat Risse bis 80 statt 75 (Nami narrativ motiviert, muss mit Darius oder CD geklärt werden), GDD-02 hat Ymir statt Emer (Einzeiler-Fix, Leo übernimmt). V2-Status: GDD-01/03/05/06 und WBB-01 V2 fertig, GDD-04 und WBB-02 V1 fertig. Drei CD-Fragen für Review: Stufenzahl Risse, GDD-04 Figur-3 Kompanion-Status, WBB-02 Topos-Metapher.",
   "dialogue": [
-    {"who": "finn", "says": "Letzter Standup der Woche. Leo, du faengst an mit deinen Konsistenz-Befunden."},
-    {"who": "leo", "says": "Zwei Dinge. GDD-03 hat Risse bis 80, GDD-02 sagt 75. Und GDD-02 nutzt noch Ymir statt Emer."},
-    {"who": "nami", "says": "Die 80 ist narrativ motiviert — spaeter im Spiel, hoehe Stakes. Hab die Zahl aber nicht mit Darius abgestimmt."},
-    {"who": "emre", "says": "Emer ist in WBB-01 V2 kanonisch. GDD-02 braucht einen Einzeiler-Fix."},
-    {"who": "finn", "says": "Leo fixt Ymir. Stufenzahl, Figur-3-Status und Topos-Metapher gehen auf die CD-Agenda fuer den Review."}
+    {
+      "who": "finn",
+      "says": "Letzter Standup der Woche. Leo, du fängst an mit deinen Konsistenz-Befunden."
+    },
+    {
+      "who": "leo",
+      "says": "Zwei Dinge. GDD-03 hat Risse bis 80, GDD-02 sagt 75. Und GDD-02 nutzt noch Ymir statt Emer."
+    },
+    {
+      "who": "nami",
+      "says": "Die 80 ist narrativ motiviert — später im Spiel, höhe Stakes. Hab die Zahl aber nicht mit Darius abgestimmt."
+    },
+    {
+      "who": "emre",
+      "says": "Emer ist in WBB-01 V2 kanonisch. GDD-02 braucht einen Einzeiler-Fix."
+    },
+    {
+      "who": "finn",
+      "says": "Leo fixt Ymir. Stufenzahl, Figur-3-Status und Topos-Metapher gehen auf die CD-Agenda für den Review."
+    }
   ],
   "artifacts": [],
   "cd_feedback": null

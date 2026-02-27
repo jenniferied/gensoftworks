@@ -32,7 +32,7 @@ V1 Kap. 8 (Environments) beschreibt Regionstypen (Krone-Stadt, Gilden-Stadt, etc
 
 Mein eigenes Review von GDD-06 (Tag 4): Tobi hat die Hex-Codes teilweise übernommen, aber es gab einen Widerspruch bei Krone-Biolumineszenz. GDD-05 schreibt `#C5A030` (Altgold-Highlight). GDD-06 muss dieselben Werte haben. Ich prüfe: In GDD-05 V1 stehen alle Fraktions-Paletten mit Hex-Codes — die müssen 1:1 in V2 übertragen werden, ohne Abweichungen.
 
-ACES-Validierung: ACES-Mapping bedeutet sRGB-Werte, die im UE5-Tonemapping (ACES) korrekt aussehen. Warme Farben (Altgold, Amber) müssen leicht tiefer angesetzt sein als im Display-normalen Raum, weil ACES sie aufhellt. Die bestehenden Hex-Codes in V1 sind bereits mit diesem Offset designed. In V2 nichts ändern — nur bestätigen.
+ACES-Validierung: ACES-Mapping bedeutet sRGB-Werte, die im Ü5-Tonemapping (ACES) korrekt aussehen. Warme Farben (Altgold, Amber) müssen leicht tiefer angesetzt sein als im Display-normalen Raum, weil ACES sie aufhellt. Die bestehenden Hex-Codes in V1 sind bereits mit diesem Offset designed. In V2 nichts ändern — nur bestätigen.
 
 ### 5. Gemischte Sets — Befund
 

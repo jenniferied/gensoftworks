@@ -2,34 +2,105 @@
   "scene": 6,
   "type": "REVIEW",
   "time": "afternoon",
-  "location": "kueche",
-  "participants": ["emre", "darius", "nami", "vera", "tobi", "leo", "finn"],
-  "summary": "Tagesabschluss-Review Tag 1. Finn moderiert, jeder prasentiert Tagesergebnisse. Emre: Drei-Schichten-Kosmologie, mythologisch grundierte Fraktionen (Krone=Tyr/Thor, Gilden=Vanir, Orden=Odin), Wanderer-Motiv. Darius: Referenzspiel-Analyse, Schattenfieber als vierter Nervensystem-Ast (0-100, fuenf Stufen), fuenf Design-Prinzipien. Nami: Vier narrative Prinzipien, Wanderer-Motiv als Fraktionsklammer, Schattenfieber als Unreliable Narrator (Rauschen/Risse/Schwelle). Vera: Visuelle Referenz-Analyse, drei Fraktionsprofile, Farbpalette mit Hex-Codes. Tobi: Machbarkeitsanalyse, Pipeline-Architektur V0.1, drei Engpaesse. Leo: Marktanalyse, Bloodborne Insight als Goldstandard, Pitch-Satz. Finn: Roadmap V1.1. CD-Feedback eingearbeitet: Orden=Spitzenforschung bestaetigt, Schattenfieber nicht reversibel, PC first, Freelancer-Budget vorbereiten, Tiervolk ohne eigene Architektur, Replay-Erfahrung gewuenscht. Aufgabenverteilung fuer Dienstag (letzter Konzepttag) besprochen.",
+  "location": "küche",
+  "participants": [
+    "emre",
+    "darius",
+    "nami",
+    "vera",
+    "tobi",
+    "leo",
+    "finn"
+  ],
+  "summary": "Tagesabschluss-Review Tag 1. Finn moderiert, jeder prasentiert Tagesergebnisse. Emre: Drei-Schichten-Kosmologie, mythologisch grundierte Fraktionen (Krone=Tyr/Thor, Gilden=Vanir, Orden=Odin), Wanderer-Motiv. Darius: Referenzspiel-Analyse, Schattenfieber als vierter Nervensystem-Ast (0-100, fünf Stufen), fünf Design-Prinzipien. Nami: Vier narrative Prinzipien, Wanderer-Motiv als Fraktionsklammer, Schattenfieber als Unreliable Narrator (Rauschen/Risse/Schwelle). Vera: Visuelle Referenz-Analyse, drei Fraktionsprofile, Farbpalette mit Hex-Codes. Tobi: Machbarkeitsanalyse, Pipeline-Architektur V0.1, drei Engpässe. Leo: Marktanalyse, Bloodborne Insight als Goldstandard, Pitch-Satz. Finn: Roadmap V1.1. CD-Feedback eingearbeitet: Orden=Spitzenforschung bestätigt, Schattenfieber nicht reversibel, PC first, Freelancer-Budget vorbereiten, Tiervolk ohne eigene Architektur, Replay-Erfahrung gewünscht. Aufgabenverteilung für Dienstag (letzter Konzepttag) besprochen.",
   "dialogue": [
-    {"who": "finn", "says": "Moin. Setzt euch. Kaffee steht da hinten. Wir machen das kurz und knackig — jeder hat drei Minuten. Emre, du faengst an."},
-    {"who": "emre", "says": "Kosmologie steht. Drei Schichten. Schattenfieber ist kosmologische Erosion — die Bindung zwischen den Schichten ist gebrochen. Fraktionen mythologisch grundiert: Krone=Tyr/Thor mit Wolfsmotiv, Gilden=Vanir mit Schiffsmotiv, Orden=Odin mit Rabenmotiv. Wanderer-Motiv fuer Nami ausgearbeitet — Havamal-Gastrecht, Odin als Gangleri. Offene Frage: Ist der Orden als Spitzenforschungs-Institution angelegt?"},
-    {"who": "darius", "says": "Drei Referenzspiele aufgedrillt: Gothic fuer Dichte, Skyrim fuer Kamera, Dishonored fuer Vertikalitaet. Schattenfieber als Mechanik: Infektionswert null bis hundert, fuenf Stufen, vierter Ast im Nervensystem-Leveling. Fuenf Design-Prinzipien, fuenf emergente Build-Archetypen. Offene Frage: Combat-Skill-Ceiling."},
-    {"who": "nami", "says": "Vier narrative Prinzipien. Wanderer-Motiv: Drei Fraktionen sind drei Antworten auf dieselbe mythologische Figur — den Fremden. Schattenfieber als Unreliable Narrator in drei Stufen: Rauschen, Risse, Schwelle. Je staerker infiziert, desto weniger kann der Spieler der eigenen Wahrnehmung trauen. Frage: Soll die Infektion reversibel sein? Ich finde nein."},
-    {"who": "vera", "says": "Visuelle Referenz-Analyse in fuenf Kategorien. Drei Fraktionsprofile: Krone ist Grandeur im Zerfall, Gilden organischer Brutalismus, Orden die makellose Luege. Farbpalette steht mit Hex-Codes. Offene Frage war Tiervolk-Architektur, aber ich glaube die haben gar keine eigene."},
-    {"who": "tobi", "says": "Machbarkeitsanalyse durch. Unreal 5.4, Nanite, Lumen, GAS, Motion Matching. Pipeline-Architektur V0.1 steht. Drei Engpaesse: Gameplay-Programmer, Streaming-Architektur, Schattenfieber-Shader. Offene Fragen: Gameplay-Programmer und Zielplattform."},
-    {"who": "leo", "says": "Marktanalyse: Luecke zwischen Gothic-Nostalgie und AAA-Ermuedung. Bloodborne Insight als Goldstandard fuer Infektionsmechaniken. Pitch-Satz: Du bist nicht der Auserwaehlte — du bist der Fremde, und diese Welt will dich nicht. Offene Frage: Trailer-Strategie."},
-    {"who": "finn", "says": "Von mir: Roadmap V1.1, alle CD-Entscheidungen verteilt, Risiko-Register aktualisiert. Jetzt zum CD-Feedback."},
-    {"who": "finn", "says": "Orden als Spitzenforschung: Ja, bestaetigt. Klosterwissenschaft als Parallele, Biotech hinter theologischer Fassade."},
-    {"who": "emre", "says": "Grossartig. Odin haengt am Baum fuer Erkenntnis, der Orden experimentiert am Koerper — gleiche Struktur, anderes Medium."},
-    {"who": "finn", "says": "Schattenfieber nicht reversibel. Nur kontrollierbar, nicht heilbar."},
-    {"who": "darius", "says": "Heisst: Infektionswert kann nur steigen oder stagnieren. Items verlangsamen, aber kehren nicht um. Echte Build-Entscheidung."},
-    {"who": "finn", "says": "Zielplattform PC first, Konsolen als Stretch Goal."},
-    {"who": "tobi", "says": "Vereinfacht die Pipeline erheblich. Nanite und Lumen voll ausfahren."},
-    {"who": "finn", "says": "Freelancer-Budget bereite ich morgen vor. Tiervolk hat keine eigene Architektur — sie leben als Gaeste und Nomaden in den Fraktionsstaedten."},
-    {"who": "vera", "says": "Genau mein Gefuehl. Tiervolk-Elemente als Fremdkoerper in den Fraktionsaesthetiken. Improvisierte Nischen statt geplanter Raeume."},
-    {"who": "emre", "says": "Passt mythologisch. Gastrecht und Fremdheit — Spieler und Tiervolk teilen denselben Status."},
-    {"who": "finn", "says": "Replay-Erfahrung ist gewuenscht. RELICS soll bei mehrfachem Durchspielen neue Schichten zeigen. Darius und Nami, das ist euer Ding morgen."},
-    {"who": "nami", "says": "Passt perfekt zum Unreliable Narrator. Beim zweiten Durchspielen merkt der Spieler, was Fieber-Verzerrung war."},
-    {"who": "finn", "says": "Morgen ist letzter Konzepttag. Aufgaben: Emre vertieft Orden-Lore, Darius konzipiert Replay-Loop, Nami stimmt Replay-Narrative ab und legt Fraktions-Questlinien an, Vera definiert Tiervolk-Praesenz visuell, Tobi sondiert Shader-Anforderungen, Leo schaerft Pitch auf PC-Audience."},
-    {"who": "finn", "says": "Starker erster Tag. Geniesst den Abend. Bis morgen, neun Uhr."}
+    {
+      "who": "finn",
+      "says": "Moin. Setzt euch. Kaffee steht da hinten. Wir machen das kurz und knackig — jeder hat drei Minuten. Emre, du fängst an."
+    },
+    {
+      "who": "emre",
+      "says": "Kosmologie steht. Drei Schichten. Schattenfieber ist kosmologische Erosion — die Bindung zwischen den Schichten ist gebrochen. Fraktionen mythologisch grundiert: Krone=Tyr/Thor mit Wolfsmotiv, Gilden=Vanir mit Schiffsmotiv, Orden=Odin mit Rabenmotiv. Wanderer-Motiv für Nami ausgearbeitet — Havamal-Gastrecht, Odin als Gangleri. Offene Frage: Ist der Orden als Spitzenforschungs-Institution angelegt?"
+    },
+    {
+      "who": "darius",
+      "says": "Drei Referenzspiele aufgedrillt: Gothic für Dichte, Skyrim für Kamera, Dishonored für Vertikalität. Schattenfieber als Mechanik: Infektionswert null bis hundert, fünf Stufen, vierter Ast im Nervensystem-Leveling. Fünf Design-Prinzipien, fünf emergente Build-Archetypen. Offene Frage: Combat-Skill-Ceiling."
+    },
+    {
+      "who": "nami",
+      "says": "Vier narrative Prinzipien. Wanderer-Motiv: Drei Fraktionen sind drei Antworten auf dieselbe mythologische Figur — den Fremden. Schattenfieber als Unreliable Narrator in drei Stufen: Rauschen, Risse, Schwelle. Je stärker infiziert, desto weniger kann der Spieler der eigenen Wahrnehmung trauen. Frage: Soll die Infektion reversibel sein? Ich finde nein."
+    },
+    {
+      "who": "vera",
+      "says": "Visuelle Referenz-Analyse in fünf Kategorien. Drei Fraktionsprofile: Krone ist Grandeur im Zerfall, Gilden organischer Brutalismus, Orden die makellose Lüge. Farbpalette steht mit Hex-Codes. Offene Frage war Tiervolk-Architektur, aber ich glaube die haben gar keine eigene."
+    },
+    {
+      "who": "tobi",
+      "says": "Machbarkeitsanalyse durch. Unreal 5.4, Nanite, Lumen, GAS, Motion Matching. Pipeline-Architektur V0.1 steht. Drei Engpässe: Gameplay-Programmer, Streaming-Architektur, Schattenfieber-Shader. Offene Fragen: Gameplay-Programmer und Zielplattform."
+    },
+    {
+      "who": "leo",
+      "says": "Marktanalyse: Lücke zwischen Gothic-Nostalgie und AAA-Ermüdung. Bloodborne Insight als Goldstandard für Infektionsmechaniken. Pitch-Satz: Du bist nicht der Auserwählte — du bist der Fremde, und diese Welt will dich nicht. Offene Frage: Trailer-Strategie."
+    },
+    {
+      "who": "finn",
+      "says": "Von mir: Roadmap V1.1, alle CD-Entscheidungen verteilt, Risiko-Register aktualisiert. Jetzt zum CD-Feedback."
+    },
+    {
+      "who": "finn",
+      "says": "Orden als Spitzenforschung: Ja, bestätigt. Klosterwissenschaft als Parallele, Biotech hinter theologischer Fassade."
+    },
+    {
+      "who": "emre",
+      "says": "Grossartig. Odin hängt am Baum für Erkenntnis, der Orden experimentiert am Körper — gleiche Struktur, anderes Medium."
+    },
+    {
+      "who": "finn",
+      "says": "Schattenfieber nicht reversibel. Nur kontrollierbar, nicht heilbar."
+    },
+    {
+      "who": "darius",
+      "says": "Heisst: Infektionswert kann nur steigen oder stagnieren. Items verlangsamen, aber kehren nicht um. Echte Build-Entscheidung."
+    },
+    {
+      "who": "finn",
+      "says": "Zielplattform PC first, Konsolen als Stretch Goal."
+    },
+    {
+      "who": "tobi",
+      "says": "Vereinfacht die Pipeline erheblich. Nanite und Lumen voll ausfahren."
+    },
+    {
+      "who": "finn",
+      "says": "Freelancer-Budget bereite ich morgen vor. Tiervolk hat keine eigene Architektur — sie leben als Gäste und Nomaden in den Fraktionsstädten."
+    },
+    {
+      "who": "vera",
+      "says": "Genau mein Gefühl. Tiervolk-Elemente als Fremdkörper in den Fraktionsästhetiken. Improvisierte Nischen statt geplanter Räume."
+    },
+    {
+      "who": "emre",
+      "says": "Passt mythologisch. Gastrecht und Fremdheit — Spieler und Tiervolk teilen denselben Status."
+    },
+    {
+      "who": "finn",
+      "says": "Replay-Erfahrung ist gewünscht. RELICS soll bei mehrfachem Durchspielen neue Schichten zeigen. Darius und Nami, das ist euer Ding morgen."
+    },
+    {
+      "who": "nami",
+      "says": "Passt perfekt zum Unreliable Narrator. Beim zweiten Durchspielen merkt der Spieler, was Fieber-Verzerrung war."
+    },
+    {
+      "who": "finn",
+      "says": "Morgen ist letzter Konzepttag. Aufgaben: Emre vertieft Orden-Lore, Darius konzipiert Replay-Loop, Nami stimmt Replay-Narrative ab und legt Fraktions-Questlinien an, Vera definiert Tiervolk-Präsenz visuell, Tobi sondiert Shader-Anforderungen, Leo schärft Pitch auf PC-Audience."
+    },
+    {
+      "who": "finn",
+      "says": "Starker erster Tag. Geniesst den Abend. Bis morgen, neun Uhr."
+    }
   ],
   "artifacts": [
     "pinwall/ROADMAP.md (V1.1)"
   ],
-  "cd_feedback": "Starker erster Tag. Orden als Spitzenforschung bestaetigt (Klosterwissenschaft als Parallele). Schattenfieber nicht reversibel — nur kontrollierbar. PC first, Konsolen Stretch Goal. Freelancer-Budget vorbereiten. Tiervolk ohne eigene Architektur — Gaeste/Nomaden in Fraktionsstaedten. Replay-Erfahrung gewuenscht."
+  "cd_feedback": "Starker erster Tag. Orden als Spitzenforschung bestätigt (Klosterwissenschaft als Parallele). Schattenfieber nicht reversibel — nur kontrollierbar. PC first, Konsolen Stretch Goal. Freelancer-Budget vorbereiten. Tiervolk ohne eigene Architektur — Gäste/Nomaden in Fraktionsstädten. Replay-Erfahrung gewünscht."
 }

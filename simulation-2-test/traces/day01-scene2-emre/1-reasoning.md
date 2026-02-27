@@ -4,89 +4,89 @@
 
 ### 1. Was heisst "germanische Mythologie" eigentlich?
 
-Erste Unterscheidung, die wichtig ist: "Germanische Mythologie" ist ein Sammelbegriff. Was wir haben, sind primaer **nordische Quellen** — die Edda-Texte, aufgeschrieben auf Island im 13. Jahrhundert, basierend auf aelteren muendlichen Traditionen. Die festlandgermanische Mythologie (Alemannen, Franken, Sachsen, Langobarden) ist fragmentarisch ueberliefert — ein paar Merksprueche, Tacitus' *Germania*, Ortsnamen, Votivsteine. Fuer RELICS, das in "Mitteleuropa" spielt, muesste ich eigentlich die festlandgermanische Tradition betonen, aber die Quellenlage zwingt mich zur nordischen Ueberlieferung als Hauptreferenz.
+Erste Unterscheidung, die wichtig ist: "Germanische Mythologie" ist ein Sammelbegriff. Was wir haben, sind primär **nordische Quellen** — die Edda-Texte, aufgeschrieben auf Island im 13. Jahrhundert, basierend auf älteren mündlichen Traditionen. Die festlandgermanische Mythologie (Alemannen, Franken, Sachsen, Langobarden) ist fragmentarisch überliefert — ein paar Merksprüche, Tacitus' *Germania*, Ortsnamen, Votivsteine. Für RELICS, das in "Mitteleuropa" spielt, müsste ich eigentlich die festlandgermanische Tradition betonen, aber die Quellenlage zwingt mich zur nordischen Überlieferung als Hauptreferenz.
 
-**Widerspruchs-Log Eintrag #001**: Briefing sagt "Germanische Mythologie", Schauplatz ist "Mitteleuropa". Die nordischen Quellen stammen aber aus Skandinavien/Island. Ich nutze sie als Basis, muss aber im WBB klar machen, dass die RELICS-Welt keine 1:1-Uebertragung ist, sondern eine eigenstaendige Kosmologie mit germanischen Wurzeln.
+**Widerspruchs-Log Eintrag #001**: Briefing sagt "Germanische Mythologie", Schauplatz ist "Mitteleuropa". Die nordischen Quellen stammen aber aus Skandinavien/Island. Ich nutze sie als Basis, muss aber im WBB klar machen, dass die RELICS-Welt keine 1:1-Übertragung ist, sondern eine eigenständige Kosmologie mit germanischen Wurzeln.
 
-### 2. Kosmologie — Was taugt fuer Low Fantasy?
+### 2. Kosmologie — Was taugt für Low Fantasy?
 
-Die nordische Kosmologie hat den Weltenbaum Yggdrasil mit neun Welten. Das ist erstmal High Fantasy pur — Goetterwelten, Riesenwelten, Elfenheime. Aber der Kern ist interessanter als die Oberflaeche:
+Die nordische Kosmologie hat den Weltenbaum Yggdrasil mit neun Welten. Das ist erstmal High Fantasy pur — Götterwelten, Riesenwelten, Elfenheime. Aber der Kern ist interessanter als die Oberfläche:
 
 **Was ich destillieren will:**
 - Die Idee einer VERTIKALEN Kosmologie (Weltenbaum) — oben, Mitte, unten. Das passt zum Briefing: "planes of existence beyond known reality."
-- Ginnungagap — die gaennende Leere VOR der Schoepfung. Feuer (Muspelheim) und Eis (Niflheim) treffen sich. Aus dem Zusammenstoss entsteht Leben. Das ist keine Magie — das ist Physik als Mythos.
-- Die Welt entsteht aus einem Koerper (Ymir). Berge aus Knochen, Meer aus Blut, Himmel aus Schaedel. Das ist koerperlich, organisch — passt zu Biotech.
+- Ginnungagap — die gännende Leere VOR der Schöpfung. Feuer (Muspelheim) und Eis (Niflheim) treffen sich. Aus dem Zusammenstoss entsteht Leben. Das ist keine Magie — das ist Physik als Mythos.
+- Die Welt entsteht aus einem Körper (Ymir). Berge aus Knochen, Meer aus Blut, Himmel aus Schädel. Das ist körperlich, organisch — passt zu Biotech.
 
-**Was ich NICHT uebernehme:**
-- Neun distinkte Welten als buchstaebliche Orte
-- Bifroest als Regenbogenbruecke (zu maerchenhaft)
-- Asgard als Goetterstadt in den Wolken
+**Was ich NICHT übernehme:**
+- Neun distinkte Welten als buchstäbliche Orte
+- Bifröst als Regenbogenbrücke (zu märchenhaft)
+- Asgard als Götterstadt in den Wolken
 
-**Umdeutung fuer RELICS:**
-Die "Ebenen jenseits der bekannten Realitaet" koennten in der RELICS-Welt als Schichten verstanden werden — nicht raeumlich getrennte Welten, sondern ueberlagerte Zustaende der Realitaet. Wie Membranen. Das Schattenfieber koennte eine Durchlaessigkeit zwischen diesen Schichten sein. Kein Teleportationsportal, sondern ein Zustand, in dem die Grenzen zwischen den Ebenen sich aufloesen — biologisch, nicht magisch.
+**Umdeutung für RELICS:**
+Die "Ebenen jenseits der bekannten Realität" könnten in der RELICS-Welt als Schichten verstanden werden — nicht räumlich getrennte Welten, sondern überlagerte Zustände der Realität. Wie Membranen. Das Schattenfieber könnte eine Durchlässigkeit zwischen diesen Schichten sein. Kein Teleportationsportal, sondern ein Zustand, in dem die Grenzen zwischen den Ebenen sich auflösen — biologisch, nicht magisch.
 
-### 3. Goetter als saekulare Machtstrukturen
+### 3. Götter als säkulare Machtstrukturen
 
-Die nordischen Goetter sind keine omnipotenten Wesen. Das ist der Kern, der sie fuer Low Fantasy interessant macht:
+Die nordischen Götter sind keine omnipotenten Wesen. Das ist der Kern, der sie für Low Fantasy interessant macht:
 
-- **Odin** ist kein guter Gott. Er ist ein Manipulator, Wissenssuchender, Kriegsherr. Er opfert sein Auge fuer Wissen. Er haengt neun Naechte am Weltenbaum. Er sammelt die Gefallenen in Walhall — nicht aus Guete, sondern weil er sie fuer Ragnaroek braucht. Das ist **politisches Kalkuel als Theologie**.
-- **Thor** ist die rohe Ordnungsmacht gegen das Chaos (Riesen). Nicht der strahlende Held, sondern der Grenzwaechter.
-- **Loki** ist kein Boesewicht — er ist Katalysator. Sein Chaos erzeugt Bewegung. Ohne Loki passiert nichts in der nordischen Mythologie.
-- **Tyr** opfert seine Hand fuer das Gemeinwohl (Fenrir-Bindung). Recht und Opfer.
-- **Freya/Freyr** — Vanir-Goetter. Fruchtbarkeit, Wohlstand, Diplomatie. Die Vanir fuehrten Krieg gegen die Asen und schlossen Frieden durch Geiselnaustausch. Das ist internationale Politik.
+- **Odin** ist kein guter Gott. Er ist ein Manipulator, Wissenssuchender, Kriegsherr. Er opfert sein Auge für Wissen. Er hängt neun Nächte am Weltenbaum. Er sammelt die Gefallenen in Walhall — nicht aus Güte, sondern weil er sie für Ragnarök braucht. Das ist **politisches Kalkül als Theologie**.
+- **Thor** ist die rohe Ordnungsmacht gegen das Chaos (Riesen). Nicht der strahlende Held, sondern der Grenzwächter.
+- **Loki** ist kein Bösewicht — er ist Katalysator. Sein Chaos erzeugt Bewegung. Ohne Loki passiert nichts in der nordischen Mythologie.
+- **Tyr** opfert seine Hand für das Gemeinwohl (Fenrir-Bindung). Recht und Opfer.
+- **Freya/Freyr** — Vanir-Götter. Fruchtbarkeit, Wohlstand, Diplomatie. Die Vanir führten Krieg gegen die Asen und schlossen Frieden durch Geiselnaustausch. Das ist internationale Politik.
 
-**Umdeutung fuer die drei Fraktionen:**
+**Umdeutung für die drei Fraktionen:**
 
-| Goetterfunktion | RELICS-Fraktion | Parallele |
+| Götterfunktion | RELICS-Fraktion | Parallele |
 |---|---|---|
-| Odin (Wissen, Krieg, Manipulation) | Der Orden | Bildungsmonopol, Inquisition, Ueberwachung — Odin'sche Wissenskontrolle |
-| Thor/Tyr (Ordnung, Gesetz, Opfer) | Die Krone | Militaer, Tradition, feudale Pflicht — aber im Verfall |
-| Freyr/Vanir (Handel, Wohlstand, Pragmatismus) | Die Gilden | Geld als Waffe, Monopole — die Vanir als Haendlergoetter |
+| Odin (Wissen, Krieg, Manipulation) | Der Orden | Bildungsmonopol, Inquisition, Überwachung — Odin'sche Wissenskontrolle |
+| Thor/Tyr (Ordnung, Gesetz, Opfer) | Die Krone | Militär, Tradition, feudale Pflicht — aber im Verfall |
+| Freyr/Vanir (Handel, Wohlstand, Pragmatismus) | Die Gilden | Geld als Waffe, Monopole — die Vanir als Händlergötter |
 
-Das ist keine 1:1-Zuordnung, sondern eine MYTHOLOGISCHE RESONANZ. Die Fraktionen spiegeln die Goetterfunktionen wider, ohne dass die Goetter literal existieren muessen. Im Briefing steht: keine klassische Magie. Also sind die Goetter in RELICS entweder...
+Das ist keine 1:1-Zuordnung, sondern eine MYTHOLOGISCHE RESONANZ. Die Fraktionen spiegeln die Götterfunktionen wider, ohne dass die Götter literal existieren müssen. Im Briefing steht: keine klassische Magie. Also sind die Götter in RELICS entweder...
 - a) ...nie real gewesen (reine Mythologie, die Machtstrukturen legitimiert)
 - b) ...etwas gewesen, das die Menschen nicht verstanden haben (die "planes of existence")
 - c) ...eine Mischung: es gab *etwas*, und die Mythologie ist die menschliche Interpretation
 
-Option c) ist die reichste fuer Worldbuilding. Disco Elysium macht das aehnlich — die Welt hat eine reale metaphysische Schicht (das Pale), aber die Menschen verstehen es durch den Filter ihrer Ideologien.
+Option c) ist die reichste für Worldbuilding. Disco Elysium macht das ähnlich — die Welt hat eine reale metaphysische Schicht (das Pale), aber die Menschen verstehen es durch den Filter ihrer Ideologien.
 
-### 4. Schoepfungsmythen als narratives Fundament
+### 4. Schöpfungsmythen als narratives Fundament
 
-Die Voeluspá ist DIE Quelle. Eine Seherin (Voelva) erzaehlt Odin die Geschichte der Welt — von der Schoepfung bis zum Untergang (Ragnaroek). Das Format ist genial:
+Die Völuspá ist DIE Quelle. Eine Seherin (Völva) erzählt Odin die Geschichte der Welt — von der Schöpfung bis zum Untergang (Ragnarök). Das Format ist genial:
 
-- **Unzuverlaessige Erzaehlerin**: Die Voelva sagt "Ich erinnere mich an Riesen, frueh geboren..." — sie war DABEI, oder behauptet es. Schoepfungsmythos als persoenlicher Bericht.
-- **Zyklische Zeit**: Nach Ragnaroek entsteht die Welt neu. Das ist kein linearer Fortschritt, sondern ewige Wiederkehr.
-- **Dualismus von Ordnung und Chaos**: Goetter schaffen Ordnung aus dem Chaos (Ginnungagap → Welt). Ragnaroek ist die Rueckkehr des Chaos. Die Frage ist: Ist die AKTUELLE Ordnung es wert, verteidigt zu werden?
+- **Unzuverlässige Erzählerin**: Die Völva sagt "Ich erinnere mich an Riesen, früh geboren..." — sie war DABEI, oder behauptet es. Schöpfungsmythos als persönlicher Bericht.
+- **Zyklische Zeit**: Nach Ragnarök entsteht die Welt neu. Das ist kein linearer Fortschritt, sondern ewige Wiederkehr.
+- **Dualismus von Ordnung und Chaos**: Götter schaffen Ordnung aus dem Chaos (Ginnungagap → Welt). Ragnarök ist die Rückkehr des Chaos. Die Frage ist: Ist die AKTUELLE Ordnung es wert, verteidigt zu werden?
 
-Fuer RELICS: Der historische Wendepunkt koennte als RELICS-Ragnaroek gelesen werden — nicht woertlich, sondern als gesellschaftlicher Zusammenbruch. Die bestehende Ordnung (Krone, Gilden, Orden) wankt. Das Schattenfieber als Vorbote.
+Für RELICS: Der historische Wendepunkt könnte als RELICS-Ragnarök gelesen werden — nicht wörtlich, sondern als gesellschaftlicher Zusammenbruch. Die bestehende Ordnung (Krone, Gilden, Orden) wankt. Das Schattenfieber als Vorbote.
 
 **Die Prophezeiung als Spielstruktur:**
-- Die Voeluspá prophezeit: "Brueder werden einander toeten, Verwandte werden Verwandtschaftsbande brechen." Das ist politischer Zerfall.
+- Die Völuspá prophezeit: "Brüder werden einander toeten, Verwandte werden Verwandtschaftsbande brechen." Das ist politischer Zerfall.
 - Fimbulwinter — drei aufeinanderfolgende Winter ohne Sommer. Klimakatastrophe als Vorbote.
-- Die Goetter WISSEN, dass Ragnaroek kommt, und koennen es nicht verhindern. Das ist tragisch, fatalistisch — und perfekt fuer Dark Fantasy.
+- Die Götter WISSEN, dass Ragnarök kommt, und können es nicht verhindern. Das ist tragisch, fatalistisch — und perfekt für Dark Fantasy.
 
 ### 5. Schattenfieber — mythologische Interpretation
 
-Das Briefing sagt: "Schattenfieber — eine Seuche, die Opfer veraendert." Das ist das einzige uebernatuerliche Element. Was koennte das mythologisch sein?
+Das Briefing sagt: "Schattenfieber — eine Seuche, die Opfer verändert." Das ist das einzige übernatürliche Element. Was könnte das mythologisch sein?
 
-Moegliche Anknuepfungspunkte in der germanischen Mythologie:
+Mögliche Anknüpfungspunkte in der germanischen Mythologie:
 
-**a) Niflheim / Hel-Verbindung**: Niflheim ist die Welt des Nebels und der Kaelte. Hel (Lokis Tochter) herrscht ueber die unruehmlichen Toten. Nicht Krieger, sondern alle, die an Krankheit oder Alter sterben. Im Niflheim-Kontext koennte das Schattenfieber eine Art Durchsickern aus dieser "unteren Ebene" sein — nicht Tod, sondern Transformation in etwas Zwischen-Tod-und-Leben.
+**a) Niflheim / Hel-Verbindung**: Niflheim ist die Welt des Nebels und der Kälte. Hel (Lokis Tochter) herrscht über die unrühmlichen Toten. Nicht Krieger, sondern alle, die an Krankheit oder Alter sterben. Im Niflheim-Kontext könnte das Schattenfieber eine Art Durchsickern aus dieser "unteren Ebene" sein — nicht Tod, sondern Transformation in etwas Zwischen-Tod-und-Leben.
 
-**b) Ginnungagap-Resonanz**: Die gaennende Leere vor der Schoepfung. Wenn die Weltordnung braechig wird (Ragnaroek naehert sich), dringt die Urleere zurueck. Das Schattenfieber als Symptom einer kosmologischen Erosion — die Welt loest sich an den Raendern auf.
+**b) Ginnungagap-Resonanz**: Die gännende Leere vor der Schöpfung. Wenn die Weltordnung brächig wird (Ragnarök nähert sich), dringt die Urleere zurück. Das Schattenfieber als Symptom einer kosmologischen Erosion — die Welt löst sich an den Rändern auf.
 
-**c) Seiðr (Schicksalsmagie)**: In der nordischen Mythologie gab es Seiðr — eine Form von Magie/Divination, die mit veraenderten Bewusstseinszustaenden verbunden war und sozial stigmatisiert wurde (besonders fuer Maenner — "ergi"-Vorwurf). Das Schattenfieber koennte eine ungewollte, koerperliche Form von Seiðr sein — der Koerper wird zum Kanal fuer etwas, das nicht dorthin gehoert. Passt zu Biotech.
+**c) Seiðr (Schicksalsmagie)**: In der nordischen Mythologie gab es Seiðr — eine Form von Magie/Divination, die mit veränderten Bewusstseinszuständen verbunden war und sozial stigmatisiert wurde (besonders für Männer — "ergi"-Vorwurf). Das Schattenfieber könnte eine ungewollte, körperliche Form von Seiðr sein — der Körper wird zum Kanal für etwas, das nicht dorthin gehört. Passt zu Biotech.
 
-**d) Fenrir/Bindungs-Motiv**: Die Goetter banden den Wolf Fenrir mit Gleipnir (einer unmoeglich duennen Fessel). Was, wenn das Schattenfieber die Rueckkehr von etwas ist, das GEBUNDEN war? Nicht ein Wolf, sondern ein Zustand — etwas, das die Vorfahren eingesperrt hatten und das jetzt durchsickert.
+**d) Fenrir/Bindungs-Motiv**: Die Götter banden den Wolf Fenrir mit Gleipnir (einer unmöglich dünnen Fessel). Was, wenn das Schattenfieber die Rückkehr von etwas ist, das GEBUNDEN war? Nicht ein Wolf, sondern ein Zustand — etwas, das die Vorfahren eingesperrt hatten und das jetzt durchsickert.
 
-Ich tendiere zu einer Kombination aus b) und d): Das Schattenfieber als kosmologische Erosion (Ginnungagap dringt zurueck) UND als Folge einer alten Bindung, die bricht. Das gibt uns sowohl kosmische Skala als auch eine konkrete historische Ursache, die man im Spiel entdecken kann.
+Ich tendiere zu einer Kombination aus b) und d): Das Schattenfieber als kosmologische Erosion (Ginnungagap dringt zurück) UND als Folge einer alten Bindung, die bricht. Das gibt uns sowohl kosmische Skala als auch eine konkrete historische Ursache, die man im Spiel entdecken kann.
 
 ### 6. Methodische Anmerkungen
 
-**Was ich NICHT sicher weiss und pruefen muss:**
-- Die genaue Rolle von Seiðr in der festlandgermanischen Tradition (vs. nur nordisch). Mein Wissen stuetzt sich hier hauptsaechlich auf Neil Price und Jens Peter Schjoedt, aber ich sollte das als "nordisch ueberliefert" markieren, nicht als "germanisch allgemein".
-- Ob die Vanir-Asen-Teilung auf festlandgermanische Voelker uebertragbar ist. Simek ist da skeptisch.
-- Die genaue Etymologie von "Ginnungagap" — "magisch geladene Leere" vs. "gaennende Kluft". Verschiedene Gelehrte interpretieren das unterschiedlich.
+**Was ich NICHT sicher weiss und prüfen muss:**
+- Die genaue Rolle von Seiðr in der festlandgermanischen Tradition (vs. nur nordisch). Mein Wissen stützt sich hier hauptsächlich auf Neil Price und Jens Peter Schjoedt, aber ich sollte das als "nordisch überliefert" markieren, nicht als "germanisch allgemein".
+- Ob die Vanir-Asen-Teilung auf festlandgermanische Völker übertragbar ist. Simek ist da skeptisch.
+- Die genaue Etymologie von "Ginnungagap" — "magisch geladene Leere" vs. "gännende Kluft". Verschiedene Gelehrte interpretieren das unterschiedlich.
 
-**Was hier NICHT Primaerquelle ist, sondern meine Interpretation:**
-Alle Umdeutungen fuer RELICS sind Designentscheidungen, keine historischen Fakten. Die Parallele Odin→Orden ist eine kreative Zuordnung, keine philologische Aussage.
+**Was hier NICHT Primärquelle ist, sondern meine Interpretation:**
+Alle Umdeutungen für RELICS sind Designentscheidungen, keine historischen Fakten. Die Parallele Odin→Orden ist eine kreative Zuordnung, keine philologische Aussage.

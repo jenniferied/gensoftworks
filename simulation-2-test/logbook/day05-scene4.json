@@ -2,14 +2,29 @@
   "scene": 4,
   "type": "PAUSE",
   "time": "afternoon",
-  "location": "kueche",
-  "participants": ["vera", "tobi"],
-  "summary": "Mittagspause. Vera und Tobi ueber Rho (Tiervolk-Design: Balancepunkt, Kopfbewegung, Passform als Fremdheitssignal) und Emres Schweigehaus (innen groesser als aussen — keine Erklaerung, Fehler-als-Weltaussage, Lumen-Schatten als Irritation). Wochenend-Plaene: Vera zurueck nach Koeln, Tobi ins Kino. Naechste Woche: Rho-Varianten fuer Nami, Schweigehaus-Konzept.",
+  "location": "küche",
+  "participants": [
+    "vera",
+    "tobi"
+  ],
+  "summary": "Mittagspause. Vera und Tobi über Rho (Tiervolk-Design: Balancepunkt, Kopfbewegung, Passform als Fremdheitssignal) und Emres Schweigehaus (innen grösser als aussen — keine Erklärung, Fehler-als-Weltaussage, Lumen-Schatten als Irritation). Wochenend-Pläne: Vera zurück nach Köln, Tobi ins Kino. Nächste Woche: Rho-Varianten für Nami, Schweigehaus-Konzept.",
   "dialogue": [
-    {"who": "vera", "says": "Rho. Tiervolk-Haendler, raptor-artig. Leicht alien heisst: Balancepunkt anders, Kopf dreht sich mehr als Schultern. Passform der Kleidung als subtilstes Signal — faellt an einem anderen Koerper einfach anders."},
-    {"who": "tobi", "says": "Fuer Rho brauchen wir eigene Clothing Physics — die Standard-Parameter passen dann nicht."},
-    {"who": "vera", "says": "Das Schweigehaus: Von aussen Orden-typisch introvertiert. Innen — nicht moeglicher Groesse. Keine Fanfare. Der Spieler rechnet nach und kommt zu keinem Ergebnis."},
-    {"who": "tobi", "says": "Lumen-Schatten, die geometrisch nicht zur Aussen-Huelle passen. Der Spieler liest es nicht als Bug, sondern als Fehler in der Welt."}
+    {
+      "who": "vera",
+      "says": "Rho. Tiervolk-Händler, raptor-artig. Leicht alien heisst: Balancepunkt anders, Kopf dreht sich mehr als Schultern. Passform der Kleidung als subtilstes Signal — fällt an einem anderen Körper einfach anders."
+    },
+    {
+      "who": "tobi",
+      "says": "Für Rho brauchen wir eigene Clothing Physics — die Standard-Parameter passen dann nicht."
+    },
+    {
+      "who": "vera",
+      "says": "Das Schweigehaus: Von aussen Orden-typisch introvertiert. Innen — nicht möglicher Grösse. Keine Fanfare. Der Spieler rechnet nach und kommt zu keinem Ergebnis."
+    },
+    {
+      "who": "tobi",
+      "says": "Lumen-Schatten, die geometrisch nicht zur Aussen-Hülle passen. Der Spieler liest es nicht als Bug, sondern als Fehler in der Welt."
+    }
   ],
   "artifacts": [],
   "cd_feedback": null

@@ -5,15 +5,15 @@
 Aufgabe: GDD-06 Technik & Produktion von Outline V0.1 zu V1 ausbauen. Produktionstag (Mittwoch).
 
 ### Eingangsmaterial
-- `tobi-memory.md` — Meine bisherige Arbeit: Machbarkeitsanalyse, Pipeline-Architektur V0.1, CD-Entscheidungen (UE5 bestaetigt, PC first, Semi-Open-World, TP Primaer, Freelancer-Budget)
+- `tobi-memory.md` — Meine bisherige Arbeit: Machbarkeitsanalyse, Pipeline-Architektur V0.1, CD-Entscheidungen (Ü5 bestätigt, PC first, Semi-Open-World, TP Primär, Freelancer-Budget)
 - `06-technik-produktion.md` — Outline V0.1 mit acht Abschnitten, Tabellen, offenen Punkten
 - `briefing.md` — Nordstern. Real-time Action, Biotech-Futurismus, kein Steampunk, Medium-Fantasy
 - `02-kernmechaniken.md` — Darius' Combat-System, Schattenfieber-Stufen (5 Stufen, 0-100 Infektionswert), GAS-Referenz
-- `01-spieluebersicht.md` — Design-Saeulen, USPs, Referenzrahmen
-- `finn-memory.md` — Produktionsperspektive, Risiken, Abhaengigkeiten
+- `01-spielübersicht.md` — Design-Säulen, USPs, Referenzrahmen
+- `finn-memory.md` — Produktionsperspektive, Risiken, Abhängigkeiten
 
 ### Auftrag
-Vollstaendigen, technisch fundierten Text schreiben. Acht Kapitel:
+Vollständigen, technisch fundierten Text schreiben. Acht Kapitel:
 1. Engine & Rendering
 2. Kamerasystem
 3. Combat-Architektur
@@ -23,4 +23,4 @@ Vollstaendigen, technisch fundierten Text schreiben. Acht Kapitel:
 7. Produktions-Pipeline
 8. Meilensteine + Budget
 
-Deutsch. Technisch praezise. Ehrlich ueber Risiken.
+Deutsch. Technisch präzise. Ehrlich über Risiken.

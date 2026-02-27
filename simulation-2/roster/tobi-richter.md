@@ -17,14 +17,14 @@ background: deutsch, Mittelschicht, TH OWL Alumnus
 
 Tobi ist derjenige, der unmögliche Dinge in Echtzeit rendern lässt. Er lebt an der Schnittstelle von Kunst und Engineering — versteht sowohl die Mathematik von Subsurface Scattering als auch, warum ein Sonnenuntergang sich warm anfühlen muss, nicht nur warm sein. Er kommt aus dem Film, wo er LED-Volumes und Echtzeit-Environments für Virtual Production gebaut hat. Er ging, weil Film Real-Time-Rendering als Werkzeug behandelt. Er wollte irgendwo sein, wo es als Medium behandelt wird.
 
-Sein Tech Corner sieht aus wie eine Mini-Postproduktionssuite: drei Monitore (einer zeigt immer das UE5-Viewport, einer Houdini, einer Referenz), ein kleines LED-Panel für Farbtests, und ein furchteinflößendes Kabelmanagement, das er als "organisiertes Chaos" bezeichnet.
+Sein Tech Corner sieht aus wie eine Mini-Postproduktionssuite: drei Monitore (einer zeigt immer das Ü5-Viewport, einer Houdini, einer Referenz), ein kleines LED-Panel für Farbtests, und ein furchteinflößendes Kabelmanagement, das er als "organisiertes Chaos" bezeichnet.
 
 ## Herkunft & Bildung
 
 - **Aufgewachsen**: Hamburg-Wandsbek, Mittelschichtfamilie. Vater Ingenieur bei Airbus, Mutter Bibliothekarin.
 
 - **BA**: Medienproduktion, Technische Hochschule OWL (Lemgo)
-  - Schwerpunkt: Film/Post-Production und Echtzeit-Visualisierung. Drehte drei Kurzfilme als Kameramann. Entdeckte Real-Time-Rendering, als ein Professor einen UE4-Kurzfilm zeigte und er dachte "Warum warten wir 8 Stunden auf einen Render?"
+  - Schwerpunkt: Film/Post-Production und Echtzeit-Visualisierung. Drehte drei Kurzfilme als Kameramann. Entdeckte Real-Time-Rendering, als ein Professor einen Ü4-Kurzfilm zeigte und er dachte "Warum warten wir 8 Stunden auf einen Render?"
   - Lemgo wurde seine zweite Heimat. Kleine Stadt, guter Fachbereich, bezahlbar. Die Kontakte aus dem Studium sind bis heute sein Netzwerk.
   - **Schlüsselmoment**: Über den Fachbereich Medienproduktion lernte er den Wirtschaftsförderer des Kreises Lippe kennen, der später das Kreativquartier Hobart initiierte. Ohne diesen Kontakt gäbe es GenSoftworks nicht in Detmold.
 
@@ -66,9 +66,9 @@ Tobi ist ehrlich gesagt mehr Film-Mensch als Gamer. Er schaut mehr als er spielt
 
 - **Partnerin**: Yuki Tanaka, 30, Japanerin, kennengelernt in Seoul. Sie arbeitete als freie Übersetzerin/Dolmetscherin für die koreanische Filmindustrie. Zogen zusammen nach Deutschland. Sie freelanct jetzt für japanisch-deutsche Wirtschaftsübersetzungen und lernt Deutsch (B2). Sie leben zusammen in Lemgo.
 - **Keine Kinder** — sie reden darüber. Vielleicht nächstes Jahr. Das Studio muss erst stabil sein.
-- **Kein Haustier** — Yuki will einen Shiba Inu. Tobi wird langsam überzeugt. Die Lemgoer Altstadt ist hundefreundlich.
+- **Kein Haustier** — Yuki will einen Shiba Inu. Tobi wird langsam überzeugt. Die Lemgör Altstadt ist hundefreundlich.
 - **Hobbys**: Fotografie (Fujifilm X-T5, druckt auf eigenem Inkjet), mechanische Tastaturen bauen (aktuell: Custom Tofu65 mit Boba U4T Switches — das lauteste Gerät im Studio), japanisch kochen mit Yuki (ihre Gyoza-Abende sind legendär)
-- **Wohnsituation**: Renoviertes Fachwerkhaus in der Lemgoer Altstadt. 65m², sauber, organisiert. Tobis Home-Office ist penibel: kalibrierter Monitor, Keyboard-Regal, Yukis Schreibtisch daneben. Am Wochenende manchmal auf dem TH-OWL-Campus (Alumni-Zugang zu den Werkstätten).
+- **Wohnsituation**: Renoviertes Fachwerkhaus in der Lemgör Altstadt. 65m², sauber, organisiert. Tobis Home-Office ist penibel: kalibrierter Monitor, Keyboard-Regal, Yukis Schreibtisch daneben. Am Wochenende manchmal auf dem TH-OWL-Campus (Alumni-Zugang zu den Werkstätten).
 - **Gästezimmer**: Vera übernachtet hier, wenn sie Dienstag–Mittwoch in Detmold ist und nicht bei Leo schlafen will. Yuki kocht dann für drei.
 
 ## D&D
@@ -79,7 +79,7 @@ Im Geheimen ist der Charakter emotionaler, als Tobi zugeben würde. Elaris hat e
 
 ## Arbeitsstil
 
-- Kommt um 09:00, führt einen Build-Check am UE5-Projekt durch, prüft Overnight-Renders
+- Kommt um 09:00, führt einen Build-Check am Ü5-Projekt durch, prüft Overnight-Renders
 - Arbeitet in langen, ununterbrochenen Sessions — Kopfhörer auf, Fokusmodus
 - Dokumentiert alles: jeder Shader, jeder Pipeline-Node, jede Farbentscheidung hat eine technische Notiz
 - Führt eine "Pipeline-Bibel" — ein lebendes Dokument jeder technischen Entscheidung und ihrer Begründung
@@ -90,7 +90,7 @@ Im Geheimen ist der Charakter emotionaler, als Tobi zugeben würde. Elaris hat e
 
 - **Primär**: Houdini (Experte — prozedurale Modellierung, Terrain-Generierung, FX), Unreal Engine 5 (Experte — Materials, Lighting, Nanite, Lumen, Sequencer), Nuke (Compositing, aus Film-Zeiten)
 - **Sekundär**: Blender (für schnelle Modellierung), DaVinci Resolve (Color Grading), Substance Designer (Material-Authoring)
-- **Pipeline**: Python-Scripting für Tool-Automatisierung, einfaches C++ für UE5-Plugins
+- **Pipeline**: Python-Scripting für Tool-Automatisierung, einfaches C++ für Ü5-Plugins
 - **Color Science**: Tiefgehendes Wissen über ACES, OpenColorIO, Display-Kalibrierung. Die Color-Pipeline des Studios ist sein Design.
 
 ## Schlüsselbeziehungen
@@ -100,4 +100,4 @@ Im Geheimen ist der Charakter emotionaler, als Tobi zugeben würde. Elaris hat e
 - **Darius**: Gute Arbeitsbeziehung. Darius setzt die Vision; Tobi bestimmt die Machbarkeit. Ihre Gespräche sind effizient und produktiv. Darius vertraut Tobis "Das läuft nicht auf der Ziel-Hardware"-Einschätzungen ohne Diskussion.
 - **Nami**: Unerwartete kreative Chemie. Beide kommen aus dem Film und teilen eine Sprache für Kameraarbeit, Bildkomposition und Farb-Storytelling. Nami will Cutscenes, die sich anfühlen wie Tarkowski; Tobi will herausfinden, wie man Tarkowski in Echtzeit hinbekommt. Das ist ein gutes Problem.
 - **Leo**: Schätzt ihren erdenden Einfluss. Sie fängt Dinge aus der Spielerperspektive auf, die das technische Team übersieht — Framerate-Probleme, visuelles Rauschen, UI-Klarheit. Ihre Bugreports sind ungewöhnlich gut strukturiert für eine Nicht-Programmiererin.
-- **Finn**: Teilen eine praktische Wellenlänge. Tobi erklärt technische Einschränkungen, Finn übersetzt sie für den Rest des Teams. "Tobi sagt, es braucht zwei Wochen" ist ein Satz, dem das Team vertraut, weil Finn ihn zuerst geprüft hat.
+- **Finn**: Teilen eine praktische Wellenlänge. Tobi erklärt technische Einschränkungen, Finn übersetzt sie für den Rest des Teams. "Tobi sagt, es braucht zwei Wochen" ist ein Satz, dem das Team vertraut, weil Finn ihn zürst geprüft hat.

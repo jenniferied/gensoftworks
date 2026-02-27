@@ -14,7 +14,7 @@ Zwei Sofort-Fixes aus dem Standup:
 Lies `simulation-2-test/gallery/gdd/02-kernmechaniken.md` und ersetze alle Vorkommen von "Ymir" durch "Emer". Der Arbeitsbegriff "Ymir" (nordische Mythologie) ist nicht mehr konsistent mit der CD-Entscheidung zum eigenen Namenssystem. Emre hat "Emer" als RELICS-eigenen Ersatzbegriff im WBB-01 etabliert.
 
 **Fix 2 — QA-Abschlussbericht Woche 1:**
-Schreibe einen kurzen QA-Abschlussbericht fuer das Wochen-Review. Spielerperspektive, nicht nur Bug-Liste. Was hat funktioniert? Was ist noch offen? Was muss CD-Feedback bekommen?
+Schreibe einen kurzen QA-Abschlussbericht für das Wochen-Review. Spielerperspektive, nicht nur Bug-Liste. Was hat funktioniert? Was ist noch offen? Was muss CD-Feedback bekommen?
 
 ## Kontext
 

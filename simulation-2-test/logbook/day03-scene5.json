@@ -2,12 +2,20 @@
   "scene": 5,
   "type": "WORK",
   "time": "afternoon",
-  "location": "alle-arbeitsplaetze",
-  "participants": ["emre", "darius", "nami", "vera", "tobi", "leo", "finn"],
+  "location": "alle-arbeitsplätze",
+  "participants": [
+    "emre",
+    "darius",
+    "nami",
+    "vera",
+    "tobi",
+    "leo",
+    "finn"
+  ],
   "summary": "Nachmittags-Produktion. Nami schreibt GDD-03 Erzählkonzept V1 (Drei-Akt-Struktur mit 10 Beats, 9 Quest-Deliverables, Dialogsystem mit 4 Fraktionsregistern, Schattenfieber-Narrativ). Darius finalisiert GDD-02 Kernmechaniken V1. Leo liest alle Dokumente quer und fügt QA-Kommentare ein. Emre beginnt mit WBB-01 Kapitel 5-8 Ausbau. Vera integriert Emres Terminologie in GDD-05. Tobi ergänzt GDD-06 mit Schattenfieber-Tech-Details. Finn koordiniert Peer-Reviews.",
   "dialogue": [],
   "artifacts": [
-    "gallery/gdd/03-erzaehlkonzept.md (V1)",
+    "gallery/gdd/03-erzählkonzept.md (V1)",
     "gallery/gdd/02-kernmechaniken.md (V1)"
   ],
   "cd_feedback": null

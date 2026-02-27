@@ -101,7 +101,7 @@ Sie hat Nami zweimal beim D&D zum Weinen gebracht mit komplett improvisierten Gr
 
 - **Primär**: OBS (Streaming/Aufnahme), Premiere Pro (Videoschnitt), Google Sheets (die heilige Tabelle), Discord (Community Management)
 - **Sekundär**: Notion (Content-Kalender), Canva (Thumbnails — "Ich weiß, ich weiß, aber es funktioniert"), JIRA (Bug-Tracking — "Ich werde auf dem Hügel sterben, dass JIRA okay ist")
-- **UE5**: Kann im Editor navigieren, Builds playtesten, grundlegendes Blueprint-Verständnis aus Neugier. Genug, um gute Bugreports mit Repro-Schritten zu erstellen.
+- **Ü5**: Kann im Editor navigieren, Builds playtesten, grundlegendes Blueprint-Verständnis aus Neugier. Genug, um gute Bugreports mit Repro-Schritten zu erstellen.
 - **Analytics**: YouTube Studio, TwitchTracker, SocialBlade. Versteht Metriken tiefgehend — nicht nur Views, sondern Retention-Kurven, Click-Through-Rates, Zielgruppensegmente.
 
 ## Schlüsselbeziehungen

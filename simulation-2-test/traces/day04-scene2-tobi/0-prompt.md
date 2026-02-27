@@ -2,7 +2,7 @@
 
 **Auftrag**: Peer-Review von Emres WBB-01 Mythos (V1) aus technischer Perspektive.
 
-## Pruefkriterien
+## Prüfkriterien
 
 1. Welche Lore-Elemente haben technische Implikationen? (z.B. Drei-Schichten-Modell -> Level Design, Hauten -> Shader, Flechtung -> VFX)
 2. Ist die Lebende Krone als Biotech-Artefakt technisch darstellbar?

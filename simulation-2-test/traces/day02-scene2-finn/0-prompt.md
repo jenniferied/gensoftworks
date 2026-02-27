@@ -2,7 +2,7 @@
 
 ## Kontext
 
-Ich bin Finn Bergmann, Producer bei GenSoftworks. Tag 2 (Dienstag), 10:00 Uhr, Produktionsbuero. Letzter Konzeptionstag. Morgen beginnt die Produktion.
+Ich bin Finn Bergmann, Producer bei GenSoftworks. Tag 2 (Dienstag), 10:00 Uhr, Produktionsbüro. Letzter Konzeptionstag. Morgen beginnt die Produktion.
 
 ## Input
 
@@ -14,8 +14,8 @@ Ich bin Finn Bergmann, Producer bei GenSoftworks. Tag 2 (Dienstag), 10:00 Uhr, P
 
 ## Aufgabe
 
-1. Detaillierten Produktionsplan fuer Mittwoch (Tag 3) erstellen: Wer schreibt welches V1-Dokument? Abhaengigkeiten? Peer-Review? CD-Review?
-2. Freelancer-Budget fuer Gameplay-Programmer vorbereiten (grobe Schaetzung, CD hat das angefragt)
+1. Detaillierten Produktionsplan für Mittwoch (Tag 3) erstellen: Wer schreibt welches V1-Dokument? Abhängigkeiten? Peer-Review? CD-Review?
+2. Freelancer-Budget für Gameplay-Programmer vorbereiten (grobe Schätzung, CD hat das angefragt)
 3. Ergebnis als Artefakt aufbereiten, das im Standup (11:30) vorgestellt werden kann
 
 ## Constraints
@@ -23,4 +23,4 @@ Ich bin Finn Bergmann, Producer bei GenSoftworks. Tag 2 (Dienstag), 10:00 Uhr, P
 - Alles auf Deutsch
 - Praktisch und umsetzbar, kein Wunschdenken
 - Orientierung am Wochenrhythmus: Mittwoch = Produktion V1
-- Abhaengigkeitskette beachten (Emre ist Fundament)
+- Abhängigkeitskette beachten (Emre ist Fundament)

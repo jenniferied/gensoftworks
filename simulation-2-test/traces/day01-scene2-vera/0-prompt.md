@@ -6,24 +6,24 @@
 
 ## Aufgabe
 
-Visuelle Referenzen sammeln fuer die Designsprache von RELICS. Mittelalterlich-europaeisch trifft Biotech-Futurismus. Strukturierte Analyse erstellen, kategorisiert nach: Architektur, Mode/Ruestung, Biotech-Elemente, Farbpalette, Licht-Stimmung.
+Visuelle Referenzen sammeln für die Designsprache von RELICS. Mittelalterlich-europäisch trifft Biotech-Futurismus. Strukturierte Analyse erstellen, kategorisiert nach: Architektur, Mode/Rüstung, Biotech-Elemente, Farbpalette, Licht-Stimmung.
 
 ## Constraints aus dem Briefing
 
-- KEIN Steampunk (keine Dampfmaschinen, keine Zahnrad-Aesthetik)
+- KEIN Steampunk (keine Dampfmaschinen, keine Zahnrad-Ästhetik)
 - KEIN High Fantasy
 - KEIN Science-Fantasy
 - KEINE Anachronismen
-- Fruehes Spaetmittelalter, Mitteleuropa
+- Frühes Spätmittelalter, Mitteleuropa
 - Biotech-Futurismus, NICHT mechanisch
 - Mehr futuristisch, weniger heruntergekommen
-- Gotische Grandeur trifft feudale Brutalitaet
+- Gotische Grandeur trifft feudale Brutalität
 - High Fashion Mittelalter + Biotech-Elemente
 - Tiervolk: weniger tribal, leicht alien vs. menschlich clean
-- Drei Fraktionen: Krone (Feudalmonarchie), Gilden (Megacorps), Orden (Ueberwachung)
-- Schattenfieber als einziges uebernatuerliches Element
+- Drei Fraktionen: Krone (Feudalmonarchie), Gilden (Megacorps), Orden (Überwachung)
+- Schattenfieber als einziges übernatürliches Element
 
-## Verfuegbare Referenzen in der Library
+## Verfügbare Referenzen in der Library
 
 - `library/artbooks/dark-souls-design-works.pdf` — Concept Art, Early Design
 - `library/artbooks/witcher-3-artbook.pdf` — Novigrad, Skellige, Inhabitants, Wild Hunt
@@ -34,4 +34,4 @@ Visuelle Referenzen sammeln fuer die Designsprache von RELICS. Mittelalterlich-e
 
 ## Meine Referenz-Basis (Kopf)
 
-Cyberpunk 2077 (Night City, Neomilitarism-Stil), Control (brutalistische Architektur), Elden Ring (Leyndell), Hollow Knight (vergangene Zivilisation), Gaudi, Brutalismus. MA-Thesis ueber architektonische Sprache in virtuellen Welten.
+Cyberpunk 2077 (Night City, Neomilitarism-Stil), Control (brutalistische Architektur), Elden Ring (Leyndell), Hollow Knight (vergangene Zivilisation), Gaudi, Brutalismus. MA-Thesis über architektonische Sprache in virtuellen Welten.

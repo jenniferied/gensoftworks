@@ -17,9 +17,9 @@
 **Befund V1:** Fehlte vollständig. GDD-05 sprang direkt in Rauschen.
 
 **Änderung V2:**
-- Kap. 7.2 Stufe-0-Block (neu): Koerper-Beschreibung, Umgebungs-Beschreibung, Gameplay-Relevanz
-- Stufe-0-Aequivalent zu Schattensinnen: Alchemie + Trainerfaehigkeiten = anderer Spielstil, kein Nachteil
-- Nervensystem-UI-Beschreibung: alle vier Aeste klar, keine Schatten-Ueberlagerungen
+- Kap. 7.2 Stufe-0-Block (neu): Körper-Beschreibung, Umgebungs-Beschreibung, Gameplay-Relevanz
+- Stufe-0-Äquivalent zu Schattensinnen: Alchemie + Trainerfähigkeiten = anderer Spielstil, kein Nachteil
+- Nervensystem-UI-Beschreibung: alle vier Äste klar, keine Schatten-Überlagerungen
 - Ergebnis: **Vollständig. Visuelle Nulllinie definiert.**
 
 ### 3. Hex-Codes
@@ -27,7 +27,7 @@
 **Befund V1:** Alle Hex-Codes korrekt vorhanden. Keine Abweichungen zu GDD-06 feststellbar.
 
 **Änderung V2:**
-- Kap. 4.4: ACES-Validierungshinweis ergänzt (sRGB-Kalibrierung für UE5 ACES-Tonemapping, Offset-Begründung für warme Töne, HDR-Hinweis für Giftgrün)
+- Kap. 4.4: ACES-Validierungshinweis ergänzt (sRGB-Kalibrierung für Ü5 ACES-Tonemapping, Offset-Begründung für warme Töne, HDR-Hinweis für Giftgrün)
 - Alle Codes beibehalten, keine Änderungen:
   - Krone: `#3D3D3D` / `#8B1A2B` / `#C5A030`
   - Gilden: `#7A6E5D` / `#C49A20` / `#2EC4B6`
@@ -42,9 +42,9 @@
 
 **Änderung V2:**
 - Kap. 8.5 (neu): Gameplay-Orte mit drei Ort-Typen × vier Varianten
-  - **Alchemie-Station**: Krone (privates Labor, Altgold-Geraet), Gilden (oeffentliche Werkstatt, Amber-Licht), Orden (Krankenhaus-Vorbereitungsraum, Bernstein-Glow)
-  - **Trainer**: Krone (Fechtsaal, Sigvalt-Statuen), Gilden (Kaempfarena, Chitin-Dummies), Orden (meditativer Uebungsraum, Kalkweiss)
-  - **Haendler**: Krone (privates Kontor), Gilden (offener Stand), Orden (kein Handel, Loyalitaetsverteilung), Tiervolk (mobiler eklektischer Stand)
+  - **Alchemie-Station**: Krone (privates Labor, Altgold-Gerät), Gilden (öffentliche Werkstatt, Amber-Licht), Orden (Krankenhaus-Vorbereitungsraum, Bernstein-Glow)
+  - **Trainer**: Krone (Fechtsaal, Sigvalt-Statuen), Gilden (Kämpfarena, Chitin-Dummies), Orden (meditativer Übungsraum, Kalkweiss)
+  - **Händler**: Krone (privates Kontor), Gilden (offener Stand), Orden (kein Handel, Loyalitätsverteilung), Tiervolk (mobiler eklektischer Stand)
 - Jede Variante: visueller Charakter, Lage, Signalelemente (Tabelle)
 - Ergebnis: **Vollständig. Alle drei Gameplay-Orte, alle Fraktionsvarianten, visuell definiert.**
 
@@ -54,9 +54,9 @@
 
 **Änderung V2:**
 - Kap. 5.4 ergänzt: Torso-Primat-Regel
-  - Torso-Slot definiert Fraktionszugehoerigkeit
+  - Torso-Slot definiert Fraktionszugehörigkeit
   - Bis zu 2 abweichende Slots: Fraktion A mit Akzenten (noch lesbar)
-  - 3+ abweichende Slots: visuell neutral, Haendler-Lesart
+  - 3+ abweichende Slots: visuell neutral, Händler-Lesart
   - Neutraler Torso: kein Fraktionssignal
 - Schattenfieber-Override explizit: ab Risse (Wert 41+) überschreibt Infektion Outfitsignal
 - NPC-Reaktion auf gemischte Sets dokumentiert (kein Bug, Spieloption)

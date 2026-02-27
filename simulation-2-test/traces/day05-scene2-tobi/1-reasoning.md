@@ -16,7 +16,7 @@ GDD-05 (Vera, V1) ist die Referenz. Ich gehe die relevanten Hex-Codes durch:
 - Tiervolk: `#CC7722`, `#C04000`, `#C2B280`
 - Wildnis/Neutral: `#5C6B3C`, `#8B7355`, `#9E9E9E`
 
-In GDD-06 V1 steht in Kap. 1.2 Farb-Pipeline nur das Prinzip (ACES, Deakins-Referenz). Die konkreten Hex-Codes fehlen dort vollständig. Ebenso in Kap. 4.1 bei den Material-Instanzen: nur allgemeine Farbbeschreibungen ("Amber, Dunkelgold, Efeugruen") — keine Hex-Werte.
+In GDD-06 V1 steht in Kap. 1.2 Farb-Pipeline nur das Prinzip (ACES, Deakins-Referenz). Die konkreten Hex-Codes fehlen dort vollständig. Ebenso in Kap. 4.1 bei den Material-Instanzen: nur allgemeine Farbbeschreibungen ("Amber, Dunkelgold, Efeugrün") — keine Hex-Werte.
 
 **Fazit:** Hex-Codes müssen in GDD-06 V2 explizit eingetragen werden, 1:1 aus GDD-05. Das ist eine Kompatibilitätspflicht — die Shader-Parameter müssen die Art-Direction-Vorgaben ohne Interpretation treffen.
 
@@ -27,13 +27,13 @@ In V1 steht im Nanite-Abschnitt (Kap. 1.2): Skeletal Meshes unterstützen kein N
 Was fehlt: ein dedizierter Abschnitt zum **Hauten-Shader** als eigenem technischen System. Die Welt ist aus Emer-Fleisch geformt — jede Oberfläche, die organisch ist, braucht Subsurface Scattering. Das ist nicht trivial.
 
 **SSS (Subsurface Scattering):**
-- UE5 hat zwei Methoden: `Subsurface` Shading Model (legacy, baked) und `Subsurface Profile` (physikalisch, screen-space). Ich will Subsurface Profile — es liefert Burley-SSS, das in UE5.3+ deutlich verbessert wurde.
+- Ü5 hat zwei Methoden: `Subsurface` Shading Model (legacy, baked) und `Subsurface Profile` (physikalisch, screen-space). Ich will Subsurface Profile — es liefert Burley-SSS, das in Ü5.3+ deutlich verbessert wurde.
 - Performance-Implikation: Subsurface Profile ist Screen-Space, kostet ~0.3-0.5 ms zusätzlich pro Screen-Fill. Muss im Budget stehen.
 - Nanite-Ausnahme: Hier ist die Überschneidung. Organische Wand-Segmente (Biotech-Elemente, pulsierende Adern) wären theoretisch Nanite-fähig als statische Meshes — ABER: wenn sie SSS brauchen UND animiert sind (WPO), müssen sie als traditionelle Meshes bleiben.
 
 **WPO (World Position Offset):**
 - Pulsierende Biotech-Elemente, atmende Wände, Schattenfieber-Vegetation — alles braucht WPO.
-- Nanite + WPO: Seit UE 5.1 unterstützt Nanite WPO *grundsätzlich*, aber mit Einschränkungen: Displacement muss aktiviert sein, Performance-Kosten steigen. Für kleine Puls-Animationen (<5% Displacement) ist Nanite+WPO vertretbar. Für starke Schattenfieber-Deformationen (Stufe 3-4) empfehle ich traditionelle Meshes.
+- Nanite + WPO: Seit Ü 5.1 unterstützt Nanite WPO *grundsätzlich*, aber mit Einschränkungen: Displacement muss aktiviert sein, Performance-Kosten steigen. Für kleine Puls-Animationen (<5% Displacement) ist Nanite+WPO vertretbar. Für starke Schattenfieber-Deformationen (Stufe 3-4) empfehle ich traditionelle Meshes.
 - **Klarregelung für V2:** Nanite-Ausnahmen explizit katalogisieren: was bleibt traditionell, was ist Nanite+WPO, was ist reines Nanite.
 
 **Fazit:** Neuer Abschnitt in Kap. 1.2 oder Kap. 5 nötig: "Organische Shader-Architektur" — Hauten, SSS, WPO, Nanite-Grenze klar ziehen.
@@ -48,7 +48,7 @@ Der Kontext aus der Lore (WBB-01, Emre): Es gibt drei Daseinsebenen — Mittelgr
 - **Mittelgrund:** Standard-Rendering-Pipeline. Das ist die Welt wie sie ist. Kein extra PP-Overhead.
 - **Hohlicht:** Eine "untere" Rendering-Ebene. Visuelle Konvention laut Lore: dunkler, komprimierter, Farben in Richtung Violett-Schwarz. Technisch: eigenes PP-Volume mit Hohlicht-spezifischen Einstellungen. Nicht permanent sichtbar — nur wenn Schattenfieber-Schwelle überschritten (Infektionswert 76+) oder in spezifischen Level-Zonen.
 - **Stillfeld:** Die "obere" Ebene. Laut Lore stärker und gefährlicher. Technisch: noch ein PP-Volume-Profil, heller, entsättigter, geometrische Verzerrung stärker.
-- **3-5 Segmente:** Das meint die Anzahl aktiver PP-Volume-Profile pro Szene. Mittelgrund-Standard + 2 Ebenen-Profile + 1 Schattenfieber-Profil (spielerseitig) + ggf. 1 Zonen-Profil = max. 5. Das ist in UE5 mit Priority-Blending realisierbar.
+- **3-5 Segmente:** Das meint die Anzahl aktiver PP-Volume-Profile pro Szene. Mittelgrund-Standard + 2 Ebenen-Profile + 1 Schattenfieber-Profil (spielerseitig) + ggf. 1 Zonen-Profil = max. 5. Das ist in Ü5 mit Priority-Blending realisierbar.
 
 **Fazit:** Kap. 5 (Schattenfieber-Tech) muss um die Drei-Schichten-Architektur erweitert werden. Klare Trennung: Was ist spielerseitig (MPC-gesteuert), was ist zonen-/lore-basiert (Level-Volumes).
 
@@ -101,7 +101,7 @@ Aber: Der Minimum-Tier zeigt GTX 1070. Die aktuell gängigere Grenze liegt bei G
 3. **Drei-Schichten-Rendering** (Erweiterung Kap. 5): Mittelgrund/Hohlicht/Stillfeld als PP-Volume-Schichten definiert
 4. **Stufen-Korrektur** Kap. 5.3+5.4: Stufengrenzen auf CD-Lock angepasst, Interpolationsformel Halluzinationen auf Start 76 korrigiert
 5. **Freelancer-Anforderungsprofil** (Erweiterung Kap. 8.2): GAS als Pflicht-Kriterium explizit, konkrete Ausschreibungs-Kriterien
-6. **Version und Aenderungslog** aktualisiert
+6. **Version und Änderungslog** aktualisiert
 
 ## Offene Fragen die ich NICHT erfinde
 

@@ -1,1 +1,1 @@
-Ich nehm mir Namis GDD-03 vor. Das Erzaehlkonzept arbeitet mit meiner Terminologie aus dem Mythos, da muss ich pruefen ob alles sauber sitzt. Topos fang ich danach an, das braucht sowieso die Review-Ergebnisse als Grundlage. Und fuer D&D reicht mir die Mittagspause, das laeuft.
+Ich nehm mir Namis GDD-03 vor. Das Erzählkonzept arbeitet mit meiner Terminologie aus dem Mythos, da muss ich prüfen ob alles sauber sitzt. Topos fang ich danach an, das braucht sowieso die Review-Ergebnisse als Grundlage. Und für D&D reicht mir die Mittagspause, das läuft.

@@ -1,10 +1,10 @@
 # Prompt — Day 01, Scene 6: REVIEW
 
 ## Kontext
-Finn Bergmann moderiert das Tagesabschluss-Review am Ende von Tag 1 (Montag). Alle 7 Teammitglieder sind anwesend. Ort: Kueche. Uhrzeit: 16:00.
+Finn Bergmann moderiert das Tagesabschluss-Review am Ende von Tag 1 (Montag). Alle 7 Teammitglieder sind anwesend. Ort: Küche. Uhrzeit: 16:00.
 
 ## Aufgabe
-- Jedes Teammitglied praesentiert seine Tagesergebnisse (ca. 3 Minuten pro Person)
+- Jedes Teammitglied präsentiert seine Tagesergebnisse (ca. 3 Minuten pro Person)
 - Offene Fragen werden gesammelt
 - CD-Feedback wird am Ende eingeflochten
 - Ausblick auf morgen (Dienstag = letzter Recherche/Konzeptionstag)

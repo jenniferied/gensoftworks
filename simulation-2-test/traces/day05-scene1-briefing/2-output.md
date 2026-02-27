@@ -2,7 +2,7 @@
 
 ## Briefing-Moderation
 
-Finn lehnt an der Kuechen-Theke, Kaffee in der Hand. Alle sieben sind da.
+Finn lehnt an der Küchen-Theke, Kaffee in der Hand. Alle sieben sind da.
 
 ---
 
@@ -10,9 +10,9 @@ Finn lehnt an der Kuechen-Theke, Kaffee in der Hand. Alle sieben sind da.
 
 D&D gestern war eine gute Session. Jetzt wieder Kopf an.
 
-Drei Sachen fuer heute: Erstens, V2 finalisieren. Ihr wisst was das Peer-Feedback war — arbeitet es ein, sauber. Das ist heute die Hauptaufgabe. Zweitens, Leo: Du machst den zweiten Konsistenz-Check quer durch alle V2-Docs. Die Stufengrenzen sind jetzt verbindlich, alles muss damit fluchten. Drittens, wer an GDD-04 oder WBB-02 sitzt — Outlines weiter ausbauen, so weit ihr kommt.
+Drei Sachen für heute: Erstens, V2 finalisieren. Ihr wisst was das Peer-Feedback war — arbeitet es ein, sauber. Das ist heute die Hauptaufgabe. Zweitens, Leo: Du machst den zweiten Konsistenz-Check quer durch alle V2-Docs. Die Stufengrenzen sind jetzt verbindlich, alles muss damit fluchten. Drittens, wer an GDD-04 oder WBB-02 sitzt — Outlines weiter ausbauen, so weit ihr kommt.
 
-Abends Wochen-Review, Szene 6. Wir schauen gemeinsam auf die Woche — was steht, was nicht, was naechste Woche kommt.
+Abends Wochen-Review, Szene 6. Wir schauen gemeinsam auf die Woche — was steht, was nicht, was nächste Woche kommt.
 
 Hat jemand gerade einen Blocker?"
 

@@ -3,9 +3,9 @@
 **Auftrag:** Tag 5, Freitag. Koordination + Wochen-Review-Vorbereitung.
 
 Konkret:
-1. Wochen-Review-Agenda fuer Szene 6 (16:00) aufstellen
+1. Wochen-Review-Agenda für Szene 6 (16:00) aufstellen
 2. Dokumentenstatus: V2 / V1 / fehlt
-3. Blocker-Liste fuer naechste Woche
+3. Blocker-Liste für nächste Woche
 4. Freelancer-Update
 
 **Kontext aus Memory:**

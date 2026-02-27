@@ -62,7 +62,7 @@ Die Frage für die CD: Ist das konzeptionell freigegeben? Wenn ja, baue ich WBB-
 
 Figur 1 ist der Fraktionsvertreter der Krone — ich nenne ihn vorläufig den Seneschall. Kein Name, noch. Er ist das Gesicht einer Institution im Verfall. Seine Funktion ist politische Exposition, aber ich habe ihn mit einer privaten Scham geschrieben, die nichts mit dem Plot zu tun hat. Das ist die Schicht, die ihn lesbar macht.
 
-Figur 2 ist eine Händlerin des Tiervolks. Haendlerin und Diebin — beides, nicht eins von beiden. Ich habe das Briefing wörtlich genommen: Händler und Diebe, nicht Handwerker. Sie ist der erste Kontakt, den der Spielercharakter mit dem Tiervolk hat. Ihr Dialog soll nie aus einer Position der Schwäche kommen.
+Figur 2 ist eine Händlerin des Tiervolks. Händlerin und Diebin — beides, nicht eins von beiden. Ich habe das Briefing wörtlich genommen: Händler und Diebe, nicht Handwerker. Sie ist der erste Kontakt, den der Spielercharakter mit dem Tiervolk hat. Ihr Dialog soll nie aus einer Position der Schwäche kommen.
 
 Figur 4 und 5 sind Fraktionsvertreter der Gilden und des Ordens. Ich gehe auf sie heute nicht tief ein — V2 wird das ausarbeiten.
 

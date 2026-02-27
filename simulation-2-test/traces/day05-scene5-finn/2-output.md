@@ -4,7 +4,7 @@
 
 1. Status-Runde (7 Personen, je 2-3 Min)
 2. CD-Entscheidungen:
-   - Risse-Stufenzahl (geloest: Nami akzeptiert 75)
+   - Risse-Stufenzahl (gelöst: Nami akzeptiert 75)
    - GDD-04 Figur 3: Kompanion oder NPC?
    - WBB-02 Topos-Metapher: konzeptionelles Okay?
 3. Freelancer-Update: Blue-Byte keine Antwort, Eskalation Montag
@@ -14,5 +14,5 @@
 
 - 6 GDD-Kapitel (5× V2, 1× V1)
 - 2 WBB-Kapitel (1× V2, 1× V1 Outline)
-- Konsistenz-Issues identifiziert und geloest
+- Konsistenz-Issues identifiziert und gelöst
 - Team koharent, keine Blocker

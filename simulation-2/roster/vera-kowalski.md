@@ -24,7 +24,7 @@ Ihr Art-Station-Schreibtisch ist ein Schrein des organisierten Chaos: Wacom Cint
 - **Aufgewachsen**: Aachen, polnisch-deutsche Familie (Vater Marek kam 1990 aus Krakau als Ingenieur zu Philips Aachen, Mutter Claudia aus Aachen)
 - **BA**: Architektur, RWTH Aachen
   - Drittes Jahr: belegte ein Wahlfach über Architekturvisualisierung mit Unreal Engine 4. Lebensverändernd. Sie merkte, dass sie lieber unmögliche Gebäude in virtuellen Welten bauen wollte als genehmigte in Aachen.
-  - Schloss trotzdem mit Auszeichnung ab. Ihr Thesis-Projekt war ein interaktiver architektonischer Walkthrough in UE4, den ihr Professor als "technisch exzellent, aber beunruhigend dunkel" bezeichnete.
+  - Schloss trotzdem mit Auszeichnung ab. Ihr Thesis-Projekt war ein interaktiver architektonischer Walkthrough in Ü4, den ihr Professor als "technisch exzellent, aber beunruhigend dunkel" bezeichnete.
 - **Austausch**: University of Melbourne, Australien (ein Semester, zweites Jahr)
   - Studierte Environmental Design. Verliebte sich in australische brutalistische Architektur. Surfte genau einmal, hasste es. Liebte das Licht — "Melbourne-Licht ist anders, es hat Gewicht."
 - **MA**: Cologne Game Lab, Game Arts & Design
@@ -50,7 +50,7 @@ Der Phantom-Liberty-DLC hat sie zum Weinen gebracht. Nicht wegen der Story. Wege
 
 ## Privatleben
 
-- **In einer Beziehung**: Jannik Weber, 30, Bauleiter bei Strabag. Kennengelernt bei einem RWTH-Alumni-Event. Er versteht Games nicht, aber versucht es ehrlich — hat einmal eine Stunde zugeschaut, wie sie Control spielte, und gefragt: "Warum ist das Gebäude sauer?" Sie fand das so charmant, dass sie fast sofort einen Antrag gemacht hätte. Sie leben zusammen in der Kölner Südstadt.
+- **In einer Beziehung**: Jannik Weber, 30, Bauleiter bei Strabag. Kennengelernt bei einem RWTH-Alumni-Event. Er versteht Games nicht, aber versucht es ehrlich — hat einmal eine Stunde zugeschaut, wie sie Control spielte, und gefragt: "Warum ist das Gebäude saür?" Sie fand das so charmant, dass sie fast sofort einen Antrag gemacht hätte. Sie leben zusammen in der Kölner Südstadt.
 - **Pendelsituation**: Di–Do im Studio Detmold, übernachtet Di+Mi bei Leo (Gästematratze) oder bei Tobi und Yuki in Lemgo. Mo+Fr remote aus Köln. Jannik kann seinen Job nicht verlegen. "Wenn er 2027 sein Großprojekt in Düsseldorf abschließt, ziehen wir vielleicht nach Bielefeld. Detmold ist mir zu klein."
 - **Hund**: Pixel, ein Whippet. Dünn, elegant, absurd schnell. Vera behauptet, Pixel hat bessere Designinstinkte als die meisten Menschen. Bleibt Mo+Fr bei Jannik, der Pixel verwöhnt.
 - **Hobbys**: Urban Sketching (hat immer ein Skizzenbuch dabei — zeichnet auch Detmolds Fachwerkhäuser), Bouldern (mit Leo, 2x pro Woche in der Bielefelder Boulderhalle), polnische Rezepte von der Großmutter kochen

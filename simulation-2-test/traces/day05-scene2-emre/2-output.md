@@ -4,19 +4,19 @@
 
 Alle Kapitel jetzt Fliesstext. Kap. 5-8 ausgebaut.
 
-Vier V2-Updates integriert: Ungefuege als Muster (nicht Figur) in Kap. 5; Schattenfieber-Farbprofile Stillfeld-kalt / Hohlicht-warm in Kap. 6; Flechtfest als kosmologisch wirksames Ritual in Kap. 7; Gastrecht als Mikro-Flechtungsakt in Kap. 8.
+Vier V2-Updates integriert: Ungefüge als Muster (nicht Figur) in Kap. 5; Schattenfieber-Farbprofile Stillfeld-kalt / Hohlicht-warm in Kap. 6; Flechtfest als kosmologisch wirksames Ritual in Kap. 7; Gastrecht als Mikro-Flechtungsakt in Kap. 8.
 
-Widerspruchs-Log #002 (Biotech-Sichtbarkeit) geschlossen: Sichtbarkeit ist fraktionsabhaengig und intentional — Krone demonstrativ, Gilden kommerziell, Orden diskret. Kein Widerspruch.
+Widerspruchs-Log #002 (Biotech-Sichtbarkeit) geschlossen: Sichtbarkeit ist fraktionsabhängig und intentional — Krone demonstrativ, Gilden kommerziell, Orden diskret. Kein Widerspruch.
 
-Alle fuenf Lore-Eintraege geloest. Neue offene Fragen markiert.
+Alle fünf Lore-Einträge gelöst. Neue offene Fragen markiert.
 
 ## WBB-02 V1 — Outline mit Stichpunkten
 
-Sieben Kapitel angelegt. Grundprinzip verankert: Topos ist keine Geographie, sondern kartographierte Anatomie des Emer-Koerpers.
+Sieben Kapitel angelegt. Grundprinzip verankert: Topos ist keine Geographie, sondern kartographierte Anatomie des Emer-Körpers.
 
-Kernelemente: Sued-Nord-Klimagefaelle kosmologisch hergeleitet; Mittelmark als Spielregion zwischen zwei Gebirgsketten; Fraktionsarchitektur als Kosmologie (Knochen/Blut/Haut); fuenf Schluesselorte kartographiert; Fauna als Emer-Derivate mit Biotech-Relevanz.
+Kernelemente: Sued-Nord-Klimagefälle kosmologisch hergeleitet; Mittelmark als Spielregion zwischen zwei Gebirgsketten; Fraktionsarchitektur als Kosmologie (Knochen/Blut/Haut); fünf Schlüsselorte kartographiert; Fauna als Emer-Derivate mit Biotech-Relevanz.
 
-Zwei neue Widerspruchs-Log-Eintraege (#006 Ortsnamen, #007 Klimaentscheidung Mittelmark). Naechste Woche: Fliesstext V2, Nomenklatur, Regionalkarte mit Vera abstimmen.
+Zwei neue Widerspruchs-Log-Einträge (#006 Ortsnamen, #007 Klimäntscheidung Mittelmark). Nächste Woche: Fliesstext V2, Nomenklatur, Regionalkarte mit Vera abstimmen.
 
 ## Artefakte
 

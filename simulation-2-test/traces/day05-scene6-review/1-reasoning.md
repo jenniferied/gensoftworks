@@ -12,7 +12,7 @@ Was ich betonen will: wir haben die Woche mit 8 Artefakten abgeschlossen, davon 
 
 ### Reihenfolge: Emre vor Nami
 
-Emre zuerst, weil sein WBB-Pitch beide CD-Fragen berührt — die Emer-Anatomie-Metapher ist eine davon. Wenn Emre das erklärt und das Team versteht es, kann Nami mit GDD-04 anschließen, und die Figur-3-Frage (Kompanion vs. NPC) landet auf einem informierteren Tisch.
+Emre zürst, weil sein WBB-Pitch beide CD-Fragen berührt — die Emer-Anatomie-Metapher ist eine davon. Wenn Emre das erklärt und das Team versteht es, kann Nami mit GDD-04 anschließen, und die Figur-3-Frage (Kompanion vs. NPC) landet auf einem informierteren Tisch.
 
 Außerdem: Emre ist introvertiert und liefert besser, wenn er früh dran ist, bevor die Energie im Raum kippt.
 

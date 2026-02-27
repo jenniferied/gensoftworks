@@ -3,11 +3,20 @@
   "type": "PAUSE",
   "time": "afternoon",
   "location": "lore-ecke",
-  "participants": ["emre", "nami"],
-  "summary": "Mittagspause. Emre und Nami in der Lore-Ecke. Emre lobt Namis GDD-03 (null Widersprueche) und spricht den fehlenden Ungefuegen an — die Loki-Referenz als zweite Schicht des Wanderer-Motivs. Nami: Der Ungefuege darf kein NPC werden, sondern muss eine Frage sein wie Planescapes 'What can change the nature of a man?' Flechtfest kommt ins WBB — Nami freut sich. Beide freuen sich auf D&D heute Abend, Sable hat noch eine Rechnung offen.",
+  "participants": [
+    "emre",
+    "nami"
+  ],
+  "summary": "Mittagspause. Emre und Nami in der Lore-Ecke. Emre lobt Namis GDD-03 (null Widersprüche) und spricht den fehlenden Ungefügen an — die Loki-Referenz als zweite Schicht des Wanderer-Motivs. Nami: Der Ungefüge darf kein NPC werden, sondern muss eine Frage sein wie Planescapes 'What can change the nature of a man?' Flechtfest kommt ins WBB — Nami freut sich. Beide freuen sich auf D&D heute Abend, Sable hat noch eine Rechnung offen.",
   "dialogue": [
-    {"who": "emre", "says": "Dein Erzaehlkonzept hat null Widersprueche. Das muss ich laut sagen. Eine Sache: Der Ungefuege fehlt. Dein Wanderer wird als moeglicher Halvard gelesen. Aber was, wenn die Welt ihn auch als Ungefuegen fuerchtet? Den, der nicht passt. Das waere die zweite Schicht. Und apropos — heute Abend taucht in der Session ein NPC auf, der nirgendwo reinpasst."},
-    {"who": "nami", "says": "Der Ungefuege darf kein NPC werden. Das waere zu billig. Er muss eine Frage sein, die in der Hauptquest mitlaeuft — ein Schatten hinter den Entscheidungen. Wie bei Planescape. Und danke wegen Flechtfest. Dass das ins WBB kommt, bedeutet mir was. Was hat Sable heute Abend vor?"}
+    {
+      "who": "emre",
+      "says": "Dein Erzählkonzept hat null Widersprüche. Das muss ich laut sagen. Eine Sache: Der Ungefüge fehlt. Dein Wanderer wird als möglicher Halvard gelesen. Aber was, wenn die Welt ihn auch als Ungefügen fürchtet? Den, der nicht passt. Das wäre die zweite Schicht. Und apropos — heute Abend taucht in der Session ein NPC auf, der nirgendwo reinpasst."
+    },
+    {
+      "who": "nami",
+      "says": "Der Ungefüge darf kein NPC werden. Das wäre zu billig. Er muss eine Frage sein, die in der Hauptquest mitläuft — ein Schatten hinter den Entscheidungen. Wie bei Planescape. Und danke wegen Flechtfest. Dass das ins WBB kommt, bedeutet mir was. Was hat Sable heute Abend vor?"
+    }
   ],
   "artifacts": [],
   "cd_feedback": null

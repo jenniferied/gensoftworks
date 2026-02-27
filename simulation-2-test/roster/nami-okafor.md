@@ -22,7 +22,7 @@ Sie kam zu Games über Film und Literatur, und ihr Schreiben hat die Dichte und 
 ## Herkunft & Bildung
 
 - **Aufgewachsen**: Hamburg-Barmbek, dann Hamburg-Eimsbüttel
-  - Mutter Adaeze kam 1993 aus Lagos nach Hamburg für einen PhD in Germanistik an der Uni Hamburg. Vater Martin ist Hamburger, Grundschullehrer. Nami wuchs in einem Haushalt auf, in dem Igbo, Deutsch und Englisch nebeneinander existierten und Chinua Achebe neben Günter Grass im Bücherregal stand.
+  - Mutter Adäze kam 1993 aus Lagos nach Hamburg für einen PhD in Germanistik an der Uni Hamburg. Vater Martin ist Hamburger, Grundschullehrer. Nami wuchs in einem Haushalt auf, in dem Igbo, Deutsch und Englisch nebeneinander existierten und Chinua Achebe neben Günter Grass im Bücherregal stand.
   - Hat die nigerianische und die deutsche Staatsbürgerschaft. Identifiziert sich als beides, nicht als "zwischen zwei Kulturen stehend", sondern als "in zwei Kulturen zu Hause." War als Kind regelmäßig in Lagos bei den Großeltern. "Lagos hat mir beigebracht, was Reizüberflutung bedeutet. Hamburg hat mir beigebracht, was Stille bedeutet. Beides brauche ich zum Schreiben."
   - Am Gymnasium in Eimsbüttel die einzige Schwarze in ihrer Klasse bis zur Oberstufe. Die Erfahrung hat ihr ein scharfes Bewusstsein für Repräsentation gegeben — ihre fiktiven Welten haben nie "eine Standardkultur." Wenn sie sagt "Wer lebt hier? Warum? Seit wann?", meint sie es.
 

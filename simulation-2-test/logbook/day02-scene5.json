@@ -2,8 +2,16 @@
   "scene": 5,
   "type": "WORK",
   "time": "afternoon",
-  "location": "alle-arbeitsplaetze",
-  "participants": ["emre", "darius", "nami", "vera", "tobi", "leo", "finn"],
+  "location": "alle-arbeitsplätze",
+  "participants": [
+    "emre",
+    "darius",
+    "nami",
+    "vera",
+    "tobi",
+    "leo",
+    "finn"
+  ],
   "summary": "Nachmittags-Konzeption. Darius überarbeitet GDD-02 zur V0.5: Leos QA-Input integriert (drei nicht-verhandelbare Bedingungen), Stufen-Mapping mit Nami (5 mechanische → 3 narrative), CD-Entscheidungen (lebende Krone, Tod/Infektion, Namenssystem). Emre entwickelt kosmologisches Lexikon mit eigenen Namen (Galt, Emer, Hohlicht/Mittelgrund/Stillfeld, die Hauten, die Flechtung) und integriert die lebende Krone in den WBB-01 Mythos (V0.5). Fraktionen verwenden unterschiedliche Namen für dieselben Phänomene. Spieltitel-Vorschlag: RELICS: Die Lebende Krone. Vera integriert Orden-Symbolik. Tobi ergänzt Schattenfieber-Tech. Leo+Darius QA-Schleife. Finn finalisiert Produktionsplan.",
   "dialogue": [],
   "artifacts": [

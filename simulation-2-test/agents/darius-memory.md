@@ -9,7 +9,7 @@ Erster Tag. Finn macht das Briefing sauber. CD will Referenzspiel-Analyse. Gothi
 Strukturierte Analyse entlang sechs Design Pillars fertig. RELICS' größter Design-Hebel: Open World mit Dishonored-Vertikalität + Gothic-Dichte. Gothic 2 ist Goldstandard für Weltdichte und Fraktionsdesign. Skyrim liefert Kamera-Flexibilität, aber Combat und Radiant Quests sind Anti-Referenzen. Fünf offene Fragen für den Standup vorbereitet.
 
 ## Tag 1, Szene 3 (MEETING)
-Standup. CD bestätigt Semi-Open-World (Gothic-Dichte), TP als Primärmodus, UE5. Schattenfieber-Infektion für den Spieler bestätigt — mit Kosten und Nutzen. Das ist ein Core System, das ich designen muss. Combat-Skill-Ceiling offen für morgen. Nami und Emre klären Wanderer-Motiv bilateral. Leos Pitch-Satz ist stark.
+Standup. CD bestätigt Semi-Open-World (Gothic-Dichte), TP als Primärmodus, Ü5. Schattenfieber-Infektion für den Spieler bestätigt — mit Kosten und Nutzen. Das ist ein Core System, das ich designen muss. Combat-Skill-Ceiling offen für morgen. Nami und Emre klären Wanderer-Motiv bilateral. Leos Pitch-Satz ist stark.
 
 ## Tag 1, Szene 5 (WORK)
 Schattenfieber-Konzept ausgearbeitet: Infektionswert 0-100, fünf Stufen, vierter Ast im Nervensystem-Leveling. Fünf Design-Prinzipien (Spektrum statt Schalter, Nutzen attraktiv, Kosten verändern nicht blockieren, Welt reagiert, Integration ins Kernsystem). Fünf emergente Build-Archetypen. Bloodborne Insight + VtM Bloodlines als Goldstandards. Skyrim-Vampirismus als Anti-Referenz.

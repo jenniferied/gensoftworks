@@ -2,14 +2,31 @@
   "scene": 3,
   "type": "MEETING",
   "time": "morning",
-  "location": "kueche",
-  "participants": ["finn", "darius", "emre", "vera", "nami", "leo", "tobi"],
-  "summary": "Standup nach Peer-Review-Session. Finn kommuniziert CD-Entscheidung: Schattenfieber-Stufengrenzen verbindlich vereinheitlicht auf Rauschen 1-40, Risse 41-75, Schwelle 76-100, Halluzinations-Start bei 76. Leos Cross-Doc-Report hat das Problem sauber identifiziert. Darius akzeptiert Schwellenwerte und fixxt Ymir→Emer Terminologie. Nachmittags-Auftraege: Alle starten V2-Ueberarbeitungen mit integrierten Peer-Review-Ergebnissen.",
+  "location": "küche",
+  "participants": [
+    "finn",
+    "darius",
+    "emre",
+    "vera",
+    "nami",
+    "leo",
+    "tobi"
+  ],
+  "summary": "Standup nach Peer-Review-Session. Finn kommuniziert CD-Entscheidung: Schattenfieber-Stufengrenzen verbindlich vereinheitlicht auf Rauschen 1-40, Risse 41-75, Schwelle 76-100, Halluzinations-Start bei 76. Leos Cross-Doc-Report hat das Problem sauber identifiziert. Darius akzeptiert Schwellenwerte und fixxt Ymir→Emer Terminologie. Nachmittags-Aufträge: Alle starten V2-Überarbeitungen mit integrierten Peer-Review-Ergebnissen.",
   "dialogue": [
-    {"who": "finn", "says": "Moin. CD-Entscheidung, gilt fuer alle Dokumente ohne Ausnahme: Rauschen 1 bis 40, Risse 41 bis 75, Schwelle 76 bis 100, Halluzinationen starten bei 76. Wer andere Werte hat, aendert das in der V2. Darius — Ymir wird Emer, Nervensystem braucht narrativen Unterbau. Nami — Ungefuege fehlt, Flechtfest kanonisieren. Vera — Stufe-0-Baseline. Tobi — Hex-Codes uebernehmen, Module auf 60, Drei-Schichten-Rendering dokumentieren. Emre — zwei Farbprofile. Leo macht morgen frueh den zweiten Konsistenz-Check."},
-    {"who": "darius", "says": "Schwellenwerte nehme ich so. Eine Tabelle fuer alle, fertig. Zum Ymir-Ding: peinlich, meine eigene Regel nicht durchgezogen. Suchen-Ersetzen in der V2. Nervensystem-Aeste narrativ einbetten — Nami, dein Punkt ist berechtigt. Kontrollverlust wird narrativ, nicht mechanisch."},
-    {"who": "leo", "says": "Rauschen 1-40, Risse 41-75, Schwelle 76-100 — genau mein Vorschlag. Zweite Inkonsistenz geloest, erste ist ein Dreizeiler-Fix. Nachmittags pruefe ich alle V2-Dokumente gegen die neue Stufentabelle."}
+    {
+      "who": "finn",
+      "says": "Moin. CD-Entscheidung, gilt für alle Dokumente ohne Ausnahme: Rauschen 1 bis 40, Risse 41 bis 75, Schwelle 76 bis 100, Halluzinationen starten bei 76. Wer andere Werte hat, ändert das in der V2. Darius — Ymir wird Emer, Nervensystem braucht narrativen Unterbau. Nami — Ungefüge fehlt, Flechtfest kanonisieren. Vera — Stufe-0-Baseline. Tobi — Hex-Codes übernehmen, Module auf 60, Drei-Schichten-Rendering dokumentieren. Emre — zwei Farbprofile. Leo macht morgen früh den zweiten Konsistenz-Check."
+    },
+    {
+      "who": "darius",
+      "says": "Schwellenwerte nehme ich so. Eine Tabelle für alle, fertig. Zum Ymir-Ding: peinlich, meine eigene Regel nicht durchgezogen. Suchen-Ersetzen in der V2. Nervensystem-Äste narrativ einbetten — Nami, dein Punkt ist berechtigt. Kontrollverlust wird narrativ, nicht mechanisch."
+    },
+    {
+      "who": "leo",
+      "says": "Rauschen 1-40, Risse 41-75, Schwelle 76-100 — genau mein Vorschlag. Zweite Inkonsistenz gelöst, erste ist ein Dreizeiler-Fix. Nachmittags prüfe ich alle V2-Dokumente gegen die neue Stufentabelle."
+    }
   ],
   "artifacts": [],
-  "cd_feedback": "Schattenfieber-Stufengrenzen verbindlich: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Halluzinations-Start = 76. Gilt fuer alle Dokumente."
+  "cd_feedback": "Schattenfieber-Stufengrenzen verbindlich: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Halluzinations-Start = 76. Gilt für alle Dokumente."
 }

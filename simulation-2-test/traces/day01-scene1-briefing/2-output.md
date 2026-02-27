@@ -6,31 +6,31 @@ Das Briefing lief gut. Entspannt, fokussiert, unter 20 Minuten. Alle wussten dan
 
 ### Zusammenfassung
 
-Ich habe das Team in der Kueche begruesst, CD-Feedback vorgestellt und die Tagesaufgaben verteilt. Kernbotschaft: Heute ist Recherchetag. Grundlagen legen, nicht produzieren. Qualitaet vor Quantitaet.
+Ich habe das Team in der Küche begrüsst, CD-Feedback vorgestellt und die Tagesaufgaben verteilt. Kernbotschaft: Heute ist Recherchetag. Grundlagen legen, nicht produzieren. Qualität vor Quantität.
 
 ### Verteilte Aufgaben
 
 | Person | Aufgabe | Erwarteter Output |
 |--------|---------|-------------------|
-| Emre | Germanische Mythologie als Basis fuer den Mythos | Recherche-Notizen, Quellen |
+| Emre | Germanische Mythologie als Basis für den Mythos | Recherche-Notizen, Quellen |
 | Darius | Referenzspiel-Analyse (Gothic, Skyrim, Dishonored) | Mechanik-Vergleich, Design Pillars |
-| Nami | Narrative Strukturen in Dark Fantasy CRPGs | Erzaehlmuster, Referenzen |
+| Nami | Narrative Strukturen in Dark Fantasy CRPGs | Erzählmuster, Referenzen |
 | Vera | Visuelle Referenzen: Mittelalter + Biotech | Moodboards, PureRef-Boards |
-| Tobi | Technische Machbarkeit der Vision | Tech-Assessment, Pipeline-Einschaetzung |
+| Tobi | Technische Machbarkeit der Vision | Tech-Assessment, Pipeline-Einschätzung |
 | Leo | Spielermarkt und Community-Erwartungen | Marktanalyse, Reddit/Community-Daten |
 | Finn | Roadmap und Meilensteine | Grober Meilenstein-Entwurf |
 
 ### Beobachtungen
 
-- Darius war sofort fokussiert, wollte schon den Scope der Mechanik-Analyse klaeren. Gut.
-- Emre war ruhig begeistert ueber die Mythologie-Aufgabe. Erwartbar.
-- Nami kam leicht zu spaet, aber aufmerksam. Hat sofort ueber Erzaehlstrukturen nachgedacht.
-- Vera fragte nach dem Biotech-Anteil in der Aesthetik -- berechtigte Praezisierungsfrage.
+- Darius war sofort fokussiert, wollte schon den Scope der Mechanik-Analyse klären. Gut.
+- Emre war ruhig begeistert über die Mythologie-Aufgabe. Erwartbar.
+- Nami kam leicht zu spät, aber aufmerksam. Hat sofort über Erzählstrukturen nachgedacht.
+- Vera fragte nach dem Biotech-Anteil in der Ästhetik -- berechtigte Präzisierungsfrage.
 - Leo brachte Energie rein, fragte nach konkreten Subreddits und Community-Quellen.
-- Tobi hoerte ruhig zu und stellte eine praezise Frage zur Engine-Festlegung.
+- Tobi hörte ruhig zu und stellte eine präzise Frage zur Engine-Festlegung.
 
-### Naechste Schritte (fuer mich)
+### Nächste Schritte (für mich)
 
 1. Vormittag: Grobe Wochenstruktur skizzieren (Mo/Di Recherche, Mi-Fr Produktion)
-2. Nachmittag: Scope-Gespraeche mit Darius und Tobi
+2. Nachmittag: Scope-Gespräche mit Darius und Tobi
 3. Abend: Erster Roadmap-Entwurf

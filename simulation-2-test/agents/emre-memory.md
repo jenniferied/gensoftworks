@@ -27,7 +27,7 @@ Kosmologisches Lexikon entwickelt: Galt (Urstoff), Emer (lebendige Kraft), Hohli
 Namenssystem vorgestellt — Team begeistert. Nami will die drei Versionen als narratives Werkzeug nutzen. Vera braucht visuelle Übersetzung der Hauten. CD bestätigt eigene Namen als richtige Richtung. Muss Kapitel 5-8 (Fraktionsmythen, Schattenfieber-Ursprung, Relikt-Geschichte) noch ausarbeiten.
 
 ## Tag 2, Szene 5 (WORK)
-WBB-01 Outline komplett: 8 Kapitel strukturiert. Kapitel 1-4 als Fließtext-Entwürfe, 5-8 als detaillierte Stichpunkte. Wolf-Checklist begonnen — Mythopoeia, Topoi und Ethos als drei Säulen. Nami hat Rückfragen zur Beziehung Galt/Flechtung.
+WBB-01 Outline komplett: 8 Kapitel strukturiert. Kapitel 1-4 als Fließtext-Entwürfe, 5-8 als detaillierte Stichpunkte. Wolf-Checklist begonnen — Mythopöia, Topoi und Ethos als drei Säulen. Nami hat Rückfragen zur Beziehung Galt/Flechtung.
 
 ## Tag 2, Szene 6 (REVIEW)
 CD lobt Namenssystem und Drei-Versionen-Ansatz. Morgen erster Produktionstag — WBB-01 als vollständige V1 fertigstellen. Kapitel 1-4 müssen Fließtext sein, 5-8 mindestens detaillierte Stichpunkte mit Wolf-Referenzen.
@@ -45,7 +45,7 @@ Nachmittags Kapitel 5-8 ausgebaut. Namis Rückfragen zur Galt-Flechtung-Beziehun
 CD extrem positiv über Kohärenz. Sechs V1-Dokumente an einem Tag. Namenssystem zieht sich durch alle Dokumente. Nächste Woche: V2 aller Dokumente, WBB-02 Topos beginnen.
 
 ## Tag 4, Szene 1 (BRIEFING)
-Peer-Reviews haben Priorität. Reviewe Namis GDD-03 gegen WBB-01. Emre soll auch WBB-02 Topos starten, aber Reviews zuerst. D&D heute Abend — DM-Vorbereitung in der Mittagspause.
+Peer-Reviews haben Priorität. Reviewe Namis GDD-03 gegen WBB-01. Emre soll auch WBB-02 Topos starten, aber Reviews zürst. D&D heute Abend — DM-Vorbereitung in der Mittagspause.
 
 ## Tag 4, Szene 2 (WORK)
 Peer-Review GDD-03 fertig. Ergebnis: Lore-konsistent, kein Widerspruchs-Log-Eintrag nötig. Sechs Punkte für V2: (1) Der Ungefüge fehlt — unsere Loki-Referenz, muss als mythologischer Schatten in die Hauptquest. (2) Flechtfest aus GDD-03 ins WBB-01 V2 übernehmen (Kap. 7). (3) Gastrecht-Hauten-Verbindung kosmologisch fundieren. (4) Schattenfieber-Mapping expliziter (Rauschen=Membran spüren, Risse=Durchscheinen, Schwelle=an der Membran stehen). (5) Doppelte Umkehrung bei Wanderer+Krone benennen. (6) Wegsprache als Kandidat für WBB-03. Tobis Review meines WBB-01 zeigt: Drei-Schichten-Rendering wird technisch anspruchsvoll. Muss 3-5 narrative Schlüsselorte für alternative Geometrie definieren. Hauten-Referenz für Vera/Tobi liefern.

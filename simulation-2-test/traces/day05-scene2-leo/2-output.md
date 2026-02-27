@@ -16,12 +16,12 @@ GDD-02, Kap. 2.7: "Ymir-Material" statt "Emer-Material". Einmaliger Ausrutscher,
 **OK — Hex-Codes.**
 GDD-05 intern konsistent. Kein anderes Dokument widerspricht. Empfehlung: Vera gibt Tobi die Palette formell weiter.
 
-**HINWEIS — Ungefuege.**
-WBB-01 kanonisiert. GDD-Dokumente: kein einziger Verweis. Keine Bruecke Lore → Narrativ bisher.
+**HINWEIS — Ungefüge.**
+WBB-01 kanonisiert. GDD-Dokumente: kein einziger Verweis. Keine Brücke Lore → Narrativ bisher.
 
 **MITTEL — Flechtfest.**
 Nami verwendet den Begriff zweimal in GDD-03, WBB-01 kennt ihn nicht. Braucht Abstimmung Nami/Emre vor V2-Finalisierung.
 
 ---
 
-*Prio fuer Darius: Stufentabelle festlegen. Rest ist Kleinkram.*
+*Prio für Darius: Stufentabelle festlegen. Rest ist Kleinkram.*

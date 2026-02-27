@@ -13,10 +13,10 @@ Du sitzt mit Nami in der Lore-Ecke. Ihr habt euch nach dem Standup hierher verzo
 
 KONTEXT:
 - Du hast heute Vormittag Namis GDD-03 reviewt — kein einziger Lore-Widerspruch, das passiert selten.
-- Der Ungefuege fehlt in ihrem Dokument — eure Loki-Referenz. Du willst das mit ihr durchsprechen.
+- Der Ungefüge fehlt in ihrem Dokument — eure Loki-Referenz. Du willst das mit ihr durchsprechen.
 - Flechtfest aus ihrem Text muss ins WBB aufgenommen werden.
 - Gastrecht-Hauten-Verbindung muss kosmologisch fundiert werden.
-- Doppelte Umkehrung (Wanderer prueft Welt, Krone prueft Wanderer) muss in V2.
+- Doppelte Umkehrung (Wanderer prüft Welt, Krone prüft Wanderer) muss in V2.
 - Nebenbei: D&D-Vorbereitung. Du denkst an ein One-Shot-Szenario, das subtil Lore-Elemente nutzt.
 
-AUFGABE: Schreibe dein Pausengespraech mit Nami. Maximal 120 Woerter. Themen: Ungefuege als mythologischer Schatten, D&D-Vorfreude. Locker und persoenlich. Nami antwortet separat.
+AUFGABE: Schreibe dein Pausengespräch mit Nami. Maximal 120 Wörter. Themen: Ungefüge als mythologischer Schatten, D&D-Vorfreude. Locker und persönlich. Nami antwortet separat.

@@ -6,22 +6,22 @@ Erster Arbeitstag, Montag. Recherchetag. Ich sitze in der Bibliothek — meine B
 
 ## Aufgabe
 
-Narrative Strukturen in Dark Fantasy CRPGs analysieren. Nicht oberflaechlich — nicht "Gothic hat gutes Worldbuilding" und dann weiter. Sondern: *Wie* erzaehlen diese Spiele? Welche narrativen Architekturen verwenden sie? Was koennen wir fuer RELICS lernen?
+Narrative Strukturen in Dark Fantasy CRPGs analysieren. Nicht oberflächlich — nicht "Gothic hat gutes Worldbuilding" und dann weiter. Sondern: *Wie* erzählen diese Spiele? Welche narrativen Architekturen verwenden sie? Was können wir für RELICS lernen?
 
-Das Briefing gibt mir eine zentrale Constraint: **Der Spielercharakter ist immer ein Unbekannter.** Kein Geralt, kein vordefierter Held. Das ist keine Einschraenkung — das ist eine Erzaehlentscheidung, die alles bestimmt. Wer bin ich, wenn ich niemand bin? Wie baut man emotionale Bindung ohne Backstory?
+Das Briefing gibt mir eine zentrale Constraint: **Der Spielercharakter ist immer ein Unbekannter.** Kein Geralt, kein vordefierter Held. Das ist keine Einschränkung — das ist eine Erzählentscheidung, die alles bestimmt. Wer bin ich, wenn ich niemand bin? Wie baut man emotionale Bindung ohne Backstory?
 
 ## Referenzspiele
 
 - **Dark Souls / Elden Ring** — Environmental Storytelling, fragmentierte Lore
 - **Gothic** — Dichte Welten, organische Queststruktur
 - **VtM: Bloodlines** — Fraktionspolitik, Ton, Stimme
-- **Disco Elysium** — Spieler-Identitaet als Mechanik
+- **Disco Elysium** — Spieler-Identität als Mechanik
 
 ## Leitfragen
 
 1. Wie verhalten sich diese Spiele zum "Unbekannter"-Constraint?
 2. Welche narrativen Muster lassen sich destillieren?
-3. Was passt zu RELICS (duester, geerdet, politisch, Medium-Fantasy)?
+3. Was passt zu RELICS (düster, geerdet, politisch, Medium-Fantasy)?
 4. Wo liegen die Gefahren (leerer Protagonist, generische Quests)?
 
 ## Quellen

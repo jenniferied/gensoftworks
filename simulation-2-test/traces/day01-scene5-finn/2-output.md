@@ -2,9 +2,9 @@
 
 ## Was ich gemacht habe
 
-Roadmap V1.1 geschrieben: `pinwall/ROADMAP.md` — aktualisiert mit allen acht CD-Entscheidungen, neuen Risiken, geschaerftem Scope.
+Roadmap V1.1 geschrieben: `pinwall/ROADMAP.md` — aktualisiert mit allen acht CD-Entscheidungen, neuen Risiken, geschärftem Scope.
 
-## Wesentliche Aenderungen gegenueber V1 (Vormittag)
+## Wesentliche Änderungen gegenüber V1 (Vormittag)
 
 ### Neue Inhalte
 
@@ -12,14 +12,14 @@ Roadmap V1.1 geschrieben: `pinwall/ROADMAP.md` — aktualisiert mit allen acht C
 2. **Status-Spalte** in den Deliverable-Tabellen — wo steht jeder gerade?
 3. **Schattenfieber als Core-System** — neues Deliverable, drei Verantwortliche (Emre, Darius, Nami), Synchronisationspunkt Freitag
 4. **Zwei neue kritische Risiken** von Tobis Machbarkeitsanalyse: Gameplay-Programmer fehlt, Asset-Produktion zu langsam
-5. **Scope-Gespraeche-Notizen** — Zusammenfassung der Nachmittags-Gespraeche mit Darius und Tobi
+5. **Scope-Gespräche-Notizen** — Zusammenfassung der Nachmittags-Gespräche mit Darius und Tobi
 
-### Erledigte Fragen (von "offen" nach "bestaetigt")
+### Erledigte Fragen (von "offen" nach "bestätigt")
 
-- Biotech-Tiefe → fraktionsabhaengig
-- Engine → UE5
+- Biotech-Tiefe → fraktionsabhängig
+- Engine → Ü5
 - Weltskalierung → Semi-Open-World
-- Kamera → TP Primaer, FP ist V2
+- Kamera → TP Primär, FP ist V2
 - Schattenfieber-Hypothese → C (kosmologische Erosion)
 - Spieler-Infektion → ja, mit Kosten + Nutzen
 
@@ -29,27 +29,27 @@ Roadmap V1.1 geschrieben: `pinwall/ROADMAP.md` — aktualisiert mit allen acht C
 2. Zielplattform (PC/Konsolen)
 3. Marketplace-Budget
 4. Vertical-Slice-Umfang
-5. SIGGRAPH-Paper fuer die Library
+5. SIGGRAPH-Paper für die Library
 
-## Scope-Gespraech Darius
+## Scope-Gespräch Darius
 
-Schattenfieber wird in GDD-02 als eigene Sektion: Kosten (Stat-Malus, NPC-Reaktionen, visuelle Veraenderung), Nutzen (Faehigkeiten, gesperrte Inhalte), Progression (Infektionsstufen). Darius sieht das als "starken Design-Hebel" — gut. Ich habe ihm gesagt, er soll Dienstag auch einen konkreten Vorschlag fuer Combat-Skill-Ceiling vorbereiten.
+Schattenfieber wird in GDD-02 als eigene Sektion: Kosten (Stat-Malus, NPC-Reaktionen, visuelle Veränderung), Nutzen (Fähigkeiten, gesperrte Inhalte), Progression (Infektionsstufen). Darius sieht das als "starken Design-Hebel" — gut. Ich habe ihm gesagt, er soll Dienstag auch einen konkreten Vorschlag für Combat-Skill-Ceiling vorbereiten.
 
-## Scope-Gespraech Tobi
+## Scope-Gespräch Tobi
 
-Pipeline-Architektur startet heute: UE5-Projekt, ACES, Houdini-Terrain. Die kritischen Risiken aus seiner Analyse nehme ich in den CD-Report. Sein Vorschlag, Waffen-Scope auf 2 Typen zu reduzieren (Schwert + Bogen), besprechen wir Donnerstag beim Review — das betrifft auch Darius und muss nicht heute entschieden werden.
+Pipeline-Architektur startet heute: Ü5-Projekt, ACES, Houdini-Terrain. Die kritischen Risiken aus seiner Analyse nehme ich in den CD-Report. Sein Vorschlag, Waffen-Scope auf 2 Typen zu reduzieren (Schwert + Bogen), besprechen wir Donnerstag beim Review — das betrifft auch Darius und muss nicht heute entschieden werden.
 
-## Naechste Schritte
+## Nächste Schritte
 
-- Dienstag Standup: Status aller Nachmittags-Auftraege pruefen
-- Dienstag: Mit Darius und Tobi: Combat-Skill-Ceiling als konkreten Vorschlag fuer die CD formulieren
+- Dienstag Standup: Status aller Nachmittags-Aufträge prüfen
+- Dienstag: Mit Darius und Tobi: Combat-Skill-Ceiling als konkreten Vorschlag für die CD formulieren
 - Mittwoch: Roadmap V1.2 mit Produktionsfortschritt aktualisieren
 - Freitag: Weekly Review moderieren, CD-Report, Roadmap Woche 2 skizzieren
 
 ## Stimmung
 
-Zufrieden. Der erste Tag hat Substanz geliefert, nicht nur Absichtserklaerungen. Die CD-Entscheidungen haben fuenf potenzielle Blocker gleichzeitig aufgeloest. Das Team arbeitet fokussiert. Kein Chaos, kein Uebermut, kein Leerlauf. Genau so soll das laufen.
+Zufrieden. Der erste Tag hat Substanz geliefert, nicht nur Absichtserklärungen. Die CD-Entscheidungen haben fünf potenzielle Blocker gleichzeitig aufgelöst. Das Team arbeitet fokussiert. Kein Chaos, kein Übermut, kein Leerlauf. Genau so soll das laufen.
 
 ---
 
-*Finn Bergmann, Produktionsbuero, 14:00–15:45*
+*Finn Bergmann, Produktionsbüro, 14:00–15:45*

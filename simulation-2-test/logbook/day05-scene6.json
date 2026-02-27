@@ -2,15 +2,35 @@
   "scene": 6,
   "type": "REVIEW",
   "time": "afternoon",
-  "location": "kueche",
-  "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
-  "summary": "Wochen-Review. Finn: 8 Artefakte, 5 in V2. Emre pitcht WBB-02 Topos-Metapher (Emer-Anatomie als Geographie). Nami pitcht GDD-04 (5 Schluesselfiguren, Figur 3 Kompanion-Frage offen). Leo lobt Tiervolk-Haendlerin. Zwei CD-Fragen: Figur-3-Status (bis Mittwoch), Emer-Anatomie (bis Dienstag). Freelancer: Blue-Byte letzte Chance Montag, Plan B bereit. Hauten-Segment-Slot Dienstag gebucht. Guter Wochenabschluss.",
+  "location": "küche",
+  "participants": [
+    "finn",
+    "darius",
+    "emre",
+    "nami",
+    "vera",
+    "tobi",
+    "leo"
+  ],
+  "summary": "Wochen-Review. Finn: 8 Artefakte, 5 in V2. Emre pitcht WBB-02 Topos-Metapher (Emer-Anatomie als Geographie). Nami pitcht GDD-04 (5 Schlüsselfiguren, Figur 3 Kompanion-Frage offen). Leo lobt Tiervolk-Händlerin. Zwei CD-Fragen: Figur-3-Status (bis Mittwoch), Emer-Anatomie (bis Dienstag). Freelancer: Blue-Byte letzte Chance Montag, Plan B bereit. Hauten-Segment-Slot Dienstag gebucht. Guter Wochenabschluss.",
   "dialogue": [
-    {"who": "finn", "says": "Woche 1 mit acht Artefakten abgeschlossen, fuenf in V2. Zwei offene Punkte fuer die CD."},
-    {"who": "emre", "says": "WBB-02: Ich schlage vor, die Geographie um die Anatomie von Emer zu strukturieren. Brustkorb = Kernregion, Lunge = Sumpfgebiet, Wirbelsaeule = Gebirgszug. Ist das konzeptionell freigegeben?"},
-    {"who": "nami", "says": "GDD-04: Fuenf Figuren mit eigener Stimme. Figur 3 ist die offene Frage — Kompanion mit Party-Mechanik oder NPC? Brauche die Antwort bis Mittwoch."},
-    {"who": "finn", "says": "Das war Woche 1. Schoenes Wochenende."}
+    {
+      "who": "finn",
+      "says": "Woche 1 mit acht Artefakten abgeschlossen, fünf in V2. Zwei offene Punkte für die CD."
+    },
+    {
+      "who": "emre",
+      "says": "WBB-02: Ich schlage vor, die Geographie um die Anatomie von Emer zu strukturieren. Brustkorb = Kernregion, Lunge = Sumpfgebiet, Wirbelsäule = Gebirgszug. Ist das konzeptionell freigegeben?"
+    },
+    {
+      "who": "nami",
+      "says": "GDD-04: Fünf Figuren mit eigener Stimme. Figur 3 ist die offene Frage — Kompanion mit Party-Mechanik oder NPC? Brauche die Antwort bis Mittwoch."
+    },
+    {
+      "who": "finn",
+      "says": "Das war Woche 1. Schönes Wochenende."
+    }
   ],
   "artifacts": [],
-  "cd_feedback": "CD-Entscheidungen noetig: (1) GDD-04 Figur 3 Kompanion vs. NPC bis Mittwoch. (2) WBB-02 Emer-Anatomie als Topos-Fundament bis Dienstag."
+  "cd_feedback": "CD-Entscheidungen nötig: (1) GDD-04 Figur 3 Kompanion vs. NPC bis Mittwoch. (2) WBB-02 Emer-Anatomie als Topos-Fundament bis Dienstag."
 }

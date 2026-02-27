@@ -2,49 +2,169 @@
   "scene": 4,
   "type": "PAUSE",
   "time": "afternoon",
-  "location": "kueche",
-  "participants": ["nami", "emre"],
-  "summary": "Bilaterale Mittagspause. Nami und Emre besprechen die drei neuen CD-Entscheidungen: (1) Lebende Krone als Relikt — eingeordnet als Schlussstein des Drei-Schichten-Modells, die Krone haelt die Membran aktiv aufrecht. Narrativ: Hauptquest fuehrt zur Traeger-Entscheidung, drei Fraktions-Ansprueche plus moegliches viertes Ende (Verweigerung). (2) Stufen-Mapping konsolidiert: Rauschen (Stufe 1-2, subtile Stoerungen), Risse (Stufe 3-4, unuebersehbare Verzerrungen), Schwelle (Stufe 5, qualitativer Zustandswechsel — Membran faellt fuer den Betroffenen). Kein HUD-Indikator fuer Halluzinationen. Vorschlag geht bilateral an Darius. (3) Eigenes Namenssystem: linguistisches Prinzip vereinbart — gemeinsamer Wortstamm mit fraktionsbedingter Lautverschiebung. Arbeitsnamen-Liste (6-8 Kernbegriffe) als Nachmittagsaufgabe. Zusaetzlich: Keine buchstaeblichen Goetter (bestaetigt), Voelva/Seherin als frueher NPC-Kontakt nach Malkavian-Prinzip (prophetisch, nicht verrueckt). Stimmung still, warm, konzentriert.",
+  "location": "küche",
+  "participants": [
+    "nami",
+    "emre"
+  ],
+  "summary": "Bilaterale Mittagspause. Nami und Emre besprechen die drei neuen CD-Entscheidungen: (1) Lebende Krone als Relikt — eingeordnet als Schlussstein des Drei-Schichten-Modells, die Krone hält die Membran aktiv aufrecht. Narrativ: Hauptquest führt zur Träger-Entscheidung, drei Fraktions-Ansprüche plus mögliches viertes Ende (Verweigerung). (2) Stufen-Mapping konsolidiert: Rauschen (Stufe 1-2, subtile Stoerungen), Risse (Stufe 3-4, unübersehbare Verzerrungen), Schwelle (Stufe 5, qualitativer Zustandswechsel — Membran fällt für den Betroffenen). Kein HUD-Indikator für Halluzinationen. Vorschlag geht bilateral an Darius. (3) Eigenes Namenssystem: linguistisches Prinzip vereinbart — gemeinsamer Wortstamm mit fraktionsbedingter Lautverschiebung. Arbeitsnamen-Liste (6-8 Kernbegriffe) als Nachmittagsaufgabe. Zusätzlich: Keine buchstäblichen Götter (bestätigt), Völva/Seherin als früher NPC-Kontakt nach Malkavian-Prinzip (prophetisch, nicht verrückt). Stimmung still, warm, konzentriert.",
   "dialogue": [
-    {"who": "nami", "says": "Hast du die Nachricht gelesen?"},
-    {"who": "emre", "says": "Die lebende Krone. Ja."},
-    {"who": "nami", "says": "Und?"},
-    {"who": "emre", "says": "Ich sitze seit zwanzig Minuten hier und versuche, nicht sofort in mein Outline zu rennen und alles umzuschreiben. Ein Biotech-Artefakt aus der Ur-Bindung. Das die Membran stabilisiert. Das ist nicht einfach ein Relikt, Nami. Das ist der Schlussstein."},
-    {"who": "emre", "says": "Im Drei-Schichten-Modell. Die Membran wurde konstruiert, durch die Ur-Bindung. Und jetzt gibt es ein konkretes Artefakt, das die Trennung aufrechthaelt. Ein lebendes. Die Trennung der Daseinsebenen ist kein Zustand. Sie ist ein laufender Prozess. Die Krone arbeitet."},
-    {"who": "nami", "says": "Und wenn sie aufhoert zu arbeiten —"},
-    {"who": "emre", "says": "— dann ist das Schattenfieber die Konsequenz. Die Erosion. Die Membranen werden durchlaessig, weil die Krone nicht mehr vollstaendig funktioniert. Oder weil niemand sie traegt."},
-    {"who": "nami", "says": "Wer sie traegt, wird veraendert. Das ist der Satz, der mich nicht loslaesst. Er erzaehlt zwei Geschichten gleichzeitig. Die Geschichte der Welt — jemand muss die Krone tragen, damit die Membran haelt. Und die Geschichte des Traegers — er zahlt einen Preis, den er vorher nicht kennt."},
-    {"who": "emre", "says": "Odins Auge am Brunnen. Aber wir nennen es nicht mehr Odin."},
-    {"who": "nami", "says": "Drei Entscheidungen auf einmal. Die Krone als Relikt. Eigenes Namenssystem. Und keine buchstaeblichen Goetter."},
-    {"who": "emre", "says": "Das macht die Welt ehrlicher. Ich hatte es schon als Empfehlung in der Outline — dass die Goetter ueberlieferte Gestalten sind. Jetzt ist es bestaetigt. Aber es veraendert den Ton. Wenn es keine buchstaeblichen Goetter gab, ist die Ur-Bindung kein goettlicher Akt. Sie ist ein technologischer. Ein ritueller. Etwas, das Menschen getan haben."},
-    {"who": "nami", "says": "Oder etwas, das Menschen sich zuschreiben."},
-    {"who": "emre", "says": "Natuerlich. Die Fraktionen werden sich streiten, wer die Bindung vollzogen hat. Krone: unsere Ahnen trugen sie. Gilden: wir haben das Material beschafft. Orden: wir hatten das Wissen."},
-    {"who": "nami", "says": "Und alle drei werden Recht haben. Oder keine. Das ist mir wichtig — dass die Wahrheit ein Loch hat, in dem der Spieler steht."},
-    {"who": "emre", "says": "Die Namensfrage. Darf ich laut denken? Das Drei-Schichten-Modell braucht eigene Begriffe. Ich wuerde vorschlagen, dass wir ein phonetisches Prinzip finden. Etwas, das klingt, als haette es eine Geschichte hinter sich. Nicht erfunden. Abgenutzt."},
-    {"who": "nami", "says": "Wie ein Wort, das man fast versteht. Kafka konnte das — Namen, die an etwas erinnern, ohne es zu sein."},
-    {"who": "emre", "says": "Und jede Fraktion haette leicht unterschiedliche Aussprachevarianten. Weil die Namen muendlich weitergegeben wurden."},
-    {"who": "nami", "says": "Die Krone sagt Vaeld und die Gilden sagen Valt und der Orden schreibt Valth und sie meinen alle dasselbe, aber die Schreibung verraet, wessen Version man gerade liest."},
-    {"who": "emre", "says": "Ein linguistisches Prinzip: Gemeinsamer Stamm, fraktionsbedingte Lautverschiebung. Ich muss das aufschreiben."},
-    {"who": "nami", "says": "Lass uns ueber das Stufen-Mapping reden. Du hast geschrieben, dass bei Stufe fuenf die Person an der Membran steht. Darius hat fuenf mechanische Stufen, ich habe drei narrative. Mein Vorschlag: Rauschen deckt eins und zwei ab, Risse drei und vier, Schwelle ist fuenf. Aber die Schwelle ist kein Endpunkt. Sie ist ein Uebergang."},
-    {"who": "emre", "says": "In welchem Sinn?"},
-    {"who": "nami", "says": "Die ersten vier Stufen sind quantitativ. Mehr Rauschen, mehr Risse. Stufe fuenf ist qualitativ. Nicht schlimmeres Schattenfieber. Ein anderer Zustand. Der Spieler sieht Dinge, die real sein koennten. Oder nicht. Das Spiel verraet es nicht."},
-    {"who": "emre", "says": "Das passt. Die Membran ist ein Gradient. Stufe eins bis vier sind Grade der Durchlaessigkeit. Stufe fuenf ist der Moment, in dem die Membran fuer diese Person nicht mehr existiert. Nicht weil sie zerstoert ist, sondern weil der Betroffene auf beiden Seiten gleichzeitig steht."},
-    {"who": "nami", "says": "Und dann wird der Unreliable Narrator absolut. Wie schreibt man Dialoge fuer jemanden, der nicht weiss, ob sein Gespraechspartner real ist? Man schreibt sie, als waeren sie real. Der Spieler erfaehrt erst spaeter — oder nie — dass da niemand stand."},
-    {"who": "emre", "says": "Das ist der Malkavian-Durchlauf."},
-    {"who": "nami", "says": "Das Entscheidende: Die Malkavian-Dialoge waren nicht verrueckt. Sie waren prophetisch. Sie sagten die Wahrheit in einer Sprache, die erst im Rueckblick Sinn ergab. Das will ich fuer das Schattenfieber."},
-    {"who": "emre", "says": "Dann haetten wir drei Ebenen. Stufe eins bis zwei: Stoerungen, die Zufall sein koennten. Stufe drei bis vier: unuebersehbare Verzerrungen. Stufe fuenf: Die andere Schicht wird sichtbar. Der Spieler muss entscheiden, ob er dem traut, was er sieht."},
-    {"who": "nami", "says": "Kein HUD-Indikator. Kein Achtung, Halluzination. Der Spieler lernt, seiner Wahrnehmung zu misstrauen."},
-    {"who": "emre", "says": "Das ist mutig. Darius wird sagen, dass es zu riskant ist."},
-    {"who": "nami", "says": "Er wird einen Fallback wollen. Vielleicht ein Accessibility-Feature. Aber die Kern-Erfahrung sollte radikal sein."},
-    {"who": "emre", "says": "Einverstanden. Drei narrative Zustaende, fuenf mechanische Schwellen, der Uebergang bei Stufe fuenf qualitativ. Die Frage, ob Stufe-fuenf-Wahrnehmungen real sind, bleibt narrativ offen."},
-    {"who": "nami", "says": "Die Krone bindet alles zusammen. Die Membran. Die Stufen. Den Zerfall. Wenn die Hauptquest eine Relikt-Suche ist — dann ist das Ende der Moment, in dem der Spieler vor der Entscheidung steht: Trage ich die Krone?"},
-    {"who": "emre", "says": "Drei Fraktionen. Drei Antworten darauf, wer sie tragen soll."},
-    {"who": "nami", "says": "Oder er verweigert sich allen dreien. Das vierte Ende. Die Verweigerung. Die Membran faellt, die Schichten brechen ineinander — und was dann passiert, weiss niemand. Nicht mal wir. Nicht in dieser Iteration."},
-    {"who": "nami", "says": "Emre? Diese Welt. Dein Drei-Schichten-Modell. Die Kosmogonie. Die Fraktions-Mythologien. Das traegt. Ich schreibe Dialoge fuer eine Welt, und meistens fuehlt sich die Welt darunter an wie Pappmache. Hier nicht."},
-    {"who": "emre", "says": "Danke. Dasselbe gilt fuer deine narrativen Prinzipien. Fraktionen als Sprachen — das hat meine gesamte Ueberlieferungsstruktur beeinflusst."},
-    {"who": "nami", "says": "Dann lass uns dafuer sorgen, dass es morgen in den Texten genauso gut klingt wie in dieser Kueche."},
-    {"who": "emre", "says": "Ich mach uns noch einen Tee. Dann geh ich zurueck an die Outline und aendere Goetter in Vorfahren. Oder was auch immer sie heissen werden."},
-    {"who": "nami", "says": "Was auch immer sie heissen werden."}
+    {
+      "who": "nami",
+      "says": "Hast du die Nachricht gelesen?"
+    },
+    {
+      "who": "emre",
+      "says": "Die lebende Krone. Ja."
+    },
+    {
+      "who": "nami",
+      "says": "Und?"
+    },
+    {
+      "who": "emre",
+      "says": "Ich sitze seit zwanzig Minuten hier und versuche, nicht sofort in mein Outline zu rennen und alles umzuschreiben. Ein Biotech-Artefakt aus der Ur-Bindung. Das die Membran stabilisiert. Das ist nicht einfach ein Relikt, Nami. Das ist der Schlussstein."
+    },
+    {
+      "who": "emre",
+      "says": "Im Drei-Schichten-Modell. Die Membran wurde konstruiert, durch die Ur-Bindung. Und jetzt gibt es ein konkretes Artefakt, das die Trennung aufrechthält. Ein lebendes. Die Trennung der Daseinsebenen ist kein Zustand. Sie ist ein laufender Prozess. Die Krone arbeitet."
+    },
+    {
+      "who": "nami",
+      "says": "Und wenn sie aufhört zu arbeiten —"
+    },
+    {
+      "who": "emre",
+      "says": "— dann ist das Schattenfieber die Konsequenz. Die Erosion. Die Membranen werden durchlässig, weil die Krone nicht mehr vollständig funktioniert. Oder weil niemand sie trägt."
+    },
+    {
+      "who": "nami",
+      "says": "Wer sie trägt, wird verändert. Das ist der Satz, der mich nicht loslässt. Er erzählt zwei Geschichten gleichzeitig. Die Geschichte der Welt — jemand muss die Krone tragen, damit die Membran hält. Und die Geschichte des Trägers — er zahlt einen Preis, den er vorher nicht kennt."
+    },
+    {
+      "who": "emre",
+      "says": "Odins Auge am Brunnen. Aber wir nennen es nicht mehr Odin."
+    },
+    {
+      "who": "nami",
+      "says": "Drei Entscheidungen auf einmal. Die Krone als Relikt. Eigenes Namenssystem. Und keine buchstäblichen Götter."
+    },
+    {
+      "who": "emre",
+      "says": "Das macht die Welt ehrlicher. Ich hatte es schon als Empfehlung in der Outline — dass die Götter überlieferte Gestalten sind. Jetzt ist es bestätigt. Aber es verändert den Ton. Wenn es keine buchstäblichen Götter gab, ist die Ur-Bindung kein göttlicher Akt. Sie ist ein technologischer. Ein ritueller. Etwas, das Menschen getan haben."
+    },
+    {
+      "who": "nami",
+      "says": "Oder etwas, das Menschen sich zuschreiben."
+    },
+    {
+      "who": "emre",
+      "says": "Natürlich. Die Fraktionen werden sich streiten, wer die Bindung vollzogen hat. Krone: unsere Ahnen trugen sie. Gilden: wir haben das Material beschafft. Orden: wir hatten das Wissen."
+    },
+    {
+      "who": "nami",
+      "says": "Und alle drei werden Recht haben. Oder keine. Das ist mir wichtig — dass die Wahrheit ein Loch hat, in dem der Spieler steht."
+    },
+    {
+      "who": "emre",
+      "says": "Die Namensfrage. Darf ich laut denken? Das Drei-Schichten-Modell braucht eigene Begriffe. Ich würde vorschlagen, dass wir ein phonetisches Prinzip finden. Etwas, das klingt, als hätte es eine Geschichte hinter sich. Nicht erfunden. Abgenutzt."
+    },
+    {
+      "who": "nami",
+      "says": "Wie ein Wort, das man fast versteht. Kafka konnte das — Namen, die an etwas erinnern, ohne es zu sein."
+    },
+    {
+      "who": "emre",
+      "says": "Und jede Fraktion hätte leicht unterschiedliche Aussprachevarianten. Weil die Namen mündlich weitergegeben wurden."
+    },
+    {
+      "who": "nami",
+      "says": "Die Krone sagt Väld und die Gilden sagen Valt und der Orden schreibt Valth und sie meinen alle dasselbe, aber die Schreibung verrät, wessen Version man gerade liest."
+    },
+    {
+      "who": "emre",
+      "says": "Ein linguistisches Prinzip: Gemeinsamer Stamm, fraktionsbedingte Lautverschiebung. Ich muss das aufschreiben."
+    },
+    {
+      "who": "nami",
+      "says": "Lass uns über das Stufen-Mapping reden. Du hast geschrieben, dass bei Stufe fünf die Person an der Membran steht. Darius hat fünf mechanische Stufen, ich habe drei narrative. Mein Vorschlag: Rauschen deckt eins und zwei ab, Risse drei und vier, Schwelle ist fünf. Aber die Schwelle ist kein Endpunkt. Sie ist ein Übergang."
+    },
+    {
+      "who": "emre",
+      "says": "In welchem Sinn?"
+    },
+    {
+      "who": "nami",
+      "says": "Die ersten vier Stufen sind quantitativ. Mehr Rauschen, mehr Risse. Stufe fünf ist qualitativ. Nicht schlimmeres Schattenfieber. Ein anderer Zustand. Der Spieler sieht Dinge, die real sein könnten. Oder nicht. Das Spiel verrät es nicht."
+    },
+    {
+      "who": "emre",
+      "says": "Das passt. Die Membran ist ein Gradient. Stufe eins bis vier sind Grade der Durchlässigkeit. Stufe fünf ist der Moment, in dem die Membran für diese Person nicht mehr existiert. Nicht weil sie zerstoert ist, sondern weil der Betroffene auf beiden Seiten gleichzeitig steht."
+    },
+    {
+      "who": "nami",
+      "says": "Und dann wird der Unreliable Narrator absolut. Wie schreibt man Dialoge für jemanden, der nicht weiss, ob sein Gesprächspartner real ist? Man schreibt sie, als wären sie real. Der Spieler erfährt erst später — oder nie — dass da niemand stand."
+    },
+    {
+      "who": "emre",
+      "says": "Das ist der Malkavian-Durchlauf."
+    },
+    {
+      "who": "nami",
+      "says": "Das Entscheidende: Die Malkavian-Dialoge waren nicht verrückt. Sie waren prophetisch. Sie sagten die Wahrheit in einer Sprache, die erst im Rückblick Sinn ergab. Das will ich für das Schattenfieber."
+    },
+    {
+      "who": "emre",
+      "says": "Dann hätten wir drei Ebenen. Stufe eins bis zwei: Stoerungen, die Zufall sein könnten. Stufe drei bis vier: unübersehbare Verzerrungen. Stufe fünf: Die andere Schicht wird sichtbar. Der Spieler muss entscheiden, ob er dem traut, was er sieht."
+    },
+    {
+      "who": "nami",
+      "says": "Kein HUD-Indikator. Kein Achtung, Halluzination. Der Spieler lernt, seiner Wahrnehmung zu misstrauen."
+    },
+    {
+      "who": "emre",
+      "says": "Das ist mutig. Darius wird sagen, dass es zu riskant ist."
+    },
+    {
+      "who": "nami",
+      "says": "Er wird einen Fallback wollen. Vielleicht ein Accessibility-Feature. Aber die Kern-Erfahrung sollte radikal sein."
+    },
+    {
+      "who": "emre",
+      "says": "Einverstanden. Drei narrative Zustände, fünf mechanische Schwellen, der Übergang bei Stufe fünf qualitativ. Die Frage, ob Stufe-fünf-Wahrnehmungen real sind, bleibt narrativ offen."
+    },
+    {
+      "who": "nami",
+      "says": "Die Krone bindet alles zusammen. Die Membran. Die Stufen. Den Zerfall. Wenn die Hauptquest eine Relikt-Suche ist — dann ist das Ende der Moment, in dem der Spieler vor der Entscheidung steht: Trage ich die Krone?"
+    },
+    {
+      "who": "emre",
+      "says": "Drei Fraktionen. Drei Antworten darauf, wer sie tragen soll."
+    },
+    {
+      "who": "nami",
+      "says": "Oder er verweigert sich allen dreien. Das vierte Ende. Die Verweigerung. Die Membran fällt, die Schichten brechen ineinander — und was dann passiert, weiss niemand. Nicht mal wir. Nicht in dieser Iteration."
+    },
+    {
+      "who": "nami",
+      "says": "Emre? Diese Welt. Dein Drei-Schichten-Modell. Die Kosmogonie. Die Fraktions-Mythologien. Das trägt. Ich schreibe Dialoge für eine Welt, und meistens fühlt sich die Welt darunter an wie Pappmache. Hier nicht."
+    },
+    {
+      "who": "emre",
+      "says": "Danke. Dasselbe gilt für deine narrativen Prinzipien. Fraktionen als Sprachen — das hat meine gesamte Überlieferungsstruktur beeinflusst."
+    },
+    {
+      "who": "nami",
+      "says": "Dann lass uns dafür sorgen, dass es morgen in den Texten genauso gut klingt wie in dieser Küche."
+    },
+    {
+      "who": "emre",
+      "says": "Ich mach uns noch einen Tee. Dann geh ich zurück an die Outline und ändere Götter in Vorfahren. Oder was auch immer sie heissen werden."
+    },
+    {
+      "who": "nami",
+      "says": "Was auch immer sie heissen werden."
+    }
   ],
   "artifacts": [],
   "cd_feedback": null

@@ -2,6 +2,6 @@
 
 ## Aufgaben
 
-1. **WBB-01 V2 Updates**: Flechtfest in Kap. 7 aufnehmen, zwei Schattenfieber-Farbprofile (Stillfeld-kalt, Hohlicht-warm), Ungefuege als mythologischen Schatten einbauen, Gastrecht-Hauten kosmologisch fundieren.
-2. **WBB-02 Topos Outline starten**: Geographie der Spielwelt — Regionen, Klimazonen, Siedlungsformen basierend auf dem Emer-Koerper-Modell.
-3. **3-5 narrative Schluesselorte fuer alternative Geometrie definieren** (Tobi braucht das fuer Drei-Schichten-Rendering).
+1. **WBB-01 V2 Updates**: Flechtfest in Kap. 7 aufnehmen, zwei Schattenfieber-Farbprofile (Stillfeld-kalt, Hohlicht-warm), Ungefüge als mythologischen Schatten einbauen, Gastrecht-Hauten kosmologisch fundieren.
+2. **WBB-02 Topos Outline starten**: Geographie der Spielwelt — Regionen, Klimazonen, Siedlungsformen basierend auf dem Emer-Körper-Modell.
+3. **3-5 narrative Schlüsselorte für alternative Geometrie definieren** (Tobi braucht das für Drei-Schichten-Rendering).

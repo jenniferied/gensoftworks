@@ -2,7 +2,7 @@
 
 ## Produziertes Artefakt
 
-`simulation-2-test/gallery/gdd/01-spieluebersicht.md` — V2 (finalisiert)
+`simulation-2-test/gallery/gdd/01-spielübersicht.md` — V2 (finalisiert)
 
 ## Zusammenfassung
 

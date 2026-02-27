@@ -65,6 +65,7 @@ Sequential turn-taking. NOT everyone speaks — Finn opens, 2-3 agents respond. 
 ## Guardrails
 
 - **German content, English code** — agents speak German in-sim
+- **Echte Umlaute (ä ö ü ß)** — NIEMALS ae/oe/ue/ss. Agent-Prompts müssen enthalten: "Schreibe echte deutsche Umlaute (ä, ö, ü, ß), NICHT ae, oe, ue, ss."
 - **Never invent citations** — if unsure, say so
 - **Log everything** — every scene → logbook, every agent → traces
 - **Briefing is the north star** — all artifacts align with `briefing.md`

@@ -2,15 +2,23 @@
   "scene": 2,
   "type": "WORK",
   "time": "morning",
-  "location": "alle-arbeitsplaetze",
-  "participants": ["emre", "darius", "nami", "vera", "tobi", "leo", "finn"],
+  "location": "alle-arbeitsplätze",
+  "participants": [
+    "emre",
+    "darius",
+    "nami",
+    "vera",
+    "tobi",
+    "leo",
+    "finn"
+  ],
   "summary": "Konzeptionsphase: Alle 7 erstellen V1-Outlines ihrer Artefakte. Emre: WBB-01 Mythos (8 Kapitel, Kosmogonie bis Wanderer). Darius: GDD-01 Spielübersicht + GDD-02 Kernmechaniken (Combat-Spektrum, Schattenfieber 5 Stufen, Nervensystem-Leveling). Nami: GDD-03 Erzählkonzept (Drei-Akt-Struktur, 9 Quest-Deliverables, Dialogsystem, Schattenfieber-Narrativ). Vera: GDD-05 Designsprache (8 Kapitel, Fraktionsvisuals, Biotech-Grammatik, Farbsystem). Tobi: GDD-06 Technik (Nanite/Lumen, Kamera, GAS, Asset-Pipeline, Meilensteine). Leo: Spielerperspektiv-Bericht + QA-Risikomatrix (40% QA-Aufwand → Schattenfieber). Finn: Produktionsplan Mittwoch + Freelancer-Budget (45k EUR für Gameplay-Programmer).",
   "dialogue": [],
   "artifacts": [
     "gallery/wbb/01-mythos.md",
-    "gallery/gdd/01-spieluebersicht.md",
+    "gallery/gdd/01-spielübersicht.md",
     "gallery/gdd/02-kernmechaniken.md",
-    "gallery/gdd/03-erzaehlkonzept.md",
+    "gallery/gdd/03-erzählkonzept.md",
     "gallery/gdd/05-designsprache.md",
     "gallery/gdd/06-technik-produktion.md"
   ],

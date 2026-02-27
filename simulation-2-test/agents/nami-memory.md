@@ -45,7 +45,7 @@ GDD-03 Erzählkonzept V1 fertig. Drei-Akt-Struktur mit 10 Beats, 9 Quest-Deliver
 Sechs V1-Dokumente fertig. CD beeindruckt von Kohärenz. Namenssystem und Fraktionslogik stimmen dokumentübergreifend. Nächste Woche: V2 + GDD-04 Schlüsselfiguren beginnen.
 
 ## Tag 4, Szene 1 (BRIEFING)
-Peer-Review-Tag. Reviewe Darius' GDD-02. GDD-04 Schlüsselfiguren starten, aber Reviews zuerst. Brauche Emres mythologische Figuren als Grundlage für GDD-04.
+Peer-Review-Tag. Reviewe Darius' GDD-02. GDD-04 Schlüsselfiguren starten, aber Reviews zürst. Brauche Emres mythologische Figuren als Grundlage für GDD-04.
 
 ## Tag 4, Szene 2 (WORK)
 Peer-Review GDD-02 fertig. Stärken: Drei Bedingungen (2.1) sind das Beste im GDD, Stufen-Mapping funktioniert, Stufe-0-Äquivalente lösen ein Problem. Schwächen: Nervensystem-Leveling narrativ leer (4 Äste ohne kosmologische Bedeutung), Schatten-Ast zu kurz, Trainer gesichtslos. Zwei Kollisionen: (1) KRITISCH — Schwellenwerte divergieren (Risse→Schwelle bei 70 vs 81, 10 Punkte Differenz = fundamental verschiedene Spielererfahrungen). Vorschlag: Rauschen 1-40, Risse 41-75, Schwelle 76-100. (2) Kontrollverlust vs. Perspektivwechsel — mein Vorschlag: narrativer Kontrollverlust statt mechanischem. Bilateral mit Darius+Vera+Tobi nötig.

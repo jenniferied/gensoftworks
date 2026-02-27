@@ -2,9 +2,9 @@
 
 ## Auftrag
 
-Peer-Review von Tobis GDD-06 Technik & Produktion (V1). Pruefkriterien:
+Peer-Review von Tobis GDD-06 Technik & Produktion (V1). Prüfkriterien:
 
-- Ist die Asset-Pipeline realistisch fuer mich als einzige Concept Artist?
+- Ist die Asset-Pipeline realistisch für mich als einzige Concept Artist?
 - Passen die technischen Specs (Nanite, Shader) zu meiner Designsprache (GDD-05)?
 - Sind die Schattenfieber-Shader-Stufen visuell umsetzbar wie beschrieben?
 - Wo sehe ich Probleme oder Verbesserungspotential?

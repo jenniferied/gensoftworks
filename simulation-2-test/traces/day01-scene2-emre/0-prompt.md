@@ -2,19 +2,19 @@
 
 ## Auftrag
 
-Germanische Mythologie als Grundlage fuer den WBB-Mythos recherchieren. Fokus:
+Germanische Mythologie als Grundlage für den WBB-Mythos recherchieren. Fokus:
 
-1. Kosmologie, die sich fuer Low Fantasy / Medium Fantasy eignet
-2. Goetter und Wesen, die sich zu saekularen Machtstrukturen umdeuten lassen
-3. Schoepfungsmythen und Prophezeiungen als narratives Fundament
-4. Was das Schattenfieber mythologisch sein koennte
+1. Kosmologie, die sich für Low Fantasy / Medium Fantasy eignet
+2. Götter und Wesen, die sich zu säkularen Machtstrukturen umdeuten lassen
+3. Schöpfungsmythen und Prophezeiungen als narratives Fundament
+4. Was das Schattenfieber mythologisch sein könnte
 
 ## Rahmenbedingungen (aus Briefing)
 
 - Medium-Fantasy, Low-Magic, High-Tech, Biotech-Futurismus
 - Germanische Mythologie als Inspiration — NAH AN DER QUELLE, keine Klischees
 - KEIN High Fantasy, KEINE klassische Magie
-- Schattenfieber als einziges uebernatuerliches Element
+- Schattenfieber als einziges übernatürliches Element
 - 3 Fraktionen: Die Krone, Die Gilden, Der Orden
 - "Planes of existence beyond known reality" existieren laut Briefing
 
@@ -24,12 +24,12 @@ Klastrup/Tosca (2004, S. 413): Mythos = "the establishing conflicts and battles 
 
 Der Mythos ist die Backstory aller Backstories — das zentrale Wissen, das Spieler brauchen, um Ereignisse in der Welt zu interpretieren.
 
-## Quellen, auf die ich zurueckgreife
+## Quellen, auf die ich zurückgreife
 
-- Poetische Edda (Voeluspá, Grimnismál, Vafþruðnismál, Hávamál)
+- Poetische Edda (Völuspá, Grimnismál, Vafþruðnismál, Hávamál)
 - Prosa-Edda (Snorri Sturluson, ca. 1220)
-- Sekundaerliteratur aus dem Studium (Simek, Lindow)
+- Sekundärliteratur aus dem Studium (Simek, Lindow)
 
 ## Selbstanweisung
 
-Primaerquellen destillieren. Nicht in Wikinger-Romantik abrutschen. Nicht Marvel-Thor. Nah an den Texten bleiben, dann uebersetzen in RELICS-Kontext. Wo ich unsicher bin, markiere ich es.
+Primärquellen destillieren. Nicht in Wikinger-Romantik abrutschen. Nicht Marvel-Thor. Nah an den Texten bleiben, dann übersetzen in RELICS-Kontext. Wo ich unsicher bin, markiere ich es.
