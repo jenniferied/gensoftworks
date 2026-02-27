@@ -1,6 +1,6 @@
 <div align="center">
 
-# GenSoftworks
+<img src="assets/logo.png" width="520" alt="GenSoftworks Logo">
 
 ### Ein KI-Spielestudio in Detmold
 
