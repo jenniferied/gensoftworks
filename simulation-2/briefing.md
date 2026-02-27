@@ -9,32 +9,51 @@
 - **KEIN** Science-Fantasy (keine vergessene Hochtechnologie, keine Alien-Artefakte)
 - **KEINE** Anachronismen (kein Schießpulver, kein Buchdruck, keine mechanischen Uhren außer Gilden-Prototypen)
 - **KEINE** klassische Magie
-- **NICHT** The Witcher — man spielt einen selbst erstellten Charakter, nicht Geralt
-- **NICHT** Baldur's Gate 3 — kein Rundenkampf, kein Party-System
 
 ## Vision
 
-RELICS ist eine Dark-Fantasy-CRPG-Serie. Jede Iteration spielt zu einem historischen Wendepunkt, in dem ein bestimmtes **Relikt** eine Schlüsselrolle spielt. Namensformat: RELICS: *Relikt-Name*
+RELICS ist der Titel einer Fantasy-Computerrollenspiel-Serie.
+
+RELICS spielt in einer **in sich konsistenten Welt**, jeweils zu einem historischen Wendepunkt, in dem ein bestimmtes **Relikt** eine Schlüsselrolle spielt.
+
+Das Namensformat jeder Iteration ist: RELICS: *Relikt-Name*
+
+Der **Spielercharakter** ist jedes mal ein Unbekannter, der auf mysteröse Art und Weise in die Handlung eingewickelt wird. Niemals ein spezifischer Charakter.
+
+Zu Beginn des Spieles erstellt man seinen eigenen **Spielercharakter**.
 
 **Tonalität:** Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität.
 
-**Game Feel:** Ich betrete als Fremder eine Sandbox. Der Spielercharakter ist immer ein Unbekannter — niemals ein vorgegebener Charakter. Zu Beginn erstellt man seinen eigenen Charakter.
+## Game Feel
+
+Ich betrete als Fremder eine "Sandbox".
 
 ## Genre
 
-- Third-/First-Person, nahtlos umschaltbar (Skyrim-Referenz)
-- Open-World / Semi-Open-World
-- "Medieval Cyberpunk" — High-Tech, Low-Life im Spätmittelalter
-- Low-Magic, Biotech-Futurismus
+**Third-/First-Person** — nahtlos umschaltbar (Skyrim-Referenz)
+**Open-World/Semi-Open-World**
+"Medium"-Fantasy – es liegt auf dem Spektrum zwischen Low-Fantasy und High-Fantasy
+Low-Magic, High-Tech
+Biotech-Futurismus
+**KEIN** Steampunk
+
+## Die Welt
+
+Ein weltlicher Planet auf dem mehrere Kontinente liegen. Verschiedene Spieliterationen spielen in verschiedenen Regionen.
+
+Es gibt "planes of existence beyond known reality".
+
+## Für diese Iteration
+
+"Medieval" (Epoche, frühes Spätmittelalter) - Cyberpunk (High-Tech, Low-Life)
+"Mitteleuropa" als Schauplatz
+Germanische Mythologie als Inspiration
 - Mehr futuristisch, weniger heruntergekommen
+- Tiervolk weniger tribal, leicht alien vs. menschlich clean
+- Tiervolk: Händler und Diebe, NICHT Handwerker
 
-## Diese Iteration
-
-- **Epoche:** Frühes Spätmittelalter (~14. Jh.)
-- **Schauplatz:** "Mitteleuropa" — Das Schattenreich auf dem Kontinent Sturmmark
-- **Mythologie:** Germanische Sagentradition als Inspiration, nah an der Quelle
-- **Tiervolk:** Händler und Diebe, NICHT Handwerker. Leicht alien vs. menschlich clean, weniger tribal
-- **Übernatürliches:** Nur das Schattenfieber — eine Seuche, die Opfer verändert. Alles bleibt mehrdeutig.
+- Kernentscheidungen zu Kamera, Combat, Leveling, Tiervolk, Monetarisierung sind gefallen
+- Übernatürliches: Nur das Schattenfieber — eine Seuche, die Opfer verändert. Alles bleibt mehrdeutig.
 
 ## Drei Fraktionen (keine ist "gut" oder "böse")
 
@@ -53,25 +72,34 @@ RELICS ist eine Dark-Fantasy-CRPG-Serie. Jede Iteration spielt zu einem historis
 ## Deliverables
 
 - Vorschläge für **Historischer Wendepunkt**, **Relikt** und **Schauplatz**
-- Vertical Slice: Hauptquest + 2 Nebenquests in einer Region
+
+- Vertical Slice
 - Vertiefung der Kernregion, Fraktionen ausarbeiten
-- Concept Art: High Fashion Mittelalter + Biotech-Elemente
+- Concept Art
+- High Fashion Mittelalter + Biotech-Elemente
 
 Grobe Quest-Skripts:
 - Intro-Sequenz / Tutorial Quest
-- Hauptquest-Strang (Relikt)
+- Hauptquest Strang (Relikt)
 - Fraktionsquest-Outlines (3)
-- Städte-Quest (1), Charakter-Quest (1), Seitenquests (3)
+- Städte-Quest (1)
+- Charakter-Quest (1)
+- Kleinere Seitenquests (3)
 
 ## Inspiration
 
-**JA:** Elder Scrolls (Sandbox, konsistente Welt), Gothic (Dichte statt Breite), Vampires: Bloodlines (Fraktionen), Dishonored (Vertikalität), Dark/Netflix (Regen-Ästhetik)
+**The Elder Scrolls** Serie – Open-World Sandbox, jede Iteration versucht einen technischen Meilenstein zu setzen; konsistente High-Fantasy Welt
 
-**NEIN:** Witcher (vorgegebener Charakter), Baldur's Gate 3 (Rundenkampf), alles mit Steampunk-Ästhetik
+**Vampires the Masquerade: Bloodlines** – Fraktionsgameplay
+**Gothic** Serie – Dichte, statt Breite
+**Dishonored** Serie – Vertikalität im Level Design
+
+**NICHT** **The Witcher** – ein exzellentes geschriebenes Rollenspiel, man spielt aber einen bestimmten Charakter
+**NICHT **Baldur's Gate 3** – ein exzellentes Rollenspiel, allerdings spielt man rundenbasiert und mit einem Team von Charakteren
 
 ## Kernanweisungen
 
-- **Qualität vor Quantität**
-- **Immer fragen statt erfinden, wenn unklar**
-- **Alles muss gegen dieses Briefing konsistent sein**
-- **GDD wird ein vollständiges Dokument, kein Skeleton**
+- Qualität vor Quantitaet
+- Immer fragen statt erfinden, wenn unklar
+- Alles muss gegen dieses Briefing konsistent sein
+- GDD wird ein vollständiges Dokument, kein Skeleton
