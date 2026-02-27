@@ -3,7 +3,7 @@ name: Nami Okafor
 role: Narrative Designer & Writer
 age: 29
 pronouns: she/her
-workspace: Bibliothek (Zimmer 7e)
+workspace: Bibliothek (Zimmer 12e)
 color: "#EAB308"
 sprite: nami
 address: Artur-Ladebeck-Straße 78, 4. OG, 33602 Bielefeld

@@ -8,7 +8,7 @@
 
 <br>
 
-<img src="frontend/test-results/z-overview.png" width="720" alt="GenSoftworks Studio — Gebäude 7, Obergeschoss">
+<img src="frontend/test-results/z-overview.png" width="720" alt="GenSoftworks Studio — Gebäude 12, Obergeschoss">
 
 <br>
 
@@ -33,13 +33,13 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 
 ## 🏢 Das Studio
 
-<img src="assets/hobart-building.png" width="720" alt="Kreativquartier Hobart, Detmold — Gebäude 7">
+<img src="assets/hobart-building.png" width="720" alt="Kreativquartier Hobart, Detmold — Gebäude 12">
 
 <table>
 <tr><td>
 <strong>GenSoftworks GbR</strong><br>
 📍 Kreativquartier Hobart<br>
-🏠 Gebäude 7, Obergeschoss<br>
+🏠 Gebäude 12, Obergeschoss<br>
 🗺️ 32756 Detmold, Kreis Lippe<br>
 🇩🇪 Nordrhein-Westfalen
 </td></tr>
@@ -72,9 +72,9 @@ Das Studio existiert in einer 🕹️ Pixel-Art-Simulation — ein ganzes Stockw
 </details>
 
 <details>
-<summary>📋 <strong>Zimmer 7 — Produktionsbüro</strong> — Finn und die Creative Director</summary>
+<summary>📋 <strong>Zimmer 12 — Produktionsbüro</strong> — Finn und die Creative Director</summary>
 <br>
-<img src="frontend/test-results/z-room7.png" width="720" alt="Zimmer 7">
+<img src="frontend/test-results/z-room7.png" width="720" alt="Zimmer 12">
 </details>
 
 ---

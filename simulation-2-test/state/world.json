@@ -1,7 +1,7 @@
 {
   "simulation": 2,
   "day": 5,
-  "scene": 0,
+  "scene": 4,
   "test_run": true,
   "start_weekday": "monday",
   "status": "in_progress"

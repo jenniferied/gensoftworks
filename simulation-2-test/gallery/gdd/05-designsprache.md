@@ -1,9 +1,12 @@
 # GDD-05: Visuelle Designsprache & Art Direction
 
-> **Status:** V1 — Ausformulierter Text (Produktionstag, Tag 3)
+> **Status:** V2 — Finalisiert (Produktionstag, Tag 5)
 > **Autorin:** Vera Kowalski, Concept Art & Environment Design
-> **Letzte Aktualisierung:** Tag 3, Szene 2
-> **Abhaengigkeiten:** WBB-01 Mythos (Emre), WBB-02 Topos (Emre, ausstehend), GDD-02 Kernmechaniken (Darius), GDD-04 Schluesselfiguren (Nami)
+> **Letzte Aktualisierung:** Tag 5, Szene 2
+> **Aenderungslog:**
+> - V1 (Tag 3): Volltext, Fraktionsvisuals, Biotech-Grammatik, Farbsystem, Mode, Tiervolk, Schattenfieber, Environments
+> - V2 (Tag 5): Stufe-0-Baseline ergänzt (Kap. 7.2), Stufengrenzen-Referenztabelle einheitlich, Gameplay-Orte neu (Kap. 8.5), Dominanzprinzip in Kap. 5.4, ACES-Validierungshinweis in Kap. 4.4
+> **Abhaengigkeiten:** WBB-01 Mythos (Emre), WBB-02 Topos (Emre, V1 ausstehend), GDD-02 Kernmechaniken (Darius), GDD-04 Schluesselfiguren (Nami)
 
 ---
 
@@ -260,6 +263,8 @@ Bestimmte Farben gehoeren keiner Fraktion, sondern der Welt:
 
 **Regel 4: Die Lebende Krone hat keine Fraktionsfarbe.** Die Krone ist aelter als alle Fraktionen. Ihre Farben — Elfenbein, Bernstein, duenkle Adern — gehoeren nur ihr. Wenn sie in einer Szene auftaucht, ist sie farblich fremd. Das ist Absicht.
 
+**Hinweis fuer Shader-Implementation (V2, ACES-Validiert):** Alle Hex-Codes in diesem Dokument sind sRGB-Werte, kalibriert fuer UE5-Rendering mit aktivem ACES-Tonemapping. ACES hebt Mitteltöne und saettigt Farben leicht ab — warme Toene (Altgold `#C5A030`, Amber `#C49A20`, Bernstein `#D4A017`) sind bewusst tiefer gesetzt als Display-Normal, um nach ACES-Kompression korrekt zu erscheinen. Giftgruen (`#39FF14`) ist HDR-intensiv — soll im SDR-Bereich saturiert wirken, im HDR-Bereich leuchten. Keine Abweichungen von diesen Werten ohne Abstimmung mit Vera und Tobi.
+
 ---
 
 ## 5. Mode & Ruestung
@@ -301,11 +306,26 @@ Ruestung in RELICS ist nicht geschmiedet — sie ist gezuechtet. Organische Panz
 
 **Gezuechtete Ruestung als Luxusgut:** Die Gilden kontrollieren die Zucht der besten Ruestungsmaterialien. Eine massgeschneiderte Gilden-Ruestung ist ein Vermoegen wert — und ein Statussymbol. Sie passt sich dem Traeger an, heilt kleine Beschaedigungen selbst und waechst mit (bis zu einem gewissen Grad). Wer eine solche Ruestung traegt, sagt damit: Ich bin die Investition wert.
 
-**OFFEN:** Detaillierte Ruestungsklassen und ihre Kampf-Mechanik — Abstimmung mit Leo (GDD-02) und Darius erforderlich. Visuelle Differenzierung der Ruestungsstufen in Concept Art: V2.
+**OFFEN:** Detaillierte Ruestungsklassen und ihre Kampf-Mechanik — Abstimmung mit Leo (GDD-02) und Darius erforderlich. Visuelle Differenzierung der Ruestungsstufen in Concept Art: V3.
 
-### 5.4 Spieler-Customization
+### 5.4 Spieler-Customization & Dominanzprinzip
 
 Der Spielercharakter kann Ruestung und Kleidung individuell kombinieren (CD-Vorgabe). Das System muss visuell lesbar bleiben: Fraktionszugehoerigkeit, Ruestungsklasse und Schattenfieber-Status muessen auf einen Blick erkennbar sein, auch bei frei kombinierten Sets.
+
+**Dominanzprinzip — Torso-Primat:**
+
+Die Fraktionszugehoerigkeit eines Outfits wird durch den Torso-Slot definiert. Der Torso ist der visuell dominanteste Koerperbereiche im Third-Person-Spiel — er ist immer sichtbar, er traegt die groesste Flaeche an Fraktionsfarben und Ikonographie.
+
+| Kombination | Visuelles Ergebnis | Fraktionslesbarkeit |
+|-------------|-------------------|---------------------|
+| Torso Fraktion A + alle anderen Slots Fraktion A | Reine Fraktion | Eindeutig Fraktion A |
+| Torso Fraktion A + bis zu 2 Slots Fraktion B | Fraktion A mit Akzenten | Fraktion A erkennbar, B als Kontrast lesbar |
+| Torso Fraktion A + 3+ Slots Fraktion B | Gemischtes Set | Visuell neutral — Haendler-Lesart, keine eindeutige Fraktionszugehoerigkeit |
+| Torso neutral (Tiervolk/Wildnis) + beliebige Slots | Neutrales Set | Kein Fraktionssignal |
+
+**Schattenfieber ueberschreibt das Dominanzprinzip.** Ab Infektionsstufe 2 (Risse, Wert 41+) sind am Koerper des Spielers Schattenfieber-Zeichen sichtbar — unabhaengig davon, welches Outfit getragen wird. Die Fraktionszugehoerigkeit bleibt lesbar, aber das Schattenfieber-Signal ist dominant. Kein Outfit verbirgt fortgeschrittene Infektion.
+
+**NPC-Reaktion auf gemischte Sets:** NPCs lesen Fraktionszugehoerigkeit am Outfit. Gemischte Sets erzeugen ambivalente NPC-Reaktionen — kein Fraktions-Bonus, kein Fraktions-Malus. Das koennen erfahrene Spieler gezielt einsetzen, um Fraktionssignale zu neutralisieren. Design-Entscheidung: Das ist kein Bug, sondern eine Spieloption.
 
 ---
 
@@ -339,33 +359,54 @@ Warme Naturtoene als Basis: Ocker (`#CC7722`), Terrakotta (`#C04000`), Sand (`#C
 
 ## 7. Schattenfieber — Visuelle Manifestation
 
+### 7.0 Referenztabelle: Stufen und Grenzen
+
+> Diese Tabelle ist verbindlich und identisch in GDD-02, GDD-03 und GDD-05. Keine Abweichungen. (CD-Entscheidung, Tag 4, Szene 3.)
+
+| Infektionswert | Narrativer Zustand (Nami/GDD-03) | Mech. Stufe (Darius/GDD-02) | Visueller Status (Vera/GDD-05) |
+|---------------|----------------------------------|------------------------------|-------------------------------|
+| 0 | Gesund | Stufe 0 — Rein | Stufe-0-Baseline: keine Schattenzeichen |
+| 1–40 | Rauschen | Stufe 1–2 (Gezeichnet/Infiziert) | Subtile Schattenzeichen, schwaches Schimmern |
+| 41–75 | Risse | Stufe 3 (Verwandelt) | Sichtbare Schattenzeichen, Koerperveraenderung |
+| 76–100 | Schwelle | Stufe 4 (Entfesselt) | Erschreckende Transformation, Koerpergrenze uneindeutig |
+
+Halluzinations-Start: Wert 76 (Beginn Stufe 4/Schwelle).
+
 ### 7.1 Leitprinzip: Die falsche Organik
 
 Biotech ist schoeen-organisch. Schattenfieber ist krank-organisch. Beide stammen aus derselben Quelle — dem Emer-Material —, aber das Schattenfieber ist die unkontrollierte Variante, und das sieht man. Wo Biotech pulsiert, zuckt das Schattenfieber. Wo Biotech waechst, wuchert das Schattenfieber. Wo Biotech leuchtet (in Amber, Cyan, Altgold), glueeht das Schattenfieber in FALSCHEN Farben: Violett-Schwarz (`#2D0A31`) und Giftgruen (`#39FF14`).
 
 Das Schattenfieber-Farbsignal ist das staerkste visuelle Alarmsignal in RELICS. Es bricht jede bestehende Palette, jede Fraktionsaesthetik, jede architektonische Ordnung. Wenn der Spieler in einem Krone-Palast Giftgruen sieht, weiss er sofort: etwas ist sehr falsch. Das Signal muss unmissverstaendlich sein — kein subtiler Uebergang, sondern ein visueller Bruch.
 
-### 7.2 Drei Stufen der Manifestation
+### 7.2 Vier visuelle Zustaende
 
-Die visuelle Manifestation des Schattenfiebers folgt Namis drei narrativen Zustaenden (Rauschen, Risse, Schwelle) und korrespondiert mit Darius' mechanischen Stufen (0-4). Jede Stufe hat eigene visuelle Regeln:
+**Stufe 0: Baseline — Rein (Infektionswert 0)**
 
-**Stufe 1: Rauschen (Infektionswert 1-40)**
+Der uninfizierte Spieler ist die visuelle Nulllinie. Alles, was Schattenfieber ab Wert 1 zeigt, definiert sich als Abweichung von diesem Zustand.
 
-Am Koerper: Subtil. Adern unter der Haut, die leicht dunkler erscheinen als normal. Bei bestimmten Lichtwinkeln ein schwaches violettes Schimmern auf der Haut. Pupillen, die in Schattenzonen kurz aufleuchten — ein gruenlicher Reflex, wie Katzenuaugen im Dunkeln. Nichts davon ist auf den ersten Blick sichtbar. Man muss wissen, worauf man achtet.
+Am Koerper: Keine Auffaelligkeiten. Normale Hautfarbe, normale Pupillen, normale Schatten. Das Nervensystem-UI (GDD-02, Kap. 3) zeigt alle vier Aeste in vollem, klarem Licht — keine Schatten-Ueberlagerungen, kein Violett-Schwarz. Augen reagieren normal auf Licht. Schatten fallen korrekt.
 
-In der Umgebung: Fast unsichtbar. Kerzen flackern etwas laenger, bevor sie erloeoeerschen. Schatten fallen in leicht falsche Richtungen. An verseuchten Orten: ein feiner violetter Dunst ueber dem Boden, Pflanzen, deren Blaetter sich einrollen. Der Spieler bemerkt es vielleicht nicht bewusst — aber die Atmosphaere aendert sich.
+In der Umgebung: Der Spieler sieht nur die erste Schicht der Welt. Verstecktes Biotech ist unsichtbar. Emotionen von NPCs sind nicht ablesbar. Schattenfieber-Zonen sind erkennbar durch physische Warnsignale (Geruch, Temperatur, Licht) — aber nicht durch Schattensinne.
 
-**Stufe 2-3: Risse (Infektionswert 41-75)**
+Gameplay-Relevanz: Stufe 0 ist kein Nachteil — sie ist ein anderer Spielstil. Volle Systemeffizienz aller Nervensystem-Aeste (Cardio, Muskel, Lymph). Volle Alchemie-Wirksamkeit. Keine sozialen Einschraenkungen. Das Stufe-0-Aequivalent zu Schattensinnen ist Alchemie plus Trainerfaehigkeiten — andere Mittel, gleichwertiger Spielraum.
+
+**Rauschen: Infektionswert 1–40**
+
+Am Koerper: Subtil. Adern unter der Haut, die leicht dunkler erscheinen als normal. Bei bestimmten Lichtwinkeln ein schwaches violettes Schimmern auf der Haut. Pupillen, die in Schattenzonen kurz aufleuchten — ein gruenlicher Reflex, wie Katzenaugen im Dunkeln. Nichts davon ist auf den ersten Blick sichtbar. Man muss wissen, worauf man achtet.
+
+In der Umgebung: Fast unsichtbar. Kerzen flackern etwas laenger, bevor sie erloeschen. Schatten fallen in leicht falsche Richtungen. An verseuchten Orten: ein feiner violetter Dunst ueber dem Boden, Pflanzen, deren Blaetter sich einrollen. Der Spieler bemerkt es vielleicht nicht bewusst — aber die Atmosphaere aendert sich.
+
+**Risse: Infektionswert 41–75**
 
 Am Koerper: Sichtbar. Die Hautstruktur veraendert sich — nicht ueberall, aber an exponierten Stellen. Die Adern treten hervor und pulsieren in einem eigenen Rhythmus, der nicht zum Herzschlag passt. An den Haenden, am Hals, im Gesicht erscheinen asymmetrische Muster: Verdickungen, Verfaerbungen, Strukturen, die an Narben erinnern, aber wachsen. Schatten um den Betroffenen verhalten sich FALSCH — sie sind zu lang, zu dunkel, zu beweglich.
 
 In der Umgebung: Unuebersehbar. Schattenfieber-Zonen haben eine klare visuelle Grenze: eine Linie, an der die Farben entsaettigen, das Licht kippelt, die Flora mutiert. Innerhalb der Zone: Baeume mit Wucherungen, Steine, die schwitzen, Gras, das in giftgruenen Adern leuchtet. Die Luft ist dichter. Partikel schweben, die kein Staub sind.
 
-**Stufe 4: Schwelle (Infektionswert 76-100)**
+**Schwelle: Infektionswert 76–100**
 
 Am Koerper: Erschreckend. Die Koerpergrenze des Betroffenen wird uneindeutig. Gewebe dehnt sich ueber die natuerliche Silhouette hinaus — Fasern, Ranken, dünne Stege aus organischem Material, die den Koerper mit der Umgebung zu verbinden scheinen. Bei Kontakt loesen sie sich auf, wachsen aber nach. Die Haut ist stellenweise transluzent — darunter leuchtet es schwach giftgruen. Die Augen sind vollstaendig veraendert: keine menschliche Iris mehr, sondern ein gleichmaessiges Leuchten.
 
-In der Umgebung: Totalbefall. Die Grenze zwischen "gesund" und "befallen" existiert nicht mehr in diesen Zonen. Die gesamte Umgebung ist transformiert: Gebaeude, die von organischem Material ueberrwuchert sind, Boeden, die nachgeben wie Haut, Lichtquellen, die in Violett-Schwarz und Giftgruen pulsieren. Die Luft zittert. Die Physik scheint FALSCH — Wasser fliesst in die falsche Richtung, Schatten bewegen sich eigenstaendig, die Schwerkraft hat Aussetzer. Die Hauten zwischen den Daseinsebenen sind hier duenn, und man sieht es.
+In der Umgebung: Totalbefall. Die Grenze zwischen "gesund" und "befallen" existiert nicht mehr in diesen Zonen. Die gesamte Umgebung ist transformiert: Gebaeude, die von organischem Material ueberwuchert sind, Boeden, die nachgeben wie Haut, Lichtquellen, die in Violett-Schwarz und Giftgruen pulsieren. Die Luft zittert. Die Physik scheint FALSCH — Wasser fliesst in die falsche Richtung, Schatten bewegen sich eigenstaendig, die Schwerkraft hat Aussetzer. Die Hauten zwischen den Daseinsebenen sind hier duenn, und man sieht es.
 
 ### 7.3 Designregeln fuer Schattenfieber
 
@@ -383,7 +424,7 @@ In der Umgebung: Totalbefall. Die Grenze zwischen "gesund" und "befallen" existi
 
 Die bewohnte Welt — der Mittelgrund — ist kein unbelebter Schauplatz. Sie ist der verwandelte Koerper des Emer, und die Bewohner haben sich darauf eingerichtet, AUF und IN einem Organismus zu leben. Das Environment Design spiegelt das wider: Landschaften, die subtil organisch wirken. Felsen, deren Maserung an Muskelgewebe erinnert. Fluesse, deren Verlauf sich ueber Jahrzehnte leicht veraendert — wie Adern, die sich verlagern. Hoehlen, die wie Organe geformt sind.
 
-Diese organischen Untertöne sollen nie offensichtlich sein. Der Mittelgrund sieht auf den ersten Blick aus wie eine mitteleuropaeische Landschaft: dichte Waelder, sanfte Huegel, neblige Taeler, schroffe Gebirge. Erst auf den zweiten Blick — oder mit Schattensinnen — werden die Emer-Strukturen sichtbar: die Textur im Fels, das Muster im Boden, der Puls im Wasser.
+Diese organischen Untertoene sollen nie offensichtlich sein. Der Mittelgrund sieht auf den ersten Blick aus wie eine mitteleuropaeische Landschaft: dichte Waelder, sanfte Huegel, neblige Taeler, schroffe Gebirge. Erst auf den zweiten Blick — oder mit Schattensinnen — werden die Emer-Strukturen sichtbar: die Textur im Fels, das Muster im Boden, der Puls im Wasser.
 
 ### 8.2 Vertikalitaet als Designprinzip
 
@@ -397,32 +438,67 @@ Vertikalitaet ist auch ein Statussignal. In Krone-Staedten wohnen die Maechtigen
 Enge, vertikale Gassen unter riesigen gotischen Boegen. Palastbezirke mit Fassaden, die einmal weiss waren und jetzt von Rissen und Biotech-Durchbruechen gezeichnet sind. Hohe Tuerme mit biolumineszenten Kronleuchtern, die nachts die Stadt in warmes Karmin-Gold tauchen. Statuen von Sigvalt an jeder Kreuzung — einhaendig, verwittert, von niemandem missachtet. Die Strassen sind gepflastert, aber die Fugen leuchten schwach: die Adern unter der Stadt sind hier nah an der Oberflaeche. Vorhallen, in denen Wandteppiche haengen, die sich langsam bewegen — weil das Material lebt.
 
 **Gilden-Stadt: Industrielle Monumentalitaet.**
-Breite Strassen, offene Marktplaetze, kathedralenhafte Gildenhallen mit sichtbaren Deckenrippen. Die Gebaeude atmen — woeortlich. Waende, die sich leicht ausdehnen und zusammenziehen. Boeden mit Kapillarnetzwerken. Membranfenster, die sich bei Regen verdichten. Karawanenhoefe, in denen Tiervolk-Haendler ihre Waren auslegen. Kontore mit Chitin-Schreibpulten und Membran-Dokumenten. Fabrikgebaeude, in denen Biotech-Material gezuechtet wird — riesige Hallen, warm, feucht, pulsierend. Die Gilden-Stadt riecht nach Leben.
+Breite Strassen, offene Marktplaetze, kathedralenhafte Gildenhallen mit sichtbaren Deckenrippen. Die Gebaeude atmen — woertlich. Waende, die sich leicht ausdehnen und zusammenziehen. Boeden mit Kapillarnetzwerken. Membranfenster, die sich bei Regen verdichten. Karawanenhoefe, in denen Tiervolk-Haendler ihre Waren auslegen. Kontore mit Chitin-Schreibpulten und Membran-Dokumenten. Fabrikgebaeude, in denen Biotech-Material gezuechtet wird — riesige Hallen, warm, feucht, pulsierend. Die Gilden-Stadt riecht nach Leben.
 
 **Ordens-Stadt: Geometrische Perfektion.**
 Von aussen die schoenste Siedlung des Mittelgrunds. Weisse Mauern, perfekte Proportionen, Kreuzgaenge mit sanftem Lichteinfall. Schulen, Hospitaeler, Bibliotheken — alles offen, alles einladend. Halvards Raben als Steinrelief an den Gebaeuden. Klostergaerten mit medizonischen Kraeuetern. Die Strassen sind breit und sauber. Kein Verfall, kein Dreck, keine Unordnung. Und unter der Oberflaeche: Nervenstrang-Korridore, Ueberwachungsorgane, Labore. Der Spieler, der tief genug in den Orden vordringt, erlebt den Moment, in dem der weisse Kalkstein aufhoert und das pulsierende Gewebe beginnt.
 
 **Wildnis: Mitteleuropa mit Emer-Unterton.**
-Dichte Waelder, neblige Taeler, schroffe Gebirge, Moorlandschaften. Auf den ersten Blick realistisch, auf den zweiten Blick subtil fremd: Felsen mit Muskelmaserung, Baeume, deren Rinde an Haut erinnert, Quellen, die in einem Rhythmus sprudeln. Ruinen vergangener Epochen, ueberrwachsen und halb verdaut von der Landschaft — das Land nimmt zurueck, was auf ihm gebaut wurde. Einzelhoefe, Einsiedler, verlassene Wachposten. Die Wildnis ist schoeen und still und nicht sicher.
+Dichte Waelder, neblige Taeler, schroffe Gebirge, Moorlandschaften. Auf den ersten Blick realistisch, auf den zweiten Blick subtil fremd: Felsen mit Muskelmaserung, Baeume, deren Rinde an Haut erinnert, Quellen, die in einem Rhythmus sprudeln. Ruinen vergangener Epochen, ueberwachsen und halb verdaut von der Landschaft — das Land nimmt zurueck, was auf ihm gebaut wurde. Einzelhoefe, Einsiedler, verlassene Wachposten. Die Wildnis ist schoeen und still und nicht sicher.
 
 **Uebergangszonen: Neutrale Raeume.**
-Maerkte, Karawanenwege, Grenzgebiete. Hier treffen die Fraktionen aufeinander, und die visulle Sprache ist bewusst neutral: Erdetoene, keine Fraktionsfarben, einfache Architektur ohne Biotech-Praegung. Tiervolk-Praesenz ist hier am staerksten — ihre eklektische Kleidung und ihre fremden Koerper setzen sich gegen die neutrale Umgebung deutlich ab.
+Maerkte, Karawanenwege, Grenzgebiete. Hier treffen die Fraktionen aufeinander, und die visuelle Sprache ist bewusst neutral: Erdtoene, keine Fraktionsfarben, einfache Architektur ohne Biotech-Praegung. Tiervolk-Praesenz ist hier am staerksten — ihre eklektische Kleidung und ihre fremden Koerper setzen sich gegen die neutrale Umgebung deutlich ab.
 
 **Schattenfieber-Zonen: Die Entflechtung.**
-Gebiete, in denen die Hauten dunn geworden sind. Die visuelle Transformation ist total: Farben entsaettigen und kippen in Violett-Schwarz, Giftgruen leuchtet in den Adern der Landschaft, Flora und Fauna sind mutiert. Die Physik verhaelt sich falsch. Licht bricht anders. Wasser fliesst aufwaerts. Schatten haben eigene Konturen. Diese Zonen sind die visuell intensivsten Orte in RELICS — und die gefaehrlichsten. Ihre Grenzen sind scharf: ein Schritt trennt die geordnete Welt vom Chaos. Die Hauten sind hier so duenn, dass das Stillfeld (oder das Hohlicht) durchscheint.
+Gebiete, in denen die Hauten duenn geworden sind. Die visuelle Transformation ist total: Farben entsaettigen und kippen in Violett-Schwarz, Giftgruen leuchtet in den Adern der Landschaft, Flora und Fauna sind mutiert. Die Physik verhaelt sich falsch. Licht bricht anders. Wasser fliesst aufwaerts. Schatten haben eigene Konturen. Diese Zonen sind die visuell intensivsten Orte in RELICS — und die gefaehrlichsten. Ihre Grenzen sind scharf: ein Schritt trennt die geordnete Welt vom Chaos. Die Hauten sind hier so duenn, dass das Stillfeld (oder das Hohlicht) durchscheint.
 
 ### 8.4 Beleuchtung
 
 Beleuchtung in RELICS folgt zwei Logiken — natuerlich und kuenstlich — und einer Ausnahme.
 
-**Natuerliches Licht:** Diffus, oft bedeckt, selten warm. Der Mittelgrund liegt in einer klimatischen Zone, die an Mitteleuropa erinnert: haaeufig bewoelkt, haeufig neblig, selten strahlend. Die goldene Stunde (kurz vor Sonnenuntergang) ist ein seltener, wertvoller Moment — wenn sie eintritt, wird sie zum visuellen Geschenk. Concept Artists sollen die meisten Szenen in diffusem, kuuehlem Licht gestalten und die goldene Stunde sparsam einsetzen.
+**Natuerliches Licht:** Diffus, oft bedeckt, selten warm. Der Mittelgrund liegt in einer klimatischen Zone, die an Mitteleuropa erinnert: haeufig bewoelkt, haeufig neblig, selten strahlend. Die goldene Stunde (kurz vor Sonnenuntergang) ist ein seltener, wertvoller Moment — wenn sie eintritt, wird sie zum visuellen Geschenk. Concept Artists sollen die meisten Szenen in diffusem, kuuehlem Licht gestalten und die goldene Stunde sparsam einsetzen.
 
-**Kuenstliches Licht:** Ausschliesslich Biolumineszenz. Keine Fackeln, keine Kerzen, keine Oellampen. Lichtorgane — gezuechetete biologische Leuchtkoerper — sind die einzige kuenstliche Lichtquelle. Ihre Farbtemperatur ist fraktionsabhaengig:
+**Kuenstliches Licht:** Ausschliesslich Biolumineszenz. Keine Fackeln, keine Kerzen, keine Oellampen. Lichtorgane — gezuechtete biologische Leuchtkoerper — sind die einzige kuenstliche Lichtquelle. Ihre Farbtemperatur ist fraktionsabhaengig:
 - Krone: Warm, goldgelb, pulsierend — wie Kerzenlicht, aber lebendiger (`#C5A030`)
 - Gilden: Neutral bis kuehl, funktional, gleichmaessig — Arbeitslicht, das nie blendet (`#C49A20` bis `#2EC4B6`)
 - Orden: Kuehl, weiss, gleichmaessig — Kliniklicht, das keine Schatten laesst (`#E8E4DE`)
 
 **Die Ausnahme — Schattenfieber-Licht:** In Schattenfieber-Zonen verhaelt sich Licht physikalisch falsch. Schatten fallen in die falsche Richtung. Lichtquellen leuchten, ohne zu beleuchten. Farben kippen ins Violett-Schwarz. Giftgruene Adern leuchten von innen — sie brauchen keine Lichtquelle, sie SIND eine. Das Schattenfieber-Licht ist die Abwesenheit jeder visuellen Ordnung.
+
+### 8.5 Gameplay-Orte: Fraktionsvarianten (V2 neu)
+
+Bestimmte Gameplay-Orte kommen in allen drei Fraktionen vor — Alchemie-Station, Trainer, Haendler. Jede Fraktion interpretiert diese Orte anders. Die Fraktionsvariante ist visuell sofort lesbar.
+
+**Alchemie-Station**
+
+Alchemie ist in RELICS Biologie: Substanzen aus Emer-Material, destilliert, konzentriert, kombiniert. Jede Fraktion betreibt Alchemie, aber mit anderen Mitteln und anderen Zwecken.
+
+| Fraktion | Visueller Charakter | Lage | Signalelemente |
+|----------|---------------------|------|----------------|
+| Krone | Privates Laboratorium hinter verhaengten Tueren. Elegantes Geraet aus Altgold und dunklem Glas. Die Gefaesse sind organisch geformt, die Fluessigkeiten pulsieren schwach in Karmin. Keine Beschriftung — Krone-Alchemie ist Geheimwissen. | Hinterraeume von Palaeesten, unter Kapellen | Altgold-Geraet, Karmin-Fluessigkeiten, verschlossene Gefaesse, kein Licht von aussen |
+| Gilden | Oeffentliche Werkstatt. Alles sichtbar, alles beschriftet, alles zugaenglich (gegen Geld). Breite Arbeitsflaechen aus Chitin, grosse Membran-Behaelter, Amber-Biolumineszenz ueber den Stationen. Die Zutatenliste haengt an der Wand. | Erdgeschoss von Gildenhaeusern, Marktebene | Amber-Licht, offene Regale, Membran-Behaelter, Preisliste sichtbar |
+| Orden | Scheinbar ein Krankenhaus-Vorbereitungsraum: weiss, steril, geordnet. Was wirklich passiert, ist nicht sofort erkennbar. Die Substanzen sind farblos. Die Geraete sehen wie medizinische Instrumente aus. Bernstein-Glow kommt aus Behaeltern, die verschlossen und etikettiert sind — mit Codes, nicht mit Namen. | Ordenshospitaeler, Innenbereiche | Kalkweiss, verschlossene Codes-Etiketten, Bernstein-Glow hinter Glas, keine sichtbaren Pflanzen |
+
+**Trainer**
+
+Trainer lehren Kampffaehigkeiten und koerperliche Techniken (GDD-02, Kap. 3.3). Jede Fraktion hat exklusive Trainer fuer bestimmte Waffenstile und Fertigkeiten. Optisch ist sofort erkennbar, welche Faehigkeiten hier gelehrt werden.
+
+| Fraktion | Visueller Charakter | Lage | Signalelemente |
+|----------|---------------------|------|----------------|
+| Krone | Zeremonieller Uebungshof oder Fechtsaal. Hohe Decken, Holzdielen, einhaendige Statuen als stille Zuschauer. Krone-Trainer lehren Schwertkampf, Paraden, zeremonielle Kampfkunst. Kleidung: formal, Karmin-Akzente, keine sichtbare Ruestung — Haltung ist Ruestung. | Innenhoefen von Palaeesten und Adelsgebaeuden, obere Stadtebene | Einhaendige Statuen, Karmin-Wandverkleidung, Schwerttrophaaen, kein Biotech sichtbar |
+| Gilden | Kaempfarena oder Soeldnerquartier. Pragmatisch, dreckig, effektiv. Stroe auf dem Boden, Chitin-Dummies, Waffenregale mit allem, was Funktion hat. Gilden-Trainer lehren Dolchkampf, Bogenarbeit, Guerilla-Taktiken. Kleidung: Arbeitskleidung mit organischen Verstarkungen. | Karawanenhoefe, Soeldnerunterkuenfte, Untergeschoss von Gildenhallen | Chitin-Trainingsgeraete, offene Waffenregale, Amber-Licht, sichtbare Kampfspuren |
+| Orden | Meditativer Uebungsraum. Kalkweiss, minimale Einrichtung, symmetrisch. Orden-Trainer lehren Koerperkontrolle, Schmerzunterdrueckung, Konzentrationsarbeit — aber auch fortgeschrittene Kampftechniken, die nach aussen wie Heilkunde aussehen. | Innenbereiche von Ordensgebaeuden, untere Ebenen | Kalkweiss, keine Dekoration, geometrische Uebungsmarkierungen am Boden, Schieferblau-Roben des Trainers |
+
+**Haendler**
+
+Haendler verkaufen Waren, Informationen, Zugang. Tiervolk-Haendler sind die mobilen Generalisten. Fraktionshaendler spezialisieren sich auf ihre eigenen Produkte. Optisch klar unterscheidbar.
+
+| Haendler-Typ | Visueller Charakter | Lage | Signalelemente |
+|--------------|---------------------|------|----------------|
+| Krone-Haendler | Privates Kontor mit schweren Vorhaengen. Nicht alles ist ausgestellt — die wertvollsten Waren sind hinter dem Ladentisch. Karmin-Textilien, Altgold-Preisschilder, Biolumineszenz als Beleuchtung. Haltung des Haendlers: erwartet Respekt. | Palastbezirke, Adelsmarkte | Verhang vor dem Eingang, Altgold-Schilder, versteckte Ware, koerpersprachlich kuehl |
+| Gilden-Haendler | Oeffentlicher Stand oder grosses Kontor. Ware ist ausgestellt, Preise sind sichtbar, Verhandlung ist erwuenscht. Amber-Beleuchtung, Chitin-Theke, Membran-Verpackungen. Haltung des Haendlers: pragmatisch, laut, direkt. | Marktplaetze, Karawanenhoefe, Erdgeschoss | Offene Auslagen, sichtbare Preisliste, Amber-Licht, laute Umgebung |
+| Orden-Haendler | Kein klassischer Handel — der Orden verkauft nicht, er verteilt. Zutritt nur bei Beziehungsstatus. Kalkweiss-Raum, geordnete Regale, alles etikettiert. Was der Orden gibt, kostet Information oder Loyalitaet, kein Geld. | Ordenshospitaeler, Bibliotheken | Kalkweiss, keine Preisschilder, Haendler in Ordensroben, erwartet Gegenleistung in Form von Information |
+| Tiervolk-Haendler | Mobiler Stand, eklektische Ware aus allen Fraktionen. Ocker-Terrakotta-Tuecher als Auslageflaecheche, Knochen-Schmuck als Dekoration, Biotech-Fragmente als Raritaeten. Haltung des Haendlers: freundlich, beobachtend, immer bereit abzuhauen. | Uebergangszonen, Marktplaetze, Stadtgrenzen | Ocker-Erdtoene, gemischte Ware, mobiles Setup (kein fester Stand), Tiervolk-Proportionen |
 
 ---
 
@@ -430,26 +506,26 @@ Beleuchtung in RELICS folgt zwei Logiken — natuerlich und kuenstlich — und e
 
 | Thema | Brauche von | Prioritaet | Status |
 |-------|-------------|------------|--------|
-| Architektur-Logik pro Region (Detail) | Emre (WBB-02 Topos) | Hoch | Ausstehend — brauche Topografie und Regionen |
+| Architektur-Logik pro Region (Detail) | Emre (WBB-02 Topos) | Hoch | Ausstehend — Outline liegt vor, Volltext fehlt |
 | Ruestungsklassen & Kampf-Visuals | Leo + Darius (GDD-02) | Hoch | Ausstehend — Waffenklassen stehen, Ruestung offen |
-| Schluesselcharakter-Designs | Nami (GDD-04) | Mittel | Ausstehend — brauche Figuren fuer Concept Art |
-| Schattenfieber-Gameplay-Kosten (visuell) | Darius (GDD-02) | Mittel | Teilweise — Stufen-Mapping liegt vor |
-| Nervensystem-UI-Visualisierung | Darius (GDD-02) | Mittel | Ausstehend — Wireframe in V2 |
-| Technische Constraints (Engine, LOD, Shader) | Tobi (GDD-06) | Niedrig (erst spaetere Produktion) | Ausstehend |
-| Kontrollverlust-Episoden visuell | Darius + Tobi | Niedrig | Erst ab V2 |
+| Schluesselcharakter-Designs | Nami (GDD-04) | Mittel | Ausstehend — Outline liegt vor, Volltext fehlt |
+| Schattenfieber-Gameplay-Kosten (visuell) | Darius (GDD-02) | Mittel | Teilweise — Stufen-Mapping liegt vor und abgestimmt |
+| Nervensystem-UI-Visualisierung | Darius (GDD-02) | Mittel | Ausstehend — Wireframe in V3 |
+| Technische Constraints (Engine, LOD, Shader) | Tobi (GDD-06) | Niedrig | V2 von Tobi mit 60 Modulen und Drei-Schichten-Rendering — Abstimmung laeuft |
+| Kontrollverlust-Episoden visuell | Darius + Tobi | Niedrig | Erst ab V3 |
 
 ---
 
-## 10. Naechste Schritte
+## 10. Naechste Schritte (V3)
 
-- [ ] V2: Thumbnail-Skizzen fuer jede Fraktion (Architektur + Mode + Biotech)
-- [ ] V2: Lebende Krone Concept Art (Referenzskizze + Transformationsstufen)
-- [ ] V2: Schattenfieber-Stufenvisualisierung (Concept Sheet: drei Stufen am selben Charakter)
-- [ ] V2: Wireframe fuer Nervensystem-UI (bilateral mit Darius)
-- [ ] V2: Architektur-Detaillierung mit WBB-02 Topos (sobald Emre liefert)
-- [ ] V2: Ruestungsklassen-Differenzierung (sobald Leo/Darius liefern)
-- [ ] V2: Tiervolk-Charakterstudien (3 Typen: Haendler, Diebin, Aeltester)
+- [ ] V3: Thumbnail-Skizzen fuer jede Fraktion (Architektur + Mode + Biotech)
+- [ ] V3: Lebende Krone Concept Art (Referenzskizze + Transformationsstufen)
+- [ ] V3: Schattenfieber-Stufenvisualisierung (Concept Sheet: vier Zustaende am selben Charakter — Stufe 0, Rauschen, Risse, Schwelle)
+- [ ] V3: Wireframe fuer Nervensystem-UI (bilateral mit Darius)
+- [ ] V3: Architektur-Detaillierung mit WBB-02 Topos (sobald Emre Volltext liefert)
+- [ ] V3: Ruestungsklassen-Differenzierung (sobald Leo/Darius liefern)
+- [ ] V3: Tiervolk-Charakterstudien (3 Typen: Haendler, Diebin, Aeltester)
 
 ---
 
-> **Vera Kowalski, Art Station, Tag 3 Vormittag — V1 fertig. Das Ding lebt.**
+> **Vera Kowalski, Art Station, Tag 5 Vormittag — V2 fertig. Alle Stufengrenzen korrekt. Stufe-0-Baseline drin. Gameplay-Orte: drei Fraktionen, drei Ortstypen. Dominanzprinzip steht. Hex-Codes ACES-validiert. Das ist sauber.**

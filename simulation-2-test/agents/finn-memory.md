@@ -55,3 +55,12 @@ ROADMAP V1.3: CD-Entscheidung #12 (Stufentabelle), V2-Status aller Dokumente, GD
 
 ## Tag 4, Szene 6 (D&D)
 D&D mit dem Team. Toves mit Käse bestochen — hat nicht geklappt. Gutes Team-Bonding nach einem arbeitsintensiven Tag.
+
+## Tag 5, Szene 1 (BRIEFING)
+Freitag-Briefing moderiert. Drei Fokuspunkte: V2 finalisieren, Leo Konsistenz-Check, Outlines weiter. Abends Wochen-Review. Tageszuordnung verteilt.
+
+## Tag 5, Szene 2 (WORK)
+Wochen-Review-Agenda vorbereitet. Dokumentenstatus: V2 fertig = GDD-01 (Darius), GDD-03 (Nami), GDD-05 (Vera), GDD-06 (Tobi), WBB-01 (Emre). Outlines: GDD-04 (Nami), WBB-02 (Emre). Fehlt noch: GDD-02 V2 (Darius). Blocker nächste Woche: Budget-Freigabe, WBB-03 Kickoff. Freelancer: Blue-Byte noch keine Antwort, Eskalation Montag.
+
+## Tag 5, Szene 3 (MEETING)
+Standup moderiert. Leo: Zwei Konsistenz-Befunde — Stufenzahl 75 vs. 80 (Nami narrativ motiviert), Ymir statt Emer (Einzeiler-Fix, Leo übernimmt). V2-Status stark: 5 von 6 GDD + WBB-01 in V2. Drei CD-Fragen für Review: Stufenzahl, Figur-3 Kompanion-Status, Topos-Metapher. Nami und Darius sollen Stufenzahl klären oder eskalieren. Team gut aufgestellt für Wochen-Review.

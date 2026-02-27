@@ -61,3 +61,12 @@ GDD-03 V2 Updates: Ungefüge als zweiter mythologischer Schatten neben Halvard-W
 
 ## Tag 4, Szene 6 (D&D)
 Sable redet eine Stunde mit Toves und bekommt nichts heraus — nur das Gefühl, dass er schon immer da war. Genau so muss der Ungefüge in RELICS wirken.
+
+## Tag 5, Szene 1 (BRIEFING)
+Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-03/04 V2 finalisieren + GDD-04 Outline ausbauen.
+
+## Tag 5, Szene 2 (WORK)
+GDD-03 V2 finalisiert — Beat-Sheet auf Szenenebene (10 Beats), Fraktionsquests ausformuliert, Charakter-Quest geschlossen: Figur ist Maret. GDD-04 V1 erstellt: 5 Schlüsselfiguren mit Stimme, Funktion, Widerspruch — Aldine Vor (Krone), Cress (Gilden), Cassius (Orden), Maret (Seher), Rho (Tiervolk). Offene Abhängigkeiten: Cassius-Visionen (Emre/CD), Aldine-Schlussdialog (CD-Probe), Rho-Äußeres (Vera).
+
+## Tag 5, Szene 3 (MEETING)
+Standup. Meine 80 in GDD-03 (Risse-Grenze) wurde von Leo bemängelt — weicht von CD-75 ab. Ich hab argumentiert: narrativ motiviert, spätes Spiel, höhere Stakes. Geht auf CD-Agenda. Muss mit Darius klären oder CD entscheiden lassen. Außerdem: GDD-04 Figur 3 (Maret/Cassius) — Kompanion oder NPC? Auch für CD.

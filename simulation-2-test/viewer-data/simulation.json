@@ -2848,8 +2848,1253 @@
           "mood": {},
           "feedback": [],
           "cd_feedback": null
+        },
+        {
+          "scene": 5,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "alle-stationen",
+          "location_label": "Alle Stationen",
+          "participants": [
+            "emre",
+            "nami",
+            "darius",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "V2-Ueberarbeitungen aller Dokumente. Darius: GDD-02 V2 fertig (Schwellenwert-Tabelle, Emer-Terminologie, narrative Nervensystem-Aeste, narrativer Kontrollverlust, Schatten-Ast als 3.5). Nami: GDD-03 V2 Updates (Ungefuege als mythologischer Schatten, Flechtfest kanonisiert, Schattenfieber-Mapping expliziter) + GDD-04 Schluesselfiguren Outline (9 Abschnitte). Emre: WBB-01 V2 Updates (Flechtfest, zwei Farbprofile, Ungefuege, Gastrecht-Hauten) + WBB-02 Topos Outline (7 Kapitel) + 5 Schluesselorte fuer Tobi. Vera: GDD-05 V2 (Stufe-0-Baseline, neue Stufengrenzen, Gameplay-Orte, gemischte Sets). Tobi: GDD-06 V2 (Hex-Codes, 60 Module, Drei-Schichten-Rendering, Hauten-Shader, zwei Farbprofile). Leo: V2-Konsistenz-Check vorbereitet. Finn: ROADMAP V1.3, Freelancer-Status, Risiko-Register aktualisiert.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 6,
+          "type": "DND",
+          "type_label": "D&D",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "gemeinschaftsraum",
+          "location_label": "Gemeinschaftsraum",
+          "participants": [
+            "emre",
+            "nami",
+            "darius",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "D&D One-Shot 'Die Scherbe von Veld'. Emre ist DM. Die Gruppe infiltriert ein verlassenes Handelslager. Highlights: Leo faellt zweimal in eigene Falle, Darius versucht NPC 'Toves' wie ein Spielsystem zu loesen, Nami/Sable redet eine Stunde mit dem mysterioesen Toves und bekommt nichts heraus. Toves ist Emres unbewusster Prototyp fuer den Ungefuegen — ein Mann ohne Fraktion, ohne Motiv, der Armbrustmechanik mit Adersaft repariert. Vera erkennt es instinktiv: 'Ist der Typ fuer RELICS?'",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 26,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 32,
+              "y": 2,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 27,
+              "y": 5,
+              "state": "active"
+            },
+            "darius": {
+              "x": 25,
+              "y": 3,
+              "state": "active"
+            },
+            "nami": {
+              "x": 32,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 29,
+              "y": 5,
+              "state": "active"
+            },
+            "finn": {
+              "x": 31,
+              "y": 5,
+              "state": "active"
+            }
+          },
+          "active_room": "conference",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "emre",
+              "says": "Die Scherbe von Veld. Ihr steht vor einem verlassenen Handelslager am Sumpfrand."
+            },
+            {
+              "who": "vera",
+              "says": "Ist der Typ fuer RELICS?"
+            },
+            {
+              "who": "emre",
+              "says": "Vielleicht."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        }
+      ],
+      "summary": {
+        "day": 4,
+        "weekday": "Donnerstag",
+        "phase": "Produktion V2",
+        "title": "Peer-Reviews + V2-Ueberarbeitungen + D&D",
+        "summary": "Peer-Review-Tag. Alle sieben Agenten lesen fremde V1-Dokumente und geben substanzielles Feedback. Leo identifiziert zwei systematische Inkonsistenzen: Ymir-Terminologie in GDD-02 und divergierende Schattenfieber-Stufengrenzen (70/76/81). CD-Entscheidung: Verbindliche Tabelle Rauschen 1-40, Risse 41-75, Schwelle 76-100. Nachmittags V2-Ueberarbeitungen aller Dokumente. Neue Outlines: GDD-04 Schluesselfiguren (Nami), WBB-02 Topos (Emre). Emre definiert 5 Schluesselorte fuer Drei-Schichten-Rendering. Abends D&D One-Shot mit Ungefuege-Prototyp 'Toves'.",
+        "cd_decisions": [
+          "Schattenfieber-Stufengrenzen: Rauschen 1-40, Risse 41-75, Schwelle 76-100",
+          "Halluzinations-Start bei Wert 76",
+          "Verbindliche Tabelle fuer alle Dokumente"
+        ],
+        "artifacts_produced": [],
+        "key_moments": [
+          "Leo identifiziert Stufengrenzen-Divergenz (70/76/81) im Cross-Doc-Report",
+          "Emre reviewt Namis GDD-03: null Widersprueche — der Ungefuege fehlt als einziger Punkt",
+          "Nami definiert Ungefuege als Frage, nicht als NPC (Planescape-Referenz)",
+          "Toves im D&D One-Shot: Vera erkennt sofort den RELICS-Bezug"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "scenes": [
+        {
+          "scene": 1,
+          "type": "BRIEFING",
+          "type_label": "Briefing",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "vera",
+            "nami",
+            "leo",
+            "tobi"
+          ],
+          "summary": "Freitag-Briefing. Finn moderiert. Drei Fokuspunkte: V2 finalisieren, Leo macht zweiten Konsistenz-Check, Outlines (GDD-04, WBB-02) ausbauen. Abends Wochen-Review. D&D gestern war gut fuers Team. Tageszuordnung: Darius GDD-01/02 V2, Nami GDD-03/04, Emre WBB-01/02, Vera GDD-05 V2, Tobi GDD-06 V2, Leo Konsistenz-Check, Finn Koordination + Review-Vorbereitung.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "leo": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Letzter Tag der Woche. Drei Sachen: V2 finalisieren, Leo macht Konsistenz-Check, Outlines weiter ausbauen. Abends Wochen-Review. Hat jemand einen Blocker?"
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "V2 finalisieren. Leo Konsistenz-Check. GDD-04 und WBB-02 Outlines weiter. Abends Wochen-Review."
+        },
+        {
+          "scene": 2,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "alle-stationen",
+          "location_label": "Alle Stationen",
+          "participants": [
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "V2-Finalisierung. Darius: GDD-01 V2 (7 Design-Saeulen, Konsequenz-Typen-Matrix, Scope-Klarheit). Emre: WBB-01 V2 finalisiert + WBB-02 V1 Outline (7 Kapitel, Topos als Emer-Anatomie). Nami: GDD-03 V2 (Beat-Sheet auf Szenenebene) + GDD-04 V1 (5 Schluesselfiguren). Leo: Konsistenz-Check — Stufentabelle divergiert noch in GDD-03 (Risse bis 80 statt 75), Ymir-Ausrutscher in GDD-02. Vera: GDD-05 V2 finalisiert (Stufe-0-Baseline, ACES-Validierung, Gameplay-Orte, Dominanzprinzip). Tobi: GDD-06 V2 finalisiert (Hauten-Shader, Drei-Schichten-Rendering, Hex-Codes 1:1, Halluzinations-Start 76). Finn: Wochen-Review-Agenda vorbereitet, Dokumentenstatus erfasst, Blocker identifiziert.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "gallery/gdd/01-spieluebersicht.md (V2)",
+            "gallery/gdd/03-erzaehlkonzept.md (V2)",
+            "gallery/gdd/04-schluesselfiguren.md (V1)",
+            "gallery/gdd/05-designsprache.md (V2)",
+            "gallery/gdd/06-technik-produktion.md (V2)",
+            "gallery/wbb/01-mythos.md (V2)",
+            "gallery/wbb/02-topos.md (V1)"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
         }
       ]
     }
-  ]
+  ],
+  "agent_memories": {
+    "darius": [
+      {
+        "day": 1,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Erster Tag. Finn macht das Briefing sauber. CD will Referenzspiel-Analyse. Gothic, Skyrim, Dishonored als Hauptreferenzen. Leo soll Avowed und Gothic Remake mit abdecken."
+      },
+      {
+        "day": 1,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Strukturierte Analyse entlang sechs Design Pillars fertig. RELICS' größter Design-Hebel: Open World mit Dishonored-Vertikalität + Gothic-Dichte. Gothic 2 ist Goldstandard für Weltdichte und Fraktionsdesign. Skyrim liefert Kamera-Flexibilität, aber Combat und Radiant Quests sind Anti-Referenzen. Fünf offene Fragen für den Standup vorbereitet."
+      },
+      {
+        "day": 1,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD bestätigt Semi-Open-World (Gothic-Dichte), TP als Primärmodus, UE5. Schattenfieber-Infektion für den Spieler bestätigt — mit Kosten und Nutzen. Das ist ein Core System, das ich designen muss. Combat-Skill-Ceiling offen für morgen. Nami und Emre klären Wanderer-Motiv bilateral. Leos Pitch-Satz ist stark."
+      },
+      {
+        "day": 1,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Schattenfieber-Konzept ausgearbeitet: Infektionswert 0-100, fünf Stufen, vierter Ast im Nervensystem-Leveling. Fünf Design-Prinzipien (Spektrum statt Schalter, Nutzen attraktiv, Kosten verändern nicht blockieren, Welt reagiert, Integration ins Kernsystem). Fünf emergente Build-Archetypen. Bloodborne Insight + VtM Bloodlines als Goldstandards. Skyrim-Vampirismus als Anti-Referenz."
+      },
+      {
+        "day": 1,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD: Schattenfieber nicht heilbar, nur kontrollierbar — gut so. PC first, Konsolen als Stretch Goal. Freelancer-Budget für Gameplay-Programmer genehmigt. Tiervolk = Nomaden ohne eigene Architektur. Replay-Erfahrung gewollt. Morgen: Combat-Skill-Ceiling klären, Schattenfieber-Konzept mit Nami synchronisieren."
+      },
+      {
+        "day": 2,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Konzeptionstag. GDD-01 Spielübersicht und GDD-02 Kernmechaniken als V1-Outlines vorbereiten."
+      },
+      {
+        "day": 2,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-01 Outline: Elevator Pitch, 6 Design-Säulen mit Validierungstests, 3 USPs, Zielgruppe, Referenzrahmen. GDD-02 Outline: Combat-Spektrum (3 Ebenen), Schattenfieber (5 Stufen, Infektionswert 0-100), Nervensystem-Leveling (4 Äste), Alchemie-System, Exploration."
+      },
+      {
+        "day": 2,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Schattenfieber-5-Stufen-System vorgestellt. Nami will ihre 3 narrativen Stufen darauf mappen. Leo fordert: Irreversibilität muss ab Minute 1 klar kommuniziert werden. CD bestätigt Design-Richtung."
+      },
+      {
+        "day": 2,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-02 Outline erweitert. Leos QA-Kommentare zur Irreversibilitäts-Kommunikation direkt eingebaut. Drei nicht-verhandelbare QA-Bedingungen definiert: (1) Spieler muss Infektionswert jederzeit sehen, (2) Jede Stufe braucht Opt-in-Moment, (3) Kein Game Over durch Schattenfieber."
+      },
+      {
+        "day": 2,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD zufrieden mit Schattenfieber-Mechanik-Entwurf. Morgen: GDD-01 und GDD-02 als vollständige V1 schreiben. Ex-Kollege von Blue Byte als möglicher Freelancer identifiziert."
+      },
+      {
+        "day": 3,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Produktionstag. V1-Dokumente schreiben. GDD-01 Spielübersicht vormittags, GDD-02 Kernmechaniken nachmittags finalisieren."
+      },
+      {
+        "day": 3,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-01 Spielübersicht V1 fertig. Elevator Pitch für \"RELICS: Die Lebende Krone\", 6 Design-Säulen mit konkreten Validierungstests, 3 USPs, Zielgruppe (25-40, CRPG-erfahren), Referenzrahmen (Gothic×Dishonored×Bloodborne)."
+      },
+      {
+        "day": 3,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Tobi und Finn. Freelancer-Budget und Gameplay-Programmer-Suche diskutiert. GAS-Erfahrung ist Pflicht, Motion Matching Bonus. Ex-Kollege von Blue Byte — hatte Kampfsysteme für Settlers gebaut. Finn schreibt den Kontakt heute Abend an. Lena will einen Hamster im Spiel."
+      },
+      {
+        "day": 3,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-02 Kernmechaniken V1 finalisiert. Combat als 3-Schichten-Spektrum, Schattenfieber mit 5 Infektionsstufen, Nervensystem-Leveling mit 4 Ästen, Crafting/Alchemie, Exploration. Leos QA-Bedingungen integriert. Namis narrative Stufenzuordnung eingebaut."
+      },
+      {
+        "day": 3,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Sechs V1-Dokumente fertig. CD lobt Kohärenz. Ab morgen: V2-Überarbeitungen, Peer-Reviews integrieren. Nächste Woche auch GDD-04 Schlüsselfiguren starten."
+      },
+      {
+        "day": 4,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Peer-Review-Tag. Reviewe Veras GDD-05 Designsprache."
+      },
+      {
+        "day": 4,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Peer-Review GDD-05 fertig. Gesamteindruck: kohärentestes V1-Dokument. Vier substanzielle Punkte: (1) HOCH — Schattenfieber-Stufen-Alignment: Veras visuelle Bereiche (Rauschen bis 40, Risse 41-75, Schwelle ab 76) passen nicht zu meinen mechanischen Stufen. Spieler mit Wert 30 ist mechanisch Stufe 2 mit aktiven Fähigkeiten, aber visuell noch Rauschen. (2) HOCH — Stufe-0-Baseline-Visuals fehlen. (3) MITTEL — Biotech-Interaktion: Alchemie-Stationen, Rüstungswartung, Trainer visuell undefiniert. (4) MITTEL — Fraktionslesbarkeit bei gemischten Sets. Dazu drei kleinere: Biolumineszenz-Gameplay, Tiervolk-Distanzerkennbarkeit, Krone in Schattenfieber-Zonen. Muss jetzt GDD-02 V2 mit korrigierten Schwellenwerten schreiben + Ymir→Emer und Ur-Bindung→Große Flechtung ersetzen (Leo hat's gefunden)."
+      },
+      {
+        "day": 4,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD-Entscheidung: Rauschen 1-40, Risse 41-75, Schwelle 76-100, Halluzinations-Start 76. Akzeptiert. V2-Aufgaben: Schwellenwert-Tabelle, Ymir→Emer, Nervensystem-Äste narrativ (Namis Punkt), Kontrollverlust als narrativen definieren, Schatten-Ast eigener Abschnitt."
+      },
+      {
+        "day": 4,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-02 V2 fertig. Alle sieben Punkte umgesetzt: Drei-Zonen-Tabelle (Rauschen 1-40, Risse 41-75, Schwelle 76-100), Emer-Material+Große Flechtung durchgehend, Nervensystem-Äste mit kosmologischem Einzeiler, Kontrollverlust=narrativ (Wahrnehmung unzuverlässig, Steuerung bleibt), Schatten-Ast als eigener 3.5, Trainer als Fraktions-Erzähler, Infizierte Feinde als Spiegel.\n\n## Tag 4, Szene 6 (D&D)\nOne-Shot \"Die Scherbe von Veld\". Versuchte Toves wie ein Spielsystem zu lösen — Sackgasse. Der Typ hat kein lösbares Design. Muss darüber nachdenken, ob das ein Feature oder ein Problem ist."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. Finn: V2 finalisieren, Leo Konsistenz-Check, abends Wochen-Review. Mein Fokus: GDD-01/02/03 V2 finalisieren."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-01 V2 fertig. Fünf Korrekturen: Scope-Klarheit (Serienversprechen vs. Vertical-Slice-Deliverables getrennt), Zielgruppe 25-40 präzisiert, Kamera als eigenständige Säule 3 (FP/TP = Identitätsversprechen), Tiervolk+Biotech als Säulen 5+6, Konsequenz-Typen-Matrix (sofort/kurzfristig/langfristig/körperlich). Insgesamt 7 Design-Säulen jetzt."
+      }
+    ],
+    "emre": [
+      {
+        "day": 1,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Erster Arbeitstag. Finn moderierte das Briefing in der Küche. CD will, dass ich germanische Mythologie als Basis für den WBB-Mythos recherchiere. Habe sofort an die Eddas gedacht. Vera fragte nach Biotech-Bandbreite — gute Frage, betrifft auch mich (wie sichtbar ist das Übernatürliche?)."
+      },
+      {
+        "day": 1,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Intensive Recherche-Session. Germanische Kosmologie auf ein Drei-Schichten-Modell reduziert. Ymirs Körper als organische Schöpfung resoniert mit Biotech. Drei Fraktionen mythologisch grundiert (Orden=Odin, Krone=Tyr/Thor, Gilden=Vanir). Schattenfieber: empfehle Hypothese C — kosmologische Erosion + gebrochene Bindung. Widerspruchs-Log #001: \"germanisch\" vs. nordisch-isländische Quellen. Will mit Nami über das Wanderer-Motiv sprechen."
+      },
+      {
+        "day": 1,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD hat Hypothese C genehmigt! Kosmologische Erosion + gebrochene Bindung ist offiziell. Nordische Quellen als Basis akzeptiert, Mythos soll in der Spielwelt umstritten sein — verschiedene Fraktionen, verschiedene Versionen. Das eröffnet narrativ viel. Nami und ich sollen heute Nachmittag bilateral das Wanderer-Motiv klären. Soll Vera Fraktionsbeschreibungen liefern für ihre Architektur-Arbeit. Leos Pitch-Satz kommt auf die Pinnwand. Guter Vormittag."
+      },
+      {
+        "day": 1,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Nachmittags-Block. Fraktionsbeschreibungen für Vera fertig: Krone=Wolfsmotiv/verblasstes Gold/nekrotische Paläste, Gilden=Schiff+Ähre/Bernstein/lebende Handelsinfrastruktur, Orden=Raben/Blauschwarz+Silber/doppelte Architektur (außen Klosterfestung, innen biologisches Labyrinth). Wanderer-Motiv für Nami: Odin als Gangleri, Hávamál-Gastrecht, Umkehrung — Spieler IST schwach, wird als potentiell mächtig behandelt. Widerspruchs-Log #001 gelöst. #003 offen: Orden als geheime Spitzenforschung — CD-Rückfrage."
+      },
+      {
+        "day": 1,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD bestätigt: Orden als Spitzenforschungsinstitution gewollt (Klosterwissenschaft als Parallele). Schattenfieber nicht heilbar, nur kontrollierbar. Tiervolk hat KEINE eigene Architektur — sind Gäste/Nomaden in Fraktionsstädten. RELICS soll Replay-Erfahrung bieten. Morgen: Konzeptionstag, WBB-01 Mythos als V1-Draft vorbereiten."
+      },
+      {
+        "day": 2,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Konzeptionstag. CD will V1-Outlines von allen. Mein Ziel: WBB-01 Mythos als strukturierten Entwurf. Eigenes Namenssystem entwickeln — keine nordischen Originalnamen verwenden."
+      },
+      {
+        "day": 2,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Kosmologisches Lexikon entwickelt: Galt (Urstoff), Emer (lebendige Kraft), Hohlicht/Mittelgrund/Stillfeld (Drei-Schichten-Modell), die Hauten (organische Grenzschichten), die Flechtung (Verbindungsnetz). Drei Schöpfungsversionen angelegt — jede Fraktion erzählt den Ursprung anders. Lebende Krone als zentrales Relikt konzipiert: organisches Biotech-Artefakt, das die Flechtung stabilisierte."
+      },
+      {
+        "day": 2,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Namenssystem vorgestellt — Team begeistert. Nami will die drei Versionen als narratives Werkzeug nutzen. Vera braucht visuelle Übersetzung der Hauten. CD bestätigt eigene Namen als richtige Richtung. Muss Kapitel 5-8 (Fraktionsmythen, Schattenfieber-Ursprung, Relikt-Geschichte) noch ausarbeiten."
+      },
+      {
+        "day": 2,
+        "scene": 5,
+        "type": "WORK",
+        "text": "WBB-01 Outline komplett: 8 Kapitel strukturiert. Kapitel 1-4 als Fließtext-Entwürfe, 5-8 als detaillierte Stichpunkte. Wolf-Checklist begonnen — Mythopoeia, Topoi und Ethos als drei Säulen. Nami hat Rückfragen zur Beziehung Galt/Flechtung."
+      },
+      {
+        "day": 2,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD lobt Namenssystem und Drei-Versionen-Ansatz. Morgen erster Produktionstag — WBB-01 als vollständige V1 fertigstellen. Kapitel 1-4 müssen Fließtext sein, 5-8 mindestens detaillierte Stichpunkte mit Wolf-Referenzen."
+      },
+      {
+        "day": 3,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Produktionstag. CD erwartet V1-Dokumente. Mein Fokus: WBB-01 Mythos V1 komplett schreiben. Nachmittags: Kapitel 5-8 ausbauen und Terminologie an Vera/Nami liefern."
+      },
+      {
+        "day": 3,
+        "scene": 2,
+        "type": "WORK",
+        "text": "WBB-01 Mythos V1 fertig. Kapitel 1 Kosmogonie (Galt-Emer-Dualität), Kapitel 2 Schöpfung (drei Fraktionsversionen), Kapitel 3 Drei-Schichten-Modell (Hohlicht/Mittelgrund/Stillfeld), Kapitel 4 Große Flechtung (Verbindungsnetz und sein Zerfall). Wolf-Infrastruktur-Matrix angelegt. Lebende Krone als organisches Biotech-Artefakt ausgearbeitet."
+      },
+      {
+        "day": 3,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Nachmittags Kapitel 5-8 ausgebaut. Namis Rückfragen zur Galt-Flechtung-Beziehung beantwortet. Terminologie an Vera geliefert für GDD-05 Integration. Zwei Stellen präzisiert: Hauten in der Fraktionsstruktur, Beziehung zwischen Galt und der Flechtung."
+      },
+      {
+        "day": 3,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD extrem positiv über Kohärenz. Sechs V1-Dokumente an einem Tag. Namenssystem zieht sich durch alle Dokumente. Nächste Woche: V2 aller Dokumente, WBB-02 Topos beginnen."
+      },
+      {
+        "day": 4,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Peer-Reviews haben Priorität. Reviewe Namis GDD-03 gegen WBB-01. Emre soll auch WBB-02 Topos starten, aber Reviews zuerst. D&D heute Abend — DM-Vorbereitung in der Mittagspause."
+      },
+      {
+        "day": 4,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Peer-Review GDD-03 fertig. Ergebnis: Lore-konsistent, kein Widerspruchs-Log-Eintrag nötig. Sechs Punkte für V2: (1) Der Ungefüge fehlt — unsere Loki-Referenz, muss als mythologischer Schatten in die Hauptquest. (2) Flechtfest aus GDD-03 ins WBB-01 V2 übernehmen (Kap. 7). (3) Gastrecht-Hauten-Verbindung kosmologisch fundieren. (4) Schattenfieber-Mapping expliziter (Rauschen=Membran spüren, Risse=Durchscheinen, Schwelle=an der Membran stehen). (5) Doppelte Umkehrung bei Wanderer+Krone benennen. (6) Wegsprache als Kandidat für WBB-03. Tobis Review meines WBB-01 zeigt: Drei-Schichten-Rendering wird technisch anspruchsvoll. Muss 3-5 narrative Schlüsselorte für alternative Geometrie definieren. Hauten-Referenz für Vera/Tobi liefern."
+      },
+      {
+        "day": 4,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD bestätigt Stufengrenzen: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Nachmittags: Zwei Schattenfieber-Farbprofile in WBB-01 V2 einbauen (Stillfeld-kalt, Hohlicht-warm). WBB-02 Topos-Outline starten."
+      },
+      {
+        "day": 4,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Nami in der Lore-Ecke. Ungefüge besprochen — Nami will ihn als Frage, nicht als NPC. Planescape-Referenz: \"What can change the nature of a man?\" Flechtfest wird ins WBB aufgenommen. D&D-Vorbereitung: NPC der nirgendwo reinpasst als unbewusster Prototyp für den Ungefüge-Archetypus."
+      },
+      {
+        "day": 4,
+        "scene": 5,
+        "type": "WORK",
+        "text": "WBB-01 V2 Updates: Flechtfest in Kap. 7 (drei Fraktionsvarianten, kosmologische Funktion), zwei Schattenfieber-Farbprofile (Stillfeld-kalt, Hohlicht-warm), Ungefüge als durchlaufendes Muster, Gastrecht als Mikro-Flechtungsakt. WBB-02 Topos Outline: 7 Kapitel (Emer-Körper als Geographie). 5 Schlüsselorte für Tobi: Schwellenmine, Bluthafen, Die Naht, Emers Wirbel, Flechtfeld.\n\n## Tag 4, Szene 6 (D&D)\nOne-Shot \"Die Scherbe von Veld\". Toves als NPC funktioniert — fraktionslos, motivlos, repariert Armbrust mit Adersaft. Vera erkennt instinktiv den RELICS-Bezug. Ungefüge-Prototyp bestätigt: Die Störung im System erzeugt die stärkste Reaktion."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: WBB-01/02 V2 + WBB-02 Outline ausbauen."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "WBB-01 V2 finalisiert — alle Kapitel jetzt Fließtext. Vier Updates: Ungefüge als Muster, Schattenfieber-Farbprofile, Flechtfest kosmologisch wirksam, Gastrecht als Mikro-Flechtungsakt. Widerspruchs-Log #002 geschlossen. WBB-02 V1 Outline angelegt: 7 Kapitel, Topos als Emer-Anatomie. Neue Widerspruchs-Logs #006/#007."
+      }
+    ],
+    "finn": [
+      {
+        "day": 1,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Erster Tag moderiert. Alle sieben da, Stimmung gut. Vera fragte nach Biotech-Bandbreite, Tobi nach Engine — beides geht an die CD."
+      },
+      {
+        "day": 1,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Roadmap für Woche 1 steht. Abhängigkeitskette: Emres WBB ist Fundament, dann Nami und Vera. Darius parallel. GDD-04 und GDD-06 auf Woche 2 geschoben. Zwei offene CD-Fragen: Biotech-Bandbreite und Engine-Bestätigung. Risiko #1: Emre verliert sich in der Tiefe."
+      },
+      {
+        "day": 1,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup sauber moderiert. CD-Entscheidungen kontextbezogen eingeflochten. Alle acht Punkte entschärfen bestehende Concerns. Stimmung gut. Nachmittags-Aufträge verteilt: Emre+Nami bilateral (Wanderer-Motiv), Emre liefert Fraktionsbeschreibungen an Vera, Tobi beginnt Pipeline-Architektur. Leos Pitch-Satz auf die Pinnwand. Offener Punkt für morgen: Combat-Skill-Ceiling (Darius)."
+      },
+      {
+        "day": 1,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Roadmap V1.1 geschrieben. Sechs ehemalige Blocker aufgelöst. Schattenfieber ist vom Lore-Element zum Core-System geworden — drei Leute arbeiten parallel dran. Zwei neue Risiken: kein Gameplay-Programmer, Asset-Flaschenhals."
+      },
+      {
+        "day": 1,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Review sauber moderiert. CD-Feedback verteilt: Orden=Spitzenforschung, Schattenfieber=nicht heilbar, Tiervolk=keine eigene Architektur/Nomaden, PC first, Freelancer-Budget vorbereiten, Replay-Erfahrung gewollt. Morgen letzter Konzeptionstag. Alle wissen, was Mittwoch als V1 stehen muss. Guter erster Tag."
+      },
+      {
+        "day": 2,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Konzeptionstag moderiert. V1-Outlines von allen als Tagesziel gesetzt. Emre soll Namenssystem vorstellen, Darius die Schattenfieber-Mechanik, Vera das Farbsystem."
+      },
+      {
+        "day": 2,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup: Namenssystem begeistert das Team. Schattenfieber-Stufenmapping Darius↔Nami funktioniert. Leos QA-Bedingungen sind sinnvoll. Peer-Reviews für morgen koordiniert."
+      },
+      {
+        "day": 2,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Roadmap V1.2 aktualisiert. Woche-1-Milestones fast alle erreicht. Risiko #1 (Emre verliert sich) nicht eingetreten — im Gegenteil, Namenssystem ist Stärke. Freelancer-Suche gestartet: Darius hat Blue-Byte-Kontakt."
+      },
+      {
+        "day": 2,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Review moderiert. Alle Outlines stehen. Morgen erster Produktionstag — Peer-Reviews koordiniert. ROADMAP.md aktualisiert."
+      },
+      {
+        "day": 3,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Produktionstag moderiert. V1-Dokumente als Tagesziel. Peer-Reviews nachmittags."
+      },
+      {
+        "day": 3,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup: Vier V1-Dokumente vormittags fertig. Nachmittags-Plan: Nami schreibt GDD-03, Darius finalisiert GDD-02, alle machen Peer-Reviews."
+      },
+      {
+        "day": 3,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Tobi und Darius. Freelancer-Profil diskutiert: GAS+Motion Matching+Melee. Darius' Blue-Byte-Kontakt klingt gut — schreibe heute Abend. Lenas Hamster-Wunsch bleibt unerfüllt."
+      },
+      {
+        "day": 3,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Sechs V1-Dokumente an einem Tag. CD extrem positiv. Nächste Woche: V2 + drei neue Dokumente (GDD-04, WBB-02, WBB-03). ROADMAP aktualisiert. Team geht mit gutem Gefühl ins Wochenende. Morgen: Donnerstag, Peer-Reviews + D&D abends."
+      },
+      {
+        "day": 4,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Peer-Review-Tag moderiert. Reviews vor neuen Dokumenten. Blue-Byte-Kontakt angeschrieben. D&D heute Abend."
+      },
+      {
+        "day": 4,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Peer-Review GDD-01 Spielübersicht fertig. Fünf Punkte für V2: (1) Scope-Realitätscheck bei 3 Säulen (Combat ohne Gameplay-Programmer, Weltdichte mit 7 Leuten, Vertikalität). (2) Zielgruppen-Diskrepanz: Darius schreibt 22-35, Leo hat 25-40 — Leo hat recht. (3) Kamera-Priorität unklar: GDD-01 sagt \"nahtlos umschaltbar\", Briefing sagt TP Primärmodus. Ein Satz spart Wochen. (4) Tiervolk und Biotech-Fraktionssichtbarkeit fehlen. (5) Konsequenz-Versprechen quantifizieren — drei Ebenen vorgeschlagen. Leos Cross-Doc-Report: Schattenfieber-Stufengrenzen müssen heute im Standup geklärt werden."
+      },
+      {
+        "day": 4,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup moderiert. CD-Entscheidung kommuniziert: Rauschen 1-40, Risse 41-75, Schwelle 76-100, Halluzinations-Start 76. Verbindlich für alle Dokumente. V2-Aufträge an alle verteilt. Darius akzeptiert Schwellenwerte, fixt Ymir→Emer. Leo macht morgen zweiten Konsistenz-Check."
+      },
+      {
+        "day": 4,
+        "scene": 5,
+        "type": "WORK",
+        "text": "ROADMAP V1.3: CD-Entscheidung #12 (Stufentabelle), V2-Status aller Dokumente, GDD-04/WBB-02 Outlines als neue Einträge. Freelancer: Blue-Byte angeschrieben, Eskalation Montag über Tobis Netzwerk. Risiko-Register: Asset-Bottleneck HOCH (Vertikalitäts-Säule), Maßnahme: Houdini-Pipeline priorisieren, modulare Kit-Spezifikation bis Tag 6.\n\n## Tag 4, Szene 6 (D&D)\nD&D mit dem Team. Toves mit Käse bestochen — hat nicht geklappt. Gutes Team-Bonding nach einem arbeitsintensiven Tag."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag-Briefing moderiert. Drei Fokuspunkte: V2 finalisieren, Leo Konsistenz-Check, Outlines weiter. Abends Wochen-Review. Tageszuordnung verteilt."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Wochen-Review-Agenda vorbereitet. Dokumentenstatus: V2 fertig = GDD-01 (Darius), GDD-03 (Nami), GDD-05 (Vera), GDD-06 (Tobi), WBB-01 (Emre). Outlines: GDD-04 (Nami), WBB-02 (Emre). Fehlt noch: GDD-02 V2 (Darius). Blocker nächste Woche: Budget-Freigabe, WBB-03 Kickoff. Freelancer: Blue-Byte noch keine Antwort, Eskalation Montag."
+      }
+    ],
+    "leo": [
+      {
+        "day": 1,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Erster Tag. Mein Auftrag: Spielermarkt und Community-Erwartungen. Darius will Avowed und Gothic Remake — hatte ich eh auf der Liste."
+      },
+      {
+        "day": 1,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Marktanalyse fertig. Marktlücke zwischen \"Skyrim hat keinen Nachfolger\", \"Gothic-Nostalgie\" und \"Dishonored ist tot\" identifiziert. Biotech-Medieval ist Asset UND Risiko. \"Kleiner aber exzellent\" ist der Community-Trend. Dealbreaker-Tabelle mit 8 Punkten. Pitch-Satz: \"Gothic trifft Dishonored in einer Welt, die aussieht wie Mittelalter, aber sich anfühlt wie Cyberpunk.\""
+      },
+      {
+        "day": 1,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Mein Pitch-Satz kommt auf die Pinnwand! Schattenfieber als Spieler-Mechanik bestätigt — das ist der USP für den Trailer. Semi-Open-World passt zum Community-Trend \"kleiner aber exzellent\". Heute Nachmittag: Community-Erwartungen vertiefen, speziell zu Spieler-Infektion als Mechanik (Vampirismus-Parallele in Skyrim/VtM analysieren)."
+      },
+      {
+        "day": 1,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Community-Analyse zu Infektionsmechaniken fertig. Sechs Erwartungen: Opt-in, Macht > Bestrafung, Welt reagiert, reversibel mit Aufwand, Stufensystem, beide Wege vollwertig. Bloodborne Insight = Goldstandard. Skyrim Vampirismus Stufe 4 = Anti-Referenz. Schattenfieber soll Wahrnehmungs-System sein, nicht Buff-System."
+      },
+      {
+        "day": 1,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD: Schattenfieber NICHT reversibel — das weicht von meiner Community-Empfehlung ab (Community will \"heilbar mit Aufwand\"). Muss ich im Auge behalten — kann funktionieren wenn die Kosten transparent kommuniziert werden und der \"reine\" Pfad gleichwertig bleibt. Morgen: Konzeptionstag, GDD-02 Kernmechaniken mit Darius vorbereiten (QA-Perspektive)."
+      },
+      {
+        "day": 2,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Konzeptionstag. QA-Perspektive für alle V1-Outlines vorbereiten. GDD-02 Kernmechaniken mit Darius gemeinsam."
+      },
+      {
+        "day": 2,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Spielerperspektiv-Analyse für Schattenfieber: 3 nicht-verhandelbare QA-Bedingungen definiert: (1) Infektionswert muss jederzeit sichtbar sein, (2) Jede Stufe braucht expliziten Opt-in-Moment, (3) Kein Game Over durch Schattenfieber allein. Wettbewerbsanalyse aktualisiert: Avowed und Gothic Remake als direkte Konkurrenz identifiziert."
+      },
+      {
+        "day": 2,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "QA-Bedingungen vorgestellt. Darius integriert sie direkt in GDD-02. CD bestätigt Ansatz. Irreversibilität funktioniert NUR wenn Transparenz gegeben ist."
+      },
+      {
+        "day": 2,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Alle vorliegenden Outlines quergelesen. QA-Kommentare formuliert: Namenssystem-Konsistenz geprüft (✓), Fraktionslogik geprüft (✓), Schattenfieber-Stufenmapping Darius↔Nami geprüft (✓). Zwei kleine Inkonsistenzen gefunden und markiert."
+      },
+      {
+        "day": 2,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Morgen Produktionstag. Werde alle V1-Dokumente querlesen und QA-Kommentare eintragen."
+      },
+      {
+        "day": 3,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Produktionstag. Alle V1-Dokumente querlesen, QA-Kommentare eintragen, Spielerperspektiv-Bericht finalisieren."
+      },
+      {
+        "day": 3,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Spielerperspektiv-Bericht geschrieben. Alle entstehenden V1-Dokumente gelesen. Haupterkenntnis: Dokumente sind überraschend konsistent — Namenssystem zieht sich durch, Fraktionslogik stimmt überall."
+      },
+      {
+        "day": 3,
+        "scene": 5,
+        "type": "WORK",
+        "text": "QA-Kommentare in alle 6 Dokumente eingetragen. Zwei kleine Inkonsistenzen markiert — nichts Dramatisches. Spielerperspektiv-Bericht finalisiert."
+      },
+      {
+        "day": 3,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Sechs V1-Dokumente fertig und quergeprüft. Kohärenz beeindruckend. Nächste Woche: V2-Dokumente QA-reviewen, eigenen Spielerperspektiv-Bericht aktualisieren."
+      },
+      {
+        "day": 4,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Peer-Review-Tag. Biete mich als Anlaufstelle an — hab gestern schon alle Dokumente quergelesen."
+      },
+      {
+        "day": 4,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Cross-Document-Konsistenz-Report fertig. Systematischer Abgleich aller 6 Kerndokumente. Terminologie überwiegend sauber — Emres Lexikon trägt. Zwei Inkonsistenzen: (1) NIEDRIG — \"Ymir-Material\" und \"Ur-Bindung\" in GDD-02 statt RELICS-eigener Begriffe (Darius hat seine eigene Regel nicht angewandt). (2) MITTEL-HOCH — Schattenfieber-Stufengrenzen divergieren: Tobi startet Halluzinationen bei 70, Darius hat Stufe 4 ab 76, Nami hat Schwelle ab 81. Spieler bei Wert 75 sieht Halluzinationen mit Risse-Dialogen — das bricht die Immersion. Vorschlag: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Halluzinations-Start = 76. Bonus: Vera/Tobi sollen Krone-Materialfarben abgleichen (Efeugrün?)."
+      },
+      {
+        "day": 4,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD bestätigt meine vorgeschlagenen Stufengrenzen exakt: Rauschen 1-40, Risse 41-75, Schwelle 76-100, Halluzinations-Start 76. Nachmittags: V2-Dokumente gegen neue Tabelle prüfen, morgen zweiter Konsistenz-Check."
+      },
+      {
+        "day": 4,
+        "scene": 5,
+        "type": "WORK",
+        "text": "V2-Konsistenz-Check vorbereitet. QA-Checkliste für morgen: Stufentabelle (Rauschen/Risse/Schwelle) in allen Dokumenten identisch?, Emer-Terminologie durchgehend?, Farbpaletten-Hex-Codes konsistent?, Ungefüge eingebaut?, Flechtfest kanonisiert? Spielerperspektiv-Bericht aktualisiert mit Peer-Review-Erkenntnissen.\n\n## Tag 4, Szene 6 (D&D)\nD&D. Zweimal in eigene Falle gefallen. Team lacht immer noch. Guter Abend."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, mein Job: Konsistenz-Check alle V2-Docs. Stufengrenzen-Abgleich."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Konsistenz-Check V2 durchgeführt. HOCH: Stufentabelle immer noch inkonsistent — GDD-03 hat Risse bis 80 statt 75. NIEDRIG: GDD-02 Kap. 2.7 noch \"Ymir-Material\" statt \"Emer-Material\". OK: Hex-Codes GDD-05 intern konsistent. HINWEIS: Ungefüge in WBB-01 kanonisiert, aber kein GDD-Dokument referenziert ihn. Brücke Lore→Narrativ fehlt."
+      }
+    ],
+    "nami": [
+      {
+        "day": 1,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Finn moderiert. CD-Auftrag: Narrative Strukturen von Dark Fantasy CRPGs analysieren. \"Spieler ist ein Unbekannter\" — die spannendste Constraint."
+      },
+      {
+        "day": 1,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Vier narrative Prinzipien destilliert: (1) Fremder als Zustand, nicht als Lücke. (2) Fraktionen als Sprachen. (3) Räume erzählen, was Stimmen verschweigen. (4) Schattenfieber als narrativer Störfaktor (Unreliable-Narrator-Mechanismus). Muss mit Emre über Wanderer-Motiv reden. Mit Darius über Branching-Budget. Offene CD-Frage: Wie verhält sich das Schattenfieber zum Spielercharakter?"
+      },
+      {
+        "day": 1,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "CD bestätigt: Spieler kann sich mit Schattenfieber infizieren! Kosten und Nutzen, Mechanik und Narrativ verbunden. Das ist narratives Gold — Unreliable Narrator + mechanische Konsequenz. Heute Nachmittag bilateral mit Emre: Wanderer-Motiv in der germanischen Mythologie. Mythos soll in der Spielwelt umstritten sein — verschiedene Wahrheiten je nach Fraktion. Das passt perfekt zu meinem Prinzip \"Fraktionen als Sprachen.\""
+      },
+      {
+        "day": 1,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Wanderer-Motiv ausgearbeitet: Drei Fraktionen als drei Antworten auf dieselbe mythologische Figur (Krone=Anomalie, Gilden=Gelegenheit, Orden=Zeichen). Schattenfieber als Unreliable Narrator in drei Stufen: Rauschen (subtile Verschiebungen), Risse (Gespräche die niemand führte), Schwelle (Daseinsebenen durchlässig). Verbindung zum Odin-Opfer: Wissen hat einen Preis."
+      },
+      {
+        "day": 1,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD: Schattenfieber NICHT reversibel — das Opfer ist echt. Replay-Erfahrung gewollt — neue Schichten bei mehrfachem Durchspielen. Tiervolk = Nomaden/Gäste, spiegelt Fremden-Status des Spielers. Morgen: Konzeptionstag, GDD-03 Erzählkonzept und GDD-04 Schlüsselfiguren als V1 vorbereiten."
+      },
+      {
+        "day": 2,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Konzeptionstag. GDD-03 Erzählkonzept als V1-Outline vorbereiten. GDD-04 Schlüsselfiguren auf nächste Woche verschoben."
+      },
+      {
+        "day": 2,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-03 Outline: Vier narrative Prinzipien, Drei-Akt-Struktur (10 Beats), Quest-Architektur, Dialogsystem mit Fraktionsregistern. Emres Namenssystem durchgängig übernommen. Schattenfieber-Endpfade als eigener Abschnitt geplant."
+      },
+      {
+        "day": 2,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Darius' 5 Schattenfieber-Stufen vorgestellt. Meine 3 narrativen Stufen (Rauschen/Risse/Schwelle) darauf gemappt: Stufe 1-2 = Rauschen, Stufe 3 = Risse, Stufe 4-5 = Schwelle. Leo fordert Irreversibilitäts-Kommunikation ab Minute 1 — stimme zu, das muss narrativ verankert sein."
+      },
+      {
+        "day": 2,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Emre in der Lore-Ecke. Wanderer-Motiv vertieft: Der Spieler als moderner Gangleri — jemand der Wissen sucht und dafür bezahlt. Die Lebende Krone als das, was Odin am Weltenbaum fand. Emre hat einen poetischen Zugang, der sich gut mit meiner Strukturarbeit ergänzt."
+      },
+      {
+        "day": 2,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-03 Outline erweitert. 9 Quest-Deliverables definiert. Dialogsystem mit 4 Fraktionsregistern (Krone=höfisch-archaisch, Gilden=pragmatisch-bildhaft, Orden=klinisch-verschleiernd, Tiervolk=fragmentarisch-poetisch). Schattenfieber-Narrativ: Rauschen (subtile Textverschiebungen), Risse (Dialogoptionen die niemand sagte), Schwelle (Ebenen durchlässig)."
+      },
+      {
+        "day": 2,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD zufrieden. Morgen: GDD-03 als vollständige V1 schreiben. GDD-04 Schlüsselfiguren erst nächste Woche."
+      },
+      {
+        "day": 3,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Produktionstag. GDD-03 Erzählkonzept V1 schreiben."
+      },
+      {
+        "day": 3,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-03 Erzählkonzept V1 fertig. Drei-Akt-Struktur mit 10 Beats, 9 Quest-Deliverables, Dialogsystem mit 4 Fraktionsregistern, Schattenfieber-Narrativ (Rauschen/Risse/Schwelle). Emres Namenssystem durchgängig. Wanderer-Identität als narrativer Rahmen."
+      },
+      {
+        "day": 3,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Sechs V1-Dokumente fertig. CD beeindruckt von Kohärenz. Namenssystem und Fraktionslogik stimmen dokumentübergreifend. Nächste Woche: V2 + GDD-04 Schlüsselfiguren beginnen."
+      },
+      {
+        "day": 4,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Peer-Review-Tag. Reviewe Darius' GDD-02. GDD-04 Schlüsselfiguren starten, aber Reviews zuerst. Brauche Emres mythologische Figuren als Grundlage für GDD-04."
+      },
+      {
+        "day": 4,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Peer-Review GDD-02 fertig. Stärken: Drei Bedingungen (2.1) sind das Beste im GDD, Stufen-Mapping funktioniert, Stufe-0-Äquivalente lösen ein Problem. Schwächen: Nervensystem-Leveling narrativ leer (4 Äste ohne kosmologische Bedeutung), Schatten-Ast zu kurz, Trainer gesichtslos. Zwei Kollisionen: (1) KRITISCH — Schwellenwerte divergieren (Risse→Schwelle bei 70 vs 81, 10 Punkte Differenz = fundamental verschiedene Spielererfahrungen). Vorschlag: Rauschen 1-40, Risse 41-75, Schwelle 76-100. (2) Kontrollverlust vs. Perspektivwechsel — mein Vorschlag: narrativer Kontrollverlust statt mechanischem. Bilateral mit Darius+Vera+Tobi nötig."
+      },
+      {
+        "day": 4,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD-Entscheidung: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Mein Vorschlag angenommen. Nachmittags: GDD-03 V2 (Ungefüge einbauen, Flechtfest kanonisieren, Schattenfieber-Mapping expliziter), GDD-04 Schlüsselfiguren-Outline starten."
+      },
+      {
+        "day": 4,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Emre. Ungefüge diskutiert — darf kein NPC werden, muss eine Frage sein. Wie Planescapes zentrale Frage, aber niemand stellt sie laut. Flechtfest kommt ins WBB — freut mich. D&D heute Abend: Sable hat noch eine Rechnung offen."
+      },
+      {
+        "day": 4,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-03 V2 Updates: Ungefüge als zweiter mythologischer Schatten neben Halvard-Wanderer verankert. Flechtfest als kanonisches Krone-Fest. Schattenfieber-Mapping explizit an Hauten-Kosmologie gekoppelt (Rauschen=Membran spüren, Risse=Durchscheinen, Schwelle=an Membran stehen). Stufengrenzen auf CD-Tabelle. GDD-04 Schlüsselfiguren Outline: 9 Abschnitte — Designprinzipien, Fraktionsfiguren, Seher-NPC.\n\n## Tag 4, Szene 6 (D&D)\nSable redet eine Stunde mit Toves und bekommt nichts heraus — nur das Gefühl, dass er schon immer da war. Genau so muss der Ungefüge in RELICS wirken."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-03/04 V2 finalisieren + GDD-04 Outline ausbauen."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-03 V2 finalisiert — Beat-Sheet auf Szenenebene (10 Beats), Fraktionsquests ausformuliert, Charakter-Quest geschlossen: Figur ist Maret. GDD-04 V1 erstellt: 5 Schlüsselfiguren mit Stimme, Funktion, Widerspruch — Aldine Vor (Krone), Cress (Gilden), Cassius (Orden), Maret (Seher), Rho (Tiervolk). Offene Abhängigkeiten: Cassius-Visionen (Emre/CD), Aldine-Schlussdialog (CD-Probe), Rho-Äußeres (Vera)."
+      }
+    ],
+    "tobi": [
+      {
+        "day": 1,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Habe nach Engine-Festlegung gefragt. Arbeite mit UE5 als Annahme."
+      },
+      {
+        "day": 1,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Machbarkeitsanalyse V0.1 fertig. Drei kritische Engpässe: (1) Kein Gameplay-Programmer — Melee Combat braucht Middleware oder Freelancer. (2) Asset-Produktion — Vera allein reicht nicht, modulares Design + Marketplace + prozedurale Systeme sind Pflicht. (3) Scope — empfehle Semi-Open-World (4-6 km², Gothic-Stil). Kamerasystem: TP als Primärmodus, echtes FP verdoppelt Animationsaufwand."
+      },
+      {
+        "day": 1,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "UE5 bestätigt. Semi-Open-World bestätigt. TP Primärmodus bestätigt, FP ist V2. Alle drei lösen meine größten Scope-Concerns. Heute Nachmittag: Pipeline-Architektur beginnen. Modulare Asset-Pipeline mit Nanite, Houdini-Terrain, PCG-Vegetation als Kern."
+      },
+      {
+        "day": 1,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Pipeline-Architektur V0.1 fertig: Nanite hybrid (Hard-Surface + traditionelle Vegetation), Lumen GI (HW RT Shipping, Software Fallback), Spring Arm Kamera mit drei Kontext-Modi, GAS als Combat-Basis, Motion Matching. Schattenfieber als eigener Post-Processing-Layer."
+      },
+      {
+        "day": 1,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD: PC first, Konsolen Stretch Goal. Freelancer-Budget für Gameplay-Programmer. Singleplayer bestätigt (implizit). Morgen: Pipeline-Bibel V1 beginnen, Kamera-Prototyp in UE5 skizzieren."
+      },
+      {
+        "day": 2,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Konzeptionstag. GDD-06 Technik & Produktion als V1-Outline vorbereiten."
+      },
+      {
+        "day": 2,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-06 Outline: 8 Kapitel — Engine & Rendering (UE5, Nanite, Lumen), Kamerasystem (Spring Arm, 4 Modi), Combat-Architektur (GAS), Asset-Pipeline (Houdini, modulares Kit), Schattenfieber-Tech (Post-Processing), Performance (3 Tiers), Produktions-Pipeline, Meilensteine + Budget."
+      },
+      {
+        "day": 2,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Pipeline-Architektur vorgestellt. Darius fragt nach GAS-Flexibilität für Schattenfieber-Abilities. Antwort: GAS kann das, braucht aber eigene Ability-Kategorie."
+      },
+      {
+        "day": 2,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-06 Outline erweitert. Budget-Schätzung: 45k EUR Freelancer-Budget für Gameplay-Programmer (6 Monate, Melee-Combat + GAS). Schattenfieber-Tech detailliert: Custom Post-Processing Stack, Material Parameter Collection, 5 Shader-Stufen."
+      },
+      {
+        "day": 2,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD akzeptiert 45k Budget-Schätzung. Morgen: GDD-06 als vollständige V1 schreiben."
+      },
+      {
+        "day": 3,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Produktionstag. GDD-06 Technik V1 schreiben."
+      },
+      {
+        "day": 3,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-06 Technik & Produktion V1 fertig. 8 Kapitel komplett: Engine (UE5.3+, Nanite hybrid, Lumen GI), Kamera (Spring Arm, 4 Kontext-Modi), Combat (GAS-basiert, Motion Matching), Asset-Pipeline (Houdini-Terrain, modulare Kits), Schattenfieber-Tech (5 Shader-Stufen), Performance (3 Tiers: 1080p30 bis 4K60), Produktions-Pipeline, Meilensteine + 45k EUR Budget."
+      },
+      {
+        "day": 3,
+        "scene": 4,
+        "type": "PAUSE",
+        "text": "Mittagspause mit Finn und Darius. Freelancer-Profil diskutiert: GAS-Erfahrung Pflicht, Motion Matching Bonus, Melee-Combat ideal. Darius kennt Ex-Blue-Byte-Kollegen. Finn kontaktiert den heute Abend."
+      },
+      {
+        "day": 3,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Nachmittags: GDD-06 mit Schattenfieber-Tech-Details ergänzt. Darius' GDD-02 technisch gegengelesen — 5 Infektionsstufen sind mit Shader-System machbar. Offener Punkt: Partikelsystem für Stufe 4+5 muss nächste Woche detailliert werden."
+      },
+      {
+        "day": 3,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "Sechs V1-Dokumente fertig. Performance-Budget passt. Nächste Woche: V2 mit Partikelsystem-Details, Kamera-Prototyp beginnen."
+      },
+      {
+        "day": 4,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Peer-Review-Tag. Reviewe Emres WBB-01 Mythos aus technischer Perspektive."
+      },
+      {
+        "day": 4,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Peer-Review WBB-01 fertig. Sechs Lore-Elemente mit technischen Implikationen: (1) KRITISCH — Drei-Schichten-Modell braucht Rendering-Strategie: Mittelgrund=Level-Geometrie, Hohlicht/Stillfeld=Post-Processing-Layer + 3-5 handgebaute alternative Geometrie-Segmente. Fehlt in GDD-06 V1 komplett. (2) HOCH — Hauten-Shader: SSS + Vertex-Displacement + Spieler-Reaktivität, KEIN Nanite. (3) HOCH — Zwei Schattenfieber-Farbprofile statt einem (Stillfeld=kalt, Hohlicht=warm). (4) MITTEL — Lebende Krone: S-Tier Hero-Asset, ~19-27 Arbeitstage Vera+Tobi. (5) MITTEL — Flechtungs-VFX-Set (Niagara Ribbon + Houdini Wire). (6) NIEDRIG — Emer-Korrespondenz-Shader. Veras Review meiner GDD-06: Farbpalette falsch (muss Hex-Codes aus GDD-05 1:1 übernehmen), Modulanzahl zu niedrig, ACES-Farbcheck nötig."
+      },
+      {
+        "day": 4,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD bestätigt Stufengrenzen: Rauschen 1-40, Risse 41-75, Schwelle 76-100, Halluzinations-Start 76. Nachmittags: GDD-06 V2 (Hex-Codes fixen, Module 60, Drei-Schichten-Rendering, Hauten-Shader, zwei Farbprofile)."
+      },
+      {
+        "day": 4,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-06 V2: Hex-Codes aus GDD-05 1:1 übernommen, Module auf ~60 (20 neutral + 40 fraktionsspezifisch), Drei-Schichten-Rendering (Mittelgrund=Level, Hohlicht/Stillfeld=PP-Layer + 3-5 handgebaute Segmente), Hauten-Shader (SSS + WPO + Spieler-Reaktivität, Nanite-Ausnahme), zwei Schattenfieber-Farbprofile (Stillfeld-kalt, Hohlicht-warm), Halluzinations-Start auf 76 korrigiert.\n\n## Tag 4, Szene 6 (D&D)\nD&D-Session. Entspannt. Emres NPC Toves war interessant — fraktionslos. Leos doppelte 1 war der Comedy-Moment des Tages."
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-06 V2 finalisieren."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-06 V2 finalisiert. Korrekturen: Halluzinations-Start von 70 auf 76, Stufen-Tabelle auf CD-Grenzen (1-40/41-75/76-100). Neu: Hauten-Shader-Architektur (Burley-SSS + WPO, Nanite-Ausnahmen), Drei-Schichten-Rendering (5 PP-Volume-Profile), Hex-Code-Tabellen 1:1 aus GDD-05, Anforderungsprofil Gameplay-Programmer (GAS als Ausschlusskriterium). Offener Punkt: Hauten-Segmentanzahl 3 oder 5 — braucht Emres Bestätigung."
+      }
+    ],
+    "vera": [
+      {
+        "day": 1,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Erster Tag. Habe nach visueller Bandbreite von Biotech gefragt — subtil oder offensichtlich? Finn legt die Frage der CD vor."
+      },
+      {
+        "day": 1,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Referenz-Analyse in 5 Kategorien fertig: Architektur (organische Gotik, pro-Fraktion-Differenzierung), Mode (burgundische Hofmode + Biotech-Layer, gezüchtete Rüstungen), Biotech-Grammatik (Kabel=Adern, Displays=Membranen), Farbpalette (Hex-Codes, 70/20/10-Regel), Tiervolk (alien-elegant). McQueen und Iris van Herpen als Fashion-Referenzen. Brauche Emres Lore-Fundament für Architektur-Logik."
+      },
+      {
+        "day": 1,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "CD-Entscheidung: Biotech-Sichtbarkeit ist fraktionsabhängig! Krone=subtil (Verfall), Gilden=offen (Werkzeug), Orden=versteckt (Geheimnis). Das gibt mir MEHR Designraum, nicht weniger — drei verschiedene visuelle Sprachen pro Fraktion. Emre soll mir heute Nachmittag Fraktionsbeschreibungen liefern. Kann dann die PureRef-Boards differenzieren."
+      },
+      {
+        "day": 1,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Drei Fraktions-Profile fertig: Krone=Grandeur im Zerfall (Karmin #8B1A2B, pulsierender Putz), Gilden=organischer Brutalismus (Amber #C49A20 + Cyan #2EC4B6, Gebäude die atmen), Orden=makellose Lüge (Schieferblau #4A5568, Zisterzienser-Strenge, dahinter organische Überwachung). Verbindendes Prinzip: drei Dialekte, eine Sprache."
+      },
+      {
+        "day": 1,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD: Tiervolk hat KEINE eigene Architektur — sind Gäste/Nomaden in Fraktionsstädten. Das vereinfacht meinen Job UND ist narrativ stärker. Orden als versteckte Spitzenforschung bestätigt — die doppelte Architektur bleibt. Morgen: Konzeptionstag, GDD-05 Designsprache als V1 vorbereiten."
+      },
+      {
+        "day": 2,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Konzeptionstag. GDD-05 Designsprache als V1-Outline aufsetzen."
+      },
+      {
+        "day": 2,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-05 Outline: 10 Kapitel geplant — Art Direction, drei Fraktionsvisuals, Biotech-Grammatik, Farbsystem mit Hex-Codes, Mode/Rüstung, Tiervolk-Design, Schattenfieber-Visuels, Environments. Emres Terminologie übernommen: Hauten als organische Grenzschichten, Flechtung als visuelles Verbindungsnetz."
+      },
+      {
+        "day": 2,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Fraktions-Farbsystem vorgestellt. Team bestätigt Differenzierung. Emres Namenssystem gibt visuelle Anker: Hohlicht=dunkel/tief, Mittelgrund=bewohnt/warm, Stillfeld=kalt/leer."
+      },
+      {
+        "day": 2,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-05 Outline erweitert. Biotech-Grammatik detailliert: Kabel=Adern, Displays=Membranen, Schalter=Ganglien. Schattenfieber-Visuels: progressive Corruption (Stufe 1=subtile Farbverschiebung, Stufe 5=organische Übernahme). Environment-Konzepte für alle drei Schichten."
+      },
+      {
+        "day": 2,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD zufrieden. Morgen: GDD-05 als vollständige V1 schreiben."
+      },
+      {
+        "day": 3,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Produktionstag. GDD-05 Designsprache V1 schreiben. Emres Terminologie integrieren."
+      },
+      {
+        "day": 3,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-05 Designsprache V1 fertig. 10 Kapitel: Art Direction Überblick, Krone-Visuals (Grandeur im Zerfall), Gilden-Visuals (organischer Brutalismus), Orden-Visuals (makellose Lüge), Biotech-Grammatik, Farbsystem mit Hex-Codes, Mode/Rüstung, Tiervolk, Schattenfieber-Visuels, Environments."
+      },
+      {
+        "day": 3,
+        "scene": 5,
+        "type": "WORK",
+        "text": "Nachmittags: Emres Terminologie in GDD-05 integriert. Namis GDD-03 gegengelesen — visuelle Referenzen aus meiner Designsprache kommen dort an, Fraktionsfarben stimmen überein."
+      },
+      {
+        "day": 3,
+        "scene": 6,
+        "type": "REVIEW",
+        "text": "CD lobt Kohärenz. Fraktionen konsistent visuell und narrativ differenziert. Nächste Woche: V2 mit Peer-Review-Feedback."
+      },
+      {
+        "day": 4,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Peer-Review-Tag. Reviewe Tobis GDD-06 Technik."
+      },
+      {
+        "day": 4,
+        "scene": 2,
+        "type": "WORK",
+        "text": "Peer-Review GDD-06 fertig. Acht Punkte: (1) KRITISCH — Farbpalette falsch: Tobi hat Amber/Efeugrün für Krone statt meine Aschgrau/Karmin/Altgold. Hex-Codes müssen 1:1 übernommen werden. (2) HOCH — 20-30 Module reichen nicht, brauche ~60 (20 neutral + 40 fraktionsspezifisch). (3) HOCH — Vertex-Animation vs. Emissive: Zwei-Klassen-System vorgeschlagen (Material-Pulse = Nanite-kompatibel, Mesh-Animation = nicht). (4) MITTEL — Schattenfieber-Terminologie vereinheitlichen. (5) HOCH — Concept-Art-Deliverables: 5 Sheets bevor Tobi Shader baut. (6) HOCH — Asset-Bottleneck ist HOCH nicht MITTEL. (7) MITTEL — Hex-Codes in ACES validieren. (8) LOD für organische Meshes manuell kontrollieren."
+      },
+      {
+        "day": 4,
+        "scene": 3,
+        "type": "MEETING",
+        "text": "Standup. CD bestätigt Stufengrenzen: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Nachmittags: GDD-05 V2 (Stufe-0-Baseline, Stufengrenzen anpassen, Gameplay-Orte-Abschnitt)."
+      },
+      {
+        "day": 4,
+        "scene": 5,
+        "type": "WORK",
+        "text": "GDD-05 V2: Stufe-0-Baseline als neuer Abschnitt 7.0 (kontrolliertes Biotech, ruhige Adern, reine Fraktionsarchitektur). Stufengrenzen auf 3er-Tabelle. Gameplay-Orte visuell definiert (Alchemie-Station, Trainer, Händler mit Fraktionsvarianten). Gemischte Sets: Dominanzprinzip + fraktionsspezifische Silhouetten-Elemente. Hex-Codes als verbindliche Produktionsreferenz bestätigt.\n\n## Tag 4, Szene 6 (D&D)\nD&D-Session. Toves — Emres NPC — hat sofort RELICS-Vibes ausgestrahlt. Fraktionslos, Adersaft-Biotech. Das ist visuell interessant: Wie sieht jemand aus, der keiner Fraktion gehört?"
+      },
+      {
+        "day": 5,
+        "scene": 1,
+        "type": "BRIEFING",
+        "text": "Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-05 V2 finalisieren."
+      },
+      {
+        "day": 5,
+        "scene": 2,
+        "type": "WORK",
+        "text": "GDD-05 V2 finalisiert. Fünf Punkte: (1) Stufengrenzen als verbindliche Referenztabelle (Rauschen/Risse/Schwelle + narrativ/mechanisch/visuell nebeneinander). (2) Stufe-0-Baseline komplett (Körper, Umgebung, Gameplay — kontrolliertes Biotech ohne Schattenfieber). (3) ACES-Validierungshinweis bei Hex-Codes. (4) Gameplay-Orte: 3 Typen × 4 Fraktionsvarianten (Alchemie-Station, Trainer, Händler). (5) Dominanzprinzip: Torso-Primat-Regel, Schattenfieber überschreibt ab 41."
+      }
+    ]
+  },
+  "roster": {
+    "darius": {
+      "name": "Darius Engel",
+      "role": "Game Director & Lead Designer",
+      "age": 35,
+      "pronouns": "he/him",
+      "workspace": "Game Design Corner (Zimmer 12d)",
+      "background": "deutsch, Arbeiterfamilie Ruhrgebiet",
+      "color": "#22C55E"
+    },
+    "emre": {
+      "name": "Emre Yilmaz",
+      "role": "Lead Worldbuilder & Lore Director",
+      "age": 31,
+      "pronouns": "he/him",
+      "workspace": "Lore-Ecke (Zimmer 12a)",
+      "background": "türkisch-deutsch, 3. Generation",
+      "color": "#3B82F6"
+    },
+    "finn": {
+      "name": "Finn Bergmann",
+      "role": "Producer & Project Manager",
+      "age": 30,
+      "pronouns": "he/him",
+      "workspace": "Produktionsbüro (Zimmer 12, geteilt mit Creative Director)",
+      "background": "deutsch, norddeutsch aus Hamburg",
+      "color": "#14B8A6"
+    },
+    "leo": {
+      "name": "Leonie \"Leo\" Fischer",
+      "role": "QA Lead, Community Manager & Content Creator",
+      "age": 26,
+      "pronouns": "she/her",
+      "workspace": "QA / Streaming Station (Zimmer 12f)",
+      "background": "deutsch-iranisch, Mutter aus Isfahan",
+      "color": "#F97316"
+    },
+    "nami": {
+      "name": "Nami Okafor",
+      "role": "Narrative Designer & Writer",
+      "age": 29,
+      "pronouns": "she/her",
+      "workspace": "Bibliothek (Zimmer 12e)",
+      "background": "nigerianisch-deutsch, doppelte Staatsbürgerschaft",
+      "color": "#EAB308"
+    },
+    "tobi": {
+      "name": "Tobias \"Tobi\" Richter",
+      "role": "Technical Artist & Virtual Production Specialist",
+      "age": 32,
+      "pronouns": "he/him",
+      "workspace": "Tech Corner (Zimmer 12c)",
+      "background": "deutsch, Mittelschicht, TH OWL Alumnus",
+      "color": "#EF4444"
+    },
+    "vera": {
+      "name": "Vera Kowalski",
+      "role": "Concept Artist & Environment Designer",
+      "age": 28,
+      "pronouns": "she/her",
+      "workspace": "Art Station (Zimmer 12b)",
+      "background": "polnisch-deutsch, Spätaussiedler-Familie",
+      "color": "#A855F7"
+    }
+  }
 }

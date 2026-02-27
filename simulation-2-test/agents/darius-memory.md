@@ -61,3 +61,12 @@ GDD-02 V2 fertig. Alle sieben Punkte umgesetzt: Drei-Zonen-Tabelle (Rauschen 1-4
 
 ## Tag 4, Szene 6 (D&D)
 One-Shot "Die Scherbe von Veld". Versuchte Toves wie ein Spielsystem zu lösen — Sackgasse. Der Typ hat kein lösbares Design. Muss darüber nachdenken, ob das ein Feature oder ein Problem ist.
+
+## Tag 5, Szene 1 (BRIEFING)
+Freitag. Finn: V2 finalisieren, Leo Konsistenz-Check, abends Wochen-Review. Mein Fokus: GDD-01/02/03 V2 finalisieren.
+
+## Tag 5, Szene 2 (WORK)
+GDD-01 V2 fertig. Fünf Korrekturen: Scope-Klarheit (Serienversprechen vs. Vertical-Slice-Deliverables getrennt), Zielgruppe 25-40 präzisiert, Kamera als eigenständige Säule 3 (FP/TP = Identitätsversprechen), Tiervolk+Biotech als Säulen 5+6, Konsequenz-Typen-Matrix (sofort/kurzfristig/langfristig/körperlich). Insgesamt 7 Design-Säulen jetzt.
+
+## Tag 5, Szene 3 (MEETING)
+Standup. Leo: Mein GDD-02 hat noch Ymir statt Emer — Leo fixt das. Stufenzahl 75 vs. 80 offen — Nami will 80 für narrative Beats, CD hatte 75 gesetzt. Muss mit Nami klären oder zur CD eskalieren. Review-Vorbereitung nachmittags.

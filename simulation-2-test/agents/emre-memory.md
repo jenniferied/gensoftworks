@@ -61,3 +61,12 @@ WBB-01 V2 Updates: Flechtfest in Kap. 7 (drei Fraktionsvarianten, kosmologische 
 
 ## Tag 4, Szene 6 (D&D)
 One-Shot "Die Scherbe von Veld". Toves als NPC funktioniert — fraktionslos, motivlos, repariert Armbrust mit Adersaft. Vera erkennt instinktiv den RELICS-Bezug. Ungefüge-Prototyp bestätigt: Die Störung im System erzeugt die stärkste Reaktion.
+
+## Tag 5, Szene 1 (BRIEFING)
+Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: WBB-01/02 V2 + WBB-02 Outline ausbauen.
+
+## Tag 5, Szene 2 (WORK)
+WBB-01 V2 finalisiert — alle Kapitel jetzt Fließtext. Vier Updates: Ungefüge als Muster, Schattenfieber-Farbprofile, Flechtfest kosmologisch wirksam, Gastrecht als Mikro-Flechtungsakt. Widerspruchs-Log #002 geschlossen. WBB-02 V1 Outline angelegt: 7 Kapitel, Topos als Emer-Anatomie. Neue Widerspruchs-Logs #006/#007.
+
+## Tag 5, Szene 3 (MEETING)
+Standup. Ymir→Emer-Fix: Leo übernimmt den Einzeiler in GDD-02. Leo fragt ob WBB-02 Topos-Metapher ("Emer-Anatomie") zu hermetisch ist. Meine Antwort: bewusst als Tiefenschicht, Codex-Eintrag, keine Lore-Dump. Erkläre das im Review. Stufenzahl 75 vs. 80 offen — Nami will 80 für narrative Stakes.

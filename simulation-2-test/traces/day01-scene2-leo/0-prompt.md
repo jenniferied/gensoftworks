@@ -5,7 +5,7 @@
 - **Tag**: 1 (Montag)
 - **Szene**: 2 — WORK
 - **Zeit**: 10:00 Uhr
-- **Ort**: QA / Streaming Station (Zimmer 7f)
+- **Ort**: QA / Streaming Station (Zimmer 12f)
 - **Teilnehmer**: Leo (solo)
 
 ## Aufgabe

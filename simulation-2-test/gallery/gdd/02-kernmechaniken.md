@@ -8,6 +8,7 @@
 **Aenderungslog:**
 - V1-Outline (Tag 2 Vormittag): Kapitelstruktur + Kernpunkte
 - V0.5 (Tag 2 Nachmittag): Leos QA-Bedingungen integriert, Schattenfieber-Stufen-Mapping mit Nami synchronisiert, CD-Entscheidungen eingearbeitet (Tod/Infektion, Lebende Krone, Namenssysteme, Combat-Skill-Ceiling)
+- V0.5.1 (Tag 5 Nachmittag): Arbeitsbegriff "Ymir" → "Emer" (2x: Kap. 2.7, Kap. 6.1) — Leo Fischer, QA
 
 ---
 
@@ -169,7 +170,7 @@ Die folgende Tabelle synchronisiert Darius' fuenf mechanische Stufen mit Namis d
   - **Krone**: Dynastisches Erbe, Legitimation der Herrschaft, Zeichen goettlichen Auftrags
   - **Gilden**: Das wertvollste Handelsgut der Welt, Machtinstrument ohne ideologische Bindung
   - **Orden**: Erkenntniswerkzeug, Schluessel zum Verstaendnis der Ur-Bindung und der Daseinsebenen
-- Schattenfieber-Verbindung: Die Lebende Krone und das Schattenfieber greifen auf dasselbe "Ymir-Material" zu (WBB-01, Kap. 6). Die Krone ist die kontrollierte Form, das Schattenfieber die unkontrollierte.
+- Schattenfieber-Verbindung: Die Lebende Krone und das Schattenfieber greifen auf dasselbe "Emer-Material" zu (WBB-01, Kap. 6). Die Krone ist die kontrollierte Form, das Schattenfieber die unkontrollierte.
 - Kontakt mit der Krone KANN den Infektionswert erhoehen — massiv, aber unter Bedingung 1 und 3 (Transparenz, bewusste Entscheidung)
 
 **Offene Fragen zum Relikt:**
@@ -331,7 +332,7 @@ Die neue Kategorie "Schutz" ist ein direktes Ergebnis von Bedingung 3 (kein vers
 
 - Fraktionen, Orte, Charaktere und Artefakte tragen eigene Namen, die zur Welt gehoeren
 - Germanische Mythologie ist INSPIRATION, nicht Vorlage fuer die Nomenklatur
-- Emres WBB-01 nutzt nordische Begriffe (Ymir, Ginnungagap, etc.) als Arbeitsbegriffe — diese muessen VOR der V1-Produktion durch RELICS-eigene Namen ersetzt werden
+- Emres WBB-01 nutzt nordische Begriffe (Emer, Ginnungagap, etc.) als Arbeitsbegriffe — diese muessen VOR der V1-Produktion durch RELICS-eigene Namen ersetzt werden
 - **Auswirkung auf GDD-02**: Stufennamen ("Rein", "Gezeichnet", "Infiziert", "Verwandelt", "Entfesselt") sind Arbeitsnamen und muessen geprueft werden — passen sie zum eigenen Namenssystem?
 - **Zustaendig**: Emre (Namenssystem-Framework) + Nami (Charakternamen) + Darius (Systemnamen)
 
@@ -422,3 +423,4 @@ NARRATIV <-> SCHATTENFIEBER (Nami-Sync)
 ---
 
 *Darius Engel, Game Design Corner, Tag 2 Nachmittag — V0.5 nach QA-Schleife mit Leo und Stufen-Sync mit Nami*
+*Leo Fischer, Tag 5 Nachmittag — V0.5.1: Ymir → Emer (Kap. 2.7 + 6.1)*

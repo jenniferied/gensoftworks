@@ -3,7 +3,7 @@ name: Emre Yilmaz
 role: Lead Worldbuilder & Lore Director
 age: 31
 pronouns: he/him
-workspace: Lore-Ecke (Zimmer 7a)
+workspace: Lore-Ecke (Zimmer 12a)
 color: "#3B82F6"
 sprite: emre
 address: Schülerstraße 14, 3. OG links, 32756 Detmold

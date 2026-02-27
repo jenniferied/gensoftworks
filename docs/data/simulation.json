@@ -14,7 +14,7 @@
           "participants": [
             "emre"
           ],
-          "summary": "Emre Yilmaz kommt als einer der Ersten im neuen Studio an. Bezieht Zimmer 7a — hängt osmanische und katalanische Karten auf, stellt das Morrowind-Artbook ins Regal, fächert die farbkodierten Notizbücher auf. Liest die CD-Nachricht am Bulletin Board: 'Baut mir eine Welt.' Plant Kosmogonie-Grundriss (tote Titanen, Aschen-Ursprung), will Nami für Mythologie-Gespräch suchen.",
+          "summary": "Emre Yilmaz kommt als einer der Ersten im neuen Studio an. Bezieht Zimmer 12a — hängt osmanische und katalanische Karten auf, stellt das Morrowind-Artbook ins Regal, fächert die farbkodierten Notizbücher auf. Liest die CD-Nachricht am Bulletin Board: 'Baut mir eine Welt.' Plant Kosmogonie-Grundriss (tote Titanen, Aschen-Ursprung), will Nami für Mythologie-Gespräch suchen.",
           "key_moment": "",
           "positions": {
             "emre": {
@@ -60,7 +60,7 @@
               {
                 "id": "emre-001",
                 "type": "observation",
-                "description": "Erster Arbeitstag bei GenSoftworks. Studio riecht nach Farbe, Zimmer 7a bezogen, Karten aufgehängt, Morrowind-Artbook im Regal.",
+                "description": "Erster Arbeitstag bei GenSoftworks. Studio riecht nach Farbe, Zimmer 12a bezogen, Karten aufgehängt, Morrowind-Artbook im Regal.",
                 "importance": 8
               },
               {
@@ -172,7 +172,7 @@
               {
                 "id": "darius-001",
                 "type": "observation",
-                "description": "Erster Arbeitstag im Studio. Zimmer 7d bezogen. Gothic-2-Hülle steht, Lena-Foto steht. Whiteboard-Frage gesetzt: Was ist die Spieler-Fantasie?",
+                "description": "Erster Arbeitstag im Studio. Zimmer 12d bezogen. Gothic-2-Hülle steht, Lena-Foto steht. Whiteboard-Frage gesetzt: Was ist die Spieler-Fantasie?",
                 "importance": 8
               },
               {
@@ -210,7 +210,7 @@
               {
                 "id": "vera-001",
                 "type": "observation",
-                "description": "Erster Arbeitstag im Studio. Zimmer 7b bezogen, Cintiq aufgebaut, Pinnwand mit Referenzen bestückt.",
+                "description": "Erster Arbeitstag im Studio. Zimmer 12b bezogen, Cintiq aufgebaut, Pinnwand mit Referenzen bestückt.",
                 "importance": 7
               },
               {
@@ -318,7 +318,7 @@
               {
                 "id": "leo-002",
                 "type": "observation",
-                "description": "Zimmer 7f ist bereit — zwei Monitore, leeres Merch-Regal. Shure SM7B steht, Webcam und Ringlicht kommen heute noch.",
+                "description": "Zimmer 12f ist bereit — zwei Monitore, leeres Merch-Regal. Shure SM7B steht, Webcam und Ringlicht kommen heute noch.",
                 "importance": 4
               },
               {

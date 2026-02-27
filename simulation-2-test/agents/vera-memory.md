@@ -58,3 +58,15 @@ GDD-05 V2: Stufe-0-Baseline als neuer Abschnitt 7.0 (kontrolliertes Biotech, ruh
 
 ## Tag 4, Szene 6 (D&D)
 D&D-Session. Toves — Emres NPC — hat sofort RELICS-Vibes ausgestrahlt. Fraktionslos, Adersaft-Biotech. Das ist visuell interessant: Wie sieht jemand aus, der keiner Fraktion gehört?
+
+## Tag 5, Szene 1 (BRIEFING)
+Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-05 V2 finalisieren.
+
+## Tag 5, Szene 2 (WORK)
+GDD-05 V2 finalisiert. Fünf Punkte: (1) Stufengrenzen als verbindliche Referenztabelle (Rauschen/Risse/Schwelle + narrativ/mechanisch/visuell nebeneinander). (2) Stufe-0-Baseline komplett (Körper, Umgebung, Gameplay — kontrolliertes Biotech ohne Schattenfieber). (3) ACES-Validierungshinweis bei Hex-Codes. (4) Gameplay-Orte: 3 Typen × 4 Fraktionsvarianten (Alchemie-Station, Trainer, Händler). (5) Dominanzprinzip: Torso-Primat-Regel, Schattenfieber überschreibt ab 41.
+
+## Tag 5, Szene 3 (MEETING)
+Standup. Stufenzahl-Diskrepanz (75 vs. 80) offen — geht auf CD-Agenda. Ymir→Emer Fix trivial. GDD-05 V2 sauber, kein Feedback im Standup. Nachmittags Review-Vorbereitung.
+
+## Tag 5, Szene 4 (PAUSE)
+Mittagspause mit Tobi. Rho-Design durchdacht: Balancepunkt (Raptor-Gewicht vorne), Kopfbewegung statt Schulterdrehen, Passform als subtilstes Fremdheitssignal — gleiche Kleidung, anderer Körper, anders fallend. Kein tribal, kein Kostümsignal. Tobi sagt: eigene Clothing Physics nötig. Schweigehaus besprochen: "innen größer als außen" = keine Erklärung, Fehler-als-Weltaussage. Tobi: Lumen-Schatten passen nicht zur Außen-Hülle. Skizziert. Nächste Woche: drei Rho-Varianten für Nami, Schweigehaus-Konzept.

@@ -1,0 +1,19 @@
+{
+  "scene": 2,
+  "type": "WORK",
+  "time": "morning",
+  "location": "alle-stationen",
+  "participants": ["darius", "emre", "nami", "vera", "tobi", "leo", "finn"],
+  "summary": "V2-Finalisierung. Darius: GDD-01 V2 (7 Design-Saeulen, Konsequenz-Typen-Matrix, Scope-Klarheit). Emre: WBB-01 V2 finalisiert + WBB-02 V1 Outline (7 Kapitel, Topos als Emer-Anatomie). Nami: GDD-03 V2 (Beat-Sheet auf Szenenebene) + GDD-04 V1 (5 Schluesselfiguren). Leo: Konsistenz-Check — Stufentabelle divergiert noch in GDD-03 (Risse bis 80 statt 75), Ymir-Ausrutscher in GDD-02. Vera: GDD-05 V2 finalisiert (Stufe-0-Baseline, ACES-Validierung, Gameplay-Orte, Dominanzprinzip). Tobi: GDD-06 V2 finalisiert (Hauten-Shader, Drei-Schichten-Rendering, Hex-Codes 1:1, Halluzinations-Start 76). Finn: Wochen-Review-Agenda vorbereitet, Dokumentenstatus erfasst, Blocker identifiziert.",
+  "dialogue": [],
+  "artifacts": [
+    "gallery/gdd/01-spieluebersicht.md (V2)",
+    "gallery/gdd/03-erzaehlkonzept.md (V2)",
+    "gallery/gdd/04-schluesselfiguren.md (V1)",
+    "gallery/gdd/05-designsprache.md (V2)",
+    "gallery/gdd/06-technik-produktion.md (V2)",
+    "gallery/wbb/01-mythos.md (V2)",
+    "gallery/wbb/02-topos.md (V1)"
+  ],
+  "cd_feedback": null
+}

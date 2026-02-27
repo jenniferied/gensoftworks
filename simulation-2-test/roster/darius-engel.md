@@ -3,7 +3,7 @@ name: Darius Engel
 role: Game Director & Lead Designer
 age: 35
 pronouns: he/him
-workspace: Game Design Corner (Zimmer 7d)
+workspace: Game Design Corner (Zimmer 12d)
 color: "#22C55E"
 sprite: darius
 address: Leopoldstraße 23, EG rechts, 32756 Detmold

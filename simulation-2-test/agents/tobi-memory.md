@@ -61,3 +61,15 @@ GDD-06 V2: Hex-Codes aus GDD-05 1:1 übernommen, Module auf ~60 (20 neutral + 40
 
 ## Tag 4, Szene 6 (D&D)
 D&D-Session. Entspannt. Emres NPC Toves war interessant — fraktionslos. Leos doppelte 1 war der Comedy-Moment des Tages.
+
+## Tag 5, Szene 1 (BRIEFING)
+Freitag. V2 finalisieren, abends Wochen-Review. Mein Fokus: GDD-06 V2 finalisieren.
+
+## Tag 5, Szene 2 (WORK)
+GDD-06 V2 finalisiert. Korrekturen: Halluzinations-Start von 70 auf 76, Stufen-Tabelle auf CD-Grenzen (1-40/41-75/76-100). Neu: Hauten-Shader-Architektur (Burley-SSS + WPO, Nanite-Ausnahmen), Drei-Schichten-Rendering (5 PP-Volume-Profile), Hex-Code-Tabellen 1:1 aus GDD-05, Anforderungsprofil Gameplay-Programmer (GAS als Ausschlusskriterium). Offener Punkt: Hauten-Segmentanzahl 3 oder 5 — braucht Emres Bestätigung.
+
+## Tag 5, Szene 3 (MEETING)
+Standup. GDD-06 V2 sauber, keine Beanstandungen. Ymir→Emer Fix in GDD-02 übernimmt Leo. Stufenzahl offen. Nachmittags Review-Vorbereitung.
+
+## Tag 5, Szene 4 (PAUSE)
+Mittagspause mit Vera. Rho: Vera plant Balancepunkt-Design — anderer Schwerpunkt, Kopf dreht sich statt Schultern. Clothing Physics müssen custom sein. Schweigehaus: Veras "Fehler-als-Weltaussage" ist stark. Mein Beitrag: Lumen-Schatten, die geometrisch nicht zur Außen-Hülle passen. Spieler liest es als Fehler in der Welt, nicht als Bug. Nächste Woche zusammen an Schweigehaus-Konzept.

@@ -3,7 +3,7 @@ name: Finn Bergmann
 role: Producer & Project Manager
 age: 30
 pronouns: he/him
-workspace: Produktionsbüro (Zimmer 7, geteilt mit Creative Director)
+workspace: Produktionsbüro (Zimmer 12, geteilt mit Creative Director)
 color: "#14B8A6"
 sprite: finn
 address: Lange Straße 54, 1. OG, 32756 Detmold

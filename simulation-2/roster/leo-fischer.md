@@ -3,7 +3,7 @@ name: Leonie "Leo" Fischer
 role: QA Lead, Community Manager & Content Creator
 age: 26
 pronouns: she/her
-workspace: QA / Streaming Station (Zimmer 7f)
+workspace: QA / Streaming Station (Zimmer 12f)
 color: "#F97316"
 sprite: leo
 address: Hornsche Straße 8, 2. OG, 32756 Detmold

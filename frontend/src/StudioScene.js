@@ -7,47 +7,47 @@ const CHAR_COLS = 56; // columns per combined row in 48×96 character sheets
 
 // --- Room interiors (walkable bounds, inside walls) ---
 const ROOMS = {
-  '7a':        { x1: 1,  y1: 1,  x2: 7,  y2: 6  },
-  '7b':        { x1: 9,  y1: 1,  x2: 15, y2: 6  },
-  '7c':        { x1: 17, y1: 1,  x2: 23, y2: 6  },
+  '12a':       { x1: 1,  y1: 1,  x2: 7,  y2: 6  },
+  '12b':       { x1: 9,  y1: 1,  x2: 15, y2: 6  },
+  '12c':       { x1: 17, y1: 1,  x2: 23, y2: 6  },
   'conference': { x1: 25, y1: 1,  x2: 33, y2: 6  },
   'kitchen':   { x1: 35, y1: 1,  x2: 42, y2: 6  },
   'hallway':   { x1: 1,  y1: 9,  x2: 42, y2: 12 },
-  '7d':        { x1: 1,  y1: 14, x2: 7,  y2: 18 },
-  '7e':        { x1: 9,  y1: 14, x2: 15, y2: 18 },
-  '7f':        { x1: 17, y1: 14, x2: 23, y2: 18 },
+  '12d':       { x1: 1,  y1: 14, x2: 7,  y2: 18 },
+  '12e':       { x1: 9,  y1: 14, x2: 15, y2: 18 },
+  '12f':       { x1: 17, y1: 14, x2: 23, y2: 18 },
   'lounge':    { x1: 25, y1: 14, x2: 33, y2: 27 },
   'wc_damen':  { x1: 35, y1: 14, x2: 38, y2: 18 },
   'wc_herren': { x1: 40, y1: 14, x2: 42, y2: 18 },
-  '7':         { x1: 1,  y1: 20, x2: 23, y2: 27 },
+  '12':        { x1: 1,  y1: 20, x2: 23, y2: 27 },
 };
 
 
 // --- Agent definitions ---
 const AGENTS = [
-  { key: 'emre',   name: 'Emre Kaya',       role: 'Worldbuilder',       room: '7a', sprite: 'char_05', deskX: 4,  deskY: 3,  facing: 'right', gender: '\u2642', flag: '\uD83C\uDDF9\uD83C\uDDF7\uD83C\uDDE9\uD83C\uDDEA' },
-  { key: 'vera',   name: 'Vera Morozova',    role: 'Concept Artist',     room: '7b', sprite: 'char_01', deskX: 12, deskY: 3,  facing: 'left',  gender: '\u2640', flag: '\uD83C\uDDF5\uD83C\uDDF1\uD83C\uDDE9\uD83C\uDDEA' },
-  { key: 'tobi',   name: 'Tobias Richter',   role: 'Tech Lead',          room: '7c', sprite: 'char_03', deskX: 20, deskY: 3,  facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
-  { key: 'darius', name: 'Darius Varga',     role: 'Game Director',      room: '7d', sprite: 'char_04', deskX: 4,  deskY: 16, facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
-  { key: 'nami',   name: 'Nami Osei',        role: 'Narrative Designer', room: '7e', sprite: 'char_02', deskX: 12, deskY: 16, facing: 'left',  gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
-  { key: 'leo',    name: 'Leo Ferretti',     role: 'Community Manager',  room: '7f', sprite: 'char_06', deskX: 20, deskY: 16, facing: 'right', gender: '\u2640', flag: '\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEE\uD83C\uDDF7' },
-  { key: 'finn',   name: 'Finn Calloway',    role: 'Producer',           room: '7',  sprite: 'char_07', deskX: 8,  deskY: 23, facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'emre',   name: 'Emre Kaya',       role: 'Worldbuilder',       room: '12a', sprite: 'char_05', deskX: 4,  deskY: 3,  facing: 'right', gender: '\u2642', flag: '\uD83C\uDDF9\uD83C\uDDF7\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'vera',   name: 'Vera Morozova',    role: 'Concept Artist',     room: '12b', sprite: 'char_01', deskX: 12, deskY: 3,  facing: 'left',  gender: '\u2640', flag: '\uD83C\uDDF5\uD83C\uDDF1\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'tobi',   name: 'Tobias Richter',   role: 'Tech Lead',          room: '12c', sprite: 'char_03', deskX: 20, deskY: 3,  facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'darius', name: 'Darius Varga',     role: 'Game Director',      room: '12d', sprite: 'char_04', deskX: 4,  deskY: 16, facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'nami',   name: 'Nami Osei',        role: 'Narrative Designer', room: '12e', sprite: 'char_02', deskX: 12, deskY: 16, facing: 'left',  gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
+  { key: 'leo',    name: 'Leo Ferretti',     role: 'Community Manager',  room: '12f', sprite: 'char_06', deskX: 20, deskY: 16, facing: 'right', gender: '\u2640', flag: '\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEE\uD83C\uDDF7' },
+  { key: 'finn',   name: 'Finn Calloway',    role: 'Producer',           room: '12',  sprite: 'char_07', deskX: 8,  deskY: 23, facing: 'right', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
 ];
 
 const ZONES = [
-  { name: 'Zimmer 7a\nEmre',     x: 0,  y: 0,  w: 8,  h: 8  },
-  { name: 'Zimmer 7b\nVera',     x: 8,  y: 0,  w: 8,  h: 8  },
-  { name: 'Zimmer 7c\nTobi',     x: 16, y: 0,  w: 8,  h: 8  },
+  { name: 'Zimmer 12a\nEmre',     x: 0,  y: 0,  w: 8,  h: 8  },
+  { name: 'Zimmer 12b\nVera',     x: 8,  y: 0,  w: 8,  h: 8  },
+  { name: 'Zimmer 12c\nTobi',     x: 16, y: 0,  w: 8,  h: 8  },
   { name: 'Konferenz',           x: 24, y: 0,  w: 10, h: 8  },
   { name: 'Küche',               x: 34, y: 0,  w: 10, h: 8  },
-  { name: 'Zimmer 7d\nDarius',   x: 0,  y: 13, w: 8,  h: 7  },
-  { name: 'Zimmer 7e\nNami',     x: 8,  y: 13, w: 8,  h: 7  },
-  { name: 'Zimmer 7f\nLeo',      x: 16, y: 13, w: 8,  h: 7  },
+  { name: 'Zimmer 12d\nDarius',   x: 0,  y: 13, w: 8,  h: 7  },
+  { name: 'Zimmer 12e\nNami',     x: 8,  y: 13, w: 8,  h: 7  },
+  { name: 'Zimmer 12f\nLeo',      x: 16, y: 13, w: 8,  h: 7  },
   { name: 'Lounge',              x: 24, y: 13, w: 10, h: 15 },
   { name: 'WC Damen',            x: 34, y: 13, w: 5,  h: 7  },
   { name: 'WC Herren',           x: 39, y: 13, w: 5,  h: 7  },
   { name: 'Flur',                x: 0,  y: 8,  w: 44, h: 5  },
-  { name: 'Zimmer 7\nFinn + CD', x: 0,  y: 20, w: 24, h: 8  },
+  { name: 'Zimmer 12\nFinn + CD', x: 0,  y: 20, w: 24, h: 8  },
 ];
 
 // Character animation frame map (48×96 frames, 56 cols per combined row)

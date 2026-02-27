@@ -3,7 +3,7 @@ name: Tobias "Tobi" Richter
 role: Technical Artist & Virtual Production Specialist
 age: 32
 pronouns: he/him
-workspace: Tech Corner (Zimmer 7c)
+workspace: Tech Corner (Zimmer 12c)
 color: "#EF4444"
 sprite: tobi
 address: Mittelstraße 31, 1. OG, 32657 Lemgo

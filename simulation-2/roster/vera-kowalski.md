@@ -3,7 +3,7 @@ name: Vera Kowalski
 role: Concept Artist & Environment Designer
 age: 28
 pronouns: she/her
-workspace: Art Station (Zimmer 7b)
+workspace: Art Station (Zimmer 12b)
 color: "#A855F7"
 sprite: vera
 address: Alteburger Straße 41, 2. OG, 50678 Köln-Südstadt

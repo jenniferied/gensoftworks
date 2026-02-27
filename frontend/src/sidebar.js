@@ -7,13 +7,13 @@
 const BASE = import.meta.env.BASE_URL;
 
 const AGENT_META = {
-  emre:   { name: 'Emre Kaya',       role: 'Worldbuilder',       room: 'Zimmer 7a', gender: '\u2642', flag: '\uD83C\uDDF9\uD83C\uDDF7\uD83C\uDDE9\uD83C\uDDEA' },
-  vera:   { name: 'Vera Morozova',    role: 'Concept Artist',     room: 'Zimmer 7b', gender: '\u2640', flag: '\uD83C\uDDF5\uD83C\uDDF1\uD83C\uDDE9\uD83C\uDDEA' },
-  tobi:   { name: 'Tobias Richter',   role: 'Tech Lead',          room: 'Zimmer 7c', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
-  darius: { name: 'Darius Varga',     role: 'Game Director',      room: 'Zimmer 7d', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
-  nami:   { name: 'Nami Osei',        role: 'Narrative Designer', room: 'Zimmer 7e', gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
-  leo:    { name: 'Leo Ferretti',     role: 'Community Manager',  room: 'Zimmer 7f', gender: '\u2640', flag: '\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEE\uD83C\uDDF7' },
-  finn:   { name: 'Finn Calloway',    role: 'Producer',           room: 'Zimmer 7 (CD-Büro)', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  emre:   { name: 'Emre Kaya',       role: 'Worldbuilder',       room: 'Zimmer 12a', gender: '\u2642', flag: '\uD83C\uDDF9\uD83C\uDDF7\uD83C\uDDE9\uD83C\uDDEA' },
+  vera:   { name: 'Vera Morozova',    role: 'Concept Artist',     room: 'Zimmer 12b', gender: '\u2640', flag: '\uD83C\uDDF5\uD83C\uDDF1\uD83C\uDDE9\uD83C\uDDEA' },
+  tobi:   { name: 'Tobias Richter',   role: 'Tech Lead',          room: 'Zimmer 12c', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  darius: { name: 'Darius Varga',     role: 'Game Director',      room: 'Zimmer 12d', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  nami:   { name: 'Nami Osei',        role: 'Narrative Designer', room: 'Zimmer 12e', gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
+  leo:    { name: 'Leo Ferretti',     role: 'Community Manager',  room: 'Zimmer 12f', gender: '\u2640', flag: '\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEE\uD83C\uDDF7' },
+  finn:   { name: 'Finn Calloway',    role: 'Producer',           room: 'Zimmer 12 (CD-Büro)', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
 };
 
 let simData = null;
@@ -35,6 +35,7 @@ const sceneParticipants = document.getElementById('scene-participants');
 const sceneSummary = document.getElementById('scene-summary');
 const keyMoment = document.getElementById('key-moment');
 const artifactList = document.getElementById('artifact-list');
+const daySummaryEl = document.getElementById('day-summary');
 const agentList = document.getElementById('agent-list');
 const btnPrev = document.getElementById('btn-prev');
 const btnNext = document.getElementById('btn-next');
@@ -226,6 +227,9 @@ function selectScene() {
     keyMoment.style.display = 'none';
   }
 
+  // Render day summary bubble
+  renderDaySummary();
+
   // Render artifacts
   renderArtifacts(scene.artifacts || []);
 
@@ -241,6 +245,49 @@ function selectScene() {
 function getCurrentScene() {
   if (!simData) return null;
   return simData.days[currentDayIdx]?.scenes[currentSceneIdx] || null;
+}
+
+function renderDaySummary() {
+  const day = simData.days[currentDayIdx];
+  const summary = day?.summary;
+  if (!summary) {
+    daySummaryEl.style.display = 'none';
+    return;
+  }
+
+  let html = '';
+  html += `<div class="day-summary-header">`;
+  html += `<span class="day-summary-icon">&#128203;</span>`; // 📋 — clipboard/summary icon
+  html += `ZUSAMMENFASSUNG — Tag ${summary.day || day.day}`;
+  html += `</div>`;
+
+  if (summary.phase) {
+    html += `<span class="day-summary-phase">${summary.phase}</span> `;
+  }
+  html += `<div class="day-summary-title">${summary.title || ''}</div>`;
+  html += `<div class="day-summary-text">${summary.summary || ''}</div>`;
+
+  // CD decisions
+  if (summary.cd_decisions?.length) {
+    html += `<div class="day-summary-decisions">`;
+    html += `<div class="day-summary-decisions-label">CD-Entscheidungen</div>`;
+    for (const d of summary.cd_decisions) {
+      html += `<div class="day-summary-decision">${d}</div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Key moments
+  if (summary.key_moments?.length) {
+    html += `<div class="day-summary-moments">`;
+    for (const m of summary.key_moments) {
+      html += `<div class="day-summary-moment">${m}</div>`;
+    }
+    html += `</div>`;
+  }
+
+  daySummaryEl.innerHTML = html;
+  daySummaryEl.style.display = 'block';
 }
 
 function renderArtifacts(artifacts) {

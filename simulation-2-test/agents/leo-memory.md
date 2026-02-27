@@ -58,3 +58,12 @@ V2-Konsistenz-Check vorbereitet. QA-Checkliste für morgen: Stufentabelle (Rausc
 
 ## Tag 4, Szene 6 (D&D)
 D&D. Zweimal in eigene Falle gefallen. Team lacht immer noch. Guter Abend.
+
+## Tag 5, Szene 1 (BRIEFING)
+Freitag. V2 finalisieren, mein Job: Konsistenz-Check alle V2-Docs. Stufengrenzen-Abgleich.
+
+## Tag 5, Szene 2 (WORK)
+Konsistenz-Check V2 durchgeführt. HOCH: Stufentabelle immer noch inkonsistent — GDD-03 hat Risse bis 80 statt 75. NIEDRIG: GDD-02 Kap. 2.7 noch "Ymir-Material" statt "Emer-Material". OK: Hex-Codes GDD-05 intern konsistent. HINWEIS: Ungefüge in WBB-01 kanonisiert, aber kein GDD-Dokument referenziert ihn. Brücke Lore→Narrativ fehlt.
+
+## Tag 5, Szene 3 (MEETING)
+Befunde im Standup vorgestellt. Ymir→Emer: Übernehme den Fix selbst, 5 Minuten. Stufenzahl 75 vs. 80: Namis 80 ist narrativ motiviert (spätes Spiel, hohe Stakes), aber widerspricht CD-Entscheidung (Risse bis 75). Geht auf CD-Agenda. Emres Topos-Metapher ("Emer-Anatomie") angefragt — könnte zu hermetisch sein. Er sagt: bewusste Tiefenschicht, Codex-Eintrag. Nachmittags Ymir-Fix und Review-Vorbereitung.
