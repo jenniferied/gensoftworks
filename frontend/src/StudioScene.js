@@ -35,20 +35,20 @@ const AGENTS = [
 ];
 
 const ZONES = [
-  { name: 'Zimmer 12a\nEmre',     x: 0,  y: 0,  w: 8,  h: 8  },
-  { name: 'Zimmer 12b\nVera',     x: 8,  y: 0,  w: 8,  h: 8  },
-  { name: 'Zimmer 12c\nTobi',     x: 16, y: 0,  w: 8,  h: 8  },
-  { name: 'Konferenz',           x: 24, y: 0,  w: 10, h: 8  },
-  { name: 'Küche',               x: 34, y: 0,  w: 10, h: 8  },
-  { name: 'Zimmer 12d\nDarius',   x: 0,  y: 13, w: 8,  h: 7  },
-  { name: 'Schreibstube\nNami',    x: 8,  y: 13, w: 8,  h: 7  },
-  { name: 'Zimmer 12f\nLeo',      x: 16, y: 13, w: 8,  h: 7  },
-  { name: 'Lounge',              x: 24, y: 13, w: 10, h: 8  },
-  { name: 'Bibliothek',          x: 24, y: 21, w: 10, h: 7  },
+  { name: '12a Lore-Ecke\nEmre',           x: 0,  y: 0,  w: 8,  h: 8  },
+  { name: '12b Art Station\nVera',         x: 8,  y: 0,  w: 8,  h: 8  },
+  { name: '12c Tech Corner\nTobi',         x: 16, y: 0,  w: 8,  h: 8  },
+  { name: 'Konferenz',                    x: 24, y: 0,  w: 10, h: 8  },
+  { name: 'Küche',                        x: 34, y: 0,  w: 10, h: 8  },
+  { name: '12d Game Design Corner\nDarius', x: 0,  y: 13, w: 8,  h: 7  },
+  { name: '12e Schreibstube\nNami',        x: 8,  y: 13, w: 8,  h: 7  },
+  { name: '12f QA / Streaming\nLeo',       x: 16, y: 13, w: 8,  h: 7  },
+  { name: 'Lounge',              x: 24, y: 13, w: 10, h: 15 },
+  { name: 'Bibliothek',          x: 34, y: 20, w: 10, h: 8  },
   { name: 'WC Damen',            x: 34, y: 13, w: 5,  h: 7  },
   { name: 'WC Herren',           x: 39, y: 13, w: 5,  h: 7  },
   { name: 'Flur',                x: 0,  y: 8,  w: 44, h: 5  },
-  { name: 'Zimmer 12\nFinn + CD', x: 0,  y: 20, w: 24, h: 8  },
+  { name: '12 Produktionsbüro\nFinn + CD',  x: 0,  y: 20, w: 24, h: 8  },
 ];
 
 // Character animation frame map (48×96 frames, 56 cols per combined row)
