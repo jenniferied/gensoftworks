@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "python3 ../scripts/build-viewer-data.py && vite build",
     "preview": "vite preview",
-    "capture": "vite build && vite preview & sleep 2 && node ../scripts/capture-scenes.mjs --port 4173; kill %1"
+    "capture": "vite build && vite preview & sleep 2 && node ../scripts/capture-scenes.mjs --port 4173; kill %1",
+    "deploy": "bash ../scripts/build-deploy.sh"
   },
   "devDependencies": {
     "vite": "^7.3.1"

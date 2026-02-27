@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import { StudioScene } from './StudioScene.js';
 import { initSidebar } from './sidebar.js';
+import { initAudio } from './audio.js';
 
 const container = document.getElementById('game-container');
 const config = {
@@ -20,3 +21,4 @@ const config = {
 
 window.__phaserGame = new Phaser.Game(config);
 initSidebar();
+initAudio();

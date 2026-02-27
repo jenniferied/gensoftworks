@@ -1,0 +1,17 @@
+{
+  "simulations": [
+    {
+      "id": "sim-1",
+      "label": "Sim 1",
+      "file": "sim-1.json",
+      "days": 5
+    },
+    {
+      "id": "sim-2-test",
+      "label": "Sim 2 Test",
+      "file": "sim-2-test.json",
+      "days": 5
+    }
+  ],
+  "default": "sim-2-test"
+}

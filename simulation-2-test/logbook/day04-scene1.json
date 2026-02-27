@@ -1,0 +1,17 @@
+{
+  "scene": 1,
+  "type": "BRIEFING",
+  "time": "morning",
+  "location": "kueche",
+  "participants": ["finn", "darius", "emre", "vera", "nami", "leo", "tobi"],
+  "summary": "Tag 4 Briefing. Finn moderiert. Peer-Reviews haben heute Prioritaet — jeder liest mindestens ein fremdes V1-Dokument und gibt konkretes Feedback. Danach V2-Ueberarbeitungen. Neue Dokumente: Nami startet GDD-04 Schluesselfiguren, Emre beginnt WBB-02 Topos. Finn hat den Blue-Byte-Freelancer-Kontakt angeschrieben. Heute Abend D&D (Emre ist DM). Emre reviewt Namis GDD-03, Nami reviewt Darius' GDD-02. Leo bietet sich als Anlaufstelle an — hat gestern schon alle Dokumente quergelesen.",
+  "dialogue": [
+    {"who": "finn", "says": "Moin. Kaffee steht, bedient euch. Kurzer Rueckblick: Gestern war ein verdammt guter Tag. Sechs V1-Dokumente. Die CD war ausdruecklich positiv, vor allem ueber die Kohaerenz. Das liegt an euch. Heute: Peer-Reviews haben Prioritaet. Jeder liest mindestens ein fremdes Dokument und gibt konkretes Feedback — nicht 'sieht gut aus', sondern wo hakt's, wo widerspricht sich was. Bis zum Standup um halb zwoelf. Neue Dokumente: Nami faengt GDD-04 Schluesselfiguren an, Emre startet WBB-02 Topos — aber Reviews vor neuen Dokumenten. Ach ja: Ich hab gestern Abend den Blue-Byte-Kontakt angeschrieben. Und heute ist Donnerstag — D&D heute Abend. Emre, bereite dich vor, aber nicht auf Kosten der Reviews. Fragen?"},
+    {"who": "emre", "says": "Ich nehm mir Namis GDD-03 vor. Das Erzaehlkonzept arbeitet mit meiner Terminologie aus dem Mythos, da muss ich pruefen ob alles sauber sitzt. Topos fang ich danach an, das braucht sowieso die Review-Ergebnisse als Grundlage. Und fuer D&D reicht mir die Mittagspause, das laeuft."},
+    {"who": "nami", "says": "Ich nehm mir Darius' GDD-02 als erstes vor. Die Schattenfieber-Mechanik muss narrativ sitzen, bevor ich mit den Schluesselfiguren anfange — sonst schreib ich Figuren, die in einem System leben, das ich nicht verstanden hab. Emre, ich brauch spaeter deine mythologischen Figuren als Grundlage fuer GDD-04, koenntest du mir den aktuellen Stand schicken?"},
+    {"who": "leo", "says": "Ich hab gestern schon alle sechs Dokumente durchgelesen und QA-Kommentare reingeschrieben — bin also quasi schon durch mit der ersten Review-Runde. Wenn jemand unsicher ist, wo er anfangen soll oder welche Stellen sich widersprechen: kommt zu mir, ich kann euch die zwei, drei kritischen Stellen direkt zeigen. Spart uns Zeit fuer die V2."},
+    {"who": "finn", "says": "Perfekt. Dann los."}
+  ],
+  "artifacts": [],
+  "cd_feedback": "Peer-Reviews haben heute Prioritaet. Jeder liest mindestens ein fremdes Dokument. Danach V2-Ueberarbeitungen. Nami startet GDD-04 Schluesselfiguren, Emre beginnt WBB-02 Topos. Reviews vor neuen Dokumenten."
+}

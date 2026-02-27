@@ -147,6 +147,11 @@ export class StudioScene extends Phaser.Scene {
       return { el, wx: (zone.x + zone.w / 2) * T, wy: (zone.y + zone.h / 2) * T };
     });
 
+    // --- Agent tooltip (HTML, stays sharp over pixelArt canvas) ---
+    this.tooltip = document.getElementById('agent-tooltip');
+    this.tooltipName = this.tooltip.querySelector('.tt-name');
+    this.tooltipRole = this.tooltip.querySelector('.tt-role');
+
     // --- Agents ---
     this.agentSprites = {};
     for (const agent of AGENTS) {
@@ -159,9 +164,20 @@ export class StudioScene extends Phaser.Scene {
         .setInteractive({ useHandCursor: true });
       sprite.play(`${agent.sprite}_idle_down`);
 
-      // Click → dispatch agent-click event to DOM sidebar
+      // Hover → show tooltip
+      sprite.on('pointerover', () => {
+        this.tooltipName.textContent = agent.name;
+        this.tooltipRole.textContent = agent.role;
+        this.tooltip.classList.add('visible');
+      });
+      sprite.on('pointerout', () => {
+        this.tooltip.classList.remove('visible');
+      });
+
+      // Click → dispatch agent-click event (opens profile modal)
       sprite.on('pointerdown', (pointer) => {
         pointer.event.stopPropagation();
+        this.tooltip.classList.remove('visible');
         window.dispatchEvent(new CustomEvent('viewer:agent-click', {
           detail: { agentKey: agent.key },
         }));
@@ -329,6 +345,15 @@ export class StudioScene extends Phaser.Scene {
     for (const { el, wx, wy } of this.zoneLabels) {
       el.style.left = `${(wx - cam.worldView.x) * cam.zoom}px`;
       el.style.top = `${(wy - cam.worldView.y) * cam.zoom}px`;
+    }
+
+    // Position tooltip near pointer
+    if (this.tooltip.classList.contains('visible')) {
+      const pointer = this.input.activePointer;
+      const container = document.getElementById('game-container');
+      const rect = container.getBoundingClientRect();
+      this.tooltip.style.left = `${rect.left + pointer.x + 14}px`;
+      this.tooltip.style.top = `${rect.top + pointer.y - 10}px`;
     }
   }
 

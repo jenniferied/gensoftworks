@@ -1,0 +1,15 @@
+{
+  "scene": 2,
+  "type": "WORK",
+  "time": "morning",
+  "location": "alle-stationen",
+  "participants": ["emre", "nami", "darius", "vera", "tobi", "leo", "finn"],
+  "summary": "Peer-Review-Session. Alle 7 Agenten lesen mindestens ein fremdes V1-Dokument und geben substanzielles Feedback. Emre reviewt Namis GDD-03 (Terminologie einwandfrei, Ungefuege fehlt, Flechtfest kanonisieren, Schattenfieber-Mapping expliziter). Nami reviewt Darius' GDD-02 (Nervensystem-Leveling narrativ leer, Schwellenwerte divergieren 70 vs 81, Kontrollverlust vs Perspektivwechsel). Darius reviewt Veras GDD-05 (Stufen-Alignment-Problem, Stufe-0-Baseline fehlt, Gameplay-Orte fehlen). Vera reviewt Tobis GDD-06 (Farbpaletten-Widerspruch, Modulanzahl zu niedrig, Vertex-Animation vs Emissive). Tobi reviewt Emres WBB-01 (Drei-Schichten-Rendering noetig, Hauten-Shader, zwei Schattenfieber-Farbprofile). Leo liefert Cross-Document-Konsistenz-Report (Ymir-Material statt Emer-Material in GDD-02, Schattenfieber-Stufengrenzen divergieren: 70/76/81). Finn reviewt Darius' GDD-01 (Scope-Realitaetscheck, Zielgruppen-Diskrepanz 22-35 vs 25-40, Kamera-Prioritaet unklar).",
+  "dialogue": [
+    {"who": "leo", "says": "Leute, ich hab den Cross-Doc-Report fertig. Zwei echte Inkonsistenzen: Erstens, Darius hat noch 'Ymir-Material' statt 'Emer-Material' in GDD-02 stehen — einfacher Suchen-Ersetzen. Zweitens, und das ist das Groessere: Die Schattenfieber-Stufengrenzen divergieren. Tobi startet Halluzinationen bei Wert 70, Darius hat Stufe 4 ab 76, Nami hat Schwelle erst ab 81. Bei Wert 75 erlebt ein Spieler gleichzeitig Halluzinationen, ist mechanisch noch Stufe 3, und narrativ noch in den Rissen. Das muss heute geklaert werden."},
+    {"who": "nami", "says": "Das deckt sich mit meinem Review von Darius' GDD-02. Die Schwellenwerte sind der kritischste Punkt. Ich schlage vor: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Eine Tabelle, die in allen Dokumenten identisch steht."},
+    {"who": "emre", "says": "Namis GDD-03 ist lore-konsistent. Kein Widerspruch zu WBB-01, das passiert selten. Aber der Ungefuege fehlt komplett — das ist unsere Loki-Referenz, der Katalysator. Muss in V2 als mythologischer Schatten in die Hauptquest."}
+  ],
+  "artifacts": [],
+  "cd_feedback": null
+}

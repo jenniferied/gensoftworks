@@ -1,0 +1,140 @@
+{
+  "scene": 1,
+  "type": "BRIEFING",
+  "time": "morning",
+  "location": "kueche",
+  "participants": ["finn", "darius", "emre", "vera", "nami", "leo", "tobi"],
+  "summary": "Erster Arbeitstag bei GenSoftworks. Finn moderiert das Briefing in der Kueche. CD-Feedback wird vorgestellt: Montag ist Recherchetag, jeder startet Grundlagenrecherche in seinem Fachgebiet. Aufgabenverteilung: Emre (germanische Mythologie), Darius (Referenzspiel-Analyse), Nami (narrative Strukturen), Vera (visuelle Referenzen), Tobi (technische Machbarkeit), Leo (Spielermarkt/Community), Finn (Roadmap/Meilensteine). Stimmung: motiviert, fokussiert, leicht nervoes — erster Tag.",
+  "dialogue": [
+    {
+      "who": "finn",
+      "says": "Moin. Kaffee steht, bedient euch. Schoen, dass alle da sind."
+    },
+    {
+      "who": "leo",
+      "says": "Moin! Erster Tag, erster Kaffee, erstes Briefing. Ich bin ready."
+    },
+    {
+      "who": "darius",
+      "says": "Morgen. Lass uns anfangen, Finn."
+    },
+    {
+      "who": "finn",
+      "says": "Alles klar. Kurz und knapp: Die CD hat uns das Tagesziel gegeben. Heute ist Montag, das heisst Recherchetag. Kein Output-Druck, keine fertigen Dokumente. Heute geht es darum, dass jeder in seinem Bereich die Grundlagen legt."
+    },
+    {
+      "who": "finn",
+      "says": "Ich gehe einmal durch. Emre: Germanische Mythologie. Das ist die Basis fuer unseren Mythos. Du bist da in deinem Element."
+    },
+    {
+      "who": "emre",
+      "says": "Verstanden. Ich fange bei den Primaerquellen an — Edda, Voeluspá. Und schaue, was sich fuer unser Low-Fantasy-Setting destillieren laesst, ohne in High-Fantasy-Klischees abzurutschen."
+    },
+    {
+      "who": "finn",
+      "says": "Perfekt. Darius: Referenzspiel-Analyse. Gothic, Skyrim, Dishonored — was machen die richtig, was machen die falsch, was nehmen wir mit."
+    },
+    {
+      "who": "darius",
+      "says": "Klar. Ich mache einen strukturierten Vergleich entlang der Design Pillars. Gothic fuer Dichte, Skyrim fuer Open World und Kamerasystem, Dishonored fuer Vertikalitaet. Muss aber auch schauen, wo wir uns bewusst abgrenzen."
+    },
+    {
+      "who": "finn",
+      "says": "Genau, Abgrenzung ist genauso wichtig. Nami: Narrative Strukturen in Dark Fantasy CRPGs. Wie erzaehlen die ihre Geschichten, was funktioniert, was nicht."
+    },
+    {
+      "who": "nami",
+      "says": "Ich schaue mir an, wie Spiele wie Disco Elysium und Bloodlines ihre Erzaehlung in Spielmechaniken verweben. Nicht nur Queststruktur, sondern auch die Frage, wann der Spieler Agent ist und wann Zeuge. Das Briefing sagt, der Spielercharakter ist ein Unbekannter — das ist eine narrative Constraint, die viel bestimmt."
+    },
+    {
+      "who": "finn",
+      "says": "Guter Punkt. Halt das fest, das wird fuer Darius spaeter auch relevant. Vera: Visuelle Referenzen. Mittelalterlich-europaeisch trifft Biotech — das ist die Aesthetik, die die CD vorgegeben hat."
+    },
+    {
+      "who": "vera",
+      "says": "Frage dazu: Wie weit geht Biotech visuell? Das Briefing sagt mehr futuristisch, weniger heruntergekommen. Aber Biotech kann von subtilen Texturen bis zu offensichtlichen organischen Strukturen reichen. Brauche da eine Richtung, bevor ich Moodboards baue."
+    },
+    {
+      "who": "finn",
+      "says": "Berechtigte Frage. Ich leg das der CD vor — bis dahin sammel in beide Richtungen, subtil und offensichtlich. Dann haben wir Vergleichsmaterial, wenn die Antwort kommt."
+    },
+    {
+      "who": "vera",
+      "says": "Kann ich mit leben. Ich baue heute PureRef-Boards auf und sortiere nach Stimmung."
+    },
+    {
+      "who": "finn",
+      "says": "Tobi: Technische Machbarkeit. Die CD will wissen, ob unsere Vision realistisch ist. First-Person, Third-Person umschaltbar, Open World, Echtzeit-Combat — was koennen wir leisten?"
+    },
+    {
+      "who": "tobi",
+      "says": "Kurze Rueckfrage: Gehen wir von UE5 als Engine aus, oder ist das noch offen?"
+    },
+    {
+      "who": "finn",
+      "says": "Das Briefing nennt keine Engine explizit. Ich klaere das mit der CD. Aber fuer die Machbarkeitsanalyse kannst du ruhig UE5 als Basis nehmen — das ist unser Werkzeug."
+    },
+    {
+      "who": "tobi",
+      "says": "Gut. Dann schaue ich mir heute die Pipeline an: Nanite, Lumen, nahtloser Kamerawechsel. Und ich mache eine ehrliche Einschaetzung, was mit unserem Teamsize machbar ist und wo wir Scope-Grenzen setzen muessen."
+    },
+    {
+      "who": "finn",
+      "says": "Genau das brauche ich. Leo: Spielermarkt und Community-Erwartungen. Was wollen Leute, die Dark Fantasy CRPGs spielen? Was ist der Markt?"
+    },
+    {
+      "who": "leo",
+      "says": "Ich tauche heute in r/crpg, r/rpg_gamers und die einschlaegigen Discords ein. Ausserdem schaue ich mir die Steam-Daten an — was verkauft sich, welche Tags performen, wo sind die Luecken. Und ich mache eine kurze Wettbewerbsanalyse: Was kommt in den naechsten zwei Jahren raus, was aehnlich klingt wie RELICS?"
+    },
+    {
+      "who": "darius",
+      "says": "Guter Ansatz mit der Wettbewerbsanalyse. Wenn du Avowed und das Gothic Remake auf dem Schirm hast, sag mir Bescheid."
+    },
+    {
+      "who": "leo",
+      "says": "Stehen schon auf meiner Liste."
+    },
+    {
+      "who": "finn",
+      "says": "Und ich kuemmere mich um Roadmap und Meilensteine. Dafuer brauche ich im Laufe der Woche Input von euch allen — vor allem von Darius und Tobi fuer die Scope-Einschaetzung. Heute skizziere ich die grobe Struktur."
+    },
+    {
+      "who": "finn",
+      "says": "Noch eine Sache, die ich von der CD weitergebe: Qualitaet vor Quantitaet. Lieber drei solide Seiten als dreissig duenne. Und: Fragt nach, wenn etwas unklar ist. Lieber einmal zu viel fragen als was Falsches bauen."
+    },
+    {
+      "who": "emre",
+      "says": "Das gilt auch intern. Wenn jemand fuer seine Recherche Kontext aus meiner Ecke braucht — kommt einfach vorbei."
+    },
+    {
+      "who": "nami",
+      "says": "Das nehme ich dich beim Wort. Ich werde nachher wahrscheinlich Fragen zur mythologischen Basis haben, die in die Erzaehlstruktur einfliessen."
+    },
+    {
+      "who": "finn",
+      "says": "Perfekt. Standup ist um halb zwoelf, dann schauen wir, wo jeder steht. Bis dahin: macht euer Ding. Was braucht ihr von mir?"
+    },
+    {
+      "who": "vera",
+      "says": "Zugang zur Library. Gibt es schon Referenzmaterial, das die CD hinterlegt hat?"
+    },
+    {
+      "who": "finn",
+      "says": "Das Briefing liegt in der Library. Sonst ist die noch leer — das fuellen wir diese Woche. Wenn ihr Material braucht — Papers, Artbooks, was auch immer — sagt mir Bescheid, ich kuemmere mich drum."
+    },
+    {
+      "who": "tobi",
+      "says": "Dann wuerde ich um die SIGGRAPH-Paper zu Nanite und Lumen bitten. Fuer die technische Einschaetzung."
+    },
+    {
+      "who": "finn",
+      "says": "Notiert. Noch was? Nein? Dann los. Guter erster Tag, Leute."
+    },
+    {
+      "who": "leo",
+      "says": "Let's go!"
+    }
+  ],
+  "artifacts": [],
+  "cd_feedback": "Willkommen zum ersten Arbeitstag. Heute ist Montag — Recherchetag. Jeder startet Grundlagenrecherche in seinem Fachgebiet. Emre: germanische Mythologie. Darius: Referenzspiel-Analyse (Gothic, Skyrim, Dishonored). Nami: Narrative Strukturen in Dark Fantasy CRPGs. Vera: Visuelle Referenzen (Mittelalter + Biotech). Tobi: Technische Machbarkeit. Leo: Spielermarkt und Community-Erwartungen. Finn: Roadmap und Meilensteine. Qualitaet vor Quantitaet. Fragt nach, wenn etwas unklar ist."
+}

@@ -1,0 +1,61 @@
+# Output — Tag 2, Szene 6 (REVIEW)
+
+## Tagesabschluss-Review, Tag 2 (Dienstag), 16:00 Uhr, Kueche
+
+---
+
+**Finn**: Moin. Letztes Review des Konzeptionstags. Morgen wird geschrieben. Kurze Runde, dann CD-Feedback. Darius, du und Leo zuerst — wie lief die QA-Schleife?
+
+**Darius**: Sechs der vierzehn Fragen sind geklaert. Die Stufen-Schwellen fuer Schattenfieber stehen jetzt sauber — mechanisch und narrativ synchron, nachdem Nami und Emre ihre Seite auch fertig hatten. Die restlichen acht Fragen sind Balancing-Iteration, die koennen erst mit einem spielbaren Prototyp beantwortet werden. Und Leos drei Bedingungen fuer Irreversibilitaet sind jetzt fest in GDD-02 verankert.
+
+**Leo**: Die QA-Schleife hat gut funktioniert. Ich hab zwei Stellen gefunden, wo ein Spieler frustriert abspringen wuerde — beide entschaerft. Das Alchemie-System als Magie-Ersatz ist aus Spielersicht ueberzeugend, weil es sich anfuehlt wie Vorbereitung statt wie Mana-Management. Und die drei Bedingungen stehen: Transparente Infektion, spuerbarer Gameplay-Unterschied pro Stufe, ein infektionsfreier Pfad muss moeglich sein.
+
+**Finn**: Emre, Nami — Stufen-Mapping und Relikt?
+
+**Emre**: Nami und ich haben die fuenf Schattenfieber-Stufen durchdekliniert. Jede Stufe hat jetzt eine kosmologische Entsprechung — Stufe eins ist ein Riss in der Wahrnehmung, Stufe fuenf ist der Blick durch die Membran. Die Krone passt sich da perfekt ein als das Objekt, das die Membran zusammenhaelt. Ausserdem hab ich mit dem eigenen Namenssystem angefangen. Ymir heisst jetzt intern Ur-Binder, die Schichten bekommen eigene Bezeichnungen. Wird morgen in die V1 einfliessen.
+
+**Nami**: Die drei Endpfade stehen. Tragen, zerstoeren, weitergeben. Jeder Pfad veraendert den dritten Akt fundamental. Tragen heisst maximale Macht bei maximaler Infektion — der Spieler wird zum neuen Bindeglied, aber verliert sich selbst. Zerstoeren heisst Befreiung, aber die Schichten driften weiter auseinander. Weitergeben heisst die Verantwortung abgeben — an eine Fraktion, und damit deren Deutungshoheit bestaetigen. Neun Quest-Deliverables sind alle zugeordnet.
+
+**Darius**: Die drei Endpfade korrespondieren sauber mit den drei Fraktionsphilosophien. Krone will die Krone tragen, Orden will sie verstehen, Gilden wollen sie handeln. Mechanisch heisst das: Der Fraktionsweg beeinflusst, welcher Endpfad sich natuerlich anfuehlt — aber der Spieler kann immer anders entscheiden.
+
+**Finn**: Vera, wie sieht's mit der Orden-Symbolik aus?
+
+**Vera**: Integriert. Das Rabenmotiv zieht sich jetzt durch alle Orden-Elemente — Architektur, Kleidung, Ritualgegenstaende. Die verschleierten Schriftzeichen geben dem Orden visuell eine Doppelboden-Aesthetik: Was an der Oberflaeche wie Ornament aussieht, ist in Wahrheit Notation. Dazu hab ich die Tiervolk-Praesenz geschaerft — improvisierte Nischen, nomadische Markierungen, temporaere Materialien in permanenten Strukturen. Der Kontrast zum Orden ist maximal, und genau das macht es visuell spannend.
+
+**Finn**: Tobi, Schattenfieber-Tech?
+
+**Tobi**: Darius und ich haben die Stufen technisch durchgesprochen. Stufe eins bis drei ist Post-Processing — Farbverschiebung, chromatische Aberration, Partikel. Machbar, Standardwerkzeug. Stufe vier braucht Custom-Shader fuer die Texturveraenderungen. Stufe fuenf mit Geometrie-Veraenderung ist das Teuerste — ich empfehle Vertex Displacement statt echter Geometrie-Manipulation, das spart Performance und sieht trotzdem invasiv aus. Aufwandsschaetzung: Stufe eins bis drei sind zwei Wochen, Stufe vier ist drei Wochen, Stufe fuenf ist vier Wochen — mit Freelancer. Audio-Pipeline und UI/UX bleiben offen fuer Woche zwei.
+
+**Finn**: Danke. Von mir: Produktionsplan fuer morgen steht. Jeder schreibt seine V1. Prioritaeten sind klar, Abhaengigkeiten sind aufgeloest. Freelancer-Budget liegt bei fuenfundvierzigtausend Euro fuer einen Gameplay-Programmer ueber sechs Monate. Das geht morgen frueh offiziell an die CD zur Freigabe.
+
+**Finn**: Jetzt das CD-Feedback zum Tag. Ich zitiere: "Hervorragender Konzeptionstag. Alle Outlines stehen, die Artefakte sind koharent. Die lebende Krone als Relikt gibt dem Hauptquest seinen Anker."
+
+**Nami**: Das freut mich. Die Krone hat heute alles zusammengezogen — Lore, Mechanik, Narrativ. Das ist selten am zweiten Tag.
+
+**Finn**: Weiter im Feedback: "Morgen ist Produktionstag. Jeder schreibt seine V1. Emre hat die haerteste Deadline — WBB-01 muss bis elf Uhr dreissig lesbar sein. Qualitaet vor Quantitaet."
+
+**Emre**: Verstanden. Die Outline ist solide, das Namenssystem braucht noch eine Nachtschicht im Kopf, aber morgen frueh bin ich dran.
+
+**Finn**: Die CD sagt ausserdem: "Ich bin stolz auf das, was in zwei Tagen entstanden ist."
+
+**Vera**: Das hoert man gern.
+
+**Darius**: Zwei Tage und wir haben ein Combat-System, drei Endpfade, fuenf Fieber-Stufen und ein Relikt. Das ist solide.
+
+**Finn**: Morgen-Plan: Neun Uhr Briefing, dann schreibt jeder. Emre, WBB-01 hat Prioritaet eins — Nami und Vera bauen darauf. Darius, GDD-02 V1 ist dein Hauptstueck. Nami, GDD-03 V1 mit den drei Endpfaden. Vera, GDD-05 V1 mit der integrierten Orden-Symbolik. Tobi, GDD-06 V1 mit der Schattenfieber-Tech-Schaetzung. Leo, du bereitest den Spielerperspektiv-Bericht als QA-Dokument auf.
+
+**Leo**: Wird gemacht. Und ich les morgen Nachmittag alle V1-Entwuerfe quer — frische Augen auf alles.
+
+**Finn**: Perfekt. Guter Tag, Leute. Zwei Tage Konzeption, alles steht. Morgen wird produziert. Geniesst den Abend.
+
+**Tobi**: Bestellt wieder jemand was?
+
+**Nami**: Ich hab gestern bestellt. Heute ist jemand anderes dran.
+
+**Leo**: Ich mach das. Gleiche Bestellung wie gestern?
+
+**Vera**: Ohne Ananas.
+
+**Emre**: Immer noch mythologisch nicht fundiert.
+
+**Finn**: Bis morgen. Neun Uhr.

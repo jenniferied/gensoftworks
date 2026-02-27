@@ -1,0 +1,21 @@
+{
+  "day": 3,
+  "weekday": "Mittwoch",
+  "phase": "Produktion V1",
+  "title": "Erster Produktionstag — Sechs V1-Dokumente",
+  "summary": "Erster Produktionstag. Sechs vollstaendige V1-Dokumente entstehen an einem Tag: WBB-01 Mythos (Emre), GDD-01 Spieluebersicht (Darius), GDD-02 Kernmechaniken (Darius), GDD-03 Erzaehlkonzept (Nami), GDD-05 Designsprache (Vera), GDD-06 Technik & Produktion (Tobi+Finn). Cross-Referenzen funktionieren: Emres Namenssystem zieht sich durch alle Dokumente. Leo schreibt QA-Kommentare in alle Dokumente. CD extrem positiv ueber Kohaerenz.",
+  "cd_decisions": [],
+  "artifacts_produced": [
+    "gallery/wbb/01-mythos.md",
+    "gallery/gdd/01-spieluebersicht.md",
+    "gallery/gdd/02-kernmechaniken.md",
+    "gallery/gdd/03-erzaehlkonzept.md",
+    "gallery/gdd/05-designsprache.md",
+    "gallery/gdd/06-technik-produktion.md"
+  ],
+  "key_moments": [
+    "Sechs V1-Dokumente an einem Tag — Rekord",
+    "Namenssystem durchgaengig konsistent ueber alle Dokumente",
+    "Finn kontaktiert Blue-Byte-Freelancer"
+  ]
+}

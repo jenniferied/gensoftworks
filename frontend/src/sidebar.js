@@ -1,16 +1,19 @@
 /**
- * Sidebar controller — fetches simulation.json, populates dropdowns,
+ * Sidebar controller — fetches simulation data, populates dropdowns,
  * dispatches viewer events, renders agent details for all participants.
+ * Supports multiple simulations via manifest (data/index.json).
  */
 
+const BASE = import.meta.env.BASE_URL;
+
 const AGENT_META = {
-  emre:   { name: 'Emre Kaya',       role: 'Worldbuilder' },
-  vera:   { name: 'Vera Morozova',    role: 'Concept Artist' },
-  tobi:   { name: 'Tobias Richter',   role: 'Tech Lead' },
-  darius: { name: 'Darius Varga',     role: 'Game Director' },
-  nami:   { name: 'Nami Osei',        role: 'Narrative Designer' },
-  leo:    { name: 'Leo Ferretti',     role: 'Community Manager' },
-  finn:   { name: 'Finn Calloway',    role: 'Producer' },
+  emre:   { name: 'Emre Kaya',       role: 'Worldbuilder',       room: 'Zimmer 7a' },
+  vera:   { name: 'Vera Morozova',    role: 'Concept Artist',     room: 'Zimmer 7b' },
+  tobi:   { name: 'Tobias Richter',   role: 'Tech Lead',          room: 'Zimmer 7c' },
+  darius: { name: 'Darius Varga',     role: 'Game Director',      room: 'Zimmer 7d' },
+  nami:   { name: 'Nami Osei',        role: 'Narrative Designer', room: 'Zimmer 7e' },
+  leo:    { name: 'Leo Ferretti',     role: 'Community Manager',  room: 'Zimmer 7f' },
+  finn:   { name: 'Finn Calloway',    role: 'Producer',           room: 'Zimmer 7 (CD-Büro)' },
 };
 
 let simData = null;
@@ -22,6 +25,7 @@ let autoplayTimer = null;
 const AUTOPLAY_INTERVAL = 4000; // ms between scenes
 
 // DOM refs
+const simSelect = document.getElementById('sim-select');
 const daySelect = document.getElementById('day-select');
 const sceneSelect = document.getElementById('scene-select');
 const sceneBadge = document.getElementById('scene-badge');
@@ -37,16 +41,34 @@ const btnNext = document.getElementById('btn-next');
 const btnPlay = document.getElementById('btn-play');
 
 export async function initSidebar() {
-  const resp = await fetch('/data/simulation.json');
-  simData = await resp.json();
-  window.__simData = simData;
+  // Try loading manifest for multi-sim support
+  let manifest = null;
+  try {
+    const resp = await fetch(`${BASE}data/index.json`);
+    if (resp.ok) manifest = await resp.json();
+  } catch {
+    // No manifest — fall back to single simulation.json
+  }
 
-  // Populate day dropdown
-  for (let i = 0; i < simData.days.length; i++) {
-    const opt = document.createElement('option');
-    opt.value = i;
-    opt.textContent = `Tag ${simData.days[i].day}`;
-    daySelect.appendChild(opt);
+  if (manifest && manifest.simulations.length > 0) {
+    // Populate sim dropdown
+    for (const sim of manifest.simulations) {
+      const opt = document.createElement('option');
+      opt.value = sim.file;
+      opt.textContent = sim.label;
+      if (sim.id === manifest.default) opt.selected = true;
+      simSelect.appendChild(opt);
+    }
+    simSelect.style.display = '';
+    simSelect.addEventListener('change', () => loadSimulation(simSelect.value));
+
+    // Load default simulation
+    const defaultSim = manifest.simulations.find(s => s.id === manifest.default) || manifest.simulations[0];
+    await loadSimulation(defaultSim.file);
+  } else {
+    // Fallback: single simulation.json, hide sim dropdown
+    simSelect.style.display = 'none';
+    await loadSimulation('simulation.json');
   }
 
   daySelect.addEventListener('change', () => {
@@ -68,11 +90,41 @@ export async function initSidebar() {
   // Autoplay button
   btnPlay.addEventListener('click', toggleAutoplay);
 
-  // Listen for agent clicks from Phaser — scroll to that agent card
+  // Listen for agent clicks from Phaser — open profile modal
   window.addEventListener('viewer:agent-click', (e) => {
-    const card = document.getElementById(`agent-card-${e.detail.agentKey}`);
-    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    openAgentProfile(e.detail.agentKey);
   });
+
+  // Close profile modal
+  const overlay = document.getElementById('agent-profile-overlay');
+  document.getElementById('profile-close').addEventListener('click', () => {
+    overlay.classList.remove('open');
+  });
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.classList.remove('open');
+  });
+}
+
+async function loadSimulation(filename) {
+  // Stop autoplay if running
+  if (autoplayTimer) toggleAutoplay();
+
+  const resp = await fetch(`${BASE}data/${filename}`);
+  simData = await resp.json();
+  window.__simData = simData;
+
+  // Reset state
+  currentDayIdx = 0;
+  currentSceneIdx = 0;
+
+  // Populate day dropdown
+  daySelect.innerHTML = '';
+  for (let i = 0; i < simData.days.length; i++) {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = `Tag ${simData.days[i].day}`;
+    daySelect.appendChild(opt);
+  }
 
   populateScenes();
   selectScene();
@@ -329,4 +381,51 @@ function renderAgentCards(scene) {
   }
 
   agentList.innerHTML = html;
+}
+
+function openAgentProfile(agentKey) {
+  const meta = AGENT_META[agentKey];
+  if (!meta) return;
+
+  document.getElementById('profile-name').textContent = meta.name;
+  document.getElementById('profile-role').textContent = meta.role;
+  document.getElementById('profile-room').textContent = meta.room;
+
+  // Build time-filtered memory
+  const memSection = document.getElementById('profile-memory');
+  const agentMems = simData?.agent_memories?.[agentKey] || [];
+  const currentDay = simData.days[currentDayIdx]?.day || 1;
+  const currentScene = simData.days[currentDayIdx]?.scenes[currentSceneIdx]?.scene || 1;
+
+  // Filter: only show memory entries up to current day/scene
+  const filtered = agentMems.filter(m =>
+    m.day < currentDay || (m.day === currentDay && m.scene <= currentScene)
+  );
+
+  if (filtered.length === 0) {
+    memSection.innerHTML = '<div class="memory-empty">Noch keine Erinnerungen bis zu dieser Szene.</div>';
+  } else {
+    // Show most recent first, each expandable
+    let html = `<button class="memory-toggle" id="mem-toggle">Erinnerungen (${filtered.length})</button>`;
+    html += '<div id="mem-list" style="display: block;">';
+    for (const m of filtered.slice().reverse()) {
+      html += '<div class="memory-entry">';
+      html += `<div class="memory-entry-header">Tag ${m.day}, Szene ${m.scene} (${m.type})</div>`;
+      html += `<div>${m.text}</div>`;
+      html += '</div>';
+    }
+    html += '</div>';
+    memSection.innerHTML = html;
+
+    document.getElementById('mem-toggle').addEventListener('click', () => {
+      const list = document.getElementById('mem-list');
+      list.style.display = list.style.display === 'none' ? 'block' : 'none';
+    });
+  }
+
+  document.getElementById('agent-profile-overlay').classList.add('open');
+
+  // Also scroll sidebar to this agent's card
+  const card = document.getElementById(`agent-card-${agentKey}`);
+  if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }

@@ -1,0 +1,13 @@
+{
+  "scene": 1,
+  "type": "BRIEFING",
+  "time": "morning",
+  "location": "kueche",
+  "participants": ["finn", "darius", "emre", "vera", "nami", "leo", "tobi"],
+  "summary": "Freitag-Briefing. Finn moderiert. Drei Fokuspunkte: V2 finalisieren, Leo macht zweiten Konsistenz-Check, Outlines (GDD-04, WBB-02) ausbauen. Abends Wochen-Review. D&D gestern war gut fuers Team. Tageszuordnung: Darius GDD-01/02 V2, Nami GDD-03/04, Emre WBB-01/02, Vera GDD-05 V2, Tobi GDD-06 V2, Leo Konsistenz-Check, Finn Koordination + Review-Vorbereitung.",
+  "dialogue": [
+    {"who": "finn", "says": "Moin. Letzter Tag der Woche. Drei Sachen: V2 finalisieren, Leo macht Konsistenz-Check, Outlines weiter ausbauen. Abends Wochen-Review. Hat jemand einen Blocker?"}
+  ],
+  "artifacts": [],
+  "cd_feedback": "V2 finalisieren. Leo Konsistenz-Check. GDD-04 und WBB-02 Outlines weiter. Abends Wochen-Review."
+}

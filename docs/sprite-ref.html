@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { background: #333; color: #fff; font-family: monospace; margin: 20px; }
+.grid { display: grid; grid-template-columns: repeat(16, 50px); gap: 1px; background: #555; }
+.cell { width: 48px; height: 48px; background: #222; position: relative; image-rendering: pixelated; }
+.cell canvas { width: 48px; height: 48px; }
+.label { position: absolute; bottom: 0; right: 0; background: rgba(0,0,0,0.7); color: #0f0; font-size: 9px; padding: 1px 2px; }
+h2 { margin-top: 30px; }
+</style>
+</head>
+<body>
+<h1>Modern Office 48x48 — Frame Reference</h1>
+<p>16 cols, 48x48 tiles. Frame number = row*16 + col (0-indexed)</p>
+<div class="grid" id="grid"></div>
+<script>
+const img = new Image();
+img.src = 'assets/furniture/Modern_Office_48x48.png';
+img.onload = () => {
+  const cols = 16;
+  const rows = Math.ceil(img.height / 48);
+  const grid = document.getElementById('grid');
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      const frame = r * cols + c;
+      const div = document.createElement('div');
+      div.className = 'cell';
+      const canvas = document.createElement('canvas');
+      canvas.width = 48; canvas.height = 48;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, c * 48, r * 48, 48, 48, 0, 0, 48, 48);
+      div.appendChild(canvas);
+      const label = document.createElement('span');
+      label.className = 'label';
+      label.textContent = frame;
+      div.appendChild(label);
+      grid.appendChild(div);
+    }
+  }
+};
+</script>
+</body>
+</html>

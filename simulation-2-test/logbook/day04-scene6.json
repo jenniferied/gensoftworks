@@ -1,0 +1,15 @@
+{
+  "scene": 6,
+  "type": "DND",
+  "time": "afternoon",
+  "location": "gemeinschaftsraum",
+  "participants": ["emre", "nami", "darius", "vera", "tobi", "leo", "finn"],
+  "summary": "D&D One-Shot 'Die Scherbe von Veld'. Emre ist DM. Die Gruppe infiltriert ein verlassenes Handelslager. Highlights: Leo faellt zweimal in eigene Falle, Darius versucht NPC 'Toves' wie ein Spielsystem zu loesen, Nami/Sable redet eine Stunde mit dem mysterioesen Toves und bekommt nichts heraus. Toves ist Emres unbewusster Prototyp fuer den Ungefuegen — ein Mann ohne Fraktion, ohne Motiv, der Armbrustmechanik mit Adersaft repariert. Vera erkennt es instinktiv: 'Ist der Typ fuer RELICS?'",
+  "dialogue": [
+    {"who": "emre", "says": "Die Scherbe von Veld. Ihr steht vor einem verlassenen Handelslager am Sumpfrand."},
+    {"who": "vera", "says": "Ist der Typ fuer RELICS?"},
+    {"who": "emre", "says": "Vielleicht."}
+  ],
+  "artifacts": [],
+  "cd_feedback": null
+}

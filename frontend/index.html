@@ -36,6 +36,7 @@
       #sidebar .nav-btn:hover { border-color: #556699; color: #aac8e8; }
       #sidebar .nav-btn:disabled { opacity: 0.3; cursor: default; }
       #sidebar .nav-btn.playing { color: #e8a84c; border-color: #e8a84c; }
+      #sim-select { flex: 0 1 auto; width: 100%; margin-bottom: 2px; }
       #sidebar select {
         flex: 1 1 0; min-width: 0; background: #1a1a2e; color: #ccc; border: 1px solid #333355;
         padding: 4px 6px; font-family: monospace; font-size: 12px; border-radius: 3px;
@@ -139,16 +140,116 @@
       }
       .agent-feedback.given { color: #8ab; background: #1a2030; border-left: 2px solid #3a5a6a; }
       .agent-feedback.received { color: #ab8; background: #201a1a; border-left: 2px solid #5a4a3a; }
+
+      /* Agent hover tooltip */
+      #agent-tooltip {
+        position: absolute; pointer-events: none; z-index: 100;
+        background: rgba(17,17,34,0.92); border: 1px solid #334466;
+        border-radius: 4px; padding: 5px 9px; font-family: monospace;
+        opacity: 0; transition: opacity 0.15s;
+      }
+      #agent-tooltip.visible { opacity: 1; }
+      #agent-tooltip .tt-name { font-size: 11px; font-weight: bold; color: #dde; }
+      #agent-tooltip .tt-role { font-size: 10px; color: #88aacc; }
+
+      /* Agent profile modal */
+      #agent-profile-overlay {
+        position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+        z-index: 200; display: none; align-items: center; justify-content: center;
+      }
+      #agent-profile-overlay.open { display: flex; }
+      #agent-profile {
+        background: #111122; border: 2px solid #333355; border-radius: 6px;
+        width: 480px; max-width: 90vw; max-height: 80vh; overflow-y: auto;
+        padding: 16px; font-family: monospace; color: #ccc; position: relative;
+      }
+      #agent-profile .profile-close {
+        position: absolute; top: 8px; right: 12px;
+        background: none; border: none; color: #667; font-size: 18px;
+        cursor: pointer; font-family: monospace;
+      }
+      #agent-profile .profile-close:hover { color: #aac8e8; }
+      #agent-profile .profile-header { margin-bottom: 12px; }
+      #agent-profile .profile-name { font-size: 16px; font-weight: bold; color: #dde; }
+      #agent-profile .profile-role { font-size: 12px; color: #88aacc; margin-top: 2px; }
+      #agent-profile .profile-room { font-size: 11px; color: #556; margin-top: 2px; }
+      #agent-profile .memory-section { margin-top: 10px; }
+      #agent-profile .memory-toggle {
+        background: #1a1a2e; border: 1px solid #333355; color: #88aacc;
+        font-family: monospace; font-size: 11px; padding: 4px 10px;
+        border-radius: 3px; cursor: pointer; width: 100%; text-align: left;
+      }
+      #agent-profile .memory-toggle:hover { border-color: #556699; color: #aac8e8; }
+      #agent-profile .memory-entry {
+        font-size: 11px; color: #bbb; line-height: 1.5; padding: 8px 0;
+        border-bottom: 1px solid #222233; word-wrap: break-word;
+      }
+      #agent-profile .memory-entry-header {
+        font-size: 10px; color: #c8a86e; font-weight: bold; margin-bottom: 3px;
+      }
+      #agent-profile .memory-empty { font-size: 11px; color: #556; font-style: italic; }
+
+      /* Audio bar */
+      #audio-bar {
+        display: flex; align-items: center; gap: 8px;
+        padding: 4px 10px; background: #0d0d1a; border-top: 1px solid #222233;
+        font-size: 10px; color: #445; min-height: 24px;
+      }
+      #audio-bar .audio-controls { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+      #audio-bar .audio-btn {
+        background: none; border: none; color: #556; font-size: 13px;
+        cursor: pointer; font-family: monospace; padding: 0 3px;
+      }
+      #audio-bar .audio-btn:hover { color: #88aacc; }
+      #audio-bar .audio-btn.active { color: #aac8e8; }
+      #audio-bar input[type="range"] {
+        width: 60px; height: 3px; -webkit-appearance: none; appearance: none;
+        background: #333355; border-radius: 2px; outline: none; cursor: pointer;
+      }
+      #audio-bar input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none; width: 10px; height: 10px;
+        background: #88aacc; border-radius: 50%; cursor: pointer;
+      }
+      #audio-bar .audio-credit { flex: 1; text-align: right; color: #334; font-size: 9px; }
+      #audio-bar .audio-credit a { color: #445; text-decoration: none; }
+      #audio-bar .audio-credit a:hover { color: #667; }
     </style>
   </head>
   <body>
+    <!-- Agent hover tooltip -->
+    <div id="agent-tooltip"><div class="tt-name"></div><div class="tt-role"></div></div>
+
+    <!-- Agent profile modal -->
+    <div id="agent-profile-overlay">
+      <div id="agent-profile">
+        <button class="profile-close" id="profile-close">&times;</button>
+        <div class="profile-header">
+          <div class="profile-name" id="profile-name"></div>
+          <div class="profile-role" id="profile-role"></div>
+          <div class="profile-room" id="profile-room"></div>
+        </div>
+        <div class="memory-section" id="profile-memory"></div>
+      </div>
+    </div>
+
     <div id="wrapper">
       <div id="left">
         <div id="game-container"><div id="zone-overlay"></div></div>
+        <div id="audio-bar">
+          <div class="audio-controls">
+            <button class="audio-btn active" id="btn-audio-toggle" title="Ton an/aus">&#9834;</button>
+            <input type="range" id="audio-volume" min="0" max="100" value="15" title="Lautstärke">
+          </div>
+          <div class="audio-credit">
+            Music: <a href="https://freesound.org/people/Seth_Makes_Sounds/sounds/670039/" target="_blank">Seth_Makes_Sounds</a> (CC0)
+            &middot; Typing: <a href="https://freesound.org/people/stu556/sounds/450281/" target="_blank">stu556</a> (CC0)
+          </div>
+        </div>
         <div id="title-bar">GENSOFTWORKS — Gebäude 7, Obergeschoss</div>
       </div>
       <div id="sidebar">
         <div class="controls">
+          <select id="sim-select" title="Simulation wählen"></select>
           <button class="nav-btn" id="btn-prev" title="Vorherige Szene">&lsaquo;</button>
           <select id="day-select"></select>
           <select id="scene-select"></select>

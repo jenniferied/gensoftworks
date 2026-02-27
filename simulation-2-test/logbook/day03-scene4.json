@@ -1,0 +1,18 @@
+{
+  "scene": 4,
+  "type": "PAUSE",
+  "time": "afternoon",
+  "location": "kueche",
+  "participants": ["tobi", "finn", "darius"],
+  "summary": "Mittagspause. Tobi, Finn und Darius diskutieren beim Essen das Freelancer-Budget und die Gameplay-Programmer-Suche. Tobi erklärt technische Anforderungen (GAS-Erfahrung, Motion Matching, Melee-Combat). Finn hat erste Kontakte bei LinkedIn recherchiert. Darius erzählt von einem Ex-Kollegen bei Blue Byte, der jetzt freelanced. Nebenbei: Lena will immer noch einen Hamster.",
+  "dialogue": [
+    {"who": "finn", "says": "Tobi, wie spezialisiert muss der Gameplay-Programmer sein?"},
+    {"who": "tobi", "says": "GAS-Erfahrung ist Pflicht. Motion Matching wäre Bonus. Melee-Combat-Systeme gebaut zu haben wäre ideal, aber die sind selten und teuer."},
+    {"who": "darius", "says": "Ich kenne jemanden von Blue Byte. Hat nach mir aufgehört, freelanced jetzt. Hatte Kampfsysteme für das Settlers-Projekt gebaut."},
+    {"who": "finn", "says": "Schick mir den Kontakt. Ich schreibe heute Abend noch."},
+    {"who": "darius", "says": "Lena hat mich übrigens gefragt, ob man im Spiel Hamster haben kann. Ich habe gesagt, wir haben Tiervolk."},
+    {"who": "tobi", "says": "Tiervolk-Hamster. Das wäre... nein."}
+  ],
+  "artifacts": [],
+  "cd_feedback": null
+}

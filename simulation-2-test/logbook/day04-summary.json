@@ -1,0 +1,19 @@
+{
+  "day": 4,
+  "weekday": "Donnerstag",
+  "phase": "Produktion V2",
+  "title": "Peer-Reviews + V2-Ueberarbeitungen + D&D",
+  "summary": "Peer-Review-Tag. Alle sieben Agenten lesen fremde V1-Dokumente und geben substanzielles Feedback. Leo identifiziert zwei systematische Inkonsistenzen: Ymir-Terminologie in GDD-02 und divergierende Schattenfieber-Stufengrenzen (70/76/81). CD-Entscheidung: Verbindliche Tabelle Rauschen 1-40, Risse 41-75, Schwelle 76-100. Nachmittags V2-Ueberarbeitungen aller Dokumente. Neue Outlines: GDD-04 Schluesselfiguren (Nami), WBB-02 Topos (Emre). Emre definiert 5 Schluesselorte fuer Drei-Schichten-Rendering. Abends D&D One-Shot mit Ungefuege-Prototyp 'Toves'.",
+  "cd_decisions": [
+    "Schattenfieber-Stufengrenzen: Rauschen 1-40, Risse 41-75, Schwelle 76-100",
+    "Halluzinations-Start bei Wert 76",
+    "Verbindliche Tabelle fuer alle Dokumente"
+  ],
+  "artifacts_produced": [],
+  "key_moments": [
+    "Leo identifiziert Stufengrenzen-Divergenz (70/76/81) im Cross-Doc-Report",
+    "Emre reviewt Namis GDD-03: null Widersprueche — der Ungefuege fehlt als einziger Punkt",
+    "Nami definiert Ungefuege als Frage, nicht als NPC (Planescape-Referenz)",
+    "Toves im D&D One-Shot: Vera erkennt sofort den RELICS-Bezug"
+  ]
+}

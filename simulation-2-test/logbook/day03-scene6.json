@@ -1,0 +1,30 @@
+{
+  "scene": 6,
+  "type": "REVIEW",
+  "time": "afternoon",
+  "location": "kueche",
+  "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+  "summary": "Tagesabschluss Tag 3 — erster Produktionstag. Sechs V1-Dokumente fertig: WBB-01 Mythos (Emre), GDD-01 Spieluebersicht (Darius), GDD-02 Kernmechaniken (Darius), GDD-03 Erzaehlkonzept (Nami), GDD-05 Designsprache (Vera), GDD-06 Technik (Tobi). Leo hat Spielerperspektiv-Bericht finalisiert und QA-Kommentare in alle Dokumente eingetragen. Peer-Reviews nachmittags gelaufen. CD-Feedback extrem positiv: Kohaerenz zwischen Dokumenten beeindruckend, Namenssystem durchgaengig, Fraktionen konsistent visuell und narrativ differenziert, Schattenfieber mechanisch, narrativ und visuell durchdekliniert. Ausblick naechste Woche: V2 aller Dokumente plus GDD-04 Schluesselfiguren, WBB-02 Topos, WBB-03 Ethos. Team geht mit gutem Gefuehl in den Feierabend.",
+  "dialogue": [
+    {"who": "finn", "says": "So. Sechzehn Uhr. Letztes Review fuer heute. Ich fass zusammen, dann CD-Feedback, dann Feierabend. Emre?"},
+    {"who": "emre", "says": "WBB-01 Mythos V1 steht seit heute Vormittag. Nachmittags hab ich Namis Rueckfragen beantwortet und zwei Stellen praezisiert — die Beziehung zwischen Galt und der Flechtung, und wie die Hauten in die Fraktionsstruktur reinpassen."},
+    {"who": "nami", "says": "GDD-03 Erzaehlkonzept V1 ist fertig. Drei-Akt-Struktur, Quest-Architektur mit Haupt- und Nebenquests, Dialogsystem mit Konsequenz-Tracking. Emres Namenssystem hab ich durchgehend uebernommen. Die Schattenfieber-Endpfade sind als eigener Abschnitt drin."},
+    {"who": "darius", "says": "GDD-02 Kernmechaniken V1 finalisiert. Combat-System, Schattenfieber-Mechanik mit fuenf Infektionsstufen, Nervensystem-Leveling, Crafting. Leos QA-Kommentare zur Irreversibilitaets-Kommunikation hab ich direkt eingebaut."},
+    {"who": "leo", "says": "Spielerperspektiv-Bericht ist final. Und ich hab QA-Kommentare in allen sechs Dokumenten hinterlassen. Haupterkenntnis: die Dokumente sind ueberraschend konsistent. Das Namenssystem zieht sich durch, die Fraktionslogik stimmt ueberall. Zwei kleine Inkonsistenzen hab ich markiert — nichts Dramatisches."},
+    {"who": "vera", "says": "Ich hab nachmittags Namis GDD-03 gegengelesen und geschaut, ob die visuellen Referenzen aus meiner Designsprache dort ankommen. Tun sie. Die Fraktionsfarben stimmen ueberein."},
+    {"who": "tobi", "says": "Hab Darius' GDD-02 technisch gegengelesen. Die fuenf Infektionsstufen sind mit dem Shader-System machbar, das ich in GDD-06 beschrieben hab. Performance-Budget passt. Ein offener Punkt: Partikelsystem fuer Stufe vier und fuenf — das muss ich naechste Woche detaillieren."},
+    {"who": "finn", "says": "Danke. Sechs V1-Dokumente an einem Tag. Ich bin ehrlich beeindruckt. Jetzt das CD-Feedback."},
+    {"who": "finn", "says": "Die CD sagt: Drei Tage, und wir haben WBB-01 Mythos, GDD-01 Spieluebersicht, GDD-02 Kernmechaniken, GDD-03 Erzaehlkonzept, GDD-05 Designsprache und GDD-06 Technik — alles V1. Mehr als erwartet. Die Kohaerenz ist beeindruckend. Das eigene Namenssystem zieht sich durch, die Fraktionen sind konsistent visuell und narrativ differenziert, das Schattenfieber ist mechanisch, narrativ und visuell durchdekliniert."},
+    {"who": "finn", "says": "Naechste Woche: V2 aller Dokumente plus GDD-04 Schluesselfiguren, WBB-02 Topos und WBB-03 Ethos. Und jetzt der wichtigste Satz: Geniesst den Feierabend."},
+    {"who": "emre", "says": "Das lass ich mir nicht zweimal sagen."},
+    {"who": "nami", "says": "Hat Spass gemacht heute. Zum ersten Mal fuehlt sich das an wie ein richtiges Spiel und nicht nur wie eine Ideensammlung."},
+    {"who": "darius", "says": "Ja. Ab heute existiert RELICS auf Papier."},
+    {"who": "vera", "says": "Und es sieht verdammt gut aus."},
+    {"who": "finn", "says": "Schoenen Abend, Leute. Morgen ist Donnerstag — Peer-Reviews und D&D. Bis dann."}
+  ],
+  "artifacts": [
+    "gallery/gdd/02-kernmechaniken.md (V1)",
+    "gallery/gdd/03-erzaehlkonzept.md (V1)"
+  ],
+  "cd_feedback": "Drei Tage, und wir haben: WBB-01 Mythos V1, GDD-01 Spieluebersicht V1, GDD-02 Kernmechaniken V1, GDD-03 Erzaehlkonzept V1, GDD-05 Designsprache V1, GDD-06 Technik V1. Das ist mehr als ich erwartet habe. Die Kohaerenz zwischen den Dokumenten ist beeindruckend — das eigene Namenssystem zieht sich durch, die Fraktionen sind konsistent visuell und narrativ differenziert, das Schattenfieber ist mechanisch, narrativ und visuell durchdekliniert. Naechste Woche: V2 aller Dokumente + GDD-04 Schluesselfiguren + WBB-02 Topos + WBB-03 Ethos. Geniesst den Feierabend."
+}

@@ -1,0 +1,25 @@
+{
+  "scene": 3,
+  "type": "MEETING",
+  "time": "morning",
+  "location": "kueche",
+  "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+  "summary": "Standup nach dem ersten Produktions-Vormittag. Vier V1-Dokumente fertig: WBB-01 Mythos (Emre), GDD-01 Spieluebersicht (Darius), GDD-05 Designsprache (Vera), GDD-06 Technik (Tobi). Emre hat die Deadline gehalten — Kapitel 1-4 als Fliesstext, eigenes Namenssystem durchgehend. Widerspruchs-Log #005 (Schattenfieber-Kosmologie vs. Mechanik) geloest. Darius hat sechs Design-Saeulen mit Validierungstests. Vera liefert zehn Kapitel mit Hex-Codes und Fraktionsvisuals. Tobi hat das Budget (45k EUR) aufgeteilt und den kritischen Pfad definiert. Leo arbeitet am QA-Querlesen aller Dokumente. Nami plant nachmittags GDD-03 Erzaehlkonzept V1 auf Basis von Emres WBB-01. Nachmittags-Auftraege: Nami schreibt GDD-03 V1, Darius finalisiert GDD-02 V1 Kernmechaniken, Leo schreibt Spielerperspektiv-Bericht und QA-Kommentare in alle Dokumente, Peer-Reviews laufen parallel.",
+  "dialogue": [
+    {"who": "finn", "says": "Moin. Standup. Kurz und knackig — was steht, was haengt, was braucht ihr. Emre, du hattest die haerteste Deadline."},
+    {"who": "emre", "says": "WBB-01 Mythos V1 steht. Kapitel eins bis vier sind als Fliesstext lesbar. Die Schoepfungsversionen, die Flechtung, die Hauten, Hohlicht und Mittelgrund — alles drin. Widerspruchs-Log Nummer fuenf hab ich aufgeloest: Schattenfieber ist jetzt kosmologisch UND mechanisch konsistent."},
+    {"who": "finn", "says": "Stark. Nami, du kannst nachmittags drauf aufbauen?"},
+    {"who": "nami", "says": "Ja. Ich hab heute Vormittag die Endpfade und die Quest-Deliverable-Zuordnung vorstrukturiert. Nachmittags schreib ich GDD-03 V1 — Drei-Akt-Struktur, Quest-Architektur, Dialogsystem. Emres Namenssystem uebernehm ich direkt."},
+    {"who": "finn", "says": "Gut. Darius?"},
+    {"who": "darius", "says": "GDD-01 Spieluebersicht V1 ist fertig. Sechs Design-Saeulen, jede mit einem konkreten Validierungstest. Elevator Pitch, drei USPs, Referenzrahmen. Nachmittags mach ich GDD-02 Kernmechaniken V1 fertig — Schattenfieber-Mechanik, Combat, Nervensystem-Leveling."},
+    {"who": "finn", "says": "Vera?"},
+    {"who": "vera", "says": "GDD-05 Designsprache V1 fertig. Zehn Kapitel. Fraktionsvisuals mit Hex-Codes, Materialsprache, Biotech-Grammatik, Tiervolk als eigenes Unterkapitel. Die drei fraktionsspezifischen Designsprachen sind durchdekliniert."},
+    {"who": "finn", "says": "Sauber. Tobi?"},
+    {"who": "tobi", "says": "GDD-06 Technik V1 fertig. Acht Kapitel. UE5-Pipeline, Kamerasystem, Combat-Architektur, Asset-Pipeline, Schattenfieber-Tech, Performance-Budget, Meilensteine. Budget ist bei 45k EUR aufgeteilt — Freelancer inklusive. Kritischer Pfad: Gameplay-Programmer und Combat-Middleware."},
+    {"who": "finn", "says": "Leo?"},
+    {"who": "leo", "says": "Ich hab heute Vormittag angefangen, alle vier fertigen V1 querzulesen. Nachmittags schreib ich den Spielerperspektiv-Bericht final und trage QA-Kommentare direkt in die Dokumente ein. Erstes Fazit: die Konsistenz zwischen den Dokumenten ist erstaunlich gut. Das Namenssystem zieht sich durch."},
+    {"who": "finn", "says": "Das hoer ich gern. Nachmittags-Plan steht: Nami GDD-03, Darius GDD-02, Leo QA ueber alles. Vera und Tobi koennen iterieren oder Peer-Feedback geben. Keine Blocker? Dann weiter."}
+  ],
+  "artifacts": [],
+  "cd_feedback": null
+}

@@ -1,0 +1,2855 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "scenes": [
+        {
+          "scene": 1,
+          "type": "BRIEFING",
+          "type_label": "Briefing",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "vera",
+            "nami",
+            "leo",
+            "tobi"
+          ],
+          "summary": "Erster Arbeitstag bei GenSoftworks. Finn moderiert das Briefing in der Kueche. CD-Feedback wird vorgestellt: Montag ist Recherchetag, jeder startet Grundlagenrecherche in seinem Fachgebiet. Aufgabenverteilung: Emre (germanische Mythologie), Darius (Referenzspiel-Analyse), Nami (narrative Strukturen), Vera (visuelle Referenzen), Tobi (technische Machbarkeit), Leo (Spielermarkt/Community), Finn (Roadmap/Meilensteine). Stimmung: motiviert, fokussiert, leicht nervoes — erster Tag.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "leo": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Kaffee steht, bedient euch. Schoen, dass alle da sind."
+            },
+            {
+              "who": "leo",
+              "says": "Moin! Erster Tag, erster Kaffee, erstes Briefing. Ich bin ready."
+            },
+            {
+              "who": "darius",
+              "says": "Morgen. Lass uns anfangen, Finn."
+            },
+            {
+              "who": "finn",
+              "says": "Alles klar. Kurz und knapp: Die CD hat uns das Tagesziel gegeben. Heute ist Montag, das heisst Recherchetag. Kein Output-Druck, keine fertigen Dokumente. Heute geht es darum, dass jeder in seinem Bereich die Grundlagen legt."
+            },
+            {
+              "who": "finn",
+              "says": "Ich gehe einmal durch. Emre: Germanische Mythologie. Das ist die Basis fuer unseren Mythos. Du bist da in deinem Element."
+            },
+            {
+              "who": "emre",
+              "says": "Verstanden. Ich fange bei den Primaerquellen an — Edda, Voeluspá. Und schaue, was sich fuer unser Low-Fantasy-Setting destillieren laesst, ohne in High-Fantasy-Klischees abzurutschen."
+            },
+            {
+              "who": "finn",
+              "says": "Perfekt. Darius: Referenzspiel-Analyse. Gothic, Skyrim, Dishonored — was machen die richtig, was machen die falsch, was nehmen wir mit."
+            },
+            {
+              "who": "darius",
+              "says": "Klar. Ich mache einen strukturierten Vergleich entlang der Design Pillars. Gothic fuer Dichte, Skyrim fuer Open World und Kamerasystem, Dishonored fuer Vertikalitaet. Muss aber auch schauen, wo wir uns bewusst abgrenzen."
+            },
+            {
+              "who": "finn",
+              "says": "Genau, Abgrenzung ist genauso wichtig. Nami: Narrative Strukturen in Dark Fantasy CRPGs. Wie erzaehlen die ihre Geschichten, was funktioniert, was nicht."
+            },
+            {
+              "who": "nami",
+              "says": "Ich schaue mir an, wie Spiele wie Disco Elysium und Bloodlines ihre Erzaehlung in Spielmechaniken verweben. Nicht nur Queststruktur, sondern auch die Frage, wann der Spieler Agent ist und wann Zeuge. Das Briefing sagt, der Spielercharakter ist ein Unbekannter — das ist eine narrative Constraint, die viel bestimmt."
+            },
+            {
+              "who": "finn",
+              "says": "Guter Punkt. Halt das fest, das wird fuer Darius spaeter auch relevant. Vera: Visuelle Referenzen. Mittelalterlich-europaeisch trifft Biotech — das ist die Aesthetik, die die CD vorgegeben hat."
+            },
+            {
+              "who": "vera",
+              "says": "Frage dazu: Wie weit geht Biotech visuell? Das Briefing sagt mehr futuristisch, weniger heruntergekommen. Aber Biotech kann von subtilen Texturen bis zu offensichtlichen organischen Strukturen reichen. Brauche da eine Richtung, bevor ich Moodboards baue."
+            },
+            {
+              "who": "finn",
+              "says": "Berechtigte Frage. Ich leg das der CD vor — bis dahin sammel in beide Richtungen, subtil und offensichtlich. Dann haben wir Vergleichsmaterial, wenn die Antwort kommt."
+            },
+            {
+              "who": "vera",
+              "says": "Kann ich mit leben. Ich baue heute PureRef-Boards auf und sortiere nach Stimmung."
+            },
+            {
+              "who": "finn",
+              "says": "Tobi: Technische Machbarkeit. Die CD will wissen, ob unsere Vision realistisch ist. First-Person, Third-Person umschaltbar, Open World, Echtzeit-Combat — was koennen wir leisten?"
+            },
+            {
+              "who": "tobi",
+              "says": "Kurze Rueckfrage: Gehen wir von UE5 als Engine aus, oder ist das noch offen?"
+            },
+            {
+              "who": "finn",
+              "says": "Das Briefing nennt keine Engine explizit. Ich klaere das mit der CD. Aber fuer die Machbarkeitsanalyse kannst du ruhig UE5 als Basis nehmen — das ist unser Werkzeug."
+            },
+            {
+              "who": "tobi",
+              "says": "Gut. Dann schaue ich mir heute die Pipeline an: Nanite, Lumen, nahtloser Kamerawechsel. Und ich mache eine ehrliche Einschaetzung, was mit unserem Teamsize machbar ist und wo wir Scope-Grenzen setzen muessen."
+            },
+            {
+              "who": "finn",
+              "says": "Genau das brauche ich. Leo: Spielermarkt und Community-Erwartungen. Was wollen Leute, die Dark Fantasy CRPGs spielen? Was ist der Markt?"
+            },
+            {
+              "who": "leo",
+              "says": "Ich tauche heute in r/crpg, r/rpg_gamers und die einschlaegigen Discords ein. Ausserdem schaue ich mir die Steam-Daten an — was verkauft sich, welche Tags performen, wo sind die Luecken. Und ich mache eine kurze Wettbewerbsanalyse: Was kommt in den naechsten zwei Jahren raus, was aehnlich klingt wie RELICS?"
+            },
+            {
+              "who": "darius",
+              "says": "Guter Ansatz mit der Wettbewerbsanalyse. Wenn du Avowed und das Gothic Remake auf dem Schirm hast, sag mir Bescheid."
+            },
+            {
+              "who": "leo",
+              "says": "Stehen schon auf meiner Liste."
+            },
+            {
+              "who": "finn",
+              "says": "Und ich kuemmere mich um Roadmap und Meilensteine. Dafuer brauche ich im Laufe der Woche Input von euch allen — vor allem von Darius und Tobi fuer die Scope-Einschaetzung. Heute skizziere ich die grobe Struktur."
+            },
+            {
+              "who": "finn",
+              "says": "Noch eine Sache, die ich von der CD weitergebe: Qualitaet vor Quantitaet. Lieber drei solide Seiten als dreissig duenne. Und: Fragt nach, wenn etwas unklar ist. Lieber einmal zu viel fragen als was Falsches bauen."
+            },
+            {
+              "who": "emre",
+              "says": "Das gilt auch intern. Wenn jemand fuer seine Recherche Kontext aus meiner Ecke braucht — kommt einfach vorbei."
+            },
+            {
+              "who": "nami",
+              "says": "Das nehme ich dich beim Wort. Ich werde nachher wahrscheinlich Fragen zur mythologischen Basis haben, die in die Erzaehlstruktur einfliessen."
+            },
+            {
+              "who": "finn",
+              "says": "Perfekt. Standup ist um halb zwoelf, dann schauen wir, wo jeder steht. Bis dahin: macht euer Ding. Was braucht ihr von mir?"
+            },
+            {
+              "who": "vera",
+              "says": "Zugang zur Library. Gibt es schon Referenzmaterial, das die CD hinterlegt hat?"
+            },
+            {
+              "who": "finn",
+              "says": "Das Briefing liegt in der Library. Sonst ist die noch leer — das fuellen wir diese Woche. Wenn ihr Material braucht — Papers, Artbooks, was auch immer — sagt mir Bescheid, ich kuemmere mich drum."
+            },
+            {
+              "who": "tobi",
+              "says": "Dann wuerde ich um die SIGGRAPH-Paper zu Nanite und Lumen bitten. Fuer die technische Einschaetzung."
+            },
+            {
+              "who": "finn",
+              "says": "Notiert. Noch was? Nein? Dann los. Guter erster Tag, Leute."
+            },
+            {
+              "who": "leo",
+              "says": "Let's go!"
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Willkommen zum ersten Arbeitstag. Heute ist Montag — Recherchetag. Jeder startet Grundlagenrecherche in seinem Fachgebiet. Emre: germanische Mythologie. Darius: Referenzspiel-Analyse (Gothic, Skyrim, Dishonored). Nami: Narrative Strukturen in Dark Fantasy CRPGs. Vera: Visuelle Referenzen (Mittelalter + Biotech). Tobi: Technische Machbarkeit. Leo: Spielermarkt und Community-Erwartungen. Finn: Roadmap und Meilensteine. Qualitaet vor Quantitaet. Fragt nach, wenn etwas unklar ist."
+        },
+        {
+          "scene": 2,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "alle-arbeitsplaetze",
+          "location_label": "Alle Arbeitsplaetze",
+          "participants": [
+            "emre",
+            "darius",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Erster Recherche-Block. Alle 7 Agenten arbeiten parallel an ihren Fachgebieten. Emre destilliert germanische Mythologie für den WBB-Mythos (Drei-Schichten-Kosmologie, Fraktionen als mythologische Resonanzen, Schattenfieber als kosmologische Erosion). Darius analysiert Referenzspiele entlang Design Pillars (Gothic=Dichte, Skyrim=Kamera, Dishonored=Vertikalität). Nami entwickelt vier narrative Prinzipien (Fremder als Zustand, Fraktionen als Sprachen, Räume als Erzähler, Schattenfieber als Unreliable Narrator). Vera baut eine visuelle Referenz-Analyse (organische Gotik, burgundische Mode, Biotech-Grammatik, Farbpalette mit Hex-Codes). Tobi liefert eine ehrliche Machbarkeitsanalyse (kein Gameplay-Programmer, Asset-Engpass, Semi-Open-World empfohlen). Leo erstellt Marktanalyse und Community-Erwartungen (Marktlücke zwischen Skyrim/Gothic/Dishonored identifiziert). Finn skizziert die Woche-1-Roadmap mit Abhängigkeiten.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "pinwall/ROADMAP.md"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 3,
+          "type": "MEETING",
+          "type_label": "Meeting",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Standup Tag 1. Alle sieben berichten Vormittags-Ergebnisse. Finn verteilt acht CD-Entscheidungen: Schattenfieber Hypothese C genehmigt, nordische Quellen akzeptiert mit eigener Kosmologie, Mythos innerhalb der Spielwelt umstritten, Biotech-Sichtbarkeit fraktionsabhaengig (Krone=subtil, Gilden=offen, Orden=versteckt), UE5 bestaetigt, Semi-Open-World bestaetigt, TP Primaermodus (FP ist V2), Spieler kann sich mit Schattenfieber infizieren (Kosten+Nutzen, Mechanik+Narrativ verbunden). Team reagiert positiv. Emre und Nami planen bilaterales Gespraech ueber Wanderer-Motiv fuer den Nachmittag. Vera erhaelt drei verschiedene Design-Sprachen durch die fraktionsabhaengige Biotech-Loesung. Tobi beginnt Pipeline-Architektur. Darius notiert Combat-Skill-Ceiling als offenen Punkt fuer morgen. Leos Pitch-Satz kommt auf die Pinnwand.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Standup, ihr wisst wie's laeuft — jeder zwei Minuten, dann hab ich CD-Entscheidungen. Emre, du faengst an, weil auf deinem Fundament alles andere steht."
+            },
+            {
+              "who": "emre",
+              "says": "Ich hab die germanische Kosmologie auf ein Drei-Schichten-Modell reduziert. Oberwelt, Mittelwelt, Unterwelt. Die Schoepfung ist organisch gedacht, Ymirs Koerper als Material. Die drei Fraktionen hab ich mythologisch grundiert: Orden folgt einer Odin-Logik, Krone ist Tyr und Thor, Gilden sind Vanir. Zum Schattenfieber empfehle ich Hypothese C — kosmologische Erosion, die Bindung zwischen den Schichten loest sich auf. Offene Frage: Ich arbeite mit nordisch-islaendischen Quellen. Und soll der Mythos in der Spielwelt umstritten sein?"
+            },
+            {
+              "who": "finn",
+              "says": "Perfektes Timing. Die CD hat Hypothese C genehmigt. Nordische Quellen als Basis sind akzeptiert, aber RELICS kriegt eine eigene Kosmologie. Und ja, der Mythos soll innerhalb der Spielwelt umstritten sein. Verschiedene Fraktionen, verschiedene Versionen."
+            },
+            {
+              "who": "emre",
+              "says": "Das ist genau richtig. Umstrittener Mythos heisst, ich kann Widersprueche einbauen, die keine Fehler sind, sondern Perspektiven. Jede Fraktion hat ihre eigene Lesart der Schoepfung."
+            },
+            {
+              "who": "nami",
+              "says": "Da bin ich sofort dabei. Das ist mein drittes Prinzip — Raeume erzaehlen, was Stimmen verschweigen. Wenn der Orden sagt, die Welt wurde durch Opfer geschaffen, und die Gilden sagen, durch Handel, dann ist die Wahrheit das, was der Spieler sich zusammensetzt. Unreliable narration auf Weltebene."
+            },
+            {
+              "who": "finn",
+              "says": "Nami, dann mach direkt weiter."
+            },
+            {
+              "who": "nami",
+              "says": "Vier narrative Prinzipien. Erstens: Fremder als Zustand, nicht als Luecke. Zweitens: Fraktionen als Sprachen. Drittens: Raeume erzaehlen, was Stimmen verschweigen. Viertens: Schattenfieber als narrativer Stoerfaktor — Unreliable Narrator durch Mechanik, nicht durch Plot-Twist. Offene Frage war: Kann sich der Spieler selbst infizieren?"
+            },
+            {
+              "who": "finn",
+              "says": "Ja. Die CD hat bestaetigt: Der Spieler kann sich infizieren. Kosten und Nutzen, Mechanik und Narrativ verbunden. Emre, du brauchst Lore dafuer. Nami, Dialogvarianten fuer infizierte Zustaende. Darius, ein Kosten-Nutzen-System."
+            },
+            {
+              "who": "darius",
+              "says": "Das ist ein starker Design-Hebel. Wenn die Infektion echte Gameplay-Konsequenzen hat — Wahrnehmung, Faehigkeiten, NPC-Reaktionen — dann ist das ein Core System. Zu meiner Analyse: Groesster Design-Hebel ist Gothic-Dichte plus Dishonored-Vertikalitaet. Gothic 2 ist Goldstandard fuer Weltdichte. Skyrim liefert Kamera-Flexibilitaet, aber Combat und Radiant Quests sind Anti-Referenzen. Offene Fragen: Weltskalierung, Combat-Skill-Ceiling, Schattenfieber-Kosten."
+            },
+            {
+              "who": "finn",
+              "says": "Semi-Open-World ist bestaetigt. Gothic-Dichte, nicht Skyrim-Breite. Kamera: Third Person Primaermodus mit Zoom. Echtes First Person ist V2-Material."
+            },
+            {
+              "who": "darius",
+              "says": "Semi-Open-World entschaerft meinen groessten Scope-Concern. Gothic 2 hat bewiesen, dass eine dichte Welt auf kleinem Raum mehr leistet. Und TP als Primaer spart den doppelten Animationsaufwand."
+            },
+            {
+              "who": "tobi",
+              "says": "Genau. Machbarkeitsanalyse: Drei Engpaesse. Kein Gameplay-Programmer — Melee Combat braucht Middleware oder Freelancer. Asset-Produktion — Vera allein reicht nicht, modulares Design und prozedurale Systeme sind Pflicht. Scope war der dritte, aber Semi-Open-World loest das. TP als Primaer loest den Animations-Engpass. Engine-Frage war offen —"
+            },
+            {
+              "who": "finn",
+              "says": "UE5 ist bestaetigt."
+            },
+            {
+              "who": "tobi",
+              "says": "Dann steht die technische Basis. Nachmittags fange ich mit der Pipeline-Architektur an. Nanite, Lumen, World Partition. Und ich schau mir Combat-Middleware-Optionen an."
+            },
+            {
+              "who": "vera",
+              "says": "Visuelle Referenz-Analyse in fuenf Kategorien: Architektur, Mode, Biotech-Grammatik, Farbpalette, Tiervolk. Architektur geht Richtung organische Gotik. Mode ist burgundische Hofmode mit Biotech-Layer — McQueen und Iris van Herpen. Biotech-Grammatik: Kabel sind Adern, Displays sind Membranen. Farbpalette steht mit Hex-Codes. Meine offene Frage war die Biotech-Bandbreite."
+            },
+            {
+              "who": "finn",
+              "says": "Fraktionsabhaengig. Krone: subtil, Verfall. Gilden: offen, Werkzeug. Orden: versteckt, Geheimnis."
+            },
+            {
+              "who": "vera",
+              "says": "Das ist besser als eine einheitliche Loesung. Drei verschiedene Design-Sprachen. Krone wird eleganter Zerfall, Gilden werden industrielle Eleganz, Orden wird monolithisch und verbergend. Ich brauch nachmittags Emres Fraktionsbeschreibungen fuer die Architektur-Logik."
+            },
+            {
+              "who": "emre",
+              "says": "Bekommst du."
+            },
+            {
+              "who": "leo",
+              "says": "Marktanalyse. Es gibt eine Luecke: Skyrim hat keinen Nachfolger, Gothic-Nostalgie ist real, Immersive Sims sind tot. Biotech-Medieval ist Asset und Risiko gleichzeitig. Community-Trend: kleiner aber exzellent. Dealbreaker-Tabelle mit acht Punkten. Pitch-Satz: Gothic trifft Dishonored in einer Welt, die aussieht wie Mittelalter, aber sich anfuehlt wie Cyberpunk."
+            },
+            {
+              "who": "darius",
+              "says": "Den Satz schreib ich mir auf."
+            },
+            {
+              "who": "finn",
+              "says": "Den schreib ich auf die Pinnwand."
+            },
+            {
+              "who": "leo",
+              "says": "Semi-Open-World ist aus Marktperspektive goldrichtig. Spieler verzeihen kleine dichte Welten, nicht grosse leere. Und Schattenfieber als Spieler-Mechanik — das ist das USP fuer jeden Trailer."
+            },
+            {
+              "who": "nami",
+              "says": "Emre, wir muessen ueber das Wanderer-Motiv reden. Wenn der Spieler ein Fremder ist und sich infizieren kann, wird das Schattenfieber ihn zum endgueltigen Aussenseiter machen. Niemand vertraut dem Kranken. Narrativ unglaublich stark."
+            },
+            {
+              "who": "emre",
+              "says": "Ja. Die Edda hat den Wanderer — Odin in Verkleidung unter den Menschen. Unser Spieler ist eine saekularisierte Version davon. Aber mit dem Fieber wird der Wanderer zum Verdaechtigen. Der, der etwas mitbringt, was niemand will. Das ist grossartig."
+            },
+            {
+              "who": "finn",
+              "says": "Das Wanderer-Motiv nehmt ihr nachmittags bilateral mit. Von meiner Seite: Roadmap Woche 1 steht. Emres WBB-Fundament zuerst, dann Nami und Vera parallel, Darius parallel. GDD-04 und GDD-06 auf Woche 2 geschoben. Keine offenen Blocker. Noch Fragen?"
+            },
+            {
+              "who": "darius",
+              "says": "Combat-Skill-Ceiling ist noch offen. Aber das hat Zeit bis morgen."
+            },
+            {
+              "who": "finn",
+              "says": "Notiert. Dann zurueck an die Arbeit. Guter Vormittag, Leute."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Acht CD-Entscheidungen verteilt: (1) Schattenfieber Hypothese C genehmigt, (2) Nordische Quellen akzeptiert mit eigener Kosmologie, (3) Mythos innerhalb der Spielwelt umstritten, (4) Biotech-Sichtbarkeit fraktionsabhaengig, (5) UE5 bestaetigt, (6) Semi-Open-World bestaetigt, (7) TP Primaermodus mit FP als V2, (8) Spieler-Infektion mit Schattenfieber bestaetigt."
+        },
+        {
+          "scene": 4,
+          "type": "PAUSE",
+          "type_label": "Pause",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "vera",
+            "nami",
+            "leo"
+          ],
+          "summary": "Mittagspause in der Kueche. Vera, Nami und Leo kochen zusammen Nudeln und reden ueber erste Eindruecke vom Team, den Vormittag und persoenliche Sachen. Leo ist aufgeregt wegen des Pitch-Satzes auf der Pinnwand. Vera erzaehlt von ihrem Pendelstress und dass sie heute bei Leo uebernachtet. Nami reflektiert ueber das Schattenfieber als narratives Werkzeug. Die drei reden ueber Tobis Ruhe, Emres Lore-Tiefe, und ob Darius jemals entspannt wirkt. Leo erwaehnt ihre Bartagame Clementine, die allein in der Wohnung sitzt. Vera plant, Emres Fraktionsbeschreibungen in PureRef-Boards umzusetzen. Die Stimmung ist locker, aufgeregt, freundschaftlich — erster Tag und es fuehlt sich schon richtig an.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "vera": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "nami": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "leo": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "dimmed"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "vera",
+              "says": "Hat jemand die Penne gesehen? Ich schwöre, ich hab welche mitgebracht."
+            },
+            {
+              "who": "leo",
+              "says": "Oberer Schrank, hinter Finns Haferflocken-Imperium. Der Mann hat sechs verschiedene Sorten."
+            },
+            {
+              "who": "vera",
+              "says": "Sechs? Wer braucht sechs Sorten Haferflocken?"
+            },
+            {
+              "who": "nami",
+              "says": "Jemand, der jeden Morgen um halb acht allein in der Küche steht und seinen Tag plant. Finn ist ein Gewohnheitstier."
+            },
+            {
+              "who": "vera",
+              "says": "Ich bin auch ein Gewohnheitstier. Meine Gewohnheit ist Kaffee und Chaos. Okay, Wasser kocht in fünf Minuten. Wer will Pesto, wer will Aglio e Olio?"
+            },
+            {
+              "who": "leo",
+              "says": "Aglio e Olio. Immer. Pesto ist ein Scam."
+            },
+            {
+              "who": "nami",
+              "says": "Pesto ist kein Scam, Leo."
+            },
+            {
+              "who": "leo",
+              "says": "Pesto ist eine Soße, die so tut, als wäre sie Kochen. Du schraubst ein Glas auf. Fertig. Das ist kein Kochen, das ist Logistik."
+            },
+            {
+              "who": "vera",
+              "says": "Ich mag diesen Take. Falsch, aber unterhaltsam."
+            },
+            {
+              "who": "leo",
+              "says": "Apropos Takes — mein Pitch-Satz hängt an der Pinnwand. Habt ihr das gesehen? Finn hat den echt aufgehängt."
+            },
+            {
+              "who": "nami",
+              "says": "Gothic trifft Dishonored in einer Welt, die aussieht wie Mittelalter, aber sich anfühlt wie Cyberpunk. Ja, der ist gut. Hat einen Rhythmus."
+            },
+            {
+              "who": "leo",
+              "says": "Darius hat ihn sich auch aufgeschrieben. DARIUS. Der Mann, der alles nur mit 'Solide' kommentiert. Von dem ist das quasi eine Liebeserklärung."
+            },
+            {
+              "who": "vera",
+              "says": "Darius ist auch solide. Gibt klare Briefings, redet nicht drumrum. Ich kann damit arbeiten. Lieber das als jemand, der eine halbe Stunde redet und am Ende weiß ich immer noch nicht, was er will."
+            },
+            {
+              "who": "nami",
+              "says": "Wobei, er hat meinen Dialogbaum letzte Woche bei dem Probelauf von 40 Pfaden auf 8 gekürzt. Ich war... nicht begeistert."
+            },
+            {
+              "who": "leo",
+              "says": "Waren die 8 besser?"
+            },
+            {
+              "who": "nami",
+              "says": "...Ja. Aber das ist nicht der Punkt."
+            },
+            {
+              "who": "vera",
+              "says": "Das ist exakt der Punkt, Nami."
+            },
+            {
+              "who": "leo",
+              "says": "Was mich heute am meisten geflasht hat: Schattenfieber als Spieler-Mechanik. Wenn ich das auf Stream spiele und mein Charakter infiziert ist und die NPCs mich plötzlich anders behandeln — Chat dreht durch. Das ist Content, der sich selbst generiert."
+            },
+            {
+              "who": "nami",
+              "says": "Du denkst schon an den Stream?"
+            },
+            {
+              "who": "leo",
+              "says": "Ich denke IMMER an den Stream. Das ist mein Job. Aber auch als Spielerin — das Gefühl, dass die Welt sich verändert, weil DU dich veränderst? Vampirismus in Skyrim war das Nächste, was wir hatten, und das war halbgar."
+            },
+            {
+              "who": "vera",
+              "says": "Visuell ist das auch der Wahnsinn. Wenn die Infektion fortschreitet, kann ich die Welt anders rendern. Farbverschiebung, organische Texturen, die auftauchen, wo vorher Stein war. Die Architektur fängt an zu atmen. Oder der Spieler GLAUBT, dass sie atmet."
+            },
+            {
+              "who": "nami",
+              "says": "Unreliable perception durch Environment-Design. Das ist... das ist wirklich stark, Vera."
+            },
+            {
+              "who": "vera",
+              "says": "Ich hab heute Vormittag schon angefangen, mir Referenzen rauszusuchen. Iris van Herpen macht Mode, die aussieht wie organisches Wachstum. Und McQueen — die letzte Kollektion, Plato's Atlantis. Da verschwimmt die Grenze zwischen Körper und Material. Genau das brauchen wir für die Biotech-Ästhetik."
+            },
+            {
+              "who": "leo",
+              "says": "Klingt nach dem Fashion-Äquivalent von Body Horror."
+            },
+            {
+              "who": "vera",
+              "says": "Fashion IST Body Horror, Leo. Schon immer gewesen. Korsetts, Fußbindung, Plateauschuhe in Venedig. McQueen hat es nur ehrlich gemacht."
+            },
+            {
+              "who": "nami",
+              "says": "Das Schöne und das Verstörende in einem Bild. Das ist genau der Ton, den RELICS braucht."
+            },
+            {
+              "who": "vera",
+              "says": "Und jetzt mit der Fraktionsentscheidung — drei verschiedene visuelle Sprachen. Krone ist eleganter Zerfall, so Dorian-Gray-mäßig, die Oberfläche glänzt, aber darunter verrottet es. Gilden sind offen, industriell, Biotech als Werkzeug, als Stolz. Und der Orden versteckt alles. Monolithisch. Schwer. Was die verbergen, will man sehen."
+            },
+            {
+              "who": "leo",
+              "says": "Spieler werden den Orden-Questline als Erstes wollen, garantiert. Geheimnisse sind der stärkste Spieler-Magnet."
+            },
+            {
+              "who": "nami",
+              "says": "Und die Gefährlichste. Was man verbirgt, definiert, wer man ist."
+            },
+            {
+              "who": "vera",
+              "says": "Okay, genug Lore. Nudeln sind fertig. Leo, gib mir mal den Knoblauch."
+            },
+            {
+              "who": "leo",
+              "says": "Hier. Wie war dein Zug heute Morgen?"
+            },
+            {
+              "who": "vera",
+              "says": "Grauenhaft. Vierzig Minuten Verspätung ab Köln, dann in Paderborn umsteigen statt Altenbeken. Jannik hat mir morgens noch gesagt, ich soll den früheren nehmen. Hatte er recht. Sag ihm das nicht."
+            },
+            {
+              "who": "nami",
+              "says": "Wie geht es ihm?"
+            },
+            {
+              "who": "vera",
+              "says": "Gut. Vermisst Pixel mehr als mich, glaube ich. Er schickt mir morgens Fotos vom Hund auf dem Sofa, auf dem der Hund nicht liegen darf. Jeden. Morgen."
+            },
+            {
+              "who": "leo",
+              "says": "Pixel ist auf dem Sofa besser aufgehoben als Jannik."
+            },
+            {
+              "who": "vera",
+              "says": "Ich übernachte heute bei dir, oder? Gästematratze noch da?"
+            },
+            {
+              "who": "leo",
+              "says": "Klar. Clementine freut sich. Also, sie zeigt keine Emotionen, weil sie eine Bartagame ist, aber ich projiziere Freude auf sie."
+            },
+            {
+              "who": "nami",
+              "says": "Apropos allein — Malkav hat heute Morgen mein Notizbuch vom Tisch geworfen. Genau das, in dem die vier narrativen Prinzipien stehen. Direkt in den Wassernapf."
+            },
+            {
+              "who": "vera",
+              "says": "Ist was passiert?"
+            },
+            {
+              "who": "nami",
+              "says": "Tinte verlaufen. Sieht jetzt aus wie ein Rorschach-Test. Aber ich hatte alles im Kopf, also hab ich es nochmal geschrieben. War sogar besser beim zweiten Mal."
+            },
+            {
+              "who": "leo",
+              "says": "Malkav ist dein unfreiwilliger Editor."
+            },
+            {
+              "who": "nami",
+              "says": "Nines hätte das Notizbuch gefressen. Malkav hat wenigstens Stil."
+            },
+            {
+              "who": "vera",
+              "says": "Wisst ihr, was mich heute überrascht hat? Wie gut das zusammenpasst. Emres Kosmologie, Namis narrative Prinzipien, meine Referenz-Analyse — das greift ineinander, obwohl wir nicht abgesprochen haben, wer was macht."
+            },
+            {
+              "who": "nami",
+              "says": "Das Briefing war gut. Finn hat uns in die richtige Richtung geschubst, ohne zu viel vorzugeben."
+            },
+            {
+              "who": "leo",
+              "says": "Und die CD-Entscheidungen kamen schnell und klar. Kein Wischiwaschi. Acht Entscheidungen in einer Sitzung — das kenne ich anders von Projekten."
+            },
+            {
+              "who": "vera",
+              "says": "Tobi war auch gut. Ruhig, aber wenn er redet, hat es Substanz. Drei Engpässe, zack, benannt, priorisiert. Und dann die Lösung direkt mitgeliefert."
+            },
+            {
+              "who": "leo",
+              "says": "Tobi ist der Typ, der ein brennendes Haus betritt und erstmal die Raumtemperatur misst."
+            },
+            {
+              "who": "nami",
+              "says": "Das ist das beste Kompliment, das je jemand über Tobi gemacht hat."
+            },
+            {
+              "who": "vera",
+              "says": "Ich freu mich auf den Nachmittag. Emre soll mir Fraktionsbeschreibungen liefern, und dann kann ich die PureRef-Boards auseinanderdividieren. Drei Boards statt einem. Drei Farbwelten, drei Architektursprachen, drei Biotech-Grammatiken."
+            },
+            {
+              "who": "leo",
+              "says": "Und ich guck mir Skyrim-Vampirismus nochmal an. Und Vampire: The Masquerade Bloodlines — Nami, ich brauch deine Expertise dazu."
+            },
+            {
+              "who": "nami",
+              "says": "Jederzeit. Malkavian-Durchlauf ist Pflicht. Da verändert sich die Wahrnehmung des Spielercharakters, und die Dialogoptionen werden... anders."
+            },
+            {
+              "who": "leo",
+              "says": "Anders gut oder anders weird?"
+            },
+            {
+              "who": "nami",
+              "says": "Ja."
+            },
+            {
+              "who": "vera",
+              "says": "Okay, essen. Bevor die Nudeln kalt werden und Leo einen weiteren Take über Pesto raushaut."
+            },
+            {
+              "who": "leo",
+              "says": "Pesto. Ist. Ein. Scam."
+            },
+            {
+              "who": "nami",
+              "says": "Ich koche dir nächste Woche Jollof Rice und dann reden wir nochmal über Scams."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 5,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "alle-arbeitsplaetze",
+          "location_label": "Alle Arbeitsplaetze",
+          "participants": [
+            "emre",
+            "darius",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Zweiter Recherche-Block, Nachmittag. Emre liefert Fraktionsbeschreibungen (Krone=Tyr/Thor+Wolfsmotiv, Gilden=Vanir+Schiffsmotiv, Orden=Odin+Rabenmotiv) und Wanderer-Motiv für Nami (Hávamál-Gastrecht, Odin als Gangleri). Darius entwickelt Schattenfieber-Konzept: permanenter Infektionswert 0-100, fünf Stufen, vierter Ast im Nervensystem-Leveling, fünf Design-Prinzipien (Spektrum statt Schalter, Nutzen attraktiv, Kosten verändern nicht blockieren). Nami vertieft Wanderer-Motiv narrativ und entwickelt drei Stufen für Schattenfieber als Unreliable Narrator (Rauschen→Risse→Schwelle). Vera übersetzt fraktionsabhängige Biotech in drei visuelle Profile (Krone=Grandeur im Zerfall, Gilden=organischer Brutalismus, Orden=makellose Lüge). Tobi skizziert Pipeline-Architektur V0.1 (Nanite, Lumen, Spring Arm Kamera, GAS für Combat). Leo analysiert Community-Erwartungen an Infektionsmechaniken (Bloodborne Insight als Goldstandard). Finn aktualisiert Roadmap V1.1.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "pinwall/ROADMAP.md (V1.1)"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 6,
+          "type": "REVIEW",
+          "type_label": "Review",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "emre",
+            "darius",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Tagesabschluss-Review Tag 1. Finn moderiert, jeder prasentiert Tagesergebnisse. Emre: Drei-Schichten-Kosmologie, mythologisch grundierte Fraktionen (Krone=Tyr/Thor, Gilden=Vanir, Orden=Odin), Wanderer-Motiv. Darius: Referenzspiel-Analyse, Schattenfieber als vierter Nervensystem-Ast (0-100, fuenf Stufen), fuenf Design-Prinzipien. Nami: Vier narrative Prinzipien, Wanderer-Motiv als Fraktionsklammer, Schattenfieber als Unreliable Narrator (Rauschen/Risse/Schwelle). Vera: Visuelle Referenz-Analyse, drei Fraktionsprofile, Farbpalette mit Hex-Codes. Tobi: Machbarkeitsanalyse, Pipeline-Architektur V0.1, drei Engpaesse. Leo: Marktanalyse, Bloodborne Insight als Goldstandard, Pitch-Satz. Finn: Roadmap V1.1. CD-Feedback eingearbeitet: Orden=Spitzenforschung bestaetigt, Schattenfieber nicht reversibel, PC first, Freelancer-Budget vorbereiten, Tiervolk ohne eigene Architektur, Replay-Erfahrung gewuenscht. Aufgabenverteilung fuer Dienstag (letzter Konzepttag) besprochen.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "leo": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [
+            "pinwall/ROADMAP.md (V1.1)"
+          ],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Setzt euch. Kaffee steht da hinten. Wir machen das kurz und knackig — jeder hat drei Minuten. Emre, du faengst an."
+            },
+            {
+              "who": "emre",
+              "says": "Kosmologie steht. Drei Schichten. Schattenfieber ist kosmologische Erosion — die Bindung zwischen den Schichten ist gebrochen. Fraktionen mythologisch grundiert: Krone=Tyr/Thor mit Wolfsmotiv, Gilden=Vanir mit Schiffsmotiv, Orden=Odin mit Rabenmotiv. Wanderer-Motiv fuer Nami ausgearbeitet — Havamal-Gastrecht, Odin als Gangleri. Offene Frage: Ist der Orden als Spitzenforschungs-Institution angelegt?"
+            },
+            {
+              "who": "darius",
+              "says": "Drei Referenzspiele aufgedrillt: Gothic fuer Dichte, Skyrim fuer Kamera, Dishonored fuer Vertikalitaet. Schattenfieber als Mechanik: Infektionswert null bis hundert, fuenf Stufen, vierter Ast im Nervensystem-Leveling. Fuenf Design-Prinzipien, fuenf emergente Build-Archetypen. Offene Frage: Combat-Skill-Ceiling."
+            },
+            {
+              "who": "nami",
+              "says": "Vier narrative Prinzipien. Wanderer-Motiv: Drei Fraktionen sind drei Antworten auf dieselbe mythologische Figur — den Fremden. Schattenfieber als Unreliable Narrator in drei Stufen: Rauschen, Risse, Schwelle. Je staerker infiziert, desto weniger kann der Spieler der eigenen Wahrnehmung trauen. Frage: Soll die Infektion reversibel sein? Ich finde nein."
+            },
+            {
+              "who": "vera",
+              "says": "Visuelle Referenz-Analyse in fuenf Kategorien. Drei Fraktionsprofile: Krone ist Grandeur im Zerfall, Gilden organischer Brutalismus, Orden die makellose Luege. Farbpalette steht mit Hex-Codes. Offene Frage war Tiervolk-Architektur, aber ich glaube die haben gar keine eigene."
+            },
+            {
+              "who": "tobi",
+              "says": "Machbarkeitsanalyse durch. Unreal 5.4, Nanite, Lumen, GAS, Motion Matching. Pipeline-Architektur V0.1 steht. Drei Engpaesse: Gameplay-Programmer, Streaming-Architektur, Schattenfieber-Shader. Offene Fragen: Gameplay-Programmer und Zielplattform."
+            },
+            {
+              "who": "leo",
+              "says": "Marktanalyse: Luecke zwischen Gothic-Nostalgie und AAA-Ermuedung. Bloodborne Insight als Goldstandard fuer Infektionsmechaniken. Pitch-Satz: Du bist nicht der Auserwaehlte — du bist der Fremde, und diese Welt will dich nicht. Offene Frage: Trailer-Strategie."
+            },
+            {
+              "who": "finn",
+              "says": "Von mir: Roadmap V1.1, alle CD-Entscheidungen verteilt, Risiko-Register aktualisiert. Jetzt zum CD-Feedback."
+            },
+            {
+              "who": "finn",
+              "says": "Orden als Spitzenforschung: Ja, bestaetigt. Klosterwissenschaft als Parallele, Biotech hinter theologischer Fassade."
+            },
+            {
+              "who": "emre",
+              "says": "Grossartig. Odin haengt am Baum fuer Erkenntnis, der Orden experimentiert am Koerper — gleiche Struktur, anderes Medium."
+            },
+            {
+              "who": "finn",
+              "says": "Schattenfieber nicht reversibel. Nur kontrollierbar, nicht heilbar."
+            },
+            {
+              "who": "darius",
+              "says": "Heisst: Infektionswert kann nur steigen oder stagnieren. Items verlangsamen, aber kehren nicht um. Echte Build-Entscheidung."
+            },
+            {
+              "who": "finn",
+              "says": "Zielplattform PC first, Konsolen als Stretch Goal."
+            },
+            {
+              "who": "tobi",
+              "says": "Vereinfacht die Pipeline erheblich. Nanite und Lumen voll ausfahren."
+            },
+            {
+              "who": "finn",
+              "says": "Freelancer-Budget bereite ich morgen vor. Tiervolk hat keine eigene Architektur — sie leben als Gaeste und Nomaden in den Fraktionsstaedten."
+            },
+            {
+              "who": "vera",
+              "says": "Genau mein Gefuehl. Tiervolk-Elemente als Fremdkoerper in den Fraktionsaesthetiken. Improvisierte Nischen statt geplanter Raeume."
+            },
+            {
+              "who": "emre",
+              "says": "Passt mythologisch. Gastrecht und Fremdheit — Spieler und Tiervolk teilen denselben Status."
+            },
+            {
+              "who": "finn",
+              "says": "Replay-Erfahrung ist gewuenscht. RELICS soll bei mehrfachem Durchspielen neue Schichten zeigen. Darius und Nami, das ist euer Ding morgen."
+            },
+            {
+              "who": "nami",
+              "says": "Passt perfekt zum Unreliable Narrator. Beim zweiten Durchspielen merkt der Spieler, was Fieber-Verzerrung war."
+            },
+            {
+              "who": "finn",
+              "says": "Morgen ist letzter Konzepttag. Aufgaben: Emre vertieft Orden-Lore, Darius konzipiert Replay-Loop, Nami stimmt Replay-Narrative ab und legt Fraktions-Questlinien an, Vera definiert Tiervolk-Praesenz visuell, Tobi sondiert Shader-Anforderungen, Leo schaerft Pitch auf PC-Audience."
+            },
+            {
+              "who": "finn",
+              "says": "Starker erster Tag. Geniesst den Abend. Bis morgen, neun Uhr."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Starker erster Tag. Orden als Spitzenforschung bestaetigt (Klosterwissenschaft als Parallele). Schattenfieber nicht reversibel — nur kontrollierbar. PC first, Konsolen Stretch Goal. Freelancer-Budget vorbereiten. Tiervolk ohne eigene Architektur — Gaeste/Nomaden in Fraktionsstaedten. Replay-Erfahrung gewuenscht."
+        }
+      ],
+      "summary": {
+        "day": 1,
+        "weekday": "Montag",
+        "phase": "Recherche",
+        "title": "Erster Arbeitstag — Fundamente legen",
+        "summary": "Erster Arbeitstag des Teams. Alle sieben Agenten aktiv. Emre recherchiert germanische Mythologie und entwickelt die Drei-Schichten-Kosmologie (Hohlicht/Mittelgrund/Stillfeld). Darius analysiert Referenzspiele (Gothic, Skyrim, Dishonored) und identifiziert Design Pillars. Nami destilliert vier narrative Prinzipien. Vera erstellt Fraktions-Farbprofile mit Hex-Codes. Tobi liefert Machbarkeitsanalyse (UE5, Nanite, Lumen). Leo schreibt Marktanalyse und Pitch-Satz. Finn erstellt die erste Roadmap.",
+        "cd_decisions": [
+          "Hypothese C (kosmologische Erosion) genehmigt",
+          "Nordische Quellen als Basis akzeptiert",
+          "Semi-Open-World (Gothic-Dichte)",
+          "TP Primaermodus, FP ist V2",
+          "UE5 bestaetigt",
+          "Orden als Spitzenforschungsinstitution",
+          "Schattenfieber nicht heilbar, nur kontrollierbar",
+          "Tiervolk = Nomaden, keine eigene Architektur"
+        ],
+        "artifacts_produced": [],
+        "key_moments": [
+          "Emre entwickelt Hypothese C: kosmologische Erosion + gebrochene Bindung",
+          "Leo formuliert Pitch-Satz: Gothic trifft Dishonored in einer Welt die aussieht wie Mittelalter aber sich anfuehlt wie Cyberpunk",
+          "Darius konzipiert Schattenfieber als 5-Stufen-Core-System"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "scenes": [
+        {
+          "scene": 1,
+          "type": "BRIEFING",
+          "type_label": "Briefing",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Tag-2-Briefing, letzter Konzeptionstag. Finn verteilt CD-Feedback: Combat-Skill-Ceiling als Spektrum von zugaenglich bis belohnend (keine kuenstliche Schwierigkeitsmauer, echte Mastery-Belohnung). Tagesziele klar definiert: Jeder liefert bis zur Review eine V1-Outline seines Deliverables. Emre: WBB-01 Mythos, Darius: GDD-01 Spieluebersicht + GDD-02 Kernmechaniken, Nami: GDD-03 Erzaehlkonzept, Vera: GDD-05 Designsprache, Tobi: GDD-06 Technik, Leo: QA-Input + Spielerperspektiv-Bericht, Finn: Produktionsplan Mittwoch. Emre liefert Vera bis elf Uhr Orden-Symbolik. Darius und Leo planen QA-Schleife fuer den Nachmittag. Stimmung fokussiert und routiniert. Keine offenen Blocker.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Tag zwei, letzter Konzepttag. Morgen wird geschrieben. Ich mach's kurz."
+            },
+            {
+              "who": "finn",
+              "says": "Die CD ist zufrieden mit gestern. Direkt zum Neuen: Combat-Skill-Ceiling. Darius, das war dein offener Punkt. Die Antwort ist: Spektrum. Zugaenglich bis belohnend. Keine kuenstliche Schwierigkeitsmauer, sondern echte Mastery-Belohnung."
+            },
+            {
+              "who": "darius",
+              "says": "Genau der richtige Rahmen. Einstieg intuitiv, mechanische Tiefe fuer Leute, die's wollen. Parieren, Timing, Positionierung — alles belohnend, nichts erzwungen."
+            },
+            {
+              "who": "finn",
+              "says": "Heute bis zur Review um vier hat jeder eine V1-Outline. Nicht fertig, nicht poliert — aber strukturiert genug, dass morgen geschrieben werden kann."
+            },
+            {
+              "who": "finn",
+              "says": "Emre — WBB-01 Mythos-Outline. Kosmologie, Fraktionen, Schattenfieber-Ursprung."
+            },
+            {
+              "who": "emre",
+              "says": "Steht. Drei-Schichten-Modell, sechs Fraktionsprofile, Wanderer-Mythologie. Frage: Wie viele Fraktionen am Ende? CD sagte drei bis sechs."
+            },
+            {
+              "who": "finn",
+              "says": "Drei Kernfraktionen sauber definieren. Weitere koennen spaeter wachsen. Outline heisst Kapitelstruktur, Kerninhalte pro Abschnitt, offene Fragen markiert. Kein Fliesstext."
+            },
+            {
+              "who": "finn",
+              "says": "Darius — GDD-01 Spieluebersicht und GDD-02 Kernmechaniken. Zwei Outlines, die zusammenhaengen."
+            },
+            {
+              "who": "darius",
+              "says": "Spieluebersicht zuerst, die ist kompakt. Kernmechaniken wird der groessere Brocken. Vormittags Outline, nachmittags QA-Schleife mit Leo."
+            },
+            {
+              "who": "finn",
+              "says": "Leo — QA-Input fuer Kernmechaniken plus Spielerperspektiv-Bericht. Du bist die Stimme des Marktes."
+            },
+            {
+              "who": "leo",
+              "says": "Check. Ich geh Darius' Outline durch und schreib auf, wo ein Spieler hakt, wo die Motivation kippt, wo der Pitch traegt."
+            },
+            {
+              "who": "finn",
+              "says": "Nami — GDD-03 Erzaehlkonzept-Outline. Narrative Prinzipien, Fraktions-Questlinien, Schattenfieber als Erzaehlinstrument."
+            },
+            {
+              "who": "nami",
+              "says": "Drei Bloecke: Narrative Architektur, Fraktionsperspektiven, Schattenfieber-Narrativ. Replay-Erfahrung als Querschnittsthema."
+            },
+            {
+              "who": "finn",
+              "says": "Vera — GDD-05 Designsprache-Outline. Drei Fraktions-Designsprachen, Tiervolk-Aesthetik, Biotech-Grammatik."
+            },
+            {
+              "who": "vera",
+              "says": "Brauch noch kurzen Abgleich mit Emre — Orden-Ikonografie."
+            },
+            {
+              "who": "finn",
+              "says": "Emre, kannst du Vera bis elf die Orden-Symbolik schicken?"
+            },
+            {
+              "who": "emre",
+              "says": "Mach ich als Erstes."
+            },
+            {
+              "who": "finn",
+              "says": "Tobi — GDD-06 Technik-Outline. Pipeline, Engine-Architektur, Engpass-Management."
+            },
+            {
+              "who": "tobi",
+              "says": "Steht weitgehend von gestern. Ergaenze Shader-Anforderungen fuer Schattenfieber und Combat-Middleware-Optionen. Outline bis Mittag, nachmittags kann ich Vera unterstuetzen."
+            },
+            {
+              "who": "finn",
+              "says": "Von mir gibt's am Ende des Tages den Produktionsplan fuer Mittwoch."
+            },
+            {
+              "who": "finn",
+              "says": "Noch Fragen? Blocker?"
+            },
+            {
+              "who": "nami",
+              "says": "Keine. Wir wissen, was zu tun ist."
+            },
+            {
+              "who": "finn",
+              "says": "Dann los. Standup ist um halb zwoelf. Bringt Struktur mit, keinen Fliesstext. Guten Tag."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Gestern war stark. Heute letzter Konzepttag. V1-Outlines als Tagesziel fuer alle. Combat-Skill-Ceiling: Spektrum von zugaenglich bis belohnend, keine kuenstliche Schwierigkeitsmauer, echte Mastery-Belohnung."
+        },
+        {
+          "scene": 2,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "alle-arbeitsplaetze",
+          "location_label": "Alle Arbeitsplaetze",
+          "participants": [
+            "emre",
+            "darius",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Konzeptionsphase: Alle 7 erstellen V1-Outlines ihrer Artefakte. Emre: WBB-01 Mythos (8 Kapitel, Kosmogonie bis Wanderer). Darius: GDD-01 Spielübersicht + GDD-02 Kernmechaniken (Combat-Spektrum, Schattenfieber 5 Stufen, Nervensystem-Leveling). Nami: GDD-03 Erzählkonzept (Drei-Akt-Struktur, 9 Quest-Deliverables, Dialogsystem, Schattenfieber-Narrativ). Vera: GDD-05 Designsprache (8 Kapitel, Fraktionsvisuals, Biotech-Grammatik, Farbsystem). Tobi: GDD-06 Technik (Nanite/Lumen, Kamera, GAS, Asset-Pipeline, Meilensteine). Leo: Spielerperspektiv-Bericht + QA-Risikomatrix (40% QA-Aufwand → Schattenfieber). Finn: Produktionsplan Mittwoch + Freelancer-Budget (45k EUR für Gameplay-Programmer).",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "gallery/wbb/01-mythos.md",
+            "gallery/gdd/01-spieluebersicht.md",
+            "gallery/gdd/02-kernmechaniken.md",
+            "gallery/gdd/03-erzaehlkonzept.md",
+            "gallery/gdd/05-designsprache.md",
+            "gallery/gdd/06-technik-produktion.md"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 3,
+          "type": "MEETING",
+          "type_label": "Meeting",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Standup Tag 2. Alle sieben berichten Vormittags-Ergebnisse: Saemtliche V1-Outlines stehen (WBB-01, GDD-01 bis -03, GDD-05, GDD-06). Finn verteilt fuenf CD-Entscheidungen: (1) Keine buchstaeblichen Goetter in der Spielwelt, die Frage bleibt offen, (2) Eigenes Namenssystem fuer RELICS-Kosmologie, nordische Namen nur als Entwickler-Referenz, (3) Das Relikt ist eine lebende Krone — ein Biotech-Artefakt aus der Ur-Bindung, das die Membran zwischen den Schichten stabilisiert, (4) Widerspruchs-Log #004 ist gewollt — Biotech-Forschung ist gefaehrlich und Kern des Ordens-Geheimnisses, (5) Tod beeinflusst den Infektionswert nicht — Schattenfieber ist permanent und unabhaengig. Emre bringt neue Fragen ein (Goetter, Namenssystem), Darius praesentiert Combat als 3-Schichten-Spektrum mit 14 offenen Design-Fragen, Nami braucht das Relikt fuer die Hauptquest und Stufen-Mapping mit Darius. Vera hat Emres Orden-Symbolik erhalten. Leo liefert QA-Risikomatrix mit 40% Fokus auf Schattenfieber und drei nicht-verhandelbaren Bedingungen fuer Irreversibilitaet. Nachmittags-Auftraege verteilt: Darius+Leo QA-Schleife, Emre+Nami Stufen-Mapping und Relikt, Vera integriert Orden-Symbolik, Tobi ergaenzt Schattenfieber-Tech, Finn finalisiert Produktionsplan.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [
+            "gallery/wbb/01-mythos.md (Outline V1)",
+            "gallery/gdd/01-spieluebersicht.md (Outline V1)",
+            "gallery/gdd/02-kernmechaniken.md (Outline V1)",
+            "gallery/gdd/03-erzaehlkonzept.md (Outline V1)",
+            "gallery/gdd/05-designsprache.md (Outline V1)",
+            "gallery/gdd/06-technik-produktion.md (Outline V1)"
+          ],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Standup Tag zwei. Ich hab fuenf CD-Entscheidungen, die kommen kontextbezogen. Emre, du faengst an."
+            },
+            {
+              "who": "emre",
+              "says": "WBB-01 Mythos-Outline steht. Acht Kapitel, von Kosmogonie bis zum Wanderer-Mythos. Ich hab Vera heute frueh die Orden-Symbolik geschickt — Rabenmotiv, Schriftzeichen, Ritualgegenstaende. Dazu zwei neue Fragen: Sollen die Goetter buchstaeblich in der Spielwelt existieren? Und brauchen wir ein eigenes Namenssystem, oder bleiben wir bei nordischen Bezeichnungen?"
+            },
+            {
+              "who": "finn",
+              "says": "Direkt dazu. Die CD sagt: Keine buchstaeblichen Goetter. Die Frage, ob sie existieren, bleibt innerhalb der Spielwelt offen. Das passt zu unserem umstrittenen Mythos. Und zum Namenssystem: Eigene Namen fuer die RELICS-Kosmologie. Nordische Bezeichnungen bleiben nur als interne Entwickler-Referenz. In der Spielwelt heisst Ymir nicht Ymir."
+            },
+            {
+              "who": "emre",
+              "says": "Das ist sauber. Der umstrittene Mythos wird dadurch noch staerker — wenn niemand weiss, ob die Goetter real sind, wird jede Fraktion zur theologischen Position. Und eigene Namen geben mir Gestaltungsfreiheit. Ich bau heute Nachmittag eine Namenskonvention auf."
+            },
+            {
+              "who": "emre",
+              "says": "Noch was: Widerspruchs-Log Eintrag Nummer vier. Biotech und Schattenfieber teilen Ymir-Grundmaterial. Das koennte ein Problem sein oder ein Feature."
+            },
+            {
+              "who": "finn",
+              "says": "Die CD sagt: Das ist gewollt. Biotech-Forschung ist gefaehrlich, und genau das ist der Kern des Ordens-Geheimnisses. Der Orden forscht am selben Material, das das Fieber verursacht. Das ist kein Widerspruch, das ist die zentrale Spannung."
+            },
+            {
+              "who": "emre",
+              "says": "Dann ist der Orden nicht nur Spitzenforschung, sondern Spitzenforschung am gefaehrlichsten Material der Welt. Das gibt der theologischen Fassade eine voellig neue Dringlichkeit — sie verstecken nicht nur Wissen, sie verstecken eine existenzielle Gefahr."
+            },
+            {
+              "who": "nami",
+              "says": "Das ist narrativ Gold. Der Orden weiss, dass seine Forschung die Welt krank machen koennte, und macht trotzdem weiter. Da steckt die ganze moralische Ambiguitaet des Spiels drin."
+            },
+            {
+              "who": "finn",
+              "says": "Darius, du bist dran."
+            },
+            {
+              "who": "darius",
+              "says": "GDD-01 und GDD-02 Outlines stehen. Das Groesste: Combat als Drei-Schichten-Spektrum. Erste Schicht ist die Basis — Schwert, Bogen, Armbrust, Schild, intuitiv zugaenglich. Zweite Schicht ist Mastery — Parieren, Timing, Positionierung. Dritte Schicht ist Schattenfieber-Combat, der veraendert die Regeln komplett. Dazu Schattenfieber in fuenf Stufen mit klaren mechanischen Schwellen. Alchemie als Magie-Ersatz ist jetzt durchdekliniert — kein Mana, sondern Ressourcen und Vorbereitung. Ich hab vierzehn offene Design-Fragen, die meisten klaeren Leo und ich heute Nachmittag in der QA-Schleife."
+            },
+            {
+              "who": "finn",
+              "says": "Vierzehn Fragen klingt viel. Gibt's was, das die CD entscheiden muss, oder ist das alles interne Designarbeit?"
+            },
+            {
+              "who": "darius",
+              "says": "Alles intern. Balancing, Progression-Kurven, Stufenschwellen. Das muss durchgespielt werden, nicht entschieden. Einzige Abhaengigkeit: Nami und ich muessen die Schattenfieber-Stufen abgleichen, damit Mechanik und Narrativ dieselbe Sprache sprechen."
+            },
+            {
+              "who": "finn",
+              "says": "Nami, passt das?"
+            },
+            {
+              "who": "nami",
+              "says": "Ja, das steht auf meiner Liste. GDD-03 Outline ist fertig. Drei-Akt-Struktur fuer die Hauptquest, neun Quest-Deliverables definiert, Dialogsystem-Architektur skizziert. Aber mir fehlt ein zentrales Element: Was ist das Relikt? Die Hauptquest dreht sich darum, und ich kann die Akte nicht sauber schliessen, ohne zu wissen, was der Spieler sucht."
+            },
+            {
+              "who": "finn",
+              "says": "Da hab ich was fuer dich. Die CD hat eine erste Iteration: Das Relikt ist eine lebende Krone. Ein Biotech-Artefakt aus der Ur-Bindung, das die Membran zwischen den Schichten stabilisiert. Wer sie traegt, wird veraendert."
+            },
+            {
+              "who": "nami",
+              "says": "Eine lebende Krone. Das ist... perfekt. Das verbindet alles — Biotech, Kosmologie, Macht, Transformation. Und 'wer sie traegt, wird veraendert' heisst, der dritte Akt schreibt sich fast von selbst. Die Frage ist dann: Will der Spieler sie tragen, zerstoeren oder weggeben?"
+            },
+            {
+              "who": "darius",
+              "says": "Drei Endpfade. Mechanisch elegant. Die Krone koennte sogar als ultimativer Schattenfieber-Katalysator funktionieren — sie tragen heisst maximale Infektion akzeptieren."
+            },
+            {
+              "who": "emre",
+              "says": "Kosmologisch ergibt das Sinn. Die Krone stabilisiert die Membran — sie ist quasi ein Stueck der urspruenglichen Bindung. Wer sie traegt, wird zum Bindeglied. Das ist Ymirs Erbe in konzentrierter Form."
+            },
+            {
+              "who": "finn",
+              "says": "Emre, Nami — ihr klaert heute Nachmittag das Stufen-Mapping und arbeitet das Relikt ein. Vera, du bist dran."
+            },
+            {
+              "who": "vera",
+              "says": "GDD-05 Outline steht, acht Kapitel. Fraktionsvisuals, Biotech-Grammatik, Farbsystem, alles drin. Gute Nachricht: Emres Orden-Symbolik kam heute frueh, das passt nahtlos in mein Kapitel drei. Rabenmotiv, die verschleierten Schriftzeichen, die Ritualgegenstaende — das gibt dem Orden visuell eine eigene Tiefe, die ueber monolithisch hinausgeht."
+            },
+            {
+              "who": "finn",
+              "says": "Dann blockiert dich nichts mehr?"
+            },
+            {
+              "who": "vera",
+              "says": "Nachmittags integriere ich die Symbolik in die Fraktionsprofile und verfeinere die Tiervolk-Praesenz. Das wird ein solider Nachmittag."
+            },
+            {
+              "who": "finn",
+              "says": "Tobi."
+            },
+            {
+              "who": "tobi",
+              "says": "GDD-06 Outline fertig. Pipeline, Engine-Architektur, Meilensteine, Combat-Middleware-Empfehlung. Zwei Luecken: Audio-Pipeline und UI/UX fehlen komplett — das ist Woche-zwei-Material, aber ich wollte es transparent machen. Und die Schattenfieber-Effekte auf der Tech-Seite — Shader, Post-Processing, Partikelsysteme — da brauch ich Input von Darius fuer die Stufenschwellen und von Emre fuer die kosmologische Logik. Was genau passiert visuell bei Stufe drei versus Stufe fuenf?"
+            },
+            {
+              "who": "darius",
+              "says": "Das klaeren wir. Stufe eins bis drei sind subtil — Farbverschiebung, leichtes Flimmern. Ab Stufe vier wird es invasiv. Stufe fuenf veraendert die Geometrie."
+            },
+            {
+              "who": "tobi",
+              "says": "Geometrie-Veraenderung ist Shader-technisch machbar, aber teuer. Das muss frueh in die Pipeline."
+            },
+            {
+              "who": "finn",
+              "says": "Notiert. Leo, du zum Schluss."
+            },
+            {
+              "who": "leo",
+              "says": "Zwei Sachen. Erstens: Spielerperspektiv-Bericht — ich hab alle Outlines aus Spielersicht gelesen und aufgeschrieben, wo Motivation kippt, wo Verwirrung entsteht, wo der Pitch traegt. Zweitens: QA-Risikomatrix. Ergebnis: Vierzig Prozent des QA-Aufwands wird auf Schattenfieber entfallen. Fuenf Stufen mal drei Fraktionen mal Questzustaende — die Kombinatorik ist enorm. Und ich hab drei nicht-verhandelbare Bedingungen fuer die Irreversibilitaet formuliert."
+            },
+            {
+              "who": "finn",
+              "says": "Welche drei?"
+            },
+            {
+              "who": "leo",
+              "says": "Erstens: Der Spieler muss immer wissen, was ihn infiziert hat — keine versteckte Infektion. Zweitens: Jede Stufe muss einen spuerbaren Gameplay-Unterschied machen, nicht nur Zahlen. Drittens: Es muss einen vollstaendigen Durchlauf ohne jede Infektion geben koennen. Sonst verlieren wir die Haelfte der Zielgruppe."
+            },
+            {
+              "who": "finn",
+              "says": "Dazu von der CD: Tod beeinflusst den Infektionswert nicht. Das Schattenfieber ist permanent und unabhaengig vom Sterben. Also kein Infektions-Reset durch Tod."
+            },
+            {
+              "who": "darius",
+              "says": "Gut. Das macht das System vorhersagbar. Der Spieler weiss: Was ich mir einfange, bleibt. Keine Exploit-Schleifen, keine Cheese-Strategien ueber den Tod."
+            },
+            {
+              "who": "leo",
+              "says": "Nachmittags mach ich die QA-Schleife mit Darius. Ich geh seine vierzehn Fragen aus Spielersicht durch."
+            },
+            {
+              "who": "finn",
+              "says": "Von mir: Produktionsplan fuer morgen und Freelancer-Budget stehen. Fuenfundvierzigtausend Euro fuer einen Gameplay-Programmer, sechs Monate. Das geht heute Abend an die CD. Zusammenfassung Nachmittag: Darius und Leo, QA-Schleife GDD-02. Emre und Nami, Stufen-Mapping und Relikt einarbeiten. Vera, Orden-Symbolik integrieren. Tobi, Schattenfieber-Tech-Details mit Darius und Emre klaeren. Ich finalisiere den Produktionsplan. Um vier ist Review. Noch Fragen?"
+            },
+            {
+              "who": "nami",
+              "says": "Alles klar. Die Krone aendert alles — im besten Sinne."
+            },
+            {
+              "who": "finn",
+              "says": "Dann los. Guter Vormittag."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Fuenf CD-Entscheidungen verteilt: (1) Keine buchstaeblichen Goetter — die Frage bleibt in der Spielwelt offen, (2) Eigenes Namenssystem fuer RELICS-Kosmologie, nordische Namen nur als Entwickler-Referenz, (3) Relikt = lebende Krone, Biotech-Artefakt aus der Ur-Bindung, stabilisiert die Membran, veraendert den Traeger, (4) Widerspruchs-Log #004 ist gewollt — Biotech-Forschung am Fieber-Material ist der Kern des Ordens-Geheimnisses, (5) Tod beeinflusst den Infektionswert nicht — Schattenfieber ist permanent und unabhaengig."
+        },
+        {
+          "scene": 4,
+          "type": "PAUSE",
+          "type_label": "Pause",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "nami",
+            "emre"
+          ],
+          "summary": "Bilaterale Mittagspause. Nami und Emre besprechen die drei neuen CD-Entscheidungen: (1) Lebende Krone als Relikt — eingeordnet als Schlussstein des Drei-Schichten-Modells, die Krone haelt die Membran aktiv aufrecht. Narrativ: Hauptquest fuehrt zur Traeger-Entscheidung, drei Fraktions-Ansprueche plus moegliches viertes Ende (Verweigerung). (2) Stufen-Mapping konsolidiert: Rauschen (Stufe 1-2, subtile Stoerungen), Risse (Stufe 3-4, unuebersehbare Verzerrungen), Schwelle (Stufe 5, qualitativer Zustandswechsel — Membran faellt fuer den Betroffenen). Kein HUD-Indikator fuer Halluzinationen. Vorschlag geht bilateral an Darius. (3) Eigenes Namenssystem: linguistisches Prinzip vereinbart — gemeinsamer Wortstamm mit fraktionsbedingter Lautverschiebung. Arbeitsnamen-Liste (6-8 Kernbegriffe) als Nachmittagsaufgabe. Zusaetzlich: Keine buchstaeblichen Goetter (bestaetigt), Voelva/Seherin als frueher NPC-Kontakt nach Malkavian-Prinzip (prophetisch, nicht verrueckt). Stimmung still, warm, konzentriert.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "nami": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "dimmed"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "nami",
+              "says": "Hast du die Nachricht gelesen?"
+            },
+            {
+              "who": "emre",
+              "says": "Die lebende Krone. Ja."
+            },
+            {
+              "who": "nami",
+              "says": "Und?"
+            },
+            {
+              "who": "emre",
+              "says": "Ich sitze seit zwanzig Minuten hier und versuche, nicht sofort in mein Outline zu rennen und alles umzuschreiben. Ein Biotech-Artefakt aus der Ur-Bindung. Das die Membran stabilisiert. Das ist nicht einfach ein Relikt, Nami. Das ist der Schlussstein."
+            },
+            {
+              "who": "emre",
+              "says": "Im Drei-Schichten-Modell. Die Membran wurde konstruiert, durch die Ur-Bindung. Und jetzt gibt es ein konkretes Artefakt, das die Trennung aufrechthaelt. Ein lebendes. Die Trennung der Daseinsebenen ist kein Zustand. Sie ist ein laufender Prozess. Die Krone arbeitet."
+            },
+            {
+              "who": "nami",
+              "says": "Und wenn sie aufhoert zu arbeiten —"
+            },
+            {
+              "who": "emre",
+              "says": "— dann ist das Schattenfieber die Konsequenz. Die Erosion. Die Membranen werden durchlaessig, weil die Krone nicht mehr vollstaendig funktioniert. Oder weil niemand sie traegt."
+            },
+            {
+              "who": "nami",
+              "says": "Wer sie traegt, wird veraendert. Das ist der Satz, der mich nicht loslaesst. Er erzaehlt zwei Geschichten gleichzeitig. Die Geschichte der Welt — jemand muss die Krone tragen, damit die Membran haelt. Und die Geschichte des Traegers — er zahlt einen Preis, den er vorher nicht kennt."
+            },
+            {
+              "who": "emre",
+              "says": "Odins Auge am Brunnen. Aber wir nennen es nicht mehr Odin."
+            },
+            {
+              "who": "nami",
+              "says": "Drei Entscheidungen auf einmal. Die Krone als Relikt. Eigenes Namenssystem. Und keine buchstaeblichen Goetter."
+            },
+            {
+              "who": "emre",
+              "says": "Das macht die Welt ehrlicher. Ich hatte es schon als Empfehlung in der Outline — dass die Goetter ueberlieferte Gestalten sind. Jetzt ist es bestaetigt. Aber es veraendert den Ton. Wenn es keine buchstaeblichen Goetter gab, ist die Ur-Bindung kein goettlicher Akt. Sie ist ein technologischer. Ein ritueller. Etwas, das Menschen getan haben."
+            },
+            {
+              "who": "nami",
+              "says": "Oder etwas, das Menschen sich zuschreiben."
+            },
+            {
+              "who": "emre",
+              "says": "Natuerlich. Die Fraktionen werden sich streiten, wer die Bindung vollzogen hat. Krone: unsere Ahnen trugen sie. Gilden: wir haben das Material beschafft. Orden: wir hatten das Wissen."
+            },
+            {
+              "who": "nami",
+              "says": "Und alle drei werden Recht haben. Oder keine. Das ist mir wichtig — dass die Wahrheit ein Loch hat, in dem der Spieler steht."
+            },
+            {
+              "who": "emre",
+              "says": "Die Namensfrage. Darf ich laut denken? Das Drei-Schichten-Modell braucht eigene Begriffe. Ich wuerde vorschlagen, dass wir ein phonetisches Prinzip finden. Etwas, das klingt, als haette es eine Geschichte hinter sich. Nicht erfunden. Abgenutzt."
+            },
+            {
+              "who": "nami",
+              "says": "Wie ein Wort, das man fast versteht. Kafka konnte das — Namen, die an etwas erinnern, ohne es zu sein."
+            },
+            {
+              "who": "emre",
+              "says": "Und jede Fraktion haette leicht unterschiedliche Aussprachevarianten. Weil die Namen muendlich weitergegeben wurden."
+            },
+            {
+              "who": "nami",
+              "says": "Die Krone sagt Vaeld und die Gilden sagen Valt und der Orden schreibt Valth und sie meinen alle dasselbe, aber die Schreibung verraet, wessen Version man gerade liest."
+            },
+            {
+              "who": "emre",
+              "says": "Ein linguistisches Prinzip: Gemeinsamer Stamm, fraktionsbedingte Lautverschiebung. Ich muss das aufschreiben."
+            },
+            {
+              "who": "nami",
+              "says": "Lass uns ueber das Stufen-Mapping reden. Du hast geschrieben, dass bei Stufe fuenf die Person an der Membran steht. Darius hat fuenf mechanische Stufen, ich habe drei narrative. Mein Vorschlag: Rauschen deckt eins und zwei ab, Risse drei und vier, Schwelle ist fuenf. Aber die Schwelle ist kein Endpunkt. Sie ist ein Uebergang."
+            },
+            {
+              "who": "emre",
+              "says": "In welchem Sinn?"
+            },
+            {
+              "who": "nami",
+              "says": "Die ersten vier Stufen sind quantitativ. Mehr Rauschen, mehr Risse. Stufe fuenf ist qualitativ. Nicht schlimmeres Schattenfieber. Ein anderer Zustand. Der Spieler sieht Dinge, die real sein koennten. Oder nicht. Das Spiel verraet es nicht."
+            },
+            {
+              "who": "emre",
+              "says": "Das passt. Die Membran ist ein Gradient. Stufe eins bis vier sind Grade der Durchlaessigkeit. Stufe fuenf ist der Moment, in dem die Membran fuer diese Person nicht mehr existiert. Nicht weil sie zerstoert ist, sondern weil der Betroffene auf beiden Seiten gleichzeitig steht."
+            },
+            {
+              "who": "nami",
+              "says": "Und dann wird der Unreliable Narrator absolut. Wie schreibt man Dialoge fuer jemanden, der nicht weiss, ob sein Gespraechspartner real ist? Man schreibt sie, als waeren sie real. Der Spieler erfaehrt erst spaeter — oder nie — dass da niemand stand."
+            },
+            {
+              "who": "emre",
+              "says": "Das ist der Malkavian-Durchlauf."
+            },
+            {
+              "who": "nami",
+              "says": "Das Entscheidende: Die Malkavian-Dialoge waren nicht verrueckt. Sie waren prophetisch. Sie sagten die Wahrheit in einer Sprache, die erst im Rueckblick Sinn ergab. Das will ich fuer das Schattenfieber."
+            },
+            {
+              "who": "emre",
+              "says": "Dann haetten wir drei Ebenen. Stufe eins bis zwei: Stoerungen, die Zufall sein koennten. Stufe drei bis vier: unuebersehbare Verzerrungen. Stufe fuenf: Die andere Schicht wird sichtbar. Der Spieler muss entscheiden, ob er dem traut, was er sieht."
+            },
+            {
+              "who": "nami",
+              "says": "Kein HUD-Indikator. Kein Achtung, Halluzination. Der Spieler lernt, seiner Wahrnehmung zu misstrauen."
+            },
+            {
+              "who": "emre",
+              "says": "Das ist mutig. Darius wird sagen, dass es zu riskant ist."
+            },
+            {
+              "who": "nami",
+              "says": "Er wird einen Fallback wollen. Vielleicht ein Accessibility-Feature. Aber die Kern-Erfahrung sollte radikal sein."
+            },
+            {
+              "who": "emre",
+              "says": "Einverstanden. Drei narrative Zustaende, fuenf mechanische Schwellen, der Uebergang bei Stufe fuenf qualitativ. Die Frage, ob Stufe-fuenf-Wahrnehmungen real sind, bleibt narrativ offen."
+            },
+            {
+              "who": "nami",
+              "says": "Die Krone bindet alles zusammen. Die Membran. Die Stufen. Den Zerfall. Wenn die Hauptquest eine Relikt-Suche ist — dann ist das Ende der Moment, in dem der Spieler vor der Entscheidung steht: Trage ich die Krone?"
+            },
+            {
+              "who": "emre",
+              "says": "Drei Fraktionen. Drei Antworten darauf, wer sie tragen soll."
+            },
+            {
+              "who": "nami",
+              "says": "Oder er verweigert sich allen dreien. Das vierte Ende. Die Verweigerung. Die Membran faellt, die Schichten brechen ineinander — und was dann passiert, weiss niemand. Nicht mal wir. Nicht in dieser Iteration."
+            },
+            {
+              "who": "nami",
+              "says": "Emre? Diese Welt. Dein Drei-Schichten-Modell. Die Kosmogonie. Die Fraktions-Mythologien. Das traegt. Ich schreibe Dialoge fuer eine Welt, und meistens fuehlt sich die Welt darunter an wie Pappmache. Hier nicht."
+            },
+            {
+              "who": "emre",
+              "says": "Danke. Dasselbe gilt fuer deine narrativen Prinzipien. Fraktionen als Sprachen — das hat meine gesamte Ueberlieferungsstruktur beeinflusst."
+            },
+            {
+              "who": "nami",
+              "says": "Dann lass uns dafuer sorgen, dass es morgen in den Texten genauso gut klingt wie in dieser Kueche."
+            },
+            {
+              "who": "emre",
+              "says": "Ich mach uns noch einen Tee. Dann geh ich zurueck an die Outline und aendere Goetter in Vorfahren. Oder was auch immer sie heissen werden."
+            },
+            {
+              "who": "nami",
+              "says": "Was auch immer sie heissen werden."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 5,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "alle-arbeitsplaetze",
+          "location_label": "Alle Arbeitsplaetze",
+          "participants": [
+            "emre",
+            "darius",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Nachmittags-Konzeption. Darius überarbeitet GDD-02 zur V0.5: Leos QA-Input integriert (drei nicht-verhandelbare Bedingungen), Stufen-Mapping mit Nami (5 mechanische → 3 narrative), CD-Entscheidungen (lebende Krone, Tod/Infektion, Namenssystem). Emre entwickelt kosmologisches Lexikon mit eigenen Namen (Galt, Emer, Hohlicht/Mittelgrund/Stillfeld, die Hauten, die Flechtung) und integriert die lebende Krone in den WBB-01 Mythos (V0.5). Fraktionen verwenden unterschiedliche Namen für dieselben Phänomene. Spieltitel-Vorschlag: RELICS: Die Lebende Krone. Vera integriert Orden-Symbolik. Tobi ergänzt Schattenfieber-Tech. Leo+Darius QA-Schleife. Finn finalisiert Produktionsplan.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "gallery/gdd/02-kernmechaniken.md (V0.5)",
+            "gallery/wbb/01-mythos.md (V0.5)"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 6,
+          "type": "REVIEW",
+          "type_label": "Review",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Tagesabschluss-Review Tag 2, letzter Konzeptionstag. Alle Nachmittags-Ergebnisse werden praesentiert. Darius und Leo haben die QA-Schleife fuer GDD-02 abgeschlossen — sechs der vierzehn Fragen geklaert, acht als Balancing-Iteration markiert. Leos drei Bedingungen fuer Irreversibilitaet sind in die Kernmechaniken integriert. Emre und Nami haben das Schattenfieber-Stufen-Mapping abgestimmt und die lebende Krone in die Drei-Akt-Struktur eingebaut — drei Endpfade (tragen, zerstoeren, weitergeben). Emre hat begonnen, ein eigenes Namenssystem aufzubauen. Vera hat die Orden-Symbolik in die Fraktionsprofile integriert und die Tiervolk-Praesenz visuell geschaerft. Tobi hat Schattenfieber-Tech-Details mit Darius abgeglichen und Shader-Aufwand geschaetzt. Finn praesentiert den finalisierten Produktionsplan und das Freelancer-Budget. CD-Feedback: Hervorragender Konzeptionstag, alle Outlines koharent, lebende Krone als Hauptquest-Anker. Morgen Produktionstag — jeder schreibt V1. Emre hat die haerteste Deadline: WBB-01 muss bis 11:30 lesbar sein. Qualitaet vor Quantitaet.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [
+            "gallery/gdd/02-kernmechaniken.md (QA-Update)",
+            "gallery/gdd/03-erzaehlkonzept.md (Relikt + Endpfade)",
+            "gallery/wbb/01-mythos.md (Namenssystem-Ansatz)",
+            "gallery/gdd/05-designsprache.md (Orden-Symbolik integriert)"
+          ],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Letztes Review des Konzeptionstags. Morgen wird geschrieben. Kurze Runde, dann CD-Feedback. Darius, du und Leo zuerst — wie lief die QA-Schleife?"
+            },
+            {
+              "who": "darius",
+              "says": "Sechs der vierzehn Fragen sind geklaert. Die Stufen-Schwellen fuer Schattenfieber stehen jetzt sauber — mechanisch und narrativ synchron, nachdem Nami und Emre ihre Seite auch fertig hatten. Die restlichen acht Fragen sind Balancing-Iteration, die koennen erst mit einem spielbaren Prototyp beantwortet werden. Und Leos drei Bedingungen fuer Irreversibilitaet sind jetzt fest in GDD-02 verankert."
+            },
+            {
+              "who": "leo",
+              "says": "Die QA-Schleife hat gut funktioniert. Ich hab zwei Stellen gefunden, wo ein Spieler frustriert abspringen wuerde — beide entschaerft. Das Alchemie-System als Magie-Ersatz ist aus Spielersicht ueberzeugend, weil es sich anfuehlt wie Vorbereitung statt wie Mana-Management. Und die drei Bedingungen stehen: Transparente Infektion, spuerbarer Gameplay-Unterschied pro Stufe, ein infektionsfreier Pfad muss moeglich sein."
+            },
+            {
+              "who": "finn",
+              "says": "Emre, Nami — Stufen-Mapping und Relikt?"
+            },
+            {
+              "who": "emre",
+              "says": "Nami und ich haben die fuenf Schattenfieber-Stufen durchdekliniert. Jede Stufe hat jetzt eine kosmologische Entsprechung — Stufe eins ist ein Riss in der Wahrnehmung, Stufe fuenf ist der Blick durch die Membran. Die Krone passt sich da perfekt ein als das Objekt, das die Membran zusammenhaelt. Ausserdem hab ich mit dem eigenen Namenssystem angefangen. Ymir heisst jetzt intern Ur-Binder, die Schichten bekommen eigene Bezeichnungen. Wird morgen in die V1 einfliessen."
+            },
+            {
+              "who": "nami",
+              "says": "Die drei Endpfade stehen. Tragen, zerstoeren, weitergeben. Jeder Pfad veraendert den dritten Akt fundamental. Tragen heisst maximale Macht bei maximaler Infektion — der Spieler wird zum neuen Bindeglied, aber verliert sich selbst. Zerstoeren heisst Befreiung, aber die Schichten driften weiter auseinander. Weitergeben heisst die Verantwortung abgeben — an eine Fraktion, und damit deren Deutungshoheit bestaetigen. Neun Quest-Deliverables sind alle zugeordnet."
+            },
+            {
+              "who": "darius",
+              "says": "Die drei Endpfade korrespondieren sauber mit den drei Fraktionsphilosophien. Krone will die Krone tragen, Orden will sie verstehen, Gilden wollen sie handeln. Mechanisch heisst das: Der Fraktionsweg beeinflusst, welcher Endpfad sich natuerlich anfuehlt — aber der Spieler kann immer anders entscheiden."
+            },
+            {
+              "who": "finn",
+              "says": "Vera, wie sieht's mit der Orden-Symbolik aus?"
+            },
+            {
+              "who": "vera",
+              "says": "Integriert. Das Rabenmotiv zieht sich jetzt durch alle Orden-Elemente — Architektur, Kleidung, Ritualgegenstaende. Die verschleierten Schriftzeichen geben dem Orden visuell eine Doppelboden-Aesthetik: Was an der Oberflaeche wie Ornament aussieht, ist in Wahrheit Notation. Dazu hab ich die Tiervolk-Praesenz geschaerft — improvisierte Nischen, nomadische Markierungen, temporaere Materialien in permanenten Strukturen. Der Kontrast zum Orden ist maximal, und genau das macht es visuell spannend."
+            },
+            {
+              "who": "finn",
+              "says": "Tobi, Schattenfieber-Tech?"
+            },
+            {
+              "who": "tobi",
+              "says": "Darius und ich haben die Stufen technisch durchgesprochen. Stufe eins bis drei ist Post-Processing — Farbverschiebung, chromatische Aberration, Partikel. Machbar, Standardwerkzeug. Stufe vier braucht Custom-Shader fuer die Texturveraenderungen. Stufe fuenf mit Geometrie-Veraenderung ist das Teuerste — ich empfehle Vertex Displacement statt echter Geometrie-Manipulation, das spart Performance und sieht trotzdem invasiv aus. Aufwandsschaetzung: Stufe eins bis drei sind zwei Wochen, Stufe vier ist drei Wochen, Stufe fuenf ist vier Wochen — mit Freelancer. Audio-Pipeline und UI/UX bleiben offen fuer Woche zwei."
+            },
+            {
+              "who": "finn",
+              "says": "Danke. Von mir: Produktionsplan fuer morgen steht. Jeder schreibt seine V1. Prioritaeten sind klar, Abhaengigkeiten sind aufgeloest. Freelancer-Budget liegt bei fuenfundvierzigtausend Euro fuer einen Gameplay-Programmer ueber sechs Monate. Das geht morgen frueh offiziell an die CD zur Freigabe."
+            },
+            {
+              "who": "finn",
+              "says": "Jetzt das CD-Feedback zum Tag. Ich zitiere: Hervorragender Konzeptionstag. Alle Outlines stehen, die Artefakte sind koharent. Die lebende Krone als Relikt gibt dem Hauptquest seinen Anker."
+            },
+            {
+              "who": "nami",
+              "says": "Das freut mich. Die Krone hat heute alles zusammengezogen — Lore, Mechanik, Narrativ. Das ist selten am zweiten Tag."
+            },
+            {
+              "who": "finn",
+              "says": "Weiter im Feedback: Morgen ist Produktionstag. Jeder schreibt seine V1. Emre hat die haerteste Deadline — WBB-01 muss bis elf Uhr dreissig lesbar sein. Qualitaet vor Quantitaet."
+            },
+            {
+              "who": "emre",
+              "says": "Verstanden. Die Outline ist solide, das Namenssystem braucht noch eine Nachtschicht im Kopf, aber morgen frueh bin ich dran."
+            },
+            {
+              "who": "finn",
+              "says": "Die CD sagt ausserdem: Ich bin stolz auf das, was in zwei Tagen entstanden ist."
+            },
+            {
+              "who": "vera",
+              "says": "Das hoert man gern."
+            },
+            {
+              "who": "darius",
+              "says": "Zwei Tage und wir haben ein Combat-System, drei Endpfade, fuenf Fieber-Stufen und ein Relikt. Das ist solide."
+            },
+            {
+              "who": "finn",
+              "says": "Morgen-Plan: Neun Uhr Briefing, dann schreibt jeder. Emre, WBB-01 hat Prioritaet eins — Nami und Vera bauen darauf. Darius, GDD-02 V1 ist dein Hauptstueck. Nami, GDD-03 V1 mit den drei Endpfaden. Vera, GDD-05 V1 mit der integrierten Orden-Symbolik. Tobi, GDD-06 V1 mit der Schattenfieber-Tech-Schaetzung. Leo, du bereitest den Spielerperspektiv-Bericht als QA-Dokument auf."
+            },
+            {
+              "who": "leo",
+              "says": "Wird gemacht. Und ich les morgen Nachmittag alle V1-Entwuerfe quer — frische Augen auf alles."
+            },
+            {
+              "who": "finn",
+              "says": "Perfekt. Guter Tag, Leute. Zwei Tage Konzeption, alles steht. Morgen wird produziert. Geniesst den Abend."
+            },
+            {
+              "who": "tobi",
+              "says": "Bestellt wieder jemand was?"
+            },
+            {
+              "who": "nami",
+              "says": "Ich hab gestern bestellt. Heute ist jemand anderes dran."
+            },
+            {
+              "who": "leo",
+              "says": "Ich mach das. Gleiche Bestellung wie gestern?"
+            },
+            {
+              "who": "vera",
+              "says": "Ohne Ananas."
+            },
+            {
+              "who": "emre",
+              "says": "Immer noch mythologisch nicht fundiert."
+            },
+            {
+              "who": "finn",
+              "says": "Bis morgen. Neun Uhr."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Hervorragender Konzeptionstag. Alle Outlines stehen, die Artefakte sind koharent. Die lebende Krone als Relikt gibt dem Hauptquest seinen Anker. Morgen ist Produktionstag — jeder schreibt seine V1. Emre hat die haerteste Deadline: WBB-01 muss bis 11:30 lesbar sein. Qualitaet vor Quantitaet. Die CD ist stolz auf das, was in zwei Tagen entstanden ist."
+        }
+      ],
+      "summary": {
+        "day": 2,
+        "weekday": "Dienstag",
+        "phase": "Konzeption",
+        "title": "Konzeptionstag — Outlines und Strukturen",
+        "summary": "Konzeptionstag. Alle Agenten erstellen V1-Outlines. Emre entwickelt das RELICS-eigene Namenssystem (Galt, Emer, Hohlicht/Mittelgrund/Stillfeld, Hauten, Flechtung). Darius liefert das Schattenfieber-5-Stufen-Konzept mit Infektionswert 0-100. Nami mappt ihre drei narrativen Stufen (Rauschen/Risse/Schwelle) auf Darius' Mechanik. Vera definiert Fraktions-Farbsystem mit verbindlichen Hex-Codes. Tobi plant Budget (45k EUR Freelancer). Leo formuliert drei nicht-verhandelbare QA-Bedingungen.",
+        "cd_decisions": [
+          "Schattenfieber nicht heilbar — CD bestaetigt erneut",
+          "Tiervolk = Nomaden, Replay-Erfahrung gewollt",
+          "45k EUR Freelancer-Budget akzeptiert"
+        ],
+        "artifacts_produced": [],
+        "key_moments": [
+          "Emre stellt Namenssystem vor — Team begeistert",
+          "Darius und Nami synchronisieren Schattenfieber-Stufenmapping",
+          "Leo definiert drei QA-Bedingungen: Sichtbarkeit, Opt-in, kein Game Over"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "scenes": [
+        {
+          "scene": 1,
+          "type": "BRIEFING",
+          "type_label": "Briefing",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Erster Produktionstag. Finn moderiert das Briefing knapp und konzentriert. CD-Feedback: V1-Texte ausformuliert, nicht mehr nur Outlines. Arbeitstitel 'RELICS: Die Lebende Krone' offiziell bestaetigt. Krone-Fraktion ist sich ihres eigenen Widerspruchs NICHT bewusst — tragische Ironie. Emre hat die haerteste Deadline: WBB-01 Mythos muss bis 11:30 lesbar sein. Qualitaet vor Quantitaet. Tageszuordnungen verteilt: Emre WBB-01, Darius GDD-01+02, Nami GDD-03 (nachmittags auf Emres Grundlage), Vera GDD-05, Tobi GDD-06, Leo GDD-02 QA + Spielerperspektiv-Bericht + nachmittags Querlesen aller V1. Finn koordiniert und plant Peer-Review-Paarungen fuer Tag 4: Emre-Nami, Darius-Leo, Vera-Tobi. Stimmung konzentriert, alle wissen was zu tun ist.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin zusammen. Tag drei. Erster Produktionstag. Ab heute wird geschrieben — ausformulierter Text, keine Outlines mehr."
+            },
+            {
+              "who": "finn",
+              "says": "CD-Feedback: Qualitaet vor Quantitaet. Drei gute Seiten schlagen zehn oberflaechliche. Der Arbeitstitel steht offiziell — RELICS: Die Lebende Krone."
+            },
+            {
+              "who": "finn",
+              "says": "Wichtig fuer Emre und Nami: Die Krone-Fraktion ist sich ihres eigenen Widerspruchs NICHT bewusst. Tragische Ironie, kein offener Konflikt. Die glauben an das, was sie tun."
+            },
+            {
+              "who": "emre",
+              "says": "Das passt zur Idee, dass die Krone sich als legitime Hueterin sieht. Die sehen den Verfall nicht als Konsequenz ihres Handelns, sondern als aeussere Bedrohung."
+            },
+            {
+              "who": "nami",
+              "says": "Das ist narrativ stark. Der Spieler soll das erkennen, bevor die Figuren es tun — oder gerade weil sie es nie tun."
+            },
+            {
+              "who": "finn",
+              "says": "Genau. Emre, du hast die haerteste Deadline. WBB-01 Mythos bis halb zwoelf lesbar auf dem Tisch. Nicht perfekt, aber lesbar. Nami und Vera bauen darauf."
+            },
+            {
+              "who": "emre",
+              "says": "Schaffe ich. Die Outline steht, das Namenssystem ist im Kopf fertig. Jetzt muss es nur noch raus."
+            },
+            {
+              "who": "finn",
+              "says": "Darius — GDD-01 und GDD-02 V1. Wenn du priorisieren musst: GDD-02 ist wichtiger."
+            },
+            {
+              "who": "darius",
+              "says": "Verstanden. GDD-02 hat den Kern — Combat, Schattenfieber-Mechanik, Nervensystem-Leveling. Die Spieluebersicht ist eher Zusammenfassung, die geht auch nachmittags."
+            },
+            {
+              "who": "finn",
+              "says": "Nami — GDD-03 V1. Vormittag vorstrukturieren, nachmittags mit Emres WBB-01 als Grundlage weiterschreiben."
+            },
+            {
+              "who": "nami",
+              "says": "Klar. Ich nutze den Vormittag fuer die Endpfade und die Quest-Deliverable-Zuordnung. Das steht unabhaengig von Emre."
+            },
+            {
+              "who": "finn",
+              "says": "Vera — GDD-05 Designsprache V1. Drei Fraktionsdialekte, Materialsprache, Farbpaletten. Tobi — GDD-06 Technik V1."
+            },
+            {
+              "who": "vera",
+              "says": "Frage: Soll ich die Tiervolk-Praesenz als eigenes Unterkapitel fuehren oder in die Fraktionskapitel integrieren?"
+            },
+            {
+              "who": "finn",
+              "says": "Gute Frage. Meine Empfehlung: eigenes Unterkapitel, weil die Tiervolk-Aesthetik fraktionsuebergreifend ist. Aber halte es kurz — die sind Gaeste, nicht Hausbesitzer."
+            },
+            {
+              "who": "vera",
+              "says": "Verstanden."
+            },
+            {
+              "who": "tobi",
+              "says": "Fuer GDD-06 — soll ich die Freelancer-Schaetzung mit reinschreiben oder ist das ein separates Dokument?"
+            },
+            {
+              "who": "finn",
+              "says": "Rein damit. Alles was zur Technik und Produktion gehoert, gehoert in GDD-06. Budget-Details kann ich spaeter rausziehen wenn noetig."
+            },
+            {
+              "who": "finn",
+              "says": "Leo — GDD-02 QA-Abschnitte V1 finalisieren und den Spielerperspektiv-Bericht. Nachmittags liest du alle V1-Entwuerfe quer."
+            },
+            {
+              "who": "leo",
+              "says": "Mach ich. Ich hab gestern Abend nochmal ueber die Irreversibilitaets-Kommunikation nachgedacht. Ich schreib heute einen Absatz dazu, wie man dem Spieler klarmacht, dass Schattenfieber permanent ist, ohne ihn zu verschrecken."
+            },
+            {
+              "who": "darius",
+              "says": "Das ist wichtig. Komm damit gerne zu mir bevor du es finalisierst."
+            },
+            {
+              "who": "finn",
+              "says": "Peer-Reviews plane ich fuer morgen: Emre-Nami, Darius-Leo, Vera-Tobi. Aber heute wird erstmal geschrieben. Wenn ihr haengt — fragt nach. Nicht im Stillen kaempfen."
+            },
+            {
+              "who": "finn",
+              "says": "Elf Uhr dreissig Standup. Bis dahin will ich von jedem Fortschritt sehen. Los geht's."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Produktionstag. Jeder schreibt seine V1 — ausformulierter Text, nicht mehr nur Outlines. Emre hat die haerteste Deadline: WBB-01 Mythos muss bis 11:30 lesbar sein. Krone-Fraktion ist sich des eigenen Widerspruchs NICHT bewusst (tragische Ironie). 'RELICS: Die Lebende Krone' als Arbeitstitel akzeptiert. Qualitaet vor Quantitaet — lieber drei gute Seiten als zehn oberflaechliche."
+        },
+        {
+          "scene": 2,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "alle-arbeitsplaetze",
+          "location_label": "Alle Arbeitsplaetze",
+          "participants": [
+            "emre",
+            "darius",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Erster Produktionstag: V1-Dokumente werden geschrieben. Emre liefert WBB-01 Mythos V1 (Kapitel 1-4 als Fließtext, 5-8 als detaillierte Stichpunkte). Eigenes Namenssystem aktiv: Galt, Emer, Hohlicht/Mittelgrund/Stillfeld, die Hauten, die Flechtung. Drei parallele Schöpfungsversionen. Lebende Krone als organisches Biotech-Artefakt. Darius liefert GDD-01 Spielübersicht V1 (Elevator Pitch, 6 Design-Säulen mit Validierungstests, 3 USPs, Zielgruppe, Referenzrahmen). Vera liefert GDD-05 Designsprache V1 (10 Kapitel: Fraktionsvisuals, Biotech-Grammatik, Farbsystem mit Hex-Codes, Mode, Tiervolk, Schattenfieber-Visuels, Environments). Tobi liefert GDD-06 Technik V1 (8 Kapitel: Engine, Kamera, Combat, Assets, Schattenfieber-Tech, Performance, Pipeline, Meilensteine+Budget).",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "gallery/wbb/01-mythos.md (V1)",
+            "gallery/gdd/01-spieluebersicht.md (V1)",
+            "gallery/gdd/05-designsprache.md (V1)",
+            "gallery/gdd/06-technik-produktion.md (V1)"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 3,
+          "type": "MEETING",
+          "type_label": "Meeting",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Standup nach dem ersten Produktions-Vormittag. Vier V1-Dokumente fertig: WBB-01 Mythos (Emre), GDD-01 Spieluebersicht (Darius), GDD-05 Designsprache (Vera), GDD-06 Technik (Tobi). Emre hat die Deadline gehalten — Kapitel 1-4 als Fliesstext, eigenes Namenssystem durchgehend. Widerspruchs-Log #005 (Schattenfieber-Kosmologie vs. Mechanik) geloest. Darius hat sechs Design-Saeulen mit Validierungstests. Vera liefert zehn Kapitel mit Hex-Codes und Fraktionsvisuals. Tobi hat das Budget (45k EUR) aufgeteilt und den kritischen Pfad definiert. Leo arbeitet am QA-Querlesen aller Dokumente. Nami plant nachmittags GDD-03 Erzaehlkonzept V1 auf Basis von Emres WBB-01. Nachmittags-Auftraege: Nami schreibt GDD-03 V1, Darius finalisiert GDD-02 V1 Kernmechaniken, Leo schreibt Spielerperspektiv-Bericht und QA-Kommentare in alle Dokumente, Peer-Reviews laufen parallel.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Standup. Kurz und knackig — was steht, was haengt, was braucht ihr. Emre, du hattest die haerteste Deadline."
+            },
+            {
+              "who": "emre",
+              "says": "WBB-01 Mythos V1 steht. Kapitel eins bis vier sind als Fliesstext lesbar. Die Schoepfungsversionen, die Flechtung, die Hauten, Hohlicht und Mittelgrund — alles drin. Widerspruchs-Log Nummer fuenf hab ich aufgeloest: Schattenfieber ist jetzt kosmologisch UND mechanisch konsistent."
+            },
+            {
+              "who": "finn",
+              "says": "Stark. Nami, du kannst nachmittags drauf aufbauen?"
+            },
+            {
+              "who": "nami",
+              "says": "Ja. Ich hab heute Vormittag die Endpfade und die Quest-Deliverable-Zuordnung vorstrukturiert. Nachmittags schreib ich GDD-03 V1 — Drei-Akt-Struktur, Quest-Architektur, Dialogsystem. Emres Namenssystem uebernehm ich direkt."
+            },
+            {
+              "who": "finn",
+              "says": "Gut. Darius?"
+            },
+            {
+              "who": "darius",
+              "says": "GDD-01 Spieluebersicht V1 ist fertig. Sechs Design-Saeulen, jede mit einem konkreten Validierungstest. Elevator Pitch, drei USPs, Referenzrahmen. Nachmittags mach ich GDD-02 Kernmechaniken V1 fertig — Schattenfieber-Mechanik, Combat, Nervensystem-Leveling."
+            },
+            {
+              "who": "finn",
+              "says": "Vera?"
+            },
+            {
+              "who": "vera",
+              "says": "GDD-05 Designsprache V1 fertig. Zehn Kapitel. Fraktionsvisuals mit Hex-Codes, Materialsprache, Biotech-Grammatik, Tiervolk als eigenes Unterkapitel. Die drei fraktionsspezifischen Designsprachen sind durchdekliniert."
+            },
+            {
+              "who": "finn",
+              "says": "Sauber. Tobi?"
+            },
+            {
+              "who": "tobi",
+              "says": "GDD-06 Technik V1 fertig. Acht Kapitel. UE5-Pipeline, Kamerasystem, Combat-Architektur, Asset-Pipeline, Schattenfieber-Tech, Performance-Budget, Meilensteine. Budget ist bei 45k EUR aufgeteilt — Freelancer inklusive. Kritischer Pfad: Gameplay-Programmer und Combat-Middleware."
+            },
+            {
+              "who": "finn",
+              "says": "Leo?"
+            },
+            {
+              "who": "leo",
+              "says": "Ich hab heute Vormittag angefangen, alle vier fertigen V1 querzulesen. Nachmittags schreib ich den Spielerperspektiv-Bericht final und trage QA-Kommentare direkt in die Dokumente ein. Erstes Fazit: die Konsistenz zwischen den Dokumenten ist erstaunlich gut. Das Namenssystem zieht sich durch."
+            },
+            {
+              "who": "finn",
+              "says": "Das hoer ich gern. Nachmittags-Plan steht: Nami GDD-03, Darius GDD-02, Leo QA ueber alles. Vera und Tobi koennen iterieren oder Peer-Feedback geben. Keine Blocker? Dann weiter."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 4,
+          "type": "PAUSE",
+          "type_label": "Pause",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "tobi",
+            "finn",
+            "darius"
+          ],
+          "summary": "Mittagspause. Tobi, Finn und Darius diskutieren beim Essen das Freelancer-Budget und die Gameplay-Programmer-Suche. Tobi erklärt technische Anforderungen (GAS-Erfahrung, Motion Matching, Melee-Combat). Finn hat erste Kontakte bei LinkedIn recherchiert. Darius erzählt von einem Ex-Kollegen bei Blue Byte, der jetzt freelanced. Nebenbei: Lena will immer noch einen Hamster.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "tobi": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            },
+            "darius": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "finn": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Tobi, wie spezialisiert muss der Gameplay-Programmer sein?"
+            },
+            {
+              "who": "tobi",
+              "says": "GAS-Erfahrung ist Pflicht. Motion Matching wäre Bonus. Melee-Combat-Systeme gebaut zu haben wäre ideal, aber die sind selten und teuer."
+            },
+            {
+              "who": "darius",
+              "says": "Ich kenne jemanden von Blue Byte. Hat nach mir aufgehört, freelanced jetzt. Hatte Kampfsysteme für das Settlers-Projekt gebaut."
+            },
+            {
+              "who": "finn",
+              "says": "Schick mir den Kontakt. Ich schreibe heute Abend noch."
+            },
+            {
+              "who": "darius",
+              "says": "Lena hat mich übrigens gefragt, ob man im Spiel Hamster haben kann. Ich habe gesagt, wir haben Tiervolk."
+            },
+            {
+              "who": "tobi",
+              "says": "Tiervolk-Hamster. Das wäre... nein."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 5,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "alle-arbeitsplaetze",
+          "location_label": "Alle Arbeitsplaetze",
+          "participants": [
+            "emre",
+            "darius",
+            "nami",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Nachmittags-Produktion. Nami schreibt GDD-03 Erzählkonzept V1 (Drei-Akt-Struktur mit 10 Beats, 9 Quest-Deliverables, Dialogsystem mit 4 Fraktionsregistern, Schattenfieber-Narrativ). Darius finalisiert GDD-02 Kernmechaniken V1. Leo liest alle Dokumente quer und fügt QA-Kommentare ein. Emre beginnt mit WBB-01 Kapitel 5-8 Ausbau. Vera integriert Emres Terminologie in GDD-05. Tobi ergänzt GDD-06 mit Schattenfieber-Tech-Details. Finn koordiniert Peer-Reviews.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [
+            "gallery/gdd/03-erzaehlkonzept.md (V1)",
+            "gallery/gdd/02-kernmechaniken.md (V1)"
+          ],
+          "dialogue": [],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 6,
+          "type": "REVIEW",
+          "type_label": "Review",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
+          ],
+          "summary": "Tagesabschluss Tag 3 — erster Produktionstag. Sechs V1-Dokumente fertig: WBB-01 Mythos (Emre), GDD-01 Spieluebersicht (Darius), GDD-02 Kernmechaniken (Darius), GDD-03 Erzaehlkonzept (Nami), GDD-05 Designsprache (Vera), GDD-06 Technik (Tobi). Leo hat Spielerperspektiv-Bericht finalisiert und QA-Kommentare in alle Dokumente eingetragen. Peer-Reviews nachmittags gelaufen. CD-Feedback extrem positiv: Kohaerenz zwischen Dokumenten beeindruckend, Namenssystem durchgaengig, Fraktionen konsistent visuell und narrativ differenziert, Schattenfieber mechanisch, narrativ und visuell durchdekliniert. Ausblick naechste Woche: V2 aller Dokumente plus GDD-04 Schluesselfiguren, WBB-02 Topos, WBB-03 Ethos. Team geht mit gutem Gefuehl in den Feierabend.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "leo": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [
+            "gallery/gdd/02-kernmechaniken.md (V1)",
+            "gallery/gdd/03-erzaehlkonzept.md (V1)"
+          ],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "So. Sechzehn Uhr. Letztes Review fuer heute. Ich fass zusammen, dann CD-Feedback, dann Feierabend. Emre?"
+            },
+            {
+              "who": "emre",
+              "says": "WBB-01 Mythos V1 steht seit heute Vormittag. Nachmittags hab ich Namis Rueckfragen beantwortet und zwei Stellen praezisiert — die Beziehung zwischen Galt und der Flechtung, und wie die Hauten in die Fraktionsstruktur reinpassen."
+            },
+            {
+              "who": "nami",
+              "says": "GDD-03 Erzaehlkonzept V1 ist fertig. Drei-Akt-Struktur, Quest-Architektur mit Haupt- und Nebenquests, Dialogsystem mit Konsequenz-Tracking. Emres Namenssystem hab ich durchgehend uebernommen. Die Schattenfieber-Endpfade sind als eigener Abschnitt drin."
+            },
+            {
+              "who": "darius",
+              "says": "GDD-02 Kernmechaniken V1 finalisiert. Combat-System, Schattenfieber-Mechanik mit fuenf Infektionsstufen, Nervensystem-Leveling, Crafting. Leos QA-Kommentare zur Irreversibilitaets-Kommunikation hab ich direkt eingebaut."
+            },
+            {
+              "who": "leo",
+              "says": "Spielerperspektiv-Bericht ist final. Und ich hab QA-Kommentare in allen sechs Dokumenten hinterlassen. Haupterkenntnis: die Dokumente sind ueberraschend konsistent. Das Namenssystem zieht sich durch, die Fraktionslogik stimmt ueberall. Zwei kleine Inkonsistenzen hab ich markiert — nichts Dramatisches."
+            },
+            {
+              "who": "vera",
+              "says": "Ich hab nachmittags Namis GDD-03 gegengelesen und geschaut, ob die visuellen Referenzen aus meiner Designsprache dort ankommen. Tun sie. Die Fraktionsfarben stimmen ueberein."
+            },
+            {
+              "who": "tobi",
+              "says": "Hab Darius' GDD-02 technisch gegengelesen. Die fuenf Infektionsstufen sind mit dem Shader-System machbar, das ich in GDD-06 beschrieben hab. Performance-Budget passt. Ein offener Punkt: Partikelsystem fuer Stufe vier und fuenf — das muss ich naechste Woche detaillieren."
+            },
+            {
+              "who": "finn",
+              "says": "Danke. Sechs V1-Dokumente an einem Tag. Ich bin ehrlich beeindruckt. Jetzt das CD-Feedback."
+            },
+            {
+              "who": "finn",
+              "says": "Die CD sagt: Drei Tage, und wir haben WBB-01 Mythos, GDD-01 Spieluebersicht, GDD-02 Kernmechaniken, GDD-03 Erzaehlkonzept, GDD-05 Designsprache und GDD-06 Technik — alles V1. Mehr als erwartet. Die Kohaerenz ist beeindruckend. Das eigene Namenssystem zieht sich durch, die Fraktionen sind konsistent visuell und narrativ differenziert, das Schattenfieber ist mechanisch, narrativ und visuell durchdekliniert."
+            },
+            {
+              "who": "finn",
+              "says": "Naechste Woche: V2 aller Dokumente plus GDD-04 Schluesselfiguren, WBB-02 Topos und WBB-03 Ethos. Und jetzt der wichtigste Satz: Geniesst den Feierabend."
+            },
+            {
+              "who": "emre",
+              "says": "Das lass ich mir nicht zweimal sagen."
+            },
+            {
+              "who": "nami",
+              "says": "Hat Spass gemacht heute. Zum ersten Mal fuehlt sich das an wie ein richtiges Spiel und nicht nur wie eine Ideensammlung."
+            },
+            {
+              "who": "darius",
+              "says": "Ja. Ab heute existiert RELICS auf Papier."
+            },
+            {
+              "who": "vera",
+              "says": "Und es sieht verdammt gut aus."
+            },
+            {
+              "who": "finn",
+              "says": "Schoenen Abend, Leute. Morgen ist Donnerstag — Peer-Reviews und D&D. Bis dann."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Drei Tage, und wir haben: WBB-01 Mythos V1, GDD-01 Spieluebersicht V1, GDD-02 Kernmechaniken V1, GDD-03 Erzaehlkonzept V1, GDD-05 Designsprache V1, GDD-06 Technik V1. Das ist mehr als ich erwartet habe. Die Kohaerenz zwischen den Dokumenten ist beeindruckend — das eigene Namenssystem zieht sich durch, die Fraktionen sind konsistent visuell und narrativ differenziert, das Schattenfieber ist mechanisch, narrativ und visuell durchdekliniert. Naechste Woche: V2 aller Dokumente + GDD-04 Schluesselfiguren + WBB-02 Topos + WBB-03 Ethos. Geniesst den Feierabend."
+        }
+      ],
+      "summary": {
+        "day": 3,
+        "weekday": "Mittwoch",
+        "phase": "Produktion V1",
+        "title": "Erster Produktionstag — Sechs V1-Dokumente",
+        "summary": "Erster Produktionstag. Sechs vollstaendige V1-Dokumente entstehen an einem Tag: WBB-01 Mythos (Emre), GDD-01 Spieluebersicht (Darius), GDD-02 Kernmechaniken (Darius), GDD-03 Erzaehlkonzept (Nami), GDD-05 Designsprache (Vera), GDD-06 Technik & Produktion (Tobi+Finn). Cross-Referenzen funktionieren: Emres Namenssystem zieht sich durch alle Dokumente. Leo schreibt QA-Kommentare in alle Dokumente. CD extrem positiv ueber Kohaerenz.",
+        "cd_decisions": [],
+        "artifacts_produced": [
+          "gallery/wbb/01-mythos.md",
+          "gallery/gdd/01-spieluebersicht.md",
+          "gallery/gdd/02-kernmechaniken.md",
+          "gallery/gdd/03-erzaehlkonzept.md",
+          "gallery/gdd/05-designsprache.md",
+          "gallery/gdd/06-technik-produktion.md"
+        ],
+        "key_moments": [
+          "Sechs V1-Dokumente an einem Tag — Rekord",
+          "Namenssystem durchgaengig konsistent ueber alle Dokumente",
+          "Finn kontaktiert Blue-Byte-Freelancer"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "scenes": [
+        {
+          "scene": 1,
+          "type": "BRIEFING",
+          "type_label": "Briefing",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "vera",
+            "nami",
+            "leo",
+            "tobi"
+          ],
+          "summary": "Tag 4 Briefing. Finn moderiert. Peer-Reviews haben heute Prioritaet — jeder liest mindestens ein fremdes V1-Dokument und gibt konkretes Feedback. Danach V2-Ueberarbeitungen. Neue Dokumente: Nami startet GDD-04 Schluesselfiguren, Emre beginnt WBB-02 Topos. Finn hat den Blue-Byte-Freelancer-Kontakt angeschrieben. Heute Abend D&D (Emre ist DM). Emre reviewt Namis GDD-03, Nami reviewt Darius' GDD-02. Leo bietet sich als Anlaufstelle an — hat gestern schon alle Dokumente quergelesen.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "leo": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. Kaffee steht, bedient euch. Kurzer Rueckblick: Gestern war ein verdammt guter Tag. Sechs V1-Dokumente. Die CD war ausdruecklich positiv, vor allem ueber die Kohaerenz. Das liegt an euch. Heute: Peer-Reviews haben Prioritaet. Jeder liest mindestens ein fremdes Dokument und gibt konkretes Feedback — nicht 'sieht gut aus', sondern wo hakt's, wo widerspricht sich was. Bis zum Standup um halb zwoelf. Neue Dokumente: Nami faengt GDD-04 Schluesselfiguren an, Emre startet WBB-02 Topos — aber Reviews vor neuen Dokumenten. Ach ja: Ich hab gestern Abend den Blue-Byte-Kontakt angeschrieben. Und heute ist Donnerstag — D&D heute Abend. Emre, bereite dich vor, aber nicht auf Kosten der Reviews. Fragen?"
+            },
+            {
+              "who": "emre",
+              "says": "Ich nehm mir Namis GDD-03 vor. Das Erzaehlkonzept arbeitet mit meiner Terminologie aus dem Mythos, da muss ich pruefen ob alles sauber sitzt. Topos fang ich danach an, das braucht sowieso die Review-Ergebnisse als Grundlage. Und fuer D&D reicht mir die Mittagspause, das laeuft."
+            },
+            {
+              "who": "nami",
+              "says": "Ich nehm mir Darius' GDD-02 als erstes vor. Die Schattenfieber-Mechanik muss narrativ sitzen, bevor ich mit den Schluesselfiguren anfange — sonst schreib ich Figuren, die in einem System leben, das ich nicht verstanden hab. Emre, ich brauch spaeter deine mythologischen Figuren als Grundlage fuer GDD-04, koenntest du mir den aktuellen Stand schicken?"
+            },
+            {
+              "who": "leo",
+              "says": "Ich hab gestern schon alle sechs Dokumente durchgelesen und QA-Kommentare reingeschrieben — bin also quasi schon durch mit der ersten Review-Runde. Wenn jemand unsicher ist, wo er anfangen soll oder welche Stellen sich widersprechen: kommt zu mir, ich kann euch die zwei, drei kritischen Stellen direkt zeigen. Spart uns Zeit fuer die V2."
+            },
+            {
+              "who": "finn",
+              "says": "Perfekt. Dann los."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Peer-Reviews haben heute Prioritaet. Jeder liest mindestens ein fremdes Dokument. Danach V2-Ueberarbeitungen. Nami startet GDD-04 Schluesselfiguren, Emre beginnt WBB-02 Topos. Reviews vor neuen Dokumenten."
+        },
+        {
+          "scene": 2,
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "alle-stationen",
+          "location_label": "Alle Stationen",
+          "participants": [
+            "emre",
+            "nami",
+            "darius",
+            "vera",
+            "tobi",
+            "leo",
+            "finn"
+          ],
+          "summary": "Peer-Review-Session. Alle 7 Agenten lesen mindestens ein fremdes V1-Dokument und geben substanzielles Feedback. Emre reviewt Namis GDD-03 (Terminologie einwandfrei, Ungefuege fehlt, Flechtfest kanonisieren, Schattenfieber-Mapping expliziter). Nami reviewt Darius' GDD-02 (Nervensystem-Leveling narrativ leer, Schwellenwerte divergieren 70 vs 81, Kontrollverlust vs Perspektivwechsel). Darius reviewt Veras GDD-05 (Stufen-Alignment-Problem, Stufe-0-Baseline fehlt, Gameplay-Orte fehlen). Vera reviewt Tobis GDD-06 (Farbpaletten-Widerspruch, Modulanzahl zu niedrig, Vertex-Animation vs Emissive). Tobi reviewt Emres WBB-01 (Drei-Schichten-Rendering noetig, Hauten-Shader, zwei Schattenfieber-Farbprofile). Leo liefert Cross-Document-Konsistenz-Report (Ymir-Material statt Emer-Material in GDD-02, Schattenfieber-Stufengrenzen divergieren: 70/76/81). Finn reviewt Darius' GDD-01 (Scope-Realitaetscheck, Zielgruppen-Diskrepanz 22-35 vs 25-40, Kamera-Prioritaet unklar).",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "active"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "active"
+            }
+          },
+          "active_room": null,
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "leo",
+              "says": "Leute, ich hab den Cross-Doc-Report fertig. Zwei echte Inkonsistenzen: Erstens, Darius hat noch 'Ymir-Material' statt 'Emer-Material' in GDD-02 stehen — einfacher Suchen-Ersetzen. Zweitens, und das ist das Groessere: Die Schattenfieber-Stufengrenzen divergieren. Tobi startet Halluzinationen bei Wert 70, Darius hat Stufe 4 ab 76, Nami hat Schwelle erst ab 81. Bei Wert 75 erlebt ein Spieler gleichzeitig Halluzinationen, ist mechanisch noch Stufe 3, und narrativ noch in den Rissen. Das muss heute geklaert werden."
+            },
+            {
+              "who": "nami",
+              "says": "Das deckt sich mit meinem Review von Darius' GDD-02. Die Schwellenwerte sind der kritischste Punkt. Ich schlage vor: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Eine Tabelle, die in allen Dokumenten identisch steht."
+            },
+            {
+              "who": "emre",
+              "says": "Namis GDD-03 ist lore-konsistent. Kein Widerspruch zu WBB-01, das passiert selten. Aber der Ungefuege fehlt komplett — das ist unsere Loki-Referenz, der Katalysator. Muss in V2 als mythologischer Schatten in die Hauptquest."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        },
+        {
+          "scene": 3,
+          "type": "MEETING",
+          "type_label": "Meeting",
+          "time_of_day": "morning",
+          "time_label": "Morgen",
+          "location": "kueche",
+          "location_label": "Kueche",
+          "participants": [
+            "finn",
+            "darius",
+            "emre",
+            "vera",
+            "nami",
+            "leo",
+            "tobi"
+          ],
+          "summary": "Standup nach Peer-Review-Session. Finn kommuniziert CD-Entscheidung: Schattenfieber-Stufengrenzen verbindlich vereinheitlicht auf Rauschen 1-40, Risse 41-75, Schwelle 76-100, Halluzinations-Start bei 76. Leos Cross-Doc-Report hat das Problem sauber identifiziert. Darius akzeptiert Schwellenwerte und fixxt Ymir→Emer Terminologie. Nachmittags-Auftraege: Alle starten V2-Ueberarbeitungen mit integrierten Peer-Review-Ergebnissen.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 36,
+              "y": 2,
+              "state": "active"
+            },
+            "vera": {
+              "x": 42,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 41,
+              "y": 6,
+              "state": "active"
+            },
+            "darius": {
+              "x": 39,
+              "y": 2,
+              "state": "active"
+            },
+            "nami": {
+              "x": 37,
+              "y": 6,
+              "state": "active"
+            },
+            "leo": {
+              "x": 39,
+              "y": 6,
+              "state": "active"
+            },
+            "finn": {
+              "x": 37,
+              "y": 2,
+              "state": "active"
+            }
+          },
+          "active_room": "kitchen",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "finn",
+              "says": "Moin. CD-Entscheidung, gilt fuer alle Dokumente ohne Ausnahme: Rauschen 1 bis 40, Risse 41 bis 75, Schwelle 76 bis 100, Halluzinationen starten bei 76. Wer andere Werte hat, aendert das in der V2. Darius — Ymir wird Emer, Nervensystem braucht narrativen Unterbau. Nami — Ungefuege fehlt, Flechtfest kanonisieren. Vera — Stufe-0-Baseline. Tobi — Hex-Codes uebernehmen, Module auf 60, Drei-Schichten-Rendering dokumentieren. Emre — zwei Farbprofile. Leo macht morgen frueh den zweiten Konsistenz-Check."
+            },
+            {
+              "who": "darius",
+              "says": "Schwellenwerte nehme ich so. Eine Tabelle fuer alle, fertig. Zum Ymir-Ding: peinlich, meine eigene Regel nicht durchgezogen. Suchen-Ersetzen in der V2. Nervensystem-Aeste narrativ einbetten — Nami, dein Punkt ist berechtigt. Kontrollverlust wird narrativ, nicht mechanisch."
+            },
+            {
+              "who": "leo",
+              "says": "Rauschen 1-40, Risse 41-75, Schwelle 76-100 — genau mein Vorschlag. Zweite Inkonsistenz geloest, erste ist ein Dreizeiler-Fix. Nachmittags pruefe ich alle V2-Dokumente gegen die neue Stufentabelle."
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": "Schattenfieber-Stufengrenzen verbindlich: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Halluzinations-Start = 76. Gilt fuer alle Dokumente."
+        },
+        {
+          "scene": 4,
+          "type": "PAUSE",
+          "type_label": "Pause",
+          "time_of_day": "afternoon",
+          "time_label": "Nachmittag",
+          "location": "lore-ecke",
+          "location_label": "Lore Ecke",
+          "participants": [
+            "emre",
+            "nami"
+          ],
+          "summary": "Mittagspause. Emre und Nami in der Lore-Ecke. Emre lobt Namis GDD-03 (null Widersprueche) und spricht den fehlenden Ungefuegen an — die Loki-Referenz als zweite Schicht des Wanderer-Motivs. Nami: Der Ungefuege darf kein NPC werden, sondern muss eine Frage sein wie Planescapes 'What can change the nature of a man?' Flechtfest kommt ins WBB — Nami freut sich. Beide freuen sich auf D&D heute Abend, Sable hat noch eine Rechnung offen.",
+          "key_moment": null,
+          "positions": {
+            "emre": {
+              "x": 4,
+              "y": 3,
+              "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "dimmed"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "nami": {
+              "x": 4,
+              "y": 5,
+              "state": "active"
+            },
+            "leo": {
+              "x": 20,
+              "y": 16,
+              "state": "dimmed"
+            },
+            "finn": {
+              "x": 8,
+              "y": 23,
+              "state": "dimmed"
+            }
+          },
+          "active_room": "7a",
+          "artifacts": [],
+          "dialogue": [
+            {
+              "who": "emre",
+              "says": "Dein Erzaehlkonzept hat null Widersprueche. Das muss ich laut sagen. Eine Sache: Der Ungefuege fehlt. Dein Wanderer wird als moeglicher Halvard gelesen. Aber was, wenn die Welt ihn auch als Ungefuegen fuerchtet? Den, der nicht passt. Das waere die zweite Schicht. Und apropos — heute Abend taucht in der Session ein NPC auf, der nirgendwo reinpasst."
+            },
+            {
+              "who": "nami",
+              "says": "Der Ungefuege darf kein NPC werden. Das waere zu billig. Er muss eine Frage sein, die in der Hauptquest mitlaeuft — ein Schatten hinter den Entscheidungen. Wie bei Planescape. Und danke wegen Flechtfest. Dass das ins WBB kommt, bedeutet mir was. Was hat Sable heute Abend vor?"
+            }
+          ],
+          "thoughts": [],
+          "mood": {},
+          "feedback": [],
+          "cd_feedback": null
+        }
+      ]
+    }
+  ]
+}

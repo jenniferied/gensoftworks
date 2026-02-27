@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """Build simulation.json for the Phaser logbook viewer.
 
-Reads logbook/*.jsonl + state/memories/*.jsonl → frontend/public/data/simulation.json
+Reads logbook data → frontend/public/data/simulation.json
 
-Supports both v1 (simulation 1) and v2 (simulation 2+) log schemas.
-Use --sim-dir to point at an archived simulation directory.
+Supports three logbook formats:
+  - v1 (simulation 1): day-NNN.jsonl files with agent_details
+  - v2 (simulation 2): day-NNN.jsonl files with mood dict
+  - v4 (simulation 2 test+): individual dayDD-sceneS.json files
+
+Use --sim-dir to point at a simulation directory.
 """
 
 import argparse
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -38,6 +43,11 @@ LOCATION_ROOM = {
     "küche":             "kitchen",
     "kueche":            "kitchen",
     "flur":              "hallway",
+    # v4 locations (sim-2-test)
+    "alle-stationen":    None,  # distributed, agents at desks
+    "game-design-corner": "7d",
+    "qa-ecke":           "7f",
+    "tech-ecke":         "7c",
 }
 
 # --- Logical seat/spot positions per shared room ---
@@ -129,7 +139,47 @@ TYPE_LABELS = {
     # v3 simplified types
     "TALK": "Gespraech",
     "REVIEW": "Review",
+    # v4 scene types (sim-2-test daily schedule)
+    "BRIEFING": "Briefing",
+    "PAUSE": "Pause",
+    "DND": "D&D",
 }
+
+
+def load_agent_memories_md(agents_dir):
+    """Parse agent memory markdown files into structured data.
+
+    Each file has sections like: ## Tag 1, Szene 2 (WORK)
+    Returns dict: {agent_key: [{day, scene, type, text}, ...]}
+    """
+    agent_mems = {}
+    if not agents_dir.exists():
+        return agent_mems
+
+    header_re = re.compile(r"^## Tag (\d+),\s*Szene (\d+)\s*\((\w+)\)")
+    for f in sorted(agents_dir.glob("*-memory.md")):
+        agent_key = f.stem.replace("-memory", "")
+        entries = []
+        current = None
+        for line in f.read_text().splitlines():
+            m = header_re.match(line)
+            if m:
+                if current:
+                    current["text"] = current["text"].strip()
+                    entries.append(current)
+                current = {
+                    "day": int(m.group(1)),
+                    "scene": int(m.group(2)),
+                    "type": m.group(3),
+                    "text": "",
+                }
+            elif current is not None:
+                current["text"] += line + "\n"
+        if current:
+            current["text"] = current["text"].strip()
+            entries.append(current)
+        agent_mems[agent_key] = entries
+    return agent_mems
 
 
 def detect_schema(entry):
@@ -324,46 +374,98 @@ def build_scene_v2(entry):
     return scene
 
 
+def load_logbook_v4(logbook_dir):
+    """Load individual dayDD-sceneS.json files (v4 format, sim-2-test+).
+
+    Returns list of (day_num, entry) tuples sorted by day+scene.
+    """
+    entries = []
+    pattern = re.compile(r"day(\d+)-scene(\d+)\.json$")
+    for f in sorted(logbook_dir.glob("day*-scene*.json")):
+        m = pattern.match(f.name)
+        if not m:
+            continue
+        day_num = int(m.group(1))
+        entry = json.loads(f.read_text())
+        entries.append((day_num, entry))
+    return entries
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build simulation.json for Phaser viewer")
     parser.add_argument("--sim-dir", type=str, default=None,
-                        help="Path to simulation archive dir (e.g. simulation-1)")
+                        help="Path to simulation directory (e.g. simulation-2-test)")
+    parser.add_argument("--out", type=str, default=None,
+                        help="Output file path override")
     args = parser.parse_args()
 
     if args.sim_dir:
         sim_root = ROOT / args.sim_dir
         logbook_dir = sim_root / "logbook"
         memories_dir = sim_root / "state" / "memories"
-        out_file = sim_root / "viewer-data" / "simulation.json"
+        agents_dir = sim_root / "agents"
+        out_file = Path(args.out) if args.out else sim_root / "viewer-data" / "simulation.json"
     else:
         logbook_dir = ROOT / "logbook"
         memories_dir = ROOT / "state" / "memories"
-        out_file = ROOT / "frontend" / "public" / "data" / "simulation.json"
+        agents_dir = ROOT / "agents"
+        out_file = Path(args.out) if args.out else ROOT / "frontend" / "public" / "data" / "simulation.json"
 
     all_memories = load_memories(memories_dir)
-    logbook_files = sorted(logbook_dir.glob("day-*.jsonl"))
 
-    if not logbook_files:
-        print("No logbook files found!", file=sys.stderr)
-        sys.exit(1)
+    # Try v4 format first (individual dayDD-sceneS.json files)
+    v4_entries = load_logbook_v4(logbook_dir)
 
-    days = []
-    for lf in logbook_files:
-        day_num = int(lf.stem.replace("day-", ""))
-        scenes = []
-        for line in lf.read_text().splitlines():
-            line = line.strip()
-            if not line:
-                continue
-            entry = json.loads(line)
-            schema = detect_schema(entry)
-            if schema in ("v2", "v3"):
+    if v4_entries:
+        # Group by day
+        days_dict = defaultdict(list)
+        for day_num, entry in v4_entries:
+            days_dict[day_num].append(entry)
+
+        days = []
+        for day_num in sorted(days_dict.keys()):
+            scenes = []
+            for entry in days_dict[day_num]:
+                # v4 entries use v2-compatible schema (dialogue, cd_feedback, etc.)
                 scenes.append(build_scene_v2(entry))
-            else:
-                scenes.append(build_scene_v1(entry, all_memories))
-        days.append({"day": day_num, "scenes": scenes})
+            days.append({"day": day_num, "scenes": scenes})
+    else:
+        # Fall back to JSONL format (v1/v2/v3)
+        logbook_files = sorted(logbook_dir.glob("day-*.jsonl"))
+
+        if not logbook_files:
+            print("No logbook files found!", file=sys.stderr)
+            sys.exit(1)
+
+        days = []
+        for lf in logbook_files:
+            day_num = int(lf.stem.replace("day-", ""))
+            scenes = []
+            for line in lf.read_text().splitlines():
+                line = line.strip()
+                if not line:
+                    continue
+                entry = json.loads(line)
+                schema = detect_schema(entry)
+                if schema in ("v2", "v3"):
+                    scenes.append(build_scene_v2(entry))
+                else:
+                    scenes.append(build_scene_v1(entry, all_memories))
+            days.append({"day": day_num, "scenes": scenes})
+
+    # Load day summaries if available
+    for day_entry in days:
+        day_num = day_entry["day"]
+        summary_file = logbook_dir / f"day{day_num:02d}-summary.json"
+        if summary_file.exists():
+            day_entry["summary"] = json.loads(summary_file.read_text())
+
+    # Load agent memory markdown files
+    agent_memories = load_agent_memories_md(agents_dir)
 
     data = {"days": days}
+    if agent_memories:
+        data["agent_memories"] = agent_memories
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2))

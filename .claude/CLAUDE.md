@@ -1,6 +1,11 @@
 # GenSoftworks
 
-Seven role-based AI agents produce a GDD and WBB for a dark fantasy CRPG (Park et al. 2023). Human user = Creative Director (CD).
+Seven role-based AI agents produce a GDD and WBB for a fantasy CRPG (Park et al. 2023). Human user = Creative Director (CD).
+
+## Models
+
+- **Game Master (GM)**: Opus 4.6 — orchestrates scenes, writes logbook, updates memories
+- **Agents**: Sonnet 4.6 — all seven role agents use `model: "sonnet"` in Task calls
 
 ## Daily Schedule (6 scenes)
 
@@ -19,34 +24,36 @@ Seven role-based AI agents produce a GDD and WBB for a dark fantasy CRPG (Park e
 
 1. Read `world.json` → determine day + scene number
 2. Read memory files for participating agents
-3. Spawn agents with: scene type, participants, context from memory
-4. After scene: append summary to each participant's memory (from their perspective)
-5. Write logbook entry → `simulation-2/logbook/dayDD-sceneS.json`
+3. Spawn agents with `model: "sonnet"`, scene type, participants, context from memory
+4. After scene: append memory to **each participant** (from their perspective). Every scene type gets a memory — including PAUSE. Cover both **work** (decisions, artifacts, tasks) and **interpersonal** (who said what, mood, small talk, social dynamics, conflicts, bonding)
+5. Write logbook entry → `logbook/dayDD-sceneS.json`
 6. Update `world.json` (increment scene; after scene 6: increment day, reset scene to 0)
+7. **After scene 6**: Write `logbook/dayDD-summary.json` (day overview for PDF/Phaser)
+
+## Traces (mandatory per agent)
+
+`traces/dayDD-sceneS-name/` — numbered files: `0-prompt.md`, `1-reasoning.md`, `2-output.md`. Meetings: `dayDD-sceneS-type/`. All raw, 1:1, no summarization.
+
+## Conversation Scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND)
+
+Sequential turn-taking. NOT everyone speaks — Finn opens, 2-3 agents respond. Each agent spawned separately.
 
 ## Artifacts & Naming
 
-**GDD** (`gallery/gdd/KK-titel.md`) — Schell (2010): 01-spieluebersicht (Darius), 02-kernmechaniken (Darius+Leo), 03-erzaehlkonzept (Nami+Darius), 04-schluesselfiguren (Nami), 05-designsprache (Vera), 06-technik-produktion (Tobi+Finn)
+**GDD** (`gallery/gdd/KK-titel.md`): 01-spieluebersicht, 02-kernmechaniken, 03-erzaehlkonzept, 04-schluesselfiguren, 05-designsprache, 06-technik-produktion
 
-**WBB** (`gallery/wbb/KK-titel.md`) — Klastrup/Tosca (2004): 01-mythos (Emre), 02-topos (Emre), 03-ethos (Emre+Nami). Wolf (2013) checklist → `briefing.md`
+**WBB** (`gallery/wbb/KK-titel.md`): 01-mythos, 02-topos, 03-ethos
 
-## Memory & Logbook
+## Outputs (after each day)
 
-**Memory**: `simulation-2/agents/{name}-memory.md` — GM appends after each scene from agent's perspective. Agents can also read `library/`, `gallery/`, other agents' artifacts.
-
-**Traces**: `simulation-2/traces/dayDD-sceneS-name/` — each agent writes `prompt.md`, `reasoning.md`, `output.md` (all raw, 1:1, no summarization). Meetings: `dayDD-sceneS-type/`.
-
-**Logbook**: `simulation-2/logbook/dayDD-sceneS.json` (e.g. `day01-scene3.json`)
-```json
-{"scene":1,"type":"BRIEFING|WORK|MEETING|PAUSE|REVIEW|DND",
- "time":"morning|afternoon","location":"kueche|lore-ecke|art-station|...",
- "participants":["vera","emre"],"summary":"...","dialogue":[{"who":"vera","says":"..."}],
- "artifacts":[],"cd_feedback":null}
-```
+- **Day summary**: `logbook/dayDD-summary.json` — phase, title, summary, cd_decisions, artifacts, key_moments
+- **Logbook PDF**: `Meier_KIComputerRollenspiele_Sim2Test_Logbuch_2026.pdf` (via `scripts/export-logbook.py`)
+- **Phaser viewer**: `scripts/build-viewer-data.py --sim-dir simulation-2-test` → `viewer-data/simulation.json`
 
 ## Guardrails
 
 - **German content, English code** — agents speak German in-sim
 - **Never invent citations** — if unsure, say so
-- **Log everything** — every scene → logbook
+- **Log everything** — every scene → logbook, every agent → traces
 - **Briefing is the north star** — all artifacts align with `briefing.md`
+- **Images: NEVER with text** — all concept art text-free

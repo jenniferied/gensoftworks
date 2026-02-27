@@ -53,6 +53,10 @@ SCENE_LABELS = {
     "DELIVERY": "Lieferung",
     "RETROSPECTIVE": "Retrospektive",
     "SOCIAL": "Sozial",
+    # v4 scene types (sim-2-test daily schedule)
+    "BRIEFING": "Briefing",
+    "PAUSE": "Pause",
+    "DND": "D\\&D",
 }
 
 TIME_LABELS = {
@@ -135,28 +139,56 @@ def load_all_memories(memories_dir) -> dict[str, dict]:
 
 
 def load_logbook_day(logbook_dir, day: int) -> list[dict]:
-    """Load all scenes for a given day."""
+    """Load all scenes for a given day.
+
+    Supports both JSONL format (day-NNN.jsonl) and individual JSON files
+    (dayDD-sceneS.json) used by sim-2-test+.
+    """
+    # Try JSONL first
     path = logbook_dir / f"day-{day:03d}.jsonl"
-    if not path.exists():
-        return []
-    scenes = []
-    for line in path.read_text().strip().splitlines():
-        if not line.strip():
-            continue
-        scenes.append(json.loads(line))
-    return scenes
+    if path.exists():
+        scenes = []
+        for line in path.read_text().strip().splitlines():
+            if not line.strip():
+                continue
+            scenes.append(json.loads(line))
+        return scenes
+
+    # Try individual JSON files (v4 format)
+    import re
+    pattern = re.compile(rf"day{day:02d}-scene(\d+)\.json$")
+    scene_files = []
+    for f in sorted(logbook_dir.glob(f"day{day:02d}-scene*.json")):
+        m = pattern.match(f.name)
+        if m:
+            scene_files.append((int(m.group(1)), f))
+    if scene_files:
+        return [json.loads(f.read_text()) for _, f in sorted(scene_files)]
+
+    return []
 
 
 def get_available_days(logbook_dir) -> list[int]:
-    """Find all day numbers that have logbook files."""
-    days = []
+    """Find all day numbers that have logbook files.
+
+    Supports both JSONL (day-NNN.jsonl) and individual JSON (dayDD-sceneS.json).
+    """
+    import re
+    days = set()
+    # JSONL format
     for path in sorted(logbook_dir.glob("day-*.jsonl")):
         try:
             num = int(path.stem.split("-")[1])
-            days.append(num)
+            days.add(num)
         except (IndexError, ValueError):
             continue
-    return days
+    # v4 individual JSON format
+    pattern = re.compile(r"day(\d+)-scene\d+\.json$")
+    for path in sorted(logbook_dir.glob("day*-scene*.json")):
+        m = pattern.match(path.name)
+        if m:
+            days.add(int(m.group(1)))
+    return sorted(days)
 
 
 def agent_name(agent_id: str) -> str:
