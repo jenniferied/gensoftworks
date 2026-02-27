@@ -170,6 +170,24 @@ def load_roster(roster_dir):
             meta[k.strip()] = v
         key = meta.get("sprite", f.stem.split("-")[0])
         age = meta.get("age", "")
+
+        # Parse markdown body into sections
+        body = text[end + 3:].strip()
+        sections = {}
+        current_heading = None
+        current_lines = []
+        for bline in body.splitlines():
+            if bline.startswith("## "):
+                if current_heading:
+                    sections[current_heading] = "\n".join(current_lines).strip()
+                current_heading = bline[3:].strip()
+                current_lines = []
+            elif current_heading is not None:
+                current_lines.append(bline)
+            # skip lines before first ## (the # Name heading)
+        if current_heading:
+            sections[current_heading] = "\n".join(current_lines).strip()
+
         roster[key] = {
             "name": meta.get("name", ""),
             "role": meta.get("role", ""),
@@ -178,6 +196,9 @@ def load_roster(roster_dir):
             "workspace": meta.get("workspace", ""),
             "background": meta.get("background", ""),
             "color": meta.get("color", ""),
+            "address": meta.get("address", ""),
+            "commute": meta.get("commute", ""),
+            "sections": sections,
         }
     return roster
 

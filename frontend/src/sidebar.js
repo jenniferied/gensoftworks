@@ -430,6 +430,38 @@ function renderAgentCards(scene) {
   agentList.innerHTML = html;
 }
 
+/** Lightweight markdown → HTML for profile sections. */
+function renderMarkdownLight(md) {
+  const lines = md.split('\n');
+  let html = '';
+  let inList = false;
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) {
+      if (inList) { html += '</ul>'; inList = false; }
+      continue;
+    }
+    // List items
+    if (trimmed.startsWith('- ')) {
+      if (!inList) { html += '<ul style="margin:2px 0 2px 14px;padding:0;list-style:disc;">'; inList = true; }
+      html += `<li>${inlineFormat(trimmed.slice(2))}</li>`;
+      continue;
+    }
+    if (inList) { html += '</ul>'; inList = false; }
+    // Paragraph
+    html += `<p>${inlineFormat(trimmed)}</p>`;
+  }
+  if (inList) html += '</ul>';
+  return html;
+}
+
+function inlineFormat(text) {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/_(.+?)_/g, '<em>$1</em>');
+}
+
 function openAgentProfile(agentKey) {
   const meta = AGENT_META[agentKey];
   if (!meta) return;
@@ -470,15 +502,21 @@ function openAgentProfile(agentKey) {
   // --- Profile section (below, closed by default) ---
   const roster = simData?.roster?.[agentKey];
   html += `<button class="section-toggle" data-target="bio-list">`;
-  html += `<span class="arrow">\u25B6</span> Profil`;
+  html += `<span class="arrow">\u25B6</span> Steckbrief`;
   html += `</button>`;
   html += '<div class="section-body" id="bio-list" style="display: none;">';
   if (roster) {
+    // Color dot + basic info
+    if (roster.color) {
+      html += `<div class="bio-row"><span class="profile-color-dot" style="background:${roster.color}"></span><span class="bio-value">${roster.name}</span></div>`;
+    }
     const rows = [
       ['Alter', roster.age],
       ['Pronouns', roster.pronouns],
       ['Arbeitsplatz', roster.workspace],
       ['Hintergrund', roster.background],
+      ['Adresse', roster.address],
+      ['Arbeitsweg', roster.commute],
     ];
     for (const [label, value] of rows) {
       if (value) {
@@ -489,6 +527,32 @@ function openAgentProfile(agentKey) {
     html += '<div class="memory-empty">Kein Profil verfügbar.</div>';
   }
   html += '</div>';
+
+  // --- Rich profile sections from roster markdown ---
+  if (roster?.sections) {
+    const sectionIcons = {
+      'Identität': '\u2726',
+      'Herkunft & Bildung': '\uD83C\uDF93',
+      'Persönlichkeit': '\u2665',
+      'Lieblingsspiele': '\uD83C\uDFAE',
+      'Privatleben': '\uD83C\uDFE0',
+      'D&D': '\uD83C\uDFB2',
+      'Arbeitsstil': '\u23F0',
+      'Werkzeuge': '\uD83D\uDEE0',
+      'Schlüsselbeziehungen': '\uD83E\uDD1D',
+    };
+    let secIdx = 0;
+    for (const [title, content] of Object.entries(roster.sections)) {
+      const icon = sectionIcons[title] || '\u25CB';
+      const secId = `profile-sec-${secIdx++}`;
+      html += `<button class="section-toggle" data-target="${secId}">`;
+      html += `<span class="arrow">\u25B6</span> ${icon} ${title}`;
+      html += `</button>`;
+      html += `<div class="section-body" id="${secId}" style="display: none;">`;
+      html += `<div class="profile-section-content">${renderMarkdownLight(content)}</div>`;
+      html += `</div>`;
+    }
+  }
 
   memSection.innerHTML = html;
 
