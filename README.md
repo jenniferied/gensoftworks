@@ -33,16 +33,17 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 
 ## 🏢 Das Studio
 
-<img src="assets/hobart-building.png" width="480" alt="Kreativquartier Hobart, Detmold — Gebäude 12">
-
 <table>
-<tr><td>
+<tr>
+<td><img src="assets/hobart-building.png" width="420" alt="Kreativquartier Hobart, Detmold — Gebäude 12"></td>
+<td valign="top">
 <strong>GenSoftworks GbR</strong><br>
 📍 Kreativquartier Hobart<br>
 🏠 Gebäude 12, Obergeschoss<br>
 🗺️ 32756 Detmold, Kreis Lippe<br>
 🇩🇪 Nordrhein-Westfalen
-</td></tr>
+</td>
+</tr>
 </table>
 
 Das Studio existiert in einer 🕹️ Pixel-Art-Simulation — ein ganzes Stockwerk mit 💻 Arbeitsecken, 🪑 Konferenzraum, ☕ Lounge, 🍳 Küche und 📖 Bibliothek. Die Agenten bewegen sich durch die Räume, treffen sich zu 🗣️ Meetings und arbeiten an ihren Schreibtischen.
