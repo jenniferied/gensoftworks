@@ -149,7 +149,9 @@
         opacity: 0; transition: opacity 0.15s;
       }
       #agent-tooltip.visible { opacity: 1; }
-      #agent-tooltip .tt-name { font-size: 11px; font-weight: bold; color: #dde; }
+      #agent-tooltip .tt-name { font-size: 11px; font-weight: bold; color: #dde; display: flex; align-items: center; gap: 5px; }
+      #agent-tooltip .tt-gender { font-size: 12px; opacity: 0.7; }
+      #agent-tooltip .tt-flag { font-size: 11px; }
       #agent-tooltip .tt-role { font-size: 10px; color: #88aacc; }
 
       /* Agent profile modal */
@@ -169,17 +171,21 @@
         cursor: pointer; font-family: monospace;
       }
       #agent-profile .profile-close:hover { color: #aac8e8; }
-      #agent-profile .profile-header { margin-bottom: 12px; }
+      #agent-profile .profile-header { margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+      #agent-profile .profile-icons { font-size: 16px; line-height: 1; }
       #agent-profile .profile-name { font-size: 16px; font-weight: bold; color: #dde; }
       #agent-profile .profile-role { font-size: 12px; color: #88aacc; margin-top: 2px; }
       #agent-profile .profile-room { font-size: 11px; color: #556; margin-top: 2px; }
-      #agent-profile .memory-section { margin-top: 10px; }
-      #agent-profile .memory-toggle {
+      #agent-profile .section-toggle {
         background: #1a1a2e; border: 1px solid #333355; color: #88aacc;
-        font-family: monospace; font-size: 11px; padding: 4px 10px;
+        font-family: monospace; font-size: 11px; padding: 5px 10px;
         border-radius: 3px; cursor: pointer; width: 100%; text-align: left;
+        margin-bottom: 4px; display: flex; align-items: center; gap: 6px;
       }
-      #agent-profile .memory-toggle:hover { border-color: #556699; color: #aac8e8; }
+      #agent-profile .section-toggle:hover { border-color: #556699; color: #aac8e8; }
+      #agent-profile .section-toggle .arrow { font-size: 9px; transition: transform 0.15s; display: inline-block; }
+      #agent-profile .section-toggle .arrow.open { transform: rotate(90deg); }
+      #agent-profile .section-body { margin-bottom: 8px; }
       #agent-profile .memory-entry {
         font-size: 11px; color: #bbb; line-height: 1.5; padding: 8px 0;
         border-bottom: 1px solid #222233; word-wrap: break-word;
@@ -188,6 +194,9 @@
         font-size: 10px; color: #c8a86e; font-weight: bold; margin-bottom: 3px;
       }
       #agent-profile .memory-empty { font-size: 11px; color: #556; font-style: italic; }
+      #agent-profile .bio-row { font-size: 11px; color: #bbb; padding: 4px 0; border-bottom: 1px solid #222233; }
+      #agent-profile .bio-label { color: #556; margin-right: 6px; }
+      #agent-profile .bio-value { color: #aac8e8; }
 
       /* Audio bar */
       #audio-bar {
@@ -217,16 +226,19 @@
   </head>
   <body>
     <!-- Agent hover tooltip -->
-    <div id="agent-tooltip"><div class="tt-name"></div><div class="tt-role"></div></div>
+    <div id="agent-tooltip"><div class="tt-name"><span class="tt-gender"></span><span class="tt-label"></span><span class="tt-flag"></span></div><div class="tt-role"></div></div>
 
     <!-- Agent profile modal -->
     <div id="agent-profile-overlay">
       <div id="agent-profile">
         <button class="profile-close" id="profile-close">&times;</button>
         <div class="profile-header">
-          <div class="profile-name" id="profile-name"></div>
-          <div class="profile-role" id="profile-role"></div>
-          <div class="profile-room" id="profile-room"></div>
+          <span class="profile-icons" id="profile-icons"></span>
+          <div>
+            <div class="profile-name" id="profile-name"></div>
+            <div class="profile-role" id="profile-role"></div>
+            <div class="profile-room" id="profile-room"></div>
+          </div>
         </div>
         <div class="memory-section" id="profile-memory"></div>
       </div>

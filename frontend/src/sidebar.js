@@ -7,13 +7,13 @@
 const BASE = import.meta.env.BASE_URL;
 
 const AGENT_META = {
-  emre:   { name: 'Emre Kaya',       role: 'Worldbuilder',       room: 'Zimmer 7a' },
-  vera:   { name: 'Vera Morozova',    role: 'Concept Artist',     room: 'Zimmer 7b' },
-  tobi:   { name: 'Tobias Richter',   role: 'Tech Lead',          room: 'Zimmer 7c' },
-  darius: { name: 'Darius Varga',     role: 'Game Director',      room: 'Zimmer 7d' },
-  nami:   { name: 'Nami Osei',        role: 'Narrative Designer', room: 'Zimmer 7e' },
-  leo:    { name: 'Leo Ferretti',     role: 'Community Manager',  room: 'Zimmer 7f' },
-  finn:   { name: 'Finn Calloway',    role: 'Producer',           room: 'Zimmer 7 (CD-Büro)' },
+  emre:   { name: 'Emre Kaya',       role: 'Worldbuilder',       room: 'Zimmer 7a', gender: '\u2642', flag: '\uD83C\uDDF9\uD83C\uDDF7\uD83C\uDDE9\uD83C\uDDEA' },
+  vera:   { name: 'Vera Morozova',    role: 'Concept Artist',     room: 'Zimmer 7b', gender: '\u2640', flag: '\uD83C\uDDF5\uD83C\uDDF1\uD83C\uDDE9\uD83C\uDDEA' },
+  tobi:   { name: 'Tobias Richter',   role: 'Tech Lead',          room: 'Zimmer 7c', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  darius: { name: 'Darius Varga',     role: 'Game Director',      room: 'Zimmer 7d', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
+  nami:   { name: 'Nami Osei',        role: 'Narrative Designer', room: 'Zimmer 7e', gender: '\u2640', flag: '\uD83C\uDDF3\uD83C\uDDEC\uD83C\uDDE9\uD83C\uDDEA' },
+  leo:    { name: 'Leo Ferretti',     role: 'Community Manager',  room: 'Zimmer 7f', gender: '\u2640', flag: '\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEE\uD83C\uDDF7' },
+  finn:   { name: 'Finn Calloway',    role: 'Producer',           room: 'Zimmer 7 (CD-Büro)', gender: '\u2642', flag: '\uD83C\uDDE9\uD83C\uDDEA' },
 };
 
 let simData = null;
@@ -387,41 +387,78 @@ function openAgentProfile(agentKey) {
   const meta = AGENT_META[agentKey];
   if (!meta) return;
 
+  // Header with icons
   document.getElementById('profile-name').textContent = meta.name;
   document.getElementById('profile-role').textContent = meta.role;
   document.getElementById('profile-room').textContent = meta.room;
+  document.getElementById('profile-icons').textContent = `${meta.gender} ${meta.flag}`;
 
-  // Build time-filtered memory
   const memSection = document.getElementById('profile-memory');
+  let html = '';
+
+  // --- Memory section (top, open by default) ---
   const agentMems = simData?.agent_memories?.[agentKey] || [];
   const currentDay = simData.days[currentDayIdx]?.day || 1;
   const currentScene = simData.days[currentDayIdx]?.scenes[currentSceneIdx]?.scene || 1;
-
-  // Filter: only show memory entries up to current day/scene
   const filtered = agentMems.filter(m =>
     m.day < currentDay || (m.day === currentDay && m.scene <= currentScene)
   );
 
+  html += `<button class="section-toggle" data-target="mem-list">`;
+  html += `<span class="arrow open">\u25B6</span> Erinnerungen (${filtered.length})`;
+  html += `</button>`;
+  html += '<div class="section-body" id="mem-list">';
   if (filtered.length === 0) {
-    memSection.innerHTML = '<div class="memory-empty">Noch keine Erinnerungen bis zu dieser Szene.</div>';
+    html += '<div class="memory-empty">Noch keine Erinnerungen bis zu dieser Szene.</div>';
   } else {
-    // Show most recent first, each expandable
-    let html = `<button class="memory-toggle" id="mem-toggle">Erinnerungen (${filtered.length})</button>`;
-    html += '<div id="mem-list" style="display: block;">';
     for (const m of filtered.slice().reverse()) {
       html += '<div class="memory-entry">';
       html += `<div class="memory-entry-header">Tag ${m.day}, Szene ${m.scene} (${m.type})</div>`;
       html += `<div>${m.text}</div>`;
       html += '</div>';
     }
-    html += '</div>';
-    memSection.innerHTML = html;
-
-    document.getElementById('mem-toggle').addEventListener('click', () => {
-      const list = document.getElementById('mem-list');
-      list.style.display = list.style.display === 'none' ? 'block' : 'none';
-    });
   }
+  html += '</div>';
+
+  // --- Profile section (below, closed by default) ---
+  const roster = simData?.roster?.[agentKey];
+  html += `<button class="section-toggle" data-target="bio-list">`;
+  html += `<span class="arrow">\u25B6</span> Profil`;
+  html += `</button>`;
+  html += '<div class="section-body" id="bio-list" style="display: none;">';
+  if (roster) {
+    const rows = [
+      ['Alter', roster.age],
+      ['Pronouns', roster.pronouns],
+      ['Arbeitsplatz', roster.workspace],
+      ['Hintergrund', roster.background],
+    ];
+    for (const [label, value] of rows) {
+      if (value) {
+        html += `<div class="bio-row"><span class="bio-label">${label}:</span><span class="bio-value">${value}</span></div>`;
+      }
+    }
+  } else {
+    html += '<div class="memory-empty">Kein Profil verfügbar.</div>';
+  }
+  html += '</div>';
+
+  memSection.innerHTML = html;
+
+  // Wire up toggle buttons
+  memSection.querySelectorAll('.section-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = document.getElementById(btn.dataset.target);
+      const arrow = btn.querySelector('.arrow');
+      if (target.style.display === 'none') {
+        target.style.display = 'block';
+        arrow.classList.add('open');
+      } else {
+        target.style.display = 'none';
+        arrow.classList.remove('open');
+      }
+    });
+  });
 
   document.getElementById('agent-profile-overlay').classList.add('open');
 

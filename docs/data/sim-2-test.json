@@ -3875,5 +3875,70 @@
         "text": "GDD-05 V2: Stufe-0-Baseline als neuer Abschnitt 7.0 (kontrolliertes Biotech, ruhige Adern, reine Fraktionsarchitektur). Stufengrenzen auf 3er-Tabelle. Gameplay-Orte visuell definiert (Alchemie-Station, Trainer, Händler mit Fraktionsvarianten). Gemischte Sets: Dominanzprinzip + fraktionsspezifische Silhouetten-Elemente. Hex-Codes als verbindliche Produktionsreferenz bestätigt.\n\n## Tag 4, Szene 6 (D&D)\nD&D-Session. Toves — Emres NPC — hat sofort RELICS-Vibes ausgestrahlt. Fraktionslos, Adersaft-Biotech. Das ist visuell interessant: Wie sieht jemand aus, der keiner Fraktion gehört?"
       }
     ]
+  },
+  "roster": {
+    "darius": {
+      "name": "Darius Engel",
+      "role": "Game Director & Lead Designer",
+      "age": 35,
+      "pronouns": "he/him",
+      "workspace": "Game Design Corner (Zimmer 7d)",
+      "background": "deutsch, Arbeiterfamilie Ruhrgebiet",
+      "color": "#22C55E"
+    },
+    "emre": {
+      "name": "Emre Yilmaz",
+      "role": "Lead Worldbuilder & Lore Director",
+      "age": 31,
+      "pronouns": "he/him",
+      "workspace": "Lore-Ecke (Zimmer 7a)",
+      "background": "türkisch-deutsch, 3. Generation",
+      "color": "#3B82F6"
+    },
+    "finn": {
+      "name": "Finn Bergmann",
+      "role": "Producer & Project Manager",
+      "age": 30,
+      "pronouns": "he/him",
+      "workspace": "Produktionsbüro (Zimmer 7, geteilt mit Creative Director)",
+      "background": "deutsch, norddeutsch aus Hamburg",
+      "color": "#14B8A6"
+    },
+    "leo": {
+      "name": "Leonie \"Leo\" Fischer",
+      "role": "QA Lead, Community Manager & Content Creator",
+      "age": 26,
+      "pronouns": "she/her",
+      "workspace": "QA / Streaming Station (Zimmer 7f)",
+      "background": "deutsch-iranisch, Mutter aus Isfahan",
+      "color": "#F97316"
+    },
+    "nami": {
+      "name": "Nami Okafor",
+      "role": "Narrative Designer & Writer",
+      "age": 29,
+      "pronouns": "she/her",
+      "workspace": "Bibliothek (Zimmer 7e)",
+      "background": "nigerianisch-deutsch, doppelte Staatsbürgerschaft",
+      "color": "#EAB308"
+    },
+    "tobi": {
+      "name": "Tobias \"Tobi\" Richter",
+      "role": "Technical Artist & Virtual Production Specialist",
+      "age": 32,
+      "pronouns": "he/him",
+      "workspace": "Tech Corner (Zimmer 7c)",
+      "background": "deutsch, Mittelschicht, TH OWL Alumnus",
+      "color": "#EF4444"
+    },
+    "vera": {
+      "name": "Vera Kowalski",
+      "role": "Concept Artist & Environment Designer",
+      "age": 28,
+      "pronouns": "she/her",
+      "workspace": "Art Station (Zimmer 7b)",
+      "background": "polnisch-deutsch, Spätaussiedler-Familie",
+      "color": "#A855F7"
+    }
   }
 }

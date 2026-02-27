@@ -146,6 +146,42 @@ TYPE_LABELS = {
 }
 
 
+def load_roster(roster_dir):
+    """Parse YAML frontmatter from roster markdown files.
+
+    Simple key: value parser — no pyyaml dependency needed.
+    Returns dict: {agent_key: {name, role, age, pronouns, workspace, background, ...}}
+    """
+    roster = {}
+    if not roster_dir.exists():
+        return roster
+    for f in sorted(roster_dir.glob("*.md")):
+        text = f.read_text()
+        if not text.startswith("---"):
+            continue
+        end = text.index("---", 3)
+        block = text[3:end].strip()
+        meta = {}
+        for line in block.splitlines():
+            if ":" not in line:
+                continue
+            k, v = line.split(":", 1)
+            v = v.strip().strip('"').strip("'")
+            meta[k.strip()] = v
+        key = meta.get("sprite", f.stem.split("-")[0])
+        age = meta.get("age", "")
+        roster[key] = {
+            "name": meta.get("name", ""),
+            "role": meta.get("role", ""),
+            "age": int(age) if age.isdigit() else None,
+            "pronouns": meta.get("pronouns", ""),
+            "workspace": meta.get("workspace", ""),
+            "background": meta.get("background", ""),
+            "color": meta.get("color", ""),
+        }
+    return roster
+
+
 def load_agent_memories_md(agents_dir):
     """Parse agent memory markdown files into structured data.
 
@@ -404,11 +440,13 @@ def main():
         logbook_dir = sim_root / "logbook"
         memories_dir = sim_root / "state" / "memories"
         agents_dir = sim_root / "agents"
+        roster_dir = sim_root / "roster"
         out_file = Path(args.out) if args.out else sim_root / "viewer-data" / "simulation.json"
     else:
         logbook_dir = ROOT / "logbook"
         memories_dir = ROOT / "state" / "memories"
         agents_dir = ROOT / "agents"
+        roster_dir = ROOT / "roster"
         out_file = Path(args.out) if args.out else ROOT / "frontend" / "public" / "data" / "simulation.json"
 
     all_memories = load_memories(memories_dir)
@@ -463,9 +501,14 @@ def main():
     # Load agent memory markdown files
     agent_memories = load_agent_memories_md(agents_dir)
 
+    # Load roster profiles
+    roster = load_roster(roster_dir)
+
     data = {"days": days}
     if agent_memories:
         data["agent_memories"] = agent_memories
+    if roster:
+        data["roster"] = roster
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2))
