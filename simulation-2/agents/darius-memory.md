@@ -144,3 +144,29 @@
 - Ich: CD-Fragen bündeln (Mittwoch früh), dann GDD Kapitel 2 (Kernmechaniken) beginnen
 - GDD Kap. 1 v2: Stadtname "Schwarzrand" eintragen — noch offen
 - Leo-Sync Skill-by-Use: heute Abend noch oder Mittwoch früh
+
+---
+
+# Tag 3 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- CD-Entscheid steht: Relikt heißt "Schwellenanker" — alle Dokumente umbenennen
+- CD: Spieler darf Fragment ablehnen — Namis Terrain, Nami hat Halbseite versprochen (war fällig Di 10:00 → liegt hoffentlich vor)
+- CD: Bilder müssen inline in GDD + WBB eingebettet werden — kein separater Anhang
+- Gilden-Palette: Vera macht neue Iteration (zu viel Text in v1)
+- Stadtschnitt: CD "wirkt unnatürlich" — Vera-Aufgabe, nicht meine
+
+## Ergebnisse
+- Mein Plan Tag 3: GDD Kap 2 (Kernmechaniken) als Hauptarbeit, Kap 3 (Erzählkonzept) mit Nami-Input, Kap 1 v2 (Schwarzrand + Schwellenanker), Kap 5 (Art Direction mit Veras Bildern)
+- Kritischer Pfad: Kap 2 zuerst — das ist die Systemarbeit, die am meisten Input braucht
+- Abhängigkeit Kap 5: Bildliste von Finn/Vera bis 11:00 nötig, sonst leeres Kapitel
+
+## Offene Fragen
+- Welche Bilder konkret für Kap 5? Finn + Vera müssen Bildliste bis 11:00 liefern
+- Liegt Namis Ablehn-Option-Halbseite vor? (War für Mi 10:00 versprochen)
+- Leo-QA-Pass auf Kap 1 v1: wann kommt das Ergebnis?
+
+## Persönliches
+- Drei Kapitel plus Revision heute ist viel — realistisch nur mit sauberen Inputs von Nami/Vera/Finn
+- Schwellenanker-Entscheid vom CD ist ein Geschenk: Emre hatte den Namen schon, jetzt können wir einheitlich schreiben
