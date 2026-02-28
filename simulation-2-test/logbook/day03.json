@@ -1,0 +1,140 @@
+{
+  "day": 3,
+  "scenes": [
+    {
+      "scene": 1,
+      "type": "BRIEFING",
+      "time": "morning",
+      "location": "küche",
+      "participants": [
+        "finn",
+        "darius",
+        "emre",
+        "nami",
+        "vera",
+        "tobi",
+        "leo"
+      ],
+      "summary": "Erster Produktionstag. Finn moderiert das Briefing knapp und konzentriert. CD-Feedback: V1-Texte ausformuliert, nicht mehr nur Outlines. Arbeitstitel 'RELICS: Die Lebende Krone' offiziell bestätigt. Krone-Fraktion ist sich ihres eigenen Widerspruchs NICHT bewusst — tragische Ironie. Emre hat die härteste Deadline: WBB-01 Mythos muss bis 11:30 lesbar sein. Qualität vor Quantität. Tageszuordnungen verteilt: Emre WBB-01, Darius GDD-01+02, Nami GDD-03 (nachmittags auf Emres Grundlage), Vera GDD-05, Tobi GDD-06, Leo GDD-02 QA + Spielerperspektiv-Bericht + nachmittags Querlesen aller V1. Finn koordiniert und plant Peer-Review-Paarungen für Tag 4: Emre-Nami, Darius-Leo, Vera-Tobi. Stimmung konzentriert, alle wissen was zu tun ist.",
+      "artifacts": [],
+      "cd_feedback": "Produktionstag. Jeder schreibt seine V1 — ausformulierter Text, nicht mehr nur Outlines. Emre hat die härteste Deadline: WBB-01 Mythos muss bis 11:30 lesbar sein. Krone-Fraktion ist sich des eigenen Widerspruchs NICHT bewusst (tragische Ironie). 'RELICS: Die Lebende Krone' als Arbeitstitel akzeptiert. Qualität vor Quantität — lieber drei gute Seiten als zehn oberflächliche."
+    },
+    {
+      "scene": 2,
+      "type": "WORK",
+      "time": "morning",
+      "location": "alle-arbeitsplätze",
+      "participants": [
+        "emre",
+        "darius",
+        "nami",
+        "vera",
+        "tobi",
+        "leo",
+        "finn"
+      ],
+      "summary": "Erster Produktionstag: V1-Dokumente werden geschrieben. Emre liefert WBB-01 Mythos V1 (Kapitel 1-4 als Fließtext, 5-8 als detaillierte Stichpunkte). Eigenes Namenssystem aktiv: Galt, Emer, Hohlicht/Mittelgrund/Stillfeld, die Hauten, die Flechtung. Drei parallele Schöpfungsversionen. Lebende Krone als organisches Biotech-Artefakt. Darius liefert GDD-01 Spielübersicht V1 (Elevator Pitch, 6 Design-Säulen mit Validierungstests, 3 USPs, Zielgruppe, Referenzrahmen). Vera liefert GDD-05 Designsprache V1 (10 Kapitel: Fraktionsvisuals, Biotech-Grammatik, Farbsystem mit Hex-Codes, Mode, Tiervolk, Schattenfieber-Visuels, Environments). Tobi liefert GDD-06 Technik V1 (8 Kapitel: Engine, Kamera, Combat, Assets, Schattenfieber-Tech, Performance, Pipeline, Meilensteine+Budget).",
+      "artifacts": [
+        "gallery/wbb/01-mythos.md (V1)",
+        "gallery/gdd/01-spielübersicht.md (V1)",
+        "gallery/gdd/05-designsprache.md (V1)",
+        "gallery/gdd/06-technik-produktion.md (V1)",
+        "gallery/concepts/environment/kuestenvolk-vertical-city_seedream-4-5.png",
+        "gallery/concepts/characters/felltraeger-silk-road-traders_seedream-4-5.png"
+      ],
+      "cd_feedback": null
+    },
+    {
+      "scene": 3,
+      "type": "MEETING",
+      "time": "morning",
+      "location": "küche",
+      "participants": [
+        "finn",
+        "darius",
+        "emre",
+        "nami",
+        "vera",
+        "tobi",
+        "leo"
+      ],
+      "summary": "Standup nach dem ersten Produktions-Vormittag. Vier V1-Dokumente fertig: WBB-01 Mythos (Emre), GDD-01 Spielübersicht (Darius), GDD-05 Designsprache (Vera), GDD-06 Technik (Tobi). Emre hat die Deadline gehalten — Kapitel 1-4 als Fliesstext, eigenes Namenssystem durchgehend. Widerspruchs-Log #005 (Schattenfieber-Kosmologie vs. Mechanik) gelöst. Darius hat sechs Design-Säulen mit Validierungstests. Vera liefert zehn Kapitel mit Hex-Codes und Fraktionsvisuals. Tobi hat das Budget (45k EUR) aufgeteilt und den kritischen Pfad definiert. Leo arbeitet am QA-Querlesen aller Dokumente. Nami plant nachmittags GDD-03 Erzählkonzept V1 auf Basis von Emres WBB-01. Nachmittags-Aufträge: Nami schreibt GDD-03 V1, Darius finalisiert GDD-02 V1 Kernmechaniken, Leo schreibt Spielerperspektiv-Bericht und QA-Kommentare in alle Dokumente, Peer-Reviews laufen parallel.",
+      "artifacts": [],
+      "cd_feedback": null
+    },
+    {
+      "scene": 4,
+      "type": "PAUSE",
+      "time": "afternoon",
+      "location": "küche",
+      "participants": [
+        "tobi",
+        "finn",
+        "darius"
+      ],
+      "summary": "Mittagspause. Tobi, Finn und Darius diskutieren beim Essen das Freelancer-Budget und die Gameplay-Programmer-Suche. Tobi erklärt technische Anforderungen (GAS-Erfahrung, Motion Matching, Melee-Combat). Finn hat erste Kontakte bei LinkedIn recherchiert. Darius erzählt von einem Ex-Kollegen bei Blue Byte, der jetzt freelanced. Nebenbei: Lena will immer noch einen Hamster.",
+      "artifacts": [],
+      "cd_feedback": null
+    },
+    {
+      "scene": 5,
+      "type": "WORK",
+      "time": "afternoon",
+      "location": "alle-arbeitsplätze",
+      "participants": [
+        "emre",
+        "darius",
+        "nami",
+        "vera",
+        "tobi",
+        "leo",
+        "finn"
+      ],
+      "summary": "Nachmittags-Produktion. Nami schreibt GDD-03 Erzählkonzept V1 (Drei-Akt-Struktur mit 10 Beats, 9 Quest-Deliverables, Dialogsystem mit 4 Fraktionsregistern, Schattenfieber-Narrativ). Darius finalisiert GDD-02 Kernmechaniken V1. Leo liest alle Dokumente quer und fügt QA-Kommentare ein. Emre beginnt mit WBB-01 Kapitel 5-8 Ausbau. Vera integriert Emres Terminologie in GDD-05. Tobi ergänzt GDD-06 mit Schattenfieber-Tech-Details. Finn koordiniert Peer-Reviews.",
+      "artifacts": [
+        "gallery/gdd/03-erzählkonzept.md (V1)",
+        "gallery/gdd/02-kernmechaniken.md (V1)"
+      ],
+      "cd_feedback": null
+    },
+    {
+      "scene": 6,
+      "type": "REVIEW",
+      "time": "afternoon",
+      "location": "küche",
+      "participants": [
+        "finn",
+        "darius",
+        "emre",
+        "nami",
+        "vera",
+        "tobi",
+        "leo"
+      ],
+      "summary": "Tagesabschluss Tag 3 — erster Produktionstag. Sechs V1-Dokumente fertig: WBB-01 Mythos (Emre), GDD-01 Spielübersicht (Darius), GDD-02 Kernmechaniken (Darius), GDD-03 Erzählkonzept (Nami), GDD-05 Designsprache (Vera), GDD-06 Technik (Tobi). Leo hat Spielerperspektiv-Bericht finalisiert und QA-Kommentare in alle Dokumente eingetragen. Peer-Reviews nachmittags gelaufen. CD-Feedback extrem positiv: Kohärenz zwischen Dokumenten beeindruckend, Namenssystem durchgängig, Fraktionen konsistent visuell und narrativ differenziert, Schattenfieber mechanisch, narrativ und visuell durchdekliniert. Ausblick nächste Woche: V2 aller Dokumente plus GDD-04 Schlüsselfiguren, WBB-02 Topos, WBB-03 Ethos. Team geht mit gutem Gefühl in den Feierabend.",
+      "artifacts": [
+        "gallery/gdd/02-kernmechaniken.md (V1)",
+        "gallery/gdd/03-erzählkonzept.md (V1)"
+      ],
+      "cd_feedback": "Drei Tage, und wir haben: WBB-01 Mythos V1, GDD-01 Spielübersicht V1, GDD-02 Kernmechaniken V1, GDD-03 Erzählkonzept V1, GDD-05 Designsprache V1, GDD-06 Technik V1. Das ist mehr als ich erwartet habe. Die Kohärenz zwischen den Dokumenten ist beeindruckend — das eigene Namenssystem zieht sich durch, die Fraktionen sind konsistent visuell und narrativ differenziert, das Schattenfieber ist mechanisch, narrativ und visuell durchdekliniert. Nächste Woche: V2 aller Dokumente + GDD-04 Schlüsselfiguren + WBB-02 Topos + WBB-03 Ethos. Geniesst den Feierabend."
+    }
+  ],
+  "weekday": "Mittwoch",
+  "phase": "Produktion V1",
+  "title": "Erster Produktionstag — Sechs V1-Dokumente",
+  "summary": "Erster Produktionstag. Sechs vollständige V1-Dokumente entstehen an einem Tag: WBB-01 Mythos (Emre), GDD-01 Spielübersicht (Darius), GDD-02 Kernmechaniken (Darius), GDD-03 Erzählkonzept (Nami), GDD-05 Designsprache (Vera), GDD-06 Technik & Produktion (Tobi+Finn). Cross-Referenzen funktionieren: Emres Namenssystem zieht sich durch alle Dokumente. Leo schreibt QA-Kommentare in alle Dokumente. CD extrem positiv über Kohärenz.",
+  "cd_decisions": [],
+  "key_moments": [
+    "Sechs V1-Dokumente an einem Tag — Rekord",
+    "Namenssystem durchgängig konsistent über alle Dokumente",
+    "Finn kontaktiert Blue-Byte-Freelancer"
+  ],
+  "artifacts": [
+    "gallery/wbb/01-mythos.md",
+    "gallery/gdd/01-spielübersicht.md",
+    "gallery/gdd/02-kernmechaniken.md",
+    "gallery/gdd/03-erzählkonzept.md",
+    "gallery/gdd/05-designsprache.md",
+    "gallery/gdd/06-technik-produktion.md"
+  ]
+}

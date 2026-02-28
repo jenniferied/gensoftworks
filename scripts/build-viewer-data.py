@@ -3,10 +3,11 @@
 
 Reads logbook data → frontend/public/data/simulation.json
 
-Supports three logbook formats:
+Supports four logbook formats:
   - v1 (simulation 1): day-NNN.jsonl files with agent_details
   - v2 (simulation 2): day-NNN.jsonl files with mood dict
-  - v4 (simulation 2 test+): individual dayDD-sceneS.json files
+  - v4 (simulation 2 test): individual dayDD-sceneS.json files
+  - v5 (simulation 2 test+): dayDD.json index files with transcript refs
 
 Use --sim-dir to point at a simulation directory.
 """
@@ -575,7 +576,7 @@ def build_scene_v2(entry):
 
 
 def load_logbook_v4(logbook_dir):
-    """Load individual dayDD-sceneS.json files (v4 format, sim-2-test+).
+    """Load individual dayDD-sceneS.json files (v4 format, sim-2-test).
 
     Returns list of (day_num, entry) tuples sorted by day+scene.
     """
@@ -589,6 +590,46 @@ def load_logbook_v4(logbook_dir):
         entry = json.loads(f.read_text())
         entries.append((day_num, entry))
     return entries
+
+
+def load_logbook_v5(logbook_dir):
+    """Load dayDD.json index files (v5 format).
+
+    Returns list of day dicts with scenes[], or empty list if no v5 files found.
+    """
+    pattern = re.compile(r"day(\d+)\.json$")
+    days = []
+    for f in sorted(logbook_dir.glob("day*.json")):
+        m = pattern.match(f.name)
+        if not m:
+            continue
+        data = json.loads(f.read_text())
+        days.append(data)
+    return days
+
+
+def build_scene_v5(entry):
+    """Build a scene object from a v5 day-index scene entry."""
+    participants = [p for p in entry.get("participants", []) if p != "creative-director"]
+    location = entry.get("location", "studio-weit")
+    scene_type = entry.get("type", "WORK")
+    time_key = entry.get("time", "morning")
+
+    return {
+        "scene": entry["scene"],
+        "type": scene_type,
+        "type_label": TYPE_LABELS.get(scene_type, scene_type),
+        "time_of_day": time_key,
+        "time_label": TIME_LABELS.get(time_key, time_key),
+        "location": location,
+        "location_label": location.replace("-", " ").title(),
+        "participants": participants,
+        "summary": entry.get("summary", ""),
+        "positions": compute_positions(entry.get("participants", []), location),
+        "active_room": resolve_room(location),
+        "artifacts": entry.get("artifacts", []),
+        "cd_feedback": entry.get("cd_feedback"),
+    }
 
 
 def main():
@@ -617,52 +658,69 @@ def main():
 
     all_memories = load_memories(memories_dir)
 
-    # Try v4 format first (individual dayDD-sceneS.json files)
-    v4_entries = load_logbook_v4(logbook_dir)
+    # Try v5 format first (dayDD.json index files)
+    v5_days = load_logbook_v5(logbook_dir)
 
-    if v4_entries:
-        # Group by day
-        days_dict = defaultdict(list)
-        for day_num, entry in v4_entries:
-            days_dict[day_num].append(entry)
-
+    if v5_days:
         days = []
-        for day_num in sorted(days_dict.keys()):
-            scenes = []
-            for entry in days_dict[day_num]:
-                # v4 entries use v2-compatible schema (dialogue, cd_feedback, etc.)
-                scenes.append(build_scene_v2(entry))
-            days.append({"day": day_num, "scenes": scenes})
+        for day_data in v5_days:
+            day_num = day_data["day"]
+            scenes = [build_scene_v5(s) for s in day_data.get("scenes", [])]
+            day_entry = {"day": day_num, "scenes": scenes}
+            # Day-level summary fields are inline in v5
+            for k in ("weekday", "phase", "title", "summary",
+                       "cd_decisions", "key_moments", "artifacts"):
+                if k in day_data:
+                    day_entry.setdefault("summary", {})[k] = day_data[k]
+            # Promote day_data summary fields into the summary dict
+            if "summary" in day_entry and isinstance(day_entry["summary"], dict):
+                day_entry["summary"]["day"] = day_num
+            days.append(day_entry)
     else:
-        # Fall back to JSONL format (v1/v2/v3)
-        logbook_files = sorted(logbook_dir.glob("day-*.jsonl"))
+        # Try v4 format (individual dayDD-sceneS.json files)
+        v4_entries = load_logbook_v4(logbook_dir)
 
-        if not logbook_files:
-            print("No logbook files found!", file=sys.stderr)
-            sys.exit(1)
+        if v4_entries:
+            days_dict = defaultdict(list)
+            for day_num, entry in v4_entries:
+                days_dict[day_num].append(entry)
 
-        days = []
-        for lf in logbook_files:
-            day_num = int(lf.stem.replace("day-", ""))
-            scenes = []
-            for line in lf.read_text().splitlines():
-                line = line.strip()
-                if not line:
-                    continue
-                entry = json.loads(line)
-                schema = detect_schema(entry)
-                if schema in ("v2", "v3"):
+            days = []
+            for day_num in sorted(days_dict.keys()):
+                scenes = []
+                for entry in days_dict[day_num]:
                     scenes.append(build_scene_v2(entry))
-                else:
-                    scenes.append(build_scene_v1(entry, all_memories))
-            days.append({"day": day_num, "scenes": scenes})
+                days.append({"day": day_num, "scenes": scenes})
+        else:
+            # Fall back to JSONL format (v1/v2/v3)
+            logbook_files = sorted(logbook_dir.glob("day-*.jsonl"))
 
-    # Load day summaries if available
-    for day_entry in days:
-        day_num = day_entry["day"]
-        summary_file = logbook_dir / f"day{day_num:02d}-summary.json"
-        if summary_file.exists():
-            day_entry["summary"] = json.loads(summary_file.read_text())
+            if not logbook_files:
+                print("No logbook files found!", file=sys.stderr)
+                sys.exit(1)
+
+            days = []
+            for lf in logbook_files:
+                day_num = int(lf.stem.replace("day-", ""))
+                scenes = []
+                for line in lf.read_text().splitlines():
+                    line = line.strip()
+                    if not line:
+                        continue
+                    entry = json.loads(line)
+                    schema = detect_schema(entry)
+                    if schema in ("v2", "v3"):
+                        scenes.append(build_scene_v2(entry))
+                    else:
+                        scenes.append(build_scene_v1(entry, all_memories))
+                days.append({"day": day_num, "scenes": scenes})
+
+        # Load day summaries if available (v4 and older)
+        for day_entry in days:
+            day_num = day_entry["day"]
+            summary_file = logbook_dir / f"day{day_num:02d}-summary.json"
+            if summary_file.exists():
+                day_entry["summary"] = json.loads(summary_file.read_text())
 
     # Load agent memory markdown files
     agent_memories = load_agent_memories_md(agents_dir)
@@ -739,6 +797,22 @@ def main():
                     if traces:
                         sc["traces"] = traces
 
+                    # Build transcript refs (v5: transcript.md per agent)
+                    transcripts = {}
+                    for agent in sc.get("participants", []):
+                        td = traces_dir / f"{prefix}-{agent}"
+                        tf = td / "transcript.md"
+                        if tf.exists():
+                            # Copy transcript.md to public traces
+                            dest_dir = traces_dest / td.name
+                            dest_dir.mkdir(parents=True, exist_ok=True)
+                            dest_file = dest_dir / "transcript.md"
+                            if not dest_file.exists():
+                                shutil.copy2(tf, dest_file)
+                            transcripts[agent] = f"traces/{sim_id}/{td.name}/transcript.md"
+                    if transcripts:
+                        sc["transcripts"] = transcripts
+
             copied = sum(1 for d in traces_dest.iterdir() if d.is_dir()) if traces_dest.exists() else 0
             print(f"Traces: {copied} Verzeichnisse kopiert nach {traces_dest}")
 
@@ -753,7 +827,16 @@ def main():
         data["concept_art"] = concept_art
 
     out_file.parent.mkdir(parents=True, exist_ok=True)
-    out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+    json_str = json.dumps(data, ensure_ascii=False, indent=2)
+    out_file.write_text(json_str)
+
+    # Also copy to frontend/public/data/ for the Phaser viewer
+    if args.sim_dir:
+        sim_id = args.sim_dir.replace("/", "-")
+        frontend_copy = ROOT / "frontend" / "public" / "data" / f"{sim_id}.json"
+        frontend_copy.parent.mkdir(parents=True, exist_ok=True)
+        frontend_copy.write_text(json_str)
+        print(f"Viewer copy: {frontend_copy}")
 
     total_scenes = sum(len(d["scenes"]) for d in days)
     print(f"Built simulation.json: {len(days)} Tage, {total_scenes} Szenen")

@@ -286,16 +286,15 @@ export class StudioScene extends Phaser.Scene {
 
   /** Determine and show the appropriate bubble icon above an agent. */
   showBubble(agentKey, scene, sprite) {
-    // Pick bubble type based on v2 fields (priority: feedback > dialogue > thoughts > artifacts)
+    // Pick bubble type based on scene type
+    const convTypes = ['BRIEFING', 'MEETING', 'REVIEW', 'PAUSE', 'DND'];
     let bubbleKey = null;
-    if (scene.feedback?.some(f => f.from === agentKey || f.to === agentKey)) {
+    if (convTypes.includes(scene.type)) {
       bubbleKey = 'bubble_speech';
-    } else if (scene.dialogue?.some(d => d.who === agentKey)) {
-      bubbleKey = 'bubble_speech';
-    } else if (scene.thoughts?.some(t => t.who === agentKey)) {
-      bubbleKey = 'bubble_thought';
     } else if (scene.artifacts?.length > 0 && scene.participants?.includes(agentKey)) {
       bubbleKey = 'bubble_artifact';
+    } else {
+      bubbleKey = 'bubble_thought';
     }
 
     if (!bubbleKey || !this.textures.exists(bubbleKey)) return;

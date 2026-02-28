@@ -151,8 +151,10 @@ def load_all_memories(memories_dir) -> dict[str, dict]:
 def load_logbook_day(logbook_dir, day: int) -> list[dict]:
     """Load all scenes for a given day.
 
-    Supports both JSONL format (day-NNN.jsonl) and individual JSON files
-    (dayDD-sceneS.json) used by sim-2-test+.
+    Supports three formats:
+    - JSONL: day-NNN.jsonl (one scene per line)
+    - Individual JSON: dayDD-sceneS.json (one file per scene)
+    - Whole-day JSON: dayDD.json (dict with "scenes" array)
     """
     # Try JSONL first
     path = logbook_dir / f"day-{day:03d}.jsonl"
@@ -175,13 +177,25 @@ def load_logbook_day(logbook_dir, day: int) -> list[dict]:
     if scene_files:
         return [json.loads(f.read_text()) for _, f in sorted(scene_files)]
 
+    # Try v5 day-index format (dayDD.json with scenes array)
+    whole_day = logbook_dir / f"day{day:02d}.json"
+    if whole_day.exists():
+        data = json.loads(whole_day.read_text())
+        if isinstance(data, dict) and "scenes" in data:
+            for s in data["scenes"]:
+                s["_v5"] = True
+            return data["scenes"]
+        if isinstance(data, list):
+            return data
+
     return []
 
 
 def get_available_days(logbook_dir) -> list[int]:
     """Find all day numbers that have logbook files.
 
-    Supports both JSONL (day-NNN.jsonl) and individual JSON (dayDD-sceneS.json).
+    Supports JSONL (day-NNN.jsonl), individual JSON (dayDD-sceneS.json),
+    and whole-day JSON (dayDD.json).
     """
     import re
     days = set()
@@ -196,6 +210,12 @@ def get_available_days(logbook_dir) -> list[int]:
     pattern = re.compile(r"day(\d+)-scene\d+\.json$")
     for path in sorted(logbook_dir.glob("day*-scene*.json")):
         m = pattern.match(path.name)
+        if m:
+            days.add(int(m.group(1)))
+    # Whole-day JSON format (dayDD.json)
+    whole_pattern = re.compile(r"day(\d+)\.json$")
+    for path in sorted(logbook_dir.glob("day*.json")):
+        m = whole_pattern.match(path.name)
         if m:
             days.add(int(m.group(1)))
     return sorted(days)
@@ -476,7 +496,7 @@ def _md_to_latex(md_text: str) -> str:
 
 
 def _inline_format(text: str) -> str:
-    """Convert inline markdown (bold, italic, code) to LaTeX, with escaping."""
+    """Convert inline markdown (bold, italic, code, links) to LaTeX, with escaping."""
     # Extract inline code first (protect from escaping)
     code_parts = {}
     counter = [0]
@@ -488,6 +508,26 @@ def _inline_format(text: str) -> str:
         return key
 
     text = _re.sub(r"`([^`]+)`", save_code, text)
+
+    # Extract markdown links [text](url) before escaping
+    def save_link(m):
+        key = f"CODEPH{counter[0]}CODEPH"
+        counter[0] += 1
+        link_text = _latex_esc(m.group(1))
+        url = m.group(2)
+        code_parts[key] = f"\\url{{{url}}}" if link_text == _latex_esc(m.group(2)) else f"{link_text} (\\url{{{url}}})"
+        return key
+
+    text = _re.sub(r"\[([^\]]+)\]\(([^)]+)\)", save_link, text)
+
+    # Extract bare URLs before escaping
+    def save_url(m):
+        key = f"CODEPH{counter[0]}CODEPH"
+        counter[0] += 1
+        code_parts[key] = f"\\url{{{m.group(0)}}}"
+        return key
+
+    text = _re.sub(r"https?://[^\s)]+", save_url, text)
 
     # Convert bold/italic BEFORE escaping (markers are plain *, not LaTeX special)
     # Bold-italic (***text*** or ___text___)
@@ -557,7 +597,7 @@ def render_traces(traces_dir, day: int, scene_num: int) -> str:
     lines = []
     lines.append("```{=latex}")
     lines.append("\\vspace{4mm}")
-    lines.append("\\begingroup\\scriptsize\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{6mm}")
+    lines.append("\\begingroup\\tiny\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{6mm}\\sloppy\\emergencystretch=1em")
 
     for source, files in agent_groups:
         # Agent header with icon + name (full width, outside multicols)
@@ -982,11 +1022,126 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, tr
 
 
 # ---------------------------------------------------------------------------
+# Scene Rendering: v5 (transcript-based)
+# ---------------------------------------------------------------------------
+
+def render_transcripts(traces_dir, day: int, scene_num: int, participants: list[str]) -> str:
+    """Render transcript.md per agent, grouped by agent with icon+name header."""
+    if not traces_dir or not traces_dir.exists():
+        return ""
+
+    day_str = f"day{day:02d}"
+    scene_str = f"scene{scene_num}"
+    agent_groups = []
+
+    for agent in participants:
+        if agent == "creative-director":
+            continue
+        td_name = f"{day_str}-{scene_str}-{agent}"
+        transcript = traces_dir / td_name / "transcript.md"
+        if transcript.exists():
+            content = transcript.read_text().strip()
+            if content:
+                agent_groups.append((agent, content))
+
+    if not agent_groups:
+        return ""
+
+    lines = []
+    lines.append("```{=latex}")
+    lines.append("\\vspace{4mm}")
+    lines.append("\\begingroup\\tiny\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{6mm}\\sloppy\\emergencystretch=1em")
+
+    for agent, content in agent_groups:
+        if agent in AGENT_NAMES:
+            icon = f"\\agenticon{{{agent}}}"
+            name = AGENT_NAMES[agent]
+            role = AGENT_ROLES.get(agent, "")
+            role_str = f" — \\textit{{{role}}}" if role else ""
+            lines.append(f"\\vspace{{2mm}}\\noindent {icon}\\textbf{{{name}}}{role_str}\\par\\vspace{{0.5mm}}")
+        else:
+            lines.append(f"\\vspace{{2mm}}\\noindent\\textbf{{{agent.title()}}}\\par\\vspace{{0.5mm}}")
+
+        lines.append("\\begin{multicols}{2}")
+        lines.append(_md_to_latex(content))
+        lines.append("")
+        lines.append("\\end{multicols}")
+
+    lines.append("\\endgroup")
+    lines.append("```")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def render_scene_v5(scene, day, screenshot_dir=None, crop_dir=None, traces_dir=None, sim_dir=None, thumb_dir=None):
+    """Render a v5 scene: header + CD feedback + summary + transcripts + artifacts."""
+    lines = []
+    scene_num = scene.get("scene", 0)
+    scene_type = SCENE_LABELS.get(scene.get("type", ""), scene.get("type", ""))
+    lines.append(f"## Szene {scene_num} · {scene_type}")
+    lines.append("")
+
+    time = TIME_LABELS.get(scene.get("time", ""), scene.get("time", ""))
+    location = scene.get("location", "").replace("-", " ").title()
+    participant_list = scene.get("participants", [])
+    participants = format_participants(participant_list)
+    icons = format_participant_icons(participant_list)
+
+    lines.append("::: {.scenemeta}")
+    lines.append(f"{time} — {location}")
+    lines.append(":::")
+    lines.append("")
+    lines.append(f"```{{=latex}}\n\\noindent{{\\scriptsize {icons} {participants}}}\\par\\vspace{{1mm}}\n```")
+    lines.append("")
+
+    # Screenshot
+    if screenshot_dir:
+        pattern = f"day-{day:03d}-scene-{scene_num:03d}-*.png"
+        matches = list(screenshot_dir.glob(pattern))
+        if matches:
+            img_path = matches[0]
+            if crop_dir:
+                img_path = crop_screenshot(img_path, crop_dir)
+            lines.append(f"![Szene {scene_num}]({img_path}){{ width=95% }}")
+            lines.append("")
+
+    # CD feedback
+    cd_fb = scene.get("cd_feedback")
+    if cd_fb:
+        lines.append("::: {.directive}")
+        lines.append("\\textbf{Creative Director --- Feedback}")
+        lines.append("")
+        lines.append(esc(cd_fb))
+        lines.append(":::")
+        lines.append("")
+
+    # Summary
+    summary = esc(scene.get("summary", ""))
+    summary = _latex_esc(summary)
+    lines.append("```{=latex}")
+    lines.append(f"{{\\scriptsize {summary}\\par}}")
+    lines.append("```")
+    lines.append("")
+
+    # Transcripts per agent
+    lines.append(render_transcripts(traces_dir, day, scene_num, participant_list))
+
+    # Artifacts
+    artifacts = scene.get("artifacts", [])
+    if artifacts:
+        lines.append(render_artifacts(artifacts, sim_dir, thumb_dir))
+
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
 # Routing + Day/Document Rendering
 # ---------------------------------------------------------------------------
 
 def render_scene(scene, all_memories, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None, sim_dir=None, thumb_dir=None):
-    """Route to v1 or v2 renderer based on schema."""
+    """Route to v1, v2, or v5 renderer based on schema."""
+    if scene.get("_v5"):
+        return render_scene_v5(scene, day, screenshot_dir, crop_dir, traces_dir, sim_dir, thumb_dir)
     schema = detect_schema(scene)
     if schema == "v2":
         return render_scene_v2(scene, cd_posts, day, screenshot_dir, crop_dir, traces_dir, sim_dir, thumb_dir)

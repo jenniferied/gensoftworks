@@ -346,6 +346,17 @@ function renderTraceBlock(idPrefix, tracePath) {
   return html;
 }
 
+function renderTranscriptBlock(idPrefix, transcriptUrl) {
+  const bodyId = `${idPrefix}-transcript`;
+  let html = '<div class="trace-block">';
+  html += `<button class="trace-toggle" data-target="${bodyId}" data-url="${BASE}${transcriptUrl}">`;
+  html += `<span class="arrow">&#9654;</span> Transkript`;
+  html += `</button>`;
+  html += `<div class="trace-body" id="${bodyId}"><span class="loading">Laden...</span></div>`;
+  html += '</div>';
+  return html;
+}
+
 function renderAgentCards(scene) {
   const participants = scene.participants;
   const allAgents = Object.keys(AGENT_META);
@@ -354,7 +365,8 @@ function renderAgentCards(scene) {
     ...allAgents.filter(k => !participants.includes(k)),
   ];
 
-  // Detect schema: v2 has scene.mood as object, v1 has scene.agent_details
+  // Detect schema version
+  const hasTranscripts = !!scene.transcripts;
   const isV2 = scene.mood && typeof scene.mood === 'object' && !Array.isArray(scene.mood);
 
   let html = '';
@@ -375,8 +387,13 @@ function renderAgentCards(scene) {
     html += `</div>`;
 
     if (isActive) {
-      if (isV2) {
-        // --- v2 rendering ---
+      if (hasTranscripts) {
+        // --- v5 rendering: collapsible transcript per agent ---
+        if (scene.transcripts?.[key]) {
+          html += renderTranscriptBlock(`transcript-${key}`, scene.transcripts[key]);
+        }
+      } else if (isV2) {
+        // --- v2 rendering (legacy) ---
         const mood = scene.mood?.[key];
         if (mood) {
           html += `<div class="mood-row">`;
@@ -386,8 +403,6 @@ function renderAgentCards(scene) {
           html += `<span class="mood-value">${mood.after || '—'}</span>`;
           html += `</div>`;
         }
-
-        // Dialogue lines for this agent
         const agentDialogue = (scene.dialogue || []).filter(d => d.who === key);
         if (agentDialogue.length) {
           html += `<div class="dialogue-section">`;
@@ -396,47 +411,16 @@ function renderAgentCards(scene) {
           }
           html += `</div>`;
         }
-
-        // Thoughts for this agent
         const agentThoughts = (scene.thoughts || []).filter(t => t.who === key);
         if (agentThoughts.length) {
           for (const t of agentThoughts) {
             html += `<div class="agent-thought">${t.thinks}</div>`;
           }
         }
-
-        // Feedback given/received
-        const fbGiven = (scene.feedback || []).filter(f => f.from === key);
-        const fbReceived = (scene.feedback || []).filter(f => f.to === key);
-        if (fbGiven.length) {
-          for (const fb of fbGiven) {
-            const toName = AGENT_META[fb.to]?.name || fb.to;
-            html += `<div class="agent-feedback given">&rarr; ${toName}: ${fb.text}</div>`;
-          }
-        }
-        if (fbReceived.length) {
-          for (const fb of fbReceived) {
-            const fromName = AGENT_META[fb.from]?.name || fb.from;
-            html += `<div class="agent-feedback received">&larr; ${fromName}: ${fb.text}</div>`;
-          }
-        }
-
-        // Memories inline
-        const agentMems = (scene.memories?.[key]) || [];
-        if (agentMems.length) {
-          html += `<div class="memories-title">Erinnerungen</div>`;
-          for (const m of agentMems) {
-            html += `<div class="memory-item">`;
-            html += `<span class="mem-importance">${m.importance}/10</span>`;
-            html += m.description;
-            html += `</div>`;
-          }
-        }
       } else {
-        // --- v1 rendering ---
+        // --- v1 rendering (legacy) ---
         const details = scene.agent_details?.[key];
         const mems = scene.memories?.[key];
-
         if (details) {
           html += `<div class="mood-row">`;
           html += `<span class="mood-label">Stimmung:</span> `;
@@ -444,15 +428,10 @@ function renderAgentCards(scene) {
           html += `<span class="mood-arrow">&rarr;</span> `;
           html += `<span class="mood-value">${details.mood_after || '—'}</span>`;
           html += `</div>`;
-
           if (details.key_reaction) {
             html += `<div class="agent-reaction">${details.key_reaction}</div>`;
           }
-          if (details.influences?.length) {
-            html += `<div class="agent-influences">Einfl\u00fcsse: ${details.influences.map(i => `<span>${i}</span>`).join(', ')}</div>`;
-          }
         }
-
         if (mems?.length) {
           html += `<div class="memories-title">Erinnerungen</div>`;
           for (const m of mems) {
@@ -465,7 +444,7 @@ function renderAgentCards(scene) {
         }
       }
 
-      // Per-agent trace block (WORK scenes)
+      // Per-agent trace block (WORK scenes, legacy)
       if (scene.traces?.[key]) {
         html += renderTraceBlock(`trace-${key}`, scene.traces[key]);
       }
@@ -476,7 +455,7 @@ function renderAgentCards(scene) {
 
   agentList.innerHTML = html;
 
-  // Wire up trace toggle buttons with lazy fetch
+  // Wire up trace/transcript toggle buttons with lazy fetch
   agentList.querySelectorAll('.trace-toggle').forEach(btn => {
     btn.addEventListener('click', async () => {
       const target = document.getElementById(btn.dataset.target);

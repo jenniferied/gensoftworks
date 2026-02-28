@@ -1,0 +1,22 @@
+{
+  "day": 1,
+  "weekday": "Montag",
+  "phase": "Recherche",
+  "title": "...",
+  "summary": "...",
+  "cd_decisions": [],
+  "key_moments": [],
+  "artifacts": [],
+  "scenes": [
+    {
+      "scene": 1,
+      "type": "BRIEFING",
+      "time": "morning",
+      "location": "küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "...",
+      "artifacts": [],
+      "cd_feedback": null
+    }
+  ]
+}

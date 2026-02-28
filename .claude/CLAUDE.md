@@ -63,7 +63,7 @@ One file per day: `logbook/dayDD.json`. Contains only metadata + summaries — n
 ## Concept Art (Vera)
 
 - Vera generates images via fal.ai in WORK scenes
-- Daily budget: $2.00 (Seedream $0.04, Nano Banana Pro $0.15, Nano Banana 2 $0.08, GPT Image 1.5 $0.20)
+- Daily budget: $4.00 (Seedream $0.04, Nano Banana Pro $0.15, Nano Banana 2 $0.08, GPT Image 1.5 $0.20)
 - Other agents can request images → Vera writes prompt + generates
 - All images: NEVER with text. Seedream: `negative_prompt` setzen. Nano/GPT: Text im Prompt gar nicht erwähnen (auch nicht negativ)
 - Output: `gallery/concepts/{KK-kategorie}/{name}.png`
