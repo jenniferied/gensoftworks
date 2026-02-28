@@ -48,35 +48,9 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 
 Das Studio existiert in einer 🕹️ Pixel-Art-Simulation — ein ganzes Stockwerk mit 💻 Arbeitsecken, 🪑 Konferenzraum, ☕ Lounge, 🍳 Küche und 📖 Bibliothek. Die Agenten bewegen sich durch die Räume, treffen sich zu 🗣️ Meetings und arbeiten an ihren Schreibtischen.
 
-<details>
-<summary>🪑 <strong>Konferenzraum</strong> — Hier fallen die großen Entscheidungen</summary>
-<br>
-<img src="frontend/test-results/z-conference.png" width="720" alt="Konferenzraum">
-</details>
+🔗 [**Live-Viewer öffnen**](https://jenniferied.github.io/gensoftworks/)
 
-<details>
-<summary>☕ <strong>Lounge</strong> — Mittagspause, Smalltalk, spontane Ideen</summary>
-<br>
-<img src="frontend/test-results/z-lounge.png" width="720" alt="Lounge">
-</details>
-
-<details>
-<summary>🍳 <strong>Küche & Vorratskammer</strong> — Finns Chemex steht bereit</summary>
-<br>
-<img src="frontend/test-results/z-kitchen.png" width="720" alt="Küche">
-</details>
-
-<details>
-<summary>🎨 <strong>Art Station & Tech Corner</strong> — Wo Vera und Tobi arbeiten</summary>
-<br>
-<img src="frontend/test-results/z-artstation.png" width="720" alt="Art Station">
-</details>
-
-<details>
-<summary>📋 <strong>Zimmer 12 — Produktionsbüro</strong> — Finn und die Creative Director</summary>
-<br>
-<img src="frontend/test-results/z-room7.png" width="720" alt="Zimmer 12">
-</details>
+**Räume:** 🪑 Konferenzraum · ☕ Lounge · 🍳 Küche & Vorratskammer · 🎨 Art Station & Tech Corner · 📋 Produktionsbüro · 📖 Bibliothek
 
 ---
 
@@ -241,19 +215,6 @@ Jeder simulierte Tag produziert:
 - 📊 **Tages-Summary** — `logbook/dayDD-summary.json` (Übersicht für Viewer & PDF)
 - 🔬 **Traces** — `traces/dayDD-sceneS-name/` (Rohdaten: Prompt, Reasoning, Output)
 - 📄 **Artefakte** — GDD-Kapitel, WBB-Kapitel, Concept Art Beschreibungen
-
----
-
-## 🖥️ Viewer
-
-Ein **Phaser.js**-basierter 🕹️ Pixel-Art-Viewer visualisiert das Studio und die Simulation in Echtzeit:
-
-🔗 [**Live-Viewer öffnen**](https://jenniferied.github.io/gensoftworks/)
-
-- 🚶 Agenten bewegen sich durch das Studio
-- 💬 Sprechblasen-Icons zeigen Aktivität (Sprechen, Denken, Artefakte, Planen)
-- 📊 Sidebar mit Szenen-Navigation, Agenten-Details und Stimmungen
-- ▶️ Szene-für-Szene durchklickbar
 
 ---
 
