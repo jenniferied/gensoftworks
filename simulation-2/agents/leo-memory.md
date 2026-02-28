@@ -391,65 +391,112 @@ Energiegeladen — die Krisen-Punkte (Widersprüche, Schwellenanker-Konsistenz) 
 
 **Retention-Prognose (ohne Kap 2/3):** 70% nach 60 Min (das ist das Ziel — erreichbar, aber "WOW" muss noch von Kap 2/3 kommen)
 
-### Detailanalyse nach Wolf
+### Detailanalyse nach Wolf (s. QA-Bericht für Volltext)
 
 **Gut (✅ abgedeckt):**
-1. **Karten** — vertikale Ordnung definiert (Emre), technisch umgesetzt (Tobi), aber Detailkarte fehlt
-2. **Genealogien** — fünf Kern-NPCs exzellent (Nami), aber Fraktion-Hierarchie noch offen
-3. **Mythologie** — drei Schöpfungsmythen brilliant (Emre), asymmetrisch, keine ist richtig
-4. **Philosophie** — implizit in Säulen + Fraktions-Kosmologien, Spieler-Ethik noch offen
-5. **Verknüpfung** — Schwelle → Substrat → Fieber → Gameplay → Quest → Wahl ist kausal konsistent
+1. Karten — vertikale Ordnung definiert
+2. Genealogien — fünf Kern-NPCs exzellent
+3. Mythologie — drei Schöpfungsmythen brilliant
+4. Philosophie — implizit in Säulen
+5. Verknüpfung — kausal konsistent
 
-**Problematisch (⚠️ braucht Ausarbeitung):**
-1. **Zeitleisten** — "vor einer Generation" unkonkretisiert (W-006), Eskalations-Timeline nicht definiert
-2. **Natur** — Flora/Fauna komplett undefiniert (W-003), Vera hat keine Reference
-3. **Sprache** — Dialektsysteme nicht definiert, Tiervolk-Namen Platzhalter
-4. **Kultur (Detail)** — Spiritualität/Religion nur Orden, andere Kulte nicht erwähnt
+**Problematisch (⚠️):**
+1. Zeitleisten — "vor einer Generation" unkonkretisiert
+2. Natur — Flora/Fauna komplett undefiniert
+3. Sprache — Dialektsysteme nicht definiert, Tiervolk-Namen Platzhalter
+4. Kultur (Detail) — Spiritualität/Religion nur Orden
 
-### Widerspruchs-Log (Emre, WBB 01, Sektion 7)
+### Widerspruchs-Log Emre (gekürzt)
 
 | W# | Betrifft | Severity | Status |
 |---|----------|----------|--------|
-| W-001 | Ist Schwellensubstrat Substanz oder Bedingung? | KRITISCH | Blockiert Spieler-Mechanik (sammelbares Material?) — muss heute 14:00 entschieden sein |
-| W-002 | Stufe-1-Reversibilität: Kippmoment wann? | MITTEL | Logisch offene Frage, aber spielmechanisch nicht blockierend. Hypothese: dosisbasiert + zeitbasiert |
-| W-003 | Flora/Fauna komplett undefiniert | HOCH | Vera braucht Reference für visuelle Entwicklung. Bis morgen muss Emre 5+ Typen haben |
-| W-004 | Tiervolk kosmologischer Ursprung unklar | KRITISCH | Mutation? Eigene Spezies? Relikt-Effekt? Nami hat Salva-NPC definiert, aber Herkunft unklar. Blockiert Story-Konsistenz |
-| W-005 | Relikt-Physik: Stabilisierungsmechanismus vage | MITTEL | Nicht spielmechanisch, aber für Lore-Konsistenz sollte Emre Hypothese haben (spieler-unsichtbar, aber konsistent) |
-| W-006 | Zeitlinie "vor einer Generation" unkonkretisiert | HOCH | Beeinflusst Hieronymus-Alter (50, "sieht achtzig aus") und Zeugenlisten. Nami braucht das. Bis heute 14:00 |
+| W-001 | Ist Schwellensubstrat Substanz oder Bedingung? | KRITISCH | Blockiert Spieler-Mechanik |
+| W-004 | Tiervolk kosmologischer Ursprung unklar | KRITISCH | Blockiert Story-Konsistenz |
+| W-006 | Zeitlinie "vor einer Generation" unkonkretisiert | HOCH | Nami braucht das, bis heute 14:00 |
 
-**Recommendation für Emre:** "Dein Log ist hilfreich. Statt Fragen offen zu lassen, schreib eine Hypothese auf — auch wenn Spieler das nie erfährt. Das ist genug für innere Konsistenz."
+### Terminologie — Relikt-Labeling
 
-### Action Items aus QA-Bericht
+Das Briefing schreibt: "Schwellenanker-Name = Relikt"
 
-**Vor 14:00 Uhr heute (für Darius-Sync):**
-- [ ] **Darius + Emre + Nami:** Relikt-Namenspolitik entscheiden ("Die Wurzel" vs. "Das Relikt" vs. "Der Schwellenanker" + Serientitel)
-- [ ] **Emre + Nami:** W-001 (Substanz-Definition), W-004 (Tiervolk-Herkunft), W-006 (konkrete Zeitlinie) klären
+**Wie die Kapitel das handhaben:**
+- Darius: "Die Wurzel"
+- Nami: "Das Relikt" + "Der Schwellenanker"
+- Emre: "Das Relikt" / "Schwellen-Stabilisator"
+- Tobi: "Das Relikt"
 
-**Bis morgen früh:**
-- [ ] **Emre:** 5+ Schwellenflora-Typen mit Beschreibungen (für Vera)
-- [ ] **Darius/Nami:** Kap 2 (Kernmechaniken) Entwurf für QA
+**Spielerperspektive:** Verwirren. Muss bis 14:00 entschieden sein.
 
-**Bis Ende dieser Woche (vor PDF-Export):**
-- [ ] **Alle Autoren:** Autor-Namen und Prozess-Kommentare aus sichtbaren Texten entfernen
-- [ ] **Vera:** Detailkarte mit Constraint-Points
-- [ ] **Nami:** Genealogie-Diagramm (Fraktions-Hierarchie)
+**QA-Empfehlung:**
+- **Intern (Lore):** "Die Wurzel" = Original, "Das Relikt"/"Fragment" = Stück vom Spieler
+- **Spieler-Sicht:** "Der Schwellenanker" oder "Die Wurzel" (wenn gefunden). Nicht "das Relikt" — zu abstrakt.
+- **Serientitel:** "RELICS: Die Wurzel"
 
-### Meine Einschätzung (Spieler-Perspektive)
+### Sauberkeit — CD-Feedback-Violationen
 
-**Wo ich als 47k-Follower-Streamer stehen würde:**
+**Autor-Namen im sichtbaren Text:**
+- Kap 01, Zeile 4: "Leo-Analyse Tag 1"
+- Kap 01, Zeile 76: "Leo (Recherche Tag 1): ..."
+- Kap 04, Zeile 82: "Clip-Moment (Leo, 14:00 Sync)"
 
-**Minuten 0–15:** Material-Klasse sofort erkennbar ✅, Hieronymus emotional + gut ✅, Relikt sieht aus wie... was? ⚠️ (Shader gut, aber Narrativ-Moment noch nicht definiert), Drei Boten und politische Wahl ✅ aber ich weiß nicht, was ich tue
-
-**Minuten 15–30:** Schicht-Materialsprache trägt ✅, NPC-Stimmen unterschiedlich ✅, Fraktions-Konsequenzen nicht sichtbar ⚠️ (Kap 2-abhängig)
-
-**Chat-Prognose:** "This looks dense. Let's see where it goes." — neugierig, nicht begeistert. Das ist besser als "broken" oder "zzz", aber nicht das "oh damn" der ersten 8 Min. Retention bleibt 70% — das ist das Ziel, erreichbar, aber "WOW" muss noch kommen.
-
-**Für v1 → v2:** Richtige Richtung. Nur Feinschliff + Kap 2/3 nötig, um zu sehen, ob WOW kommt.
+**Remediation:** Raus vor PDF-Export, oder zu HTML-Kommentaren.
 
 ### Persönliches / Stimmung
 
-Konzentriert, energiegeladen. Die Kapitel sind gut — keine fundamentalen Fehler, nur Lücken. CD-Feedback zu "sauberen Dokumenten" macht Sinn, dass die Polierung bis Alpha durchläuft. Der QA-Report ist klar und actionabel — jedes Team-Mitglied weiß, was zu tun ist. Zugleich: Die Relikt-Namens-Entscheidung ist zu kritisch, um sie im stillen Kämmerlein zu treffen. Das muss im Darius-Sync heute geklärt sein.
+Konzentriert, energiegeladen. Die Kapitel sind gut — keine fundamentalen Fehler, nur Lücken. Der QA-Report ist klar und actionabel.
 
-**Confidence Level:** 8/10 (Checklisten sind solid, Kapitel-Qualität gut, aber blockiert auf drei externale Entscheidungen)
+**Confidence Level:** 8/10
+
+---
+
+## Tag 4, Szene 1: BRIEFING | 09:00 in der Küche
+
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn (CD), Darius, Emre, Nami, Vera (remote), Tobi, Leo
+
+### Kernpunkte aus dem Briefing (Tag 4)
+
+**Finn (Creative Director):**
+- Seitenbudget: 60 Seiten MAX (Cleanup dringend)
+- CD-Antworten kamen raus: Zeitlinie = Covid, Tiervolk = Symbiose-Faktor (dauerhaft), Schattenfieber = Körperreaktion
+- v0.2 Export heute Morgen geplant
+
+**Darius:** GDD 1–3 + 5, Cleanup Kap 2/3 v2
+
+**Emre:** Tiervolk = dritter kosmologischer Faktor (dauerhaft, nicht temporär). WBB 1 v3, 2 v2, 3 Basis.
+
+**Nami:** Salva (Tiervolk-NPC) neu denken. GDD 4 v3, WBB 3 v2.
+
+**Vera:** Mehr Bilder ($5 Budget), Environment + Charakter-Visuals.
+
+**Tobi:** GDD 6. Tiervolk-Symbiose-Shader, Cleanup.
+
+### Meine Position (Leo) — Reaktion zu CD-Antworten
+
+**Die guten News:**
+- W-004 (Tiervolk) ✅ geklärt: Symbiose-Faktor, dauerhaft → Emre hat Raum für Kosmologie
+- W-006 (Zeitlinie) ✅ geklärt: Covid-Kontext → konkret, Nami kann damit arbeiten
+- Das sind 2 von 3 meiner Bleeding Issues GELÖST!
+
+**Mein Ownership für heute (v0.2-Snapshot):**
+
+1. **Alle 9 Kapitel Hygiene-Check** (max 2h) — Autor-Namen raus, Konsistenz-Check post-CD-Antworten, keine Kommentare sichtbar
+2. **Seitenbudget-Tracking** — 60 Seiten max, müssen wir tracken, wo wir stehen
+3. **v0.2-Export vorbereiten** — wenn ihr alle Endfassungen hochladet, mache ich finalen QA-Pass
+
+**Konkrete Fragen an Team (für Ownership-Klarheit):**
+- **Darius:** Wann ist GDD v2 (Kap 1–3, 5) ready zum Scannen?
+- **Emre:** Tiervolk als "dritter kosmologischer Faktor" — bedeutet das Text-Shifts in WBB 1 v2/v3?
+- **Nami:** Ablehnung-Option für Kap 5 — ist das narrativ nur, oder muss es in Kap 2 (Kernmechaniken) mechanisch stehen?
+- **Vera:** Neue Gilden-Palette + Environment — ändert sich der Story-Text, oder nur Visuals?
+- **Tobi:** Kap 6 Cleanup mit Relikt-Rename — durchzieht das alle Shader-Datei-Namen, oder nur Variablen?
+
+**Meine Prognose:**
+- Wenn ihr die Endfassungen bis morgen Früh gebt → kann ich bis Freitag Mittag einen sauberen v0.2 Export checken
+- Das ist Alpha-ready aus QA-Sicht
+
+### Persönliches / Stimmung
+
+Energiegeladen. Zwei von drei Bleeding Issues GELÖST vom CD — das ist Vertrauen aufgebaut. Wir sind auf Track für Seitenbudget und Sauberkeit. Darius + Emre + Nami + Vera + Tobi haben klare Ownership. Mein Job: Polieren + Checken, nicht erfinden.
+
+**Confidence Level:** 8/10 (higher today — CD-Antworten waren gold, Team hat klare Richtung)
 
 ---
