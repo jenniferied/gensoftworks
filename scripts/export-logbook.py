@@ -63,6 +63,7 @@ SCENE_LABELS = {
     "DELIVERY": "Lieferung",
     "RETROSPECTIVE": "Retrospektive",
     "SOCIAL": "Sozial",
+    "REVIEW": "Review",
     # v4 scene types (sim-2-test daily schedule)
     "BRIEFING": "Briefing",
     "PAUSE": "Pause",
@@ -430,6 +431,10 @@ def _md_to_latex(md_text: str) -> str:
     numbered lists, inline code, tables, horizontal rules.
     Filters out base64-encoded image data that would overflow LaTeX buffers.
     """
+    # Shorten absolute project paths before any processing
+    md_text = md_text.replace(
+        "/Users/jennifer/Documents/GitHub/gensoftworks/", ""
+    )
     lines = md_text.split("\n")
     # Filter out lines containing base64 image data (tool call artifacts)
     lines = [l for l in lines if "base64" not in l or len(l) < 500]
@@ -507,7 +512,11 @@ def _inline_format(text: str) -> str:
     def save_code(m):
         key = f"CODEPH{counter[0]}CODEPH"
         counter[0] += 1
-        code_parts[key] = f"\\texttt{{{_latex_esc(m.group(1))}}}"
+        escaped = _latex_esc(m.group(1))
+        # Insert discretionary breaks at / and . for long paths
+        breakable = escaped.replace("/", "/\\allowbreak{}")
+        breakable = breakable.replace(".", ".\\allowbreak{}")
+        code_parts[key] = f"\\breaktt{{{breakable}}}"
         return key
 
     text = _re.sub(r"`([^`]+)`", save_code, text)
@@ -574,19 +583,33 @@ SCENE_TYPE_LABELS = {
 
 
 def render_traces(traces_dir, day: int, scene_num: int) -> str:
-    """Render traces grouped by agent, each with icon+name header and own multicols."""
+    """Render traces grouped by agent, each with icon+name header and own multicols.
+
+    Supports both flat (dayDD-sceneS-agent) and turn-based
+    (dayDD-sceneS-tN-agent) directory layouts.
+    """
     if not traces_dir or not traces_dir.exists():
         return ""
 
     day_str = f"day{day:02d}"
     scene_str = f"scene{scene_num}"
-    pattern = f"{day_str}-{scene_str}-*"
-    trace_subdirs = sorted(traces_dir.glob(pattern))
+    prefix = f"{day_str}-{scene_str}-"
+
+    turn_re = _re.compile(
+        rf"^{_re.escape(day_str)}-{_re.escape(scene_str)}-(?:t(\d+)-)?(.+)$"
+    )
+
+    trace_subdirs = sorted(
+        (td for td in traces_dir.iterdir()
+         if td.is_dir() and td.name.startswith(prefix)),
+        key=lambda p: p.name,
+    )
 
     # Group files by trace subdir (= per agent or per scene type)
     agent_groups = []
     for td_path in trace_subdirs:
-        if not td_path.is_dir():
+        m = turn_re.match(td_path.name)
+        if not m:
             continue
         files = {}
         for trace_file in sorted(td_path.glob("*.md")):
@@ -596,9 +619,8 @@ def render_traces(traces_dir, day: int, scene_num: int) -> str:
             if content:
                 files[trace_file.stem] = _md_to_latex(content)
         if files:
-            # Extract agent/type from dir name: dayDD-sceneS-NAME
-            parts = td_path.name.split("-")
-            source = parts[-1] if len(parts) >= 3 else td_path.name
+            # Extract agent from regex: group(2) is the agent/type name
+            source = m.group(2)
             agent_groups.append((source, files))
 
     if not agent_groups:
