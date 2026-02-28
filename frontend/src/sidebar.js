@@ -326,9 +326,7 @@ function renderArtifacts(artifacts) {
 }
 
 const TRACE_FILES = [
-  { key: '0-prompt.md', label: 'Prompt' },
-  { key: '1-reasoning.md', label: 'Reasoning' },
-  { key: '2-output.md', label: 'Output' },
+  { key: 'transcript.md', label: 'Transcript' },
 ];
 
 function renderTraceBlock(idPrefix, tracePath) {

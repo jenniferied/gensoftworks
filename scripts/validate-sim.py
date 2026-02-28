@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Validate a GenSoftworks simulation directory.
 
-Checks the essentials: dialogue in conversation scenes, trace integrity,
-summary field names, agent memories, world.json.
+Checks logbook (dayDD.json), agent memories, world.json, artifact naming,
+and warns about stale trace files.
 
 Usage:
     python scripts/validate-sim.py --sim-dir simulation-2
-    python scripts/validate-sim.py --sim-dir simulation-2-test --day 3
+    python scripts/validate-sim.py --sim-dir simulation-2 --day 3
 """
 
 import argparse
@@ -19,63 +19,32 @@ ROOT = Path(__file__).resolve().parent.parent
 
 VALID_TYPES = {"BRIEFING", "WORK", "MEETING", "PAUSE", "REVIEW", "DND"}
 VALID_AGENTS = {"finn", "darius", "emre", "nami", "vera", "tobi", "leo"}
-CONV_TYPES = {"BRIEFING", "MEETING", "REVIEW", "PAUSE", "DND"}
 GERMAN_WEEKDAYS = {"Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag",
                    "Samstag", "Sonntag"}
 
 errors = []
+warnings = []
 
 
 def err(file, msg):
     errors.append((str(file), msg))
 
 
+def warn(file, msg):
+    warnings.append((str(file), msg))
+
+
 def check_logbook(logbook_dir, day_filter=None):
-    pattern = re.compile(r"day(\d+)-scene(\d+)\.json$")
-    files = sorted(logbook_dir.glob("day*-scene*.json"))
-    if not files:
-        err(logbook_dir, "No logbook scene files found")
+    """Check dayDD.json files (one per day)."""
+    pattern = re.compile(r"day(\d+)\.json$")
+    files = sorted(logbook_dir.glob("day*.json"))
+    day_files = [f for f in files if pattern.match(f.name)]
+
+    if not day_files:
+        err(logbook_dir, "No logbook day files (dayDD.json) found")
         return
 
-    for f in files:
-        m = pattern.match(f.name)
-        if not m:
-            continue
-        day_num = int(m.group(1))
-        scene_num = int(m.group(2))
-        if day_filter and day_num != day_filter:
-            continue
-
-        try:
-            entry = json.loads(f.read_text())
-        except json.JSONDecodeError as e:
-            err(f, f"Invalid JSON: {e}")
-            continue
-
-        # Scene number matches filename
-        if entry.get("scene") != scene_num:
-            err(f, f"scene={entry.get('scene')} doesn't match filename scene{scene_num}")
-
-        # Type valid
-        scene_type = entry.get("type", "")
-        if scene_type not in VALID_TYPES:
-            err(f, f"Invalid type: {scene_type}")
-
-        # Participants not empty
-        if not entry.get("participants"):
-            err(f, "participants is empty")
-
-        # Dialogue: conversation scenes must have it, WORK must not
-        dialogue = entry.get("dialogue", [])
-        if scene_type in CONV_TYPES and not dialogue:
-            err(f, f"Conversation scene ({scene_type}) has empty dialogue")
-        if scene_type == "WORK" and dialogue:
-            err(f, "WORK scene should have empty dialogue")
-
-
-def check_summaries(logbook_dir, day_filter=None):
-    pattern = re.compile(r"day(\d+)-summary\.json$")
-    for f in sorted(logbook_dir.glob("day*-summary.json")):
+    for f in day_files:
         m = pattern.match(f.name)
         if not m:
             continue
@@ -89,57 +58,53 @@ def check_summaries(logbook_dir, day_filter=None):
             err(f, f"Invalid JSON: {e}")
             continue
 
-        # Wrong field name
-        if "artifacts_produced" in entry:
-            err(f, "Field 'artifacts_produced' should be 'artifacts'")
+        # Required top-level fields
+        for field in ("day", "weekday", "phase", "scenes"):
+            if field not in entry:
+                err(f, f"Missing required field: '{field}'")
 
         # Weekday check
         weekday = entry.get("weekday", "")
         if weekday and weekday not in GERMAN_WEEKDAYS:
             err(f, f"weekday '{weekday}' not a valid German weekday")
 
+        # Wrong field name
+        if "artifacts_produced" in entry:
+            err(f, f"Field 'artifacts_produced' should be 'artifacts'")
 
-def check_traces(sim_dir, logbook_dir, day_filter=None):
-    traces_dir = sim_dir / "traces"
-    if not traces_dir.exists():
-        err(traces_dir, "traces/ directory not found")
-        return
-
-    expected_files = {"0-prompt.md", "1-reasoning.md", "2-output.md"}
-
-    # Check trace_dirs referenced from logbook
-    pattern = re.compile(r"day(\d+)-scene(\d+)\.json$")
-    for f in sorted(logbook_dir.glob("day*-scene*.json")):
-        m = pattern.match(f.name)
-        if not m:
-            continue
-        day_num = int(m.group(1))
-        if day_filter and day_num != day_filter:
+        # Scenes array
+        scenes = entry.get("scenes", [])
+        if not isinstance(scenes, list):
+            err(f, "scenes is not an array")
             continue
 
-        try:
-            entry = json.loads(f.read_text())
-        except json.JSONDecodeError:
-            continue
+        for i, scene in enumerate(scenes):
+            scene_label = f"scenes[{i}]"
 
-        for td in entry.get("trace_dirs", []):
-            td_path = traces_dir / td
-            if not td_path.exists():
-                err(f, f"trace_dirs entry '{td}' not found on disk")
-                continue
+            # Required scene fields
+            for field in ("scene", "type", "time", "location", "participants", "summary"):
+                if field not in scene:
+                    err(f, f"{scene_label}: missing required field '{field}'")
 
-            actual_files = {p.name for p in td_path.iterdir() if p.is_file()}
-            missing = expected_files - actual_files
-            if missing:
-                err(td_path, f"Missing trace files: {', '.join(sorted(missing))}")
+            # Type valid
+            scene_type = scene.get("type", "")
+            if scene_type and scene_type not in VALID_TYPES:
+                err(f, f"{scene_label}: invalid type '{scene_type}'")
 
-            for tf in expected_files:
-                tf_path = td_path / tf
-                if tf_path.exists() and tf_path.stat().st_size == 0:
-                    err(tf_path, "Empty trace file")
+            # Participants subset of valid agents
+            participants = scene.get("participants", [])
+            if isinstance(participants, list):
+                invalid = set(participants) - VALID_AGENTS
+                if invalid:
+                    err(f, f"{scene_label}: invalid participants: {', '.join(sorted(invalid))}")
+
+            # Wrong field name in scene
+            if "artifacts_produced" in scene:
+                err(f, f"{scene_label}: field 'artifacts_produced' should be 'artifacts'")
 
 
 def check_memories(agents_dir):
+    """Check all 7 agent memory files exist and are non-empty."""
     if not agents_dir.exists():
         err(agents_dir, "agents/ directory not found")
         return
@@ -152,6 +117,7 @@ def check_memories(agents_dir):
 
 
 def check_world(state_dir):
+    """Check world.json has required fields."""
     world_path = state_dir / "world.json"
     if not world_path.exists():
         err(world_path, "world.json not found")
@@ -165,6 +131,33 @@ def check_world(state_dir):
         err(world_path, "Missing 'day' field")
     if "scene" not in world:
         err(world_path, "Missing 'scene' field")
+
+
+def check_artifacts(sim_dir):
+    """Warn about gallery files that don't follow naming convention."""
+    naming_re = re.compile(r"^\d{2}-.+-v\d+\.md$")
+    for subdir in ("gallery/gdd", "gallery/wbb"):
+        d = sim_dir / subdir
+        if not d.exists():
+            continue
+        for f in sorted(d.glob("*.md")):
+            if not naming_re.match(f.name):
+                warn(f, f"Filename doesn't follow KK-titel-vN.md convention")
+
+
+def check_stale_traces(sim_dir):
+    """Warn about manual trace files (prompt.md, reasoning.md, output.md) in new trace dirs."""
+    traces_dir = sim_dir / "traces"
+    if not traces_dir.exists():
+        return
+    manual_files = {"0-prompt.md", "1-reasoning.md", "2-output.md",
+                    "prompt.md", "reasoning.md", "output.md"}
+    for d in sorted(traces_dir.iterdir()):
+        if not d.is_dir():
+            continue
+        found = [f.name for f in d.iterdir() if f.name in manual_files]
+        if found:
+            warn(d, f"Stale manual trace files: {', '.join(sorted(found))}")
 
 
 def main():
@@ -189,8 +182,6 @@ def main():
 
     if logbook_dir.exists():
         check_logbook(logbook_dir, args.day)
-        check_summaries(logbook_dir, args.day)
-        check_traces(sim_dir, logbook_dir, args.day)
     else:
         err(logbook_dir, "logbook/ directory not found")
 
@@ -200,6 +191,17 @@ def main():
         check_world(state_dir)
     else:
         err(state_dir, "state/ directory not found")
+
+    check_artifacts(sim_dir)
+    check_stale_traces(sim_dir)
+
+    if warnings:
+        print(f"\033[33m{len(warnings)} warning(s):\033[0m\n")
+        for filepath, msg in warnings:
+            rel = str(filepath).replace(str(ROOT) + "/", "")
+            print(f"  \033[33m{rel}\033[0m")
+            print(f"    {msg}")
+        print()
 
     if errors:
         print(f"\033[31m{len(errors)} error(s) found:\033[0m\n")

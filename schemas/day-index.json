@@ -11,7 +11,7 @@
     {
       "scene": 1,
       "type": "BRIEFING",
-      "time": "morning",
+      "time": "09:00",
       "location": "küche",
       "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
       "summary": "...",

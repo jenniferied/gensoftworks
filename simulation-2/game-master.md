@@ -7,7 +7,8 @@ Dieses Dokument beschreibt, wie die Simulation funktioniert. Der GM (Opus 4.6) l
 Basiert auf Park et al. (2023, Generative Agents — Smallville) für Memory-Streams und szenenbasierte Steuerung, und Qian et al. (2024, ChatDev) für phasenbasierte Aufgabenzerlegung.
 
 - **GM** = Hauptsession (Opus 4.6). Orchestriert Szenen, spawnt Agenten, schreibt Logbuch.
-- **7 Agenten** = Subagenten (Sonnet 4.6, `model: "sonnet"`). Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in `.claude/agents/{name}.md` und ein Persönlichkeitsprofil in `roster/`.
+- **7 Agenten** = Subagenten. Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in `.claude/agents/{name}.md` und ein Persönlichkeitsprofil in `roster/`.
+  Emre: model `"opus"` | Darius, Nami, Vera, Tobi: model `"sonnet"` | Finn, Leo: model `"haiku"`
 - **CD** / **Creative Director** = Menschlicher Nutzer. Gibt Feedback, trifft kreative Entscheidungen beim Start jedes Tages.
 
 Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben in Dateien.
@@ -24,18 +25,17 @@ Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben
 | Logbuch-Schema | `schemas/day-index.json` (**Repo-Root**, nicht in simulation-2/) |
 | Briefing | `briefing.md` |
 
-## Tagesablauf (6 Szenen)
+## Tagesablauf (5 Szenen)
 
-| # | Zeit | Typ | Modus | Wer | Max Turns |
-|---|------|-----|-------|-----|-----------|
-| 1 | 09:00 | BRIEFING | sequenziell | alle 7 | 8 |
-| 2 | 10:00 | WORK | parallel | alle 7 | — |
-| 3 | 11:30 | MEETING | sequenziell | alle 7 | 8 |
-| 4 | 12:30 | PAUSE | sequenziell | 2–3 (GM wählt) | 6 |
-| 5 | 14:00 | WORK | parallel | alle 7 | — |
-| 6 | 16:00 | REVIEW | sequenziell | 3–4 relevanteste (GM wählt) | 6 |
+| # | Zeit  | Typ      | Modus        | Wer                    | Max Turns |
+|---|-------|----------|--------------|------------------------|-----------|
+| 1 | 09:00 | BRIEFING | sequenziell  | alle 7                 | 8         |
+| 2 | 10:00 | WORK     | parallel     | alle 7                 | —         |
+| 3 | 13:00 | MEETING  | sequenziell  | alle 7                 | 8         |
+| 4 | 14:00 | PAUSE    | sequenziell  | 2–3 (GM wählt)        | 6         |
+| 5 | 15:00 | REVIEW   | sequenziell  | 3–4 relevanteste       | 6         |
 
-**Donnerstag**: Szene 6 = D&D (Emre als DM + 2 Spieler). Sequenziell, max 8 Turns. Ort: Bibliothek.
+**Donnerstag**: Szene 5 = D&D (Emre als DM + 2 Spieler). Sequenziell, max 8 Turns. Ort: Bibliothek.
 
 ## Szenenausführung
 
@@ -78,7 +78,7 @@ Smalltalk, Soziales, Persönliches — keine Deliverables.
 
 Ergebnisse vorstellen, offene Fragen für den CD sammeln.
 
-### D&D (Donnerstag, Szene 6)
+### D&D (Donnerstag, Szene 5)
 
 **Modus**: sequenziell | **Teilnehmer**: 3 (Emre als DM + 2 Spieler) | **Turn-Cap**: 8
 
@@ -99,14 +99,17 @@ Der GM ergänzt im Prompt nur den **Szenenkontext**:
 
 1. `state/world.json` lesen → Tag + Szenennummer bestimmen
 2. Szene ausführen (parallel oder sequenziell gemäß Szenentyp)
+3. `state/world.json` aktualisieren (Szenennummer hochzählen)
 
-## Tagesende (nach Szene 6)
+**GM schreibt NICHT in**: `agents/*-memory.md` — nur Agenten selbst.
 
-3. `logbook/dayDD.json` schreiben gemäß `schemas/day-index.json`
-4. `state/world.json` aktualisieren (Tag +1, Szene 0)
-5. `python scripts/validate-sim.py --sim-dir simulation-2` — Fehler beheben vor Weiterarbeit
-6. `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
-7. Outputs generieren:
+## Tagesende (nach Szene 5)
+
+4. `logbook/dayDD.json` schreiben gemäß `schemas/day-index.json` — NUR Metadaten + Summaries, KEIN Dialog
+5. `state/world.json` aktualisieren (Tag +1, Szene 0)
+6. Scripts ausführen:
+   - `python scripts/validate-sim.py --sim-dir simulation-2` — Fehler beheben vor Weiterarbeit
+   - `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
    - **Immer**: `scripts/export-logbook.py --sim-dir simulation-2`, `scripts/build-viewer-data.py --sim-dir simulation-2`
    - **Wenn GDD/WBB existieren**: `scripts/export-gdd.py --sim-dir simulation-2`, `scripts/export-wbb.py --sim-dir simulation-2`
 
@@ -126,6 +129,23 @@ Eine Datei pro Tag: `logbook/dayDD.json` gemäß `schemas/day-index.json`. Nur M
 - `weekday`: deutsch, großgeschrieben (Montag, Dienstag, …)
 - `artifacts` (NICHT `artifacts_produced`)
 - `location`: aus Roster-Frontmatter Feld `workspace` (z.B. "Küche", "Bibliothek")
+
+## Artefakte & Produktionszeitplan
+
+Agenten erstellen versionierte Markdown-Dateien in WORK-Szenen:
+- GDD: `gallery/gdd/KK-titel-vN.md` (z.B. `01-spieluebersicht-v1.md`)
+- WBB: `gallery/wbb/KK-titel-vN.md` (z.B. `01-mythos-v1.md`)
+Neue Version → N erhöhen. Alte Versionen bleiben.
+
+PDF-Dokumente sind Gesamt-Snapshots (eigene Nummerierung):
+
+| Tag | Phase | Markdown-Outputs | PDF-Export |
+|-----|-------|------------------|------------|
+| Mo  | Recherche | Notizen, Konzepte | — |
+| Di  | Recherche + erste Produktion | Erste Kapitel-MDs (v1) | — |
+| Mi  | Produktion | Weitere Kapitel, Überarbeitungen | GDD v0.1 + WBB v0.1 |
+| Do  | Produktion | Alle Sektionen in Arbeit | GDD v0.2 + WBB v0.2 |
+| Fr  | Finalisierung | Alle Sektionen vorhanden | GDD v0.3 + WBB v0.3 |
 
 ## Concept Art (Vera)
 

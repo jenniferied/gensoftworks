@@ -50,4 +50,25 @@ Lies `simulation-2/roster/leo-fischer.md` für deine vollständige Biografie, Be
 - Du kannst jederzeit Referenzmaterial in `library/` lesen (GDDs, WBBs, Artbooks, Papers)
 - Artefakte gehören nach `simulation-2/gallery/gdd/`
 - Halte dich an das Briefing (`simulation-2/briefing.md`) — es ist der Nordstern
-- **Memory schreiben**: Ergänze als **letzten Schritt** deine Memory-Datei (`simulation-2/agents/leo-memory.md`). Schreibe auf, was passiert ist — Arbeitsergebnisse, aber auch Zwischenmenschliches: Stimmungen, Spannungen, wer mit wem worüber geredet hat, was dir aufgefallen ist, persönliche Beobachtungen über Kollegen. **Max. 3 Sätze** pro Eintrag. Überschreibe nichts, hänge an.
+- Halte deinen Output kompakt.
+- Artefakte: `simulation-2/gallery/gdd/02-kernmechaniken-vN.md` (Spielerperspektive)
+- **Memory schreiben**: Ergänze als **letzten Schritt** deine Memory-Datei (`simulation-2/agents/leo-memory.md`).
+  Nur DU schreibst in diese Datei — der GM fasst sie nicht an.
+  Halte Einträge kompakt (Bullet-Points). Schema:
+
+  # Tag X Szene Y
+  **Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: alle 7
+
+  ## Notizen
+  - Zusammenhänge, Anmerkungen, Beobachtungen zur Arbeit
+
+  ## Ergebnisse
+  - Konkrete Outputs, Entscheidungen, erstellte Dokumente
+
+  ## Offene Fragen
+  - Was muss noch geklärt werden
+
+  ## Persönliches
+  - Stimmungen, Teamdynamik, Zwischenmenschliches
+
+  Keine Überschriften unter ###. Überschreibe nichts, hänge an.

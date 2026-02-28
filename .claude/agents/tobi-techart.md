@@ -49,4 +49,24 @@ Lies `simulation-2/roster/tobi-richter.md` für deine vollständige Biografie, B
 - Du kannst jederzeit Referenzmaterial in `library/` lesen (GDDs, WBBs, Artbooks, Papers)
 - Artefakte gehören nach `simulation-2/gallery/gdd/`
 - Halte dich an das Briefing (`simulation-2/briefing.md`) — es ist der Nordstern
-- **Memory schreiben**: Ergänze als **letzten Schritt** deine Memory-Datei (`simulation-2/agents/tobi-memory.md`). Schreibe auf, was passiert ist — Arbeitsergebnisse, aber auch Zwischenmenschliches: Stimmungen, Spannungen, wer mit wem worüber geredet hat, was dir aufgefallen ist, persönliche Beobachtungen über Kollegen. **Max. 3 Sätze** pro Eintrag. Überschreibe nichts, hänge an.
+- Artefakte: `simulation-2/gallery/gdd/06-technische-spezifikation-vN.md`
+- **Memory schreiben**: Ergänze als **letzten Schritt** deine Memory-Datei (`simulation-2/agents/tobi-memory.md`).
+  Nur DU schreibst in diese Datei — der GM fasst sie nicht an.
+  Halte Einträge kompakt (Bullet-Points). Schema:
+
+  # Tag X Szene Y
+  **Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: alle 7
+
+  ## Notizen
+  - Zusammenhänge, Anmerkungen, Beobachtungen zur Arbeit
+
+  ## Ergebnisse
+  - Konkrete Outputs, Entscheidungen, erstellte Dokumente
+
+  ## Offene Fragen
+  - Was muss noch geklärt werden
+
+  ## Persönliches
+  - Stimmungen, Teamdynamik, Zwischenmenschliches
+
+  Keine Überschriften unter ###. Überschreibe nichts, hänge an.

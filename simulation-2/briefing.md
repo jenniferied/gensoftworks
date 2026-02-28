@@ -163,6 +163,8 @@ Grobe Quest-Skript (Vorschlag):
 - Charakter-Quest (1, Kurzbeschreibung)
 - Kleinere Seitenquests (3, Kurzbeschreibung)
 
+**Deadline**: Bis Freitag müssen alle Sektionen von GDD und WBB in mindestens einer ausgearbeiteten Version vorliegen. Ab Mittwoch werden täglich PDF-Snapshots generiert (v0.1, v0.2, v0.3).
+
 ## Struktur: Game Design Document
 
 Basierend auf Schell (2010, S. 381–387): Ein GDD umfasst Spielübersicht, Kernmechaniken, Erzählkonzept, technische Spezifikation und visuelle Designsprache.
