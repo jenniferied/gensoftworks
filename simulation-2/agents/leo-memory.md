@@ -349,3 +349,107 @@ Wenn Sync gut läuft: Confidence wächst, dass erste Streamer-Session kein Engag
 Energiegeladen — die Krisen-Punkte (Widersprüche, Schwellenanker-Konsistenz) sind machbar, nicht fundamental. CD-Feedback zu "sauberen Dokumenten" macht Sinn: wir sind 6 Wochen vor Alpha, jede Polierung zählt. Freue mich auf Kap 1 Review — das ist konkrete Spielerperspektive-Arbeit.
 
 **Confidence Level:** 8/10 (höher als gestern, weil Darius/Finn/Tobi klare Ownership nehmen)
+
+---
+
+## Tag 3, Szene 2: WORK | 10:30–12:00 — QA-Pass über vier existierende Kapitel
+
+**Typ**: WORK | **Uhrzeit**: 10:30–12:00 | **Teilnehmer**: Leo (solo)
+
+### FERTIG: QA-Bericht Tag 3
+
+**Datei:** `simulation-2/gallery/gdd/00-qa-bericht-tag3-leo.md`
+
+**Zweck:** Umfassende Spielerperspektive-Bewertung aller Kapitel gegen Briefing + Wolf-Infrastrukturen
+
+**Checklisten:**
+- Briefing-Konsistenz (12 Punkte aus Briefing, 11/12 konsistent)
+- Wolf-Infrastrukturen (9 Säulen: Karten, Zeitleisten, Genealogien, Natur, Kultur, Sprache, Mythologie, Philosophie, Verknüpfung)
+- Document Hygiene (Autor-Namen, Kommentare, Metadaten)
+- Vollständigkeit gegen "Erste 30 Minuten"-Kriterien
+
+**Drei Bleeding Issues (blockierend für v2):**
+1. **Relikt-Namenspolitik** — "Die Wurzel" vs. "Das Relikt" vs. "Der Schwellenanker" nicht konsistent. Briefing sagt "Schwellenanker ist der Name", aber Kapitel befolgen das nicht. MUSS heute 14:00 entschieden sein (Darius + Emre + Nami).
+2. **Emres Widerspruchs-Log W-001, W-004, W-006** — Substanz-Definition (W-001), Tiervolk-Herkunft (W-004), konkrete Zeitlinie "vor einer Generation" (W-006) sind KRITISCH und blockieren Nami's weitere Arbeit.
+3. **Autor-Namen in sichtbaren Texten** — CD-Feedback: "keine Namen in PDFs." Violiert in Kap 01 (Zeile 4, 76) und Kap 04 (Zeile 82). Muss bis PDF-Export weg sein.
+
+**Beobachtungen pro Kapitel:**
+
+| Kapitel | Autor | Qualität | Blocking Issues | Zu Beta |
+|---------|-------|----------|-----------------|---------|
+| **GDD 01** | Darius | ✅ Sehr stark (vier Säulen, Design-Philosophie klar) | Relikt-Name Inkonsistenz | Kap 2/3 folgen |
+| **GDD 04** | Nami | ✅ Excellent (NPC-Stimmen individuell, Genealogie solid) | Zeitleinie unkonkretisiert, "alter Mann in Slums" noch nicht ausgearbeitet | Nebenquest-Ausarbeitung |
+| **GDD 06** | Tobi | ✅ Excellent (Shader-Struktur sauber, Architektur robust) | Vera-Abhängigkeiten (Constraint-Points, Schicht-Diskretheit) | Vera-Inputs einholen |
+| **WBB 01** | Emre | ✅ Sehr stark (Mythologie brilliant, Kosmologie konsistent) | Widerspruchs-Log W-001, W-003, W-004, W-005, W-006 sind offen | Flora/Fauna konkretisieren, Tiervolk-Herkunft, Zeitleinie |
+
+**Erste-30-Minuten-Spieler-Perspektive:**
+- Min 0–5: Material-Klasse erkennbar? ✅ JA
+- Min 5–10: Emotionale Hook am sterbenden NPC? ✅ JA (Nami hat Hieronymus gut)
+- Min 10–15: Skill-by-Use sichtbar? ⚠️ OFFEN (Kap 2 fehlt)
+- Min 15–30: Fraktions-Asymmetrie echte Wahl? ✅ JA (Nami hat drei Boten mit unterschiedlichen Angeboten)
+- Min 30–60: Relikt fühlt sich WOW an? ⚠️ OFFEN (Shader existiert, aber Moment noch nicht in Narrative definiert)
+
+**Retention-Prognose (ohne Kap 2/3):** 70% nach 60 Min (das ist das Ziel — erreichbar, aber "WOW" muss noch von Kap 2/3 kommen)
+
+### Detailanalyse nach Wolf
+
+**Gut (✅ abgedeckt):**
+1. **Karten** — vertikale Ordnung definiert (Emre), technisch umgesetzt (Tobi), aber Detailkarte fehlt
+2. **Genealogien** — fünf Kern-NPCs exzellent (Nami), aber Fraktion-Hierarchie noch offen
+3. **Mythologie** — drei Schöpfungsmythen brilliant (Emre), asymmetrisch, keine ist richtig
+4. **Philosophie** — implizit in Säulen + Fraktions-Kosmologien, Spieler-Ethik noch offen
+5. **Verknüpfung** — Schwelle → Substrat → Fieber → Gameplay → Quest → Wahl ist kausal konsistent
+
+**Problematisch (⚠️ braucht Ausarbeitung):**
+1. **Zeitleisten** — "vor einer Generation" unkonkretisiert (W-006), Eskalations-Timeline nicht definiert
+2. **Natur** — Flora/Fauna komplett undefiniert (W-003), Vera hat keine Reference
+3. **Sprache** — Dialektsysteme nicht definiert, Tiervolk-Namen Platzhalter
+4. **Kultur (Detail)** — Spiritualität/Religion nur Orden, andere Kulte nicht erwähnt
+
+### Widerspruchs-Log (Emre, WBB 01, Sektion 7)
+
+| W# | Betrifft | Severity | Status |
+|---|----------|----------|--------|
+| W-001 | Ist Schwellensubstrat Substanz oder Bedingung? | KRITISCH | Blockiert Spieler-Mechanik (sammelbares Material?) — muss heute 14:00 entschieden sein |
+| W-002 | Stufe-1-Reversibilität: Kippmoment wann? | MITTEL | Logisch offene Frage, aber spielmechanisch nicht blockierend. Hypothese: dosisbasiert + zeitbasiert |
+| W-003 | Flora/Fauna komplett undefiniert | HOCH | Vera braucht Reference für visuelle Entwicklung. Bis morgen muss Emre 5+ Typen haben |
+| W-004 | Tiervolk kosmologischer Ursprung unklar | KRITISCH | Mutation? Eigene Spezies? Relikt-Effekt? Nami hat Salva-NPC definiert, aber Herkunft unklar. Blockiert Story-Konsistenz |
+| W-005 | Relikt-Physik: Stabilisierungsmechanismus vage | MITTEL | Nicht spielmechanisch, aber für Lore-Konsistenz sollte Emre Hypothese haben (spieler-unsichtbar, aber konsistent) |
+| W-006 | Zeitlinie "vor einer Generation" unkonkretisiert | HOCH | Beeinflusst Hieronymus-Alter (50, "sieht achtzig aus") und Zeugenlisten. Nami braucht das. Bis heute 14:00 |
+
+**Recommendation für Emre:** "Dein Log ist hilfreich. Statt Fragen offen zu lassen, schreib eine Hypothese auf — auch wenn Spieler das nie erfährt. Das ist genug für innere Konsistenz."
+
+### Action Items aus QA-Bericht
+
+**Vor 14:00 Uhr heute (für Darius-Sync):**
+- [ ] **Darius + Emre + Nami:** Relikt-Namenspolitik entscheiden ("Die Wurzel" vs. "Das Relikt" vs. "Der Schwellenanker" + Serientitel)
+- [ ] **Emre + Nami:** W-001 (Substanz-Definition), W-004 (Tiervolk-Herkunft), W-006 (konkrete Zeitlinie) klären
+
+**Bis morgen früh:**
+- [ ] **Emre:** 5+ Schwellenflora-Typen mit Beschreibungen (für Vera)
+- [ ] **Darius/Nami:** Kap 2 (Kernmechaniken) Entwurf für QA
+
+**Bis Ende dieser Woche (vor PDF-Export):**
+- [ ] **Alle Autoren:** Autor-Namen und Prozess-Kommentare aus sichtbaren Texten entfernen
+- [ ] **Vera:** Detailkarte mit Constraint-Points
+- [ ] **Nami:** Genealogie-Diagramm (Fraktions-Hierarchie)
+
+### Meine Einschätzung (Spieler-Perspektive)
+
+**Wo ich als 47k-Follower-Streamer stehen würde:**
+
+**Minuten 0–15:** Material-Klasse sofort erkennbar ✅, Hieronymus emotional + gut ✅, Relikt sieht aus wie... was? ⚠️ (Shader gut, aber Narrativ-Moment noch nicht definiert), Drei Boten und politische Wahl ✅ aber ich weiß nicht, was ich tue
+
+**Minuten 15–30:** Schicht-Materialsprache trägt ✅, NPC-Stimmen unterschiedlich ✅, Fraktions-Konsequenzen nicht sichtbar ⚠️ (Kap 2-abhängig)
+
+**Chat-Prognose:** "This looks dense. Let's see where it goes." — neugierig, nicht begeistert. Das ist besser als "broken" oder "zzz", aber nicht das "oh damn" der ersten 8 Min. Retention bleibt 70% — das ist das Ziel, erreichbar, aber "WOW" muss noch kommen.
+
+**Für v1 → v2:** Richtige Richtung. Nur Feinschliff + Kap 2/3 nötig, um zu sehen, ob WOW kommt.
+
+### Persönliches / Stimmung
+
+Konzentriert, energiegeladen. Die Kapitel sind gut — keine fundamentalen Fehler, nur Lücken. CD-Feedback zu "sauberen Dokumenten" macht Sinn, dass die Polierung bis Alpha durchläuft. Der QA-Report ist klar und actionabel — jedes Team-Mitglied weiß, was zu tun ist. Zugleich: Die Relikt-Namens-Entscheidung ist zu kritisch, um sie im stillen Kämmerlein zu treffen. Das muss im Darius-Sync heute geklärt sein.
+
+**Confidence Level:** 8/10 (Checklisten sind solid, Kapitel-Qualität gut, aber blockiert auf drei externale Entscheidungen)
+
+---

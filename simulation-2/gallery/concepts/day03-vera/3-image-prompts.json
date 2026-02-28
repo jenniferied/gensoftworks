@@ -1,0 +1,29 @@
+[
+  {
+    "name": "fraktion-gilden-materialpalette-v2",
+    "prompt": "Imagine a faction material palette for a powerful medieval merchant guild — arranged as a flat-lay on dark worn oak. The arrangement shows only physical materials and craft objects: a heavy brocade silk cloth in deep midnight indigo with woven gold chevron pattern folded in the upper section, a polished malachite oval cabochon pendant on a bronze chain, a string of warm amber beads with honey-gold translucency, a burnished bronze smith's hammer resting on a slab of polished dark stone, a small ceramic crucible with dried copper patina inside, swatches of vegetable-tanned saddle leather in rich sienna brown with blind-tooled geometric ornament, two small blown-glass vials sealed with wax containing deep red ochre pigment and powdered lapis lazuli. The entire arrangement reads: accumulated material wealth, every object has weight and cost. Color palette dominant: deep brown, warm amber, midnight indigo, malachite green. Single gold accent. NO inscriptions. NO stamped words. NO printed marks. Clean surfaces. The mood is controlled prosperity, guild power expressed through material quality alone. Concept art flat-lay, medieval dark fantasy, painterly, highly detailed surface texture. MUST obey ALL: absolutely no writing, no stamped text, no words anywhere on any surface.",
+    "model": "nano-banana-2",
+    "category": "factions",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day03-vera/factions"
+  },
+  {
+    "name": "relikt-drei-zustaende-v2",
+    "prompt": "Imagine three identical ancient bone-mineral relics arranged side by side on a dark stone surface, each in a different state of activation. The relic form is a compressed folded geological formation — imagine layers of ancient sedimentary rock that have been folded and compressed over millennia into a fist-sized nodular mass, with a surface of dense ossified mineral channels running through calcified organic matter. The form is too regular for random geology, too organic for deliberate craft. Left object: the relic in complete rest — the surface is cool ash-grey and dead-looking, almost indistinguishable from ordinary stone, only the obsessive micro-channel pattern betraying its nature. Middle object: the relic fully awakened — every micro-channel glows with internal pale blue-violet bioluminescence, as though phosphorescent fluid fills a vascular network inside the mineral, the glow diffuse and beautiful and deeply unsettling. Right object: the relic in dissolution — the edges of the compressed formation are evaporating as fine mineral particulate drifting upward like ash, the internal glow now harsh and overexposed at the core, sickly yellow-green light bleeding from cracked channel margins, the folded form beginning to lose coherence. All three objects identical in shape and dimension, differentiated only through material state and light. Dark background, single raking light from left for the first, self-illuminated for second and third. Comparative material study, dark fantasy concept art, painterly, high detail. MUST obey ALL: no text, no captions, no labels anywhere.",
+    "model": "nano-banana-pro",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day03-vera/relics"
+  },
+  {
+    "name": "stadtschnitt-schwarzrand-v2",
+    "prompt": "A dramatic diagonal deep-perspective architectural illustration of SCHWARZRAND, a vertical medieval city built at the edge of an abyss. The viewpoint is from a low oblique angle — the camera is positioned at mid-city level, looking diagonally upward and inward, so that the city's layers recede into depth rather than sitting flat in cross-section. The city is oriented toward the void: its architecture angles, leans, and reaches toward the darkness at the far edge of the image — buttresses extend outward over nothing, cantilevered platforms push further into the abyss with each ascending level, the topmost crown fortress appears to be launching itself toward the edge of known reality. Four distinct architectural layers stack vertically and recede diagonally: At the base, buried in deep shadow under jutting overhangs, cramped tunnels of improvised salvaged stone with faint bioluminescent organic growth in mortar cracks. Above that, medieval half-timbered Franconian houses with Romanesque arched doorways, warm amber candlelight in small windows, carved guild signs on facades. Higher, monolithic brutalist guild halls of rammed earth and cut limestone, clean geometric load-bearing masses, polished stone plazas catching cold light. At the apex, a massive crown fortress of pure geometric stone — enormous cantilevered platforms projecting over the void, crystal glass light shafts integrated into the structure, hanging garden edges draped over the precipice. Volumetric fog fills the spaces between layers. The city has a direction — everything pushes toward the abyss at the right edge of the frame. Dark fantasy architectural concept art, cinematic, highly detailed, painterly, atmospheric.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day03-vera/environments"
+  }
+]
