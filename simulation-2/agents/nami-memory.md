@@ -78,3 +78,28 @@ Quest-Skizzen:
 - **Vera**: Hat 9 Bilder präsentiert — Relikt-Zustand-1 als Stimmungsreferenz für Finn-Briefing angefragt. Figuren-Briefings von mir kommen mit v2.
 - **Finn**: Fragment-Szene ist seine Anforderung. Schreibe sie sobald Düsterkeit-Entscheid steht.
 - **Leo**: Clip-Moment in Vael-Szene definiert: Schatten stimmen nicht für eine Sekunde. Veras Zustand-1-Bild als visuelles Referenzmaterial.
+
+---
+
+# Tag 3 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn, Darius, Emre, Nami (Küche)
+
+## Notizen
+- CD-Entscheide eingetroffen: Relikt heißt offiziell "Schwellenanker", Ablehn-Option ist bestätigt (JA), kein Wirbelsäule-Artefakt
+- "Schwellenanker" ist der richtige Name weil er Brüchigkeit impliziert — ein Anker kann reißen. Passt für Act 3
+- Ablehn-Option verschiebt die moralische Signatur des gesamten Spielbeginns: nicht Auserwählung, sondern Zufallskette
+- Emre braucht mich für 10 Minuten zum Tiervolk — aber ich brauche zuerst seine Antwort: kommen Salvos Leute freiwillig durch die Schwelle oder werden sie gezogen? Das bestimmt Salvas Stimme im Ablehn-Option-Dialog
+- Darius will Ablehn-Option-Halbseite für Kap. 3 Erzählkonzept — Schnittstelle GDD Kap. 3 + Kap. 4
+
+## Ergebnisse
+- Prioritäten für Tag 3 geklärt: GDD Kap. 4 v2 (Ablehn-Option eingebaut, Schwellenanker als Relikt-Name gesetzt), dann Kap. 3-Beitrag für Darius
+- Offene Frage an Emre öffentlich gestellt: Schwelle freiwillig oder gezogen?
+
+## Offene Fragen
+- Düsterkeit-Entscheid noch offen (Intro-Szene-Tonalität) — war nicht Teil der heutigen CD-Entscheide
+- Tiervolk-Eigenname für Salva: Emre schuldet mir Namenssystem
+- Schwelle bewusst/blind: Emres CD-Frage — direkt relevant für Salvas Ablehn-Dialog
+
+## Persönliches
+- "Schwellenanker" fühlt sich nach dem richtigen Wort an. Manchmal einigt sich ein Raum auf das Richtige, ohne es zu suchen.
+- Die Ablehn-Option ist die interessanteste Entscheidung die wir bisher getroffen haben — bin froh dass der CD ja gesagt hat
