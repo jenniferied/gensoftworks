@@ -39,16 +39,11 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 
 1. Read `world.json` → determine day + scene number
 2. Read memory files for participating agents
-3. Read `schemas/scene.json` as reference for logbook structure
-4. Write GM trace `0-prompt.md` → document inputs (world state, memories, CD feedback, scene context)
-5. Execute scene: parallel (WORK) or sequential turn loop (conversation)
-6. Write GM trace `1-reasoning.md` → decisions made, `2-output.md` → results
-7. After scene: append memory to **each participant**. Every scene type — including PAUSE. Cover both **work** and **interpersonal**.
-8. Write logbook → `logbook/dayDD-sceneS.json` — dialogue **1:1 from agent output**, NICHT kürzen. Siehe Schema Rules.
-9. Update `world.json`
-10. **After scene 6**: Write `logbook/dayDD-summary.json` per `schemas/day-summary.json`
-11. **After scene 6**: Run `python scripts/validate-sim.py --sim-dir simulation-2` — fix any errors before continuing.
-12. **Log metrics**: capture `total_tokens` + `duration_ms` per agent → logbook `metrics` field.
+3. Execute scene: parallel (WORK) or sequential turn loop (conversation)
+4. After scene: append memory to **each participant**. Every scene type — including PAUSE. Cover both **work** and **interpersonal**.
+5. Update `world.json`
+6. **After scene 6**: Write `logbook/dayDD.json` per `schemas/day-index.json` (1 file per day, only metadata + summaries)
+7. **After scene 6**: Run `python scripts/validate-sim.py --sim-dir simulation-2` — fix any errors before continuing.
 
 ## Traces (mandatory per agent)
 
@@ -59,17 +54,9 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 
 Transcripts auto-recorded as JSONL. Extract: `python3 scripts/extract-transcripts.py --sim-dir simulation-2` (`--local` to regenerate).
 
-## Schema Rules
+## Logbook Format (v5)
 
-**Dialogue — conversation scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND):**
-- Full dialogue → `dialogue` array. `**Name**: text` → `{"who": "name", "says": "text"}`.
-- Do NOT shorten, summarize, or edit. 1:1 from agent output.
-- `summary` is the only place for GM condensation.
-
-**Dialogue — WORK scenes:** `dialogue: []`. Output lives in traces.
-
-**`trace_dirs` — conversation:** `["dayDD-sceneS-type", "dayDD-sceneS-t1-name", "dayDD-sceneS-t2-name", ...]`
-**`trace_dirs` — WORK:** `["dayDD-sceneS-agent1", "dayDD-sceneS-agent2", ...]`
+One file per day: `logbook/dayDD.json`. Contains only metadata + summaries — no dialogue. Agent output lives in `transcript.md` (auto-extracted from JSONL recordings).
 
 **Day summaries:** `weekday` always German proper-cased. Field name: `artifacts` (not `artifacts_produced`).
 
@@ -80,7 +67,7 @@ Transcripts auto-recorded as JSONL. Extract: `python3 scripts/extract-transcript
 - Other agents can request images → Vera writes prompt + generates
 - All images: NEVER with text. Seedream: `negative_prompt` setzen. Nano/GPT: Text im Prompt gar nicht erwähnen (auch nicht negativ)
 - Output: `gallery/concepts/{KK-kategorie}/{name}.png`
-- Approved images → `pinwall/favorites/`
+- CD-approved images → copy to `pinwall/favorites/` immediately
 
 ## Artifacts & Naming
 
@@ -90,7 +77,7 @@ Transcripts auto-recorded as JSONL. Extract: `python3 scripts/extract-transcript
 
 ## Outputs (after each day)
 
-- **Day summary**: `logbook/dayDD-summary.json` — phase, title, summary, cd_decisions, artifacts, key_moments
+- **Day index**: `logbook/dayDD.json` — metadata + summaries per scene + day-level summary
 - **Logbook PDF**: `Meier_KIComputerRollenspiele_Sim2Test_Logbuch_2026.pdf` (via `scripts/export-logbook.py`)
 - **Phaser viewer**: `scripts/build-viewer-data.py --sim-dir simulation-2-test` → `viewer-data/simulation.json`
 - **GDD PDF**: `scripts/export-gdd.py --sim-dir simulation-2-test`
@@ -103,4 +90,6 @@ Transcripts auto-recorded as JSONL. Extract: `python3 scripts/extract-transcript
 - **Never invent citations** — if unsure, say so
 - **Log everything** — every scene → logbook, every agent → traces
 - **Briefing is the north star** — all artifacts align with `briefing.md`
+- **Genre ist Fantasy** — NICHT "dark fantasy"
 - **Images: NEVER with text** — all concept art text-free
+- **Licensed assets** (tilesets, characters) in `frontend/.gitignore` — not committed
