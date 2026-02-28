@@ -184,7 +184,10 @@ def format_transcript(entries):
 
         if role == "user" and entry_type == "user":
             if isinstance(content, str):
-                lines.append(f"---\n### USER PROMPT{ts_str}\n")
+                if content.startswith("This session is being continued from a previous conversation"):
+                    lines.append(f"---\n### CONTEXT COMPACTION{ts_str}\n")
+                else:
+                    lines.append(f"---\n### USER PROMPT{ts_str}\n")
                 lines.append(content)
                 lines.append("")
             elif isinstance(content, list):

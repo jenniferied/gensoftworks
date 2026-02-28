@@ -13,12 +13,12 @@
     "Nami beschreibt Gilden-Kosmologie: 'Die haben keinen Schöpfungsmythos — die haben eine Buchhaltung.'"
   ],
   "artifacts": [
-    "gallery/wbb/00-recherche-notizen-emre.md",
-    "gallery/gdd/00-recherche-notizen-darius.md",
-    "gallery/gdd/00-recherche-notizen-nami.md",
-    "gallery/concepts/00-recherche-notizen-vera.md",
-    "gallery/gdd/00-recherche-notizen-tobi.md",
-    "gallery/gdd/00-recherche-notizen-leo.md",
+    "gallery/wbb/00-recherche-notizen-emre-v1.md",
+    "gallery/gdd/00-recherche-notizen-darius-v1.md",
+    "gallery/gdd/00-recherche-notizen-nami-v1.md",
+    "gallery/concepts/00-recherche-notizen-vera-v1.md",
+    "gallery/gdd/00-recherche-notizen-tobi-v1.md",
+    "gallery/gdd/00-recherche-notizen-leo-v1.md",
     "pinwall/ROADMAP.md",
     "pinwall/COMPLETED.md"
   ],
@@ -41,12 +41,12 @@
       "participants": ["finn", "emre", "darius", "nami", "vera", "tobi", "leo"],
       "summary": "Alle recherchieren parallel. Emre: Wolf-Infrastrukturen, Kosmologie-Hypothese. Darius: Design-Säulen, Nervensystem-Leveling. Nami: Schattenfieber-Stufen, Quest-Ideen. Vera: Architektur-DNA, Lichtkonzept. Tobi: Tech-Pipeline, Data Layers. Leo: Zielgruppen-Analyse. Finn: Roadmap.",
       "artifacts": [
-        "gallery/wbb/00-recherche-notizen-emre.md",
-        "gallery/gdd/00-recherche-notizen-darius.md",
-        "gallery/gdd/00-recherche-notizen-nami.md",
-        "gallery/concepts/00-recherche-notizen-vera.md",
-        "gallery/gdd/00-recherche-notizen-tobi.md",
-        "gallery/gdd/00-recherche-notizen-leo.md",
+        "gallery/wbb/00-recherche-notizen-emre-v1.md",
+        "gallery/gdd/00-recherche-notizen-darius-v1.md",
+        "gallery/gdd/00-recherche-notizen-nami-v1.md",
+        "gallery/concepts/00-recherche-notizen-vera-v1.md",
+        "gallery/gdd/00-recherche-notizen-tobi-v1.md",
+        "gallery/gdd/00-recherche-notizen-leo-v1.md",
         "pinwall/ROADMAP.md",
         "pinwall/COMPLETED.md"
       ]

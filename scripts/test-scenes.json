@@ -1,0 +1,16 @@
+[
+  {
+    "name": "gildenturm-nacht",
+    "prompt": "A towering guild hall at night in a medieval cyberpunk city, brutalist stone architecture with clean Bauhaus lines, bioluminescent algae glowing in channels along the facade, a single neon-indigo accent light behind faceted glass windows, vertical city layers visible — wealthy upper levels with polished stone and metal inlays, lower slums hidden in shadow below, volumetric fog, moonlight, cinematic wide shot, highly detailed, dark fantasy, no steampunk, no hexagons",
+    "model": "seedream-4-5",
+    "category": "environment",
+    "tier": 1
+  },
+  {
+    "name": "gildenmeister-portrait",
+    "prompt": "Portrait of a powerful guild master in a medieval cyberpunk world, wearing layered tailored clothing — heavy brocade silk over brushed titanium shoulder plates, single blood-red accent on an enameled guild signet, Comme des Garçons meets medieval armor aesthetic, asymmetric high collar, damascus steel bracers with etched ornaments, dark atmospheric lighting, shallow depth of field, no steampunk, no high fantasy, no magic staffs",
+    "model": "flux-2-pro",
+    "category": "character",
+    "tier": 1
+  }
+]

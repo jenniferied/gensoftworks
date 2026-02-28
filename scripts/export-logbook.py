@@ -645,9 +645,10 @@ def _make_thumbnail(img_path, thumb_dir, max_h=200):
     if key in _THUMB_CACHE:
         return _THUMB_CACHE[key]
     img = Image.open(img_path)
-    if img.height > max_h:
-        ratio = max_h / img.height
-        img = img.resize((int(img.width * ratio), max_h), Image.LANCZOS)
+    max_w = int(max_h * 16 / 9)  # Max width proportional to max height
+    ratio = min(max_h / img.height, max_w / img.width, 1.0)
+    if ratio < 1.0:
+        img = img.resize((int(img.width * ratio), int(img.height * ratio)), Image.LANCZOS)
     out = Path(thumb_dir) / img_path.name
     img.save(out, optimize=True)
     _THUMB_CACHE[key] = out
@@ -709,29 +710,45 @@ def render_artifacts(artifacts, sim_dir, thumb_dir=None):
             lines.append(f"*Artefakt: `{art_name}`*")
         lines.append("")
 
-    # Embed collected images in a grid (4 per row, small thumbnails with model caption)
+    # Embed collected images in a grid (2 per row, with prompt + model caption)
     if images and thumb_dir:
         lines.append("```{=latex}")
-        lines.append("{\\centering")
+        lines.append("\\vspace{2mm}")
         for i, img in enumerate(images):
-            thumb = _make_thumbnail(img, thumb_dir)
-            # Read model from PNG metadata
+            thumb = _make_thumbnail(img, thumb_dir, max_h=400)
+            # Read metadata from image
             model_label = ""
+            prompt_label = ""
             try:
                 meta = Image.open(img).info
                 if meta.get("model"):
                     model_label = meta["model"]
+                if meta.get("prompt"):
+                    prompt_label = meta["prompt"]
             except Exception:
                 pass
-            lines.append(
-                f"\\parbox{{2.2cm}}"
-                f"{{\\centering\\includegraphics[height=2cm]{{{thumb}}}"
-                f"\\\\[-1pt]{{\\tiny {esc(model_label)}}}}}"
-            )
-            lines.append("\\hspace{1mm}")
-            if (i + 1) % 4 == 0:
-                lines.append("\\\\[1mm]")
-        lines.append("\\par}\\vspace{2mm}")
+            # Truncate prompt for display (max ~120 chars)
+            if len(prompt_label) > 120:
+                prompt_label = prompt_label[:117] + "..."
+
+            lines.append(f"\\begin{{minipage}}[t]{{0.48\\textwidth}}")
+            lines.append(f"\\centering")
+            lines.append(f"\\includegraphics[width=\\linewidth,height=5cm,keepaspectratio]{{{thumb}}}")
+            if model_label:
+                lines.append(f"\\\\[2pt]{{\\scriptsize\\textbf{{{esc(model_label)}}}}}")
+            if prompt_label:
+                lines.append(f"\\\\[1pt]{{\\tiny\\itshape {esc(prompt_label)}}}")
+            lines.append(f"\\end{{minipage}}")
+            # 2 per row: hfill after odd, newline+vspace after even
+            if (i + 1) % 2 == 1:
+                lines.append("\\hfill")
+            else:
+                lines.append("\\\\[4mm]")
+        # Close last row if odd number of images
+        if len(images) % 2 == 1:
+            lines.append("\\hfill\\null")
+            lines.append("\\\\[4mm]")
+        lines.append("\\vspace{2mm}")
         lines.append("```")
         lines.append("")
 
@@ -1463,7 +1480,7 @@ def main() -> int:
     if args.day:
         base_name = f"logbook-tag-{args.day:03d}"
     else:
-        base_name = "Meier_KIComputerRollenspiele_Sim2Test_Logbuch_2026"
+        base_name = "Meier_KIComputerRollenspiele_AnhangB_Logbuch_2026"
 
     md_path = export_dir / f"{base_name}.md"
     md_path.write_text(md_content)

@@ -80,60 +80,42 @@
               "label": "Finn",
               "agent": "finn",
               "order": 1,
-              "url": "traces/simulation-2/day01-scene1-t1-finn/transcript.md"
-            },
-            {
-              "label": "Darius",
-              "agent": "darius",
-              "order": 2,
-              "url": "traces/simulation-2/day01-scene1-t2-darius/transcript.md"
-            },
-            {
-              "label": "Emre",
-              "agent": "emre",
-              "order": 3,
-              "url": "traces/simulation-2/day01-scene1-t3-emre/transcript.md"
-            },
-            {
-              "label": "Finn",
-              "agent": "finn",
-              "order": 4,
               "url": "traces/simulation-2/day01-scene1-finn/transcript.md"
             },
             {
               "label": "Darius",
               "agent": "darius",
-              "order": 5,
+              "order": 2,
               "url": "traces/simulation-2/day01-scene1-darius/transcript.md"
             },
             {
               "label": "Emre",
               "agent": "emre",
-              "order": 6,
+              "order": 3,
               "url": "traces/simulation-2/day01-scene1-emre/transcript.md"
             },
             {
               "label": "Nami",
               "agent": "nami",
-              "order": 7,
+              "order": 4,
               "url": "traces/simulation-2/day01-scene1-nami/transcript.md"
             },
             {
               "label": "Vera",
               "agent": "vera",
-              "order": 8,
+              "order": 5,
               "url": "traces/simulation-2/day01-scene1-vera/transcript.md"
             },
             {
               "label": "Tobi",
               "agent": "tobi",
-              "order": 9,
+              "order": 6,
               "url": "traces/simulation-2/day01-scene1-tobi/transcript.md"
             },
             {
               "label": "Leo",
               "agent": "leo",
-              "order": 10,
+              "order": 7,
               "url": "traces/simulation-2/day01-scene1-leo/transcript.md"
             }
           ]
@@ -705,63 +687,51 @@
           "cd_feedback": "Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge + Bilder. Release: Main → Alpha → Beta → Full → DLCs. Vera muss Bilder generieren.",
           "transcripts": {
             "emre": "traces/simulation-2/day02-scene1-emre/transcript.md",
-            "finn": "traces/simulation-2/day02-scene1-finn/transcript.md",
             "leo": "traces/simulation-2/day02-scene1-leo/transcript.md",
             "nami": "traces/simulation-2/day02-scene1-nami/transcript.md",
             "tobi": "traces/simulation-2/day02-scene1-tobi/transcript.md"
           },
           "transcript_list": [
             {
-              "label": "Game Master",
-              "agent": "_gm",
-              "url": "traces/simulation-2/day02-gm/transcript.md"
-            },
-            {
               "label": "Finn",
               "agent": "finn",
               "order": 1,
-              "url": "traces/simulation-2/day02-scene1-finn/transcript.md"
-            },
-            {
-              "label": "Finn",
-              "agent": "finn",
-              "order": 2,
               "url": "traces/simulation-2/day02-scene1-t1-finn/transcript.md"
             },
             {
               "label": "Darius",
               "agent": "darius",
-              "order": 3,
+              "order": 2,
               "url": "traces/simulation-2/day02-scene1-t1-darius/transcript.md"
             },
             {
               "label": "Emre",
               "agent": "emre",
-              "order": 4,
+              "order": 3,
               "url": "traces/simulation-2/day02-scene1-emre/transcript.md"
             },
             {
               "label": "Nami",
               "agent": "nami",
-              "order": 5,
+              "order": 4,
               "url": "traces/simulation-2/day02-scene1-nami/transcript.md"
             },
             {
               "label": "Tobi",
               "agent": "tobi",
-              "order": 6,
+              "order": 5,
               "url": "traces/simulation-2/day02-scene1-tobi/transcript.md"
             },
             {
               "label": "Leo",
               "agent": "leo",
-              "order": 7,
+              "order": 6,
               "url": "traces/simulation-2/day02-scene1-leo/transcript.md"
             },
             {
               "label": "Finn",
               "agent": "finn",
-              "order": 8,
+              "order": 7,
               "url": "traces/simulation-2/day02-scene1-t8-finn/transcript.md"
             }
           ]
@@ -869,11 +839,6 @@
           },
           "transcript_list": [
             {
-              "label": "Game Master",
-              "agent": "_gm",
-              "url": "traces/simulation-2/day02-gm/transcript.md"
-            },
-            {
               "label": "Darius",
               "agent": "darius",
               "order": 1,
@@ -974,14 +939,7 @@
           },
           "active_room": "kitchen",
           "artifacts": [],
-          "cd_feedback": null,
-          "transcript_list": [
-            {
-              "label": "Game Master",
-              "agent": "_gm",
-              "url": "traces/simulation-2/day02-gm/transcript.md"
-            }
-          ]
+          "cd_feedback": null
         },
         {
           "scene": 4,
@@ -1035,23 +993,7 @@
           },
           "active_room": "kitchen",
           "artifacts": [],
-          "cd_feedback": null,
-          "transcripts": {
-            "nami": "traces/simulation-2/day02-scene4-nami/transcript.md"
-          },
-          "transcript_list": [
-            {
-              "label": "Game Master",
-              "agent": "_gm",
-              "url": "traces/simulation-2/day02-gm/transcript.md"
-            },
-            {
-              "label": "Nami",
-              "agent": "nami",
-              "order": 1,
-              "url": "traces/simulation-2/day02-scene4-nami/transcript.md"
-            }
-          ]
+          "cd_feedback": null
         },
         {
           "scene": 5,
@@ -1107,30 +1049,7 @@
           },
           "active_room": "kitchen",
           "artifacts": [],
-          "cd_feedback": null,
-          "transcripts": {
-            "darius": "traces/simulation-2/day02-scene5-darius/transcript.md",
-            "emre": "traces/simulation-2/day02-scene5-emre/transcript.md"
-          },
-          "transcript_list": [
-            {
-              "label": "Game Master",
-              "agent": "_gm",
-              "url": "traces/simulation-2/day02-gm/transcript.md"
-            },
-            {
-              "label": "Darius",
-              "agent": "darius",
-              "order": 1,
-              "url": "traces/simulation-2/day02-scene5-darius/transcript.md"
-            },
-            {
-              "label": "Emre",
-              "agent": "emre",
-              "order": 2,
-              "url": "traces/simulation-2/day02-scene5-emre/transcript.md"
-            }
-          ]
+          "cd_feedback": null
         }
       ],
       "summary": {

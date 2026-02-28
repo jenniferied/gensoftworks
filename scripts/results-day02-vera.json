@@ -1,0 +1,344 @@
+[
+  {
+    "test": "flux-2-pro_vertikale-stadt-panorama-aussen",
+    "model": "fal-ai/flux-2-pro",
+    "prompt": "A massive vertical city built into a mountainside, seen from a distant river valley at golden hour. Four distinct architectural layers visible from bottom to top: lowest level hidden in shadow with improvised wooden structures and cloth walls between old stone foundations, middle level with half-timbered Franconian houses and stepped gables with workshop facades, upper level with monolithic brutalist stone blocks and clean Bauhaus geometry in polished limestone, and at the very top a crown fortress of raw geometric forms with hanging gardens and light shafts. Bioluminescent veins glow faintly in the lowest layer. Volumetric fog between layers. Medieval fantasy, dark and grounded, cinematic wide establishing shot, painterly, concept art, matte painting style",
+    "elapsed_s": 12.0,
+    "cost_est": "$0.03",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053c8/Dht4ZSK0sIh91Ogk_TRHh_lb92GBdp.jpg"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:45:42.175721",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "1024x576"
+  },
+  {
+    "test": "nano-banana-2_vertikale-stadt-querschnitt",
+    "model": "fal-ai/nano-banana-2",
+    "prompt": "Architectural cross-section diagram of a medieval vertical city, cutaway view showing four stacked layers. Bottom layer: dark cramped tunnels and improvised shelters made of stolen bricks, bone carvings, cloth walls, faint bioluminescent glow from organic growth on walls. Second layer: half-timbered houses with round arches, thick stone walls, workshops with guild signs, warm firelight and tallow candles. Third layer: guild halls with brutalist stone blocks, modular Bauhaus facades, polished limestone and metal inlays, crystal glass windows. Top layer: crown palace with massive cantilever platforms, hanging gardens, light shafts as architectural statements. Dark background, technical illustration meets fantasy concept art, detailed cross-section, painterly rendering",
+    "elapsed_s": 26.9,
+    "cost_est": "$0.08",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053ca/eFz_uPDQbz4rAssAXBzvA_UwzIvgx4.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:46:10.821068",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "gpt-image-1-5_hero-vertikale-stadt-aufblick",
+    "model": "fal-ai/gpt-image-1.5",
+    "prompt": "Looking straight up from the deepest slum level of a medieval vertical city. The viewer stands in near-total darkness at the bottom — improvised shelters of salvaged wood and stolen bricks crowd the edges of the frame, faint bioluminescent organic growths provide the only light source, casting sickly pale green on rough stone walls. Above, layers of architecture stack upward like geological strata: half-timbered houses with stepped gables and workshop balconies at the middle level, their warm amber firelight leaking down. Higher still, monolithic brutalist stone platforms of guild halls jut outward with clean Bauhaus geometry, polished limestone catching cold reflected light. At the very top, a sliver of sky visible through the gap between massive crown fortress walls — distant, unreachable, almost abstract. Vertical composition forced into landscape frame. The architecture tells the story: three cities stacked on top of each other, none acknowledging the one below. Atmospheric perspective, volumetric light shafts cutting through fog between layers, medieval dark fantasy, concept art, highly detailed, cinematic",
+    "elapsed_s": 34.5,
+    "cost_est": "$0.20",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053cd/BOyNUqv92OxoTwg4DYj_4_muApnxw9.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:46:47.444587",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "size": "1536x1024",
+      "quality": "high"
+    },
+    "dimensions": "1024x1024"
+  },
+  {
+    "test": "seedream-4-5_krone-architektur-oben",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "The crown district at the top of a medieval vertical city, brutalist architecture translated into medieval stone construction. Massive cantilevered platforms of rammed earth and cut limestone jutting over the void below, clean geometric forms with visible load-bearing structure, no ornament. A wide ceremonial plaza of polished dark stone leads to a fortress gate of raw geometric blocks. Hanging gardens cascade from balconies with crystalline glass light shafts. A single figure in all-black tailored layered clothing with one blood-red accent walks across the plaza. Cold white light from crystal lanterns. Austere, powerful, Bauhaus meets medieval fortress. Concept art, dark fantasy, painterly",
+    "elapsed_s": 47.9,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053d5/VFo4DO3vcLpNiP86K_JCK_cd0ad4284d7a49c6947f800c7dbef911.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:47:39.014220",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_gilden-viertel-werkstatt",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "A bustling guild quarter in a medieval vertical city, half-timbered Franconian houses with stepped gables lining a narrow cobblestone street. Workshops open at ground level: a smith's forge glowing orange, a weaver's loom visible through an open door, a glassmaker's kiln casting amber light. Guild signs carved into dark wooden beams. Polished malachite inlays and amber decorations on guild master doorframes. Indigo-dyed linen banners hang between buildings. Characters in earth-toned working clothes with visible leather tool belts. Warm tallow candlelight and colored glass window reflections. Above the rooftops, the massive brutalist blocks of the upper city loom in shadow. Concept art, atmospheric, medieval dark fantasy, painterly",
+    "elapsed_s": 21.7,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053d7/u4ozRokoAxGr2VkJI_sqm_2d00bfb65ca842e989e0b7e7c63daef7.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:48:04.623525",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "flux-2-pro_schwellenanker-zone-gradient",
+    "model": "fal-ai/flux-2-pro",
+    "prompt": "A subterranean cavern beneath a medieval city where reality distorts near an ancient organic relic. In the foreground, normal stone architecture with rough-hewn walls and iron torch brackets. Moving deeper into the image, the environment gradually transforms: stone surfaces develop organic vein-like growths, walls seem to breathe and undulate, the color temperature shifts from warm amber to cold pale luminescence. At the far end, barely visible through dense bioluminescent fog, a massive form that is neither plant nor animal nor mineral grows from floor to ceiling — the Threshold Anchor. Its surface shifts between bone, bark, and polished obsidian. Three distinct visual zones from near to far: mundane reality, transitional distortion, full otherworldly transformation. Dark fantasy, body horror undertones, concept art, atmospheric, Elden Ring aesthetic",
+    "elapsed_s": 13.6,
+    "cost_est": "$0.03",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053d8/5Kx2eJf2dsCEyW3s61YlB_a3yjGLyc.jpg"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:48:19.312207",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "1024x576"
+  },
+  {
+    "test": "nano-banana-pro_schwellenanker-relikt-nahansicht",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "Close-up study of the Threshold Anchor, an ancient organic relic that maintains the barrier between planes of existence. It is not a tool, not a weapon — it is a condition made physical. The object grows from a stone pedestal in a dark underground chamber. Its surface is layered: regions of polished obsidian-like mineral flow into bark-like organic textures that transition into bone-white calcified ridges. Faint bioluminescent veins pulse beneath the surface like a slow heartbeat. Small root-like tendrils extend from its base into the surrounding stone, as if the relic is anchoring itself — or growing. The chamber walls near it show distortion: straight stone edges have begun to curve organically. Scale reference: a human hand reaching toward it but not touching, fingers slightly trembling. Dark atmospheric lighting, the only illumination comes from the relic itself. Concept art, detailed material study, dark fantasy, reverent and unsettling",
+    "elapsed_s": 25.8,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053d9/zpJ8nmWD4X50cLMB1ABo7_MXCghenK.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:48:46.573780",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "seedream-4-5_drei-fraktionen-silhouetten",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Three faction representatives standing side by side in a dark void, full body silhouette study for a medieval dark fantasy game. Left figure: Crown military commander in all-black tailored layered armor, gambeson under chain mail under plate segments, asymmetric high collar, single indigo accent on an enameled shoulder clasp, damascus steel bracers, rigid upright posture. Center figure: Guild master in heavy brocade silk robes over brushed metal shoulder plates, visible tool pouches and buckles, amber and malachite jewelry, earth-toned fabrics with polished metal accents, confident merchant stance. Right figure: Order inquisitor in monastic all-white hooded robes with geometric embroidery, crystal glass optical lenses on a chain, hidden armor beneath, eerily still posture. Each silhouette must be readable at distance. Dark background, concept art character lineup, full body, front view, medieval Comme des Garcons meets armor aesthetic",
+    "elapsed_s": 20.5,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9053de/NAz4ynAPH0z_fddMlwdsD_6a9deaa9173048ba962820a115cad071.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T20:49:10.015576",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_relikt-zustand-null-ruhend",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Material study of an ancient organic relic in its dormant state, resting on rough stone. The object is vertebra-shaped — a dense, folded form between a spinal column section and a collapsed mountain crystal cluster. Its surface is spongy and calcified, like cancellous bone compressed over centuries. The texture is too regular for nature, too organic for craft. Color: cool ash gray, slightly off-white at the ridges, deep shadow in the porous cavities. No glow. No luminescence. It looks like a stone you would walk past. Only the texture reveals it — an obsessive pattern of micro-channels and nodal points. Scale reference: fits in two cupped hands. Isolated on dark stone surface, soft raking side light from a single tallow candle, no background detail. Detailed material study, dark fantasy concept art, painterly, high detail surface texture",
+    "elapsed_s": 17.2,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a90552e/-7_FuFoMy_13uNgy690qi_d94a5a72d5684f8fab7bc518ad51364c.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:45:10.000927",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "name_de": "",
+    "api_args": {
+      "image_size": "square"
+    },
+    "dimensions": "2048x2048"
+  },
+  {
+    "test": "seedream-4-5_relikt-zustand-eins-aktiviert",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Material study of an ancient organic relic in its activated state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels running through it. Now: faint vessel-like lines beneath the surface glow with cool bioluminescent light, pale blue-violet, as if circulatory channels have filled with phosphorescent fluid. The glow is internal, diffuse, coming from within the material itself, not from a surface coating. The effect is beautiful and deeply unsettling — it looks alive. The ridges and porous cavities are now illuminated from inside, casting tiny shadows within the object itself. The surrounding stone surface shows the faintest reflected luminescence. The object is compelling, almost magnetic. Scale reference: fits in two cupped hands. Dark chamber, the relic is its own only light source. Detailed material study, dark fantasy concept art, painterly, bioluminescent",
+    "elapsed_s": 15.6,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a905530/bcyBvcQHarCkSn2rs4Yrp_ff8026c94d4b4e56a4fb3f814db7a666.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:45:27.793076",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "name_de": "",
+    "api_args": {
+      "image_size": "square"
+    },
+    "dimensions": "2048x2048"
+  },
+  {
+    "test": "seedream-4-5_relikt-zustand-drei-aufloesung",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Material study of an ancient organic relic in its dissolution state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, originally spongy and calcified. Now the edges of the object are dissolving: fine particulate matter drifts from the outer ridges like ash from a dying ember, or like condensation evaporating from cold glass. The material is dematerializing at its boundaries. The internal glow has intensified but lost beauty — it is now harsh, overexposed white-violet at the core, with sickly yellow-green at the dissolving edges. The porous surface channels have cracked and widened. The surrounding stone surface shows damage: organic residue stains, hairline fractures radiating outward. The relic is coming apart. Scale reference: fits in two cupped hands. The light source is the relic itself, now too bright for beauty. Detailed material study, dark fantasy concept art, painterly, dissolution, body horror undertones",
+    "elapsed_s": 18.5,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a905532/1Cq7GyzC8UFzudXoRBHu0_1ddde8e076f240339f755677dd39c9e0.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:45:48.438522",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "name_de": "",
+    "api_args": {
+      "image_size": "square"
+    },
+    "dimensions": "2048x2048"
+  },
+  {
+    "test": "nano-banana-2_relikt-drei-zustaende-vergleich",
+    "model": "fal-ai/nano-banana-2",
+    "prompt": "Three-panel material study of the same ancient organic relic in three states, arranged left to right on a dark stone surface. The relic is vertebra-shaped: a folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels and nodal points. Left panel: dormant state — ash gray, no glow, dead-looking stone, only texture reveals it. Center panel: activated state — internal vessel-lines glow with pale blue-violet bioluminescence, beautiful and alive, compelling. Right panel: dissolution state — edges evaporating like fine particulate ash, internal glow overexposed and harsh, sickly yellow-green at dissolving margins. All three identical in shape and scale, only state differs. Labels at the bottom in medieval manuscript script. Dark background, single directional light from left for dormant, self-illumination for activated and dissolution. Comparative concept art study, dark fantasy, painterly, high detail",
+    "elapsed_s": 25.7,
+    "cost_est": "$0.08",
+    "images": [
+      "https://v3b.fal.media/files/b/0a905532/WFx4Uv0zgOqJHkfcfuM7j_NMVwkGQL.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:46:15.979808",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "gpt-image-1-5_relikt-hero-shot-aktiviert",
+    "model": "fal-ai/gpt-image-1.5",
+    "prompt": "Hero shot of the Threshold Anchor relic in its activated state, displayed on a rough-hewn stone altar in a vaulted underground chamber. The object is vertebra-shaped — a dense folded form between a spinal column section and a collapsed crystal cluster, its surface spongy and calcified with micro-channels running through it. Every channel now pulses with cool blue-violet bioluminescent light from within, like a circulatory system filled with phosphorescent fluid. The light is the only illumination in the chamber. It casts complex shadows through the porous surface, projecting branching light patterns across the stone altar and vaulted ceiling above. The surrounding chamber walls show organic traces: fine vein-like mineral deposits have grown outward from the altar base across the floor, as if the relic is slowly colonizing the stone. A human figure stands at the edge of frame, back to the viewer, small in comparison — awed, hesitant. The composition emphasizes the object: low camera angle, looking slightly up at the altar, the vaulted ceiling framing the top. The relic is sublime and threatening. Atmospheric, volumetric light from the relic only, dark fantasy, concept art, cinematic, highly detailed, reverent and unsettling",
+    "elapsed_s": 33.7,
+    "cost_est": "$0.20",
+    "images": [
+      "https://v3b.fal.media/files/b/0a905535/7FT3j8tLEOjUlcmUYWoA-_arCvcEvC.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:46:51.339329",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "size": "1536x1024",
+      "quality": "high"
+    },
+    "dimensions": "1024x1024"
+  },
+  {
+    "test": "seedream-4-5_fraktion-krone-materialpalette",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Faction material palette study for a medieval dark fantasy ruling crown faction. A flat-lay arrangement of materials and costume fragments on black stone: brushed titanium plate segments with etched geometric ornaments, deep crimson enameled signet, obsidian-polished armor pauldron with Damask steel inlays, heavy brocade silk in near-black with a single blood-red woven border, electrum buckle, faceted crystal glass vial with deep indigo liquid inside. Surrounding: a fragment of a document with a royal seal in blood-red wax. Color palette of the arrangement: all-black and charcoal with metallic silver-grey sheen, ONE blood-red accent only, cold white light reflections on polished surfaces. The aesthetic is high fashion restraint — no excess, controlled power. Flat-lay concept art, material study, dark fantasy, painterly, no text visible",
+    "elapsed_s": 21.3,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a90553b/6J00FYQDy_zisUESdwqcB_7aec7dfc7f4e4066bc9de6da6968da2f.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:47:15.489802",
+    "category": "factions",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_fraktion-orden-materialpalette",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Faction material palette study for a medieval dark fantasy inquisitor order faction. A flat-lay arrangement of materials and costume fragments on cold grey stone: bleached white heavy linen robe fragment with precise geometric embroidery in pale silver thread, crystal glass optical lens mounted in a fine brass frame, vellum manuscript page covered in dense encoded script, a glass phial of luminescent pale green alchemical fluid, white bone rosary with a single black obsidian centerpiece, seal stamp with an eye symbol. Color palette: all-white and pale grey with cold silver accents, ONE glow accent in pale luminescent green only. The aesthetic is monastic austerity — knowledge as control, purity as threat. Flat-lay concept art, material study, dark fantasy, painterly, no text visible",
+    "elapsed_s": 21.3,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a90553d/BlppbU5s904MbCrlEt_VD_cd70d60f4b774e41a442b9888baf5609.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:47:39.786521",
+    "category": "factions",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_fraktion-gilden-materialpalette",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Faction material palette study for a medieval dark fantasy merchant guild faction. A flat-lay arrangement of materials and costume fragments on warm oak wood surface: deep indigo-dyed heavy brocade silk with gold thread border, polished malachite guild pendant, amber bead string, burnished bronze guild seal with a hammer and scales motif, vegetable-tanned leather work apron fragment with engraved maker marks, small sample vials of mineral pigments in red ochre and Prussian blue, a folded contract tied with wax seal. Color palette: rich earth tones — deep brown, warm amber, indigo, malachite green — with polished bronze and gold accents throughout. The aesthetic is accumulated material wealth — every object has a price, and it is significant. Flat-lay concept art, material study, dark fantasy, painterly, no text visible",
+    "elapsed_s": 21.2,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a90553f/yTI0czm08Xro0TEQJRYT__3bd67952915b4f03a21140e9531e3125.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:48:03.837872",
+    "category": "factions",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "nano-banana-pro_stadtschnitt-vertikale-schichtung",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "Architectural cross-section cutaway view of a vertical medieval city built into a rocky promontory, showing four stacked social layers simultaneously. Bottom layer in deep shadow: cramped tunnels and improvised shelters of stolen bricks, bone carvings, cloth walls between old foundations, faint bioluminescent organic growth on walls the only light. Second layer: half-timbered Franconian houses with Romanesque round arches, thick stone walls, workshop facades with carved guild signs, warm tallow candlelight and amber through colored glass windows. Third layer: monolithic brutalist guild halls of rammed earth and cut limestone, clean geometric load-bearing forms, polished stone plazas, metal inlays, modular Bauhaus-inspired facades. Top layer: crown fortress with massive cantilevered platforms of pure geometric stone, no ornament, hanging gardens at the edges, crystal glass light shafts as architectural statement. The cross-section reveals how each layer builds over or ignores the layer below. Atmospheric fog between layers. Dark fantasy architectural illustration, concept art, detailed technical-artistic cross-section, painterly",
+    "elapsed_s": 23.6,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a905540/oCRdqxCfssYiJ7VMF1i3X_i2chdOhr.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T21:48:29.179438",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9"
+    },
+    "dimensions": "1376x768"
+  }
+]

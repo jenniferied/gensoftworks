@@ -329,7 +329,7 @@ def main() -> int:
     md_content = build_markdown(gallery_dir, doc_title)
 
     export_dir.mkdir(parents=True, exist_ok=True)
-    base_name = args.output_name or "Meier_KIComputerRollenspiele_Sim2Test_GDD_2026"
+    base_name = args.output_name or "Meier_KIComputerRollenspiele_AnhangB_GDD_v0.1_2026"
     md_path = export_dir / f"{base_name}.md"
     md_path.write_text(md_content)
     print(f"  Markdown: {md_path}")
