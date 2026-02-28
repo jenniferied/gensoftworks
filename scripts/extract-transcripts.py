@@ -85,6 +85,10 @@ def _extract_agent_from_prompt(prompt_text):
 def identify_trace_dir(entries, sim_dir):
     """Find the trace directory this agent writes to.
 
+    Strategy:
+      1. Look for Write tool calls targeting sim_dir/traces/
+      2. Fallback: parse the initial prompt for agent name + scene context
+
     Returns (trace_dir_name, agent_id) or (None, None).
     """
     trace_pattern = re.compile(
@@ -109,24 +113,38 @@ def identify_trace_dir(entries, sim_dir):
         if trace_dir_name:
             break
 
-    if not trace_dir_name:
-        return None, None
-
     # Extract agent ID from initial prompt
     agent_id = None
+    first_text = ""
     if entries:
         first_msg = entries[0].get("message", {})
         first_content = first_msg.get("content", "")
         if isinstance(first_content, str):
+            first_text = first_content
             agent_id = _extract_agent_from_prompt(first_content)
 
-    # Fallback: extract from trace dir name
-    if not agent_id:
-        last = trace_dir_name.split("-")[-1]
-        if last in AGENT_NAMES:
-            agent_id = last
+    if trace_dir_name:
+        # Fallback: extract agent from trace dir name
+        if not agent_id:
+            last = trace_dir_name.split("-")[-1]
+            if last in AGENT_NAMES:
+                agent_id = last
+        return trace_dir_name, agent_id or "unknown"
 
-    return trace_dir_name, agent_id or "unknown"
+    # --- Fallback: derive trace dir from prompt context ---
+    if not agent_id or not first_text:
+        return None, None
+
+    # Look for "Tag N" + "Szene M" in prompt
+    day_m = re.search(r"Tag\s+(\d+)", first_text)
+    scene_m = re.search(r"Szene\s+(\d+)", first_text)
+    if not day_m or not scene_m:
+        return None, None
+
+    day_num = int(day_m.group(1))
+    scene_num = int(scene_m.group(1))
+    trace_dir_name = f"day{day_num:02d}-scene{scene_num}-{agent_id}"
+    return trace_dir_name, agent_id
 
 
 def _stem_name(trace_dir_name, agent_id):

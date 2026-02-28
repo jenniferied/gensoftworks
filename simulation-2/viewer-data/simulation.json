@@ -62,15 +62,24 @@
           "artifacts": [],
           "cd_feedback": "Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres Feedback.",
           "transcripts": {
+            "darius": "traces/simulation-2/day01-scene1-darius/transcript.md",
             "emre": "traces/simulation-2/day01-scene1-emre/transcript.md",
             "finn": "traces/simulation-2/day01-scene1-finn/transcript.md",
-            "nami": "traces/simulation-2/day01-scene1-nami/transcript.md"
+            "leo": "traces/simulation-2/day01-scene1-leo/transcript.md",
+            "nami": "traces/simulation-2/day01-scene1-nami/transcript.md",
+            "tobi": "traces/simulation-2/day01-scene1-tobi/transcript.md",
+            "vera": "traces/simulation-2/day01-scene1-vera/transcript.md"
           },
           "transcript_list": [
             {
               "label": "Game Master",
               "agent": "_gm",
               "url": "traces/simulation-2/day01-gm/transcript.md"
+            },
+            {
+              "label": "Darius",
+              "agent": "darius",
+              "url": "traces/simulation-2/day01-scene1-darius/transcript.md"
             },
             {
               "label": "Emre",
@@ -83,9 +92,24 @@
               "url": "traces/simulation-2/day01-scene1-finn/transcript.md"
             },
             {
+              "label": "Leo",
+              "agent": "leo",
+              "url": "traces/simulation-2/day01-scene1-leo/transcript.md"
+            },
+            {
               "label": "Nami",
               "agent": "nami",
               "url": "traces/simulation-2/day01-scene1-nami/transcript.md"
+            },
+            {
+              "label": "Tobi",
+              "agent": "tobi",
+              "url": "traces/simulation-2/day01-scene1-tobi/transcript.md"
+            },
+            {
+              "label": "Vera",
+              "agent": "vera",
+              "url": "traces/simulation-2/day01-scene1-vera/transcript.md"
             },
             {
               "label": "Turn 1: Finn",
@@ -179,12 +203,16 @@
             "vera": "traces/simulation-2/day01-scene2-vera/",
             "tobi": "traces/simulation-2/day01-scene2-tobi/",
             "darius": "traces/simulation-2/day01-scene2-darius/",
-            "leo": "traces/simulation-2/day01-scene2-leo/"
+            "nami": "traces/simulation-2/day01-scene2-nami/",
+            "leo": "traces/simulation-2/day01-scene2-leo/",
+            "finn": "traces/simulation-2/day01-scene2-finn/"
           },
           "transcripts": {
             "darius": "traces/simulation-2/day01-scene2-darius/transcript.md",
             "emre": "traces/simulation-2/day01-scene2-emre/transcript.md",
+            "finn": "traces/simulation-2/day01-scene2-finn/transcript.md",
             "leo": "traces/simulation-2/day01-scene2-leo/transcript.md",
+            "nami": "traces/simulation-2/day01-scene2-nami/transcript.md",
             "tobi": "traces/simulation-2/day01-scene2-tobi/transcript.md",
             "vera": "traces/simulation-2/day01-scene2-vera/transcript.md"
           },
@@ -205,9 +233,19 @@
               "url": "traces/simulation-2/day01-scene2-emre/transcript.md"
             },
             {
+              "label": "Finn",
+              "agent": "finn",
+              "url": "traces/simulation-2/day01-scene2-finn/transcript.md"
+            },
+            {
               "label": "Leo",
               "agent": "leo",
               "url": "traces/simulation-2/day01-scene2-leo/transcript.md"
+            },
+            {
+              "label": "Nami",
+              "agent": "nami",
+              "url": "traces/simulation-2/day01-scene2-nami/transcript.md"
             },
             {
               "label": "Tobi",
@@ -280,7 +318,13 @@
           "artifacts": [],
           "cd_feedback": null,
           "transcripts": {
-            "finn": "traces/simulation-2/day01-scene3-finn/transcript.md"
+            "darius": "traces/simulation-2/day01-scene3-darius/transcript.md",
+            "emre": "traces/simulation-2/day01-scene3-emre/transcript.md",
+            "finn": "traces/simulation-2/day01-scene3-finn/transcript.md",
+            "leo": "traces/simulation-2/day01-scene3-leo/transcript.md",
+            "nami": "traces/simulation-2/day01-scene3-nami/transcript.md",
+            "tobi": "traces/simulation-2/day01-scene3-tobi/transcript.md",
+            "vera": "traces/simulation-2/day01-scene3-vera/transcript.md"
           },
           "transcript_list": [
             {
@@ -289,9 +333,39 @@
               "url": "traces/simulation-2/day01-gm/transcript.md"
             },
             {
+              "label": "Darius",
+              "agent": "darius",
+              "url": "traces/simulation-2/day01-scene3-darius/transcript.md"
+            },
+            {
+              "label": "Emre",
+              "agent": "emre",
+              "url": "traces/simulation-2/day01-scene3-emre/transcript.md"
+            },
+            {
               "label": "Finn",
               "agent": "finn",
               "url": "traces/simulation-2/day01-scene3-finn/transcript.md"
+            },
+            {
+              "label": "Leo",
+              "agent": "leo",
+              "url": "traces/simulation-2/day01-scene3-leo/transcript.md"
+            },
+            {
+              "label": "Nami",
+              "agent": "nami",
+              "url": "traces/simulation-2/day01-scene3-nami/transcript.md"
+            },
+            {
+              "label": "Tobi",
+              "agent": "tobi",
+              "url": "traces/simulation-2/day01-scene3-tobi/transcript.md"
+            },
+            {
+              "label": "Vera",
+              "agent": "vera",
+              "url": "traces/simulation-2/day01-scene3-vera/transcript.md"
             }
           ]
         },
@@ -348,11 +422,31 @@
           "active_room": "kitchen",
           "artifacts": [],
           "cd_feedback": null,
+          "transcripts": {
+            "emre": "traces/simulation-2/day01-scene4-emre/transcript.md",
+            "leo": "traces/simulation-2/day01-scene4-leo/transcript.md",
+            "nami": "traces/simulation-2/day01-scene4-nami/transcript.md"
+          },
           "transcript_list": [
             {
               "label": "Game Master",
               "agent": "_gm",
               "url": "traces/simulation-2/day01-gm/transcript.md"
+            },
+            {
+              "label": "Emre",
+              "agent": "emre",
+              "url": "traces/simulation-2/day01-scene4-emre/transcript.md"
+            },
+            {
+              "label": "Leo",
+              "agent": "leo",
+              "url": "traces/simulation-2/day01-scene4-leo/transcript.md"
+            },
+            {
+              "label": "Nami",
+              "agent": "nami",
+              "url": "traces/simulation-2/day01-scene4-nami/transcript.md"
             }
           ]
         },
@@ -415,6 +509,7 @@
             "darius": "traces/simulation-2/day01-scene5-darius/transcript.md",
             "emre": "traces/simulation-2/day01-scene5-emre/transcript.md",
             "finn": "traces/simulation-2/day01-scene5-finn/transcript.md",
+            "leo": "traces/simulation-2/day01-scene5-leo/transcript.md",
             "nami": "traces/simulation-2/day01-scene5-nami/transcript.md",
             "tobi": "traces/simulation-2/day01-scene5-tobi/transcript.md",
             "vera": "traces/simulation-2/day01-scene5-vera/transcript.md"
@@ -439,6 +534,11 @@
               "label": "Finn",
               "agent": "finn",
               "url": "traces/simulation-2/day01-scene5-finn/transcript.md"
+            },
+            {
+              "label": "Leo",
+              "agent": "leo",
+              "url": "traces/simulation-2/day01-scene5-leo/transcript.md"
             },
             {
               "label": "Nami",
