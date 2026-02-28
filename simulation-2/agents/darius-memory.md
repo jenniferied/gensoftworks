@@ -112,6 +112,13 @@
 - **Nami:** 5 NPCs und Quest-Skizzen (Intro-Quest "Was er in der Hand hielt", Hauptquest "Der Schwellenanker")
   - Stärke: Salva als vierte Kosmologie — Immersive-Sim-Erzählmechanismus, eine Stimme außerhalb der drei Fraktionslogiken
 
+### Mein gesprochener Beitrag (Turn 4 — letzter regulärer Sprecher):
+- 10 CD-Fragen auf 2 reduziert: Relikt-Name und Ablehn-Option
+- Relikt-Formveränderung und Tiervolk-Kosmologie als interne Hausaufgabe deklariert (kein CD-Ticket)
+- Orden-Kreuz: raus — kein CD-Entscheid nötig, Emre + Vera einig
+- Hieronymus-Sterbezeit: Empfehlung "reduziert" mit Pacing-Argument für Streamer-Alpha begründet
+- Klare Deadlines gesetzt: Nami Halbseite bis Mi 10:00, Emre drei Sätze Relikt-Formfrage bis Mi 10:00
+
 ### Offene CD-Fragen (nach Dringlichkeit geordnet — meine Filterung):
 
 **PRIORITÄT 1 — Mittwoch früh ans CD:**
@@ -123,7 +130,7 @@
 4. **Tiervolk-Ursprung / Schwelle bewusst oder blind:** Kosmologie-Frage. Meine Position: Für Kapitel 2 brauche ich Tiervolk-Funktion als Händler-Typ vor der Tiervolk-Kosmologie. Emre + Nami klären intern.
 
 **MEINE EMPFEHLUNG (kein CD-Entscheid nötig):**
-5. **Düsterkeit der Intro:** Reduziert. Kurze Sterbeszene, Fragment, Clip-Moment, weiter. Zwei-bis-drei-Minuten-Sterbeszene am Anfang ist Pacing-Risiko für Streamer-Alpha. Empfehlung ans CD gebündelt, kein offener Entscheid.
+5. **Düsterkeit der Intro:** Reduziert. Kurze Sterbeszene, Fragment, Clip-Moment, weiter. Zwei-bis-drei-Minuten-Sterbeszene am Anfang ist Pacing-Risiko für Streamer-Alpha.
 
 ### Was mich heute beeindruckt hat:
 - Emres drei Schöpfungsmythen = direkt verwendbares Gameplay-System (drei Fraktions-Motivationsstrukturen für Kap. 2)
@@ -132,7 +139,8 @@
 
 ### Nächste Schritte:
 - Nami: Halbseite Konsequenzen der Ablehn-Option bis Mittwoch 10:00
-- Emre: Relikt-Formfrage + Tiervolk-Funktion bis Mittwoch 10:00
+- Emre: Relikt-Formfrage (3 Sätze) + Tiervolk-Funktion bis Mittwoch 10:00
 - Vera: Hero-Shot-Iteration (organische Knochen-Textur) + Stadtschnitt-Überarbeitung (Schwarzrand-Richtungskonzept)
 - Ich: CD-Fragen bündeln (Mittwoch früh), dann GDD Kapitel 2 (Kernmechaniken) beginnen
 - GDD Kap. 1 v2: Stadtname "Schwarzrand" eintragen — noch offen
+- Leo-Sync Skill-by-Use: heute Abend noch oder Mittwoch früh
