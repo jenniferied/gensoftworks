@@ -54,6 +54,142 @@ def find_chapters(gallery_dir: Path) -> list[tuple[str, Path]]:
     return result
 
 
+def strip_meta(content: str) -> str:
+    """Strip meta-information blocks from chapter content for clean PDF export.
+
+    Removes: YAML frontmatter, author/version/status headers, changelogs,
+    blockquote annotations (V2-Ergänzung etc.), open-questions sections,
+    next-steps sections, and trailing author signatures.
+    """
+    lines = content.split("\n")
+    out: list[str] = []
+
+    # 1. Strip YAML frontmatter (--- ... ---)
+    if lines and lines[0].strip() == "---":
+        i = 1
+        while i < len(lines) and lines[i].strip() != "---":
+            i += 1
+        lines = lines[i + 1:] if i < len(lines) else lines[1:]
+
+    # 2. Strip old-style meta header block (bold lines before first ---)
+    META_PREFIXES = (
+        "**Autor", "**Autorin", "**Autoren",
+        "**Version", "**Status", "**Stand",
+        "**Änderungslog", "**Abhängigkeiten", "**Querverweise",
+        "**QA:", "**Narrativ-Sync:", "**Projekt:",
+        "**Basis:", "**Prüfung gegen:",
+        "**Letzte Aktualisierung:",
+        "**Basis**:", "**Basis:",
+        "**Prüfung gegen**:", "**Prüfung gegen:",
+    )
+    cleaned: list[str] = []
+    in_changelog = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("**Änderungslog"):
+            in_changelog = True
+            continue
+        if in_changelog:
+            if stripped.startswith("- V") or stripped.startswith("- v"):
+                continue
+            in_changelog = False
+        if any(stripped.startswith(p) for p in META_PREFIXES):
+            continue
+        cleaned.append(line)
+    lines = cleaned
+
+    # 3. Strip blockquote-style status headers (> **Status:** ... lines)
+    STATUS_QUOTE_RE = re.compile(
+        r"^>\s*\*\*(Status|Autor|Autorin|Version|Stand|Änderungslog|Abhängigkeiten|Letzte Aktualisierung)"
+    )
+    cleaned = []
+    skip_quote_block = False
+    for line in lines:
+        stripped = line.strip()
+        if STATUS_QUOTE_RE.match(stripped):
+            skip_quote_block = True
+            continue
+        if skip_quote_block:
+            if stripped.startswith(">"):
+                continue
+            skip_quote_block = False
+        cleaned.append(line)
+    lines = cleaned
+
+    # 4. Strip editorial blockquotes (> V2-Ergänzung, > V2-Schärfung, > QA-Einschätzung, etc.)
+    EDITORIAL_RE = re.compile(
+        r"^>\s*(V\d+-|QA-|CD-|Neu:|Hinweis:|Anmerkung:)", re.IGNORECASE
+    )
+    lines = [l for l in lines if not EDITORIAL_RE.match(l.strip())]
+
+    # 5. Strip "Offene Fragen" / "Nächste Schritte" sections (heading + content until next heading)
+    DROP_SECTIONS = re.compile(
+        r"^#{2,4}\s+(?:[\d.]+\s+|Anhang\s+\w+:\s+)?"
+        r"(?:Offene\s+(?:Design-)?(?:Fragen|Punkte)|N(?:ä|ae)chste Schritte"
+        r"|Zusammenfassung:\s*N(?:ä|ae)chste)",
+        re.IGNORECASE,
+    )
+    HEADING_RE = re.compile(r"^#{1,4}\s+")
+    cleaned = []
+    dropping = False
+    drop_level = 0
+    for line in lines:
+        stripped = line.strip()
+        m_drop = DROP_SECTIONS.match(stripped)
+        if m_drop:
+            dropping = True
+            drop_level = len(stripped) - len(stripped.lstrip("#"))
+            continue
+        if dropping:
+            m_head = HEADING_RE.match(stripped)
+            if m_head:
+                level = len(stripped) - len(stripped.lstrip("#"))
+                if level <= drop_level:
+                    dropping = False
+                    cleaned.append(line)
+                    continue
+            continue
+        cleaned.append(line)
+    lines = cleaned
+
+    # 6. Strip inline "Offene Fragen" bold labels + following checkbox lines
+    INLINE_OPEN_Q = re.compile(r"^\*\*Offene\s+Fragen", re.IGNORECASE)
+    CHECKBOX_RE = re.compile(r"^- \[[ x]\] ")
+    cleaned = []
+    skip_checkboxes = False
+    for line in lines:
+        stripped = line.strip()
+        if INLINE_OPEN_Q.match(stripped):
+            skip_checkboxes = True
+            continue
+        if skip_checkboxes:
+            if CHECKBOX_RE.match(stripped) or not stripped:
+                continue
+            skip_checkboxes = False
+        cleaned.append(line)
+    lines = cleaned
+
+    # 7. Strip author signatures anywhere (*Name Surname, ... *)
+    SIGNATURE_RE = re.compile(
+        r"^\*[A-ZÄÖÜ][a-zäöüß]+ [A-ZÄÖÜ][a-zäöüß]+,\s+.+\*$"
+    )
+    lines = [l for l in lines if not SIGNATURE_RE.match(l.strip())]
+
+    # 8. Collapse triple+ blank lines to double
+    result: list[str] = []
+    blank_count = 0
+    for line in lines:
+        if not line.strip():
+            blank_count += 1
+            if blank_count <= 2:
+                result.append(line)
+        else:
+            blank_count = 0
+            result.append(line)
+
+    return "\n".join(result).strip()
+
+
 def build_markdown(gallery_dir: Path, doc_title: str) -> str:
     """Concatenate chapter files into a single Markdown document."""
     chapters = find_chapters(gallery_dir)
@@ -74,6 +210,7 @@ def build_markdown(gallery_dir: Path, doc_title: str) -> str:
 
     for chapter_id, path in chapters:
         content = path.read_text().strip()
+        content = strip_meta(content)
         lines.append(content)
         lines.append("")
         lines.append("\\clearpage")

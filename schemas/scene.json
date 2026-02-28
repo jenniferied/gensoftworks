@@ -1,0 +1,14 @@
+{
+  "day": 1,
+  "scene": 1,
+  "type": "BRIEFING",
+  "time": "morning",
+  "location": "küche",
+  "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+  "summary": "...",
+  "dialogue": [{"who": "finn", "says": "..."}],
+  "artifacts": [],
+  "cd_feedback": null,
+  "trace_dirs": ["day01-scene1-briefing"],
+  "metrics": {"finn": {"total_tokens": 0, "duration_ms": 0}}
+}

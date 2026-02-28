@@ -2,13 +2,13 @@
 /**
  * Capture Phaser viewer screenshots for every scene.
  *
- * Pixel-perfect: viewport sized so game-container = exactly 1056×672
- * (half of 44×28 tiles @ 48px = 2112×1344). Zoom = exactly 0.5.
- * After capture, PIL crops dark exterior from the bottom.
+ * Uses capture.html — a minimal Phaser page (no sidebar/bars).
+ * Phaser canvas = exact tileset dimensions (2112×1344), zoom 1.0.
+ * Viewport = same size → pixel-perfect native resolution screenshots.
  *
  * Prerequisites:
  *   - simulation.json built via build-viewer-data.py
- *   - Vite preview running (npm run preview in frontend/)
+ *   - Vite dev/preview running (npm run preview in frontend/)
  *
  * Usage:
  *   node scripts/capture-scenes.mjs                          # default port 4173
@@ -40,39 +40,36 @@ const outDir = outIdx >= 0
 const BASE_URL = `http://localhost:${port}`;
 const SETTLE_MS = 1500;
 
-// Map dimensions
+// Native tileset resolution
 const T = 48, MAP_W = 44, MAP_H = 28;
-const HALF_W = (MAP_W * T) / 2; // 1056
-const HALF_H = (MAP_H * T) / 2; // 672
+const NATIVE_W = MAP_W * T; // 2112
+const NATIVE_H = MAP_H * T; // 1344
 
-// Layout offsets: sidebar=340px, bars=51px
-const SIDEBAR_W = 340;
-const BARS_H = 51;
+// Capture page (minimal Phaser, no sidebar/bars)
+const CAPTURE_PATH = '/gensoftworks/capture.html';
 
 async function main() {
   mkdirSync(outDir, { recursive: true });
 
   const browser = await chromium.launch();
 
-  // Viewport sized so game-container = 1056×672 CSS px → zoom 0.5.
-  // deviceScaleFactor: 2 → screenshot at 2112×1344 device px = native tileset res.
+  // Viewport = exact tileset dimensions → pixel-perfect capture
   const page = await browser.newPage({
-    viewport: { width: HALF_W + SIDEBAR_W, height: HALF_H + BARS_H },
-    deviceScaleFactor: 2,
+    viewport: { width: NATIVE_W, height: NATIVE_H },
   });
 
-  console.log(`Navigating to ${BASE_URL}...`);
-  await page.goto(BASE_URL, { waitUntil: 'networkidle' });
+  console.log(`Navigating to ${BASE_URL}${CAPTURE_PATH}...`);
+  await page.goto(`${BASE_URL}${CAPTURE_PATH}`, { waitUntil: 'networkidle' });
 
   // Wait for simulation data to load
   await page.waitForFunction(() => window.__simData != null, { timeout: 15000 });
 
-  // Log actual game-container size for debugging
-  const containerSize = await page.evaluate(() => {
-    const c = document.getElementById('game-container');
-    return { w: c.clientWidth, h: c.clientHeight };
+  // Log canvas size for debugging
+  const canvasSize = await page.evaluate(() => {
+    const canvas = document.querySelector('canvas');
+    return canvas ? { w: canvas.width, h: canvas.height } : null;
   });
-  console.log(`Game container: ${containerSize.w}×${containerSize.h} (target: ${HALF_W}×${HALF_H})`);
+  console.log(`Canvas: ${canvasSize?.w}×${canvasSize?.h} (target: ${NATIVE_W}×${NATIVE_H})`);
 
   // Wait for initial scene to fully render
   await page.waitForTimeout(2000);
@@ -98,11 +95,11 @@ async function main() {
 
       await page.waitForTimeout(SETTLE_MS);
 
-      // Screenshot game container only
-      const gameContainer = await page.$('#game-container');
-      if (gameContainer) {
+      // Screenshot the Phaser canvas directly
+      const canvas = await page.$('canvas');
+      if (canvas) {
         const filepath = resolve(outDir, filename);
-        await gameContainer.screenshot({ path: filepath });
+        await canvas.screenshot({ path: filepath });
         console.log(`  ${filename}`);
       }
     }

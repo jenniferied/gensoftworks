@@ -24,16 +24,40 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 
 1. Read `world.json` → determine day + scene number
 2. Read memory files for participating agents
-3. Spawn agents with `model: "sonnet"`, scene type, participants, context from memory
-4. After scene: append memory to **each participant** (from their perspective). Every scene type gets a memory — including PAUSE. Cover both **work** (decisions, artifacts, tasks) and **interpersonal** (who said what, mood, small talk, social dynamics, conflicts, bonding)
-5. Write logbook entry → `logbook/dayDD-sceneS.json`
-6. Update `world.json` (increment scene; after scene 6: increment day, reset scene to 0)
-7. **After scene 6**: Write `logbook/dayDD-summary.json` (day overview for PDF/Phaser)
-8. **Log metrics**: After each agent spawn, capture `total_tokens` + `duration_ms` from Task result. Write to logbook `metrics` field.
+3. Read `schemas/scene.json` — every logbook entry MUST match this structure exactly
+4. Spawn agents with `model: "sonnet"`, scene type, participants, context from memory
+5. Write traces → `traces/dayDD-sceneS-name/` with exactly `0-prompt.md`, `1-reasoning.md`, `2-output.md` (no extra files)
+6. After scene: append memory to **each participant**. Every scene type — including PAUSE. Cover both **work** and **interpersonal**.
+7. Write logbook → `logbook/dayDD-sceneS.json` — dialogue **1:1 from trace `2-output.md`**, NICHT kürzen. Siehe Schema Rules.
+8. Update `world.json`
+9. **After scene 6**: Write `logbook/dayDD-summary.json` per `schemas/day-summary.json`
+10. **After scene 6**: Run `python scripts/validate-sim.py --sim-dir simulation-2` — fix any errors before continuing.
+11. **Log metrics**: capture `total_tokens` + `duration_ms` per agent → logbook `metrics` field.
 
 ## Traces (mandatory per agent)
 
 `traces/dayDD-sceneS-name/` — numbered files: `0-prompt.md`, `1-reasoning.md`, `2-output.md`. Meetings: `dayDD-sceneS-type/`. All raw, 1:1, no summarization.
+
+## Schema Rules (mandatory)
+
+Every logbook file MUST match `schemas/scene.json`. No extra fields, no missing fields.
+
+**Fixed locations:** WORK → `"alle-stationen"`, BRIEFING/MEETING/REVIEW/PAUSE → `"küche"`, DND → `"bibliothek"`
+
+**Dialogue — conversation scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND):**
+- Copy full dialogue from trace `2-output.md` → `dialogue` array. `**Name**: text` → `{"who": "name", "says": "text"}`.
+- Do NOT shorten, summarize, or edit. 1:1 from trace.
+- `summary` is the only place for GM condensation.
+
+**Dialogue — WORK scenes:** `dialogue: []`. Output lives in traces.
+
+**Traces — exactly 3 files per dir:** `0-prompt.md`, `1-reasoning.md`, `2-output.md`. No extra files. Prompt header: `# {Name} — Tag {DD}, Szene {S} ({TYPE}) — Prompt`
+
+**Artifacts (GDD/WBB):** Every `.md` in `gallery/gdd/` and `gallery/wbb/` MUST have YAML frontmatter per `schemas/artifact-header.md`. `version` integer must match filename `-vN`.
+
+**`trace_dirs`:** Conversation → `["dayDD-sceneS-type"]`. WORK → `["dayDD-sceneS-agent1", ...]`.
+
+**Day summaries:** `weekday` always German proper-cased. Field name: `artifacts` (not `artifacts_produced`).
 
 ## Conversation Scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND)
 

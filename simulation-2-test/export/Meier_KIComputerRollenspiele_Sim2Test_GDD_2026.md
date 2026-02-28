@@ -8,14 +8,6 @@ toc: true
 
 # GDD-01: Spielübersicht & Design-Säulen
 
-**Autor:** Darius Engel, Game Director
-**Version:** V2 (Tag 5, Freitag — Finalisierung)
-**Status:** Abgeschlossen
-**Änderungslog:**
-- V1 (Tag 3, Mittwoch): Volltext — Elevator Pitch, 6 Design-Säulen, 3 USPs, Zielgruppe, 1h/10h/40h-Prinzip, Referenzrahmen
-- V2 (Tag 5, Freitag): Scope-Klarheit (Serie vs. Vertical Slice), Zielgruppe 25-40 präzisiert, Kamera als eigene Design-Säule ergänzt, Tiervolk+Biotech als Weltsprache geschärft, Konsequenz-Versprechen durch Typ-Matrix operationalisiert
-
-**Querverweise:** `02-kernmechaniken.md` (V2, vollständig), `briefing.md` (Nordstern)
 
 ---
 
@@ -50,7 +42,6 @@ Die zentrale Spieler-Fantasie lautet: **Ich betrete als Fremder eine aufregende 
 
 ## 2. Scope-Klarheit: Serie vs. Diese Iteration
 
-> V2-Ergänzung. Dieser Abschnitt fehlte in V1. Er schützt das Team vor Scope-Creep und das Versprechen vor Überdehnung.
 
 ### Was RELICS als Serie verspricht
 RELICS ist eine Series. Jede Iteration spielt in derselben Welt, zu einem anderen historischen Wendepunkt, mit einem anderen Relikt im Zentrum. Die Welt wächst iterationsübergreifend — aber jede Iteration ist für sich spielbar.
@@ -78,7 +69,6 @@ Ein Vertical Slice ist kein kleineres Spiel — er ist ein Qualitätsversprechen
 
 ## 3. Die sieben Design-Säulen
 
-> V2-Änderung: V1 hatte sechs Säulen. Kamera wurde als eigene Säule ergänzt (war in V1 nur in Säule 1 und im Referenzrahmen erwähnt). Die übrigen sechs Säulen wurden inhaltlich geschärft, nicht umstrukturiert.
 
 Design-Säulen sind Entscheidungsfilter. Wenn ein Feature, eine Mechanik oder eine Quest eine Säule verletzt, wird sie geändert oder gestrichen — nicht verhandelt.
 
@@ -119,7 +109,6 @@ Was das NICHT bedeutet: Strafe für Fehler. Es bedeutet: Echte Entscheidungen ha
 
 ### Säule 3 — Kamera als Spieler-Autonomie
 
-> V2-Ergänzung als eigenständige Säule. Kamera ist nicht UI. Kamera ist Identität.
 
 Der Spieler wählt, wie er die Welt erlebt. First-Person und Third-Person sind nahtlos umschaltbar — kein Ladebildschirm, kein Menü.
 
@@ -161,7 +150,6 @@ Perks sind transformativ, nicht numerisch. "Du kannst jetzt im Sprint angreifen"
 
 ### Säule 5 — Biotech-Futurismus als Weltsprache
 
-> V2-Schärfung: Biotech war in V1 als USP gelistet, aber nicht als Design-Säule verankert. Es ist beides.
 
 RELICS spielt nicht in der Vergangenheit. Es spielt in einer anderen Gegenwart — einer Welt, deren Biologie andere Wege gegangen ist.
 
@@ -181,7 +169,6 @@ RELICS spielt nicht in der Vergangenheit. Es spielt in einer anderen Gegenwart �
 
 ### Säule 6 — Tiervolk als soziale Schicht
 
-> V2-Schärfung: Das Tiervolk war in V1 im Fraktionsabschnitt kurz erwähnt. Es ist eine eigenständige Design-Entscheidung mit mechanischer Relevanz.
 
 Das Tiervolk ist keine Rasse im Fantasy-Sinne. Es ist eine Gesellschaftsschicht.
 
@@ -234,7 +221,6 @@ Das Prinzip lautet: **Was du siehst, kannst du erreichen.** Sightline-Navigation
 
 ## 5. Zielgruppe
 
-> V2-Schärfung: V1 definierte Kernzielgruppe als "22-35 Jahre". Präzisiert auf 25-40 auf Basis des CD-Profils: erfahrene Spieler, die Gothic und BG3 kennen, aber berufstätig und zeitkritisch sind.
 
 ### Kernzielgruppe: Erfahrene RPG-Spieler, 25–40 Jahre
 
@@ -337,33 +323,10 @@ Jede Mechanik, jede Quest, jede Design-Entscheidung muss einer der folgenden Spi
 
 ---
 
-## 9. Offene Fragen (V2-Stand)
-
-| # | Frage | Zuständig | Priorität |
-|---|-------|----------|-----------|
-| 1 | Iterations-Titel — welcher Name ersetzt [Iterations-Titel]? | CD-Entscheidung | Hoch — vor Marketing-Materialien |
-| 2 | Schnellreise: Ja/Nein? Empfehlung: Erst zweiter Akt, als narrativer Unlock | Darius + Finn | Mittel |
-| 3 | Tages-/Nachtzyklus: Gameplay-Auswirkungen? NPC-Routinen, Schattenfieber-Intensität? | Darius + Tobi | Mittel |
-| 4 | Tiervolk — eigener Name im RELICS-Namenssystem? | Emre (Namenssystem) | Offen — abhängig von Emres Namenssystem-Abschluss |
-
----
-
-*Darius Engel, Game Design Corner, Tag 5 (Freitag) — V2-Finalisierung*
-*"Macht es Spaß? Was ist die Spieler-Fantasie hier?" — beantwortet.*
-
 \clearpage
 
 # GDD-02: Kernmechaniken
 
-**Autor:** Darius Engel, Game Director
-**QA:** Leo Brandt (Spielermarkt & Community)
-**Narrativ-Sync:** Nami Osei (Erzählkonzept)
-**Version:** V0.5 (Tag 2, Dienstag — Nachmittags-Überarbeitung)
-**Status:** Zwischen Outline und V1 — Strukturen stehen, Schlüsselabschnitte angereichert, offene Fragen reduziert
-**Änderungslog:**
-- V1-Outline (Tag 2 Vormittag): Kapitelstruktur + Kernpunkte
-- V0.5 (Tag 2 Nachmittag): Leos QA-Bedingungen integriert, Schattenfieber-Stufen-Mapping mit Nami synchronisiert, CD-Entscheidungen eingearbeitet (Tod/Infektion, Lebende Krone, Namenssysteme, Combat-Skill-Ceiling)
-- V0.5.1 (Tag 5 Nachmittag): Arbeitsbegriff "Ymir" → "Emer" (2x: Kap. 2.7, Kap. 6.1) — Leo Fischer, QA
 
 ---
 
@@ -517,7 +480,6 @@ Die folgende Tabelle synchronisiert Darius' fünf mechanische Stufen mit Namis d
 
 ### 2.7 Das Relikt: Die Lebende Krone
 
-> CD-Entscheidung: Das Relikt dieser Iteration ist die **Lebende Krone** — ein Biotech-Artefakt aus der Ur-Bindung.
 
 - Die Lebende Krone ist ein organisches Artefakt, das auf die kosmologische Ur-Bindung (WBB-01, Kap. 4) zurückgeht
 - Sie ist LEBENDIG im wörtlichen Sinne: Sie reagiert, wächst, verändert sich — Biotech auf kosmologischer Ebene
@@ -528,11 +490,6 @@ Die folgende Tabelle synchronisiert Darius' fünf mechanische Stufen mit Namis d
 - Schattenfieber-Verbindung: Die Lebende Krone und das Schattenfieber greifen auf dasselbe "Emer-Material" zu (WBB-01, Kap. 6). Die Krone ist die kontrollierte Form, das Schattenfieber die unkontrollierte.
 - Kontakt mit der Krone KANN den Infektionswert erhöhen — massiv, aber unter Bedingung 1 und 3 (Transparenz, bewusste Entscheidung)
 
-**Offene Fragen zum Relikt:**
-- [ ] Wie interagiert der Spieler physisch mit der Krone? Tragen? Berühren? Studieren? (Emre + Darius)
-- [ ] Kann die Krone das Schattenfieber kontrollieren, nicht nur erhöhen? (CD-Rückfrage)
-- [ ] Visuelle Erscheinung: Organisch, pulsierend, wurzelartig? (Vera)
-
 ### 2.8 Transparenz-UI (QA-Anforderung)
 
 > Direkte Umsetzung von Bedingung 1. Dieses UI-Modul ist KEIN "nice-to-have" — es ist systemkritisch.
@@ -542,17 +499,6 @@ Die folgende Tabelle synchronisiert Darius' fünf mechanische Stufen mit Namis d
 - **Fähigkeitskosten**: Jede Schattenfieber-Fähigkeit zeigt ihren Infektionskosten-Wert im Tooltip
 - **Stufenwarnung**: Wenn der Spieler kurz vor einer neuen Stufenschwelle steht (5 Punkte entfernt), bekommt er einen besonderen Hinweis — die Schwelle ist permanent
 - **Design-Vorgabe für Vera**: Die Infektionsanzeige soll sich organisch in die Nervensystem-Visualisierung einfügen. Kein separates HUD-Element, sondern Teil desselben körperlichen Systems.
-
-### 2.9 Offene Design-Fragen (aktualisiert)
-
-- [x] ~~Tod und Schattenfieber~~ → Tod erhöt den Wert NICHT (CD-bestätigt)
-- [ ] Spezialisierungen innerhalb der Stufen (verschiedene Manifestationen) — V2-Feature?
-- [ ] Interaktion mit dem Tiervolk (immun? anders infiziert?) — abhängig von Emres WBB-01
-- [ ] Balancing Stufe 0 vs. Stufe 4 — Stufe-0-Äquivalent-Spalte ist ein erster Ansatz, muss durchgetestet werden (QA mit Leo)
-- [ ] Kontrollverlust-Episoden (Stufe 4): Länge, Freqünz, Trigger — müssen Bedingung 3 respektieren (Spieler darf nicht das Gefühl haben, die Kontrolle "versehentlich" verloren zu haben; der Kontrollverlust muss als Konsequenz einer BEWUSST getroffenen Entscheidung lesbar sein)
-- [ ] Narrativer Zustand "Schwelle" (Stufe 4): Welche Questgeber sind "echt"? Gibt es eine Metäbene, die dem Spieler Hinweise gibt? (Nami + Darius)
-
----
 
 ## 3. Nervensystem-Leveling
 
@@ -582,14 +528,6 @@ Die folgende Tabelle synchronisiert Darius' fünf mechanische Stufen mit Namis d
 - Korrekt: "Du kannst jetzt im Sprint angreifen" / "Paraden reflektieren Projektile"
 - Falsch: "+20% Schwertschaden" / "+50 HP"
 - Numerische Steigerungen kommen durch die Ast-Investition selbst, nicht durch einzelne Perks
-
-### 3.5 Offene Design-Fragen
-- [ ] Punkte pro Level-Up: Feste Anzahl oder skalierend?
-- [ ] Max-Level: Reicht für wie viele Äste? Empfehlung: 2 Äste voll + 1 halb ODER 3 Äste mittel
-- [ ] Respec möglich? Wenn ja, unter welchen Bedingungen? (Trainer? Kosten? Einmalig?)
-- [ ] Visuelle Darstellung: Wie genau sieht die Nervensystem-Ansicht im UI aus? (Vera)
-
----
 
 ## 4. Alchemie und Crafting
 
@@ -625,14 +563,6 @@ Die neue Kategorie "Schutz" ist ein direktes Ergebnis von Bedingung 3 (kein vers
 - **Combat:** Waffenöle und Gifte als taktische Vorbereitung vor Kämpfen
 - **Fraktionen:** Exklusive Rezepte pro Fraktion (Orden: Reinigungsmittel, Gilden: Handelsgifte, Krone: Militärtränke)
 - **Stufe-0-Spielpfad:** Schutz-Kategorie als mechanisches Äquivalent zu Schattenfieber-Resistenz (QA-validiert)
-
-### 4.5 Offene Design-Fragen
-- [ ] Rezeptanzahl für den Vertical Slice? Empfehlung: 15-20 Basisrezepte
-- [ ] Experiment-System: Kann der Spieler Zutaten frei kombinieren? Oder nur bekannte Rezepte?
-- [ ] Suchtmechanik: Haben Combat-Buffs Nebenwirkungen bei Überkonsum? (passt zur Briefing-Referenz "Echte Drogen, Amphetamine")
-- [ ] Tiervolk als Alchemie-Händler: Exklusive Zutaten? Andere Tradition?
-
----
 
 ## 5. Exploration und Weltnavigation
 
@@ -671,19 +601,10 @@ Die neue Kategorie "Schutz" ist ein direktes Ergebnis von Bedingung 3 (kein vers
 | **Landmarken** | Aussichtspunkte, Statuen, Ruinen | Kartenenthülllung, Orientierung, Lore |
 | **Verstecke** | Schmugglerlager, Diebesverstecke, Tiervolk-Lager | Handel (Schwarzmarkt), Quests, Alchemie |
 
-### 5.6 Offene Design-Fragen
-- [ ] Schnellreise: Ja/Nein? Wenn ja, unter welchen Bedingungen? Empfehlung: Erst im zweiten Akt, als narrative Belohnung
-- [ ] Karte: Wie viel zeigt die Spielerkarte? Empfehlung: Handgezeichnet, wird durch Exploration aufgedeckt
-- [ ] Tages-/Nachtzyklus: Welche Gameplay-Auswirkungen? NPC-Routinen, Gegnerverhalten, Schattenfieber-Intensität?
-- [ ] Wetter: Reiner Atmosphäre-Effekt oder Gameplay-relevant? (z.B. Regen = besseres Schleichen, Nebel = eingeschränkte Sicht)
-
----
-
 ## 6. Querschnittsthemen
 
 ### 6.1 Namenssysteme
 
-> CD-Entscheidung: RELICS verwendet eigene Namenssysteme, KEINE nordisch/germanischen Namen in der Spielwelt.
 
 - Fraktionen, Orte, Charaktere und Artefakte tragen eigene Namen, die zur Welt gehören
 - Germanische Mythologie ist INSPIRATION, nicht Vorlage für die Nomenklatur
@@ -760,37 +681,10 @@ NARRATIV <-> SCHATTENFIEBER (Nami-Sync)
 
 ---
 
-## 7. Zusammenfassung: Nächste Schritte
-
-| Aufgabe | Verantwortlich | Timeline | Status |
-|---------|---------------|---------|--------|
-| QA-Schleife: Spielerperspektive auf GDD-02 | Darius + Leo | Tag 2 Nachmittag | ERLEDIGT (V0.5) |
-| Schattenfieber-Stufen-Mapping mit Nami | Darius + Nami | Tag 2 Nachmittag | ERLEDIGT (V0.5) |
-| Schutz-Alchemie-Kategorie mit Nami validieren (narrativer Sinn) | Darius + Nami | Tag 3 | Offen |
-| Lebende Krone: Interaktionsdesign | Darius + Emre | Tag 3 | Offen |
-| RELICS-eigene Namenssysteme | Emre + Nami + Darius | Tag 3-4 | Offen |
-| Combat-Detail: Waffenklassen-Movesets | Darius | Tag 3 (V1) | Offen |
-| Alchemie-Rezeptliste (V1) inkl. Schutz-Kategorie | Darius | Tag 3 (V1) | Offen |
-| Balancing-Framework (Stufe 0 vs. Stufe 4) | Leo + Darius | Tag 3 (V1) | Vorbereitet (Äquivalent-Tabelle) |
-| Kontrollverlust-Episoden: Detail-Design | Darius + Vera + Tobi | Tag 4 | Offen |
-| Transparenz-UI: Wireframes | Vera + Darius | Tag 4 | Offen |
-
----
-
-*Darius Engel, Game Design Corner, Tag 2 Nachmittag — V0.5 nach QA-Schleife mit Leo und Stufen-Sync mit Nami*
-*Leo Fischer, Tag 5 Nachmittag — V0.5.1: Ymir → Emer (Kap. 2.7 + 6.1)*
-
 \clearpage
 
 # GDD-03 — Erzählkonzept
 
-**Autorin:** Nami Okafor, Narrative Design
-**Version:** V2 (Tag 5, Freitag — Finalisierung)
-**Status:** Volltext finalisiert; Beat-Sheet auf Szenenebene ausgearbeitet; Charakter-Quest-Figur definiert (Maret); Fraktionsquests auf Szenenebene konkretisiert
-**Änderungslog:**
-- V1 (Tag 3, Mittwoch): Ausformulierter Volltext — Narrative Prinzipien, Drei-Akt-Bogen, Quest-Architektur V1, Dialogsystem, Schattenfieber als narratives System, Wanderer-Identität
-- V2 (Tag 5, Freitag): Beat-Sheet auf Szenenebene (Hauptquest, 3.3); Fraktionsquests von Skizze zu konkreten Beats (3.4); Charakter-Quest-Figur Maret eingesetzt (3.6); Dialog-Beispiele erweitert; offene Fragen aktualisiert
-**Abhängigkeiten:** WBB-01 Mythos (Emre, V1, integriert), GDD-01 Spielübersicht (Darius, V1, integriert), GDD-02 Kernmechaniken (Darius/Leo, V0.5, integriert), GDD-04 Schlüsselfiguren (Nami, V1 heute, verlinkt)
 
 ---
 
@@ -1256,32 +1150,10 @@ Die Krone hat bisher Könige verändert — Menschen mit Legitimation. Der Spiel
 
 ---
 
-## 8. Offene Fragen (aktualisiert V2)
-
-| Nr. | Frage | An wen | Priorität | Kontext |
-|---|---|---|---|---|
-| 1 | Wie viele Enden? | CD | Hoch | Empfehlung: 3 Fraktionsenden + 1 neutrales Ende + SF-Varianten = ca. 6-8 Endvarianten |
-| 2 | Gibt es Begleiter/Companions? | CD / Darius | Hoch | Empfehlung: Max. 1-2 temporäre Begleiter, keine permanente Party |
-| 3 | Romanze-System ja/nein? | CD | Mittel | Empfehlung: Keine klassische Romanze, aber tiefe emotionale Bindung möglich (Maret als Kandidat) |
-| 4 | Vertonung ja/nein? | Finn / CD | Mittel | Bestimmt Dialoglänge, Tonalität, Scope |
-| 5 | SF-Schwellenwerte finalisieren | Darius | Hoch | Übergangszone 40-50: Schreibtext folgt V3 nach Absprache |
-| 6 | Was SIEHT ein Betroffener auf Schwelle-Stufe? | Emre / CD | Hoch | Hohlicht-Fragmente? Stillfeld? Beides? Fundamentale Entscheidung für Seher-Visionen |
-| 7 | Maret als Charakter-Quest-Figur: Genehmigung? | CD | Hoch | GDD-04 V1 liegt heute vor — Maret ist der Seher, der auf Schwelle-Stufe überlebt hat. Bestätigung erbeten |
-
----
-
-*Nami Okafor, Schreibstube, Tag 5 Freitag. V2 ist finalisiert. Der Beat-Sheet hat jetzt Szenenebene. Die Fraktionsquests haben echte Dialoge. Maret ist jetzt eine Person, nicht mehr ein Placeholder. Die offenen Fragen sind weniger als gestern — das ist genug für heute.*
-
-*Malkav sitzt auf der Druckerausgabe und beurteilt sie.*
-
 \clearpage
 
 # GDD-04 — Schlüsselfiguren & NPCs
 
-**Autorin:** Nami Okafor, Narrative Design
-**Version:** V1 (Tag 5, Freitag — Erstanlage)
-**Status:** Outline mit ausformulierten Stimmen; drei Fraktionsführer, ein Seher-NPC, ein Tiervolk-Vertreter
-**Abhängigkeiten:** GDD-03 Erzählkonzept (Nami, V2), WBB-01 Mythos (Emre, V1), GDD-01 Spielübersicht (Darius), Briefing (Fraktionen, Tiervolk-Direktiven)
 
 ---
 
@@ -1638,7 +1510,6 @@ Diese Figuren sind als Bedarf identifiziert, aber noch nicht ausgearbeitet. V2 s
 
 ---
 
-*Nami Okafor, Schreibstube, Tag 5 Freitag. Alle fünf Figuren haben Stimmen. Ich habe Aldine Vors letzten Dialog laut vorgelesen — zweimal. Er klingt richtig. Das ist selten genug.*
 
 *Nines hat die Handnotizen zum Seher vom Tisch geworfen. Der Seher hätte das verstanden.*
 
@@ -1646,13 +1517,6 @@ Diese Figuren sind als Bedarf identifiziert, aber noch nicht ausgearbeitet. V2 s
 
 # GDD-05: Visuelle Designsprache & Art Direction
 
-> **Status:** V2 — Finalisiert (Produktionstag, Tag 5)
-> **Autorin:** Vera Kowalski, Concept Art & Environment Design
-> **Letzte Aktualisierung:** Tag 5, Szene 2
-> **Änderungslog:**
-> - V1 (Tag 3): Volltext, Fraktionsvisuals, Biotech-Grammatik, Farbsystem, Mode, Tiervolk, Schattenfieber, Environments
-> - V2 (Tag 5): Stufe-0-Baseline ergänzt (Kap. 7.2), Stufengrenzen-Referenztabelle einheitlich, Gameplay-Orte neu (Kap. 8.5), Dominanzprinzip in Kap. 5.4, ACES-Validierungshinweis in Kap. 4.4
-> **Abhängigkeiten:** WBB-01 Mythos (Emre), WBB-02 Topos (Emre, V1 ausstehend), GDD-02 Kernmechaniken (Darius), GDD-04 Schlüsselfiguren (Nami)
 
 ---
 
@@ -2148,47 +2012,10 @@ Händler verkaufen Waren, Informationen, Zugang. Tiervolk-Händler sind die mobi
 
 ---
 
-## 9. Offene Punkte & Abhängigkeiten
-
-| Thema | Brauche von | Priorität | Status |
-|-------|-------------|------------|--------|
-| Architektur-Logik pro Region (Detail) | Emre (WBB-02 Topos) | Hoch | Ausstehend — Outline liegt vor, Volltext fehlt |
-| Rüstungsklassen & Kampf-Visuals | Leo + Darius (GDD-02) | Hoch | Ausstehend — Waffenklassen stehen, Rüstung offen |
-| Schlüsselcharakter-Designs | Nami (GDD-04) | Mittel | Ausstehend — Outline liegt vor, Volltext fehlt |
-| Schattenfieber-Gameplay-Kosten (visuell) | Darius (GDD-02) | Mittel | Teilweise — Stufen-Mapping liegt vor und abgestimmt |
-| Nervensystem-UI-Visualisierung | Darius (GDD-02) | Mittel | Ausstehend — Wireframe in V3 |
-| Technische Constraints (Engine, LOD, Shader) | Tobi (GDD-06) | Niedrig | V2 von Tobi mit 60 Modulen und Drei-Schichten-Rendering — Abstimmung läuft |
-| Kontrollverlust-Episoden visuell | Darius + Tobi | Niedrig | Erst ab V3 |
-
----
-
-## 10. Nächste Schritte (V3)
-
-- [ ] V3: Thumbnail-Skizzen für jede Fraktion (Architektur + Mode + Biotech)
-- [ ] V3: Lebende Krone Concept Art (Referenzskizze + Transformationsstufen)
-- [ ] V3: Schattenfieber-Stufenvisualisierung (Concept Sheet: vier Zustände am selben Charakter — Stufe 0, Rauschen, Risse, Schwelle)
-- [ ] V3: Wireframe für Nervensystem-UI (bilateral mit Darius)
-- [ ] V3: Architektur-Detaillierung mit WBB-02 Topos (sobald Emre Volltext liefert)
-- [ ] V3: Rüstungsklassen-Differenzierung (sobald Leo/Darius liefern)
-- [ ] V3: Tiervolk-Charakterstudien (3 Typen: Händler, Diebin, Ältester)
-
----
-
-> **Vera Kowalski, Art Station, Tag 5 Vormittag — V2 fertig. Alle Stufengrenzen korrekt. Stufe-0-Baseline drin. Gameplay-Orte: drei Fraktionen, drei Ortstypen. Dominanzprinzip steht. Hex-Codes ACES-validiert. Das ist sauber.**
-
 \clearpage
 
 # GDD-06 — Technische Spezifikation & Produktion
 
-**Projekt:** RELICS
-**Autoren:** Tobi Richter (Technik), Finn (Produktion)
-**Version:** V2
-**Stand:** Tag 5, Freitag — Produktionsphase
-**Status:** Finalisiert. CD-Stufengrenzen eingearbeitet. Shader-Architektur spezifiziert. Hex-Codes aus GDD-05 1:1 übernommen.
-**Änderungslog:**
-- V0.1 (Tag 2): Outline mit Kapitelstruktur und Kerntabellen
-- V1 (Tag 3): Volltext, Budget-Aufschlüsselung, Schattenfieber-Tech auf fünf Stufen erweitert, Abstimmung mit GDD-02 (Darius) und GDD-01 (Design-Säulen)
-- V2 (Tag 5): Hex-Codes 1:1 aus GDD-05 eingetragen. Kap. 1.4 neu (Organische Shader-Architektur: Hauten-Shader, SSS, WPO, Nanite-Ausnahmen). Kap. 5.1 erweitert (Drei-Schichten-Rendering: Mittelgrund/Hohlicht/Stillfeld). Stufengrenzen auf CD-Lock korrigiert (Rauschen 1-40, Risse 41-75, Schwelle 76-100). Halluzinations-Interpolationsformel korrigiert (Start 76, nicht 70). Kap. 8.2 um Anforderungsprofil Gameplay-Programmer ergänzt (GAS als Pflicht-Kriterium).
 
 ---
 
@@ -2338,14 +2165,6 @@ Das Kamerasystem wechselt kontextabhängig zwischen vier Modi. Der Wechsel ist k
 - **Vegetation:** Dithering-Fadeout bei Kamera-Nähe (Radius 60 cm um Kameraposition). Keine harte Kollision mit Blättern und Gras — das würde in einem bewaldeten Gebiet ständig die Kamera ruckeln lassen.
 - **Camera Lag:** Speed 8-10. Das erzeugt eine geschmeidige Nachführung, die sich organisch anfühlt, ohne den Charakter "hinter sich herzuziehen".
 - **Pitch Range:** -60 bis +70 Grad. Der erweiterte Aufwärts-Bereich (+70) ist essentiell für Dishonored-Vertikalität (GDD-01, Säule P6): Der Spieler muss nach oben schauen können, um Kletterwege und Dachlandschaften zu erkennen.
-
-### 2.4 Offene Punkte
-
-- [ ] Kamera-Blueprint V0.1 prototypen — Prio für diese Woche. Vier Modi müssen spielbar sein, bevor Combat-Prototyping beginnt
-- [ ] FP-Vorbereitung: Smoke-Test mit Arm Length 0 — funktioniert das mit dem aktuellen Charakter-Mesh ohne Clipping-Artefakte?
-- [ ] Controller-Konfiguration: Rechter Stick für Kamera, linker Trigger für Zoom? Abstimmung mit Darius (Combat-Controls)
-
----
 
 ## 3. Combat-Architektur
 
@@ -2750,29 +2569,6 @@ Das Freelancer-Budget ist begrenzt und muss strategisch eingesetzt werden.
 
 ---
 
-## Anhang A: Offene Fragen (Priorisiert)
-
-### Kritisch
-
-1. **Schattenfieber-Abstimmung** mit Emre, Darius und Vera — Was genau passiert visuell auf jeder Stufe? Ich brauche Concept-Referenzen, bevor ich Shader baue. Vorschlag: 30-Minuten-Meeting, Vera skizziert live.
-2. **Hauten-Segmentanzahl** mit Emre — 3 oder 5 gleichzeitig aktive PP-Segmente als Standard? Lore-Logik entscheidet.
-3. **Asset-Standards-Review** mit Vera — Naming, Texel Density, LOD-Workflow, Hex-Code-Umsetzung in Material-Instanzen bestätigen.
-4. **Gameplay-Programmer-Profil** mit Finn — Stellenbeschreibung schreiben, Suche starten.
-
-### Wichtig (Pre-Production)
-
-5. **Dialog-System-Middleware** mit Nami — Yarn Spinner, Ink, oder Ü5-eigenes System?
-6. **Audio-Pipeline** — Wer verantwortet MetaSounds-Setup?
-7. **Terrain-Biome** mit Emre — Wie viele, welche? Jedes Biom braucht HDA + Vegetations-Assets.
-
-### Nachrangig (Vertical Slice)
-
-8. **Konsolen-Stretch-Goal** — Erst nach VS Polish evaluieren (Woche 18).
-9. **Lokalisierung** — Nur Deutsch? Deutsch + Englisch? Beeinflusst UI-Layout.
-10. **Accessibility** — Farbblindheits-Modi, Untertitel-Grössen, Remapping. Früh in UI-Architektur berücksichtigen.
-
----
-
 ## Anhang B: Glossar
 
 | Begriff | Erklärung |
@@ -2794,7 +2590,6 @@ Das Freelancer-Budget ist begrenzt und muss strategisch eingesetzt werden.
 
 ---
 
-*Tobi Richter, Tech Corner, Tag 5 Freitag Vormittag — V2 fertig.*
 *Änderungen: Hex-Codes GDD-05 1:1, Kap. 1.4 Organische Shader-Architektur neu, Drei-Schichten-Rendering Kap. 5.1, Stufengrenzen CD-Lock, Halluzinations-Start korrigiert auf 76, Anforderungsprofil Gameplay-Programmer.*
 *Nächster Schritt: Schattenfieber-Abstimmung terminieren, Hauten-Segmentanzahl mit Emre klären, Kamera-Blueprint V0.1.*
 

@@ -194,7 +194,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Willkommen zum ersten Arbeitstag. Heute ist Montag — Recherchetag. Jeder startet Grundlagenrecherche in seinem Fachgebiet. Emre: germanische Mythologie. Darius: Referenzspiel-Analyse (Gothic, Skyrim, Dishonored). Nami: Narrative Strukturen in Dark Fantasy CRPGs. Vera: Visuelle Referenzen (Mittelalter + Biotech). Tobi: Technische Machbarkeit. Leo: Spielermarkt und Community-Erwartungen. Finn: Roadmap und Meilensteine. Qualität vor Quantität. Fragt nach, wenn etwas unklar ist."
+          "cd_feedback": "Willkommen zum ersten Arbeitstag. Heute ist Montag — Recherchetag. Jeder startet Grundlagenrecherche in seinem Fachgebiet. Emre: germanische Mythologie. Darius: Referenzspiel-Analyse (Gothic, Skyrim, Dishonored). Nami: Narrative Strukturen in Dark Fantasy CRPGs. Vera: Visuelle Referenzen (Mittelalter + Biotech). Tobi: Technische Machbarkeit. Leo: Spielermarkt und Community-Erwartungen. Finn: Roadmap und Meilensteine. Qualität vor Quantität. Fragt nach, wenn etwas unklar ist.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day01-scene1-briefing/"
+          }
         },
         {
           "scene": 2,
@@ -260,7 +264,17 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day01-scene2-emre/",
+            "vera": "traces/simulation-2-test/day01-scene2-vera/",
+            "tobi": "traces/simulation-2-test/day01-scene2-tobi/",
+            "darius": "traces/simulation-2-test/day01-scene2-darius/",
+            "nami": "traces/simulation-2-test/day01-scene2-nami/",
+            "leo": "traces/simulation-2-test/day01-scene2-leo/",
+            "finn": "traces/simulation-2-test/day01-scene2-finn/"
+          }
         },
         {
           "scene": 3,
@@ -433,7 +447,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Acht CD-Entscheidungen verteilt: (1) Schattenfieber Hypothese C genehmigt, (2) Nordische Quellen akzeptiert mit eigener Kosmologie, (3) Mythos innerhalb der Spielwelt umstritten, (4) Biotech-Sichtbarkeit fraktionsabhängig, (5) Ü5 bestätigt, (6) Semi-Open-World bestätigt, (7) TP Primärmodus mit FP als V2, (8) Spieler-Infektion mit Schattenfieber bestätigt."
+          "cd_feedback": "Acht CD-Entscheidungen verteilt: (1) Schattenfieber Hypothese C genehmigt, (2) Nordische Quellen akzeptiert mit eigener Kosmologie, (3) Mythos innerhalb der Spielwelt umstritten, (4) Biotech-Sichtbarkeit fraktionsabhängig, (5) Ü5 bestätigt, (6) Semi-Open-World bestätigt, (7) TP Primärmodus mit FP als V2, (8) Spieler-Infektion mit Schattenfieber bestätigt.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day01-scene3-meeting/"
+          }
         },
         {
           "scene": 4,
@@ -718,7 +736,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day01-scene4-pause/"
+          }
         },
         {
           "scene": 5,
@@ -784,7 +806,17 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day01-scene5-emre/",
+            "vera": "traces/simulation-2-test/day01-scene5-vera/",
+            "tobi": "traces/simulation-2-test/day01-scene5-tobi/",
+            "darius": "traces/simulation-2-test/day01-scene5-darius/",
+            "nami": "traces/simulation-2-test/day01-scene5-nami/",
+            "leo": "traces/simulation-2-test/day01-scene5-leo/",
+            "finn": "traces/simulation-2-test/day01-scene5-finn/"
+          }
         },
         {
           "scene": 6,
@@ -935,7 +967,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Starker erster Tag. Orden als Spitzenforschung bestätigt (Klosterwissenschaft als Parallele). Schattenfieber nicht reversibel — nur kontrollierbar. PC first, Konsolen Stretch Goal. Freelancer-Budget vorbereiten. Tiervolk ohne eigene Architektur — Gäste/Nomaden in Fraktionsstädten. Replay-Erfahrung gewünscht."
+          "cd_feedback": "Starker erster Tag. Orden als Spitzenforschung bestätigt (Klosterwissenschaft als Parallele). Schattenfieber nicht reversibel — nur kontrollierbar. PC first, Konsolen Stretch Goal. Freelancer-Budget vorbereiten. Tiervolk ohne eigene Architektur — Gäste/Nomaden in Fraktionsstädten. Replay-Erfahrung gewünscht.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day01-scene6-review/"
+          }
         }
       ],
       "summary": {
@@ -1120,7 +1156,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Gestern war stark. Heute letzter Konzepttag. V1-Outlines als Tagesziel für alle. Combat-Skill-Ceiling: Spektrum von zugänglich bis belohnend, keine künstliche Schwierigkeitsmauer, echte Mastery-Belohnung."
+          "cd_feedback": "Gestern war stark. Heute letzter Konzepttag. V1-Outlines als Tagesziel für alle. Combat-Skill-Ceiling: Spektrum von zugänglich bis belohnend, keine künstliche Schwierigkeitsmauer, echte Mastery-Belohnung.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day02-scene1-briefing/"
+          }
         },
         {
           "scene": 2,
@@ -1185,13 +1225,25 @@
             "gallery/gdd/02-kernmechaniken.md",
             "gallery/gdd/03-erzählkonzept.md",
             "gallery/gdd/05-designsprache.md",
-            "gallery/gdd/06-technik-produktion.md"
+            "gallery/gdd/06-technik-produktion.md",
+            "gallery/concepts/environment/island-panorama-fortress_seedream-4-5.png",
+            "gallery/concepts/fortress/hero-fortress-from-sea_gpt-image-1-5.png"
           ],
           "dialogue": [],
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day02-scene2-emre/",
+            "vera": "traces/simulation-2-test/day02-scene2-vera/",
+            "tobi": "traces/simulation-2-test/day02-scene2-tobi/",
+            "darius": "traces/simulation-2-test/day02-scene2-darius/",
+            "nami": "traces/simulation-2-test/day02-scene2-nami/",
+            "leo": "traces/simulation-2-test/day02-scene2-leo/",
+            "finn": "traces/simulation-2-test/day02-scene2-finn/"
+          }
         },
         {
           "scene": 3,
@@ -1407,7 +1459,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Fünf CD-Entscheidungen verteilt: (1) Keine buchstäblichen Götter — die Frage bleibt in der Spielwelt offen, (2) Eigenes Namenssystem für RELICS-Kosmologie, nordische Namen nur als Entwickler-Referenz, (3) Relikt = lebende Krone, Biotech-Artefakt aus der Ur-Bindung, stabilisiert die Membran, verändert den Träger, (4) Widerspruchs-Log #004 ist gewollt — Biotech-Forschung am Fieber-Material ist der Kern des Ordens-Geheimnisses, (5) Tod beeinflusst den Infektionswert nicht — Schattenfieber ist permanent und unabhängig."
+          "cd_feedback": "Fünf CD-Entscheidungen verteilt: (1) Keine buchstäblichen Götter — die Frage bleibt in der Spielwelt offen, (2) Eigenes Namenssystem für RELICS-Kosmologie, nordische Namen nur als Entwickler-Referenz, (3) Relikt = lebende Krone, Biotech-Artefakt aus der Ur-Bindung, stabilisiert die Membran, verändert den Träger, (4) Widerspruchs-Log #004 ist gewollt — Biotech-Forschung am Fieber-Material ist der Kern des Ordens-Geheimnisses, (5) Tod beeinflusst den Infektionswert nicht — Schattenfieber ist permanent und unabhängig.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day02-scene3-meeting/"
+          }
         },
         {
           "scene": 4,
@@ -1623,7 +1679,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day02-scene4-pause/"
+          }
         },
         {
           "scene": 5,
@@ -1684,13 +1744,19 @@
           "active_room": null,
           "artifacts": [
             "gallery/gdd/02-kernmechaniken.md (V0.5)",
-            "gallery/wbb/01-mythos.md (V0.5)"
+            "gallery/wbb/01-mythos.md (V0.5)",
+            "gallery/concepts/characters/hero-biotech-warrior_gpt-image-1-5.png"
           ],
           "dialogue": [],
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day02-scene5-emre/",
+            "darius": "traces/simulation-2-test/day02-scene5-darius/"
+          }
         },
         {
           "scene": 6,
@@ -1872,7 +1938,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Hervorragender Konzeptionstag. Alle Outlines stehen, die Artefakte sind koharent. Die lebende Krone als Relikt gibt dem Hauptquest seinen Anker. Morgen ist Produktionstag — jeder schreibt seine V1. Emre hat die härteste Deadline: WBB-01 muss bis 11:30 lesbar sein. Qualität vor Quantität. Die CD ist stolz auf das, was in zwei Tagen entstanden ist."
+          "cd_feedback": "Hervorragender Konzeptionstag. Alle Outlines stehen, die Artefakte sind koharent. Die lebende Krone als Relikt gibt dem Hauptquest seinen Anker. Morgen ist Produktionstag — jeder schreibt seine V1. Emre hat die härteste Deadline: WBB-01 muss bis 11:30 lesbar sein. Qualität vor Quantität. Die CD ist stolz auf das, was in zwei Tagen entstanden ist.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day02-scene6-review/"
+          }
         }
       ],
       "summary": {
@@ -2048,7 +2118,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Produktionstag. Jeder schreibt seine V1 — ausformulierter Text, nicht mehr nur Outlines. Emre hat die härteste Deadline: WBB-01 Mythos muss bis 11:30 lesbar sein. Krone-Fraktion ist sich des eigenen Widerspruchs NICHT bewusst (tragische Ironie). 'RELICS: Die Lebende Krone' als Arbeitstitel akzeptiert. Qualität vor Quantität — lieber drei gute Seiten als zehn oberflächliche."
+          "cd_feedback": "Produktionstag. Jeder schreibt seine V1 — ausformulierter Text, nicht mehr nur Outlines. Emre hat die härteste Deadline: WBB-01 Mythos muss bis 11:30 lesbar sein. Krone-Fraktion ist sich des eigenen Widerspruchs NICHT bewusst (tragische Ironie). 'RELICS: Die Lebende Krone' als Arbeitstitel akzeptiert. Qualität vor Quantität — lieber drei gute Seiten als zehn oberflächliche.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day03-scene1-briefing/"
+          }
         },
         {
           "scene": 2,
@@ -2111,13 +2185,22 @@
             "gallery/wbb/01-mythos.md (V1)",
             "gallery/gdd/01-spielübersicht.md (V1)",
             "gallery/gdd/05-designsprache.md (V1)",
-            "gallery/gdd/06-technik-produktion.md (V1)"
+            "gallery/gdd/06-technik-produktion.md (V1)",
+            "gallery/concepts/environment/kuestenvolk-vertical-city_seedream-4-5.png",
+            "gallery/concepts/characters/felltraeger-silk-road-traders_seedream-4-5.png"
           ],
           "dialogue": [],
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day03-scene2-emre/",
+            "vera": "traces/simulation-2-test/day03-scene2-vera/",
+            "tobi": "traces/simulation-2-test/day03-scene2-tobi/",
+            "darius": "traces/simulation-2-test/day03-scene2-darius/"
+          }
         },
         {
           "scene": 3,
@@ -2234,7 +2317,8 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": []
         },
         {
           "scene": 4,
@@ -2319,7 +2403,8 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": []
         },
         {
           "scene": 5,
@@ -2386,7 +2471,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "nami": "traces/simulation-2-test/day03-scene5-nami/"
+          }
         },
         {
           "scene": 6,
@@ -2514,7 +2603,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Drei Tage, und wir haben: WBB-01 Mythos V1, GDD-01 Spielübersicht V1, GDD-02 Kernmechaniken V1, GDD-03 Erzählkonzept V1, GDD-05 Designsprache V1, GDD-06 Technik V1. Das ist mehr als ich erwartet habe. Die Kohärenz zwischen den Dokumenten ist beeindruckend — das eigene Namenssystem zieht sich durch, die Fraktionen sind konsistent visuell und narrativ differenziert, das Schattenfieber ist mechanisch, narrativ und visuell durchdekliniert. Nächste Woche: V2 aller Dokumente + GDD-04 Schlüsselfiguren + WBB-02 Topos + WBB-03 Ethos. Geniesst den Feierabend."
+          "cd_feedback": "Drei Tage, und wir haben: WBB-01 Mythos V1, GDD-01 Spielübersicht V1, GDD-02 Kernmechaniken V1, GDD-03 Erzählkonzept V1, GDD-05 Designsprache V1, GDD-06 Technik V1. Das ist mehr als ich erwartet habe. Die Kohärenz zwischen den Dokumenten ist beeindruckend — das eigene Namenssystem zieht sich durch, die Fraktionen sind konsistent visuell und narrativ differenziert, das Schattenfieber ist mechanisch, narrativ und visuell durchdekliniert. Nächste Woche: V2 aller Dokumente + GDD-04 Schlüsselfiguren + WBB-02 Topos + WBB-03 Ethos. Geniesst den Feierabend.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day03-scene6-review/"
+          }
         }
       ],
       "summary": {
@@ -2625,7 +2718,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Peer-Reviews haben heute Priorität. Jeder liest mindestens ein fremdes Dokument. Danach V2-Überarbeitungen. Nami startet GDD-04 Schlüsselfiguren, Emre beginnt WBB-02 Topos. Reviews vor neuen Dokumenten."
+          "cd_feedback": "Peer-Reviews haben heute Priorität. Jeder liest mindestens ein fremdes Dokument. Danach V2-Überarbeitungen. Nami startet GDD-04 Schlüsselfiguren, Emre beginnt WBB-02 Topos. Reviews vor neuen Dokumenten.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day04-scene1-briefing/"
+          }
         },
         {
           "scene": 2,
@@ -2684,7 +2781,10 @@
             }
           },
           "active_room": null,
-          "artifacts": [],
+          "artifacts": [
+            "gallery/concepts/environment/vulkanvolk-ritual-caldera_seedream-4-5.png",
+            "gallery/concepts/characters/zerbrochene-portrait-trio_seedream-4-5.png"
+          ],
           "dialogue": [
             {
               "who": "leo",
@@ -2702,7 +2802,17 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day04-scene2-emre/",
+            "vera": "traces/simulation-2-test/day04-scene2-vera/",
+            "tobi": "traces/simulation-2-test/day04-scene2-tobi/",
+            "darius": "traces/simulation-2-test/day04-scene2-darius/",
+            "nami": "traces/simulation-2-test/day04-scene2-nami/",
+            "leo": "traces/simulation-2-test/day04-scene2-leo/",
+            "finn": "traces/simulation-2-test/day04-scene2-finn/"
+          }
         },
         {
           "scene": 3,
@@ -2779,7 +2889,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "Schattenfieber-Stufengrenzen verbindlich: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Halluzinations-Start = 76. Gilt für alle Dokumente."
+          "cd_feedback": "Schattenfieber-Stufengrenzen verbindlich: Rauschen 1-40, Risse 41-75, Schwelle 76-100. Halluzinations-Start = 76. Gilt für alle Dokumente.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day04-scene3-meeting/"
+          }
         },
         {
           "scene": 4,
@@ -2847,7 +2961,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day04-scene4-pause/"
+          }
         },
         {
           "scene": 5,
@@ -2911,7 +3029,17 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day04-scene5-emre/",
+            "vera": "traces/simulation-2-test/day04-scene5-vera/",
+            "tobi": "traces/simulation-2-test/day04-scene5-tobi/",
+            "darius": "traces/simulation-2-test/day04-scene5-darius/",
+            "nami": "traces/simulation-2-test/day04-scene5-nami/",
+            "leo": "traces/simulation-2-test/day04-scene5-leo/",
+            "finn": "traces/simulation-2-test/day04-scene5-finn/"
+          }
         },
         {
           "scene": 6,
@@ -2988,7 +3116,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day04-scene6-dnd/"
+          }
         }
       ],
       "summary": {
@@ -3081,7 +3213,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "V2 finalisieren. Leo Konsistenz-Check. GDD-04 und WBB-02 Outlines weiter. Abends Wochen-Review."
+          "cd_feedback": "V2 finalisieren. Leo Konsistenz-Check. GDD-04 und WBB-02 Outlines weiter. Abends Wochen-Review.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day05-scene1-briefing/"
+          }
         },
         {
           "scene": 2,
@@ -3147,13 +3283,25 @@
             "gallery/gdd/05-designsprache.md (V2)",
             "gallery/gdd/06-technik-produktion.md (V2)",
             "gallery/wbb/01-mythos.md (V2)",
-            "gallery/wbb/02-topos.md (V1)"
+            "gallery/wbb/02-topos.md (V1)",
+            "gallery/concepts/items/biotech-weapons-study_seedream-4-5.png",
+            "gallery/concepts/ui/nervensystem-character-screen_nano-banana-pro.png"
           ],
           "dialogue": [],
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day05-scene2-emre/",
+            "vera": "traces/simulation-2-test/day05-scene2-vera/",
+            "tobi": "traces/simulation-2-test/day05-scene2-tobi/",
+            "darius": "traces/simulation-2-test/day05-scene2-darius/",
+            "nami": "traces/simulation-2-test/day05-scene2-nami/",
+            "leo": "traces/simulation-2-test/day05-scene2-leo/",
+            "finn": "traces/simulation-2-test/day05-scene2-finn/"
+          }
         },
         {
           "scene": 3,
@@ -3238,7 +3386,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day05-scene3-meeting/"
+          }
         },
         {
           "scene": 4,
@@ -3314,7 +3466,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day05-scene4-pause/"
+          }
         },
         {
           "scene": 5,
@@ -3380,7 +3536,17 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": null
+          "cd_feedback": null,
+          "trace_dirs": [],
+          "traces": {
+            "emre": "traces/simulation-2-test/day05-scene5-emre/",
+            "vera": "traces/simulation-2-test/day05-scene5-vera/",
+            "tobi": "traces/simulation-2-test/day05-scene5-tobi/",
+            "darius": "traces/simulation-2-test/day05-scene5-darius/",
+            "nami": "traces/simulation-2-test/day05-scene5-nami/",
+            "leo": "traces/simulation-2-test/day05-scene5-leo/",
+            "finn": "traces/simulation-2-test/day05-scene5-finn/"
+          }
         },
         {
           "scene": 6,
@@ -3461,7 +3627,11 @@
           "thoughts": [],
           "mood": {},
           "feedback": [],
-          "cd_feedback": "CD-Entscheidungen nötig: (1) GDD-04 Figur 3 Kompanion vs. NPC bis Mittwoch. (2) WBB-02 Emer-Anatomie als Topos-Fundament bis Dienstag."
+          "cd_feedback": "CD-Entscheidungen nötig: (1) GDD-04 Figur 3 Kompanion vs. NPC bis Mittwoch. (2) WBB-02 Emer-Anatomie als Topos-Fundament bis Dienstag.",
+          "trace_dirs": [],
+          "traces": {
+            "_shared": "traces/simulation-2-test/day05-scene6-review/"
+          }
         }
       ],
       "summary": {
@@ -4670,7 +4840,7 @@
           {
             "version": 2,
             "filename": "01-spieluebersicht-v2.md",
-            "content": "# GDD-01: Spielübersicht & Design-Säulen\n\n**Autor:** Darius Engel, Game Director\n**Version:** V2 (Tag 5, Freitag — Finalisierung)\n**Status:** Abgeschlossen\n**Änderungslog:**\n- V1 (Tag 3, Mittwoch): Volltext — Elevator Pitch, 6 Design-Säulen, 3 USPs, Zielgruppe, 1h/10h/40h-Prinzip, Referenzrahmen\n- V2 (Tag 5, Freitag): Scope-Klarheit (Serie vs. Vertical Slice), Zielgruppe 25-40 präzisiert, Kamera als eigene Design-Säule ergänzt, Tiervolk+Biotech als Weltsprache geschärft, Konsequenz-Versprechen durch Typ-Matrix operationalisiert\n\n**Querverweise:** `02-kernmechaniken.md` (V2, vollständig), `briefing.md` (Nordstern)\n\n---\n\n## 0. Schnellorientierung\n\n> Wer nur einen Absatz liest, soll dieser sein.\n\nRELICS: *[Iterations-Titel]* ist ein Dark-Fantasy-Action-RPG. Der Spieler betritt als Fremder eine dichte, handgefertigte Welt am Rand des Zusammenbruchs — drei Fraktionen ohne klare Moral, eine biologische Infektion als Progressionssystem, ein Relikt, das alle haben wollen. Entscheidungen bleiben. Die Welt erinnert sich. Wer das Schattenfieber nutzt, verändert seinen Körper dauerhaft.\n\n**Tonalität:** Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität.\n**Referenzrahmen:** Gothic 2 (Dichte, Welt-Reaktivität), Skyrim (Kamera, Zugänglichkeit), Bloodborne (Transformationsmechanik), Dishonored (Vertikalität).\n\n---\n\n## 1. Elevator Pitch\n\n**RELICS: *[Iterations-Titel]*** ist ein Dark-Fantasy-Action-RPG in einer handgemachten Semi-Open-World. Der Spieler betritt als namenloser Fremder eine mittelalterliche Gesellschaft am Wendepunkt: Drei Fraktionen ringen um die Macht, eine biologische Seuche — das Schattenfieber — verwandelt die Bevölkerung, und im Zentrum des Konflikts liegt ein organisches Artefakt, das alle drei Fraktionen für sich beanspruchen.\n\nRELICS ist kein Spiel über Auserwählte und Prophezeiungen. Es ist ein Spiel über Machterwerb in einer Welt, die sich nicht dafür interessiert, ob der Spieler überlebt. Keine Magie, keine Elfen, keine vorbestimmte Heldenreise. Stattdessen: Biotech-Alchemie, körperliche Progression durch ein physiologisches Nervensystem-Leveling und eine Seuche, die dem Spieler übermenschliche Fähigkeiten bietet — wenn er bereit ist, den Preis dafür zu zahlen.\n\nDie zentrale Spieler-Fantasie lautet: **Ich betrete als Fremder eine aufregende Sandbox.** Eine Welt, die existiert, bevor der Spieler sie betritt, und die weiterexistiert, wenn er sie verlässt. Eine Welt, in der jede Entscheidung Konsequenzen hat und keine Entscheidung die einzig richtige ist.\n\n**Tonalität:** Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität.\n\n**Genre:** Third-/First-Person Action-RPG (nahtlos umschaltbar), Semi-Open-World, Medium-Fantasy, Low-Magic, Biotech-Futurismus.\n\n**Plattform:** PC (Primär), Konsolen als Stretch Goal.\n\n**Engine:** Unreal Engine 5.\n\n---\n\n## 2. Scope-Klarheit: Serie vs. Diese Iteration\n\n> V2-Ergänzung. Dieser Abschnitt fehlte in V1. Er schützt das Team vor Scope-Creep und das Versprechen vor Überdehnung.\n\n### Was RELICS als Serie verspricht\nRELICS ist eine Series. Jede Iteration spielt in derselben Welt, zu einem anderen historischen Wendepunkt, mit einem anderen Relikt im Zentrum. Die Welt wächst iterationsübergreifend — aber jede Iteration ist für sich spielbar.\n\n### Was *diese Iteration* liefert (Vertical Slice)\n\nEin Vertical Slice ist kein kleineres Spiel — er ist ein Qualitätsversprechen. Er zeigt, wie das vollständige Spiel sich anfühlen wird. Nicht alles ist drin. Was drin ist, ist vollständig.\n\n| Deliverable | Scope |\n|-------------|-------|\n| **Region** | Eine zusammenhängende Kernregion (~4–6 km²), Gothic-Dichte, handplatziert |\n| **Hauptquest** | Vollständig — drei Akte, drei Fraktionspfade, drei Endvarianten (Tragen / Zerstören / Weitergeben) |\n| **Nebenquests** | 2 vollständige Nebenquests als Systemdemonstration |\n| **Fraktionen** | Alle drei Fraktionen spielbar und reaktiv — kein Stub, keine Halbimplementierung |\n| **Schattenfieber** | Alle fünf Stufen technisch implementiert; Stufe 0–2 vollständig spielbar im Slice |\n| **Kamera** | FP/TP nahtlos, vollständig — kein Ladebildschirm, kein Menü |\n| **Tiervolk** | Als NPCs und Händler implementiert; Schwarzmarkt-Mechanik funktionstüchtig |\n| **Alchemie** | 15–20 Basisrezepte; alle sechs Produktkategorien vertreten |\n\n**Was nicht im Vertical Slice ist:** Weitere Regionen, vollständige Rezeptliste, Multiplayer / Coop (nie geplant).\n\n**Design-Test:** Wenn ein Playtester sagt \"Wann kommt der Rest?\" — dann hat der Scope-Abschnitt funktioniert.\n\n---\n\n## 3. Die sieben Design-Säulen\n\n> V2-Änderung: V1 hatte sechs Säulen. Kamera wurde als eigene Säule ergänzt (war in V1 nur in Säule 1 und im Referenzrahmen erwähnt). Die übrigen sechs Säulen wurden inhaltlich geschärft, nicht umstrukturiert.\n\nDesign-Säulen sind Entscheidungsfilter. Wenn ein Feature, eine Mechanik oder eine Quest eine Säule verletzt, wird sie geändert oder gestrichen — nicht verhandelt.\n\n---\n\n### Säule 1 — Spielerwelt-Immersion\n\nDer Spieler beginnt als Niemand. Er hat keinen Namen, keinen Ruf, keine Vorgeschichte, die ihm Türen öffnet. Macht wird in RELICS verdient — durch Taten, durch Beziehungen, durch die Bereitschaft, Risiken einzugehen.\n\nDas bedeutet konkret: kein Quest-Marker, der dem Spieler sagt, wohin er gehen soll. Keine Tutorial-Hand. Die Welt kommuniziert durch Architektur, NPC-Verhalten und Umweltdetails. Jeder NPC hat einen Tagesablauf und eine Funktion — nicht nur im Quest-System. Geheimnisse sind durch genaues Hinsehen findbar, nicht durch Radar-Pulse. Gebiete haben feste Schwierigkeit — wer zu früh kommt, verliert. Komm später wieder.\n\n**Referenz:** Gothic 2. Die Minentäler-Region hat eine physische Schwierigkeitsarchitektur — wer rechts abbiegt, stirbt. Wer links abbiegt, kommt weiter. Kein Marker sagt dir, welche Richtung die richtige ist.\n\n**Validierungstest:** Kann der Spieler in jeder Situation das Gefühl haben, dass seine Entscheidung — nicht ein Skript — zum aktuellen Zustand der Welt geführt hat?\n\n**Spieler-Fantasie:** *\"Ich lerne diese Welt, weil ich ihr zuhöre — nicht weil mir jemand sagt, wohin ich gehen soll.\"*\n\n---\n\n### Säule 2 — Konsequenz ohne Gnadenfrist\n\nEntscheidungen haben Konsequenzen. \"Konsequenz\" ist in RELICS kein Konzept — es ist eine Mechanik. Konkret:\n\n| Konsequenz-Typ | Zeitrahmen | Mechanismus |\n|----------------|-----------|-------------|\n| **Sofort** | Im Moment der Aktion | NPC stirbt, Gespräch bricht ab, Alarm ausgelöst |\n| **Kurzfristig** | Bis zum nächsten Aktwechsel | Fraktion reagiert, Questlines öffnen/schließen, Händlerzugang verändert sich |\n| **Langfristig** | Bleibt bis zum Ende | Weltzustand ändert sich, NPCs sind dauerhaft weg, Endpfade werden durch frühere Entscheidungen beeinflusst |\n| **Körperlich** | Permanent, irreversibel | Schattenfieber-Hard-Cap — die Infektion vergisst nicht |\n\nWas das NICHT bedeutet: Strafe für Fehler. Es bedeutet: Echte Entscheidungen haben echtes Gewicht. Die dramatischste Konsequenz ist oft nicht der tote NPC — sondern der lebende NPC, der sich nun anders verhält.\n\n**Validierungstest:** Wenn ein Spieler nach 30 Stunden sagt \"Ach so, DESHALB ist der Schmied feindlich\" — dann hat diese Säule funktioniert.\n\n**Spieler-Fantasie:** *\"Ich lebe mit meinen Entscheidungen. Ich kann sie nicht rückgängig machen. Das macht sie bedeutsam.\"*\n\n---\n\n### Säule 3 — Kamera als Spieler-Autonomie\n\n> V2-Ergänzung als eigenständige Säule. Kamera ist nicht UI. Kamera ist Identität.\n\nDer Spieler wählt, wie er die Welt erlebt. First-Person und Third-Person sind nahtlos umschaltbar — kein Ladebildschirm, kein Menü.\n\n**First Person:**\n- Maximale Immersion — der Spieler IST in der Welt\n- Räumliche Präsenz in engen Umgebungen (Katakomben, Kanalisation, Gefängnisse)\n- Schattenfieber-Wahrnehmungsveränderungen wirken stärker in FP\n\n**Third Person:**\n- Vollständige Ausrüstungs-Customization sichtbar — *Ich sehe, was ich trage*\n- Bessere Kampfübersicht in komplexen Begegnungen\n- Vertikalität erfahrbar — der Spieler sieht seinen Charakter klettern\n\nWer in FP spielt, erlebt eine andere Tonalität als wer in TP spielt. Beide Erfahrungen müssen vollständig und gleichwertig sein. Das ist ein Designversprechen, kein technisches Deliverable.\n\n**Referenz:** Skyrim — nahtloser FP/TP-Wechsel als Industriestandard. RELICS übernimmt das Prinzip, setzt es aber auf einem visuell reicheren Biotech-Mittelalter-Fundament um.\n\n**Validierungstest:** Kann ein Spieler, der ausschließlich in FP spielt, genauso viel vom Spiel erleben wie ein Spieler, der ausschließlich in TP spielt?\n\n**Spieler-Fantasie:** *\"Das ist mein Charakter. Ich bestimme, aus welcher Perspektive ich ihn erlebe.\"*\n\n---\n\n### Säule 4 — Körperliche Progression\n\nRELICS ersetzt abstrakte Skill-Trees durch ein physiologisches Leveling-System. Der Spieler investiert Punkte in vier Nervensystem-Äste: Cardio/Atmung, Muskel/Skelett, Lymph/Immun und — ab dem ersten Punkt Schattenfieber-Infektion — den Schatten-Ast. Die Darstellung ist eine halbtransparente Nervensystem-Ansicht des Körpers. Progression ist sichtbar, greifbar, körperlich.\n\nFähigkeiten werden nicht in einem Menü freigeschaltet. Sie werden bei Trainern in der Welt gelernt — NPCs, die ihre Dienste an Fraktionszugehörigkeit, Reputation und Vorbedingungen knüpfen. Welcher Fraktion der Spieler sich anschließt, bestimmt, welche Fähigkeiten er überhaupt lernen KANN.\n\nPerks sind transformativ, nicht numerisch. \"Du kannst jetzt im Sprint angreifen\" statt \"+20% Schwertschaden\".\n\n**Vollständige Mechanik:** → `02-kernmechaniken.md`, Kapitel 3\n\n**Validierungstest:** Kann der Spieler seinen Build einem anderen Spieler erklären, ohne Zahlenwerte zu nennen — nur durch Beschreibung dessen, was er tun kann?\n\n**Spieler-Fantasie:** *\"Dieser Körper ist meiner — ich entscheide, was er wird.\"*\n\n---\n\n### Säule 5 — Biotech-Futurismus als Weltsprache\n\n> V2-Schärfung: Biotech war in V1 als USP gelistet, aber nicht als Design-Säule verankert. Es ist beides.\n\nRELICS spielt nicht in der Vergangenheit. Es spielt in einer anderen Gegenwart — einer Welt, deren Biologie andere Wege gegangen ist.\n\n**Was Biotech-Futurismus bedeutet:**\n- **Leveling ist körperlich:** Vier physiologische Nervensystem-Äste. Progression ist sichtbar — nicht als Zahlenwerte, sondern als Körper-Visualisierung.\n- **Alchemie ist Wissenschaft:** Keine Magie. Gifte, Stimulanzien, Suppressiva, Kontaktmittel. Alchemie ist gefährlich, weil sie in einer Welt stattfindet, die auf einem toten Urwesen gebaut ist.\n- **Schattenfieber ist Biologie:** Die Seuche transformiert den Körper — keine mystische Verwandlung, sondern ein physiologischer Prozess mit mechanischen Konsequenzen.\n- **Ästhetik:** Mehr futuristisch, weniger heruntergekommen. High Fashion Mittelalter. Die Mächtigen sehen wie die Mächtigen aus.\n\n**Was Biotech-Futurismus NICHT bedeutet:** Steampunk, vergessene Hochtechnologie, Science-Fantasy-Alien-Artefakte.\n\n**Validierungstest:** Wenn jemand RELICS als \"Steampunk-Spiel\" beschreibt, hat diese Säule nicht funktioniert. Das ist die Anti-Formulierung.\n\n**Spieler-Fantasie:** *\"Diese Welt hat eine eigene Logik — und wenn ich sie verstehe, kann ich sie benutzen.\"*\n\n---\n\n### Säule 6 — Tiervolk als soziale Schicht\n\n> V2-Schärfung: Das Tiervolk war in V1 im Fraktionsabschnitt kurz erwähnt. Es ist eine eigenständige Design-Entscheidung mit mechanischer Relevanz.\n\nDas Tiervolk ist keine Rasse im Fantasy-Sinne. Es ist eine Gesellschaftsschicht.\n\n**Funktion in der Spielwelt:**\n- **Händler:** Tiervolk kontrolliert den Schwarzmarkt und den Graumarkt. Seltene Alchemie-Zutaten, gestohlene Waren, Informationen. Der Spieler braucht das Tiervolk für Inhalte, die über legale Wege nicht erreichbar sind.\n- **Diebe:** Tiervolk operiert in den Rändern der Gesellschaft — Dächer, Kanalisation, Schmugglerwege. Ihre Vertikalität überschneidet sich mit den Level-Design-Prinzipien des Spiels.\n- **NICHT Handwerker:** Das Tiervolk stellt nichts her, was die menschliche Gesellschaft bereits produziert. Sie handeln mit dem, was anderen zu riskant oder zu illegal ist.\n\n**Ästhetik-Direktive (Briefing):**\n- Leicht alien vs. menschlich clean — der Unterschied ist subtil, aber real\n- Weniger tribal, mehr urban-marginalisiert\n- Temporäre Materialien in permanenten Strukturen (improvisierte Nischen, nomadische Markierungen)\n\n**Mechanische Relevanz:**\n- Exklusive Alchemie-Zutaten (inkl. Schattenfieber-Suppressiva) nur über Tiervolk-Händler\n- Schmugglerrouten als alternative Zugangspfade zu gesperrten Gebieten\n- Ab Infektionsstufe 2 verändert sich die Tiervolk-Reaktion auf den Spieler: \"einer von uns, der nicht ganz zur Norm gehört\"\n\n**Validierungstest:** Wenn ein Spieler Stufe-0-Alchemie maximieren will, muss er mit dem Tiervolk interagieren. Wenn ein Spieler alle Gebiete erkunden will, muss er ihre Routen kennen.\n\n**Spieler-Fantasie:** *\"Die Gesellschaft hat Regeln. Das Tiervolk kennt die Lücken.\"*\n\n---\n\n### Säule 7 — Vertikales Raumdesign\n\nRELICS behandelt den Raum als drei Dimensionen. Städte sind nicht nur Grundrisse — sie haben begehbare Dachlandschaften, Keller, Kanalisation, Brücken und Turmebenen. Die Wildnis bietet Klippen, Höhlen, Baumkronen, Flussbetten und Bergpässe.\n\nZu jedem Ziel führen mindestens drei Wege: Der Hauptweg (sicher, lang), der Schleichweg (riskant, kurz) und der Vertikalweg (Geschick erforderlich, belohnend).\n\nDas Prinzip lautet: **Was du siehst, kannst du erreichen.** Sightline-Navigation statt Kompassnadel.\n\n**Referenz:** Dishonored — vertikale Raumtiefe als Gameplay-Prinzip. RELICS überträgt es auf eine persistente Open World, nicht auf abgeschlossene Missionen.\n\n**Validierungstest:** Gibt es für jede Spielersituation mindestens zwei räumlich unterschiedliche Lösungswege — einen horizontalen und einen vertikalen?\n\n**Spieler-Fantasie:** *\"Ich finde Wege, die andere nicht sehen.\"*\n\n---\n\n## 4. Alleinstellungsmerkmale (USPs)\n\n| # | USP | In einem Satz | Unterschied zu Referenz |\n|---|-----|--------------|------------------------|\n| **USP 1** | Biologische Transformation als Kern-Progression | Das Schattenfieber verändert Körper und Welt dauerhaft — und es gibt keine Heilung, nur Kontrolle | Skyrim-Vampirismus ist reversibel und marginal. Bloodborne-Beasthood ist temporär. RELICS macht es permanent und zentral. |\n| **USP 2** | Welt-Reaktivität statt Marker-Quests | Die Welt erinnert sich. NPCs haben Gedächtnisse. Konsequenzen kommen — auch wenn der Spieler sie vergessen hat. | Gothic 2 ist der nächste Vergleich. RELICS setzt diesen Standard 2025 neu. |\n| **USP 3** | Open-World mit Immersive-Sim-Vertikalität | Weltdichte und Exploration eines Gothic-artigen RPG + räumliche Tiefe und Systeminteraktion einer Immersive Sim | Kein existierendes Referenzspiel bietet beides. Gothic/Skyrim sind horizontal. Dishonored ist abgeschlossen. |\n\n---\n\n## 5. Zielgruppe\n\n> V2-Schärfung: V1 definierte Kernzielgruppe als \"22-35 Jahre\". Präzisiert auf 25-40 auf Basis des CD-Profils: erfahrene Spieler, die Gothic und BG3 kennen, aber berufstätig und zeitkritisch sind.\n\n### Kernzielgruppe: Erfahrene RPG-Spieler, 25–40 Jahre\n\nDiese Spieler kennen Gothic, Skyrim, vielleicht Bloodborne. Sie wissen, was ein gutes RPG von einem schlechten unterscheidet. Sie haben weniger Zeit als früher — aber sie spielen tiefer, wenn das Spiel es verdient.\n\n**Was sie wollen:**\n- Keine Tutorial-Hände, die ihnen jeden Schritt erklären\n- Tiefe, die sich durch Spielen erschließt — nicht durch Handbuch oder Wiki\n- Konsequenzen, die sich echt anfühlen\n- Eine Welt, die ihnen das Gefühl gibt, sie zu erkunden — nicht eine Quest-Liste abzuhaken\n\n**Was sie nicht wollen:**\n- Grind als Zeitfüller\n- Artificial Difficulty (Feind-HP skaliert mit Level)\n- Moral-Kompasse im HUD\n- Mikrotransaktionen\n\n**Spielzeit-Erwartung:**\n\n| Spielzeit | Erfahrung |\n|-----------|-----------|\n| **1 Stunde** | Die Welt hat mich. Ich verstehe die Grundregeln. Ich habe eine erste Entscheidung getroffen, die sich bedeutsam anfühlte. Ich will mehr. |\n| **10 Stunden** | Ich kenne eine Fraktion gut, zwei oberflächlich. Ich habe meine Schattenfieber-Position definiert. Ich habe mindestens eine unerwartete Konsequenz gespürt. |\n| **40 Stunden** | Ich habe eine Welt erlebt, nicht ein Spiel gespielt. Ich kann einen anderen Durchlauf beginnen und weiß, dass er sich fundamental anders anfühlt. |\n\n**Drei Kernkommunities innerhalb der Zielgruppe:**\n\n| Community | Was sie suchen | RELICS-Angebot |\n|-----------|---------------|----------------|\n| **Gothic-Community** | Weltdichte, keine Kompromisse, NPC-Gedächtnisse | Säule 1 + Säule 2 — Welt als Spiel, echte Konsequenz |\n| **Immersive-Sim-Fans** | Systemtiefe, mehrere Lösungswege, emergentes Gameplay | Säule 7 + USP 3 — Vertikalität in Open World |\n| **Action-RPG-Community** | Skill-basierter Kampf, Feedback-Qualität, Progression | Säule 4 + GDD-02 Combat — Skill-Ceiling als Spektrum |\n\n### Sekundärzielgruppe: Narrative-RPG-Fans, 20–30 Jahre\n\nKennen Baldur's Gate 3, Disco Elysium, VtM: Bloodlines. Suchen Fraktionsdynamik, moralische Ambiguität, Weltreaktivität. RELICS ist für sie zugänglich über Erzählung und Fraktionspolitik.\n\n### Monetarisierung\n\nKlassisches Premium-Modell. Kein Free-to-Play, keine Mikrotransaktionen, keine Season Passes.\n- **Alpha:** Kostenloser Zugang für ausgewählte Content Creators und Streamer.\n- **Beta:** Steam Early Access, voraussichtlich ein Jahr vor Release.\n- **Release:** Vollpreistitel.\n- **Post-Launch:** Story-DLCs mit substantiellem Umfang, hochwertige Merchandise-Linie.\n\n---\n\n## 6. Spielerfahrung\n\nDie Spielerfahrung folgt einem emotionalen Bogen in drei Phasen. Das übergeordnete Game Feel: **Ich betrete als Fremder eine aufregende Sandbox.**\n\n### Die erste Stunde — \"Diese Welt ist gefährlich und aufregend.\"\n\nDer Spieler erstellt seinen Charakter und betritt die Welt ohne Nichts: kein Geld, keine Waffe, keine Verbindungen. Die ersten Begegnungen sind sorgfältig gesetzt — nicht als Tutorial, sondern als Weltexposition. Der Spieler trifft auf alle drei Fraktionen als Teil der lebenden Welt, nicht als Questgeber.\n\nDie erste Kampfbegegnung ist brutal, lehrreich und überlebbar. Sie lehrt das Basisvokabular (Angriff, Block, Ausweichen, Ausdauer-Management) und vor allem eine Haltung: In dieser Welt kämpft man nicht leichtfertig.\n\nAm Ende der ersten Stunde hat der Spieler Optionen — keine Hauptquest-Verpflichtung, keine vorgegebene Richtung.\n\n### Zehn Stunden — \"Ich verstehe diese Welt.\"\n\nDer Spieler hat sich orientiert. Er kennt die Stadt, hat Verbindungen, Rivalitäten, Schulden. Das Schattenfieber ist ihm begegnet — optional hat er seine erste Infektion erlebt und die Schattensinne aktiviert. Dieser Moment ist designt, um zu begeistern, nicht zu erschrecken: \"Das war es wert. Was kommt noch?\"\n\nAm Ende der zehnten Stunde hat der Spieler das Gefühl, Teil dieser Welt zu sein.\n\n### Vierzig Stunden — \"Meine Entscheidungen haben diese Welt geformt.\"\n\nDer Spieler hat seine Fraktion gewählt und die exklusive Questline fortgeführt. Sein Schattenfieber-Status definiert seinen Spielstil. Die Welt hat sich verändert: Fraktionsverhältnisse, NPC-Verhalten, zugängliche Orte. Und der Spieler weiß: Ein zweiter Durchgang mit einer anderen Fraktion und einem anderen Schattenfieber-Pfad wäre eine fundamental andere Erfahrung.\n\n---\n\n## 7. Referenzrahmen\n\n| Referenz | Was RELICS nimmt | Was RELICS NICHT nimmt |\n|----------|-----------------|------------------------|\n| **Gothic 2** | Weltdichte, Trainer-System, Null-zu-Held-Bogen, feste Gebiets-Schwierigkeit | Veraltete Zugangshürden ohne Onboarding-Logik |\n| **Skyrim** | Kamera (FP/TP), Zugänglichkeit, Sightline-Navigation | Level-Skalierung, Quest-Marker-Abhängigkeit, Auserwählten-Narrativ |\n| **Bloodborne** | Transformationsmechanik, Wahrnehmungswandel als Gameplay-System | Punishing difficulty als Selbstzweck, Obskurantismus |\n| **VtM: Bloodlines** | Fraktionsgameplay, soziale Konsequenzen einer Transformation | Fester Protagonist |\n| **Dishonored** | Vertikales Raumdesign, Systeminteraktion, Feedback-Qualität | Science-Fantasy-Technologie-Ästhetik |\n| **Baldur's Gate 3** | Proof of Concept: großes Computer-Rollenspiel kann kommerziell erfolgreich sein | Rundenbasierter Kampf, festes Team |\n| **The Witcher (NICHT)** | — | Fester Protagonist; kein vorgegebener Charakter, keine vorgegebene Moral |\n| **Skyrim-Vampirismus (NICHT)** | — | Ungewollte Infektion, keine sofortige Power Fantasy |\n\n---\n\n## 8. Spieler-Fantasien — Der Test\n\nJede Mechanik, jede Quest, jede Design-Entscheidung muss einer der folgenden Spieler-Fantasien dienen. Wenn sie das nicht tut, wird sie gestrichen.\n\n| # | Spieler-Fantasie | System, das sie trägt |\n|---|-----------------|----------------------|\n| F1 | \"Ich lerne diese Welt, weil ich ihr zuhöre.\" | Säule 1 — Welt als Spiel, keine Quest-Marker |\n| F2 | \"Ich lebe mit meinen Entscheidungen.\" | Säule 2 — Konsequenz-Typen-Matrix, Schattenfieber-Hard-Cap |\n| F3 | \"Das ist mein Charakter, aus meiner Perspektive.\" | Säule 3 — Kamera-Autonomie FP/TP |\n| F4 | \"Dieser Körper ist meiner — ich entscheide, was er wird.\" | Säule 4 — Nervensystem-Leveling, Schattenfieber-Transformation |\n| F5 | \"Diese Welt hat eine Logik — ich begreife sie.\" | Säule 5 — Biotech-Futurismus, Alchemie-System, Fraktionspolitik |\n| F6 | \"Die Gesellschaft hat Regeln. Ich kenne die Lücken.\" | Säule 6 — Tiervolk-Schwarzmarkt, Schmugglerrouten |\n| F7 | \"Ich finde Wege, die andere nicht sehen.\" | Säule 7 — Vertikalität, Schattensinne, Alchemie-Tricks |\n\n---\n\n## 9. Offene Fragen (V2-Stand)\n\n| # | Frage | Zuständig | Priorität |\n|---|-------|----------|-----------|\n| 1 | Iterations-Titel — welcher Name ersetzt [Iterations-Titel]? | CD-Entscheidung | Hoch — vor Marketing-Materialien |\n| 2 | Schnellreise: Ja/Nein? Empfehlung: Erst zweiter Akt, als narrativer Unlock | Darius + Finn | Mittel |\n| 3 | Tages-/Nachtzyklus: Gameplay-Auswirkungen? NPC-Routinen, Schattenfieber-Intensität? | Darius + Tobi | Mittel |\n| 4 | Tiervolk — eigener Name im RELICS-Namenssystem? | Emre (Namenssystem) | Offen — abhängig von Emres Namenssystem-Abschluss |\n\n---\n\n*Darius Engel, Game Design Corner, Tag 5 (Freitag) — V2-Finalisierung*\n*\"Macht es Spaß? Was ist die Spieler-Fantasie hier?\" — beantwortet.*\n",
+            "content": "# GDD-01: Spielübersicht & Design-Säulen\n\n**Autor:** Darius Engel, Game Director\n**Version:** V2 (Tag 5, Freitag — Finalisierung)\n**Status:** Abgeschlossen\n**Änderungslog:**\n- V1 (Tag 3, Mittwoch): Volltext — Elevator Pitch, 6 Design-Säulen, 3 USPs, Zielgruppe, 1h/10h/40h-Prinzip, Referenzrahmen\n- V2 (Tag 5, Freitag): Scope-Klarheit (Serie vs. Vertical Slice), Zielgruppe 25-40 präzisiert, Kamera als eigene Design-Säule ergänzt, Tiervolk+Biotech als Weltsprache geschärft, Konsequenz-Versprechen durch Typ-Matrix operationalisiert\n\n**Querverweise:** `02-kernmechaniken.md` (V2, vollständig), `briefing.md` (Nordstern)\n\n---\n\n## 0. Schnellorientierung\n\n> Wer nur einen Absatz liest, soll dieser sein.\n\nRELICS: *[Iterations-Titel]* ist ein Dark-Fantasy-Action-RPG. Der Spieler betritt als Fremder eine dichte, handgefertigte Welt am Rand des Zusammenbruchs — drei Fraktionen ohne klare Moral, eine biologische Infektion als Progressionssystem, ein Relikt, das alle haben wollen. Entscheidungen bleiben. Die Welt erinnert sich. Wer das Schattenfieber nutzt, verändert seinen Körper dauerhaft.\n\n**Tonalität:** Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität.\n**Referenzrahmen:** Gothic 2 (Dichte, Welt-Reaktivität), Skyrim (Kamera, Zugänglichkeit), Bloodborne (Transformationsmechanik), Dishonored (Vertikalität).\n\n---\n\n## 1. Elevator Pitch\n\n**RELICS: *[Iterations-Titel]*** ist ein Dark-Fantasy-Action-RPG in einer handgemachten Semi-Open-World. Der Spieler betritt als namenloser Fremder eine mittelalterliche Gesellschaft am Wendepunkt: Drei Fraktionen ringen um die Macht, eine biologische Seuche — das Schattenfieber — verwandelt die Bevölkerung, und im Zentrum des Konflikts liegt ein organisches Artefakt, das alle drei Fraktionen für sich beanspruchen.\n\nRELICS ist kein Spiel über Auserwählte und Prophezeiungen. Es ist ein Spiel über Machterwerb in einer Welt, die sich nicht dafür interessiert, ob der Spieler überlebt. Keine Magie, keine Elfen, keine vorbestimmte Heldenreise. Stattdessen: Biotech-Alchemie, körperliche Progression durch ein physiologisches Nervensystem-Leveling und eine Seuche, die dem Spieler übermenschliche Fähigkeiten bietet — wenn er bereit ist, den Preis dafür zu zahlen.\n\nDie zentrale Spieler-Fantasie lautet: **Ich betrete als Fremder eine aufregende Sandbox.** Eine Welt, die existiert, bevor der Spieler sie betritt, und die weiterexistiert, wenn er sie verlässt. Eine Welt, in der jede Entscheidung Konsequenzen hat und keine Entscheidung die einzig richtige ist.\n\n**Tonalität:** Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität.\n\n**Genre:** Third-/First-Person Action-RPG (nahtlos umschaltbar), Semi-Open-World, Medium-Fantasy, Low-Magic, Biotech-Futurismus.\n\n**Plattform:** PC (Primär), Konsolen als Stretch Goal.\n\n**Engine:** Unreal Engine 5.\n\n---\n\n## 2. Scope-Klarheit: Serie vs. Diese Iteration\n\n> V2-Ergänzung. Dieser Abschnitt fehlte in V1. Er schützt das Team vor Scope-Creep und das Versprechen vor Überdehnung.\n\n### Was RELICS als Serie verspricht\nRELICS ist eine Series. Jede Iteration spielt in derselben Welt, zu einem anderen historischen Wendepunkt, mit einem anderen Relikt im Zentrum. Die Welt wächst iterationsübergreifend — aber jede Iteration ist für sich spielbar.\n\n### Was *diese Iteration* liefert (Vertical Slice)\n\nEin Vertical Slice ist kein kleineres Spiel — er ist ein Qualitätsversprechen. Er zeigt, wie das vollständige Spiel sich anfühlen wird. Nicht alles ist drin. Was drin ist, ist vollständig.\n\n| Deliverable | Scope |\n|-------------|-------|\n| **Region** | Eine zusammenhängende Kernregion (~4–6 km²), Gothic-Dichte, handplatziert |\n| **Hauptquest** | Vollständig — drei Akte, drei Fraktionspfade, drei Endvarianten (Tragen / Zerstören / Weitergeben) |\n| **Nebenquests** | 2 vollständige Nebenquests als Systemdemonstration |\n| **Fraktionen** | Alle drei Fraktionen spielbar und reaktiv — kein Stub, keine Halbimplementierung |\n| **Schattenfieber** | Alle fünf Stufen technisch implementiert; Stufe 0–2 vollständig spielbar im Slice |\n| **Kamera** | FP/TP nahtlos, vollständig — kein Ladebildschirm, kein Menü |\n| **Tiervolk** | Als NPCs und Händler implementiert; Schwarzmarkt-Mechanik funktionstüchtig |\n| **Alchemie** | 15–20 Basisrezepte; alle sechs Produktkategorien vertreten |\n\n**Was nicht im Vertical Slice ist:** Weitere Regionen, vollständige Rezeptliste, Multiplayer / Coop (nie geplant).\n\n**Design-Test:** Wenn ein Playtester sagt \"Wann kommt der Rest?\" — dann hat der Scope-Abschnitt funktioniert.\n\n---\n\n## 3. Die sieben Design-Säulen\n\n> V2-Änderung: V1 hatte sechs Säulen. Kamera wurde als eigene Säule ergänzt (war in V1 nur in Säule 1 und im Referenzrahmen erwähnt). Die übrigen sechs Säulen wurden inhaltlich geschärft, nicht umstrukturiert.\n\nDesign-Säulen sind Entscheidungsfilter. Wenn ein Feature, eine Mechanik oder eine Quest eine Säule verletzt, wird sie geändert oder gestrichen — nicht verhandelt.\n\n---\n\n### Säule 1 — Spielerwelt-Immersion\n\nDer Spieler beginnt als Niemand. Er hat keinen Namen, keinen Ruf, keine Vorgeschichte, die ihm Türen öffnet. Macht wird in RELICS verdient — durch Taten, durch Beziehungen, durch die Bereitschaft, Risiken einzugehen.\n\nDas bedeutet konkret: kein Quest-Marker, der dem Spieler sagt, wohin er gehen soll. Keine Tutorial-Hand. Die Welt kommuniziert durch Architektur, NPC-Verhalten und Umweltdetails. Jeder NPC hat einen Tagesablauf und eine Funktion — nicht nur im Quest-System. Geheimnisse sind durch genaues Hinsehen findbar, nicht durch Radar-Pulse. Gebiete haben feste Schwierigkeit — wer zu früh kommt, verliert. Komm später wieder.\n\n**Referenz:** Gothic 2. Die Minentäler-Region hat eine physische Schwierigkeitsarchitektur — wer rechts abbiegt, stirbt. Wer links abbiegt, kommt weiter. Kein Marker sagt dir, welche Richtung die richtige ist.\n\n**Validierungstest:** Kann der Spieler in jeder Situation das Gefühl haben, dass seine Entscheidung — nicht ein Skript — zum aktuellen Zustand der Welt geführt hat?\n\n**Spieler-Fantasie:** *\"Ich lerne diese Welt, weil ich ihr zuhöre — nicht weil mir jemand sagt, wohin ich gehen soll.\"*\n\n---\n\n### Säule 2 — Konsequenz ohne Gnadenfrist\n\nEntscheidungen haben Konsequenzen. \"Konsequenz\" ist in RELICS kein Konzept — es ist eine Mechanik. Konkret:\n\n| Konsequenz-Typ | Zeitrahmen | Mechanismus |\n|----------------|-----------|-------------|\n| **Sofort** | Im Moment der Aktion | NPC stirbt, Gespräch bricht ab, Alarm ausgelöst |\n| **Kurzfristig** | Bis zum nächsten Aktwechsel | Fraktion reagiert, Questlines öffnen/schließen, Händlerzugang verändert sich |\n| **Langfristig** | Bleibt bis zum Ende | Weltzustand ändert sich, NPCs sind dauerhaft weg, Endpfade werden durch frühere Entscheidungen beeinflusst |\n| **Körperlich** | Permanent, irreversibel | Schattenfieber-Hard-Cap — die Infektion vergisst nicht |\n\nWas das NICHT bedeutet: Strafe für Fehler. Es bedeutet: Echte Entscheidungen haben echtes Gewicht. Die dramatischste Konsequenz ist oft nicht der tote NPC — sondern der lebende NPC, der sich nun anders verhält.\n\n**Validierungstest:** Wenn ein Spieler nach 30 Stunden sagt \"Ach so, DESHALB ist der Schmied feindlich\" — dann hat diese Säule funktioniert.\n\n**Spieler-Fantasie:** *\"Ich lebe mit meinen Entscheidungen. Ich kann sie nicht rückgängig machen. Das macht sie bedeutsam.\"*\n\n---\n\n### Säule 3 — Kamera als Spieler-Autonomie\n\n> V2-Ergänzung als eigenständige Säule. Kamera ist nicht UI. Kamera ist Identität.\n\nDer Spieler wählt, wie er die Welt erlebt. First-Person und Third-Person sind nahtlos umschaltbar — kein Ladebildschirm, kein Menü.\n\n**First Person:**\n- Maximale Immersion — der Spieler IST in der Welt\n- Räumliche Präsenz in engen Umgebungen (Katakomben, Kanalisation, Gefängnisse)\n- Schattenfieber-Wahrnehmungsveränderungen wirken stärker in FP\n\n**Third Person:**\n- Vollständige Ausrüstungs-Customization sichtbar — *Ich sehe, was ich trage*\n- Bessere Kampfübersicht in komplexen Begegnungen\n- Vertikalität erfahrbar — der Spieler sieht seinen Charakter klettern\n\nWer in FP spielt, erlebt eine andere Tonalität als wer in TP spielt. Beide Erfahrungen müssen vollständig und gleichwertig sein. Das ist ein Designversprechen, kein technisches Deliverable.\n\n**Referenz:** Skyrim — nahtloser FP/TP-Wechsel als Industriestandard. RELICS übernimmt das Prinzip, setzt es aber auf einem visuell reicheren Biotech-Mittelalter-Fundament um.\n\n**Validierungstest:** Kann ein Spieler, der ausschließlich in FP spielt, genauso viel vom Spiel erleben wie ein Spieler, der ausschließlich in TP spielt?\n\n**Spieler-Fantasie:** *\"Das ist mein Charakter. Ich bestimme, aus welcher Perspektive ich ihn erlebe.\"*\n\n---\n\n### Säule 4 — Körperliche Progression\n\nRELICS ersetzt abstrakte Skill-Trees durch ein physiologisches Leveling-System. Der Spieler investiert Punkte in vier Nervensystem-Äste: Cardio/Atmung, Muskel/Skelett, Lymph/Immun und — ab dem ersten Punkt Schattenfieber-Infektion — den Schatten-Ast. Die Darstellung ist eine halbtransparente Nervensystem-Ansicht des Körpers. Progression ist sichtbar, greifbar, körperlich.\n\nFähigkeiten werden nicht in einem Menü freigeschaltet. Sie werden bei Trainern in der Welt gelernt — NPCs, die ihre Dienste an Fraktionszugehörigkeit, Reputation und Vorbedingungen knüpfen. Welcher Fraktion der Spieler sich anschließt, bestimmt, welche Fähigkeiten er überhaupt lernen KANN.\n\nPerks sind transformativ, nicht numerisch. \"Du kannst jetzt im Sprint angreifen\" statt \"+20% Schwertschaden\".\n\n**Vollständige Mechanik:** → `02-kernmechaniken.md`, Kapitel 3\n\n**Validierungstest:** Kann der Spieler seinen Build einem anderen Spieler erklären, ohne Zahlenwerte zu nennen — nur durch Beschreibung dessen, was er tun kann?\n\n**Spieler-Fantasie:** *\"Dieser Körper ist meiner — ich entscheide, was er wird.\"*\n\n---\n\n### Säule 5 — Biotech-Futurismus als Weltsprache\n\n> V2-Schärfung: Biotech war in V1 als USP gelistet, aber nicht als Design-Säule verankert. Es ist beides.\n\nRELICS spielt nicht in der Vergangenheit. Es spielt in einer anderen Gegenwart — einer Welt, deren Biologie andere Wege gegangen ist.\n\n**Was Biotech-Futurismus bedeutet:**\n- **Leveling ist körperlich:** Vier physiologische Nervensystem-Äste. Progression ist sichtbar — nicht als Zahlenwerte, sondern als Körper-Visualisierung.\n- **Alchemie ist Wissenschaft:** Keine Magie. Gifte, Stimulanzien, Suppressiva, Kontaktmittel. Alchemie ist gefährlich, weil sie in einer Welt stattfindet, die auf einem toten Urwesen gebaut ist.\n- **Schattenfieber ist Biologie:** Die Seuche transformiert den Körper — keine mystische Verwandlung, sondern ein physiologischer Prozess mit mechanischen Konsequenzen.\n- **Ästhetik:** Mehr futuristisch, weniger heruntergekommen. High Fashion Mittelalter. Die Mächtigen sehen wie die Mächtigen aus.\n\n**Was Biotech-Futurismus NICHT bedeutet:** Steampunk, vergessene Hochtechnologie, Science-Fantasy-Alien-Artefakte.\n\n**Validierungstest:** Wenn jemand RELICS als \"Steampunk-Spiel\" beschreibt, hat diese Säule nicht funktioniert. Das ist die Anti-Formulierung.\n\n**Spieler-Fantasie:** *\"Diese Welt hat eine eigene Logik — und wenn ich sie verstehe, kann ich sie benutzen.\"*\n\n---\n\n### Säule 6 — Tiervolk als soziale Schicht\n\n> V2-Schärfung: Das Tiervolk war in V1 im Fraktionsabschnitt kurz erwähnt. Es ist eine eigenständige Design-Entscheidung mit mechanischer Relevanz.\n\nDas Tiervolk ist keine Rasse im Fantasy-Sinne. Es ist eine Gesellschaftsschicht.\n\n**Funktion in der Spielwelt:**\n- **Händler:** Tiervolk kontrolliert den Schwarzmarkt und den Graumarkt. Seltene Alchemie-Zutaten, gestohlene Waren, Informationen. Der Spieler braucht das Tiervolk für Inhalte, die über legale Wege nicht erreichbar sind.\n- **Diebe:** Tiervolk operiert in den Rändern der Gesellschaft — Dächer, Kanalisation, Schmugglerwege. Ihre Vertikalität überschneidet sich mit den Level-Design-Prinzipien des Spiels.\n- **NICHT Handwerker:** Das Tiervolk stellt nichts her, was die menschliche Gesellschaft bereits produziert. Sie handeln mit dem, was anderen zu riskant oder zu illegal ist.\n\n**Ästhetik-Direktive (Briefing):**\n- Leicht alien vs. menschlich clean — der Unterschied ist subtil, aber real\n- Weniger tribal, mehr urban-marginalisiert\n- Temporäre Materialien in permanenten Strukturen (improvisierte Nischen, nomadische Markierungen)\n\n**Mechanische Relevanz:**\n- Exklusive Alchemie-Zutaten (inkl. Schattenfieber-Suppressiva) nur über Tiervolk-Händler\n- Schmugglerrouten als alternative Zugangspfade zu gesperrten Gebieten\n- Ab Infektionsstufe 2 verändert sich die Tiervolk-Reaktion auf den Spieler: \"einer von uns, der nicht ganz zur Norm gehört\"\n\n**Validierungstest:** Wenn ein Spieler Stufe-0-Alchemie maximieren will, muss er mit dem Tiervolk interagieren. Wenn ein Spieler alle Gebiete erkunden will, muss er ihre Routen kennen.\n\n**Spieler-Fantasie:** *\"Die Gesellschaft hat Regeln. Das Tiervolk kennt die Lücken.\"*\n\n---\n\n### Säule 7 — Vertikales Raumdesign\n\nRELICS behandelt den Raum als drei Dimensionen. Städte sind nicht nur Grundrisse — sie haben begehbare Dachlandschaften, Keller, Kanalisation, Brücken und Turmebenen. Die Wildnis bietet Klippen, Höhlen, Baumkronen, Flussbetten und Bergpässe.\n\nZu jedem Ziel führen mindestens drei Wege: Der Hauptweg (sicher, lang), der Schleichweg (riskant, kurz) und der Vertikalweg (Geschick erforderlich, belohnend).\n\nDas Prinzip lautet: **Was du siehst, kannst du erreichen.** Sightline-Navigation statt Kompassnadel.\n\n**Referenz:** Dishonored — vertikale Raumtiefe als Gameplay-Prinzip. RELICS überträgt es auf eine persistente Open World, nicht auf abgeschlossene Missionen.\n\n**Validierungstest:** Gibt es für jede Spielersituation mindestens zwei räumlich unterschiedliche Lösungswege — einen horizontalen und einen vertikalen?\n\n**Spieler-Fantasie:** *\"Ich finde Wege, die andere nicht sehen.\"*\n\n---\n\n## 4. Alleinstellungsmerkmale (USPs)\n\n| # | USP | In einem Satz | Unterschied zu Referenz |\n|---|-----|--------------|------------------------|\n| **USP 1** | Biologische Transformation als Kern-Progression | Das Schattenfieber verändert Körper und Welt dauerhaft — und es gibt keine Heilung, nur Kontrolle | Skyrim-Vampirismus ist reversibel und marginal. Bloodborne-Beasthood ist temporär. RELICS macht es permanent und zentral. |\n| **USP 2** | Welt-Reaktivität statt Marker-Quests | Die Welt erinnert sich. NPCs haben Gedächtnisse. Konsequenzen kommen — auch wenn der Spieler sie vergessen hat. | Gothic 2 ist der nächste Vergleich. RELICS setzt diesen Standard 2026 neu. |\n| **USP 3** | Open-World mit Immersive-Sim-Vertikalität | Weltdichte und Exploration eines Gothic-artigen RPG + räumliche Tiefe und Systeminteraktion einer Immersive Sim | Kein existierendes Referenzspiel bietet beides. Gothic/Skyrim sind horizontal. Dishonored ist abgeschlossen. |\n\n---\n\n## 5. Zielgruppe\n\n> V2-Schärfung: V1 definierte Kernzielgruppe als \"22-35 Jahre\". Präzisiert auf 25-40 auf Basis des CD-Profils: erfahrene Spieler, die Gothic und BG3 kennen, aber berufstätig und zeitkritisch sind.\n\n### Kernzielgruppe: Erfahrene RPG-Spieler, 25–40 Jahre\n\nDiese Spieler kennen Gothic, Skyrim, vielleicht Bloodborne. Sie wissen, was ein gutes RPG von einem schlechten unterscheidet. Sie haben weniger Zeit als früher — aber sie spielen tiefer, wenn das Spiel es verdient.\n\n**Was sie wollen:**\n- Keine Tutorial-Hände, die ihnen jeden Schritt erklären\n- Tiefe, die sich durch Spielen erschließt — nicht durch Handbuch oder Wiki\n- Konsequenzen, die sich echt anfühlen\n- Eine Welt, die ihnen das Gefühl gibt, sie zu erkunden — nicht eine Quest-Liste abzuhaken\n\n**Was sie nicht wollen:**\n- Grind als Zeitfüller\n- Artificial Difficulty (Feind-HP skaliert mit Level)\n- Moral-Kompasse im HUD\n- Mikrotransaktionen\n\n**Spielzeit-Erwartung:**\n\n| Spielzeit | Erfahrung |\n|-----------|-----------|\n| **1 Stunde** | Die Welt hat mich. Ich verstehe die Grundregeln. Ich habe eine erste Entscheidung getroffen, die sich bedeutsam anfühlte. Ich will mehr. |\n| **10 Stunden** | Ich kenne eine Fraktion gut, zwei oberflächlich. Ich habe meine Schattenfieber-Position definiert. Ich habe mindestens eine unerwartete Konsequenz gespürt. |\n| **40 Stunden** | Ich habe eine Welt erlebt, nicht ein Spiel gespielt. Ich kann einen anderen Durchlauf beginnen und weiß, dass er sich fundamental anders anfühlt. |\n\n**Drei Kernkommunities innerhalb der Zielgruppe:**\n\n| Community | Was sie suchen | RELICS-Angebot |\n|-----------|---------------|----------------|\n| **Gothic-Community** | Weltdichte, keine Kompromisse, NPC-Gedächtnisse | Säule 1 + Säule 2 — Welt als Spiel, echte Konsequenz |\n| **Immersive-Sim-Fans** | Systemtiefe, mehrere Lösungswege, emergentes Gameplay | Säule 7 + USP 3 — Vertikalität in Open World |\n| **Action-RPG-Community** | Skill-basierter Kampf, Feedback-Qualität, Progression | Säule 4 + GDD-02 Combat — Skill-Ceiling als Spektrum |\n\n### Sekundärzielgruppe: Narrative-RPG-Fans, 20–30 Jahre\n\nKennen Baldur's Gate 3, Disco Elysium, VtM: Bloodlines. Suchen Fraktionsdynamik, moralische Ambiguität, Weltreaktivität. RELICS ist für sie zugänglich über Erzählung und Fraktionspolitik.\n\n### Monetarisierung\n\nKlassisches Premium-Modell. Kein Free-to-Play, keine Mikrotransaktionen, keine Season Passes.\n- **Alpha:** Kostenloser Zugang für ausgewählte Content Creators und Streamer.\n- **Beta:** Steam Early Access, voraussichtlich ein Jahr vor Release.\n- **Release:** Vollpreistitel.\n- **Post-Launch:** Story-DLCs mit substantiellem Umfang, hochwertige Merchandise-Linie.\n\n---\n\n## 6. Spielerfahrung\n\nDie Spielerfahrung folgt einem emotionalen Bogen in drei Phasen. Das übergeordnete Game Feel: **Ich betrete als Fremder eine aufregende Sandbox.**\n\n### Die erste Stunde — \"Diese Welt ist gefährlich und aufregend.\"\n\nDer Spieler erstellt seinen Charakter und betritt die Welt ohne Nichts: kein Geld, keine Waffe, keine Verbindungen. Die ersten Begegnungen sind sorgfältig gesetzt — nicht als Tutorial, sondern als Weltexposition. Der Spieler trifft auf alle drei Fraktionen als Teil der lebenden Welt, nicht als Questgeber.\n\nDie erste Kampfbegegnung ist brutal, lehrreich und überlebbar. Sie lehrt das Basisvokabular (Angriff, Block, Ausweichen, Ausdauer-Management) und vor allem eine Haltung: In dieser Welt kämpft man nicht leichtfertig.\n\nAm Ende der ersten Stunde hat der Spieler Optionen — keine Hauptquest-Verpflichtung, keine vorgegebene Richtung.\n\n### Zehn Stunden — \"Ich verstehe diese Welt.\"\n\nDer Spieler hat sich orientiert. Er kennt die Stadt, hat Verbindungen, Rivalitäten, Schulden. Das Schattenfieber ist ihm begegnet — optional hat er seine erste Infektion erlebt und die Schattensinne aktiviert. Dieser Moment ist designt, um zu begeistern, nicht zu erschrecken: \"Das war es wert. Was kommt noch?\"\n\nAm Ende der zehnten Stunde hat der Spieler das Gefühl, Teil dieser Welt zu sein.\n\n### Vierzig Stunden — \"Meine Entscheidungen haben diese Welt geformt.\"\n\nDer Spieler hat seine Fraktion gewählt und die exklusive Questline fortgeführt. Sein Schattenfieber-Status definiert seinen Spielstil. Die Welt hat sich verändert: Fraktionsverhältnisse, NPC-Verhalten, zugängliche Orte. Und der Spieler weiß: Ein zweiter Durchgang mit einer anderen Fraktion und einem anderen Schattenfieber-Pfad wäre eine fundamental andere Erfahrung.\n\n---\n\n## 7. Referenzrahmen\n\n| Referenz | Was RELICS nimmt | Was RELICS NICHT nimmt |\n|----------|-----------------|------------------------|\n| **Gothic 2** | Weltdichte, Trainer-System, Null-zu-Held-Bogen, feste Gebiets-Schwierigkeit | Veraltete Zugangshürden ohne Onboarding-Logik |\n| **Skyrim** | Kamera (FP/TP), Zugänglichkeit, Sightline-Navigation | Level-Skalierung, Quest-Marker-Abhängigkeit, Auserwählten-Narrativ |\n| **Bloodborne** | Transformationsmechanik, Wahrnehmungswandel als Gameplay-System | Punishing difficulty als Selbstzweck, Obskurantismus |\n| **VtM: Bloodlines** | Fraktionsgameplay, soziale Konsequenzen einer Transformation | Fester Protagonist |\n| **Dishonored** | Vertikales Raumdesign, Systeminteraktion, Feedback-Qualität | Science-Fantasy-Technologie-Ästhetik |\n| **Baldur's Gate 3** | Proof of Concept: großes Computer-Rollenspiel kann kommerziell erfolgreich sein | Rundenbasierter Kampf, festes Team |\n| **The Witcher (NICHT)** | — | Fester Protagonist; kein vorgegebener Charakter, keine vorgegebene Moral |\n| **Skyrim-Vampirismus (NICHT)** | — | Ungewollte Infektion, keine sofortige Power Fantasy |\n\n---\n\n## 8. Spieler-Fantasien — Der Test\n\nJede Mechanik, jede Quest, jede Design-Entscheidung muss einer der folgenden Spieler-Fantasien dienen. Wenn sie das nicht tut, wird sie gestrichen.\n\n| # | Spieler-Fantasie | System, das sie trägt |\n|---|-----------------|----------------------|\n| F1 | \"Ich lerne diese Welt, weil ich ihr zuhöre.\" | Säule 1 — Welt als Spiel, keine Quest-Marker |\n| F2 | \"Ich lebe mit meinen Entscheidungen.\" | Säule 2 — Konsequenz-Typen-Matrix, Schattenfieber-Hard-Cap |\n| F3 | \"Das ist mein Charakter, aus meiner Perspektive.\" | Säule 3 — Kamera-Autonomie FP/TP |\n| F4 | \"Dieser Körper ist meiner — ich entscheide, was er wird.\" | Säule 4 — Nervensystem-Leveling, Schattenfieber-Transformation |\n| F5 | \"Diese Welt hat eine Logik — ich begreife sie.\" | Säule 5 — Biotech-Futurismus, Alchemie-System, Fraktionspolitik |\n| F6 | \"Die Gesellschaft hat Regeln. Ich kenne die Lücken.\" | Säule 6 — Tiervolk-Schwarzmarkt, Schmugglerrouten |\n| F7 | \"Ich finde Wege, die andere nicht sehen.\" | Säule 7 — Vertikalität, Schattensinne, Alchemie-Tricks |\n\n---\n\n## 9. Offene Fragen (V2-Stand)\n\n| # | Frage | Zuständig | Priorität |\n|---|-------|----------|-----------|\n| 1 | Iterations-Titel — welcher Name ersetzt [Iterations-Titel]? | CD-Entscheidung | Hoch — vor Marketing-Materialien |\n| 2 | Schnellreise: Ja/Nein? Empfehlung: Erst zweiter Akt, als narrativer Unlock | Darius + Finn | Mittel |\n| 3 | Tages-/Nachtzyklus: Gameplay-Auswirkungen? NPC-Routinen, Schattenfieber-Intensität? | Darius + Tobi | Mittel |\n| 4 | Tiervolk — eigener Name im RELICS-Namenssystem? | Emre (Namenssystem) | Offen — abhängig von Emres Namenssystem-Abschluss |\n\n---\n\n*Darius Engel, Game Design Corner, Tag 5 (Freitag) — V2-Finalisierung*\n*\"Macht es Spaß? Was ist die Spieler-Fantasie hier?\" — beantwortet.*\n",
             "appeared": {
               "day": 5,
               "scene": 2
@@ -4818,5 +4988,88 @@
         }
       }
     ]
-  }
+  },
+  "concept_art": [
+    {
+      "filename": "hero-fortress-from-sea_gpt-image-1-5.png",
+      "category": "fortress",
+      "path": "gallery/concepts/fortress/hero-fortress-from-sea_gpt-image-1-5.png",
+      "appeared": {
+        "day": 2,
+        "scene": 2
+      }
+    },
+    {
+      "filename": "island-panorama-fortress_seedream-4-5.png",
+      "category": "environment",
+      "path": "gallery/concepts/environment/island-panorama-fortress_seedream-4-5.png",
+      "appeared": {
+        "day": 2,
+        "scene": 2
+      }
+    },
+    {
+      "filename": "hero-biotech-warrior_gpt-image-1-5.png",
+      "category": "characters",
+      "path": "gallery/concepts/characters/hero-biotech-warrior_gpt-image-1-5.png",
+      "appeared": {
+        "day": 2,
+        "scene": 5
+      }
+    },
+    {
+      "filename": "felltraeger-silk-road-traders_seedream-4-5.png",
+      "category": "characters",
+      "path": "gallery/concepts/characters/felltraeger-silk-road-traders_seedream-4-5.png",
+      "appeared": {
+        "day": 3,
+        "scene": 2
+      }
+    },
+    {
+      "filename": "kuestenvolk-vertical-city_seedream-4-5.png",
+      "category": "environment",
+      "path": "gallery/concepts/environment/kuestenvolk-vertical-city_seedream-4-5.png",
+      "appeared": {
+        "day": 3,
+        "scene": 2
+      }
+    },
+    {
+      "filename": "vulkanvolk-ritual-caldera_seedream-4-5.png",
+      "category": "environment",
+      "path": "gallery/concepts/environment/vulkanvolk-ritual-caldera_seedream-4-5.png",
+      "appeared": {
+        "day": 4,
+        "scene": 2
+      }
+    },
+    {
+      "filename": "zerbrochene-portrait-trio_seedream-4-5.png",
+      "category": "characters",
+      "path": "gallery/concepts/characters/zerbrochene-portrait-trio_seedream-4-5.png",
+      "appeared": {
+        "day": 4,
+        "scene": 2
+      }
+    },
+    {
+      "filename": "biotech-weapons-study_seedream-4-5.png",
+      "category": "items",
+      "path": "gallery/concepts/items/biotech-weapons-study_seedream-4-5.png",
+      "appeared": {
+        "day": 5,
+        "scene": 2
+      }
+    },
+    {
+      "filename": "nervensystem-character-screen_nano-banana-pro.png",
+      "category": "ui",
+      "path": "gallery/concepts/ui/nervensystem-character-screen_nano-banana-pro.png",
+      "appeared": {
+        "day": 5,
+        "scene": 2
+      }
+    }
+  ]
 }

@@ -46,6 +46,7 @@ LOCATION_ROOM = {
     "flur":              "hallway",
     # v4 locations (sim-2-test)
     "alle-stationen":    None,  # distributed, agents at desks
+    "alle-arbeitsplätze": None,  # legacy alias
     "game-design-corner": "7d",
     "qa-ecke":           "7f",
     "tech-ecke":         "7c",
@@ -539,6 +540,7 @@ def build_scene_v2(entry):
         "mood": entry.get("mood", {}),
         "feedback": entry.get("feedback", []),
         "cd_feedback": entry.get("cd_feedback"),
+        "trace_dirs": entry.get("trace_dirs", []),
     }
 
     # v2 memories (inline text)
@@ -680,8 +682,25 @@ def main():
                     scene_type = sc["type"]
                     traces = {}
 
-                    if scene_type in conv_type_suffix:
-                        # Conversation scene → single shared trace dir
+                    # Prefer trace_dirs from logbook, fall back to derivation
+                    logbook_trace_dirs = sc.get("trace_dirs", [])
+                    if logbook_trace_dirs:
+                        for td in logbook_trace_dirs:
+                            src = traces_dir / td
+                            if src.exists():
+                                rel = f"traces/{sim_id}/{src.name}/"
+                                dest = traces_dest / src.name
+                                if not dest.exists():
+                                    shutil.copytree(src, dest)
+                                # Determine key: shared for conversation, agent name for WORK
+                                if scene_type in conv_type_suffix:
+                                    traces["_shared"] = rel
+                                else:
+                                    # Extract agent name from dir suffix
+                                    agent_key = td.replace(f"{prefix}-", "")
+                                    traces[agent_key] = rel
+                    elif scene_type in conv_type_suffix:
+                        # Fallback: derive conversation trace dir
                         suffix = conv_type_suffix[scene_type]
                         src = traces_dir / f"{prefix}-{suffix}"
                         if src.exists():
@@ -691,7 +710,7 @@ def main():
                                 shutil.copytree(src, dest)
                             traces["_shared"] = rel
                     else:
-                        # WORK scene → per-agent trace dirs
+                        # Fallback: derive WORK per-agent trace dirs
                         for agent in ALL_AGENTS:
                             src = traces_dir / f"{prefix}-{agent}"
                             if src.exists():

@@ -409,7 +409,13 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
             img_path = matches[0]
             if crop_dir:
                 img_path = crop_screenshot(img_path, crop_dir)
-            lines.append(f"![Szene {scene_num}]({img_path}){{ width=40% }}")
+            lines.append("```{=latex}")
+            lines.append("\\begin{wrapfigure}{l}{0.4\\textwidth}")
+            lines.append("  \\vspace{-4mm}")
+            lines.append(f"  \\includegraphics[width=0.38\\textwidth]{{{img_path}}}")
+            lines.append("  \\vspace{-4mm}")
+            lines.append("\\end{wrapfigure}")
+            lines.append("```")
             lines.append("")
 
     # Trigger
@@ -508,7 +514,7 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None):
     lines.append(":::")
     lines.append("")
 
-    # Screenshot embedding
+    # Screenshot embedding (wrapfigure: image left, text wraps right)
     if screenshot_dir:
         pattern = f"day-{day:03d}-scene-{scene_num:03d}-*.png"
         matches = list(screenshot_dir.glob(pattern))
@@ -516,7 +522,13 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None):
             img_path = matches[0]
             if crop_dir:
                 img_path = crop_screenshot(img_path, crop_dir)
-            lines.append(f"![Szene {scene_num}]({img_path}){{ width=40% }}")
+            lines.append("```{=latex}")
+            lines.append("\\begin{wrapfigure}{l}{0.4\\textwidth}")
+            lines.append("  \\vspace{-4mm}")
+            lines.append(f"  \\includegraphics[width=0.38\\textwidth]{{{img_path}}}")
+            lines.append("  \\vspace{-4mm}")
+            lines.append("\\end{wrapfigure}")
+            lines.append("```")
             lines.append("")
 
     # Trigger
@@ -667,6 +679,13 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None):
                 filename = Path(art).name
                 lines.append(f"*Artefakt: `{filename}`*")
             lines.append("")
+
+    # Trace references
+    trace_dirs = scene.get("trace_dirs", [])
+    if trace_dirs:
+        traces_str = ", ".join(f"`{td}`" for td in trace_dirs)
+        lines.append(f"*Traces: {traces_str}*")
+        lines.append("")
 
     # Key moment
     key_moment = scene.get("key_moment")

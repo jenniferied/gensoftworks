@@ -8,11 +8,6 @@ toc: true
 
 # WBB-01 MYTHOS — V2
 
-**Autor**: Emre Yilmaz, Lead Worldbuilder
-**Stand**: Tag 5 (Freitag), Vormittag — Produktionsphase
-**Status**: V2 — Alle Kapitel Fliesstext. Kap. 5-8 ausformuliert. V2-Updates (Tag 4) integriert.
-**Basis**: Klastrup/Tosca (2004) — Mythos als "backstory" der transmedialen Welt
-**Prüfung gegen**: Wolf (2013) — Infrastrukturen Mythologie, Zeitleisten, Genealogien, Philosophie
 
 ---
 
@@ -444,25 +439,10 @@ Wird er zum nächsten Träger? Kann er sich weigern? Was kostet die Weigerung? W
 
 ---
 
-## Nächste Schritte
-
-- [ ] Kosmologische Zeitleiste erstellen (Grosse Flechtung → Spielbeginn) — 1000+ Jahre
-- [x] Kapitel 5-8 zu Fliesstext ausbauen — erledigt V2
-- [x] Flechtfest (Kap. 7), Schattenfieber-Farbprofile (Kap. 6), Ungefüge (Kap. 5), Gastrecht-Hauten (Kap. 8) integriert
-- [ ] Abstimmung mit Nami: Wanderer-Status, Seher-NPC, Offenbarungsgrad, Schattenfieber-Visionen
-- [ ] Abstimmung mit Darius: Schattenfieber-Stufen als Mechanik, Lebende Krone als Gameplay-Element
-- [ ] Vera: Lebende Krone als Designobjekt — organisch, wachsend, wurzelartig
-- [ ] WBB-02 Topos: Stichpunkte pro Kapitel ausgebaut (diese Szene, siehe WBB-02 Outline)
-
 \clearpage
 
 # WBB-02 TOPOS — V1 (Outline)
 
-**Autor**: Emre Yilmaz, Lead Worldbuilder
-**Stand**: Tag 5 (Freitag), Vormittag — Produktionsphase
-**Status**: V1 — Outline mit Stichpunkten. Kein Fliesstext. Grundlage für V2.
-**Basis**: Klastrup/Tosca (2004) — Topos als physisch-räumliche Dimension der Welt
-**Prüfung gegen**: Wolf (2013) — Karten, Natur, Verknüpfung (mit WBB-01 Mythos)
 
 ---
 
@@ -635,14 +615,5 @@ Alle Kapitel verweisen auf WBB-01 für die kosmologische Grundlage.
 | 007 | Zwei-Pole-Struktur (Sued-warm / Nord-kalt) korrespondiert mit Kosmogonie — aber: Entspricht das der tatsächlichen Spielregion? Mittelmark liegt "in der Mitte". Konflikt: Soll die Hauptregion spürbar klimatisch zerrissen sein, oder ist das eher Nord/Sued-Reisekomponente? | **Offen** — Entscheidung nötig. |
 
 ---
-
-## Nächste Schritte WBB-02
-
-- [ ] Ortsnamen aus Lexikon-Konvention ableiten (Widerspruchs-Log #006)
-- [ ] Klima-Entscheidung für Mittelmark (Widerspruchs-Log #007)
-- [ ] Kap. 1-7 zu Fliesstext ausbauen (V2 nächste Woche)
-- [ ] Regionalkarte skizzieren (auch grob) — → Vera fragen
-- [ ] Abstimmung mit Darius: Wegwahl-Konsequenzen, Biotech-Reaktivität von Emer-Material
-- [ ] Abstimmung mit Nami: Tiervolk-Wissen als Questquelle, Seher-NPC in Schattenfieber-Zonen
 
 \clearpage
