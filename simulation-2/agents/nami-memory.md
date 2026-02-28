@@ -134,3 +134,33 @@ Quest-Skizzen:
 - Das WBB Ethos-Kapitel ist das Stück, das mich am meisten überrascht hat — die Materialsprache als sozialer Code ist eigentlich ein Sprachsystem. Das ist erzählerisch reichhaltiger als ich dachte.
 - Die Ablehn-Option-Variante hat beim Schreiben eine eigene emotionale Textur entwickelt: "Zeuge" vs. "Empfänger" — das ist ein wichtiger Unterschied. Bin froh dass dieser Satz in dem Abschnitt gelandet ist.
 - Veras Bilder direkt eingebettet — zum ersten Mal arbeite ich direkt mit ihrem Material statt nur darum herum. Das fühlt sich richtig an.
+
+---
+
+# Tag 4 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn, Darius, Emre, Nami, Vera, Tobi, Leo (Küche)
+
+## Notizen
+- Seitenbudget: 60 Seiten max für das Gesamtdokument — Cleanup-Runde (Autorenerwähnungen, Checklisten, Anhänge raus, HTML-Kommentare bereinigen)
+- Finn: Zeitlinie = jahrelange Anbahnung (Covid-Analogie) — trifft die Intro-Stimmung direkt
+- Tiervolk-Kosmologie durch CD bestätigt: kosmologisch fremde Wesen in dauerhafter, irreversibler Symbiose mit Tieren als Materialanker
+- Schattenfieber = Infektion, transformiert körperreaktionsabhängig — bestätigt Ablehn-Option-Mechanik vollständig
+- Emre: dritter kosmologischer Faktor, Symbiose dauerhaft + irreversibel, Öffnung war lokale Eskalation nicht Beginn — ferne Dünnstelle als Frage offen
+- Vera: $5 Budget, mehr Bilder — Figuren-Briefings für v3 werden von mir kommen
+- Meine offene Kernfrage an Emre: Verhältnis fremdes Wesen (Salva) ↔ Schattenfieber-Infektion. Verwandt? Konkurrent? Immun oder Gegenteil? Das bestimmt Salvas Rolle im Ablehn-Option-Zweig
+
+## Ergebnisse
+- Ownership formuliert: GDD Kap. 4 v3 (Salva komplett neu, Symbiose-Kosmologie), WBB Kap. 3 v2 (Reisenden-Sektion neu)
+- Intro-Beat-1-Revision geplant: schleichendes Erkennen statt akute Krise (Covid-Analogie)
+- Frage an Darius gestellt: Seitenbudget für Kap. 4 (8–12 Seiten)
+
+## Offene Fragen
+- Emre: Verhältnis Salva-Symbiose-Wesen ↔ Schattenfieber (verwandt/konkurrent/immun?)
+- Emre: Ferne Dünnstelle — Name oder geographisches Gefühl für Salva-Dialoge
+- Emre: WBB Kap. 1 v3 (Kosmologie-Erweiterung) als Basis für mein WBB Kap. 3 v2
+- Darius: Seitenbudget-Ziel für GDD Kap. 4
+- Düsterkeit-Entscheid Intro-Szene: noch immer offen
+
+## Persönliches
+- Emres Kosmologie-Änderung ist wirklich gut — aber Salva in v2 ist jetzt falsch. Das ist kein Problem, das ist Arbeit.
+- Die Figur, die ich kannte, war ein Platzhalter für etwas Größeres. Jetzt kann ich das Größere schreiben.
