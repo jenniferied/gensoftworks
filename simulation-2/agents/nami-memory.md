@@ -103,3 +103,34 @@ Quest-Skizzen:
 ## Persönliches
 - "Schwellenanker" fühlt sich nach dem richtigen Wort an. Manchmal einigt sich ein Raum auf das Richtige, ohne es zu suchen.
 - Die Ablehn-Option ist die interessanteste Entscheidung die wir bisher getroffen haben — bin froh dass der CD ja gesagt hat
+
+---
+
+# Tag 3 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Nami (Schreibstube)
+
+## Notizen
+- Beide Aufgaben abgearbeitet: GDD Kap. 4 v2 und WBB Kap. 3 v1
+- Veras Konzept-Art eingebunden: Krone-Materialpalette und Orden-Materialpalette in Kap. 3 eingesetzt — beide Bilder visuell stark, Krone monochrom-schwarzer Stahl + Blutrot-Siegel, Orden Weiß + Knochen + grüne Phiole
+- Klastrup/Tosca-Ethos-Struktur konsequent angewendet: Materialsprache, Alltagsleben drei Zonen, Fraktionskultur detailliert, Reisenden-Philosophie
+- Wolf-Infrastruktur-Checkliste ausgefüllt: Genealogien teilweise (Lücken dokumentiert), Verknüpfungen vollständig
+- Ablehn-Option in GDD Kap. 4 als eigener Abschnitt 4.3 — nicht Nebenpfad, sondern vollwertige Variante mit eigener narrativer Logik
+- "Schwellenanker" überall konsequent gesetzt, alle Autor-Namen/Post-Its in HTML-Kommentare
+
+## Ergebnisse
+- `simulation-2/gallery/gdd/04-schluesselfiguren-v2.md` — GDD Kap. 4 v2, fertig
+- `simulation-2/gallery/wbb/03-ethos-v1.md` — WBB Kap. 3 v1, fertig
+- Ablehn-Option ausgearbeitet: sofortige Konsequenzen, kurzfristig (Verhör statt Angebot), mittelfristig (längere Tutorial-Phase), Schattenfieber-Variante (langsamer, ohne Clip-Moment), emotionale Signatur
+- WBB Kap. 3 deckt ab: Materialsprache als Statussystem, Fraktionsalltagsleben (Krone/Orden/Gilden), Reisende als vierte Welt, Gesellschaftsordnung Schwarzrand, Alltagsleben drei Zonen, Namenssysteme
+
+## Offene Fragen
+- Tiervolk-Eigenname für Salva: noch Platzhalter in beiden Dokumenten — Emre schuldet Namenssystem
+- Düsterkeit-Entscheid (Intro-Szene-Tonalität): Beat 1 in Kap. 4 v2 skizziert, Ausformulierung wartet
+- Reisenden-Namenssystem in WBB Kap. 3 v2 konkretisieren (in Abstimmung mit Emre)
+- Genealogie-Tabellen Krone + Gildenfamilien: für v2 vorgemerkt
+- Vera für Schlund-Atmosphäre und Reisenden-Silhouette anfragen (für WBB v2)
+
+## Persönliches
+- Das WBB Ethos-Kapitel ist das Stück, das mich am meisten überrascht hat — die Materialsprache als sozialer Code ist eigentlich ein Sprachsystem. Das ist erzählerisch reichhaltiger als ich dachte.
+- Die Ablehn-Option-Variante hat beim Schreiben eine eigene emotionale Textur entwickelt: "Zeuge" vs. "Empfänger" — das ist ein wichtiger Unterschied. Bin froh dass dieser Satz in dem Abschnitt gelandet ist.
+- Veras Bilder direkt eingebettet — zum ersten Mal arbeite ich direkt mit ihrem Material statt nur darum herum. Das fühlt sich richtig an.
