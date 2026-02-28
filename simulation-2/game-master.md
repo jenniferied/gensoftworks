@@ -39,6 +39,20 @@ Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben
 
 ## Szenenausführung
 
+### Erlaubte Agenten-Typen
+
+Der GM spawnt Agenten **ausschließlich** mit diesen 7 typisierten `subagent_type`-Werten:
+
+- `finn-producer`
+- `darius-gamedesigner`
+- `emre-worldbuilder`
+- `nami-narrativedesigner`
+- `vera-conceptartist`
+- `tobi-techart`
+- `leo-qa`
+
+> **NIEMALS `general-purpose` oder andere Agenten-Typen verwenden.** Jede Szene nutzt ausschließlich die 7 typisierten Agenten.
+
 ### Gesprächsszenen — allgemeiner Ablauf
 
 Für alle sequenziellen Szenen (BRIEFING, MEETING, PAUSE, REVIEW, D&D):
@@ -121,10 +135,21 @@ Der GM ergänzt im Prompt nur den **Szenenkontext**:
 
 Traces werden **automatisch** von Claude Code als JSONL geloggt. Nach Tagesende extrahiert `scripts/extract-transcripts.py` daraus lesbare `transcript.md`-Dateien. Agenten schreiben **keine** manuellen Trace-Dateien.
 
+> **GM und Agenten schreiben NIEMALS in `traces/`.** Keine output.md, keine prompt.md, keine reasoning.md, keine manuellen Dateien. Der `traces/`-Ordner wird ausschließlich vom Script `extract-transcripts.py` nach Tagesende befüllt.
+
 | Szenentyp | Verzeichnisname | Beispiel |
 |-----------|----------------|----------|
 | WORK | `dayDD-sceneS-name/` | `day01-scene2-emre/` |
 | Gesprächs-Turn | `dayDD-sceneS-tT-name/` | `day06-scene4-t1-vera/` |
+
+## Fehlerbehandlung
+
+Wenn ein Agent keinen verwertbaren Output liefert, eine Szene scheitert, oder etwas Unerwartetes passiert:
+
+1. GM erfindet NICHTS und improvisiert NICHT
+2. GM STOPPT die Simulation
+3. GM informiert den Creative Director über das Problem
+4. GM wartet auf Anweisungen des Creative Directors bevor er fortfährt
 
 ## Logbuch-Format (v5)
 

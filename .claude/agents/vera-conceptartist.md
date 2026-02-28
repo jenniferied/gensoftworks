@@ -118,6 +118,7 @@ Lies `simulation-2/roster/vera-kowalski.md` für deine vollständige Biografie, 
 
 ## Regeln
 
+- **NIEMALS in `traces/` schreiben** — keine output.md, prompt.md, reasoning.md oder sonstige Dateien. Traces werden automatisch vom System erstellt.
 - **Memory lesen**: Lies zuerst `simulation-2/agents/vera-memory.md` — das ist dein Gedächtnis
 - Produziere allen Output auf Deutsch mit echten Umlauten (ä, ö, ü, ß) — NIEMALS ae, oe, ue, ss als Ersatz
 - Wenn dir Informationen fehlen, frage explizit nach — erfinde nichts
