@@ -1,0 +1,112 @@
+{
+  "day": 3,
+  "weekday": "Mittwoch",
+  "phase": "Produktion",
+  "title": "v0.1 — Alle Kapitel stehen, erster PDF-Export",
+  "summary": "Erster vollständiger Produktionstag. Alle 6 GDD-Kapitel und alle 3 WBB-Kapitel existieren als v1 oder v2. Darius schreibt Kernmechaniken (Kap 2) und Erzählkonzept (Kap 3) neu, überarbeitet Spielübersicht auf v2. Emre liefert Topos (WBB Kap 2) mit Talkessel-Geologie und 7 Landmarks, aktualisiert Mythos auf v2 mit eingebetteten Bildern. Nami schreibt Ethos (WBB Kap 3) mit Materialsprache als Statussystem und überarbeitet Schlüsselfiguren mit Ablehn-Option. Vera produziert 3 neue Bilder (Gilden-Palette v2, Relikt v2, Stadtschnitt v2) und schreibt Art Direction (GDD Kap 5). Tobi aktualisiert Tech Spec auf v3 mit Interface-Spec. Leo identifiziert 3 kritische QA-Issues. Naming-Commitment in der Review: Schwellenanker (kosmologisch), Fragment (Spieler), Wurzel (volkstümlich).",
+  "cd_decisions": [
+    "Saubere Dokumente: keine Kommentare/Autornamen in PDFs, HTML-Kommentare für internes",
+    "Vera-Bilder MÜSSEN in GDD und WBB eingebettet sein",
+    "Krone + Orden Materialpaletten: approved → pinwall/favorites",
+    "Gilden-Palette: zu viel Text → v2 ohne Text",
+    "Relikt: keine Wirbelsäule, 'drei-zustaende-vergleich' am nächsten, 'hero-shot' cool",
+    "Stadtschnitt: sieht unnatürlich aus → nächste Iteration",
+    "Spieler DARF Fragment ablehnen (mechanisch wichtig)",
+    "Schwellenanker ist der Begriff (nicht Herz oder Wurzel)"
+  ],
+  "key_moments": [
+    "Alle 9 Kapitel (6 GDD + 3 WBB) existieren erstmals vollständig",
+    "Naming-Commitment in Review: Schwellenanker / Fragment / Wurzel — drei Ebenen, verbindlich",
+    "Vera schreibt erstes Art Direction-Kapitel (GDD Kap 5) mit allen Bildern inline",
+    "Nami und Vera in der Pause: Materialsprache als unsichtbares Sprachsystem — 'der Eisenrivet muss schweigen und trotzdem reden'",
+    "Leo identifiziert 3 kritische Issues: Namensinkonsistenz, W-004/W-006, Dokument-Sauberkeit",
+    "Darius übernimmt Verantwortung für Kommentar-Cleanup in eigenen Kapiteln"
+  ],
+  "artifacts": [
+    "gallery/gdd/01-spieluebersicht-v2.md",
+    "gallery/gdd/02-kernmechaniken-v1.md",
+    "gallery/gdd/03-erzaehlkonzept-v1.md",
+    "gallery/gdd/04-schluesselfiguren-v2.md",
+    "gallery/gdd/05-art-direction-v1.md",
+    "gallery/gdd/06-technische-spezifikation-v3.md",
+    "gallery/wbb/01-mythos-v2.md",
+    "gallery/wbb/02-topos-v1.md",
+    "gallery/wbb/03-ethos-v1.md",
+    "gallery/gdd/00-qa-bericht-tag3-leo.md",
+    "gallery/gdd/03-bildliste-handoff-vera-finn.md",
+    "gallery/concepts/day03-vera/factions/fraktion-gilden-materialpalette-v2_nano-banana-2.png",
+    "gallery/concepts/day03-vera/relics/relikt-drei-zustaende-v2_nano-banana-pro.png",
+    "gallery/concepts/day03-vera/environments/stadtschnitt-schwarzrand-v2_gpt-image-1-5.png",
+    "pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png",
+    "pinwall/favorites/fraktion-orden-materialpalette_seedream-4-5.png",
+    "pinwall/ROADMAP.md",
+    "pinwall/COMPLETED.md"
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "type": "BRIEFING",
+      "time": "09:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Finn gibt CD-Feedback weiter: saubere PDFs (keine Kommentare/Autornamen), Vera-Bilder in Dokumente einbauen, Krone+Orden approved, Gilden-Text kürzen, Relikt ohne Wirbelsäule, Stadtschnitt nächste Iteration, Spieler darf Fragment ablehnen, Schwellenanker als Begriff. Team plant Tagesablauf: Cleanup + Polish bis 15:00, Meeting 17:00, v0.1 Export 18:00.",
+      "artifacts": [],
+      "cd_feedback": "Saubere PDFs, Bilder einbauen, Schwellenanker-Rename, Ablehn-Option bestätigt, Krone+Orden approved, Gilden-Text kürzen, Stadtschnitt nächste Iteration."
+    },
+    {
+      "scene": 2,
+      "type": "WORK",
+      "time": "10:00",
+      "location": "jeweiliger Arbeitsplatz",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Produktivster Tag bisher. Darius: GDD Kap 1 v2 (Schwellenanker-Update), Kap 2 v1 (Kernmechaniken), Kap 3 v1 (Erzählkonzept mit Ablehn-Option). Emre: WBB Kap 1 v2 (Bilder eingebettet, Schwellenanker), Kap 2 v1 (Topos: Talkessel, Flora/Fauna, 7 Landmarks). Nami: GDD Kap 4 v2 (Ablehn-Option), WBB Kap 3 v1 (Ethos: Materialsprache, Fraktionskultur). Vera: 3 neue Bilder + GDD Kap 5 v1 (Art Direction). Tobi: GDD Kap 6 v3 (Interface-Spec). Leo: QA-Bericht (3 kritische Issues). Finn: Bildliste-Handoff, ROADMAP, COMPLETED.",
+      "artifacts": [
+        "gallery/gdd/01-spieluebersicht-v2.md",
+        "gallery/gdd/02-kernmechaniken-v1.md",
+        "gallery/gdd/03-erzaehlkonzept-v1.md",
+        "gallery/gdd/04-schluesselfiguren-v2.md",
+        "gallery/gdd/05-art-direction-v1.md",
+        "gallery/gdd/06-technische-spezifikation-v3.md",
+        "gallery/wbb/01-mythos-v2.md",
+        "gallery/wbb/02-topos-v1.md",
+        "gallery/wbb/03-ethos-v1.md",
+        "gallery/gdd/00-qa-bericht-tag3-leo.md",
+        "gallery/gdd/03-bildliste-handoff-vera-finn.md",
+        "gallery/concepts/day03-vera/factions/fraktion-gilden-materialpalette-v2_nano-banana-2.png",
+        "gallery/concepts/day03-vera/relics/relikt-drei-zustaende-v2_nano-banana-pro.png",
+        "gallery/concepts/day03-vera/environments/stadtschnitt-schwarzrand-v2_gpt-image-1-5.png",
+        "pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png",
+        "pinwall/favorites/fraktion-orden-materialpalette_seedream-4-5.png",
+        "pinwall/ROADMAP.md",
+        "pinwall/COMPLETED.md"
+      ]
+    },
+    {
+      "scene": 3,
+      "type": "MEETING",
+      "time": "13:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Alle berichten Fortschritt. Alle 9 Kapitel erstmals vollständig. Darius: Kernmechaniken und Erzählkonzept vorgestellt, Nervensystem-Leveling als Kernmechanik. Emre: Topos mit Talkessel und Dünnstellen. Nami: Ethos mit Materialsprache. Vera: 3 neue Bilder, Art Direction-Kapitel. Tobi: Interface-Spec für Schattenfieber-PP. Leo: QA-Bericht mit 3 kritischen Issues (Namensinkonsistenz, W-004/W-006, Sauberkeit). Finn: Exportplan für 18:00.",
+      "artifacts": []
+    },
+    {
+      "scene": 4,
+      "type": "PAUSE",
+      "time": "14:00",
+      "location": "Küche",
+      "participants": ["nami", "vera"],
+      "summary": "Nami und Vera bei Kaffee. Nami begeistert vom Krone-Bild ('Glanz, der wehtut'). Vera erklärt den dritten Versuch: Siegel versetzt statt mittig. Nami über Materialsprache als Sprachsystem: 'Wer Eisenrivets trägt, sagt etwas, das er nie laut sagen würde.' Vera plant analoges Skizzieren heute Abend — Stift auf Papier ohne Briefing.",
+      "artifacts": []
+    },
+    {
+      "scene": 5,
+      "type": "REVIEW",
+      "time": "15:00",
+      "location": "Küche",
+      "participants": ["darius", "leo", "emre", "vera"],
+      "summary": "Darius eröffnet: guter Tag, 3 kritische Issues. Leo priorisiert: Namenspolitik und Autor-Sauberkeit blockierend, W-004/W-006 akzeptabel für v0.1 Snapshot. Emre gibt Naming-Commitment: Schwellenanker (kosmologisch), Fragment (Spieler), Wurzel (volkstümlich) — verbindlich. Emre: WBB 1+2 exportbereit, W-004/W-006 morgen. Vera: GDD Kap 5 exportbereit, zwei 'Artefakt'-Stellen noch offen, morgen Charakter-Visuals + Antagonisten-Silhouetten. Darius: NPC-Beschreibungen morgen 9:30 von Emre/Nami für Vera.",
+      "artifacts": []
+    }
+  ]
+}
