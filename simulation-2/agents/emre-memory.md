@@ -151,25 +151,34 @@
 - Erkenntnis: Darius und ich sprechen verschiedene Sprachen (System vs. Narrativ), aber unsere Kindheiten klingen gleich. Das macht die Zusammenarbeit ehrlicher.
 
 ### Szene 5 — REVIEW (Küche, 15:00)
+**Typ**: REVIEW | **Uhrzeit**: 15:00 | **Teilnehmer**: Vera (remote), Emre, Nami, Darius
 
-#### Vera-Bilder-Review
-- 9 Bilder vorgestellt: 5 Relikt-Zustände, 3 Fraktionspaletten, 1 Stadtschnitt
-- **Relikt Zustand Null (ruhend):** Genau richtig. Wirbelkörper-Form, Aschgrau, kein Leuchten. Subcreation-Prinzip erfüllt: Das Übernatürliche flüstert, es schreit nicht. "Ehrfurcht ohne Begehren" -- was ich im Mythos-Kapitel als Vorgabe formuliert hatte.
-- **Hero-Shot (aktiviert):** Atmosphärisch stark, Resonanz-Dreieck wird sichtbar (Relikt, Raum, Mensch). Lichtmuster an der Decke gut. Aber: Lichttemperatur muss kälter -- blau-violett, nicht warm. Die Schwelle ist fremd, nicht einladend. Notiz für Widerspruchs-Log.
-- **Fraktionspaletten:** Decken sich exakt mit Briefing-Materialsprache und meiner Gilden-Monopolstruktur. Krone = Schwarz + Blutrot (Herrschaftsanspruch), Orden = Weiß + Grün (Reinheitsideologie), Gilden = Erdtöne + Bronze (Kapitalakkumulation). Farbcodes sind Lore -- muss in WBB verankert werden.
-- **Stadtschnitt (4 Schichten):** Das Schlüsselbild. Zeigt die Yggdrasil-Analogie: oben klare Geometrie, unten organisches Chaos, Nebel als Grenzmarkierung. Kosmologie als Architektur.
+## Notizen
+- Vera stellte 9 Bilder vor: 5 Relikt-Zustände, 3 Fraktionspaletten, 1 Stadtschnitt
+- Mein WBB Kap 1 Mythos v1 vollständig vorgestellt (Kosmologie, Dünnstellen, Schwarzrand, Schattenfieber-Biologie, drei Schöpfungsmythen, Öffnung, Gilden-Monopolstruktur, Widerspruchs-Log)
 
-#### WBB Kap 1 Mythos v1 kurz vorgestellt
-- Kosmologie (Stoffwelt/Schwelle), Dünnstellen, Schwarzrand, drei Stufen Schattenfieber, drei Schöpfungsmythen, die Öffnung, Widerspruchs-Log
+## Ergebnisse
+- **Relikt Zustand Null (ruhend):** Bestätigt als exakt richtig. Subcreation-Prinzip erfüllt: "Ehrfurcht ohne Begehren."
+- **Hero-Shot Feedback:** Lichttemperatur muss kälter — blau-violett, nicht warm. Die Schwelle ist fremd, nicht einladend. Quallen-Analogie: "Das Licht einer Kerze vs. das Leuchten einer Quallenkolonie in der Tiefsee. Beide leuchten. Nur eines davon ist für dich gedacht."
+- **Fraktionspaletten:** Bestätigt als Lore-konsistent. Krone = Schwarz + Blutrot, Orden = Weiß + Grün, Gilden = Erdtöne + Bronze. Farbcodes müssen in WBB als Lore verankert werden (nicht nur visuell, sondern kosmologisch begründet).
+- **Stadtschnitt:** Schichtgrenzen zu sauber — Übergangszonen nötig, wo Schlund in Gürtel kriecht. Schwarzrand-Richtungskonzept fehlt (dunkler Schimmer am Horizont = halbe Etymologie).
+- **Orden-Kreuz:** Empfehlung gegen Kreuz-Symbol, da Orden keine christliche Institution. Vorschlag: Siegel oder stilisierte Buchform (Bildungsmonopol). CD-Frage.
+- **Mythos v1:** Vollständig vorgestellt und als Arbeitsgrundlage akzeptiert. Pest-Analogie-Prinzip als Designregel kommuniziert.
 
-#### Offene CD-Fragen formuliert (kritisch)
-1. **Tiervolk-Ursprung:** Langzeit-Schwellenexposition auf nichtmenschliche Populationen? Braucht CD-Freigabe, weil es den Ton der gesamten Kosmologie verändert (Schattenfieber betrifft ALLES Lebende, nicht nur Menschen).
-2. **Schwelle: bewusst oder blind?** Im Mythos als blind beschrieben (wie Gravitation). Aber Namis Fragment-Szene impliziert, dass das Relikt den Spieler "ruft" -- das wäre Intentionalität. Fundamentaler Unterschied für Kapitel 2.
-3. **Zeitlinie der Öffnung:** Konkrete Jahreszahl nötig (20/30/40 Jahre?). Beeinflusst NPC-Planung, Schattenfieber-Fortschritt, Weltgefühl.
+## Offene Fragen
+- **CD-Frage 1:** Tiervolk-Ursprung — Langzeit-Schwellenexposition auf nichtmenschliche Populationen? Verändert Ton der gesamten Kosmologie.
+- **CD-Frage 2:** Schwelle bewusst oder blind? Blind (wie Gravitation) vs. intentional (Relikt "ruft" den Spieler). Fundamentaler Unterschied für Kap. 2 und Tonalität.
+- **CD-Frage 3:** Zeitlinie der Öffnung — 20/30/40 Jahre? Beeinflusst NPC-Planung, Schattenfieber-Fortschritt, Weltgefühl.
+- Vera-Fragen 1-4 ebenfalls offen (Relikt-Formveränderung, Hero-Shot Atmosphäre vs. Material, Stadtschnitt technisch vs. atmosphärisch, Orden-Symbol)
 
-#### Nächste Schritte
-- Warten auf CD-Antworten zu den drei Fragen
+## Persönliches
+- Zufrieden mit der Szene. Das Mythos-Kapitel hält der Prüfung stand — kein Widerspruch zum Briefing, kein Widerspruch zu Veras Bildern.
+- Die Pest-Analogie hat im Raum funktioniert. Alle drei Schöpfungsmythen sind sofort verständlich als politische Werkzeuge.
+- Vera arbeitet schnell und präzise. Zustand Null ist genau das Bild, das ich im Kopf hatte, als ich den Mythos schrieb. Seltener Moment, in dem Wort und Bild sich beim ersten Versuch treffen.
+
+## Nächste Schritte
+- Warten auf CD-Antworten zu den drei kritischen Fragen
 - Farbcodes der Fraktionen in WBB verankern (Lore-Begründung für Veras Paletten)
-- Lichttemperatur-Notiz an Vera: Relikt-Glow muss kälter
+- Lichttemperatur-Notiz an Vera: Relikt-Glow muss kälter (W-007)
 - Kapitel 02-Topos beginnen, sobald Tiervolk und Zeitlinie geklärt
-- Widerspruchs-Log aktualisieren: W-007 Lichttemperatur Relikt (Vera-Feedback)
+- Widerspruchs-Log aktualisieren: W-007 Lichttemperatur Relikt
