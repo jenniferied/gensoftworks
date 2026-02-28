@@ -272,3 +272,80 @@ Wenn Sync gut läuft: Confidence wächst, dass erste Streamer-Session kein Engag
 4. Streamer-Retention-Analyse (Freitag) — für GDD-Snapshot
 
 **Confidence Level:** 7/10 (Checklisten sind solid, aber hänge vom Alpha-Build-Status ab)
+
+---
+
+## Tag 3, Szene 1: BRIEFING | 09:00 in der Küche
+
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn (CD), Darius, Emre, Nami, Vera, Tobi, Leo
+
+### Kernpunkte aus dem Briefing
+
+**Finn CD-Feedback zu Dokumenten:**
+- PDFs müssen sauber sein (keine Kommentare, Namen, Metadaten-Krümel)
+- Concept-Art embedded (nicht separater Link)
+- Schwellenanker-Name = Relikt (nicht "Relikt-Anker" oder andere Varianten)
+- Spieler darf Fragment ablehnen (ist nicht Bug, ist Kosmologie-Wahl)
+
+**Darius (Game Design):**
+- Braucht QA-Pass auf Kap 1 v1 heute Vormittag als Basis für v2-Revision
+
+**Emre (Worldbuilding):**
+- Drei offene Widersprüche: Flora/Fauna-Konsistenz, Tiervolk-Kosmologie, Zeitlinie der Schwellen-Öffnung
+- Diese leben im GDD und blockieren Narrative-Draft von Nami
+
+**Nami (Narrative):**
+- Schreibt Ablehnung-Option heute als halbe Seite in Kap 5
+- Schwellenanker-Name funktioniert narrativ (Relikt = Material + Resonanz)
+
+**Vera (Concept Art):**
+- Neue Gilden-Palette kommt heute
+- Relikt-Wirbelsäule-Form raus, neue organische Form kommt
+- Stadtschnitt v2 kommt (mit neuer Palette integriert)
+
+**Tobi (Tech):**
+- GDD Kap 6 Cleanup heute
+- Schwellenanker-Rename durchziehen (Relikt überall)
+
+### Meine Position (Leo) + QA-Plan für heute
+
+**QA-Strategie:**
+1. **Priority 1:** Kap 1 v1 durchgehen für Darius bis 12:00 Uhr (Basis für v2)
+   - Wolf-Checkliste als Tool: Karten, Genealogie, Flora/Fauna, Kultur, Sprache, Mythologie
+   - Fokus: Emres drei Widersprüche lokalisieren + Report schreiben
+   - Frage: Sind Schwellenanker-Namen konsistent? Sind Schattenfieber-Effekte mechanisch beschrieben?
+
+2. **Priority 2:** CD-Feedback zu sauberen Dokumenten implementieren
+   - "Saubere Dokumente" = professionell, Reddit-share-ready, keine Metadaten
+   - Embedded Concept-Art = visuell sofort klar
+   - Konsistenter Name (Relikt) = nicht verwirren
+   - Das ist GDD-Hygiene, wichtig für Alpha-Release
+
+3. **Parallela:** Vera-Sync (kleine Koordination)
+   - Neue Gilden-Palette: bedeutet das Kosmologie-Shift im Kap 1-Text?
+   - Stadtschnitt v2: welche Infrastrukturen-Sichtbarkeit ändert sich? (Karte, Schicht-Erkennbarkeit)
+
+4. **Backlog:** Ablehnung-Option mechanik-Check
+   - Nami schreibt halbe Seite, aber Mechanic muss ins Kap 2/3 (Kernmechaniken)
+   - Ablehnung ist nicht "skip quest", sondern Kosmologie-Wahl → muss Design-Impact haben
+
+### Offene Fragen für Team
+
+- **Zu Emre:** Wo sind die drei Widersprüche gelistet? Brauche Source-Referenzen für Kap 1 Review.
+- **Zu Vera:** Bildschirm-Zeit heute für Palette-Check? (30 min reicht)
+- **Zu Nami:** Mechanisch: wenn Fragment abgelehnt, welche Quest-Pfade sperren auf? (brauche das für Gameplay-Konsistenz)
+- **Zu Tobi:** Kap 6 Rename-Checklist — brauche die parallel zu meinem Kap 1 Pass, damit ich nicht blind bin.
+
+### Nächste Schritte (für mich heute)
+
+- 09:30–12:00: Kap 1 v1 mit Wolf-Checkliste durcharbeiten, Report schreiben
+- 12:00–13:00: Report zu Darius (für v2 Vorbereitung)
+- 13:00–14:00: Vera-Palette-Check (wenn Zeit)
+- 14:00–15:00: Darius-Sync zu Skill-by-Use (wie geplant)
+- 15:00+: Alpha-Build besorgen (von Tobi?) und erste 30 Min testen
+
+### Persönliches / Stimmung
+
+Energiegeladen — die Krisen-Punkte (Widersprüche, Schwellenanker-Konsistenz) sind machbar, nicht fundamental. CD-Feedback zu "sauberen Dokumenten" macht Sinn: wir sind 6 Wochen vor Alpha, jede Polierung zählt. Freue mich auf Kap 1 Review — das ist konkrete Spielerperspektive-Arbeit.
+
+**Confidence Level:** 8/10 (höher als gestern, weil Darius/Finn/Tobi klare Ownership nehmen)
