@@ -227,7 +227,7 @@ Das Prinzip lautet: **Was du siehst, kannst du erreichen.** Sightline-Navigation
 | # | USP | In einem Satz | Unterschied zu Referenz |
 |---|-----|--------------|------------------------|
 | **USP 1** | Biologische Transformation als Kern-Progression | Das Schattenfieber verändert Körper und Welt dauerhaft — und es gibt keine Heilung, nur Kontrolle | Skyrim-Vampirismus ist reversibel und marginal. Bloodborne-Beasthood ist temporär. RELICS macht es permanent und zentral. |
-| **USP 2** | Welt-Reaktivität statt Marker-Quests | Die Welt erinnert sich. NPCs haben Gedächtnisse. Konsequenzen kommen — auch wenn der Spieler sie vergessen hat. | Gothic 2 ist der nächste Vergleich. RELICS setzt diesen Standard 2025 neu. |
+| **USP 2** | Welt-Reaktivität statt Marker-Quests | Die Welt erinnert sich. NPCs haben Gedächtnisse. Konsequenzen kommen — auch wenn der Spieler sie vergessen hat. | Gothic 2 ist der nächste Vergleich. RELICS setzt diesen Standard 2026 neu. |
 | **USP 3** | Open-World mit Immersive-Sim-Vertikalität | Weltdichte und Exploration eines Gothic-artigen RPG + räumliche Tiefe und Systeminteraktion einer Immersive Sim | Kein existierendes Referenzspiel bietet beides. Gothic/Skyrim sind horizontal. Dishonored ist abgeschlossen. |
 
 ---

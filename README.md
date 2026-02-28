@@ -284,6 +284,6 @@ gensoftworks/
 
 **GenSoftworks** — Kreativquartier Hobart, Detmold
 
-MA Medienproduktion, TH OWL, 2025
+MA Medienproduktion, TH OWL, 2026
 
 </div>
