@@ -8,7 +8,7 @@
 
 <br>
 
-<img src="assets/office-overview.png" width="720" alt="GenSoftworks Studio — Gebäude 12, Obergeschoss">
+<img src="assets/office-team.png" width="720" alt="GenSoftworks Studio — alle sieben Agenten bei der Arbeit">
 
 <br>
 
