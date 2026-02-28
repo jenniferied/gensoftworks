@@ -199,3 +199,29 @@
 - Kap. 2 ist das stärkste Stück: Systeminteraktionen-Sektion am Ende macht das Dokument zu mehr als einer Feature-Liste
 - Kap. 3 hat die richtige Balance: Erzählstruktur fest, Dialog-Raum für Nami gelassen. So soll Kollaboration funktionieren.
 - Die Ablehn-Option hat mich am längsten beschäftigt. Es ist die Entscheidung, die das meiste verändert — und gleichzeitig die, bei der man am leichtesten eine Pseudo-Wahl einbaut. Ich glaube, die Lösung (drei Konsequenz-Ebenen, echter alternativer Einstieg) ist ehrlich.
+
+---
+
+# Tag 3 Szene 5
+**Typ**: REVIEW | **Uhrzeit**: 15:00 | **Teilnehmer**: Darius, Vera, Emre, Leo
+
+## Notizen
+- Naming-Commitment von Emre bestätigt und für verbindlich erklärt: Schwellenanker = kosmologisch, Fragment = Spieler-Sprache, Wurzel = volkstümlich
+- W-004 und W-006: Leo hat bis 16:00 zu schließen — Deadline gesetzt, nicht verhandelt
+- WBB Kap. 1 + 2 exportbereit (Emre) — Autorenzeile und Platzhalter müssen sauber sein
+- GDD Kap. 5: Vera hat zwei offene Artefakt-Stellen, Fix heute Abend
+- NPC-Beschreibungen für Vera: Emre + Nami liefern bis morgen 9:30 — Äußerlichkeiten, Kleidungsschicht, Fraktionszugehörigkeit
+
+## Ergebnisse
+- Review-Abschluss erteilt: Export-Deadline 18:00 bestätigt
+- Vera hat NPC-Zugang: Emre + Nami liefern morgen 9:30 Beschreibungen für Charakter-Visuals + Antagonisten-Silhouetten
+- Erster PDF-Snapshot morgen früh (Finn) → geht an CD
+
+## Offene Fragen
+- W-004 / W-006: Leo schließt bis 16:00 — Ergebnis prüfen
+- Emres WBB-Export: Autorenzeile und Platzhalter bis 18:00 sauber?
+- Veras Kap. 5: zwei Artefakt-Stellen wirklich bis heute Abend fix?
+
+## Persönliches
+- Review lief straff. Emre hat geliefert, Leo hat seine Hausaufgaben für heute Abend — gut.
+- Morgen erstes PDF beim CD. Das ist der Moment, auf den wir seit Montag hinarbeiten. Keine großen Worte nötig, das Team weiß was auf dem Spiel steht.
