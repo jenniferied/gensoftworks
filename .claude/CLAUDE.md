@@ -21,6 +21,3 @@ GDD: `gallery/gdd/KK-titel-vN.md` — WBB: `gallery/wbb/KK-titel-vN.md`
 - **Deutscher Inhalt, englischer Code**
 - **Echte Umlaute (ä ö ü ß)** — NIEMALS ae/oe/ue/ss
 - **Niemals Quellen erfinden** — im Zweifel klar sagen
-- **Briefing ist der Nordstern** — alle Artefakte orientieren sich an `briefing.md`
-- **Genre ist Fantasy** — NICHT "dark fantasy"
-- **Bilder: NIEMALS mit Text**

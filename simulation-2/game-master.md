@@ -4,11 +4,11 @@ Dieses Dokument beschreibt, wie die Simulation funktioniert. Der GM (Opus 4.6) l
 
 ## Architektur
 
-Basiert auf Park et al. (2023, Generative Agents — Smallville) für Memory-Streams und szenenbasierte Steuerung, und Qian et al. (2024, ChatDev) für phasenbasierte Aufgabenzerlegung mit klaren Abbruchbedingungen.
+Basiert auf Park et al. (2023, Generative Agents — Smallville) für Memory-Streams und szenenbasierte Steuerung, und Qian et al. (2024, ChatDev) für phasenbasierte Aufgabenzerlegung.
 
 - **GM** = Hauptsession (Opus 4.6). Orchestriert Szenen, spawnt Agenten, schreibt Logbuch.
 - **7 Agenten** = Subagenten (Sonnet 4.6, `model: "sonnet"`). Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in `.claude/agents/{name}.md` und ein Persönlichkeitsprofil in `roster/`.
-- **CD** / **Creative Director** = Menschlicher Nutzer. Gibt Feedback, trifft kreative Entscheidungen.
+- **CD** / **Creative Director** = Menschlicher Nutzer. Gibt Feedback, trifft kreative Entscheidungen beim Start jedes Tages.
 
 Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben in Dateien.
 
@@ -26,63 +26,87 @@ Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben
 
 ## Tagesablauf (6 Szenen)
 
-| # | Zeit | Typ | Wer | Was |
-|---|------|-----|-----|-----|
-| 1 | 09:00 | BRIEFING | alle 7 | CD-Feedback + Tagesziele. Finn moderiert. |
-| 2 | 10:00 | WORK | alle 7 | Parallel: Mo/Di Recherche+Konzeption, Mi–Fr Produktion |
-| 3 | 11:30 | MEETING | alle 7 | Standup: Ergebnisse, Fragen, Abstimmung |
-| 4 | 12:30 | PAUSE | 2–3 | Sozial/spontan — keine Deliverables |
-| 5 | 14:00 | WORK | alle 7 | Parallel: Mo/Di Recherche+Konzeption, Mi–Fr Produktion |
-| 6 | 16:00 | REVIEW | alle 7 | Ergebnisse vorstellen, offene Fragen für CD |
+| # | Zeit | Typ | Modus | Wer | Max Turns |
+|---|------|-----|-------|-----|-----------|
+| 1 | 09:00 | BRIEFING | sequenziell | alle 7 | 8 |
+| 2 | 10:00 | WORK | parallel | alle 7 | — |
+| 3 | 11:30 | MEETING | sequenziell | alle 7 | 8 |
+| 4 | 12:30 | PAUSE | sequenziell | 2–3 (GM wählt) | 6 |
+| 5 | 14:00 | WORK | parallel | alle 7 | — |
+| 6 | 16:00 | REVIEW | sequenziell | 3–4 relevanteste (GM wählt) | 6 |
 
-**Donnerstag**: Szene 6 = D&D (Emre ist DM + 2 Spieler). Ort: Bibliothek.
+**Donnerstag**: Szene 6 = D&D (Emre als DM + 2 Spieler). Sequenziell, max 8 Turns. Ort: Bibliothek.
 
 ## Szenenausführung
 
-### WORK-Szenen
+### Gesprächsszenen — allgemeiner Ablauf
 
-Alle 7 Agenten **parallel** spawnen (`model: "sonnet"`). Jeder Agent bekommt:
-- Eigene Rollendefinition (aus `.claude/agents/{name}.md`)
-- Eigene Memory (`agents/{name}-memory.md`)
-- Briefing-Kontext + Szenenkontext (Tag, Szenennummer, Aufgabe)
-- Anweisung: Am Ende eigene Memory-Datei ergänzen
-
-### Gesprächsszenen (BRIEFING, MEETING, REVIEW, PAUSE, DND)
-
-**Sequenzielle** Subagenten-Turns — jeder Sprecher ist ein separater Sonnet-Task.
+Für alle sequenziellen Szenen (BRIEFING, MEETING, PAUSE, REVIEW, D&D):
 
 1. GM legt Teilnehmer + Reihenfolge fest
-2. Pro Turn: Agent spawnen mit Szenenkontext + eigener Memory + **gesamtem bisherigen Dialog**
-3. Agent spricht + ergänzt eigene Memory-Datei
-4. GM sammelt Output → hängt an Dialog an → spawnt nächsten Agenten
-5. Wiederholen bis Gespräch natürlich endet
+2. Pro Turn: Agent spawnen (`model: "sonnet"`) mit Szenenkontext + bisherigem Dialog
+3. GM sammelt Output → hängt an Dialog an → spawnt nächsten Agenten
+4. Maximal N Turns (siehe Tabelle), dann beendet der GM die Szene
 
-Umfang:
-- BRIEFING/MEETING/REVIEW: Finn eröffnet, 3–5 Agenten reagieren
-- PAUSE: 2–3 Agenten, 5–8 Turns gesamt
-- DND: 3 Agenten (Emre als DM + 2 Spieler), 6–10 Turns
+### WORK
 
-## Agent-Prompts — Pflichtbestandteile
+**Modus**: parallel | **Teilnehmer**: alle 7 | **Turn-Cap**: —
 
-Jeder Agent-Prompt, den der GM schreibt, MUSS enthalten:
-1. "Schreibe echte deutsche Umlaute (ä, ö, ü, ß), NICHT ae, oe, ue, ss."
-2. Verweis auf Briefing-Datei und eigene Memory-Datei (exakte Pfade)
-3. Szenenkontext: Tag, Szene, Uhrzeit, Ort, Teilnehmer, Aufgabe
-4. Anweisung: "Ergänze am Ende deine Memory-Datei mit einer kurzen Erinnerung an diese Szene."
+Alle 7 Agenten gleichzeitig spawnen (`model: "sonnet"`). Jeder Agent bekommt Szenenkontext + Aufgabe. Mo/Di: Recherche + Konzeption. Mi–Fr: Produktion.
+
+### BRIEFING
+
+**Modus**: sequenziell | **Teilnehmer**: alle 7 | **Turn-Cap**: 8
+
+Finn eröffnet (CD-Feedback + Tagesziele). Alle reagieren reihum.
+
+### MEETING
+
+**Modus**: sequenziell | **Teilnehmer**: alle 7 | **Turn-Cap**: 8
+
+Finn eröffnet. Alle berichten Fortschritt, stellen Fragen, stimmen sich ab.
+
+### PAUSE
+
+**Modus**: sequenziell | **Teilnehmer**: 2–3 (GM wählt) | **Turn-Cap**: 6
+
+Smalltalk, Soziales, Persönliches — keine Deliverables.
+
+### REVIEW
+
+**Modus**: sequenziell | **Teilnehmer**: 3–4 relevanteste (GM wählt nach Tagesarbeit) | **Turn-Cap**: 6
+
+Ergebnisse vorstellen, offene Fragen für den CD sammeln.
+
+### D&D (Donnerstag, Szene 6)
+
+**Modus**: sequenziell | **Teilnehmer**: 3 (Emre als DM + 2 Spieler) | **Turn-Cap**: 8
+
+Emre leitet eine Pen-&-Paper-Session. Ort: Bibliothek.
+
+## Agent-Prompts
+
+Jeder Agent liest seine eigene Definition (`.claude/agents/{name}.md`), die bereits
+Umlaute-Regel, Briefing-Verweis und Memory-Anweisungen enthält.
+
+Der GM ergänzt im Prompt nur den **Szenenkontext**:
+- Tag, Szene, Uhrzeit, Ort
+- Teilnehmer dieser Szene
+- Aufgabe / Tagesphase (Recherche, Konzeption, Produktion)
+- Bei Gesprächsszenen: bisheriger Dialog
 
 ## GM-Checkliste (pro Szene)
 
 1. `state/world.json` lesen → Tag + Szenennummer bestimmen
-2. `agents/{name}-memory.md` für jeden Teilnehmer lesen
-3. Szene ausführen (parallel oder sequenziell) — jeder Agent ergänzt **selbst** seine Memory-Datei
+2. Szene ausführen (parallel oder sequenziell gemäß Szenentyp)
 
 ## Tagesende (nach Szene 6)
 
-4. `logbook/dayDD.json` schreiben gemäß `schemas/day-index.json`
-5. `state/world.json` aktualisieren (Tag +1, Szene 0)
-6. `python scripts/validate-sim.py --sim-dir simulation-2` — Fehler beheben vor Weiterarbeit
-7. `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
-8. Outputs generieren:
+3. `logbook/dayDD.json` schreiben gemäß `schemas/day-index.json`
+4. `state/world.json` aktualisieren (Tag +1, Szene 0)
+5. `python scripts/validate-sim.py --sim-dir simulation-2` — Fehler beheben vor Weiterarbeit
+6. `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
+7. Outputs generieren:
    - **Immer**: `scripts/export-logbook.py --sim-dir simulation-2`, `scripts/build-viewer-data.py --sim-dir simulation-2`
    - **Wenn GDD/WBB existieren**: `scripts/export-gdd.py --sim-dir simulation-2`, `scripts/export-wbb.py --sim-dir simulation-2`
 

@@ -167,12 +167,12 @@ Grobe Quest-Skript (Vorschlag):
 
 Basierend auf Schell (2010, S. 381–387): Ein GDD umfasst Spielübersicht, Kernmechaniken, Erzählkonzept, technische Spezifikation und visuelle Designsprache.
 
-1. **Spielübersicht & Design-Säulen** — Vision, Alleinstellungsmerkmale, Spielerfahrung
-2. **Kernmechaniken** — Combat, Crafting, Progression, Nervensystem-Leveling
-3. **Erzählkonzept** — Hauptquest, Nebenquests, Quest-Skripts
-4. **Schlüsselfiguren & NPCs** — Zentrale Charaktere, Fraktionsvertreter, Begleiter
-5. **Visuelle Designsprache & Art Direction** — Stil, Farbpalette, Architektur, Materialsprache
-6. **Technische Spezifikation & Produktion** — Engine, Kamera, UI, Scope, Meilensteine
+1. **Spielübersicht & Design-Säulen**
+2. **Kernmechaniken**
+3. **Erzählkonzept**
+4. **Schlüsselfiguren & NPCs**
+5. **Visuelle Designsprache & Art Direction**
+6. **Technische Spezifikation & Produktion**
 
 ## Struktur: World Building Bible
 
