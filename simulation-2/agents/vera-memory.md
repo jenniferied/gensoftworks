@@ -165,3 +165,57 @@
 - Feedback war fair und klar — "Gilden-Palette zu viel Text" ist valide, ich hab den Prompt falsch konstruiert
 - "Kein Wirbelsäule-Artefakt" ist eine Lore-Entscheidung, keine ästhetische — akzeptiert, Formvokabular angepasst
 - Budget $0.67/$2.00 — heute kann ich noch $1.33 ausgeben, reicht gut für die drei Iterationen
+
+---
+
+# Tag 3 Szene 1 (WORK)
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Vera (solo, remote Köln)
+
+## Notizen
+- Alle vier CD-Iterationsaufgaben abgearbeitet
+- Krone + Orden auf Pinnwand kopiert (pinwall/favorites/)
+- Gilden-Palette v2: Nano Banana 2, kein Text, Materialien klar — Indigoseide, Malachit, Bernstein, Bronzehammer, Sattlerleder, Pigmentphiolen
+- Dreier-Vergleich v2: Nano Banana Pro, geologisch-organisch (kein Wirbelsäule mehr), kein Text. Formkonsistenz besser als v1
+- Stadtschnitt v2: GPT Image 1.5, schräge Tiefenperspektive, Schwarzrand-Richtungskonzept jetzt spürbar (Stadt "fällt" zur Schwelle hin)
+- GDD Kap. 5 (Art Direction) v1 fertiggestellt — vollständige Erstfassung mit eingebetteten Bildern
+
+## Ergebnisse
+
+**Neue Bilder (day03-vera/):**
+- `day03-vera/factions/fraktion-gilden-materialpalette-v2_nano-banana-2.png` ✅ — kein Text, Erdtöne mit Malachit/Bernstein-Akzenten
+- `day03-vera/relics/relikt-drei-zustaende-v2_nano-banana-pro.png` ✅ — drei Zustände sauber, kein Text, geologische Form
+- `day03-vera/environments/stadtschnitt-schwarzrand-v2_gpt-image-1-5.png` ✅ — diagonale Komposition, Schwarzrand-Richtungskonzept
+
+**Pinnwand:**
+- `pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png` — freigegeben
+- `pinwall/favorites/fraktion-orden-materialpalette_seedream-4-5.png` — freigegeben
+
+**GDD:**
+- `gallery/gdd/05-art-direction-v1.md` — GDD Kap. 5 Visuelle Designsprache & Art Direction, vollständige v1
+  - Alle 6 freigegebenen Bilder eingebettet
+  - Abschnitte: Prämisse, Medieval Cyberpunk als Materialsprache, Fraktionspaletten (3), Stadtarchitektur (4 Schichten), Charakter-Design-Prinzipien, Schwellenanker-Designsprache (3 Zustände), Schattenfieber-Visualisierung, Referenz-Kanon, Art-Direction-Checkliste
+
+**Budget Tag 3:**
+| Name | Modell | Kosten |
+|------|--------|--------|
+| fraktion-gilden-materialpalette-v2 | nano-banana-2 | $0.08 |
+| relikt-drei-zustaende-v2 | nano-banana-pro | $0.15 |
+| stadtschnitt-schwarzrand-v2 | gpt-image-1-5 | $0.20 |
+
+**Budget-Stand gesamt:**
+- Tag 2: $0.67
+- Tag 3: $0.43
+- Gesamt verbraucht: $1.10 von $4.00 Gesamtbudget
+- Noch verfügbar: $2.90 (nach $4.00 Budget, Tag 3 war $0.43 von max $3.00)
+
+## Offene Fragen
+- Hero Shot v2: GPT erzeugt zu kristalline Form → für v0.2 Nano Banana Pro versuchen
+- Orden-Kreuz-Symbol: Lore-Entscheidung ausstehend (Emre/Nami) → blockiert Orden-Palette v2
+- UI-Designsprache (Leveling-Nervensystem-Sicht): noch nicht in Kap. 5 abgedeckt → für v0.2
+- Darius: Soll Kap. 5 die Leveling-UI spezifizieren oder Kap. 2?
+- WBB Kap. 2 (Emre): Stadtschnitt-v2 direkt einbetten → Koordination mit Emre
+
+## Persönliches
+- Dreier-Vergleich v2 ist das stärkste Bild heute — die geologische Form funktioniert besser als die alte Wirbelsäulenmetapher. Weniger anatomisch, mehr kosmologisch.
+- Stadtschnitt v2: endlich die Richtung der Stadt spürbar. Das "gerichtete" Konzept war immer der Kern — v1 hat es nicht transportiert.
+- GDD Kap. 5 schreiben war ungewohnt (mehr Text als Bilder), aber das Art-Direction-Kapitel muss beides sein: zeigen UND beschreiben. Sonst ist es nur ein Moodboard.
