@@ -1,0 +1,21 @@
+{
+    "day": 5,
+    "day_of_week": "Freitag",
+    "time_of_day": "night",
+    "scenes_today": 3,
+    "scenes_total": 25,
+    "scheduled_events": [],
+    "active_briefs": [
+        "RELICS — Dark Fantasy CRPG. Eine Insel, 3-6 Fraktionen, Low Fantasy GoT-Level, Biotech-Mittelalter.",
+        "MONETARISIERUNG: AAA Premium 69,99€. EA 29,99€. DLCs 29,99€. Keine MTX.",
+        "GDD v0.3 + WBB v0.3 GELIEFERT. Woche abgeschlossen."
+    ],
+    "artifacts_today": [
+        "gallery/gdd/RELICS-GDD-v03.md",
+        "gallery/gdd/RELICS-GDD-v03.pdf",
+        "gallery/wbb/RELICS-WBB-v03-export.md",
+        "gallery/wbb/RELICS-WBB-v03.pdf",
+        "gallery/concepts/day-005-nami/"
+    ],
+    "studio_status": "Tag 5 Nacht. WOCHE ABGESCHLOSSEN. GDD v0.3 (225KB, 1830 Zeilen). WBB v0.3 (49MB, Landscape Multi-Column, 26 Concept Arts). 6 neue Concept Arts ($1.42). Team-Retrospektive gehalten. 25 Szenen in 5 Tagen. Alle Deadlines eingehalten."
+}

@@ -1,0 +1,83 @@
+[
+    {
+        "name": "siedlervolk-fortress-market",
+        "prompt": "Fantasy concept art: a bustling market day inside a massive medieval fortress courtyard. High stone walls frame a lively scene — merchant stalls with colorful awnings, a blacksmith forge with sparks, traders arguing over prices. The architecture is clean human engineering: precise stonework, symmetrical arches, iron-reinforced gates. In the background, the fortress keep rises above everything. The people are dressed in practical but fashionable medieval clothing — layered tunics, leather belts, well-made boots. NOT primitive, NOT dirty. This is a prosperous settlement with infrastructure and order. Warm afternoon light, painted concept art style.",
+        "negative_prompt": "tribal, primitive, dirty, anime, cartoon, text, watermark, steampunk, modern, ruins",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "kuestenvolk-lighthouse-scholars",
+        "prompt": "Fantasy character concept art: three coastal scholar figures outside a ruined lighthouse converted into a study. They wear salt-stained but elegant robes — layered wool and linen in muted blues, greys, and white. One holds a brass astrolabe, another carries stacked leather-bound journals, the third examines a geological sample. Intellectual, dignified, slightly eccentric. The lighthouse behind them shows layered architecture — ancient stone base, newer timber additions. Fog rolls in from the sea. Muted coastal palette. Low fantasy, grounded medieval scholars, painted concept art style.",
+        "negative_prompt": "wizard, magic, glowing, staff, anime, cartoon, text, watermark, steampunk, bright",
+        "category": "characters",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "zerbrochene-portrait-trio",
+        "prompt": "Fantasy character concept art: three Broken Ones — displaced people without faction, wearing mismatched clothing from every culture on the island. One in a torn coastal scholar robe patched with settler leather. One in beast-folk silk now faded and fraying, over rough-spun wool. One child in oversized volcanic mystic garments. Their faces show resilience, not despair. Dignity in poverty. Behind them, makeshift shelters against a massive fortress wall. Warm firelight from a shared cooking fire. Muted earthy palette with faded hints of each faction's colors. Painted concept art style.",
+        "negative_prompt": "zombie, apocalyptic, dirty grimy, anime, cartoon, text, watermark, steampunk, bright cheerful",
+        "category": "characters",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "biotech-weapons-study",
+        "prompt": "Fantasy concept art detail study: a collection of medieval weapons enhanced with organic biotechnology. A longsword with a chitin-wrapped grip and faint bioluminescent veins running along the blade. A crossbow with bone-reinforced limbs and sinew-string. A shield made of overlapping keratin plates like an armadillo shell with a living nervous system pattern. A dagger with an organic handle that seems to pulse. Each weapon is clean, elegant, high-fashion medieval craftsmanship. Dark background. Copper-green and amber bioluminescent accents. NOT steampunk, NOT rusty. Concept art weapon sheet style.",
+        "negative_prompt": "steampunk, gears, pipes, rusty, worn, modern, sci-fi, anime, cartoon, text, watermark",
+        "category": "items",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "vulkanvolk-ritual-caldera",
+        "prompt": "Fantasy concept art: a volcanic caldera at dusk where a small group performs a ritual. Hooded figures in dark organic robes with basalt jewelry stand in a circle around a natural hot spring. The water glows amber from volcanic minerals. Steam rises into a darkening sky streaked with orange. Around the caldera edge, carved rune-stones mark the boundary between sacred and profane ground. In the distance, the volcanic peak smokes gently. The mood is reverent, ancient, ambiguous — is this religion or geology? Germanic mythological atmosphere. Dark atmospheric palette with volcanic amber accents. Painted concept art style.",
+        "negative_prompt": "anime, cartoon, bright, magic spells, fireballs, text, watermark, steampunk, modern",
+        "category": "environment",
+        "tier": 1,
+        "aspect_ratio": "landscape_16_9",
+        "model": "seedream-4-5"
+    },
+    {
+        "name": "fortress-interior-great-hall",
+        "prompt": "Fantasy concept art: the great hall inside a dark fantasy fortress. Massive vaulted ceiling of dark basalt with obsidian accent pillars. Long wooden tables set for a feast — pewter plates, iron candelabras, rough-cut crystal goblets. Banners of five different factions hang from the walls, each in a different style and material. Warm firelight from a central hearth illuminates the scene while the upper reaches fade into shadow. The architecture is imposing but lived-in — scratch marks on the stone floor, wax drippings on the tables, weapons mounted on walls. Medieval high culture, NOT a dungeon. Cinematic lighting, painted concept art.",
+        "negative_prompt": "dungeon, dark scary, monsters, anime, cartoon, text, watermark, steampunk, modern, bright",
+        "category": "environment",
+        "tier": 2,
+        "aspect_ratio": "landscape_16_9",
+        "model": "nano-banana-pro"
+    },
+    {
+        "name": "innenvolk-alchemist-portrait",
+        "prompt": "Dark fantasy character portrait: an Innenvolk alchemist — hooded figure in layered organic robes that seem partially alive. Under the hood, an androgynous face with sharp intelligent eyes, skin slightly translucent at the temples showing faint vein patterns. Around their neck, a necklace of small bioluminescent vials in copper-green and deep violet. Gloved hands hold a crystalline substance that catches light. The background is dark with soft organic ambient light. The character radiates quiet danger and deep knowledge. Alexander McQueen meets medieval apothecary. Portrait composition, painted concept art style.",
+        "negative_prompt": "anime, cartoon, bright, cheerful, text, watermark, steampunk, sci-fi, modern, tribal",
+        "category": "characters",
+        "tier": 2,
+        "aspect_ratio": "portrait_9_16",
+        "model": "nano-banana-pro"
+    },
+    {
+        "name": "hero-nervensystem-fullbody",
+        "prompt": "Dark fantasy concept art: a full-body view of a warrior character with semi-transparent skin revealing three layered body systems beneath medieval armor. The outermost armor plates fade to transparency. Underneath: RED cardiovascular system (heart, arteries pulsing with light), BLUE musculoskeletal system (bones, muscle fibers glowing faintly), GREEN lymphatic system (nodes and vessels creating a delicate network). The figure stands in a powerful pose against a dark fortress interior background. The biotech nervous system visualization is beautiful, not grotesque — like a medical illustration meets dark fantasy art. This is the character leveling screen made real. Cinematic lighting, detailed painted concept art.",
+        "negative_prompt": "steampunk, gears, sci-fi hologram, anime, cartoon, text, watermark, bright white, modern UI",
+        "category": "characters",
+        "tier": 3,
+        "aspect_ratio": "portrait_9_16",
+        "model": "gpt-image-1-5"
+    },
+    {
+        "name": "hero-fortress-aerial-dawn",
+        "prompt": "Dark fantasy hero shot: dramatic aerial view of the central fortress-castle complex at dawn. Mont-Saint-Michel inspired vertical layering — the fortress rises from a plateau with concentric rings of walls. At the base, the Scherben quarter with makeshift roofs. Middle tier: the market district with the great hall. Upper tier: military fortifications. Summit: the ruling keep with obsidian-dark towers catching golden sunrise light. Surrounding the plateau: patchwork farmland, forest edges, and roads leading to distant regions. In the far background: volcanic smoke to the northeast, coastal cliffs to the east. The scale is epic — this fortress dominates the landscape. God-ray lighting through morning clouds. Ultra-detailed painted concept art, cinematic composition.",
+        "negative_prompt": "anime, cartoon, flat, simple, text, watermark, steampunk, modern, bright saturated, magic",
+        "category": "environment",
+        "tier": 3,
+        "aspect_ratio": "landscape_16_9",
+        "model": "gpt-image-1-5"
+    }
+]

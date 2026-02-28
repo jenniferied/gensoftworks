@@ -1,0 +1,298 @@
+[
+  {
+    "test": "seedream-4-5_fortress-squat-broad",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Dark fantasy medieval fortress on a volcanic plateau, squat and broad, massive thick walls of dark basalt stone, multiple layers of construction showing centuries of growth, village with thatched roofs clustered at the base, smoke rising from chimneys, oxidized iron rust-red veins in the mortar, silver-grey weathered wood scaffolding, overcast sky, muted earth tones with dark volcanic stone dominant. Inspired by Mont-Saint-Michel vertical layering — mundane life below, military power above. Low fantasy atmosphere, no magic effects. Landscape vista from approaching path.",
+    "elapsed_s": 18.4,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2ced/ciK9XylySMb4PW_ZxHOhi_2d1d8e8fa06a400e9220a0d48ed557ff.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:04:55.822251",
+    "category": "fortress",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, bright colors, clean pristine surfaces, glowing magic, text, watermark, high fantasy, floating islands, crystal towers"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_fortress-tower-vertical",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Dark fantasy medieval castle dominated by a tall central keep tower, built from volcanic basalt with obsidian accent stones, vertical composition emphasizing height and power, layered construction — older dark stone base with newer additions above, a winding village road leading up to the gatehouse, wooden palisade outer wall transitioning to stone inner walls, fog rolling in from the coast below, rust-red oxidized iron staining the joints between stones. Cyberpunk-medieval aesthetic through advanced stonework and engineering. Low fantasy, grounded, no magic.",
+    "elapsed_s": 17.9,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2cef/0nGer-uoKOiY6aP-0bsDi_c970423a196545caa73ebf34e4c80c04.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:05:16.385004",
+    "category": "fortress",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, bright colors, glowing effects, magic, text, watermark, high fantasy, crystal, floating"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_fortress-asymmetric-grown",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Dark fantasy medieval fortress that has grown organically over centuries, asymmetric layout with mismatched towers and walls of different eras and stone types, oldest section built from massive cyclopean basalt blocks of unknown origin, newer sections in regular cut stone, newest additions in timber and brick. A lived-in village wraps around the base with market stalls and workshops. The fortress sits between volcanic highlands and coastal cliffs. Dark grey and black stone palette with rust-red iron oxidation and patches of green moss. Atmospheric, overcast, grounded medieval realism.",
+    "elapsed_s": 19.9,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2cf1/UAqDJkmuNrH92MEGf0sn-_af9342ab1d6545d18da236a4355a1cae.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:05:39.778739",
+    "category": "fortress",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, symmetrical, pristine, bright colors, magic, glowing, text, watermark, high fantasy"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_coastal-ruins-settlement",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Dark fantasy coastal settlement built inside ancient monumental ruins, massive stone arches far too large for current inhabitants, improvised wooden roofs and platforms wedged between ancient pillars, laundry hanging from ropes strung between cyclopean columns, fishing nets drying on ancient walls, warm firelight from small windows cut into old stone. Two visible time layers: ancient monumentality and current humble adaptation. Salt-crusted stone, verdigris patina, weathered wood. Overcast coastal atmosphere, waves crashing below. Environmental storytelling — these people inherited something they did not build.",
+    "elapsed_s": 24.2,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2cf4/Chub7eVnh9NkgAmvFrWNI_b48ca9a703754d3686a00865eff3f361.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:06:06.660566",
+    "category": "environment",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, bright colors, pristine, magic, glowing, text, watermark, modern elements"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_volcano-invisible-village",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "A volcanic mountainside in a dark fantasy setting that appears completely uninhabited at first glance. Bare dark rock, steam vents, sparse vegetation. But on closer inspection: subtle claw marks worn into stone paths, faint warm light glowing from deep crevices in the rock face, smoke that could be volcanic or could be cooking fires, worn handholds carved into cliff edges, a barely visible trail of footprints in volcanic ash. The mountain has eyes but shows no doors, no windows, no buildings. Emptiness communicates. Atmospheric, moody, overcast. Concept art style, painterly.",
+    "elapsed_s": 21.2,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2cf6/0_UHI50ekpzVloRNabS0y_c6ba188c0a6b4fa48611d020c3e6bb62.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:06:30.954464",
+    "category": "environment",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, bright colors, obvious buildings, doors, windows, signs, text, watermark, magic"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_settler-town-negative-space",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Dark fantasy medieval town built with right angles and imported materials — timber frames, regular brick, organized streets — but with conspicuous GAPS in the urban fabric. Empty lots surrounded by buildings where ancient stone relics protrude from the ground, untouched and avoided. The town was built AROUND these artifacts, leaving deliberate negative space. Warning signs near the gaps. Practical, functional architecture contrasting with the ancient mysterious stones. Overcast, muted palette, grounded medieval realism. The absence tells the story — fear mapped into urban planning.",
+    "elapsed_s": 46.1,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2cfb/7B8qPuhbXQ2QAbMX5Wq7H_654287838500461f866af03d48389c09.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:07:20.160840",
+    "category": "environment",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, bright colors, magic, glowing, text, watermark, pristine, fantasy castle"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_three-races-silhouettes",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Dark fantasy concept art showing three distinct humanoid race silhouettes side by side on a neutral grey background. LEFT: beast-folk race, muscular, digitigrade legs, fur-covered, pointed ears, feline or lupine features, wearing bone and volcanic glass armor. CENTER: elf-inspired race, tall and slender, elongated features, wearing repurposed ancient metal and scholar robes, carrying research tools. RIGHT: human settler race, stocky and practical, wearing forged steel plate and wool, carrying tools and weapons. Each silhouette must be instantly recognizable at distance — the 50-meter silhouette rule. Low fantasy, grounded, Skyrim-meets-Dark-Souls aesthetic.",
+    "elapsed_s": 17.1,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2cfd/yRCEE-MTVJDAj1Bm78Vja_351ea3443e6940e28161e7b4f3efd264.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:07:39.565552",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, bright colors, wings, halos, magic effects, text, watermark, chibi, cute"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "seedream-4-5_island-panorama-fortress",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Panoramic vista of a dark fantasy volcanic island seen from the sea. Three distinct zones visible: a volcanic highland with steam vents to the left, a ruined ancient coastline with massive stone structures center-left, and a medieval fortress complex with village on a plateau center-right, surrounded by misty forests. The fortress dominates the middle ground — dark basalt walls, towers of different heights, smoke rising from the village below. The island feels ancient, layered, inhabited but mysterious. Overcast sky, grey-green sea, muted earth tones. Concept art establishing shot. Low fantasy, no magic.",
+    "elapsed_s": 19.5,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2cff/M7vIFej_pXE0JiWyCwfF5_28cd5d13ba924d54beaba9fd903b7a51.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:08:01.867243",
+    "category": "environment",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9",
+      "negative_prompt": "anime, cartoon, bright colors, tropical paradise, sunny, magic, floating islands, text, watermark"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "nano-banana-pro_fortress-refined-montsaintmichel",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "A massive dark fantasy medieval fortress-complex inspired by Mont-Saint-Michel, built on a rocky plateau between volcanic highlands and the coast. Vertical layering: at the base a dense village with narrow alleys, timber-frame houses, market square with merchant stalls. Above: thick curtain walls of dark basalt with rust-red iron staining. Higher still: the inner keep with mismatched towers showing centuries of construction — oldest sections built from impossibly large ancient stone blocks, newer sections in regular masonry. At the summit: a great hall or temple, partially ruined. Obsidian decorative accents catch what little light breaks through the overcast sky. Silver-weathered wood, green moss on north-facing walls, salt damage on seaward side. Atmospheric perspective, volumetric fog. Photorealistic concept art, cinematic composition.",
+    "elapsed_s": 23.9,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2d00/H86TqmeqhDGajy8vLgT2b_PsVumLfD.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:08:28.060111",
+    "category": "fortress",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9",
+      "negative_prompt": "anime, cartoon, bright saturated colors, magic glow, pristine clean surfaces, text, watermark, symmetrical, modern elements"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "nano-banana-pro_coastal-ruins-detail",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "Interior view of a dark fantasy coastal settlement built inside ancient ruins. Massive stone arches rise three stories overhead, far too grand for the humble wooden platforms and rope bridges the current inhabitants have built inside them. Warm orange firelight from cooking fires contrasts with cold grey daylight from openings in the ancient walls. A woman hangs laundry from a rope tied between ancient pillars. Children play on wooden stairs bolted into megalithic stone. Ancient carved symbols on the walls, half-covered by plaster and soot. Two time periods coexisting: monumental ancient architecture and intimate human adaptation. Salt-crusted stone, verdigris patina, worn wood, fish drying on racks. Photorealistic dark fantasy concept art.",
+    "elapsed_s": 22.3,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2d02/R0vT7PCsh_CGFkjbHX6D1_YAOOnP6z.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:08:51.884385",
+    "category": "environment",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9",
+      "negative_prompt": "anime, cartoon, bright colors, magic, glowing runes, text, watermark, modern elements, clean surfaces"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "nano-banana-pro_races-lineup-detail",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "Dark fantasy character lineup showing three playable races for a CRPG, full body, standing on neutral ground. LEFT: Beast-folk — feline-inspired humanoid with tawny fur, digitigrade legs, wearing layered bone-and-leather armor with volcanic glass blades, amber eyes, muscular but lean, tribal scarification visible through fur. CENTER: Ruin-dweller (elf-inspired) — tall, pale, angular features, wearing a mix of scavenged ancient bronze armor plates over dark scholar robes, carrying a brass astrolabe-like device, thin but composed. RIGHT: Settler (human) — broad-shouldered woman in practical forged iron half-plate over wool gambeson, short hair, weathered face, hand on a utilitarian sword hilt. Each design follows the 50-meter silhouette rule: instantly recognizable at distance. Skyrim-meets-Dark-Souls aesthetic. Grounded low fantasy, realistic proportions, worn materials.",
+    "elapsed_s": 22.9,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2d05/Rkm-zKGpUUhRBHNY6Hoch_dGoMi81U.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:09:16.772679",
+    "category": "characters",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9",
+      "negative_prompt": "anime, cartoon, chibi, bright colors, wings, halos, magic auras, oversized weapons, text, watermark, sexy armor, bikini armor"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "nano-banana-pro_arrival-beach-scene",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "Dark fantasy scene: a lone figure stands on a grey pebble beach, looking inland at a mysterious volcanic island. Broken ship planks scattered in the foreground, a dead body face-down in the surf nearby. In the middle distance: ancient massive stone ruins along the coastline, partially reclaimed by vegetation. Far in the background on a plateau: the silhouette of a medieval fortress with mismatched towers and smoke rising from the village at its base. The lone figure wears simple torn clothing, clearly a shipwreck survivor — a nobody arriving at a place that did not call for them. Overcast sky, grey-green palette, volumetric fog, atmospheric perspective. Cinematic establishing shot. Dark Souls meets Skyrim opening. Low fantasy, grounded, no magic.",
+    "elapsed_s": 23.3,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2d07/cZZV5K562irLpuTCud1AC_MNOfy6xJ.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:09:41.588942",
+    "category": "environment",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9",
+      "negative_prompt": "anime, cartoon, bright colors, sunny, tropical, magic, glowing, text, watermark, heroic pose, armor, weapons"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "gpt-image-1-5_hero-fortress-from-sea",
+    "model": "fal-ai/gpt-image-1.5",
+    "prompt": "Cinematic establishing shot of a dark fantasy island fortress seen from an approaching boat on a grey choppy sea. The fortress complex rises on a volcanic plateau — a Mont-Saint-Michel-inspired vertical layering of civilization: fishing docks at sea level, then a dense village climbing the slope with narrow alleys and timber-frame houses, then massive dark basalt curtain walls with rust-red oxidized iron staining the mortar, then the inner keep with towers of different heights and architectural styles showing centuries of organic growth. The oldest, lowest stones are impossibly large — cyclopean blocks from a forgotten era. The newest additions are timber and regular masonry. Smoke rises from dozens of chimneys. Obsidian decorative accents. A great hall or temple at the summit, partially ruined, open to the sky. The entire composition communicates: here is a place with deep history, where power lives, where someone rules. Overcast dramatic sky with a single break of golden light illuminating the upper keep. Volumetric fog between the layers. Salt spray in the foreground. Photorealistic cinematic concept art, 4K detail, matte painting quality. Dark Souls meets medieval historical illustration.",
+    "elapsed_s": 37.8,
+    "cost_est": "$1.00",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2d0a/LbPhgHS0okssl6AzFfPGK_dvJbn01a.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:10:20.863522",
+    "category": "fortress",
+    "tier": 3,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "size": "1536x1024",
+      "quality": "high",
+      "negative_prompt": "anime, cartoon, manga, cel-shading, bright saturated colors, clean pristine surfaces, glowing magic effects, floating elements, text, watermark, logo, blurry, low quality, symmetrical, modern, tropical, sunny paradise"
+    },
+    "dimensions": "1024x1024"
+  },
+  {
+    "test": "gpt-image-1-5_hero-arrival-stranger",
+    "model": "fal-ai/gpt-image-1.5",
+    "prompt": "Cinematic dark fantasy scene: A shipwrecked stranger stands alone on a grey pebble beach at dawn, seen from behind in a low-angle shot. They wear torn, salt-stained simple clothing — clearly a nobody, not a hero. At their feet: broken ship timbers and a rusty knife found next to a dead body (just visible at frame edge). Before them stretches the island: ancient cyclopean stone ruins along the immediate coastline, their arches impossibly large, with small improvised wooden structures wedged inside them — a coastal settlement of people who inherited something they didn't build. Beyond, volcanic highlands rise into mist with no visible habitation (but the attentive eye might spot faint light from crevices). And dominating the middle distance on a plateau: a dark medieval fortress-complex, asymmetric, grown over centuries, with a village at its base and smoke rising. The stranger faces all of this alone with nothing but a rusty knife. The composition asks: What does a stranger owe a place that did not call for them? Overcast sky, muted grey-green-brown palette, volumetric atmospheric perspective, cinematic 2.39:1 framing feel. Photorealistic matte painting concept art. Dark Souls desolation meets Skyrim scale meets Gothic 1 vulnerability.",
+    "elapsed_s": 35.6,
+    "cost_est": "$1.00",
+    "images": [
+      "https://v3b.fal.media/files/b/0a8f2d0e/nBfGArXJsH03bXWUdM5HA_zWQql62D.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-20T03:10:57.878691",
+    "category": "environment",
+    "tier": 3,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "size": "1536x1024",
+      "quality": "high",
+      "negative_prompt": "anime, cartoon, manga, cel-shading, bright saturated colors, sunny, tropical, clean surfaces, glowing magic, heroic pose, armor, weapons visible, text, watermark, logo, blurry, low quality, face visible, front-facing"
+    },
+    "dimensions": "1024x1024"
+  }
+]
