@@ -34,7 +34,7 @@
 | **Leo Fischer** | QA & Konsistenz | Vollständigkeits-Checklist (Wolf 2013), Konsistenz-Prüfung Mi–Fr |
 | **Finn Bergmann** | Producer (ich) | Roadmap, Sprint-Planung, Info-Fluss, Blocker-Clearance, Final-Review |
 
-## CD-Feedback (Di 09:00 — BRIEFING) — AKTUALISIERT
+## CD-Feedback (Di 09:00 — BRIEFING)
 
 **1. Schattenfieber — Wahrheit vs. Propaganda**
 - ✅ **GEKLÄRT:** Es gibt EINE biologisch erklärbare Wahrheit zum Schattenfieber
@@ -89,19 +89,17 @@
 **4. Spieler-Interaktion mit Fragment**
 - ✅ Spieler DARF das Fragment ablehnen (mechanisch wichtig)
 
-## Darius-Fragen (4 Offene) — Deadline: Di 17:00
+## Darius-Fragen (Alle geklärt — Di 17:00 gelöst)
 
-**Noch zu klären:**
-1. **Stadtfrage:** Eine zentrale vertikal-geschichtete Stadt oder mehrere überlagerte Städte? → wirkt auf Vera, Emre, Tobi
-2. **Schattenfieber-Scope:** Nur Statuseffekt oder hauptquest-antreibender Plot? → wirkt auf Nami, Tobi
-3. **Tiervolk:** Spielbar-Rasse oder nur NPC-Flavor? → wirkt auf Emre
-4. **Release-Strategie:** Single-Release oder Episodisch? Premium oder Indie-Budget? → wirkt auf Tobi
+**Alle 4 Fragen geklärt:**
+1. ✅ **Stadtfrage:** Eine zentrale Stadt (Schwarzrand), vertikal geschichtet → GELÖST
+2. ✅ **Schattenfieber-Scope:** Hauptquest-Mechanik (nicht nur Status-Effekt) → GELÖST
+3. ✅ **Tiervolk:** Kosmologisch offen, keine Entscheidung bis jetzt erforderlich → GELÖST
+4. ✅ **Release-Strategie:** Main Release + DLC-Model (nicht episodisch) → GELÖST
 
-**Format:** Darius schreibt's hin (kurz, klar, nicht poliert). Ich gebe's weiter.
+## Dienstag — MEETING & Outputs
 
-## Dienstag 13:00 — MEETING (Küche)
-
-**Livemoment (Di 13:00 - 13:15):**
+**Di 13:00 — MEETING (Küche):**
 - ✅ **Eröffnet:** Alle Outputs sind geliefert
 - ✅ **Darius (GDD Kap 1):** High Concept geschärft, 4 Fragen beantwortet
 - ✅ **Emre (WBB Kap 2):** Schwarzrand als Stadtname, Schwelle, Schattenfieber-Biologie, Gilden-Monopol, 3 Schöpfungsmythen. Tiervolk kosmologisch offen.
@@ -110,114 +108,30 @@
 - ✅ **Tobi (GDD Kap 6):** Tech Spec (UE5, Nanite, Lumen, Schattenfieber-PP, Relikt-Shader, Release-Pipeline)
 - ✅ **Leo:** Wolf-Checkliste finalisiert, Alpha-Erste-Stunde-Checkliste, Talking Points
 - ✅ **Finn:** Roadmap + COMPLETED.md aktualisiert
-- **Diskussion folgt:** Schwarzrand-Bestätigung, Darius-Fragen-Status, Abhängigkeiten
 
-## Wochenplan (AKTUALISIERT — Mi 09:00 BRIEFING)
+## Mittwoch 10:00 — WORK Block Start
 
-**Montag–Dienstag (10:00–17:00):** Research + Production Start
-- ✅ Montag: Alle recherchiert parallel
-- ✅ **Dienstag 10:00–12:30:** Alle recherchiert/produziert parallel
-  - ✅ Darius: GDD Kap 1–2 + 4 Fragen
-  - ✅ Nami: Mythos-Outline finalisiert
-  - ✅ Emre: Topos-Foundation mit Schwarzrand-Integration
-  - ✅ Vera: Materialpalette finalisiert + 9 Concept-Art-Bilder
-  - ✅ Tobi: Release-Modell Research + GDD Kap 6
-  - ✅ Leo: QA-Framework finalisiert
-- ✅ **Di 13:00:** MEETING — Eröffnung abgeschlossen
-- **Di 16:00:** Finn ↔ Darius Status-Check (Fragen-Tracking)
-- **Di 17:00:** Darius-Deadline (4 Fragen schriftlich)
-- **Di 18:00:** Vera-Sketches liefern (`gallery/concepts/day02/`)
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: alle 7
 
-**MITTWOCH (HEUTE) — PRODUKTION & EXPORT**
-- **Mi 09:00:** BRIEFING (Küche) — CD-Feedback durchgesagt, Tagesplan
-- **Mi 10:00–15:00:** WORK Block
-  - **Darius:** Finalisiert GDD Kap 1–3, integriert Vera-Bilder in Kap 5, räumt Kommentare auf
-  - **Nami:** Finalisiert WBB Kap 1 (Mythos) + Materialpalette/Fraktions-Visuals, räumt auf
-  - **Emre:** Finalisiert WBB Kap 2 (Topos), räumt auf
-  - **Vera:** Letzter Polish auf Concept Art (Gilden-Palette Text kürzen, Stadtschnitt optional nächste Iteration), räumt auf
-  - **Tobi:** Finalisiert GDD Kap 6, räumt auf
-  - **Leo:** Prüft Konsistenz, erstellt Feedback-Liste
-  - **Finn:** Koordiniert Handoffs, checkt Bilder-Integration, validiert gegen Briefing
-- **Mi 15:00–17:00:** WORK Block (Sprintpause)
-- **Mi 17:00:** MEETING (Küche) — Alle liefern? Blocker? Letzter Check vor Export
-- **Mi 18:00:** PDF v0.1 (GDD + WBB) exportieren
-- **Mi 20:00:** PDF final archiviert
+### Notizen
+- **Tagesplan:** Mi 10:00–15:00 Cleanup + Polish, Mi 17:00 MEETING, Mi 18:00 PDF v0.1 Export
+- **Status:** Alle Kapitel v0.1 Draft fertig von Di. Mi = Cleanup + Bilder-Integration + QA
+- **Kritischer Pfad:** HTML-Kommentare raus, Vera-Bilder in GDD/WBB einbauen, Schwellenanker-Rename überall
+- **Bildliste:** Handoff-Notiz für Darius geschrieben (03-bildliste-handoff-vera-finn.md) — zeigt ihm welche 2 Relikt-Bilder + 3 Paletten in welche Kapitel passen
+- **Vera-Aktion:** Gilden-Palette Text bis heute 12:00 kürzen (CD braucht)
+- **Darius-Aktion:** Vera-Bilder in GDD Kap 5 einbauen, HTML-Kommentare entfernen
+- **Timeline:** v0.1 Lock um Mi 20:00 (QA passt), Do v0.2, Fr v0.3 Final
 
-**Do–Fr:** Feedback-Iteration v0.2 & v0.3
+### Ergebnisse
+- ✅ **ROADMAP.md:** Dienstag geschlossen, Mittwoch mit aktuellen Status-Updates, Abhängigkeiten/Blockers neu geordnet
+- ✅ **COMPLETED.md:** All Di Outputs dokumentiert, Mi Status aktuell, v0.1 Deliverables > In Progress übersetzt
+- ✅ **Bildliste:** 03-bildliste-handoff-vera-finn.md geschrieben — pragmatisch, kurz, actionable für Darius
 
-## Meine Rolle (Finn) — AKTUALISIERT
+### Offene Fragen
+- Nami braucht Vera-Bilder für WBB Kap 1? (CD gestern unklar, "optional")
+- Emre — macht er Tiervolk-Charakterdesign oder wartet er bis Darius entscheidet?
 
-- **Sprint-Meister:** Blocker-Clearance, Info-Flow (CD zu Team und zurück)
-- **Gatekeeper:** CD-Aufmerksamkeit ist kostbar — Termine, Notizen mit Kontext, Prioritäten
-- **Handoff-Manager:** Di 12:30 Vera-Notiz mit Relikt-Brainstorm (PENDING)
-- **Sync-Moderator:** Di 14:00 Nami (PENDING), Di 16:00 Darius (PENDING), tägliche Mi–Fr Syncs mit Darius & Leo
-- **Qualitäts-Gate:** Outputs gegen Briefing checken vor Leo-QA
-- **Repos-Struktur:** `gallery/gdd/`, `gallery/wbb/`, `gallery/concepts/day{N}/`, Logs → `traces/`
-- **PDF-Automation:** Pandoc-Export Mi–Fr 20:00
-- **Roadmap & COMPLETED:** Laufend aktualisieren (keine Commits durch mich — GM macht's am Ende)
-- **HTML-Kommentar-Moderation:** Alle Kommentare sind für mich sichtbar, aber nicht im finalen Export
-
-## Library & Referenzen
-
-Alle recherchieren in `library/` (Repo-Root). Wichtige Dateien:
-- Schell (2010) GDD-Struktur
-- Klastrup/Tosca (2004) Transmediale Welten (Mythos–Topos–Ethos)
-- Wolf (2013) Neun Infrastrukturen imaginärer Welten (Checkliste!)
-- Elder Scrolls, Gothic, Dishonored, Vampires the Masquerade: Bloodlines als Referenzen
-- **NICHT:** Witcher 3 (man spielt bestimmten Charakter), Baldur's Gate 3 (rundenbasiert, Partyplay)
-
-## Notizen zur Simulation 2
-
-- **5 Szenen pro Tag:** BRIEFING (Finn) → WORK (einzeln) → MEETING (Finn) → PAUSE (random) → WORK (einzeln) → REVIEW (Finn)
-- **Finn moderiert Briefings & Reviews**, filtert Darius-Input
-- **Memory ist Langzeit-Gedächtnis**, wird zwischen Szenen mit Erkenntnissen gefüllt
-- **Keine Trace-Dateien für Finn-Arbeit** (Roadmap & COMPLETED.md sind Artefakte, nicht Traces)
-- **Pragmatismus über Perfektion:** Ein Draft ist besser als Lähmung durch Perfektionismus
-- **CD-Feedback ist Nordstern:** Alle Prioritäten ordnen sich danach
-
-## Erkenntnisse bis Mi 09:00
-
-1. **Schwarzrand ist Stadtname:** Emre hat geliefert, Durchsage bei MEETING erfolgt. Vera, Emre und Tobi müssen Vertikal-Struktur abstimmen.
-2. **Vera liefert zu Quote:** 9 Bilder = produktiv. Aber: Stadtschnitt-Bild wirkt unnatürlich, braucht nächste Iteration.
-3. **Tiervolk ist offene Frage:** Emre braucht Darius-Antwort zu Spielbarkeit/NPC-Status bevor Topos finalisiert wird.
-4. **Darius-Fragen sind kritischer Pfad:** Vera (Stadtfrage), Emre (Stadtfrage + Tiervolk), Tobi (Release-Strategie) hängen davon ab.
-5. **Team ist synchronisiert:** Alle wissen welche Info sie brauchen, von wem, und bis wann.
-6. **HTML-Kommentare sind neue Spielregel:** Alle Notizen & Kommentare müssen aus PDF raus, aber im Markdown sichtbar sein.
-7. **Bilder-Integration ist TODAY Priority:** Vera-Concept-Art MUSS in GDD/WBB-Text eingebaut sein — nicht separater Anhang.
-
-## Abhängigkeiten (kritisch) — LIVE MI 09:00
-
-```
-HTML-Kommentar-Cleanup (Mi 10:00–15:00)
-├─ Darius: GDD Kap 1–3, 5 — keine Anmerkungen im Text
-├─ Nami: WBB Kap 1, 3 + Materialpaletten — keine Anmerkungen
-├─ Emre: WBB Kap 2 — keine Anmerkungen
-├─ Vera: Concept Art Metadaten — keine Künstler-Namen
-└─ Tobi: GDD Kap 6 — keine Anmerkungen
-
-Bilder-Integration (Mi 10:00–15:00)
-├─ Vera: Polish + Gilden-Palette Text kürzen
-├─ Darius: Vera-Bilder in Kap 5 einbauen
-├─ Nami: Fraktions-Materialpaletten in Mythos/Ethos einbinden?
-└─ Finn: Validiert vor Export (saubere Platzierung)
-
-Schwellenanker-Rename (Mi 10:00)
-├─ Darius: GDD Kap 1–3, 5
-├─ Nami: WBB Kap 1, 3, GDD Kap 4
-├─ Emre: WBB Kap 2
-├─ Vera: Concept Art Beschriftungen
-└─ Tobi: GDD Kap 6 (Shader, Tech Spec)
-
-Export-Deadline (Mi 18:00)
-└─ Alle v0.1 Drafts → Leo QA → Finn Final-Check → PDF Pandoc Export
-```
-
-## Nächste Schritte (unmittelbar)
-
-1. **Mi 10:00:** WORK Block startet — alle arbeiten parallel an Cleanup + Polish
-2. **Mi 10:00–12:00:** Ich (Finn) fahre Runde durch Repo, checke HTML-Kommentar-Status
-3. **Mi 13:00–14:00:** Erste PAUSE (zufällig besetzt)
-4. **Mi 14:00:** Nami fragen: "Brauchst du Vera-Bilder für Mythos/Ethos?"
-5. **Mi 15:00:** Darius-Sync: "Alle Kommentare weg? Vera-Bilder in Kap 5 eingebaut?"
-6. **Mi 17:00:** MEETING (Küche) — Sind alle v0.1 bereit?
-7. **Mi 18:00:** Pandoc Export starten (GDD v0.1 + WBB v0.1 als PDF)
+### Persönliches
+- Team läuft smooth. Keine Blocker bisher.
+- Mi 18:00 PDF-Export ist realistisch.
+- Vera's Tempo passt — 9 Bilder, richtige Richtung, schnell iterierbar.

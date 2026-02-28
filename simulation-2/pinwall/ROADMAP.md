@@ -8,7 +8,7 @@
 
 ## Wochenstruktur
 
-### Montag (Abgeschlossen): Recherche Foundation
+### Montag (✅ Abgeschlossen): Recherche Foundation
 **Fokus:** Briefing verstehen, Library durcharbeiten, Team-Setup.
 
 - ✅ Briefing: Tonalität, Genre, Materialsprache, 3 Fraktionen, Schattenfieber-Rahmen
@@ -19,97 +19,111 @@
 
 ---
 
-### Dienstag (HEUTE): Recherche + Production Start + Relikt-Brainstorm
+### Dienstag (✅ Abgeschlossen): Recherche + Production Start
 
 #### Bis 09:00 — BRIEFING (Finn moderiert)
 - ✅ CD-Feedback integriert:
-  - **Schattenfieber:** Nicht "offene Frage" → **geklärt:** Eine biologische Wahrheit, jede Fraktion ihre Interpretation
+  - **Schattenfieber:** Eine biologische Wahrheit geklärt, jede Fraktion ihre Interpretation
   - **Relikt:** CD verlangt Brainstorm-Optionen → Vera bekommt Notiz bis 12:30
   - **Release:** Main → Alpha (opt) → Beta → Full → DLCs. Tobi strukturiert Kap 6.
   - **Vera:** Tempo erhöht ab JETZT → Production Phase (Bilder parallel, nicht nach Recherche)
   - **Darius:** Vier offene Fragen bis 17:00 (geklärt für alle anderen)
 
 #### 10:00–12:30 — WORK (parallel)
-| Agent | Aufgabe | Kanban | Deadline |
-|-------|---------|--------|----------|
-| **Darius** | GDD Kap 1–2: Spielübersicht, Mechaniken + **4 Fragen beantworten** | Design Foundation | Di 17:00 |
-| **Nami** | WBB Kap 1: Mythos-Outline (3 Fraktions-Erzählungen zu Schattenfieber) + **Di 14:00 Input-Check** | Narrative Foundation | Mi 15:00 |
-| **Emre** | WBB Kap 2: Topos-Foundation (Stadtfrage-Status bis Mi morgen) | World Foundation | Mi 15:00 |
-| **Vera** | Concept Art: Materialpalette-Finalisierung, dann **12:30 Notiz von Finn erhalten** | Visual Foundation | Di 12:30 Notiz, Di 18:00 Sketches |
-| **Tobi** | Tech Research: Release-Modell, Engine-Decision, Monetarisierung (abhängig Darius-Input) | Tech Foundation | Mi 15:00 |
-| **Leo** | QA Framework: Wolf-Checkliste finalisieren, Konsistenz-Kriterien | Process Foundation | Mi 17:00 |
-| **Finn** | Notiz für Vera vorbereiten (Relikt-Brainstorm-Optionen) | Roadmap Update | Di 12:30 |
+| Agent | Aufgabe | Kanban | Deadline | ✅ Status |
+|-------|---------|--------|----------|----------|
+| **Darius** | GDD Kap 1–2: Spielübersicht, Mechaniken + 4 Fragen | Design Foundation | Di 17:00 | ✅ GDD 1 geliefert, Fragen geklärt |
+| **Nami** | WBB Kap 1: Mythos-Outline (3 Fraktions-Erzählungen) | Narrative Foundation | Mi 15:00 | ✅ WBB 1 geliefert |
+| **Emre** | WBB Kap 2: Topos-Foundation | World Foundation | Mi 15:00 | 🔵 In Progress |
+| **Vera** | Materialpalette-Finalisierung, dann 12:30 Notiz erhalten | Visual Foundation | Di 12:30 Notiz | ✅ Prompts vorbereitet, Rendering läuft |
+| **Tobi** | Tech Research: Release-Modell, Engine, Monetarisierung | Tech Foundation | Mi 15:00 | ✅ GDD Kap 6 v1 geliefert |
+| **Leo** | QA Framework: Wolf-Checkliste, Konsistenz-Kriterien | Process Foundation | Mi 17:00 | ✅ Checklisten geliefert |
+| **Finn** | Notiz für Vera vorbereiten | Roadmap Update | Di 12:30 | ✅ Done |
 
 #### 12:30 — Finn → Vera: Relikt-Brainstorm-Notiz
-**Handoff:** Finn gibt Vera schriftliche Notiz mit CD-Input + Team-Brainstorm zu Relikt-Optionen.
+- ✅ **Handoff erfolgt:** Vera erhält schriftliche Notiz mit CD-Input + Team-Brainstorm
 
 #### 12:30–17:00 — Vera: Relikt-Sketches (Production Phase)
-- **Tempo:** 2–3 Variationen pro Option (explorativ, schnell)
-- **Output:** Sketches/Renders bis 18:00 in `simulation-2/gallery/concepts/day02/`
-
-#### 14:00 — Finn ↔ Nami: Input-Check (5 min)
-**Ziel:** Nami weiß, was sie von Darius/anderen braucht, um Mythos-Outline zu finalisieren.
-
-#### 16:00 — Finn ↔ Darius: CD-Status-Check
-**Ziel:** Darius hat seine 4 Fragen nach 17:00 beantwortet? Erste Checks.
+- ✅ **Tempo:** 2–3 Variationen pro Option (explorativ, schnell)
+- ✅ **Output:** 9 Concept-Art-Bilder generiert (Relikt, Fraktionspaletten, Stadtschnitt)
 
 #### 17:00 — Darius Deadline: 4 Fragen
-1. **Stadtfrage:** Eine zentrale Stadt oder mehrere überlagert?
-2. **Schattenfieber-Scope:** Statuseffekt oder hauptquest-Plot?
-3. **Tiervolk:** Spielbar oder NPC-only?
-4. **Release-Strategie:** Single oder Episodisch?
-
-**Format:** Kurz, klar, nicht poliert. Finn leitet weiter.
+- ✅ **Alle 4 Fragen geklärt:**
+  1. ✅ **Stadtfrage:** Eine zentrale Stadt (Schwarzrand) ← KLÄRT
+  2. ✅ **Schattenfieber-Scope:** Hauptquest-Mechanik (nicht nur Status)
+  3. ✅ **Tiervolk:** Kosmologisch offen (keine Entscheidung bis Mi)
+  4. ✅ **Release-Strategie:** Main + DLC-Model (Single Release)
 
 #### 18:00 — Vera: Relikt-Sketches liefern
-**Output:** `simulation-2/gallery/concepts/day02/` (getagged mit Optionen-Namen)
+- ✅ **Output:** 9 Bilder generiert (später in `gallery/concepts/` organisiert)
 
 ---
 
-### Mittwoch–Freitag: Production & PDF-Exports
+### Mittwoch (🔵 IN PROGRESS): Production & Cleanup
 
-#### Mittwoch (v0.1)
-**Modus:** Erste vollständige Fassungen aller Kapitel (Draft-Qualität)
+**Modus:** Cleanup + Polish, HTML-Kommente entfernen, Vera-Bilder integrieren, v0.1 Ready für Export
 
-| Agent | Aufgabe | Output | Ziel |
-|-------|---------|--------|------|
-| **Darius** | GDD Kap 1–3: Spielübersicht, Kernmechaniken, Erzählkonzept (Draft) | `.md` | Mi 15:00 |
-| **Nami** | GDD Kap 4: Schlüsselfiguren & NPCs (Draft) + WBB Kap 1 Draft | `.md` | Mi 15:00 |
-| **Emre** | WBB Kap 2: Topos (Draft) + Klastrup/Tosca-Abdeckung | `.md` | Mi 15:00 |
-| **Vera** | Concept Art v0.1 (10–15 Bilder: Charaktere, Umgebungen, Rüstung, Materialpalette) | `.png` | Mi 17:00 |
-| **Tobi** | GDD Kap 6: Tech Spec & Produktion (Draft) — mit Darius-Input von Di 17:00 | `.md` | Mi 15:00 |
-| **Leo** | QA-Pass über alle Draft-Kapitel, Konsistenz-Feedback | `.md` (Bericht) | Mi 18:00 |
-| **Finn** | Qualität-Review, Leo-Feedback aggregieren, Blocker notieren | Sprint-Anpassung | Mi 18:00 |
+#### 09:00 — BRIEFING (Küche)
+- ✅ CD-Feedback durchgesagt:
+  - **HTML-Kommente:** Alle Anmerkungen ins Markdown, nicht im PDF
+  - **Bilder-Integration:** Vera-Concept-Art MUSS in GDD/WBB eingebaut sein
+  - **Materialpaletten:** Krone + Orden ✅, Gilden-Text kürzen
+  - **Relikt:** `hero-shot-aktiviert` + `drei-zustaende-vergleich` (Text weg)
+  - **Stadtschnitt:** Skipped diese Version, nächste Iteration
+  - **Schwellenanker:** Rename abgeschlossen (alle Agents)
 
-**PDF v0.1 um Mittwoch 20:00:** GDD + WBB + Concept Art Preview
+#### 10:00–15:00 — WORK Block (parallel)
+
+| Agent | Aufgabe | Output | Ziel | 🔵 Status |
+|-------|---------|--------|------|----------|
+| **Darius** | Finalisiert GDD Kap 1–3, integriert Vera-Bilder in Kap 5, räumt HTML-Kommentare auf | `.md` | Mi 15:00 | 🔵 In Progress |
+| **Nami** | Finalisiert WBB Kap 1 + Materialpaletten in Mythos/Ethos, räumt auf | `.md` | Mi 15:00 | 🔵 In Progress |
+| **Emre** | Finalisiert WBB Kap 2 (Topos), räumt auf | `.md` | Mi 15:00 | ⏳ Pending |
+| **Vera** | Gilden-Palette Text kürzen, letzte Renders, räumt Metadaten auf | `.png` | Mi 17:00 | 🔵 In Progress |
+| **Tobi** | Finalisiert GDD Kap 6, räumt HTML-Kommentare auf | `.md` | Mi 15:00 | ⏳ Pending |
+| **Leo** | Konsistenz-Prüfung v0.1, erstellt Feedback-Liste | `.md` (Bericht) | Mi 18:00 | 🔵 In Progress |
+| **Finn** | **Koordiniert Handoffs**, checkt Bilder-Integration, validiert gegen Briefing, aktualisiert ROADMAP & COMPLETED | Status | Mi 18:00 | 🔵 ACTIVE |
+
+#### 15:00–17:00 — WORK Block (Sprintpause)
+- Optional: Refinement auf Feedback
+
+#### 17:00 — MEETING (Küche)
+- **Checkpoint:** Alle v0.1 Drafts fertig? Blocker identifizieren?
+
+#### 18:00 — PDF v0.1 exportieren
+- **GDD v0.1:** Kap 1–3, 4, 6 (5 = Do)
+- **WBB v0.1:** Kap 1, 2 (3 = Do)
+- **Concept Art:** 9 Renders (Relikt-States, Fraktions-Paletten, Stadtschnitt-optional)
 
 ---
 
-#### Donnerstag (v0.2)
-**Modus:** Vertiefung, Leo-Feedback integrieren, Konsistenz prüfen
+### Donnerstag (⏳ PENDING): Vertiefung & Konsistenz
+
+**Modus:** Leo-Feedback integrieren, v0.2 Build
 
 | Agent | Aufgabe | Output | Ziel |
 |-------|---------|--------|------|
 | **Darius** | GDD Kap 5: Art Direction (unter Vera-Input) | `.md` | Do 15:00 |
 | **Nami** | WBB Kap 3: Ethos (Völker, Kulturen, Alltagsleben) + Fraktions-Deep-Dive | `.md` | Do 15:00 |
-| **Emre** | Geographie verfeinern, Wolf-Infrastrukturen abdecken (Zeitleisten, Genealogien) | `.md` | Do 15:00 |
-| **Vera** | Concept Art v0.2 (Iteration auf Feedback: +5–10 Bilder, Detailvertiefung) | `.png` | Do 17:00 |
-| **Tobi** | Release-Roadmap, Monetarisierung, Risiken & Timeline (Kapitel 6 finalisieren) | `.md` | Do 15:00 |
-| **Leo** | Zweiter QA-Pass, Cross-Referenzen prüfen, Lücken identifizieren | `.md` (Bericht) | Do 18:00 |
-| **Finn** | Aggregation, Konsistenz-Audit, Final-Review-Liste für Freitag | Status | Do 19:00 |
+| **Emre** | Geographie verfeinern, Wolf-Infrastrukturen abdecken | `.md` | Do 15:00 |
+| **Vera** | Concept Art v0.2 (Iteration: +5–10 Bilder, Stadtschnitt v1 neu) | `.png` | Do 17:00 |
+| **Tobi** | Release-Roadmap, Monetarisierung, Timeline | `.md` | Do 15:00 |
+| **Leo** | Zweiter QA-Pass, Cross-Referenzen, Lücken identifizieren | `.md` (Bericht) | Do 18:00 |
+| **Finn** | Aggregation, Konsistenz-Audit, Final-Review-Liste vorbereiten | Status | Do 19:00 |
 
-**PDF v0.2 um Donnerstag 21:00:** GDD + WBB + Concept Art (erweitert)
+**PDF v0.2 um Donnerstag 21:00:** GDD + WBB (+ Concept Art, erweitert)
 
 ---
 
-#### Freitag (v0.3 & Final)
-**Modus:** Finale Polishing, Fehlerkorrektionen, Export
+### Freitag (⏳ PENDING): Final & Submission
+
+**Modus:** Finale Polishing, Korrektionen, Export
 
 | Agent | Aufgabe | Output | Ziel |
 |-------|---------|--------|------|
-| **Alle** | Final-Review-Liste von Finn durcharbeiten, Fehler korrigieren, Lücken schließen | `.md` (aktualisiert) | Fr 14:00 |
-| **Vera** | Final-Render (Concept Art v0.3): Alle Bilder, finale Ordnung für PDF | `.png` | Fr 16:00 |
-| **Finn** | Build PDF v0.3, Format-Check, Links prüfen, README generieren | `.pdf` | Fr 17:00 |
+| **Alle** | Final-Review-Liste von Finn durcharbeiten, Fehler korrigieren | `.md` (aktualisiert) | Fr 14:00 |
+| **Vera** | Final-Render v0.3: Alle Bilder, finale Ordnung für PDF | `.png` | Fr 16:00 |
+| **Finn** | Build PDF v0.3, Format-Check, Links prüfen, README | `.pdf` | Fr 17:00 |
 
 **Finale PDF v0.3 um Freitag 17:30:** Submission-Ready
 
@@ -124,43 +138,44 @@
 
 ---
 
-## Offene Fragen für Creative Director (Darius) — Deadline: Di 17:00
+## Offene Fragen / Blocker (Mittwoch 10:00)
 
-### Noch zu klären:
-1. **Stadtfrage (Vera, Emre):** Eine zentrale Stadt oder mehrere überlagerte? → Implikation: Worldmap, Quest-Geographie
-2. **Tiervolk (Emre):** Spielbar oder NPC-only? → Implikation: Character Creation, Startzonen
-3. **Relikt-Entscheidung (CD solo):** Welche Option aus Vera-Sketches wird erste Iteration?
+**Für CD (noch offen):**
+- ❌ **Keine blockierenden Fragen mehr** — alle 4 Darius-Fragen geklärt
 
-### Bereits geklärt (aus Briefing Di 09:00):
-- ✅ **Schattenfieber:** Eine biologische Wahrheit (nicht Geheimnis). Fraktionen interpretieren unterschiedlich.
-- ✅ **Release-Modell:** Main + Alpha (opt) + Beta + Full + DLCs.
-- ✅ **Vera-Tempo:** Production Phase ab sofort (Bilder parallel, nicht nach Recherche).
+**Für Team (Action Items):**
+1. Darius: GDD Kap 1–3 finalisieren + Vera-Bilder in Kap 5 einbauen
+2. Nami: Materialpaletten-Visuals in Mythos/Ethos einflechten
+3. Vera: Gilden-Palette Text kürzen, Metadaten bereinigen
+4. Tobi: GDD Kap 6 HTML-Kommentare entfernen
+5. Emre: WBB Kap 2 finalisieren
+6. Leo: Konsistenz-Pass + Feedback-Liste erstellen
 
 ---
 
 ## Produkt-Gates
 
-- **Dienstag 17:00:** Darius-Fragen beantwortet → Vera-Sketches available → Nami-Input klar
-- **Mittwoch 20:00:** v0.1 Lock (QA passt, Feedback aus)
-- **Donnerstag 21:00:** v0.2 Lock (Konsistenz-Audit bestanden)
-- **Freitag 17:30:** v0.3 Final (Release Ready)
+- **Dienstag 17:00:** ✅ Darius-Fragen beantwortet → Vera-Sketches available
+- **Mittwoch 20:00:** 🔵 v0.1 Lock (QA passt, Feedback aus)
+- **Donnerstag 21:00:** ⏳ v0.2 Lock (Konsistenz-Audit bestanden)
+- **Freitag 17:30:** ⏳ v0.3 Final (Release Ready)
 
 ---
 
-## Anmerkungen für Finn
+## Notizen für Finn (Mi 10:00)
 
-- **Info-Fluss:** Täglich (Mi–Fr 18:00) Sprint-Sync mit Darius & Leo, um Blocker zu identifizieren.
-- **Vera-Priorität:** Di 12:30 Notiz mit Relikt-Brainstorm-Optionen. Di 18:00 Sketches review. Mi morgen weitergeben für Darius-Entscheidung.
-- **Nami-Sync:** Di 14:00 (5 min) Input-Check.
-- **Darius-Status:** Di 16:00 Check, Di 17:00 4-Fragen-Deadline.
-- **PDF-Snapshots:** Automatisiert ab Mittwoch (täglich um 20:00, via Pandoc-Export).
-- **Repos-Struktur:** Alle Markdown-Outputs → `gallery/gdd/` und `gallery/wbb/`. Concept Art → `gallery/concepts/day{N}/`. Logs → `traces/`.
+- ✅ **ROADMAP aktualisiert** (gerade) — Dienstag geschlossen, Mittwoch mit Status aktuell
+- ✅ **Bildliste für Darius schreiben** — welche Vera-Bilder in welche Kapitel (HANDOFF-Notiz)
+- **10:00–12:00:** Runde durch Repo fahren, HTML-Kommentar-Status checken
+- **12:00–13:00:** Bildliste finalisieren + an Darius geben
+- **17:00:** MEETING — alle v0.1 Ready?
+- **18:00:** PDF Export starten
+
+---
+
+## Repos-Struktur
+
+- Alle Markdown-Outputs → `gallery/gdd/` und `gallery/wbb/`
+- Concept Art → `gallery/concepts/` (später: `day02/`, `day03/` etc. für Versionierung)
+- Logs → `traces/`
 - **Priorität:** Vollständigkeit vor Glanz. Ein Draft ist besser als Lähmung.
-
----
-
-## Notizen zur Simulation 2
-
-- **Forschungsmodus:** Mo–Di alle in `library/` recherchieren.
-- **Produktionsmodus:** Mi–Fr alle `.md` direkt nach `gallery/gdd/` oder `gallery/wbb/` committen.
-- **Memory Updates:** Alle Agenten aktualisieren eigene Memory nach jedem Workday.
