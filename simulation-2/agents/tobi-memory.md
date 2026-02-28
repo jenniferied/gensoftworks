@@ -175,3 +175,42 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 
 - Nami nimmt "ein Anker kann reißen" narrativ ernst. Ich hab das technisch schon drin. Gute Konvergenz, ohne dass wir explizit abgestimmt haben.
 - Vera macht gerade viel alleine durch — Gilden-Palette neu, Form-Redesign, Stadtschnitt. Das ist viel in einer Szene.
+
+---
+
+## Tag 3, Szene 2 — WORK (10:00 Uhr)
+
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: solo
+
+## Notizen
+
+- v2 war vollständig und korrekt. Schwellenanker-Rename war sauber durchgezogen.
+- v3 gebaut mit zwei Hauptzielen: (1) sichtbaren Text bereinigen, (2) Interface-Spezifikation Lymph → PP-Trigger schreiben.
+- Darius' Kap 1 gelesen: Lymph = Untrained / Geübt / Fortgeschritten / Meister, koppelt an Schattenfieber-Progression. Das war genug Grundlage für die Interface-Definition.
+- Die Interface-Spezifikation ist bewusst einseitig gebaut: Gameplay schreibt einen Float (0.0–3.0), PP-System liest ihn. Keine Gegenrichtungs-Abhängigkeit. Das hält beide Systeme wartbar.
+- `SetFactionPPPreset(EFaction)` als optionale Erweiterung für Nami vorskizziert — aber explizit als Vorschlag markiert, kein gesetztes Feature.
+- Tippfehler `M_SchattenfiebertOverlay` in v1/v2 korrigiert zu `M_Schattenfieber_Overlay`.
+
+## Ergebnisse
+
+- GDD Kap 6 v3 erstellt: `simulation-2/gallery/gdd/06-technische-spezifikation-v3.md`
+- Neuer Abschnitt 6.4.7: Interface-Spezifikation Lymph → PP-Trigger
+  - `SetShadowFeverIntensity(float)` vollständig spezifiziert
+  - Mapping-Tabelle: Lymph-Stufen → ShadowFever_Intensity-Wert → aktive PP-Stufe
+  - `OnStageThresholdReached(float Stage)` Event spezifiziert
+  - `GetCurrentShadowFeverStage()` read-only Abfrage ergänzt
+  - Blueprint-Verbindungsschema als ASCII-Diagramm
+  - Interface-Namen in Alpha-Freeze aufgenommen (6.9.1)
+- Sichtbarer Text bereinigt: Autorname aus Kopfzeile in HTML-Kommentar, "(Nami-Alignment)" und "(Nami)" aus Fließtext entfernt, "Tobi's System" neutralisiert
+
+## Offene Fragen
+
+- ~~Darius: Blueprint-Interface (Lymph → PP-Trigger)~~ → **ERLEDIGT** (v3, Abschnitt 6.4.7)
+- Vera: Orden-Kreuz-Entscheidung → sobald entschieden, Vektorbild liefern
+- Emre: Tiervolk-Siedlungen statisch oder dynamisch? → wartet auf Topos-Kapitel
+- Nami: Fraktions-PP-Presets → offen, optionale Erweiterung in 6.4.7 vorskizziert
+
+## Persönliches
+
+- Interface-Spezifikation zu schreiben ohne direkten Darius-Sync ist ein Blindflug. Ich habe Kap 1 als Grundlage genommen und dann die sauberste technische Lösung gebaut. Der Vertrag steht jetzt auf Papier — Darius kann drauf reagieren.
+- Vier-Stufen-Mapping (Untrained/Geübt/Fortgeschritten/Meister) auf kontinuierlichen Float (0.0–3.0) ist die richtige Lösung. Kein diskreter Hard-Switch.
