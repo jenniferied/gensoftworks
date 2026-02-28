@@ -141,3 +141,37 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 - Darius: Blueprint-Interface (Lymph → PP-Trigger) → offen
 - Nami: Fraktions-PP-Presets → offen
 - Relikt-Name → offen (Emre)
+
+---
+
+## Tag 3, Szene 1 — BRIEFING (09:00 Uhr, Küche)
+
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle
+
+## Notizen
+
+- **Schwellenanker**: Relikt-Name gesetzt. Konsequenz für Assets: `M_Schwellenanker_Master`, `MI_Schwellenanker_Dormant/Resonant/Critical`, `T_Schwellenanker_Riss_01`, `BP_Schwellenanker`. Intern-technische Parameter (State_Alpha, ShadowFever_Intensity) bleiben — das ist API, kein Branding.
+- **Vera — Form-Änderung**: Schwellenanker weg von Wirbelsäulenform → "folded geological formation, compressed ossified mineral cluster". Shader-Konsequenz: SSS-Radius neu kalibrieren (komprimierter), Riss-Noise-Profil anpassen. Kein Umbau — ein Parametertuning.
+- **Vera — Orden-Kreuz**: Ist Art-Direction, nicht meine Entscheidung. Sobald entschieden: ich brauche ein fixes Vektorbild für Shader-Texture-Atlanten, Zunftzeichen-Stencil-Masken. Kein "vielleicht" bei Branding-Assets.
+- **Nami — "Anker kann reißen"**: Gut. Das ist bereits im Shader angelegt — Riss-Blend-Parameter in Zustand 3 ist stufenlos steuerbar. Act 3 kann das sequenziell aufziehen. Kein neuer Shader-Aufwand, nur Blueprint-Kurven-Authoring.
+- **Darius**: Interface-Definition Lymph → PP-Trigger bleibt mein einziger echter Blocker. Das muss heute noch kommen.
+
+## Ergebnisse
+
+- GDD Kap 6 v2 erstellt: `simulation-2/gallery/gdd/06-technische-spezifikation-v2.md`
+- Schwellenanker-Rename vollständig durchgezogen (Titel, Asset-Namen, Kapitelköpfe)
+- Vera-Schichtgrenzen-Frage als erledigt markiert
+- Forma-Kommentar (mineralisch) in Shader-Sektion integriert
+- Namis Act-3-Anmerkung im Shader-Kommentar verankert
+
+## Offene Fragen
+
+- Darius: Blueprint-Interface (Lymph → PP-Trigger) — KRITISCH, heute klären
+- Vera: Orden-Kreuz-Entscheidung → sobald entschieden, Vektorbild liefern
+- Emre: Tiervolk-Siedlungen statisch oder dynamisch? → wartet auf Topos-Kapitel
+- Nami: Fraktions-PP-Presets → offen
+
+## Persönliches
+
+- Nami nimmt "ein Anker kann reißen" narrativ ernst. Ich hab das technisch schon drin. Gute Konvergenz, ohne dass wir explizit abgestimmt haben.
+- Vera macht gerade viel alleine durch — Gilden-Palette neu, Form-Redesign, Stadtschnitt. Das ist viel in einer Szene.
