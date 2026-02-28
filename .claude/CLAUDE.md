@@ -24,7 +24,7 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 
 1. Read `world.json` → determine day + scene number
 2. Read memory files for participating agents
-3. Read `schemas/scene.json` — every logbook entry MUST match this structure exactly
+3. Read `schemas/scene.json` as reference for logbook structure
 4. Spawn agents with `model: "sonnet"`, scene type, participants, context from memory
 5. Write traces → `traces/dayDD-sceneS-name/` with exactly `0-prompt.md`, `1-reasoning.md`, `2-output.md` (no extra files)
 6. After scene: append memory to **each participant**. Every scene type — including PAUSE. Cover both **work** and **interpersonal**.
@@ -38,11 +38,7 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 
 `traces/dayDD-sceneS-name/` — numbered files: `0-prompt.md`, `1-reasoning.md`, `2-output.md`. Meetings: `dayDD-sceneS-type/`. All raw, 1:1, no summarization.
 
-## Schema Rules (mandatory)
-
-Every logbook file MUST match `schemas/scene.json`. No extra fields, no missing fields.
-
-**Fixed locations:** WORK → `"alle-stationen"`, BRIEFING/MEETING/REVIEW/PAUSE → `"küche"`, DND → `"bibliothek"`
+## Schema Rules
 
 **Dialogue — conversation scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND):**
 - Copy full dialogue from trace `2-output.md` → `dialogue` array. `**Name**: text` → `{"who": "name", "says": "text"}`.
@@ -51,9 +47,7 @@ Every logbook file MUST match `schemas/scene.json`. No extra fields, no missing 
 
 **Dialogue — WORK scenes:** `dialogue: []`. Output lives in traces.
 
-**Traces — exactly 3 files per dir:** `0-prompt.md`, `1-reasoning.md`, `2-output.md`. No extra files. Prompt header: `# {Name} — Tag {DD}, Szene {S} ({TYPE}) — Prompt`
-
-**Artifacts (GDD/WBB):** Every `.md` in `gallery/gdd/` and `gallery/wbb/` MUST have YAML frontmatter per `schemas/artifact-header.md`. `version` integer must match filename `-vN`.
+**Traces — exactly 3 files per dir:** `0-prompt.md`, `1-reasoning.md`, `2-output.md`. No extra files.
 
 **`trace_dirs`:** Conversation → `["dayDD-sceneS-type"]`. WORK → `["dayDD-sceneS-agent1", ...]`.
 

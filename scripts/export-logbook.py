@@ -494,7 +494,7 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
 # Scene Rendering: v2 (exhaustive)
 # ---------------------------------------------------------------------------
 
-def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None):
+def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None):
     """Render a v2 scene with ALL available data."""
     lines = []
     scene_num = scene.get("scene", 0)
@@ -680,12 +680,30 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None):
                 lines.append(f"*Artefakt: `{filename}`*")
             lines.append("")
 
-    # Trace references
-    trace_dirs = scene.get("trace_dirs", [])
-    if trace_dirs:
-        traces_str = ", ".join(f"`{td}`" for td in trace_dirs)
-        lines.append(f"*Traces: {traces_str}*")
-        lines.append("")
+    # Full trace contents (very small font)
+    trace_dir_names = scene.get("trace_dirs", [])
+    if trace_dir_names and traces_dir and traces_dir.exists():
+        for td_name in trace_dir_names:
+            td_path = traces_dir / td_name
+            if not td_path.is_dir():
+                continue
+            for trace_file in sorted(td_path.glob("*.md")):
+                label = trace_file.stem  # e.g. "0-prompt", "1-reasoning", "2-output"
+                content = trace_file.read_text().strip()
+                if not content:
+                    continue
+                lines.append(f"**{td_name}/{label}**")
+                lines.append("")
+                lines.append("```{=latex}")
+                lines.append("\\begingroup\\scriptsize")
+                lines.append("```")
+                lines.append("")
+                lines.append(content)
+                lines.append("")
+                lines.append("```{=latex}")
+                lines.append("\\endgroup")
+                lines.append("```")
+                lines.append("")
 
     # Key moment
     key_moment = scene.get("key_moment")
@@ -700,11 +718,11 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None):
 # Routing + Day/Document Rendering
 # ---------------------------------------------------------------------------
 
-def render_scene(scene, all_memories, cd_posts, day, screenshot_dir=None, crop_dir=None):
+def render_scene(scene, all_memories, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None):
     """Route to v1 or v2 renderer based on schema."""
     schema = detect_schema(scene)
     if schema == "v2":
-        return render_scene_v2(scene, cd_posts, day, screenshot_dir, crop_dir)
+        return render_scene_v2(scene, cd_posts, day, screenshot_dir, crop_dir, traces_dir)
     return render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir, crop_dir)
 
 
@@ -712,7 +730,7 @@ DAY_NAMES = {1: "Montag", 2: "Dienstag", 3: "Mittwoch", 4: "Donnerstag", 5: "Fre
 
 
 def render_day(day, scenes, all_memories, cd_posts, world_path, bulletin_path,
-               screenshot_dir=None, crop_dir=None):
+               screenshot_dir=None, crop_dir=None, traces_dir=None):
     """Render a full day as Markdown."""
     day_of_week = DAY_NAMES.get(day, "")
     if world_path.exists() and not day_of_week:
@@ -748,7 +766,7 @@ def render_day(day, scenes, all_memories, cd_posts, world_path, bulletin_path,
         lines.append("")
 
     for scene in scenes:
-        lines.append(render_scene(scene, all_memories, cd_posts, day, screenshot_dir, crop_dir))
+        lines.append(render_scene(scene, all_memories, cd_posts, day, screenshot_dir, crop_dir, traces_dir))
         lines.append("---")
         lines.append("")
 
@@ -756,7 +774,8 @@ def render_day(day, scenes, all_memories, cd_posts, world_path, bulletin_path,
 
 
 def build_markdown(logbook_dir, memories_dir, world_path, bulletin_path,
-                   days_filter=None, screenshot_dir=None, crop_dir=None):
+                   days_filter=None, screenshot_dir=None, crop_dir=None,
+                   traces_dir=None):
     """Build the full Markdown document."""
     all_memories = load_all_memories(memories_dir)
     cd_posts = load_bulletin(bulletin_path)
@@ -794,7 +813,7 @@ def build_markdown(logbook_dir, memories_dir, world_path, bulletin_path,
         if scenes:
             lines.append(render_day(day, scenes, all_memories, cd_posts,
                                     world_path, bulletin_path, screenshot_dir,
-                                    crop_dir))
+                                    crop_dir, traces_dir))
 
     return "\n".join(lines)
 
@@ -997,10 +1016,12 @@ def main() -> int:
         crop_dir = Path(crop_tmpdir.name)
         print(f"  Cropping screenshots to {crop_dir}")
 
+    traces_dir = sim_root / "traces" if args.sim_dir else PROJECT_ROOT / "traces"
     md_content = build_markdown(logbook_dir, memories_dir, world_path, bulletin_path,
                                 days,
                                 screenshot_dir if screenshot_dir.exists() else None,
-                                crop_dir)
+                                crop_dir,
+                                traces_dir if traces_dir.exists() else None)
 
     export_dir.mkdir(parents=True, exist_ok=True)
 

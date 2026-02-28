@@ -19,7 +19,7 @@ toc: true
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-001-scene-001-BRIEFING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-001-scene-001-BRIEFING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -38,7 +38,7 @@ Erster Arbeitstag bei GenSoftworks. Finn moderiert das Briefing in der Küche. C
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-001-scene-002-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-001-scene-002-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -59,7 +59,7 @@ Erster Recherche-Block. Alle 7 Agenten arbeiten parallel an ihren Fachgebieten. 
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-001-scene-003-MEETING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-001-scene-003-MEETING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -78,7 +78,7 @@ Standup Tag 1. Alle sieben berichten Vormittags-Ergebnisse. Finn verteilt acht C
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-001-scene-004-PAUSE.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-001-scene-004-PAUSE.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -97,7 +97,7 @@ Mittagspause in der Küche. Vera, Nami und Leo kochen zusammen Nudeln und reden 
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-001-scene-005-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-001-scene-005-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -118,7 +118,7 @@ Zweiter Recherche-Block, Nachmittag. Emre liefert Fraktionsbeschreibungen (Krone
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-001-scene-006-REVIEW.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-001-scene-006-REVIEW.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -141,7 +141,7 @@ Tagesabschluss-Review Tag 1. Finn moderiert, jeder prasentiert Tagesergebnisse. 
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-002-scene-001-BRIEFING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-002-scene-001-BRIEFING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -160,7 +160,7 @@ Tag-2-Briefing, letzter Konzeptionstag. Finn verteilt CD-Feedback: Combat-Skill-
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-002-scene-002-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-002-scene-002-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -195,7 +195,7 @@ Konzeptionsphase: Alle 7 erstellen V1-Outlines ihrer Artefakte. Emre: WBB-01 Myt
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-002-scene-003-MEETING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-002-scene-003-MEETING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -226,7 +226,7 @@ Standup Tag 2. Alle sieben berichten Vormittags-Ergebnisse: Sämtliche V1-Outlin
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-002-scene-004-PAUSE.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-002-scene-004-PAUSE.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -245,7 +245,7 @@ Bilaterale Mittagspause. Nami und Emre besprechen die drei neuen CD-Entscheidung
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-002-scene-005-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-002-scene-005-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -270,7 +270,7 @@ Nachmittags-Konzeption. Darius überarbeitet GDD-02 zur V0.5: Leos QA-Input inte
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-002-scene-006-REVIEW.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-002-scene-006-REVIEW.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -299,7 +299,7 @@ Tagesabschluss-Review Tag 2, letzter Konzeptionstag. Alle Nachmittags-Ergebnisse
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-003-scene-001-BRIEFING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-003-scene-001-BRIEFING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -318,7 +318,7 @@ Erster Produktionstag. Finn moderiert das Briefing knapp und konzentriert. CD-Fe
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-003-scene-002-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-003-scene-002-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -349,7 +349,7 @@ Erster Produktionstag: V1-Dokumente werden geschrieben. Emre liefert WBB-01 Myth
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-003-scene-003-MEETING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-003-scene-003-MEETING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -368,7 +368,7 @@ Standup nach dem ersten Produktions-Vormittag. Vier V1-Dokumente fertig: WBB-01 
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-003-scene-004-PAUSE.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-003-scene-004-PAUSE.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -387,7 +387,7 @@ Mittagspause. Tobi, Finn und Darius diskutieren beim Essen das Freelancer-Budget
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-003-scene-005-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-003-scene-005-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -410,7 +410,7 @@ Nachmittags-Produktion. Nami schreibt GDD-03 Erzählkonzept V1 (Drei-Akt-Struktu
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-003-scene-006-REVIEW.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-003-scene-006-REVIEW.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -435,7 +435,7 @@ Tagesabschluss Tag 3 — erster Produktionstag. Sechs V1-Dokumente fertig: WBB-0
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-004-scene-001-BRIEFING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-004-scene-001-BRIEFING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -454,7 +454,7 @@ Tag 4 Briefing. Finn moderiert. Peer-Reviews haben heute Priorität — jeder li
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-004-scene-002-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-004-scene-002-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -477,7 +477,7 @@ Peer-Review-Session. Alle 7 Agenten lesen mindestens ein fremdes V1-Dokument und
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-004-scene-003-MEETING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-004-scene-003-MEETING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -496,7 +496,7 @@ Standup nach Peer-Review-Session. Finn kommuniziert CD-Entscheidung: Schattenfie
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-004-scene-004-PAUSE.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-004-scene-004-PAUSE.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -515,7 +515,7 @@ Mittagspause. Emre und Nami in der Lore-Ecke. Emre lobt Namis GDD-03 (null Wider
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-004-scene-005-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-004-scene-005-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -534,7 +534,7 @@ V2-Überarbeitungen aller Dokumente. Darius: GDD-02 V2 fertig (Schwellenwert-Tab
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-004-scene-006-DND.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-004-scene-006-DND.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -555,7 +555,7 @@ D&D One-Shot 'Die Scherbe von Veld'. Emre ist DM. Die Gruppe infiltriert ein ver
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-005-scene-001-BRIEFING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-005-scene-001-BRIEFING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -574,7 +574,7 @@ Freitag-Briefing. Finn moderiert. Drei Fokuspunkte: V2 finalisieren, Leo macht z
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-005-scene-002-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-005-scene-002-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -611,7 +611,7 @@ V2-Finalisierung. Darius: GDD-01 V2 (7 Design-Säulen, Konsequenz-Typen-Matrix, 
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-005-scene-003-MEETING.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-005-scene-003-MEETING.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -630,7 +630,7 @@ Freitag-Standup. Leo präsentiert Konsistenz-Befunde: GDD-03 hat Risse bis 80 st
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-005-scene-004-PAUSE.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-005-scene-004-PAUSE.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -649,7 +649,7 @@ Mittagspause. Vera und Tobi über Rho (Tiervolk-Design: Balancepunkt, Kopfbewegu
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-005-scene-005-WORK.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-005-scene-005-WORK.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
@@ -670,7 +670,7 @@ Nachmittags-Arbeit: Review-Vorbereitung und letzte Fixes. Leo: Ymir durch Emer i
 ```{=latex}
 \begin{wrapfigure}{l}{0.4\textwidth}
   \vspace{-4mm}
-  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-bk_fgrap/day-005-scene-006-REVIEW.png}
+  \includegraphics[width=0.38\textwidth]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-zmbb2cb5/day-005-scene-006-REVIEW.png}
   \vspace{-4mm}
 \end{wrapfigure}
 ```
