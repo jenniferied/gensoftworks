@@ -73,3 +73,18 @@ Ymir→Emer in GDD-02 gefixt (2 Stellen: Kap. 2.7 + 6.1). Ginnungagap bewusst ge
 
 ## Tag 5, Szene 6 (REVIEW)
 Wochen-Review. Namis Tiervolk-Händlerin ist stark — will den ersten Satz hören bei V2. Emres Emer-Anatomie braucht CD-Okay. Gute Woche. Konsistenz besser als nach Tag 3, aber GDD-03 Risse-Fix noch ausstehend.
+
+## Tag 6, Szene 1 (BRIEFING)
+Verlängerungstag. Finale QA-Runde. Darius' Suchtmechanik braucht Balancing-Feedback.
+
+## Tag 6, Szene 2 (WORK)
+Konsistenz-Check V3: Emer-Terminologie sauber (kein Ymir mehr). Hex-Codes GDD-05↔GDD-06 1:1 synchron. ABER: GDD-03 Kap. 4 Fließtext hat immer noch Risse bis 80 statt 75 — Nami hat nur die Tabelle gefixt, nicht den Fließtext. GDD-01 referenziert GDD-02 als V2, ist aber V1. Suchtmechanik-Feedback: nur Combat-Buffs suchtfähig, Tolerance bei 3 Anwendungen/24h, sinkende Dauer statt Totalverlust, Entzug = temporärer Cardio-Malus.
+
+## Tag 6, Szene 3 (MEETING)
+Suchtmechanik-Balancing im Standup vorgestellt. Drei Punkte: (1) nur Combat-Buffs suchtfähig, (2) 24h-Tolerance statt Quest-basiert, (3) sinkende Dauer statt Totalverlust. Nachmittags: GDD-02 V2 komplett reviewen.
+
+## Tag 6, Szene 5 (WORK)
+GDD-02 V2 QA-Review: Suchtmechanik grundsätzlich gut, Onboarding fehlt (NPC oder Dialogtext beim ersten Trigger). Stufengrenzen konsistent. Maret: QA-Albtraum — 4 Zustände pro Quest testen. Risiko HOCH setzen. Schatten-Ast: Stufe-0-Spieler sehen nur 3 Äste, wird auf Reddit als "fehlendes Viertel" gelesen.
+
+## Tag 6, Szene 6 (REVIEW)
+Im Review anwesend, nicht gesprochen. Finn erwähnt mein Balancing-Input für GDD-02 V3 und Onboarding-Bedarf. Maret als Kompanion auf CD-Pinnwand — QA-intensiv, hab ich im Standup schon gesagt. Emres 5 Hauten-Segmente klingen kosmologisch schlüssig, Shader-technisch sauber laut Tobi.

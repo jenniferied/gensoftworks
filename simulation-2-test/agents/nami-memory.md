@@ -76,3 +76,18 @@ Akzeptiere 75 — mechanisch kann ich den Unterschied nicht belegen, Fehler war 
 
 ## Tag 5, Szene 6 (REVIEW)
 GDD-04 gepitcht. 5 Figuren, Kompanion-Frage klar formuliert. Finn: CD-Antwort bis Mittwoch, sonst zu ihm kommen. Leo findet Tiervolk-Händlerin stark, will ersten Satz hören bei V2. Gutes Wochengefühl. Ab Mittwoch GDD-04 V2 — wenn CD-Entscheidung da ist.
+
+## Tag 6, Szene 1 (BRIEFING)
+Verlängerungstag. Emre braucht mich für WBB-03 Ethos. GDD-04 polieren, Maret als Kompanion einbauen.
+
+## Tag 6, Szene 2 (WORK)
+GDD-04 poliert: Maret als optionaler Kompanion eingetragen (Wahrnehmungsfilter, nicht Kämpfer). GDD-03 Risse-Fehler im Fließtext gefunden (Kap. 4 noch 80 statt 75 — Tabelle war korrekt, Fließtext nicht). 11 Tippfehler dokumentiert. WBB-03 Beiträge: Baustein Alltagsleben im Mittelgrund (3 Perspektiven), 3 Machtrituale (Pflichtquittung/Preisritual/Wegformel).
+
+## Tag 6, Szene 3 (MEETING)
+Risse-Fix bestätigt als erstes nachmittags. Danach 11 Tippfehler in GDD-04 bereinigen, dann Fließtext-Rhythmus prüfen.
+
+## Tag 6, Szene 5 (WORK)
+GDD-03 Risse-Fix: Kap. 4.3 korrigiert (41-80→41-75, 81-100→76-100). Fließtext und Tabelle jetzt synchron. GDD-04: 15 Einzelkorrekturen (Umlaute, Tippfehler, Grammatik). ss/ß-Inkonsistenz als bewussten Stilentscheid belassen.
+
+## Tag 6, Szene 6 (REVIEW)
+Im Review anwesend, nicht gesprochen. GDD-03 Risse-Fix bestätigt (80→75). Maret als optionaler Kompanion auf CD-Pinnwand. Emres Narbenhaut-Argument gehört — kosmologisch überzeugend, passt zur Schwelle-Narrativ.

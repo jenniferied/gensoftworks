@@ -63,7 +63,7 @@ Germanische Mythologie als Inspiration
 ## Kampf & Leveling
 
 - Real-time Action (Skyrim-Referenz), Melee-fokussiert, gewichtig
-- Schwerter, Bögen, Armbrüste, Schilde
+- Schwerter, Bögen, Armbrüste, Schilder
 - Keine Magie → Alchemie, Schattenfieber-Fähigkeiten (mit Kosten)
 - Leveling: Halbtransparente Nervensystem-Sicht (Cardio, Muskel, Lymph)
 - Monetarisierung: Klassisch Premium, keine Mikrotransaktionen
@@ -79,9 +79,9 @@ Grobe Quest-Skript (Vorschlag):
 - Intro-Sequenz / Tutorial Quest
 - Hauptquest Strang (Relikt)
 - Fraktionsquest-Outlines (3)
-- Städte-Quest (1)
-- Charakter-Quest (1)
-- Kleinere Seitenquests (3)
+- Städte-Quest (1, Kurzbeschreibung)
+- Charakter-Quest (1, Kurzbeschreibung)
+- Kleinere Seitenquests (3, Kurzbeschreibung)
 
 ## Struktur: Game Design Document
 

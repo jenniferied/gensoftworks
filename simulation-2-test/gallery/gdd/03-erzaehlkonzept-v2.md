@@ -374,13 +374,13 @@ Ausserdem: Umgebungshinweise, die nur für den infizierten Spieler sichtbar sind
 
 **Design-Regel:** Rauschen-Veränderungen müssen so subtil sein, dass ein Spieler sie beim ersten Durchgang für normale Textvariation halten könnte.
 
-#### Risse (Infektionswert ca. 41-80)
+#### Risse (Infektionswert ca. 41-75)
 
 Spürbar. Ganze Gesprächsoptionen erscheinen, die dem sauberen Spieler nicht zur Verfügung stehen. Nicht markiert. NPCs reagieren irritiert auf Antworten, die der Spieler für normal hält. Fragwürdige Questgeber treten auf.
 
 **Design-Regel:** Riss-Dialoge müssen MECHANISCH RELEVANT sein — echte Informationen, echte Zugänge, echte Entscheidungen.
 
-#### Schwelle (Infektionswert ca. 81-100)
+#### Schwelle (Infektionswert ca. 76-100)
 
 Fundamental. Der Spieler kann nicht mehr unterscheiden, welche Gespräche "echt" sind. Dialoge mit Figuren, die möglicherweise nicht existieren. Das Parallel-Narrativ der Schwelle ist eine ANDERE Geschichte — in sich so kohärente und mechanisch relevant wie die des sauberen Spielers.
 

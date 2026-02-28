@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Kronestadt -- Knochen-Festung im Gebirge",
+    "prompt": "A massive gothic fortress carved into a mountain of pale bone-like stone, towering spires with thin pointed arches reaching upward, crumbling facades revealing pulsing crimson bioluminescent veins beneath cracked plaster, one-handed statues of a mythic king flanking the main gate, warm golden light from living chandeliers spilling through narrow windows, ash-grey stone walls with faded gold ornaments, mist clinging to the lower battlements, medieval cyberpunk aesthetic with organic biotechnology instead of mechanical parts, no steampunk elements, dramatic diffuse overcast lighting, concept art, highly detailed environment painting, cinematic composition, vertical emphasis",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, mechanical parts, bright cheerful colors, elves, orcs",
+    "model": "gpt-image",
+    "category": "environments",
+    "filename": "kronestadt-knochen-festung-hero"
+  },
+  {
+    "title": "Bluthafen -- Gilden-Handelsstadt am Flussdelta",
+    "prompt": "A sprawling horizontal port city at a river delta, brutalist organic architecture with heavy concrete-like buildings that breathe, visible ribcage-like ceiling structures in massive guild halls, translucent membrane windows, amber and cyan bioluminescent veins running along building facades, open marketplaces bustling with activity, caravans and boats at wooden docks, chitin-surfaced counters and living walls, warm amber light from organic lamps, cyan biotech fluid flowing through exposed arterial channels in the streets, warm concrete tones with amber and cyan accents, river reflecting anomalous light, concept art painting, wide establishing shot, cinematic atmosphere",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, mechanical parts, clean modern city",
+    "model": "nano",
+    "category": "environments",
+    "filename": "bluthafen-gilden-handelsstadt"
+  },
+  {
+    "title": "Schweigehaus -- Orden-Kloster an der Grenzzone",
+    "prompt": "A Cistercian-style monastery of perfect white limestone geometry perched at a misty border zone, immaculate symmetrical facades with raven reliefs carved into the stone, austere archways and cloisters with soft diffuse light, slate-blue robed figures walking in procession, the building appears larger inside than outside through clever spatial illusion, behind one partially open heavy door a glimpse of pulsing amber-lit organic tissue corridors contrasting the pristine exterior, organic surveillance eyes embedded subtly in the walls, cool white and slate-blue color palette with hidden amber undertones, concept art, atmospheric, unsettling beauty, overcast northern European light",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, colorful, warm cheerful lighting",
+    "model": "nano",
+    "category": "environments",
+    "filename": "schweigehaus-orden-kloster"
+  },
+  {
+    "title": "Aldine Vor -- Kronenfuehrerin",
+    "prompt": "Portrait of a 54-year-old woman with military bearing born of exhaustion rather than discipline, wearing functional but once-fine burgundian-style clothing in deep crimson and faded gold, no jewelry except a small signet ring on her left hand, her layered houppelande garment is magnificent but fraying at the seams, beneath the outer layer hints of living biotech undergarment supporting her frame, ash-grey stone palace background with faint crimson bioluminescent veins showing through cracked walls, severe expression of someone carrying impossible weight, medieval cyberpunk aesthetic, organic gothic, painterly concept art portrait, dramatic chiaroscuro lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, young face, smiling, bright colors, fantasy armor, crown",
+    "model": "seedream",
+    "category": "charaktere",
+    "filename": "aldine-vor-krone-fuehrerin"
+  },
+  {
+    "title": "Cress -- Gildenfuehrer",
+    "prompt": "Portrait of a 41-year-old man dressed in precisely tailored leather and chitin-paneled clothing, well-groomed hands of someone who works with pen and seal not tools, amber-toned pragmatic-elegant outfit that says wealth without ostentation, organic biotech reinforced seams visible as thin living threads, chitin buttons and membrane-sealed pockets, warm concrete-toned background of a guild hall with exposed organic ribcage ceiling, expression of someone who sees every interaction as a transaction, warm amber and cyan accent lighting from bioluminescent sources, medieval cyberpunk aesthetic, concept art character portrait, three-quarter view",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, crown, royal clothing, armor, fantasy wizard",
+    "model": "seedream",
+    "category": "charaktere",
+    "filename": "cress-gilden-fuehrer"
+  },
+  {
+    "title": "Cassius -- Ordensfuehrer",
+    "prompt": "Portrait of a 67-year-old man in worn white floor-length Order robes with slate-blue cloak and brass buckles, rank insignia present but unpressed, very deliberate slow movements suggesting someone who has learned haste wastes information, face unnaturally smooth for his age suggesting hidden subdermal biotech implants, eyes that shimmer amber in certain light angles, background of a pristine white limestone corridor with one wall transitioning into pulsing organic tissue, cool white and slate-blue palette with subtle amber highlights, Cistercian austerity meets hidden biotechnology, concept art character portrait, contemplative pose, cool diffuse lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, warm colors, smiling, young, fantasy priest staff",
+    "model": "seedream",
+    "category": "charaktere",
+    "filename": "cassius-orden-fuehrer"
+  },
+  {
+    "title": "Maret -- Der Seher (Schattenfieber-Schwelle)",
+    "prompt": "Portrait of a man of indeterminate age in meticulously patched but clean clothing, former archivist now living at the threshold of shadow fever infection level 76-100, skin partially translucent revealing faint toxic green glow beneath, eyes no longer human iris but a steady luminescence, thin organic filaments extending slightly beyond his body silhouette connecting him to the air around him, sitting in a small room whose walls floor and windows are covered in handwritten notes and documents, the writing is legible and not chronological, expression calm and academic despite his terrifying physical state, violet-black and toxic green color accents breaking through neutral palette, concept art portrait, disturbing beauty, painterly style",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, zombie, horror gore, rotting flesh, monster",
+    "model": "gpt-image",
+    "category": "charaktere",
+    "filename": "maret-seher-schattenfieber-hero"
+  },
+  {
+    "title": "Rho -- Tiervolk-Haendlerin",
+    "prompt": "Portrait of a 38-year-old alien-elegant humanoid with raptor-like features, slender proportions, hair patterned like feathers at the head, large eyes with lateral field of vision and non-human pupils, subtle scale-like skin texture only visible up close, movements precise and quick, wearing faction-neutral urban clothing combining elements from different cultures: a crimson velvet cape over leather guild boots with brass Order buckles, ocher and terracotta personal accessories of bone amber and river stone, no tribal elements, sophisticated city-adapted appearance, standing at a market stall with grain and spices displayed on ocher cloth, concept art character portrait, warm natural tones against neutral market background",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, tribal, primitive, full animal face, furry, cartoon, feathered wings",
+    "model": "nano",
+    "category": "tiervolk",
+    "filename": "rho-tiervolk-haendlerin"
+  },
+  {
+    "title": "Schattenfieber-Progression -- Stufe 1 Rauschen",
+    "prompt": "A human arm and hand in close-up showing early shadow fever infection stage 1 value 1-40, subtle darkened veins visible beneath the skin, at certain light angles a faint violet shimmer on the skin surface, pupils showing a brief greenish cat-eye reflex in shadow, the changes are barely noticeable requiring careful observation, surrounding environment shows candles flickering slightly longer than normal and shadows falling in subtly wrong directions, faint violet haze near the ground, painted in muted tones with the barest hints of violet-black and toxic green breaking through natural skin tones, medical illustration meets concept art, clinical yet unsettling, diffuse lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, zombie, heavy mutation, monster, gore, bright neon",
+    "model": "seedream",
+    "category": "schattenfieber",
+    "filename": "schattenfieber-stufe1-rauschen"
+  },
+  {
+    "title": "Schattenfieber-Progression -- Stufe 2 Risse",
+    "prompt": "A human figure from waist up showing mid-stage shadow fever infection value 41-75, visible skin texture changes with protruding veins pulsing in their own rhythm independent of heartbeat, asymmetric patterns of thickening and discoloration on hands neck and face resembling growing scars, shadows around the person behave incorrectly being too long too dark and too mobile, the surrounding environment shows desaturated colors with a clear visual boundary where shadow fever begins, mutated flora with growths on trees stones that sweat and grass glowing with toxic green veins, violet-black and toxic green dominating the fever zone while normal palette exists just beyond the boundary, concept art character study, disturbing transformation, painterly atmospheric",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, zombie, cartoon, cute, bright cheerful",
+    "model": "seedream",
+    "category": "schattenfieber",
+    "filename": "schattenfieber-stufe2-risse"
+  },
+  {
+    "title": "Schattenfieber-Progression -- Stufe 3 Schwelle",
+    "prompt": "A terrifying full-body transformation at shadow fever threshold infection value 76-100, the body boundary of the affected person becomes ambiguous, organic tissue extends beyond the natural silhouette with fibers tendrils and thin bridges of organic material seeming to connect the body to the surrounding environment, skin partially translucent with faint toxic green glow beneath, eyes completely changed with no human iris remaining replaced by steady luminescence, the entire surrounding environment is totally transformed with buildings overgrown by organic material floors yielding like skin light sources pulsing in violet-black and toxic green, water flowing in wrong directions shadows moving independently gravity having glitches, the boundary between human and environment dissolving, concept art full scene, cosmic horror meets organic beauty, overwhelming atmosphere",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, zombie, cute, cartoon, clean, mechanical",
+    "model": "nano",
+    "category": "schattenfieber",
+    "filename": "schattenfieber-stufe3-schwelle"
+  },
+  {
+    "title": "Tiervolk-Karawane am Stadtrand",
+    "prompt": "A small group of alien-elegant beast-folk traders setting up temporary mobile structures at the edge of a medieval biotech city, their bodies show subtle inhuman proportions with slightly too-long fingers necks a bit too mobile shoulders at angles impossible for human skeletons, skin textures hinting at scales or finest down visible only up close, non-human pupil shapes, wearing eclectic clothing gathered from all three factions combined with their own accessories in ocher terracotta and sand tones, bone and amber jewelry with found biotech fragments repurposed as ornaments, their temporary camp uses lightweight transportable functional structures no permanent architecture, warm earth tones of the beast-folk contrasting with the neutral transition-zone palette behind them, concept art scene, atmospheric golden hour light rare and precious, cultural detail",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, tribal primitive, full animal bodies, furry, cartoon, wings, tails",
+    "model": "seedream",
+    "category": "tiervolk",
+    "filename": "tiervolk-karawane-stadtrand"
+  },
+  {
+    "title": "Die Lebende Krone -- Relikt-Studie",
+    "prompt": "A detailed study of the Living Crown relic artifact, an asymmetric organic growth that resembles a fusion of bone coral and nerve strand, never geometrically perfect, surface translucent in some areas opaque in others with faint light pulses beneath like a slow heartbeat, pale ivory to amber coloring threaded with darker veins, at contact points with a shadowed skull beneath it the material turns reddish like fresh tissue, fine hairs or fibers on its underside reaching for contact, the crown is alive and subtly moving, wurzellike structures growing down into the skull of a previous wearer visible as ghostly suggestion, background dark and neutral to emphasize the object, painted concept art study sheet with main view and detail callouts, disturbing organic beauty, museum-specimen quality lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gemstones, metal crown, jeweled tiara, clean geometric, bright colors",
+    "model": "seedream",
+    "category": "waffen",
+    "filename": "lebende-krone-relikt-studie"
+  },
+  {
+    "title": "Krone-Palastgotik -- Thronsaal-Interieur",
+    "prompt": "Interior of a Crown faction throne hall, soaring thin pointed gothic arches reaching upward in pale ash-grey stone, the vaulted ceiling slightly bowing under its own weight, walls of dressed stone crossed by fine cracks through which warm crimson bioluminescent light seeps, living chandeliers of bioluminescent organs set in wrought iron frames casting warm pulsing gold-crimson light, one-handed statues of Sigvalt flanking the throne, faded tapestries that move slightly because the fabric lives, floor paving with faintly glowing seams where biotech veins run close to the surface, deep crimson velvet drapes framing tall narrow windows, grandeur in decay not squalid but tragic, no people, concept art interior painting, vertical composition emphasizing impossible height, atmospheric volumetric lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, modern furniture, bright cheerful, clean pristine, torches candles fire",
+    "model": "seedream",
+    "category": "environments",
+    "filename": "krone-thronsaal-interieur"
+  },
+  {
+    "title": "Gilden-Markthalle -- Organischer Brutalismus",
+    "prompt": "Interior of a massive Guilds faction market hall, cathedral-scale space with exposed organic ribcage-like ceiling beams, heavy horizontal brutalist architecture made of poured organic concrete-equivalent material, walls that visibly breathe with slight expansion and contraction, floor tiles showing fine capillary networks transporting nutrients to the living walls, membrane windows that thicken during rain, chitin writing desks with pulsing organic ink containers, amber bioluminescent work lights hanging from ceiling ribs, cyan-colored biotech fluid flowing through exposed arterial channels along the walls, bustling market atmosphere with goods displayed on chitin counters, warm concrete base tone with amber and cyan accents, concept art interior, industrial monumentality meets living organism, wide-angle composition",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, pipes, modern technology, screens, clean white walls",
+    "model": "seedream",
+    "category": "environments",
+    "filename": "gilden-markthalle-interieur"
+  },
+  {
+    "title": "Orden-Geheimkorridor -- Uebergang Fassade zu Innenleben",
+    "prompt": "A corridor in an Order faction building showing the transition from public facade to hidden interior, the left side of the corridor is pristine white limestone with perfect proportions and soft diffuse light typical Cistercian austerity, gradually transitioning to the right side where the white stone gives way to warm wet pulsing organic tissue, nerve-strand bundles running along the ceiling, biological surveillance eye-organs embedded in the walls that blink, the floor changes from clean stone to something that slightly yields underfoot, amber glow emanating from the organic side contrasting the cool white of the facade side, slate-blue shadows, a heavy door half-open at the transition point, concept art interior, the most disturbing architectural moment in the game, tension between sterile beauty and organic horror",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, modern hospital, sci-fi corridor, bright neon, warm cheerful",
+    "model": "seedream",
+    "category": "environments",
+    "filename": "orden-geheimkorridor-uebergang"
+  },
+  {
+    "title": "Krone-Mode -- Burgundische Hofkleidung mit Biotech",
+    "prompt": "Fashion concept art showing Crown faction high court clothing, a noble woman wearing a breathtaking burgundian-style houppelande in deep crimson velvet and faded gold brocade so wide it fills doorways, tall hennin headdress swaying slightly with each step, the outer garment is magnificent but fraying at the hems, beneath the outer layer visible at wrists and neckline a tight-fitting living biotech undergarment of organic tissue that supports warms and sustains the wearer, the brocade threads move subtly on close inspection because the fabric is alive, McQueen sculptural silhouette meets Iris van Herpen organic structure, medieval cyberpunk high fashion, ash-grey palace background with crimson biotech glow through wall cracks, concept art fashion plate, full body front view with detail callouts, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, modern fashion, jeans, t-shirt, simple dress, bright cheerful colors, fantasy armor",
+    "model": "seedream",
+    "category": "mode",
+    "filename": "krone-mode-hofkleidung-biotech"
+  },
+  {
+    "title": "Gilden-Ruestung -- Gezuechtete Chitin-Panzerung",
+    "prompt": "Armor concept art showing Guilds faction medium armor, a complete chitin exoskeleton shell over an organic underlayer, interlocking chitinous plates like an insect exoskeleton covering torso arms and legs, the plates have a warm concrete tone with amber veins running between the joints, reinforced organic seams visible as living threads, the armor appears to have been grown around the wearer rather than put on, at the joints flexible membrane material allows movement, a Guilds merchant-soldier wearing it with pragmatic confidence, cyan biotech fluid visible through translucent sections at the wrists suggesting the armor monitors the wearers vitals, Guilds amber and cyan accent colors on warm concrete base, concept art armor study, multiple views front side detail, functional beauty",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, plate armor, chainmail, sci-fi power armor, bright shiny metal, fantasy ornate, gems jewels",
+    "model": "seedream",
+    "category": "mode",
+    "filename": "gilden-ruestung-chitin-panzerung"
+  },
+  {
+    "title": "Biotech-Waffen-Studie -- Schwert und Armbrust",
+    "prompt": "Weapon concept art study sheet showing two biotech weapons from the world of RELICS, first a longsword whose grip is made of living organic material that adapts to the wielders hand with fine veins pulsing along the crossguard and a blade of hardened chitin-bone composite with a subtle organic grain, second a crossbow whose stock is grown from cultivated chitin with a string of reinforced tendon material and organic sighting membrane instead of mechanical sights, both weapons shown from multiple angles with detail callouts of organic features, warm amber biotech accents on natural bone and chitin tones, the weapons look alive but controlled functional not horrifying, dark neutral background, concept art weapon study sheet, clean presentation, dramatic lighting on the objects",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, guns, firearms, laser weapons, sci-fi weapons, glowing magic runes, ornate fantasy",
+    "model": "seedream",
+    "category": "waffen",
+    "filename": "biotech-waffen-schwert-armbrust"
+  },
+  {
+    "title": "Die Schwellenmine -- Schattenfieber-Dungeon",
+    "prompt": "A deep mining shaft that has been dug too far revealing the boundary between reality layers, the upper portion shows a functional Guilds mining operation with amber-lit biotech work lamps and chitin-reinforced tunnel walls, as the shaft descends the geometry begins to distort and stretch downward impossibly, space expanding beyond physical logic, echoes visible as faint ripples in the air, at the deepest visible point the Stillfield bleeds through with toxic green veins crawling up the rock walls and violet-black void visible through cracks in the stone, the transition from industrial functionality to cosmic horror is gradual and inevitable, miners abandoned equipment scattered at the transition point, vertical composition emphasizing terrifying depth, concept art dungeon environment, atmospheric horror, volumetric toxic green and violet-black lighting from below",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, label, title, caption, UI, HUD, steampunk, gears, modern mining equipment, bright cheerful, cartoon, lava, fire",
+    "model": "seedream",
+    "category": "environments",
+    "filename": "schwellenmine-schattenfieber-dungeon"
+  }
+]

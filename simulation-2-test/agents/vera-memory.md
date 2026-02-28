@@ -76,3 +76,18 @@ GDD-05 V2 Pitch vorbereitet. Erste Rho-Rohskizze: Balancepunkt, Passform. Drei V
 
 ## Tag 5, Szene 6 (REVIEW)
 Wochen-Review. Concept Art ab Mittwoch — brauche Emres Topos-Entscheidung bis Dienstag. Finn bestätigt: CD antwortet bis Di. Gute Woche, GDD-05 V2 steht sauber.
+
+## Tag 6, Szene 1 (BRIEFING)
+Endlich Concept Art! Verlängerungstag, $6 Budget. Sonderrolle: gesamter Concept-Art-Block heute. Drei Blöcke priorisiert: (1) Fraktionsvisuels — Krone/Gilden/Orden Architektur, Rüstung, Mode. (2) Schattenfieber — 5 Progressionsstufen visualisieren. (3) Tiervolk/Rho — alien-elegant. Danach Topos-Environments. Seedream für Exploration, Nano für Verfeinerung, GPT-Image für Hero Shots. Emre liefert Lore-Brief bis Mittag.
+
+## Tag 6, Szene 2 (WORK)
+20 Image-Prompts erstellt, $3.16 geplant. 7 Kategorien: Fraktionsarchitektur (6 inkl. Interieurs), Schlüsselfiguren (4), Schattenfieber-Progression (3), Tiervolk (2), Mode (2), Waffen (2), Environment (1). Hero Shots: Kronestadt-Festung und Maret-Seher. 50m-Silhouette-Regel beachtet. Alle Prompts auf GDD-05 V2 Farbpaletten basiert.
+
+## Tag 6, Szene 4 (PAUSE)
+Mittagspause mit Emre und Tobi. Erste Bilder gezeigt. Emre-Feedback: Krone-Fenster müssen kleiner/defensiver (Schießscharten-Logik — "man zeigt nicht, was man hat, man schützt es"). Ändert Innenraum-Lighting komplett. Tobi plant SSS-Shader für Biotech. Notiz: Krone-Architektur darf monolithisch sein, aber Fenster anpassen.
+
+## Tag 6, Szene 5 (WORK)
+20/20 Bilder generiert, $3.16 ausgegeben. Kuratierung: 7 dokumentenreif (3 Fraktionsführer, Bluthafen, Schweigehaus, Schattenfieber 1+2), 2 bedingt brauchbar (Kronestadt, Maret), 4 müssen neu (Tiervolk zu reptilisch, Rho zu D&D, Schattenfieber S3 Comic-Stil, Lebende Krone Text im Bild). Nachgenerierung geplant: 5 Bilder für $0.53.
+
+## Tag 6, Szene 6 (REVIEW)
+Highlights präsentiert: Kronenfestung (brutalistische Grandeur, Kerzenlicht durch Schießscharten), Gildenmarkt (Vertikalität, soziale Hierarchie am Raum ablesbar), Schattenfieber-Konzept (subtile Transformation, kein Body Horror). 50-Meter-Silhouette bei allen drei einwandfrei. Vier Nachgenerierungen erklärt: Tiervolk zu tribal (Knochenelemente, Fell-Textur widerspricht Briefing "leicht alien, menschlich clean" — Prompt-Problem, strengere Negatives). Ordensarchitektur zu offensichtlich Science-Fantasy (verbindlicher Ausschluss). CD-Frage: $0.53 für 5 Nachgenerierungen.

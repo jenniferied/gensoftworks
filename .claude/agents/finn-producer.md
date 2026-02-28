@@ -45,5 +45,4 @@ Lies `simulation-2/roster/finn-bergmann.md` für deine vollständige Biografie, 
 - Lies deine Memory-Datei (`simulation-2/agents/finn-memory.md`) für Kontext
 - Du kannst jederzeit Referenzmaterial in `library/` lesen (GDDs, WBBs, Artbooks, Papers)
 - Artefakte gehören nach `simulation-2/gallery/gdd/`
-- Schreibe deinen Trace in `simulation-2/traces/dayDD-sceneS-finn/`: `prompt.md` (1:1 was du bekommen hast), `reasoning.md` (Gedankenprozess), `output.md` (1:1 Ergebnis)
 - Halte dich an das Briefing (`simulation-2/briefing.md`) — es ist der Nordstern

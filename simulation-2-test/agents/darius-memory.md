@@ -76,3 +76,15 @@ Review-Vorbereitung. GDD-01/02 V2 Kurzpitch fertig. Nami akzeptiert 75 — kein 
 
 ## Tag 5, Szene 6 (REVIEW)
 Wochen-Review. Emres Emer-Anatomie beeindruckend. Freelancer: Plan B von Finn bis Montag. Gute Woche — GDD-01/02 in V2, Team kohärent.
+
+## Tag 6, Szene 1 (BRIEFING)
+Verlängerungstag. Figur-3 gelöst: Maret als optionaler Kompanion empfohlen — fraktionslos, Schattenfieber-Spiegel, kein Pflicht-NPC. Cassius bleibt stationärer Questgeber. Heute: GDD-02 auf V2 (Waffenklassen festzurren, Suchtmechanik Alchemie designen, Namenssysteme rein). Sync mit Nami (narrativ) und Leo (Balancing).
+
+## Tag 6, Szene 2 (WORK)
+GDD-02 V2 fertig. Alle 9 Punkte umgesetzt: Drei-Zonen-Modell (Rauschen/Risse/Schwelle), 4 Nahkampf + Bogen für Vertical Slice, Suchtmechanik als Gewöhnung (keine Bestrafungsspirale), Nervensystem-Äste kosmologisch verankert, Kontrollverlust=narrativ, Schatten-Ast als Abschnitt 3.5 mit Progressionstabelle, Trainer als Fraktions-Erzähler, Maret als optionaler Kompanion (narrative Spielmechanik, kein BioWare-Begleiter).
+
+## Tag 6, Szene 5 (WORK)
+GDD-02 V3 geschrieben. Leos Balancing eingebaut: (1) Nur Combat-Buffs suchtfähig (Scope-Tabelle), (2) 24h-Fenster statt Quest-basiert, Lymph-Ast verkürzt auf 18h/12h, (3) Sinkende Dauer -20%/Anwendung, Minimum 30%. QA-Risiko Suchtmechanik von MITTEL auf NIEDRIG.
+
+## Tag 6, Szene 6 (REVIEW)
+Im Review anwesend, nicht gesprochen. Finn bestätigt GDD-02 V3 mit Leos Balancing integriert. Maret als optionaler Kompanion auf CD-Pinnwand — Leo warnt vor QA-Aufwand (4 Zustände pro Quest). Emres 5 Hauten-Segmente als CD-Frage offen.

@@ -39,6 +39,16 @@ AGENT_NAMES = {
     "finn": "Finn Bergmann",
 }
 
+AGENT_ROLES = {
+    "emre": "Lead Worldbuilder",
+    "vera": "Concept Artist",
+    "darius": "Game Director",
+    "nami": "Narrative Designer",
+    "tobi": "Technical Artist",
+    "leo": "QA Lead",
+    "finn": "Producer",
+}
+
 # Scene type labels (German)
 SCENE_LABELS = {
     "ARRIVAL": "Ankunft",
@@ -377,10 +387,299 @@ def render_all_memories(memory_ids, all_memories):
 
 
 # ---------------------------------------------------------------------------
+# Trace Rendering
+# ---------------------------------------------------------------------------
+
+import re as _re
+
+def _latex_esc(text: str) -> str:
+    """Escape LaTeX special characters in plain text."""
+    # Order matters: backslash first, then others
+    text = text.replace("\\", "\\textbackslash{}")
+    for ch in ("&", "%", "$", "#", "_", "{", "}"):
+        text = text.replace(ch, f"\\{ch}")
+    text = text.replace("~", "\\textasciitilde{}")
+    text = text.replace("^", "\\textasciicircum{}")
+    return text
+
+
+def _md_to_latex(md_text: str) -> str:
+    r"""Convert markdown content to raw LaTeX for trace embedding.
+
+    Handles: headings, bold, italic, bold-italic, bullet lists,
+    numbered lists, inline code, tables, horizontal rules.
+    """
+    lines = md_text.split("\n")
+    result = []
+    in_list = False  # track if we're inside a list
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Skip empty lines — emit a paragraph break
+        if not stripped:
+            if in_list:
+                in_list = False
+            result.append("")
+            continue
+
+        # Horizontal rules
+        if _re.match(r"^[-*_]{3,}\s*$", stripped):
+            result.append("\\vspace{1mm}\\noindent\\rule{\\columnwidth}{0.2pt}\\vspace{1mm}")
+            continue
+
+        # Table separator rows — skip
+        if _re.match(r"^\|[\s\-:]+\|", stripped):
+            continue
+
+        # Table rows — convert to plain text
+        if stripped.startswith("|") and stripped.endswith("|"):
+            cells = [c.strip() for c in stripped.strip("|").split("|")]
+            plain = " --- ".join(_latex_esc(c) for c in cells if c)
+            result.append(f"\\noindent {plain}\\\\")
+            continue
+
+        # Headings
+        m = _re.match(r"^(#{1,6})\s+(.+)$", stripped)
+        if m:
+            level = len(m.group(1))
+            title = _inline_format(m.group(2))
+            if level == 1:
+                result.append(f"\\vspace{{2mm}}\\noindent\\textbf{{{title}}}\\par\\vspace{{0.5mm}}")
+            elif level == 2:
+                result.append(f"\\vspace{{1mm}}\\noindent\\textbf{{\\textit{{{title}}}}}\\par")
+            else:
+                result.append(f"\\noindent\\textbf{{\\textit{{{title}}}}} ")
+            continue
+
+        # Bullet list items
+        bm = _re.match(r"^(\s*)[-*+]\s+(.+)$", stripped)
+        if bm:
+            in_list = True
+            item_text = _inline_format(bm.group(2))
+            result.append(f"\\noindent\\hspace{{2mm}}\\textbullet\\ {item_text}\\\\")
+            continue
+
+        # Numbered list items
+        nm = _re.match(r"^(\s*)(\d+)[.)]\s+(.+)$", stripped)
+        if nm:
+            in_list = True
+            num = nm.group(2)
+            item_text = _inline_format(nm.group(3))
+            result.append(f"\\noindent\\hspace{{2mm}}{_latex_esc(num)}.\\ {item_text}\\\\")
+            continue
+
+        # Regular paragraph text
+        result.append(f"\\noindent {_inline_format(stripped)}\\par")
+
+    return "\n".join(result)
+
+
+def _inline_format(text: str) -> str:
+    """Convert inline markdown (bold, italic, code) to LaTeX, with escaping."""
+    # Extract inline code first (protect from escaping)
+    code_parts = {}
+    counter = [0]
+
+    def save_code(m):
+        key = f"CODEPH{counter[0]}CODEPH"
+        counter[0] += 1
+        code_parts[key] = f"\\texttt{{{_latex_esc(m.group(1))}}}"
+        return key
+
+    text = _re.sub(r"`([^`]+)`", save_code, text)
+
+    # Convert bold/italic BEFORE escaping (markers are plain *, not LaTeX special)
+    # Bold-italic (***text*** or ___text___)
+    text = _re.sub(r"\*\*\*(.+?)\*\*\*", r"BLDITSTART\1BLDITEND", text)
+    # Bold (**text** or __text__)
+    text = _re.sub(r"\*\*(.+?)\*\*", r"BOLDSTART\1BOLDEND", text)
+    text = _re.sub(r"__(.+?)__", r"BOLDSTART\1BOLDEND", text)
+    # Italic (*text* or _text_)
+    text = _re.sub(r"\*(.+?)\*", r"ITALSTART\1ITALEND", text)
+    text = _re.sub(r"(?<!\w)_(.+?)_(?!\w)", r"ITALSTART\1ITALEND", text)
+
+    # Now escape LaTeX specials
+    text = _latex_esc(text)
+
+    # Replace placeholders with LaTeX commands
+    text = text.replace("BLDITSTART", "\\textbf{\\textit{").replace("BLDITEND", "}}")
+    text = text.replace("BOLDSTART", "\\textbf{").replace("BOLDEND", "}")
+    text = text.replace("ITALSTART", "\\textit{").replace("ITALEND", "}")
+
+    # Restore code parts
+    for key, val in code_parts.items():
+        text = text.replace(key, val)
+
+    return text
+
+
+SCENE_TYPE_LABELS = {
+    "briefing": "Briefing",
+    "meeting": "Meeting",
+    "review": "Review",
+    "pause": "Pause",
+    "dnd": "D\\&D",
+}
+
+
+def render_traces(traces_dir, day: int, scene_num: int) -> str:
+    """Render traces grouped by agent, each with icon+name header and own multicols."""
+    if not traces_dir or not traces_dir.exists():
+        return ""
+
+    day_str = f"day{day:02d}"
+    scene_str = f"scene{scene_num}"
+    pattern = f"{day_str}-{scene_str}-*"
+    trace_subdirs = sorted(traces_dir.glob(pattern))
+
+    # Group files by trace subdir (= per agent or per scene type)
+    agent_groups = []
+    for td_path in trace_subdirs:
+        if not td_path.is_dir():
+            continue
+        files = {}
+        for trace_file in sorted(td_path.glob("*.md")):
+            if trace_file.stem.startswith("2-"):
+                continue
+            content = trace_file.read_text().strip()
+            if content:
+                files[trace_file.stem] = _md_to_latex(content)
+        if files:
+            # Extract agent/type from dir name: dayDD-sceneS-NAME
+            parts = td_path.name.split("-")
+            source = parts[-1] if len(parts) >= 3 else td_path.name
+            agent_groups.append((source, files))
+
+    if not agent_groups:
+        return ""
+
+    lines = []
+    lines.append("```{=latex}")
+    lines.append("\\vspace{4mm}")
+    lines.append("\\begingroup\\scriptsize\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{6mm}")
+
+    for source, files in agent_groups:
+        # Agent header with icon + name (full width, outside multicols)
+        if source in AGENT_NAMES:
+            icon = f"\\agenticon{{{source}}}"
+            name = AGENT_NAMES[source]
+            role = AGENT_ROLES.get(source, "")
+            role_str = f" — \\textit{{{role}}}" if role else ""
+            lines.append(f"\\vspace{{2mm}}\\noindent {icon}\\textbf{{{name}}}{role_str}\\par\\vspace{{0.5mm}}")
+        else:
+            label = SCENE_TYPE_LABELS.get(source, source.title())
+            lines.append(f"\\vspace{{2mm}}\\noindent\\textbf{{{label}}}\\par\\vspace{{0.5mm}}")
+
+        # Two-column layout for this agent's prompt + reasoning
+        lines.append("\\begin{multicols}{2}")
+        for stem, content in files.items():
+            lines.append(content)
+            lines.append("")
+        lines.append("\\end{multicols}")
+
+    lines.append("\\endgroup")
+    lines.append("```")
+    lines.append("")
+    return "\n".join(lines)
+
+
+IMG_EXTS = {".png", ".jpg", ".jpeg", ".webp"}
+_THUMB_CACHE = {}  # original path -> thumbnail path
+_SHOWN_IMAGES = set()  # global: only show each image once across entire document
+
+
+def _make_thumbnail(img_path, thumb_dir, max_h=200):
+    """Create a small thumbnail, return its path. Cached per session."""
+    key = str(img_path)
+    if key in _THUMB_CACHE:
+        return _THUMB_CACHE[key]
+    img = Image.open(img_path)
+    if img.height > max_h:
+        ratio = max_h / img.height
+        img = img.resize((int(img.width * ratio), max_h), Image.LANCZOS)
+    out = Path(thumb_dir) / img_path.name
+    img.save(out, optimize=True)
+    _THUMB_CACHE[key] = out
+    return out
+
+
+def _find_image(sim_dir, art_path):
+    """Find an image file: try exact path first, then search by filename."""
+    clean = art_path.split(" ")[0].rstrip(")")
+    # Exact path
+    img = sim_dir / clean
+    if img.exists():
+        return img
+    # Search by filename in gallery/concepts/
+    fname = Path(clean).name
+    concepts_dir = sim_dir / "gallery" / "concepts"
+    if concepts_dir.exists():
+        matches = list(concepts_dir.rglob(fname))
+        if matches:
+            return matches[0]
+    return None
+
+
+def render_artifacts(artifacts, sim_dir, thumb_dir=None):
+    """Render artifact list, embedding images inline (small)."""
+    lines = []
+    images = []
+    for art in artifacts:
+        if isinstance(art, dict):
+            art_path = art.get("path", art.get("name", str(art)))
+            art_name = art.get("name", art_path)
+            art_desc = art.get("description", "")
+        else:
+            art_path = str(art)
+            art_name = Path(art_path).name
+            art_desc = ""
+
+        # Check if it's an image artifact or directory of images
+        clean_path = art_path.split(" ")[0].rstrip(")")
+        suffix = Path(clean_path).suffix.lower()
+        if suffix in IMG_EXTS and sim_dir:
+            img = _find_image(sim_dir, art_path)
+            if img and str(img) not in _SHOWN_IMAGES:
+                _SHOWN_IMAGES.add(str(img))
+                images.append(img)
+        elif sim_dir and not suffix:
+            # Could be a directory reference (e.g. "gallery/concepts/day06/ (20 images)")
+            dir_path = sim_dir / clean_path.rstrip("/")
+            if dir_path.is_dir():
+                for ext in IMG_EXTS:
+                    for img in sorted(dir_path.rglob(f"*{ext}")):
+                        if str(img) not in _SHOWN_IMAGES:
+                            _SHOWN_IMAGES.add(str(img))
+                            images.append(img)
+        # Text label
+        if art_desc:
+            lines.append(f"*Artefakt: `{art_name}` — {esc(art_desc)}*")
+        else:
+            lines.append(f"*Artefakt: `{art_name}`*")
+        lines.append("")
+
+    # Embed collected images in a grid (4 per row, small thumbnails, centered)
+    if images and thumb_dir:
+        lines.append("```{=latex}")
+        lines.append("{\\centering")
+        for i, img in enumerate(images):
+            thumb = _make_thumbnail(img, thumb_dir)
+            lines.append(f"\\includegraphics[height=2cm]{{{thumb}}}\\hspace{{1mm}}")
+            if (i + 1) % 4 == 0:
+                lines.append("\\\\[1mm]")
+        lines.append("\\par}\\vspace{2mm}")
+        lines.append("```")
+        lines.append("")
+
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
 # Scene Rendering: v1 (exhaustive)
 # ---------------------------------------------------------------------------
 
-def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, crop_dir=None):
+def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None, sim_dir=None, thumb_dir=None):
     """Render a v1 scene with ALL available data."""
     lines = []
     scene_num = scene.get("scene", 0)
@@ -396,9 +695,10 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
     icons = format_participant_icons(participant_list)
 
     lines.append("::: {.scenemeta}")
-    lines.append(f"{time} — {location}\\")
-    lines.append(f"{icons} {participants}")
+    lines.append(f"{time} — {location}")
     lines.append(":::")
+    lines.append("")
+    lines.append(f"```{{=latex}}\n\\noindent{{\\scriptsize {icons} {participants}}}\\par\\vspace{{1mm}}\n```")
     lines.append("")
 
     # Screenshot embedding
@@ -409,13 +709,7 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
             img_path = matches[0]
             if crop_dir:
                 img_path = crop_screenshot(img_path, crop_dir)
-            lines.append("```{=latex}")
-            lines.append("\\begin{wrapfigure}{l}{0.4\\textwidth}")
-            lines.append("  \\vspace{-4mm}")
-            lines.append(f"  \\includegraphics[width=0.38\\textwidth]{{{img_path}}}")
-            lines.append("  \\vspace{-4mm}")
-            lines.append("\\end{wrapfigure}")
-            lines.append("```")
+            lines.append(f"![Szene {scene_num}]({img_path}){{ width=95% }}")
             lines.append("")
 
     # Trigger
@@ -436,9 +730,12 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
         lines.append(":::")
         lines.append("")
 
-    # Summary
+    # Summary (small, like trace text)
     summary = esc(scene.get("summary", ""))
-    lines.append(summary)
+    summary = _latex_esc(summary)
+    lines.append("```{=latex}")
+    lines.append(f"{{\\scriptsize {summary}\\par}}")
+    lines.append("```")
     lines.append("")
 
     # Narrative transcript (full screenplay dialogue)
@@ -468,18 +765,10 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
     # Artifacts
     artifacts = scene.get("artifacts", [])
     if artifacts:
-        for art in artifacts:
-            if isinstance(art, dict):
-                art_name = art.get("name", art.get("path", str(art)))
-                art_desc = art.get("description", "")
-                if art_desc:
-                    lines.append(f"*Artefakt: `{art_name}` — {esc(art_desc)}*")
-                else:
-                    lines.append(f"*Artefakt: `{art_name}`*")
-            else:
-                filename = Path(art).name
-                lines.append(f"*Artefakt: `{filename}`*")
-            lines.append("")
+        lines.append(render_artifacts(artifacts, sim_dir, thumb_dir))
+
+    # Traces
+    lines.append(render_traces(traces_dir, day, scene_num))
 
     # Key moment
     key_moment = scene.get("key_moment")
@@ -494,7 +783,7 @@ def render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir=None, cro
 # Scene Rendering: v2 (exhaustive)
 # ---------------------------------------------------------------------------
 
-def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None):
+def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None, sim_dir=None, thumb_dir=None):
     """Render a v2 scene with ALL available data."""
     lines = []
     scene_num = scene.get("scene", 0)
@@ -509,12 +798,13 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, tr
     icons = format_participant_icons(participant_list)
 
     lines.append("::: {.scenemeta}")
-    lines.append(f"{time} — {location}\\")
-    lines.append(f"{icons} {participants}")
+    lines.append(f"{time} — {location}")
     lines.append(":::")
     lines.append("")
+    lines.append(f"```{{=latex}}\n\\noindent{{\\scriptsize {icons} {participants}}}\\par\\vspace{{1mm}}\n```")
+    lines.append("")
 
-    # Screenshot embedding (wrapfigure: image left, text wraps right)
+    # Screenshot embedding
     if screenshot_dir:
         pattern = f"day-{day:03d}-scene-{scene_num:03d}-*.png"
         matches = list(screenshot_dir.glob(pattern))
@@ -522,13 +812,7 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, tr
             img_path = matches[0]
             if crop_dir:
                 img_path = crop_screenshot(img_path, crop_dir)
-            lines.append("```{=latex}")
-            lines.append("\\begin{wrapfigure}{l}{0.4\\textwidth}")
-            lines.append("  \\vspace{-4mm}")
-            lines.append(f"  \\includegraphics[width=0.38\\textwidth]{{{img_path}}}")
-            lines.append("  \\vspace{-4mm}")
-            lines.append("\\end{wrapfigure}")
-            lines.append("```")
+            lines.append(f"![Szene {scene_num}]({img_path}){{ width=95% }}")
             lines.append("")
 
     # Trigger
@@ -559,9 +843,12 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, tr
         lines.append(":::")
         lines.append("")
 
-    # Summary
+    # Summary (small, like trace text)
     summary = esc(scene.get("summary", ""))
-    lines.append(summary)
+    summary = _latex_esc(summary)
+    lines.append("```{=latex}")
+    lines.append(f"{{\\scriptsize {summary}\\par}}")
+    lines.append("```")
     lines.append("")
 
     # Narrative transcript
@@ -667,43 +954,10 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, tr
     # Artifacts
     artifacts = scene.get("artifacts", [])
     if artifacts:
-        for art in artifacts:
-            if isinstance(art, dict):
-                art_name = art.get("name", art.get("path", str(art)))
-                art_desc = art.get("description", "")
-                if art_desc:
-                    lines.append(f"*Artefakt: `{art_name}` — {esc(art_desc)}*")
-                else:
-                    lines.append(f"*Artefakt: `{art_name}`*")
-            else:
-                filename = Path(art).name
-                lines.append(f"*Artefakt: `{filename}`*")
-            lines.append("")
+        lines.append(render_artifacts(artifacts, sim_dir, thumb_dir))
 
-    # Full trace contents (very small font)
-    trace_dir_names = scene.get("trace_dirs", [])
-    if trace_dir_names and traces_dir and traces_dir.exists():
-        for td_name in trace_dir_names:
-            td_path = traces_dir / td_name
-            if not td_path.is_dir():
-                continue
-            for trace_file in sorted(td_path.glob("*.md")):
-                label = trace_file.stem  # e.g. "0-prompt", "1-reasoning", "2-output"
-                content = trace_file.read_text().strip()
-                if not content:
-                    continue
-                lines.append(f"**{td_name}/{label}**")
-                lines.append("")
-                lines.append("```{=latex}")
-                lines.append("\\begingroup\\scriptsize")
-                lines.append("```")
-                lines.append("")
-                lines.append(content)
-                lines.append("")
-                lines.append("```{=latex}")
-                lines.append("\\endgroup")
-                lines.append("```")
-                lines.append("")
+    # Traces
+    lines.append(render_traces(traces_dir, day, scene_num))
 
     # Key moment
     key_moment = scene.get("key_moment")
@@ -718,19 +972,19 @@ def render_scene_v2(scene, cd_posts, day, screenshot_dir=None, crop_dir=None, tr
 # Routing + Day/Document Rendering
 # ---------------------------------------------------------------------------
 
-def render_scene(scene, all_memories, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None):
+def render_scene(scene, all_memories, cd_posts, day, screenshot_dir=None, crop_dir=None, traces_dir=None, sim_dir=None, thumb_dir=None):
     """Route to v1 or v2 renderer based on schema."""
     schema = detect_schema(scene)
     if schema == "v2":
-        return render_scene_v2(scene, cd_posts, day, screenshot_dir, crop_dir, traces_dir)
-    return render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir, crop_dir)
+        return render_scene_v2(scene, cd_posts, day, screenshot_dir, crop_dir, traces_dir, sim_dir, thumb_dir)
+    return render_scene_v1(scene, all_memories, cd_posts, day, screenshot_dir, crop_dir, traces_dir, sim_dir, thumb_dir)
 
 
 DAY_NAMES = {1: "Montag", 2: "Dienstag", 3: "Mittwoch", 4: "Donnerstag", 5: "Freitag"}
 
 
 def render_day(day, scenes, all_memories, cd_posts, world_path, bulletin_path,
-               screenshot_dir=None, crop_dir=None, traces_dir=None):
+               screenshot_dir=None, crop_dir=None, traces_dir=None, sim_dir=None, thumb_dir=None):
     """Render a full day as Markdown."""
     day_of_week = DAY_NAMES.get(day, "")
     if world_path.exists() and not day_of_week:
@@ -766,8 +1020,7 @@ def render_day(day, scenes, all_memories, cd_posts, world_path, bulletin_path,
         lines.append("")
 
     for scene in scenes:
-        lines.append(render_scene(scene, all_memories, cd_posts, day, screenshot_dir, crop_dir, traces_dir))
-        lines.append("---")
+        lines.append(render_scene(scene, all_memories, cd_posts, day, screenshot_dir, crop_dir, traces_dir, sim_dir, thumb_dir))
         lines.append("")
 
     return "\n".join(lines)
@@ -775,7 +1028,7 @@ def render_day(day, scenes, all_memories, cd_posts, world_path, bulletin_path,
 
 def build_markdown(logbook_dir, memories_dir, world_path, bulletin_path,
                    days_filter=None, screenshot_dir=None, crop_dir=None,
-                   traces_dir=None):
+                   traces_dir=None, sim_dir=None, thumb_dir=None):
     """Build the full Markdown document."""
     all_memories = load_all_memories(memories_dir)
     cd_posts = load_bulletin(bulletin_path)
@@ -813,7 +1066,7 @@ def build_markdown(logbook_dir, memories_dir, world_path, bulletin_path,
         if scenes:
             lines.append(render_day(day, scenes, all_memories, cd_posts,
                                     world_path, bulletin_path, screenshot_dir,
-                                    crop_dir, traces_dir))
+                                    crop_dir, traces_dir, sim_dir, thumb_dir))
 
     return "\n".join(lines)
 
@@ -934,7 +1187,7 @@ def build_pdf(md_path, output_path, header_path, tex_only=False):
             "-o", output,
             f"--include-in-header={patched_header}",
             f"--lua-filter={filter_path}",
-            "--pdf-engine=xelatex",
+            "--pdf-engine=lualatex",
             "--toc",
             "--toc-depth=2",
             "-V", "mainfont=OpenSans",
@@ -1017,11 +1270,15 @@ def main() -> int:
         print(f"  Cropping screenshots to {crop_dir}")
 
     traces_dir = sim_root / "traces" if args.sim_dir else PROJECT_ROOT / "traces"
+    thumb_tmpdir = tempfile.TemporaryDirectory(prefix="logbook-thumbs-")
+    thumb_dir = Path(thumb_tmpdir.name)
     md_content = build_markdown(logbook_dir, memories_dir, world_path, bulletin_path,
                                 days,
                                 screenshot_dir if screenshot_dir.exists() else None,
                                 crop_dir,
-                                traces_dir if traces_dir.exists() else None)
+                                traces_dir if traces_dir.exists() else None,
+                                sim_dir=sim_root,
+                                thumb_dir=thumb_dir)
 
     export_dir.mkdir(parents=True, exist_ok=True)
 

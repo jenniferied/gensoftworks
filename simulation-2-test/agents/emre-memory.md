@@ -76,3 +76,18 @@ Review-Vorbereitung. WBB-01/02 Pitch fertig. Topos-Metapher zugänglich formulie
 
 ## Tag 5, Szene 6 (REVIEW)
 Emer-Anatomie gepitcht. Team nimmt es gut auf. CD-Frage: Strukturprinzip freigeben bis Dienstag, weil Vera Mittwoch mit Concept Art anfängt. Hauten-Segment-Slot mit Tobi Dienstag. Ginnungagap nächste Woche. Gute Woche.
+
+## Tag 6, Szene 1 (BRIEFING)
+Verlängerungstag. Hauptbaustelle: WBB-03 Ethos komplett schreiben (V1 heute Vormittag). Fraktionskultur, Tiervolk-Gesellschaft, Koexistenz der drei Machtzentren. Nami als Partnerin für soziale Dynamiken. Hauten-Slot mit Tobi auf Nachmittag vorgezogen (3 oder 5 Segmente klären). Vera bekommt Lore-Brief bis Mittag: Kronestadt, Bluthafen, Schweigehaus als Concept-Art-Grundlage.
+
+## Tag 6, Szene 2 (WORK)
+WBB-03 Ethos V1 komplett geschrieben. 8 Kapitel: Gesellschaftsordnung (Dreieck ohne Mitte), Krone (Pflicht als Käfig, Sigvalt-Tag), Gilden (Preis aller Dinge, 6 Großinnungen), Orden (Wissen als Waffe, konzentrische Ränge, Halvard-Nacht), Tiervolk (Gäste ohne Zuhause, Wegsprache, Gastrecht), Koexistenz (3 Konfliktlinien, Neutralzonen), Alltagsleben (Parallele Rechtsordnungen, 5 Feste inkl. Flechtfest), Wolf-Matrix. Neue Widerspruchs-Logs: #008 Tiervolk-Kosmologie, #009 Flechtfest 4. Version, #010 Innungsnamen, #011 Archonten-Rang.
+
+## Tag 6, Szene 4 (PAUSE)
+Mittagspause mit Vera und Tobi. Erste Concept-Art gesehen — Kronestadt-Silhouette liest sich auf Distanz, Gildenarchitektur als "kapitalistische Wucherung auf feudaler Substanz". Lore-Feedback: Krone-Fenster müssen kleiner/defensiver sein. "Die Krone baut für die Ewigkeit, weil sie weiß, dass sie keine mehr hat."
+
+## Tag 6, Szene 5 (WORK)
+Hauten-Segment-Entscheidung: 5 Segmente (nicht 3). Oberhaut (Hohlicht↔Mittelgrund, Bluthafen), Unterhaut (Mittelgrund↔Stillfeld, Schwellenmine), Narbenhaut (reparierte Risse, Die Naht), Markhaut (Emer-Skelett, Emers Wirbel), Flechtgewebe (Knotenpunkte, Flechtfeld). 5×3-Lookup für Shader. Widerspruchs-Log #012: Narbenhaut eigenständig oder Unterkategorie?
+
+## Tag 6, Szene 6 (REVIEW)
+WBB-03 Ethos V1 präsentiert: Aus drei Briefing-Stichpunkten drei Kulturen mit kosmologisch begründetem Selbstverständnis. Krone=Pflicht aus Sigvalts Opfer, Gilden=Flechtung als Vertrag, Orden=Halvards Auge als Gründungsgeste. Tiervolk: Wegsprache, Gastrecht, eigene Kosmologie die absichtlich mit Fraktionsversionen kollidiert ohne zu widersprechen ("Wir waren immer schon da"). Narbenhaut-Argument im Review: bidirektional instabil, Orden-geflickt, nicht Große Flechtung. 5 Segmente = 5 Shader-Modi = 5 kosmologische Begründungen. Widerspruchs-Log #012 bleibt offen bis CD entscheidet.

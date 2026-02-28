@@ -70,3 +70,18 @@ Review-Agenda finalisiert. Nami akzeptiert 75 — ein CD-Punkt weniger. Verbleib
 
 ## Tag 5, Szene 6 (REVIEW)
 Wochen-Review moderiert. Emre pitcht Emer-Anatomie — Team beeindruckt. Nami pitcht 5 Figuren, Kompanion-Frage klar formuliert. Leo lobt Tiervolk-Händlerin. Zwei CD-Fragen auf Pinnwand: Figur-3 (bis Mi), Emer-Anatomie (bis Di). Freelancer: letzte Mail Montag, Plan B bereit (2 Namen an Darius). Hauten-Slot Di gebucht. Team geht mit gutem Gefühl ins Wochenende. Woche 1 geschafft.
+
+## Tag 6, Szene 1 (BRIEFING)
+Verlängerungstag-Briefing. CD will funktionierende Konzeptkunst-Pipeline und sauberes Logging. Aufgabenverteilung: Vera macht gesamten Concept-Art-Block ($6 Budget), alle anderen straffen Dokumente. Emre übernimmt WBB-03 Ethos mit Nami-Support. Darius empfiehlt Maret als optionalen Kompanion — fraktionslos, Schattenfieber-Spiegel, kein Pflicht-NPC. GDD-02 auf V2 heute. Hauten-Slot mit Tobi auf Nachmittag vorgezogen. Freelancer-Eskalation übernehme ich selbst.
+
+## Tag 6, Szene 2 (WORK)
+Hochproduktiver Vormittag. Vera: 20 Prompts, $3.16 geplant. Emre: WBB-03 V1 komplett. Darius: GDD-02 V2 fertig. Nami: GDD-04 poliert + WBB-03 Beiträge. Tobi: 2 Korrekturen in GDD-06. Leo: GDD-03 Risse-Fehler noch im Fließtext. Freelancer über LinkedIn eskaliert, Deadline Mittwoch. Hauten-Slot nachmittags bestätigt.
+
+## Tag 6, Szene 3 (MEETING)
+Standup moderiert. Nachmittagsaufträge verteilt: Nami fixt GDD-03 Risse, Tobi fixt GDD-06 + Hauten-Slot mit Emre, Leo prüft GDD-02 V2 Suchtmechanik (3 Balancing-Punkte), Vera sortiert Bilder. Leos Feedback zur Suchtmechanik konkret und umsetzbar.
+
+## Tag 6, Szene 5 (WORK)
+Nachmittag produktiv. 20 Bilder generiert ($3.16). Darius: GDD-02 V3. Tobi: GDD-06 V3. Nami: GDD-03+04 Fixes. Leo: QA-Review GDD-02. Emre: 5 Hauten-Segmente entschieden. Vera: Kuratierung (7 gut, 4 Nachgenerierung). Widerspruchs-Logs #008-#011 geprüft, #011 vor V2 klären. Freelancer: keine Antwort.
+
+## Tag 6, Szene 6 (REVIEW)
+Tagesabschluss moderiert. GDD 6/6 und WBB 3/3 alle mindestens V1, drei Kapitel heute auf V3. 20 Concept-Art-Bilder ($3.16). Vera präsentiert Highlights (Kronenfestung, Gildenmarkt, Schattenfieber) und 4 Nachgenerierungen. Emre pitcht 5 Hauten-Segmente, argumentiert für eigenständige Narbenhaut (bidirektional instabil, Orden-geflickt). Drei CD-Fragen auf Pinnwand: (1) Maret als optionaler Kompanion — Freigabe? (2) 5 Hauten-Segmente mit eigenständiger Narbenhaut? (3) $0.53 für 5 Nachgenerierungen? Freelancer: immer noch keine Antwort, Deadline Mittwoch.

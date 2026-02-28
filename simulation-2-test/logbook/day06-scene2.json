@@ -1,0 +1,25 @@
+{
+  "scene": 2,
+  "type": "WORK",
+  "time": "10:00",
+  "location": "alle-stationen",
+  "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+  "summary": "Hochproduktiver Vormittag. Vera erstellt 20 Concept-Art-Prompts ($3.16 Budget, Hero Shots für Kronestadt und Maret). Emre schreibt WBB-03 Ethos V1 komplett (8 Kapitel, 4 neue Widerspruchs-Log-Einträge). Darius liefert GDD-02 V2 mit allen 9 Aufgabenpunkten (Drei-Zonen-Modell, Suchtmechanik, Maret als Kompanion). Nami poliert GDD-04 (Maret-Kompanion eingetragen), findet GDD-03 Risse-Fehler im Fließtext, liefert Alltagsleben-Bausteine und 3 Machtrituale für WBB-03. Tobi findet Hohlicht/Stillfeld-Vertauschung und Säulen-Referenz-Fehler in GDD-06. Leo bestätigt Emer-Terminologie und Hex-Codes sauber, GDD-03 Risse-Fehler im Fließtext immer noch offen. Finn eskaliert Freelancer über LinkedIn, Deadline Mittwoch.",
+  "dialogue": [],
+  "artifacts": [
+    "gallery/wbb/03-ethos-v1.md",
+    "gallery/gdd/02-kernmechaniken-v2.md",
+    "traces/day06-scene2-vera/3-image-prompts.json"
+  ],
+  "cd_feedback": null,
+  "trace_dirs": ["day06-scene2-vera", "day06-scene2-emre", "day06-scene2-darius", "day06-scene2-nami", "day06-scene2-tobi", "day06-scene2-leo", "day06-scene2-finn"],
+  "metrics": {
+    "vera": {"total_tokens": 71344, "duration_ms": 203692},
+    "emre": {"total_tokens": 75213, "duration_ms": 404976},
+    "darius": {"total_tokens": 65796, "duration_ms": 464992},
+    "nami": {"total_tokens": 46784, "duration_ms": 177095},
+    "tobi": {"total_tokens": 70952, "duration_ms": 129774},
+    "leo": {"total_tokens": 88098, "duration_ms": 162755},
+    "finn": {"total_tokens": 29995, "duration_ms": 68021}
+  }
+}

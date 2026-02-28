@@ -12,7 +12,7 @@
 Jede Figur hat drei Pflichtbestandteile:
 
 - **Stimme** — ein unverwechselbarer Sprachrhythmus, der sofort erkennbar ist, wenn man ihn laut liest. Kein Steckbrief, keine Zusammenfassung. Beispieldialoge immer inklusive.
-- **Funktion** — was tut diese Figur im narrativen System? Blocker, Ermögliger, Spiegel, Zerstoerer?
+- **Funktion** — was tut diese Figur im narrativen System? Blocker, Ermöglicher, Spiegel, Zerstörer?
 - **Widerspruch** — etwas, das der Spieler erst spät versteht. Nicht: "der Schurke ist eigentlich gut." Sondern: "die Person, die ich mochte, hat Dinge getan, die ich nicht verzeihen kann — und sie hat einen Grund, den ich verstehe."
 
 Archetypische Figuren — der edle Krieger, der weisen Ratgeber, die geheimnisvolle Seherin — sind kein Ziel. Sie sind das, was man produziert, wenn man aufhört zu denken.
@@ -42,7 +42,7 @@ Ihr Stil: Parataxe. Kurze Sätze. Passiv wo möglich. Das Subjekt verschwindet h
 
 **Erstbegegnung (Spieler hat sich durch eine Krone-Aufgabe bewiesen):**
 
-> "Euer Dienst ist registriert. Er entspricht den Anforderungen, die ich gestellt habe. Das ist eine Feststellung, keine Lob."
+> "Euer Dienst ist registriert. Er entspricht den Anforderungen, die ich gestellt habe. Das ist eine Feststellung, kein Lob."
 > *(Pause)*
 > "Es gibt weitere Anforderungen. Ob Ihr ihnen entsprechen würdet, ist unklar. Die Vergangenheit bürgt nicht für die Zukunft — das ist der Fehler derer, die in Dynastien denken. Ich denke in Funktion."
 
@@ -50,7 +50,7 @@ Ihr Stil: Parataxe. Kurze Sätze. Passiv wo möglich. Das Subjekt verschwindet h
 
 > "Ihr habt es gesagt. Das verändert nichts. Ich sage Euch, warum: Weil die Ordnung nicht bricht, wenn man ihr die Wahrheit zeigt. Sie bricht, wenn die Menschen aufhören, so zu tun, als würde sie halten."
 > *(Lange Pause)*
-> "Ich tü das jeden Tag. Ihr könnt urteilen, wenn Ihr gefunden habt, was Ihr tun würdet, wenn die Alternative Chaos ist. Nicht theoretisch. Tatsächlich."
+> "Ich tu das jeden Tag. Ihr könnt urteilen, wenn Ihr gefunden habt, was Ihr tun würdet, wenn die Alternative Chaos ist. Nicht theoretisch. Tatsächlich."
 
 **Allein, nachts, wenn der Spieler sie beobachten kann (keine Reaktion auf den Spieler):**
 
@@ -58,7 +58,7 @@ Ihr Stil: Parataxe. Kurze Sätze. Passiv wo möglich. Das Subjekt verschwindet h
 
 ### Funktion
 
-**Blocker und Ermögliger gleichzeitig.** Aldine Vor schliesst Türen und öffnet sie — aber immer mit Konsequenz. Sie gibt dem Spieler Zugang zu Krone-Ressourcen, zu Archiven, zu Informationen, die sonst unzugänglich wären. Aber jeder Zugang bindet. Der Spieler merkt irgendwann, dass er nicht für die Krone arbeitet — sondern dass die Krone ihn arbeiten lässt, weil er etwas hat, das sie braucht, und weil sie ihn beobachtet, ob er weiss was er hat.
+**Blocker und Ermöglicher gleichzeitig.** Aldine Vor schliesst Türen und öffnet sie — aber immer mit Konsequenz. Sie gibt dem Spieler Zugang zu Krone-Ressourcen, zu Archiven, zu Informationen, die sonst unzugänglich wären. Aber jeder Zugang bindet. Der Spieler merkt irgendwann, dass er nicht für die Krone arbeitet — sondern dass die Krone ihn arbeiten lässt, weil er etwas hat, das sie braucht, und weil sie ihn beobachtet, ob er weiss was er hat.
 
 **Narrativer Spiegel.** Aldine Vor ist, was der Spieler werden könnte, wenn er sich für die Ordnung entscheidet und lange genug dabei bleibt: jemand, der an das System glaubt, weil die Alternative schlimmer ist, und der gelernt hat, dass "schlimmer" kein Argument ist, sondern ein Zustand.
 
@@ -66,7 +66,7 @@ Ihr Stil: Parataxe. Kurze Sätze. Passiv wo möglich. Das Subjekt verschwindet h
 
 Der Spieler mag Aldine Vor möglicherweise. Oder er respektiert sie zumindest. Sie ist nicht zynisch — sie glaubt wirklich, was sie tut. Sie glaubt an die Ordnung, weil sie gesehen hat, was ohne sie passiert.
 
-Und dann entdeckt der Spieler: Aldine Vor weiss seit Jahren, dass der Krone-Biotech-Einsatz die Faulung beschleunigt. Nicht aus Bosheit. Aus einer Kalkulation: Wenn sie es offentlich macht, bricht die Ordnung. Wenn sie schweigt, hält die Ordnung — vielleicht lange genug, damit jemand anderes eine Lösung findet.
+Und dann entdeckt der Spieler: Aldine Vor weiss seit Jahren, dass der Krone-Biotech-Einsatz die Faulung beschleunigt. Nicht aus Bosheit. Aus einer Kalkulation: Wenn sie es öffentlich macht, bricht die Ordnung. Wenn sie schweigt, hält die Ordnung — vielleicht lange genug, damit jemand anderes eine Lösung findet.
 
 Sie hat sich entschieden zu schweigen. Sie lebt jeden Tag mit dieser Entscheidung. Und sie würde sie wieder treffen.
 
@@ -77,7 +77,7 @@ Sie hat sich entschieden zu schweigen. Sie lebt jeden Tag mit dieser Entscheidun
 ### Basisdaten
 
 - **Fraktion:** Die Gilden
-- **Funktion im Spiel:** Quest-Geber (Gildenquest "Der Preis aller Dinge"), Informationsbroker, narrativer Ermögliger mit verdeckter Agenda
+- **Funktion im Spiel:** Quest-Geber (Gildenquest "Der Preis aller Dinge"), Informationsbroker, narrativer Ermöglicher mit verdeckter Agenda
 - **Alter:** 41
 - **Äusseres:** Gut gekleidet, nicht prunkvoll. Der Unterschied ist bewusst — Prunk signalisiert, dass man versucht, Macht zu zeigen. Cress zeigt keine. Er trägt sie. Sein Äusseres sagt: Ich bin erfolgreicher als du ohne anstrengend darauf hinzuweisen. Hände gepflegt — er arbeitet mit Stift und Siegel, nicht mit Werkzeug, und das sieht man.
 
@@ -87,7 +87,7 @@ Cress kommt aus einer Handwerker-Familie im Nordquartier einer Gildenstadt — s
 
 Cress lernte früh: Das System ist kein Feind und kein Freund. Es ist eine Logik. Wer die Logik kennt, gewinnt. Wer gegen sie kämpft, verliert nicht das Spiel — er spielt das falsche Spiel.
 
-Er hat Leute aus der Armut gezogen. Er hat Städte gebaut. Er hat Handelsrouten eröfffnet, die Regionen verbanden, die vorher isoliert waren. Er hat auch Leute sterben lassen, wenn es billiger war. Er sieht keinen Widerspruch.
+Er hat Leute aus der Armut gezogen. Er hat Städte gebaut. Er hat Handelsrouten eröffnet, die Regionen verbanden, die vorher isoliert waren. Er hat auch Leute sterben lassen, wenn es billiger war. Er sieht keinen Widerspruch.
 
 ### Stimme
 
@@ -146,11 +146,11 @@ Cassius war Novize, dann Schüler, dann Archivar, dann Rat, dann — nach einer 
 
 Er versteht die Welt so gut wie irgendwer in der Spielwelt. Er weiss, dass die Hauten dünner werden. Er weiss, dass das Schattenfieber und die Biotechnologie dasselbe Material verwenden. Er weiss, dass die Lebende Krone nicht eine Lösung ist, sondern eine Komplikation. Er weiss, dass der Orden — wenn er handeln würde, offen handeln würde — vielleicht etwas verbessern könnte.
 
-Und er hält das Wissen trotzdem zurück. Weil Wissen, das unkontrolliert zirkuliert, Panik erzeugt. Und Panik ist schlimmer als Unwissen. Cassius hat Panik gesehen — in einer Grenzregion, vor dreissig Jahren, als jemand die Wahrheit über das Schattenfieber veröffentlichte. Sieben Stadte brannten. Er war dabei.
+Und er hält das Wissen trotzdem zurück. Weil Wissen, das unkontrolliert zirkuliert, Panik erzeugt. Und Panik ist schlimmer als Unwissen. Cassius hat Panik gesehen — in einer Grenzregion, vor dreissig Jahren, als jemand die Wahrheit über das Schattenfieber veröffentlichte. Sieben Städte brannten. Er war dabei.
 
 ### Stimme
 
-Der Orden spricht in Fragen und Schweigen — und Cassius ist der Meister dieses Registers. Er stellt Fragen, auf die er die Antworten bereits kennt. Er schlägt die Antwort in Fragen ein, weil er weiss, dass eine Aussage abgelehnt werden kann, eine Frage aber antwortet werden muss — und die Antwort gehört dann dem Fragenden.
+Der Orden spricht in Fragen und Schweigen — und Cassius ist der Meister dieses Registers. Er stellt Fragen, auf die er die Antworten bereits kennt. Er schlägt die Antwort in Fragen ein, weil er weiss, dass eine Aussage abgelehnt werden kann, eine Frage aber beantwortet werden muss — und die Antwort gehört dann dem Fragenden.
 
 Sein Stil: Präzise. Nominalisierungen. Unpersönliche Konstruktionen. Lange Pausen, in denen er dem Spieler Zeit gibt, sich selbst zu verraten. Wenn er direkt ist, ist es ein Zeichen, dass er entschieden hat, dem Spieler zu vertrauen. Das passiert selten.
 
@@ -272,7 +272,7 @@ Das ist die Frage, die der Spieler spät im Spiel stellt — und die Maret nicht
 ### Basisdaten
 
 - **Fraktion:** Keine — Tiervolk, nomadisch, Händler
-- **Funktion im Spiel:** Städtequest "Mittelgrund" (zentrale Figur), Seitenquest 2 "Gastrecht" (Quest-Geber), Informationsquelle für Spieler, die das Tiervolk-Netz zugang erarbeitet haben
+- **Funktion im Spiel:** Städtequest "Mittelgrund" (zentrale Figur), Seitenquest 2 "Gastrecht" (Quest-Geber), Informationsquelle für Spieler, die den Tiervolk-Netzzugang erarbeitet haben
 - **Alter:** 38
 - **Tierart-Referenz:** Raptor-artig — schlanke Proportionen, Federnzeichnung am Kopf (keine Federn, aber Haare in Federmuster), grosse Augen mit seitlichem Sehfeld. Bewegungen schnell, sehr präzise. Kein tribal-Element in Kleidung oder Verhalten — Stadtwear, gut ausgesucht, fraktionsneutral.
 - **Äusseres:** Zieht keine Aufmerksamkeit auf sich, ohne unsichtbar zu sein. Das ist eine Fähigkeit, kein Zufall. Er trägt nichts, das ihn eindeutig einer Fraktion zuordnet. Er trägt auch nichts, das ihn eindeutig als Tiervolk markiert — ausser dem, was er nicht verstecken kann. Er hat nicht gelernt, sich zu verstecken. Er hat gelernt, sich nicht anzubieten.
@@ -287,7 +287,7 @@ Er ist kein Dieb. Aber er kennt Diebe, arbeitet manchmal mit ihnen, und verurtei
 
 ### Stimme
 
-Das Tiervolk spricht in der Wegsprache — oral, rhythmisch, Weg-Metaphern, Gastrecht-Formeln. Rho spricht das auch — aber er ist lange genug in der Stadt, dass er die Stadtsyntax drüber gelegt hat. Das Ergebnis: Die Wegsprache klingt unter der Stadt-Sprache. Wenn er ruhig ist, hört man die Stad. Wenn er angespannt ist, hört man den Weg.
+Das Tiervolk spricht in der Wegsprache — oral, rhythmisch, Weg-Metaphern, Gastrecht-Formeln. Rho spricht das auch — aber er ist lange genug in der Stadt, dass er die Stadtsyntax drüber gelegt hat. Das Ergebnis: Die Wegsprache klingt unter der Stadt-Sprache. Wenn er ruhig ist, hört man die Stadt. Wenn er angespannt ist, hört man den Weg.
 
 Sein Stil: Abgewägt, beobachtend. Er stellt Fragen, die er nicht als Fragen formuliert. Er gibt Informationen, die er nicht als Informationen bezeichnet. Er hat gelernt, dass Direktheit riskant ist, und dass das, was er weiss, teurer ist, wenn er es nicht sofort anbietet.
 
@@ -295,7 +295,7 @@ Sein Stil: Abgewägt, beobachtend. Er stellt Fragen, die er nicht als Fragen for
 
 > "Du hast mich schon zweimal angeschaut. Das dritte Mal bin ich sicher."
 > *(Pause — er arrangiert etwas auf dem Stand, ohne aufzusehen)*
-> "Ich verkaufe Getreidewaren aus dem Nordquartier und Gewürze aus dem Weg-Netz. Beides ist gut und beides hat einen fairen Preis. Wenn du das nicht suchst, ist es trotzdem gut zu wissen, was ich offiziell tü."
+> "Ich verkaufe Getreidewaren aus dem Nordquartier und Gewürze aus dem Weg-Netz. Beides ist gut und beides hat einen fairen Preis. Wenn du das nicht suchst, ist es trotzdem gut zu wissen, was ich offiziell tu."
 
 **Wenn der Spieler nach dem Tiervolk-Netz fragt:**
 
@@ -313,7 +313,7 @@ Sein Stil: Abgewägt, beobachtend. Er stellt Fragen, die er nicht als Fragen for
 
 > "Ich zeige dir etwas, das ich wenigen zeige."
 > *(Er zeigt dem Spieler eine handgezeichnete Karte des Tiervolk-Wegnetzes — nicht die Stadt, sondern die Verbindungen zwischen den Gästerechtspunkten, den Schlafsplätzen, den Schutzzonen)*
-> "Das ist die Stadt, die die Krone nicht sieht. Das sind die Knochen unter den Steinen. Wir haben sie so gelegt, als eure Vorvätern die Steine draufgebaut haben. Gastrecht braucht keine Mauern. Es braucht nur Erinnerung."
+> "Das ist die Stadt, die die Krone nicht sieht. Das sind die Knochen unter den Steinen. Wir haben sie so gelegt, als eure Vorväter die Steine draufgebaut haben. Gastrecht braucht keine Mauern. Es braucht nur Erinnerung."
 
 ### Funktion
 
@@ -327,7 +327,7 @@ Sein Stil: Abgewägt, beobachtend. Er stellt Fragen, die er nicht als Fragen for
 
 Rho präsentiert sich als pragmatisch, neutral, ausserhalb der Fraktions-Logik. Das stimmt teilweise.
 
-Es stimmt nicht, was er mit bestimmten Informationen gemacht hat. Er hat Krone-Schwachstellen an Gilden-Kontakte verkauft. Nicht aus Bösartigkeit — aus Notwendigkeit, aus einer Situation, in der das Tiervolk-Netz bedroht war und er Schutz brauchte. Er hat einen Krone-Offizier kompromittiert, um eine Karawane zu schützen. Der Offizier verlor seine Stelle. Seine Familie wurde mitbeststraft.
+Es stimmt nicht, was er mit bestimmten Informationen gemacht hat. Er hat Krone-Schwachstellen an Gilden-Kontakte verkauft. Nicht aus Bösartigkeit — aus Notwendigkeit, aus einer Situation, in der das Tiervolk-Netz bedroht war und er Schutz brauchte. Er hat einen Krone-Offizier kompromittiert, um eine Karawane zu schützen. Der Offizier verlor seine Stelle. Seine Familie wurde mitbestraft.
 
 Rho weiss das. Er hat es nicht vergessen. Er hat entschieden, dass es nötig war — und er würde es wieder tun.
 

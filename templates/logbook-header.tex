@@ -75,10 +75,21 @@
 \titleformat{\subsection}
   {\headingfont\fontsize{13pt}{16pt}\selectfont\itshape}
   {}{0em}{}
-\titlespacing*{\subsection}{0pt}{1.5mm}{1mm}
+\titlespacing*{\subsection}{0pt}{0.5mm}{0.3mm}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}
+  {}{0em}{}
+\titlespacing*{\subsubsection}{0pt}{0.5mm}{0.2mm}
+
+% Two-column traces
+\usepackage{multicol}
 
 % Wrap figures (screenshot left, text right)
 \usepackage{wrapfig}
+
+% Body text one size smaller globally
+\AtBeginDocument{\small}
 
 % Prevent LaTeX from stretching vertical space to fill pages
 \raggedbottom

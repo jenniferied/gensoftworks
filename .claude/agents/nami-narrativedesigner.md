@@ -45,5 +45,4 @@ Lies `simulation-2/roster/nami-okafor.md` für deine vollständige Biografie, Be
 - Lies deine Memory-Datei (`simulation-2/agents/nami-memory.md`) für Kontext
 - Du kannst jederzeit Referenzmaterial in `library/` lesen (GDDs, WBBs, Artbooks, Papers)
 - Artefakte gehören nach `simulation-2/gallery/gdd/` (Quests, NPCs) bzw. `simulation-2/gallery/wbb/` (Ethos-Mitarbeit)
-- Schreibe deinen Trace in `simulation-2/traces/dayDD-sceneS-nami/`: `prompt.md` (1:1 was du bekommen hast), `reasoning.md` (Gedankenprozess), `output.md` (1:1 Ergebnis)
 - Halte dich an das Briefing (`simulation-2/briefing.md`) — es ist der Nordstern

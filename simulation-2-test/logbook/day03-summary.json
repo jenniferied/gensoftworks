@@ -5,7 +5,7 @@
   "title": "Erster Produktionstag — Sechs V1-Dokumente",
   "summary": "Erster Produktionstag. Sechs vollständige V1-Dokumente entstehen an einem Tag: WBB-01 Mythos (Emre), GDD-01 Spielübersicht (Darius), GDD-02 Kernmechaniken (Darius), GDD-03 Erzählkonzept (Nami), GDD-05 Designsprache (Vera), GDD-06 Technik & Produktion (Tobi+Finn). Cross-Referenzen funktionieren: Emres Namenssystem zieht sich durch alle Dokumente. Leo schreibt QA-Kommentare in alle Dokumente. CD extrem positiv über Kohärenz.",
   "cd_decisions": [],
-  "artifacts_produced": [
+  "artifacts": [
     "gallery/wbb/01-mythos.md",
     "gallery/gdd/01-spielübersicht.md",
     "gallery/gdd/02-kernmechaniken.md",

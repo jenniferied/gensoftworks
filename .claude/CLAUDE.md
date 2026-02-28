@@ -18,51 +18,67 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 | 5 | 14:00 | WORK | alle 7 | Parallel: Mo/Di Recherche+Konzeption, Mi-Fr Produktion |
 | 6 | 16:00 | REVIEW | all 7 | Present results, open questions for CD |
 
-**Thursday**: Scene 6 = D&D (Emre is DM). Location: Bibliothek.
+**Thursday**: Scene 6 = D&D (Emre is DM, + 2 players). Location: Bibliothek.
+
+## Scene Execution
+
+**WORK scenes**: Spawn all 7 agents parallel. Each writes own trace in `dayDD-sceneS-name/`.
+
+**Conversation scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND)**: Sequential subagent turns — each speaker is a separate Sonnet Task receiving all prior dialogue as context.
+1. GM decides participants + turn order (who opens, who reacts)
+2. Per turn: spawn agent (`model: "sonnet"`) with scene context + own memory + **all accumulated dialogue so far**
+3. Agent writes own trace in `dayDD-sceneS-tT-name/` (T = turn number, name = agent)
+4. GM collects output → appends to accumulated dialogue → spawns next agent
+5. Repeat until conversation reaches natural end
+
+- BRIEFING/MEETING/REVIEW: Finn opens, 3-5 agents react (not all 7 every turn)
+- PAUSE: 2-3 agents, 5-8 turns total
+- DND: 3 agents (Emre as DM + 2 players), 6-10 turns
 
 ## GM Checklist (per scene)
 
 1. Read `world.json` → determine day + scene number
 2. Read memory files for participating agents
 3. Read `schemas/scene.json` as reference for logbook structure
-4. Spawn agents with `model: "sonnet"`, scene type, participants, context from memory
-5. Write traces → `traces/dayDD-sceneS-name/` with exactly `0-prompt.md`, `1-reasoning.md`, `2-output.md` (no extra files)
-6. After scene: append memory to **each participant**. Every scene type — including PAUSE. Cover both **work** and **interpersonal**.
-7. Write logbook → `logbook/dayDD-sceneS.json` — dialogue **1:1 from trace `2-output.md`**, NICHT kürzen. Siehe Schema Rules.
-8. Update `world.json`
-9. **After scene 6**: Write `logbook/dayDD-summary.json` per `schemas/day-summary.json`
-10. **After scene 6**: Run `python scripts/validate-sim.py --sim-dir simulation-2` — fix any errors before continuing.
-11. **Log metrics**: capture `total_tokens` + `duration_ms` per agent → logbook `metrics` field.
+4. Write GM trace `0-prompt.md` → document inputs (world state, memories, CD feedback, scene context)
+5. Execute scene: parallel (WORK) or sequential turn loop (conversation)
+6. Write GM trace `1-reasoning.md` → decisions made, `2-output.md` → results
+7. After scene: append memory to **each participant**. Every scene type — including PAUSE. Cover both **work** and **interpersonal**.
+8. Write logbook → `logbook/dayDD-sceneS.json` — dialogue **1:1 from agent output**, NICHT kürzen. Siehe Schema Rules.
+9. Update `world.json`
+10. **After scene 6**: Write `logbook/dayDD-summary.json` per `schemas/day-summary.json`
+11. **After scene 6**: Run `python scripts/validate-sim.py --sim-dir simulation-2` — fix any errors before continuing.
+12. **Log metrics**: capture `total_tokens` + `duration_ms` per agent → logbook `metrics` field.
 
 ## Traces (mandatory per agent)
 
-`traces/dayDD-sceneS-name/` — numbered files: `0-prompt.md`, `1-reasoning.md`, `2-output.md`. Meetings: `dayDD-sceneS-type/`. All raw, 1:1, no summarization.
+`traces/dayDD-sceneS-name/` — numbered files: `0-prompt.md`, `1-reasoning.md`, `2-output.md`. No extra files.
+- **WORK**: one dir per agent: `dayDD-sceneS-name/`
+- **Conversation turns**: one dir per turn: `dayDD-sceneS-tT-name/` (e.g. `day06-scene4-t1-vera/`)
+- **GM trace**: `dayDD-sceneS-type/` (e.g. `day06-scene4-pause/`)
+
+Transcripts auto-recorded as JSONL. Extract: `python3 scripts/extract-transcripts.py --sim-dir simulation-2` (`--local` to regenerate).
 
 ## Schema Rules
 
 **Dialogue — conversation scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND):**
-- Copy full dialogue from trace `2-output.md` → `dialogue` array. `**Name**: text` → `{"who": "name", "says": "text"}`.
-- Do NOT shorten, summarize, or edit. 1:1 from trace.
+- Full dialogue → `dialogue` array. `**Name**: text` → `{"who": "name", "says": "text"}`.
+- Do NOT shorten, summarize, or edit. 1:1 from agent output.
 - `summary` is the only place for GM condensation.
 
 **Dialogue — WORK scenes:** `dialogue: []`. Output lives in traces.
 
-**Traces — exactly 3 files per dir:** `0-prompt.md`, `1-reasoning.md`, `2-output.md`. No extra files.
-
-**`trace_dirs`:** Conversation → `["dayDD-sceneS-type"]`. WORK → `["dayDD-sceneS-agent1", ...]`.
+**`trace_dirs` — conversation:** `["dayDD-sceneS-type", "dayDD-sceneS-t1-name", "dayDD-sceneS-t2-name", ...]`
+**`trace_dirs` — WORK:** `["dayDD-sceneS-agent1", "dayDD-sceneS-agent2", ...]`
 
 **Day summaries:** `weekday` always German proper-cased. Field name: `artifacts` (not `artifacts_produced`).
-
-## Conversation Scenes (BRIEFING, MEETING, REVIEW, PAUSE, DND)
-
-Sequential turn-taking. NOT everyone speaks — Finn opens, 2-3 agents respond. Each agent spawned separately.
 
 ## Concept Art (Vera)
 
 - Vera generates images via fal.ai in WORK scenes
-- Daily budget: 5 images (Seedream $0.04 explore, Nano $0.15 refine)
+- Daily budget: $2.00 (Seedream $0.04, Nano Banana Pro $0.15, Nano Banana 2 $0.08, GPT Image 1.5 $0.20)
 - Other agents can request images → Vera writes prompt + generates
-- All images: NEVER with text (negative_prompt enforced)
+- All images: NEVER with text. Seedream: `negative_prompt` setzen. Nano/GPT: Text im Prompt gar nicht erwähnen (auch nicht negativ)
 - Output: `gallery/concepts/{KK-kategorie}/{name}.png`
 - Approved images → `pinwall/favorites/`
 

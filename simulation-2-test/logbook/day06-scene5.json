@@ -1,0 +1,25 @@
+{
+  "scene": 5,
+  "type": "WORK",
+  "time": "14:00",
+  "location": "alle-stationen",
+  "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+  "summary": "Produktiver Nachmittag. 20/20 Concept-Art-Bilder generiert ($3.16), Vera kuratiert: 7 dokumentenreif, 4 brauchen Nachgenerierung. Emre entscheidet 5 Hauten-Segmente (Oberhaut, Unterhaut, Narbenhaut, Markhaut, Flechtgewebe). Nami fixt GDD-03 Risse (80→75) und 15 Tippfehler in GDD-04. Darius schreibt GDD-02 V3 mit Leos Balancing-Feedback (Suchtmechanik). Tobi schreibt GDD-06 V3 (Hohlicht/Stillfeld korrigiert, Säulen-Referenzen aktualisiert). Leo reviewed GDD-02 V2: Suchtmechanik gut, Maret-Kompanion QA-intensiv. Finn: Freelancer keine Antwort, Widerspruchs-Logs geprüft.",
+  "dialogue": [],
+  "artifacts": [
+    "gallery/gdd/02-kernmechaniken-v3.md",
+    "gallery/gdd/06-technik-produktion-v3.md",
+    "gallery/concepts/day06/ (20 images)"
+  ],
+  "cd_feedback": null,
+  "trace_dirs": ["day06-scene5-vera", "day06-scene5-emre", "day06-scene5-darius", "day06-scene5-nami", "day06-scene5-tobi", "day06-scene5-leo", "day06-scene5-finn"],
+  "metrics": {
+    "vera": {"total_tokens": 34109, "duration_ms": 176602},
+    "emre": {"total_tokens": 38754, "duration_ms": 87597},
+    "nami": {"total_tokens": 133690, "duration_ms": 1096125},
+    "leo": {"total_tokens": 49915, "duration_ms": 120768},
+    "tobi": {"total_tokens": 78631, "duration_ms": 613518},
+    "darius": {"total_tokens": 69542, "duration_ms": 575107},
+    "finn": {"total_tokens": 43901, "duration_ms": 70422}
+  }
+}

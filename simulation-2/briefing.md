@@ -54,6 +54,86 @@ Germanische Mythologie als Inspiration
 - Tiervolk: Händler und Diebe, NICHT Handwerker
 - Übernatürliches: Nur das Schattenfieber — eine Seuche, die Opfer verändert
 
+## Medieval Cyberpunk — High-Tech, Low-Life
+
+Die Cyberpunk-Parallele ist kein Flavor, sondern Strukturprinzip: Technologischer Fortschritt erzeugt Ungleichheit. Die „Technologie" ist hier nicht digital, sondern **material** — wer die besten Legierungen, Färbetechniken, Glasrezepturen kontrolliert, hat Macht.
+
+**Cyberpunk-Übersetzung ins Mittelalter:**
+- **Megacorporations** → Gildenmonopole (Schmiede, Weber, Glasmacher kontrollieren Märkte)
+- **Implantate/Augmentierung** → Biotech, Alchemie, Schattenfieber-Mutationen
+- **Neon-Ästhetik** → Biolumineszenz, Alchemie-Leuchtstoffe, phosphoreszierende Mineralien
+- **Überwachung** → Ordensnetze, Siegel-Systeme, Zunftzeichen als Identifikation
+- **Datenkontrolle** → Bildungsmonopol des Ordens, geheime Rezepturen, verschlüsselte Baupläne
+- **Vertikale Stadt** → Oben: Macht und Reinheit. Unten: Slums, Kanäle, Schatten.
+- **KEINE Hexagone** in der visuellen Sprache
+
+### Materialsprache — nach sozialer Schicht
+
+Hochentwickelte Materialverarbeitung. Die Welt wirkt NICHT primitiv — Jahrhunderte raffinierter Craftsmanship. **Materialien definieren sozialen Status.**
+
+**Oberschicht (Krone, Gildenmeister, Ordensführung):**
+- Metalle: Titan-Legierungen, Edelstahl, Roségold, Weißgold, Elektrum, Damaszener-Stahl
+- Mineralien: geschliffener Obsidian, Lapislazuli-Intarsien, Bergkristall-Linsen
+- Textilien: schwere Brokatseide, bestickter Samt, Goldfaden-Stickerei
+- Glas: facettierte Linsen, optische Instrumente, Alchemie-Phiolen aus Kristallglas
+- Farbpalette: All-Black, All-White, Monochrom — wenn Farbe, dann EIN einzelner fast-neon Akzent (leuchtendes Indigo, Blutrot, Giftgrün). Geschmackvoll, reduziert, High Fashion.
+
+**Mittelschicht (Handwerker, Kaufleute, niederer Adel):**
+- Metalle: gehärteter Tiegelstahl, Silber (häufig), Bronzeguss, vergoldete Beschläge
+- Mineralien: polierter Malachit, Bernstein-Einlagen, Perlmutt
+- Textilien: gefärbtes Leinen (Indigo, Krapp, Safran), gewalkter Loden, Pelzbesatz
+- Leder: vegetabil gegerbtes Sattlerleder, gepunztes Zierwerk
+- Glas: Buntglasfenster, einfache Phiolen
+- Farbpalette: Erdtöne, gedeckte Naturfarben, dezente Akzente
+
+**Unterschicht (Tagelöhner, Slumbewohner, Gesetzlose):**
+- Metalle: Eisen, Zinn, gestohlene Reste
+- Materialien: Knochen-Schnitzerei, Horn-Applikationen, aufgearbeitetes Leder
+- Textilien: ungefärbtes Leinen, geflickte Stoffe, Lappen
+- Farbpalette: Grau, Braun, schmutzig — aber gelegentlich ein gestohlenes Stück in leuchtender Farbe
+
+### Rüstung & Kleidung — Dekomposition für Image Prompts
+
+- Silhouette: tailored, körperbetont, geschichtete Lagen (Gambeson → Kettenhemd → Plattensegmente)
+- Oberfläche: gebürstetes Metall, geätzte Ornamente, Nieten-Muster, Patina an Kanten
+- Akzente: Pelzbesatz, Goldfaden-Stickerei, emaillierte Wappen, Edelstein-Fassungen
+- Funktionalität: sichtbare Schnallen, Lederriemen, Taschenwerk, Werkzeughalter
+- High Fashion: Comme des Garçons trifft mittelalterliche Rüstung. Avant-garde Silhouetten, asymmetrische Schnitte.
+
+### Architektur — Vielfalt und Fortschritt
+
+Weit fortgeschrittene Baukunst für ihre Epoche — keine primitiven Hütten. **Die Stadt ist vertikal geschichtet wie eine Cyberpunk-Metropole.**
+
+**Oberschicht / Gilden / Orden:**
+- Brutalismus-Elemente: massive Blöcke (Stampflehm/Kalkstein), rohe geometrische Formen, sichtbare Tragstruktur
+- Bauhaus-Inspiration: klare Linien, Funktionalität als Ästhetik, modulare Fassaden, integrierte Werkstätten
+- Utopische Akzente: Hängende Gärten, Lichtschächte, offene Arkaden, vertikale Stadtplanung
+- Materialien: polierter Stein, Glas, Metall-Intarsien — die Architektur IST das Statussymbol
+
+**Mittelschicht / Historisch:**
+- Fachwerkhäuser (süddeutsch/fränkisch), Staffelgiebel, Erker
+- Ältere romanische Elemente: Rundbögen, dicke Mauern, Krypta-Gewölbe
+- Handwerkerviertel: Werkstatt im Erdgeschoss, Wohnung darüber, Zunftzeichen an Fassaden
+
+**Unterschicht / Slums (Low-Life):**
+- Versteckt an Stadträndern, in Kanälen, unter Brücken, in aufgegebenen Kellern
+- Improvisiert: Holzreste, gestohlene Ziegel, Stoffbahnen als Wände
+- Nicht sichtbar vom Zentrum — die Stadt verbirgt ihre Armut
+- Hier lebt die Gegenkultur: illegale Alchemisten, Schwarzmarkt-Schmiede, Schattenfieber-Opfer
+
+### Handwerksgilden & Gewerke
+
+Fortgeschrittene, organisierte Zünfte mit eigener Technologieentwicklung — die Megacorps dieser Welt:
+
+- **Schmiede-Gilde**: Tiegelstahl-Verfahren, Härtungstechniken, eigene Legierungen. Meisterstücke als Statusbeweis.
+- **Weber-Gilde**: Komplexe Webstühle, Färbetechniken (Pflanzen, Mineralien, Insekten), Musterweberei. Seide als Luxusgut.
+- **Gerber-Gilde**: Vegetabile Gerbung, mehrlagige Panzerung, Zierprägung. Kontrolle der Abwasserkanäle.
+- **Steinmetze**: Kathedralenbau, Gewölbetechnik, Skulptur. Geheime Baupläne.
+- **Glasmacher**: Buntglas, Linsen, Phiolen für Alchemie. Monopol auf optische Instrumente.
+- **Goldschmiede**: Emaille, Filigranarbeit, Siegel. Bankiers der Gilden.
+- **Kerzenzieher & Seifensieder**: Kontrolle über Talg und Wachs. Beleuchtungsmonopol.
+- **Pergamenter & Buchbinder**: Schreibmaterial-Herstellung. Enge Verbindung zum Orden.
+
 ## Drei Fraktionen (keine ist "gut" oder "böse")
 
 - **Die Krone** — Feudalmonarchie im Verfall. Militär, Tradition, leere Kassen. Cyberpunk: alte Regierung, ausgehöhlt von Konzernen.
@@ -63,7 +143,7 @@ Germanische Mythologie als Inspiration
 ## Kampf & Leveling
 
 - Real-time Action (Skyrim-Referenz), Melee-fokussiert, gewichtig
-- Schwerter, Bögen, Armbrüste, Schilde
+- Schwerter, Bögen, Armbrüste, Schilder
 - Keine Magie → Alchemie, Schattenfieber-Fähigkeiten (mit Kosten)
 - Leveling: Halbtransparente Nervensystem-Sicht (Cardio, Muskel, Lymph)
 - Monetarisierung: Klassisch Premium, keine Mikrotransaktionen
@@ -79,9 +159,9 @@ Grobe Quest-Skript (Vorschlag):
 - Intro-Sequenz / Tutorial Quest
 - Hauptquest Strang (Relikt)
 - Fraktionsquest-Outlines (3)
-- Städte-Quest (1)
-- Charakter-Quest (1)
-- Kleinere Seitenquests (3)
+- Städte-Quest (1, Kurzbeschreibung)
+- Charakter-Quest (1, Kurzbeschreibung)
+- Kleinere Seitenquests (3, Kurzbeschreibung)
 
 ## Struktur: Game Design Document
 

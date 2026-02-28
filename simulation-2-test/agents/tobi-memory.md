@@ -79,3 +79,18 @@ GDD-06 V2 Pitch vorbereitet. Hauten-Segmentanzahl (3 oder 5) noch offen — Emre
 
 ## Tag 5, Szene 6 (REVIEW)
 Wochen-Review. Hauten-Segment-Slot Dienstag mit Emre, 30 Min, Finn bucht. GDD-06 V2 steht. Gute Woche.
+
+## Tag 6, Szene 1 (BRIEFING)
+Verlängerungstag. GDD-06 polieren. Hauten-Slot mit Emre nachmittags.
+
+## Tag 6, Szene 2 (WORK)
+GDD-06 V2 gegen GDD-01/02/05/WBB-01 geprüft. Zwei Korrekturen: (1) Hohlicht/Stillfeld in Kap. 5.1 vertauscht — beschreibender Text falsch, Shader-Parameter korrekt. (2) Säulen-Referenzen P4/P6 sind alte Nummerierung, passt nicht zu GDD-01 V2. Synchronisationspunkt: GDD-02 Stufengrenzen müssen in Kap. 5.4 Interpolationsformeln übernommen werden sobald Darius V2 liefert.
+
+## Tag 6, Szene 4 (PAUSE)
+Mittagspause mit Vera und Emre. Erste Concept-Art gesehen. SSS-Shader für Biotech-Oberflächen wird aufwändig. Emre will kleinere Krone-Fenster → mehr künstliche Innenbeleuchtung (Kerzen + Biolumineszenz). Lighting-Pass für Krone-Interieurs geplant. Hauten-Konzepte noch nicht besprochen — nachmittags mit Emre.
+
+## Tag 6, Szene 5 (WORK)
+GDD-06 V3 geschrieben. Drei Korrekturen: (1) Hohlicht/Stillfeld in Kap. 5.1 korrigiert (Fließtext, PP-Tabelle, Stufe-4, Interpolationsformeln). (2) Säulen P4/P6→Säule 1/7/2 aktualisiert. (3) Hauten-Segmentanzahl: Emre entscheidet 5 — muss noch in GDD-06 eingearbeitet werden. 5×3-Lookup ist technisch sauberer als 3 mit Sonderfällen.
+
+## Tag 6, Szene 6 (REVIEW)
+Im Review anwesend, nicht gesprochen. Emres Narbenhaut-Argument überzeugt: bidirektional instabil, Orden-geflickt → kein Sonderfall in Shader nötig wenn 5 eigenständige Segmente. 5×3-Lookup bestätigt als sauberste Lösung. CD-Entscheidung ausstehend.
