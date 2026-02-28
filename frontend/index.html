@@ -476,10 +476,21 @@
         cursor: pointer;
       }
       #gallery-lightbox.open { display: flex; }
+      #gallery-lightbox { flex-direction: column; gap: 12px; }
       #gallery-lightbox img {
-        max-width: 92vw; max-height: 92vh; object-fit: contain;
+        max-width: 92vw; max-height: 80vh; object-fit: contain;
         border-radius: 4px; box-shadow: 0 4px 24px rgba(0,0,0,0.6);
       }
+      #gallery-lightbox-info {
+        max-width: 92vw; color: #ccc; font-size: 12px;
+        text-align: center; padding: 0 20px;
+      }
+      #gallery-lightbox-model {
+        color: #7a9ab8; font-weight: bold; font-size: 13px;
+        text-transform: uppercase; letter-spacing: 1px;
+      }
+      #gallery-lightbox-prompt { color: #aaa; margin: 4px 0 0; font-style: italic; }
+      #gallery-lightbox-neg { color: #866; margin: 2px 0 0; font-size: 11px; }
     </style>
   </head>
   <body>
@@ -521,7 +532,14 @@
     </div>
 
     <!-- Gallery lightbox -->
-    <div id="gallery-lightbox"><img id="gallery-lightbox-img" src="" alt=""></div>
+    <div id="gallery-lightbox">
+      <img id="gallery-lightbox-img" src="" alt="">
+      <div id="gallery-lightbox-info">
+        <span id="gallery-lightbox-model"></span>
+        <p id="gallery-lightbox-prompt"></p>
+        <p id="gallery-lightbox-neg"></p>
+      </div>
+    </div>
 
     <!-- Concept art gallery board -->
     <div id="gallery-overlay">

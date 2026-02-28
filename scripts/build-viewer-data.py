@@ -19,6 +19,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parent.parent
 
 # --- Agent desk positions (tile coords, matching StudioScene.js) ---
@@ -244,11 +246,25 @@ def load_concept_art(gallery_dir, days):
             # Category from subdirectory (e.g. concepts/KK-kategorie/name.png)
             parts = f.relative_to(concepts_dir).parts
             category = parts[0] if len(parts) > 1 else "allgemein"
-            images[str(rel)] = {
+            entry = {
                 "filename": f.name,
                 "category": category,
                 "path": f"gallery/{rel}",
             }
+            # Read embedded metadata from PNG
+            try:
+                img_obj = Image.open(f)
+                meta = img_obj.info
+                if meta.get("model"):
+                    entry["model"] = meta["model"]
+                if meta.get("prompt"):
+                    entry["prompt"] = meta["prompt"]
+                if meta.get("negative_prompt"):
+                    entry["negative_prompt"] = meta["negative_prompt"]
+                img_obj.close()
+            except Exception:
+                pass
+            images[str(rel)] = entry
 
     # Build timeline from scene artifacts
     art_img_re = re.compile(r"gallery/concepts/")

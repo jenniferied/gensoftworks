@@ -659,13 +659,26 @@ def render_artifacts(artifacts, sim_dir, thumb_dir=None):
             lines.append(f"*Artefakt: `{art_name}`*")
         lines.append("")
 
-    # Embed collected images in a grid (4 per row, small thumbnails, centered)
+    # Embed collected images in a grid (4 per row, small thumbnails with model caption)
     if images and thumb_dir:
         lines.append("```{=latex}")
         lines.append("{\\centering")
         for i, img in enumerate(images):
             thumb = _make_thumbnail(img, thumb_dir)
-            lines.append(f"\\includegraphics[height=2cm]{{{thumb}}}\\hspace{{1mm}}")
+            # Read model from PNG metadata
+            model_label = ""
+            try:
+                meta = Image.open(img).info
+                if meta.get("model"):
+                    model_label = meta["model"]
+            except Exception:
+                pass
+            lines.append(
+                f"\\parbox{{2.2cm}}"
+                f"{{\\centering\\includegraphics[height=2cm]{{{thumb}}}"
+                f"\\\\[-1pt]{{\\tiny {esc(model_label)}}}}}"
+            )
+            lines.append("\\hspace{1mm}")
             if (i + 1) % 4 == 0:
                 lines.append("\\\\[1mm]")
         lines.append("\\par}\\vspace{2mm}")

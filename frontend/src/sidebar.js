@@ -695,11 +695,17 @@ function renderGalleryBoard() {
   }
   grid.innerHTML = html;
 
-  // Click → lightbox
+  // Click → lightbox with metadata
   grid.querySelectorAll('.gallery-card').forEach(card => {
     card.addEventListener('click', () => {
+      const path = card.dataset.path;
+      const meta = simData.concept_art?.find(a => a.path === path) || {};
       const lb = document.getElementById('gallery-lightbox');
-      document.getElementById('gallery-lightbox-img').src = `${BASE}${card.dataset.path}`;
+      document.getElementById('gallery-lightbox-img').src = `${BASE}${path}`;
+      document.getElementById('gallery-lightbox-model').textContent = meta.model || '';
+      document.getElementById('gallery-lightbox-prompt').textContent = meta.prompt || '';
+      const neg = document.getElementById('gallery-lightbox-neg');
+      neg.textContent = meta.negative_prompt ? `Negative: ${meta.negative_prompt}` : '';
       lb.classList.add('open');
     });
   });
