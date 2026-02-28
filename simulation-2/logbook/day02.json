@@ -99,7 +99,7 @@
       "type": "REVIEW",
       "time": "15:00",
       "location": "Küche",
-      "participants": ["finn", "darius", "emre", "nami"],
+      "participants": ["vera", "emre", "nami", "darius"],
       "summary": "Ergebnisse vorgestellt. Vera zeigt alle 9 Bilder, Emre präsentiert den Mythos, Nami stellt NPCs und Quests vor. Darius filtert fünf CD-Fragen nach Dringlichkeit: (1) Relikt-Name (blockiert Act 3 + Iteration), (2) Player-Agency beim Fragment, (3) Relikt-Formveränderung, (4) Tiervolk-Kosmologie, (5) Düsterkeit der Intro.",
       "artifacts": []
     }
