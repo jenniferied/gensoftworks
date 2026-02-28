@@ -808,13 +808,34 @@ def main():
                     if traces:
                         sc["traces"] = traces
 
-                    # Build transcript refs (v5: transcript.md per agent)
+                    # Discover all transcripts for this scene by scanning trace dirs
+                    agent_re = re.compile(rf"^{re.escape(prefix)}-(\w+)$")
+                    turn_re = re.compile(rf"^{re.escape(prefix)}-t(\d+)-(\w+)$")
                     transcripts = {}
-                    for agent in sc.get("participants", []):
-                        td = traces_dir / f"{prefix}-{agent}"
+                    turn_entries = []
+                    for td in sorted(traces_dir.iterdir()):
+                        if not td.is_dir():
+                            continue
                         tf = td / "transcript.md"
-                        if tf.exists():
-                            # Copy transcript.md to public traces
+                        if not tf.exists():
+                            continue
+                        # Turn-based trace (e.g. day01-scene1-t1-finn)
+                        tm = turn_re.match(td.name)
+                        if tm:
+                            turn_num = int(tm.group(1))
+                            agent = tm.group(2)
+                            dest_dir = traces_dest / td.name
+                            dest_dir.mkdir(parents=True, exist_ok=True)
+                            dest_file = dest_dir / "transcript.md"
+                            if not dest_file.exists():
+                                shutil.copy2(tf, dest_file)
+                            url = f"traces/{sim_id}/{td.name}/transcript.md"
+                            turn_entries.append({"turn": turn_num, "agent": agent, "url": url})
+                            continue
+                        # Agent initial prompt (e.g. day01-scene1-finn)
+                        am = agent_re.match(td.name)
+                        if am:
+                            agent = am.group(1)
                             dest_dir = traces_dest / td.name
                             dest_dir.mkdir(parents=True, exist_ok=True)
                             dest_file = dest_dir / "transcript.md"
@@ -823,26 +844,6 @@ def main():
                             transcripts[agent] = f"traces/{sim_id}/{td.name}/transcript.md"
                     if transcripts:
                         sc["transcripts"] = transcripts
-
-                    # Discover turn-based traces (e.g. day01-scene1-t1-finn)
-                    turn_re = re.compile(rf"^{re.escape(prefix)}-t(\d+)-(\w+)$")
-                    turn_entries = []
-                    for td in sorted(traces_dir.iterdir()):
-                        if not td.is_dir():
-                            continue
-                        m = turn_re.match(td.name)
-                        if m:
-                            tf = td / "transcript.md"
-                            if tf.exists():
-                                turn_num = int(m.group(1))
-                                agent = m.group(2)
-                                dest_dir = traces_dest / td.name
-                                dest_dir.mkdir(parents=True, exist_ok=True)
-                                dest_file = dest_dir / "transcript.md"
-                                if not dest_file.exists():
-                                    shutil.copy2(tf, dest_file)
-                                url = f"traces/{sim_id}/{td.name}/transcript.md"
-                                turn_entries.append({"turn": turn_num, "agent": agent, "url": url})
 
                     # Build chronological transcript_list
                     tl = []
