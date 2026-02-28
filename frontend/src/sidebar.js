@@ -380,8 +380,8 @@ function renderAgentCards(scene) {
         html += `<button class="trace-toggle" data-target="${bodyId}" data-url="${BASE}${entry.url}">`;
         html += `<span class="arrow">&#9654;</span>`;
         html += `<span class="transcript-agent">${agentMeta?.name || entry.agent}</span>`;
-        if (entry.turn != null) {
-          html += `<span class="transcript-turn">Turn ${entry.turn}</span>`;
+        if (entry.order != null) {
+          html += `<span class="transcript-turn">#${entry.order}</span>`;
         }
         if (agentMeta) {
           html += `<span class="transcript-role">${agentMeta.role}</span>`;

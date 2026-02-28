@@ -811,52 +811,55 @@ def main():
                     # Discover all transcripts for this scene by scanning trace dirs
                     agent_re = re.compile(rf"^{re.escape(prefix)}-(\w+)$")
                     turn_re = re.compile(rf"^{re.escape(prefix)}-t(\d+)-(\w+)$")
+                    ts_re = re.compile(r"^Start:\s*(.+)$", re.MULTILINE)
                     transcripts = {}
-                    turn_entries = []
+                    scene_entries = []  # unified list for timestamp sorting
                     for td in sorted(traces_dir.iterdir()):
                         if not td.is_dir():
                             continue
                         tf = td / "transcript.md"
                         if not tf.exists():
                             continue
+                        # Read timestamp from transcript header
+                        header = tf.read_text()[:500]
+                        ts_match = ts_re.search(header)
+                        timestamp = ts_match.group(1).strip() if ts_match else ""
+
+                        # Copy to public traces
+                        dest_dir = traces_dest / td.name
+                        dest_dir.mkdir(parents=True, exist_ok=True)
+                        dest_file = dest_dir / "transcript.md"
+                        if not dest_file.exists():
+                            shutil.copy2(tf, dest_file)
+                        url = f"traces/{sim_id}/{td.name}/transcript.md"
+
                         # Turn-based trace (e.g. day01-scene1-t1-finn)
                         tm = turn_re.match(td.name)
                         if tm:
-                            turn_num = int(tm.group(1))
                             agent = tm.group(2)
-                            dest_dir = traces_dest / td.name
-                            dest_dir.mkdir(parents=True, exist_ok=True)
-                            dest_file = dest_dir / "transcript.md"
-                            if not dest_file.exists():
-                                shutil.copy2(tf, dest_file)
-                            url = f"traces/{sim_id}/{td.name}/transcript.md"
-                            turn_entries.append({"turn": turn_num, "agent": agent, "url": url})
+                            scene_entries.append({"agent": agent, "url": url, "ts": timestamp})
                             continue
-                        # Agent initial prompt (e.g. day01-scene1-finn)
+                        # Agent trace (e.g. day01-scene1-finn)
                         am = agent_re.match(td.name)
                         if am:
                             agent = am.group(1)
-                            dest_dir = traces_dest / td.name
-                            dest_dir.mkdir(parents=True, exist_ok=True)
-                            dest_file = dest_dir / "transcript.md"
-                            if not dest_file.exists():
-                                shutil.copy2(tf, dest_file)
-                            transcripts[agent] = f"traces/{sim_id}/{td.name}/transcript.md"
+                            transcripts[agent] = url
+                            scene_entries.append({"agent": agent, "url": url, "ts": timestamp})
                     if transcripts:
                         sc["transcripts"] = transcripts
 
-                    # Build chronological transcript_list
+                    # Build chronological transcript_list sorted by timestamp
+                    scene_entries.sort(key=lambda x: x["ts"])
                     tl = []
                     if gm_url:
                         tl.append({"label": "Game Master", "agent": "_gm", "url": gm_url})
-                    for agent, url in transcripts.items():
-                        tl.append({"label": agent.title(), "agent": agent, "url": url})
-                    for tt in sorted(turn_entries, key=lambda x: (x["turn"], x["agent"])):
+                    for i, entry in enumerate(scene_entries):
+                        agent = entry["agent"]
                         tl.append({
-                            "label": f"Turn {tt['turn']}: {tt['agent'].title()}",
-                            "agent": tt["agent"],
-                            "turn": tt["turn"],
-                            "url": tt["url"],
+                            "label": agent.title(),
+                            "agent": agent,
+                            "order": i + 1,
+                            "url": entry["url"],
                         })
                     if tl:
                         sc["transcript_list"] = tl
