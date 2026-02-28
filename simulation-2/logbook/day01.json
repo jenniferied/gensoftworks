@@ -65,7 +65,7 @@
       "type": "PAUSE",
       "time": "14:00",
       "location": "Küche",
-      "participants": ["nami", "vera"],
+      "participants": ["emre", "nami", "leo"],
       "summary": "Nami und Vera tauschen sich per Video aus. Smalltalk über Pixel (Whippet), Katzen (Malkav und Nines), Janniks Verständnis von Art Direction, erstes-Tag-Gefühle. Verabreden sich für morgen zum gemeinsamen Mittagessen.",
       "artifacts": []
     },
@@ -74,7 +74,7 @@
       "type": "REVIEW",
       "time": "15:00",
       "location": "Küche",
-      "participants": ["finn", "emre", "darius", "nami"],
+      "participants": ["finn", "emre", "darius", "nami", "vera", "tobi", "leo"],
       "summary": "Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.",
       "artifacts": []
     }

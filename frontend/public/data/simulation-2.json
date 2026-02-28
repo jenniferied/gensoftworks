@@ -381,20 +381,21 @@
           "location": "Küche",
           "location_label": "Küche",
           "participants": [
+            "emre",
             "nami",
-            "vera"
+            "leo"
           ],
           "summary": "Nami und Vera tauschen sich per Video aus. Smalltalk über Pixel (Whippet), Katzen (Malkav und Nines), Janniks Verständnis von Art Direction, erstes-Tag-Gefühle. Verabreden sich für morgen zum gemeinsamen Mittagessen.",
           "positions": {
             "emre": {
-              "x": 4,
-              "y": 3,
-              "state": "dimmed"
-            },
-            "vera": {
-              "x": 39,
+              "x": 37,
               "y": 2,
               "state": "active"
+            },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "dimmed"
             },
             "tobi": {
               "x": 20,
@@ -407,14 +408,14 @@
               "state": "dimmed"
             },
             "nami": {
-              "x": 37,
+              "x": 39,
               "y": 2,
               "state": "active"
             },
             "leo": {
-              "x": 20,
-              "y": 16,
-              "state": "dimmed"
+              "x": 36,
+              "y": 2,
+              "state": "active"
             },
             "finn": {
               "x": 8,
@@ -468,7 +469,10 @@
             "finn",
             "emre",
             "darius",
-            "nami"
+            "nami",
+            "vera",
+            "tobi",
+            "leo"
           ],
           "summary": "Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.",
           "positions": {
@@ -478,14 +482,14 @@
               "state": "active"
             },
             "vera": {
-              "x": 12,
-              "y": 3,
-              "state": "dimmed"
+              "x": 37,
+              "y": 6,
+              "state": "active"
             },
             "tobi": {
-              "x": 20,
-              "y": 3,
-              "state": "dimmed"
+              "x": 39,
+              "y": 6,
+              "state": "active"
             },
             "darius": {
               "x": 36,
@@ -498,9 +502,9 @@
               "state": "active"
             },
             "leo": {
-              "x": 20,
-              "y": 16,
-              "state": "dimmed"
+              "x": 41,
+              "y": 6,
+              "state": "active"
             },
             "finn": {
               "x": 37,
