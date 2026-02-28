@@ -500,3 +500,48 @@ Energiegeladen. Zwei von drei Bleeding Issues GELÖST vom CD — das ist Vertrau
 **Confidence Level:** 8/10 (higher today — CD-Antworten waren gold, Team hat klare Richtung)
 
 ---
+
+## Tag 4, Szene 2: WORK | 10:00–11:00 — Hygiene & Konsistenz-Pass über alle 9 Kapitel
+
+**Typ**: WORK | **Uhrzeit**: 10:00–11:00 | **Teilnehmer**: Leo (solo)
+
+### FERTIG: QA-Bericht Tag 4
+
+**Datei:** `simulation-2/gallery/gdd/00-qa-bericht-tag4-leo.md`
+
+**Umfang:** Vollständiger Hygiene-Pass über 9 Kapitel (6 GDD + 3 WBB)
+
+**Findings:**
+- **Blockierend:** KEINE
+- **Medium-Priority:** 2 (Schwellenanker-Fragment-Nutzung-Mechanik explizit machen, Öffnung der Ankerkammer als Kipppunkt)
+- **Low-Priority:** 2 (W-006 konkrete Jahre, W-004 Tiervolk bleibt offen als Geheimnis)
+
+**Hygiene-Status:**
+- ✅ Relikt → Schwellenanker: KONSISTENT überall
+- ✅ Autorenvermerke: alle in HTML-Kommentaren
+- ✅ Seitenbudget: GDD 42/60 ✅, WBB 33/60 ✅
+- ✅ Konsistenz CD-Antworten: Alle drei (Tiervolk=Symbiose, Zeitlinie=Covid, Schattenfieber=Körperreaktion) implementiert
+
+**QA-Empfehlung:** v0.2-FREIGABE EMPFOHLEN
+
+**Action-Items für Team vor Beta:**
+1. Darius (GDD 02) + Tobi (GDD 06): Fragment-Nutzung explizit ("getragen", nicht "benutzt")
+2. Emre (WBB 01): Öffnung als jahrelange Instabilität + Kipppunkt kontextualisieren
+3. Nami (GDD 04): Schwelle-Erklärung in NPC-Dialog einbauen (erste 2h)
+4. Tobi: Accessibility-Checklist für Alpha (Motion-Sickness-Optionen prominent)
+
+### Persönliches / Stimmung
+
+**Beobachtung nach vollständigem Pass:**
+
+Das Fundament ist solide. Die Spielerperspektive funktioniert: Erste 30 Minuten (Hieronymus-Übergabe, drei Boten, Material-Lesbarkeit) sind klar. Erzählstruktur (offene Fraktionsquests, mehrere Endoptionen) ist echte Agentschaft. Materialsprache (Status als Substanz) ist elegant.
+
+**Aber:** Die Schwelle bleibt konzeptuell vage. Der Spieler wird fragen "Was genau ist das?" und bekommt Antwort nur aus WBB (Weltbau-Bibel), die nicht im Spiel gelesen wird. Das ist Design, nicht Bug — die Ambiguität ist beabsichtigt. Aber: Nami sollte in den ersten zwei Stunden eine kurze NPC-Erklärung haben: "Die Schwelle ist wie [physikalische Analogie]." Das gehört ins Dialogskript.
+
+**Streamer-Safety für Alpha:** Schattenfieber-PP (Stufe 2–3) kann Motion-Sickness triggern. Die Accessibility-Option steht in Kap 6.4.4, aber sie ist nicht in der Alpha-Launch-Checkliste rot markiert. Das muss Tobi fix für Alpha-Build.
+
+**Gesamteindruck:** 8/10 Confidence für Alpha-Ready. Die mechanische und narrative Basis ist stark. Polishing und Spieler-Klarheit (Schwelle-Erklärung) folgen in Beta-Phase.
+
+**Confidence Level:** 8/10 — Kapitel sind gut, Spielerperspektive funktioniert, aber Schwelle-Konzept muss noch spieler-zugänglicher werden.
+
+---

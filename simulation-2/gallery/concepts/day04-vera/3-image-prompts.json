@@ -1,0 +1,74 @@
+[
+  {
+    "name": "tiervolk-haendler-fuchs-exploration",
+    "prompt": "Concept art of an upright fox-humanoid figure standing in a medieval market, serving as a traveling merchant. The figure is clearly recognizable as a fox — pointed muzzle, large ears, reddish-brown fur with white chest markings — but something is subtly wrong: the proportions are fractionally off-human, the limbs slightly too long, the posture too still, the amber eyes have vertical pupils that catch the light in a way that is not quite animal and not quite human. The fur along the nape and shoulders grows against the grain, creating a faint counter-swirl pattern. The clothing is deliberately unremarkable: a heavy deep-charcoal wool traveler's cloak, multiple leather belt pouches, a satchel of dark oiled canvas, fingerless gloves of undyed leather. No tribal ornament. No feathers or bones as decoration. The color palette: deep charcoal, warm ochre, unsaturated sienna fur tones, a single muted indigo accent on the satchel strap. The figure has the self-contained stillness of someone who watches everything and commits to nothing. Medieval dark fantasy concept art, full body, painterly, three-quarter view.",
+    "model": "seedream-4-5",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "output_dir": "day04-vera/tiervolk"
+  },
+  {
+    "name": "tiervolk-diebin-marder-exploration",
+    "prompt": "Concept art of a slender marten-humanoid figure in a medieval urban environment, crouched on a rooftop ledge at dusk. The figure is clearly a marten — narrow elongated face, dark mask-pattern fur, white throat patch, sinuous body — but with something displaced: the joints of the fingers bend in one too many places, the neck rotates a few degrees beyond where it should stop, the pale eyes have no visible pupil, only a faint luminescence deep inside like foxfire trapped in still water. The clothing: close-fitting dark charcoal linen wrapped in layers, leather strapping over the torso, flat-soled soft boots, no metal visible. No adornments. The silhouette reads: lean, self-sufficient, invisible by preference. The posture is perfect stillness — not tensed to spring, just present and waiting with a patience that reads as not quite biological. The city below shows warm amber candlelight in Romanesque windows. Color palette: near-black charcoal, deep ash grey, one muted green-blue luminescence in the eyes only. Medieval dark fantasy concept art, full figure, painterly, low dramatic light.",
+    "model": "seedream-4-5",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "output_dir": "day04-vera/tiervolk"
+  },
+  {
+    "name": "tiervolk-rabe-bote-exploration",
+    "prompt": "Concept art of a raven-humanoid figure standing in a medieval stone archway, a messenger and information broker. The figure is recognizably avian — a sleek black-feathered head with a heavy curved beak, jet-black feathers covering the arms and shoulders — but displaced: the eyes are wrong, four of them arranged in a slight curve across the face where two should be, each one a different degree of open, giving the face an expression that reads as simultaneously attentive and absent. The feathers along the spine grow in interlocking layers that have a secondary geometric pattern beneath the natural arrangement. The clothing: layered black linen robes, a dark leather satchel stuffed with folded documents, a belt with small bone-handled tools. No color except a single deep oxblood red silk cord as a belt tie. The figure's hands are human-proportioned but the fingers are too many by one on the left hand. Standing perfectly still, the posture is that of someone who has already decided everything before you arrived. Medieval dark fantasy concept art, three-quarter portrait, painterly, low cold light, atmospheric.",
+    "model": "seedream-4-5",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "output_dir": "day04-vera/tiervolk"
+  },
+  {
+    "name": "tiervolk-marktszene-exploration",
+    "prompt": "Concept art of a narrow medieval market lane with human and beast-folk figures trading goods. Among the human merchants and customers, three or four upright animal-humanoid figures — a fox, a marten, a heron — move through the crowd as vendors and silent observers. What makes the scene unsettling is not drama but wrongness that only reveals itself on second look: the animal figures stand fractionally too still when the humans move, their shadows fall at a slightly different angle than the light source warrants, their eyes do not blink at the same rhythm as the humans around them. Their clothing is deliberately ordinary — dark wool, oiled leather, nothing to distinguish them as other. The market stalls show bolts of cloth, ceramic jugs, dried herbs. Warm amber lantern light against cold grey stone walls. The animal figures are not segregated — they are simply present, integrated, and subtly not-from-here. Color palette: warm amber light on charcoal stone, ochre and sienna crowd clothing, one pale blue-grey luminescence in one of the animal figures that a passerby would not notice. Dark fantasy environment concept art, wide establishing shot, painterly, atmospheric depth.",
+    "model": "seedream-4-5",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day04-vera/tiervolk"
+  },
+  {
+    "name": "tiervolk-hero-symbiose",
+    "prompt": "Imagine a detailed character concept art sheet for a fox-humanoid traveling merchant in a medieval dark fantasy world — a figure who carries something alien inside them in permanent symbiosis, visible only to those who know how to look. The fox is upright, roughly human height, with a pointed muzzle, large mobile ears, and reddish-amber fur. The face is the center of the image: the left eye is a normal amber fox-eye, the right eye has shifted — the iris has become a pale ash-grey, the pupil a thin horizontal bar, and around it the fur lies fractionally flatter than it should, as if the skin is slightly different beneath. Along the back of the neck and down the spine, the fur grows in a counter-spiral pattern, and at the very tips of the fur shafts there is a faint pale violet bioluminescence — not glowing, just catching no-light that isn't there. The hands: fox paws adapted to human proportions, but the left wrist has a tracery of raised channels under the skin, barely visible, suggesting a secondary circulatory system that runs cool and other. The clothing says experienced merchant: charcoal grey wool traveler's coat, multiple pouches on a wide leather belt, an oiled canvas roll-satchel over one shoulder, worn flat-heel boots. No tribal markings. No ornamental bones. The posture is relaxed and confident — a figure who has made peace with what lives inside them. Three-quarter front view. Background: a simple dark stone wall. Color palette: deep charcoal, warm sienna and ochre fur, pale ash grey for the altered eye, one muted indigo accent on a belt pouch, barely-there pale violet at fur tips. MUST obey ALL constraints: no text labels, no design annotations, no markings on the image itself.",
+    "model": "nano-banana-pro",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "output_dir": "day04-vera/tiervolk"
+  },
+  {
+    "name": "stadtschnitt-kanalzone-v3",
+    "prompt": "Imagine a wide establishing shot of SCHWARZRAND's mid-city canal district, a medieval vertical city built at the edge of a great abyss. The viewpoint is at street level, looking along a stone canal that cuts through the center of the frame. The canal water is dark and still, reflecting the warm amber light of guild-hall lanterns on the near bank. The image is NOT a cross-section diagram — it is an environment photograph, ground-level and atmospheric. The vertical city structure is present but contextual: in the background, the city rises in receding layers — half-timbered Franconian houses close in the middle distance, then the monolithic brutalist limestone guild halls above them, then at the very top a glimpse of the cantilevered crown fortress platforms extending over the abyss, silhouetted against a pale overcast sky. The foreground: a stone-paved canal-side market with stalls selling dried goods, bolts of cloth, ceramic vessels. Three or four figures move along the quay — hooded merchants, a guild clerk in a grey coat. Stone bridges span the canal at two depths, creating frames within frames. On the right bank, a Romanesque arch leads to a shadowed side passage where faint bioluminescent lichen glows in the mortar joints. The atmosphere: damp, close, layered — you sense the city extending both above and below from this single point. Color palette: charcoal stone, warm amber lantern glow, one pale indigo reflection in the dark canal water. MUST obey ALL: no diagrams, no labels, no section lines, purely atmospheric environment shot.",
+    "model": "nano-banana-2",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day04-vera/environments"
+  },
+  {
+    "name": "stadtschnitt-kanalzone-v3-final",
+    "prompt": "A cinematic wide-angle ground-level establishing shot of a medieval canal district within SCHWARZRAND, a vertical city built at the edge of an abyss. The composition: a dark stone-paved canal runs through the center of the image toward a vanishing point, flanked by medieval half-timbered guild buildings with warm amber lanterns reflecting in the still dark water. The canal district is alive: market stalls line the near quay, shadowed figures move along stone pathways, a stone bridge spans the canal in the mid-ground creating a natural frame for the city layers beyond. Background layers recede vertically: directly above the half-timbered houses rise the massive brutalist limestone guild halls — rammed earth and cut stone with geometric load-bearing masses, cold and imposing. Above those, at the very horizon, the underside of a great cantilevered stone platform — part of the crown fortress — juts out over everything, blocking a section of pale sky. The city stack is IMPLIED by the environment, not diagrammed. Foreground atmosphere: the quay stones are damp, green-black with moss at the waterline, worn smooth by centuries of feet. In the shadowed passage under the bridge arch, pale bioluminescent growth faintly illuminates the mortar joints of the oldest stones. The mood: enclosed, layered, alive with commercial activity but shadowed by the weight of what towers above. The city does not feel like a diagram. It feels like a place. Painterly architectural concept art, cinematic, warm amber and cold stone color contrast, deep atmospheric perspective, dark fantasy medieval.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day04-vera/environments"
+  },
+  {
+    "name": "relikt-hero-v2",
+    "prompt": "Imagine a dramatic hero shot of an ancient geological relic — the SCHWELLENANKER — displayed on a rough stone altar in a low barrel-vaulted crypt chamber. The relic itself: a fist-sized compressed folded geological formation, the result of millennia of mineral layers being folded and re-folded under extreme pressure. The surface texture is the key: it is covered in a dense network of ossified micro-channels running through a calcified organic matrix — like a cross-section of spongy bone, but mineral, and the channels have a systematic geometry that is too regular for natural geology. The form is nodular, irregular, and completely without polish or craft intervention. Think geological cluster, ossified mineral formation, spongy bone texture in stone — not crystal, not carved, not designed. The relic is in its activated state: pale blue-violet bioluminescence emanates from inside the micro-channels, diffuse and internal, like phosphorescent fluid moving through a vascular network embedded in the rock. The glow is beautiful and deeply wrong simultaneously. A single human figure stands at the edge of the frame, facing the relic, their back to the viewer — small against the vaulted ceiling, overwhelmed by the relic's presence despite its modest physical size. The crypt walls are rough-hewn stone with faint alchemical residue staining in old channel-cut grooves. Single light source: the relic itself. Color palette: deep stone grey and charcoal, pale blue-violet internal glow, warm shadow on the human figure, cold vault ceiling. MUST obey ALL: no text, no labels, no markings anywhere. Painterly, cinematic, atmospheric, dark fantasy concept art.",
+    "model": "nano-banana-pro",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day04-vera/relics"
+  }
+]

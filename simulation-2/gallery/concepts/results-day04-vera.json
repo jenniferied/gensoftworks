@@ -1,0 +1,93 @@
+[
+  {
+    "test": "seedream-4-5_tiervolk-haendler-fuchs-exploration",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Concept art of an upright fox-humanoid figure standing in a medieval market, serving as a traveling merchant. The figure is clearly recognizable as a fox — pointed muzzle, large ears, reddish-brown fur with white chest markings — but something is subtly wrong: the proportions are fractionally off-human, the limbs slightly too long, the posture too still, the amber eyes have vertical pupils that catch the light in a way that is not quite animal and not quite human. The fur along the nape and shoulders grows against the grain, creating a faint counter-swirl pattern. The clothing is deliberately unremarkable: a heavy deep-charcoal wool traveler's cloak, multiple leather belt pouches, a satchel of dark oiled canvas, fingerless gloves of undyed leather. No tribal ornament. No feathers or bones as decoration. The color palette: deep charcoal, warm ochre, unsaturated sienna fur tones, a single muted indigo accent on the satchel strap. The figure has the self-contained stillness of someone who watches everything and commits to nothing. Medieval dark fantasy concept art, full body, painterly, three-quarter view.",
+    "elapsed_s": 1.1,
+    "cost_est": "$0.04",
+    "images": [],
+    "error": "[{'type': 'model_attributes_type', 'loc': ['body', 'image_size', 'ImageSize'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': 'portrait_3_4'}, {'type': 'literal_error', 'loc': ['body', 'image_size', \"literal['square_hd','square','portrait_4_3','portrait_16_9','landscape_4_3','landscape_16_9','auto_2K','auto_4K']\"], 'msg': \"Input should be 'square_hd', 'square', 'portrait_4_3', 'portrait_16_9', 'landscape_4_3', 'landscape_16_9', 'auto_2K' or 'auto_4K'\", 'input': 'portrait_3_4', 'ctx': {'expected': \"'square_hd', 'square', 'portrait_4_3', 'portrait_16_9', 'landscape_4_3', 'landscape_16_9', 'auto_2K' or 'auto_4K'\"}}]",
+    "timestamp": "2026-03-01T00:54:48.185856",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "name_de": "",
+    "api_args": {
+      "image_size": "portrait_3_4"
+    }
+  },
+  {
+    "test": "seedream-4-5_tiervolk-diebin-marder-exploration",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Concept art of a slender marten-humanoid figure in a medieval urban environment, crouched on a rooftop ledge at dusk. The figure is clearly a marten — narrow elongated face, dark mask-pattern fur, white throat patch, sinuous body — but with something displaced: the joints of the fingers bend in one too many places, the neck rotates a few degrees beyond where it should stop, the pale eyes have no visible pupil, only a faint luminescence deep inside like foxfire trapped in still water. The clothing: close-fitting dark charcoal linen wrapped in layers, leather strapping over the torso, flat-soled soft boots, no metal visible. No adornments. The silhouette reads: lean, self-sufficient, invisible by preference. The posture is perfect stillness — not tensed to spring, just present and waiting with a patience that reads as not quite biological. The city below shows warm amber candlelight in Romanesque windows. Color palette: near-black charcoal, deep ash grey, one muted green-blue luminescence in the eyes only. Medieval dark fantasy concept art, full figure, painterly, low dramatic light.",
+    "elapsed_s": 0.9,
+    "cost_est": "$0.04",
+    "images": [],
+    "error": "[{'type': 'model_attributes_type', 'loc': ['body', 'image_size', 'ImageSize'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': 'portrait_3_4'}, {'type': 'literal_error', 'loc': ['body', 'image_size', \"literal['square_hd','square','portrait_4_3','portrait_16_9','landscape_4_3','landscape_16_9','auto_2K','auto_4K']\"], 'msg': \"Input should be 'square_hd', 'square', 'portrait_4_3', 'portrait_16_9', 'landscape_4_3', 'landscape_16_9', 'auto_2K' or 'auto_4K'\", 'input': 'portrait_3_4', 'ctx': {'expected': \"'square_hd', 'square', 'portrait_4_3', 'portrait_16_9', 'landscape_4_3', 'landscape_16_9', 'auto_2K' or 'auto_4K'\"}}]",
+    "timestamp": "2026-03-01T00:54:49.074837",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "name_de": "",
+    "api_args": {
+      "image_size": "portrait_3_4"
+    }
+  },
+  {
+    "test": "seedream-4-5_tiervolk-rabe-bote-exploration",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Concept art of a raven-humanoid figure standing in a medieval stone archway, a messenger and information broker. The figure is recognizably avian — a sleek black-feathered head with a heavy curved beak, jet-black feathers covering the arms and shoulders — but displaced: the eyes are wrong, four of them arranged in a slight curve across the face where two should be, each one a different degree of open, giving the face an expression that reads as simultaneously attentive and absent. The feathers along the spine grow in interlocking layers that have a secondary geometric pattern beneath the natural arrangement. The clothing: layered black linen robes, a dark leather satchel stuffed with folded documents, a belt with small bone-handled tools. No color except a single deep oxblood red silk cord as a belt tie. The figure's hands are human-proportioned but the fingers are too many by one on the left hand. Standing perfectly still, the posture is that of someone who has already decided everything before you arrived. Medieval dark fantasy concept art, three-quarter portrait, painterly, low cold light, atmospheric.",
+    "elapsed_s": 0.6,
+    "cost_est": "$0.04",
+    "images": [],
+    "error": "[{'type': 'model_attributes_type', 'loc': ['body', 'image_size', 'ImageSize'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': 'portrait_3_4'}, {'type': 'literal_error', 'loc': ['body', 'image_size', \"literal['square_hd','square','portrait_4_3','portrait_16_9','landscape_4_3','landscape_16_9','auto_2K','auto_4K']\"], 'msg': \"Input should be 'square_hd', 'square', 'portrait_4_3', 'portrait_16_9', 'landscape_4_3', 'landscape_16_9', 'auto_2K' or 'auto_4K'\", 'input': 'portrait_3_4', 'ctx': {'expected': \"'square_hd', 'square', 'portrait_4_3', 'portrait_16_9', 'landscape_4_3', 'landscape_16_9', 'auto_2K' or 'auto_4K'\"}}]",
+    "timestamp": "2026-03-01T00:54:49.682951",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "name_de": "",
+    "api_args": {
+      "image_size": "portrait_3_4"
+    }
+  },
+  {
+    "test": "seedream-4-5_tiervolk-marktszene-exploration",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Concept art of a narrow medieval market lane with human and beast-folk figures trading goods. Among the human merchants and customers, three or four upright animal-humanoid figures — a fox, a marten, a heron — move through the crowd as vendors and silent observers. What makes the scene unsettling is not drama but wrongness that only reveals itself on second look: the animal figures stand fractionally too still when the humans move, their shadows fall at a slightly different angle than the light source warrants, their eyes do not blink at the same rhythm as the humans around them. Their clothing is deliberately ordinary — dark wool, oiled leather, nothing to distinguish them as other. The market stalls show bolts of cloth, ceramic jugs, dried herbs. Warm amber lantern light against cold grey stone walls. The animal figures are not segregated — they are simply present, integrated, and subtly not-from-here. Color palette: warm amber light on charcoal stone, ochre and sienna crowd clothing, one pale blue-grey luminescence in one of the animal figures that a passerby would not notice. Dark fantasy environment concept art, wide establishing shot, painterly, atmospheric depth.",
+    "elapsed_s": 22.6,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059a2/agB6IXT-wpbxMRIUFDMAK_c7bfa11ee21f4e87823a8d976f29a507.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:55:16.005843",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "nano-banana-pro_tiervolk-hero-symbiose",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "Imagine a detailed character concept art sheet for a fox-humanoid traveling merchant in a medieval dark fantasy world — a figure who carries something alien inside them in permanent symbiosis, visible only to those who know how to look. The fox is upright, roughly human height, with a pointed muzzle, large mobile ears, and reddish-amber fur. The face is the center of the image: the left eye is a normal amber fox-eye, the right eye has shifted — the iris has become a pale ash-grey, the pupil a thin horizontal bar, and around it the fur lies fractionally flatter than it should, as if the skin is slightly different beneath. Along the back of the neck and down the spine, the fur grows in a counter-spiral pattern, and at the very tips of the fur shafts there is a faint pale violet bioluminescence — not glowing, just catching no-light that isn't there. The hands: fox paws adapted to human proportions, but the left wrist has a tracery of raised channels under the skin, barely visible, suggesting a secondary circulatory system that runs cool and other. The clothing says experienced merchant: charcoal grey wool traveler's coat, multiple pouches on a wide leather belt, an oiled canvas roll-satchel over one shoulder, worn flat-heel boots. No tribal markings. No ornamental bones. The posture is relaxed and confident — a figure who has made peace with what lives inside them. Three-quarter front view. Background: a simple dark stone wall. Color palette: deep charcoal, warm sienna and ochre fur, pale ash grey for the altered eye, one muted indigo accent on a belt pouch, barely-there pale violet at fur tips. MUST obey ALL constraints: no text labels, no design annotations, no markings on the image itself.",
+    "elapsed_s": 26.1,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059a3/cdaN9ojl1LB49XgaC-XOV_He4W7Lhc.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:55:43.864952",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_3_4",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "3:4"
+    },
+    "dimensions": "896x1200"
+  }
+]
