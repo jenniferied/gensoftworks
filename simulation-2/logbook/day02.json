@@ -1,0 +1,107 @@
+{
+  "day": 2,
+  "weekday": "Dienstag",
+  "phase": "Recherche + erste Produktion",
+  "title": "Schwarzrand — die Stadt bekommt einen Namen",
+  "summary": "Hochproduktiver Tag. Drei GDD-Kapitel und ein WBB-Kapitel in erster Version fertiggestellt. Vera generiert 9 Concept-Art-Bilder (Relikt-Zustände, Fraktionspaletten, Stadtschnitt). Emre tauft die Stadt 'Schwarzrand' und schreibt den Mythos (Schwelle, Schattenfieber-Biologie, drei Fraktions-Schöpfungsmythen). Darius definiert die Design-Säulen und beantwortet alle vier offenen Fragen. Nami erschafft 5 Schlüsselfiguren und skizziert Intro-Quest und Hauptquest. Tobi schreibt die vollständige Tech-Spec. Fünf priorisierte CD-Fragen formuliert.",
+  "cd_decisions": [
+    "Schattenfieber: EINE biologische Wahrheit, Fraktionen interpretieren verschieden",
+    "Relikt: Team soll Vorschläge machen + Bilder generieren, CD entscheidet",
+    "Release-Modell: Main → Alpha (Streamer) → Beta (0.5–1 Jahr) → Full → große DLCs"
+  ],
+  "key_moments": [
+    "Emre tauft die Stadt 'Schwarzrand' — 'Wir leben am Rand des Schwarzen'",
+    "Nami definiert drei Fraktionskosmologien: Krone (Blut), Orden (Wissen/Schuld), Gilden (Material/Besitz)",
+    "Vera generiert 9 Bilder: Relikt in 3 Zuständen, Hero-Shot mit Schwellenanker auf Steinaltar",
+    "Darius und Emre in der Pause: Fördertürme im Talkessel als Ruhrpott-DNA der Lore",
+    "Tobi löst Veras Schichtgrenzen-Frage: fließend oben (Blend-Volumes), diskret unten (Data-Layer-Cuts)"
+  ],
+  "artifacts": [
+    "gallery/gdd/01-spieluebersicht-v1.md",
+    "gallery/wbb/01-mythos-v1.md",
+    "gallery/gdd/04-schluesselfiguren-v1.md",
+    "gallery/gdd/06-technische-spezifikation-v1.md",
+    "gallery/gdd/00-wolf-checkliste-leo.md",
+    "gallery/gdd/00-alpha-erste-stunde-leo.md",
+    "gallery/gdd/00-leo-talking-points-darius-sync.md",
+    "gallery/concepts/day02-vera/relics/relikt-zustand-null-ruhend_seedream-4-5.png",
+    "gallery/concepts/day02-vera/relics/relikt-zustand-eins-aktiviert_seedream-4-5.png",
+    "gallery/concepts/day02-vera/relics/relikt-zustand-drei-aufloesung_seedream-4-5.png",
+    "gallery/concepts/day02-vera/relics/relikt-drei-zustaende-vergleich_nano-banana-2.png",
+    "gallery/concepts/day02-vera/relics/relikt-hero-shot-aktiviert_gpt-image-1-5.png",
+    "gallery/concepts/day02-vera/factions/fraktion-krone-materialpalette_seedream-4-5.png",
+    "gallery/concepts/day02-vera/factions/fraktion-orden-materialpalette_seedream-4-5.png",
+    "gallery/concepts/day02-vera/factions/fraktion-gilden-materialpalette_seedream-4-5.png",
+    "gallery/concepts/day02-vera/environments/stadtschnitt-vertikale-schichtung_nano-banana-pro.png",
+    "pinwall/ROADMAP.md",
+    "pinwall/COMPLETED.md"
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "type": "BRIEFING",
+      "time": "09:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Finn gibt CD-Feedback weiter: Schattenfieber biologisch, Relikt-Vorschläge gewünscht, Release-Modell geklärt, Vera muss Bilder liefern. Darius schlägt Relikt als Resonanzobjekt vor. Emre liefert Schwellen-Biologie (drei Stufen, Lymphsystem). Nami definiert drei Fraktionskosmologien und skizziert Quest-Einstieg. Vera nimmt CD-Kritik an und plant Tages-Output. Tobi klärt technische Implikationen. Leo fordert sofortiges visuelles Feedback beim Relikt.",
+      "artifacts": [],
+      "cd_feedback": "Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge + Bilder. Release: Main → Alpha → Beta → Full → DLCs. Vera muss Bilder generieren."
+    },
+    {
+      "scene": 2,
+      "type": "WORK",
+      "time": "10:00",
+      "location": "jeweiliger Arbeitsplatz",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Produktivster WORK-Block bisher. Darius: GDD Kap 1 Spielübersicht v1. Emre: WBB Kap 1 Mythos v1 (Schwarzrand, Schwelle, 8 Gilden). Nami: GDD Kap 4 Schlüsselfiguren v1 (5 NPCs, Quest-Skizzen). Vera: 9 Concept-Art-Bilder (Relikt 3 Zustände, Fraktionspaletten, Stadtschnitt). Tobi: GDD Kap 6 Tech Spec v1. Leo: Wolf-Checkliste, Alpha-Erste-Stunde, Darius-Sync Talking Points. Finn: ROADMAP + COMPLETED.",
+      "artifacts": [
+        "gallery/gdd/01-spieluebersicht-v1.md",
+        "gallery/wbb/01-mythos-v1.md",
+        "gallery/gdd/04-schluesselfiguren-v1.md",
+        "gallery/gdd/06-technische-spezifikation-v1.md",
+        "gallery/gdd/00-wolf-checkliste-leo.md",
+        "gallery/gdd/00-alpha-erste-stunde-leo.md",
+        "gallery/gdd/00-leo-talking-points-darius-sync.md",
+        "gallery/concepts/3-image-prompts.json",
+        "gallery/concepts/day02-vera/relics/relikt-zustand-null-ruhend_seedream-4-5.png",
+        "gallery/concepts/day02-vera/relics/relikt-zustand-eins-aktiviert_seedream-4-5.png",
+        "gallery/concepts/day02-vera/relics/relikt-zustand-drei-aufloesung_seedream-4-5.png",
+        "gallery/concepts/day02-vera/relics/relikt-drei-zustaende-vergleich_nano-banana-2.png",
+        "gallery/concepts/day02-vera/relics/relikt-hero-shot-aktiviert_gpt-image-1-5.png",
+        "gallery/concepts/day02-vera/factions/fraktion-krone-materialpalette_seedream-4-5.png",
+        "gallery/concepts/day02-vera/factions/fraktion-orden-materialpalette_seedream-4-5.png",
+        "gallery/concepts/day02-vera/factions/fraktion-gilden-materialpalette_seedream-4-5.png",
+        "gallery/concepts/day02-vera/environments/stadtschnitt-vertikale-schichtung_nano-banana-pro.png",
+        "pinwall/ROADMAP.md",
+        "pinwall/COMPLETED.md"
+      ]
+    },
+    {
+      "scene": 3,
+      "type": "MEETING",
+      "time": "13:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Alle berichten Fortschritt. Schwarzrand als Stadtname bestätigt. Darius beantwortet vier offene Fragen (eine Stadt, Schattenfieber = dritte Achse, Tiervolk = NPC, Release geklärt). Vera zeigt Bilder, Team reagiert positiv. Tobi und Vera einigen sich: Schichtgrenzen fließend oben, diskret unten. Leo fordert sofortige Skill-Sichtbarkeit. Nami erklärt aktive Spieleraktionen in der Vael-Szene.",
+      "artifacts": []
+    },
+    {
+      "scene": 4,
+      "type": "PAUSE",
+      "time": "14:00",
+      "location": "Küche",
+      "participants": ["darius", "emre"],
+      "summary": "Darius und Emre über Ruhrpott-Wurzeln. Schwarzrand hat Fördertürme im Talkessel — Duisburg und Gelsenkirchen als Lore-DNA. Emres Großvater bei Thyssen, Darius' Vater bei ThyssenKrupp. Der Stadtname kam beim Spazierengehen im Teutoburger Wald.",
+      "artifacts": []
+    },
+    {
+      "scene": 5,
+      "type": "REVIEW",
+      "time": "15:00",
+      "location": "Küche",
+      "participants": ["vera", "emre", "nami", "darius"],
+      "summary": "Ergebnisse vorgestellt. Vera zeigt alle 9 Bilder, Emre präsentiert den Mythos, Nami stellt NPCs und Quests vor. Darius filtert fünf CD-Fragen nach Dringlichkeit: (1) Relikt-Name (blockiert Act 3 + Iteration), (2) Player-Agency beim Fragment, (3) Relikt-Formveränderung, (4) Tiervolk-Kosmologie, (5) Düsterkeit der Intro.",
+      "artifacts": []
+    }
+  ]
+}

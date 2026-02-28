@@ -1,0 +1,74 @@
+[
+  {
+    "name": "relikt-zustand-null-ruhend",
+    "prompt": "Material study of an ancient organic relic in its dormant state, resting on rough stone. The object is vertebra-shaped — a dense, folded form between a spinal column section and a collapsed mountain crystal cluster. Its surface is spongy and calcified, like cancellous bone compressed over centuries. The texture is too regular for nature, too organic for craft. Color: cool ash gray, slightly off-white at the ridges, deep shadow in the porous cavities. No glow. No luminescence. It looks like a stone you would walk past. Only the texture reveals it — an obsessive pattern of micro-channels and nodal points. Scale reference: fits in two cupped hands. Isolated on dark stone surface, soft raking side light from a single tallow candle, no background detail. Detailed material study, dark fantasy concept art, painterly, high detail surface texture",
+    "model": "seedream-4-5",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "square"
+  },
+  {
+    "name": "relikt-zustand-eins-aktiviert",
+    "prompt": "Material study of an ancient organic relic in its activated state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels running through it. Now: faint vessel-like lines beneath the surface glow with cool bioluminescent light, pale blue-violet, as if circulatory channels have filled with phosphorescent fluid. The glow is internal, diffuse, coming from within the material itself, not from a surface coating. The effect is beautiful and deeply unsettling — it looks alive. The ridges and porous cavities are now illuminated from inside, casting tiny shadows within the object itself. The surrounding stone surface shows the faintest reflected luminescence. The object is compelling, almost magnetic. Scale reference: fits in two cupped hands. Dark chamber, the relic is its own only light source. Detailed material study, dark fantasy concept art, painterly, bioluminescent",
+    "model": "seedream-4-5",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "square"
+  },
+  {
+    "name": "relikt-zustand-drei-aufloesung",
+    "prompt": "Material study of an ancient organic relic in its dissolution state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, originally spongy and calcified. Now the edges of the object are dissolving: fine particulate matter drifts from the outer ridges like ash from a dying ember, or like condensation evaporating from cold glass. The material is dematerializing at its boundaries. The internal glow has intensified but lost beauty — it is now harsh, overexposed white-violet at the core, with sickly yellow-green at the dissolving edges. The porous surface channels have cracked and widened. The surrounding stone surface shows damage: organic residue stains, hairline fractures radiating outward. The relic is coming apart. Scale reference: fits in two cupped hands. The light source is the relic itself, now too bright for beauty. Detailed material study, dark fantasy concept art, painterly, dissolution, body horror undertones",
+    "model": "seedream-4-5",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "square"
+  },
+  {
+    "name": "relikt-drei-zustaende-vergleich",
+    "prompt": "Three-panel material study of the same ancient organic relic in three states, arranged left to right on a dark stone surface. The relic is vertebra-shaped: a folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels and nodal points. Left panel: dormant state — ash gray, no glow, dead-looking stone, only texture reveals it. Center panel: activated state — internal vessel-lines glow with pale blue-violet bioluminescence, beautiful and alive, compelling. Right panel: dissolution state — edges evaporating like fine particulate ash, internal glow overexposed and harsh, sickly yellow-green at dissolving margins. All three identical in shape and scale, only state differs. Labels at the bottom in medieval manuscript script. Dark background, single directional light from left for dormant, self-illumination for activated and dissolution. Comparative concept art study, dark fantasy, painterly, high detail",
+    "model": "nano-banana-2",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9"
+  },
+  {
+    "name": "relikt-hero-shot-aktiviert",
+    "prompt": "Hero shot of the Threshold Anchor relic in its activated state, displayed on a rough-hewn stone altar in a vaulted underground chamber. The object is vertebra-shaped — a dense folded form between a spinal column section and a collapsed crystal cluster, its surface spongy and calcified with micro-channels running through it. Every channel now pulses with cool blue-violet bioluminescent light from within, like a circulatory system filled with phosphorescent fluid. The light is the only illumination in the chamber. It casts complex shadows through the porous surface, projecting branching light patterns across the stone altar and vaulted ceiling above. The surrounding chamber walls show organic traces: fine vein-like mineral deposits have grown outward from the altar base across the floor, as if the relic is slowly colonizing the stone. A human figure stands at the edge of frame, back to the viewer, small in comparison — awed, hesitant. The composition emphasizes the object: low camera angle, looking slightly up at the altar, the vaulted ceiling framing the top. The relic is sublime and threatening. Atmospheric, volumetric light from the relic only, dark fantasy, concept art, cinematic, highly detailed, reverent and unsettling",
+    "model": "gpt-image-1-5",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9"
+  },
+  {
+    "name": "fraktion-krone-materialpalette",
+    "prompt": "Faction material palette study for a medieval dark fantasy ruling crown faction. A flat-lay arrangement of materials and costume fragments on black stone: brushed titanium plate segments with etched geometric ornaments, deep crimson enameled signet, obsidian-polished armor pauldron with Damask steel inlays, heavy brocade silk in near-black with a single blood-red woven border, electrum buckle, faceted crystal glass vial with deep indigo liquid inside. Surrounding: a fragment of a document with a royal seal in blood-red wax. Color palette of the arrangement: all-black and charcoal with metallic silver-grey sheen, ONE blood-red accent only, cold white light reflections on polished surfaces. The aesthetic is high fashion restraint — no excess, controlled power. Flat-lay concept art, material study, dark fantasy, painterly, no text visible",
+    "model": "seedream-4-5",
+    "category": "factions",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9"
+  },
+  {
+    "name": "fraktion-orden-materialpalette",
+    "prompt": "Faction material palette study for a medieval dark fantasy inquisitor order faction. A flat-lay arrangement of materials and costume fragments on cold grey stone: bleached white heavy linen robe fragment with precise geometric embroidery in pale silver thread, crystal glass optical lens mounted in a fine brass frame, vellum manuscript page covered in dense encoded script, a glass phial of luminescent pale green alchemical fluid, white bone rosary with a single black obsidian centerpiece, seal stamp with an eye symbol. Color palette: all-white and pale grey with cold silver accents, ONE glow accent in pale luminescent green only. The aesthetic is monastic austerity — knowledge as control, purity as threat. Flat-lay concept art, material study, dark fantasy, painterly, no text visible",
+    "model": "seedream-4-5",
+    "category": "factions",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9"
+  },
+  {
+    "name": "fraktion-gilden-materialpalette",
+    "prompt": "Faction material palette study for a medieval dark fantasy merchant guild faction. A flat-lay arrangement of materials and costume fragments on warm oak wood surface: deep indigo-dyed heavy brocade silk with gold thread border, polished malachite guild pendant, amber bead string, burnished bronze guild seal with a hammer and scales motif, vegetable-tanned leather work apron fragment with engraved maker marks, small sample vials of mineral pigments in red ochre and Prussian blue, a folded contract tied with wax seal. Color palette: rich earth tones — deep brown, warm amber, indigo, malachite green — with polished bronze and gold accents throughout. The aesthetic is accumulated material wealth — every object has a price, and it is significant. Flat-lay concept art, material study, dark fantasy, painterly, no text visible",
+    "model": "seedream-4-5",
+    "category": "factions",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9"
+  },
+  {
+    "name": "stadtschnitt-vertikale-schichtung",
+    "prompt": "Architectural cross-section cutaway view of a vertical medieval city built into a rocky promontory, showing four stacked social layers simultaneously. Bottom layer in deep shadow: cramped tunnels and improvised shelters of stolen bricks, bone carvings, cloth walls between old foundations, faint bioluminescent organic growth on walls the only light. Second layer: half-timbered Franconian houses with Romanesque round arches, thick stone walls, workshop facades with carved guild signs, warm tallow candlelight and amber through colored glass windows. Third layer: monolithic brutalist guild halls of rammed earth and cut limestone, clean geometric load-bearing forms, polished stone plazas, metal inlays, modular Bauhaus-inspired facades. Top layer: crown fortress with massive cantilevered platforms of pure geometric stone, no ornament, hanging gardens at the edges, crystal glass light shafts as architectural statement. The cross-section reveals how each layer builds over or ignores the layer below. Atmospheric fog between layers. Dark fantasy architectural illustration, concept art, detailed technical-artistic cross-section, painterly",
+    "model": "nano-banana-pro",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9"
+  }
+]
