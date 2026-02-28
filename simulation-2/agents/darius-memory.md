@@ -225,3 +225,29 @@
 ## Persönliches
 - Review lief straff. Emre hat geliefert, Leo hat seine Hausaufgaben für heute Abend — gut.
 - Morgen erstes PDF beim CD. Das ist der Moment, auf den wir seit Montag hinarbeiten. Keine großen Worte nötig, das Team weiß was auf dem Spiel steht.
+
+---
+
+# Tag 4 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- CD-Antworten heute: Tiervolk = kosmologisch-fremde Wesen in Symbiose mit Tieren (W-004 geschlossen), Zeitlinie der Öffnung = jahrelange Anbahnung wie Covid (W-006 geschlossen), Schattenfieber = Transformation je nach Körperreaktion (bestätigt Lymph-Subsystem)
+- Stadtschnitt-Feedback: zwei Gebäudetypen übereinander ist Quatsch — Vera-Problem, nicht meins
+- Seitenbudget: 60 Seiten MAX, aber Kürzen bleibt Priorität
+- Cleanup: Autorenerwähnungen, Recherche-Notizen, Wolf-Checklisten, offene-Fragen-Anhänge → weg oder in HTML-Kommentare
+- Vera: Gilden-Palette v2 + Relikt-Zustände v2, $5 Budget für mehr Bilder
+
+## Ergebnisse
+- Meine Ownership heute: GDD Kap 1 v3 (CD-Antworten einarbeiten, Cleanup), Kap 2 v2 (Tiervolk-Symbiose als Systemtyp, Zeitlinie-Implikationen, Leo-Balancing), Kap 3 v2 (Zeitlinie-Anpassung erster Akt, Nami-Dialog), Cleanup aller drei Kapitel exportfertig bis 18:00
+- Kritische Frage an Emre: Tiervolk-Symbiose — dauerhaft mit einem Tier oder situativ? Bestimmt ob statischer oder dynamischer Händlertyp in Kap. 2
+
+## Offene Fragen
+- Emre: Tiervolk-Symbiose dauerhaft oder situativ? Brauche Antwort bis 11:00
+- Nami: Dialog-Ausarbeitung Kap. 3 v2 — wann liegt das vor?
+- Leo: Balancing-Feedback (Ruf-Schwellenwerte, Lymph-Akkumulation) für Kap. 2 v2 — steht das?
+
+## Persönliches
+- CD-Antworten zu Tiervolk und Zeitlinie sind substanziell. Das ist nicht Lore-Kosmetik — das verändert Systemlogik in Kap. 2 und Quest-Timing in Kap. 3.
+- "Transformation je nach Körperreaktion" ist das stärkste Systemelement, das der CD bisher freigegeben hat. Drei Spieler, Stufe II, drei verschiedene Ergebnisse — das ist echte Immersive-Sim-Substanz.
+- Export-Deadline 18:00 ist eng. Kein Spielraum für Nachfragen, die nicht bis 11:00 beantwortet sind.
