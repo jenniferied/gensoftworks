@@ -214,3 +214,34 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 
 - Interface-Spezifikation zu schreiben ohne direkten Darius-Sync ist ein Blindflug. Ich habe Kap 1 als Grundlage genommen und dann die sauberste technische Lösung gebaut. Der Vertrag steht jetzt auf Papier — Darius kann drauf reagieren.
 - Vier-Stufen-Mapping (Untrained/Geübt/Fortgeschritten/Meister) auf kontinuierlichen Float (0.0–3.0) ist die richtige Lösung. Kein diskreter Hard-Switch.
+
+---
+
+# Tag 4 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+## Notizen
+
+- **Tiervolk-Symbiose bestätigt als dritter kosmologischer Faktor** — dauerhaft, ontologisch, kein temporärer Effekt. Technische Konsequenz: neue Materialklasse notwendig.
+- **Emre: "dauerhaft"** = Tiervolk-Siedlungen statisch. World-Partition bleibt Layer-gebunden, keine NPC-Proximity-Dynamik. Vereinfacht Setup erheblich.
+- **Schattenfieber körperreaktionsabhängig** bestätigt mein PP-Blueprint-System — keine Architekturänderung notwendig.
+- **Seitenbudget 60 Seiten gesamt**: Kap 6 muss auf Redundanzen geprüft werden. Cleanup geplant für v4.
+- **Vera: $5 Budget** — Referenzbilder für Tiervolk-Symbiose angefragt (2–3 Typen, wo sitzt das Fremde?).
+
+## Ergebnisse
+
+- Technische Implikationen im Briefing kommuniziert: neuer Tiervolk-Symbiose-Shader (Dual-Layer: Tier-Biologie + Fremdes), 3–4 Wochen Aufwand.
+- Blocker für v4 identifiziert: Vera-Referenzbilder Tiervolk.
+
+## Offene Fragen
+
+- ~~Emre: Tiervolk-Siedlungen statisch oder dynamisch?~~ → **ERLEDIGT** (statisch, Layer-gebunden)
+- Vera: 2–3 Tiervolk-Referenzbilder — wo sitzt das Fremde (Gelenke, Augen, Oberfläche)? → **neu angefragt**
+- Vera: Orden-Kreuz-Entscheidung → weiterhin offen
+- Nami: Fraktions-PP-Presets → weiterhin offen
+- Kap 6 v4: Tiervolk-Symbiose-Shader-Architektur schreiben, Cleanup (60-Seiten-Budget)
+
+## Persönliches
+
+- Dual-Layer-Shader-Idee (Tier-Biologie + Fremdes von innen) ist genau das, was Emres Beschreibung braucht. Selbes Prinzip wie der Schwellenanker: ein System, das zwei Zustände in einem Mesh hält.
+- Warte auf Vera für die Referenzen. Ohne die kann ich nicht sinnvoll spezifizieren, ob ein Master-Shader oder mehrere Varianten nötig sind.
