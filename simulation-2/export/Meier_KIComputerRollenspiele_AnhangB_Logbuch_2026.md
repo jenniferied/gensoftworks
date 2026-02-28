@@ -19,6 +19,8 @@ toc: true
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 1](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-001-scene-001-BRIEFING.png){ width=95% }
+
 ::: {.directive}
 \textbf{Creative Director --- Feedback}
 
@@ -36,8 +38,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene1-finn}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a99d85875911f3b58.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a99d85875911f3b58.\allowbreak{}jsonl}\par
 \noindent Entries: 26\par
 \noindent Start: 2026-02-28T15:04:48.193Z\par
 \noindent End: 2026-02-28T15:05:46.157Z\par
@@ -88,7 +90,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Lass mich kurz die relevanten Dateien lesen, bevor ich in die Szene gehe.\par
 
 
-\noindent \textbf{TOOL: Read} [15:04:51] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:04:51] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:04:51]:\par
@@ -100,7 +102,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:04:51] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:04:51] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:04:51]:\par
@@ -152,7 +154,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:04:51] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/finn-bergmann.md}\par
+\noindent \textbf{TOOL: Read} [15:04:51] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}finn-bergmann.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:04:51]:\par
@@ -192,7 +194,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich den Trace und die Dialogzeile.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:04:55] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:04:55] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:04:55]:\par
@@ -201,7 +203,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:05:11] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-finn/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:05:11] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-finn/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Day 01, Scene 1, Finn}\par\vspace{0.5mm}
 
@@ -226,7 +228,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:05:23] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-finn/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:05:23] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-finn/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Day 01, Scene 1, Finn}\par\vspace{0.5mm}
 
@@ -257,10 +259,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 \noindent Ich hab heute Morgen kurz mit der CD gesprochen, und die Botschaft ist eigentlich schön simpel: ankommen, kennenlernen, keine Hetze. Das Projekt ist RELICS — ein Fantasy-CRPG, GDD und eine World Building Bible als Deliverables. Die CD hat gesagt, sie freut sich drauf, und ja — wenn das hier gut wird, liegt mehr Budget auf dem Tisch. Das ist kein Druck, das ist ein fairer Deal. Was wir reinstecken, bestimmt, wie weit das geht.\par
 
-\noindent Für heute und morgen sind wir in der Recherche- und Konzeptionsphase. Das bedeutet konkret: Das Briefing lesen — ich meine wirklich lesen, nicht überfliegen — dann schaut in die \texttt{library/}. Da liegt eine ordentliche Sammlung: Artbooks von Skyrim bis Dark Souls, GDDs von Deus Ex und Planescape Torment, Worldbuilding Bibles von Fallout bis Vampire the Masquerade, ein paar Papers zu Weltenbau und Game Design. Sichtet, was für euren Bereich relevant ist, und sammelt erste Ideen und offene Fragen. Und die CD hat ausdrücklich gesagt: Fragen, Anregungen, Anmerkungen gerne in eure Notizen — sie liest mit und gibt morgen ein weiteres Feedback. Also nutzt das. Habt ihr Fragen erstmal, bevor wir loslegen?\par
+\noindent Für heute und morgen sind wir in der Recherche- und Konzeptionsphase. Das bedeutet konkret: Das Briefing lesen — ich meine wirklich lesen, nicht überfliegen — dann schaut in die \breaktt{library/\allowbreak{}}. Da liegt eine ordentliche Sammlung: Artbooks von Skyrim bis Dark Souls, GDDs von Deus Ex und Planescape Torment, Worldbuilding Bibles von Fallout bis Vampire the Masquerade, ein paar Papers zu Weltenbau und Game Design. Sichtet, was für euren Bereich relevant ist, und sammelt erste Ideen und offene Fragen. Und die CD hat ausdrücklich gesagt: Fragen, Anregungen, Anmerkungen gerne in eure Notizen — sie liest mit und gibt morgen ein weiteres Feedback. Also nutzt das. Habt ihr Fragen erstmal, bevor wir loslegen?\par
 
 
-\noindent \textbf{TOOL: Write} [15:05:41] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-finn/output.md}\par
+\noindent \textbf{TOOL: Write} [15:05:41] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-finn/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Day 01, Scene 1, Finn}\par\vspace{0.5mm}
 
@@ -278,18 +280,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 
 \noindent \textbf{ASSISTANT} [15:05:46]:\par
-\noindent Traces geschrieben unter \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-finn/}:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{prompt.md} — Szenenkontext 1:1\\
-\noindent\hspace{2mm}\textbullet\ \texttt{reasoning.md} — Gedankenprozess\\
-\noindent\hspace{2mm}\textbullet\ \texttt{output.md} — Dialogzeile 1:1\\
+\noindent Traces geschrieben unter \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-finn/\allowbreak{}}:\par
+\noindent\hspace{2mm}\textbullet\ \breaktt{prompt.\allowbreak{}md} — Szenenkontext 1:1\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{reasoning.\allowbreak{}md} — Gedankenprozess\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{output.\allowbreak{}md} — Dialogzeile 1:1\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{emre}\textbf{Emre Yilmaz} — \textit{Lead Worldbuilder}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene1-emre}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a3d0c5cbe2c4e0ca0.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a3d0c5cbe2c4e0ca0.\allowbreak{}jsonl}\par
 \noindent Entries: 27\par
 \noindent Start: 2026-02-28T15:06:18.667Z\par
 \noindent End: 2026-02-28T15:07:30.465Z\par
@@ -332,7 +334,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Roster-Profil, bevor ich in den Dialog einsteige.\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:06:21] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:21]:\par
@@ -344,7 +346,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/emre-yilmaz.md}\par
+\noindent \textbf{TOOL: Read} [15:06:21] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}emre-yilmaz.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:21]:\par
@@ -388,7 +390,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese noch kurz das Briefing, um sicherzustellen, dass ich die Kernpunkte von RELICS kenne.\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:06:25] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:25]:\par
@@ -444,7 +446,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich meine Dialogzeile als Emre. Ich schreibe auch den Trace.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:06:28] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:06:28] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:06:28]:\par
@@ -455,7 +457,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:06:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-emre/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:06:49] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-emre/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Day 01, Scene 1, Emre}\par\vspace{0.5mm}
 
@@ -480,14 +482,14 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:07:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-emre/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:07:07] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-emre/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Day 01, Scene 1, Emre}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Gelesene Dateien}}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{simulation-2/agents/emre-memory.md} — leer, erster Tag\\
-\noindent\hspace{2mm}\textbullet\ \texttt{simulation-2/roster/emre-yilmaz.md} — vollständiges Profil\\
-\noindent\hspace{2mm}\textbullet\ \texttt{simulation-2/briefing.md} — Nordstern für RELICS\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md} — leer, erster Tag\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}emre-yilmaz.\allowbreak{}md} — vollständiges Profil\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md} — Nordstern für RELICS\\
 
 \vspace{1mm}\noindent\textbf{\textit{Charakterliche Überlegungen}}\par
 
@@ -520,7 +522,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
 
-\noindent \textbf{TOOL: Write} [15:07:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-emre/output.md}\par
+\noindent \textbf{TOOL: Write} [15:07:25] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-emre/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Day 01, Scene 1, Emre}\par\vspace{0.5mm}
 
@@ -538,7 +540,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 
 \noindent \textbf{ASSISTANT} [15:07:30]:\par
-\noindent Trace gespeichert unter \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-emre/}.\par
+\noindent Trace gespeichert unter \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-emre/\allowbreak{}}.\par
 
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
@@ -557,8 +559,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene1-darius}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-adb5f70f2022391c7.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-adb5f70f2022391c7.\allowbreak{}jsonl}\par
 \noindent Entries: 12\par
 \noindent Start: 2026-02-28T15:06:08.206Z\par
 \noindent End: 2026-02-28T15:06:24.778Z\par
@@ -601,7 +603,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Let me read the relevant files before responding.\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:06:10] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:10]:\par
@@ -613,7 +615,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:06:10] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:10]:\par
@@ -665,7 +667,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:11] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/darius-engel.md}\par
+\noindent \textbf{TOOL: Read} [15:06:11] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}darius-engel.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:11]:\par
@@ -715,8 +717,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene1-nami}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a5419e78b2ed62a50.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a5419e78b2ed62a50.\allowbreak{}jsonl}\par
 \noindent Entries: 25\par
 \noindent Start: 2026-02-28T15:06:28.418Z\par
 \noindent End: 2026-02-28T15:07:30.954Z\par
@@ -758,7 +760,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zunächst meine Dateien, bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:31] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:06:31] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:31]:\par
@@ -770,7 +772,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/nami-okafor.md}\par
+\noindent \textbf{TOOL: Read} [15:06:32] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}nami-okafor.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:32]:\par
@@ -805,7 +807,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:06:32] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:32]:\par
@@ -861,7 +863,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich schreibe jetzt meinen Trace und dann meine Dialogzeile.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:06:36] → \texttt{simulation-2/traces/day01-scene1-nami}\par
+\noindent \textbf{TOOL: Glob} [15:06:36] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-nami}\par
 
 
 \noindent \textbf{RESULT} [15:06:36]:\par
@@ -870,7 +872,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:06:54] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-nami/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:06:54] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-nami/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Day 01, Scene 1, Nami}\par\vspace{0.5mm}
 
@@ -895,7 +897,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:07:13] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-nami/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:07:13] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-nami/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Day 01, Scene 1, Nami}\par\vspace{0.5mm}
 
@@ -918,7 +920,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:07:26] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-nami/output.md}\par
+\noindent \textbf{TOOL: Write} [15:07:26] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-nami/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Day 01, Scene 1, Nami}\par\vspace{0.5mm}
 
@@ -945,17 +947,17 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
 \noindent Trace gespeichert unter:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-nami/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-nami/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene1-nami/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-nami/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-nami/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene1-nami/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{vera}\textbf{Vera Kowalski} — \textit{Concept Artist}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene1-vera}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-aee7abdf98ec1b267.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-aee7abdf98ec1b267.\allowbreak{}jsonl}\par
 \noindent Entries: 2\par
 \noindent Start: 2026-02-28T15:06:38.075Z\par
 \noindent End: 2026-02-28T15:06:49.071Z\par
@@ -1006,8 +1008,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene1-tobi}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a292d897a75eb745b.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a292d897a75eb745b.\allowbreak{}jsonl}\par
 \noindent Entries: 12\par
 \noindent Start: 2026-02-28T15:06:46.301Z\par
 \noindent End: 2026-02-28T15:07:01.148Z\par
@@ -1048,7 +1050,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese erst meine Memory-Datei und das Briefing, bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:06:49] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:49]:\par
@@ -1060,7 +1062,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:06:49] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:49]:\par
@@ -1112,7 +1114,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/tobi-richter.md}\par
+\noindent \textbf{TOOL: Read} [15:06:49] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}tobi-richter.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:49]:\par
@@ -1160,8 +1162,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene1-leo}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a11983c75cee79471.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a11983c75cee79471.\allowbreak{}jsonl}\par
 \noindent Entries: 12\par
 \noindent Start: 2026-02-28T15:06:54.031Z\par
 \noindent End: 2026-02-28T15:07:08.620Z\par
@@ -1201,7 +1203,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese schnell meine Dateien bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:56] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/leo-fischer.md}\par
+\noindent \textbf{TOOL: Read} [15:06:56] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}leo-fischer.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:56]:\par
@@ -1236,7 +1238,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:56] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:06:56] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:56]:\par
@@ -1248,7 +1250,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:06:57] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:06:57] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:06:57]:\par
@@ -1320,6 +1322,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 2](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-001-scene-002-WORK.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Alle recherchieren parallel. Emre: Wolf-Infrastrukturen, Kosmologie-Hypothese. Darius: Design-Säulen, Nervensystem-Leveling. Nami: Schattenfieber-Stufen, Quest-Ideen. Vera: Architektur-DNA, Lichtkonzept. Tobi: Tech-Pipeline, Data Layers. Leo: Zielgruppen-Analyse. Finn: Roadmap.\par}
 ```
@@ -1331,8 +1335,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene2-finn}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-ac204e2d16612391e.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-ac204e2d16612391e.\allowbreak{}jsonl}\par
 \noindent Entries: 31\par
 \noindent Start: 2026-02-28T15:09:07.493Z\par
 \noindent End: 2026-02-28T15:10:46.570Z\par
@@ -1377,7 +1381,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Moin. Tag 1, Szene 2. Erstmal das Briefing lesen, dann schauen was in der Bibliothek liegt.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:09] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:09:09] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:09]:\par
@@ -1429,7 +1433,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:09:10] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:10]:\par
@@ -1456,7 +1460,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Briefing ist klar. Jetzt schaue ich mir die Bibliothek an — brauche ein GDD als Referenz für Umfang und Struktur.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:09:13] → \texttt{library/**/*}\par
+\noindent \textbf{TOOL: Glob} [15:09:13] → \breaktt{library/\allowbreak{}**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [15:09:14]:\par
@@ -1490,7 +1494,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gute Auswahl. Deus Ex passt thematisch am besten — ähnliches Setting (Cyberpunk-Grundlage, Fraktionsgameplay). Das schaue ich mir als GDD-Referenz an. Außerdem das Planescape Torment Vision Statement — auch relevant für Tonalität und narrative Tiefe.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:18] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/deus-ex-design-document-annotated.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:18] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:18]:\par
@@ -1505,7 +1509,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich habe genug gesehen. Jetzt schaue ich mir noch kurz das Wasteland 2 Vision Document an — das dürfte näher an einem echten GDD mit Scope-Infos sein.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/wasteland-2-vision-document.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:30] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}wasteland-2-vision-document.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:31]:\par
@@ -1522,7 +1526,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich meine Wochenplanung und Notizen in die Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:40] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/game-master.md}\par
+\noindent \textbf{TOOL: Read} [15:09:40] → \breaktt{simulation-2/\allowbreak{}game-master.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:40]:\par
@@ -1536,22 +1540,22 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent 7→Basiert auf Park et al. (2023, Generative Agents — Smallville) für Memory-Streams und szenenbasierte Steuerung, und Qian et al. (2024, ChatDev) für phasenbasierte Aufgabenzerlegung.\par
 \noindent 8→\par
 \noindent 9→- \textbf{GM} = Hauptsession (Opus 4.6). Orchestriert Szenen, spawnt Agenten, schreibt Logbuch.\par
-\noindent 10→- \textbf{7 Agenten} = Subagenten (Sonnet 4.6, \texttt{model: "sonnet"}). Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in \texttt{.claude/agents/\{name\}.md} und ein Persönlichkeitsprofil in \texttt{roster/}.\par
+\noindent 10→- \textbf{7 Agenten} = Subagenten (Sonnet 4.6, \breaktt{model: "sonnet"}). Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in \breaktt{.\allowbreak{}claude/\allowbreak{}agents/\allowbreak{}\{name\}.\allowbreak{}md} und ein Persönlichkeitsprofil in \breaktt{roster/\allowbreak{}}.\par
 \noindent 11→- \textbf{CD} / \textbf{Creative Director} = Menschlicher Nutzer. Gibt Feedback, trifft kreative Entscheidungen beim Start jedes Tages.\par
 \noindent 12→\par
 \noindent 13→Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben in Dateien.\par
 \noindent 14→\par
-\noindent 15→\#\# Pfade (relativ zu \texttt{simulation-2/})\par
+\noindent 15→\#\# Pfade (relativ zu \breaktt{simulation-2/\allowbreak{}})\par
 \noindent 16→\par
 \noindent 17→| Was | Pfad |\par
 \noindent 18→|-----|------|\par
-\noindent 19→| Weltzustand | \texttt{state/world.json} |\par
-\noindent 20→| Agent-Memory | \texttt{agents/\{name\}-memory.md} (finn, darius, emre, nami, vera, tobi, leo) |\par
-\noindent 21→| Agent-Roster | \texttt{roster/\{vorname\}-\{nachname\}.md} (Frontmatter \texttt{workspace} → Szenen-Ort) |\par
-\noindent 22→| Traces | \texttt{traces/dayDD-sceneS-…/} (JSONL automatisch, transcript.md per Script) |\par
-\noindent 23→| Logbuch | \texttt{logbook/dayDD.json} |\par
-\noindent 24→| Logbuch-Schema | \texttt{schemas/day-index.json} (\textbf{Repo-Root}, nicht in simulation-2/) |\par
-\noindent 25→| Briefing | \texttt{briefing.md} |\par
+\noindent 19→| Weltzustand | \breaktt{state/\allowbreak{}world.\allowbreak{}json} |\par
+\noindent 20→| Agent-Memory | \breaktt{agents/\allowbreak{}\{name\}-memory.\allowbreak{}md} (finn, darius, emre, nami, vera, tobi, leo) |\par
+\noindent 21→| Agent-Roster | \breaktt{roster/\allowbreak{}\{vorname\}-\{nachname\}.\allowbreak{}md} (Frontmatter \breaktt{workspace} → Szenen-Ort) |\par
+\noindent 22→| Traces | \breaktt{traces/\allowbreak{}dayDD-sceneS-…/\allowbreak{}} (JSONL automatisch, transcript.md per Script) |\par
+\noindent 23→| Logbuch | \breaktt{logbook/\allowbreak{}dayDD.\allowbreak{}json} |\par
+\noindent 24→| Logbuch-Schema | \breaktt{schemas/\allowbreak{}day-index.\allowbreak{}json} (\textbf{Repo-Root}, nicht in simulation-2/) |\par
+\noindent 25→| Briefing | \breaktt{briefing.\allowbreak{}md} |\par
 \noindent 26→\par
 \noindent 27→\#\# Tagesablauf (6 Szenen)\par
 \noindent 28→\par
@@ -1570,7 +1574,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt habe ich das vollständige Bild. Memory schreiben.\par
 
 
-\noindent \textbf{TOOL: Write} [15:10:35] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:10:35] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Finn — Memory}\par\vspace{0.5mm}
 
@@ -1613,15 +1617,15 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent\hspace{2mm}3.\ \textbf{Schauplatz-Präzision} — Vera und Tobi brauchen das für Art Direction.\\
 \noindent\hspace{2mm}4.\ \textbf{Schattenfieber als Spieler-Mechanik} — riesiger Scope-Unterschied je nach Antwort.\\
 
-\noindent Memory-Datei aktualisiert unter \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}.\par
+\noindent Memory-Datei aktualisiert unter \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}.\par
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{emre}\textbf{Emre Yilmaz} — \textit{Lead Worldbuilder}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene2-emre}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a5ba0fd9c5342e0d5.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a5ba0fd9c5342e0d5.\allowbreak{}jsonl}\par
 \noindent Entries: 73\par
 \noindent Start: 2026-02-28T15:09:28.228Z\par
 \noindent End: 2026-02-28T15:14:27.038Z\par
@@ -1668,7 +1672,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Briefing parallel.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:09:30] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:30]:\par
@@ -1690,7 +1694,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:09:30] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:30]:\par
@@ -1746,7 +1750,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Briefing gründlich gelesen. Jetzt die drei Paper/PDFs parallel lesen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:34] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:34] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:34]:\par
@@ -1755,7 +1759,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:35] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Klastrup and Tosca - 2004 - Transmedial Worlds - Rethinking Cyberworld Design.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:35] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Klastrup and Tosca - 2004 - Transmedial Worlds - Rethinking Cyberworld Design.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:36]:\par
@@ -1768,7 +1772,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Das Wolf-PDF zeigt nur die ersten Seiten (Titelei). Ich brauche das Kapitel zu den 9 Infrastrukturen. Ich lese jetzt gezielt die relevanten Seiten und die Fallout Bible parallel.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:45] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:45] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:45]:\par
@@ -1777,7 +1781,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:09:45] → \texttt{**/fallout*}\par
+\noindent \textbf{TOOL: Glob} [15:09:45] → \breaktt{**/\allowbreak{}fallout*}\par
 
 
 \noindent \textbf{RESULT} [15:09:46]:\par
@@ -1791,7 +1795,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Das Inhaltsverzeichnis von Wolf ist jetzt klar. Kapitel 3 ("World Structures and Systems of Relationships", S. 153–197) enthält die 9 Infrastrukturen. Ich lese diese Seiten direkt.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:58] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:58]:\par
@@ -1800,7 +1804,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:59] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/fallout-bible-complete.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:59] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}fallout-bible-complete.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:59]:\par
@@ -1813,7 +1817,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Wolf Kap. 3 (9 Infrastrukturen) liegt auf S. 154–197 des Buches. Das PDF hat Vorstuff — ich muss weiter blättern. Außerdem lese ich mehr Fallout Bible für die Fraktions-Ökologie.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:12] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:12] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:10:12]:\par
@@ -1822,7 +1826,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:17] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:18]:\par
@@ -1835,7 +1839,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Das PDF-Paging entspricht nicht der Buchpaginierung — ich bin noch in der Einleitung. Laut Inhaltsverzeichnis beginnt Kapitel 3 auf Buchseite 153. Mit \textasciitilde{}15 Vorseiten (Titelei, Inhaltsverzeichnis, etc.) sollte das PDF-Seite \textasciitilde{}168 entsprechen. Ich lese gezielt diesen Bereich.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:25] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:10:25]:\par
@@ -1844,7 +1848,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:26] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/fallout-bible-complete.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:26] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}fallout-bible-complete.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:10:26]:\par
@@ -1853,7 +1857,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:33] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:33]:\par
@@ -1862,7 +1866,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/fallout-bible-complete.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:33] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}fallout-bible-complete.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:34]:\par
@@ -1877,7 +1881,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Zuerst lese ich mein Roster für den vollständigen Kontext.\par
 
 
-\noindent \textbf{TOOL: Read} [15:11:01] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/emre-yilmaz.md}\par
+\noindent \textbf{TOOL: Read} [15:11:01] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}emre-yilmaz.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:11:01]:\par
@@ -1921,7 +1925,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Alles da. Jetzt schreibe ich die Trace-Dateien und aktualisiere die Memory. Zuerst das Trace-Verzeichnis anlegen.\par
 
 
-\noindent \textbf{TOOL: Write} [15:11:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-emre/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:11:29] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-emre/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 2 (WORK)}\par\vspace{0.5mm}
 
@@ -1946,7 +1950,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-emre/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:12:32] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-emre/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 2}\par\vspace{0.5mm}
 
@@ -1974,7 +1978,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt die Memory-Datei aktualisieren und den Output schreiben.\par
 
 
-\noindent \textbf{TOOL: Write} [15:13:34] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:13:34] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Emre — Memory}\par\vspace{0.5mm}
 
@@ -1996,17 +2000,17 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:14:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-emre/output.md}\par
+\noindent \textbf{TOOL: Write} [15:14:10] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-emre/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 2}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Ergebnis der Recherche-Session}}\par
 
 \noindent\textbf{\textit{Gelesene Quellen}} 
-\noindent\hspace{2mm}\textbullet\ \texttt{simulation-2/briefing.md} — vollständig, systematisch\\
-\noindent\hspace{2mm}\textbullet\ \texttt{library/papers/Klastrup and Tosca - 2004 - Transmedial Worlds - Rethinking Cyberworld Design.pdf} — vollständig (8 S.)\\
-\noindent\hspace{2mm}\textbullet\ \texttt{library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf} — Kap. 3, S. 153–172 (Maps, Timelines, Genealogies, Nature; Inhaltsverzeichnis für Gesamtüberblick)\\
-\noindent\hspace{2mm}\textbullet\ \texttt{library/wbbs/fallout-bible-complete.pdf} — S. 1–49 (Section Zero, Disclaimer,\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md} — vollständig, systematisch\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{library/\allowbreak{}papers/\allowbreak{}Klastrup and Tosca - 2004 - Transmedial Worlds - Rethinking Cyberworld Design.\allowbreak{}pdf} — vollständig (8 S.)\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf} — Kap. 3, S. 153–172 (Maps, Timelines, Genealogies, Nature; Inhaltsverzeichnis für Gesamtüberblick)\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{library/\allowbreak{}wbbs/\allowbreak{}fallout-bible-complete.\allowbreak{}pdf} — S. 1–49 (Section Zero, Disclaimer,\\
 \noindent ... [truncated]\par
 \noindent ```\par
 
@@ -2036,18 +2040,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent \textbf{Fünf offene Fragen gehen an den Creative Director} — insbesondere zur Natur der "Planes of existence", zum Tiervolk und zum noch unbestimmten Relikt. Ohne das Relikt kann ich keine vollständige Lore-Timeline setzen.\par
 
 \noindent Aktualisierte Dateien:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-emre/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-emre/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-emre/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-emre/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-emre/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-emre/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{darius}\textbf{Darius Engel} — \textit{Game Director}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene2-darius}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a160a12b6189e191b.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a160a12b6189e191b.\allowbreak{}jsonl}\par
 \noindent Entries: 46\par
 \noindent Start: 2026-02-28T15:09:16.896Z\par
 \noindent End: 2026-02-28T15:13:09.739Z\par
@@ -2090,7 +2094,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst das Briefing und meine Memory-Datei, dann die Referenzdokumente.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:19] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:09:19] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:19]:\par
@@ -2142,7 +2146,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:19] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:09:19] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:19]:\par
@@ -2167,10 +2171,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt die Referenzdokumente. Ich lese das Deus-Ex-GDD und den Planescape-Vision-Statement parallel.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/deus-ex-design-document-annotated.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:24] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/planescape-torment-vision-statement-1997.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:25] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:09:25]:\par
@@ -2185,7 +2189,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:09:26] → \texttt{library/gdds/**/*}\par
+\noindent \textbf{TOOL: Glob} [15:09:26] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [15:09:27]:\par
@@ -2199,10 +2203,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/deus-ex-design-document-annotated.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:29] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/planescape-torment-vision-statement-1997.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:29] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:30]:\par
@@ -2221,7 +2225,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Sehr gut. Das ist das Deus-Ex-GDD (Warren Spector / Ion Storm, 1997) — das Shooter/Majestic-Revelations-Dokument, später zu Deus Ex geworden. Genau das, was ich brauche. Ich habe jetzt genug Material. Jetzt kommt die eigentliche Arbeit: Memory-Datei aktualisieren.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:53] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:09:53] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:53]:\par
@@ -2246,7 +2250,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich die erweiterten Notizen in die Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Write} [15:11:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:11:21] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Darius — Memory}\par\vspace{0.5mm}
 
@@ -2272,7 +2276,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich den Trace.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:11:28] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:11:28] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:11:28]:\par
@@ -2289,7 +2293,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:11:50] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-darius/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:11:50] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-darius/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \noindent Du bist Darius Engel, Game Director \& Lead Designer bei GenSoftworks.\par
 
@@ -2312,7 +2316,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-darius/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:12:16] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-darius/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Darius, Tag 1, Szene 2}\par\vspace{0.5mm}
 
@@ -2335,13 +2339,13 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-darius/output.md}\par
+\noindent \textbf{TOOL: Write} [15:12:47] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-darius/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Darius, Tag 1, Szene 2}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Was produziert wurde}}\par
 
-\noindent \textbf{Datei aktualisiert:} \texttt{simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{Datei aktualisiert:} \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 \noindent Ergänzter Abschnitt: "Tag 1 (Montag) — Szene 2: Recherche-Notizen"\par
 
@@ -2395,18 +2399,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 \noindent \textbf{Erzeugte Dateien:}\par
 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md} — aktualisiert mit vollständigen Recherche-Notizen\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-darius/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-darius/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-darius/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md} — aktualisiert mit vollständigen Recherche-Notizen\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-darius/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-darius/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-darius/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{nami}\textbf{Nami Okafor} — \textit{Narrative Designer}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene2-nami}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-aa28ec0d8ba24f682.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-aa28ec0d8ba24f682.\allowbreak{}jsonl}\par
 \noindent Entries: 41\par
 \noindent Start: 2026-02-28T15:09:36.359Z\par
 \noindent End: 2026-02-28T15:11:51.402Z\par
@@ -2450,7 +2454,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zunächst alle relevanten Dateien, bevor ich anfange zu denken.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:38] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:09:38] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:38]:\par
@@ -2471,7 +2475,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:38] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:09:38] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:39]:\par
@@ -2523,7 +2527,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:39] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/nami-okafor.md}\par
+\noindent \textbf{TOOL: Read} [15:09:39] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}nami-okafor.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:39]:\par
@@ -2562,7 +2566,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt die Referenzen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/planescape-torment-vision-statement-1997.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:43] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:43]:\par
@@ -2571,7 +2575,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/vtm-2nd-edition.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:44] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}vtm-2nd-edition.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:44]:\par
@@ -2584,7 +2588,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich brauche mehr aus beiden Referenzen. Das Vision Statement zeigt erst die Oberfläche — ich will tiefer in Avellones narrative Absichten. Bei VtM brauche ich die Clan-Kapitel, nicht die Credits-Seite.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:54] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/planescape-torment-vision-statement-1997.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:54] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:54]:\par
@@ -2593,7 +2597,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:55] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/vtm-2nd-edition.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:55] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}vtm-2nd-edition.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:55]:\par
@@ -2606,7 +2610,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Das ist genug. Ich habe was ich brauche. Jetzt denken.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/game-master.md}\par
+\noindent \textbf{TOOL: Read} [15:10:06] → \breaktt{simulation-2/\allowbreak{}game-master.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:06]:\par
@@ -2620,22 +2624,22 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent 7→Basiert auf Park et al. (2023, Generative Agents — Smallville) für Memory-Streams und szenenbasierte Steuerung, und Qian et al. (2024, ChatDev) für phasenbasierte Aufgabenzerlegung.\par
 \noindent 8→\par
 \noindent 9→- \textbf{GM} = Hauptsession (Opus 4.6). Orchestriert Szenen, spawnt Agenten, schreibt Logbuch.\par
-\noindent 10→- \textbf{7 Agenten} = Subagenten (Sonnet 4.6, \texttt{model: "sonnet"}). Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in \texttt{.claude/agents/\{name\}.md} und ein Persönlichkeitsprofil in \texttt{roster/}.\par
+\noindent 10→- \textbf{7 Agenten} = Subagenten (Sonnet 4.6, \breaktt{model: "sonnet"}). Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in \breaktt{.\allowbreak{}claude/\allowbreak{}agents/\allowbreak{}\{name\}.\allowbreak{}md} und ein Persönlichkeitsprofil in \breaktt{roster/\allowbreak{}}.\par
 \noindent 11→- \textbf{CD} / \textbf{Creative Director} = Menschlicher Nutzer. Gibt Feedback, trifft kreative Entscheidungen beim Start jedes Tages.\par
 \noindent 12→\par
 \noindent 13→Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben in Dateien.\par
 \noindent 14→\par
-\noindent 15→\#\# Pfade (relativ zu \texttt{simulation-2/})\par
+\noindent 15→\#\# Pfade (relativ zu \breaktt{simulation-2/\allowbreak{}})\par
 \noindent 16→\par
 \noindent 17→| Was | Pfad |\par
 \noindent 18→|-----|------|\par
-\noindent 19→| Weltzustand | \texttt{state/world.json} |\par
-\noindent 20→| Agent-Memory | \texttt{agents/\{name\}-memory.md} (finn, darius, emre, nami, vera, tobi, leo) |\par
-\noindent 21→| Agent-Roster | \texttt{roster/\{vorname\}-\{nachname\}.md} (Frontmatter \texttt{workspace} → Szenen-Ort) |\par
-\noindent 22→| Traces | \texttt{traces/dayDD-sceneS-…/} (JSONL automatisch, transcript.md per Script) |\par
-\noindent 23→| Logbuch | \texttt{logbook/dayDD.json} |\par
-\noindent 24→| Logbuch-Schema | \texttt{schemas/day-index.json} (\textbf{Repo-Root}, nicht in simulation-2/) |\par
-\noindent 25→| Briefing | \texttt{briefing.md} |\par
+\noindent 19→| Weltzustand | \breaktt{state/\allowbreak{}world.\allowbreak{}json} |\par
+\noindent 20→| Agent-Memory | \breaktt{agents/\allowbreak{}\{name\}-memory.\allowbreak{}md} (finn, darius, emre, nami, vera, tobi, leo) |\par
+\noindent 21→| Agent-Roster | \breaktt{roster/\allowbreak{}\{vorname\}-\{nachname\}.\allowbreak{}md} (Frontmatter \breaktt{workspace} → Szenen-Ort) |\par
+\noindent 22→| Traces | \breaktt{traces/\allowbreak{}dayDD-sceneS-…/\allowbreak{}} (JSONL automatisch, transcript.md per Script) |\par
+\noindent 23→| Logbuch | \breaktt{logbook/\allowbreak{}dayDD.\allowbreak{}json} |\par
+\noindent 24→| Logbuch-Schema | \breaktt{schemas/\allowbreak{}day-index.\allowbreak{}json} (\textbf{Repo-Root}, nicht in simulation-2/) |\par
+\noindent 25→| Briefing | \breaktt{briefing.\allowbreak{}md} |\par
 \noindent 26→\par
 \noindent 27→\#\# Tagesablauf (6 Szenen)\par
 \noindent 28→\par
@@ -2662,7 +2666,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich die Memory-Ergänzung.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:10:21] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:21]:\par
@@ -2683,7 +2687,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:11:28] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:11:28] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Nami — Memory}\par\vspace{0.5mm}
 
@@ -2717,7 +2721,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
-\noindent Die Memory-Datei liegt unter \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md} und wurde mit dem Abschnitt \texttt{\#\# Tag 1 (Montag) — Work (Recherche)} erweitert.\par
+\noindent Die Memory-Datei liegt unter \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md} und wurde mit dem Abschnitt \breaktt{\#\# Tag 1 (Montag) — Work (Recherche)} erweitert.\par
 
 \noindent Notiert habe ich:\par
 
@@ -2736,8 +2740,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene2-vera}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a63bdac4a7aa98fd9.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a63bdac4a7aa98fd9.\allowbreak{}jsonl}\par
 \noindent Entries: 68\par
 \noindent Start: 2026-02-28T15:09:46.814Z\par
 \noindent End: 2026-02-28T15:14:03.325Z\par
@@ -2782,7 +2786,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Briefing parallel.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:09:49] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:49]:\par
@@ -2803,7 +2807,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:09:49] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:49]:\par
@@ -2859,10 +2863,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Briefing sitzt. Jetzt die Referenzen — Dark Souls Design Works und Cyberpunk 2077 WBB parallel durchsuchen. Bei den PDFs schaue ich zuerst, wie viele Seiten sie haben und lese dann gezielt.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:09:54] → \texttt{library/artbooks/*.pdf}\par
+\noindent \textbf{TOOL: Glob} [15:09:54] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}*.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Glob} [15:09:54] → \texttt{library/wbbs/*.pdf}\par
+\noindent \textbf{TOOL: Glob} [15:09:54] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}*.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:54]:\par
@@ -2889,10 +2893,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut, alles da. Dark Souls Design Works und Cyberpunk 2077 WBB — ich lese die ersten Seiten beider, um Struktur zu erfassen, dann gezielt weiter.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dark-souls-design-works.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:58] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dark-souls-design-works.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/world-of-cyberpunk-2077.pdf}\par
+\noindent \textbf{TOOL: Read} [15:09:58] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}world-of-cyberpunk-2077.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:09:58]:\par
@@ -2911,10 +2915,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Titelseiten, Inhaltsverzeichnis und das erste visuelle Material. Das reicht nicht — ich brauche mehr Inhalt. Dark Souls: Concept Art ab Seite 6. Cyberpunk: Architektur und Stadtkapitel, die kommen typischerweise nach dem Intro. Ich lese beide weiter parallel.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dark-souls-design-works.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:07] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dark-souls-design-works.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/world-of-cyberpunk-2077.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:08] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}world-of-cyberpunk-2077.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:08]:\par
@@ -2933,7 +2937,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Das Night City-Kapitel — das ist was ich wirklich brauche. Seite 84 laut Inhaltsverzeichnis. Und bei Dark Souls will ich mehr Environments sehen, besonders Architektur. Beides parallel.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/world-of-cyberpunk-2077.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:21] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}world-of-cyberpunk-2077.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:22]:\par
@@ -2942,7 +2946,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:22] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dark-souls-design-works.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:22] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dark-souls-design-works.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:23]:\par
@@ -2961,7 +2965,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent \textbf{Cyberpunk 2077}: Die Distrikt-Differenzierung ist Gold. Wellsprings (mittlere Klasse) = neuere, modernere Bauten, Aura von Klasse aber abgenutzt. Vista del Rey (Unterschicht) = Megablöcke die langsam sterben, Graffiti auf bröckelnden Fassaden. City Center = hochgezogene Glastürme, Abstand zur Straße. Die Staffelung ist visuell klar lesbar — genau das brauche ich für RELICS, nur eben mit Stampflehm statt Glas, mit Biolumineszenz statt Neon.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:52] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/vera-kowalski.md}\par
+\noindent \textbf{TOOL: Read} [15:10:52] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}vera-kowalski.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:52]:\par
@@ -3003,7 +3007,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt hab ich alles was ich brauche. Memory schreiben.\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:12:21] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Vera — Memory}\par\vspace{0.5mm}
 
@@ -3029,7 +3033,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Memory aktualisiert. Jetzt der Trace — prompt, reasoning, output dokumentieren.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:12:29] → \texttt{simulation-2/traces/}\par
+\noindent \textbf{TOOL: Glob} [15:12:29] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}}\par
 
 
 \noindent \textbf{RESULT} [15:12:29]:\par
@@ -3038,7 +3042,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:12:36] → \texttt{simulation-2/traces*}\par
+\noindent \textbf{TOOL: Glob} [15:12:36] → \breaktt{simulation-2/\allowbreak{}traces*}\par
 
 
 \noindent \textbf{RESULT} [15:12:37]:\par
@@ -3051,7 +3055,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Trace-Verzeichnis existiert noch nicht. Ich lege es an.\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:59] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-vera/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:12:59] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-vera/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 2 (Vera)}\par\vspace{0.5mm}
 
@@ -3077,7 +3081,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:13:23] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-vera/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:13:23] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-vera/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 2 (Vera)}\par\vspace{0.5mm}
 
@@ -3098,14 +3102,14 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:13:40] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-vera/output.md}\par
+\noindent \textbf{TOOL: Write} [15:13:40] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-vera/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 2 (Vera)}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Produzierte Artefakte}}\par
 
 \noindent \textbf{Datei aktualisiert:}\par
-\noindent \texttt{simulation-2/agents/vera-memory.md} — Abschnitt "Tag 1 (Montag) — Recherche: Ergebnisse" ergänzt.\par
+\noindent \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md} — Abschnitt "Tag 1 (Montag) — Recherche: Ergebnisse" ergänzt.\par
 
 \vspace{1mm}\noindent\textbf{\textit{Inhalt der Notizen (Zusammenfassung)}}\par
 
@@ -3139,10 +3143,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ab Mittwoch: Silhouetten-Thumbnails. Mindestens 12.\par
 
 \noindent \textbf{Produzierte Dateien:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md} — aktualisiert\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-vera/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-vera/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-vera/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md} — aktualisiert\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-vera/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-vera/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-vera/\allowbreak{}output.\allowbreak{}md}\\
 
 \noindent \textbf{Budget heute: \$0.00 / \$2.00} — keine Bildgenerierung.\par
 
@@ -3151,8 +3155,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene2-tobi}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a6ce3aaf5dfda4fad.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a6ce3aaf5dfda4fad.\allowbreak{}jsonl}\par
 \noindent Entries: 47\par
 \noindent Start: 2026-02-28T15:09:55.293Z\par
 \noindent End: 2026-02-28T15:13:16.656Z\par
@@ -3197,7 +3201,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Erstmal alles lesen, bevor ich irgendwas schreibe.\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:57] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:09:57] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:57]:\par
@@ -3218,7 +3222,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:09:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:09:58] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:09:58]:\par
@@ -3274,7 +3278,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Briefing ist klar. Jetzt die relevanten Seiten aus dem Dark Souls Design Works — ich such gezielt nach Beleuchtungsansätzen und Materialästhetik.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dark-souls-design-works.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:02] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dark-souls-design-works.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:03]:\par
@@ -3283,7 +3287,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:10:03] → \texttt{**/*.pdf}\par
+\noindent \textbf{TOOL: Glob} [15:10:03] → \breaktt{**/\allowbreak{}*.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:03]:\par
@@ -3317,10 +3321,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Nur Titelseiten und Inhaltsverzeichnis — noch keine technischen Inhalte. Ich brauche die Concept-Art-Seiten, besonders Umgebungen und Beleuchtung. Und parallel schaue ich mir das Cyberpunk-2077-Worldbuilding an, das ist für die Materialsprache relevanter.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:09] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dark-souls-design-works.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:09] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dark-souls-design-works.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/wbbs/world-of-cyberpunk-2077.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:10] → \breaktt{library/\allowbreak{}wbbs/\allowbreak{}world-of-cyberpunk-2077.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:10]:\par
@@ -3345,7 +3349,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt Memory schreiben, dann Roster lesen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:26] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/tobi-richter.md}\par
+\noindent \textbf{TOOL: Read} [15:10:26] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}tobi-richter.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:26]:\par
@@ -3400,7 +3404,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent\hspace{2mm}\textbullet\ ACES oder AgX für die Farbpipeline? Das ist keine kosmetische Frage — das verändert die gesamte Materialwahrnehmung.\\
 
 
-\noindent \textbf{TOOL: Write} [15:11:59] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:11:59] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Tobi — Memory}\par\vspace{0.5mm}
 
@@ -3425,7 +3429,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Memory ist aktuell. Jetzt die Trace-Dateien.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:12:02] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:12:02] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:12:03]:\par
@@ -3444,7 +3448,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:20] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-tobi/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:12:20] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-tobi/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \noindent Du bist Tobias "Tobi" Richter, Technical Artist \& VP Specialist bei GenSoftworks.\par
 
@@ -3468,7 +3472,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-tobi/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:12:49] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-tobi/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 2}\par\vspace{0.5mm}
 
@@ -3490,13 +3494,13 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:13:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-tobi/output.md}\par
+\noindent \textbf{TOOL: Write} [15:13:02] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-tobi/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 2}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Ergebnis}}\par
 
-\noindent Memory-Datei \texttt{/simulation-2/agents/tobi-memory.md} wurde um folgende Abschnitte ergänzt:\par
+\noindent Memory-Datei \breaktt{/\allowbreak{}simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md} wurde um folgende Abschnitte ergänzt:\par
 
 \noindent\hspace{2mm}\textbullet\ \textbf{Dark Souls Design Works — Beleuchtungsbeobachtungen}: Detaillierte Analyse der fünf Hauptlicht-Schemata aus dem Concept-Art-Kapitel. Lagerfeuer, Kerker, Kathedrale, Aussenräume, Stadtansicht.\\
 
@@ -3536,18 +3540,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent\hspace{2mm}3.\ \textbf{Emre/Nami}: Was ist das Schattenfieber visuell? "Opfer werden verändert" — das könnte ein eigener Shader-Zustand sein. Je nach Antwort entweder trivial oder ein eigenständiges System.\\
 
 \noindent Die Dateien liegen unter:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-tobi/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-tobi/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-tobi/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-tobi/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-tobi/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-tobi/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{leo}\textbf{Leo Fischer} — \textit{QA Lead}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene2-leo}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a670c4b556003c0fc.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a670c4b556003c0fc.\allowbreak{}jsonl}\par
 \noindent Entries: 50\par
 \noindent Start: 2026-02-28T15:10:04.121Z\par
 \noindent End: 2026-02-28T15:13:00.924Z\par
@@ -3592,7 +3596,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese erstmal alles, was ich brauche — Briefing, meine Memory und dann schaue ich mir die Referenzmaterialien an.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:10:06] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:06]:\par
@@ -3644,7 +3648,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:10:06] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:06]:\par
@@ -3664,7 +3668,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/leo-fischer.md}\par
+\noindent \textbf{TOOL: Read} [15:10:07] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}leo-fischer.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:07]:\par
@@ -3703,10 +3707,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt schaue ich mir die Referenzmaterialien an — Deus Ex GDD und Planescape Vision Statement. Ich lese zuerst ein paar Seiten, um relevante Stellen zu finden.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/deus-ex-design-document-annotated.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:14] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/planescape-torment-vision-statement-1997.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:14] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:14]:\par
@@ -3725,7 +3729,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Okay, das ist Gold. Ich lese noch mehr vom Planescape-Dokument — besonders den Vision Statement-Teil — und dann schaue ich mir noch relevante Seiten vom Deus Ex GDD an, bevor ich meine Memory aktualisiere.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:22] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/planescape-torment-vision-statement-1997.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:22] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:23]:\par
@@ -3734,7 +3738,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:23] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/deus-ex-design-document-annotated.pdf}\par
+\noindent \textbf{TOOL: Read} [15:10:23] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:10:24]:\par
@@ -3747,7 +3751,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ausgezeichnetes Material. Ich habe jetzt genug. Das Planescape-Dokument ist eine Goldmine, und das Deus Ex GDD hat exakt das, was ich gesucht habe: klare Designphilosophie, Onboarding-Denken, "Deep Simulation of Small Environments". Jetzt schreibe ich meine Memory-Notizen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:10:38] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:10:38] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:10:38]:\par
@@ -3767,7 +3771,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:11:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:11:46] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Leo — Memory}\par\vspace{0.5mm}
 
@@ -3792,7 +3796,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut, das ist drin. Jetzt schreibe ich noch schnell meinen Trace-Log für diese Szene.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:11:51] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:11:51] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:11:52]:\par
@@ -3811,7 +3815,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:11] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-leo/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:12:11] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-leo/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 2, Leo}\par\vspace{0.5mm}
 
@@ -3837,17 +3841,17 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:35] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-leo/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:12:35] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-leo/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 2, Leo}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Was ich gelesen habe}}\par
 
-\noindent\hspace{2mm}1.\ \texttt{simulation-2/briefing.md} — vollständig\\
-\noindent\hspace{2mm}2.\ \texttt{simulation-2/agents/leo-memory.md} — bestehende Notizen\\
-\noindent\hspace{2mm}3.\ \texttt{simulation-2/roster/leo-fischer.md} — meine Biografie\\
-\noindent\hspace{2mm}4.\ \texttt{library/gdds/deus-ex-design-document-annotated.pdf} — Seiten 1-12 (Marketing, Plot, Gameplay Overview)\\
-\noindent\hspace{2mm}5.\ \texttt{library/gdds/planescape-torment-vision-statement-1997.pdf} — Seiten 1-12 (Quick Intro, Vision Statement, Gameplay Elements)\\
+\noindent\hspace{2mm}1.\ \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md} — vollständig\\
+\noindent\hspace{2mm}2.\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md} — bestehende Notizen\\
+\noindent\hspace{2mm}3.\ \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}leo-fischer.\allowbreak{}md} — meine Biografie\\
+\noindent\hspace{2mm}4.\ \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf} — Seiten 1-12 (Marketing, Plot, Gameplay Overview)\\
+\noindent\hspace{2mm}5.\ \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf} — Seiten 1-12 (Quick Intro, Vision Statement, Gameplay Elements)\\
 
 \vspace{1mm}\noindent\textbf{\textit{Gedankenprozess}}\par
 
@@ -3862,13 +3866,13 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:12:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-leo/output.md}\par
+\noindent \textbf{TOOL: Write} [15:12:43] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-leo/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 2, Leo}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Produziertes Artefakt}}\par
 
-\noindent Aktualisierte Memory-Datei: \texttt{simulation-2/agents/leo-memory.md}\par
+\noindent Aktualisierte Memory-Datei: \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 \noindent Neue Sektionen ergänzt unter "Tag 1 (Montag) — Recherche: Bibliothek":\par
 \noindent\hspace{2mm}\textbullet\ Deus Ex — Was ich als Spielerin mitnehme (6 Punkte)\\
@@ -3910,26 +3914,26 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent\hspace{2mm}5.\ Wo ist der erste clip-bare "Oh scheiß"-Moment, der innerhalb der ersten Stunde passiert?\\
 
 \noindent Aktualisierte Dateien:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-leo/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-leo/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene2-leo/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-leo/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-leo/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-leo/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \endgroup
 ```
 
-*Artefakt: `00-recherche-notizen-emre.md`*
+*Artefakt: `00-recherche-notizen-emre-v1.md`*
 
-*Artefakt: `00-recherche-notizen-darius.md`*
+*Artefakt: `00-recherche-notizen-darius-v1.md`*
 
-*Artefakt: `00-recherche-notizen-nami.md`*
+*Artefakt: `00-recherche-notizen-nami-v1.md`*
 
-*Artefakt: `00-recherche-notizen-vera.md`*
+*Artefakt: `00-recherche-notizen-vera-v1.md`*
 
-*Artefakt: `00-recherche-notizen-tobi.md`*
+*Artefakt: `00-recherche-notizen-tobi-v1.md`*
 
-*Artefakt: `00-recherche-notizen-leo.md`*
+*Artefakt: `00-recherche-notizen-leo-v1.md`*
 
 *Artefakt: `ROADMAP.md`*
 
@@ -3946,6 +3950,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 3](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-001-scene-003-MEETING.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Zentrale Entscheidungen: Stadt = 4 vertikale Schichten (Krone, Gilden, Volk, Schwelle). Yggdrasil als Strukturprinzip. Schattenfieber = dritte Progressionsachse. 3 narrative Stufen (Rauschen, Risse, Schwelle). Tiervolk = Händler/Informationsbroker. Widersprüchliche Kosmologien pro Fraktion. Leo mahnt: Materialien müssen sofort sichtbar wichtig sein.\par}
 ```
@@ -3957,8 +3963,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene3-finn}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a2fa0f1ce9e27576d.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a2fa0f1ce9e27576d.\allowbreak{}jsonl}\par
 \noindent Entries: 23\par
 \noindent Start: 2026-02-28T15:15:12.184Z\par
 \noindent End: 2026-02-28T15:16:02.790Z\par
@@ -4008,7 +4014,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Lass mich kurz meine Memory und das Briefing lesen, bevor ich die Szene spiele.\par
 
 
-\noindent \textbf{TOOL: Read} [15:15:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:15:14] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:15:14]:\par
@@ -4049,7 +4055,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:15:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:15:14] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:15:14]:\par
@@ -4105,7 +4111,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Ich schreibe jetzt den Trace und die Dialogzeile.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:15:18] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:15:18] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:15:18]:\par
@@ -4136,7 +4142,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:15:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene3-finn/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:15:33] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene3-finn/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 3, Finn}\par\vspace{0.5mm}
 
@@ -4162,7 +4168,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:15:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene3-finn/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:15:43] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene3-finn/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 3, Finn}\par\vspace{0.5mm}
 
@@ -4188,7 +4194,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt die Dialogzeile:\par
 
 
-\noindent \textbf{TOOL: Write} [15:15:57] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene3-finn/output.md}\par
+\noindent \textbf{TOOL: Write} [15:15:57] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene3-finn/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 3, Finn}\par\vspace{0.5mm}
 
@@ -4217,17 +4223,17 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
 \noindent Trace gespeichert unter:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene3-finn/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene3-finn/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene3-finn/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene3-finn/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene3-finn/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene3-finn/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{emre}\textbf{Emre Yilmaz} — \textit{Lead Worldbuilder}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene3-emre}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a399026e91779ba96.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a399026e91779ba96.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:17:05.057Z\par
 \noindent End: 2026-02-28T15:17:28.468Z\par
@@ -4266,7 +4272,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Briefing für maximalen Kontext.\par
 
 
-\noindent \textbf{TOOL: Read} [15:17:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:17:07] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:17:07]:\par
@@ -4299,7 +4305,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:17:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:17:08] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:17:08]:\par
@@ -4367,8 +4373,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene3-darius}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a0f5b518728e6c185.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a0f5b518728e6c185.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:16:22.705Z\par
 \noindent End: 2026-02-28T15:16:46.351Z\par
@@ -4408,7 +4414,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Lass mich meine Memory-Datei und das Briefing lesen, bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:16:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:16:25] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:16:25]:\par
@@ -4445,7 +4451,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:16:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:16:25] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:16:25]:\par
@@ -4513,8 +4519,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene3-nami}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a25cbf80c92dc4337.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a25cbf80c92dc4337.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:17:47.329Z\par
 \noindent End: 2026-02-28T15:18:05.445Z\par
@@ -4554,7 +4560,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese kurz meine Memory-Datei und das Briefing, bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:17:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:17:49] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:17:49]:\par
@@ -4585,7 +4591,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:17:50] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:17:50] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:17:50]:\par
@@ -4649,8 +4655,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene3-vera}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a404a0871f69fcae6.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a404a0871f69fcae6.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:18:23.077Z\par
 \noindent End: 2026-02-28T15:18:41.505Z\par
@@ -4688,7 +4694,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese schnell meine Memory und das Briefing, bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:18:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:18:25] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:18:25]:\par
@@ -4723,7 +4729,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:18:26] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:18:26] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:18:26]:\par
@@ -4785,8 +4791,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene3-tobi}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a15d19518e3e21143.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a15d19518e3e21143.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:18:33.203Z\par
 \noindent End: 2026-02-28T15:18:52.543Z\par
@@ -4825,7 +4831,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese kurz meine Memory-Datei und das Briefing, bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:18:35] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:18:35] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:18:35]:\par
@@ -4857,7 +4863,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:18:36] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:18:36] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:18:36]:\par
@@ -4923,8 +4929,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene3-leo}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a7a82ea4a2594b178.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a7a82ea4a2594b178.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:18:44.934Z\par
 \noindent End: 2026-02-28T15:19:05.255Z\par
@@ -4963,7 +4969,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese kurz meine Memory-Datei und das Briefing, bevor ich antworte.\par
 
 
-\noindent \textbf{TOOL: Read} [15:18:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:18:47] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:18:47]:\par
@@ -4997,7 +5003,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:18:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:18:47] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:18:47]:\par
@@ -5073,6 +5079,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{emre}\agenticon{nami}\agenticon{leo} Emre Yilmaz, Nami Okafor und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 4](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-001-scene-004-PAUSE.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Emre, Nami und Leo in der Küche. Emre macht Tee, Nami hat Kaffee, Leo isst. Smalltalk über Nerevar (Emres Katze auf der Tastatur), Detmolds Stille, Malkav und Nines (Namis Katzen), Aquarellstille.\par}
 ```
@@ -5084,8 +5092,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene4-emre}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-ad9cbc8d9211209aa.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-ad9cbc8d9211209aa.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:21:08.285Z\par
 \noindent End: 2026-02-28T15:21:20.309Z\par
@@ -5121,7 +5129,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und mein Roster-Profil, um den richtigen Ton zu treffen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:21:12] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:21:12] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:21:12]:\par
@@ -5154,7 +5162,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:21:12] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/emre-yilmaz.md}\par
+\noindent \textbf{TOOL: Read} [15:21:12] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}emre-yilmaz.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:21:12]:\par
@@ -5206,8 +5214,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene4-nami}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a9911b4dea496847f.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a9911b4dea496847f.\allowbreak{}jsonl}\par
 \noindent Entries: 9\par
 \noindent Start: 2026-02-28T15:21:30.900Z\par
 \noindent End: 2026-02-28T15:21:38.347Z\par
@@ -5241,7 +5249,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst die relevanten Dateien für Kontext.\par
 
 
-\noindent \textbf{TOOL: Read} [15:21:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:21:33] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:21:33]:\par
@@ -5272,7 +5280,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:21:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/nami-okafor.md}\par
+\noindent \textbf{TOOL: Read} [15:21:33] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}nami-okafor.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:21:33]:\par
@@ -5315,8 +5323,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene4-leo}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a89397c88e6d0d064.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a89397c88e6d0d064.\allowbreak{}jsonl}\par
 \noindent Entries: 2\par
 \noindent Start: 2026-02-28T15:21:48.471Z\par
 \noindent End: 2026-02-28T15:21:52.270Z\par
@@ -5365,6 +5373,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 5](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-001-scene-005-WORK.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Nachmittags-Arbeitsblock. Alle vertiefen ihre Recherche. Finn: Wochenplanung, 4 Blocker. Darius: Schiefer-Prinzip, Schattenfieber-Progression. Emre: Kosmologie-Analyse, Yggdrasil-Vertiefung. Nami: Quest-Struktur, Faction-Konflikte. Vera: Architektur-Moodboard. Tobi: Tech-Pipeline vertiefen. Leo: Wolf-Checkliste, Alpha-Stunde. Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.\par}
 ```
@@ -5376,8 +5386,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene5-finn}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-ae0eac846e8bbe4fa.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-ae0eac846e8bbe4fa.\allowbreak{}jsonl}\par
 \noindent Entries: 48\par
 \noindent Start: 2026-02-28T15:22:51.137Z\par
 \noindent End: 2026-02-28T15:27:42.972Z\par
@@ -5417,7 +5427,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zunächst meine Memory-Datei und schaue, was in der Bibliothek liegt.\par
 
 
-\noindent \textbf{TOOL: Read} [15:22:53] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:22:53] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:22:53]:\par
@@ -5458,7 +5468,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:22:54] → \texttt{**/*}\par
+\noindent \textbf{TOOL: Glob} [15:22:54] → \breaktt{**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [15:22:54]:\par
@@ -5492,7 +5502,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Ich schaue mir das Fallout-BoS2-Design-Dokument an — das ist ein echtes internes GDD, kein Pitch-Dokument. Interessant für Scope-Gefühl und Produktionsstruktur.\par
 
 
-\noindent \textbf{TOOL: Read} [15:22:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/fallout-bos2-design-document.pdf}\par
+\noindent \textbf{TOOL: Read} [15:22:58] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}fallout-bos2-design-document.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:22:58]:\par
@@ -5501,7 +5511,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:22:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:22:58] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:22:58]:\par
@@ -5557,7 +5567,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut, ich habe die Seiten. Das ist mehr als ich erwartet hatte — der User hat mir die Scans direkt geliefert. Jetzt lese ich noch die restlichen relevanten Dateien, dann arbeite ich.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/finn-bergmann.md}\par
+\noindent \textbf{TOOL: Read} [15:23:10] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}finn-bergmann.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:10]:\par
@@ -5593,7 +5603,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:23:11] → \texttt{**/*}\par
+\noindent \textbf{TOOL: Glob} [15:23:11] → \breaktt{**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [15:23:11]:\par
@@ -5633,7 +5643,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent\hspace{2mm}4.\ Memory aktualisieren\\
 
 
-\noindent \textbf{TOOL: Write} [15:23:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-finn/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:23:30] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-finn/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 5: Finn Bergmann}\par\vspace{0.5mm}
 
@@ -5657,7 +5667,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:24:05] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-finn/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:24:05] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-finn/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 5: Finn Bergmann}\par\vspace{0.5mm}
 
@@ -5682,7 +5692,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich die CD-Notiz und die ersten Kap. 6 Notizen gleichzeitig.\par
 
 
-\noindent \textbf{TOOL: Write} [15:24:34] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/finn-cd-notiz-tag1.md}\par
+\noindent \textbf{TOOL: Write} [15:24:34] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}finn-cd-notiz-tag1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Notiz für den CD-Schreibtisch}\par\vspace{0.5mm}
 \noindent \textbf{Von}: Finn Bergmann\par
@@ -5706,7 +5716,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:26:05] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/06-technische-spezifikation-notizen-v1.md}\par
+\noindent \textbf{TOOL: Write} [15:26:05] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}06-technische-spezifikation-notizen-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{GDD Kapitel 6 — Technische Spezifikation \& Produktion}\par\vspace{0.5mm}
 \noindent \textbf{Status}: Arbeitsnotizen, Rohgliederung\par
@@ -5738,7 +5748,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt Memory aktualisieren.\par
 
 
-\noindent \textbf{TOOL: Read} [15:26:09] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:26:09] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:26:09]:\par
@@ -5779,7 +5789,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:27:16] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Finn — Memory}\par\vspace{0.5mm}
 
@@ -5800,7 +5810,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-finn/output.md}\par
+\noindent \textbf{TOOL: Write} [15:27:29] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-finn/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 5: Finn Bergmann}\par\vspace{0.5mm}
 
@@ -5834,13 +5844,13 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 \noindent \textbf{Drei Artefakte entstanden:}\par
 
-\noindent\hspace{2mm}1.\ \textbf{CD-Notiz} — liegt jetzt auf dem CD-Schreibtisch: \texttt{/simulation-2/gallery/gdd/finn-cd-notiz-tag1.md}\\
+\noindent\hspace{2mm}1.\ \textbf{CD-Notiz} — liegt jetzt auf dem CD-Schreibtisch: \breaktt{/\allowbreak{}simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}finn-cd-notiz-tag1.\allowbreak{}md}\\
 \noindent Vier Fragen, priorisiert, mit Kontext. Das Relikt ist KRITISCH, der Rest ist WICHTIG. Ich habe der CD auch einen optionalen 09:00-Slot Dienstag angeboten, falls sie beim Relikt noch unentschieden ist — dann pitchen Nami, Emre und ich ihr Optionen.\par
 
-\noindent\hspace{2mm}2.\ \textbf{Kap. 6 Arbeitsnotizen} — Rohgerüst, keine Fiktion, keine Erfindungen: \texttt{/simulation-2/gallery/gdd/06-technische-spezifikation-notizen-v1.md}\\
+\noindent\hspace{2mm}2.\ \textbf{Kap. 6 Arbeitsnotizen} — Rohgerüst, keine Fiktion, keine Erfindungen: \breaktt{/\allowbreak{}simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}06-technische-spezifikation-notizen-v1.\allowbreak{}md}\\
 \noindent Was aus dem Briefing direkt belegbar ist (Monetarisierung: klar), was als Arbeitshypothese gilt (PC-First, Unreal 5 nach Tobis Shader-Terminologie), und was als offene Frage markiert ist. Volltext-Draft folgt Mittwoch sobald die CD-Antworten vorliegen.\par
 
-\noindent\hspace{2mm}3.\ \textbf{Memory aktualisiert} — \texttt{/simulation-2/agents/finn-memory.md}\\
+\noindent\hspace{2mm}3.\ \textbf{Memory aktualisiert} — \breaktt{/\allowbreak{}simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\\
 
 \noindent Der Tag ist produktiv gewesen. Alles was ohne CD-Input möglich war, ist erledigt. Morgen brauche ich Entscheidungen — und das Noon-Meeting wird zeigen, ob wir sie bekommen.\par
 
@@ -5849,8 +5859,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene5-emre}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a7b5f173aa7274d86.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a7b5f173aa7274d86.\allowbreak{}jsonl}\par
 \noindent Entries: 53\par
 \noindent Start: 2026-02-28T15:23:08.456Z\par
 \noindent End: 2026-02-28T15:29:03.255Z\par
@@ -5886,7 +5896,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zunächst meine Memory-Datei und das Briefing, um den aktuellen Stand zu kennen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:11] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:23:11] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:11]:\par
@@ -5919,7 +5929,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:11] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:23:11] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:11]:\par
@@ -5975,7 +5985,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Ich habe meinen aktuellen Stand. Jetzt lese ich Tolkiens "On Fairy Stories" — das ist der Paper-Schwerpunkt dieses Nachmittags.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:15] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Tolkien1947\_OnFairyStories.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:15] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Tolkien1947\_OnFairyStories.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:16]:\par
@@ -5984,7 +5994,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/emre-yilmaz.md}\par
+\noindent \textbf{TOOL: Read} [15:23:16] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}emre-yilmaz.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:16]:\par
@@ -6028,7 +6038,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Die Screenshots zeigen die ersten Seiten von Tolkiens Essay. Ich lese jetzt die relevantesten Seiten des PDFs direkt — insbesondere die Subcreation-Abschnitte, die weiter hinten liegen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Tolkien1947\_OnFairyStories.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:25] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Tolkien1947\_OnFairyStories.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:25]:\par
@@ -6041,7 +6051,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut — der Subcreation-Begriff taucht auf. Ich brauche noch die Kernabschnitte "Fantasy" und "Recovery/Escape/Consolation" mit dem Secondary World-Konzept. Weiter lesen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:37] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Tolkien1947\_OnFairyStories.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:37] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Tolkien1947\_OnFairyStories.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:37]:\par
@@ -6054,7 +6064,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich habe genug gelesen — die Kernpassagen zu Subcreation, Secondary World, Fantasy, Recovery und Secondary Belief sind vollständig erfasst. Jetzt schaue ich mir noch die letzten Seiten mit dem Eucatastrophe-Konzept an, dann schreibe ich Memory und Trace.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:48] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Tolkien1947\_OnFairyStories.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:48] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Tolkien1947\_OnFairyStories.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:49]:\par
@@ -6069,7 +6079,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Zuerst prüfe ich die Trace-Verzeichnisstruktur.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:24:02] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:24:02] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:24:03]:\par
@@ -6101,10 +6111,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 
 \noindent \textbf{ASSISTANT} [15:24:10]:\par
-\noindent Die Konvention ist \texttt{day01-scene5}. Jetzt schreibe ich alle drei Dateien und die Memory-Aktualisierung gleichzeitig.\par
+\noindent Die Konvention ist \breaktt{day01-scene5}. Jetzt schreibe ich alle drei Dateien und die Memory-Aktualisierung gleichzeitig.\par
 
 
-\noindent \textbf{TOOL: Write} [15:24:22] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-emre/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:24:22] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-emre/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 5 (Emre)}\par\vspace{0.5mm}
 
@@ -6128,7 +6138,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:25:41] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-emre/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:25:41] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-emre/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 5 (Emre)}\par\vspace{0.5mm}
 
@@ -6147,7 +6157,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-emre/output.md}\par
+\noindent \textbf{TOOL: Write} [15:27:02] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-emre/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 5 (Emre)}\par\vspace{0.5mm}
 
@@ -6180,7 +6190,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt Memory aktualisieren.\par
 
 
-\noindent \textbf{TOOL: Read} [15:27:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:27:07] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:27:07]:\par
@@ -6213,7 +6223,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:28:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:28:44] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Emre — Memory}\par\vspace{0.5mm}
 
@@ -6256,18 +6266,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent\hspace{2mm}\textbullet\ \textbf{Glas}: Drei Typen nach Klasse. Oberschicht spart bewusst (Einzellinsen, kein Glas als Fläche). Mittelschicht: Buntglas. Unterschicht: gestohlene Scherben als Talisman.\\
 
 \noindent Erstellte Dateien:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-emre/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-emre/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-emre/output.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md} (ergänzt)\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-emre/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-emre/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-emre/\allowbreak{}output.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md} (ergänzt)\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{darius}\textbf{Darius Engel} — \textit{Game Director}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene5-darius}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a6596afea237c050d.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a6596afea237c050d.\allowbreak{}jsonl}\par
 \noindent Entries: 38\par
 \noindent Start: 2026-02-28T15:23:00.377Z\par
 \noindent End: 2026-02-28T15:27:38.945Z\par
@@ -6303,7 +6313,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Briefing, dann schaue ich mir die Referenzdokumente an.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:23:03] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:03]:\par
@@ -6340,7 +6350,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:23:03] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:03]:\par
@@ -6396,10 +6406,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Ich habe meinen aktuellen Stand. Jetzt lese ich das Diablo-Pitch-Dokument — das könnte interessante Perspektiven zur Minute-1-Erfahrung und Strukturierung liefern.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/diablo-pitch-document-1994.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:07] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}diablo-pitch-document-1994.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/darius-engel.md}\par
+\noindent \textbf{TOOL: Read} [15:23:08] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}darius-engel.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:08]:\par
@@ -6447,7 +6457,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Das Diablo-Pitch-Dokument ist gelesen. Jetzt schaue ich mir noch die Trace-Verzeichnisstruktur an, bevor ich anfange zu schreiben.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:23:40] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:23:40] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:23:40]:\par
@@ -6482,7 +6492,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Die Trace-Struktur ist klar. Jetzt verarbeite ich das Diablo-Pitch-Dokument, bearbeite die drei Nachmittags-Aufgaben und schreibe alles raus. Ich arbeite alle drei Dateien parallel.\par
 
 
-\noindent \textbf{TOOL: Write} [15:23:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-darius/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:23:58] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-darius/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 5 (Darius Engel)}\par\vspace{0.5mm}
 
@@ -6506,7 +6516,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:24:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-darius/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:24:58] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-darius/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 5 (Darius Engel)}\par\vspace{0.5mm}
 
@@ -6527,11 +6537,11 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:25:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-darius/output.md}\par
+\noindent \textbf{TOOL: Write} [15:25:07] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-darius/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 5 (Darius Engel)}\par\vspace{0.5mm}
 
-\noindent Memory-Datei wurde aktualisiert: \texttt{simulation-2/agents/darius-memory.md}\par
+\noindent Memory-Datei wurde aktualisiert: \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 \vspace{1mm}\noindent\textbf{\textit{Neue Abschnitte in Memory}}\par
 
@@ -6556,7 +6566,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich die Memory-Datei mit dem neuen Abschnitt.\par
 
 
-\noindent \textbf{TOOL: Read} [15:25:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:25:10] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:25:10]:\par
@@ -6593,7 +6603,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:22] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:27:22] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Darius — Memory}\par\vspace{0.5mm}
 
@@ -6650,18 +6660,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 \noindent \textbf{Dateien aktualisiert:}\par
 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md} — neuer Abschnitt "Szene 5: Nachmittag-Recherche"\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-darius/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-darius/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-darius/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md} — neuer Abschnitt "Szene 5: Nachmittag-Recherche"\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-darius/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-darius/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-darius/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{nami}\textbf{Nami Okafor} — \textit{Narrative Designer}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene5-nami}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a289dd39cff2496bc.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a289dd39cff2496bc.\allowbreak{}jsonl}\par
 \noindent Entries: 52\par
 \noindent Start: 2026-02-28T15:23:14.379Z\par
 \noindent End: 2026-02-28T15:28:26.983Z\par
@@ -6698,7 +6708,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Briefing, dann die Paper.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:23:17] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:17]:\par
@@ -6729,7 +6739,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:23:17] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:17]:\par
@@ -6785,7 +6795,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt lese ich beide Paper parallel.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:20] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Jenkins\_2004\_GameDesignNarrativeArchitecture.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:20] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Jenkins\_2004\_GameDesignNarrativeArchitecture.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:23:20]:\par
@@ -6794,7 +6804,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Murray\_1998\_HamletHolodeck.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:21] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Murray\_1998\_HamletHolodeck.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:23:21]:\par
@@ -6803,7 +6813,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:23] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Jenkins\_2004\_GameDesignNarrativeArchitecture.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:23] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Jenkins\_2004\_GameDesignNarrativeArchitecture.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:24]:\par
@@ -6812,7 +6822,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Murray\_1998\_HamletHolodeck.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:24] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Murray\_1998\_HamletHolodeck.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:25]:\par
@@ -6825,7 +6835,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt setze ich mich. Ich lese zuerst noch die Roster-Datei, dann verarbeite ich alles.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/nami-okafor.md}\par
+\noindent \textbf{TOOL: Read} [15:23:43] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}nami-okafor.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:43]:\par
@@ -6874,7 +6884,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich Memory und dann die Trace-Dateien.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:24:01] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:24:01] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:24:02]:\par
@@ -6909,7 +6919,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut, ich lege die Trace-Verzeichnisstruktur an und schreibe dann Memory, Prompt, Reasoning und Output.\par
 
 
-\noindent \textbf{TOOL: Write} [15:24:22] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-nami/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:24:22] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-nami/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt — Tag 1, Szene 5, Nami}\par\vspace{0.5mm}
 
@@ -6933,7 +6943,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:25:19] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-nami/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:25:19] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-nami/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 5, Nami}\par\vspace{0.5mm}
 
@@ -6958,7 +6968,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt aktualisiere ich die Memory-Datei und schreibe dann den Output.\par
 
 
-\noindent \textbf{TOOL: Read} [15:25:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:25:24] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:25:24]:\par
@@ -6989,7 +6999,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:27:16] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Nami — Memory}\par\vspace{0.5mm}
 
@@ -7014,7 +7024,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt der Output-Trace.\par
 
 
-\noindent \textbf{TOOL: Write} [15:28:00] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-nami/output.md}\par
+\noindent \textbf{TOOL: Write} [15:28:00] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-nami/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 5, Nami}\par\vspace{0.5mm}
 
@@ -7041,7 +7051,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Fertig. Ich überprüfe kurz, ob alles am richtigen Ort liegt.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:28:07] → \texttt{simulation-2/traces/day01-scene5-nami/*}\par
+\noindent \textbf{TOOL: Glob} [15:28:07] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-nami/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [15:28:07]:\par
@@ -7068,10 +7078,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Von \textbf{Murray} habe ich nur Einleitung und Inhaltsverzeichnis — die Kapitel Agency und Transformation kommen in einer späteren Recherche-Session. Merke mir: Transformation ist das Ziel der Fraktionsquests. Nicht Antwort. Narben.\par
 
 \noindent \textbf{Geänderte Dateien:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md} — neuer Abschnitt "Szene 5: Nachmittags-Recherche" ergänzt\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-nami/prompt.md} — angelegt\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-nami/reasoning.md} — angelegt\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-nami/output.md} — angelegt\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md} — neuer Abschnitt "Szene 5: Nachmittags-Recherche" ergänzt\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-nami/\allowbreak{}prompt.\allowbreak{}md} — angelegt\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-nami/\allowbreak{}reasoning.\allowbreak{}md} — angelegt\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-nami/\allowbreak{}output.\allowbreak{}md} — angelegt\\
 
 \noindent \textbf{Nächste Schritte (offen):}\par
 \noindent\hspace{2mm}\textbullet\ Gespräch mit Darius: Tutorial-Mechanik und Gothic-Brief-Entwurf\\
@@ -7083,8 +7093,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene5-vera}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a904702f0659ddad4.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a904702f0659ddad4.\allowbreak{}jsonl}\par
 \noindent Entries: 70\par
 \noindent Start: 2026-02-28T15:23:21.770Z\par
 \noindent End: 2026-02-28T15:28:56.977Z\par
@@ -7120,7 +7130,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Briefing, dann schaue ich mir die verfügbaren Artbooks an.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:23:24] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:24]:\par
@@ -7155,7 +7165,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:23:24] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:24]:\par
@@ -7211,7 +7221,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Memory ist klar, Briefing sitzt. Jetzt schaue ich mir die Artbooks an — ich nehme Dragon Age: Inquisition und Skyrim beide kurz, wähle dann das nützlichere tiefer.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:23:29] → \texttt{library/artbooks/*.pdf}\par
+\noindent \textbf{TOOL: Glob} [15:23:29] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}*.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:30]:\par
@@ -7229,7 +7239,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Dragon Age: Inquisition ist relevant — feudale Welt, Architektur-Differenzierung, kein High-Fantasy-Kitsch (relativ). Und Art of Skyrim für Environment-Sprache. Ich schaue beide an — erst Skyrim (Seiten 1-10 zur Orientierung), dann DAI.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/art-of-skyrim.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:33] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}art-of-skyrim.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:23:33]:\par
@@ -7238,7 +7248,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:34] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dragon-age-inquisition-artbook.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:34] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dragon-age-inquisition-artbook.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:23:34]:\par
@@ -7251,7 +7261,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Skyrim zu groß. Dragon Age Inquisition versuchen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:37] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dragon-age-inquisition-artbook.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:37] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dragon-age-inquisition-artbook.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:37]:\par
@@ -7264,7 +7274,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Intro-Seiten. Gut — ich sehe schon auf Seite 1 was mich interessiert: der Inquisitor vor dem Drachen. Aber das sind noch keine Architektur-Seiten. Ich brauche die Environment-Kapitel. Das Inhaltsverzeichnis zeigt: "The Inquisition" ab S. 8, "The Wider World of Thedas" ab S. 214. Die interessanten Environments dürften im Inquisition-Kapitel und dem Welt-Kapitel stecken.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:45] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dragon-age-inquisition-artbook.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:45] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dragon-age-inquisition-artbook.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:45]:\par
@@ -7277,7 +7287,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Charakter-Seiten. Interessant für Kostümsprache, aber ich brauche Architecture/Environment. Das Inhaltsverzeichnis zeigte S. 46 als nächstes Kapitel. Ich springe gezielt zu den Environment-Seiten.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:54] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dragon-age-inquisition-artbook.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:54] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dragon-age-inquisition-artbook.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:54]:\par
@@ -7290,7 +7300,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt wird es interessant. Die letzten zwei Seiten — Tempel-Ruinen in Schnee, Bergdorf mit geteilter Architektur. Das ist mein Material. Ich lese weiter — die Kapitel "In Hushed Whispers" (S. 80) und "What Pride Had Wrought" (S. 176) versprechen Stadt- und Innenarchitektur.\par
 
 
-\noindent \textbf{TOOL: Read} [15:24:04] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dragon-age-inquisition-artbook.pdf}\par
+\noindent \textbf{TOOL: Read} [15:24:04] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dragon-age-inquisition-artbook.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [15:24:04]:\par
@@ -7299,7 +7309,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:24:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dragon-age-inquisition-artbook.pdf}\par
+\noindent \textbf{TOOL: Read} [15:24:10] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dragon-age-inquisition-artbook.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:24:11]:\par
@@ -7318,7 +7328,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich brauche noch das "What Pride Had Wrought"-Kapitel für Elfen-Ruinenarchitektur. Und dann schaue ich kurz S. 176-194.\par
 
 
-\noindent \textbf{TOOL: Read} [15:24:27] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/artbooks/dragon-age-inquisition-artbook.pdf}\par
+\noindent \textbf{TOOL: Read} [15:24:27] → \breaktt{library/\allowbreak{}artbooks/\allowbreak{}dragon-age-inquisition-artbook.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:24:28]:\par
@@ -7335,7 +7345,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich alles in die Memory-Datei und dann die Schlüsselbild-Notizen.\par
 
 
-\noindent \textbf{TOOL: Read} [15:24:41] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:24:41] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:24:41]:\par
@@ -7374,7 +7384,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Ich habe alles was ich brauche. Jetzt schreibe ich den neuen Abschnitt in die Memory-Datei — DAI-Auswertung plus die konkreten Schlüsselbild-Notizen, die jetzt viel präziser sind als vorher.\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:01] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:27:01] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Vera — Memory}\par\vspace{0.5mm}
 
@@ -7400,7 +7410,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt schreibe ich den Trace.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:27:06] → \texttt{simulation-2/traces/}\par
+\noindent \textbf{TOOL: Glob} [15:27:06] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}}\par
 
 
 \noindent \textbf{RESULT} [15:27:06]:\par
@@ -7409,7 +7419,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:27:11] → \texttt{simulation-2/traces/**}\par
+\noindent \textbf{TOOL: Glob} [15:27:11] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [15:27:12]:\par
@@ -7441,10 +7451,10 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 
 
 \noindent \textbf{ASSISTANT} [15:27:18]:\par
-\noindent Das Verzeichnis \texttt{day01-scene5-vera} fehlt noch. Alle drei Trace-Dateien schreiben.\par
+\noindent Das Verzeichnis \breaktt{day01-scene5-vera} fehlt noch. Alle drei Trace-Dateien schreiben.\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-vera/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:27:30] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-vera/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \noindent Du bist Vera Kowalski, Concept Artist \& Environment Designer bei GenSoftworks. Remote aus Köln.\par
 
@@ -7466,7 +7476,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:28:09] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-vera/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:28:09] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-vera/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 5, Vera}\par\vspace{0.5mm}
 
@@ -7487,13 +7497,13 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:28:42] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-vera/output.md}\par
+\noindent \textbf{TOOL: Write} [15:28:42] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-vera/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 5, Vera}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Ergebnis}}\par
 
-\noindent Memory aktualisiert: \texttt{/simulation-2/agents/vera-memory.md} — neuer Abschnitt "Tag 1 (Montag) — Szene 5: Nachmittags-Recherche" ergänzt.\par
+\noindent Memory aktualisiert: \breaktt{/\allowbreak{}simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md} — neuer Abschnitt "Tag 1 (Montag) — Szene 5: Nachmittags-Recherche" ergänzt.\par
 
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
@@ -7532,18 +7542,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent \textbf{Neue offene Fragen} die ich noch nicht hatte: Orden-Architektur (gotisch-geometrisch wie DAI Chantry, oder brutalistisch wie die Gilden?) und Buntglas-Kontrolle (Glasmacher-Gilde oder Orden?). Beides geht an Emre.\par
 
 \noindent Aktualisierte Dateien:\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md} (neuer Abschnitt Szene 5)\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-vera/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-vera/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-vera/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md} (neuer Abschnitt Szene 5)\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-vera/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-vera/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-vera/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{tobi}\textbf{Tobi Richter} — \textit{Technical Artist}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene5-tobi}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-ab2b2ad55b3a160bc.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-ab2b2ad55b3a160bc.\allowbreak{}jsonl}\par
 \noindent Entries: 49\par
 \noindent Start: 2026-02-28T15:23:29.044Z\par
 \noindent End: 2026-02-28T15:27:51.894Z\par
@@ -7579,7 +7589,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zunächst meine Memory-Datei und relevante Referenzmaterialien.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:31] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:23:31] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:31]:\par
@@ -7611,7 +7621,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:31] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:23:31] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:31]:\par
@@ -7667,7 +7677,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt lese ich das Deus Ex GDD und schaue in die Library nach weiteren Referenzen.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:23:34] → \texttt{**/*.md}\par
+\noindent \textbf{TOOL: Glob} [15:23:34] → \breaktt{**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:35]:\par
@@ -7676,7 +7686,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:35] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/tobi-richter.md}\par
+\noindent \textbf{TOOL: Read} [15:23:35] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}tobi-richter.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:35]:\par
@@ -7718,7 +7728,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt schaue ich, was in der Library tatsächlich verfügbar ist, und lese die Trace-Struktur.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:23:39] → \texttt{**/*}\par
+\noindent \textbf{TOOL: Glob} [15:23:39] → \breaktt{**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [15:23:40]:\par
@@ -7748,7 +7758,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [15:23:40] → \texttt{**/*}\par
+\noindent \textbf{TOOL: Glob} [15:23:40] → \breaktt{**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [15:23:40]:\par
@@ -7783,7 +7793,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Das Deus Ex GDD ist in der Library. Ich lese es.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/deus-ex-design-document-annotated.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:43] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:44]:\par
@@ -7796,7 +7806,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Interessant. Das Deus Ex GDD ist von 1997, Warren Spector, Ion Storm. Ich lese die relevanten Seiten — besonders die Systems-Design-Philosophie. Jetzt schreibe ich meine Trace-Dateien und aktualisiere die Memory.\par
 
 
-\noindent \textbf{TOOL: Glob} [15:23:54] → \texttt{day01-scene5-tobi}\par
+\noindent \textbf{TOOL: Glob} [15:23:54] → \breaktt{day01-scene5-tobi}\par
 
 
 \noindent \textbf{RESULT} [15:23:54]:\par
@@ -7809,7 +7819,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Das Trace-Verzeichnis muss ich anlegen. Ich schreibe alle drei Trace-Dateien und die Memory-Aktualisierung.\par
 
 
-\noindent \textbf{TOOL: Write} [15:24:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-tobi/prompt.md}\par
+\noindent \textbf{TOOL: Write} [15:24:10] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-tobi/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \noindent Du bist Tobias "Tobi" Richter, Technical Artist \& VP Specialist bei GenSoftworks.\par
 
@@ -7831,7 +7841,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:25:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-tobi/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [15:25:06] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-tobi/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning — Tag 1, Szene 5}\par\vspace{0.5mm}
 
@@ -7854,7 +7864,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:25:48] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-tobi/output.md}\par
+\noindent \textbf{TOOL: Write} [15:25:48] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-tobi/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output — Tag 1, Szene 5}\par\vspace{0.5mm}
 
@@ -7883,7 +7893,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Jetzt aktualisiere ich die Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Read} [15:25:52] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:25:52] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:25:52]:\par
@@ -7915,7 +7925,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [15:27:36] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:27:36] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Tobi — Memory}\par\vspace{0.5mm}
 
@@ -7966,18 +7976,18 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
 \noindent \textbf{Dateien aktualisiert:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md} — neuer Abschnitt "Szene 5" ergänzt\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-tobi/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-tobi/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-tobi/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md} — neuer Abschnitt "Szene 5" ergänzt\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-tobi/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-tobi/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-tobi/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{leo}\textbf{Leo Fischer} — \textit{QA Lead}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day01-scene5-leo}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{9af40ed6-c51a-428d-8737-12b67015e156}\par
-\noindent Source: \texttt{agent-a34acbd4ad3754f29.jsonl}\par
+\noindent Session: \breaktt{9af40ed6-c51a-428d-8737-12b67015e156}\par
+\noindent Source: \breaktt{agent-a34acbd4ad3754f29.\allowbreak{}jsonl}\par
 \noindent Entries: 26\par
 \noindent Start: 2026-02-28T15:23:35.261Z\par
 \noindent End: 2026-02-28T15:27:00.419Z\par
@@ -8013,7 +8023,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Ich lese zuerst meine Memory-Datei und das Briefing, dann ein Referenzdokument.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:37] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:23:37] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:37]:\par
@@ -8047,7 +8057,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:37] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [15:23:37] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:37]:\par
@@ -8103,7 +8113,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt lese ich Grim Fandango — das ist ein klassisches Adventure mit starkem Narrative-Design und Community-Kultpotenzial. Genau das richtige für meine Trailer-Hook-Analyse.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/grim-fandango-puzzle-document-1996.pdf}\par
+\noindent \textbf{TOOL: Read} [15:23:44] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}grim-fandango-puzzle-document-1996.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [15:23:44]:\par
@@ -8116,7 +8126,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Sehr gut. Das ist Gold. Grim Fandango Puzzle Document, Tim Schafer, 1996. Ich lese noch die Roster-Datei schnell, dann schreibe ich alles in die Memory.\par
 
 
-\noindent \textbf{TOOL: Read} [15:23:56] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/leo-fischer.md}\par
+\noindent \textbf{TOOL: Read} [15:23:56] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}leo-fischer.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:23:56]:\par
@@ -8155,7 +8165,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Perfekt. Jetzt habe ich alles. Ich schreibe den Memory-Eintrag für den Nachmittag — Grim Fandango-Analyse, Trailer-Hook, Steam-FAQ-Konzept, First-Hour-Vertiefung.\par
 
 
-\noindent \textbf{TOOL: Read} [15:24:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [15:24:02] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [15:24:02]:\par
@@ -8193,7 +8203,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent Gut. Jetzt schreibe ich den neuen Memory-Abschnitt.\par
 
 
-\noindent \textbf{TOOL: Write} [15:26:37] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Write} [15:26:37] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Leo — Memory}\par\vspace{0.5mm}
 
@@ -8250,7 +8260,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent\hspace{2mm}\textbullet\ Wie sieht das Stadttor aus? (an Vera)\\
 \noindent\hspace{2mm}\textbullet\ Was ist die erste "Transaktion" — die alltägliche Szene, die das Setting erklärt ohne Exposition zu sein? (an Nami/Darius)\\
 
-\noindent Datei: \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent Datei: \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 \end{multicols}
 \endgroup
@@ -8269,6 +8279,8 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Darius Engel, Emre Yilmaz, Nami Okafor, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 1](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-002-scene-001-BRIEFING.png){ width=95% }
+
 ::: {.directive}
 \textbf{Creative Director --- Feedback}
 
@@ -8282,326 +8294,12 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 ```{=latex}
 \vspace{4mm}
 \begingroup\tiny\setlength{\parskip}{1pt}\setlength{\parindent}{0pt}\setlength{\columnsep}{4mm}\sloppy\emergencystretch=1em
-\vspace{2mm}\noindent \agenticon{finn}\textbf{Finn Bergmann} — \textit{Producer}\par\vspace{0.5mm}
-\begin{multicols}{3}
-\vspace{2mm}\noindent\textbf{Transcript: day02-scene1-finn}\par\vspace{0.5mm}
-
-\noindent Session: \texttt{1f057dc8-3545-4e44-892d-316ffa8731ff}\par
-\noindent Source: \texttt{agent-a950eccc87c8190e3.jsonl}\par
-\noindent Entries: 40\par
-\noindent Start: 2026-02-27T17:26:42.297Z\par
-\noindent End: 2026-02-27T17:28:39.700Z\par
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-\noindent\textbf{\textit{USER PROMPT [17:26:42]}} 
-
-\noindent Du bist Finn Bergmann, Producer bei GenSoftworks. Es ist Tag 2 (Dienstag), Szene 1: BRIEFING, 09:00 Uhr, Küche.\par
-
-\noindent Alle 7 Teammitglieder anwesend. Letzter Konzeptionstag vor Produktion.\par
-
-\noindent Lies deine Memory: simulation-2-test/agents/finn-memory.md\par
-
-\noindent CD-FEEDBACK TAG 2:\par
-\noindent "Gestern war stark. Heute ist der letzte Tag vor der Produktion. Am Ende des Tages will ich, dass jeder sein V1-Deliverable als Outline hat — nicht fertig, aber strukturiert genug, dass Mittwoch geschrieben werden kann.\par
-\noindent\hspace{2mm}\textbullet\ Emre: WBB-01 Mythos-Outline\\
-\noindent\hspace{2mm}\textbullet\ Darius: GDD-01 Spielübersicht + GDD-02 Kernmechaniken Outline\\
-\noindent\hspace{2mm}\textbullet\ Nami: GDD-03 Erzählkonzept Outline\\
-\noindent\hspace{2mm}\textbullet\ Vera: GDD-05 Designsprache Outline\\
-\noindent\hspace{2mm}\textbullet\ Tobi: GDD-06 Technik Outline\\
-\noindent\hspace{2mm}\textbullet\ Leo: GDD-02 Kernmechaniken (QA-Input) + Spielerperspektiv-Bericht\\
-\noindent\hspace{2mm}\textbullet\ Finn: Produktionsplan für Mittwoch\\
-\noindent Combat-Skill-Ceiling: Spektrum von zugänglich bis belohnend. Keine künstliche Schwierigkeitsmauer, echte Mastery-Belohnung."\par
-
-\noindent DEINE AUFGABE:\par
-\noindent\hspace{2mm}1.\ Moderiere das Briefing. Kurz und prägnant — das Team kennt sich jetzt. Verteile die Tagesziele.\\
-\noindent\hspace{2mm}2.\ Schreibe Traces: simulation-2-test/traces/day02-scene1-briefing/\{prompt,reasoning,output\}.md\\
-\noindent\hspace{2mm}3.\ Schreibe Logbook: simulation-2-test/logbook/day02-scene1.json\\
-
-\noindent WICHTIG: Alles auf DEUTSCH. Tag 2 Stimmung: fokussiert, wissen was zu tun ist, weniger Unsicherheit als Tag 1.\par
-
-
-\noindent \textbf{ASSISTANT} [17:26:45]:\par
-\noindent Ich lese zuerst meine Memory-Datei und schaue mir den aktuellen Stand an.\par
-
-
-\noindent \textbf{TOOL: Read} [17:26:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/agents/finn-memory.md}\par
-
-
-\noindent \textbf{RESULT} [17:26:46]:\par
-\noindent ```\par
-\noindent 1→\# Finn — Memory\par
-\noindent 2→\par
-\noindent 3→<!-- GM aktualisiert diese Datei nach jeder Szene aus Finns Perspektive -->\par
-\noindent 4→\par
-\noindent 5→\#\# Tag 1, Szene 1 (BRIEFING)\par
-\noindent 6→Erster Tag moderiert. Alle sieben da, Stimmung gut. Vera fragte nach Biotech-Bandbreite, Tobi nach Engine — beides geht an die CD.\par
-\noindent 7→\par
-\noindent 8→\#\# Tag 1, Szene 2 (WORK)\par
-\noindent 9→Roadmap für Woche 1 steht. Abhängigkeitskette: Emres WBB ist Fundament, dann Nami und Vera. Darius parallel. GDD-04 und GDD-06 auf Woche 2 geschoben. Zwei offene CD-Fragen: Biotech-Bandbreite und Engine-Bestätigung. Risiko \#1: Emre verliert sich in der Tiefe.\par
-\noindent 10→\par
-\noindent 11→\#\# Tag 1, Szene 3 (MEETING)\par
-\noindent 12→Standup sauber moderiert. CD-Entscheidungen kontextbezogen eingeflochten. Alle acht Punkte entschärfen bestehende Concerns. Stimmung gut. Nachmittags-Aufträge verteilt: Emre+Nami bilateral (Wanderer-Motiv), Emre liefert Fraktionsbeschreibungen an Vera, Tobi beginnt Pipeline-Architektur. Leos Pitch-Satz auf die Pinnwand. Offener Punkt für morgen: Combat-Skill-Ceiling (Darius).\par
-\noindent 13→\par
-\noindent 14→\#\# Tag 1, Szene 5 (WORK)\par
-\noindent 15→Roadmap V1.1 geschrieben. Sechs ehemalige Blocker aufgelöst. Schattenfieber ist vom Lore-Element zum Core-System geworden — drei Leute arbeiten parallel dran. Zwei neue Risiken: kein Gameplay-Programmer, Asset-Flaschenhals.\par
-\noindent 16→\par
-\noindent 17→\#\# Tag 1, Szene 6 (REVIEW)\par
-\noindent 18→Review sauber moderiert. CD-Feedback verteilt: Orden=Spitzenforschung, Schattenfieber=nicht heilbar, Tiervolk=keine eigene Architektur/Nomaden, PC first, Freelancer-Budget vorbereiten, Replay-Erfahrung gewollt. Morgen letzter Konzeptionstag. Alle wissen, was Mittwoch als V1 stehen muss. Guter erster Tag.\par
-\noindent 19→\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:26:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/state/world.json}\par
-
-
-\noindent \textbf{RESULT} [17:26:47]:\par
-\noindent ```\par
-\noindent 1→\{\par
-\noindent 2→  "simulation": 2,\par
-\noindent 3→  "day": 2,\par
-\noindent 4→  "scene": 0,\par
-\noindent 5→  "test\_run": true,\par
-\noindent 6→  "start\_weekday": "monday"\par
-\noindent 7→\}\par
-\noindent 8→\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Glob} [17:26:48] → \texttt{simulation-2-test/logbook/day01-*.json}\par
-
-
-\noindent \textbf{RESULT} [17:26:48]:\par
-\noindent ```\par
-\noindent simulation-2-test/logbook/day01-scene1.json\par
-\noindent simulation-2-test/logbook/day01-scene2.json\par
-\noindent simulation-2-test/logbook/day01-scene3.json\par
-\noindent simulation-2-test/logbook/day01-scene4.json\par
-\noindent simulation-2-test/logbook/day01-scene5.json\par
-\noindent simulation-2-test/logbook/day01-scene6.json\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:26:55]:\par
-\noindent Gut, ich habe den vollen Kontext. Jetzt schaue ich mir noch die Review von gestern und das Briefing an, um die Uebergabe sauber zu machen.\par
-
-
-\noindent \textbf{TOOL: Read} [17:26:55] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/logbook/day01-scene6.json}\par
-
-
-\noindent \textbf{RESULT} [17:26:55]:\par
-\noindent ```\par
-\noindent 1→\{\par
-\noindent 2→  "scene": 6,\par
-\noindent 3→  "type": "REVIEW",\par
-\noindent 4→  "time": "afternoon",\par
-\noindent 5→  "location": "kueche",\par
-\noindent 6→  "participants": ["emre", "darius", "nami", "vera", "tobi", "leo", "finn"],\par
-\noindent 7→  "summary": "Tagesabschluss-Review Tag 1. Finn moderiert, jeder prasentiert Tagesergebnisse. Emre: Drei-Schichten-Kosmologie, mythologisch grundierte Fraktionen (Krone=Tyr/Thor, Gilden=Vanir, Orden=Odin), Wanderer-Motiv. Darius: Referenzspiel-Analyse, Schattenfieber als vierter Nervensystem-Ast (0-100, fuenf Stufen), fuenf Design-Prinzipien. Nami: Vier narrative Prinzipien, Wanderer-Motiv als Fraktionsklammer, Schattenfieber als Unreliable Narrator (Rauschen/Risse/Schwelle). Vera: Visuelle Referenz-Analyse, drei Fraktionsprofile, Farbpalette mit Hex-Codes. Tobi: Machbarkeitsanalyse, Pipeline-Architektur V0.1, drei Engpaesse. Leo: Marktanalyse, Bloodborne Insight als Goldstandard, Pitch-Satz. Finn: Roadmap V1.1. CD-Feedback eingearbeitet: Orden=Spitzenforschung bestaetigt, Schattenfieber nicht reversibel, PC first, Freelancer-Budget vorbereiten, Tiervolk ohne eigene Architektur, Replay-Erfahrung gewuenscht. Aufgabenverteilung fuer Dienstag (letzter Konzepttag) besprochen.",\par
-\noindent 8→  "dialogue": [\par
-\noindent 9→    \{"who": "finn", "says": "Moin. Setzt euch. Kaffee steht da hinten. Wir machen das kurz und knackig — jeder hat drei Minuten. Emre, du faengst an."\},\par
-\noindent 10→    \{"who": "emre", "says": "Kosmologie steht. Drei Schichten. Schattenfieber ist kosmologische Erosion — die Bindung zwischen den Schichten ist gebrochen. Fraktionen mythologisch grundiert: Krone=Tyr/Thor mit Wolfsmotiv, Gilden=Vanir mit Schiffsmotiv, Orden=Odin mit Rabenmotiv. Wanderer-Motiv fuer Nami ausgearbeitet — Havamal-Gastrecht, Odin als Gangleri. Offene Frage: Ist der Orden als Spitzenforschungs-Institution angelegt?"\},\par
-\noindent 11→    \{"who": "darius", "says": "Drei Referenzspiele aufgedrillt: Gothic fuer Dichte, Skyrim fuer Kamera, Dishonored fuer Vertikalitaet. Schattenfieber als Mechanik: Infekti\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:26:56] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/logbook/day01-scene3.json}\par
-
-
-\noindent \textbf{RESULT} [17:26:56]:\par
-\noindent ```\par
-\noindent 1→\{\par
-\noindent 2→  "scene": 3,\par
-\noindent 3→  "type": "MEETING",\par
-\noindent 4→  "time": "morning",\par
-\noindent 5→  "location": "kueche",\par
-\noindent 6→  "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],\par
-\noindent 7→  "summary": "Standup Tag 1. Alle sieben berichten Vormittags-Ergebnisse. Finn verteilt acht CD-Entscheidungen: Schattenfieber Hypothese C genehmigt, nordische Quellen akzeptiert mit eigener Kosmologie, Mythos innerhalb der Spielwelt umstritten, Biotech-Sichtbarkeit fraktionsabhaengig (Krone=subtil, Gilden=offen, Orden=versteckt), UE5 bestaetigt, Semi-Open-World bestaetigt, TP Primaermodus (FP ist V2), Spieler kann sich mit Schattenfieber infizieren (Kosten+Nutzen, Mechanik+Narrativ verbunden). Team reagiert positiv. Emre und Nami planen bilaterales Gespraech ueber Wanderer-Motiv fuer den Nachmittag. Vera erhaelt drei verschiedene Design-Sprachen durch die fraktionsabhaengige Biotech-Loesung. Tobi beginnt Pipeline-Architektur. Darius notiert Combat-Skill-Ceiling als offenen Punkt fuer morgen. Leos Pitch-Satz kommt auf die Pinnwand.",\par
-\noindent 8→  "dialogue": [\par
-\noindent 9→    \{"who": "finn", "says": "Moin. Standup, ihr wisst wie's laeuft — jeder zwei Minuten, dann hab ich CD-Entscheidungen. Emre, du faengst an, weil auf deinem Fundament alles andere steht."\},\par
-\noindent 10→    \{"who": "emre", "says": "Ich hab die germanische Kosmologie auf ein Drei-Schichten-Modell reduziert. Oberwelt, Mittelwelt, Unterwelt. Die Schoepfung ist organisch gedacht, Ymirs Koerper als Material. Die drei Fraktionen hab ich mythologisch grundiert: Orden folgt einer Odin-Logik, Krone ist Tyr und Thor, Gilden sind Vanir. Zum Schattenfieber empfehle ich Hypothese C — kosmologische Erosion, die Bindung zwischen den Schichten loest sich auf. Offene Frage: Ich arbeite mit nordisch-islaendischen Quellen. Und soll der Mythos in der Spielwelt umstritten sein?"\},\par
-\noindent 11→    \{"who": "finn", "says": "Perfektes Timing. Die CD hat Hypothese C genehmigt. Nordische Quellen als Basis sind akzeptiert, aber RELICS krieg\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:26:59]:\par
-\noindent Jetzt habe ich den vollen Kontext. Ich schreibe nun die Traces und das Logbook.\par
-
-
-\noindent \textbf{TOOL: Write} [17:27:11] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene1-briefing/prompt.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Prompt — Tag 2, Szene 1 (BRIEFING)}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Rolle}}\par
-\noindent Finn Bergmann, Producer. Moderiert das Briefing.\par
-
-\vspace{1mm}\noindent\textbf{\textit{Kontext}}\par
-\noindent\hspace{2mm}\textbullet\ Tag 2, Dienstag, 09:00 Uhr, Kueche\\
-\noindent\hspace{2mm}\textbullet\ Letzter Konzeptionstag vor Produktion (ab Mittwoch)\\
-\noindent\hspace{2mm}\textbullet\ Alle 7 Teammitglieder anwesend\\
-\noindent\hspace{2mm}\textbullet\ Tag 1 war stark: Kosmologie, Referenzanalysen, Narrative Prinzipien, Farbpaletten, Machbarkeitsanalyse, Marktanalyse, Roadmap V1.1\\
-
-\vspace{1mm}\noindent\textbf{\textit{CD-Feedback Tag 2}}\par
-\noindent\hspace{2mm}\textbullet\ Gestern war stark. Heute letzter Tag vor Produktion.\\
-\noindent\hspace{2mm}\textbullet\ Ende des Tages: Jeder hat V1-Deliverable als Outline — n\\
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:27:11]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene1-briefing/prompt.md\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Write} [17:27:28] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene1-briefing/reasoning.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Reasoning — Tag 2, Szene 1 (BRIEFING)}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Ausgangslage}}\par
-\noindent Tag 1 war ein guter Einstieg. Alle Agenten haben solide Recherche- und Konzeptionsergebnisse geliefert. Die CD-Entscheidungen von gestern haben viele offene Fragen geklaert. Heute ist der letzte Konzeptionstag — morgen beginnt die Produktion.\par
-
-\vspace{1mm}\noindent\textbf{\textit{Ueberlegungen}}\par
-
-\noindent\textbf{\textit{Stimmung und Ton}} 
-\noindent Tag 2 braucht kein grosses Aufwaermen mehr. Das Team kennt sich, die Rollen sind klar, die Richtung steht. Ich halte das Briefing kurzer als gestern. Weniger Er\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:27:28]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene1-briefing/reasoning.md\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:27:30]:\par
-\noindent Jetzt schreibe ich den Output (das eigentliche Briefing-Dialogue) und das Logbook.\par
-
-
-\noindent \textbf{TOOL: Write} [17:28:05] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene1-briefing/output.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Output — Tag 2, Szene 1 (BRIEFING)}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Briefing-Moderation (Finn)}}\par
-
-\noindent \textbf{Eroeffnung}\par
-
-\noindent Finn stellt sich mit Kaffee an den Kuechentresen. Alle sieben sind da, die Stimmung ist ruhiger als gestern — weniger Aufregung, mehr Fokus.\par
-
-\noindent > \textbf{Finn:} Moin. Tag zwei, letzter Konzepttag. Morgen wird geschrieben. Ich mach's kurz.\par
-
-\noindent \textbf{CD-Feedback}\par
-
-\noindent > \textbf{Finn:} Die CD ist zufrieden mit gestern. Direkt zum Neuen: Combat-Skill-Ceiling. Darius, das war dein offener Punkt. Die Antwort ist: Spektrum. Zugaenglich bis\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:28:05]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene1-briefing/output.md\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Write} [17:28:23] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/logbook/day02-scene1.json}\par
-\noindent ```\par
-\noindent \{\par
-\noindent "scene": 1,\par
-\noindent "type": "BRIEFING",\par
-\noindent "time": "morning",\par
-\noindent "location": "kueche",\par
-\noindent "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],\par
-\noindent "summary": "Tag-2-Briefing, letzter Konzeptionstag. Finn verteilt CD-Feedback: Combat-Skill-Ceiling als Spektrum von zugaenglich bis belohnend (keine kuenstliche Schwierigkeitsmauer, echte Mastery-Belohnung). Tagesziele klar definiert: Jeder liefert bis zur Review eine V1-Outline seines Deliverables. Emre: WBB-01 Mythos, Darius: GDD-01\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:28:23]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/logbook/day02-scene1.json\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:28:26]:\par
-\noindent Jetzt aktualisiere ich die \texttt{world.json} -- Szene 0 wird zu Szene 1 (Briefing abgeschlossen).\par
-
-
-\noindent \textbf{TOOL: Read} [17:28:27] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/state/world.json}\par
-
-
-\noindent \textbf{RESULT} [17:28:27]:\par
-\noindent ```\par
-\noindent 1→\{\par
-\noindent 2→  "simulation": 2,\par
-\noindent 3→  "day": 2,\par
-\noindent 4→  "scene": 0,\par
-\noindent 5→  "test\_run": true,\par
-\noindent 6→  "start\_weekday": "monday"\par
-\noindent 7→\}\par
-\noindent 8→\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Write} [17:28:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/state/world.json}\par
-\noindent ```\par
-\noindent \{\par
-\noindent "simulation": 2,\par
-\noindent "day": 2,\par
-\noindent "scene": 1,\par
-\noindent "test\_run": true,\par
-\noindent "start\_weekday": "monday"\par
-\noindent \}\par
-
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:28:29]:\par
-\noindent ```\par
-\noindent The file simulation-2-test/state/world.json has been updated successfully.\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:28:39]:\par
-\noindent Alles erledigt. Hier die Zusammenfassung:\par
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-
-\noindent \textbf{Tag 2, Szene 1 -- BRIEFING (09:00, Kueche)}\par
-
-\noindent Kurzes, fokussiertes Briefing. Das Team ist eingespielt, kein Aufwaermen noetig. Drei Kernpunkte:\par
-
-\noindent\hspace{2mm}1.\ \textbf{CD-Feedback verteilt:} Combat-Skill-Ceiling als Spektrum -- zugaenglich bis belohnend, keine kuenstliche Schwierigkeitsmauer, echte Mastery-Belohnung. Das war Darius' offener Punkt von gestern.\\
-
-\noindent\hspace{2mm}2.\ \textbf{Tagesziele klar definiert -- jeder liefert bis 16:00 eine V1-Outline:}\\
-\noindent\hspace{2mm}\textbullet\ Emre: WBB-01 Mythos (drei Kernfraktionen sauber, Kapitelstruktur)\\
-\noindent\hspace{2mm}\textbullet\ Darius: GDD-01 Spieluebersicht + GDD-02 Kernmechaniken\\
-\noindent\hspace{2mm}\textbullet\ Nami: GDD-03 Erzaehlkonzept (drei Bloecke + Replay als Querschnitt)\\
-\noindent\hspace{2mm}\textbullet\ Vera: GDD-05 Designsprache (braucht Orden-Symbolik von Emre bis 11:00)\\
-\noindent\hspace{2mm}\textbullet\ Tobi: GDD-06 Technik (ergaenzt Shader + Combat-Middleware)\\
-\noindent\hspace{2mm}\textbullet\ Leo: QA-Input + Spielerperspektiv-Bericht (nachmittags QA-Schleife mit Darius)\\
-\noindent\hspace{2mm}\textbullet\ Finn: Produktionsplan Mittwoch\\
-
-\noindent\hspace{2mm}3.\ \textbf{Keine Blocker.} Einzige Abhaengigkeit: Emre schickt Vera die Orden-Symbolik als Erstes.\\
-
-\noindent \textbf{Geschriebene Dateien:}\par
-
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene1-briefing/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene1-briefing/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene1-briefing/output.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/logbook/day02-scene1.json}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/state/world.json} (scene: 0 -> 1)\\
-
-\end{multicols}
 \vspace{2mm}\noindent \agenticon{emre}\textbf{Emre Yilmaz} — \textit{Lead Worldbuilder}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene1-emre}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-a8da8c7208ad5cb35.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-a8da8c7208ad5cb35.\allowbreak{}jsonl}\par
 \noindent Entries: 30\par
 \noindent Start: 2026-02-28T19:23:59.272Z\par
 \noindent End: 2026-02-28T19:25:47.936Z\par
@@ -8643,7 +8341,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese zunächst meine relevanten Dateien, um im Charakter zu bleiben und konsistent zu antworten.\par
 
 
-\noindent \textbf{TOOL: Read} [19:24:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:24:02] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:24:02]:\par
@@ -8656,7 +8354,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\#\#\# Szene 2 — WORK (Recherche)\par
 \noindent 8→- Quellen gelesen: Wolf (2013), Klastrup/Tosca (2004), Tolkien (1947), Fallout Bible (Avellone 2002)\par
-\noindent 9→- Recherche-Notat erstellt: \texttt{gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent 9→- Recherche-Notat erstellt: \breaktt{gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 \noindent 10→- Wolfs 9 Infrastrukturen auf RELICS gemappt. Kritischste: Verknüpfung, Kultur, Mythologie\par
 \noindent 11→- Klastrup/Tosca Mythos-Topos-Ethos als WBB-Gliederungsprinzip bestätigt und geschärft\par
 \noindent 12→- Tolkiens Subcreation-Prinzip als oberstes Gesetz: Schattenfieber darf nie trivialisiert werden\par
@@ -8681,7 +8379,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:24:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/emre-yilmaz.md}\par
+\noindent \textbf{TOOL: Read} [19:24:03] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}emre-yilmaz.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:24:03]:\par
@@ -8721,7 +8419,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:24:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:24:03] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:24:03]:\par
@@ -8777,7 +8475,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt lese ich noch meine Tag-1-Recherche-Notizen und die relevanten Traces von gestern, um volle Tiefe zu haben.\par
 
 
-\noindent \textbf{TOOL: Read} [19:24:09] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent \textbf{TOOL: Read} [19:24:09] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:24:09]:\par
@@ -8809,7 +8507,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt habe ich alles, was ich brauche. Ich schreibe Emres Dialog -- seine Reaktion auf Finns CD-Feedback und Darius' Relikt-Vorschlag, aus der Perspektive des Worldbuilders, der gestern die Schwellen-Hypothese entwickelt hat. Ich schreibe dann die Trace-Dateien.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:24:14] → \texttt{simulation-2/traces/day02-scene1*}\par
+\noindent \textbf{TOOL: Glob} [19:24:14] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1*}\par
 
 
 \noindent \textbf{RESULT} [19:24:15]:\par
@@ -8846,7 +8544,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich die Trace-Dateien.\par
 
 
-\noindent \textbf{TOOL: Write} [19:24:59] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:24:59] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — BRIEFING — Emre Prompt}\par\vspace{0.5mm}
 
@@ -8868,7 +8566,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:25:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:25:14] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — BRIEFING — Emre Reasoning}\par\vspace{0.5mm}
 
@@ -8886,7 +8584,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:25:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/output.md}\par
+\noindent \textbf{TOOL: Write} [19:25:24] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — BRIEFING — Emre Output}\par\vspace{0.5mm}
 
@@ -8929,17 +8627,17 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
 \noindent \textbf{Geschriebene Trace-Dateien:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{nami}\textbf{Nami Okafor} — \textit{Narrative Designer}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene1-nami}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-a8f4178921130899f.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-a8f4178921130899f.\allowbreak{}jsonl}\par
 \noindent Entries: 27\par
 \noindent Start: 2026-02-28T19:26:04.308Z\par
 \noindent End: 2026-02-28T19:27:41.197Z\par
@@ -8981,7 +8679,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese zunächst meine Memory-Datei und die relevanten Referenzmaterialien.\par
 
 
-\noindent \textbf{TOOL: Read} [19:26:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:26:08] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:26:08]:\par
@@ -8994,7 +8692,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\#\#\# Was ich heute getan habe\par
 \noindent 8→- Briefing gelesen, Planescape Last Rites Vision Statement und VtM 2nd Ed studiert\par
-\noindent 9→- Recherche-Notat erstellt: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-nami.md}\par
+\noindent 9→- Recherche-Notat erstellt: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-nami.\allowbreak{}md}\par
 \noindent 10→\par
 \noindent 11→\#\#\# Was ich weiß\par
 \noindent 12→\par
@@ -9023,7 +8721,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:26:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/nami-okafor.md}\par
+\noindent \textbf{TOOL: Read} [19:26:08] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}nami-okafor.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:26:08]:\par
@@ -9058,7 +8756,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:26:09] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:26:09] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:26:09]:\par
@@ -9114,7 +8812,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt lese ich noch meine Recherche-Notizen von Tag 1 und schaue, was bisher im Gallery-Bereich liegt.\par
 
 
-\noindent \textbf{TOOL: Read} [19:26:13] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-nami.md}\par
+\noindent \textbf{TOOL: Read} [19:26:13] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-nami.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:26:13]:\par
@@ -9156,7 +8854,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt habe ich alles, was ich brauche. Lasse mich nun den Trace-Ordner anlegen und Namis Antwort formulieren.\par
 
 
-\noindent \textbf{TOOL: Write} [19:26:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:26:33] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — Briefing (Nami Prompt)}\par\vspace{0.5mm}
 
@@ -9179,7 +8877,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:26:52] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:26:52] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — Reasoning (Nami)}\par\vspace{0.5mm}
 
@@ -9206,7 +8904,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich Namis Dialog.\par
 
 
-\noindent \textbf{TOOL: Write} [19:27:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/output.md}\par
+\noindent \textbf{TOOL: Write} [19:27:24] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — Output (Nami)}\par\vspace{0.5mm}
 
@@ -9251,17 +8949,17 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
 \noindent \textbf{Geschriebene Dateien:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{tobi}\textbf{Tobi Richter} — \textit{Technical Artist}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene1-tobi}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-a7ec94f5fa3a2c779.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-a7ec94f5fa3a2c779.\allowbreak{}jsonl}\par
 \noindent Entries: 31\par
 \noindent Start: 2026-02-28T19:28:39.903Z\par
 \noindent End: 2026-02-28T19:30:12.426Z\par
@@ -9307,7 +9005,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese zunächst meine Memory-Datei und die relevanten Kontextdokumente.\par
 
 
-\noindent \textbf{TOOL: Read} [19:28:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:28:43] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:28:43]:\par
@@ -9320,7 +9018,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\textbf{Recherche abgeschlossen.} Artbooks gelesen: FFXIV 2.0 Concept Specs (Pipeline-Denken, Materiallesbarkeit durch Kontrast-Hierarchien), Dark Souls Design Works (tonale Dichte, Hell-Dunkel-Kontraste für Zonen-Lesbarkeit).\par
 \noindent 8→\par
-\noindent 9→\textbf{Notat erstellt}: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-tobi.md}\par
+\noindent 9→\textbf{Notat erstellt}: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-tobi.\allowbreak{}md}\par
 \noindent 10→\par
 \noindent 11→\#\#\# Technische Kernentscheidungen (vorläufig)\par
 \noindent 12→\par
@@ -9341,7 +9039,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:28:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/tobi-richter.md}\par
+\noindent \textbf{TOOL: Read} [19:28:43] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}tobi-richter.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:28:43]:\par
@@ -9379,7 +9077,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:28:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:28:44] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:28:44]:\par
@@ -9435,7 +9133,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, ich habe den Kontext. Jetzt schaue ich mir noch die Recherche-Notizen an, die ich an Tag 1 erstellt habe.\par
 
 
-\noindent \textbf{TOOL: Read} [19:28:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-tobi.md}\par
+\noindent \textbf{TOOL: Read} [19:28:49] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-tobi.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:28:49]:\par
@@ -9470,7 +9168,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt habe ich alles, was ich brauche. Ich schreibe Tobis Antwort und die Trace-Dateien.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:28:53] → \texttt{simulation-2/traces/day02-scene1-*}\par
+\noindent \textbf{TOOL: Glob} [19:28:53] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-*}\par
 
 
 \noindent \textbf{RESULT} [19:28:53]:\par
@@ -9483,7 +9181,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, es gibt noch kein Trace-Verzeichnis für Tag 2. Ich erstelle jetzt die Trace-Dateien und die Antwort.\par
 
 
-\noindent \textbf{TOOL: Write} [19:29:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:29:07] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — BRIEFING (09:00, Küche)}\par\vspace{0.5mm}
 
@@ -9508,7 +9206,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:29:26] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:29:26] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — Reasoning (Tobi)}\par\vspace{0.5mm}
 
@@ -9531,7 +9229,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich den eigentlichen Dialog-Output.\par
 
 
-\noindent \textbf{TOOL: Write} [19:30:04] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/output.md}\par
+\noindent \textbf{TOOL: Write} [19:30:04] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 1 — Output (Tobi)}\par\vspace{0.5mm}
 
@@ -9568,17 +9266,17 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
 \noindent \textbf{Geschriebene Dateien:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}output.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{leo}\textbf{Leo Fischer} — \textit{QA Lead}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene1-leo}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-af41cc57dc006359c.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-af41cc57dc006359c.\allowbreak{}jsonl}\par
 \noindent Entries: 52\par
 \noindent Start: 2026-02-28T19:30:28.056Z\par
 \noindent End: 2026-02-28T19:32:18.783Z\par
@@ -9625,7 +9323,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Lasse mich zuerst meine Memory-Datei, das Briefing und meinen Roster-Eintrag lesen, um im Charakter zu bleiben.\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:30:32] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:32]:\par
@@ -9661,7 +9359,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 29→3. Fühlt sich Schattenfieber körperlich an (nicht magisch)?\par
 \noindent 30→\par
 \noindent 31→\#\#\# Output generiert\par
-\noindent 32→- \texttt{gallery/gdd/00-recherche-notizen-leo.md} — 600 Wörter, Zielgruppe + Konkurrenz + Risiken\par
+\noindent 32→- \breaktt{gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-leo.\allowbreak{}md} — 600 Wörter, Zielgruppe + Konkurrenz + Risiken\par
 \noindent 33→\par
 \noindent 34→\#\#\# Nächste Schritte\par
 \noindent 35→- GDD Kap 2 (Kernmechaniken) muss das "Angebots-Feeling" einer Spieler-Session reflektieren\par
@@ -9671,7 +9369,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:30:32] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:32]:\par
@@ -9723,7 +9421,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/leo-fischer.md}\par
+\noindent \textbf{TOOL: Read} [19:30:33] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}leo-fischer.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:33]:\par
@@ -9762,7 +9460,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schaue ich mir noch die bisherigen Dialog-Transkripte an, um den genauen Kontext des Briefings zu verstehen.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:30:37] → \texttt{simulation-2/traces/day01-scene2-leo/**}\par
+\noindent \textbf{TOOL: Glob} [19:30:37] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene2-leo/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:30:37]:\par
@@ -9772,7 +9470,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:38] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-leo.md}\par
+\noindent \textbf{TOOL: Read} [19:30:38] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-leo.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:38]:\par
@@ -9822,7 +9520,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, ich habe jetzt ein vollständiges Bild. Lasse mich noch die bisherigen Transkripte von Tag 2 checken, falls es schon welche gibt.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:30:42] → \texttt{simulation-2/traces/day02*/**}\par
+\noindent \textbf{TOOL: Glob} [19:30:42] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02*/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:30:43]:\par
@@ -9845,7 +9543,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:30:46] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:46]:\par
@@ -9867,7 +9565,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-darius/output.md}\par
+\noindent \textbf{TOOL: Read} [19:30:46] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-darius/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:46]:\par
@@ -9885,7 +9583,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/output.md}\par
+\noindent \textbf{TOOL: Read} [19:30:47] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:47]:\par
@@ -9903,7 +9601,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/output.md}\par
+\noindent \textbf{TOOL: Read} [19:30:47] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:47]:\par
@@ -9927,7 +9625,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:30:48] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/output.md}\par
+\noindent \textbf{TOOL: Read} [19:30:48] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:30:48]:\par
@@ -9952,7 +9650,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schaue ich mir noch an, ob Vera schon etwas gesagt hat, da sie im Szenenkontext erwähnt wurde.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:30:53] → \texttt{simulation-2/traces/day02-scene1*vera*/**}\par
+\noindent \textbf{TOOL: Glob} [19:30:53] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1*vera*/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:30:53]:\par
@@ -9967,7 +9665,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Zuerst schreibe ich das Reasoning, dann den Output, dann den Prompt.\par
 
 
-\noindent \textbf{TOOL: Write} [19:31:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:31:14] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt: Day 02, Scene 1 — BRIEFING (Leo)}\par\vspace{0.5mm}
 
@@ -9990,7 +9688,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:31:41] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:31:41] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning: Day 02, Scene 1 — BRIEFING (Leo)}\par\vspace{0.5mm}
 
@@ -10007,7 +9705,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:32:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/output.md}\par
+\noindent \textbf{TOOL: Write} [19:32:03] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output: Day 02, Scene 1 — BRIEFING (Leo)}\par\vspace{0.5mm}
 
@@ -10043,9 +9741,9 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{Geschriebene Dateien:}\par
 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/prompt.md} -- 1:1 Szeneninput\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/reasoning.md} -- Gedankenprozess (Spielertest-Kriterien gegen Vorschläge geprüft, Streamer-Alpha-Implikationen, Naming-Problem)\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/output.md} -- Dialog-Output\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}prompt.\allowbreak{}md} -- 1:1 Szeneninput\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}reasoning.\allowbreak{}md} -- Gedankenprozess (Spielertest-Kriterien gegen Vorschläge geprüft, Streamer-Alpha-Implikationen, Naming-Problem)\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}output.\allowbreak{}md} -- Dialog-Output\\
 
 \noindent \textbf{Kernpunkte des Dialogs:}\par
 
@@ -10069,6 +9767,8 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{finn}\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Darius Engel, Emre Yilmaz, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 2](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-002-scene-002-WORK.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Produktivster WORK-Block bisher. Darius: GDD Kap 1 Spielübersicht v1. Emre: WBB Kap 1 Mythos v1 (Schwarzrand, Schwelle, 8 Gilden). Nami: GDD Kap 4 Schlüsselfiguren v1 (5 NPCs, Quest-Skizzen). Vera: 9 Concept-Art-Bilder (Relikt 3 Zustände, Fraktionspaletten, Stadtschnitt). Tobi: GDD Kap 6 Tech Spec v1. Leo: Wolf-Checkliste, Alpha-Erste-Stunde, Darius-Sync Talking Points. Finn: ROADMAP + COMPLETED.\par}
 ```
@@ -10080,8 +9780,8 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene2-finn}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-ac5fe157a34cdd85c.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-ac5fe157a34cdd85c.\allowbreak{}jsonl}\par
 \noindent Entries: 85\par
 \noindent Start: 2026-02-28T19:36:19.230Z\par
 \noindent End: 2026-02-28T19:40:21.817Z\par
@@ -10125,7 +9825,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Erstmal schauen, wo wir stehen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:36:24] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:24]:\par
@@ -10163,7 +9863,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/ROADMAP.md}\par
+\noindent \textbf{TOOL: Read} [19:36:24] → \breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}ROADMAP.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:24]:\par
@@ -10200,13 +9900,13 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 30→\par
 \noindent 31→| Agent | Aufgabe | Output | Ziel |\par
 \noindent 32→|-------|---------|--------|------|\par
-\noindent 33→| \textbf{Darius} | GDD Kap 1–3: Spielübersicht, Kernmechaniken, Erzählkonzept (Draft) | \texttt{.md} | Mittwoch 15:00 |\par
-\noindent 34→| \textbf{Nami} | GDD Kap 4: Schlüsselfiguren \& NPCs (Draft) + WBB Kap 1 Draft | \texttt{.md} | Mittwoch 15:00 |\par
+\noindent 33→| \textbf{Darius} | GDD Kap 1–3: Spielübersicht, Kernmechaniken, Erzählkonzept (Draft) | \breaktt{.\allowbreak{}md} | Mittwoch 15:00 |\par
+\noindent 34→| \textbf{Nami} | GDD Kap 4: Schlüsselfiguren \& NPCs (Draft) + WBB Kap 1 Draft | \breaktt{.\allowbreak{}md} | Mittwoch 15:00 |\par
 \noindent ... [truncated]\par
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/COMPLETED.md}\par
+\noindent \textbf{TOOL: Read} [19:36:25] → \breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}COMPLETED.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:25]:\par
@@ -10254,7 +9954,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, alles gelesen. Jetzt brauche ich noch das Briefing für die heutigen CD-Entscheidungen, damit ich weiss, was genau entschieden wurde.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:36:29] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:29]:\par
@@ -10306,7 +10006,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/finn-bergmann.md}\par
+\noindent \textbf{TOOL: Read} [19:36:29] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}finn-bergmann.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:29]:\par
@@ -10346,7 +10046,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt schaue ich noch kurz in die aktuellen Traces, um die Briefing-Ergebnisse von heute Morgen zu verifizieren — was genau hat Darius entschieden?\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:34] → \texttt{simulation-2/traces/day02-*/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:34] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-*/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:35]:\par
@@ -10376,7 +10076,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:35] → \texttt{simulation-2/traces/day01-scene5-*/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:35] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-*/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:35]:\par
@@ -10393,7 +10093,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese das heutige Briefing-Output und die Darius-Entscheidungen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:38] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:38] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:38]:\par
@@ -10415,7 +10115,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:39] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-darius/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:39] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-darius/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:39]:\par
@@ -10433,7 +10133,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:39] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t8-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:39] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t8-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:39]:\par
@@ -10465,15 +10165,15 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schaue ich noch kurz in die gestrigen Meeting-Ergebnisse (Tag 1, Szene 5 — Finn-Abschluss), um zu sehen ob dort noch Entscheidungen dokumentiert wurden.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-t5-finn/transcript.md}\par
+\noindent \textbf{TOOL: Read} [19:36:43] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-t5-finn/\allowbreak{}transcript.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:43]:\par
 \noindent ```\par
 \noindent 1→\# Transcript: day01-scene5-t5-finn\par
 \noindent 2→\par
-\noindent 3→Session: \texttt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
-\noindent 4→Source: \texttt{agent-a22646c0e5cc80895.jsonl}\par
+\noindent 3→Session: \breaktt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
+\noindent 4→Source: \breaktt{agent-a22646c0e5cc80895.\allowbreak{}jsonl}\par
 \noindent 5→Entries: 2\par
 \noindent 6→Start: 2026-02-28T18:29:20.083Z\par
 \noindent 7→End: 2026-02-28T18:29:23.113Z\par
@@ -10522,15 +10222,15 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-t4-darius/transcript.md}\par
+\noindent \textbf{TOOL: Read} [19:36:44] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-t4-darius/\allowbreak{}transcript.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:44]:\par
 \noindent ```\par
 \noindent 1→\# Transcript: day01-scene5-t4-darius\par
 \noindent 2→\par
-\noindent 3→Session: \texttt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
-\noindent 4→Source: \texttt{agent-a1226dcb36fe40715.jsonl}\par
+\noindent 3→Session: \breaktt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
+\noindent 4→Source: \breaktt{agent-a1226dcb36fe40715.\allowbreak{}jsonl}\par
 \noindent 5→Entries: 9\par
 \noindent 6→Start: 2026-02-28T18:29:00.994Z\par
 \noindent 7→End: 2026-02-28T18:29:11.756Z\par
@@ -10558,7 +10258,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 29→Ich lese kurz meine Memory-Datei und das Briefing, bevor ich antworte.\par
 \noindent 30→\par
 \noindent 31→\par
-\noindent 32→\textbf{TOOL: Read} [18:29:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent 32→\textbf{TOOL: Read} [18:29:03] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 \noindent 33→\par
 \noindent 34→\par
 \noindent 35→\textbf{RESULT} [18:29:03]:\par
@@ -10578,7 +10278,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Zuerst die ROADMAP.md.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:48] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/ROADMAP.md}\par
+\noindent \textbf{TOOL: Read} [19:36:48] → \breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}ROADMAP.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:48]:\par
@@ -10615,8 +10315,8 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 30→\par
 \noindent 31→| Agent | Aufgabe | Output | Ziel |\par
 \noindent 32→|-------|---------|--------|------|\par
-\noindent 33→| \textbf{Darius} | GDD Kap 1–3: Spielübersicht, Kernmechaniken, Erzählkonzept (Draft) | \texttt{.md} | Mittwoch 15:00 |\par
-\noindent 34→| \textbf{Nami} | GDD Kap 4: Schlüsselfiguren \& NPCs (Draft) + WBB Kap 1 Draft | \texttt{.md} | Mittwoch 15:00 |\par
+\noindent 33→| \textbf{Darius} | GDD Kap 1–3: Spielübersicht, Kernmechaniken, Erzählkonzept (Draft) | \breaktt{.\allowbreak{}md} | Mittwoch 15:00 |\par
+\noindent 34→| \textbf{Nami} | GDD Kap 4: Schlüsselfiguren \& NPCs (Draft) + WBB Kap 1 Draft | \breaktt{.\allowbreak{}md} | Mittwoch 15:00 |\par
 \noindent ... [truncated]\par
 \noindent ```\par
 
@@ -10625,7 +10325,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, alles gelesen. Jetzt schreibe ich die aktualisierte ROADMAP.md.\par
 
 
-\noindent \textbf{TOOL: Write} [19:37:43] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/ROADMAP.md}\par
+\noindent \textbf{TOOL: Write} [19:37:43] → \breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}ROADMAP.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{GenSoftworks — Simulation 2 Roadmap}\par\vspace{0.5mm}
 
@@ -10655,7 +10355,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Roadmap steht. Jetzt die COMPLETED.md.\par
 
 
-\noindent \textbf{TOOL: Read} [19:37:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/COMPLETED.md}\par
+\noindent \textbf{TOOL: Read} [19:37:46] → \breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}COMPLETED.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:37:46]:\par
@@ -10699,7 +10399,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:38:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/COMPLETED.md}\par
+\noindent \textbf{TOOL: Write} [19:38:24] → \breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}COMPLETED.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{GenSoftworks — Status \& Erledigte Entscheidungen}\par\vspace{0.5mm}
 
@@ -10727,7 +10427,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt die Abhängigkeitsprüfung für morgen Mittwoch. Kurzer Blick, ob es noch was gibt, das ich übersehe.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:38:28] → \texttt{simulation-2/gallery/gdd/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:38:28] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:38:28]:\par
@@ -10741,7 +10441,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:38:29] → \texttt{simulation-2/gallery/wbb/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:38:29] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:38:29]:\par
@@ -10750,7 +10450,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:38:29] → \texttt{simulation-2/gallery/concepts/**/*}\par
+\noindent \textbf{TOOL: Glob} [19:38:29] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [19:38:29]:\par
@@ -10769,7 +10469,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich den Trace und dann aktualisiere ich meine Memory.\par
 
 
-\noindent \textbf{TOOL: Write} [19:38:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-finn/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:38:47] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-finn/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt: Day 02, Scene 2 — WORK (Finn)}\par\vspace{0.5mm}
 
@@ -10795,7 +10495,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:39:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-finn/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:39:17] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-finn/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning: Day 02, Scene 2 — WORK (Finn)}\par\vspace{0.5mm}
 
@@ -10818,7 +10518,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:39:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-finn/output.md}\par
+\noindent \textbf{TOOL: Write} [19:39:30] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-finn/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output: Day 02, Scene 2 — WORK (Finn)}\par\vspace{0.5mm}
 
@@ -10846,7 +10546,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt das Letzte: Memory aktualisieren.\par
 
 
-\noindent \textbf{TOOL: Read} [19:39:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:39:33] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:39:33]:\par
@@ -10884,7 +10584,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:40:10] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md}\par
+\noindent \textbf{TOOL: Write} [19:40:10] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Finn — Memory (Simulation 2)}\par\vspace{0.5mm}
 
@@ -10912,12 +10612,12 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent Fertig. Kurze Zusammenfassung, was ich gemacht habe:\par
 
-\noindent \textbf{ROADMAP.md} (\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/ROADMAP.md}) -- vollständig überarbeitet:\par
+\noindent \textbf{ROADMAP.md} (\breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}ROADMAP.\allowbreak{}md}) -- vollständig überarbeitet:\par
 \noindent\hspace{2mm}\textbullet\ CD-Entscheidungen als neue Top-Sektion: Schattenfieber (GEKLÄRT: biologische Wahrheit, drei Progressionspfade), Release (GEKLÄRT: Premium, ein Main-Release, DLCs), Stadtfrage (GEKLÄRT: eine vertikale Stadt), Tiervolk (GEKLÄRT: Händler/Diebe, NPC), Relikt (IN BRAINSTORM)\\
 \noindent\hspace{2mm}\textbullet\ Neue Abhängigkeits-Tabelle für Mittwoch v0.1\\
 \noindent\hspace{2mm}\textbullet\ Neue Risiken-Sektion mit drei identifizierten Risiken\\
 
-\noindent \textbf{COMPLETED.md} (\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/pinwall/COMPLETED.md}) -- vollständig überarbeitet:\par
+\noindent \textbf{COMPLETED.md} (\breaktt{simulation-2/\allowbreak{}pinwall/\allowbreak{}COMPLETED.\allowbreak{}md}) -- vollständig überarbeitet:\par
 \noindent\hspace{2mm}\textbullet\ Erledigte Entscheidungen mit Konsequenzen pro Team-Mitglied\\
 \noindent\hspace{2mm}\textbullet\ Kapitel-Status mit realem Fortschritt\\
 \noindent\hspace{2mm}\textbullet\ Aktuelle Blocker-Tabelle (3 Stück, alle heute lösbar)\\
@@ -10925,17 +10625,17 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{Abhängigkeitsanalyse:} Einziger kritischer Pfad ist der Relikt-Brainstorm bis 12:00. Wenn der liefert, sind alle Abhängigkeiten für Mittwoch v0.1 geklärt.\par
 
-\noindent \textbf{Traces} geschrieben in \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-finn/} (prompt.md, reasoning.md, output.md).\par
+\noindent \textbf{Traces} geschrieben in \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-finn/\allowbreak{}} (prompt.md, reasoning.md, output.md).\par
 
-\noindent \textbf{Memory} aktualisiert: \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/finn-memory.md} -- CD-Entscheidungen eingetragen, aktuellen Stand dokumentiert, nächste Schritte für heute Nachmittag und morgen Mittwoch formuliert.\par
+\noindent \textbf{Memory} aktualisiert: \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}finn-memory.\allowbreak{}md} -- CD-Entscheidungen eingetragen, aktuellen Stand dokumentiert, nächste Schritte für heute Nachmittag und morgen Mittwoch formuliert.\par
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{darius}\textbf{Darius Engel} — \textit{Game Director}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene2-darius}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-a0ece252dc2afef31.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-a0ece252dc2afef31.\allowbreak{}jsonl}\par
 \noindent Entries: 89\par
 \noindent Start: 2026-02-28T19:35:00.988Z\par
 \noindent End: 2026-02-28T19:41:20.745Z\par
@@ -10969,9 +10669,9 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{DEINE AUFGABE HEUTE:}\par
 \noindent\hspace{2mm}1.\ \textbf{Relikt-Vorschlag} ausarbeiten: 2–3 konkrete Vorschläge für das Relikt mit Darius' drei Kriterien (Gameplay-Funktion, narrativer Magnetismus, visuelle Signatur). Denke an In-World-Namen (griffig, kurz).\\
-\noindent\hspace{2mm}2.\ \textbf{GDD Kapitel 01 — Spielübersicht \& Design-Säulen} schreiben: \texttt{simulation-2/gallery/gdd/01-spieluebersicht-v1.md}. Design-Säulen, Game Feel, Genre, Tonalität, USP. Referenziere das Briefing.\\
+\noindent\hspace{2mm}2.\ \textbf{GDD Kapitel 01 — Spielübersicht \& Design-Säulen} schreiben: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}01-spieluebersicht-v1.\allowbreak{}md}. Design-Säulen, Game Feel, Genre, Tonalität, USP. Referenziere das Briefing.\\
 
-\noindent Lies zuerst deine Memory (\texttt{simulation-2/agents/darius-memory.md}), dann das Briefing (\texttt{simulation-2/briefing.md}), dann deine Recherche-Notizen (\texttt{simulation-2/gallery/gdd/00-recherche-notizen-darius.md}). Lies auch die Referenzen in \texttt{library/} die dir nützlich erscheinen.\par
+\noindent Lies zuerst deine Memory (\breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}), dann das Briefing (\breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}), dann deine Recherche-Notizen (\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-darius.\allowbreak{}md}). Lies auch die Referenzen in \breaktt{library/\allowbreak{}} die dir nützlich erscheinen.\par
 
 \noindent Schreibe deine Artefakte auf Deutsch mit echten Umlauten. Qualität vor Quantität. Aktualisiere als letztes deine Memory-Datei.\par
 
@@ -10980,7 +10680,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese zuerst meine Memory, dann das Briefing und meine Recherche-Notizen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:05] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:35:05] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:05]:\par
@@ -11013,14 +10713,14 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 26→- Skill-by-Use vs. Grind-Gefühl: Leo fragen\par
 \noindent 27→\par
 \noindent 28→\textbf{Produzierte Artefakte:}\par
-\noindent 29→- \texttt{simulation-2/gallery/gdd/00-recherche-notizen-darius.md} — Recherche-Notat, Tag 1\par
+\noindent 29→- \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-darius.\allowbreak{}md} — Recherche-Notat, Tag 1\par
 \noindent 30→\par
 \noindent 31→\textbf{Status:} Bereit für Kapitel 1 (Spielübersicht \& Design-Säulen), sobald Emre erste Lore-Inputs liefert\par
 \noindent 32→\par
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:35:06] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:06]:\par
@@ -11072,7 +10772,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/darius-engel.md}\par
+\noindent \textbf{TOOL: Read} [19:35:06] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}darius-engel.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:06]:\par
@@ -11114,7 +10814,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt lese ich meine Recherche-Notizen und schaue, was in der Library relevant ist.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:12] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-darius.md}\par
+\noindent \textbf{TOOL: Read} [19:35:12] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-darius.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:12]:\par
@@ -11152,10 +10852,10 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:12] → \texttt{library/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:12] → \breaktt{library/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:12] → \texttt{library/**/*.pdf}\par
+\noindent \textbf{TOOL: Glob} [19:35:12] → \breaktt{library/\allowbreak{}**/\allowbreak{}*.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:35:12]:\par
@@ -11195,7 +10895,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, meine Recherche-Notizen sind sauber. Jetzt schaue ich mir noch die Trace-Ordner an, um zu sehen, was heute Morgen im Briefing besprochen wurde, und lese eventuell das Planescape-Vision-Statement als Referenz für die Relikt-Arbeit.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:19] → \texttt{simulation-2/traces/day02-*/**/*}\par
+\noindent \textbf{TOOL: Glob} [19:35:19] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-*/\allowbreak{}**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [19:35:19]:\par
@@ -11225,7 +10925,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:20] → \texttt{simulation-2/gallery/wbb/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:20] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:20]:\par
@@ -11234,7 +10934,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/planescape-torment-vision-statement-1997.pdf}\par
+\noindent \textbf{TOOL: Read} [19:35:21] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}planescape-torment-vision-statement-1997.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:35:21]:\par
@@ -11249,7 +10949,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt lese ich die Outputs vom heutigen Briefing, um die Diskussion zum Relikt genau zu kennen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-darius/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:30] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-darius/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:30]:\par
@@ -11267,7 +10967,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:30] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:30]:\par
@@ -11285,7 +10985,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:31] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:31] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:31]:\par
@@ -11309,7 +11009,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:31] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:31] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:31]:\par
@@ -11331,7 +11031,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt lese ich noch Emres Recherche-Notizen und die WBB-Lore, um sicherzustellen, dass meine Relikt-Vorschläge konsistent sind.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:39] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent \textbf{TOOL: Read} [19:35:39] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:39]:\par
@@ -11359,7 +11059,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:39] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:39] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:39]:\par
@@ -11380,7 +11080,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:40] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t8-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:40] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t8-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:40]:\par
@@ -11412,7 +11112,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt habe ich alles, was ich brauche. Lasse mich noch schnell die Traces vom heutigen Briefing lesen, um mein eigenes Reasoning sauber nachzuzeichnen, und dann fange ich an zu produzieren. Zuerst erstelle ich meine Trace-Dateien, dann das Relikt-Arbeitspapier und dann GDD Kapitel 01.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-darius/reasoning.md}\par
+\noindent \textbf{TOOL: Read} [19:35:47] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-darius/\allowbreak{}reasoning.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:47]:\par
@@ -11436,7 +11136,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:47] → \texttt{simulation-2/traces/day02-scene2-darius/**/*}\par
+\noindent \textbf{TOOL: Glob} [19:35:47] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-darius/\allowbreak{}**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [19:35:48]:\par
@@ -11449,7 +11149,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, der Trace-Ordner existiert noch nicht. Jetzt arbeite ich. Ich beginne mit meinem Reasoning, dann produziere ich die beiden Artefakte.\par
 
 
-\noindent \textbf{TOOL: Write} [19:36:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-darius/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:36:03] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-darius/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt: Day 02, Scene 2 — Darius (WORK)}\par\vspace{0.5mm}
 
@@ -11471,7 +11171,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:36:36] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-darius/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:36:36] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-darius/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning: Day 02, Scene 2 — Darius (WORK)}\par\vspace{0.5mm}
 
@@ -11499,7 +11199,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt produziere ich die beiden Artefakte. Zuerst das Relikt-Arbeitspapier, dann GDD Kapitel 01.\par
 
 
-\noindent \textbf{TOOL: Write} [19:38:05] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-relikt-vorschlaege-darius.md}\par
+\noindent \textbf{TOOL: Write} [19:38:05] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-relikt-vorschlaege-darius.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{RELICS — Relikt-Vorschläge}\par\vspace{0.5mm}
 \noindent \textbf{Darius Engel / Tag 2 / Szene 2 — Einzelarbeit, 10:00 Uhr}\par
@@ -11527,7 +11227,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, die Relikt-Vorschläge stehen. Jetzt das Hauptstück: GDD Kapitel 01.\par
 
 
-\noindent \textbf{TOOL: Write} [19:39:59] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/01-spieluebersicht-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:39:59] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}01-spieluebersicht-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{RELICS — Game Design Document}\par\vspace{0.5mm}
 \vspace{1mm}\noindent\textbf{\textit{Kapitel 01: Spielübersicht \& Design-Säulen}}\par
@@ -11558,7 +11258,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich den Output-Trace und aktualisiere meine Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Write} [19:40:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-darius/output.md}\par
+\noindent \textbf{TOOL: Write} [19:40:25] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-darius/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output: Day 02, Scene 2 — Darius (WORK)}\par\vspace{0.5mm}
 
@@ -11566,7 +11266,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \vspace{1mm}\noindent\textbf{\textit{Was produziert wurde}}\par
 
-\noindent\textbf{\textit{1. Relikt-Vorschläge (\texttt{simulation-2/gallery/gdd/00-relikt-vorschlaege-darius.md})}} 
+\noindent\textbf{\textit{1. Relikt-Vorschläge (\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-relikt-vorschlaege-darius.\allowbreak{}md})}} 
 
 \noindent Drei Vorschläge, gegen meine drei Kriterien getestet:\par
 
@@ -11586,7 +11286,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt aktualisiere ich meine Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Read} [19:40:28] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:40:28] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:40:28]:\par
@@ -11619,14 +11319,14 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 26→- Skill-by-Use vs. Grind-Gefühl: Leo fragen\par
 \noindent 27→\par
 \noindent 28→\textbf{Produzierte Artefakte:}\par
-\noindent 29→- \texttt{simulation-2/gallery/gdd/00-recherche-notizen-darius.md} — Recherche-Notat, Tag 1\par
+\noindent 29→- \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-darius.\allowbreak{}md} — Recherche-Notat, Tag 1\par
 \noindent 30→\par
 \noindent 31→\textbf{Status:} Bereit für Kapitel 1 (Spielübersicht \& Design-Säulen), sobald Emre erste Lore-Inputs liefert\par
 \noindent 32→\par
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\par
+\noindent \textbf{TOOL: Write} [19:41:03] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Darius — Memory}\par\vspace{0.5mm}
 
@@ -11659,7 +11359,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent \textbf{Zwei Artefakte produziert in zwei Stunden Blockarbeit.}\par
 
 \noindent\textbf{\textit{Artefakt 1: Relikt-Vorschläge}} 
-\noindent \textbf{Datei:} \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-relikt-vorschlaege-darius.md}\par
+\noindent \textbf{Datei:} \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-relikt-vorschlaege-darius.\allowbreak{}md}\par
 
 \noindent Drei Vorschläge, getestet gegen meine drei Kriterien (Gameplay-Funktion, narrativer Magnetismus, visuelle Signatur):\par
 
@@ -11670,7 +11370,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Die Kernidee beim Herz: Der Spieler trägt ein Stück des Relikts in sich. Er verfolgt es nicht nur -- er IST ein Teil davon. Das verbindet Namis narrativen Instinkt ("Der Spieler verfolgt das Relikt, weil er sich selbst verfolgt") mit konkreter Gameplay-Mechanik.\par
 
 \noindent\textbf{\textit{Artefakt 2: GDD Kapitel 01 -- Spielübersicht \& Design-Säulen}} 
-\noindent \textbf{Datei:} \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/01-spieluebersicht-v1.md}\par
+\noindent \textbf{Datei:} \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}01-spieluebersicht-v1.\allowbreak{}md}\par
 
 \noindent Acht Sektionen: High Concept, Game Feel, Genre \& Tonalität, vier Design-Säulen, USP, Zielgruppe, Monetarisierung, Referenzrahmen. Jede Design-Säule hat ein Spieler-Fantasie-Statement:\par
 
@@ -11680,12 +11380,12 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\hspace{2mm}4.\ \textbf{Dichte vor Breite} -- "Jeder Winkel dieser Stadt hat ein Geheimnis."\\
 
 \noindent\textbf{\textit{Traces}} 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-darius/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-darius/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-darius/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-darius/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-darius/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-darius/\allowbreak{}output.\allowbreak{}md}\\
 
 \noindent\textbf{\textit{Memory aktualisiert}} 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/darius-memory.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}darius-memory.\allowbreak{}md}\\
 
 \vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
 
@@ -11696,8 +11396,8 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene2-emre}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-a25a0cf09c667f83c.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-a25a0cf09c667f83c.\allowbreak{}jsonl}\par
 \noindent Entries: 78\par
 \noindent Start: 2026-02-28T19:35:13.168Z\par
 \noindent End: 2026-02-28T19:42:16.713Z\par
@@ -11729,10 +11429,10 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{DEINE AUFGABE HEUTE:}\par
 \noindent\hspace{2mm}1.\ \textbf{Topos-Skizze für Vera} (bis 12:00 Uhr): Stadtstruktur, die vier Schichten (Krone, Gilden, Volk, Schwelle), Materialien pro Zone, Geographie. Kann als separate Datei oder direkt in WBB-Draft.\\
-\noindent\hspace{2mm}2.\ \textbf{WBB Kapitel 01 — Mythos (v1)} beginnen: \texttt{simulation-2/gallery/wbb/01-mythos-v1.md}. Kosmologie, Schwellen-Theorie, Schattenfieber-Ursprung, germanische Mythologie-Elemente. Drei Fraktions-Kosmologien.\\
+\noindent\hspace{2mm}2.\ \textbf{WBB Kapitel 01 — Mythos (v1)} beginnen: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}01-mythos-v1.\allowbreak{}md}. Kosmologie, Schwellen-Theorie, Schattenfieber-Ursprung, germanische Mythologie-Elemente. Drei Fraktions-Kosmologien.\\
 \noindent\hspace{2mm}3.\ \textbf{Relikt-Vorschlag}: Wie passt ein organischer Schwellenanker in deine Kosmologie? Konkreter Vorschlag mit In-World-Namen.\\
 
-\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen (\texttt{simulation-2/gallery/wbb/00-recherche-notizen-emre.md}). Lies auch relevante Referenzen in \texttt{library/}.\par
+\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen (\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}). Lies auch relevante Referenzen in \breaktt{library/\allowbreak{}}.\par
 
 \noindent Schreibe auf Deutsch mit echten Umlauten. Qualität vor Quantität. Aktualisiere als letztes deine Memory-Datei.\par
 
@@ -11741,7 +11441,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese zuerst meine Memory-Datei, das Briefing, meine Recherche-Notizen und den Roster-Eintrag parallel ein.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:35:16] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:16]:\par
@@ -11754,7 +11454,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\#\#\# Szene 2 — WORK (Recherche)\par
 \noindent 8→- Quellen gelesen: Wolf (2013), Klastrup/Tosca (2004), Tolkien (1947), Fallout Bible (Avellone 2002)\par
-\noindent 9→- Recherche-Notat erstellt: \texttt{gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent 9→- Recherche-Notat erstellt: \breaktt{gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 \noindent 10→- Wolfs 9 Infrastrukturen auf RELICS gemappt. Kritischste: Verknüpfung, Kultur, Mythologie\par
 \noindent 11→- Klastrup/Tosca Mythos-Topos-Ethos als WBB-Gliederungsprinzip bestätigt und geschärft\par
 \noindent 12→- Tolkiens Subcreation-Prinzip als oberstes Gesetz: Schattenfieber darf nie trivialisiert werden\par
@@ -11779,7 +11479,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:35:17] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:17]:\par
@@ -11831,7 +11531,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent \textbf{TOOL: Read} [19:35:17] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:17]:\par
@@ -11859,7 +11559,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:18] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/emre-yilmaz.md}\par
+\noindent \textbf{TOOL: Read} [19:35:18] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}emre-yilmaz.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:18]:\par
@@ -11903,7 +11603,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt schaue ich mir an, was bereits in der WBB-Galerie existiert und was gestern im Briefing-Meeting besprochen wurde.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:23] → \texttt{simulation-2/gallery/wbb/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:23] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:23]:\par
@@ -11912,7 +11612,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:23] → \texttt{simulation-2/traces/day02*/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:23] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02*/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:24]:\par
@@ -11942,7 +11642,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:24] → \texttt{simulation-2/traces/day01*/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:24] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01*/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:24]:\par
@@ -11976,7 +11676,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese mein heutiges Briefing-Output und die Outputs von Nami und Darius aus dem Morgen-Briefing, um den aktuellen Stand zu kennen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:28] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:28] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:28]:\par
@@ -11994,7 +11694,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:29] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:29]:\par
@@ -12018,7 +11718,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-darius/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:29] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-darius/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:29]:\par
@@ -12036,7 +11736,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t8-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:35:30] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t8-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:30]:\par
@@ -12068,15 +11768,15 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt lese ich noch mein eigenes Tag-1-Arbeitsergebnis und schaue, was gestern Nachmittag im Meeting besprochen wurde.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:35] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-t2-emre/transcript.md}\par
+\noindent \textbf{TOOL: Read} [19:35:35] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-t2-emre/\allowbreak{}transcript.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:35]:\par
 \noindent ```\par
 \noindent 1→\# Transcript: day01-scene5-t2-emre\par
 \noindent 2→\par
-\noindent 3→Session: \texttt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
-\noindent 4→Source: \texttt{agent-ab40609e53e0cbc81.jsonl}\par
+\noindent 3→Session: \breaktt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
+\noindent 4→Source: \breaktt{agent-ab40609e53e0cbc81.\allowbreak{}jsonl}\par
 \noindent 5→Entries: 6\par
 \noindent 6→Start: 2026-02-28T18:28:25.965Z\par
 \noindent 7→End: 2026-02-28T18:28:33.241Z\par
@@ -12108,7 +11808,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 33→Ich lese kurz meine Memory-Datei, bevor ich antworte.\par
 \noindent 34→\par
 \noindent 35→\par
-\noindent 36→\textbf{TOOL: Read} [18:28:28] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent 36→\textbf{TOOL: Read} [18:28:28] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 \noindent 37→\par
 \noindent 38→\par
 \noindent 39→\textbf{RESULT} [18:28:28]:\par
@@ -12121,21 +11821,21 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 46→     6→\par
 \noindent 47→     7→\#\#\# Szene 2 — WORK (Recherche)\par
 \noindent 48→     8→- Quellen gelesen: Wolf (2013), Klastrup/Tosca (2004), Tolkien (1947), Fallout Bible (Avellone 2002)\par
-\noindent 49→     9→- Recherche-Notat erstellt: \texttt{gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent 49→     9→- Recherche-Notat erstellt: \breaktt{gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 \noindent 50→    10→- W\par
 \noindent ... [truncated]\par
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:39] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene3-t2-emre/transcript.md}\par
+\noindent \textbf{TOOL: Read} [19:35:39] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene3-t2-emre/\allowbreak{}transcript.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:39]:\par
 \noindent ```\par
 \noindent 1→\# Transcript: day01-scene3-t2-emre\par
 \noindent 2→\par
-\noindent 3→Session: \texttt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
-\noindent 4→Source: \texttt{agent-a12411e36b230faf0.jsonl}\par
+\noindent 3→Session: \breaktt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
+\noindent 4→Source: \breaktt{agent-a12411e36b230faf0.\allowbreak{}jsonl}\par
 \noindent 5→Entries: 9\par
 \noindent 6→Start: 2026-02-28T18:24:27.502Z\par
 \noindent 7→End: 2026-02-28T18:24:40.355Z\par
@@ -12168,7 +11868,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 34→Ich lese kurz meine Memory-Datei und das Briefing, bevor ich antworte.\par
 \noindent 35→\par
 \noindent 36→\par
-\noindent 37→\textbf{TOOL: Read} [18:24:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent 37→\textbf{TOOL: Read} [18:24:30] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 \noindent 38→\par
 \noindent 39→\par
 \noindent 40→\textbf{RESULT} [18:24:30]:\par
@@ -12184,7 +11884,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt habe ich den vollständigen Kontext. Lassen mich noch schnell die Referenzbibliothek prüfen, ob dort etwas zu germanischer Mythologie oder Kosmologie liegt, das ich nutzen kann.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:44] → \texttt{library/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:44] → \breaktt{library/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:45]:\par
@@ -12193,7 +11893,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:45] → \texttt{library/**/*.pdf}\par
+\noindent \textbf{TOOL: Glob} [19:35:45] → \breaktt{library/\allowbreak{}**/\allowbreak{}*.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:35:45]:\par
@@ -12229,7 +11929,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich beginne mit dem Reasoning-Dokument.\par
 
 
-\noindent \textbf{TOOL: Write} [19:36:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-emre/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:36:06] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-emre/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt: Day 02, Scene 2 — WORK — Emre}\par\vspace{0.5mm}
 
@@ -12253,7 +11953,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:37:00] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-emre/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:37:00] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-emre/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning: Day 02, Scene 2 — WORK — Emre}\par\vspace{0.5mm}
 
@@ -12278,7 +11978,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich die Topos-Skizze für Vera -- das hat die härteste Deadline.\par
 
 
-\noindent \textbf{TOOL: Write} [19:38:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/02-topos-skizze-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:38:30] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}02-topos-skizze-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{WBB Kapitel 02 — Topos-Skizze (v1)}\par\vspace{0.5mm}
 
@@ -12307,7 +12007,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Topos-Skizze ist raus. Jetzt der Hauptakt -- WBB Kapitel 01 Mythos.\par
 
 
-\noindent \textbf{TOOL: Write} [19:40:52] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/01-mythos-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:40:52] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}01-mythos-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{WBB Kapitel 01 — Mythos (v1)}\par\vspace{0.5mm}
 
@@ -12337,7 +12037,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich das Output-Dokument für den Trace.\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-emre/output.md}\par
+\noindent \textbf{TOOL: Write} [19:41:25] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-emre/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output: Day 02, Scene 2 — WORK — Emre}\par\vspace{0.5mm}
 
@@ -12347,7 +12047,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent\textbf{\textit{1. Topos-Skizze für Vera (Deadline: 12:00)}} 
 
-\noindent \textbf{Datei:} \texttt{gallery/wbb/02-topos-skizze-v1.md}\par
+\noindent \textbf{Datei:} \breaktt{gallery/\allowbreak{}wbb/\allowbreak{}02-topos-skizze-v1.\allowbreak{}md}\par
 
 \noindent Die Schwellenstadt liegt auf einem Felssporn über einem Flusstal. Vier vertikale Schichten:\par
 \noindent\hspace{2mm}\textbullet\ \textbf{Krone} (oben): Brutalismus-Festung, polierter Basalt, Bergkristall, Schwarz/Weiß + Indigo/Blutrot\\
@@ -12366,7 +12066,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Zum Schluss aktualisiere ich meine Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Read} [19:41:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:41:30] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:41:30]:\par
@@ -12379,7 +12079,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\#\#\# Szene 2 — WORK (Recherche)\par
 \noindent 8→- Quellen gelesen: Wolf (2013), Klastrup/Tosca (2004), Tolkien (1947), Fallout Bible (Avellone 2002)\par
-\noindent 9→- Recherche-Notat erstellt: \texttt{gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent 9→- Recherche-Notat erstellt: \breaktt{gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 \noindent 10→- Wolfs 9 Infrastrukturen auf RELICS gemappt. Kritischste: Verknüpfung, Kultur, Mythologie\par
 \noindent 11→- Klastrup/Tosca Mythos-Topos-Ethos als WBB-Gliederungsprinzip bestätigt und geschärft\par
 \noindent 12→- Tolkiens Subcreation-Prinzip als oberstes Gesetz: Schattenfieber darf nie trivialisiert werden\par
@@ -12404,7 +12104,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\par
+\noindent \textbf{TOOL: Write} [19:41:58] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Emre — Memory}\par\vspace{0.5mm}
 
@@ -12414,7 +12114,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent\textbf{\textit{Szene 2 — WORK (Recherche)}} 
 \noindent\hspace{2mm}\textbullet\ Quellen gelesen: Wolf (2013), Klastrup/Tosca (2004), Tolkien (1947), Fallout Bible (Avellone 2002)\\
-\noindent\hspace{2mm}\textbullet\ Recherche-Notat erstellt: \texttt{gallery/wbb/00-recherche-notizen-emre.md}\\
+\noindent\hspace{2mm}\textbullet\ Recherche-Notat erstellt: \breaktt{gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\\
 \noindent\hspace{2mm}\textbullet\ Wolfs 9 Infrastrukturen auf RELICS gemappt. Kritischste: Verknüpfung, Kultur, Mythologie\\
 \noindent\hspace{2mm}\textbullet\ Klastrup/Tosca Mythos-Topos-Ethos als WBB-Gliederungsprinzip bestätigt und geschärft\\
 \noindent ... [truncated]\par
@@ -12439,14 +12139,14 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\textbf{\textit{Produzierte Artefakte}} 
 
 \noindent \textbf{1. Topos-Skizze fur Vera} (Deadline 12:00 -- eingehalten)\par
-\noindent\hspace{2mm}\textbullet\ Datei: \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/02-topos-skizze-v1.md}\\
+\noindent\hspace{2mm}\textbullet\ Datei: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}02-topos-skizze-v1.\allowbreak{}md}\\
 \noindent\hspace{2mm}\textbullet\ Schwellenstadt auf Felssporn, vier vertikale Schichten mit durchgängiger Materialsprache\\
 \noindent\hspace{2mm}\textbullet\ Sieben Landmarken (Kronenfeste, Siegelturm, Die Waage, Hammergasse, Der Sumpf, Abstieg, Wurzelkammer)\\
 \noindent\hspace{2mm}\textbullet\ Funf priorisierte Concept-Art-Aufträge für Vera, davon der Stadtschnitt als wichtigstes Bild\\
 \noindent\hspace{2mm}\textbullet\ Farbcodierung pro Schicht, Klimahinweise, architektonische Leitmotive\\
 
 \noindent \textbf{2. WBB Kapitel 01 -- Mythos (v1)}\par
-\noindent\hspace{2mm}\textbullet\ Datei: \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/01-mythos-v1.md}\\
+\noindent\hspace{2mm}\textbullet\ Datei: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}01-mythos-v1.\allowbreak{}md}\\
 \noindent\hspace{2mm}\textbullet\ Duale Kosmologie (bekannte Welt / Jenseitiges / Schwelle als Ginnungagap-Echo)\\
 \noindent\hspace{2mm}\textbullet\ Schattenfieber als biologischer Prozess in vier Stadien (Rauschen, Risse, Schwelle, Übergang)\\
 \noindent\hspace{2mm}\textbullet\ Drei vollständige In-World-Schöpfungsmythen: Ordensgenesis, Kronensaga, Gildenchronik\\
@@ -12461,13 +12161,13 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent\textbf{\textit{Trace-Dateien}} 
 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-emre/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-emre/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-emre/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-emre/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-emre/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-emre/\allowbreak{}output.\allowbreak{}md}\\
 
 \noindent\textbf{\textit{Memory aktualisiert}} 
 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/emre-memory.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}emre-memory.\allowbreak{}md}\\
 
 \noindent\textbf{\textit{Offene Entscheidungen}} 
 
@@ -12480,8 +12180,8 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene2-nami}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-ade5eb3662cafd341.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-ade5eb3662cafd341.\allowbreak{}jsonl}\par
 \noindent Entries: 108\par
 \noindent Start: 2026-02-28T19:35:25.117Z\par
 \noindent End: 2026-02-28T19:42:21.679Z\par
@@ -12517,7 +12217,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\hspace{2mm}3.\ \textbf{Relikt-Vorschlag} aus narrativer Sicht: Was ist der narrative Magnetismus? In-World-Name?\\
 \noindent\hspace{2mm}4.\ \textbf{GDD Kapitel 03 — Erzählkonzept} vorbereiten: Notizen für den Draft (kommt morgen Mi als v1).\\
 
-\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen. Lies relevante Referenzen in \texttt{library/}.\par
+\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen. Lies relevante Referenzen in \breaktt{library/\allowbreak{}}.\par
 
 \noindent Schreibe auf Deutsch mit echten Umlauten. Aktualisiere als letztes deine Memory-Datei.\par
 
@@ -12528,7 +12228,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Lasse mich zuerst meine Memory-Datei, das Briefing, und meine Recherche-Notizen lesen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:35:29] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:29]:\par
@@ -12541,7 +12241,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\#\#\# Was ich heute getan habe\par
 \noindent 8→- Briefing gelesen, Planescape Last Rites Vision Statement und VtM 2nd Ed studiert\par
-\noindent 9→- Recherche-Notat erstellt: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-nami.md}\par
+\noindent 9→- Recherche-Notat erstellt: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-nami.\allowbreak{}md}\par
 \noindent 10→\par
 \noindent 11→\#\#\# Was ich weiß\par
 \noindent 12→\par
@@ -12570,7 +12270,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:29] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:35:29] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:29]:\par
@@ -12622,7 +12322,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:30] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/nami-okafor.md}\par
+\noindent \textbf{TOOL: Read} [19:35:30] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}nami-okafor.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:30]:\par
@@ -12661,7 +12361,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, jetzt meine Recherche-Notizen und die relevanten Library-Referenzen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:34] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-nami.md}\par
+\noindent \textbf{TOOL: Read} [19:35:34] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-nami.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:34]:\par
@@ -12699,7 +12399,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:35] → \texttt{library/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:35] → \breaktt{library/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:35]:\par
@@ -12708,10 +12408,10 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:39] → \texttt{library/**/*}\par
+\noindent \textbf{TOOL: Glob} [19:35:39] → \breaktt{library/\allowbreak{}**/\allowbreak{}*}\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:39] → \texttt{simulation-2/gallery/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:35:39] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:39]:\par
@@ -12756,7 +12456,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Lasse mich Emres Recherche-Notizen lesen -- er arbeitet an der WBB und ich muss mit ihm koordinieren. Und auch Darius' Notizen, weil ich den GDD-Scope verstehen muss. Außerdem schaue ich kurz in Jenkins' Narrative Architecture Paper und die Planescape-Vision.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent \textbf{TOOL: Read} [19:35:46] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:46]:\par
@@ -12784,7 +12484,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-darius.md}\par
+\noindent \textbf{TOOL: Read} [19:35:46] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-darius.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:46]:\par
@@ -12822,7 +12522,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Jenkins\_2004\_GameDesignNarrativeArchitecture.pdf}\par
+\noindent \textbf{TOOL: Read} [19:35:47] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Jenkins\_2004\_GameDesignNarrativeArchitecture.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:35:47]:\par
@@ -12835,7 +12535,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jenkins ist Gold. "Narrative Architecture" -- genau das, was ich brauche. Besonders die Unterscheidung zwischen \textit{evocative spaces}, \textit{enacting stories}, \textit{embedded narratives} und \textit{emergent narratives}. RELICS braucht alle vier. Lasse mich jetzt die vorhandenen Traces und die Briefing-Zusammenfassung von heute Morgen prüfen.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:55] → \texttt{simulation-2/traces/day02*/**}\par
+\noindent \textbf{TOOL: Glob} [19:35:55] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02*/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:35:56]:\par
@@ -12865,7 +12565,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:56] → \texttt{simulation-2/traces/day01-scene5-t3-nami/**}\par
+\noindent \textbf{TOOL: Glob} [19:35:56] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-t3-nami/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:35:57]:\par
@@ -12875,7 +12575,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:35:57] → \texttt{simulation-2/traces/day01*nami*/**}\par
+\noindent \textbf{TOOL: Glob} [19:35:57] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01*nami*/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:35:58]:\par
@@ -12899,7 +12599,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Lasse mich mein heutiges Briefing-Output und das Briefing-Meeting lesen, um zu sehen, was genau heute Morgen besprochen wurde.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:02] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:02]:\par
@@ -12923,7 +12623,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t8-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:02] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t8-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:02]:\par
@@ -12951,7 +12651,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:03] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:03] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:03]:\par
@@ -12973,15 +12673,15 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt noch die letzten Nami-Traces von gestern, um zu sehen, was ich bereits produziert habe.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene5-t3-nami/transcript.md}\par
+\noindent \textbf{TOOL: Read} [19:36:07] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene5-t3-nami/\allowbreak{}transcript.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:07]:\par
 \noindent ```\par
 \noindent 1→\# Transcript: day01-scene5-t3-nami\par
 \noindent 2→\par
-\noindent 3→Session: \texttt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
-\noindent 4→Source: \texttt{agent-a8a23d0085c709c14.jsonl}\par
+\noindent 3→Session: \breaktt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
+\noindent 4→Source: \breaktt{agent-a8a23d0085c709c14.\allowbreak{}jsonl}\par
 \noindent 5→Entries: 12\par
 \noindent 6→Start: 2026-02-28T18:28:39.973Z\par
 \noindent 7→End: 2026-02-28T18:28:51.837Z\par
@@ -13008,7 +12708,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 28→Ich lese meine Dateien, bevor ich antworte.\par
 \noindent 29→\par
 \noindent 30→\par
-\noindent 31→\textbf{TOOL: Read} [18:28:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent 31→\textbf{TOOL: Read} [18:28:44] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 \noindent 32→\par
 \noindent 33→\par
 \noindent 34→\textbf{RESULT} [18:28:44]:\par
@@ -13021,7 +12721,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 41→     6→\par
 \noindent 42→     7→\#\#\# Was ich heute getan habe\par
 \noindent 43→     8→- Briefing gelesen, Planescape Last Rites Vision Statement und VtM 2nd Ed studiert\par
-\noindent 44→     9→- Recherche-Notat erstellt: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-nami.md}\par
+\noindent 44→     9→- Recherche-Notat erstellt: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-nami.\allowbreak{}md}\par
 \noindent 45→    10→\par
 \noindent 46→    11→\#\#\# Was ich weiß\par
 \noindent 47→    12→\par
@@ -13031,15 +12731,15 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day01-scene4-t1-nami/transcript.md}\par
+\noindent \textbf{TOOL: Read} [19:36:08] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day01-scene4-t1-nami/\allowbreak{}transcript.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:08]:\par
 \noindent ```\par
 \noindent 1→\# Transcript: day01-scene4-t1-nami\par
 \noindent 2→\par
-\noindent 3→Session: \texttt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
-\noindent 4→Source: \texttt{agent-a757102677c1fa991.jsonl}\par
+\noindent 3→Session: \breaktt{2cff07d0-055a-4058-9397-77f96f1f3633}\par
+\noindent 4→Source: \breaktt{agent-a757102677c1fa991.\allowbreak{}jsonl}\par
 \noindent 5→Entries: 9\par
 \noindent 6→Start: 2026-02-28T18:27:11.207Z\par
 \noindent 7→End: 2026-02-28T18:27:23.041Z\par
@@ -13072,7 +12772,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 34→Ich lese kurz meine Dateien, bevor ich in die Szene gehe.\par
 \noindent 35→\par
 \noindent 36→\par
-\noindent 37→\textbf{TOOL: Read} [18:27:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/nami-okafor.md}\par
+\noindent 37→\textbf{TOOL: Read} [18:27:14] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}nami-okafor.\allowbreak{}md}\par
 \noindent 38→\par
 \noindent 39→\par
 \noindent 40→\textbf{RESULT} [18:27:14]:\par
@@ -13092,7 +12792,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt lese ich noch Leos Recherche-Notizen -- er hatte spezifische Punkte zur Fragment-Szene.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:13] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-leo.md}\par
+\noindent \textbf{TOOL: Read} [19:36:13] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-leo.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:13]:\par
@@ -13138,7 +12838,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:14] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:14]:\par
@@ -13160,7 +12860,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt noch schnell Darius' Briefing-Output von heute, damit ich seine Kriterien für das Relikt kenne.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:19] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-darius/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:19] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-darius/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:19]:\par
@@ -13191,7 +12891,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich. Erst das Trace-Verzeichnis, dann die Artefakte.\par
 
 
-\noindent \textbf{TOOL: Write} [19:36:38] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-nami/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:36:38] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-nami/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt: Day 02, Scene 2 — Nami (WORK)}\par\vspace{0.5mm}
 
@@ -13212,7 +12912,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:37:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-nami/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:37:14] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-nami/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning: Day 02, Scene 2 — Nami (WORK)}\par\vspace{0.5mm}
 
@@ -13235,7 +12935,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt die eigentlichen Artefakte. Zuerst die Fragment-Szene.\par
 
 
-\noindent \textbf{TOOL: Write} [19:38:01] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/03-fragment-szene-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:38:01] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}03-fragment-szene-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Die Fragment-Szene — Die ersten fünfzehn Minuten}\par\vspace{0.5mm}
 \noindent \textbf{GDD Kap 03 — Erzählkonzept (Zuarbeit)}\par
@@ -13262,7 +12962,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt der Relikt-Vorschlag und die Fraktions-Kosmologien für die WBB.\par
 
 
-\noindent \textbf{TOOL: Write} [19:38:42] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/03-relikt-vorschlag-nami-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:38:42] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}03-relikt-vorschlag-nami-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Das Relikt — Narrativer Vorschlag}\par\vspace{0.5mm}
 \noindent \textbf{GDD Kap 03 / WBB Kap 01 Querverbindung}\par
@@ -13291,7 +12991,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt die WBB-Mitarbeit -- die drei Fraktions-Kosmologien für Emres Mythos-Kapitel.\par
 
 
-\noindent \textbf{TOOL: Write} [19:39:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/01-mythos-kosmologien-nami-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:39:47] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}01-mythos-kosmologien-nami-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{WBB Kapitel 01 — Mythos: Die drei Kosmologien}\par\vspace{0.5mm}
 \noindent \textbf{Zuarbeit Narrative Design (Nami Okafor) für Emre Yilmaz}\par
@@ -13318,7 +13018,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt die GDD-Kapitel-03-Vorbereitungsnotizen.\par
 
 
-\noindent \textbf{TOOL: Write} [19:40:47] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/03-erzaehlkonzept-notizen-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:40:47] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}03-erzaehlkonzept-notizen-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{GDD Kapitel 03 — Erzählkonzept: Vorbereitungsnotizen}\par\vspace{0.5mm}
 \noindent \textbf{Nami Okafor, Tag 2 — Draft-Vorbereitung für Mittwoch}\par
@@ -13346,14 +13046,14 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt den Output-Trace schreiben und dann die Memory aktualisieren.\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:15] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-nami/output.md}\par
+\noindent \textbf{TOOL: Write} [19:41:15] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-nami/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output: Day 02, Scene 2 — Nami (WORK)}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Produzierte Artefakte}}\par
 
 \noindent\textbf{\textit{1. Fragment-Szene (GDD Kap 03)}} 
-\noindent \texttt{simulation-2/gallery/gdd/03-fragment-szene-v1.md}\par
+\noindent \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}03-fragment-szene-v1.\allowbreak{}md}\par
 
 \noindent Die ersten 15 Minuten des Spiels, Minute für Minute. Der Fremde erwacht, findet den Sterbenden am Stadtrand (Schattenfieber Stufe 3), bekommt ein Fragment des Marks in die Hand gedrückt. Im Moment der Berührung: Rauschen (Stufe 1). Drei Boten erscheinen -- Krone, Gilden, Orden. Der Spieler wählt. Oder nicht.\par
 
@@ -13372,7 +13072,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt die Memory aktualisieren.\par
 
 
-\noindent \textbf{TOOL: Read} [19:41:18] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:41:18] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:41:18]:\par
@@ -13385,7 +13085,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\#\#\# Was ich heute getan habe\par
 \noindent 8→- Briefing gelesen, Planescape Last Rites Vision Statement und VtM 2nd Ed studiert\par
-\noindent 9→- Recherche-Notat erstellt: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-nami.md}\par
+\noindent 9→- Recherche-Notat erstellt: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-nami.\allowbreak{}md}\par
 \noindent 10→\par
 \noindent 11→\#\#\# Was ich weiß\par
 \noindent 12→\par
@@ -13414,7 +13114,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:57] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md}\par
+\noindent \textbf{TOOL: Write} [19:41:57] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Nami — Memory}\par\vspace{0.5mm}
 
@@ -13446,29 +13146,29 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{Produzierte Artefakte (4 Dokumente):}\par
 
-\noindent\hspace{2mm}1.\ \textbf{\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/03-fragment-szene-v1.md}}\\
+\noindent\hspace{2mm}1.\ \textbf{\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}03-fragment-szene-v1.\allowbreak{}md}}\\
 \noindent Die ersten 15 Spielminuten, Minute für Minute. Der Fremde erwacht, findet den Sterbenden am Stadtrand (Schattenfieber Stufe 3), bekommt ein Fragment des Marks. Berührung lößt Rauschen (Stufe 1) aus. Drei Boten — Krone, Gilden, Orden — erscheinen. Der Spieler wählt. Oder nicht.\par
 
-\noindent\hspace{2mm}2.\ \textbf{\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/03-relikt-vorschlag-nami-v1.md}}\\
+\noindent\hspace{2mm}2.\ \textbf{\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}03-relikt-vorschlag-nami-v1.\allowbreak{}md}}\\
 \noindent In-World-Name: \textbf{Das Mark} (Volksmund). Grundanker (Orden). Narrativer Magnetismus: "Der Spieler verfolgt das Relikt, weil er sich selbst verfolgt." Fraktions-Interpretationen tabellarisch. Spieltitel-Vorschlag: RELICS: Das Mark / RELICS: The Marrow.\par
 
-\noindent\hspace{2mm}3.\ \textbf{\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/01-mythos-kosmologien-nami-v1.md}}\\
+\noindent\hspace{2mm}3.\ \textbf{\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}01-mythos-kosmologien-nami-v1.\allowbreak{}md}}\\
 \noindent Drei Unreliable Narratives als Zuarbeit für Emres WBB-Mythos:\par
 \noindent\hspace{2mm}\textbullet\ Orden: "Bücher des Grundes" — Schwelle als göttliche Naht, Mark als Versiegelungswerkzeug. Seit Generationen editiert.\\
 \noindent\hspace{2mm}\textbullet\ Krone: "Blut der Gründer" — Gründerdynastie kam durch die Schwelle, Mark ist Erbsiegel. Genealogischer Fehlschluss.\\
 \noindent\hspace{2mm}\textbullet\ Gilden: "Die Probe" — Schwelle als Naturphänomen, Mark als analysierbares Material. Haben ein geheimes Labor.\\
 \noindent\hspace{2mm}\textbullet\ Plus: Verlorener Ur-Text, möglicherweise ins Mark eingeschrieben und überwuchert.\\
 
-\noindent\hspace{2mm}4.\ \textbf{\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/03-erzaehlkonzept-notizen-v1.md}}\\
+\noindent\hspace{2mm}4.\ \textbf{\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}03-erzaehlkonzept-notizen-v1.\allowbreak{}md}}\\
 \noindent Vorbereitungsnotizen für den Mittwoch-Draft von GDD Kap 03. Jenkins-basierte Narrative-Architecture-Analyse (vier Raumtypen). Drei Erzählebenen (persönlich, politisch, kosmologisch). Hauptquest in drei Akten. Schattenfieber als narratives System mit Spieler-Charakter-Asymmetrie. Drei Nebenquest-Skizzen ("Der Zeuge", "Gildenprobe", "Stille Post").\par
 
 \noindent \textbf{Traces:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-nami/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-nami/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-nami/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-nami/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-nami/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-nami/\allowbreak{}output.\allowbreak{}md}\\
 
 \noindent \textbf{Memory aktualisiert:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/nami-memory.md} — Stand: Tag 2, Szene 2\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}nami-memory.\allowbreak{}md} — Stand: Tag 2, Szene 2\\
 
 \noindent \textbf{Offene Abstimmung:}\par
 \noindent\hspace{2mm}\textbullet\ Emre: Kosmologien bestätigen, Schwellen-Physik, Gilden-Labor\\
@@ -13480,8 +13180,8 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene2-vera}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-adc946be0e8f4c666.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-adc946be0e8f4c666.\allowbreak{}jsonl}\par
 \noindent Entries: 87\par
 \noindent Start: 2026-02-28T19:35:51.492Z\par
 \noindent End: 2026-02-28T19:39:43.227Z\par
@@ -13512,7 +13212,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\hspace{2mm}\textbullet\ Warte auf Emres Topos (kommt bis 12:00)\\
 
 \noindent \textbf{DEINE AUFGABE HEUTE:}\par
-\noindent Du musst \texttt{3-image-prompts.json} schreiben nach \texttt{simulation-2/gallery/concepts/}. Das ist eine JSON-Datei im Scenes-Format für \texttt{generate-images.py}. Der GM führt das Script danach aus.\par
+\noindent Du musst \breaktt{3-image-prompts.\allowbreak{}json} schreiben nach \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}}. Das ist eine JSON-Datei im Scenes-Format für \breaktt{generate-images.\allowbreak{}py}. Der GM führt das Script danach aus.\par
 
 \noindent \textbf{Format jeder Scene in der JSON:}\par
 \noindent ```json\par
@@ -13527,11 +13227,11 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 \noindent \textbf{Verfügbare Modelle \& Kosten:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{seedream-4-5} (\$0.04) — gut für Batch-Exploration, Charaktere\\
-\noindent\hspace{2mm}\textbullet\ \texttt{nano-banana-pro} (\$0.15) — constraint-kritisch, Detail\\
-\noindent\hspace{2mm}\textbullet\ \texttt{nano-banana-2} (\$0.08) — schnelle Iteration\\
-\noindent\hspace{2mm}\textbullet\ \texttt{gpt-image-1-5} (\$0.20) — Hero-Finals, komplexe Szenen\\
-\noindent\hspace{2mm}\textbullet\ \texttt{flux-2-pro} (\$0.03) — cinematische Environments\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{seedream-4-5} (\$0.04) — gut für Batch-Exploration, Charaktere\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{nano-banana-pro} (\$0.15) — constraint-kritisch, Detail\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{nano-banana-2} (\$0.08) — schnelle Iteration\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{gpt-image-1-5} (\$0.20) — Hero-Finals, komplexe Szenen\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{flux-2-pro} (\$0.03) — cinematische Environments\\
 
 \noindent \textbf{Tagesbudget: \textasciitilde{}\$2.00} (Tag 2 von 5)\par
 
@@ -13550,9 +13250,9 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\hspace{2mm}4.\ Schwellen-Zone / Relikt-Umgebung (1–2 Bilder: wo die Materialität kippt)\\
 \noindent\hspace{2mm}5.\ Charakter-Silhouetten — Fraktionsvertreter oder Rüstungsstudie (1–2 Bilder)\\
 
-\noindent Lies zuerst deine Memory (\texttt{simulation-2/agents/vera-memory.md}), dann das Briefing (\texttt{simulation-2/briefing.md}), dann deine Recherche-Notizen.\par
+\noindent Lies zuerst deine Memory (\breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}), dann das Briefing (\breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}), dann deine Recherche-Notizen.\par
 
-\noindent Schreibe die \texttt{3-image-prompts.json} nach \texttt{simulation-2/gallery/concepts/3-image-prompts.json}.\par
+\noindent Schreibe die \breaktt{3-image-prompts.\allowbreak{}json} nach \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}3-image-prompts.\allowbreak{}json}.\par
 \noindent Schreibe alle Markdown-Notizen auf Deutsch mit echten Umlauten.\par
 \noindent Aktualisiere als letztes deine Memory-Datei.\par
 
@@ -13561,7 +13261,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese zuerst meine Memory, das Briefing und die relevanten Recherche-Notizen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:54] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:35:54] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:54]:\par
@@ -13581,7 +13281,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 13→\textbf{Kernfrage beantwortet (vorläufig):} Die vertikale Stadt ist eine Stadt, aber die Bewohner leben in verschiedenen Städten. Drei Schichten, drei Epochen, drei Stile — gleichzeitig sichtbar im Querschnitt. Das ist das visuelle Alleinstellungsmerkmal.\par
 \noindent 14→\par
 \noindent 15→\textbf{Erstes Artefakt:}\par
-\noindent 16→- \texttt{simulation-2/gallery/concepts/00-recherche-notizen-vera.md} — Recherche-Notat: Visuelle DNA, Architekturschichten, Materiallesbarkeit, Farbpalette, Stadtstruktur-Theorie.\par
+\noindent 16→- \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}00-recherche-notizen-vera.\allowbreak{}md} — Recherche-Notat: Visuelle DNA, Architekturschichten, Materiallesbarkeit, Farbpalette, Stadtstruktur-Theorie.\par
 \noindent 17→\par
 \noindent 18→\textbf{Offene Fragen:}\par
 \noindent 19→- Emre: Wie heißt die Stadt? Was ist ihre Geschichte? Ich brauche den Topos für Environment Concepts.\par
@@ -13595,7 +13295,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:35:55] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:35:55] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:35:55]:\par
@@ -13651,7 +13351,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, Briefing und Memory sind drin. Jetzt lese ich meine Recherche-Notizen und schaue, was die anderen schon produziert haben.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:00] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/concepts/00-recherche-notizen-vera.md}\par
+\noindent \textbf{TOOL: Read} [19:36:00] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}00-recherche-notizen-vera.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:00]:\par
@@ -13684,7 +13384,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:01] → \texttt{simulation-2/gallery/wbb/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:01] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:01]:\par
@@ -13693,7 +13393,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:02] → \texttt{simulation-2/gallery/gdd/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:02] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:02]:\par
@@ -13705,7 +13405,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:02] → \texttt{simulation-2/gallery/concepts/*.json}\par
+\noindent \textbf{TOOL: Glob} [19:36:02] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}*.\allowbreak{}json}\par
 
 
 \noindent \textbf{RESULT} [19:36:03]:\par
@@ -13718,7 +13418,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Emre hat Recherche-Notizen. Ich lese die, um zu sehen, ob er mir schon etwas zur Geographie/Stadt liefert. Außerdem schaue ich mir die bestehende results.json an.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/wbb/00-recherche-notizen-emre.md}\par
+\noindent \textbf{TOOL: Read} [19:36:06] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}00-recherche-notizen-emre.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:06]:\par
@@ -13746,7 +13446,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/concepts/results.json}\par
+\noindent \textbf{TOOL: Read} [19:36:07] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}results.\allowbreak{}json}\par
 
 
 \noindent \textbf{RESULT} [19:36:07]:\par
@@ -13787,7 +13487,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/scripts/generate-images.py}\par
+\noindent \textbf{TOOL: Read} [19:36:07] → \breaktt{scripts/\allowbreak{}generate-images.\allowbreak{}py}\par
 
 
 \noindent \textbf{RESULT} [19:36:07]:\par
@@ -13849,7 +13549,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, jetzt habe ich alles was ich brauche. Ich verstehe das Script und das JSON-Format. Jetzt checke ich noch kurz, ob Darius oder jemand anderes heute Morgen schon was geschrieben hat, das mir für die Bildauswahl hilft.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:12] → \texttt{simulation-2/traces/day02-*/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:12] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-*/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:13]:\par
@@ -13879,7 +13579,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:13] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/vera-kowalski.md}\par
+\noindent \textbf{TOOL: Read} [19:36:13] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}vera-kowalski.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:13]:\par
@@ -13921,7 +13621,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese noch schnell die Outputs vom Briefing heute Morgen, um den aktuellsten Kontext zu haben -- besonders was beim Briefing diskutiert wurde.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:18] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:18] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:18]:\par
@@ -13947,7 +13647,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Klar. Finn hat es direkt gesagt: Die CD will Bilder. Heute. Keine Ausreden. Ich schaue mir noch schnell an, ob es heute Morgen Diskussionen gab, die meine Prompts beeinflussen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:23] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t1-darius/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:23] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t1-darius/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:23]:\par
@@ -13965,7 +13665,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:23] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-emre/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:23] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-emre/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:23]:\par
@@ -13983,7 +13683,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:24] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-nami/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:24] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-nami/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:24]:\par
@@ -14013,7 +13713,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich schaue noch nach den Briefing-Turns, wo Vera gesprochen hat -- ob sie dort schon einen Plan formuliert hat.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:31] → \texttt{simulation-2/traces/day02-scene1-*vera*/output.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:31] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-*vera*/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:32]:\par
@@ -14022,7 +13722,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:32] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:32]:\par
@@ -14043,7 +13743,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:34] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-leo/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:34] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-leo/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:34]:\par
@@ -14061,7 +13761,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:34] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-t8-finn/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:34] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-t8-finn/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:34]:\par
@@ -14092,7 +13792,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent \textbf{ASSISTANT} [19:36:47]:\par
 \noindent Perfekt. Jetzt habe ich alles. Finn erwartet 6-8 Bilder, Emre liefert mir bis 12 Uhr einen Topos, aber ich warte nicht -- ich habe genug aus dem Briefing und meiner Recherche, um loszulegen. Das Schwellenanker-Konzept ist klar, die vertikale Stadt steht, die Materialsprache ist definiert.\par
 
-\noindent Jetzt schreibe ich die \texttt{3-image-prompts.json}. Meine Budgetplanung:\par
+\noindent Jetzt schreibe ich die \breaktt{3-image-prompts.\allowbreak{}json}. Meine Budgetplanung:\par
 
 \noindent\hspace{2mm}\textbullet\ 3x seedream (\$0.04) = \$0.12\\
 \noindent\hspace{2mm}\textbullet\ 2x flux-2-pro (\$0.03) = \$0.06\\
@@ -14113,7 +13813,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent \textbf{Gesamt: \$0.61} -- bleiben \textasciitilde{}\$1.39 fuer Mi-Fr.\par
 
 
-\noindent \textbf{TOOL: Write} [19:37:40] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/concepts/3-image-prompts.json}\par
+\noindent \textbf{TOOL: Write} [19:37:40] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}3-image-prompts.\allowbreak{}json}\par
 \noindent ```\par
 \noindent [\par
 \noindent \{\par
@@ -14133,13 +13833,13 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, die Prompts sind geschrieben. Jetzt erstelle ich meinen Trace fuer diese Szene.\par
 
 
-\noindent \textbf{TOOL: Write} [19:37:52] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-vera/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:37:52] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-vera/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Prompt: Day 02, Scene 2 — WORK (Vera)}\par\vspace{0.5mm}
 
 \noindent Tag 2, Szene 2 — WORK, 10:00, mein Arbeitsplatz. Allein.\par
 
-\noindent Aufgabe: \texttt{3-image-prompts.json} schreiben nach \texttt{simulation-2/gallery/concepts/}. 6-8 Bilder, Budget \textasciitilde{}\$2.00. Die CD hat gestern kritisiert, dass keine Bilder kamen. Heute muss geliefert werden.\par
+\noindent Aufgabe: \breaktt{3-image-prompts.\allowbreak{}json} schreiben nach \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}}. 6-8 Bilder, Budget \textasciitilde{}\$2.00. Die CD hat gestern kritisiert, dass keine Bilder kamen. Heute muss geliefert werden.\par
 
 \noindent Kontext aus dem Briefing heute Morgen:\par
 \noindent\hspace{2mm}\textbullet\ Schwellenanker als Relikt (Emres Vorschlag, Team-Konsens)\\
@@ -14155,7 +13855,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:38:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-vera/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:38:21] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-vera/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Reasoning: Day 02, Scene 2 — WORK (Vera)}\par\vspace{0.5mm}
 
@@ -14178,7 +13878,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:39:00] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-vera/output.md}\par
+\noindent \textbf{TOOL: Write} [19:39:00] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-vera/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Output: Day 02, Scene 2 — WORK (Vera)}\par\vspace{0.5mm}
 
@@ -14188,7 +13888,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \vspace{1mm}\noindent\textbf{\textit{Was ich gebaut habe}}\par
 
-\noindent \textbf{\texttt{3-image-prompts.json}} -- acht Szenen, fuenf Modelle, \$0.61 Budget. Liegt in \texttt{simulation-2/gallery/concepts/}.\par
+\noindent \textbf{\breaktt{3-image-prompts.\allowbreak{}json}} -- acht Szenen, fuenf Modelle, \$0.61 Budget. Liegt in \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}}.\par
 
 \noindent\textbf{\textit{Die Bilder im Einz}} 
 \noindent ... [truncated]\par
@@ -14205,7 +13905,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt aktualisiere ich meine Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Read} [19:39:02] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:39:02] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:39:02]:\par
@@ -14225,7 +13925,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 13→\textbf{Kernfrage beantwortet (vorläufig):} Die vertikale Stadt ist eine Stadt, aber die Bewohner leben in verschiedenen Städten. Drei Schichten, drei Epochen, drei Stile — gleichzeitig sichtbar im Querschnitt. Das ist das visuelle Alleinstellungsmerkmal.\par
 \noindent 14→\par
 \noindent 15→\textbf{Erstes Artefakt:}\par
-\noindent 16→- \texttt{simulation-2/gallery/concepts/00-recherche-notizen-vera.md} — Recherche-Notat: Visuelle DNA, Architekturschichten, Materiallesbarkeit, Farbpalette, Stadtstruktur-Theorie.\par
+\noindent 16→- \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}00-recherche-notizen-vera.\allowbreak{}md} — Recherche-Notat: Visuelle DNA, Architekturschichten, Materiallesbarkeit, Farbpalette, Stadtstruktur-Theorie.\par
 \noindent 17→\par
 \noindent 18→\textbf{Offene Fragen:}\par
 \noindent 19→- Emre: Wie heißt die Stadt? Was ist ihre Geschichte? Ich brauche den Topos für Environment Concepts.\par
@@ -14239,7 +13939,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:39:28] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\par
+\noindent \textbf{TOOL: Write} [19:39:28] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Vera — Memory}\par\vspace{0.5mm}
 
@@ -14270,7 +13970,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \vspace{1mm}\noindent\textbf{\textit{Was ich heute produziert habe}}\par
 
 \noindent \textbf{Hauptartefakt:}\par
-\noindent \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/concepts/3-image-prompts.json}\par
+\noindent \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}concepts/\allowbreak{}3-image-prompts.\allowbreak{}json}\par
 
 \noindent Acht Szenen, fuenf verschiedene Modelle, \$0.61 Gesamtbudget. Der GM kann das Script direkt ausfuehren:\par
 
@@ -14300,21 +14000,21 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent\textbf{\textit{Trace-Dateien}} 
 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-vera/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-vera/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-vera/output.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-vera/\allowbreak{}prompt.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-vera/\allowbreak{}reasoning.\allowbreak{}md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-vera/\allowbreak{}output.\allowbreak{}md}\\
 
 \noindent\textbf{\textit{Memory aktualisiert}} 
 
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/vera-memory.md}\\
+\noindent\hspace{2mm}\textbullet\ \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}vera-memory.\allowbreak{}md}\\
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{tobi}\textbf{Tobi Richter} — \textit{Technical Artist}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene2-tobi}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-a4a86f6db1ef7be3d.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-a4a86f6db1ef7be3d.\allowbreak{}jsonl}\par
 \noindent Entries: 82\par
 \noindent Start: 2026-02-28T19:36:00.725Z\par
 \noindent End: 2026-02-28T19:42:13.456Z\par
@@ -14343,10 +14043,10 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\hspace{2mm}\textbullet\ Kamera: Blend-System\\
 
 \noindent \textbf{DEINE AUFGABE HEUTE:}\par
-\noindent\hspace{2mm}1.\ \textbf{GDD Kapitel 06 — Technik \& Produktion (v1)} beginnen: \texttt{simulation-2/gallery/gdd/06-technik-produktion-v1.md}. Engine (UE5), Rendering-Pipeline, Schwellenanker-Tech-Spec, Release-Roadmap, Monetarisierung (Premium), Team-Sizing, Risiken. Das Release-Modell ist jetzt geklärt.\\
+\noindent\hspace{2mm}1.\ \textbf{GDD Kapitel 06 — Technik \& Produktion (v1)} beginnen: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}06-technik-produktion-v1.\allowbreak{}md}. Engine (UE5), Rendering-Pipeline, Schwellenanker-Tech-Spec, Release-Roadmap, Monetarisierung (Premium), Team-Sizing, Risiken. Das Release-Modell ist jetzt geklärt.\\
 \noindent\hspace{2mm}2.\ \textbf{MPC-Spec für Schwellenanker} als Teil von Kap 6 oder separates technisches Dokument.\\
 
-\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen (\texttt{simulation-2/gallery/gdd/00-recherche-notizen-tobi.md}). Lies relevante Referenzen in \texttt{library/}.\par
+\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen (\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-tobi.\allowbreak{}md}). Lies relevante Referenzen in \breaktt{library/\allowbreak{}}.\par
 
 \noindent Schreibe auf Deutsch mit echten Umlauten. Aktualisiere als letztes deine Memory-Datei.\par
 
@@ -14355,7 +14055,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich starte den Arbeitstag. Zuerst lese ich meine Memory-Datei, das Briefing und meine Recherche-Notizen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:36:06] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:06]:\par
@@ -14368,7 +14068,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\textbf{Recherche abgeschlossen.} Artbooks gelesen: FFXIV 2.0 Concept Specs (Pipeline-Denken, Materiallesbarkeit durch Kontrast-Hierarchien), Dark Souls Design Works (tonale Dichte, Hell-Dunkel-Kontraste für Zonen-Lesbarkeit).\par
 \noindent 8→\par
-\noindent 9→\textbf{Notat erstellt}: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-tobi.md}\par
+\noindent 9→\textbf{Notat erstellt}: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-tobi.\allowbreak{}md}\par
 \noindent 10→\par
 \noindent 11→\#\#\# Technische Kernentscheidungen (vorläufig)\par
 \noindent 12→\par
@@ -14389,7 +14089,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:36:06] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:06]:\par
@@ -14441,7 +14141,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/tobi-richter.md}\par
+\noindent \textbf{TOOL: Read} [19:36:07] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}tobi-richter.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:07]:\par
@@ -14483,7 +14183,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, Memory und Briefing sind klar. Jetzt meine Recherche-Notizen und die bestehenden GDD-Kapitel, die ich brauche.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:12] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-tobi.md}\par
+\noindent \textbf{TOOL: Read} [19:36:12] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-tobi.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:12]:\par
@@ -14514,7 +14214,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:12] → \texttt{simulation-2/gallery/gdd/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:12] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:13]:\par
@@ -14530,7 +14230,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt brauche ich noch den Kontext aus den Briefing-Szenen von heute Morgen und die bestehenden GDD-Kapitel anderer Kollegen, um Konsistenz sicherzustellen. Außerdem lese ich die Referenzmaterialien, die für Technik-Kapitel relevant sind.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-darius.md}\par
+\noindent \textbf{TOOL: Read} [19:36:17] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-darius.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:17]:\par
@@ -14568,7 +14268,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:18] → \texttt{simulation-2/gallery/gdd/0[1-5]*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:18] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}0[1-5]*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:18]:\par
@@ -14577,7 +14277,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:18] → \texttt{library/**/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:36:18] → \breaktt{library/\allowbreak{}**/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:19]:\par
@@ -14590,7 +14290,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Noch keine GDD-Kapitel 01-05 vorhanden -- die werden parallel heute geschrieben. Ich schaue mir die Library-Referenzen an, insbesondere GDDs die für Kapitel 6 relevant sind.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:25] → \texttt{library/**/*}\par
+\noindent \textbf{TOOL: Glob} [19:36:25] → \breaktt{library/\allowbreak{}**/\allowbreak{}*}\par
 
 
 \noindent \textbf{RESULT} [19:36:25]:\par
@@ -14620,7 +14320,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:26] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-leo.md}\par
+\noindent \textbf{TOOL: Read} [19:36:26] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-leo.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:26]:\par
@@ -14670,10 +14370,10 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut. Jetzt schaue ich mir noch den Deus-Ex-GDD an, der ein vorbildliches Technik-Kapitel hat, und das Wasteland-2-Vision-Dokument für Release-Roadmap-Referenz.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:31] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/deus-ex-design-document-annotated.pdf}\par
+\noindent \textbf{TOOL: Read} [19:36:31] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}deus-ex-design-document-annotated.\allowbreak{}pdf}\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/gdds/wasteland-2-vision-document.pdf}\par
+\noindent \textbf{TOOL: Read} [19:36:32] → \breaktt{library/\allowbreak{}gdds/\allowbreak{}wasteland-2-vision-document.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:36:32]:\par
@@ -14694,7 +14394,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schaue ich, ob es bereits Traces von heute gibt, die mir Kontext geben.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:43] → \texttt{simulation-2/traces/day02*/**}\par
+\noindent \textbf{TOOL: Glob} [19:36:43] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02*/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:36:43]:\par
@@ -14724,7 +14424,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-nami.md}\par
+\noindent \textbf{TOOL: Read} [19:36:44] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-nami.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:44]:\par
@@ -14766,7 +14466,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt lese ich mein eigenes Briefing-Trace von heute Morgen, um zu sehen, was im Briefing-Meeting besprochen wurde.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:50] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene1-tobi/output.md}\par
+\noindent \textbf{TOOL: Read} [19:36:50] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene1-tobi/\allowbreak{}output.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:50]:\par
@@ -14791,7 +14491,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt habe ich den vollen Kontext. Lasse mich noch schnell die Sim-2-Test-Version des Technik-Kapitels als Orientierung anschauen, falls sie existiert.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:56] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/game-master.md}\par
+\noindent \textbf{TOOL: Read} [19:36:56] → \breaktt{simulation-2/\allowbreak{}game-master.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:56]:\par
@@ -14805,23 +14505,23 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 7→Basiert auf Park et al. (2023, Generative Agents — Smallville) für Memory-Streams und szenenbasierte Steuerung, und Qian et al. (2024, ChatDev) für phasenbasierte Aufgabenzerlegung.\par
 \noindent 8→\par
 \noindent 9→- \textbf{GM} = Hauptsession (Opus 4.6). Orchestriert Szenen, spawnt Agenten, schreibt Logbuch.\par
-\noindent 10→- \textbf{7 Agenten} = Subagenten. Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in \texttt{.claude/agents/\{name\}.md} und ein Persönlichkeitsprofil in \texttt{roster/}.\par
-\noindent 11→  Emre: model \texttt{"opus"} | Darius, Nami, Vera, Tobi: model \texttt{"sonnet"} | Finn, Leo: model \texttt{"haiku"}\par
+\noindent 10→- \textbf{7 Agenten} = Subagenten. Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in \breaktt{.\allowbreak{}claude/\allowbreak{}agents/\allowbreak{}\{name\}.\allowbreak{}md} und ein Persönlichkeitsprofil in \breaktt{roster/\allowbreak{}}.\par
+\noindent 11→  Emre: model \breaktt{"opus"} | Darius, Nami, Vera, Tobi: model \breaktt{"sonnet"} | Finn, Leo: model \breaktt{"haiku"}\par
 \noindent 12→- \textbf{CD} / \textbf{Creative Director} = Menschlicher Nutzer. Gibt Feedback, trifft kreative Entscheidungen beim Start jedes Tages.\par
 \noindent 13→\par
 \noindent 14→Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben in Dateien.\par
 \noindent 15→\par
-\noindent 16→\#\# Pfade (relativ zu \texttt{simulation-2/})\par
+\noindent 16→\#\# Pfade (relativ zu \breaktt{simulation-2/\allowbreak{}})\par
 \noindent 17→\par
 \noindent 18→| Was | Pfad |\par
 \noindent 19→|-----|------|\par
-\noindent 20→| Weltzustand | \texttt{state/world.json} |\par
-\noindent 21→| Agent-Memory | \texttt{agents/\{name\}-memory.md} (finn, darius, emre, nami, vera, tobi, leo) |\par
-\noindent 22→| Agent-Roster | \texttt{roster/\{vorname\}-\{nachname\}.md} (Frontmatter \texttt{workspace} → Szenen-Ort) |\par
-\noindent 23→| Traces | \texttt{traces/dayDD-sceneS-…/} (JSONL automatisch, transcript.md per Script) |\par
-\noindent 24→| Logbuch | \texttt{logbook/dayDD.json} |\par
-\noindent 25→| Logbuch-Schema | \texttt{schemas/day-index.json} (\textbf{Repo-Root}, nicht in simulation-2/) |\par
-\noindent 26→| Briefing | \texttt{briefing.md} |\par
+\noindent 20→| Weltzustand | \breaktt{state/\allowbreak{}world.\allowbreak{}json} |\par
+\noindent 21→| Agent-Memory | \breaktt{agents/\allowbreak{}\{name\}-memory.\allowbreak{}md} (finn, darius, emre, nami, vera, tobi, leo) |\par
+\noindent 22→| Agent-Roster | \breaktt{roster/\allowbreak{}\{vorname\}-\{nachname\}.\allowbreak{}md} (Frontmatter \breaktt{workspace} → Szenen-Ort) |\par
+\noindent 23→| Traces | \breaktt{traces/\allowbreak{}dayDD-sceneS-…/\allowbreak{}} (JSONL automatisch, transcript.md per Script) |\par
+\noindent 24→| Logbuch | \breaktt{logbook/\allowbreak{}dayDD.\allowbreak{}json} |\par
+\noindent 25→| Logbuch-Schema | \breaktt{schemas/\allowbreak{}day-index.\allowbreak{}json} (\textbf{Repo-Root}, nicht in simulation-2/) |\par
+\noindent 26→| Briefing | \breaktt{briefing.\allowbreak{}md} |\par
 \noindent 27→\par
 \noindent 28→\#\# Tagesablauf (5 Szenen)\par
 \noindent 29→\par
@@ -14837,14 +14537,14 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, ich habe jetzt den vollen Kontext. Zeit zu arbeiten. Ich erstelle jetzt das GDD Kapitel 06 — Technische Spezifikation \& Produktion. Zuerst lege ich die Trace-Dateien an, dann das eigentliche Artefakt.\par
 
 
-\noindent \textbf{TOOL: Write} [19:37:09] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-tobi/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:37:09] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-tobi/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 2 — Prompt (Tobi)}\par\vspace{0.5mm}
 
 \noindent Tag 2, Szene 2 — WORK, 10:00, Arbeitsplatz.\par
 
 \vspace{1mm}\noindent\textbf{\textit{Aufgabe}}\par
-\noindent\hspace{2mm}1.\ GDD Kapitel 06 — Technik \& Produktion (v1) schreiben: \texttt{simulation-2/gallery/gdd/06-technik-produktion-v1.md}\\
+\noindent\hspace{2mm}1.\ GDD Kapitel 06 — Technik \& Produktion (v1) schreiben: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}06-technik-produktion-v1.\allowbreak{}md}\\
 \noindent\hspace{2mm}2.\ MPC-Spec für Schwellenanker als Teil von Kap 6\\
 
 \vspace{1mm}\noindent\textbf{\textit{Kontext}}\par
@@ -14862,7 +14562,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:37:36] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-tobi/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:37:36] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-tobi/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 2 — Reasoning (Tobi)}\par\vspace{0.5mm}
 
@@ -14889,7 +14589,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt schreibe ich das eigentliche GDD-Kapitel.\par
 
 
-\noindent \textbf{TOOL: Write} [19:40:53] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/06-technik-produktion-v1.md}\par
+\noindent \textbf{TOOL: Write} [19:40:53] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}06-technik-produktion-v1.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Kapitel 6 — Technische Spezifikation \& Produktion}\par\vspace{0.5mm}
 
@@ -14921,7 +14621,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, das Kapitel steht. Jetzt schreibe ich den Output-Trace und aktualisiere meine Memory.\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-tobi/output.md}\par
+\noindent \textbf{TOOL: Write} [19:41:16] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-tobi/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 2 — Output (Tobi)}\par\vspace{0.5mm}
 
@@ -14929,7 +14629,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{GDD Kapitel 06 — Technische Spezifikation \& Produktion, v1} fertiggestellt.\par
 
-\noindent Datei: \texttt{simulation-2/gallery/gdd/06-technik-produktion-v1.md}\par
+\noindent Datei: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}06-technik-produktion-v1.\allowbreak{}md}\par
 
 \noindent\textbf{\textit{Inhalt (12 Abschnitte)}} 
 
@@ -14950,7 +14650,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt aktualisiere ich meine Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Read} [19:41:20] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:41:20] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:41:20]:\par
@@ -14963,7 +14663,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 6→\par
 \noindent 7→\textbf{Recherche abgeschlossen.} Artbooks gelesen: FFXIV 2.0 Concept Specs (Pipeline-Denken, Materiallesbarkeit durch Kontrast-Hierarchien), Dark Souls Design Works (tonale Dichte, Hell-Dunkel-Kontraste für Zonen-Lesbarkeit).\par
 \noindent 8→\par
-\noindent 9→\textbf{Notat erstellt}: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-tobi.md}\par
+\noindent 9→\textbf{Notat erstellt}: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-tobi.\allowbreak{}md}\par
 \noindent 10→\par
 \noindent 11→\#\#\# Technische Kernentscheidungen (vorläufig)\par
 \noindent 12→\par
@@ -14984,7 +14684,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:51] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{TOOL: Write} [19:41:51] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Tobi — Memory}\par\vspace{0.5mm}
 
@@ -14994,7 +14694,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{Recherche abgeschlossen.} Artbooks gelesen: FFXIV 2.0 Concept Specs (Pipeline-Denken, Materiallesbarkeit durch Kontrast-Hierarchien), Dark Souls Design Works (tonale Dichte, Hell-Dunkel-Kontraste für Zonen-Lesbarkeit).\par
 
-\noindent \textbf{Notat erstellt}: \texttt{simulation-2/gallery/gdd/00-recherche-notizen-tobi.md}\par
+\noindent \textbf{Notat erstellt}: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-tobi.\allowbreak{}md}\par
 
 \noindent\textbf{\textit{Technische Kernentscheidungen (vorläufig)}} 
 
@@ -15016,7 +14716,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{GDD Kapitel 06 — Technische Spezifikation \& Produktion (v1)} ist fertig.\par
 
-\noindent \textbf{Datei}: \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/06-technik-produktion-v1.md}\par
+\noindent \textbf{Datei}: \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}06-technik-produktion-v1.\allowbreak{}md}\par
 
 \noindent\textbf{\textit{Was drinsteht}} 
 
@@ -15024,7 +14724,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent \textbf{Rendering-Pipeline} (6.2): Nanite mit Asset-Eignungstabelle -- was geht rein, was nicht (Vegetation und Ketten bleiben traditionelle LODs). Lumen als Hybrid-Lighting nach Vertikalebene: Hardware-RT oben, Software-Lumen in der Mitte, Baked Lighting als Fallback im Untergrund. Biolumineszenz in drei Klassen -- A (echte Lumen-Emitter, max. 8-12 pro Sichtfeld), B (visuell ohne GI-Cost), C (Niagara-Partikel, skalierbar).\par
 
-\noindent \textbf{Schwellenanker-MPC-Spec} (6.3): Das Kernstück von heute. Sieben Parameter in \texttt{MPC\_Schwellenanker}:\par
+\noindent \textbf{Schwellenanker-MPC-Spec} (6.3): Das Kernstück von heute. Sieben Parameter in \breaktt{MPC\_Schwellenanker}:\par
 
 \noindent ```\par
 \noindent AnkerPosition (Vector) -- Zentrum\par
@@ -15036,7 +14736,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent KombinierterEffekt (0.0-2.0) -- Berechneter Output\par
 \noindent ```\par
 
-\noindent Die Interaktionsformel: \texttt{KombinierterEffekt = DistanzEffekt * AnkerIntensitaet + (FieberStufe * 0.15)}. Wer schon infiziert ist, spürt die Schwelle stärker. Gekappt bei 2.0 -- kein epileptischer Overkill.\par
+\noindent Die Interaktionsformel: \breaktt{KombinierterEffekt = DistanzEffekt * AnkerIntensitaet + (FieberStufe * 0.\allowbreak{}15)}. Wer schon infiziert ist, spürt die Schwelle stärker. Gekappt bei 2.0 -- kein epileptischer Overkill.\par
 
 \noindent \textbf{Schattenfieber VFX} (6.4): Float 0.0-3.0, smooth geblendet, mit drei Accessibility-Optionen (Reduziert, Minimal, Bildschirmblitzen aus).\par
 
@@ -15051,17 +14751,17 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\hspace{2mm}\textbullet\ Schattenfieber Stufe 2: Was "widersprüchliche Dialoge" konkret im Questsystem bedeuten, muss mit Nami geklärt werden\\
 \noindent\hspace{2mm}\textbullet\ Budget liegt bei Finn\\
 
-\noindent \textbf{Trace-Dateien}: \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-tobi/} (prompt.md, reasoning.md, output.md)\par
+\noindent \textbf{Trace-Dateien}: \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-tobi/\allowbreak{}} (prompt.md, reasoning.md, output.md)\par
 
-\noindent \textbf{Memory aktualisiert}: \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/tobi-memory.md}\par
+\noindent \textbf{Memory aktualisiert}: \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}tobi-memory.\allowbreak{}md}\par
 
 \end{multicols}
 \vspace{2mm}\noindent \agenticon{leo}\textbf{Leo Fischer} — \textit{QA Lead}\par\vspace{0.5mm}
 \begin{multicols}{3}
 \vspace{2mm}\noindent\textbf{Transcript: day02-scene2-leo}\par\vspace{0.5mm}
 
-\noindent Session: \texttt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
-\noindent Source: \texttt{agent-afa9a8a7276d31d8c.jsonl}\par
+\noindent Session: \breaktt{83365e18-ccf6-457c-858e-f8f7389df6a5}\par
+\noindent Source: \breaktt{agent-afa9a8a7276d31d8c.\allowbreak{}jsonl}\par
 \noindent Entries: 100\par
 \noindent Start: 2026-02-28T19:36:13.149Z\par
 \noindent End: 2026-02-28T19:45:07.452Z\par
@@ -15095,7 +14795,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent\hspace{2mm}2.\ \textbf{QA-Framework} für v0.1 vorbereiten: Konsistenz-Prüfpunkte, Briefing-Compliance-Check, Cross-Referenz-Matrix.\\
 \noindent\hspace{2mm}3.\ \textbf{Streamer-Alpha-Konzept}: Erste Gedanken, was Streamer in der ersten Stunde erleben sollen. Community-Perspektive.\\
 
-\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen. Lies relevante Referenzen in \texttt{library/} (besonders Wolf 2013).\par
+\noindent Lies zuerst deine Memory, dann Briefing, dann deine Recherche-Notizen. Lies relevante Referenzen in \breaktt{library/\allowbreak{}} (besonders Wolf 2013).\par
 
 \noindent Schreibe auf Deutsch mit echten Umlauten. Aktualisiere als letztes deine Memory-Datei.\par
 
@@ -15104,7 +14804,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich lese zuerst meine Memory-Datei, das Briefing, meine Roster-Datei und die relevanten Referenzen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:36:16] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:16]:\par
@@ -15140,7 +14840,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 29→3. Fühlt sich Schattenfieber körperlich an (nicht magisch)?\par
 \noindent 30→\par
 \noindent 31→\#\#\# Output generiert\par
-\noindent 32→- \texttt{gallery/gdd/00-recherche-notizen-leo.md} — 600 Wörter, Zielgruppe + Konkurrenz + Risiken\par
+\noindent 32→- \breaktt{gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-leo.\allowbreak{}md} — 600 Wörter, Zielgruppe + Konkurrenz + Risiken\par
 \noindent 33→\par
 \noindent 34→\#\#\# Nächste Schritte\par
 \noindent 35→- GDD Kap 2 (Kernmechaniken) muss das "Angebots-Feeling" einer Spieler-Session reflektieren\par
@@ -15150,7 +14850,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:16] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/briefing.md}\par
+\noindent \textbf{TOOL: Read} [19:36:16] → \breaktt{simulation-2/\allowbreak{}briefing.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:16]:\par
@@ -15202,7 +14902,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:17] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/roster/leo-fischer.md}\par
+\noindent \textbf{TOOL: Read} [19:36:17] → \breaktt{simulation-2/\allowbreak{}roster/\allowbreak{}leo-fischer.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:17]:\par
@@ -15241,7 +14941,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, jetzt lese ich die Wolf-Referenz und meine Recherche-Notizen von Tag 1.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:19] → \texttt{**/library/**wolf*}\par
+\noindent \textbf{TOOL: Glob} [19:36:19] → \breaktt{**/\allowbreak{}library/\allowbreak{}**wolf*}\par
 
 
 \noindent \textbf{RESULT} [19:36:20]:\par
@@ -15250,7 +14950,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-recherche-notizen-leo.md}\par
+\noindent \textbf{TOOL: Read} [19:36:21] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-leo.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:36:21]:\par
@@ -15296,7 +14996,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Glob} [19:36:21] → \texttt{**/library/**}\par
+\noindent \textbf{TOOL: Glob} [19:36:21] → \breaktt{**/\allowbreak{}library/\allowbreak{}**}\par
 
 
 \noindent \textbf{RESULT} [19:36:21]:\par
@@ -15330,7 +15030,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Da ist Wolf 2013. Lass mich das lesen -- das ist meine Hauptquelle heute.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:25] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:36:25] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:36:25]:\par
@@ -15343,7 +15043,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Perfekt, ich habe das Inhaltsverzeichnis. Kapitel 3 "World Structures and Systems of Relationships" (S. 153-197) ist genau das, was ich brauche -- dort stehen die neun Infrastrukturen. Lass mich das jetzt lesen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:32] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:36:32] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{ERROR} [19:36:32]:\par
@@ -15352,7 +15052,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:35] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:36:35] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:36:36]:\par
@@ -15365,7 +15065,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, ich habe die Einleitung zu den Infrastrukturen und "Maps". Jetzt brauche ich den Rest des Kapitels -- die Abschnitte zu Timelines, Genealogies, Nature, Culture, Language, Mythology, Philosophy, und "Tying Different Infrastructures Together".\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:44] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:36:44] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:36:45]:\par
@@ -15378,7 +15078,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, ich habe Maps ausführlich gelesen (S. 156-165). Jetzt brauche ich die restlichen Infrastrukturen: Timelines (S. 165), Genealogies (S. 170), Nature (S. 172), Culture (S. 179), Language (S. 183), Mythology (S. 189), Philosophy (S. 192), und Tying Together (S. 194).\par
 
 
-\noindent \textbf{TOOL: Read} [19:36:55] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:36:55] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:36:55]:\par
@@ -15391,7 +15091,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt brauche ich die letzten Abschnitte -- Genealogies, Nature, Culture, Language, Mythology, Philosophy und Tying Together (S. 170-197).\par
 
 
-\noindent \textbf{TOOL: Read} [19:37:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:37:06] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:37:06]:\par
@@ -15404,7 +15104,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt brauche ich die letzten Abschnitte: Culture (S. 179), Language (S. 183), Mythology (S. 189), Philosophy (S. 192) und Tying Together (S. 194).\par
 
 
-\noindent \textbf{TOOL: Read} [19:37:18] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:37:18] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:37:18]:\par
@@ -15417,7 +15117,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Gut, ich habe Culture gelesen. Jetzt brauche ich Language, Mythology, Philosophy und Tying Together (ca. S. 183-197).\par
 
 
-\noindent \textbf{TOOL: Read} [19:37:36] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:37:36] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:37:36]:\par
@@ -15430,7 +15130,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Ich habe jetzt das gesamte Kapitel 3 von Wolf (2013) durchgelesen -- Maps (S. 156), Timelines (S. 165), Genealogies (S. 170), Nature (S. 172), Culture (S. 179). Jetzt noch die letzten drei: Language, Mythology, Philosophy und den Schluss. Lass mich ab S. 183 die spezifischen Abschnitte lesen.\par
 
 
-\noindent \textbf{TOOL: Read} [19:37:55] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/library/papers/Wolf\_2013\_BuildingImaginaryWorlds.pdf}\par
+\noindent \textbf{TOOL: Read} [19:37:55] → \breaktt{library/\allowbreak{}papers/\allowbreak{}Wolf\_2013\_BuildingImaginaryWorlds.\allowbreak{}pdf}\par
 
 
 \noindent \textbf{RESULT} [19:37:55]:\par
@@ -15455,10 +15155,10 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Das Briefing listet diese bereits im selben Format auf. Jetzt habe ich genug Quellenmaterial. Lass mich die drei Artefakte erstellen. Zuerst prüfe ich noch, ob es existierende WBB- oder GDD-Dateien gibt, gegen die ich mein Framework bauen muss.\par
 
 
-\noindent \textbf{TOOL: Glob} [19:38:20] → \texttt{simulation-2/gallery/gdd/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:38:20] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}*.\allowbreak{}md}\par
 
 
-\noindent \textbf{TOOL: Glob} [19:38:20] → \texttt{simulation-2/gallery/wbb/*.md}\par
+\noindent \textbf{TOOL: Glob} [19:38:20] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}wbb/\allowbreak{}*.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:38:20]:\par
@@ -15484,7 +15184,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Zunächst erstelle ich das Hauptartefakt: die Wolf-Checkliste als QA-Prüfwerkzeug, dann das QA-Framework, und zuletzt das Streamer-Alpha-Konzept.\par
 
 
-\noindent \textbf{TOOL: Write} [19:40:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-wolf-checkliste-leo.md}\par
+\noindent \textbf{TOOL: Write} [19:40:06] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-wolf-checkliste-leo.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Wolf-Checkliste: Neun Infrastrukturen imaginärer Welten}\par\vspace{0.5mm}
 \noindent \textbf{Prüfwerkzeug für die RELICS World Building Bible}\par
@@ -15511,7 +15211,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt das QA-Framework für v0.1.\par
 
 
-\noindent \textbf{TOOL: Write} [19:41:14] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-qa-framework-v01-leo.md}\par
+\noindent \textbf{TOOL: Write} [19:41:14] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-qa-framework-v01-leo.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{QA-Framework v0.1: Konsistenz-Prüfung für GDD \& WBB}\par\vspace{0.5mm}
 \noindent \textbf{Leo Fischer | QA Lead | Tag 2}\par
@@ -15540,7 +15240,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt das Streamer-Alpha-Konzept.\par
 
 
-\noindent \textbf{TOOL: Write} [19:42:28] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-streamer-alpha-konzept-leo.md}\par
+\noindent \textbf{TOOL: Write} [19:42:28] → \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-streamer-alpha-konzept-leo.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Streamer-Alpha-Konzept: Die erste Stunde}\par\vspace{0.5mm}
 \noindent \textbf{Leo Fischer | QA Lead \& Community Manager | Tag 2}\par
@@ -15568,7 +15268,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt erstelle ich die Trace-Dateien.\par
 
 
-\noindent \textbf{TOOL: Write} [19:42:49] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-leo/prompt.md}\par
+\noindent \textbf{TOOL: Write} [19:42:49] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-leo/\allowbreak{}prompt.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 2 — WORK | Leo Fischer}\par\vspace{0.5mm}
 
@@ -15595,7 +15295,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:43:21] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-leo/reasoning.md}\par
+\noindent \textbf{TOOL: Write} [19:43:21] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-leo/\allowbreak{}reasoning.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 2 — Reasoning | Leo Fischer}\par\vspace{0.5mm}
 
@@ -15616,14 +15316,14 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:43:46] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-leo/output.md}\par
+\noindent \textbf{TOOL: Write} [19:43:46] → \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-leo/\allowbreak{}output.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Day 02, Scene 2 — Output | Leo Fischer}\par\vspace{0.5mm}
 
 \vspace{1mm}\noindent\textbf{\textit{Generierte Artefakte}}\par
 
 \noindent\textbf{\textit{1. Wolf-Checkliste (Hauptartefakt)}} 
-\noindent \textbf{Datei:} \texttt{simulation-2/gallery/gdd/00-wolf-checkliste-leo.md}\par
+\noindent \textbf{Datei:} \breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-wolf-checkliste-leo.\allowbreak{}md}\par
 \noindent \textbf{Umfang:} \textasciitilde{}1.800 Wörter\par
 \noindent \textbf{Inhalt:} Alle neun Wolf-Infrastrukturen mit:\par
 \noindent\hspace{2mm}\textbullet\ Zusammenfassung nach Wolf (2013, Kap. 3)\\
@@ -15646,7 +15346,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent Jetzt aktualisiere ich meine Memory-Datei.\par
 
 
-\noindent \textbf{TOOL: Read} [19:43:54] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Read} [19:43:54] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 
 
 \noindent \textbf{RESULT} [19:43:54]:\par
@@ -15682,7 +15382,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent 29→3. Fühlt sich Schattenfieber körperlich an (nicht magisch)?\par
 \noindent 30→\par
 \noindent 31→\#\#\# Output generiert\par
-\noindent 32→- \texttt{gallery/gdd/00-recherche-notizen-leo.md} — 600 Wörter, Zielgruppe + Konkurrenz + Risiken\par
+\noindent 32→- \breaktt{gallery/\allowbreak{}gdd/\allowbreak{}00-recherche-notizen-leo.\allowbreak{}md} — 600 Wörter, Zielgruppe + Konkurrenz + Risiken\par
 \noindent 33→\par
 \noindent 34→\#\#\# Nächste Schritte\par
 \noindent 35→- GDD Kap 2 (Kernmechaniken) muss das "Angebots-Feeling" einer Spieler-Session reflektieren\par
@@ -15692,7 +15392,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent ```\par
 
 
-\noindent \textbf{TOOL: Write} [19:44:33] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}\par
+\noindent \textbf{TOOL: Write} [19:44:33] → \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}\par
 \noindent ```\par
 \vspace{2mm}\noindent\textbf{Leo -- Memory}\par\vspace{0.5mm}
 
@@ -15726,23 +15426,23 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 \noindent So. Drei Dokumente fertig, alle in der Galerie, Traces geschrieben, Memory aktualisiert. Lass mich kurz zusammenfassen, was ich heute gemacht habe und warum.\par
 
-\noindent \textbf{Artefakt 1: Wolf-Checkliste} (\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-wolf-checkliste-leo.md})\par
+\noindent \textbf{Artefakt 1: Wolf-Checkliste} (\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-wolf-checkliste-leo.\allowbreak{}md})\par
 
 \noindent Ich habe Wolfs gesamtes Kapitel 3 aus \textit{Building Imaginary Worlds} (S. 154-197) durchgearbeitet. Die neun Infrastrukturen -- Karten, Zeitleisten, Genealogien, Natur, Kultur, Sprache, Mythologie, Philosophie, Verknüpfung -- sind jetzt ein konkretes Prüfwerkzeug. Nicht akademisch, sondern spielbar: Jede Infrastruktur hat einen "Spieler-Test" (die Frage, die ein Spieler nach 30 Minuten beantworten können muss, ohne Codex zu lesen) und ein RELICS-spezifisches Risiko. Die Cross-Reference-Matrix zeigt Emre und Nami auf einen Blick, welche Infrastrukturen in welchem WBB-Kapitel (Mythos, Topos, Ethos) den Schwerpunkt haben.\par
 
 \noindent Wichtigste Erkenntnis aus Wolf fuer uns: Die Qualitaet -- Verzeihung, die Qualität einer Welt zeigt sich nicht in der Tiefe einzelner Infrastrukturen, sondern in deren Verknüpfung. Wenn Material-Herkunft (Natur) die Fraktionsmacht (Kultur) beeinflusst und das die Architektur (Karten) formt und DAS wiederum die Mythologie speist -- dann fühlt sich die Welt echt an. Deshalb steht im Framework: Jedes WBB-Kapitel muss mindestens drei andere Infrastrukturen referenzieren.\par
 
-\noindent \textbf{Artefakt 2: QA-Framework v0.1} (\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-qa-framework-v01-leo.md})\par
+\noindent \textbf{Artefakt 2: QA-Framework v0.1} (\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-qa-framework-v01-leo.\allowbreak{}md})\par
 
 \noindent Das ist mein Werkzeugkasten ab morgen. Fünf Hard Fails (Steampunk, High Fantasy, Science-Fantasy, Anachronismen, klassische Magie -- wenn die auftauchen, ist es ein Blocker), zehn Soft Checks (Material=Macht, drei Fraktionen, Nervensystem-Leveling etc.), neun Konsistenz-Paare zwischen GDD und WBB, fünf Widerspruchs-Typen, und der Spielerperspektiv-Test mit fünf Prüffragen (30-Sekunden-Pitch, Erste-Stunde, Stream-Test, Reddit-Test, Warum-kümmert-mich-das). Plus versionsspezifische Checklisten für v0.1, v0.2 und v0.3.\par
 
-\noindent \textbf{Artefakt 3: Streamer-Alpha-Konzept} (\texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/gallery/gdd/00-streamer-alpha-konzept-leo.md})\par
+\noindent \textbf{Artefakt 3: Streamer-Alpha-Konzept} (\breaktt{simulation-2/\allowbreak{}gallery/\allowbreak{}gdd/\allowbreak{}00-streamer-alpha-konzept-leo.\allowbreak{}md})\par
 
 \noindent Die erste Stunde, Minute für Minute. Sechs Phasen, jede mit Stream-Moment, Risiko und Community-Impact. Dazu eine Streamer-Auswahl nach Tiers (nicht nur die Größten, sondern die Richtigen -- Immersive-RPG-Streamer in S-Tier, Reaction-Content in C-Tier), Embargo-Strategie, Community-Kanäle und sechs trackbare KPIs. Die Kernaussage: Die erste Stunde muss vier Dinge liefern -- einen visuellen WOW-Moment, eine Entscheidung über die Chat streitet, ein Geheimnis das niemand spoilern kann, und einen Grund morgen wiederzukommen.\par
 
-\noindent \textbf{Traces} sind in \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/traces/day02-scene2-leo/} (prompt.md, reasoning.md, output.md).\par
+\noindent \textbf{Traces} sind in \breaktt{simulation-2/\allowbreak{}traces/\allowbreak{}day02-scene2-leo/\allowbreak{}} (prompt.md, reasoning.md, output.md).\par
 
-\noindent \textbf{Memory} ist aktualisiert in \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2/agents/leo-memory.md}.\par
+\noindent \textbf{Memory} ist aktualisiert in \breaktt{simulation-2/\allowbreak{}agents/\allowbreak{}leo-memory.\allowbreak{}md}.\par
 
 \noindent Ab morgen bin ich bereit, die ersten Drafts zu reviewen. Darius' Kernmechaniken, Emres Topos-Kapitel, Namis Erzählkonzept -- ich werde alles durch den Wolf-Check und das QA-Framework jagen. Und wenn die erste Stunde im GDD nicht meine vier Kernlieferungen enthält, eskaliere ich.\par
 
@@ -15758,11 +15458,11 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 
 *Artefakt: `06-technische-spezifikation-v1.md`*
 
-*Artefakt: `00-wolf-checkliste-leo.md`*
+*Artefakt: `00-wolf-checkliste-leo-v1.md`*
 
-*Artefakt: `00-alpha-erste-stunde-leo.md`*
+*Artefakt: `00-alpha-erste-stunde-leo-v1.md`*
 
-*Artefakt: `00-leo-talking-points-darius-sync.md`*
+*Artefakt: `00-leo-talking-points-darius-sync-v1.md`*
 
 *Artefakt: `3-image-prompts.json`*
 
@@ -15792,65 +15492,65 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \vspace{2mm}
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/relikt-zustand-null-ruhend_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/relikt-zustand-null-ruhend_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
-\\[1pt]{\tiny\itshape Material study of an ancient organic relic in its dormant state, resting on rough stone. The object is vertebra-shape...}
+\\[1pt]{\tiny\itshape\raggedright Material study of an ancient organic relic in its dormant state, resting on rough stone. The object is vertebra-shaped — a dense, folded form between a spinal column section and a collapsed mountain crystal cluster. Its surface is spongy and calcified, like cancellous bone compressed over centuries. The texture is too regular for nature, too organic for craft. Color: cool ash gray, slightly off-white at the ridges, deep shadow in the porous cavities. No glow. No luminescence. It looks like a stone you would walk past. Only the texture reveals it — an obsessive pattern of micro-channels and nodal points. Scale reference: fits in two cupped hands. Isolated on dark stone surface, soft raking side light from a single tallow candle, no background detail. Detailed material study, dark fantasy concept art, painterly, high detail surface texture}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/relikt-zustand-eins-aktiviert_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/relikt-zustand-eins-aktiviert_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
-\\[1pt]{\tiny\itshape Material study of an ancient organic relic in its activated state. The object is vertebra-shaped — folded form betwee...}
+\\[1pt]{\tiny\itshape\raggedright Material study of an ancient organic relic in its activated state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels running through it. Now: faint vessel-like lines beneath the surface glow with cool bioluminescent light, pale blue-violet, as if circulatory channels have filled with phosphorescent fluid. The glow is internal, diffuse, coming from within the material itself, not from a surface coating. The effect is beautiful and deeply unsettling — it looks alive. The ridges and porous cavities are now illuminated from inside, casting tiny shadows within the object itself. The surrounding stone surface shows the faintest reflected luminescence. The object is compelling, almost magnetic. Scale reference: fits in two cupped hands. Dark chamber, the relic is its own only light source. Detailed material study, dark fantasy concept art, painterly, bioluminescent}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/relikt-zustand-drei-aufloesung_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/relikt-zustand-drei-aufloesung_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
-\\[1pt]{\tiny\itshape Material study of an ancient organic relic in its dissolution state. The object is vertebra-shaped — folded form betw...}
+\\[1pt]{\tiny\itshape\raggedright Material study of an ancient organic relic in its dissolution state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, originally spongy and calcified. Now the edges of the object are dissolving: fine particulate matter drifts from the outer ridges like ash from a dying ember, or like condensation evaporating from cold glass. The material is dematerializing at its boundaries. The internal glow has intensified but lost beauty — it is now harsh, overexposed white-violet at the core, with sickly yellow-green at the dissolving edges. The porous surface channels have cracked and widened. The surrounding stone surface shows damage: organic residue stains, hairline fractures radiating outward. The relic is coming apart. Scale reference: fits in two cupped hands. The light source is the relic itself, now too bright for beauty. Detailed material study, dark fantasy concept art, painterly, dissolution, body horror undertones}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/relikt-drei-zustaende-vergleich_nano-banana-2.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/relikt-drei-zustaende-vergleich_nano-banana-2.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-2}}
-\\[1pt]{\tiny\itshape Three-panel material study of the same ancient organic relic in three states, arranged left to right on a dark stone ...}
+\\[1pt]{\tiny\itshape\raggedright Three-panel material study of the same ancient organic relic in three states, arranged left to right on a dark stone surface. The relic is vertebra-shaped: a folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels and nodal points. Left panel: dormant state — ash gray, no glow, dead-looking stone, only texture reveals it. Center panel: activated state — internal vessel-lines glow with pale blue-violet bioluminescence, beautiful and alive, compelling. Right panel: dissolution state — edges evaporating like fine particulate ash, internal glow overexposed and harsh, sickly yellow-green at dissolving margins. All three identical in shape and scale, only state differs. Labels at the bottom in medieval manuscript script. Dark background, single directional light from left for dormant, self-illumination for activated and dissolution. Comparative concept art study, dark fantasy, painterly, high detail}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/relikt-hero-shot-aktiviert_gpt-image-1-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/relikt-hero-shot-aktiviert_gpt-image-1-5.png}
 \\[2pt]{\scriptsize\textbf{gpt-image-1-5}}
-\\[1pt]{\tiny\itshape Hero shot of the Threshold Anchor relic in its activated state, displayed on a rough-hewn stone altar in a vaulted un...}
+\\[1pt]{\tiny\itshape\raggedright Hero shot of the Threshold Anchor relic in its activated state, displayed on a rough-hewn stone altar in a vaulted underground chamber. The object is vertebra-shaped — a dense folded form between a spinal column section and a collapsed crystal cluster, its surface spongy and calcified with micro-channels running through it. Every channel now pulses with cool blue-violet bioluminescent light from within, like a circulatory system filled with phosphorescent fluid. The light is the only illumination in the chamber. It casts complex shadows through the porous surface, projecting branching light patterns across the stone altar and vaulted ceiling above. The surrounding chamber walls show organic traces: fine vein-like mineral deposits have grown outward from the altar base across the floor, as if the relic is slowly colonizing the stone. A human figure stands at the edge of frame, back to the viewer, small in comparison — awed, hesitant. The composition emphasizes the object: low camera angle, looking slightly up at the altar, the vaulted ceiling framing the top. The relic is sublime and threatening. Atmospheric, volumetric light from the relic only, dark fantasy, concept art, cinematic, highly detailed, reverent and unsettling}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/fraktion-krone-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/fraktion-krone-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
-\\[1pt]{\tiny\itshape Faction material palette study for a medieval dark fantasy ruling crown faction. A flat-lay arrangement of materials ...}
+\\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy ruling crown faction. A flat-lay arrangement of materials and costume fragments on black stone: brushed titanium plate segments with etched geometric ornaments, deep crimson enameled signet, obsidian-polished armor pauldron with Damask steel inlays, heavy brocade silk in near-black with a single blood-red woven border, electrum buckle, faceted crystal glass vial with deep indigo liquid inside. Surrounding: a fragment of a document with a royal seal in blood-red wax. Color palette of the arrangement: all-black and charcoal with metallic silver-grey sheen, ONE blood-red accent only, cold white light reflections on polished surfaces. The aesthetic is high fashion restraint — no excess, controlled power. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/fraktion-orden-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/fraktion-orden-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
-\\[1pt]{\tiny\itshape Faction material palette study for a medieval dark fantasy inquisitor order faction. A flat-lay arrangement of materi...}
+\\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy inquisitor order faction. A flat-lay arrangement of materials and costume fragments on cold grey stone: bleached white heavy linen robe fragment with precise geometric embroidery in pale silver thread, crystal glass optical lens mounted in a fine brass frame, vellum manuscript page covered in dense encoded script, a glass phial of luminescent pale green alchemical fluid, white bone rosary with a single black obsidian centerpiece, seal stamp with an eye symbol. Color palette: all-white and pale grey with cold silver accents, ONE glow accent in pale luminescent green only. The aesthetic is monastic austerity — knowledge as control, purity as threat. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/fraktion-gilden-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/fraktion-gilden-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
-\\[1pt]{\tiny\itshape Faction material palette study for a medieval dark fantasy merchant guild faction. A flat-lay arrangement of material...}
+\\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy merchant guild faction. A flat-lay arrangement of materials and costume fragments on warm oak wood surface: deep indigo-dyed heavy brocade silk with gold thread border, polished malachite guild pendant, amber bead string, burnished bronze guild seal with a hammer and scales motif, vegetable-tanned leather work apron fragment with engraved maker marks, small sample vials of mineral pigments in red ochre and Prussian blue, a folded contract tied with wax seal. Color palette: rich earth tones — deep brown, warm amber, indigo, malachite green — with polished bronze and gold accents throughout. The aesthetic is accumulated material wealth — every object has a price, and it is significant. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-dh_6kbbf/stadtschnitt-vertikale-schichtung_nano-banana-pro.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-4tmnvw95/stadtschnitt-vertikale-schichtung_nano-banana-pro.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-pro}}
-\\[1pt]{\tiny\itshape Architectural cross-section cutaway view of a vertical medieval city built into a rocky promontory, showing four stac...}
+\\[1pt]{\tiny\itshape\raggedright Architectural cross-section cutaway view of a vertical medieval city built into a rocky promontory, showing four stacked social layers simultaneously. Bottom layer in deep shadow: cramped tunnels and improvised shelters of stolen bricks, bone carvings, cloth walls between old foundations, faint bioluminescent organic growth on walls the only light. Second layer: half-timbered Franconian houses with Romanesque round arches, thick stone walls, workshop facades with carved guild signs, warm tallow candlelight and amber through colored glass windows. Third layer: monolithic brutalist guild halls of rammed earth and cut limestone, clean geometric load-bearing forms, polished stone plazas, metal inlays, modular Bauhaus-inspired facades. Top layer: crown fortress with massive cantilevered platforms of pure geometric stone, no ornament, hanging gardens at the edges, crystal glass light shafts as architectural statement. The cross-section reveals how each layer builds over or ignores the layer below. Atmospheric fog between layers. Dark fantasy architectural illustration, concept art, detailed technical-artistic cross-section, painterly}
 \end{minipage}
 \hfill
 \hfill\null
@@ -15869,6 +15569,8 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{finn}\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Darius Engel, Emre Yilmaz, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
+![Szene 3](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-002-scene-003-MEETING.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Alle berichten Fortschritt. Schwarzrand als Stadtname bestätigt. Darius beantwortet vier offene Fragen (eine Stadt, Schattenfieber = dritte Achse, Tiervolk = NPC, Release geklärt). Vera zeigt Bilder, Team reagiert positiv. Tobi und Vera einigen sich: Schichtgrenzen fließend oben, diskret unten. Leo fordert sofortige Skill-Sichtbarkeit. Nami erklärt aktive Spieleraktionen in der Vael-Szene.\par}
 ```
@@ -15885,13 +15587,15 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{emre}\agenticon{tobi} Emre Yilmaz und Tobi Richter}\par\vspace{1mm}
 ```
 
+![Szene 4](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-002-scene-004-PAUSE.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Emre und Tobi bei Tee und Kaffee. Veras Bilder besprochen, Nerevar, D\&D-Pläne. Emre bringt morgen Rize-Tee mit.\par}
 ```
 
 
 
-## Szene 5 · REVIEW
+## Szene 5 · Review
 
 ::: {.scenemeta}
 15:00 — Küche
@@ -15901,988 +15605,10 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{vera}\agenticon{emre}\agenticon{nami}\agenticon{darius} Vera Kowalski, Emre Yilmaz, Nami Okafor und Darius Engel}\par\vspace{1mm}
 ```
 
+![Szene 5](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-xeynapd7/day-002-scene-005-REVIEW.png){ width=95% }
+
 ```{=latex}
 {\scriptsize Ergebnisse vorgestellt. Vera zeigt alle 9 Bilder, Emre präsentiert den Mythos, Nami stellt NPCs und Quests vor. Darius filtert fünf CD-Fragen nach Dringlichkeit: (1) Relikt-Name (blockiert Act 3 + Iteration), (2) Player-Agency beim Fragment, (3) Relikt-Formveränderung, (4) Tiervolk-Kosmologie, (5) Düsterkeit der Intro.\par}
 ```
 
-```{=latex}
-\vspace{4mm}
-\begingroup\tiny\setlength{\parskip}{1pt}\setlength{\parindent}{0pt}\setlength{\columnsep}{4mm}\sloppy\emergencystretch=1em
-\vspace{2mm}\noindent \agenticon{emre}\textbf{Emre Yilmaz} — \textit{Lead Worldbuilder}\par\vspace{0.5mm}
-\begin{multicols}{3}
-\vspace{2mm}\noindent\textbf{Transcript: day02-scene5-emre}\par\vspace{0.5mm}
-
-\noindent Session: \texttt{1f057dc8-3545-4e44-892d-316ffa8731ff}\par
-\noindent Source: \texttt{agent-ab582d17d3f33640a.jsonl}\par
-\noindent Entries: 38\par
-\noindent Start: 2026-02-27T17:35:54.317Z\par
-\noindent End: 2026-02-27T17:41:51.052Z\par
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-\noindent\textbf{\textit{USER PROMPT [17:35:54]}} 
-
-\noindent Du bist Emre Yilmaz bei GenSoftworks. Es ist Tag 2 (Dienstag), Szene 5: WORK, 14:00 Uhr.\par
-
-\noindent Nachmittags-Block. Deine Aufgabe: WBB-01 Mythos zur V0.5 ausbauen — das Relikt (lebende Krone) integrieren und die eigenen Namen für die RELICS-Kosmologie entwickeln.\par
-
-\noindent Lies deine Memory: simulation-2-test/agents/emre-memory.md\par
-\noindent Lies die aktuelle Outline: simulation-2-test/gallery/wbb/01-mythos.md\par
-
-\noindent CD-ENTSCHEIDUNGEN:\par
-\noindent\hspace{2mm}\textbullet\ Relikt: Lebende Krone — Biotech-Artefakt aus der Ur-Bindung, stabilisiert die Membran zwischen den Schichten. Wer sie trägt, wird verändert.\\
-\noindent\hspace{2mm}\textbullet\ EIGENE Namen für RELICS-Kosmologie (nicht nordisch in der Spielwelt)\\
-\noindent\hspace{2mm}\textbullet\ Keine buchstäblichen Götter\\
-\noindent\hspace{2mm}\textbullet\ Biotech-Forschung IST gefährlich (gewollt)\\
-
-\noindent DEINE AUFGABE:\par
-\noindent\hspace{2mm}1.\ Entwickle ein eigenes Namenssystem für die RELICS-Kosmologie (Schichten, Wesen, Konzepte). Nordisch nur als Entwickler-Referenz.\\
-\noindent\hspace{2mm}2.\ Integriere die lebende Krone als Relikt in den Mythos.\\
-\noindent\hspace{2mm}3.\ Aktualisiere: simulation-2-test/gallery/wbb/01-mythos.md\\
-\noindent\hspace{2mm}4.\ Schreibe Traces: simulation-2-test/traces/day02-scene5-emre/\{prompt,reasoning,output\}.md\\
-
-\noindent WICHTIG: Alles auf DEUTSCH. Die Namen sollen germanisch klingen, aber nicht 1:1 nordisch sein. Eigene Etymologie.\par
-
-
-\noindent \textbf{ASSISTANT} [17:35:56]:\par
-\noindent Ich lese zuerst meine Memory und die aktuelle Mythos-Outline.\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:56] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/agents/emre-memory.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:56]:\par
-\noindent ```\par
-\noindent 1→\# Emre — Memory\par
-\noindent 2→\par
-\noindent 3→<!-- GM aktualisiert diese Datei nach jeder Szene aus Emres Perspektive -->\par
-\noindent 4→\par
-\noindent 5→\#\# Tag 1, Szene 1 (BRIEFING)\par
-\noindent 6→Erster Arbeitstag. Finn moderierte das Briefing in der Küche. CD will, dass ich germanische Mythologie als Basis für den WBB-Mythos recherchiere. Habe sofort an die Eddas gedacht. Vera fragte nach Biotech-Bandbreite — gute Frage, betrifft auch mich (wie sichtbar ist das Übernatürliche?).\par
-\noindent 7→\par
-\noindent 8→\#\# Tag 1, Szene 2 (WORK)\par
-\noindent 9→Intensive Recherche-Session. Germanische Kosmologie auf ein Drei-Schichten-Modell reduziert. Ymirs Körper als organische Schöpfung resoniert mit Biotech. Drei Fraktionen mythologisch grundiert (Orden=Odin, Krone=Tyr/Thor, Gilden=Vanir). Schattenfieber: empfehle Hypothese C — kosmologische Erosion + gebrochene Bindung. Widerspruchs-Log \#001: "germanisch" vs. nordisch-isländische Quellen. Will mit Nami über das Wanderer-Motiv sprechen.\par
-\noindent 10→\par
-\noindent 11→\#\# Tag 1, Szene 3 (MEETING)\par
-\noindent 12→Standup. CD hat Hypothese C genehmigt! Kosmologische Erosion + gebrochene Bindung ist offiziell. Nordische Quellen als Basis akzeptiert, Mythos soll in der Spielwelt umstritten sein — verschiedene Fraktionen, verschiedene Versionen. Das eröffnet narrativ viel. Nami und ich sollen heute Nachmittag bilateral das Wanderer-Motiv klären. Soll Vera Fraktionsbeschreibungen liefern für ihre Architektur-Arbeit. Leos Pitch-Satz kommt auf die Pinnwand. Guter Vormittag.\par
-\noindent 13→\par
-\noindent 14→\#\# Tag 1, Szene 5 (WORK)\par
-\noindent 15→Nachmittags-Block. Fraktionsbeschreibungen für Vera fertig: Krone=Wolfsmotiv/verblasstes Gold/nekrotische Paläste, Gilden=Schiff+Ähre/Bernstein/lebende Handelsinfrastruktur, Orden=Raben/Blauschwarz+Silber/doppelte Architektur (außen Klosterfestung, innen biologisches Labyrinth). Wanderer-Motiv für Nami: Odin als Gangleri, Hávamál-Gastrecht, Umkehrung — Spieler IST schwach, wird als potentiell mächtig behandelt. Widerspruchs-Log \#001 gelöst. \#003 offen: Orden als geheime Spitzenforschung — CD-Rück\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:57] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/wbb/01-mythos.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:57]:\par
-\noindent ```\par
-\noindent 1→\# WBB-01 MYTHOS — Outline V1\par
-\noindent 2→\par
-\noindent 3→\textbf{Autor}: Emre Yilmaz, Lead Worldbuilder\par
-\noindent 4→\textbf{Stand}: Tag 2 (Dienstag), Konzeptionsphase\par
-\noindent 5→\textbf{Status}: Outline — Kapitelstruktur mit Stichpunkten, kein Fliesstext\par
-\noindent 6→\textbf{Basis}: Klastrup/Tosca (2004) — Mythos als "backstory" der transmedialen Welt\par
-\noindent 7→\textbf{Pruefung gegen}: Wolf (2013) — Infrastrukturen Mythologie, Zeitleisten, Genealogien, Philosophie\par
-\noindent 8→\par
-\noindent 9→---\par
-\noindent 10→\par
-\noindent 11→\#\# Kapitel 1: Kosmogonie — Die Leere vor der Welt\par
-\noindent 12→\par
-\noindent 13→- Ginnungagap: Die Urleere als Ausgangszustand — kein Nichts, sondern ein Zustand VOR Differenzierung\par
-\noindent 14→- Zwei Pole: Feuer (Sueden) und Eis (Norden). Wo sie aufeinandertrafen → erste Differenzierung → Leben als Nebenprodukt von Spannung\par
-\noindent 15→- Der Urzustand existiert noch: Ginnungagap wurde ueberlagert, nicht vernichtet. Die geschaffene Welt liegt UEBER der Leere wie Eis ueber einem See\par
-\noindent 16→\par
-\noindent 17→\textbf{Wolf}: Mythologie, Philosophie (Existenz als ueberlagerte Leere)\par
-\noindent 18→\textbf{Offen}: Geografische Resonanz der Zwei-Pole-Struktur? → WBB-02 Topos\par
-\noindent 19→\par
-\noindent 20→---\par
-\noindent 21→\par
-\noindent 22→\#\# Kapitel 2: Schoepfung — Die Welt aus dem Koerper\par
-\noindent 23→\par
-\noindent 24→- Ymir-Motiv: Urwesen, dessen Koerper zur Welt wurde. Die Welt ist ORGANISCH — gewachsen, nicht gebaut\par
-\noindent 25→- Schoepfung als Gewaltakt: Ordnung durch Toetung (Fleisch→Erde, Blut→Gewaesser, Knochen→Gebirge, Schaedel→Himmelskuppel, Hirn→Wolken)\par
-\noindent 26→- Biotech-Resonanz: Die Welt IST ein Koerper. Biotech = Rueckkehr zum Schoepfungsmaterial\par
-\noindent 27→- Auðhumla-Motiv: Tiere als Mitschoepfer → moegliche mythologische Verankerung des Tiervolks\par
-\noindent 28→\par
-\noindent 29→\textbf{Wolf}: Mythologie, Philosophie (Gewalt als Ordnungsprinzip)\par
-\noindent 30→\textbf{Offen}: Eigener Name fuer das Urwesen in RELICS? Empfehlung: Ja, weil Fraktionen verschiedene Namen verwenden → CD\par
-\noindent 31→\par
-\noindent 32→---\par
-\noindent 33→\par
-\noindent 34→\#\# Kapitel 3: Das Drei-Schichten-Modell — Architektur der Realitaet\par
-\noindent 35→\par
-\noindent 36→- Reduzierung der neun Welten auf DREI Schichten (CD-bestae\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:36:00]:\par
-\noindent Gut. Solide Outline. Jetzt lese ich noch das Briefing und schaue, ob es weitere relevante Informationen gibt.\par
-
-
-\noindent \textbf{TOOL: Read} [17:36:01] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/briefing.md}\par
-
-
-\noindent \textbf{RESULT} [17:36:01]:\par
-\noindent ```\par
-\noindent 1→\# RELICS — Creative Director's Briefing\par
-\noindent 2→\par
-\noindent 3→> \textbf{NORDSTERN} — Dieses Dokument ist die unveränderliche kreative Vision. Alle Artefakte (Game Design Document, World Building Bible, Concept Art) müssen sich an diesem Briefing orientieren. Abweichungen nur mit expliziter Creative Director-Freigabe.\par
-\noindent 4→> Immer fragen statt erfinden, wenn unklar.\par
-\noindent 5→\par
-\noindent 6→\#\# Vision\par
-\noindent 7→\par
-\noindent 8→RELICS ist der Titel einer Fantasy-Computerrollenspiel-Serie.\par
-\noindent 9→\par
-\noindent 10→RELICS spielt in einer \textbf{in sich konsistenten Welt}, jeweils zu einem historischen Wendepunkt, in dem ein bestimmtes \textbf{Relikt} eine Schlüsselrolle spielt.\par
-\noindent 11→\par
-\noindent 12→Das Namensformat jeder Iteration ist: RELICS: \textit{Relikt-Name}\par
-\noindent 13→\par
-\noindent 14→Der \textbf{Spielercharakter} ist bei jeder Iteration ein Unbekannter, der auf mysteriöse Art und Weise in die Handlung eingewickelt wird. Niemals ein spezifischer Charakter.\par
-\noindent 15→\par
-\noindent 16→Zu Beginn des Spieles erstellt man seinen eigenen \textbf{Spielercharakter}.\par
-\noindent 17→\par
-\noindent 18→\textbf{Tonalität:} Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität.\par
-\noindent 19→\par
-\noindent 20→\#\# Game Feel\par
-\noindent 21→\par
-\noindent 22→Ich betrete als Fremder eine aufregende "Sandbox".\par
-\noindent 23→\par
-\noindent 24→\#\# Verbindliche Ausschlüsse\par
-\noindent 25→\par
-\noindent 26→- \textbf{KEIN} Steampunk (keine Dampfmaschinen, keine Zahnrad-Ästhetik)\par
-\noindent 27→- \textbf{KEIN} High Fantasy (keine Elfen, keine Orks, keine Zauberer mit Stäben)\par
-\noindent 28→- \textbf{KEIN} Science-Fantasy (keine vergessene Hochtechnologie, keine Alien-Artefakte)\par
-\noindent 29→- \textbf{KEINE} Anachronismen (kein Schießpulver, kein Buchdruck, keine mechanischen Uhren außer Gilden-Prototypen)\par
-\noindent 30→- \textbf{KEINE} klassische Magie.\par
-\noindent 31→\par
-\noindent 32→\#\# Genre\par
-\noindent 33→\par
-\noindent 34→\textbf{Third-/First-Person} — nahtlos umschaltbar (Skyrim-Referenz)\par
-\noindent 35→\textbf{Open-World/Semi-Open-World}\par
-\noindent 36→"Medium"-Fantasy – es liegt auf dem Spektrum zwischen Low-Fantasy und High-Fantasy\par
-\noindent 37→Low-Magic, High-Tech\par
-\noindent 38→Biotech-Futurismus\par
-\noindent 39→\textbf{KEIN} Steampunk\par
-\noindent 40→\par
-\noindent 41→\#\# Die Welt\par
-\noindent 42→\par
-\noindent 43→Ein we\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Glob} [17:36:02] → \texttt{*}\par
-
-
-\noindent \textbf{RESULT} [17:36:02]:\par
-\noindent ```\par
-\noindent simulation-2-test/traces/day01-scene1-briefing/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene1-briefing/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene1-briefing/output.md\par
-\noindent simulation-2-test/traces/day01-scene2-darius/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene2-emre/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene2-nami/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene2-tobi/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene2-leo/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene2-finn/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene2-leo/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene2-darius/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene2-tobi/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene2-finn/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene2-vera/prompt.md\par
-\noindent simulation-2-test/traces/day01-scene2-nami/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene2-emre/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene2-vera/reasoning.md\par
-\noindent simulation-2-test/traces/day01-scene2-finn/output.md\par
-\noindent simulation-2-test/traces/day01-scene2-tobi/output.md\par
-\noindent simulation-2-test/traces/day01-scen\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:36:07]:\par
-\noindent Ich lese noch meine bisherigen Traces von heute Vormittag, um zu sehen, was ich im WORK-Block bereits erarbeitet habe.\par
-
-
-\noindent \textbf{TOOL: Read} [17:36:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene2-emre/output.md}\par
-
-
-\noindent \textbf{RESULT} [17:36:07]:\par
-\noindent ```\par
-\noindent 1→\# Output — Emre Yilmaz, Tag 2, Szene 2 (WORK)\par
-\noindent 2→\par
-\noindent 3→---\par
-\noindent 4→\par
-\noindent 5→\# WBB-01 MYTHOS — Outline V1\par
-\noindent 6→\par
-\noindent 7→\textbf{Autor}: Emre Yilmaz, Lead Worldbuilder\par
-\noindent 8→\textbf{Stand}: Tag 2 (Dienstag), Konzeptionsphase\par
-\noindent 9→\textbf{Basis}: Klastrup/Tosca (2004) — Mythos als "backstory" der transmedialen Welt\par
-\noindent 10→\textbf{Pruefung gegen}: Wolf (2013) — Infrastrukturen Mythologie, Zeitleisten, Genealogien, Philosophie\par
-\noindent 11→\par
-\noindent 12→---\par
-\noindent 13→\par
-\noindent 14→\#\# Kapitel 1: Kosmogonie — Die Leere vor der Welt\par
-\noindent 15→\par
-\noindent 16→\textbf{Kerninhalt}:\par
-\noindent 17→- Ginnungagap: Die Urleere als Ausgangszustand. Kein Nichts, sondern ein Zustand VOR Differenzierung — weder Materie noch Energie, weder Leben noch Tod.\par
-\noindent 18→- Zwei Pole: Feuer (Sueden) und Eis (Norden). Wo sie aufeinandertrafen, entstand die erste Differenzierung — LEBEN als Nebenprodukt von Spannung.\par
-\noindent 19→- Der Urzustand existiert noch. Ginnungagap ist nicht "verschwunden", sondern wurde ueberlagert — die geschaffene Welt liegt UEBER der Leere wie Eis ueber einem See. Die Leere ist unter allem.\par
-\noindent 20→\par
-\noindent 21→\textbf{Wolf-Infrastrukturen}: Mythologie (Schoepfungsursprung), Philosophie (Existenz als ueberlagerte Leere)\par
-\noindent 22→\par
-\noindent 23→\textbf{Offene Frage}: Wie buchstaeblich ist die Zwei-Pole-Struktur? Ist sie nur Mythos, oder hat sie geographische Resonanz in der Spielwelt? → Abstimmung mit WBB-02 Topos noetig.\par
-\noindent 24→\par
-\noindent 25→---\par
-\noindent 26→\par
-\noindent 27→\#\# Kapitel 2: Schoepfung — Die Welt aus dem Koerper\par
-\noindent 28→\par
-\noindent 29→\textbf{Kerninhalt}:\par
-\noindent 30→- Ymir-Motiv: Ein Urwesen, dessen Koerper zur Welt wurde. Die Welt ist ORGANISCH — nicht gebaut, sondern gewachsen/geformt aus lebendigem Material.\par
-\noindent 31→- Schoepfung als Gewaltakt: Die Ordnung entstand nicht aus Harmonie, sondern aus Toetung. Die "Goetter" (oder Vorfahren, oder Krafte — je nach Fraktionsversion) toeteten das Urwesen und formten aus seinem Koerper die Welt.\par
-\noindent 32→  - Fleisch → Erde\par
-\noindent 33→  - Blut → Gewaesser\par
-\noindent 34→  - Knochen → Gebirge\par
-\noindent 35→  - Schaedel → Himmelskuppel\par
-\noindent 36→  - Hirn →\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:36:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene2-emre/reasoning.md}\par
-
-
-\noindent \textbf{RESULT} [17:36:08]:\par
-\noindent ```\par
-\noindent 1→\# Reasoning — Emre Yilmaz, Tag 2, Szene 2 (WORK)\par
-\noindent 2→\par
-\noindent 3→\#\# Strukturentscheidung\par
-\noindent 4→\par
-\noindent 5→Klastrup/Tosca (2004) definieren Mythos als die "backstory" einer transmedialen Welt — die grundlegenden Konflikte und Ereignisse, die die Welt geformt haben. Fuer WBB-01 heisst das: Kosmologie, Schoepfung, uebernatuerliche Krafte, mythologisches Erbe.\par
-\noindent 6→\par
-\noindent 7→Die Briefing-Spezifikation lautet: "Kosmologie, Schoepfung, Mythologie, Goetter/Wesen, Schattenfieber-Ursprung." Das nehme ich als Grundgeruest und erweitere es um das, was Tag 1 ergeben hat.\par
-\noindent 8→\par
-\noindent 9→\#\# Kapitellogik\par
-\noindent 10→\par
-\noindent 11→Die Outline folgt einer narrativen Progression:\par
-\noindent 12→\par
-\noindent 13→1. \textbf{Kosmogonie} (was war VOR der Welt) — Ginnungagap, Urleere, Drei-Schichten-Modell\par
-\noindent 14→2. \textbf{Schoepfungsmythos} (wie entstand die Welt) — Ymir, organische Schoepfung, Gewaltakt\par
-\noindent 15→3. \textbf{Die Bindung} (was hielt die Welt zusammen) — Relikt, Trennung der Ebenen\par
-\noindent 16→4. \textbf{Goetter und Wesen} (wer bewohnte die Welt) — Keine buchstaeblichen Goetter, sondern mythologisches Erbe\par
-\noindent 17→5. \textbf{Der Zerfall} (was passiert jetzt) — Schattenfieber, kosmologische Erosion, Ragnaroek als Zustand\par
-\noindent 18→6. \textbf{Mythologische Ueberlieferung} (wer erzaehlt was) — Fraktions-Mythologien, umstrittener Mythos\par
-\noindent 19→7. \textbf{Wanderer und Gastrecht} (mythologische Spielermotivation) — Odin als Gangleri, Havamal\par
-\noindent 20→\par
-\noindent 21→Wolf (2013) Infrastrukturen, die hier abgedeckt werden:\par
-\noindent 22→- Mythologie (direkt: Kapitel 1-4, 6)\par
-\noindent 23→- Zeitleisten (kosmologische Zeitleiste in Kapitel 1-3, 5)\par
-\noindent 24→- Philosophie (in Kapitel 5 und 6: Fatalismus vs. Handlung, Wahrheitsfrage)\par
-\noindent 25→- Genealogien (Goetter-Hierarchien in Kapitel 4, Fraktions-Selbstbilder in Kapitel 6)\par
-\noindent 26→\par
-\noindent 27→NICHT abgedeckt im Mythos-Kapitel (gehoert in Topos/Ethos):\par
-\noindent 28→- Karten, Natur, Kultur, Sprache — diese werden in WBB-02/03 behandelt\par
-\noindent 29→\par
-\noindent 30→\#\# Orden-Symbolik fuer Vera\par
-\noindent 31→\par
-\noindent 32→Ich ziehe aus meiner Fraktionsbeschreibung (Tag\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:36:14]:\par
-\noindent Gut. Ich habe jetzt den vollstaendigen Kontext. Die CD-Entscheidungen von heute sind klar:\par
-\noindent\hspace{2mm}\textbullet\ Lebende Krone als Relikt\\
-\noindent\hspace{2mm}\textbullet\ Eigene Namen (nicht 1:1 nordisch)\\
-\noindent\hspace{2mm}\textbullet\ Keine buchstaeblichen Goetter (bestaetigt)\\
-\noindent\hspace{2mm}\textbullet\ Biotech-Forschung ist gefaehrlich (bestaetigt, schliesst Widerspruchs-Log \#004)\\
-
-\noindent Jetzt arbeite ich. Zuerst die Traces, dann das aktualisierte Artefakt.\par
-
-
-\noindent \textbf{TOOL: Write} [17:36:27] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-emre/prompt.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Prompt — Emre Yilmaz, Tag 2, Szene 5 (WORK)}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Kontext}}\par
-
-\noindent Tag 2 (Dienstag), 14:00 — Nachmittags-Arbeitsblock. Konzeptionsphase.\par
-
-\vspace{1mm}\noindent\textbf{\textit{Auftrag}}\par
-
-\noindent WBB-01 Mythos von Outline V1 zur V0.5 ausbauen. Zwei Schwerpunkte:\par
-
-\noindent\hspace{2mm}1.\ \textbf{Eigenes Namenssystem} fuer die RELICS-Kosmologie entwickeln. Nordische Begriffe (Ginnungagap, Ymir, Yggdrasil etc.) als Entwickler-Referenz behalten, aber IN der Spielwelt eigene Namen verwenden. Die Namen sollen germanisch klingen, aber nicht 1:1 nordisch sein — eigene Etymologie.\\
-
-
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:36:27]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene5-emre/prompt.md\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Write} [17:37:38] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-emre/reasoning.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Reasoning — Emre Yilmaz, Tag 2, Szene 5 (WORK)}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Namenssystem: Designprinzipien}}\par
-
-\noindent Das Problem: Die Outline verwendet nordische Begriffe (Ginnungagap, Ymir, Yggdrasil, Ragnaroek). Das war fuer die Recherchephase richtig — klare Referenzen, nachvollziehbare Herleitung. Aber in der Spielwelt brauchen wir eigene Namen, weil:\par
-
-\noindent\hspace{2mm}1.\ \textbf{Immersion}: Spieler sollen nicht denken "ah, das ist Ymir". Sie sollen denken "was IST das?".\\
-\noindent\hspace{2mm}2.\ \textbf{Fraktionspluralismus}: Drei Fraktionen, drei Ueberlieferungen — die\\
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:37:38]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene5-emre/reasoning.md\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:37:42]:\par
-\noindent Jetzt das Hauptartefakt — WBB-01 Mythos V0.5.\par
-
-
-\noindent \textbf{TOOL: Write} [17:41:08] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/wbb/01-mythos.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{WBB-01 MYTHOS — V0.5}\par\vspace{0.5mm}
-
-\noindent \textbf{Autor}: Emre Yilmaz, Lead Worldbuilder\par
-\noindent \textbf{Stand}: Tag 2 (Dienstag), Nachmittag — Konzeptionsphase\par
-\noindent \textbf{Status}: V0.5 — Outline mit integriertem Namenssystem und Relikt-Verankerung. Stichpunkte und Kurzbeschreibungen, kein Fliesstext.\par
-\noindent \textbf{Basis}: Klastrup/Tosca (2004) — Mythos als "backstory" der transmedialen Welt\par
-\noindent \textbf{Pruefung gegen}: Wolf (2013) — Infrastrukturen Mythologie, Zeitleisten, Genealogien, Philosophie\par
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Kosmologisches Lexikon}}\par
-
-\noindent > Alle nordischen Begriffe\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:41:08]:\par
-\noindent ```\par
-\noindent The file simulation-2-test/gallery/wbb/01-mythos.md has been updated successfully.\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:41:10]:\par
-\noindent Jetzt noch die output.md fuer die Traces.\par
-
-
-\noindent \textbf{TOOL: Write} [17:41:36] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-emre/output.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Output — Emre Yilmaz, Tag 2, Szene 5 (WORK)}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Lieferobjekte}}\par
-
-\noindent\textbf{\textit{1. Kosmologisches Lexikon (NEU)}} 
-
-\noindent Eigenes Namenssystem fuer die RELICS-Kosmologie. Alle Namen aus germanischen Wurzeln (urgermanisch, althochdeutsch, gotisch) abgeleitet. Nordische Begriffe bleiben als Entwickler-Referenz erhalten, erscheinen aber NICHT in der Spielwelt.\par
-
-\noindent Zentrale Begriffe:\par
-\noindent\hspace{2mm}\textbullet\ \textbf{Galt} (Urleere) — urgerm. *gal- (leer)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Emer} (Urwesen) — urgerm. \textit{aima- (Strom) + ahd. }emizzig (unaufhoerlich)\\
-\noindent\hspace{2mm}\textbullet\ **Hohlicht / Mit\\
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:41:36]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene5-emre/output.md\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:41:51]:\par
-\noindent Fertig. Hier die Zusammenfassung meiner Nachmittags-Arbeit.\par
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-
-\noindent \textbf{Was ich gemacht habe:}\par
-
-\noindent \textbf{1. Kosmologisches Lexikon entwickelt} -- ein eigenes Namenssystem fuer die RELICS-Welt, abgeleitet aus urgermanischen, althochdeutschen und gotischen Wurzeln. Die Namen klingen germanisch, sind aber keine 1:1-Uebernahmen aus der nordischen Mythologie. Kernbegriffe:\par
-
-\noindent\hspace{2mm}\textbullet\ \textbf{Galt} (die Urleere, statt Ginnungagap)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Emer} (das Urwesen, statt Ymir)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Hohlicht / Mittelgrund / Stillfeld} (die drei Schichten)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{die Hauten} (organische Membranen zwischen den Schichten)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{die Flechtung} (die Ur-Bindung)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Halvard, Sigvalt, Erthag, der Ungefuege} (mythologische Figuren statt Odin, Tyr, Vanir, Loki)\\
-
-\noindent Wichtig: Die Fraktionen verwenden UNTERSCHIEDLICHE Namen fuer dieselben Phaenomene. Die kosmologische Erosion heisst "Faulung" (Krone), "Schwund" (Gilden) oder "Entflechtung" (Orden). Die Gilden nennen die Welt-als-Koerper "der Tharm" (Eingeweide), nicht "Emer".\par
-
-\noindent \textbf{2. Die Lebende Krone integriert} -- als Biotech-Artefakt der Grossen Flechtung, gefertigt aus reinstem Emer-Material. Sie stabilisiert die Hauten, waechst in den Traeger hinein, und veraendert ihn zunehmend. Drei Fraktions-Deutungen ausgearbeitet. Spieltitel-Empfehlung: \textbf{RELICS: Die Lebende Krone}.\par
-
-\noindent \textbf{3. Widerspruchs-Log aktualisiert} -- \#004 geloest (Biotech-Gefahr als Feature bestaetigt), \#005 neu (tragische Ironie der Krone-Fraktion: stabilisierendes Relikt + destabilisierende Biotech-Forschung).\par
-
-\noindent \textbf{Dateien:}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/wbb/01-mythos.md} -- V0.5 (aktualisiert)\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-emre/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-emre/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-emre/output.md}\\
-
-\noindent \textbf{Offene Rueckfragen an die CD:}\par
-\noindent\hspace{2mm}1.\ Widerspruchs-Log \#005 -- ist die Krone-Fraktion sich ihres eigenen Widerspruchs BEWUSST?\\
-\noindent\hspace{2mm}2.\ Spieltitel "RELICS: Die Lebende Krone" -- akzeptabel?\\
-
-\end{multicols}
-\vspace{2mm}\noindent \agenticon{darius}\textbf{Darius Engel} — \textit{Game Director}\par\vspace{0.5mm}
-\begin{multicols}{3}
-\vspace{2mm}\noindent\textbf{Transcript: day02-scene5-darius}\par\vspace{0.5mm}
-
-\noindent Session: \texttt{1f057dc8-3545-4e44-892d-316ffa8731ff}\par
-\noindent Source: \texttt{agent-a6e1d9d668ebb5843.jsonl}\par
-\noindent Entries: 46\par
-\noindent Start: 2026-02-27T17:35:47.308Z\par
-\noindent End: 2026-02-27T17:42:36.060Z\par
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-\noindent\textbf{\textit{USER PROMPT [17:35:47]}} 
-
-\noindent Du bist Darius Engel, Game Director bei GenSoftworks. Es ist Tag 2 (Dienstag), Szene 5: WORK, 14:00 Uhr.\par
-
-\noindent Nachmittags-Block. Deine Aufgaben: (1) QA-Schleife mit Leo — ihre Risikomatrix in GDD-02 integrieren. (2) Schattenfieber-Stufen-Mapping mit Nami.\par
-
-\noindent Lies deine Memory: simulation-2-test/agents/darius-memory.md\par
-
-\noindent CD-ENTSCHEIDUNGEN:\par
-\noindent\hspace{2mm}\textbullet\ Relikt: Lebende Krone (Biotech-Artefakt aus der Ur-Bindung)\\
-\noindent\hspace{2mm}\textbullet\ Tod beeinflusst Infektionswert NICHT\\
-\noindent\hspace{2mm}\textbullet\ Eigene Namenssysteme (nicht nordisch in der Spielwelt)\\
-\noindent\hspace{2mm}\textbullet\ Biotech-Forschung IST gefährlich (gewollt)\\
-\noindent\hspace{2mm}\textbullet\ Combat-Skill-Ceiling: Spektrum zugänglich→belohnend\\
-
-\noindent LEOS QA-INPUT:\par
-\noindent\hspace{2mm}\textbullet\ 40\% QA-Aufwand → Schattenfieber\\
-\noindent\hspace{2mm}\textbullet\ Drei nicht-verhandelbare Bedingungen: (1) Transparenz VOR Infektion, (2) Sofortige Power Fantasy NACH Infektion, (3) KEIN versehentliches Infizieren\\
-\noindent\hspace{2mm}\textbullet\ Bloodborne Insight als Goldstandard\\
-
-\noindent DEINE AUFGABE:\par
-\noindent\hspace{2mm}1.\ Überarbeite GDD-02 Kernmechaniken basierend auf Leos QA-Input. Integriere die drei nicht-verhandelbaren Bedingungen. Ergänze das Schattenfieber-Stufen-Mapping mit Namis narrativen Stufen.\\
-\noindent\hspace{2mm}2.\ Aktualisiere: simulation-2-test/gallery/gdd/02-kernmechaniken.md\\
-\noindent\hspace{2mm}3.\ Schreibe Traces: simulation-2-test/traces/day02-scene5-darius/\{prompt,reasoning,output\}.md\\
-
-\noindent WICHTIG: Alles auf DEUTSCH. Das Dokument soll jetzt eine solide V0.5 sein — zwischen Outline und V1.\par
-
-
-\noindent \textbf{ASSISTANT} [17:35:50]:\par
-\noindent Ich lese zuerst meine Memory-Datei und die bestehende GDD-02, sowie relevante Kontextdateien.\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:50] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/agents/darius-memory.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:50]:\par
-\noindent ```\par
-\noindent 1→\# Darius — Memory\par
-\noindent 2→\par
-\noindent 3→<!-- GM aktualisiert diese Datei nach jeder Szene aus Darius' Perspektive -->\par
-\noindent 4→\par
-\noindent 5→\#\# Tag 1, Szene 1 (BRIEFING)\par
-\noindent 6→Erster Tag. Finn macht das Briefing sauber. CD will Referenzspiel-Analyse. Gothic, Skyrim, Dishonored als Hauptreferenzen. Leo soll Avowed und Gothic Remake mit abdecken.\par
-\noindent 7→\par
-\noindent 8→\#\# Tag 1, Szene 2 (WORK)\par
-\noindent 9→Strukturierte Analyse entlang sechs Design Pillars fertig. RELICS' größter Design-Hebel: Open World mit Dishonored-Vertikalität + Gothic-Dichte. Gothic 2 ist Goldstandard für Weltdichte und Fraktionsdesign. Skyrim liefert Kamera-Flexibilität, aber Combat und Radiant Quests sind Anti-Referenzen. Fünf offene Fragen für den Standup vorbereitet.\par
-\noindent 10→\par
-\noindent 11→\#\# Tag 1, Szene 3 (MEETING)\par
-\noindent 12→Standup. CD bestätigt Semi-Open-World (Gothic-Dichte), TP als Primärmodus, UE5. Schattenfieber-Infektion für den Spieler bestätigt — mit Kosten und Nutzen. Das ist ein Core System, das ich designen muss. Combat-Skill-Ceiling offen für morgen. Nami und Emre klären Wanderer-Motiv bilateral. Leos Pitch-Satz ist stark.\par
-\noindent 13→\par
-\noindent 14→\#\# Tag 1, Szene 5 (WORK)\par
-\noindent 15→Schattenfieber-Konzept ausgearbeitet: Infektionswert 0-100, fünf Stufen, vierter Ast im Nervensystem-Leveling. Fünf Design-Prinzipien (Spektrum statt Schalter, Nutzen attraktiv, Kosten verändern nicht blockieren, Welt reagiert, Integration ins Kernsystem). Fünf emergente Build-Archetypen. Bloodborne Insight + VtM Bloodlines als Goldstandards. Skyrim-Vampirismus als Anti-Referenz.\par
-\noindent 16→\par
-\noindent 17→\#\# Tag 1, Szene 6 (REVIEW)\par
-\noindent 18→CD: Schattenfieber nicht heilbar, nur kontrollierbar — gut so. PC first, Konsolen als Stretch Goal. Freelancer-Budget für Gameplay-Programmer genehmigt. Tiervolk = Nomaden ohne eigene Architektur. Replay-Erfahrung gewollt. Morgen: Combat-Skill-Ceiling klären, Schattenfieber-Konzept mit Nami synchronisieren.\par
-\noindent 19→\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:51] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/gdd/02-kernmechaniken.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:51]:\par
-\noindent ```\par
-\noindent 1→\# GDD-02: Kernmechaniken\par
-\noindent 2→\par
-\noindent 3→\textbf{Autor:} Darius Engel, Game Director (QA-Input: Leo)\par
-\noindent 4→\textbf{Version:} V1-Outline (Tag 2, Dienstag)\par
-\noindent 5→\textbf{Status:} Kapitelstruktur + Kernpunkte, kein Fliesstext\par
-\noindent 6→\textbf{Naechster Schritt:} V1-Volltext ab Mittwoch, nachmittags QA-Schleife mit Leo\par
-\noindent 7→\par
-\noindent 8→---\par
-\noindent 9→\par
-\noindent 10→\#\# 1. Combat-System\par
-\noindent 11→\par
-\noindent 12→\#\#\# 1.1 Grundphilosophie\par
-\noindent 13→- Real-time Action, Melee-fokussiert, gewichtig\par
-\noindent 14→- KEIN Difficulty Slider — die Welt bestimmt die Schwierigkeit (Gothic-Prinzip)\par
-\noindent 15→- Skill-Ceiling als Spektrum: Einstieg intuitiv, Mastery belohnend\par
-\noindent 16→- Jeder Kampf soll sich BEDEUTSAM anfuehlen — keine Trash-Mobs, kein Grind\par
-\noindent 17→- Spieler-Fantasie: "Ich habe diesen Kampf gewonnen, weil ich besser geworden bin — nicht weil ich Level 50 bin."\par
-\noindent 18→\par
-\noindent 19→\#\#\# 1.2 Kampfschichten (drei Ebenen)\par
-\noindent 20→\par
-\noindent 21→\#\#\#\# Ebene 1 — Basis (sofort zugaenglich)\par
-\noindent 22→- Leichter Angriff, schwerer Angriff, Block, Ausweichen\par
-\noindent 23→- Ausdauer-Management: Jede Aktion kostet Ausdauer, Uebertreiben wird bestraft\par
-\noindent 24→- Ziel-Lock-On optional (nicht erzwungen)\par
-\noindent 25→- Jeder Spieler kann sofort kaempfen — Gothic-Gewicht, Skyrim-Zugaenglichkeit\par
-\noindent 26→\par
-\noindent 27→\#\#\#\# Ebene 2 — Fortgeschritten (erlernt durch Trainer + Uebung)\par
-\noindent 28→- Parade/Riposte: Praezises Timing-Fenster, belohnt mit Gegenangriff\par
-\noindent 29→- Positionierung: Flankenangriffe, Rueckenattacken, Hoehenvorteile (Vertikalitaet!)\par
-\noindent 30→- Waffenspezifische Kombos: Abhaengig von Waffenklasse, erlernt bei Trainern\par
-\noindent 31→- Umgebungsinteraktion: Objekte treten/werfen, Engstellen nutzen, Gegner in Fallen locken\par
-\noindent 32→\par
-\noindent 33→\#\#\#\# Ebene 3 — Mastery (belohnend, nie erzwungen)\par
-\noindent 34→- Cancel-Windows: Fortgeschrittene Spieler koennen Animationen unterbrechen fuer Feints\par
-\noindent 35→- Setup-Plays: Alchemie-Vorbereitung (Oele, Gifte) + Positionierung + Timing als koordinierte Strategie\par
-\noindent 36→- Schattenfieber-Combat-Integration: Schattenreflex (erweitertes Parry-Window), Fieber-\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:51] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/wbb/01-mythos.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:51]:\par
-\noindent ```\par
-\noindent 1→\# WBB-01 MYTHOS — Outline V1\par
-\noindent 2→\par
-\noindent 3→\textbf{Autor}: Emre Yilmaz, Lead Worldbuilder\par
-\noindent 4→\textbf{Stand}: Tag 2 (Dienstag), Konzeptionsphase\par
-\noindent 5→\textbf{Status}: Outline — Kapitelstruktur mit Stichpunkten, kein Fliesstext\par
-\noindent 6→\textbf{Basis}: Klastrup/Tosca (2004) — Mythos als "backstory" der transmedialen Welt\par
-\noindent 7→\textbf{Pruefung gegen}: Wolf (2013) — Infrastrukturen Mythologie, Zeitleisten, Genealogien, Philosophie\par
-\noindent 8→\par
-\noindent 9→---\par
-\noindent 10→\par
-\noindent 11→\#\# Kapitel 1: Kosmogonie — Die Leere vor der Welt\par
-\noindent 12→\par
-\noindent 13→- Ginnungagap: Die Urleere als Ausgangszustand — kein Nichts, sondern ein Zustand VOR Differenzierung\par
-\noindent 14→- Zwei Pole: Feuer (Sueden) und Eis (Norden). Wo sie aufeinandertrafen → erste Differenzierung → Leben als Nebenprodukt von Spannung\par
-\noindent 15→- Der Urzustand existiert noch: Ginnungagap wurde ueberlagert, nicht vernichtet. Die geschaffene Welt liegt UEBER der Leere wie Eis ueber einem See\par
-\noindent 16→\par
-\noindent 17→\textbf{Wolf}: Mythologie, Philosophie (Existenz als ueberlagerte Leere)\par
-\noindent 18→\textbf{Offen}: Geografische Resonanz der Zwei-Pole-Struktur? → WBB-02 Topos\par
-\noindent 19→\par
-\noindent 20→---\par
-\noindent 21→\par
-\noindent 22→\#\# Kapitel 2: Schoepfung — Die Welt aus dem Koerper\par
-\noindent 23→\par
-\noindent 24→- Ymir-Motiv: Urwesen, dessen Koerper zur Welt wurde. Die Welt ist ORGANISCH — gewachsen, nicht gebaut\par
-\noindent 25→- Schoepfung als Gewaltakt: Ordnung durch Toetung (Fleisch→Erde, Blut→Gewaesser, Knochen→Gebirge, Schaedel→Himmelskuppel, Hirn→Wolken)\par
-\noindent 26→- Biotech-Resonanz: Die Welt IST ein Koerper. Biotech = Rueckkehr zum Schoepfungsmaterial\par
-\noindent 27→- Auðhumla-Motiv: Tiere als Mitschoepfer → moegliche mythologische Verankerung des Tiervolks\par
-\noindent 28→\par
-\noindent 29→\textbf{Wolf}: Mythologie, Philosophie (Gewalt als Ordnungsprinzip)\par
-\noindent 30→\textbf{Offen}: Eigener Name fuer das Urwesen in RELICS? Empfehlung: Ja, weil Fraktionen verschiedene Namen verwenden → CD\par
-\noindent 31→\par
-\noindent 32→---\par
-\noindent 33→\par
-\noindent 34→\#\# Kapitel 3: Das Drei-Schichten-Modell — Architektur der Realitaet\par
-\noindent 35→\par
-\noindent 36→- Reduzierung der neun Welten auf DREI Schichten (CD-bestae\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Glob} [17:35:52] → \texttt{**/*}\par
-
-
-\noindent \textbf{RESULT} [17:35:52]:\par
-\noindent ```\par
-\noindent simulation-2-test/gallery/gdd/05-designsprache.md\par
-\noindent simulation-2-test/gallery/gdd/01-spieluebersicht.md\par
-\noindent simulation-2-test/gallery/gdd/03-erzaehlkonzept.md\par
-\noindent simulation-2-test/gallery/gdd/06-technik-produktion.md\par
-\noindent simulation-2-test/gallery/gdd/02-kernmechaniken.md\par
-\noindent simulation-2-test/gallery/wbb/01-mythos.md\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:35:57]:\par
-\noindent Gut, die Grundlagen liegen vor. Jetzt lese ich noch Namis und Leos Memory-Dateien, um den QA-Input und das narrative Stufen-Mapping besser zu kontextualisieren. Ausserdem brauche ich das Briefing und GDD-03 fuer den narrativen Kontext.\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/agents/leo-memory.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:58]:\par
-\noindent ```\par
-\noindent 1→\# Leo — Memory\par
-\noindent 2→\par
-\noindent 3→<!-- GM aktualisiert diese Datei nach jeder Szene aus Leos Perspektive -->\par
-\noindent 4→\par
-\noindent 5→\#\# Tag 1, Szene 1 (BRIEFING)\par
-\noindent 6→Erster Tag. Mein Auftrag: Spielermarkt und Community-Erwartungen. Darius will Avowed und Gothic Remake — hatte ich eh auf der Liste.\par
-\noindent 7→\par
-\noindent 8→\#\# Tag 1, Szene 2 (WORK)\par
-\noindent 9→Marktanalyse fertig. Marktlücke zwischen "Skyrim hat keinen Nachfolger", "Gothic-Nostalgie" und "Dishonored ist tot" identifiziert. Biotech-Medieval ist Asset UND Risiko. "Kleiner aber exzellent" ist der Community-Trend. Dealbreaker-Tabelle mit 8 Punkten. Pitch-Satz: "Gothic trifft Dishonored in einer Welt, die aussieht wie Mittelalter, aber sich anfühlt wie Cyberpunk."\par
-\noindent 10→\par
-\noindent 11→\#\# Tag 1, Szene 3 (MEETING)\par
-\noindent 12→Mein Pitch-Satz kommt auf die Pinnwand! Schattenfieber als Spieler-Mechanik bestätigt — das ist der USP für den Trailer. Semi-Open-World passt zum Community-Trend "kleiner aber exzellent". Heute Nachmittag: Community-Erwartungen vertiefen, speziell zu Spieler-Infektion als Mechanik (Vampirismus-Parallele in Skyrim/VtM analysieren).\par
-\noindent 13→\par
-\noindent 14→\#\# Tag 1, Szene 5 (WORK)\par
-\noindent 15→Community-Analyse zu Infektionsmechaniken fertig. Sechs Erwartungen: Opt-in, Macht > Bestrafung, Welt reagiert, reversibel mit Aufwand, Stufensystem, beide Wege vollwertig. Bloodborne Insight = Goldstandard. Skyrim Vampirismus Stufe 4 = Anti-Referenz. Schattenfieber soll Wahrnehmungs-System sein, nicht Buff-System.\par
-\noindent 16→\par
-\noindent 17→\#\# Tag 1, Szene 6 (REVIEW)\par
-\noindent 18→CD: Schattenfieber NICHT reversibel — das weicht von meiner Community-Empfehlung ab (Community will "heilbar mit Aufwand"). Muss ich im Auge behalten — kann funktionieren wenn die Kosten transparent kommuniziert werden und der "reine" Pfad gleichwertig bleibt. Morgen: Konzeptionstag, GDD-02 Kernmechaniken mit Darius vorbereiten (QA-Perspektive).\par
-\noindent 19→\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/agents/nami-memory.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:58]:\par
-\noindent ```\par
-\noindent 1→\# Nami — Memory\par
-\noindent 2→\par
-\noindent 3→<!-- GM aktualisiert diese Datei nach jeder Szene aus Namis Perspektive -->\par
-\noindent 4→\par
-\noindent 5→\#\# Tag 1, Szene 1 (BRIEFING)\par
-\noindent 6→Finn moderiert. CD-Auftrag: Narrative Strukturen von Dark Fantasy CRPGs analysieren. "Spieler ist ein Unbekannter" — die spannendste Constraint.\par
-\noindent 7→\par
-\noindent 8→\#\# Tag 1, Szene 2 (WORK)\par
-\noindent 9→Vier narrative Prinzipien destilliert: (1) Fremder als Zustand, nicht als Lücke. (2) Fraktionen als Sprachen. (3) Räume erzählen, was Stimmen verschweigen. (4) Schattenfieber als narrativer Störfaktor (Unreliable-Narrator-Mechanismus). Muss mit Emre über Wanderer-Motiv reden. Mit Darius über Branching-Budget. Offene CD-Frage: Wie verhält sich das Schattenfieber zum Spielercharakter?\par
-\noindent 10→\par
-\noindent 11→\#\# Tag 1, Szene 3 (MEETING)\par
-\noindent 12→CD bestätigt: Spieler kann sich mit Schattenfieber infizieren! Kosten und Nutzen, Mechanik und Narrativ verbunden. Das ist narratives Gold — Unreliable Narrator + mechanische Konsequenz. Heute Nachmittag bilateral mit Emre: Wanderer-Motiv in der germanischen Mythologie. Mythos soll in der Spielwelt umstritten sein — verschiedene Wahrheiten je nach Fraktion. Das passt perfekt zu meinem Prinzip "Fraktionen als Sprachen."\par
-\noindent 13→\par
-\noindent 14→\#\# Tag 1, Szene 5 (WORK)\par
-\noindent 15→Wanderer-Motiv ausgearbeitet: Drei Fraktionen als drei Antworten auf dieselbe mythologische Figur (Krone=Anomalie, Gilden=Gelegenheit, Orden=Zeichen). Schattenfieber als Unreliable Narrator in drei Stufen: Rauschen (subtile Verschiebungen), Risse (Gespräche die niemand führte), Schwelle (Daseinsebenen durchlässig). Verbindung zum Odin-Opfer: Wissen hat einen Preis.\par
-\noindent 16→\par
-\noindent 17→\#\# Tag 1, Szene 6 (REVIEW)\par
-\noindent 18→CD: Schattenfieber NICHT reversibel — das Opfer ist echt. Replay-Erfahrung gewollt — neue Schichten bei mehrfachem Durchspielen. Tiervolk = Nomaden/Gäste, spiegelt Fremden-Status des Spielers. Morgen: Konzeptionstag, GDD-03 Erzählkonzept und GDD-04 Schlüsselfiguren als V1 vorbereiten.\par
-\noindent 19→\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/gdd/03-erzaehlkonzept.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:58]:\par
-\noindent ```\par
-\noindent 1→\# GDD-03 — Erzaehlkonzept\par
-\noindent 2→\par
-\noindent 3→> \textbf{Status}: V1 Outline (Tag 2, Konzeption)\par
-\noindent 4→> \textbf{Verantwortlich}: Nami (Lead), Darius (Mechanik-Sync)\par
-\noindent 5→> \textbf{Abhaengigkeiten}: WBB-01 Mythos (Emre), GDD-02 Kernmechaniken (Darius/Leo), GDD-04 Schluesselfiguren (Nami)\par
-\noindent 6→\par
-\noindent 7→---\par
-\noindent 8→\par
-\noindent 9→\#\# 1. Narrative Prinzipien\par
-\noindent 10→\par
-\noindent 11→Vier Saeulen, die jede Erzaehlentscheidung leiten:\par
-\noindent 12→\par
-\noindent 13→\#\#\# 1.1 Fremder als Zustand\par
-\noindent 14→- Der Spieler ist kein Held mit Amnesie. Er ist ein Niemand — und das ist sein staerkstes Werkzeug.\par
-\noindent 15→- Fremdheit ist kein Problem, das geloest wird. Sie ist der Aggregatzustand der gesamten Erfahrung.\par
-\noindent 16→- Zugehoerigkeit zu einer Fraktion loest die Fremdheit nicht auf — sie ersetzt sie durch eine neue Form von Bindung, die eigene Kosten hat.\par
-\noindent 17→\par
-\noindent 18→\#\#\# 1.2 Fraktionen als Sprachen\par
-\noindent 19→- Jede Fraktion hat nicht nur eigene Ziele, sondern ein eigenes Vokabular, eigene Metaphern, eigene blinde Flecken.\par
-\noindent 20→- Dieselbe Wahrheit klingt in drei Fraktionen voellig unterschiedlich — und keine Version ist falsch.\par
-\noindent 21→- Fraktionszugehoerigkeit veraendert nicht primaer, was der Spieler SAGEN kann, sondern was er ZU HOEREN BEKOMMT.\par
-\noindent 22→\par
-\noindent 23→\#\#\# 1.3 Raeume als Erzaehler\par
-\noindent 24→- Umgebungen erzaehlen Geschichte, die keine Figur ausspricht. Ein leerer Thronraum sagt mehr als ein Expositions-NPC.\par
-\noindent 25→- Environmental Storytelling als primaerer Erzaehlkanal fuer Weltgeschichte, sekundaer fuer aktive Quests.\par
-\noindent 26→- Enge Abstimmung mit Vera (Art Direction) und Emre (Topos).\par
-\noindent 27→\par
-\noindent 28→\#\#\# 1.4 Schattenfieber als Unreliable Narrator\par
-\noindent 29→- Schattenfieber veraendert nicht nur Mechanik, sondern die Erzaehlung selbst — was der Spieler sieht und hoert, ist nicht mehr zuverlaessig.\par
-\noindent 30→- Nicht als Bestrafung, sondern als alternative Wahrnehmungsebene.\par
-\noindent 31→- Replay-Wert: Wer ohne Schattenfieber spielt, erlebt eine andere Geschichte als wer mit spielt — beide sind "wahr".\par
-\noindent 32→\par
-\noindent 33→---\par
-\noindent 34→\par
-
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Read} [17:35:59] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/gdd/01-spieluebersicht.md}\par
-
-
-\noindent \textbf{RESULT} [17:35:59]:\par
-\noindent ```\par
-\noindent 1→\# GDD-01: Spieluebersicht\par
-\noindent 2→\par
-\noindent 3→\textbf{Autor:} Darius Engel, Game Director\par
-\noindent 4→\textbf{Version:} V1-Outline (Tag 2, Dienstag)\par
-\noindent 5→\textbf{Status:} Kapitelstruktur + Kernpunkte, kein Fliesstext\par
-\noindent 6→\textbf{Naechster Schritt:} V1-Volltext ab Mittwoch\par
-\noindent 7→\par
-\noindent 8→---\par
-\noindent 9→\par
-\noindent 10→\#\# 1. Elevator Pitch\par
-\noindent 11→\par
-\noindent 12→- RELICS ist ein Dark-Fantasy-Action-RPG in einer handgemachten Semi-Open-World\par
-\noindent 13→- Der Spieler betritt als Fremder eine mittelalterliche Welt am Wendepunkt — drei Fraktionen kaempfen um die Macht, eine mysteriöse Seuche (das Schattenfieber) transformiert die Bevoelkerung\par
-\noindent 14→- Keine Magie, keine Auserwaehlten-Geschichte: Biotech-Alchemie, koerperliche Progression, politische Intrige\par
-\noindent 15→- "Ich betrete als Fremder eine aufregende Sandbox." (Briefing)\par
-\noindent 16→- Tonalitaet: Duester, geerdet, politisch — gotische Grandeur trifft feudale Brutalitaet\par
-\noindent 17→\par
-\noindent 18→---\par
-\noindent 19→\par
-\noindent 20→\#\# 2. Design-Saeulen\par
-\noindent 21→\par
-\noindent 22→Sechs verbindliche Leitlinien. Jedes Feature muss gegen mindestens eine Saeule validierbar sein.\par
-\noindent 23→\par
-\noindent 24→\#\#\# P1 — Spielerwelt-Immersion\par
-\noindent 25→- Der Spieler ist ein Niemand. Macht wird VERDIENT, nicht geschenkt\par
-\noindent 26→- Character Creator: eigener Charakter, keine feste Identitaet\par
-\noindent 27→- Die Welt reagiert auf den Spieler: NPCs aendern Verhalten, Tueren oeffnen sich, Gebiete werden zugaenglich\par
-\noindent 28→- Referenz: Gothic (Null-zu-Held), Skyrim (Sandbox-Freiheit)\par
-\noindent 29→\par
-\noindent 30→\#\#\# P2 — Gewichtiger Real-Time-Combat\par
-\noindent 31→- Melee-fokussiert, gewichtig, rhythmisch\par
-\noindent 32→- Skill-Ceiling als Spektrum: zugaenglich bis belohnend\par
-\noindent 33→- Jeder Kampf hat Konsequenzen — kein Trash-Mob-Grinding\par
-\noindent 34→- Referenz: Gothic (Gewicht), Dishonored (Feedback-Qualitaet)\par
-\noindent 35→\par
-\noindent 36→\#\#\# P3 — Koerperliche Progression\par
-\noindent 37→- Nervensystem-Leveling: vier physiologische Aeste (Cardio, Muskel, Lymph, Schatten)\par
-\noindent 38→- Trainer-System: Faehigkeiten werden von NPCs in der Welt gelernt\par
-\noindent 39→- Schattenfieber als vierter Progressionsast mit Ko\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:36:06]:\par
-\noindent Gut. Jetzt habe ich alle relevanten Quellen gelesen. Ich habe:\par
-\noindent\hspace{2mm}\textbullet\ Meine Memory-Datei mit den bisherigen Entscheidungen\\
-\noindent\hspace{2mm}\textbullet\ Die bestehende GDD-02 V1-Outline\\
-\noindent\hspace{2mm}\textbullet\ Emres WBB-01 Mythos mit der kosmologischen Verankerung\\
-\noindent\hspace{2mm}\textbullet\ Namis GDD-03 mit dem Stufen-Mapping (Rauschen/Risse/Schwelle)\\
-\noindent\hspace{2mm}\textbullet\ Leos Memory mit dem QA-Input (Bloodborne Insight als Goldstandard, sechs Community-Erwartungen)\\
-\noindent\hspace{2mm}\textbullet\ Die CD-Entscheidungen aus dem Prompt\\
-
-\noindent Jetzt lese ich noch das Briefing fuer den Referenzrahmen.\par
-
-
-\noindent \textbf{TOOL: Read} [17:36:07] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/briefing.md}\par
-
-
-\noindent \textbf{RESULT} [17:36:07]:\par
-\noindent ```\par
-\noindent 1→\# RELICS — Creative Director's Briefing\par
-\noindent 2→\par
-\noindent 3→> \textbf{NORDSTERN} — Dieses Dokument ist die unveränderliche kreative Vision. Alle Artefakte (Game Design Document, World Building Bible, Concept Art) müssen sich an diesem Briefing orientieren. Abweichungen nur mit expliziter Creative Director-Freigabe.\par
-\noindent 4→> Immer fragen statt erfinden, wenn unklar.\par
-\noindent 5→\par
-\noindent 6→\#\# Vision\par
-\noindent 7→\par
-\noindent 8→RELICS ist der Titel einer Fantasy-Computerrollenspiel-Serie.\par
-\noindent 9→\par
-\noindent 10→RELICS spielt in einer \textbf{in sich konsistenten Welt}, jeweils zu einem historischen Wendepunkt, in dem ein bestimmtes \textbf{Relikt} eine Schlüsselrolle spielt.\par
-\noindent 11→\par
-\noindent 12→Das Namensformat jeder Iteration ist: RELICS: \textit{Relikt-Name}\par
-\noindent 13→\par
-\noindent 14→Der \textbf{Spielercharakter} ist bei jeder Iteration ein Unbekannter, der auf mysteriöse Art und Weise in die Handlung eingewickelt wird. Niemals ein spezifischer Charakter.\par
-\noindent 15→\par
-\noindent 16→Zu Beginn des Spieles erstellt man seinen eigenen \textbf{Spielercharakter}.\par
-\noindent 17→\par
-\noindent 18→\textbf{Tonalität:} Düster, geerdet, politisch. Gotische Grandeur trifft feudale Brutalität.\par
-\noindent 19→\par
-\noindent 20→\#\# Game Feel\par
-\noindent 21→\par
-\noindent 22→Ich betrete als Fremder eine aufregende "Sandbox".\par
-\noindent 23→\par
-\noindent 24→\#\# Verbindliche Ausschlüsse\par
-\noindent 25→\par
-\noindent 26→- \textbf{KEIN} Steampunk (keine Dampfmaschinen, keine Zahnrad-Ästhetik)\par
-\noindent 27→- \textbf{KEIN} High Fantasy (keine Elfen, keine Orks, keine Zauberer mit Stäben)\par
-\noindent 28→- \textbf{KEIN} Science-Fantasy (keine vergessene Hochtechnologie, keine Alien-Artefakte)\par
-\noindent 29→- \textbf{KEINE} Anachronismen (kein Schießpulver, kein Buchdruck, keine mechanischen Uhren außer Gilden-Prototypen)\par
-\noindent 30→- \textbf{KEINE} klassische Magie.\par
-\noindent 31→\par
-\noindent 32→\#\# Genre\par
-\noindent 33→\par
-\noindent 34→\textbf{Third-/First-Person} — nahtlos umschaltbar (Skyrim-Referenz)\par
-\noindent 35→\textbf{Open-World/Semi-Open-World}\par
-\noindent 36→"Medium"-Fantasy – es liegt auf dem Spektrum zwischen Low-Fantasy und High-Fantasy\par
-\noindent 37→Low-Magic, High-Tech\par
-\noindent 38→Biotech-Futurismus\par
-\noindent 39→\textbf{KEIN} Steampunk\par
-\noindent 40→\par
-\noindent 41→\#\# Die Welt\par
-\noindent 42→\par
-\noindent 43→Ein we\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:36:17]:\par
-\noindent Perfekt. Jetzt habe ich alles, was ich brauche. Ich fasse zusammen, was zu tun ist:\par
-
-\noindent \textbf{GDD-02 Ueberarbeitung (V0.5):}\par
-\noindent\hspace{2mm}1.\ Tod beeinflusst Infektionswert NICHT (CD-Entscheidung) -- offene Frage in 1.5 und 2.6 geklaert\\
-\noindent\hspace{2mm}2.\ Leos drei nicht-verhandelbare Bedingungen integrieren: (a) Transparenz VOR Infektion, (b) Sofortige Power Fantasy NACH Infektion, (c) KEIN versehentliches Infizieren\\
-\noindent\hspace{2mm}3.\ Namis narrative Stufen (Rauschen/Risse/Schwelle) mit meinen mechanischen Stufen mappen -- Abschnitt 5.1 aus GDD-03\\
-\noindent\hspace{2mm}4.\ Relikt = Lebende Krone (Biotech-Artefakt)\\
-\noindent\hspace{2mm}5.\ Eigene Namenssysteme (nicht nordisch)\\
-\noindent\hspace{2mm}6.\ Biotech-Forschung IST gefaehrlich\\
-\noindent\hspace{2mm}7.\ Combat-Skill-Ceiling: Spektrum zugaenglich bis belohnend\\
-\noindent\hspace{2mm}8.\ 40\% QA-Aufwand auf Schattenfieber (Leo)\\
-
-\noindent Ich schreibe jetzt die ueberarbeitete GDD-02 und dann die Traces.\par
-
-
-\noindent \textbf{TOOL: Write} [17:40:41] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/gdd/02-kernmechaniken.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{GDD-02: Kernmechaniken}\par\vspace{0.5mm}
-
-\noindent \textbf{Autor:} Darius Engel, Game Director\par
-\noindent \textbf{QA:} Leo Brandt (Spielermarkt \& Community)\par
-\noindent \textbf{Narrativ-Sync:} Nami Osei (Erzaehlkonzept)\par
-\noindent \textbf{Version:} V0.5 (Tag 2, Dienstag — Nachmittags-Ueberarbeitung)\par
-\noindent \textbf{Status:} Zwischen Outline und V1 — Strukturen stehen, Schluesselabschnitte angereichert, offene Fragen reduziert\par
-\noindent \textbf{Aenderungslog:}\par
-\noindent\hspace{2mm}\textbullet\ V1-Outline (Tag 2 Vormittag): Kapitelstruktur + Kernpunkte\\
-\noindent\hspace{2mm}\textbullet\ V0.5 (Tag 2 Nachmittag): Leos QA-Bedingungen integriert, Schattenfieber-Stufen-M\\
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:40:41]:\par
-\noindent ```\par
-\noindent The file simulation-2-test/gallery/gdd/02-kernmechaniken.md has been updated successfully.\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:40:44]:\par
-\noindent Jetzt schreibe ich die Traces.\par
-
-
-\noindent \textbf{TOOL: Write} [17:40:58] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-darius/prompt.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Darius — Tag 2, Szene 5 (WORK) — Prompt}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Kontext}}\par
-\noindent Nachmittags-Arbeitsblock, Dienstag (Konzeptionstag). Zwei Aufgaben:\par
-\noindent\hspace{2mm}1.\ QA-Schleife mit Leo: Seine Risikomatrix und drei nicht-verhandelbare Bedingungen in GDD-02 integrieren\\
-\noindent\hspace{2mm}2.\ Schattenfieber-Stufen-Mapping mit Nami: Ihre narrativen Zustaende (Rauschen/Risse/Schwelle) mit meinen fuenf mechanischen Stufen synchronisieren\\
-
-\vspace{1mm}\noindent\textbf{\textit{Input}}\par
-\noindent\hspace{2mm}\textbullet\ GDD-02 V1-Outline (mein Vormittagsprodukt)\\
-\noindent\hspace{2mm}\textbullet\ Leos QA-Input: 40\% QA-Aufwand Schattenfieber, drei Bedingungen (Tra\\
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:40:58]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene5-darius/prompt.md\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Write} [17:41:42] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-darius/reasoning.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Darius — Tag 2, Szene 5 (WORK) — Reasoning}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Kernfrage}}\par
-\noindent Wie integriere ich Leos QA-Input und Namis Narrativ-Mapping so, dass GDD-02 eine belastbare V0.5 wird — nicht nur Stichpunkte, aber auch noch nicht V1-Volltext?\par
-
-\vspace{1mm}\noindent\textbf{\textit{Entscheidungen}}\par
-
-\noindent\textbf{\textit{1. Leos drei Bedingungen: Wo im Dokument?}} 
-\noindent \textbf{Problem:} Leos Bedingungen sind Querschnittsanforderungen — sie betreffen nicht nur den Schattenfieber-Abschnitt, sondern auch Combat (1.5), Alchemie (4.x) und Exploration (5.x).\par
-
-\noindent \textbf{Entscheidung:} Eigener Absch\par
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:41:42]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene5-darius/reasoning.md\par
-\noindent ```\par
-
-
-\noindent \textbf{TOOL: Write} [17:42:06] → \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-darius/output.md}\par
-\noindent ```\par
-\vspace{2mm}\noindent\textbf{Darius — Tag 2, Szene 5 (WORK) — Output}\par\vspace{0.5mm}
-
-\vspace{1mm}\noindent\textbf{\textit{Produziertes Artefakt}}\par
-\noindent \texttt{simulation-2-test/gallery/gdd/02-kernmechaniken.md} — V0.5\par
-
-\vspace{1mm}\noindent\textbf{\textit{Aenderungen gegenueber V1-Outline}}\par
-
-\noindent\textbf{\textit{Neue Abschnitte}} 
-\noindent\hspace{2mm}1.\ \textbf{2.1 Drei Nicht-Verhandelbare Bedingungen} — Leos QA-Constraints als harte Designregeln mit Veto-Recht. Bloodborne Insight als Goldstandard, Skyrim Vampirismus als Anti-Referenz.\\
-\noindent\hspace{2mm}2.\ \textbf{2.3 Stufen-Mapping: Mechanik x Narrativ x Wahrnehmung} — Synchronisation von fuenf mechanischen Stufen mit Namis drei narra\\
-\noindent ... [truncated]\par
-\noindent ```\par
-
-
-\noindent \textbf{RESULT} [17:42:06]:\par
-\noindent ```\par
-\noindent File created successfully at: simulation-2-test/traces/day02-scene5-darius/output.md\par
-\noindent ```\par
-
-
-\noindent \textbf{ASSISTANT} [17:42:36]:\par
-\noindent Alles erledigt. Hier die Zusammenfassung.\par
-
-\vspace{1mm}\noindent\rule{\columnwidth}{0.2pt}\vspace{1mm}
-
-\noindent \textbf{Darius Engel, Nachmittags-Block, Tag 2.}\par
-
-\noindent GDD-02 ist jetzt V0.5 — kein Skelett mehr, aber auch noch kein Volltext. Die Strukturen stehen, die harten Constraints sind drin, die offenen Fragen sind weniger geworden.\par
-
-\vspace{1mm}\noindent\textbf{\textit{Was ich gemacht habe}}\par
-
-\noindent \textbf{Datei:} \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/gallery/gdd/02-kernmechaniken.md}\par
-
-\noindent\textbf{\textit{Leos QA-Input integriert}} 
-\noindent Die drei nicht-verhandelbaren Bedingungen stehen jetzt als Abschnitt 2.1 direkt unter der Systemuebersicht — mit Veto-Recht ueber alle Schattenfieber-Designentscheidungen:\par
-
-\noindent\hspace{2mm}1.\ \textbf{Transparenz VOR Infektion} — der Spieler weiss immer, was seinen Wert erhoehen kann. Bloodborne Insight als Goldstandard, Skyrim Vampirismus als Anti-Referenz.\\
-\noindent\hspace{2mm}2.\ \textbf{Sofortige Power Fantasy NACH Infektion} — ab dem ersten Punkt muss etwas Cooles passieren. Kein "Stufe 1 ist nur Nachteile".\\
-\noindent\hspace{2mm}3.\ \textbf{Kein versehentliches Infizieren} — jeder Punkt muss auf eine bewusste Entscheidung zurueckfuehrbar sein. Design-Test: Wenn ein Spieler nach 20 Stunden sagt "Ich wollte Stufe 0 bleiben, aber bin irgendwie Stufe 2" — dann haben wir versagt.\\
-
-\noindent Dazu eine \textbf{QA-Risikomatrix} (Abschnitt 6.5) mit sechs identifizierten Risiken und Mitigationsstrategien.\par
-
-\noindent\textbf{\textit{Stufen-Mapping mit Nami}} 
-\noindent Neuer Abschnitt 2.3 synchronisiert meine fuenf mechanischen Stufen (0-4) mit Namis drei narrativen Zustaenden (Rauschen/Risse/Schwelle). Die Tabelle zeigt jetzt pro Stufe: Wert, Name, narrativer Zustand, Kern-Fantasie, zentrale Faehigkeit UND narrative Auswirkung. Stufe 2 ist die Brueckenzone zwischen Rauschen und Risse — weiche Uebergaenge, keine harten Schalter.\par
-
-\noindent\textbf{\textit{CD-Entscheidungen eingearbeitet}} 
-\noindent\hspace{2mm}\textbullet\ \textbf{Tod beeinflusst Infektionswert NICHT} (1.5, mit Begruendung)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Relikt = Lebende Krone} (neuer Abschnitt 2.7 — Biotech-Artefakt der Ur-Bindung, Fraktions-Interpretationen, Schattenfieber-Verbindung)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Eigene Namenssysteme} (neuer Abschnitt 6.1 — nordische Begriffe sind Arbeitsnamen)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Combat-Skill-Ceiling als Spektrum} (1.1, detailliert)\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Biotech-Forschung ist gefaehrlich} (4.1)\\
-
-\noindent\textbf{\textit{Neue Systemantworten}} 
-\noindent\hspace{2mm}\textbullet\ \textbf{Schutz-Alchemie} als neue Produktkategorie (4.2) — Stufe-0-Spieler brauchen taktische Werkzeuge gegen Infektion\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Stufe-0-Aequivalente} als neue Spalte in der Kosten-Nutzen-Matrix (2.5) — jede Schattenfaehigkeit hat eine nicht-infizierte Alternative\\
-\noindent\hspace{2mm}\textbullet\ \textbf{Transparenz-UI} (2.8) — funktionale Anforderungen fuer Vera\\
-
-\vspace{1mm}\noindent\textbf{\textit{Traces}}\par
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-darius/prompt.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-darius/reasoning.md}\\
-\noindent\hspace{2mm}\textbullet\ \texttt{/Users/jennifer/Documents/GitHub/gensoftworks/simulation-2-test/traces/day02-scene5-darius/output.md}\\
-
-\vspace{1mm}\noindent\textbf{\textit{Offene Abhaengigkeiten fuer morgen}}\par
-\noindent Die groessten Blocker sind jetzt Emres Namenssystem-Framework und das Interaktionsdesign fuer die Lebende Krone. Vera braucht die UI-Anforderungen fuer Wireframes. Leo und ich muessen ab Mittwoch das Balancing-Framework durchrechnen — die Aequivalent-Tabelle ist die Grundlage, aber sie muss durchgespielt werden.\par
-
-\end{multicols}
-\endgroup
-```
 

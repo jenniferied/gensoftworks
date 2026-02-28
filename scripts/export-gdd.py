@@ -4,11 +4,14 @@ Export GenSoftworks GDD chapters as a single PDF.
 
 Scans gallery/gdd/ for versioned chapter files (KK-titel-vN.md),
 picks the highest version per chapter, concatenates into one Markdown
-document, and compiles via Pandoc + LuaLaTeX.
+document, and compiles via Pandoc + XeLaTeX.
+
+Auto-detects the next PDF version (v0.1, v0.2, …) from existing exports.
 
 Usage:
-    python scripts/export-gdd.py --sim-dir simulation-2-test
-    python scripts/export-gdd.py --sim-dir simulation-2-test --md-only
+    python scripts/export-gdd.py --sim-dir simulation-2
+    python scripts/export-gdd.py --sim-dir simulation-2 --md-only
+    python scripts/export-gdd.py --sim-dir simulation-2 --version v0.3
 """
 
 import argparse
@@ -20,15 +23,9 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent
 
-# Chapter order (canonical GDD structure)
-GDD_CHAPTERS = [
-    "01-spieluebersicht",
-    "02-kernmechaniken",
-    "03-erzaehlkonzept",
-    "04-schluesselfiguren",
-    "05-designsprache",
-    "06-technik-produktion",
-]
+# Filename base (without version)
+BASE_PREFIX = "Meier_KIComputerRollenspiele_AnhangB_GDD"
+ANHANG_LABEL = "Anhang B"
 
 
 def find_chapters(gallery_dir: Path) -> list[tuple[str, Path]]:
@@ -55,6 +52,32 @@ def find_chapters(gallery_dir: Path) -> list[tuple[str, Path]]:
         result.append((chapter_id, best[1]))
 
     return result
+
+
+def detect_next_version(export_dir: Path) -> str:
+    """Detect next PDF version by scanning existing exports.
+
+    Looks for files matching BASE_PREFIX_v{X.Y}_2026.{md,pdf} and returns
+    the next incremented version string (e.g. "v0.2" if v0.1 exists).
+    """
+    version_re = re.compile(
+        re.escape(BASE_PREFIX) + r"_v(\d+\.\d+)_\d{4}\."
+    )
+    versions: list[str] = []
+
+    if export_dir.exists():
+        for f in export_dir.iterdir():
+            m = version_re.search(f.name)
+            if m:
+                versions.append(m.group(1))
+
+    if not versions:
+        return "v0.1"
+
+    max_v = max(set(versions),
+                key=lambda v: tuple(int(x) for x in v.split(".")))
+    parts = max_v.split(".")
+    return f"v{parts[0]}.{int(parts[1]) + 1}"
 
 
 def strip_meta(content: str) -> str:
@@ -197,7 +220,8 @@ def strip_meta(content: str) -> str:
     return "\n".join(result).strip()
 
 
-def build_markdown(gallery_dir: Path, doc_title: str) -> str:
+def build_markdown(gallery_dir: Path, doc_title: str,
+                   subtitle: str) -> str:
     """Concatenate chapter files into a single Markdown document."""
     chapters = find_chapters(gallery_dir)
 
@@ -208,6 +232,8 @@ def build_markdown(gallery_dir: Path, doc_title: str) -> str:
     lines = []
     lines.append("---")
     lines.append(f'title: "{doc_title}"')
+    lines.append(f'subtitle: "{subtitle}"')
+    lines.append(f'short-title: "GDD"')
     lines.append('author: "GenSoftworks Studio Simulation"')
     lines.append('date: "2026"')
     lines.append("lang: german")
@@ -226,57 +252,34 @@ def build_markdown(gallery_dir: Path, doc_title: str) -> str:
     return "\n".join(lines)
 
 
-def build_pdf(md_path: Path, output_path: Path, header_path: Path,
+def build_pdf(md_path: Path, output_path: Path, template_path: Path,
               tex_only: bool = False) -> int:
-    """Convert Markdown to PDF via Pandoc + LuaLaTeX."""
+    """Convert Markdown to PDF via Pandoc + XeLaTeX."""
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
         fontpath = str((PROJECT_ROOT / "assets" / "fonts").resolve()) + "/"
 
-        # Patch header template with absolute font/icon paths
-        icons_dir = str((PROJECT_ROOT / "assets" / "icons").resolve()) + "/"
-        header_text = header_path.read_text()
-        header_text = header_text.replace(
+        # Patch template with absolute font path
+        template_text = template_path.read_text()
+        template_text = template_text.replace(
             "Path = ../assets/fonts/,",
             f"Path = {fontpath},",
         )
-        header_text = header_text.replace(
-            "{icons/",
-            "{" + icons_dir,
+        template_text = template_text.replace(
+            "\\def\\fontpath{../assets/fonts/}",
+            f"\\def\\fontpath{{{fontpath}}}",
         )
-        patched_header = tmp_path / "header.tex"
-        patched_header.write_text(header_text)
+        patched_template = tmp_path / "document.tex"
+        patched_template.write_text(template_text)
 
-        output = str(output_path.with_suffix(".tex") if tex_only
-                     else output_path.with_suffix(".pdf"))
+        # Use string concat — .with_suffix() mangles names with dots (v0.2)
+        output = str(output_path) + (".tex" if tex_only else ".pdf")
         cmd = [
             "pandoc",
             str(md_path),
             "-o", output,
-            f"--include-in-header={patched_header}",
+            f"--template={patched_template}",
             "--pdf-engine=xelatex",
-            "--toc",
-            "--toc-depth=3",
-            "-V", "mainfont=OpenSans",
-            "-V", (f"mainfontoptions=Path={fontpath},"
-                   "UprightFont=OpenSans-Variable.ttf,"
-                   "ItalicFont=OpenSans-Italic-Variable.ttf,"
-                   "BoldFont=OpenSans-Variable.ttf,"
-                   "BoldItalicFont=OpenSans-Italic-Variable.ttf,"
-                   "BoldFeatures={Weight=700}"),
-            "-V", "sansfont=OpenSans",
-            "-V", (f"sansfontoptions=Path={fontpath},"
-                   "UprightFont=OpenSans-Variable.ttf,"
-                   "ItalicFont=OpenSans-Italic-Variable.ttf,"
-                   "BoldFont=OpenSans-Variable.ttf,"
-                   "BoldItalicFont=OpenSans-Italic-Variable.ttf,"
-                   "BoldFeatures={Weight=700}"),
-            "-V", "monofont=JetBrainsMono",
-            "-V", (f"monofontoptions=Path={fontpath},"
-                   "UprightFont=JetBrainsMono-Variable.ttf,"
-                   "Scale=0.85"),
-            "-V", "fontsize=9pt",
-            "-V", "geometry:margin=25mm",
         ]
 
         print(f"  Building: {md_path.name} -> {Path(output).name}")
@@ -297,7 +300,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Export GenSoftworks GDD as PDF")
     parser.add_argument("--sim-dir", type=str, required=True,
-                        help="Simulation directory (e.g. simulation-2-test)")
+                        help="Simulation directory (e.g. simulation-2)")
     parser.add_argument("--md-only", action="store_true",
                         help="Generate Markdown only")
     parser.add_argument("--tex-only", action="store_true",
@@ -306,12 +309,14 @@ def main() -> int:
                         help="Override output directory")
     parser.add_argument("--output-name", type=str, default=None,
                         help="Override output filename (without extension)")
+    parser.add_argument("--version", type=str, default=None,
+                        help="Override PDF version (e.g. v0.2)")
     args = parser.parse_args()
 
     sim_root = PROJECT_ROOT / args.sim_dir
     gallery_dir = sim_root / "gallery" / "gdd"
     export_dir = sim_root / "export"
-    header_path = PROJECT_ROOT / "templates" / "logbook-header.tex"
+    template_path = PROJECT_ROOT / "templates" / "document.tex"
 
     if not gallery_dir.exists():
         print(f"Gallery directory not found: {gallery_dir}")
@@ -325,11 +330,22 @@ def main() -> int:
     for chapter_id, path in chapters:
         print(f"    {path.name}")
 
-    doc_title = "RELICS — Game Design Document"
-    md_content = build_markdown(gallery_dir, doc_title)
-
+    # Determine version
     export_dir.mkdir(parents=True, exist_ok=True)
-    base_name = args.output_name or "Meier_KIComputerRollenspiele_AnhangB_GDD_v0.1_2026"
+    if args.version:
+        version = args.version
+    elif args.output_name:
+        version = "v0.1"  # manual name overrides auto-detection
+    else:
+        version = detect_next_version(export_dir)
+
+    print(f"  Version: {version}")
+
+    doc_title = "RELICS — Game Design Document"
+    subtitle = f"{ANHANG_LABEL} · {version}"
+    md_content = build_markdown(gallery_dir, doc_title, subtitle)
+
+    base_name = args.output_name or f"{BASE_PREFIX}_{version}_2026"
     md_path = export_dir / f"{base_name}.md"
     md_path.write_text(md_content)
     print(f"  Markdown: {md_path}")
@@ -344,7 +360,8 @@ def main() -> int:
         pdf_dir = export_dir
 
     output_path = pdf_dir / base_name
-    return build_pdf(md_path, output_path, header_path, tex_only=args.tex_only)
+    return build_pdf(md_path, output_path, template_path,
+                     tex_only=args.tex_only)
 
 
 if __name__ == "__main__":

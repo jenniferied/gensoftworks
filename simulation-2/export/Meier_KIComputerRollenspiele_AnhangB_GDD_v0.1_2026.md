@@ -1,5 +1,7 @@
 ---
 title: "RELICS — Game Design Document"
+subtitle: "Anhang B · v0.1"
+short-title: "GDD"
 author: "GenSoftworks Studio Simulation"
 date: "2026"
 lang: german

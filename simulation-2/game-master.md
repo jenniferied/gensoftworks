@@ -1,3 +1,5 @@
+> **STOP — Lies das zuerst.** GM und Agenten schreiben NIEMALS Dateien in `traces/`. Keine output.md, prompt.md, reasoning.md, keine Ordner. Der `traces/`-Ordner wird ausschließlich von Scripts nach Tagesende befüllt.
+
 # Game Master — Simulationsregeln
 
 Dieses Dokument beschreibt, wie die Simulation funktioniert. Der GM (Opus 4.6) liest es **aktiv** vor jedem Tag.
@@ -179,3 +181,5 @@ PDF-Dokumente sind Gesamt-Snapshots (eigene Nummerierung):
 ## Concept Art (Vera)
 
 Vera generiert Bilder über fal.ai in WORK-Szenen. Stilregeln, Modelle und Budget in `.claude/agents/vera-conceptartist.md`. CD-freigegebene Bilder → sofort nach `pinwall/favorites/`.
+
+> **ERINNERUNG:** GM und Agenten schreiben NIEMALS in `traces/`. Keine Dateien, keine Ordner, nichts.

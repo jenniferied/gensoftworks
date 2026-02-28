@@ -1,5 +1,7 @@
 ---
 title: "RELICS — Worldbuilding Bible"
+subtitle: "Anhang B · v0.1"
+short-title: "WBB"
 author: "GenSoftworks Studio Simulation"
 date: "2026"
 lang: german

@@ -19,9 +19,11 @@ Usage:
 
 import argparse
 import json
+import signal
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 from PIL import Image
@@ -255,6 +257,79 @@ def esc(text):
     if not text:
         return ""
     return str(text).replace("→", "$\\rightarrow$")
+
+
+# ---------------------------------------------------------------------------
+# Screenshot Capture (auto-generate if missing)
+# ---------------------------------------------------------------------------
+
+def ensure_screenshots(screenshot_dir: Path, sim_dir_arg: str | None) -> bool:
+    """Capture screenshots via Playwright if the directory is missing or empty.
+
+    Returns True if screenshots are available afterwards, False otherwise.
+    """
+    if screenshot_dir.exists() and any(screenshot_dir.glob("day-*.png")):
+        return True  # Already have screenshots
+
+    frontend_dir = PROJECT_ROOT / "frontend"
+    capture_script = PROJECT_ROOT / "scripts" / "capture-scenes.mjs"
+    node = "node"
+
+    # Rebuild viewer data so screenshots match current logbook state
+    build_data_cmd = [
+        sys.executable, str(PROJECT_ROOT / "scripts" / "build-viewer-data.py"),
+    ]
+    if sim_dir_arg:
+        build_data_cmd += ["--sim-dir", sim_dir_arg]
+    print("  Building viewer data...")
+    subprocess.run(build_data_cmd, cwd=PROJECT_ROOT, check=True)
+
+    # capture-main.js loads data/simulation.json — ensure it points to the
+    # correct simulation data (build-viewer-data writes simulation-{name}.json)
+    import shutil
+    data_dir = frontend_dir / "public" / "data"
+    if sim_dir_arg:
+        src_json = data_dir / f"{sim_dir_arg}.json"
+        if src_json.exists():
+            shutil.copy2(src_json, data_dir / "simulation.json")
+
+    # Build frontend (includes freshly built data)
+    print("  Building frontend...")
+    subprocess.run(["npx", "vite", "build"], cwd=frontend_dir, check=True)
+
+    # Start vite preview server
+    print("  Starting preview server...")
+    preview = subprocess.Popen(
+        ["npx", "vite", "preview", "--port", "4173"],
+        cwd=frontend_dir,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+    )
+
+    try:
+        # Wait for server to be ready
+        time.sleep(3)
+
+        # Determine output dir
+        out_arg = str(screenshot_dir)
+        print(f"  Capturing screenshots to {screenshot_dir}...")
+        result = subprocess.run(
+            [node, str(capture_script), "--port", "4173", "--out", out_arg],
+            cwd=PROJECT_ROOT,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            print(f"  Screenshot capture failed:\n{result.stderr or result.stdout}")
+            return False
+        print(result.stdout.strip())
+        return screenshot_dir.exists() and any(screenshot_dir.glob("day-*.png"))
+    finally:
+        preview.terminate()
+        try:
+            preview.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            preview.kill()
 
 
 # ---------------------------------------------------------------------------
@@ -1455,21 +1530,21 @@ def main() -> int:
 
     if args.sim_dir:
         sim_root = PROJECT_ROOT / args.sim_dir
-        logbook_dir = sim_root / "logbook"
-        memories_dir = sim_root / "state" / "memories"
-        world_path = sim_root / "state" / "world.json"
-        bulletin_path = sim_root / "state" / "bulletin.json"
-        export_dir = sim_root / "export"
-        screenshot_dir = sim_root / "screenshots"
     else:
-        logbook_dir = PROJECT_ROOT / "logbook"
-        memories_dir = PROJECT_ROOT / "state" / "memories"
-        world_path = PROJECT_ROOT / "state" / "world.json"
-        bulletin_path = PROJECT_ROOT / "state" / "bulletin.json"
-        export_dir = PROJECT_ROOT / "export"
-        screenshot_dir = PROJECT_ROOT / "screenshots"
+        sim_root = PROJECT_ROOT
+    logbook_dir = sim_root / "logbook"
+    memories_dir = sim_root / "state" / "memories"
+    world_path = sim_root / "state" / "world.json"
+    bulletin_path = sim_root / "state" / "bulletin.json"
+    export_dir = sim_root / "export"
+    screenshot_dir = sim_root / "screenshots"
 
     header_path = PROJECT_ROOT / "templates" / "logbook-header.tex"
+
+    # Auto-capture screenshots if missing
+    if not screenshot_dir.exists() or not any(screenshot_dir.glob("day-*.png")):
+        print("Screenshots fehlen — erzeuge automatisch...")
+        ensure_screenshots(screenshot_dir, args.sim_dir)
 
     print("GenSoftworks Logbook Export (Vollständig)")
     print("=" * 40)
