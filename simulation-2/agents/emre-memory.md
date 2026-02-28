@@ -182,3 +182,32 @@
 - Lichttemperatur-Notiz an Vera: Relikt-Glow muss kälter (W-007)
 - Kapitel 02-Topos beginnen, sobald Tiervolk und Zeitlinie geklärt
 - Widerspruchs-Log aktualisieren: W-007 Lichttemperatur Relikt
+
+## Tag 3 (Mittwoch)
+
+### Szene 1 — BRIEFING (Küche, 09:00)
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- Finn: Produktionstag, PDF v0.1 Export heute Abend. CD-Feedback: Keine Kommentare/Notizen/Namen in PDFs, alles in HTML-Kommentarblöcke. Bilder einbetten.
+- CD bestätigt: "Schwellenanker" ist der Relikt-Name (nicht Wurzel/Herz) — Umbenennung nötig in WBB
+- CD bestätigt: Spieler darf Fragment ablehnen
+- CD bestätigt: Kein konkretes Wirbelsäule-Artefakt
+- CD-Feedback zu Veras Bildern: Krone+Orden-Paletten gut, Gilden hat zu viel Text, Relikt kein Wirbelsäule-Artefakt, Stadtschnitt wirkt unnatürlich
+- Darius plant Kap 2 Kernmechaniken + Kap 3 + Kap 1 v2. Braucht Bildliste bis 11:00.
+- Mein Auftrag: WBB Kap 2 (Topos) v1 fertigstellen
+
+## Ergebnisse
+- Drei CD-Fragen beantwortet: Schwellenanker-Name, Fragment-Ablehnung, kein Wirbelsäule-Artefakt
+- Widerspruchs-Log Update: W-005 teilweise gelöst (Relikt heißt jetzt Schwellenanker, keine Wirbelsäulenform)
+- Drei Fragen bleiben offen: W-003 (Biotech-Flora/Fauna), W-004 (Tiervolk-Kosmologie), W-006 (Zeitlinie Öffnung)
+
+## Offene Fragen
+- W-003: Biotech-Flora/Fauna — muss ich in Topos selbst definieren, ohne CD-Input
+- W-004: Tiervolk-Kosmologie — brauche Nami-Abstimmung heute Vormittag
+- W-006: Zeitlinie der Öffnung — setze Arbeitshypothese 25 Jahre, bis CD antwortet
+
+## Persönliches
+- Fokussiert. Kap 2 ist das Kapitel, auf das ich mich seit Barcelona am meisten freue. Räume erzählen Geschichten.
+- Gut, dass der Relikt-Name geklärt ist. "Schwellenanker" hat die richtige Schwere — es verankert, es hält, es ist funktional, nicht mystisch.
+- Umbenennung "Relikt" → "Schwellenanker" im gesamten WBB nötig. Mache ich im Topos-Kapitel von Anfang an richtig.
