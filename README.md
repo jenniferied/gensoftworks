@@ -64,7 +64,8 @@ Sieben Persönlichkeiten, sieben Perspektiven — jeder 🤖 Agent hat einen eig
 <img src="assets/icons/darius.png" width="64"><br>
 <strong>Darius Engel</strong><br>
 <sub>♂️ 🇩🇪</sub><br>
-<sub>🎯 Game Director</sub>
+<sub>🎯 Game Director</sub><br>
+<sub><a href=".claude/agents/darius-gamedesigner.md">Agent</a> · <a href="simulation-2-test/roster/darius-engel.md">Roster</a></sub>
 </td>
 <td>
 <em>35, Gelsenkirchen. BA Game Design (Cologne Game Lab), MA Game Studies (UdK Berlin). 4 Jahre Blue Byte.</em><br>
@@ -78,7 +79,8 @@ Pragmatisch, direkt, erfahren. Gothic-2-Devotee. Besitzt 80+ Brettspiele. Läuft
 <img src="assets/icons/emre.png" width="64"><br>
 <strong>Emre Yilmaz</strong><br>
 <sub>♂️ 🇹🇷🇩🇪</sub><br>
-<sub>🌍 Lead Worldbuilder</sub>
+<sub>🌍 Lead Worldbuilder</sub><br>
+<sub><a href=".claude/agents/emre-worldbuilder.md">Agent</a> · <a href="simulation-2-test/roster/emre-yilmaz.md">Roster</a></sub>
 </td>
 <td>
 <em>31, Duisburg. BA Geschichte (Bochum), MA Digital Humanities (Köln). GDC-Talk 2024.</em><br>
@@ -92,7 +94,8 @@ Introvertiert, obsessiv konsistent, leise stur. Kater Nerevar (Mama nennt ihn "N
 <img src="assets/icons/finn.png" width="64"><br>
 <strong>Finn Bergmann</strong><br>
 <sub>♂️ 🇩🇪</sub><br>
-<sub>📋 Producer</sub>
+<sub>📋 Producer</sub><br>
+<sub><a href=".claude/agents/finn-producer.md">Agent</a> · <a href="simulation-2-test/roster/finn-bergmann.md">Roster</a></sub>
 </td>
 <td>
 <em>30, Hamburg. BA Medienmanagement (HAW Hamburg). Ex FKP Scorpio (Hurricane, Deichbrand).</em><br>
@@ -106,7 +109,8 @@ Entspannt, anti-autoritär, effizient. Macht jeden Morgen den Studiokaffee. Viny
 <img src="assets/icons/vera.png" width="64"><br>
 <strong>Vera Kowalski</strong><br>
 <sub>♀️ 🇵🇱🇩🇪</sub><br>
-<sub>🎨 Concept Artist</sub>
+<sub>🎨 Concept Artist</sub><br>
+<sub><a href=".claude/agents/vera-conceptartist.md">Agent</a> · <a href="simulation-2-test/roster/vera-kowalski.md">Roster</a></sub>
 </td>
 <td>
 <em>28, Aachen → Köln. BA Architektur (RWTH), MA Game Arts (Cologne Game Lab). SIGGRAPH Art Gallery 2024.</em><br>
@@ -120,7 +124,8 @@ Visuell impulsiv, direkt, kompetitiv mit sich selbst. Pendelt Di–Do aus Köln.
 <img src="assets/icons/tobi.png" width="64"><br>
 <strong>Tobi Richter</strong><br>
 <sub>♂️ 🇩🇪</sub><br>
-<sub>⚙️ Technical Artist</sub>
+<sub>⚙️ Technical Artist</sub><br>
+<sub><a href=".claude/agents/tobi-techart.md">Agent</a> · <a href="simulation-2-test/roster/tobi-richter.md">Roster</a></sub>
 </td>
 <td>
 <em>32, Lemgo. BA Medienproduktion (TH OWL). 2 Jahre XRIS Studio Seoul. SIGGRAPH-Veteran.</em><br>
@@ -134,7 +139,8 @@ Methodisch, ruhig, trockener Humor. Liest Whitepapers zum Spaß. Sein Custom-Key
 <img src="assets/icons/nami.png" width="64"><br>
 <strong>Nami Okafor</strong><br>
 <sub>♀️ 🇳🇬🇩🇪</sub><br>
-<sub>✍️ Narrative Designer</sub>
+<sub>✍️ Narrative Designer</sub><br>
+<sub><a href=".claude/agents/nami-narrativedesigner.md">Agent</a> · <a href="simulation-2-test/roster/nami-okafor.md">Roster</a></sub>
 </td>
 <td>
 <em>29, Hamburg → Bielefeld. BA Film Studies (Madrid), MA Creative Writing (Mittweida, Note 1.0).</em><br>
@@ -148,7 +154,8 @@ Poetisch, detail-besessen, selbstkritisch. Liest Dialoge laut vor. Zwei Katzen: 
 <img src="assets/icons/leo.png" width="64"><br>
 <strong>Leo Fischer</strong><br>
 <sub>♀️ 🇩🇪🇮🇷</sub><br>
-<sub>🎬 QA Lead & Content Creator</sub>
+<sub>🎬 QA Lead & Content Creator</sub><br>
+<sub><a href=".claude/agents/leo-qa.md">Agent</a> · <a href="simulation-2-test/roster/leo-fischer.md">Roster</a></sub>
 </td>
 <td>
 <em>26, Bielefeld. BA Media Management (TH Köln). YouTube: LeoPlaysIndie (~47K Abonnenten).</em><br>
