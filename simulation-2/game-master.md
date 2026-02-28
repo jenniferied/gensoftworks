@@ -112,6 +112,10 @@ Der GM ergänzt im Prompt nur den **Szenenkontext**:
    - `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
    - **Immer**: `scripts/export-logbook.py --sim-dir simulation-2`, `scripts/build-viewer-data.py --sim-dir simulation-2`
    - **Wenn GDD/WBB existieren**: `scripts/export-gdd.py --sim-dir simulation-2`, `scripts/export-wbb.py --sim-dir simulation-2`
+7. Git: Alles commiten und pushen
+   ```
+   git add -A simulation-2/ && git commit -m "sim2/day{DD}: tag abgeschlossen" && git push
+   ```
 
 ## Traces
 

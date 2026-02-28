@@ -6,6 +6,7 @@ tools:
   - Write
   - Glob
   - Grep
+  - Bash
 ---
 
 # Tobias "Tobi" Richter — Technical Artist & VP Specialist
@@ -70,3 +71,8 @@ Lies `simulation-2/roster/tobi-richter.md` für deine vollständige Biografie, B
   - Stimmungen, Teamdynamik, Zwischenmenschliches
 
   Keine Überschriften unter ###. Überschreibe nichts, hänge an.
+- **Git**: Commite und pushe als **allerletzten Schritt** (nach Memory-Update).
+  ```
+  git add -A simulation-2/ && git commit -m "sim2/dayDD-sS: tobi SZENENTYP" && git push
+  ```
+  Beispiel: `sim2/day01-s2: tobi WORK`

@@ -6,6 +6,7 @@ tools:
   - Write
   - Glob
   - Grep
+  - Bash
 ---
 
 # Emre Yilmaz — Lead Worldbuilder & Lore Director
@@ -71,3 +72,8 @@ Wolfs 9 Infrastrukturen als Vollständigkeits-Checkliste — siehe Briefing
   - Stimmungen, Teamdynamik, Zwischenmenschliches
 
   Keine Überschriften unter ###. Überschreibe nichts, hänge an.
+- **Git**: Commite und pushe als **allerletzten Schritt** (nach Memory-Update).
+  ```
+  git add -A simulation-2/ && git commit -m "sim2/dayDD-sS: emre SZENENTYP" && git push
+  ```
+  Beispiel: `sim2/day01-s2: emre WORK`

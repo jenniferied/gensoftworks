@@ -27,7 +27,7 @@
 
 Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.de/) (Medienproduktion) und untersucht, wie multi-agentenbasierte 🧠 KI-Systeme kreativ kollaborieren — inspiriert von generativen Agenten-Architekturen aus der aktuellen 📚 Forschung.
 
-> Die Agenten sprechen 🇩🇪 Deutsch, haben eigene Persönlichkeiten, Meinungen, Arbeitsplätze und Tagesrhythmen. Sie streiten, einigen sich, entwerfen Mechaniken und bauen Welten — sechs Szenen am Tag, fünf Tage die Woche.
+> Die Agenten sprechen 🇩🇪 Deutsch, haben eigene Persönlichkeiten, Meinungen, Arbeitsplätze und Tagesrhythmen. Sie streiten, einigen sich, entwerfen Mechaniken und bauen Welten — fünf Szenen am Tag, fünf Tage die Woche.
 
 ---
 
@@ -67,7 +67,7 @@ Sieben Persönlichkeiten, sieben Perspektiven — jeder 🤖 Agent hat einen eig
 <strong>Darius Engel</strong><br>
 <sub>♂️ 🇩🇪</sub><br>
 <sub>🎯 Game Director</sub><br>
-<sub><a href=".claude/agents/darius-gamedesigner.md">Agent</a> · <a href="simulation-2-test/roster/darius-engel.md">Roster</a></sub>
+<sub><a href=".claude/agents/darius-gamedesigner.md">Agent</a> · <a href="simulation-2/roster/darius-engel.md">Roster</a></sub>
 </td>
 <td>
 <em>35, Gelsenkirchen. BA Game Design (Cologne Game Lab), MA Game Studies (UdK Berlin). 4 Jahre Blue Byte.</em><br>
@@ -82,7 +82,7 @@ Pragmatisch, direkt, erfahren. Gothic-2-Devotee. Besitzt 80+ Brettspiele. Läuft
 <strong>Emre Yilmaz</strong><br>
 <sub>♂️ 🇹🇷🇩🇪</sub><br>
 <sub>🌍 Lead Worldbuilder</sub><br>
-<sub><a href=".claude/agents/emre-worldbuilder.md">Agent</a> · <a href="simulation-2-test/roster/emre-yilmaz.md">Roster</a></sub>
+<sub><a href=".claude/agents/emre-worldbuilder.md">Agent</a> · <a href="simulation-2/roster/emre-yilmaz.md">Roster</a></sub>
 </td>
 <td>
 <em>31, Duisburg. BA Geschichte (Bochum), MA Digital Humanities (Köln). GDC-Talk 2024.</em><br>
@@ -97,7 +97,7 @@ Introvertiert, obsessiv konsistent, leise stur. Kater Nerevar (Mama nennt ihn "N
 <strong>Finn Bergmann</strong><br>
 <sub>♂️ 🇩🇪</sub><br>
 <sub>📋 Producer</sub><br>
-<sub><a href=".claude/agents/finn-producer.md">Agent</a> · <a href="simulation-2-test/roster/finn-bergmann.md">Roster</a></sub>
+<sub><a href=".claude/agents/finn-producer.md">Agent</a> · <a href="simulation-2/roster/finn-bergmann.md">Roster</a></sub>
 </td>
 <td>
 <em>30, Hamburg. BA Medienmanagement (HAW Hamburg). Ex FKP Scorpio (Hurricane, Deichbrand).</em><br>
@@ -112,7 +112,7 @@ Entspannt, anti-autoritär, effizient. Macht jeden Morgen den Studiokaffee. Viny
 <strong>Vera Kowalski</strong><br>
 <sub>♀️ 🇵🇱🇩🇪</sub><br>
 <sub>🎨 Concept Artist</sub><br>
-<sub><a href=".claude/agents/vera-conceptartist.md">Agent</a> · <a href="simulation-2-test/roster/vera-kowalski.md">Roster</a></sub>
+<sub><a href=".claude/agents/vera-conceptartist.md">Agent</a> · <a href="simulation-2/roster/vera-kowalski.md">Roster</a></sub>
 </td>
 <td>
 <em>28, Aachen → Köln. BA Architektur (RWTH), MA Game Arts (Cologne Game Lab). SIGGRAPH Art Gallery 2024.</em><br>
@@ -127,7 +127,7 @@ Visuell impulsiv, direkt, kompetitiv mit sich selbst. Pendelt Di–Do aus Köln.
 <strong>Tobi Richter</strong><br>
 <sub>♂️ 🇩🇪</sub><br>
 <sub>⚙️ Technical Artist</sub><br>
-<sub><a href=".claude/agents/tobi-techart.md">Agent</a> · <a href="simulation-2-test/roster/tobi-richter.md">Roster</a></sub>
+<sub><a href=".claude/agents/tobi-techart.md">Agent</a> · <a href="simulation-2/roster/tobi-richter.md">Roster</a></sub>
 </td>
 <td>
 <em>32, Lemgo. BA Medienproduktion (TH OWL). 2 Jahre XRIS Studio Seoul. SIGGRAPH-Veteran.</em><br>
@@ -142,7 +142,7 @@ Methodisch, ruhig, trockener Humor. Liest Whitepapers zum Spaß. Sein Custom-Key
 <strong>Nami Okafor</strong><br>
 <sub>♀️ 🇳🇬🇩🇪</sub><br>
 <sub>✍️ Narrative Designer</sub><br>
-<sub><a href=".claude/agents/nami-narrativedesigner.md">Agent</a> · <a href="simulation-2-test/roster/nami-okafor.md">Roster</a></sub>
+<sub><a href=".claude/agents/nami-narrativedesigner.md">Agent</a> · <a href="simulation-2/roster/nami-okafor.md">Roster</a></sub>
 </td>
 <td>
 <em>29, Hamburg → Bielefeld. BA Film Studies (Madrid), MA Creative Writing (Mittweida, Note 1.0).</em><br>
@@ -157,7 +157,7 @@ Poetisch, detail-besessen, selbstkritisch. Liest Dialoge laut vor. Zwei Katzen: 
 <strong>Leo Fischer</strong><br>
 <sub>♀️ 🇩🇪🇮🇷</sub><br>
 <sub>🎬 QA Lead & Content Creator</sub><br>
-<sub><a href=".claude/agents/leo-qa.md">Agent</a> · <a href="simulation-2-test/roster/leo-fischer.md">Roster</a></sub>
+<sub><a href=".claude/agents/leo-qa.md">Agent</a> · <a href="simulation-2/roster/leo-fischer.md">Roster</a></sub>
 </td>
 <td>
 <em>26, Bielefeld. BA Media Management (TH Köln). YouTube: LeoPlaysIndie (~47K Abonnenten).</em><br>
@@ -190,40 +190,42 @@ Die Agenten arbeiten an **RELICS** — einem 🎮 Fantasy-Computer-Rollenspiel m
 
 ```
                ┌─────────────┐
-               │   Game Master│  ← Claude Opus 4.6 (Orchestrator)
-               │   (GM)       │
+               │  Game Master │  ← Claude Opus 4.6 (Orchestrator)
+               │     (GM)     │
                └──────┬──────┘
-                      │ spawnt Agenten, schreibt Logbuch,
-                      │ aktualisiert Erinnerungen
+                      │ spawnt Agenten, schreibt Logbuch
+                      │
         ┌─────────────┼─────────────┐
         ▼             ▼             ▼
    ┌─────────┐  ┌─────────┐  ┌─────────┐
-   │ Agent 1 │  │ Agent 2 │  │  ...  7  │  ← Claude Sonnet 4.6
-   │(Sonnet) │  │(Sonnet) │  │ (Sonnet) │
+   │  Emre   │  │ Darius  │  │Finn/Leo │  ← Modell-Mix
+   │ (Opus)  │  │(Sonnet) │  │ (Haiku) │
    └─────────┘  └─────────┘  └─────────┘
+   Emre: Opus | Darius, Nami, Vera, Tobi: Sonnet | Finn, Leo: Haiku
 ```
 
-### 🕐 Tagesablauf (6 Szenen)
+### 🕐 Tagesablauf (5 Szenen)
 
 | Szene | Zeit | Typ | Wer | Was |
 |:---:|:---:|---|---|---|
 | 1 | 09:00 | 📣 **Briefing** | Alle 7 | CD-Feedback + Tagesziele |
 | 2 | 10:00 | 💻 **Arbeit** | Alle 7 | Parallele Produktion |
-| 3 | 11:30 | 🗣️ **Meeting** | Alle 7 | Standup: Ergebnisse, Fragen |
-| 4 | 12:30 | ☕ **Pause** | 2–3 | Soziales, Spontanes |
-| 5 | 14:00 | 💻 **Arbeit** | Alle 7 | Parallele Produktion |
-| 6 | 16:00 | 🔍 **Review** | Alle 7 | Ergebnisse präsentieren |
+| 3 | 13:00 | 🗣️ **Meeting** | Alle 7 | Standup: Ergebnisse, Fragen |
+| 4 | 14:00 | ☕ **Pause** | 2–3 | Soziales, Spontanes |
+| 5 | 15:00 | 🔍 **Review** | 3–4 | Ergebnisse präsentieren |
 
+> **Donnerstag:** Szene 5 = 🎲 D&D (Emre als DM + 2 Spieler)
+>
 > **Wochenrhythmus:** Mo/Di = Recherche & Konzeption, Mi–Fr = Produktion (V1 → V2 → V3)
 
 ### 📦 Outputs
 
 Jeder simulierte Tag produziert:
 
-- 📖 **Logbuch** — `logbook/dayDD-sceneS.json` (jede Szene dokumentiert)
-- 📊 **Tages-Summary** — `logbook/dayDD-summary.json` (Übersicht für Viewer & PDF)
-- 🔬 **Traces** — `traces/dayDD-sceneS-name/` (Rohdaten: Prompt, Reasoning, Output)
-- 📄 **Artefakte** — GDD-Kapitel, WBB-Kapitel, Concept Art Beschreibungen
+- 📖 **Logbuch** — `logbook/dayDD.json` (alle Szenen eines Tages, Metadaten + Summaries)
+- 🔬 **Traces** — `traces/dayDD-sceneS-name/` (automatische JSONL + transkribierte `transcript.md`)
+- 📄 **Artefakte** — `gallery/gdd/KK-titel-vN.md`, `gallery/wbb/KK-titel-vN.md`, Concept Art
+- 🧠 **Memory** — `agents/{name}-memory.md` (agent-owned, 4 Kategorien)
 
 ---
 
@@ -256,23 +258,28 @@ LLM-Agenten in spezialisierten Rollen (CEO, CTO, Programmierer, Tester) entwicke
 ```
 gensoftworks/
 ├── .claude/agents/          # 7 Agenten-Definitionen (Persönlichkeit, Werkzeuge)
-├── simulation-2-test/
+├── simulation-2/
 │   ├── briefing.md          # Creative Director's Vision (Nordstern)
-│   ├── agents/              # Erinnerungsdateien pro Agent
+│   ├── game-master.md       # Simulationsregeln (5 Szenen, Modell-Mix, Checklisten)
+│   ├── agents/              # Agent-owned Memory-Dateien
 │   ├── roster/              # Vollständige Biografien
-│   ├── logbook/             # Szene-für-Szene Dokumentation
+│   ├── logbook/             # Ein JSON pro Tag (dayDD.json)
 │   ├── gallery/
-│   │   ├── gdd/             # Game Design Document (6 Kapitel)
-│   │   └── wbb/             # World Building Bible (3 Kapitel)
-│   ├── traces/              # Rohdaten jeder Agenten-Interaktion
+│   │   ├── gdd/             # Game Design Document (KK-titel-vN.md)
+│   │   ├── wbb/             # World Building Bible (KK-titel-vN.md)
+│   │   └── concepts/        # Concept Art (Vera, fal.ai)
+│   ├── traces/              # Automatische JSONL + transkribierte Transcripts
+│   ├── pinwall/             # ROADMAP.md + COMPLETED.md (Agenten-Taskboard)
 │   └── state/               # Simulationszustand (world.json)
+├── simulation-1/            # Archiv Simulation 1 (5 Tage, 25 Szenen)
 ├── frontend/                # Phaser.js Pixel-Art Viewer
 ├── library/
 │   ├── papers/              # Akademische Referenzen
 │   ├── gdds/                # Referenz-GDDs (Deus Ex, Fallout, ...)
 │   ├── artbooks/            # Referenz-Artbooks (Witcher, Skyrim, ...)
 │   └── wbbs/                # Referenz-WBBs (DOOM Bible, Fallout Bible, ...)
-├── scripts/                 # Build-Scripts (Logbuch-Export, Viewer-Daten)
+├── scripts/                 # Build-Scripts (Validator, Export, Viewer-Daten)
+├── schemas/                 # JSON-Schemas (day-index.json)
 └── assets/icons/            # Agenten-Avatare (Pixel Art)
 ```
 

@@ -6,6 +6,7 @@ tools:
   - Write
   - Glob
   - Grep
+  - Bash
 ---
 
 # Nami Okafor — Narrative Designer & Writer
@@ -69,3 +70,8 @@ Lies `simulation-2/roster/nami-okafor.md` für deine vollständige Biografie, Be
   - Stimmungen, Teamdynamik, Zwischenmenschliches
 
   Keine Überschriften unter ###. Überschreibe nichts, hänge an.
+- **Git**: Commite und pushe als **allerletzten Schritt** (nach Memory-Update).
+  ```
+  git add -A simulation-2/ && git commit -m "sim2/dayDD-sS: nami SZENENTYP" && git push
+  ```
+  Beispiel: `sim2/day01-s2: nami WORK`
