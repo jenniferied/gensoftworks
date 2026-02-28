@@ -34,8 +34,8 @@
 |-------|---------|--------|----------|----------|
 | **Darius** | GDD Kap 1–2: Spielübersicht, Mechaniken + 4 Fragen | Design Foundation | Di 17:00 | ✅ GDD 1 geliefert, Fragen geklärt |
 | **Nami** | WBB Kap 1: Mythos-Outline (3 Fraktions-Erzählungen) | Narrative Foundation | Mi 15:00 | ✅ WBB 1 geliefert |
-| **Emre** | WBB Kap 2: Topos-Foundation | World Foundation | Mi 15:00 | 🔵 In Progress |
-| **Vera** | Materialpalette-Finalisierung, dann 12:30 Notiz erhalten | Visual Foundation | Di 12:30 Notiz | ✅ Prompts vorbereitet, Rendering läuft |
+| **Emre** | WBB Kap 2: Topos-Foundation | World Foundation | Mi 15:00 | ✅ WBB 2 geliefert |
+| **Vera** | Materialpalette-Finalisierung, dann 12:30 Notiz erhalten | Visual Foundation | Di 12:30 Notiz | ✅ 9 Concept-Art-Bilder generiert |
 | **Tobi** | Tech Research: Release-Modell, Engine, Monetarisierung | Tech Foundation | Mi 15:00 | ✅ GDD Kap 6 v1 geliefert |
 | **Leo** | QA Framework: Wolf-Checkliste, Konsistenz-Kriterien | Process Foundation | Mi 17:00 | ✅ Checklisten geliefert |
 | **Finn** | Notiz für Vera vorbereiten | Roadmap Update | Di 12:30 | ✅ Done |
@@ -59,7 +59,7 @@
 
 ---
 
-### Mittwoch (🔵 IN PROGRESS): Production & Cleanup
+### Mittwoch (✅ Abgeschlossen): Production & Cleanup
 
 **Modus:** Cleanup + Polish, HTML-Kommente entfernen, Vera-Bilder integrieren, v0.1 Ready für Export
 
@@ -74,44 +74,63 @@
 
 #### 10:00–15:00 — WORK Block (parallel)
 
-| Agent | Aufgabe | Output | Ziel | 🔵 Status |
+| Agent | Aufgabe | Output | Ziel | ✅ Status |
 |-------|---------|--------|------|----------|
-| **Darius** | Finalisiert GDD Kap 1–3, integriert Vera-Bilder in Kap 5, räumt HTML-Kommentare auf | `.md` | Mi 15:00 | 🔵 In Progress |
-| **Nami** | Finalisiert WBB Kap 1 + Materialpaletten in Mythos/Ethos, räumt auf | `.md` | Mi 15:00 | 🔵 In Progress |
-| **Emre** | Finalisiert WBB Kap 2 (Topos), räumt auf | `.md` | Mi 15:00 | ⏳ Pending |
-| **Vera** | Gilden-Palette Text kürzen, letzte Renders, räumt Metadaten auf | `.png` | Mi 17:00 | 🔵 In Progress |
-| **Tobi** | Finalisiert GDD Kap 6, räumt HTML-Kommentare auf | `.md` | Mi 15:00 | ⏳ Pending |
-| **Leo** | Konsistenz-Prüfung v0.1, erstellt Feedback-Liste | `.md` (Bericht) | Mi 18:00 | 🔵 In Progress |
-| **Finn** | **Koordiniert Handoffs**, checkt Bilder-Integration, validiert gegen Briefing, aktualisiert ROADMAP & COMPLETED | Status | Mi 18:00 | 🔵 ACTIVE |
+| **Darius** | Finalisiert GDD Kap 1–3, integriert Vera-Bilder in Kap 5, räumt HTML-Kommentare auf | `.md` | Mi 15:00 | ✅ Delivered |
+| **Nami** | Finalisiert WBB Kap 1 + Materialpaletten in Mythos/Ethos, räumt auf | `.md` | Mi 15:00 | ✅ Delivered |
+| **Emre** | Finalisiert WBB Kap 2 (Topos), räumt auf | `.md` | Mi 15:00 | ✅ Delivered |
+| **Vera** | Gilden-Palette Text kürzen, letzte Renders, räumt Metadaten auf | `.png` | Mi 17:00 | ✅ Delivered |
+| **Tobi** | Finalisiert GDD Kap 6, räumt HTML-Kommentare auf | `.md` | Mi 15:00 | ✅ Delivered |
+| **Leo** | Konsistenz-Prüfung v0.1, erstellt Feedback-Liste | `.md` (Bericht) | Mi 18:00 | ✅ Delivered |
+| **Finn** | **Koordiniert Handoffs**, checkt Bilder-Integration, validiert gegen Briefing, aktualisiert ROADMAP & COMPLETED | Status | Mi 18:00 | ✅ DONE |
 
 #### 15:00–17:00 — WORK Block (Sprintpause)
 - Optional: Refinement auf Feedback
 
 #### 17:00 — MEETING (Küche)
-- **Checkpoint:** Alle v0.1 Drafts fertig? Blocker identifizieren?
+- ✅ **Checkpoint:** Alle v0.1 Drafts fertig? Blockers identifizieren?
 
 #### 18:00 — PDF v0.1 exportieren
-- **GDD v0.1:** Kap 1–3, 4, 6 (5 = Do)
-- **WBB v0.1:** Kap 1, 2 (3 = Do)
-- **Concept Art:** 9 Renders (Relikt-States, Fraktions-Paletten, Stadtschnitt-optional)
+- ✅ **GDD v0.1:** Kap 1–3, 4, 6 (5 = Do)
+- ✅ **WBB v0.1:** Kap 1, 2 (3 = Do)
+- ✅ **Concept Art:** 9 Renders (Relikt-States, Fraktions-Paletten)
 
 ---
 
-### Donnerstag (⏳ PENDING): Vertiefung & Konsistenz
+### Donnerstag (🔵 IN PROGRESS): Vertiefung & Konsistenz
 
-**Modus:** Leo-Feedback integrieren, v0.2 Build
+**Modus:** Leo-Feedback integrieren, v0.2 Build + Seitenkürzen
 
-| Agent | Aufgabe | Output | Ziel |
-|-------|---------|--------|------|
-| **Darius** | GDD Kap 5: Art Direction (unter Vera-Input) | `.md` | Do 15:00 |
-| **Nami** | WBB Kap 3: Ethos (Völker, Kulturen, Alltagsleben) + Fraktions-Deep-Dive | `.md` | Do 15:00 |
-| **Emre** | Geographie verfeinern, Wolf-Infrastrukturen abdecken | `.md` | Do 15:00 |
-| **Vera** | Concept Art v0.2 (Iteration: +5–10 Bilder, Stadtschnitt v1 neu) | `.png` | Do 17:00 |
-| **Tobi** | Release-Roadmap, Monetarisierung, Timeline | `.md` | Do 15:00 |
-| **Leo** | Zweiter QA-Pass, Cross-Referenzen, Lücken identifizieren | `.md` (Bericht) | Do 18:00 |
-| **Finn** | Aggregation, Konsistenz-Audit, Final-Review-Liste vorbereiten | Status | Do 19:00 |
+#### 09:00 — BRIEFING (CD-Input für Do/Fr)
+**Themen:**
+- v0.1 Export erfolgreich abgeschlossen
+- **Seitenbudget:** Ziel ist max 60 Seiten pro Dokument (GDD + WBB derzeit 70–85 Seiten)
+- **Cleanup-Aktion:** Autorenerwähnungen, Checklisten, manche Anhänge entfernen oder in HTML-Kommentare
+- **Bilder:** Vera hat $5 Budget → mehr Konzepte (Tiervolk, Environment, Relikt-Hero v2)
+- **CD-Clarifications:** Tiervolk = Symbiose, Zeitlinie = Covid-Analogie, Schattenfieber = Körperreaktion
 
-**PDF v0.2 um Donnerstag 21:00:** GDD + WBB (+ Concept Art, erweitert)
+#### 10:00–15:00 — WORK Block (parallel)
+
+| Agent | Aufgabe | Output | Ziel | Status |
+|-------|---------|--------|------|--------|
+| **Darius** | GDD Kap 5: Art Direction (Bilder komplett, Text optimiert) | `.md` | Do 15:00 | 🔵 In Progress |
+| **Nami** | WBB Kap 3: Ethos (Völker, Kulturen, Alltagsleben) + Materialpaletten-Erzählungen | `.md` | Do 15:00 | 🔵 In Progress |
+| **Emre** | WBB Kap 2 kürzen, Geographie verfeinern, Wolf-Infrastrukturen abdecken | `.md` | Do 15:00 | 🔵 In Progress |
+| **Vera** | Concept Art v0.2 (Tiervolk-Designs, Environment-Iteration, Relikt-Hero v2 Varianten) | `.png` | Do 17:00 | 🔵 In Progress |
+| **Tobi** | GDD Kap 6 kürzen, Release-Roadmap, Monetarisierung, Timeline | `.md` | Do 15:00 | 🔵 In Progress |
+| **Leo** | Zweiter QA-Pass (Konsistenz, Cross-Referenzen, Lücken), Feedback-Liste aktualisieren | `.md` (Bericht) | Do 18:00 | 🔵 In Progress |
+| **Finn** | Seitenbudget-Audit, Ownership-Verteilung Do/Fr, Final-Review-Liste vorbereiten | Status | Do 19:00 | 🔵 ACTIVE |
+
+#### 15:00–17:00 — WORK Block (Sprintpause)
+- Optional: Leo-Feedback integrieren, kürzen
+
+#### 17:00 — MEETING (Küche)
+- **Checkpoint:** v0.2 Ready? Seitenbudget-Status? Blockers für Freitag?
+
+#### 20:00 — PDF v0.2 exportieren (Zielzeit)
+- **GDD v0.2:** Kap 1–5, 6 (alle Kapitel, gekürzt)
+- **WBB v0.2:** Kap 1–3 (alle Kapitel)
+- **Concept Art:** 9 + ~10 neue Renders (v0.2 erweitert)
 
 ---
 
@@ -119,13 +138,18 @@
 
 **Modus:** Finale Polishing, Korrektionen, Export
 
+#### 09:00 — BRIEFING (Finale CD-Input)
+- **Qualitäts-Checkpoint:** Alle Links, Bild-Referenzen, Kapitel-Nummern korrekt?
+- **Export-Standard:** PDF-Format sauber, Inhaltsverzeichnis, Seitennummern?
+
+#### 10:00–14:00 — WORK Block (Fehlerkorrektur)
 | Agent | Aufgabe | Output | Ziel |
 |-------|---------|--------|------|
-| **Alle** | Final-Review-Liste von Finn durcharbeiten, Fehler korrigieren | `.md` (aktualisiert) | Fr 14:00 |
-| **Vera** | Final-Render v0.3: Alle Bilder, finale Ordnung für PDF | `.png` | Fr 16:00 |
-| **Finn** | Build PDF v0.3, Format-Check, Links prüfen, README | `.pdf` | Fr 17:00 |
+| **Alle** | Final-Review-Liste von Finn durcharbeiten, Fehler korrigieren, Feinschliff | `.md` (aktualisiert) | Fr 14:00 |
+| **Vera** | Final-Render v0.3: Alle Bilder, finale Bildordnung für PDF-Layout | `.png` | Fr 16:00 |
+| **Finn** | Build PDF v0.3, Format-Check, Links prüfen, Inhaltsverzeichnis, README | `.pdf` + `.md` | Fr 17:00 |
 
-**Finale PDF v0.3 um Freitag 17:30:** Submission-Ready
+#### 17:30 — Finale PDF v0.3: Submission-Ready
 
 ---
 
@@ -133,49 +157,98 @@
 
 ```
 [BACKLOG] → [RESEARCH] → [DRAFT] → [REVISION] → [FINAL] → [SHIPPED]
-   ✅          ✅ (Di)      ◀ Mi         Do–Fr        Fr          Fr
+   ✅          ✅ (Di)      ✅ (Mi)       🔵 (Do)      ⏳ (Fr)       Fr
 ```
 
 ---
 
-## Offene Fragen / Blocker (Mittwoch 10:00)
+## Offene Fragen / Blocker (Donnerstag 10:00)
 
-**Für CD (noch offen):**
-- ❌ **Keine blockierenden Fragen mehr** — alle 4 Darius-Fragen geklärt
+**Für CD (geklärt):**
+- ✅ Tiervolk = Symbiose-Volk (keine Spielbarkeit nötig)
+- ✅ Zeitlinie = Covid-Analogie (Schattenfieber-Trigger)
+- ✅ Schattenfieber = biologische Körperreaktion (nicht übernatürlich)
 
-**Für Team (Action Items):**
-1. Darius: GDD Kap 1–3 finalisieren + Vera-Bilder in Kap 5 einbauen
-2. Nami: Materialpaletten-Visuals in Mythos/Ethos einflechten
-3. Vera: Gilden-Palette Text kürzen, Metadaten bereinigen
-4. Tobi: GDD Kap 6 HTML-Kommentare entfernen
-5. Emre: WBB Kap 2 finalisieren
-6. Leo: Konsistenz-Pass + Feedback-Liste erstellen
+**Für Team (Action Items Do):**
+1. **Seitenbudget:** Alle Kapitel auf max 60 Seiten pro Dokument kürzen
+2. **GDD Kap 5:** Alle Vera-Bilder eingebaut + Text optimiert (Darius)
+3. **WBB Kap 3:** Fertiggestellt + Ethos-Framework vollständig (Nami)
+4. **WBB Kap 2:** Gekürzt, verfeinert (Emre)
+5. **GDD Kap 6:** Gekürzt, Tech Spec + Release-Roadmap klar (Tobi)
+6. **Vera:** Tiervolk + Environment + Relikt-Hero v2 Varianten ($5 Budget)
+7. **Leo:** QA-Feedback auf Kürzungen validieren
+
+---
+
+## Seitenbudget-Status (Do 10:00)
+
+**Aktuell (aus v0.1):**
+- GDD Kap 1–3: ~21 Seiten (Target: 15–18)
+- GDD Kap 4: ~10 Seiten (Target: 8–10) ✅
+- GDD Kap 5: ~6 Seiten (Target: 8–12) — wird erweitert
+- GDD Kap 6: ~14 Seiten (Target: 12–15)
+- **GDD gesamt:** ~51 Seiten (Target: ~50–60) — OK, aber etwas Luft
+
+**WBB:**
+- WBB Kap 1: ~9 Seiten (Target: 8–10) ✅
+- WBB Kap 2: ~11 Seiten (Target: 10–12) — etwas kürzen
+- WBB Kap 3: ~10 Seiten (Target: 10–12) — neu
+- **WBB gesamt:** ~30 Seiten (Target: ~30–35) ✅
+
+**Strategie:**
+- GDD Kap 5 erweitern (mit Vera-Bildern)
+- Kap 1–3 gezielt kürzen (Doppelungen, Details → HTML-Kommentare)
+- WBB Kap 2 leicht trimmen
+- **Ziel:** GDD ~60 Seiten, WBB ~35 Seiten = ~95 Seiten gesamt (mit Concept Art dann ~115 Seiten Total)
 
 ---
 
 ## Produkt-Gates
 
-- **Dienstag 17:00:** ✅ Darius-Fragen beantwortet → Vera-Sketches available
-- **Mittwoch 20:00:** 🔵 v0.1 Lock (QA passt, Feedback aus)
-- **Donnerstag 21:00:** ⏳ v0.2 Lock (Konsistenz-Audit bestanden)
-- **Freitag 17:30:** ⏳ v0.3 Final (Release Ready)
+- ✅ **Dienstag 17:00:** Darius-Fragen beantwortet → Vera-Sketches available
+- ✅ **Mittwoch 20:00:** v0.1 Lock (QA passt, Feedback aus)
+- 🔵 **Donnerstag 20:00:** v0.2 Lock (Konsistenz-Audit bestanden, gekürzt)
+- ⏳ **Freitag 17:30:** v0.3 Final (Release Ready)
 
 ---
 
-## Notizen für Finn (Mi 10:00)
+## Ownership & Dependency-Verteilung (Do/Fr)
 
-- ✅ **ROADMAP aktualisiert** (gerade) — Dienstag geschlossen, Mittwoch mit Status aktuell
-- ✅ **Bildliste für Darius schreiben** — welche Vera-Bilder in welche Kapitel (HANDOFF-Notiz)
-- **10:00–12:00:** Runde durch Repo fahren, HTML-Kommentar-Status checken
-- **12:00–13:00:** Bildliste finalisieren + an Darius geben
-- **17:00:** MEETING — alle v0.1 Ready?
-- **18:00:** PDF Export starten
+```
+Do 10:00–15:00: Parallel Cleanup + Expansion
+├─ Darius: GDD Kap 5 (Art Direction) — hängt von Vera-Bildern ab
+├─ Nami: WBB Kap 3 (Ethos) — unabhängig, kann parallel
+├─ Emre: WBB Kap 2 Refinement — unabhängig
+├─ Vera: Concept Art v0.2 (3–5 Bilder, Tiervolk/Environment)
+├─ Tobi: GDD Kap 6 Finalization — unabhängig
+├─ Leo: QA-Pass 2 — läuft parallel, Feedback Do 18:00
+└─ Finn: Audit + Koordination — wartet auf Do 15:00 Status von allen
+
+Fr 10:00–14:00: Final Review & Fehlerkorrektur
+├─ Alle: Finn-Liste durcharbeiten
+├─ Vera: Final-Renders (Do v0.2 Bilder + Fr Feinschliff)
+└─ Finn: PDF-Build v0.3
+```
+
+---
+
+## Notizen für Finn (Do 10:00)
+
+- ✅ **Memory aktualisiert** (gerade gemacht)
+- ✅ **ROADMAP aktualisiert** (für Do/Fr Status)
+- ✅ **COMPLETED.md aktualisiert** (Mi abgeschlossen, Do In Progress)
+- **10:00–11:00:** Seitenbudget-Analyse: Welche Kapitel kürzen?
+- **11:00–12:00:** Bildliste für Vera aktualisieren (Tiervolk, Environment, Relikt-Hero v2)
+- **12:00–15:00:** Team-Koordination, Handoff-Notizen schreiben
+- **15:00–17:00:** Status-Runde (alle Do-Outputs da?)
+- **17:00:** MEETING — v0.2 Ready?
+- **19:00–21:00:** v0.2 PDF Export starten, QA-Liste für Fr generieren
 
 ---
 
 ## Repos-Struktur
 
 - Alle Markdown-Outputs → `gallery/gdd/` und `gallery/wbb/`
-- Concept Art → `gallery/concepts/` (später: `day02/`, `day03/` etc. für Versionierung)
+- Concept Art → `gallery/concepts/` (Versionierung: `day02/`, `day03/` etc.)
 - Logs → `traces/`
-- **Priorität:** Vollständigkeit vor Glanz. Ein Draft ist besser als Lähmung.
+- **Priorität:** Konsistenz vor Perfektionismus. Kürzen &> Glanz.

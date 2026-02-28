@@ -63,7 +63,7 @@
 - ✅ **GEKLÄRT:** Ab heute (Dienstag) = Production Phase — Bilder entstehen PARALLEL zur Recherche, nicht nach
 - **Vera:** Braucht Input von mir (Di 12:30 Relikt-Notiz), dann wird gearbeitet
 
-## CD-Feedback (Mi 09:00 — BRIEFING) — NEUEST
+## CD-Feedback (Mi 09:00 — BRIEFING)
 
 **1. Saubere Dokumente für Export**
 - ✅ Alle PDFs sollen fertig aussehen — keine Notizen, Anmerkungen oder Autor-Namen
@@ -89,13 +89,32 @@
 **4. Spieler-Interaktion mit Fragment**
 - ✅ Spieler DARF das Fragment ablehnen (mechanisch wichtig)
 
-## Darius-Fragen (Alle geklärt — Di 17:00 gelöst)
+## CD-Feedback (Do 09:00 — BRIEFING)
 
-**Alle 4 Fragen geklärt:**
-1. ✅ **Stadtfrage:** Eine zentrale Stadt (Schwarzrand), vertikal geschichtet → GELÖST
-2. ✅ **Schattenfieber-Scope:** Hauptquest-Mechanik (nicht nur Status-Effekt) → GELÖST
-3. ✅ **Tiervolk:** Kosmologisch offen, keine Entscheidung bis jetzt erforderlich → GELÖST
-4. ✅ **Release-Strategie:** Main Release + DLC-Model (nicht episodisch) → GELÖST
+**1. v0.1 Export erfolgreich ✅**
+- PDF v0.1 delivered Mi 18:00 (alle Kapitel außer GDD 5 + WBB 3)
+- Concept Art integriert, sieht gut aus
+- Team ist on track
+
+**2. Seitenbudget-Optimierung JETZT**
+- **Problem:** v0.1 = 70–85 Seiten (zu viel)
+- **Target:** Max 60 Seiten pro Dokument (GDD 60, WBB 35)
+- **Strategie:** Gezieltes Kürzen (Doppelungen → HTML-Kommentare, Details → Anhänge)
+- **Aktion:** Do 10:00–15:00 alle Agenten kürzen parallel
+
+**3. Cleanup: Autorenerwähnungen, Checklisten**
+- ✅ HTML-Kommentare statt sichtbarer Text
+- ✅ Checklisten (z.B. Wolf-Prüfungen) in separate Dokumente oder Kommentare
+
+**4. Vera-Budget erweitert: $5 gesamt**
+- ✅ v0.1 genutzt: ~$1.50 (9 Bilder)
+- ✅ v0.2 Budget: Tiervolk-Designs (Symbiose-Folk), Environment-Iteration (besserer Stadtschnitt?), Relikt-Hero v2 Varianten
+- ✅ Fokus: Tiervolk = Symbiose-Volk (visuell zeigen: verbundene Entitäten, Kommunikation, biologische Verwobenheit)
+
+**5. CD-Clarifications für Design**
+- ✅ **Tiervolk:** Nicht spielbar (noch), aber visuelle Präsenz wichtig. Symbiose-Konzept = Inspiration: Myzelium-Netzwerk, Bienenstock mit Intelligenz, Schwarmlogik
+- ✅ **Zeitlinie:** Schattenfieber-Trigger könnte Covid-Analogie sein (Pandemie, Ursprung unklar, Propaganda-Potenzial)
+- ✅ **Schattenfieber-Wahrheit:** Körperreaktion (nicht mystisch), virales oder biologisches Agens → verändert Neurologie/Biologie → Sichtzeichen (Haut, Bewegung, Verhalten)
 
 ## Dienstag — MEETING & Outputs
 
@@ -127,11 +146,35 @@
 - ✅ **COMPLETED.md:** All Di Outputs dokumentiert, Mi Status aktuell, v0.1 Deliverables > In Progress übersetzt
 - ✅ **Bildliste:** 03-bildliste-handoff-vera-finn.md geschrieben — pragmatisch, kurz, actionable für Darius
 
-### Offene Fragen
-- Nami braucht Vera-Bilder für WBB Kap 1? (CD gestern unklar, "optional")
-- Emre — macht er Tiervolk-Charakterdesign oder wartet er bis Darius entscheidet?
-
 ### Persönliches
 - Team läuft smooth. Keine Blocker bisher.
 - Mi 18:00 PDF-Export ist realistisch.
 - Vera's Tempo passt — 9 Bilder, richtige Richtung, schnell iterierbar.
+
+## Donnerstag (Do) 10:00 — WORK Block Start
+
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: alle 7
+
+### Notizen
+- **Tagesplan:** Do 10:00–15:00 v0.2 Build (Expansion + Kürzen), Do 17:00 MEETING, Do 20:00 PDF v0.2 Export
+- **Status:** v0.1 erfolgreich exported Mi 18:00. Do = Seitenbudget-Optimization + neue Kapitel (GDD Kap 5, WBB Kap 3)
+- **Kritischer Blocker:** Gesamtgröße 70–85 Seiten (zu viel). Target: GDD ~60, WBB ~35
+- **Strategie:** Gezieltes Kürzen (Doppelungen, Details → HTML-Kommentare) + Expansion (neue Kapitel + Vera-Bilder v0.2)
+- **Vera-Budget:** $5 gesamt, v0.1 genutzt ~$1.50 → Do/Fr ~$3.50 übrig für Tiervolk, Environment, Relikt-Hero v2 Varianten
+- **Ownership-Verteilung:** Darius (Kap 5 Art Direction), Nami (WBB Kap 3 Ethos), Emre (Kap 2 Refinement/Kürzen), Vera (v0.2 Bilder), Tobi (Kap 6 Kürzen), Leo (QA-Pass 2)
+- **Bildliste für Vera:** Tiervolk (Symbiose-Designs), Environment (besserer Stadtschnitt), Relikt-Hero v2 (alternative Varianten)
+
+### Ergebnisse
+- ✅ **ROADMAP.md:** Donnerstag-Status aktualisiert, v0.2-Gate dokumentiert, Ownership Do/Fr klar
+- ✅ **COMPLETED.md:** Mi abgeschlossen, Do In Progress dokumentiert, Seitenbudget-Bericht hinzugefügt
+- ✅ **Seitenbudget-Audit:** Grobe Zahlen ermittelt (GDD ~45 ohne Kap 5, +Kap 5/6 Kürzen = ~60; WBB ~20 ohne Kap 3, +Kap 3 = ~30)
+- ✅ **Bildliste-Notiz:** (zu schreiben, vor Team-Handoff ~11:00)
+
+### Offene Fragen
+- Nami: Braucht sie Vera-Bilder für WBB Kap 3 (Ethos)? Oder nur visuelle Referenzen?
+- Darius: Kann er GDD Kap 5 ohne weitere Vera-Input shapen, oder muss er auf Do 12:00 warten?
+
+### Persönliches
+- Seitenbudget-Issue war vorhersehbar (Leo hat's Mi identifiziert). Jetzt pragmatisches Kürzen ohne Qualitätsverlust.
+- Team-Stimmung positiv: Mi Export erfolgreich, jetzt klare Targets für Do.
+- Vera hat Budget-Luft für qualitativ hochwertigere Iteration (Tiervolk wird wichtig für Weltaufbau).
