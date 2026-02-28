@@ -41,7 +41,7 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 <strong>GenSoftworks GbR</strong><br>
 📍 Kreativquartier Hobart<br>
 🏠 Gebäude 12, Obergeschoss<br>
-🗺️ 32756 Detmold, Kreis Lippe<br>
+🗺️ Anne-Frank-Straße 2, 32756 Detmold<br>
 🇩🇪 Nordrhein-Westfalen
 </td>
 </tr>
