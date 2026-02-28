@@ -55,7 +55,8 @@ export async function initSidebar() {
       if (sim.id === manifest.default) opt.selected = true;
       simSelect.appendChild(opt);
     }
-    simSelect.style.display = '';
+    // Only show dropdown when there are multiple simulations
+    simSelect.style.display = manifest.simulations.length > 1 ? '' : 'none';
     simSelect.addEventListener('change', () => loadSimulation(simSelect.value));
 
     // Load default simulation
@@ -357,41 +358,66 @@ function renderTranscriptBlock(idPrefix, transcriptUrl) {
 
 function renderAgentCards(scene) {
   const participants = scene.participants;
-  const allAgents = Object.keys(AGENT_META);
-  const ordered = [
-    ...participants.filter(k => AGENT_META[k]),
-    ...allAgents.filter(k => !participants.includes(k)),
-  ];
-
-  // Detect schema version
-  const hasTranscripts = !!scene.transcripts;
-  const isV2 = scene.mood && typeof scene.mood === 'object' && !Array.isArray(scene.mood);
-
   let html = '';
 
-  // Shared trace block for conversation scenes (BRIEFING, MEETING, etc.)
-  if (scene.traces?._shared) {
-    html += renderTraceBlock('trace-shared', scene.traces._shared);
-  }
+  if (Array.isArray(scene.transcript_list) && scene.transcript_list.length > 0) {
+    // Chronological transcript list
+    for (let i = 0; i < scene.transcript_list.length; i++) {
+      const entry = scene.transcript_list[i];
+      const bodyId = `tl-${i}`;
+      const isGM = entry.agent === '_gm';
+      const agentMeta = AGENT_META[entry.agent];
 
-  for (const key of ordered) {
-    const meta = AGENT_META[key];
-    const isActive = participants.includes(key);
+      if (isGM) {
+        html += `<div class="transcript-gm">`;
+        html += `<button class="trace-toggle gm-toggle" data-target="${bodyId}" data-url="${BASE}${entry.url}">`;
+        html += `<span class="arrow">&#9654;</span> ${entry.label}`;
+        html += `</button>`;
+        html += `<div class="trace-body" id="${bodyId}"><span class="loading">Laden...</span></div>`;
+        html += `</div>`;
+      } else {
+        html += `<div class="transcript-entry">`;
+        html += `<button class="trace-toggle" data-target="${bodyId}" data-url="${BASE}${entry.url}">`;
+        html += `<span class="arrow">&#9654;</span>`;
+        html += `<span class="transcript-agent">${agentMeta?.name || entry.agent}</span>`;
+        if (entry.turn != null) {
+          html += `<span class="transcript-turn">Turn ${entry.turn}</span>`;
+        }
+        if (agentMeta) {
+          html += `<span class="transcript-role">${agentMeta.role}</span>`;
+        }
+        html += `</button>`;
+        html += `<div class="trace-body" id="${bodyId}"><span class="loading">Laden...</span></div>`;
+        html += `</div>`;
+      }
+    }
+  } else {
+    // Fallback: per-agent cards (WORK scenes, legacy)
+    const ordered = participants.filter(k => AGENT_META[k]);
 
-    html += `<div class="agent-card${isActive ? '' : ' dimmed'}" id="agent-card-${key}">`;
-    html += `<div class="agent-card-header">`;
-    html += `<span class="agent-name">${meta.name}</span>`;
-    html += `<span class="agent-role">${meta.role}</span>`;
-    html += `</div>`;
+    // Detect schema version
+    const hasTranscripts = !!scene.transcripts;
+    const isV2 = scene.mood && typeof scene.mood === 'object' && !Array.isArray(scene.mood);
 
-    if (isActive) {
+    // Shared trace block for conversation scenes
+    if (scene.traces?._shared) {
+      html += renderTraceBlock('trace-shared', scene.traces._shared);
+    }
+
+    for (const key of ordered) {
+      const meta = AGENT_META[key];
+
+      html += `<div class="agent-card" id="agent-card-${key}">`;
+      html += `<div class="agent-card-header">`;
+      html += `<span class="agent-name">${meta.name}</span>`;
+      html += `<span class="agent-role">${meta.role}</span>`;
+      html += `</div>`;
+
       if (hasTranscripts) {
-        // --- v5 rendering: collapsible transcript per agent ---
         if (scene.transcripts?.[key]) {
           html += renderTranscriptBlock(`transcript-${key}`, scene.transcripts[key]);
         }
       } else if (isV2) {
-        // --- v2 rendering (legacy) ---
         const mood = scene.mood?.[key];
         if (mood) {
           html += `<div class="mood-row">`;
@@ -416,7 +442,6 @@ function renderAgentCards(scene) {
           }
         }
       } else {
-        // --- v1 rendering (legacy) ---
         const details = scene.agent_details?.[key];
         const mems = scene.memories?.[key];
         if (details) {
@@ -446,9 +471,9 @@ function renderAgentCards(scene) {
       if (scene.traces?.[key]) {
         html += renderTraceBlock(`trace-${key}`, scene.traces[key]);
       }
-    }
 
-    html += `</div>`;
+      html += `</div>`;
+    }
   }
 
   agentList.innerHTML = html;
@@ -681,8 +706,6 @@ function renderGalleryBoard() {
       document.getElementById('gallery-lightbox-img').src = `${BASE}${path}`;
       document.getElementById('gallery-lightbox-model').textContent = meta.model || '';
       document.getElementById('gallery-lightbox-prompt').textContent = meta.prompt || '';
-      const neg = document.getElementById('gallery-lightbox-neg');
-      neg.textContent = meta.negative_prompt ? `Negative: ${meta.negative_prompt}` : '';
       lb.classList.add('open');
     });
   });

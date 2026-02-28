@@ -217,6 +217,19 @@
       .trace-body.open { display: block; }
       .trace-body .loading { color: #556; font-style: italic; }
 
+      /* Transcript list (chronological) */
+      .transcript-entry { margin-bottom: 2px; }
+      .transcript-agent { font-size: 10px; color: #aac8e8; font-weight: bold; margin-left: 2px; }
+      .transcript-turn { font-size: 9px; color: #c8a86e; margin-left: 4px; }
+      .transcript-role { font-size: 9px; color: #556; margin-left: 6px; }
+
+      /* GM transcript block — visually separated */
+      .transcript-gm {
+        margin-bottom: 8px; padding-bottom: 8px;
+        border-bottom: 1px solid #333355;
+      }
+      .gm-toggle { color: #c8a86e !important; }
+
       /* Agent hover tooltip */
       #agent-tooltip {
         position: absolute; pointer-events: none; z-index: 100;
@@ -490,7 +503,6 @@
         text-transform: uppercase; letter-spacing: 1px;
       }
       #gallery-lightbox-prompt { color: #aaa; margin: 4px 0 0; font-style: italic; }
-      #gallery-lightbox-neg { color: #866; margin: 2px 0 0; font-size: 11px; }
     </style>
   </head>
   <body>
@@ -537,7 +549,6 @@
       <div id="gallery-lightbox-info">
         <span id="gallery-lightbox-model"></span>
         <p id="gallery-lightbox-prompt"></p>
-        <p id="gallery-lightbox-neg"></p>
       </div>
     </div>
 
@@ -564,6 +575,7 @@
             Music: <a href="https://freesound.org/people/Seth_Makes_Sounds/sounds/670039/" target="_blank">Seth_Makes_Sounds</a> (CC0)
             &middot; Typing: <a href="https://freesound.org/people/stu556/sounds/450281/" target="_blank">stu556</a> (CC0)
             &middot; Paper: <a href="https://freesound.org/people/davidbain/sounds/136778/" target="_blank">davidbain</a> (CC0)
+            &middot; <a href="https://github.com/jenniferied/gensoftworks" target="_blank">GitHub</a>
           </div>
         </div>
         <div id="title-bar">GENSOFTWORKS — Gebäude 12, Obergeschoss</div>

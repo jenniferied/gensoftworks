@@ -260,8 +260,6 @@ def load_concept_art(gallery_dir, days):
                     entry["model"] = meta["model"]
                 if meta.get("prompt"):
                     entry["prompt"] = meta["prompt"]
-                if meta.get("negative_prompt"):
-                    entry["negative_prompt"] = meta["negative_prompt"]
                 img_obj.close()
             except Exception:
                 pass
@@ -750,6 +748,19 @@ def main():
             }
             for day_entry in days:
                 day_num = day_entry["day"]
+
+                # Discover GM transcript for this day
+                gm_dir = traces_dir / f"day{day_num:02d}-gm"
+                gm_tf = gm_dir / "transcript.md"
+                gm_url = None
+                if gm_tf.exists():
+                    dest_dir = traces_dest / gm_dir.name
+                    dest_dir.mkdir(parents=True, exist_ok=True)
+                    dest_file = dest_dir / "transcript.md"
+                    if not dest_file.exists():
+                        shutil.copy2(gm_tf, dest_file)
+                    gm_url = f"traces/{sim_id}/{gm_dir.name}/transcript.md"
+
                 for sc in day_entry["scenes"]:
                     scene_num = sc["scene"]
                     prefix = f"day{day_num:02d}-scene{scene_num}"
@@ -812,6 +823,42 @@ def main():
                             transcripts[agent] = f"traces/{sim_id}/{td.name}/transcript.md"
                     if transcripts:
                         sc["transcripts"] = transcripts
+
+                    # Discover turn-based traces (e.g. day01-scene1-t1-finn)
+                    turn_re = re.compile(rf"^{re.escape(prefix)}-t(\d+)-(\w+)$")
+                    turn_entries = []
+                    for td in sorted(traces_dir.iterdir()):
+                        if not td.is_dir():
+                            continue
+                        m = turn_re.match(td.name)
+                        if m:
+                            tf = td / "transcript.md"
+                            if tf.exists():
+                                turn_num = int(m.group(1))
+                                agent = m.group(2)
+                                dest_dir = traces_dest / td.name
+                                dest_dir.mkdir(parents=True, exist_ok=True)
+                                dest_file = dest_dir / "transcript.md"
+                                if not dest_file.exists():
+                                    shutil.copy2(tf, dest_file)
+                                url = f"traces/{sim_id}/{td.name}/transcript.md"
+                                turn_entries.append({"turn": turn_num, "agent": agent, "url": url})
+
+                    # Build chronological transcript_list
+                    tl = []
+                    if gm_url:
+                        tl.append({"label": "Game Master", "agent": "_gm", "url": gm_url})
+                    for agent, url in transcripts.items():
+                        tl.append({"label": agent.title(), "agent": agent, "url": url})
+                    for tt in sorted(turn_entries, key=lambda x: (x["turn"], x["agent"])):
+                        tl.append({
+                            "label": f"Turn {tt['turn']}: {tt['agent'].title()}",
+                            "agent": tt["agent"],
+                            "turn": tt["turn"],
+                            "url": tt["url"],
+                        })
+                    if tl:
+                        sc["transcript_list"] = tl
 
             copied = sum(1 for d in traces_dest.iterdir() if d.is_dir()) if traces_dest.exists() else 0
             print(f"Traces: {copied} Verzeichnisse kopiert nach {traces_dest}")
