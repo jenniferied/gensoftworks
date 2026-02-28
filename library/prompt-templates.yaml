@@ -1,0 +1,312 @@
+# Prompt Templates — Model × Category combinations for WBB image generation
+#
+# Each template has:
+#   model:     model name (matches MODELS[].name in generate-images.py)
+#   category:  asset category (matches wbb-assets.yaml sections)
+#   template:  Jinja2-style template with {description} placeholder
+#   negative_prompt: model-specific negative prompt (if supported)
+#
+# Prompt strategies per model (from models.md Phase 1+2 testing):
+#   seedream-4-5:    Structured hierarchy: Scene → Subject → Details → Style
+#   flux-2-pro:      Natural language with hex colors and camera settings
+#   nano-banana-pro: Conversational briefing style ("Imagine a...")
+#   gpt-image-1-5:   Layered reasoning: Background → Subject → Details → Constraints
+
+# ═══════════════════════════════════════════════════════════════════
+# SEEDREAM 4.5 — Structured hierarchy + strong negative prompt
+# ═══════════════════════════════════════════════════════════════════
+
+seedream-4-5:
+
+  races:
+    template: >
+      [Scene] Full-body dark fantasy character portrait on a clean white
+      background. The entire figure is visible from head to feet.
+      [Subject] {description}
+      [Details] Realistic anatomy, weathered skin textures, historically
+      accurate late medieval (~1300 CE) clothing and materials. Visible wear
+      on fabrics, scars, and imperfections. Full body shown, feet on ground.
+      [Style] Photorealistic dark fantasy concept art, muted desaturated
+      palette, soft studio lighting, sharp focus, 4K detail. Skyrim meets
+      Kingdom Come: Deliverance aesthetic.
+    negative_prompt: >
+      anime, cartoon, manga, cel-shading, bright saturated colors, clean
+      pristine surfaces, glowing effects, fantasy magic, text, watermark,
+      logo, blurry, low quality, extra limbs, deformed
+
+  weapons:
+    template: >
+      [Scene] Medieval weapon on a clean white background, full weapon
+      visible from end to end. Game artbook style.
+      [Subject] {description}
+      [Details] Historically plausible construction (~1300 CE). The complete
+      weapon must be shown in frame, nothing cropped. Subtle material
+      textures — steel, leather, wood grain.
+      [Style] High quality concept art, game artbook illustration style.
+      Clean white background, soft lighting, sharp detail. Slightly
+      painterly rendering — not a photograph, not a cartoon. Think Skyrim
+      or Dark Souls official artbook. Muted desaturated palette.
+    negative_prompt: >
+      anime, cartoon, glowing, magical effects, ornate fantasy decoration,
+      gems, runes, text, watermark, blurry, low quality, bright colors,
+      close-up, macro, cropped, photograph, stock photo
+
+  locations:
+    template: >
+      [Scene] Cinematic establishing shot of a dark fantasy landscape.
+      [Subject] {description}
+      [Details] Volumetric fog, overcast sky, atmospheric perspective.
+      Late medieval (~1300 CE) architecture where applicable. Weathered
+      stone, aged wood, overgrown vegetation.
+      [Style] Matte painting quality, cinematic composition, wide-angle
+      view, muted desaturated palette, Skyrim-inspired environment art.
+      4K detail, depth of field.
+    negative_prompt: >
+      anime, cartoon, bright colors, clean pristine, modern elements,
+      text, watermark, people in foreground, blurry, low quality
+
+  deities:
+    template: >
+      [Scene] Dark folklore illustration with supernatural atmosphere.
+      [Subject] {description}
+      [Details] Ambiguous, unsettling presence — rooted in Germanic
+      folklore, not high fantasy. Subtle horror through atmosphere, not
+      gore. Mist, shadow, cold light.
+      [Style] Dark fantasy concept art, painterly quality, muted palette
+      with selective cold accents. 4K detail. The Witcher meets Brothers
+      Grimm aesthetic.
+    negative_prompt: >
+      anime, cartoon, bright colors, clean, cute, friendly, high fantasy,
+      glowing magic, text, watermark, blurry, low quality
+
+  classes:
+    template: >
+      [Scene] Full-body dark fantasy character portrait on a clean white
+      background. The entire figure is visible from head to feet.
+      [Subject] {description}
+      [Details] Realistic anatomy, period-accurate clothing and equipment
+      (~1300 CE). Clothing shows social status through material quality,
+      wear patterns, and accessories. Weathered textures, visible use.
+      Full body shown, feet on ground.
+      [Style] Photorealistic dark fantasy concept art, muted desaturated
+      palette, soft studio lighting, sharp focus, 4K detail. Skyrim meets
+      Kingdom Come: Deliverance aesthetic.
+    negative_prompt: >
+      anime, cartoon, manga, cel-shading, bright saturated colors, clean
+      pristine surfaces, glowing effects, fantasy magic, text, watermark,
+      logo, blurry, low quality, extra limbs, deformed
+
+# ═══════════════════════════════════════════════════════════════════
+# FLUX 2 PRO — Environments only (locations + deities)
+# Flux underperforms on characters and weapons — use only for scenes.
+# ═══════════════════════════════════════════════════════════════════
+
+flux-2-pro:
+
+  locations:
+    template: >
+      A cinematic landscape in dark fantasy style. {description} Shot on a
+      24mm wide-angle lens at f/8, atmospheric haze. Color palette: muted
+      earth tones (#5C5346, #3E4A3C, #7A7062), overcast sky (#9CA5AC).
+      Volumetric fog, depth of field, matte painting quality. 4K, highly
+      detailed environment. Medieval European, circa 1300 CE.
+    negative_prompt: null
+
+  deities:
+    template: >
+      A dark folklore scene with supernatural atmosphere. {description}
+      Shot on a 35mm lens at f/4, cold moonlight and deep shadows. Color
+      palette: midnight blue (#191970), bone white (#E8E0D4), shadow black
+      (#1A1A2E). Germanic folklore horror. Painterly, atmospheric, 4K.
+    negative_prompt: null
+
+# ═══════════════════════════════════════════════════════════════════
+# NANO BANANA PRO — Conversational briefing style
+# ═══════════════════════════════════════════════════════════════════
+
+nano-banana-pro:
+
+  races:
+    template: >
+      Imagine a full-body character portrait for a dark fantasy worldbuilding
+      bible. {description}
+      Show the complete figure from head to feet, standing on the ground,
+      against a clean white background — like a concept art character sheet.
+      Think Skyrim or Kingdom Come: Deliverance — grounded in historical
+      reality, not high fantasy.
+      Ground rules: full body visible, no cropping at waist or knees. No
+      anime influence, no fantasy clichés, no glowing effects. Everything
+      should look weathered and real. Late medieval Europe, around 1300 CE.
+      Serious and grounded. The image must contain no text, no labels, no
+      titles, no captions, no watermarks whatsoever.
+    negative_prompt: null
+
+  weapons:
+    template: >
+      Imagine a concept art illustration of a complete medieval weapon on a
+      clean white background — like a page from a game artbook. {description}
+      The entire weapon must be visible in the frame — from pommel to blade
+      tip, nothing cropped. Flat on a white surface, viewed from above.
+      The style should be high quality concept art — slightly painterly
+      rendering with sharp detail, not a photograph and not a cartoon.
+      Think Skyrim or Dark Souls official artbook.
+      Ground rules: no fantasy ornamentation, no glowing runes, no magical
+      effects. Historically plausible, around 1300 CE. The image must
+      contain no text, no labels, no titles, no captions, no watermarks
+      whatsoever.
+    negative_prompt: null
+
+  locations:
+    template: >
+      Imagine a sweeping establishing shot of a dark fantasy landscape.
+      {description}
+      This should feel like a matte painting for a cinematic opening —
+      wide, atmospheric, immersive. Think Skyrim's environmental art meets
+      The Witcher's moody lighting.
+      Ground rules: overcast sky, volumetric fog, muted desaturated palette.
+      No bright fantasy colors, no clean pristine surfaces. Everything shows
+      age and weather. Medieval European, around 1300 CE. The image must
+      contain no text, no labels, no titles, no captions, no watermarks
+      whatsoever.
+    negative_prompt: null
+
+  deities:
+    template: >
+      Imagine a dark fantasy scene rooted in Germanic folklore. {description}
+      The mood should be unsettling and ancient — like the original Brothers
+      Grimm before they were sanitized. Horror through atmosphere, not gore.
+      The supernatural should feel ambiguous and dangerous.
+      Ground rules: this is concept art, not a book illustration. No paper
+      texture, no drawn-on-parchment effect, no border or frame. Render as
+      a photorealistic or painterly scene. No high fantasy aesthetics, no
+      bright colors, no cute or friendly creatures. The image must contain
+      no text, no labels, no titles, no captions, no watermarks whatsoever.
+    negative_prompt: null
+
+  classes:
+    template: >
+      Imagine a full-body character portrait for a dark fantasy worldbuilding
+      bible. {description}
+      Show the complete figure from head to feet, standing on the ground.
+      The portrait should clearly communicate this person's social position
+      through their clothing, posture, and equipment. Think of it as a
+      character reference for a game like Kingdom Come: Deliverance — every
+      detail of clothing tells you about their status and profession.
+      Ground rules: full body visible, no cropping at waist or knees. No
+      anime, no fantasy clichés, no glowing effects. Historically grounded,
+      around 1300 CE. Serious and realistic. The image must contain no text,
+      no labels, no titles, no captions, no watermarks whatsoever.
+    negative_prompt: null
+
+# ═══════════════════════════════════════════════════════════════════
+# GPT IMAGE 1.5 — Layered reasoning with constraints
+# ═══════════════════════════════════════════════════════════════════
+
+gpt-image-1-5:
+
+  races:
+    template: >
+      [Background] A clean white studio background with soft, even lighting.
+      No environmental elements — this is a full-body character reference.
+
+      [Subject] {description}
+
+      [Key Details] This must be a FULL BODY portrait showing the complete
+      figure from head to feet — no cropping at the waist or knees. The
+      character stands on the ground plane. The clothing and materials must
+      be historically plausible for late medieval Central Europe (~1300 CE).
+      Fabrics are wool, linen, leather — no synthetic-looking materials.
+      Skin should show realistic texture: pores, weathering, scars, sun
+      damage where appropriate.
+
+      [Constraints] This is photorealistic dark fantasy concept art in the
+      style of Skyrim and Kingdom Come: Deliverance. The palette must be
+      muted and desaturated — no bright saturated colors. There must be
+      NO anime influence, NO glowing magical effects, NO text or watermarks.
+      The character must look like a real person who lives in a harsh
+      medieval world, not a fantasy illustration.
+    negative_prompt: null
+
+  weapons:
+    template: >
+      [Background] A clean white background with soft, even lighting.
+      Game artbook layout — no distracting elements.
+
+      [Subject] {description}
+
+      [Key Details] The complete weapon must be shown from end to end,
+      nothing cropped. Subtle material textures — steel patina, leather
+      grain, wood aging. Every component historically plausible for ~1300
+      CE European metallurgy.
+
+      [Constraints] This is high quality concept art for a game artbook —
+      slightly painterly rendering, NOT a photograph and NOT a cartoon.
+      Think Skyrim or Dark Souls official artbook style. NO fantasy
+      ornamentation — no gems, no glowing runes, no ornate filigree.
+      Sharp detail, muted desaturated palette, 4K.
+    negative_prompt: null
+
+  locations:
+    template: >
+      [Background] An overcast sky with volumetric fog and atmospheric
+      perspective creating depth. The horizon is visible. Natural lighting —
+      no dramatic fantasy sky effects.
+
+      [Subject] {description}
+
+      [Key Details] Architecture (if present) must follow late medieval
+      (~1300 CE) European construction: stone, timber, thatch, no concrete
+      or modern materials. Vegetation is regionally appropriate — deciduous
+      forests, marshland, alpine scrub. Everything shows age, weather damage,
+      and organic growth. Moss on stone, lichen on wood, weeds in cracks.
+
+      [Constraints] This is a cinematic establishing shot — wide composition,
+      strong depth of field, matte-painting quality. The palette must be
+      muted and desaturated, matching the region's color scheme. NO bright
+      fantasy colors, NO pristine clean surfaces, NO modern elements. This
+      is a world that looks like it smells of wet stone and woodsmoke.
+    negative_prompt: null
+
+  deities:
+    template: >
+      [Background] {description}
+
+      [Atmosphere] This scene exists in the space between reality and
+      folklore — the viewer should be uncertain whether what they see is
+      supernatural or a trick of light and shadow. The horror comes from
+      ambiguity, not from explicit monstrosity.
+
+      [Key Details] Root this in Germanic folklore tradition — Grimm, not
+      Tolkien. The supernatural elements should feel ancient, earthy, and
+      dangerous. Use cold light sources (moonlight, bioluminescence, distant
+      fire) for illumination. Shadows should be deep and concealing.
+
+      [Constraints] NO high fantasy aesthetics — no glowing magic, no
+      ethereal beauty, no clean supernatural beings. The folklore creatures
+      of this world are unsettling because they are almost-real, because
+      they exist at the edge of perception. Atmospheric horror through
+      restraint. Painterly quality, dark palette, 4K detail.
+    negative_prompt: null
+
+  classes:
+    template: >
+      [Background] A clean white studio background with soft, even lighting
+      for a full-body character reference.
+
+      [Subject] {description}
+
+      [Key Details] This must be a FULL BODY portrait showing the complete
+      figure from head to feet — no cropping at the waist or knees. The
+      character stands on the ground plane. The character's social class
+      must be immediately readable from their clothing, posture, and
+      equipment. A noble's garments are finer but still medieval. A
+      peasant's clothing is rough and patched. An Order knight's armor
+      bears their symbol but is functional, not decorative.
+
+      [Constraints] This is photorealistic dark fantasy concept art. The
+      character must look like a real person from ~1300 CE medieval Europe.
+      NO anime influence, NO fantasy clichés, NO glowing effects, NO text.
+      The palette is muted and desaturated. Clothing construction must be
+      historically plausible — no zippers, no machine stitching, no modern
+      cuts. Skyrim meets Kingdom Come: Deliverance meets The Witcher.
+    negative_prompt: null
