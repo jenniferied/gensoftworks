@@ -41,9 +41,11 @@ Seven role-based AI agents produce a GDD and WBB for a fantasy Computer-Rollensp
 2. Read memory files for participating agents
 3. Execute scene: parallel (WORK) or sequential turn loop (conversation)
 4. After scene: append memory to **each participant**. Every scene type — including PAUSE. Cover both **work** and **interpersonal**.
-5. Update `world.json`
-6. **After scene 6**: Write `logbook/dayDD.json` per `schemas/day-index.json` (1 file per day, only metadata + summaries)
-7. **After scene 6**: Run `python scripts/validate-sim.py --sim-dir simulation-2` — fix any errors before continuing.
+
+**After scene 6 (end of day):**
+5. Write `logbook/dayDD.json` per `schemas/day-index.json` (1 file per day, only metadata + summaries)
+6. Update `world.json` (day +1, scene 0)
+7. Run `python scripts/validate-sim.py --sim-dir simulation-2` — fix any errors before continuing.
 
 ## Traces (mandatory per agent)
 
@@ -62,8 +64,7 @@ One file per day: `logbook/dayDD.json`. Contains only metadata + summaries — n
 
 ## Concept Art (Vera)
 
-- Vera generates images via fal.ai in WORK scenes
-- Daily budget: $4.00 (Seedream $0.04, Nano Banana Pro $0.15, Nano Banana 2 $0.08, GPT Image 1.5 $0.20)
+- Vera generates images via fal.ai in WORK scenes (Budget + Modelle: siehe `vera-conceptartist.md`)
 - Other agents can request images → Vera writes prompt + generates
 - All images: NEVER with text. Seedream: `negative_prompt` setzen. Nano/GPT: Text im Prompt gar nicht erwähnen (auch nicht negativ)
 - Output: `gallery/concepts/{KK-kategorie}/{name}.png`
@@ -75,13 +76,17 @@ One file per day: `logbook/dayDD.json`. Contains only metadata + summaries — n
 
 **WBB** (`gallery/wbb/KK-titel-vN.md`): 01-mythos, 02-topos, 03-ethos
 
-## Outputs (after each day)
+## Outputs
 
-- **Day index**: `logbook/dayDD.json` — metadata + summaries per scene + day-level summary
-- **Logbook PDF**: `Meier_KIComputerRollenspiele_Sim2Test_Logbuch_2026.pdf` (via `scripts/export-logbook.py`)
-- **Phaser viewer**: `scripts/build-viewer-data.py --sim-dir simulation-2-test` → `viewer-data/simulation.json`
-- **GDD PDF**: `scripts/export-gdd.py --sim-dir simulation-2-test`
-- **WBB PDF**: `scripts/export-wbb.py --sim-dir simulation-2-test`
+**After each day (mandatory):**
+- `logbook/dayDD.json` — metadata + summaries per scene + day-level summary
+- `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
+
+**On demand (CD requests):**
+- Logbook PDF: `scripts/export-logbook.py --sim-dir simulation-2`
+- Phaser viewer: `scripts/build-viewer-data.py --sim-dir simulation-2`
+- GDD PDF: `scripts/export-gdd.py --sim-dir simulation-2`
+- WBB PDF: `scripts/export-wbb.py --sim-dir simulation-2`
 
 ## Guardrails
 

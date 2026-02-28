@@ -1,5 +1,6 @@
 {
   "simulation": 2,
   "day": 0,
-  "scene": 0
+  "scene": 0,
+  "start_weekday": "monday"
 }

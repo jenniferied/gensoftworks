@@ -12,7 +12,9 @@ Spiele den nächsten Simulationstag — alle 6 Szenen nacheinander (BRIEFING →
 
 - Lies die Memory-Dateien der Agenten vor jeder Szene
 - Schreibe Memories nach jeder Szene (Arbeit UND Zwischenmenschliches)
-- Schreibe Logbook-Einträge nach jeder Szene (`logbook/dayDD-sceneS.json`)
-- Dialogue 1:1 aus Agent-Output, nicht kürzen
 - Agents mit `model: "sonnet"` spawnen
 - Deutsche Umlaute in jedem Agent-Prompt verlangen
+- Traces pro Agent: `0-prompt.md`, `1-reasoning.md`, `2-output.md`
+- Nach Szene 6: `logbook/dayDD.json` schreiben (1 File pro Tag, Schema: `schemas/day-index.json`)
+- Nach Szene 6: `world.json` updaten (Tag +1, Szene 0)
+- Nach Szene 6: `python3 scripts/validate-sim.py --sim-dir simulation-2` — Fehler fixen vor Weiterarbeit
