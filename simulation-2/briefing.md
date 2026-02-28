@@ -1,4 +1,4 @@
-# RELICS — Creative Director's Briefing
+# RELICS — Creative Director Briefing
 
 > **NORDSTERN** — Dieses Dokument ist die unveränderliche kreative Vision. Alle Artefakte (Game Design Document, World Building Bible, Concept Art) müssen sich an diesem Briefing orientieren. Abweichungen nur mit expliziter Creative Director-Freigabe.
 > Immer fragen statt erfinden, wenn unklar.

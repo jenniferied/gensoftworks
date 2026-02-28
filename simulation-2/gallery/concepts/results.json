@@ -1,0 +1,42 @@
+[
+  {
+    "test": "seedream-4-5_gildenturm-nacht",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "A towering guild hall at night in a medieval cyberpunk city, brutalist stone architecture with clean Bauhaus lines, bioluminescent algae glowing in channels along the facade, a single neon-indigo accent light behind faceted glass windows, vertical city layers visible — wealthy upper levels with polished stone and metal inlays, lower slums hidden in shadow below, volumetric fog, moonlight, cinematic wide shot, highly detailed, dark fantasy, no steampunk, no hexagons",
+    "elapsed_s": 82.2,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a905044/O5Nbqm7H9uj7aYTb_FnYK_1558982102f64f76bb3b615dfc54bad2.png"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T18:15:28.899020",
+    "category": "environment",
+    "tier": 1,
+    "aspect_ratio": "",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "4096x2304"
+  },
+  {
+    "test": "flux-2-pro_gildenmeister-portrait",
+    "model": "fal-ai/flux-2-pro",
+    "prompt": "Portrait of a powerful guild master in a medieval cyberpunk world, wearing layered tailored clothing — heavy brocade silk over brushed titanium shoulder plates, single blood-red accent on an enameled guild signet, Comme des Garçons meets medieval armor aesthetic, asymmetric high collar, damascus steel bracers with etched ornaments, dark atmospheric lighting, shallow depth of field, no steampunk, no high fantasy, no magic staffs",
+    "elapsed_s": 9.9,
+    "cost_est": "$0.03",
+    "images": [
+      "https://v3b.fal.media/files/b/0a905044/VHXi2nsNLCp1EwC7-0Ahf_s8GWBdDS.jpg"
+    ],
+    "error": null,
+    "timestamp": "2026-02-28T18:15:39.787431",
+    "category": "character",
+    "tier": 1,
+    "aspect_ratio": "",
+    "name_de": "",
+    "api_args": {
+      "image_size": "landscape_16_9"
+    },
+    "dimensions": "1024x576"
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "day": 1,
+  "weekday": "Montag",
+  "phase": "Recherche",
+  "title": "Erster Tag — Fundamente legen",
+  "summary": "Das Team trifft zum ersten Mal zusammen. Alle sichten die Bibliothek und erstellen Recherche-Notate. Im Meeting fallen zentrale Entscheidungen: 4-Schichten-Stadt (Krone, Gilden, Volk, Schwelle) mit Yggdrasil-Struktur, Schattenfieber als dritte Progressionsachse neben Nervensystem und Fraktionsruf, widersprüchliche Kosmologien pro Fraktion, Tiervolk als Händler/Informationsbroker. Drei offene Fragen an den CD identifiziert.",
+  "cd_decisions": [],
+  "key_moments": [
+    "Emre verbindet die vertikale Stadt mit Yggdrasil als Strukturprinzip",
+    "Darius definiert Schattenfieber als dritte Progressionsachse: 'Wie weit gehe ich für Macht?'",
+    "Nami entwirft drei Schattenfieber-Stufen: Rauschen, Risse, Schwelle",
+    "Tobi legt 4 Data Layers für UE5 World Partition fest",
+    "Nami beschreibt Gilden-Kosmologie: 'Die haben keinen Schöpfungsmythos — die haben eine Buchhaltung.'"
+  ],
+  "artifacts": [
+    "gallery/wbb/00-recherche-notizen-emre.md",
+    "gallery/gdd/00-recherche-notizen-darius.md",
+    "gallery/gdd/00-recherche-notizen-nami.md",
+    "gallery/concepts/00-recherche-notizen-vera.md",
+    "gallery/gdd/00-recherche-notizen-tobi.md",
+    "gallery/gdd/00-recherche-notizen-leo.md",
+    "pinwall/ROADMAP.md",
+    "pinwall/COMPLETED.md"
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "type": "BRIEFING",
+      "time": "09:00",
+      "location": "Küche",
+      "participants": ["finn", "emre", "darius", "nami", "vera", "tobi", "leo"],
+      "summary": "Finn gibt CD-Feedback weiter. Team verinnerlicht Briefing. Jeder nennt Recherche-Schwerpunkte: Emre (Wolf/Klastrup-Tosca), Darius (Deus Ex/Diablo), Nami (Planescape/VtM), Vera (Cyberpunk 2077/Dark Souls Artbooks), Tobi (Pipeline/Nanite), Leo (Spieler-Communities/Konkurrenz).",
+      "artifacts": [],
+      "cd_feedback": "Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres Feedback."
+    },
+    {
+      "scene": 2,
+      "type": "WORK",
+      "time": "10:00",
+      "location": "jeweiliger Arbeitsplatz",
+      "participants": ["finn", "emre", "darius", "nami", "vera", "tobi", "leo"],
+      "summary": "Alle recherchieren parallel. Emre: Wolf-Infrastrukturen, Kosmologie-Hypothese. Darius: Design-Säulen, Nervensystem-Leveling. Nami: Schattenfieber-Stufen, Quest-Ideen. Vera: Architektur-DNA, Lichtkonzept. Tobi: Tech-Pipeline, Data Layers. Leo: Zielgruppen-Analyse. Finn: Roadmap.",
+      "artifacts": [
+        "gallery/wbb/00-recherche-notizen-emre.md",
+        "gallery/gdd/00-recherche-notizen-darius.md",
+        "gallery/gdd/00-recherche-notizen-nami.md",
+        "gallery/concepts/00-recherche-notizen-vera.md",
+        "gallery/gdd/00-recherche-notizen-tobi.md",
+        "gallery/gdd/00-recherche-notizen-leo.md",
+        "pinwall/ROADMAP.md",
+        "pinwall/COMPLETED.md"
+      ]
+    },
+    {
+      "scene": 3,
+      "type": "MEETING",
+      "time": "13:00",
+      "location": "Küche",
+      "participants": ["finn", "emre", "darius", "nami", "vera", "tobi", "leo"],
+      "summary": "Zentrale Entscheidungen: Stadt = 4 vertikale Schichten (Krone, Gilden, Volk, Schwelle). Yggdrasil als Strukturprinzip. Schattenfieber = dritte Progressionsachse. 3 narrative Stufen (Rauschen, Risse, Schwelle). Tiervolk = Händler/Informationsbroker. Widersprüchliche Kosmologien pro Fraktion. Leo mahnt: Materialien müssen sofort sichtbar wichtig sein.",
+      "artifacts": []
+    },
+    {
+      "scene": 4,
+      "type": "PAUSE",
+      "time": "14:00",
+      "location": "Küche",
+      "participants": ["nami", "vera"],
+      "summary": "Nami und Vera tauschen sich per Video aus. Smalltalk über Pixel (Whippet), Katzen (Malkav und Nines), Janniks Verständnis von Art Direction, erstes-Tag-Gefühle. Verabreden sich für morgen zum gemeinsamen Mittagessen.",
+      "artifacts": []
+    },
+    {
+      "scene": 5,
+      "type": "REVIEW",
+      "time": "15:00",
+      "location": "Küche",
+      "participants": ["finn", "emre", "darius", "nami"],
+      "summary": "Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.",
+      "artifacts": []
+    }
+  ]
+}
