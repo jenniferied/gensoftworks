@@ -385,7 +385,7 @@
             "nami",
             "leo"
           ],
-          "summary": "Nami und Vera tauschen sich per Video aus. Smalltalk über Pixel (Whippet), Katzen (Malkav und Nines), Janniks Verständnis von Art Direction, erstes-Tag-Gefühle. Verabreden sich für morgen zum gemeinsamen Mittagessen.",
+          "summary": "Emre, Nami und Leo in der Küche. Emre macht Tee, Nami hat Kaffee, Leo isst. Smalltalk über Nerevar (Emres Katze auf der Tastatur), Detmolds Stille, Malkav und Nines (Namis Katzen), Aquarellstille.",
           "positions": {
             "emre": {
               "x": 37,
@@ -459,12 +459,12 @@
         },
         {
           "scene": 5,
-          "type": "REVIEW",
-          "type_label": "Review",
-          "time_of_day": "15:00",
-          "time_label": "15:00",
-          "location": "Küche",
-          "location_label": "Küche",
+          "type": "WORK",
+          "type_label": "Arbeit",
+          "time_of_day": "14:00",
+          "time_label": "14:00",
+          "location": "jeweiliger Arbeitsplatz",
+          "location_label": "Jeweiliger Arbeitsplatz",
           "participants": [
             "finn",
             "emre",
@@ -474,47 +474,56 @@
             "tobi",
             "leo"
           ],
-          "summary": "Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.",
+          "summary": "Nachmittags-Arbeitsblock. Alle vertiefen ihre Recherche. Finn: Wochenplanung, 4 Blocker. Darius: Schiefer-Prinzip, Schattenfieber-Progression. Emre: Kosmologie-Analyse, Yggdrasil-Vertiefung. Nami: Quest-Struktur, Faction-Konflikte. Vera: Architektur-Moodboard. Tobi: Tech-Pipeline vertiefen. Leo: Wolf-Checkliste, Alpha-Stunde. Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.",
           "positions": {
             "emre": {
-              "x": 39,
-              "y": 2,
-              "state": "active"
-            },
-            "vera": {
-              "x": 37,
-              "y": 6,
-              "state": "active"
-            },
-            "tobi": {
-              "x": 39,
-              "y": 6,
-              "state": "active"
-            },
-            "darius": {
-              "x": 36,
-              "y": 2,
-              "state": "active"
-            },
-            "nami": {
-              "x": 42,
+              "x": 4,
               "y": 3,
               "state": "active"
             },
+            "vera": {
+              "x": 12,
+              "y": 3,
+              "state": "active"
+            },
+            "tobi": {
+              "x": 20,
+              "y": 3,
+              "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "active"
+            },
+            "nami": {
+              "x": 12,
+              "y": 16,
+              "state": "active"
+            },
             "leo": {
-              "x": 41,
-              "y": 6,
+              "x": 20,
+              "y": 16,
               "state": "active"
             },
             "finn": {
-              "x": 37,
-              "y": 2,
+              "x": 8,
+              "y": 23,
               "state": "active"
             }
           },
-          "active_room": "kitchen",
+          "active_room": null,
           "artifacts": [],
           "cd_feedback": null,
+          "traces": {
+            "emre": "traces/simulation-2/day01-scene5-emre/",
+            "vera": "traces/simulation-2/day01-scene5-vera/",
+            "tobi": "traces/simulation-2/day01-scene5-tobi/",
+            "darius": "traces/simulation-2/day01-scene5-darius/",
+            "nami": "traces/simulation-2/day01-scene5-nami/",
+            "leo": "traces/simulation-2/day01-scene5-leo/",
+            "finn": "traces/simulation-2/day01-scene5-finn/"
+          },
           "transcripts": {
             "darius": "traces/simulation-2/day01-scene5-darius/transcript.md",
             "emre": "traces/simulation-2/day01-scene5-emre/transcript.md",
@@ -617,7 +626,6 @@
             "darius",
             "emre",
             "nami",
-            "vera",
             "tobi",
             "leo"
           ],
@@ -629,12 +637,12 @@
               "state": "active"
             },
             "vera": {
-              "x": 37,
-              "y": 6,
-              "state": "active"
+              "x": 12,
+              "y": 3,
+              "state": "dimmed"
             },
             "tobi": {
-              "x": 39,
+              "x": 37,
               "y": 6,
               "state": "active"
             },
@@ -649,7 +657,7 @@
               "state": "active"
             },
             "leo": {
-              "x": 41,
+              "x": 39,
               "y": 6,
               "state": "active"
             },
@@ -939,13 +947,13 @@
           "location": "Küche",
           "location_label": "Küche",
           "participants": [
-            "darius",
-            "emre"
+            "emre",
+            "tobi"
           ],
-          "summary": "Darius und Emre über Ruhrpott-Wurzeln. Schwarzrand hat Fördertürme im Talkessel — Duisburg und Gelsenkirchen als Lore-DNA. Emres Großvater bei Thyssen, Darius' Vater bei ThyssenKrupp. Der Stadtname kam beim Spazierengehen im Teutoburger Wald.",
+          "summary": "Emre und Tobi bei Tee und Kaffee. Veras Bilder besprochen, Nerevar, D&D-Pläne. Emre bringt morgen Rize-Tee mit.",
           "positions": {
             "emre": {
-              "x": 39,
+              "x": 37,
               "y": 2,
               "state": "active"
             },
@@ -955,14 +963,14 @@
               "state": "dimmed"
             },
             "tobi": {
-              "x": 20,
-              "y": 3,
-              "state": "dimmed"
-            },
-            "darius": {
-              "x": 37,
+              "x": 39,
               "y": 2,
               "state": "active"
+            },
+            "darius": {
+              "x": 4,
+              "y": 16,
+              "state": "dimmed"
             },
             "nami": {
               "x": 12,
@@ -1000,22 +1008,22 @@
           "location": "Küche",
           "location_label": "Küche",
           "participants": [
-            "vera",
+            "finn",
+            "darius",
             "emre",
-            "nami",
-            "darius"
+            "nami"
           ],
           "summary": "Ergebnisse vorgestellt. Vera zeigt alle 9 Bilder, Emre präsentiert den Mythos, Nami stellt NPCs und Quests vor. Darius filtert fünf CD-Fragen nach Dringlichkeit: (1) Relikt-Name (blockiert Act 3 + Iteration), (2) Player-Agency beim Fragment, (3) Relikt-Formveränderung, (4) Tiervolk-Kosmologie, (5) Düsterkeit der Intro.",
           "positions": {
             "emre": {
-              "x": 39,
+              "x": 36,
               "y": 2,
               "state": "active"
             },
             "vera": {
-              "x": 37,
-              "y": 2,
-              "state": "active"
+              "x": 12,
+              "y": 3,
+              "state": "dimmed"
             },
             "tobi": {
               "x": 20,
@@ -1023,13 +1031,13 @@
               "state": "dimmed"
             },
             "darius": {
-              "x": 42,
-              "y": 3,
+              "x": 39,
+              "y": 2,
               "state": "active"
             },
             "nami": {
-              "x": 36,
-              "y": 2,
+              "x": 42,
+              "y": 3,
               "state": "active"
             },
             "leo": {
@@ -1038,9 +1046,9 @@
               "state": "dimmed"
             },
             "finn": {
-              "x": 8,
-              "y": 23,
-              "state": "dimmed"
+              "x": 37,
+              "y": 2,
+              "state": "active"
             }
           },
           "active_room": "kitchen",

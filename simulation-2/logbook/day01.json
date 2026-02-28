@@ -66,16 +66,16 @@
       "time": "14:00",
       "location": "Küche",
       "participants": ["emre", "nami", "leo"],
-      "summary": "Nami und Vera tauschen sich per Video aus. Smalltalk über Pixel (Whippet), Katzen (Malkav und Nines), Janniks Verständnis von Art Direction, erstes-Tag-Gefühle. Verabreden sich für morgen zum gemeinsamen Mittagessen.",
+      "summary": "Emre, Nami und Leo in der Küche. Emre macht Tee, Nami hat Kaffee, Leo isst. Smalltalk über Nerevar (Emres Katze auf der Tastatur), Detmolds Stille, Malkav und Nines (Namis Katzen), Aquarellstille.",
       "artifacts": []
     },
     {
       "scene": 5,
-      "type": "REVIEW",
-      "time": "15:00",
-      "location": "Küche",
+      "type": "WORK",
+      "time": "14:00",
+      "location": "jeweiliger Arbeitsplatz",
       "participants": ["finn", "emre", "darius", "nami", "vera", "tobi", "leo"],
-      "summary": "Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.",
+      "summary": "Nachmittags-Arbeitsblock. Alle vertiefen ihre Recherche. Finn: Wochenplanung, 4 Blocker. Darius: Schiefer-Prinzip, Schattenfieber-Progression. Emre: Kosmologie-Analyse, Yggdrasil-Vertiefung. Nami: Quest-Struktur, Faction-Konflikte. Vera: Architektur-Moodboard. Tobi: Tech-Pipeline vertiefen. Leo: Wolf-Checkliste, Alpha-Stunde. Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.",
       "artifacts": []
     }
   ]
