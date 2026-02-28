@@ -6,7 +6,7 @@ Dieses Dokument beschreibt, wie die Simulation funktioniert. Der GM (Opus 4.6) l
 
 Basiert auf Park et al. (2023, Generative Agents — Smallville) für Memory-Streams und szenenbasierte Steuerung, und Qian et al. (2024, ChatDev) für phasenbasierte Aufgabenzerlegung mit klaren Abbruchbedingungen.
 
-- **GM** = Hauptsession (Opus 4.6). Orchestriert Szenen, spawnt Agenten, schreibt Logbuch, aktualisiert Memories.
+- **GM** = Hauptsession (Opus 4.6). Orchestriert Szenen, spawnt Agenten, schreibt Logbuch.
 - **7 Agenten** = Subagenten (Sonnet 4.6, `model: "sonnet"`). Werden pro Szene via Task-Tool gespawnt. Jeder Agent hat eine Rollendefinition in `.claude/agents/{name}.md` und ein Persönlichkeitsprofil in `roster/`.
 - **CD** / **Creative Director** = Menschlicher Nutzer. Gibt Feedback, trifft kreative Entscheidungen.
 
@@ -19,7 +19,7 @@ Kein separater Server. Die Claude-Code-Session IST die Runtime. Alle Daten leben
 | Weltzustand | `state/world.json` |
 | Agent-Memory | `agents/{name}-memory.md` (finn, darius, emre, nami, vera, tobi, leo) |
 | Agent-Roster | `roster/{vorname}-{nachname}.md` (Frontmatter `workspace` → Szenen-Ort) |
-| Traces | `traces/dayDD-sceneS-…/` |
+| Traces | `traces/dayDD-sceneS-…/` (JSONL automatisch, transcript.md per Script) |
 | Logbuch | `logbook/dayDD.json` |
 | Logbuch-Schema | `schemas/day-index.json` (**Repo-Root**, nicht in simulation-2/) |
 | Briefing | `briefing.md` |
@@ -45,7 +45,7 @@ Alle 7 Agenten **parallel** spawnen (`model: "sonnet"`). Jeder Agent bekommt:
 - Eigene Rollendefinition (aus `.claude/agents/{name}.md`)
 - Eigene Memory (`agents/{name}-memory.md`)
 - Briefing-Kontext + Szenenkontext (Tag, Szenennummer, Aufgabe)
-- Anweisung: Traces in `traces/dayDD-sceneS-name/` schreiben
+- Anweisung: Am Ende eigene Memory-Datei ergänzen
 
 ### Gesprächsszenen (BRIEFING, MEETING, REVIEW, PAUSE, DND)
 
@@ -53,7 +53,7 @@ Alle 7 Agenten **parallel** spawnen (`model: "sonnet"`). Jeder Agent bekommt:
 
 1. GM legt Teilnehmer + Reihenfolge fest
 2. Pro Turn: Agent spawnen mit Szenenkontext + eigener Memory + **gesamtem bisherigen Dialog**
-3. Agent schreibt Trace in `traces/dayDD-sceneS-tT-name/` (T = Turn-Nummer)
+3. Agent spricht + ergänzt eigene Memory-Datei
 4. GM sammelt Output → hängt an Dialog an → spawnt nächsten Agenten
 5. Wiederholen bis Gespräch natürlich endet
 
@@ -67,35 +67,33 @@ Umfang:
 Jeder Agent-Prompt, den der GM schreibt, MUSS enthalten:
 1. "Schreibe echte deutsche Umlaute (ä, ö, ü, ß), NICHT ae, oe, ue, ss."
 2. Verweis auf Briefing-Datei und eigene Memory-Datei (exakte Pfade)
-3. Exakte Trace-Pfade mit korrektem Namensschema (`0-prompt.md`, `1-reasoning.md`, `2-output.md`)
-4. Szenenkontext: Tag, Szene, Uhrzeit, Ort, Teilnehmer, Aufgabe
+3. Szenenkontext: Tag, Szene, Uhrzeit, Ort, Teilnehmer, Aufgabe
+4. Anweisung: "Ergänze am Ende deine Memory-Datei mit einer kurzen Erinnerung an diese Szene."
 
 ## GM-Checkliste (pro Szene)
 
 1. `state/world.json` lesen → Tag + Szenennummer bestimmen
 2. `agents/{name}-memory.md` für jeden Teilnehmer lesen
-3. Szene ausführen (parallel oder sequenziell)
-4. Nach der Szene: `agents/{name}-memory.md` für **jeden Teilnehmer** ergänzen — auch PAUSE. Sowohl **Arbeit** als auch **Zwischenmenschliches**.
+3. Szene ausführen (parallel oder sequenziell) — jeder Agent ergänzt **selbst** seine Memory-Datei
 
 ## Tagesende (nach Szene 6)
 
-5. `logbook/dayDD.json` schreiben gemäß `schemas/day-index.json`
-6. `state/world.json` aktualisieren (Tag +1, Szene 0)
-7. `python scripts/validate-sim.py --sim-dir simulation-2` — Fehler beheben vor Weiterarbeit
-8. `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
-9. Outputs generieren:
+4. `logbook/dayDD.json` schreiben gemäß `schemas/day-index.json`
+5. `state/world.json` aktualisieren (Tag +1, Szene 0)
+6. `python scripts/validate-sim.py --sim-dir simulation-2` — Fehler beheben vor Weiterarbeit
+7. `python3 scripts/extract-transcripts.py --sim-dir simulation-2 --overwrite`
+8. Outputs generieren:
    - **Immer**: `scripts/export-logbook.py --sim-dir simulation-2`, `scripts/build-viewer-data.py --sim-dir simulation-2`
    - **Wenn GDD/WBB existieren**: `scripts/export-gdd.py --sim-dir simulation-2`, `scripts/export-wbb.py --sim-dir simulation-2`
 
-## Traces (Pflicht pro Agent)
+## Traces
 
-Drei Dateien pro Trace-Verzeichnis: `0-prompt.md`, `1-reasoning.md`, `2-output.md`. Keine zusätzlichen.
+Traces werden **automatisch** von Claude Code als JSONL geloggt. Nach Tagesende extrahiert `scripts/extract-transcripts.py` daraus lesbare `transcript.md`-Dateien. Agenten schreiben **keine** manuellen Trace-Dateien.
 
 | Szenentyp | Verzeichnisname | Beispiel |
 |-----------|----------------|----------|
 | WORK | `dayDD-sceneS-name/` | `day01-scene2-emre/` |
 | Gesprächs-Turn | `dayDD-sceneS-tT-name/` | `day06-scene4-t1-vera/` |
-| GM-Trace | `dayDD-sceneS-typ/` | `day06-scene4-pause/` |
 
 ## Logbuch-Format (v5)
 

@@ -1,4 +1,4 @@
-# Simulation Tag starten
+Simulation Tag starten
 
 Lies **aktiv** (mit dem Read-Tool) folgende Dateien, bevor du irgendetwas anderes tust:
 1. `simulation-2/game-master.md` — Simulationsregeln und GM-Checkliste
@@ -7,6 +7,4 @@ Lies **aktiv** (mit dem Read-Tool) folgende Dateien, bevor du irgendetwas andere
 
 Spiele dann den nächsten Simulationstag — alle 6 Szenen nacheinander gemäß Tagesablauf in `game-master.md`.
 
-## CD-Feedback
-
-> [Hier dein Feedback einfügen]
+CD-Feedback
