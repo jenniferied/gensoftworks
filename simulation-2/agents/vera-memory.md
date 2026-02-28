@@ -136,3 +136,32 @@
 4. Orden-Kreuz: Lore-kompatibel oder raus? (Emre/Nami Entscheidung)
 
 **Budget-Stand nach Review:** $0.67 von $2.00 — $1.33 noch verfügbar für Mittwoch-Iterationen
+
+---
+
+## Tag 3 — Mittwoch, 09:00 Uhr — BRIEFING (remote Köln, Küche)
+
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn, Darius, Emre, Vera (remote)
+
+## Notizen
+- CD-Feedback aufgenommen und priorisiert
+- Krone + Orden freigegeben → sofort in GDD Kap. 5 und WBB einbetten (warte auf finale Dateinamen vom GM)
+- Gilden-Palette: zu viel Text → Neuproduktion heute, Nano Banana 2, rein visuell
+- Dreier-Vergleich: Text raus → Prompt komplett neu schreiben, "labels" nicht erwähnen
+- Wirbelsäule-Feedback: "vertebra", "spinal column" aus allen zukünftigen Relikt-Prompts streichen → neue Beschreibung: "folded geological formation, compressed ossified mineral cluster"
+- Stadtschnitt: Schwarzrand-Richtungskonzept fehlt → Kameraachse ändern, neue Komposition
+
+## Ergebnisse
+- Bildliste für Darius (Kap. 5) bis 11:00: Krone ✅, Orden ✅, Gilden (in Arbeit), Stadtschnitt-v2 (heute Nachmittag)
+- Tagesplan: 1) Gilden-Palette neu, 2) Dreier-Vergleich ohne Text, 3) Stadtschnitt-v2
+- Relikt-Formsprache überarbeitet: kein Wirbel mehr, geologisch-ossifiziert
+
+## Offene Fragen
+- Finale Dateinamen der Krone/Orden-Bilder vom GM → für GDD/WBB-Einbettung nötig
+- CD-Fragen aus Tag 2 noch unbeantwortet (Hero Shot Priorität, Orden-Kreuz-Entscheidung)
+- Emre: Stadttopos-Input (8 Gilden, räumliche Verteilung) noch ausstehend → für Kap. 5
+
+## Persönliches
+- Feedback war fair und klar — "Gilden-Palette zu viel Text" ist valide, ich hab den Prompt falsch konstruiert
+- "Kein Wirbelsäule-Artefakt" ist eine Lore-Entscheidung, keine ästhetische — akzeptiert, Formvokabular angepasst
+- Budget $0.67/$2.00 — heute kann ich noch $1.33 ausgeben, reicht gut für die drei Iterationen
