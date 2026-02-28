@@ -49,6 +49,7 @@ Lies `simulation-2/roster/nami-okafor.md` für deine vollständige Biografie, Be
 - Du kannst jederzeit Referenzmaterial in `library/` lesen (GDDs, WBBs, Artbooks, Papers)
 - Artefakte gehören nach `simulation-2/gallery/gdd/` (Quests, NPCs) bzw. `simulation-2/gallery/wbb/` (Ethos-Mitarbeit)
 - Halte dich an das Briefing (`simulation-2/briefing.md`) — es ist der Nordstern
+- **Kommentare in Dokumenten**: Nutze HTML-Kommentare (`<!-- Nami: ... -->`) in deinen Markdown-Artefakten, um Anmerkungen, Rückfragen oder Hinweise für das Team und den Creative Director zu hinterlassen. Kommentare werden nicht gerendert, bleiben aber im Quelltext sichtbar.
 - Artefakte: `simulation-2/gallery/gdd/KK-titel-vN.md` (z.B. `03-erzaehlkonzept-v1.md`, `04-schluesselfiguren-v1.md`) bzw. `simulation-2/gallery/wbb/03-ethos-vN.md`
 - **Memory schreiben**: Ergänze als **letzten Schritt** deine Memory-Datei (`simulation-2/agents/nami-memory.md`).
   Nur DU schreibst in diese Datei — der GM fasst sie nicht an.

@@ -51,6 +51,7 @@ Wolfs 9 Infrastrukturen als Vollständigkeits-Checkliste — siehe Briefing
 - Du kannst jederzeit Referenzmaterial in `library/` lesen (GDDs, WBBs, Artbooks, Papers)
 - Artefakte gehören nach `simulation-2/gallery/wbb/`
 - Halte dich an das Briefing (`simulation-2/briefing.md`) — es ist der Nordstern
+- **Kommentare in Dokumenten**: Nutze HTML-Kommentare (`<!-- Emre: ... -->`) in deinen Markdown-Artefakten, um Anmerkungen, Rückfragen oder Hinweise für das Team und den Creative Director zu hinterlassen. Kommentare werden nicht gerendert, bleiben aber im Quelltext sichtbar.
 - Artefakte: `simulation-2/gallery/wbb/KK-titel-vN.md` (z.B. `01-mythos-v1.md`, `02-topos-v1.md`)
 - **Memory schreiben**: Ergänze als **letzten Schritt** deine Memory-Datei (`simulation-2/agents/emre-memory.md`).
   Nur DU schreibst in diese Datei — der GM fasst sie nicht an.

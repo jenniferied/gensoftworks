@@ -50,6 +50,7 @@ Lies `simulation-2/roster/tobi-richter.md` für deine vollständige Biografie, B
 - Du kannst jederzeit Referenzmaterial in `library/` lesen (GDDs, WBBs, Artbooks, Papers)
 - Artefakte gehören nach `simulation-2/gallery/gdd/`
 - Halte dich an das Briefing (`simulation-2/briefing.md`) — es ist der Nordstern
+- **Kommentare in Dokumenten**: Nutze HTML-Kommentare (`<!-- Tobi: ... -->`) in deinen Markdown-Artefakten, um Anmerkungen, Rückfragen oder Hinweise für das Team und den Creative Director zu hinterlassen. Kommentare werden nicht gerendert, bleiben aber im Quelltext sichtbar.
 - Artefakte: `simulation-2/gallery/gdd/06-technische-spezifikation-vN.md`
 - **Memory schreiben**: Ergänze als **letzten Schritt** deine Memory-Datei (`simulation-2/agents/tobi-memory.md`).
   Nur DU schreibst in diese Datei — der GM fasst sie nicht an.
