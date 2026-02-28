@@ -110,24 +110,6 @@
               "label": "Vera",
               "agent": "vera",
               "url": "traces/simulation-2/day01-scene1-vera/transcript.md"
-            },
-            {
-              "label": "Turn 1: Finn",
-              "agent": "finn",
-              "turn": 1,
-              "url": "traces/simulation-2/day01-scene1-t1-finn/transcript.md"
-            },
-            {
-              "label": "Turn 2: Darius",
-              "agent": "darius",
-              "turn": 2,
-              "url": "traces/simulation-2/day01-scene1-t2-darius/transcript.md"
-            },
-            {
-              "label": "Turn 3: Emre",
-              "agent": "emre",
-              "turn": 3,
-              "url": "traces/simulation-2/day01-scene1-t3-emre/transcript.md"
             }
           ]
         },
