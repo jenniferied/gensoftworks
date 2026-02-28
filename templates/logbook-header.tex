@@ -91,6 +91,11 @@
 % Wrap figures (screenshot left, text right)
 \usepackage{wrapfig}
 
+% Breakable monospace text (for file paths in traces)
+\newcommand{\breaktt}[1]{%
+  {\ttfamily\sloppy\emergencystretch=3em\hfuzz=1em #1}%
+}
+
 % Body text one size smaller globally
 \AtBeginDocument{\small}
 

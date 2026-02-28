@@ -749,17 +749,13 @@ def render_artifacts(artifacts, sim_dir, thumb_dir=None):
                     prompt_label = meta["prompt"]
             except Exception:
                 pass
-            # Truncate prompt for display (max ~120 chars)
-            if len(prompt_label) > 120:
-                prompt_label = prompt_label[:117] + "..."
-
             lines.append(f"\\begin{{minipage}}[t]{{0.48\\textwidth}}")
             lines.append(f"\\centering")
             lines.append(f"\\includegraphics[width=\\linewidth,height=5cm,keepaspectratio]{{{thumb}}}")
             if model_label:
                 lines.append(f"\\\\[2pt]{{\\scriptsize\\textbf{{{esc(model_label)}}}}}")
             if prompt_label:
-                lines.append(f"\\\\[1pt]{{\\tiny\\itshape {esc(prompt_label)}}}")
+                lines.append(f"\\\\[1pt]{{\\tiny\\itshape\\raggedright {esc(prompt_label)}}}")
             lines.append(f"\\end{{minipage}}")
             # 2 per row: hfill after odd, newline+vspace after even
             if (i + 1) % 2 == 1:

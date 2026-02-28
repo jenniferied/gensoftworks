@@ -135,15 +135,73 @@ def identify_trace_dir(entries, sim_dir):
     if not agent_id or not first_text:
         return None, None
 
-    # Look for "Tag N" + "Szene M" in prompt
+    # Look for "Tag N" + "Szene M: TYPE" in prompt
     day_m = re.search(r"Tag\s+(\d+)", first_text)
-    scene_m = re.search(r"Szene\s+(\d+)", first_text)
+    scene_m = re.search(r"Szene\s+(\d+)(?::\s*(\w+))?", first_text)
     if not day_m or not scene_m:
         return None, None
 
     day_num = int(day_m.group(1))
     scene_num = int(scene_m.group(1))
+    scene_type = (scene_m.group(2) or "").upper()
+
+    # For shared scenes, we can't assign turn numbers here — caller must handle
     trace_dir_name = f"day{day_num:02d}-scene{scene_num}-{agent_id}"
+    return trace_dir_name, agent_id
+
+
+# Scene types where multiple agents share a directory (conversation rounds)
+SHARED_SCENE_TYPES = {"BRIEFING", "MEETING", "PAUSE", "REVIEW", "DND"}
+
+
+def _parse_scene_from_prompt(entries):
+    """Extract (day, scene_num, scene_type, agent_id) from the first entry's prompt.
+
+    Returns (day, scene, type, agent_id) or (None, None, None, None).
+    """
+    if not entries:
+        return None, None, None, None
+
+    first_msg = entries[0].get("message", {})
+    prompt = first_msg.get("content", "")
+    if not isinstance(prompt, str):
+        return None, None, None, None
+
+    day_m = re.search(r"Tag (\d+)", prompt)
+    scene_m = re.search(r"Szene (\d+):\s*(\w+)", prompt)
+    if not day_m or not scene_m:
+        return None, None, None, None
+
+    day = int(day_m.group(1))
+    scene_num = int(scene_m.group(1))
+    scene_type = scene_m.group(2).upper()
+    agent_id = _extract_agent_from_prompt(prompt)
+
+    return day, scene_num, scene_type, agent_id
+
+
+def identify_trace_dir_from_prompt(entries, turn_number=None):
+    """Fallback: derive trace dir name from the agent's initial prompt.
+
+    For WORK scenes: day01-scene2-emre
+    For shared scenes: day01-scene1-t1-finn (with turn number)
+
+    Returns (trace_dir_name, agent_id) or (None, None).
+    """
+    day, scene_num, scene_type, agent_id = _parse_scene_from_prompt(entries)
+    if day is None or agent_id is None:
+        return None, None
+
+    prefix = f"day{day:02d}-scene{scene_num}"
+
+    if scene_type in SHARED_SCENE_TYPES:
+        if turn_number is None:
+            return None, None
+        trace_dir_name = f"{prefix}-t{turn_number}-{agent_id}"
+    else:
+        # WORK or other individual scenes
+        trace_dir_name = f"{prefix}-{agent_id}"
+
     return trace_dir_name, agent_id
 
 
@@ -279,7 +337,7 @@ def _identify_gm_day(entries, sim_dir):
     Returns a set of day numbers (e.g. {6}) or empty set.
     """
     days = set()
-    pattern = re.compile(rf"{re.escape(sim_dir)}/logbook/day(\d+)-scene\d+\.json")
+    pattern = re.compile(rf"{re.escape(sim_dir)}/logbook/day(\d+)(?:-scene\d+)?\.json")
     for entry in entries:
         msg = entry.get("message", {})
         content = msg.get("content", [])
@@ -305,6 +363,10 @@ def extract_from_storage(args):
         print(f"Traces directory not found: {traces_root}")
         sys.exit(1)
 
+    if not args.session:
+        print("Error: --session is required for extract mode (prevents scanning wrong sessions).")
+        sys.exit(1)
+
     sessions = find_sessions()
     if not sessions:
         print("No subagent JSONL files found.")
@@ -318,8 +380,13 @@ def extract_from_storage(args):
 
     total_found = 0
     total_written = 0
+    total_skipped = 0
 
-    # --- Extract agent transcripts ---
+    # --- Phase 1: Pre-scan all JONLs to assign turn numbers for shared scenes ---
+    # Structure: {(session_id, scene_key): [(timestamp, agent_id, jsonl_path, entries), ...]}
+    scene_groups = {}
+    all_agent_data = []
+
     for session_id, jsonl_files in sorted(sessions):
         for jsonl_path in sorted(jsonl_files):
             if "compact" in jsonl_path.name:
@@ -329,39 +396,72 @@ def extract_from_storage(args):
             if not entries:
                 continue
 
+            # Try Write-based identification first
             trace_dir_name, agent_id = identify_trace_dir(entries, sim_dir)
-            if not trace_dir_name:
+            if trace_dir_name:
+                all_agent_data.append((session_id, jsonl_path, entries, trace_dir_name, agent_id, None))
                 continue
 
-            total_found += 1
-            target_dir = traces_root / trace_dir_name
-            stem = _stem_name(trace_dir_name, agent_id)
-            raw_file = target_dir / f"{stem}.jsonl"
-            md_file = target_dir / f"{stem}.md"
-
-            if args.dry_run:
-                print(f"  {jsonl_path.name} → {trace_dir_name}/{stem}.jsonl + .md ({len(entries)} entries)")
+            # Fallback: parse scene info from prompt
+            day, scene_num, scene_type, agent_id = _parse_scene_from_prompt(entries)
+            if day is None or agent_id is None:
+                total_skipped += 1
+                print(f"  SKIP {jsonl_path.name} (cannot identify trace dir or scene)")
                 continue
 
-            if raw_file.exists() and not args.overwrite:
-                print(f"  SKIP {trace_dir_name}/{stem} (exists, use --overwrite)")
-                continue
+            # Get timestamp for ordering
+            ts = entries[0].get("timestamp", "")
 
-            target_dir.mkdir(parents=True, exist_ok=True)
+            if scene_type in SHARED_SCENE_TYPES:
+                scene_key = (day, scene_num, scene_type)
+                scene_groups.setdefault(scene_key, []).append(
+                    (ts, agent_id, jsonl_path, entries, session_id)
+                )
+            else:
+                prefix = f"day{day:02d}-scene{scene_num}"
+                trace_dir_name = f"{prefix}-{agent_id}"
+                all_agent_data.append((session_id, jsonl_path, entries, trace_dir_name, agent_id, None))
 
-            # 1. Copy raw JSONL
-            shutil.copy2(jsonl_path, raw_file)
+    # Assign turn numbers to shared scene agents (sorted by timestamp)
+    for scene_key, agents in scene_groups.items():
+        day, scene_num, scene_type = scene_key
+        prefix = f"day{day:02d}-scene{scene_num}"
+        agents.sort(key=lambda x: x[0])  # sort by timestamp
+        for turn_num, (ts, agent_id, jsonl_path, entries, session_id) in enumerate(agents, 1):
+            trace_dir_name = f"{prefix}-t{turn_num}-{agent_id}"
+            all_agent_data.append((session_id, jsonl_path, entries, trace_dir_name, agent_id, turn_num))
 
-            # 2. Generate readable markdown
-            source_info = f"Session: `{session_id}`\nSource: `{jsonl_path.name}`"
-            header = _make_header(trace_dir_name, entries, source_info)
-            transcript = format_transcript(entries)
-            md_file.write_text(header + transcript, encoding="utf-8")
+    # --- Phase 2: Write all transcripts ---
+    for session_id, jsonl_path, entries, trace_dir_name, agent_id, turn_num in all_agent_data:
+        total_found += 1
+        target_dir = traces_root / trace_dir_name
+        stem = _stem_name(trace_dir_name, agent_id)
+        raw_file = target_dir / f"{stem}.jsonl"
+        md_file = target_dir / f"{stem}.md"
 
-            raw_kb = raw_file.stat().st_size / 1024
-            md_kb = md_file.stat().st_size / 1024
-            total_written += 1
-            print(f"  {trace_dir_name}/{stem} — jsonl: {raw_kb:.0f} KB, md: {md_kb:.0f} KB ({len(entries)} entries)")
+        if args.dry_run:
+            print(f"  {jsonl_path.name} → {trace_dir_name}/{stem}.jsonl + .md ({len(entries)} entries)")
+            continue
+
+        if raw_file.exists() and not args.overwrite:
+            print(f"  SKIP {trace_dir_name}/{stem} (exists, use --overwrite)")
+            continue
+
+        target_dir.mkdir(parents=True, exist_ok=True)
+
+        # 1. Copy raw JSONL
+        shutil.copy2(jsonl_path, raw_file)
+
+        # 2. Generate readable markdown
+        source_info = f"Session: `{session_id}`\nSource: `{jsonl_path.name}`"
+        header = _make_header(trace_dir_name, entries, source_info)
+        transcript = format_transcript(entries)
+        md_file.write_text(header + transcript, encoding="utf-8")
+
+        raw_kb = raw_file.stat().st_size / 1024
+        md_kb = md_file.stat().st_size / 1024
+        total_written += 1
+        print(f"  {trace_dir_name}/{stem} — jsonl: {raw_kb:.0f} KB, md: {md_kb:.0f} KB ({len(entries)} entries)")
 
     # --- Extract GM session transcripts ---
     gm_written = 0
@@ -410,7 +510,8 @@ def extract_from_storage(args):
             gm_written += 1
             print(f"  {trace_dir_name}/transcript — jsonl: {raw_kb:.0f} KB, md: {md_kb:.0f} KB ({len(entries)} entries)")
 
-    print(f"\nDone. Agents: {total_found} found, {total_written} written. GM: {gm_written} written.")
+    skipped_info = f", {total_skipped} unidentified" if total_skipped else ""
+    print(f"\nDone. Agents: {total_found} found, {total_written} written{skipped_info}. GM: {gm_written} written.")
 
 
 # ---------------------------------------------------------------------------
