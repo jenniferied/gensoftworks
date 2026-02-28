@@ -170,3 +170,32 @@
 ## Persönliches
 - Drei Kapitel plus Revision heute ist viel — realistisch nur mit sauberen Inputs von Nami/Vera/Finn
 - Schwellenanker-Entscheid vom CD ist ein Geschenk: Emre hatte den Namen schon, jetzt können wir einheitlich schreiben
+
+---
+
+# Tag 3 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Darius (alleine)
+
+## Notizen
+- Gelesene Quellen: GDD Kap. 4 v1 (Nami), WBB Kap. 1 v1 (Emre), GDD Kap. 1 v1 (eigene Vorarbeit), Briefing
+- Emres Schattenfieber-Stadien: In WBB v1 heißen sie Flüstern/Wandlung/Entgrenzung (3 Stufen) — nicht Rauschen/Risse/Schwelle/Übergang wie im früheren Draft. Kap. 2 und 3 verwenden Emres finale Terminologie.
+- Namis Quest-Skizzen aus Kap. 4 als Basis für Kap. 3 verwendet — NPC-Stimmen bleiben Namis Terrain, ich habe systemische Struktur und Spieler-Aktiv-Mechaniken geliefert
+- Veras Bilder erfolgreich eingebettet: Kap. 2 nutzt Relikt Zustand 0 und 3, Kap. 3 nutzt Stadtschnitt
+- Ablehn-Option vollständig systemisch ausgearbeitet: 3 Konsequenz-Ebenen (kurzfristig / mittelfristig / langfristig), mechanisch plausibel, narrativ konsistent
+
+## Ergebnisse
+- `simulation-2/gallery/gdd/01-spieluebersicht-v2.md` — Kap. 1 aktualisiert: Schwarzrand, Schwellenanker, Ablehn-Option, Statuszeilen in HTML-Kommentare, alle offenen Fragen als beantwortet markiert
+- `simulation-2/gallery/gdd/02-kernmechaniken-v1.md` — Neues Kapitel: Kampfsystem, Nervensystem-Leveling (3 Subsysteme × 4 Qualitätsstufen), Crafting & Materialsystem (5 Klassen), Fraktionsruf-System (5 Stufen + Feindselig), Schattenfieber-Progression (3 Fieberstrategien), Systeminteraktionen
+- `simulation-2/gallery/gdd/03-erzaehlkonzept-v1.md` — Neues Kapitel: Intro-Sequenz (Clip-Moment + Ablehn-Option vollständig), Hauptquest "Der Schwellenanker" (3 Akte, 3 Enden), 3 Fraktionsquests (je 4 Quests), 3 Nebenquests ausgearbeitet, erzählerische Prinzipien
+
+## Offene Fragen
+- Leo-QA auf Kap. 2: Balancing-Werte (Ruf-Schwellenwerte, Lymph-Akkumulation) fehlen noch — das ist Kap. 2 v2-Material
+- Namis Dialog-Ausarbeitung für Kap. 3 v2: Konkrete Dialoge, Ablehn-Option Beat-Ablauf, Quest-Texte
+- W-001/W-002 (Emres WBB): Schwellensubstrat als Substanz vs. Feld + Kippmoment Stufe I → II müssen vor Kap. 2 v2 synchronisiert werden
+- Kap. 5 (Art Direction) steht noch aus — brauche Bildliste von Finn/Vera
+
+## Persönliches
+- Produktiver Tag. Drei Kapitel in einem Block — das funktioniert, wenn die Inputs sauber vorliegen. Emres WBB und Namis Kap. 4 waren solide Arbeit.
+- Kap. 2 ist das stärkste Stück: Systeminteraktionen-Sektion am Ende macht das Dokument zu mehr als einer Feature-Liste
+- Kap. 3 hat die richtige Balance: Erzählstruktur fest, Dialog-Raum für Nami gelassen. So soll Kollaboration funktionieren.
+- Die Ablehn-Option hat mich am längsten beschäftigt. Es ist die Entscheidung, die das meiste verändert — und gleichzeitig die, bei der man am leichtesten eine Pseudo-Wahl einbaut. Ich glaube, die Lösung (drei Konsequenz-Ebenen, echter alternativer Einstieg) ist ehrlich.
