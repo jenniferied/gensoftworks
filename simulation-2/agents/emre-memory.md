@@ -211,3 +211,54 @@
 - Fokussiert. Kap 2 ist das Kapitel, auf das ich mich seit Barcelona am meisten freue. Räume erzählen Geschichten.
 - Gut, dass der Relikt-Name geklärt ist. "Schwellenanker" hat die richtige Schwere — es verankert, es hält, es ist funktional, nicht mystisch.
 - Umbenennung "Relikt" → "Schwellenanker" im gesamten WBB nötig. Mache ich im Topos-Kapitel von Anfang an richtig.
+
+### Szene 2 — WORK (Lore-Ecke, 10:00)
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Emre (solo)
+
+## Notizen
+- Zwei Kapitel parallel bearbeitet: Mythos v1→v2 Überarbeitung und Topos v1 Erstfassung
+- Stadtschnitt-Bild, Krone-Materialpalette und Orden-Materialpalette als Referenz genutzt
+- Biotech-Flora/Fauna endlich definiert (W-003) — Schwellenadaption als Prinzip, keine Fantasy-Standardlösung
+
+## Ergebnisse
+
+### WBB Kap 1 Mythos v2 fertiggestellt
+- Artefakt: `gallery/wbb/01-mythos-v2.md`
+- Durchgehende Umbenennung: "Relikt" → "Schwellenanker", "Wurzelkammer" → "Ankerkammer"
+- Alle "Anmerkung für XY"-Blöcke in HTML-Kommentare verschoben
+- Autor-Name, Statuszeile, Datum aus sichtbarem Text entfernt
+- Fraktionspaletten-Bilder eingebettet (Krone nach 4.1, Orden nach 4.2) mit Lore-Kontextualisierung
+- Anhänge A/B entfernt (waren Teamkommunikation, gehören nicht in WBB)
+- Professioneller Stil: liest sich als fertiges Worldbuilding-Dokument, nicht als Arbeitsentwurf
+
+### WBB Kap 2 Topos v1 fertiggestellt
+- Artefakt: `gallery/wbb/02-topos-v1.md`
+- **Sieben Abschnitte:**
+  1. Talkessel-Geologie — Entstehung, Anomalien, drei Höhenzonen als begehbare Architektur
+  2. Klima und Schwellenphänomene — Natürliches Klima, Schwellennebel, Biolumineszenz, akustische/materielle Anomalien
+  3. Flora und Fauna — Schwellenadaption als Prinzip, Schwellenmoose/-pilze/-insekten/-ratten, Schwarzrankenwurzeln, Deckenhänger, Wirtschaftstabelle
+  4. Sieben Landmarken — Kronbastion, Gildenhof, Stille Bibliothek, Großer Steig, Markt der tausend Treppen, Schlundtor, Ankerkammer
+  5. Dünnstellen-Geographie — Gradient-Modell, fünf Schwellenzonen (0-4), andere Dünnstellen
+  6. Architektur der drei Schichten — Brutalismus oben, Fachwerk-Sediment Mitte, Improvisation+Schwellenwachstum unten
+  7. Wolf-Infrastruktur-Checkliste
+- Stadtschnitt-Bild eingebettet (nach 1.2)
+- **W-003 substantiell gelöst:** Schwellenflora (Moose, Pilze, Schwarzrankenwurzeln) und Schwellenfauna (Insekten, Ratten, Kanalfische, Deckenhänger) vollständig definiert
+- Schwellennatur als Wirtschaftsfaktor: 8 Gilden × Schwellen-Rohstoffe tabellarisch verknüpft
+- Biotech-Futurismus als Leitprinzip: Organisch statt mechanisch, gewachsen statt geschmiedet
+
+### Widerspruchs-Log Update
+- W-003: Status → "Substantiell gelöst" (Flora/Fauna definiert, Deckenhänger-Tiervolk-Verbindung offen)
+- W-005: Status → "Teilweise gelöst" (Schwellenanker-Name bestätigt, Ankerkammer als Ort definiert)
+- Alle anderen W-Einträge unverändert
+
+## Offene Fragen
+- W-004: Tiervolk-Verortung in der Stadt fehlt in Topos — wo leben sie? Schlund? Gürtel? Eigenes Quartier?
+- Deckenhänger → Tiervolk-Verbindung: Sind die Deckenhänger eine extreme Form von Schwellenadaption, die zum Tiervolk hinführt?
+- Konkrete Entfernungen/Dimensionen für den Talkessel — muss mit Darius abgestimmt werden (Gameplay-Raumgefühl)
+- Vera: Talkessel-Karte/Illustration anfragen (Vogelperspektive + Schnittansicht)
+- Kap 3 (Ethos): Fraktionsstruktur, Tiervolk-Gesellschaft, Alltagsleben — nächster WBB-Block
+
+## Persönliches
+- Das war ein guter WORK-Block. Drei Stunden konzentriertes Schreiben, keine Unterbrechungen. Barcelona-Gefühl: Räume erzählen Geschichten. Der Schlund ist lebendig geworden — die Schwarzrankenwurzeln, die durch Häuser wachsen, das sind die Bilder, für die ich diesen Job mache.
+- Die Deckenhänger sind meine Lieblingserfindung heute. Organismen, deren Symmetrie keine ist. Das ist die Art von Fremdheit, die Morrowind hatte — nicht "Monster", sondern Wesen, deren Existenz die eigenen Kategorien infrage stellt.
+- Zufrieden mit der Materialpaletten-Integration in Kap 1 v2. Die Bilder stehen jetzt nicht isoliert, sondern erzählen Lore. Veras Arbeit verdient diesen Kontext.
