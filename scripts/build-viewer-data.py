@@ -193,6 +193,9 @@ def load_chapters(gallery_dir, days):
             if not m:
                 continue
             chapter_num = m.group(1)
+            # Skip 00-* note files — they're inline scene notes, not document chapters
+            if chapter_num == "00":
+                continue
             chapter_slug = m.group(2)
             version = int(m.group(3))
             chapter_id = f"{chapter_num}-{chapter_slug}"
@@ -228,6 +231,37 @@ def load_chapters(gallery_dir, days):
                 ch["first_appeared"] = earliest
         result[doc_type] = sorted(chapters.values(), key=lambda c: c["id"])
     return result
+
+
+def embed_note_contents(days, gallery_dir):
+    """Embed markdown content from note files (00-*.md, non-versioned) into scene data.
+
+    Scans scene artifacts for gallery paths matching 00-*.md (not *-vN.md),
+    reads their content, and stores in scene['note_contents'] = {path: content}.
+    """
+    note_re = re.compile(r"^gallery/.+/00-.+\.md$")
+
+    for day_entry in days:
+        for sc in day_entry["scenes"]:
+            note_contents = {}
+            for art in sc.get("artifacts", []):
+                if not note_re.match(art):
+                    continue
+                full_path = gallery_dir.parent / art
+                # If non-versioned file missing, try -v1.md variant
+                if not full_path.exists():
+                    stem = full_path.stem  # e.g. "00-recherche-notizen-darius"
+                    v1_path = full_path.with_name(f"{stem}-v1.md")
+                    if v1_path.exists():
+                        full_path = v1_path
+                if full_path.exists():
+                    try:
+                        content = full_path.read_text()
+                        note_contents[art] = content
+                    except Exception:
+                        pass
+            if note_contents:
+                sc["note_contents"] = note_contents
 
 
 def load_concept_art(gallery_dir, days):
@@ -732,6 +766,9 @@ def main():
     # Load concept art
     concept_art = load_concept_art(gallery_dir, days)
 
+    # Embed note contents into scene data
+    embed_note_contents(days, gallery_dir)
+
     # Copy traces and add references to scenes
     if args.sim_dir:
         traces_dir = sim_root / "traces"
@@ -866,6 +903,23 @@ def main():
 
             copied = sum(1 for d in traces_dest.iterdir() if d.is_dir()) if traces_dest.exists() else 0
             print(f"Traces: {copied} Verzeichnisse kopiert nach {traces_dest}")
+
+    # Copy concept art images to frontend/public/gallery/
+    if args.sim_dir:
+        src_concepts = gallery_dir / "concepts"
+        if src_concepts.exists():
+            dest_concepts = ROOT / "frontend" / "public" / "gallery" / "concepts"
+            img_count = 0
+            for ext in ("*.png", "*.jpg", "*.jpeg", "*.webp"):
+                for img_file in src_concepts.rglob(ext):
+                    rel = img_file.relative_to(src_concepts)
+                    dest_file = dest_concepts / rel
+                    if not dest_file.exists():
+                        dest_file.parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copy2(img_file, dest_file)
+                        img_count += 1
+            if img_count:
+                print(f"Concept Art: {img_count} Bilder kopiert nach {dest_concepts}")
 
     data = {"days": days}
     if agent_memories:

@@ -1,1 +1,0 @@
-Ich hab gestern schon alle sechs Dokumente durchgelesen und QA-Kommentare reingeschrieben — bin also quasi schon durch mit der ersten Review-Runde. Wenn jemand unsicher ist, wo er anfangen soll oder welche Stellen sich widersprechen: kommt zu mir, ich kann euch die zwei, drei kritischen Stellen direkt zeigen. Spart uns Zeit für die V2.

@@ -142,6 +142,60 @@
         color: #7a9ab8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
       }
 
+      /* Artifact notes — expandable blocks with white background */
+      .artifact-note { margin-bottom: 4px; }
+      .artifact-note-toggle {
+        background: #e8e4dc; border: 1px solid #d0c8b8; color: #444;
+        font-family: monospace; font-size: 10px; padding: 4px 8px;
+        border-radius: 3px; cursor: pointer; width: 100%; text-align: left;
+        display: flex; align-items: center; gap: 5px;
+      }
+      .artifact-note-toggle:hover { border-color: #aaa; color: #222; }
+      .artifact-note-toggle .arrow { font-size: 8px; transition: transform 0.15s; display: inline-block; }
+      .artifact-note-toggle .arrow.open { transform: rotate(90deg); }
+      .artifact-note-body {
+        display: none; max-height: 400px; overflow-y: auto;
+        font-size: 11px; color: #333; line-height: 1.6;
+        padding: 10px 12px; background: #f5f0e8; border: 1px solid #d8d0c0;
+        border-top: none; border-radius: 0 0 3px 3px;
+        word-wrap: break-word; overflow-wrap: break-word;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .artifact-note-body.open { display: block; }
+      .artifact-note-body h1 { font-size: 14px; font-weight: 600; color: #1a1a1a; margin: 12px 0 6px; border-bottom: 1px solid #d8d0c0; padding-bottom: 4px; }
+      .artifact-note-body h2 { font-size: 13px; font-weight: 600; color: #2a4a6a; margin: 10px 0 5px; }
+      .artifact-note-body h3 { font-size: 12px; font-weight: 600; color: #4a6a8a; margin: 8px 0 4px; }
+      .artifact-note-body p { margin-bottom: 8px; }
+      .artifact-note-body ul, .artifact-note-body ol { margin: 4px 0 8px 18px; padding: 0; }
+      .artifact-note-body li { margin-bottom: 3px; }
+      .artifact-note-body strong { color: #1a1a1a; font-weight: 600; }
+      .artifact-note-body em { color: #555; }
+      .artifact-note-body hr { border: none; border-top: 1px solid #d8d0c0; margin: 10px 0; }
+      .artifact-note-body blockquote {
+        border-left: 3px solid #c8c0b0; padding: 4px 10px; margin: 6px 0;
+        color: #555; background: #ede8e0; border-radius: 2px;
+      }
+
+      /* Artifact image thumbnails */
+      .artifact-thumbs {
+        display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0;
+      }
+      .artifact-thumb {
+        width: 72px; cursor: pointer; border-radius: 3px;
+        overflow: hidden; border: 1px solid #333355;
+        transition: border-color 0.15s, transform 0.15s;
+      }
+      .artifact-thumb:hover { border-color: #665; transform: translateY(-1px); }
+      .artifact-thumb img {
+        width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
+        background: #161210;
+      }
+      .artifact-thumb-label {
+        display: block; padding: 2px 3px; font-family: monospace;
+        font-size: 8px; color: #887; white-space: nowrap;
+        overflow: hidden; text-overflow: ellipsis; background: #0d0d1a;
+      }
+
       /* Agent details list */
       .agent-card { margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #1a1a2e; }
       .agent-card-header { display: flex; align-items: baseline; gap: 5px; margin-bottom: 2px; flex-wrap: wrap; }

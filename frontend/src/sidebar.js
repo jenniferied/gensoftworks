@@ -307,23 +307,118 @@ function renderDaySummary() {
 }
 
 function renderArtifacts(artifacts) {
+  const scene = getCurrentScene();
   if (!artifacts || artifacts.length === 0) {
+    artifactList.style.display = 'none';
+    return;
+  }
+
+  // Separate artifacts into notes, images, and docs
+  const noteContents = scene?.note_contents || {};
+  const isNote = (path) => /\/00-.+\.md$/i.test(path);
+  const isImage = (path) => /\.(png|jpg|jpeg|gif|webp)$/i.test(path);
+
+  // Filter out pinwall items
+  const filtered = artifacts.filter(a => !a.startsWith('pinwall/'));
+  if (filtered.length === 0) {
     artifactList.style.display = 'none';
     return;
   }
 
   artifactList.style.display = 'block';
   let html = '<div class="artifacts-title">ARTEFAKTE</div>';
-  for (const path of artifacts) {
+
+  // Notes first
+  const notes = filtered.filter(isNote);
+  const images = filtered.filter(a => isImage(a));
+  const docs = filtered.filter(a => !isNote(a) && !isImage(a));
+
+  for (let i = 0; i < notes.length; i++) {
+    const path = notes[i];
     const filename = path.split('/').pop();
-    const isImage = /\.(png|jpg|jpeg|gif|webp)$/i.test(filename);
-    const icon = isImage ? '[img]' : '[doc]';
+    // Derive human label from filename: "00-recherche-notizen-darius.md" → "Recherche-Notizen: Darius"
+    const label = deriveNoteLabel(filename);
+    const bodyId = `artifact-note-${i}`;
+    const content = noteContents[path];
+
+    html += `<div class="artifact-note">`;
+    html += `<button class="artifact-note-toggle" data-target="${bodyId}">`;
+    html += `<span class="arrow">&#9654;</span> ${label}`;
+    html += `</button>`;
+    if (content) {
+      html += `<div class="artifact-note-body" id="${bodyId}">${renderMarkdownFull(content)}</div>`;
+    } else {
+      html += `<div class="artifact-note-body" id="${bodyId}"><span class="loading">Kein Inhalt verfügbar.</span></div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Images as thumbnails
+  if (images.length > 0) {
+    html += `<div class="artifact-thumbs">`;
+    for (const path of images) {
+      const filename = path.split('/').pop();
+      // Strip model suffix for cleaner label: "relikt-zustand-null_seedream-4-5.png" → "relikt-zustand-null"
+      const cleanName = filename.replace(/[_][^.]+/, '').replace(/\.[^.]+$/, '');
+      html += `<div class="artifact-thumb" data-path="${path}" title="${filename}">`;
+      html += `<img src="${BASE}${path}" alt="${cleanName}" loading="lazy">`;
+      html += `<span class="artifact-thumb-label">${cleanName}</span>`;
+      html += `</div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Regular docs
+  for (const path of docs) {
+    const filename = path.split('/').pop();
     html += `<div class="artifact-item">`;
-    html += `<span class="artifact-icon">${icon}</span>`;
+    html += `<span class="artifact-icon">[doc]</span>`;
     html += `<span class="artifact-name" title="${path}">${filename}</span>`;
     html += `</div>`;
   }
+
   artifactList.innerHTML = html;
+
+  // Wire up note toggles
+  artifactList.querySelectorAll('.artifact-note-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = document.getElementById(btn.dataset.target);
+      const arrow = btn.querySelector('.arrow');
+      if (target.classList.contains('open')) {
+        target.classList.remove('open');
+        arrow.classList.remove('open');
+      } else {
+        target.classList.add('open');
+        arrow.classList.add('open');
+      }
+    });
+  });
+
+  // Wire up image thumbnail clicks → lightbox
+  artifactList.querySelectorAll('.artifact-thumb').forEach(el => {
+    el.addEventListener('click', () => {
+      const path = el.dataset.path;
+      const meta = simData?.concept_art?.find(a => a.path === path) || {};
+      const lb = document.getElementById('gallery-lightbox');
+      document.getElementById('gallery-lightbox-img').src = `${BASE}${path}`;
+      document.getElementById('gallery-lightbox-model').textContent = meta.model || '';
+      document.getElementById('gallery-lightbox-prompt').textContent = meta.prompt || '';
+      lb.classList.add('open');
+    });
+  });
+}
+
+function deriveNoteLabel(filename) {
+  // "00-recherche-notizen-darius.md" → "Recherche-Notizen: Darius"
+  // "00-wolf-checkliste-leo.md" → "Wolf-Checkliste: Leo"
+  // "00-alpha-erste-stunde-leo.md" → "Alpha-Erste-Stunde: Leo"
+  const base = filename.replace(/^00-/, '').replace(/-v\d+\.md$/, '').replace(/\.md$/, '');
+  const parts = base.split('-');
+  // Last part is usually the agent name
+  const agent = parts.pop();
+  const title = parts.map(p => p.charAt(0).toUpperCase() + p.slice(1)).join('-');
+  const agentLabel = agent.charAt(0).toUpperCase() + agent.slice(1);
+  return `${title}: ${agentLabel}`;
 }
 
 const TRACE_FILES = [
