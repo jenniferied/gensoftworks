@@ -428,8 +428,11 @@ def _md_to_latex(md_text: str) -> str:
 
     Handles: headings, bold, italic, bold-italic, bullet lists,
     numbered lists, inline code, tables, horizontal rules.
+    Filters out base64-encoded image data that would overflow LaTeX buffers.
     """
     lines = md_text.split("\n")
+    # Filter out lines containing base64 image data (tool call artifacts)
+    lines = [l for l in lines if "base64" not in l or len(l) < 500]
     result = []
     in_list = False  # track if we're inside a list
 
@@ -529,6 +532,13 @@ def _inline_format(text: str) -> str:
 
     text = _re.sub(r"https?://[^\s)]+", save_url, text)
 
+    # Shorten absolute project paths to relative (plain text, not links)
+    text = _re.sub(
+        r"/Users/jennifer/Documents/GitHub/gensoftworks/",
+        "",
+        text,
+    )
+
     # Convert bold/italic BEFORE escaping (markers are plain *, not LaTeX special)
     # Bold-italic (***text*** or ___text___)
     text = _re.sub(r"\*\*\*(.+?)\*\*\*", r"BLDITSTART\1BLDITEND", text)
@@ -597,7 +607,7 @@ def render_traces(traces_dir, day: int, scene_num: int) -> str:
     lines = []
     lines.append("```{=latex}")
     lines.append("\\vspace{4mm}")
-    lines.append("\\begingroup\\tiny\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{6mm}\\sloppy\\emergencystretch=1em")
+    lines.append("\\begingroup\\tiny\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{4mm}\\sloppy\\emergencystretch=1em")
 
     for source, files in agent_groups:
         # Agent header with icon + name (full width, outside multicols)
@@ -612,7 +622,7 @@ def render_traces(traces_dir, day: int, scene_num: int) -> str:
             lines.append(f"\\vspace{{2mm}}\\noindent\\textbf{{{label}}}\\par\\vspace{{0.5mm}}")
 
         # Two-column layout for this agent's prompt + reasoning
-        lines.append("\\begin{multicols}{2}")
+        lines.append("\\begin{multicols}{3}")
         for stem, content in files.items():
             lines.append(content)
             lines.append("")
@@ -1050,7 +1060,7 @@ def render_transcripts(traces_dir, day: int, scene_num: int, participants: list[
     lines = []
     lines.append("```{=latex}")
     lines.append("\\vspace{4mm}")
-    lines.append("\\begingroup\\tiny\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{6mm}\\sloppy\\emergencystretch=1em")
+    lines.append("\\begingroup\\tiny\\setlength{\\parskip}{1pt}\\setlength{\\parindent}{0pt}\\setlength{\\columnsep}{4mm}\\sloppy\\emergencystretch=1em")
 
     for agent, content in agent_groups:
         if agent in AGENT_NAMES:
@@ -1062,7 +1072,7 @@ def render_transcripts(traces_dir, day: int, scene_num: int, participants: list[
         else:
             lines.append(f"\\vspace{{2mm}}\\noindent\\textbf{{{agent.title()}}}\\par\\vspace{{0.5mm}}")
 
-        lines.append("\\begin{multicols}{2}")
+        lines.append("\\begin{multicols}{3}")
         lines.append(_md_to_latex(content))
         lines.append("")
         lines.append("\\end{multicols}")
@@ -1377,7 +1387,7 @@ def build_pdf(md_path, output_path, header_path, tex_only=False):
                    "UprightFont=JetBrainsMono-Variable.ttf,"
                    "Scale=0.85"),
             "-V", "fontsize=9pt",
-            "-V", "geometry:margin=25mm",
+            "-V", "geometry:margin=18mm",
         ]
 
         print(f"  Building: {md_path.name} -> {Path(output).name}")

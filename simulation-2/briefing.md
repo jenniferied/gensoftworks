@@ -49,7 +49,7 @@ Es gibt "planes of existence beyond known reality".
 "Medieval" (Epoche, frühes Spätmittelalter) - Cyberpunk (High-Tech, Low-Life)
 "Mitteleuropa" als Schauplatz
 Germanische Mythologie als Inspiration
-- Mehr futuristisch, weniger heruntergekommen
+- Eher futuristisch, weniger heruntergekommen
 - Tiervolk weniger tribal, leicht alien vs. menschlich clean
 - Tiervolk: Händler und Diebe, NICHT Handwerker
 - Übernatürliches: Nur das Schattenfieber — eine Seuche, die Opfer verändert
@@ -143,14 +143,14 @@ Fortgeschrittene, organisierte Zünfte mit eigener Technologieentwicklung — di
 ## Kampf & Leveling
 
 - Real-time Action (Skyrim-Referenz), Melee-fokussiert, gewichtig
-- Schwerter, Bögen, Armbrüste, Schilder
+- Schwerter, Äxte, Dolche, Bögen, Armbrüste, Schilder
 - Keine Magie → Alchemie, Schattenfieber-Fähigkeiten (mit Kosten)
 - Leveling: Halbtransparente Nervensystem-Sicht (Cardio, Muskel, Lymph)
 - Monetarisierung: Klassisch Premium, keine Mikrotransaktionen
 
 ## DELIVERABLES
 
-- **Historischer Wendepunkt**, **Relikt** und **Schauplatz**
+- **Startgeschichte**, **Historischer Wendepunkt**, **Relikt** und **Schauplatz**
 - Vertiefung der Kernregion, Fraktionen ausarbeiten
 - Concept Art
 - High Fashion Mittelalter + Biotech-Elemente
@@ -178,7 +178,7 @@ Basierend auf Schell (2010, S. 381–387): Ein GDD umfasst Spielübersicht, Kern
 
 Basierend auf Klastrup/Tosca (2004, S. 413): Transmediale Welten lassen sich über die Trias Mythos, Topos und Ethos erfassen.
 
-1. **Mythos** — Kosmologie, Schöpfung, Mythologie, Götter/Wesen, Schattenfieber-Ursprung
+1. **Mythos** — Kosmologie, Schöpfung, Mythologie, Götter/Wesen
 2. **Topos** — Geographie, Kernregion, Architektur, Klima, Orte
 3. **Ethos** — Völker, Kulturen, Fraktionen, Gesellschaftsordnung, Alltagsleben
 
