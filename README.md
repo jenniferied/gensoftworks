@@ -33,6 +33,7 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 
 ## 🏢 Das Studio
 
+<div align="center">
 <table>
 <tr>
 <td><img src="assets/hobart-building.png" width="420" alt="Kreativquartier Hobart, Detmold — Gebäude 12"></td>
@@ -45,6 +46,7 @@ Das Projekt ist Teil einer 🎓 Masterarbeit an der [TH OWL](https://www.th-owl.
 </td>
 </tr>
 </table>
+</div>
 
 Das Studio existiert in einer 🕹️ Pixel-Art-Simulation — ein ganzes Stockwerk mit 💻 Arbeitsecken, 🪑 Konferenzraum, ☕ Lounge, 🍳 Küche und 📖 Bibliothek. Die Agenten bewegen sich durch die Räume, treffen sich zu 🗣️ Meetings und arbeiten an ihren Schreibtischen.
 
