@@ -10,12 +10,13 @@
 - Emre hat WBB Mythos v1 vorgestellt. Offene Fragen: Tiervolk-Ursprung, Schwelle bewusst/blind, Zeitlinie der Öffnung
 - Ich habe meine 5 NPCs und Quest-Skizzen vorgestellt (Vael, Brenn, Scherer, Kast, Salva + Intro-Quest + Hauptquest-Strang)
 - Bestätigt: Emres Tiervolk-Hypothese + meine Salva-Kosmologie = konzeptuelle Einheit. Die Reisenden empfangen das Signal statt zu kämpfen.
+- REVIEW-Beitrag gehalten (Turn 3): Drei Stimmen laut vorgelesen (Brenn, Kast, Salva), CD-Fragen öffentlich formuliert, Vera-Anfrage gestellt (Zustand-1-Bild als Finn-Briefing-Referenz)
 
 ### Meine CD-Fragen in dieser Szene (offen, Antwort ausstehend)
 
 1. **Relikt-Name / Spieltitel**: Meine Synthese — "Das Herz" (Fragment, Spieler trägt es) + "Die Wurzel" (Ganzes, liegt in der Tiefe). In-World-Begriff: "Schwellenanker" (Emres Vorschlag). RELICS — Das Herz? Oder RELICS — Die Wurzel? Brauche Entscheid für Act 3.
 2. **Düsterkeit der Intro-Szene**: Hieronymus stirbt. Reduziert (kaum Worte, Fragment, ein Satz, Clip) oder ausgedehnt (2–3 Minuten Sterbeszene)? Darf der Körper sichtbar sein, wenn der Spieler in der Boten-Szene ist?
-3. **Spielercharakter-Freiheit beim Erstgespräch**: Darf eine Dialop-Option sein, das Fragment abzulehnen? Wenn ja: Hieronymus stirbt, Fragment liegt, Fremder nimmt es beim zweiten Zug. Verändert emotionale Signatur — brauche CD-Entscheid.
+3. **Spielercharakter-Freiheit beim Erstgespräch**: Darf eine Dialog-Option sein, das Fragment abzulehnen? Wenn ja: Hieronymus stirbt, Fragment liegt, Fremder nimmt es beim zweiten Zug. Verändert emotionale Signatur — brauche CD-Entscheid.
 
 ### Was in der Szene davor (Tag 2, Szene 3 — 13:00 Meeting) passiert ist
 
@@ -45,16 +46,18 @@ Quest-Skizzen:
 - 3 Endkonsequenzen (Krone / Orden / niemand)
 
 **Erkenntnisse aus Szene 5:**
-- Veras Relikt-Zustände bestätigen meinen Clip-Moment visuell — Stufe 2 als Referenzbild für Tobi
-- CD-Fragen gestellt. Warte auf Antworten.
+- Veras Relikt-Zustände bestätigen meinen Clip-Moment visuell — Zustand 1 als Stimmungsreferenz für Finn-Briefing angefragt
+- Emres Schwarzrand-Stadtname: grünes Post-It, kann in Dialoge einfließen
+- CD-Fragen gestellt und öffentlich formuliert. Warte auf Antworten.
 
 ### Was ich noch nicht weiß / brauche
 
 - **Relikt-Entscheid**: CD-Entscheidung ausstehend. Meine Synthese liegt auf dem Tisch.
 - **Düsterkeit-Entscheid**: CD-Entscheidung ausstehend. Intro-Szene-Tonalität.
 - **Player-Agency-Entscheid**: Ablehn-Option beim Erstgespräch — CD ausstehend.
-- **Stadtname / Schauplatz**: Emre hat Arbeitstitel "Schwellenstadt" — brauche finalen oder bestätigten Namen für Dialoge
+- **Stadtname / Schauplatz**: Emre hat "Schwarzrand" als Arbeitstitel geliefert — bestätigt für Dialoge
 - **Tiervolk-Eigenname für Salva**: "Salva" ist Platzhalter. Emre soll Namenssystem liefern
+- **Schwelle bewusst/blind**: Emres CD-Frage — betrifft Salvas vierte Kosmologie direkt
 
 ### Offene Todos für heute Nachmittag / Abend
 
@@ -70,8 +73,8 @@ Quest-Skizzen:
 
 ### Arbeitsbeziehungen — aktueller Stand
 
-- **Emre**: Tiervolk-Hypothese + Salvos Kosmologie = Synergie bestätigt. Warte auf Stadtname + Namenssystem. WBB Ethos-Kap. 3 Kollaboration steht noch aus. Seine WBB Mythos v1 ist raus.
-- **Darius**: CD-Fragen gestellt (Relikt-Name, Düsterkeit, Player-Agency). Warte auf Antworten. Hat Fragment-Szene-Feedback nach 14:00 Sync gegeben.
-- **Vera**: Hat 9 Bilder präsentiert — Relikt-Zustände besonders hilfreich für Clip-Moment. Noch keine Figuren-Briefings von mir, das kommt mit v2.
+- **Emre**: Tiervolk-Hypothese + Salvos Kosmologie = Synergie bestätigt. Warte auf Stadtname-Bestätigung + Namenssystem. WBB Ethos-Kap. 3 Kollaboration steht noch aus. "Schwarzrand" als Stadtname grün.
+- **Darius**: CD-Fragen gestellt (Relikt-Name, Düsterkeit, Player-Agency). Warte auf Antworten.
+- **Vera**: Hat 9 Bilder präsentiert — Relikt-Zustand-1 als Stimmungsreferenz für Finn-Briefing angefragt. Figuren-Briefings von mir kommen mit v2.
 - **Finn**: Fragment-Szene ist seine Anforderung. Schreibe sie sobald Düsterkeit-Entscheid steht.
-- **Leo**: Clip-Moment in Vael-Szene definiert: Schatten stimmen nicht für eine Sekunde. Veras Bilder als visuelles Referenzmaterial für Tobi (Shader/MPC).
+- **Leo**: Clip-Moment in Vael-Szene definiert: Schatten stimmen nicht für eine Sekunde. Veras Zustand-1-Bild als visuelles Referenzmaterial.
