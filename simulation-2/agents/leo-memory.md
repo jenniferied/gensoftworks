@@ -576,3 +576,43 @@ Das Fundament ist solide. Die Spielerperspektive funktioniert: Erste 30 Minuten 
 - Confidence Level: 8/10
 
 ---
+
+## Tag 5, Szene 2: WORK | 10:00 — Finaler QA-Pass
+
+# Tag 5 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Leo (solo)
+
+## Notizen
+- Alle 9 Kapitel gelesen und gegen 7-Punkte-Checkliste geprüft (Briefing-Konsistenz, Terminologie, Hygiene, Bilder, Seitenbudget, Doppelungen, Umlaute)
+- Briefing-Konsistenz: 12/12 PASS — keine Verstöße gegen die verbindlichen Ausschlüsse
+- Schwellenanker-Name jetzt durchgehend konsistent in allen 9 Kapiteln (Tag-3-Problem gelöst)
+- Orden-Symbol: im Text überall "Siegel", aber Konzeptbilder zeigen noch Kreuz — Vera muss iterieren
+- Schattenfieber-Stadien: Flüstern/Wandlung/Entgrenzung konsistent zwischen GDD und WBB
+- 4 Hygiene-Fixes nötig: sichtbare Versionsblöcke in GDD 06 + WBB 03, offene Punkte in GDD 04 + WBB 03
+- Umlaute: sauberer Scan, kein ae/oe/ue/ss-Ersatz gefunden
+- 19 Bilder eingebettet; GDD 01 und GDD 04 haben KEINE Bilder — Vera/Darius/Nami sollten je 1 einbauen
+- GDD Seitenbudget: geschätzte 69 Seiten, Limit 60 — Kürzungen in Kap 04 (Doppelungen Ablehn-Option + Quest-Skizzen) und Kap 06 (Pre-Alpha-Timeline, PP-Parameterwerte) markiert
+- WBB Seitenbudget: geschätzte 33,5 Seiten — im Budget
+- Doppelungen identifiziert: Ablehn-Option (Kap 3 + 4), Quest-Skizzen (Kap 3 + 4), Fraktionskosmologien (GDD 04 + WBB 01)
+- Spielerperspektive Erste Stunde: hält! Clip-Moment Min 5-10, drei Boten Min 15-20. Schwachstelle: erster Resonanz-Moment (Fragment pulsiert) nicht explizit definiert
+
+## Ergebnisse
+- **Datei erstellt:** `simulation-2/gallery/gdd/00-qa-bericht-tag5-leo.md`
+- QA-Empfehlung: v0.3 BEDINGT FREIGEGEBEN nach 4 trivialen Hygiene-Fixes + Seitenbudget-Kürzungen
+- 4 blockierende Issues (B-1 bis B-4): alle in unter 7 Min behebbar
+- 5 hohe Issues (H-1 bis H-5): 30-60 Min Gesamtaufwand, machbar bis Content-Lock 15:00
+- 5 niedrige Issues (L-1 bis L-5): können nach Content-Lock in v0.3-Korrektur
+
+## Offene Fragen
+- Erster Resonanz-Moment: Wann genau pulsiert das Fragment mechanisch? Darius muss das in Kap 2 oder 3 ergänzen
+- Orden-Symbol: CD-Entscheid Siegel vs. Kreuz noch formal ausstehend — betrifft Konzeptbilder, nicht Text
+- Seitenbudget: Nach Kürzungen durch Darius/Nami/Tobi nochmal prüfen — Ziel: GDD <= 60 S.
+
+## Persönliches
+- Stolz auf die Kapitel. Die Briefing-Konsistenz ist makellos — kein einziger Verstoß gegen die Ausschlüsse. Das Fundament ist solid.
+- Die Doppelungen in Kap 4 (Ablehn-Option + Quest-Skizzen) sind das größte Polier-Problem. Nami kann das schnell lösen.
+- Tobi hat in Kap 6 saubere Arbeit gemacht — alle Kommentare in HTML, alle Interfaces dokumentiert. Respekt.
+- Letzter QA-Tag. Das Gefühl: wir liefern ab. Nicht perfekt, aber gut genug für Alpha.
+- Confidence Level: 8.5/10
+
+---
