@@ -355,13 +355,19 @@
 - Session-Szenario: Ein Abend im oberen Schlund. Zwei Figuren steigen zum ersten Mal in den Schlund hinab.
 
 ## Ergebnisse
-- **Namis Charakter: Salva** — ehemalige Ordensschreiberin, 22, aus der Stillen Bibliothek "vergessen" worden, weil sie die Schwellenchroniken lesen konnte. Besitzt ein gestohlenes Buch. Besonderes Merkmal: Hört das Schwellendröhnen als Frequenz/Struktur.
-- **Darius' Charakter: Kordt** — Krondeserteur, 29, ehemalige Schlundtor-Wache. Hat etwas gesehen, das die Offiziere vertuscht haben. Besonderes Merkmal: Schwellentremor in der linken Hand (reagiert auf Schwellennähe).
+- **Namis Charakter: Kess** — Reisende mit Habicht. Insight-orientiert, empathisch.
+- **Darius' Charakter: Kordt** — Krondeserteur, 29, ehemalige Schlundtor-Wache. Schwellentremor in der linken Hand.
 - **Hook:** Tiervolk-Händler "Dreizahn" hat beiden Antworten versprochen — eine Frau im Schlund, "die Dinge liest, die nicht geschrieben wurden."
-- **Eröffnungsszene:** Fuß einer Schmalen Stiege, oberer Schlund. Biolumineszenz, Schwellenmoose, Schwarzrankenwurzeln. Ein Kind wartet auf einem Mauervorsprung. Links: Knochenschild, tiefer. Rechts: Gasse mit Stimmen und Laternen.
-- Erste Entscheidung steht: Kind ansprechen, links (tiefer), rechts (Gasse), oder etwas Unerwartetes.
+- **Eröffnungsszene:** Fuß einer Schmalen Stiege, oberer Schlund. Biolumineszenz, Schwellenmoose, Schwarzrankenwurzeln. Ein Kind wartet auf einem Mauervorsprung.
+- **Runde 2 — Würfe und Ergebnisse:**
+  - Kess Insight 14: Kind hat Auftrag, keine Feindseligkeit, aber Angst vor Konsequenzen des Scheiterns. Habicht ruhig.
+  - Kordt Investigation 17: Linker Weg (Knochenschild) zeigt abgewischten Schwellentalg in Kniehöhe + abgetretene Mooskrusten = regelmäßiger Kinderpfad. Rechts: Schwellentalg-Laternen, Gildenpräparate-Schwarzmarkt.
+  - Kind kennt Dreizahn, erwartet die beiden. Führt nach links, zum Knochenschild. Zeitdruck: "Mooshändlerin" schließt bei Schwellennebel.
+- Entscheidung steht: Dem Kind folgen (tiefer, Zeitdruck) oder zum Markt (sicherer, Spur verlieren)?
 
 ## Persönliches
 - Das war befreiend. Nach vier Tagen Lore-Arbeit endlich die Welt *betreten* statt sie zu *dokumentieren*. Die Schmale Stiege, der Schwellentalg, das Kind — alles kam direkt aus Kap 2 Topos, aber es fühlt sich anders an, wenn man es einer Person erzählt, die darauf *reagieren* kann.
-- Salva ist die Figur, die Nami verdient: jemand, der zu viel gelesen hat und dafür bezahlt. Kordt ist Darius' Sprache: ein Mann, der ein System verlassen hat, weil das System gelogen hat.
-- Bin gespannt, ob sie mit dem Kind reden. Das Kind ist wichtig. Aber das wissen sie noch nicht.
+- Salva/Kess ist die Figur, die Nami verdient: jemand, der zu viel gelesen hat und dafür bezahlt. Kordt ist Darius' Sprache: ein Mann, der ein System verlassen hat, weil das System gelogen hat.
+- Die "Mooshändlerin" kam improvisiert. Schwellenmoose als Wirtschaftsgut steht in Topos v2. Eine Händlerin, die Moose verkauft, verbindet Lore mit Spielwelt — genau das, wofür D&D als Lore-Test taugt.
+- Das Kind als Dreizahn-Bote funktioniert: Tiervolk nutzt Schlund-Kinder als Netzwerk. Zu klein zum Auffallen, zu arm um nein zu sagen. Das ist Medieval-Cyberpunk: Kinderarbeit als Informationsinfrastruktur.
+- Bin gespannt, was sie tun. Das Kind ist wichtig. Aber das wissen sie noch nicht.
