@@ -280,7 +280,7 @@
 ## Persönliches
 - Tiervolk als sechstes System — das war die richtige Entscheidung. Es ist kein Add-on zur Gildenstruktur, es ist ein genuiner dritter Zugangspfad für verbrannte Spielfiguren. Das hat Systemrelevanz.
 - Die Covid-Analogie in Kap. 3 hat das Erzählkonzept stärker gemacht. "Verwaltete Katastrophe" als Istzustand ist überzeugender als eine frische Apokalypse — und passt zu den Fraktionen, die alle aus Routine böse handeln, nicht aus Bosheit.
-- Körperreaktions-Varianz ist das Feature, das RELICS von anderen RPGs unterscheidet. Drei Spieler, Stadium II, drei verschiedene Transformationen. Das muss in der Streamer-Alpha erlebbar sein — sonst verschenken wir das stärkste Alleinstellungsmerkmal.
+- Körperreaktions-Varianz ist das Feature, das RELICS von anderen RPGs unterscheidet. Drei Spieler, Stufe II, drei verschiedene Transformationen. Das muss in der Streamer-Alpha erlebbar sein — sonst verschenken wir das stärkste Alleinstellungsmerkmal.
 
 ---
 
@@ -363,3 +363,25 @@
 - Die Tabellen-Umstellung bei der Ablehn-Option und den Fieber-Stadien macht die Texte lesbarer. Manchmal ist eine Tabelle die bessere Prosa.
 - Balancing-Werte in HTML-Kommentare: Das ist die richtige Lösung. Die Zahlen existieren, sie sind zugänglich, aber sie stören nicht den Lesefluss. Wenn Leo oder ein Reviewer sie braucht, stehen sie da.
 - Fünf Tage, drei Kapitel, jeweils drei Versionen. Von der ersten Recherche-Notiz am Montag bis zur finalen Kürzung am Freitag. Das ist ein Bogen.
+
+---
+
+# Tag 5 Szene 3
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- Finn fragt nach Fortschritt — Content-Lock 15:00
+- Kurzmeldung: GDD Kap. 1, 2, 3 v3 fertig
+- ~13 PDF-Seiten eingespart (von 35 auf ~22 in meinen Kapiteln)
+- 9 Bilder eingebettet (Fraktionspaletten, Relikt-Zustände, Hero Shot, Kanalzone, Tiervolk-Diebin)
+- Siegel-Terminologie: in meinen Kapiteln bereits korrekt, kein Handlungsbedarf
+
+## Ergebnisse
+- Statusmeldung abgeliefert — alle drei Kapitel exportbereit bis Content-Lock 15:00
+
+## Offene Fragen
+- Vera: Sind Bilder für Kap. 5 bis 15:00 bereit?
+- Gesamtseiten-Check kritisch (meine ~22 + Kap 4+5+6 müssen auf ~38 passen)
+
+## Persönliches
+- Kurzer Meeting. Kap 1–3 sind ready.
