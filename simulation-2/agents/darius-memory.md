@@ -251,3 +251,33 @@
 - CD-Antworten zu Tiervolk und Zeitlinie sind substanziell. Das ist nicht Lore-Kosmetik — das verändert Systemlogik in Kap. 2 und Quest-Timing in Kap. 3.
 - "Transformation je nach Körperreaktion" ist das stärkste Systemelement, das der CD bisher freigegeben hat. Drei Spieler, Stufe II, drei verschiedene Ergebnisse — das ist echte Immersive-Sim-Substanz.
 - Export-Deadline 18:00 ist eng. Kein Spielraum für Nachfragen, die nicht bis 11:00 beantwortet sind.
+
+---
+
+# Tag 4 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Darius (alleine)
+
+## Notizen
+- Gelesene Quellen: GDD Kap. 01 v2 (eigene Vorarbeit), GDD Kap. 02 v1, GDD Kap. 03 v1, WBB Kap. 1 v2 (Emre), WBB Kap. 2 v1 (Emre), GDD Kap. 4 v2 (Nami)
+- Emres Briefing Tag 4: Tiervolk-Symbiose = dauerhaft, irreversibel — Antwort auf meine offene Frage aus Szene 1. Das macht den Tiervolk-Händlertyp statisch (nicht situativ), mit fester Handelsmotivation.
+- Körperreaktions-Varianz: CD-Aussage "Transformation je nach Körperreaktion" ist stärker als in v1 formuliert. In v2 explizit als Feature ausgearbeitet: gleiche Exposition, individuelle Transformation.
+- Covid-Analogie für Zeitlinie: Kap. 3 v2 trägt die Logik durch alle drei Akte — Akt 1 = Istzustand der verwalteten Katastrophe, Akt 2 = Rückwärts-Verstehen des Prozesses, Akt 3 = Entscheidung.
+- Kap. 1 v2: Nur minimaler Cleanup — Tiervolk-Eintrag in Tabelle 10 aktualisiert, Magie-Zeile angepasst ("Transformationen je nach Körperreaktion").
+- Kap. 2 v2: Sechstes System (Händlernetz & Tiervolk) neu eingeführt. Tiervolk als eigenständiger Händlertyp mit Vertrauens-Transaktions-Logik (binär, nicht skalierbar). Drei Waren-Kategorien (Symbiose-Materialien-Import, Exklusive-Waren-Export, Informationen). Körperreaktions-Varianz als eigene Sektion in Abschnitt 2.5.
+- Kap. 3 v2: Neuer Abschnitt 3.1 (Zeitlinie der Öffnung) mit Covid-Analogie. Akt 1 überarbeitet: "verwaltete Katastrophe" als zentrales Bild. Nebenquest "Salvatore und die Karawane" aktualisiert: Karawane war Frühwarnzeichen der jahrelangen Anbahnung.
+
+## Ergebnisse
+- `simulation-2/gallery/gdd/01-spieluebersicht-v2.md` — Cleanup: Tiervolk-Eintrag aktualisiert, Magie-Zeile angepasst. Kein Versionsbump (bleibt v2).
+- `simulation-2/gallery/gdd/02-kernmechaniken-v2.md` — Neues Dokument: alle fünf Systeme aus v1 bereinigt + sechstes System Händlernetz/Tiervolk. Körperreaktions-Varianz als Layer durch Abschnitt 2.5 und 2.7.
+- `simulation-2/gallery/gdd/03-erzaehlkonzept-v2.md` — Neues Dokument: Abschnitt 3.1 (Zeitlinie) neu, Akt 1 überarbeitet, Nebenquest Salva aktualisiert. Alle Autorenvermerke bereinigt.
+
+## Offene Fragen
+- Leo: Balancing-Werte für Kap. 2 v2 noch ausstehend — Ruf-Schwellenwerte, Lymph-Akkumulation, Tiervolk-Vertrauens-Akkumulation. Wenn Leo heute liefert, fließt das in v2 ein oder in v3.
+- Nami: Dialog-Ausarbeitung für Kap. 3 — wurde in v2 bewusst nicht wartet. Namis Terrain bleibt Namis Terrain.
+- Tiervolk-Eigenname für Salva: noch Platzhalter im Kap. 4 (Nami). Nicht mein Problem — aber wenn der Name kommt, muss er auch in Kap. 2 Abschnitt 2.6 eingetragen werden.
+- Export-Deadline 18:00 heute: alle drei Kapitel exportbereit? Kap. 1 und 2 sind clean. Kap. 3 ist clean. Technisch bereit.
+
+## Persönliches
+- Tiervolk als sechstes System — das war die richtige Entscheidung. Es ist kein Add-on zur Gildenstruktur, es ist ein genuiner dritter Zugangspfad für verbrannte Spielfiguren. Das hat Systemrelevanz.
+- Die Covid-Analogie in Kap. 3 hat das Erzählkonzept stärker gemacht. "Verwaltete Katastrophe" als Istzustand ist überzeugender als eine frische Apokalypse — und passt zu den Fraktionen, die alle aus Routine böse handeln, nicht aus Bosheit.
+- Körperreaktions-Varianz ist das Feature, das RELICS von anderen RPGs unterscheidet. Drei Spieler, Stadium II, drei verschiedene Transformationen. Das muss in der Streamer-Alpha erlebbar sein — sonst verschenken wir das stärkste Alleinstellungsmerkmal.

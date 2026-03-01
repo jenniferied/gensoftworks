@@ -164,3 +164,35 @@ Quest-Skizzen:
 ## Persönliches
 - Emres Kosmologie-Änderung ist wirklich gut — aber Salva in v2 ist jetzt falsch. Das ist kein Problem, das ist Arbeit.
 - Die Figur, die ich kannte, war ein Platzhalter für etwas Größeres. Jetzt kann ich das Größere schreiben.
+
+---
+
+# Tag 4 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Nami (Schreibstube)
+
+## Notizen
+- Beide Aufgaben abgearbeitet: GDD Kap. 4 v3 und WBB Kap. 3 v2
+- Arbeitshypothese Salva↔Schattenfieber formuliert: das Fremde in Salva ist NICHT dasselbe wie das Schwellensubstrat — andere Art kosmologischer Entität, deswegen Salvas Exposition sich wie Bedeutungsstruktur anfühlt, nicht wie Kontrollverlust
+- Habicht als Anker-Tier für Salva — Vorschlag, nicht final, warte auf Emres Kosmologie-Input
+- Beat 1 der Intro-Szene komplett neu: schleichendes Erkennen statt akute Krise — Vael liegt nicht weil er heute kollabiert ist, sondern weil er einfach stehengeblieben ist. Das ist der Unterschied.
+- Covid-Analogie in WBB Kap. 3 als eigener Abschnitt 3.7 integriert: Das Flimmern normalisiert sich. Kollektive Vermeidung als psychologisches Merkmal der Stadtbevölkerung.
+- Cleanup: Autorenerwähnungen raus, Wolf-Checklisten raus, HTML-Kommentare für Koordinationsfragen
+
+## Ergebnisse
+- `simulation-2/gallery/gdd/04-schluesselfiguren-v3.md` — fertig
+- `simulation-2/gallery/wbb/03-ethos-v2.md` — fertig
+- Salva komplett neu geschrieben: kein angepasster Mensch, sondern Wesen in Symbiose mit Habicht, eigene ontologische Kategorie, Wahrnehmung der Schattenfieber-Exposition als Muster statt Kontrollverlust
+- Reisenden-Sektion WBB vollständig aus Symbiose-Kosmologie heraus gedacht: was die Symbiose ist, wie sie entsteht (nicht vollständig bekannt), was sie für Bewusstsein bedeutet, wirtschaftliche Rolle, Beziehung zu Stadtfraktionen, innere Gemeinschaftsstruktur
+- Intro-Beat-1 überarbeitet: "Er lag nicht da weil er heute Nacht kollabiert ist. Er liegt da, weil er einfach stehengeblieben ist."
+
+## Offene Fragen
+- Emre: Bestätigung oder Korrektur der Arbeitshypothese Salva↔Schattenfieber (in v3 als Arbeitshypothese markiert)
+- Emre: Habicht als Anker-Tier — passt das zur Kosmologie? Andere Tiere möglich/nötig?
+- Emre: Reisenden-Namenssystem — in v3 noch Platzhalter
+- Düsterkeit-Entscheid Intro-Szene: noch offen
+- Vera: Briefing für Salva-Konzeptbild (Habicht-Symbiose) kann ich jetzt schreiben
+
+## Persönliches
+- Der Satz "Er lag nicht da, weil er kollabiert ist. Er liegt da, weil er einfach stehengeblieben ist." — der ist der erste Satz, den ich heute laut vorgelesen habe und der gestimmt hat.
+- Salva ist jetzt eine komplett andere Figur und gleichzeitig dieselbe. Das ist das Beste, was einer Revision passieren kann.
+- Die Symbiose-Kosmologie macht den Reisenden-Abschnitt im WBB zur stärksten Sektion im ganzen Kapitel. Das Fremde-in-Salva und seine Wahrnehmung des Schattenfiebers als Bedeutungsstruktur — das ist das, was die vierte Kosmologie trägt. Nicht als Philosophie. Als Bericht.
