@@ -1027,10 +1027,7 @@ Exit code 1
 head: git: No such file or directory
 head: ls-files: No such file or directory
 head: --error-unmatch: No such file or directory
-==> simulation-2/gallery/concepts/day04-vera/tiervolk/tiervolk-hero-symbiose_nano-banana-pro.png <==
-�PNG
-
-   IHDR  �  �   %��#   tEXtmodel nano-banana-pro��L�  �iTXtprompt     Imagine a detailed character concept art sheet for a fox-humanoid traveling merchant in a medieval dark fantasy world — a figure who carries something alien inside them in permanent symbiosis, visible only to those who know how to look. The fox is upright, roughly human height, with a pointed muzzle, large mobile ears, and reddish-amber fur. The face is the center of the image: the left eye is a normal amber fox-eye, the right eye has shifted — the iris has become a pale ash-grey, the pupil a thin horizontal bar, and around it the fur lies fractionally flatter than it should, as if the skin is slightly different beneath. Along the back of the neck and down the spine, the fur grows in a counter-spiral pattern, and at the very tips of the fur shafts there is a faint pale violet bioluminescence — not glowing, just catching no-light that isn't there. The hands: fox paws adapted to human proportions, but the left wrist has a tracery of raised channels under the skin, barely visible, suggesting a secondary circulatory system that runs cool and other. The clothing says experienced merchant: charcoal grey wool traveler's coat, multiple pouches on a wide leather belt, an oiled canvas roll-satchel over one shoulder, worn flat-heel boots. No tribal markings. No ornamental bones. The posture is relaxed and confident — a figure who has made peace with what lives inside them. Three-quarter front view. Background: a simple dark stone wall. Color palette: deep charcoal, warm sienna and ochre fur, pale ash grey for the altered eye, one muted indigo accent on a belt pouch, barely-there pale violet at fur tips. MUST obey ALL constraints: no text labels, no design a
+[binary PNG content removed — tiervolk-hero-symbiose_nano-banana-pro.png]
 ... [truncated]
 ```
 

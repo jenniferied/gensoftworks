@@ -19,7 +19,7 @@ toc: true
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 1](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-001-scene-001-BRIEFING.png){ width=95% }
+![Szene 1](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-001-scene-001-BRIEFING.png){ width=95% }
 
 ::: {.directive}
 \textbf{Creative Director --- Feedback}
@@ -1322,7 +1322,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 2](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-001-scene-002-WORK.png){ width=95% }
+![Szene 2](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-001-scene-002-WORK.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Alle recherchieren parallel. Emre: Wolf-Infrastrukturen, Kosmologie-Hypothese. Darius: Design-Säulen, Nervensystem-Leveling. Nami: Schattenfieber-Stufen, Quest-Ideen. Vera: Architektur-DNA, Lichtkonzept. Tobi: Tech-Pipeline, Data Layers. Leo: Zielgruppen-Analyse. Finn: Roadmap.\par}
@@ -3950,7 +3950,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 3](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-001-scene-003-MEETING.png){ width=95% }
+![Szene 3](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-001-scene-003-MEETING.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Zentrale Entscheidungen: Stadt = 4 vertikale Schichten (Krone, Gilden, Volk, Schwelle). Yggdrasil als Strukturprinzip. Schattenfieber = dritte Progressionsachse. 3 narrative Stufen (Rauschen, Risse, Schwelle). Tiervolk = Händler/Informationsbroker. Widersprüchliche Kosmologien pro Fraktion. Leo mahnt: Materialien müssen sofort sichtbar wichtig sein.\par}
@@ -5079,7 +5079,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{emre}\agenticon{nami}\agenticon{leo} Emre Yilmaz, Nami Okafor und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 4](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-001-scene-004-PAUSE.png){ width=95% }
+![Szene 4](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-001-scene-004-PAUSE.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Emre, Nami und Leo in der Küche. Emre macht Tee, Nami hat Kaffee, Leo isst. Smalltalk über Nerevar (Emres Katze auf der Tastatur), Detmolds Stille, Malkav und Nines (Namis Katzen), Aquarellstille.\par}
@@ -5373,7 +5373,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{emre}\agenticon{darius}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Emre Yilmaz, Darius Engel, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 5](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-001-scene-005-WORK.png){ width=95% }
+![Szene 5](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-001-scene-005-WORK.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Nachmittags-Arbeitsblock. Alle vertiefen ihre Recherche. Finn: Wochenplanung, 4 Blocker. Darius: Schiefer-Prinzip, Schattenfieber-Progression. Emre: Kosmologie-Analyse, Yggdrasil-Vertiefung. Nami: Quest-Struktur, Faction-Konflikte. Vera: Architektur-Moodboard. Tobi: Tech-Pipeline vertiefen. Leo: Wolf-Checkliste, Alpha-Stunde. Drei offene Fragen für den CD identifiziert: (1) Epistemisch offen oder eine verborgene Wahrheit hinter dem Schattenfieber? (2) Was ist das Relikt? (muss gameplay-relevant sein, nicht nur MacGuffin). (3) Release-Modell. Darius empfiehlt: epistemisch offen mit hartem Gameplay-Kern. Relikt = aktiv benutzbar, wie Gothic-Erz.\par}
@@ -8279,7 +8279,7 @@ Kommt erst mal an, lernt euch kennen. Bibliothek bereitgestellt. Morgen weiteres
 \noindent{\scriptsize \agenticon{finn}\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Darius Engel, Emre Yilmaz, Nami Okafor, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 1](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-002-scene-001-BRIEFING.png){ width=95% }
+![Szene 1](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-002-scene-001-BRIEFING.png){ width=95% }
 
 ::: {.directive}
 \textbf{Creative Director --- Feedback}
@@ -10384,7 +10384,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{finn}\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Darius Engel, Emre Yilmaz, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 2](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-002-scene-002-WORK.png){ width=95% }
+![Szene 2](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-002-scene-002-WORK.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Produktivster WORK-Block bisher. Darius: GDD Kap 1 Spielübersicht v1. Emre: WBB Kap 1 Mythos v1 (Schwarzrand, Schwelle, 8 Gilden). Nami: GDD Kap 4 Schlüsselfiguren v1 (5 NPCs, Quest-Skizzen). Vera: 9 Concept-Art-Bilder (Relikt 3 Zustände, Fraktionspaletten, Stadtschnitt). Tobi: GDD Kap 6 Tech Spec v1. Leo: Wolf-Checkliste, Alpha-Erste-Stunde, Darius-Sync Talking Points. Finn: ROADMAP + COMPLETED.\par}
@@ -16109,63 +16109,63 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \vspace{2mm}
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-zustand-null-ruhend_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-zustand-null-ruhend_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Material study of an ancient organic relic in its dormant state, resting on rough stone. The object is vertebra-shaped — a dense, folded form between a spinal column section and a collapsed mountain crystal cluster. Its surface is spongy and calcified, like cancellous bone compressed over centuries. The texture is too regular for nature, too organic for craft. Color: cool ash gray, slightly off-white at the ridges, deep shadow in the porous cavities. No glow. No luminescence. It looks like a stone you would walk past. Only the texture reveals it — an obsessive pattern of micro-channels and nodal points. Scale reference: fits in two cupped hands. Isolated on dark stone surface, soft raking side light from a single tallow candle, no background detail. Detailed material study, dark fantasy concept art, painterly, high detail surface texture}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-zustand-eins-aktiviert_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-zustand-eins-aktiviert_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Material study of an ancient organic relic in its activated state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels running through it. Now: faint vessel-like lines beneath the surface glow with cool bioluminescent light, pale blue-violet, as if circulatory channels have filled with phosphorescent fluid. The glow is internal, diffuse, coming from within the material itself, not from a surface coating. The effect is beautiful and deeply unsettling — it looks alive. The ridges and porous cavities are now illuminated from inside, casting tiny shadows within the object itself. The surrounding stone surface shows the faintest reflected luminescence. The object is compelling, almost magnetic. Scale reference: fits in two cupped hands. Dark chamber, the relic is its own only light source. Detailed material study, dark fantasy concept art, painterly, bioluminescent}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-zustand-drei-aufloesung_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-zustand-drei-aufloesung_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Material study of an ancient organic relic in its dissolution state. The object is vertebra-shaped — folded form between a spinal column section and a compressed crystal cluster, originally spongy and calcified. Now the edges of the object are dissolving: fine particulate matter drifts from the outer ridges like ash from a dying ember, or like condensation evaporating from cold glass. The material is dematerializing at its boundaries. The internal glow has intensified but lost beauty — it is now harsh, overexposed white-violet at the core, with sickly yellow-green at the dissolving edges. The porous surface channels have cracked and widened. The surrounding stone surface shows damage: organic residue stains, hairline fractures radiating outward. The relic is coming apart. Scale reference: fits in two cupped hands. The light source is the relic itself, now too bright for beauty. Detailed material study, dark fantasy concept art, painterly, dissolution, body horror undertones}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-drei-zustaende-vergleich_nano-banana-2.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-drei-zustaende-vergleich_nano-banana-2.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-2}}
 \\[1pt]{\tiny\itshape\raggedright Three-panel material study of the same ancient organic relic in three states, arranged left to right on a dark stone surface. The relic is vertebra-shaped: a folded form between a spinal column section and a compressed crystal cluster, spongy calcified surface with micro-channels and nodal points. Left panel: dormant state — ash gray, no glow, dead-looking stone, only texture reveals it. Center panel: activated state — internal vessel-lines glow with pale blue-violet bioluminescence, beautiful and alive, compelling. Right panel: dissolution state — edges evaporating like fine particulate ash, internal glow overexposed and harsh, sickly yellow-green at dissolving margins. All three identical in shape and scale, only state differs. Labels at the bottom in medieval manuscript script. Dark background, single directional light from left for dormant, self-illumination for activated and dissolution. Comparative concept art study, dark fantasy, painterly, high detail}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-hero-shot-aktiviert_gpt-image-1-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-hero-shot-aktiviert_gpt-image-1-5.png}
 \\[2pt]{\scriptsize\textbf{gpt-image-1-5}}
 \\[1pt]{\tiny\itshape\raggedright Hero shot of the Threshold Anchor relic in its activated state, displayed on a rough-hewn stone altar in a vaulted underground chamber. The object is vertebra-shaped — a dense folded form between a spinal column section and a collapsed crystal cluster, its surface spongy and calcified with micro-channels running through it. Every channel now pulses with cool blue-violet bioluminescent light from within, like a circulatory system filled with phosphorescent fluid. The light is the only illumination in the chamber. It casts complex shadows through the porous surface, projecting branching light patterns across the stone altar and vaulted ceiling above. The surrounding chamber walls show organic traces: fine vein-like mineral deposits have grown outward from the altar base across the floor, as if the relic is slowly colonizing the stone. A human figure stands at the edge of frame, back to the viewer, small in comparison — awed, hesitant. The composition emphasizes the object: low camera angle, looking slightly up at the altar, the vaulted ceiling framing the top. The relic is sublime and threatening. Atmospheric, volumetric light from the relic only, dark fantasy, concept art, cinematic, highly detailed, reverent and unsettling}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/fraktion-krone-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/fraktion-krone-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy ruling crown faction. A flat-lay arrangement of materials and costume fragments on black stone: brushed titanium plate segments with etched geometric ornaments, deep crimson enameled signet, obsidian-polished armor pauldron with Damask steel inlays, heavy brocade silk in near-black with a single blood-red woven border, electrum buckle, faceted crystal glass vial with deep indigo liquid inside. Surrounding: a fragment of a document with a royal seal in blood-red wax. Color palette of the arrangement: all-black and charcoal with metallic silver-grey sheen, ONE blood-red accent only, cold white light reflections on polished surfaces. The aesthetic is high fashion restraint — no excess, controlled power. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/fraktion-orden-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/fraktion-orden-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy inquisitor order faction. A flat-lay arrangement of materials and costume fragments on cold grey stone: bleached white heavy linen robe fragment with precise geometric embroidery in pale silver thread, crystal glass optical lens mounted in a fine brass frame, vellum manuscript page covered in dense encoded script, a glass phial of luminescent pale green alchemical fluid, white bone rosary with a single black obsidian centerpiece, seal stamp with an eye symbol. Color palette: all-white and pale grey with cold silver accents, ONE glow accent in pale luminescent green only. The aesthetic is monastic austerity — knowledge as control, purity as threat. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/fraktion-gilden-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/fraktion-gilden-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy merchant guild faction. A flat-lay arrangement of materials and costume fragments on warm oak wood surface: deep indigo-dyed heavy brocade silk with gold thread border, polished malachite guild pendant, amber bead string, burnished bronze guild seal with a hammer and scales motif, vegetable-tanned leather work apron fragment with engraved maker marks, small sample vials of mineral pigments in red ochre and Prussian blue, a folded contract tied with wax seal. Color palette: rich earth tones — deep brown, warm amber, indigo, malachite green — with polished bronze and gold accents throughout. The aesthetic is accumulated material wealth — every object has a price, and it is significant. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/stadtschnitt-vertikale-schichtung_nano-banana-pro.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/stadtschnitt-vertikale-schichtung_nano-banana-pro.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-pro}}
 \\[1pt]{\tiny\itshape\raggedright Architectural cross-section cutaway view of a vertical medieval city built into a rocky promontory, showing four stacked social layers simultaneously. Bottom layer in deep shadow: cramped tunnels and improvised shelters of stolen bricks, bone carvings, cloth walls between old foundations, faint bioluminescent organic growth on walls the only light. Second layer: half-timbered Franconian houses with Romanesque round arches, thick stone walls, workshop facades with carved guild signs, warm tallow candlelight and amber through colored glass windows. Third layer: monolithic brutalist guild halls of rammed earth and cut limestone, clean geometric load-bearing forms, polished stone plazas, metal inlays, modular Bauhaus-inspired facades. Top layer: crown fortress with massive cantilevered platforms of pure geometric stone, no ornament, hanging gardens at the edges, crystal glass light shafts as architectural statement. The cross-section reveals how each layer builds over or ignores the layer below. Atmospheric fog between layers. Dark fantasy architectural illustration, concept art, detailed technical-artistic cross-section, painterly}
 \end{minipage}
@@ -16186,7 +16186,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{finn}\agenticon{darius}\agenticon{emre}\agenticon{nami}\agenticon{vera}\agenticon{tobi}\agenticon{leo} Finn Bergmann, Darius Engel, Emre Yilmaz, Nami Okafor, Vera Kowalski, Tobi Richter und Leo Fischer}\par\vspace{1mm}
 ```
 
-![Szene 3](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-002-scene-003-MEETING.png){ width=95% }
+![Szene 3](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-002-scene-003-MEETING.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Alle berichten Fortschritt. Schwarzrand als Stadtname bestätigt. Darius beantwortet vier offene Fragen (eine Stadt, Schattenfieber = dritte Achse, Tiervolk = NPC, Release geklärt). Vera zeigt Bilder, Team reagiert positiv. Tobi und Vera einigen sich: Schichtgrenzen fließend oben, diskret unten. Leo fordert sofortige Skill-Sichtbarkeit. Nami erklärt aktive Spieleraktionen in der Vael-Szene.\par}
@@ -18095,7 +18095,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{emre}\agenticon{tobi} Emre Yilmaz und Tobi Richter}\par\vspace{1mm}
 ```
 
-![Szene 4](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-002-scene-004-PAUSE.png){ width=95% }
+![Szene 4](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-002-scene-004-PAUSE.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Emre und Tobi bei Tee und Kaffee. Veras Bilder besprochen, Nerevar, D\&D-Pläne. Emre bringt morgen Rize-Tee mit.\par}
@@ -18385,7 +18385,7 @@ Schattenfieber: EINE Wahrheit, biologisch erklärbar. Relikt: Team-Vorschläge +
 \noindent{\scriptsize \agenticon{vera}\agenticon{emre}\agenticon{nami}\agenticon{darius} Vera Kowalski, Emre Yilmaz, Nami Okafor und Darius Engel}\par\vspace{1mm}
 ```
 
-![Szene 5](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-ujymp2hb/day-002-scene-005-REVIEW.png){ width=95% }
+![Szene 5](/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-crop-1tku2v74/day-002-scene-005-REVIEW.png){ width=95% }
 
 ```{=latex}
 {\scriptsize Ergebnisse vorgestellt. Vera zeigt alle 9 Bilder, Emre präsentiert den Mythos, Nami stellt NPCs und Quests vor. Darius filtert fünf CD-Fragen nach Dringlichkeit: (1) Relikt-Name (blockiert Act 3 + Iteration), (2) Player-Agency beim Fragment, (3) Relikt-Formveränderung, (4) Tiervolk-Kosmologie, (5) Düsterkeit der Intro.\par}
@@ -26885,35 +26885,35 @@ Saubere PDFs, Bilder einbauen, Schwellenanker-Rename, Ablehn-Option bestätigt, 
 \vspace{2mm}
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/fraktion-gilden-materialpalette-v2_nano-banana-2.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/fraktion-gilden-materialpalette-v2_nano-banana-2.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-2}}
 \\[1pt]{\tiny\itshape\raggedright Imagine a faction material palette for a powerful medieval merchant guild — arranged as a flat-lay on dark worn oak. The arrangement shows only physical materials and craft objects: a heavy brocade silk cloth in deep midnight indigo with woven gold chevron pattern folded in the upper section, a polished malachite oval cabochon pendant on a bronze chain, a string of warm amber beads with honey-gold translucency, a burnished bronze smith's hammer resting on a slab of polished dark stone, a small ceramic crucible with dried copper patina inside, swatches of vegetable-tanned saddle leather in rich sienna brown with blind-tooled geometric ornament, two small blown-glass vials sealed with wax containing deep red ochre pigment and powdered lapis lazuli. The entire arrangement reads: accumulated material wealth, every object has weight and cost. Color palette dominant: deep brown, warm amber, midnight indigo, malachite green. Single gold accent. NO inscriptions. NO stamped words. NO printed marks. Clean surfaces. The mood is controlled prosperity, guild power expressed through material quality alone. Concept art flat-lay, medieval dark fantasy, painterly, highly detailed surface texture. MUST obey ALL: absolutely no writing, no stamped text, no words anywhere on any surface.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-drei-zustaende-v2_nano-banana-pro.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-drei-zustaende-v2_nano-banana-pro.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-pro}}
 \\[1pt]{\tiny\itshape\raggedright Imagine three identical ancient bone-mineral relics arranged side by side on a dark stone surface, each in a different state of activation. The relic form is a compressed folded geological formation — imagine layers of ancient sedimentary rock that have been folded and compressed over millennia into a fist-sized nodular mass, with a surface of dense ossified mineral channels running through calcified organic matter. The form is too regular for random geology, too organic for deliberate craft. Left object: the relic in complete rest — the surface is cool ash-grey and dead-looking, almost indistinguishable from ordinary stone, only the obsessive micro-channel pattern betraying its nature. Middle object: the relic fully awakened — every micro-channel glows with internal pale blue-violet bioluminescence, as though phosphorescent fluid fills a vascular network inside the mineral, the glow diffuse and beautiful and deeply unsettling. Right object: the relic in dissolution — the edges of the compressed formation are evaporating as fine mineral particulate drifting upward like ash, the internal glow now harsh and overexposed at the core, sickly yellow-green light bleeding from cracked channel margins, the folded form beginning to lose coherence. All three objects identical in shape and dimension, differentiated only through material state and light. Dark background, single raking light from left for the first, self-illuminated for second and third. Comparative material study, dark fantasy concept art, painterly, high detail. MUST obey ALL: no text, no captions, no labels anywhere.}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/stadtschnitt-schwarzrand-v2_gpt-image-1-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/stadtschnitt-schwarzrand-v2_gpt-image-1-5.png}
 \\[2pt]{\scriptsize\textbf{gpt-image-1-5}}
 \\[1pt]{\tiny\itshape\raggedright A dramatic diagonal deep-perspective architectural illustration of SCHWARZRAND, a vertical medieval city built at the edge of an abyss. The viewpoint is from a low oblique angle — the camera is positioned at mid-city level, looking diagonally upward and inward, so that the city's layers recede into depth rather than sitting flat in cross-section. The city is oriented toward the void: its architecture angles, leans, and reaches toward the darkness at the far edge of the image — buttresses extend outward over nothing, cantilevered platforms push further into the abyss with each ascending level, the topmost crown fortress appears to be launching itself toward the edge of known reality. Four distinct architectural layers stack vertically and recede diagonally: At the base, buried in deep shadow under jutting overhangs, cramped tunnels of improvised salvaged stone with faint bioluminescent organic growth in mortar cracks. Above that, medieval half-timbered Franconian houses with Romanesque arched doorways, warm amber candlelight in small windows, carved guild signs on facades. Higher, monolithic brutalist guild halls of rammed earth and cut limestone, clean geometric load-bearing masses, polished stone plazas catching cold light. At the apex, a massive crown fortress of pure geometric stone — enormous cantilevered platforms projecting over the void, crystal glass light shafts integrated into the structure, hanging garden edges draped over the precipice. Volumetric fog fills the spaces between layers. The city has a direction — everything pushes toward the abyss at the right edge of the frame. Dark fantasy architectural concept art, cinematic, highly detailed, painterly, atmospheric.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/fraktion-krone-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/fraktion-krone-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy ruling crown faction. A flat-lay arrangement of materials and costume fragments on black stone: brushed titanium plate segments with etched geometric ornaments, deep crimson enameled signet, obsidian-polished armor pauldron with Damask steel inlays, heavy brocade silk in near-black with a single blood-red woven border, electrum buckle, faceted crystal glass vial with deep indigo liquid inside. Surrounding: a fragment of a document with a royal seal in blood-red wax. Color palette of the arrangement: all-black and charcoal with metallic silver-grey sheen, ONE blood-red accent only, cold white light reflections on polished surfaces. The aesthetic is high fashion restraint — no excess, controlled power. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/fraktion-orden-materialpalette_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/fraktion-orden-materialpalette_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Faction material palette study for a medieval dark fantasy inquisitor order faction. A flat-lay arrangement of materials and costume fragments on cold grey stone: bleached white heavy linen robe fragment with precise geometric embroidery in pale silver thread, crystal glass optical lens mounted in a fine brass frame, vellum manuscript page covered in dense encoded script, a glass phial of luminescent pale green alchemical fluid, white bone rosary with a single black obsidian centerpiece, seal stamp with an eye symbol. Color palette: all-white and pale grey with cold silver accents, ONE glow accent in pale luminescent green only. The aesthetic is monastic austerity — knowledge as control, purity as threat. Flat-lay concept art, material study, dark fantasy, painterly, no text visible}
 \end{minipage}
@@ -33981,11 +33981,7 @@ Tiervolk = Symbiose, Zeitlinie = Covid, Schattenfieber = Körperreaktion, 60 Sei
 \noindent head: git: No such file or directory\par
 \noindent head: ls-files: No such file or directory\par
 \noindent head: --error-unmatch: No such file or directory\par
-\noindent ==> simulation-2/gallery/concepts/day04-vera/tiervolk/tiervolk-hero-symbiose\_nano-banana-pro.png <==\par
-\noindent �PNG\par
-\noindent \par
-\noindent    \par
-\noindent IHDR  �  �   \%��\#   tEXtmodel nano-banana-pro��L�  �iTXtprompt     Imagine a detailed character concept art sheet for a fox-humanoid traveling merchant in a medieval dark fantasy world — a figure who carries something alien inside them in permanent symbiosis, visible only to those who know how to look. The fox is upright, roughly human height, with a pointed muzzle, large mobile ears, and reddish-amber fur. The face is the center of the image: the left eye is a normal amber fox-eye, the right eye has shifted — the iris has become a pale ash-grey, the pupil a thin horizontal bar, and around it the fur lies fractionally flatter than it should, as if the skin is slightly different beneath. Along the back of the neck and down the spine, the fur grows in a counter-spiral pattern, and at the very tips of the fur shafts there is a faint pale violet bioluminescence — not glowing, just catching no-light that isn't there. The hands: fox paws adapted to human proportions, but the left wrist has a tracery of raised channels under the skin, barely visible, suggesting a secondary circulatory system that runs cool and other. The clothing says experienced merchant: charcoal grey wool traveler's coat, multiple pouches on a wide leather belt, an oiled canvas roll-satchel over one shoulder, worn flat-heel boots. No tribal markings. No ornamental bones. The posture is relaxed and confident — a figure who has made peace with what lives inside them. Three-quarter front view. Background: a simple dark stone wall. Color palette: deep charcoal, warm sienna and ochre fur, pale ash grey for the altered eye, one muted indigo accent on a belt pouch, barely-there pale violet at fur tips. MUST obey ALL constraints: no text labels, no design a\par
+\noindent [binary PNG content removed — tiervolk-hero-symbiose\_nano-banana-pro.png]\par
 \noindent ... [truncated]\par
 \noindent ```\par
 
@@ -35513,70 +35509,70 @@ Tiervolk = Symbiose, Zeitlinie = Covid, Schattenfieber = Körperreaktion, 60 Sei
 \vspace{2mm}
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/tiervolk-hero-symbiose_nano-banana-pro.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/tiervolk-hero-symbiose_nano-banana-pro.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-pro}}
 \\[1pt]{\tiny\itshape\raggedright Imagine a detailed character concept art sheet for a fox-humanoid traveling merchant in a medieval dark fantasy world — a figure who carries something alien inside them in permanent symbiosis, visible only to those who know how to look. The fox is upright, roughly human height, with a pointed muzzle, large mobile ears, and reddish-amber fur. The face is the center of the image: the left eye is a normal amber fox-eye, the right eye has shifted — the iris has become a pale ash-grey, the pupil a thin horizontal bar, and around it the fur lies fractionally flatter than it should, as if the skin is slightly different beneath. Along the back of the neck and down the spine, the fur grows in a counter-spiral pattern, and at the very tips of the fur shafts there is a faint pale violet bioluminescence — not glowing, just catching no-light that isn't there. The hands: fox paws adapted to human proportions, but the left wrist has a tracery of raised channels under the skin, barely visible, suggesting a secondary circulatory system that runs cool and other. The clothing says experienced merchant: charcoal grey wool traveler's coat, multiple pouches on a wide leather belt, an oiled canvas roll-satchel over one shoulder, worn flat-heel boots. No tribal markings. No ornamental bones. The posture is relaxed and confident — a figure who has made peace with what lives inside them. Three-quarter front view. Background: a simple dark stone wall. Color palette: deep charcoal, warm sienna and ochre fur, pale ash grey for the altered eye, one muted indigo accent on a belt pouch, barely-there pale violet at fur tips. MUST obey ALL constraints: no text labels, no design annotations, no markings on the image itself.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/tiervolk-haendler-fuchs-exploration_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/tiervolk-haendler-fuchs-exploration_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Concept art of an upright fox-humanoid figure standing in a medieval market, serving as a traveling merchant. The figure is clearly recognizable as a fox — pointed muzzle, large ears, reddish-brown fur with white chest markings — but something is subtly wrong: the proportions are fractionally off-human, the limbs slightly too long, the posture too still, the amber eyes have vertical pupils that catch the light in a way that is not quite animal and not quite human. The fur along the nape and shoulders grows against the grain, creating a faint counter-swirl pattern. The clothing is deliberately unremarkable: a heavy deep-charcoal wool traveler's cloak, multiple leather belt pouches, a satchel of dark oiled canvas, fingerless gloves of undyed leather. No tribal ornament. No feathers or bones as decoration. The color palette: deep charcoal, warm ochre, unsaturated sienna fur tones, a single muted indigo accent on the satchel strap. The figure has the self-contained stillness of someone who watches everything and commits to nothing. Medieval dark fantasy concept art, full body, painterly, three-quarter view.}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/tiervolk-diebin-marder-exploration_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/tiervolk-diebin-marder-exploration_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Concept art of a slender marten-humanoid figure in a medieval urban environment, crouched on a rooftop ledge at dusk. The figure is clearly a marten — narrow elongated face, dark mask-pattern fur, white throat patch, sinuous body — but with something displaced: the joints of the fingers bend in one too many places, the neck rotates a few degrees beyond where it should stop, the pale eyes have no visible pupil, only a faint luminescence deep inside like foxfire trapped in still water. The clothing: close-fitting dark charcoal linen wrapped in layers, leather strapping over the torso, flat-soled soft boots, no metal visible. No adornments. The silhouette reads: lean, self-sufficient, invisible by preference. The posture is perfect stillness — not tensed to spring, just present and waiting with a patience that reads as not quite biological. The city below shows warm amber candlelight in Romanesque windows. Color palette: near-black charcoal, deep ash grey, one muted green-blue luminescence in the eyes only. Medieval dark fantasy concept art, full figure, painterly, low dramatic light.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/tiervolk-rabe-bote-exploration_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/tiervolk-rabe-bote-exploration_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Concept art of a raven-humanoid figure standing in a medieval stone archway, a messenger and information broker. The figure is recognizably avian — a sleek black-feathered head with a heavy curved beak, jet-black feathers covering the arms and shoulders — but displaced: the eyes are wrong, four of them arranged in a slight curve across the face where two should be, each one a different degree of open, giving the face an expression that reads as simultaneously attentive and absent. The feathers along the spine grow in interlocking layers that have a secondary geometric pattern beneath the natural arrangement. The clothing: layered black linen robes, a dark leather satchel stuffed with folded documents, a belt with small bone-handled tools. No color except a single deep oxblood red silk cord as a belt tie. The figure has one extra finger on the left hand. Standing perfectly still, the posture is that of someone who has already decided everything before you arrived. Medieval dark fantasy concept art, three-quarter portrait, painterly, low cold light, atmospheric.}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/tiervolk-marktszene-exploration_seedream-4-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/tiervolk-marktszene-exploration_seedream-4-5.png}
 \\[2pt]{\scriptsize\textbf{seedream-4-5}}
 \\[1pt]{\tiny\itshape\raggedright Concept art of a narrow medieval market lane with human and beast-folk figures trading goods. Among the human merchants and customers, three or four upright animal-humanoid figures — a fox, a marten, a heron — move through the crowd as vendors and silent observers. What makes the scene unsettling is not drama but wrongness that only reveals itself on second look: the animal figures stand fractionally too still when the humans move, their shadows fall at a slightly different angle than the light source warrants, their eyes do not blink at the same rhythm as the humans around them. Their clothing is deliberately ordinary — dark wool, oiled leather, nothing to distinguish them as other. The market stalls show bolts of cloth, ceramic jugs, dried herbs. Warm amber lantern light against cold grey stone walls. The animal figures are not segregated — they are simply present, integrated, and subtly not-from-here. Color palette: warm amber light on charcoal stone, ochre and sienna crowd clothing, one pale blue-grey luminescence in one of the animal figures that a passerby would not notice. Dark fantasy environment concept art, wide establishing shot, painterly, atmospheric depth.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/stadtschnitt-kanalzone-v3_nano-banana-2.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/stadtschnitt-kanalzone-v3_nano-banana-2.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-2}}
 \\[1pt]{\tiny\itshape\raggedright Imagine a wide establishing shot of SCHWARZRAND's mid-city canal district, a medieval vertical city built at the edge of a great abyss. The viewpoint is at street level, looking along a stone canal that cuts through the center of the frame. The canal water is dark and still, reflecting the warm amber light of guild-hall lanterns on the near bank. The image is NOT a cross-section diagram — it is an environment photograph, ground-level and atmospheric. The vertical city structure is present but contextual: in the background, the city rises in receding layers — half-timbered Franconian houses close in the middle distance, then the monolithic brutalist limestone guild halls above them, then at the very top a glimpse of the cantilevered crown fortress platforms extending over the abyss, silhouetted against a pale overcast sky. The foreground: a stone-paved canal-side market with stalls selling dried goods, bolts of cloth, ceramic vessels. Three or four figures move along the quay — hooded merchants, a guild clerk in a grey coat. Stone bridges span the canal at two depths, creating frames within frames. On the right bank, a Romanesque arch leads to a shadowed side passage where faint bioluminescent lichen glows in the mortar joints. The atmosphere: damp, close, layered — you sense the city extending both above and below from this single point. Color palette: charcoal stone, warm amber lantern glow, one pale indigo reflection in the dark canal water. MUST obey ALL: no diagrams, no labels, no section lines, purely atmospheric environment shot.}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png}
 \\[2pt]{\scriptsize\textbf{gpt-image-1-5}}
 \\[1pt]{\tiny\itshape\raggedright A cinematic wide-angle ground-level establishing shot of a medieval canal district within SCHWARZRAND, a vertical city built at the edge of an abyss. The composition: a dark stone-paved canal runs through the center of the image toward a vanishing point, flanked by medieval half-timbered guild buildings with warm amber lanterns reflecting in the still dark water. The canal district is alive: market stalls line the near quay, shadowed figures move along stone pathways, a stone bridge spans the canal in the mid-ground creating a natural frame for the city layers beyond. Background layers recede vertically: directly above the half-timbered houses rise the massive brutalist limestone guild halls — rammed earth and cut stone with geometric load-bearing masses, cold and imposing. Above those, at the very horizon, the underside of a great cantilevered stone platform — part of the crown fortress — juts out over everything, blocking a section of pale sky. The city stack is IMPLIED by the environment, not diagrammed. Foreground atmosphere: the quay stones are damp, green-black with moss at the waterline, worn smooth by centuries of feet. In the shadowed passage under the bridge arch, pale bioluminescent growth faintly illuminates the mortar joints of the oldest stones. The mood: enclosed, layered, alive with commercial activity but shadowed by the weight of what towers above. The city does not feel like a diagram. It feels like a place. Painterly architectural concept art, cinematic, warm amber and cold stone color contrast, deep atmospheric perspective, dark fantasy medieval.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-hero-v2_nano-banana-pro.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-hero-v2_nano-banana-pro.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-pro}}
 \\[1pt]{\tiny\itshape\raggedright Imagine a dramatic hero shot of an ancient geological relic — the SCHWELLENANKER — displayed on a rough stone altar in a low barrel-vaulted crypt chamber. The relic itself: a fist-sized compressed folded geological formation, the result of millennia of mineral layers being folded and re-folded under extreme pressure. The surface texture is the key: it is covered in a dense network of ossified micro-channels running through a calcified organic matrix — like a cross-section of spongy bone, but mineral, and the channels have a systematic geometry that is too regular for natural geology. The form is nodular, irregular, and completely without polish or craft intervention. Think geological cluster, ossified mineral formation, spongy bone texture in stone — not crystal, not carved, not designed. The relic is in its activated state: pale blue-violet bioluminescence emanates from inside the micro-channels, diffuse and internal, like phosphorescent fluid moving through a vascular network embedded in the rock. The glow is beautiful and deeply wrong simultaneously. A single human figure stands at the edge of the frame, facing the relic, their back to the viewer — small against the vaulted ceiling, overwhelmed by the relic's presence despite its modest physical size. The crypt walls are rough-hewn stone with faint alchemical residue staining in old channel-cut grooves. Single light source: the relic itself. Color palette: deep stone grey and charcoal, pale blue-violet internal glow, warm shadow on the human figure, cold vault ceiling. MUST obey ALL: no text, no labels, no markings anywhere. Painterly, cinematic, atmospheric, dark fantasy concept art.}
 \end{minipage}
 \\[4mm]
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/fraktion-gilden-materialpalette-v2_nano-banana-2.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/fraktion-gilden-materialpalette-v2_nano-banana-2.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-2}}
 \\[1pt]{\tiny\itshape\raggedright Imagine a faction material palette for a powerful medieval merchant guild — arranged as a flat-lay on dark worn oak. The arrangement shows only physical materials and craft objects: a heavy brocade silk cloth in deep midnight indigo with woven gold chevron pattern folded in the upper section, a polished malachite oval cabochon pendant on a bronze chain, a string of warm amber beads with honey-gold translucency, a burnished bronze smith's hammer resting on a slab of polished dark stone, a small ceramic crucible with dried copper patina inside, swatches of vegetable-tanned saddle leather in rich sienna brown with blind-tooled geometric ornament, two small blown-glass vials sealed with wax containing deep red ochre pigment and powdered lapis lazuli. The entire arrangement reads: accumulated material wealth, every object has weight and cost. Color palette dominant: deep brown, warm amber, midnight indigo, malachite green. Single gold accent. NO inscriptions. NO stamped words. NO printed marks. Clean surfaces. The mood is controlled prosperity, guild power expressed through material quality alone. Concept art flat-lay, medieval dark fantasy, painterly, highly detailed surface texture. MUST obey ALL: absolutely no writing, no stamped text, no words anywhere on any surface.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-0nmeggzo/relikt-drei-zustaende-v2_nano-banana-pro.png}
+\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{/var/folders/fr/y30bxq454jxb7bycr3yh9gmw0000gn/T/logbook-thumbs-1cm4o8d7/relikt-drei-zustaende-v2_nano-banana-pro.png}
 \\[2pt]{\scriptsize\textbf{nano-banana-pro}}
 \\[1pt]{\tiny\itshape\raggedright Imagine three identical ancient bone-mineral relics arranged side by side on a dark stone surface, each in a different state of activation. The relic form is a compressed folded geological formation — imagine layers of ancient sedimentary rock that have been folded and compressed over millennia into a fist-sized nodular mass, with a surface of dense ossified mineral channels running through calcified organic matter. The form is too regular for random geology, too organic for deliberate craft. Left object: the relic in complete rest — the surface is cool ash-grey and dead-looking, almost indistinguishable from ordinary stone, only the obsessive micro-channel pattern betraying its nature. Middle object: the relic fully awakened — every micro-channel glows with internal pale blue-violet bioluminescence, as though phosphorescent fluid fills a vascular network inside the mineral, the glow diffuse and beautiful and deeply unsettling. Right object: the relic in dissolution — the edges of the compressed formation are evaporating as fine mineral particulate drifting upward like ash, the internal glow now harsh and overexposed at the core, sickly yellow-green light bleeding from cracked channel margins, the folded form beginning to lose coherence. All three objects identical in shape and dimension, differentiated only through material state and light. Dark background, single raking light from left for the first, self-illuminated for second and third. Comparative material study, dark fantasy concept art, painterly, high detail. MUST obey ALL: no text, no captions, no labels anywhere.}
 \end{minipage}
