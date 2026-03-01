@@ -545,3 +545,34 @@ Das Fundament ist solide. Die Spielerperspektive funktioniert: Erste 30 Minuten 
 **Confidence Level:** 8/10 — Kapitel sind gut, Spielerperspektive funktioniert, aber Schwelle-Konzept muss noch spieler-zugänglicher werden.
 
 ---
+
+## Tag 5, Szene 1: BRIEFING | 09:00 in der Küche
+
+# Tag 5 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn (CD), Darius, Emre, Nami, Vera, Tobi, Leo
+
+## Notizen
+- LETZTER TAG. Content-Lock 15:00, v0.3 Export heute Abend
+- GDD aktuell 83 PDF-Seiten, max 60 — 23 Seiten kürzen!
+- WBB 41 Seiten, im Budget
+- Bilder müssen in Dokumente eingebettet werden (Vera: 18 neue Bilder, ~$2.50)
+- Darius: GDD Kap 1–3, 5 kürzen
+- Nami: GDD Kap 4 kürzen (2-3 Seiten)
+- Tobi: GDD Kap 6 kürzen (3-4 PDF-Seiten, Tiervolk-Shader straffen, PP-Parameterwerte raus, Pre-Alpha-Timeline raus)
+- Emre: WBB finalisieren, Bilder einbauen
+- Vera: Pinnwand korrigieren, 18 neue Bilder, Bilder einbauen
+
+## Ergebnisse
+- Meine Ownership: Finaler QA-Pass über alle 9 Kapitel nach Kürzungen
+- QA-Checkliste: Seitenbudget (GDD<=60, WBB<=60), Briefing-Konsistenz, Bilder eingebettet, Hygiene (keine Autorennamen, keine sichtbaren Kommentare)
+- Drei Arbeitsblöcke: (1) Seitenbudget-Tracking bis 11:00, (2) Hygiene-Scan gekürzter Versionen 11:00-14:00, (3) Finaler Pass 14:00-15:00 Content-Lock
+
+## Offene Fragen
+- Seitenbudget-Diskrepanz: Briefing sagt 30-45 Seiten, Finn setzt 60 als Limit — was gilt?
+- KEINE neuen inhaltlichen Fragen — nur QA, nur Polieren
+
+## Persönliches
+- Fokussiert, klar. Letzter Tag = kein Raum für Neues, nur sauber machen. Genau mein Job.
+- Confidence Level: 8/10
+
+---
