@@ -376,3 +376,28 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 
 - Das Kürzen ist befriedigend. Der Tiervolk-Abschnitt war in v4 für mich geschrieben — jetzt ist er für den Leser geschrieben. Die Pipeline-Bibel fängt die Details auf.
 - Fünf Versionen in fünf Tagen. v1 war das Fundament, v2 der Rename, v3 das Interface, v4 der Tiervolk-Shader, v5 die Diät. Jede Version hatte einen klaren Grund.
+
+---
+
+# Tag 5 Szene 5
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: Küche
+
+## Notizen
+
+- **GDD Kap 6 v5 kurz präsentiert**: −36% Zeilen (793→508). Tiervolk-Shader komprimiert in 3 Abschnitte, PP-Parameter-Werte in HTML-Kommentare, Pre-Alpha-Timeline entfernt.
+- **Orden-Kreuz → Orden-Siegel korrigiert** (einzige Fundstelle: 6.12 Tabelle "Offene Fragen").
+- **Zwei Bilder eingebettet**: Schwellenanker-Zustände (6.6.1), Schwellenanker-Hero-Shot (6.6.2).
+- Status: Content-Lock gebrochen, aber GDD-Endfassung funktionsfähig. Weitere Iteration heute nicht notwendig.
+
+## Ergebnisse
+
+- Briefing-Reportage: GDD Kap 6 v5 finale Fassung → Finn für PDF-Export.
+- Keine neuen Ergebnisse. Bericht nur.
+
+## Offene Fragen
+
+- Keine neuen.
+
+## Persönliches
+
+- Fünf Versionen in fünf Tagen reichen. Das Dokument ist jetzt stabil und lesbar.
