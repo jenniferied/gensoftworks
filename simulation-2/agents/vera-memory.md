@@ -182,9 +182,14 @@
 ## Ergebnisse
 
 **Neue Bilder (day03-vera/):**
-- `day03-vera/factions/fraktion-gilden-materialpalette-v2_nano-banana-2.png` ✅ — kein Text, Erdtöne mit Malachit/Bernstein-Akzenten
-- `day03-vera/relics/relikt-drei-zustaende-v2_nano-banana-pro.png` ✅ — drei Zustände sauber, kein Text, geologische Form
-- `day03-vera/environments/stadtschnitt-schwarzrand-v2_gpt-image-1-5.png` ✅ — diagonale Komposition, Schwarzrand-Richtungskonzept
+- `tiervolk/tiervolk-haendler-fuchs-exploration_seedream-4-5.png` ✅ — schwarzer Mantel, Marktplatz-Kontext, Nackenwirbel subtil
+- `tiervolk/tiervolk-diebin-marder-exploration_seedream-4-5.png` ✅ — sehr stark — Foxfire-Augen, Knochengelenke, Dächer
+- `tiervolk/tiervolk-rabe-bote-exploration_seedream-4-5.png` ✅ — gut — geometrisches Federsekundärmuster, oxblood-Gürtel
+- `tiervolk/tiervolk-marktszene-exploration_seedream-4-5.png` ✅ — stark — Integration funktioniert, Reiher zu ghostly (v0.3 dämpfen)
+- `tiervolk/tiervolk-hero-symbiose_nano-banana-pro.png` ✅ — bestes Bild Tag 4 — Concept-Art-Sheet mit Detailinsets vom Modell selbst erzeugt
+- `tiervolk/tiervolk-subtil-menschlich-v2_seedream-4-5.png` ✅ — iteriert: weniger cartoon, mehr Realismus
+- `environments/stadtschnitt-kanalzone-v3_nano-banana-2.png` ✅ — solide — Kanalzone, weniger vertikal als v2, mehr Marktleben
+- `environments/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png` ✅ — cineastisch, warmes Licht, Kanalreflexion
 
 **Pinnwand:**
 - `pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png` — freigegeben
@@ -408,3 +413,24 @@
 - Salva (Habicht) als erster benannter NPC mit Concept Art fühlt sich wie ein Durchbruch an — die Feder-zu-Haut-Transition und die horizontalen Stabpupillen sind das Uncanny-Valley-Signal, das dem gesamten Tiervolk-Design bisher gefehlt hat.
 - GDD Kap 5 v3 ist das umfassendste Art-Direction-Dokument, das ich je geschrieben habe. 30 eingebettete Bilder in einem Kapitel. Jede Designentscheidung ist jetzt visuell belegt.
 - Fünf Tage, 31 Concept Art, $3.73 Budget. Gute Woche.
+
+---
+
+# Tag 6 Szene 1 (MEETING)
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: Finn (eröffnet), alle sieben (Küche)
+
+## Notizen
+- Content-Lock 15:00. Letzte Koordinationspunkte vor Export
+- Vera-Status: 23 Prompts Tag 5, 30 eingebettete Bilder in GDD Kap 5 v3, Budget $1.89 Tag 5
+- Orden-Symbol = Siegel (nicht Kreuz) nun in allen Dokumenten konsistent
+- Tiervolk subtiler/menschlicher iteriert — Salva (Habicht) mit Signatur-Features
+- Stadtschnitt v3 freigegeben und in WBB Kap. 2 eingebettet
+- Relikt-Hero v2 freigegeben
+
+## Kurzbericht (max 100 Wörter)
+23 Bild-Prompts erstellt, Bilder generiert: 31 Concept Art über 5 Tage. GDD Kap. 5 v3 mit 30 eingebetteten Bildern — Fraktionspaletten, Stadtarchitektur, Charaktere, Schattenfieber-Progression, Orden-Siegel-Designsheet. Budget: $1.89 heute, $3.73 gesamt. Orden-Symbol = Siegel (nicht Kreuz). Tiervolk subtiler/menschlicher, Salva als erster benannter NPC. Alles Content-Lock-ready.
+
+## Persönliches
+- Woche war extrem produktiv. 31 Bilder für ein Game-Konzept in fünf Tagen ist ein gutes Tempo. Budget-Verwaltung hat funktioniert.
+- Die Art-Direction ist visuell vollständig belegt jetzt. GDD Kap. 5 ist nicht nur Moodboard — es ist ein funktionierendes Designdokument.
+- Fünf verschiedene Bildmodelle, je nach Use-Case kalibriert. Das war der richtige Approach: Seedream für Batch/Exploration, Nano Banana Pro/2 für iteriert, GPT für Hero-Finals.

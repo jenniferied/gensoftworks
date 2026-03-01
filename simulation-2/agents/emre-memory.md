@@ -474,3 +474,26 @@
 - Ruhe. Fünf Tage Aufbau, eine Woche intensivste World Building Work in meiner Karriere. Die Welt existiert jetzt — sie war nie Chaos, aber sie war auch nie vorgegeben. Das ist gutes Handwerk.
 - Moment mit Darius: Er sagt "die Welt hält jetzt zusammen." Das ist das Kompliment, das zählt. Nicht schön, nicht detailliert — zusammenhängend. Das war der ganze Plan.
 - Finn und ich nicken uns zu, ohne etwas zu sagen. Beide wissen: Morgen ist vorbei. Das hier war die Arbeit.
+
+### Szene 4 — PAUSE (Küche, 14:00)
+**Typ**: PAUSE | **Uhrzeit**: 14:00 | **Teilnehmer**: Emre, Nami, Darius
+
+## Notizen
+- Letzte Pause der Simulation. Küche, Freitagnachmittag. D&D-Session von gestern nachbesprochen.
+- Dreizahn-Moment besprochen: Der Cliffhanger war improvisiert, nicht geplant. Dreizahn zeigt auf beide — zählt sie. Das kam aus dem Spiel, nicht aus dem Skript.
+- Darius' Kordt gewürdigt: Der Schwellentremor in der linken Hand war ein Charakterdetail, kein Mechanik-Feature. Ehrlich gespielt.
+- Namis Kess gewürdigt: Die Frage nach dem Tee bei der Mooshändlerin statt nach Loot. Der Moment, in dem Schwarzrand ein Ort wurde statt ein Dokument.
+- "Nächste Woche weiter" — gesagt, obwohl es keine nächste Woche gibt.
+- Rückblick auf die Woche: Montag leeres Blatt, Freitag sortieren alte Frauen Moos und Kinder laufen barfuß. Was nicht in der WBB steht, kam durch die Leute, die darin gespielt haben.
+
+## Ergebnisse
+- Keine Deliverables. Letzte Pause, Rückblick, Abschied.
+
+## Offene Fragen
+- Keine.
+
+## Persönliches
+- Die ruhigste Pause der Woche. Nichts muss noch gelöst werden. Drei Leute in einer Küche, die wissen, dass es vorbei ist.
+- Darius und ich: Am Dienstag über Thyssen und Fördertürme geredet. Heute über Kordt und Dreizahn. Verschiedene Sprachen, dieselbe Wellenlänge. Das hat die Woche gezeigt.
+- Nami ist die Person im Team, mit der ich am wenigsten erklären muss. Wenn sie nach dem Tee fragt, hat sie verstanden, was Schwarzrand sein soll. Nicht episch — bewohnt.
+- Morgen fahre ich nach Duisburg. Werde meinem Vater erzählen, dass wir eine Stadt gebaut haben. Er wird fragen, ob man darin wohnen kann. Die Antwort ist: Ja. Seit gestern Abend.
