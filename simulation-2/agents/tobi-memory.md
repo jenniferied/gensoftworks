@@ -343,3 +343,36 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 
 - Letzter Tag. Klarer Auftrag: kürzen, nicht denken. Das ist nach vier Tagen Aufbau eine gute Disziplinübung.
 - Finns 23-Seiten-Delta ist sportlich, aber jeder muss seinen Teil beitragen. Kap 6 hat das größte Einspar-Potenzial nach den narrativen Kapiteln.
+
+---
+
+# Tag 5 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: solo
+
+## Notizen
+
+- v5 ist die Kürzungsversion. Kein neuer Inhalt, nur Reduktion. Von 793 Zeilen Markdown auf 508 — Reduktion um 36%.
+- **6.7 Tiervolk-Symbiose-Shader**: von 8 Unterabschnitten (6.7.1–6.7.8) auf 3 (Konzept+Abgrenzung, Dual-Layer-Architektur, Asset-Konvention). Alle Pipeline-Details (Layer-Einzelbeschreibungen mit SSS-Werten, Blend-Maske-Hypothesen-Tabelle, Masken-Pipeline-Workflow, Animations-Verknüpfung, Aufwandsschätzung) → Pipeline-Bibel.
+- **6.4.2–6.4.5 Schattenfieber-PP-Stufen**: Alle konkreten Parameter-Werte (RGB-Multiplikatoren, px-Werte, Hz-Frequenzen, F-Stop-Werte) in HTML-Kommentare verschoben. Stufen-Logik und Konzeptbeschreibung bleiben sichtbar.
+- **6.10.2 Pre-Alpha-Timeline**: Komplett entfernt. Woche-für-Woche-Aufschlüsselung ist Produktionsplanung, nicht GDD.
+- **"Kreuz" → "Siegel"**: Einzige Fundstelle war in 6.12 (Offene-Fragen-Tabelle). Korrigiert zu "Orden-Siegel-Vektor".
+- **Bilder eingebaut**: Schwellenanker-Drei-Zustände bei 6.6.1, Schwellenanker-Hero bei 6.6.2. Relative Pfade zu `../../pinwall/favorites/`.
+- Redundante Inline-Erklärungen gestrafft: "Diese Entscheidung ist gesetzt und nicht diskussionswürdig" → gestrichen. Lumen-Tuning-Parameter (`r.Lumen.*`) → HTML-Kommentar. Emissive-Intensitäts-Werte (cd/m²) in Biolumineszenz-Tabelle belassen (die sind GDD-relevant).
+
+## Ergebnisse
+
+- GDD Kap 6 v5 erstellt: `simulation-2/gallery/gdd/06-technische-spezifikation-v5.md`
+- Zeilenreduktion: 793 → 508 (−36%)
+- Geschätzte PDF-Seitenreduktion: ~3–4 Seiten (abhängig von Bild-Einbettung)
+- Inhaltlich nichts Neues hinzugefügt — reine Kürzung und Umstrukturierung
+- Zwei Concept-Art-Bilder eingebettet (Schwellenanker drei Zustände + Hero-Shot)
+- "Kreuz" → "Siegel" korrigiert
+
+## Offene Fragen
+
+- Keine neuen. Alle verbleibenden offenen Fragen aus 6.12 sind Status-quo (Houdini-Terrain-Constraints, Tiervolk-Referenzbilder, Fraktions-PP-Presets, Orden-Siegel-Vektor, Tiervolk-Tierformen-Bandbreite).
+
+## Persönliches
+
+- Das Kürzen ist befriedigend. Der Tiervolk-Abschnitt war in v4 für mich geschrieben — jetzt ist er für den Leser geschrieben. Die Pipeline-Bibel fängt die Details auf.
+- Fünf Versionen in fünf Tagen. v1 war das Fundament, v2 der Rename, v3 das Interface, v4 der Tiervolk-Shader, v5 die Diät. Jede Version hatte einen klaren Grund.
