@@ -408,3 +408,30 @@
 - Fünf Tage, drei Kapitel, drei Versionen. Von der Deus-Ex-Recherche am Montag bis zur finalen Kürzung heute Morgen. Von der ersten Frage "Was ist die Spieler-Fantasie?" bis zu einem GDD, das ich jemandem erklären könnte, ohne zu lügen.
 - Die Zusammenarbeit mit Emre und Nami war das Beste an dieser Woche. Produktive Reibung (Emre), wachsende Partnerschaft (Nami). Wenn das Team so weiterarbeitet, haben wir eine echte Chance.
 - Nächste Woche weiter. Am Spiel und am Tisch.
+
+---
+
+# Tag 5 Szene 5
+**Typ**: REVIEW | **Uhrzeit**: 15:00 | **Teilnehmer**: Darius, Vera (remote), Leo
+
+## Notizen
+- Finnale REVIEW-Szene. Simulation geht zu Ende.
+- Vera und Leo sind auch da — letzte Gelegenheit für Feedback auf Kap. 1–3 v3.
+
+## Ergebnisse
+- **GDD Kapitel 1 v3**: Spielübersicht finalisiert. Schwarzrand, Schwellenanker, drei Fraktionen, Ablehn-Option. Abgrenzung gekürzt, Zielgruppe präzise, 6 PDF-Seiten.
+- **GDD Kapitel 2 v3**: Kernmechaniken finalisiert. 6 Systeme (Combat, Nervensystem-Leveling, Crafting, Fraktionsruf, Schattenfieber-Progression, Tiervolk-Händlernetz). Systeminteraktionen verdichtet. Körperreaktions-Varianz als Kern-Feature. 8 PDF-Seiten.
+- **GDD Kapitel 3 v3**: Erzählkonzept finalisiert. Intro (Clip-Moment + Ablehn-Option), Hauptquest (3 Akte, 3 Enden), 3 Fraktionsquests + Tiervolk-Nebenquest, Erzählprinzipien. 8 PDF-Seiten.
+- **Gesamteindruck**: Drei Kapitel, ~22 PDF-Seiten. 13 Seiten gekürzt ohne Substanz-Verlust. 9 Bilder eingebettet (Fraktionspaletten, Relikt-Zustände, Hero Shot, Tiervolk-Visuals, Stadtschnitt). Alle CD-Entscheide implementiert. Export-fertig.
+- **Offene CD-Fragen**: Keine — alle beantwortet. Relikt-Name (Schwellenanker), Ablehn-Option (implementiert), Tiervolk-Symbiose (statisch, in Kap. 2), Körperreaktions-Varianz (core feature), Zeitlinie (Covid-Analogie in Kap. 3).
+
+## Persönliches
+- Fünf Tage Arbeit: Tag 1 Recherche (Deus Ex, Diablo), Tag 2 High Concept (Kap. 1 v1), Tag 3 Systemarbeit (Kap. 2 v1, Kap. 3 v1), Tag 4 Anpassung an CD (v2-Iterationen), Tag 5 Optimierung (v3-Kürzungen).
+- Das Beste an dieser Simulation: Keine erfundenen Quellen, keine Halluzinationen. Emres World Building (WBB), Namis Narrative (GDD Kap. 4), Veras Visuals (Concept Art), Leos QA. Jeder Agent hat sein Terrain, keine Überschneidungen.
+- Immersive-Sim-Kern ist da: Vertikale Stadt (Schwarzrand), drei Fraktionswege (mit echter Agency durch Ablehn-Option), Schattenfieber als biologische Progression (Lymph-Subsystem), Tiervolk als dritter Zugangspfad.
+- Körperreaktions-Varianz ist das Alleinstellungsmerkmal. Drei Spieler, Stufe II, drei unterschiedliche Transformationen. Das wird die Streamer-Alpha definieren.
+- Schwellentremor. Der Boden unter Schwarzrand ist nicht sicher — und das ist exakt das Game Feel, das wir bauen wollten.
+
+---
+
+**SIMULATION ABGESCHLOSSEN. DONNERSTAG 15:00 EXPORT. FREITAG 15:00 FINAL REVIEW.**
