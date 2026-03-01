@@ -289,3 +289,27 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 
 - Das ist jetzt das dritte kosmologische System im selben Farbvokabular. Schattenfieber, Schwellenanker, Tiervolk — alle drei sprechen Kalt-Violett-Weiß. Das war nicht explizit geplant, aber es ist jetzt dokumentierte Absicht. Das Dokument ist kohärenter als ich erwartet hatte.
 - Der Tiervolk-Shader ist der einzige neue Abschnitt in v4, der wirklich von null gebaut werden muss. Der Rest ist Iteration auf Bestehendem. 3–4 Wochen Aufwand ist konservativ realistisch — vorausgesetzt, Vera liefert Referenzen rechtzeitig.
+
+---
+
+# Tag 4 Szene 4
+**Typ**: PAUSE | **Uhrzeit**: 14:00 | **Teilnehmer**: Tobi, Leo (vor Ort), Vera (Slack)
+
+## Notizen
+
+- Vera meldet: Nano Banana Pro hat beim Tiervolk-Hero-Sheet selbstständig Detailinsets generiert (Auge, Nacken, Hand) — ohne Prompt-Vorgabe. Sie findet es gruselig.
+- Ihre Analogie zu Houdini ist treffend. Habe mit der Erosions-Node-Anekdote geantwortet: unerwartete, trotzdem richtige Geometrie — die Lösung war im Parameterraum, ich hatte sie nur noch nicht gefunden.
+- Leo eingebunden via Roguelike/Procgen-Frage: gleicher Effekt auf Spieler-Seite?
+
+## Ergebnisse
+
+- Kein technischer Output. Pausengespräch.
+
+## Offene Fragen
+
+- Gleiche wie nach Szene 2 (unverändert).
+
+## Persönliches
+
+- Vera hat heute schon einiges geliefert (Hero-Sheet mit Detailinsets). Das ist mehr als erwartet. Die KI macht ihr Arbeit leichter und gleichzeitig unheimlicher — das ist eine reale Spannung, keine Übertreibung.
+- Leo ist ruhig, geerdet. Gut, sie in dieser Szene dabei zu haben.
