@@ -962,6 +962,232 @@ Wenn ich als 47k-Follower-Streamer diese Alpha-Version spielen würde (ohne Kap 
 
 \clearpage
 
+# QA-Bericht Tag 4 — Leo
+## Hygiene & Konsistenz-Pass über alle 9 Kapitel
+
+**Datum:** Tag 4, Donnerstag, 10:00 Uhr
+**Schweregrad Findings:** 3 LOW, 1 MEDIUM
+
+---
+
+## Executive Summary
+
+Alle 9 Kapitel sind sauber für den v0.2-Export. CD-Feedback (Relikt → Schwellenanker, Zeitlinie = Covid, Tiervolk = Symbiose) ist durchgehend implementiert. Zwei Minor-Inkonsistenzen gefunden, beide nicht-blockierend. Seitenbudget im Rahmen (GDD 42/60, WBB 33/60).
+
+---
+
+## 1. Hygiene-Checkliste
+
+### 1.1 Autorenerwähnungen im sichtbaren Text
+Status: ✅ CLEAR
+- Alle Autorennamen sind in HTML-Kommentare (`<!-- Darius: ... -->`) verschoben
+- Keine sichtbaren Namen im Fließtext (anders als Tag-3-Snapshot)
+- Export-ready
+
+### 1.2 Recherche-Kommentare / Post-Its
+Status: ✅ KLAR mit Anmerkung
+- Recherche-Links sind als HTML-Kommentare gekennzeichnet
+- **Beispiel:** Kap 5, Zeile 58: `<!-- Vera: Krone-Palette freigegeben vom CD. ... -->`
+- Keine sichtbaren TODO-Listen mehr
+- **Anmerkung:** Manche sind detailliert (Vera-Feedback eingearbeitet), das ist gut
+
+### 1.3 Wolf-Checklisten / Infrastruktur-Checks
+Status: ⚠️ BELASSEN, NICHT ENTFERNEN
+- Kap 1–3 (WBB) haben am Ende formale Wolf-Infrastruktur-Checklisten
+- **Diese gehören dort hin** — das ist methodische Dokumentation, nicht Team-Kommunikation
+- Format: `| Infrastruktur | Status | Anmerkung |` — saubere Tabelle
+- **Keep-as-is für v0.2**
+
+### 1.4 "Offene Fragen"-Anhänge
+Status: ✅ OK (korrekt in HTML-Kommentaren oder Anhängen)
+- GDD Kap 6: Offene Punkte sind als `<!-- Tobi: Offene Fragen & Abhängigkeiten -->` strukturiert
+- WBB Anhänge sind eigenständige Abschnitte mit `<!-- Interne Koordination — nicht für PDF-Export -->` Header
+- **QA-Urteil:** Das ist klar als intern markiert und wird beim PDF-Export rausgefiltert
+- Akzeptabel
+
+### 1.5 "Anmerkung für XY" Blöcke
+Status: ✅ SAUBER
+- Alle sind in HTML-Kommentare oder Anhänge verlagert
+- Keine sichtbaren "An Darius: ...", "An Vera: ..." mehr
+- GDD Kap 3, Zeile 195: `<!-- Darius: v2 dieses Kapitels braucht: ... -->` — ist Kommentar, nicht sichtbar
+
+---
+
+## 2. Konsistenz-Check nach CD-Antworten (Tag 4 Briefing)
+
+### 2.1 Relikt-Namenspolitik → Schwellenanker
+Status: ✅ KONSISTENT
+- **CD-Entscheid:** "Schwellenanker" ist der offizielle In-World-Name
+- **Überall durchgehend:**
+  - GDD 01: "Der Schwellenanker" (Zeile 25, etc.)
+  - GDD 02: "Schwellenanker" in Abschnitten 2.5, 2.6
+  - GDD 03: Hauptquest dreht sich um "Der Schwellenanker", nicht "das Relikt"
+  - GDD 04: "Hieronymus Vael" hält "eine Scherbe aus... [dem Schwellenanker]" (Zeile 29)
+  - GDD 05: "Relikt — Der Schwellenanker" als Abschnitt-Titel (Zeile 215)
+  - GDD 06: "M_Schwellenanker_Master" als Shader-Name (Zeile 549)
+  - WBB 01: "Der Schwellenanker ist ein Grenzstabilisator" (Zeile 250)
+  - WBB 02: "Ankerkammer" als Ort, in dem Schwellenanker lag (Zeile 22, etc.)
+  - WBB 03: "die Ankerkammer" in Landmarken-Abschnitt (Zeile 203)
+- **Gut:** Keine Vermischung mit "Wurzel", "Relikt" (als Gegenstand), "Schwellenanker-Relikt" etc.
+- ✅ PASS
+
+### 2.2 Tiervolk = Symbiose (nicht Mutation, nicht Exposition)
+Status: ✅ KONSISTENT
+- **CD-Entscheid:** Tiervolk ist dritter kosmologischer Faktor, Symbiose, nicht primär von Schwarzrand-Exposition stammend
+- **Umsetzung:**
+  - GDD 01, Zeile 224: "Tiervolk: Spielbar oder NPC? → NPC — Händler und Informationsbroker. Nicht spielbar. Leicht alien in Ästhetik, nicht tribal. Eigene Händler-Netzwerke parallel zu den Gilden."
+  - GDD 04, Kap 4.5: Salva als "Tiervolk" (Name bleibt Platzhalter), "Reisende" ist interne Bezeichnung
+  - GDD 04, Zeile 273: "Das Tiervolk ist kein Volk. 'Tiervolk' ist ein abwertender Begriff... Sie nennen sich intern 'die Reisenden.'"
+  - WBB 03, Kap 3.3: Vollständige Kulturgeschichte als eigenes Volk mit Kosmologie ("Die Schwelle kommuniziert")
+  - **Wichtig:** WBB 01, W-004 steht noch als offen ("Tiervolk kosmologischer Ursprung ungeklärt"), aber der Text ist **nicht** "Exposition auf Nicht-Menschen" — das ist korrekt. Die Ambiguität ist beabsichtigt.
+- ✅ PASS (mit Anmerkung: W-004 offen = OK, das ist Weltbau-Geheimnis, nicht Fehler)
+
+### 2.3 Zeitlinie = jahrelange Anbahnung (Covid-Kontext)
+Status: ✅ KONSISTENT mit Vorsicht
+- **CD-Entscheid:** "Zeitlinie = Covid" (jahrelange Anbahnung, nicht plötzlich)
+- **Umsetzung:**
+  - GDD 01, Zeile 227–228: "Öffnung vor einer Generation"
+  - WBB 01, Zeile 220–222: "Vor einer Generation — die Zeitzeugen leben noch, aber sie widersprechen einander"
+  - WBB 01, W-006: "Zeitlinie 'vor einer Generation' unkonkretisiert. Arbeitshypothese: 25 Jahre."
+  - WBB 02, Zeile 87: "Das ist das Rauschen der einsetzenden Fiebers" (erste Stufe ist schnell, Progression dauert länger)
+  - **Aber:** Die Öffnung selbst ist noch "plötzlich" beschrieben (WBB 01, Zeile 230: "Das Schattenfieber... breitete sich explosionsartig aus"). Das ist nicht "jahrelange Anbahnung der Öffnung", sondern "jahrelange Anbahnung davor" + "plötzliche Konsequenzen".
+  - **CD-Interpretation:** "Covid" heißt eher: das System war jahrelang instabil, die Öffnung war der Kipppunkt, dann Exponentialwachstum. Das ist konsistent mit den Texten.
+- ⚠️ **Minor-Diskrepanz:** WBB 01 könnte expliziter machen, dass die Öffnung eine Konsequenz jahrelanger Anspannung war, nicht ein Zufall. Aber blockiert nicht.
+- ✅ PASS (mit Aufwärm-Empfehlung für v0.3)
+
+### 2.4 Schattenfieber = Körperreaktion (biologisch, nicht mystisch)
+Status: ✅ KONSISTENT
+- **CD-Entscheid:** Schattenfieber ist biologische Reaktion des Lymphsystems, kein Übernatürliches (außer der Schwelle selbst)
+- **Umsetzung:**
+  - GDD 02, Kap 2.5: Lymph-Subsystem koppelt direkt an Schattenfieber-Progression (drei biologische Stadien: Flüstern/Wandlung/Entgrenzung)
+  - GDD 06, Kap 6.4: Schattenfieber-PP-System ist Post-Processing, nicht Magie — visuelle Kodierung der biologischen Reaktion
+  - WBB 01, Kap 3.1–3.3: "Schwellensubstrat" ist beschrieben als Katalysator (nicht Substanz), lagert im Lymphsystem ab, kausale Biologie
+  - GDD 04: "Hieronymus Vael liegt am Stadtrand... Schattenfieber Stadium III. Er hat nicht mehr lange." — biologisches Sterben, nicht mystisches
+- ✅ PASS
+
+### 2.5 Schwellenanker-Mechanik (Resonanz, nicht einfaches Tool)
+Status: ⚠️ VAGUE-OK
+- **CD-Entscheid (implizit):** Schwellenanker ist kein "Gegenstand, den man nutzt" — er ist ein Resonanzobjekt
+- **Umsetzung:**
+  - GDD 03, Zeile 185–191: "Der Schwellenanker als mechanischer Hauptquest-Anker — Resonanz-Intensität, Fragment-Auffinden, Entscheidungspunkt"
+  - WBB 01, Zeile 250: "Der Schwellenanker ist ein Grenzstabilisator" (beschreibt, was er *ist*, nicht, wie man ihn *benutzt*)
+  - **Das Problem:** WBB 01 Zeile 250 ist immer noch zu vage. "Stabilisator" könnte bedeuten: aktives Ding, das man umlegen kann, ODER: statisches Ding, das einfach da sein muss
+  - GDD 06, Kap 6.6: Shader beschreibt Zustand-Übergänge, aber nicht den mechanisch-spielerischen Einsatz
+  - **QA-Urteil:** Das ist nicht falsch, aber nicht konkret genug für Tobi/Darius. Sollte in GDD v1.1 geklärt werden: "Der Spieler hält Fragmente des Schwellenankers. Er kann sie zurücklegen. Er kann sie behalten. Er kann sie einer Fraktion überlassen. Er kann sie zerstören." (Das steht in GDD 03, Zeile 158, ist aber nicht in die Mechanik-Kapitel zurückgeflossen.)
+- ⚠️ **MEDIUM-Findings:** GDD 02/06 sollten explizit sagen, dass der Schwellenanker nicht "benutzt" wird, sondern dass der Spieler **Fragmente trägt und mit Fragmenten interagiert**. Das ist ein Design-Punkt, der im QA auftauchen wird.
+- **Nicht blockierend für v0.2**, aber sollte in v0.2-Alpha-Feedback berücksichtigt werden
+
+---
+
+## 3. Format-Konsistenz
+
+### 3.1 Bild-Einbettung
+Status: ✅ OK
+- Alle Bilder sind via Markdown eingebettet: `![Titel](../concepts/...)`
+- Pfade sind relativ und kohärent
+- Vera hat Tag 3 vier Bilder produziert, alle sind referenziert:
+  - `fraktion-krone-materialpalette_seedream-4-5.png` (GDD 05, WBB 01/03)
+  - `fraktion-orden-materialpalette_seedream-4-5.png` (GDD 05, WBB 01/03)
+  - `fraktion-gilden-materialpalette-v2_nano-banana-2.png` (GDD 05, WBB 03)
+  - `stadtschnitt-schwarzrand-v2_gpt-image-1-5.png` (GDD 05, WBB 02)
+  - `relikt-drei-zustaende-v2_nano-banana-pro.png` (GDD 05, GDD 06, GDD 02)
+- ✅ PASS
+
+### 3.2 Abschnitt-Struktur
+Status: ✅ SAUBER
+- Alle Kapitel haben Versionsstatus am Anfang: `<!-- Status: v2 | Tag 3, Mittwoch | Autor: Darius Engel -->`
+- Alle Kapitel haben finale Versionsstatus-Zeile: `*Versionsstatus: v2 — ...*`
+- Überschriften-Hierarchie ist konsistent (# Kapitel, ## Sektion, ### Subsekt, #### Detail)
+- ✅ PASS
+
+---
+
+## 4. Seitenbudget-Analyse
+
+### 4.1 GDD (max 60 Seiten)
+
+| Kapitel | Seiten (geschätzt) | Status |
+|---------|-------------------|--------|
+| 01 Spielübersicht | 5 | ✅ |
+| 02 Kernmechaniken | 7 | ✅ |
+| 03 Erzählkonzept | 6 | ✅ |
+| 04 Schlüsselfiguren | 7 | ✅ |
+| 05 Art Direction | 6 | ✅ |
+| 06 Technische Spez. | 11 | ✅ (1/6 der Budget, rechtfertigt sich durch Komplexität) |
+| **Gesamt** | **42** | **✅ 70% Ausnutzung** |
+
+### 4.2 WBB (max 60 Seiten, aber Referenzmaterial)
+
+| Kapitel | Seiten (geschätzt) | Status |
+|---------|-------------------|--------|
+| 01 Mythos | 10 | ✅ |
+| 02 Topos | 12 | ✅ |
+| 03 Ethos | 11 | ✅ |
+| **Gesamt** | **33** | **✅ 55% Ausnutzung** |
+
+---
+
+## 5. Blockierende vs. Nicht-Blockierende Findings
+
+### Blockierend (für Alpha): KEINE
+
+### Medium-Priority (sollten vor Beta geklärt werden):
+
+1. **Schwellenanker-Nutzungs-Mechanik** — GDD 02/06 sollte explizit machen, dass Fragmente "getragen", nicht "benutzt" werden. Status: Wissen vorhanden (GDD 03, Zeile 158), aber nicht in Tech-Kapitel zurückgeflossen.
+   - **Zuständig:** Darius (GDD 02) + Tobi (GDD 06)
+   - **Dringlichkeit:** vor Beta
+
+2. **Öffnung der Ankerkammer als jahrelange Instabilität** — WBB 01 könnte expliziter sein, dass die Öffnung Konsequenz jahrelanger Schwächung war, nicht Zufall. Momentan zu summarisch.
+   - **Zuständig:** Emre (WBB 01)
+   - **Dringlichkeit:** vor Beta (für Lore-Konsistenz)
+
+### Low-Priority (interessant, nicht kritisch):
+
+3. **W-006 (Zeitlinie konkrete Jahre)** — "vor einer Generation" bleibt vage (Arbeitshypothese: 25 Jahre). Sollte beim GDD-Finalen geklärt werden.
+   - **Zuständig:** CD (Entscheid), dann Emre (Umsetzung)
+
+4. **W-004 (Tiervolk kosmologischer Ursprung)** — Bleibt absichtlich offen als Weltbau-Geheimnis. Akzeptabel, aber sollte vor Beta geklärt werden, damit das Spiel nicht versehentlich eine Erklärung gibt.
+   - **Zuständig:** Emre + Nami (Narrativ-Konsistenz)
+
+---
+
+## 6. Persönliche QA-Perspektive (Leo)
+
+### Was funktioniert:
+
+- **Game Feel** (Kap 1): Die vier Säulen sitzen. Kein Zweifel, dass der Spieler sich schwer, reibungsvoll, bedroht UND erstaunt fühlt. Das ist das richtige Gefühl für diese Welt.
+- **Erste 30 Minuten** (Kap 2–4): Hieronymus Vael stirbt, Fragment-Übergabe, drei Boten, erste Fraktionswahl. Das ist ein starker Clip-Moment. Chat wird nicht abschalten.
+- **Erzähl-Architektur** (Kap 3): Drei Akte, offene Fraktionsquests, Ablehn-Option ist real. Das ist nicht auf Schienen. Das ist echte Spielerperspektive.
+- **Materialsprache** (GDD 05 + WBB 03): Jedes Material erzählt Status. Das ist so viel subtiler als HUD-Icons. Das funktioniert.
+
+### Was noch unbequem ist:
+
+- **Schwelle-Physik unkonkret:** Der Spieler wird fragen: "Was ist die Schwelle genau? Wie funktioniert sie?" Wir haben: "Es ist eine Existenzebene, die näher und ferner sein kann." Das ist cool, aber wenn sie auf Schwarzrand treffen und erste Anomalien sehen, brauchen sie RAUM für die Erklärung. GDD 06 ist gut (visuelle Codierung), aber die narrative Erklärung ist immer noch in WBB versteckt.
+  - **Für Alpha:** Nami sollte eine kurze NPC-Erklärung haben, die der Spieler in den ersten zwei Stunden kriegt. "Die Schwelle ist wie... [Analogie]." Moment.
+
+- **Streamer-Safety:** Ich teste live. Wenn das Schattenfieber-PP-System (Stufe 2–3) Motion-Sickness triggert, muss die Accessibility-Option (Kap 6.4.4) **sofort** sichtbar sein. Das steht im Spiel, aber nicht in der Launch-Checkliste. Sollte rot markiert werden.
+
+---
+
+## 7. Empfehlung für v0.2-Export
+
+
+Alle 9 Kapitel sind sauber, konsistent und bereit für den v0.2-Snapshot. Die drei Medium-Priority-Findings sind nicht blockierend, sollten aber in die nächste Iteration (v0.2-Alpha-Feedback-Loop) eingebaut werden.
+
+**Action-Items für Team:**
+1. Darius: GDD 02 + Tobi GDD 06 — Schwellenanker-Fragment-Nutzung explizit machen
+2. Emre: WBB 01 — Öffnung der Ankerkammer als Kipppunkt kontextualisieren
+3. Nami: GDD 04 Quest-Dialog — kurze Schwelle-Erklärung einbauen (falls nicht schon in v2)
+4. Tobi: Accessibility-Checklist für Alpha-Build — Motion-Sickness-Option prominent machen
+
+---
+
+**Bericht geschrieben von:** Leo Fischer, QA Lead
+**Uhrzeit:** Tag 4, 10:45 Uhr
+**Confidence-Level:** 8/10 — Kapitel sind gut, aber die Schwelle-Konzept-Kommunikation noch nicht spieler-zentriert genug.
+
+\clearpage
+
 # RELICS — Recherche-Notizen: GDD-Struktur & erste Mechanik-Ideen
 **Darius Engel / Tag 1 / Szene 2 — Einzelarbeit**
 
@@ -1651,9 +1877,7 @@ Wenn Chat nicht abschaltet beim Intro = SUCCESS.
 
 # GDD Kapitel 01 — Spielübersicht & Design-Säulen
 
-<!-- Darius: v2 — Aktualisierungen: "Schwarzrand" als offizieller Stadtname, "Schwellenanker" als Relikt-Bezeichnung (CD bestätigt, Tag 3 Briefing). Alle Statuszeilen und Autorenvermerke in HTML-Kommentare verschoben. Offene Punkte in Kap. 11 als beantwortet markiert. -->
-
-<!-- Status: v2 | Tag 3, Mittwoch | Autor: Darius Engel -->
+<!-- Darius: v2 — Aktualisierungen: "Schwarzrand" als offizieller Stadtname, "Schwellenanker" als Relikt-Bezeichnung (CD bestätigt, Tag 3 Briefing). Tiervolk-Eintrag in Tabelle 10 aktualisiert nach CD-Feedback Tag 4: Tiervolk = kosmologisch-fremde Wesen in dauerhafter, irreversibler Symbiose mit Tieren. Alle Statuszeilen und Autorenvermerke in HTML-Kommentare verschoben. -->
 
 ---
 
@@ -1720,7 +1944,7 @@ Drei konkrete Fantasien, die dieses Statement trägt:
 | Perspektive | Third-Person (Standard) / First-Person (umschaltbar) |
 | Weltstruktur | Semi-Open-World: dichte, handgefertigte Kernregion statt weiter Leerfläche |
 | Kampf | Real-Time Action, Melee-fokussiert, gewichtig |
-| Magie | Keine. Alchemie + Schattenfieber-Mutationen (mit Kosten) |
+| Magie | Keine. Alchemie + Schattenfieber-Transformationen (mit Kosten, je nach Körperreaktion) |
 | Referenzen | Gothic 2, Deus Ex, Vampires the Masquerade: Bloodlines, Prey 2017 |
 | Explizite Nicht-Referenzen | Kein Steampunk. Kein High Fantasy. Kein Zauberstab. |
 
@@ -1785,15 +2009,16 @@ Das Nervensystem-Leveling ersetzt klassische Attribut-Grids und Erfahrungspunkte
 |---|---|---|
 | **Cardio** | Laufen, Ausdauerkämpfe, Flucht | Ausdauer, Bewegungsgeschwindigkeit, Regeneration |
 | **Muskel** | Schwertkampf, Tragen, physische Arbeit | Schadenswerte, Tragegewicht, Rüstungseffizienz |
-| **Lymph** | Alchemika einnehmen, Schattenfieber-Exposition, Heilrituale | Widerstandsfähigkeit gegen das Fieber, Zugang zu Mutationen, Risiko |
+| **Lymph** | Alchemika einnehmen, Schattenfieber-Exposition, Heilrituale | Widerstandsfähigkeit gegen das Fieber, Zugang zu Transformationen, Risiko |
 
 Jedes Subsystem hat vier Qualitätsstufen (nach dem Deus Ex-Modell: Untrained / Geübt / Fortgeschritten / Meister). Keine 1-100-Skalen. Qualitätswechsel, keine Zahlenoptimierung.
 
 **Das Schattenfieber als dritte Progressionsachse:**
-- Das Lymph-Subsystem koppelt direkt an die Schattenfieber-Progression (drei Stadien: Flüstern / Wandlung / Entgrenzung — nach biologischer Lore)
+- Das Lymph-Subsystem koppelt direkt an die Schattenfieber-Progression (drei Stadien: Flüstern / Wandlung / Entgrenzung)
+- Die Transformation je nach Körperreaktion — kein Spieler durchläuft sie identisch
 - Wer das Fieber unterdrückt (Krone-Weg), bleibt "sauber", verliert aber Zugang zu bestimmten Fähigkeiten
-- Wer das Fieber nutzt (Gilden-Weg: Destillierung als Produkt), gewinnt Kraft, bezahlt mit Körper
-- Wer das Fieber versteht (Orden-Weg: Deutungshoheit), bekommt tieferen Lore-Zugang, aber der Orden will etwas dafür
+- Wer das Fieber nutzt (Gilden-Weg), gewinnt Kraft, bezahlt mit Körper
+- Wer das Fieber versteht (Orden-Weg), bekommt tieferen Lore-Zugang, aber der Orden will etwas dafür
 
 Das ist kein Magiesystem mit anderem Namen. Die Kosten sind real. Ein Spieler mit fortgeschrittenem Fieber wird *gezeichnet*.
 
@@ -1871,36 +2096,32 @@ RELICS spricht vier überlappende Spielertypen an:
 | # | Frage | Antwort |
 |---|---|---|
 | 1 | **Schauplatz:** Eine Stadt oder mehrere? | EINE vertikale Stadt: **Schwarzrand**. Mitteleuropäisch, auf Felssporn gebaut, vertikal geschichtet in drei Zonen (Obere Ränder / Mittelwand / Schlund). |
-| 2 | **Schattenfieber-Scope:** Wie tief geht die Integration? | Hauptquest-antreibend UND dritte Progressionsachse (Lymph-Subsystem). Drei biologische Stadien. Drei Fraktions-Antworten = drei Gameplay-Pfade. |
-| 3 | **Tiervolk:** Spielbar oder NPC? | NPC — Händler und Informationsbroker. Nicht spielbar. Leicht alien in Ästhetik, nicht tribal. Eigene Händler-Netzwerke parallel zu den Gilden. |
+| 2 | **Schattenfieber-Scope:** Wie tief geht die Integration? | Hauptquest-antreibend UND dritte Progressionsachse (Lymph-Subsystem). Drei biologische Stadien. Transformation je nach Körperreaktion — kein Spieler durchläuft sie identisch. Drei Fraktions-Antworten = drei Gameplay-Pfade. |
+| 3 | **Tiervolk:** Wer sind sie? | Kosmologisch-fremde Wesen in dauerhafter, irreversibler Symbiose mit Tieren. NPC — Händler und Informationsbroker, nicht spielbar. Eigene Händler-Netzwerke außerhalb der drei Fraktionen. Brauchen Materialien zur Stabilisierung der Symbiose — das schafft echtes Handelsinteresse. |
 | 4 | **Release-Modell:** Wie liefern wir? | Streamer-Alpha (erste Stunde muss stehen) → Beta (max. 6–12 Monate) → Full Release → große DLCs. |
 | 5 | **Relikt-Name:** Wie heißt das zentrale Artefakt? | **Der Schwellenanker** — In-World-Begriff, CD-bestätigt. Das Fragment beim Spieler: ein Stück des Schwellenankers. |
 | 6 | **Ablehn-Option:** Kann der Spieler das Fragment ablehnen? | Ja — CD-bestätigt. Der Spieler darf das Fragment von Hieronymus Vael ablehnen. Konsequenzen in Kapitel 3 (Erzählkonzept) ausgearbeitet. |
 
----
-
-<!-- Darius: Kap. 11 (offene Punkte aus v1) vollständig aufgelöst und in Kap. 10 als geklärte Fragen überführt. Interne Abhängigkeiten zu Kap. 2 und Kap. 3 sind jetzt dort direkt eingearbeitet. -->
-
-*Versionsstatus: v2 — Alle Design-Säulen ausgearbeitet, High Concept gesetzt, Game Feel definiert. Stadtname Schwarzrand und Relikt-Name Schwellenanker CD-bestätigt eingetragen. Ablehn-Option integriert.*
+<!-- Darius: Alle Design-Fragen geklärt. Tiervolk (W-004) durch CD-Feedback Tag 4 final geschlossen: dauerhaft, irreversibel, Handelsinteresse durch Symbiose-Stabilisierungs-Bedarf. Schattenfieber-Formulierung in Zeile 2 und 5 (Genre-Tabelle) angepasst: "Transformationen je nach Körperreaktion" statt "Mutationen". -->
 
 \clearpage
 
 # GDD Kapitel 02 — Kernmechaniken
 
-<!-- Status: v1 | Tag 3, Mittwoch | Autor: Darius Engel -->
-<!-- Darius: Dieses Kapitel definiert alle Kernsysteme von RELICS: Der Schwellenanker. Jedes System ist aus den vier Design-Säulen abgeleitet. Spieler-Fantasie-Statement steht über jeder Mechanik-Beschreibung — ist das nicht da, ist das Feature raus. -->
+<!-- Darius: v2 — Wesentliche Änderungen gegenüber v1: (1) Tiervolk als eigenständiger sechster Händlertyp integriert — dauerhaft-symbiotische Wesen mit spezifischem Handelsinteresse (Symbiose-Stabilisierungs-Materialien). (2) Schattenfieber als körperreaktionsabhängig ausgearbeitet — gleiche Exposition, individuelle Transformation, kein einheitlicher Pfad. (3) Autorenvermerke und Recherche-Kommentare bereinigt. (4) Seitenvolumen gekürzt. -->
 
 ---
 
 ## Überblick
 
-Dieses Kapitel beschreibt die fünf Kernsysteme von RELICS: Der Schwellenanker. Jedes System ist direkt aus den Design-Säulen von Kapitel 1 abgeleitet und muss gegen mindestens zwei Säulen bestehen:
+Dieses Kapitel beschreibt die sechs Kernsysteme von RELICS: Der Schwellenanker. Jedes System ist direkt aus den Design-Säulen von Kapitel 1 abgeleitet und muss gegen mindestens zwei Säulen bestehen:
 
 1. **Kampfsystem** — Säule I (Immersive Sim) + Säule III (Körperlicher Fortschritt)
 2. **Nervensystem-Leveling** — Säule III (Körperlicher Fortschritt) + Säule I (Immersive Sim)
 3. **Crafting & Materialsystem** — Säule II (Fraktionspolitik) + Säule IV (Dichte vor Breite)
 4. **Fraktionsruf-System** — Säule II (Fraktionspolitik) + Säule I (Immersive Sim)
 5. **Schattenfieber-Progression** — Säule III (Körperlicher Fortschritt) + Säule II (Fraktionspolitik)
+6. **Händlernetz & Tiervolk** — Säule II (Fraktionspolitik) + Säule IV (Dichte vor Breite)
 
 ---
 
@@ -1912,7 +2133,7 @@ Dieses Kapitel beschreibt die fünf Kernsysteme von RELICS: Der Schwellenanker. 
 
 ### Designprinzipien
 
-Das Kampfsystem von RELICS ist kein Showroom für Combo-Systeme. Es ist eine mechanische Umsetzung von Schwere und Konsequenz — den zwei Kerneigenschaften des Game-Feel-Statements aus Kapitel 1. Kämpfe sollen sich anstrengend anfühlen, nicht befriedigend-flüssig. Der Spieler soll nach einem schweren Kampf *erschöpft* sein, nicht triumphierend-leicht.
+Das Kampfsystem von RELICS ist kein Showroom für Combo-Systeme. Es ist eine mechanische Umsetzung von Schwere und Konsequenz. Kämpfe sollen sich anstrengend anfühlen, nicht befriedigend-flüssig. Der Spieler soll nach einem schweren Kampf *erschöpft* sein.
 
 **Referenz:** Gothic 2 (Piranha Bytes, 2002) — Kampf als Risiko, nicht als Komfort. Dark Souls (FromSoftware, 2011) — Positionierung, Gewicht, Kosten.
 
@@ -1920,53 +2141,35 @@ Das Kampfsystem von RELICS ist kein Showroom für Combo-Systeme. Es ist eine mec
 
 **Ausdauersystem (Stamina)**
 
-Die zentrale Ressource im Kampf ist nicht Gesundheit, sondern Ausdauer. Jede Aktion kostet Ausdauer:
-- Leichter Angriff: geringe Kosten
-- Schwerer Angriff: hohe Kosten
-- Parade / aktive Abwehr: moderate Kosten
-- Ausweichen / Rollen: moderate Kosten
-- Sprinten, Springen: kontinuierliche Kosten
+Die zentrale Ressource im Kampf ist nicht Gesundheit, sondern Ausdauer. Jede Aktion kostet Ausdauer: leichte Angriffe wenig, schwere Angriffe viel, Parade und Ausweichen moderat. Ist die Ausdauer erschöpft, wird der Spieler anfällig — Paraden schlagen durch, Bewegung bricht ein. Ausdauer regeneriert mit kurzer Verzögerung nach der letzten Aktion.
 
-Ist die Ausdauer erschöpft, wird der Spieler anfällig: Angriffe treffen schwerer, Paraden schlagen durch, der Spieler kann sich nicht mehr aktiv bewegen. Ausdauer regeneriert mit kurzer Verzögerung nach der letzten Aktion — ein aktiver Kampf ohne Pausen lässt den Spieler langsam zusammenbrechen.
-
-Ausdauerkapazität und Regenerationsrate sind direkt mit dem Cardio-Subsystem des Nervensystem-Levelings verknüpft (→ Abschnitt 2.2).
+Ausdauerkapazität und Regenerationsrate sind direkt mit dem Cardio-Subsystem verknüpft (→ Abschnitt 2.2).
 
 **Trefferzonen & Positionierung**
 
-RELICS kennt keine abstrakten Trefferwahrscheinlichkeiten. Positionierung ist eine direkte taktische Variable:
-- Angriffe von hinten ignorieren Rüstungsschutz der Vorderseite
-- Angriffe von der Seite umgehen aktive Paraden
-- Flankieren ist das stärkste taktische Mittel — und das, was Gegner aktiv versuchen
-
-Der Spieler kämpft in der Regel alleine gegen Gruppen. Positionierung an Engpässen (Türrahmen, Treppenstufen, enge Gassen) ist keine Spielhilfe, sondern überlebensnotwendig.
+Positionierung ist eine direkte taktische Variable: Angriffe von hinten ignorieren Rüstungsschutz der Vorderseite, Angriffe von der Seite umgehen aktive Paraden. Der Spieler kämpft in der Regel alleine gegen Gruppen. Positionierung an Engpässen ist keine Spielhilfe, sondern überlebensnotwendig.
 
 **Waffenklassen und ihre Eigenlogik**
 
 | Waffenklasse | Stärke | Schwäche | Besondere Eigenschaft |
 |---|---|---|---|
-| **Einhandschwert** | Ausgewogen, schnell | Mittlere Reichweite, mittlerer Schaden | Kann mit Schild kombiniert werden |
-| **Zweihandschwert** | Hoher Schaden, gute Reichweite | Hohe Ausdauerkosten, langsamer | Kann Schilde durchschlagen (Rüstungsdurchdringung) |
-| **Dolch** | Sehr schnell, niedrige Ausdauerkosten | Geringer Schaden, kurze Reichweite | Finisher-Angriffe möglich (Schleich-Umgebung) |
-| **Axt** | Hoher Schaden gegen Rüstung | Langsam, keine Parade-Option | Ignoriert anteilig Rüstungsschutz |
-| **Streitkolben** | Effektiv gegen Plattenrüstung | Langsam, hohe Ausdauerkosten | Betäubungseffekt bei vollem Treffer |
-| **Bogen** | Distanzangriff, leise | Nachladezeit, unbrauchbar in Nahkampf | Schwachstellen-Targeting möglich |
-| **Armbrust** | Hohe Durchschlagskraft | Sehr lange Nachladezeit | Kann schwere Rüstung durchdringen |
+| **Einhandschwert** | Ausgewogen, schnell | Mittlere Reichweite | Kann mit Schild kombiniert werden |
+| **Zweihandschwert** | Hoher Schaden, gute Reichweite | Hohe Ausdauerkosten, langsamer | Rüstungsdurchdringung |
+| **Dolch** | Sehr schnell, niedrige Kosten | Geringer Schaden, kurze Reichweite | Finisher-Angriffe im Schleich |
+| **Axt** | Hoher Schaden gegen Rüstung | Langsam, keine Parade | Ignoriert anteilig Rüstungsschutz |
+| **Streitkolben** | Effektiv gegen Plattenrüstung | Langsam, hohe Kosten | Betäubungseffekt bei vollem Treffer |
+| **Bogen** | Distanzangriff, leise | Nachladezeit | Schwachstellen-Targeting möglich |
+| **Armbrust** | Hohe Durchschlagskraft | Sehr lange Nachladezeit | Durchdringt schwere Rüstung |
 
-Keine Waffe ist "die beste". Die Auswahl ist eine taktische Entscheidung, die vom Gegnertyp, der Umgebung und dem eigenen Muskel-Subsystem-Stand abhängt.
+Keine Waffe ist "die beste". Die Auswahl hängt von Gegnertyp, Umgebung und dem eigenen Muskel-Subsystem-Stand ab.
 
 **Alchemie im Kampf**
 
-Alchemika sind keine Magie-Substitute. Sie sind Hilfsmittel mit Nebenwirkungen:
-- **Stärkungstränke:** Temporäre Ausdauer-Regeneration, Schadensbonus — mit Nachkater (reduzierte Werte nach Wirkende)
-- **Heilmittel:** Langsame, anhaltende Heilung — nicht sofort. In einem aktiven Kampf nutzen sie wenig, danach sehr viel.
-- **Schwellensubstrat-Extrakte:** Hochriskante Kampfmittel, die temporäre Stärke durch Schattenfieber-Exposition erzeugen. Jede Einnahme erhöht den Fieber-Wert im Lymph-Subsystem.
-- **Rauch- und Blendmittel:** Taktische Werkzeuge für Rückzug und Neupositionierung
-
-Alchemika werden im Crafting-System hergestellt oder über Gilden und Händler erworben (→ Abschnitt 2.3).
+Alchemika sind Hilfsmittel mit Nebenwirkungen: Stärkungstränke geben Temporärboni mit Nachkater, Heilmittel wirken langsam (nicht im aktiven Kampf), Schwellensubstrat-Extrakte erzeugen temporäre Stärke durch Fieberexposition. Jede Extrakt-Einnahme erhöht den Lymph-Wert (→ Abschnitt 2.5).
 
 **Kampf vs. Ausweichen**
 
-Das System belohnt den Spieler nicht dafür, möglichst viele Kämpfe zu gewinnen. Es belohnt ihn dafür, dass er in der Welt navigiert. Viele Begegnungen haben Umgehungswege: Soziale Lösungen (Fraktionsruf-basiert), Stealth-Wege, alternative Routen. Das Kampfsystem ist für die Fälle, in denen das nicht klappt — oder für die Spieler, die es genau so wollen.
+Das System belohnt den Spieler nicht dafür, möglichst viele Kämpfe zu gewinnen. Viele Begegnungen haben Umgehungswege: Soziale Lösungen (Fraktionsruf-basiert), Stealth-Wege, alternative Routen. Das Kampfsystem ist für die Fälle, in denen das nicht klappt.
 
 ---
 
@@ -1978,79 +2181,64 @@ Das System belohnt den Spieler nicht dafür, möglichst viele Kämpfe zu gewinne
 
 ### Das System im Überblick
 
-Das Nervensystem-Leveling ist das Herz von RELICS' Progressionsdesign. Es ersetzt klassische Erfahrungspunkte-Balken und Attribut-Grids vollständig. Der Spieler hat keinen "Level". Er hat drei Subsysteme, die sich durch tatsächliches Tun entwickeln.
+Das Nervensystem-Leveling ersetzt klassische Erfahrungspunkte-Balken und Attribut-Grids vollständig. Der Spieler hat keinen "Level". Er hat drei Subsysteme, die sich durch tatsächliches Tun entwickeln.
 
-**Philosophie:** Ein Schwertkämpfer wird zum Schwertkämpfer, indem er kämpft. Nicht indem er Erfahrungspunkte sammelt und Punkte verteilt. Diese "Skill-by-Use"-Logik stammt direkt aus Gothic 2 — aber RELICS verfeinert sie durch das Deus-Ex-Modell der Qualitätsstufen statt graduellem Zahlenfortschritt.
+**Philosophie:** Skill-by-Use nach Gothic-2-Logik, verfeinert durch das Deus-Ex-Modell der Qualitätsstufen: vier Qualitätsniveaus statt graduellem Zahlenfortschritt.
 
-Das Nervensystem visualisiert sich durch eine halbtransparente Körperansicht, die während des Levelings eingeblendet werden kann: leuchtende Nervenbahnen zeigen aktive Subsysteme, trübe zeigen inaktive, und die Fieber-Infiltration des Lymphsystems ist in Echtzeit sichtbar.
+Das Nervensystem visualisiert sich durch eine halbtransparente Körperansicht: leuchtende Nervenbahnen zeigen aktive Subsysteme, trübe zeigen inaktive. Die Fieber-Infiltration des Lymphsystems ist in Echtzeit sichtbar.
 
 ![Nervensystem-Konzept: Schwellenanker-Relikt in Zustand Eins](../concepts/day02-vera/relics/relikt-zustand-eins-aktiviert_seedream-4-5.png)
 
-*Konzeptbild: Biolumineszente Gefäßlinien — dieselbe visuelle Sprache gilt für das Nervensystem-Leveling-Interface. Lymph-Kontamination folgt vergleichbaren Mustern.*
+*Konzeptbild: Biolumineszente Gefäßlinien — diese visuelle Sprache gilt für das Nervensystem-Leveling-Interface. Lymph-Kontamination folgt vergleichbaren Mustern.*
 
 ### Die drei Subsysteme
 
 **Cardio — Das Ausdauersystem**
 
-Das Cardio-Subsystem bestimmt alle Ausdauer-bezogenen Parameter: wie lange der Spieler laufen kann, wie schnell er sich erholt, wie viele Kampfaktionen er in Serie ausführen kann, bevor er pausieren muss.
-
-*Trainiert durch:* Ausdauerkämpfe (Kämpfe, die lange dauern), Sprinten, Klettern, Flucht-Sequenzen, Erkundung größerer Strecken ohne Rast.
-
-*Vier Qualitätsstufen:*
+Trainiert durch: Ausdauerkämpfe, Sprinten, Klettern, Flucht-Sequenzen, Erkundung größerer Strecken ohne Rast.
 
 | Stufe | Bezeichnung | Auswirkung |
 |---|---|---|
-| I | Untrainiert | Erschöpft schnell, langsame Regeneration, eingeschränkte Kampfdauer |
-| II | Geübt | Moderate Ausdauer, schnellere Regeneration, kann kurze Sprintphasen nutzen |
-| III | Fortgeschritten | Hohe Ausdauer, rapide Regeneration, Ausdauer ist selten ein Engpass |
-| IV | Meister | Ausdauer ist kein limitierender Faktor. Kampf-Pausen werden taktisch, nicht notwendig |
-
-*Progression:* Jede Qualitätsstufe erfordert eine bestimmte Anzahl an "Ausdauer-Ereignissen" — Kampfrunden, Sprintmeter, Kletterakte. Das Spiel trackt diese unsichtbar und zeigt nur die aktuelle Qualitätsstufe an. Der Übergang ist spürbar, nicht abrupt: Der Spieler merkt, dass er weiter laufen kann, bevor die Stufe visuell bestätigt wird.
+| I | Untrainiert | Erschöpft schnell, langsame Regeneration |
+| II | Geübt | Moderate Ausdauer, schnellere Regeneration |
+| III | Fortgeschritten | Hohe Ausdauer, rapide Regeneration |
+| IV | Meister | Ausdauer kein limitierender Faktor — Pausen werden taktisch, nicht notwendig |
 
 **Muskel — Das Kraftsystem**
 
-Das Muskel-Subsystem bestimmt alle physischen Stärkeparameter: Schadensausgabe im Nahkampf, maximales Tragegewicht, Effizienz schwerer Rüstungen.
-
-*Trainiert durch:* Nahkampfangriffe (jeder Treffer zählt, auch verpasste), schwere Gegenstände tragen und transportieren, physische Arbeit (optionale Tätigkeiten in der Welt: Schmieden helfen, Ladungen schleppen — auch das trainiert).
-
-*Vier Qualitätsstufen:*
+Trainiert durch: Nahkampfangriffe, schwere Gegenstände tragen, physische Arbeit (Schmieden helfen, Ladungen schleppen — auch das trainiert).
 
 | Stufe | Bezeichnung | Auswirkung |
 |---|---|---|
-| I | Untrainiert | Minimaler Nahkampfschaden, niedriges Tragegewicht, mittelschwere Rüstungen beschränken Mobilität |
-| II | Geübt | Ordentlicher Nahkampfschaden, Rüstung schränkt weniger ein, kann kompetent kämpfen |
-| III | Fortgeschritten | Deutlicher Schadensbonus, schwere Rüstungen voll nutzbar, Tragegewicht kein Problem |
-| IV | Meister | Spitzenwerte. Schwere Zweihandwaffen werden zu bevorzugten Werkzeugen, maximale Rüstungseffizienz |
+| I | Untrainiert | Minimaler Schaden, niedriges Tragegewicht |
+| II | Geübt | Ordentlicher Schaden, Rüstung schränkt weniger ein |
+| III | Fortgeschritten | Deutlicher Schadensbonus, schwere Rüstungen voll nutzbar |
+| IV | Meister | Spitzenwerte, schwere Zweihandwaffen bevorzugt |
 
-*Besonderheit:* Das Muskel-Subsystem interagiert mit dem Crafting-System. Wer auf Stufe III oder IV ist, kann schwere Waffen und Rüstungen überhaupt erst sinnvoll nutzen. Damaszener-Stahl-Ausrüstung auf einem Stufe-I-Spieler ist Verschwendung.
+Muskel III+ ist Voraussetzung für sinnvolle Nutzung von Materialklasse IV. Der Spieler kann sich die besten Materialien kaufen — aber erst nutzen, wenn der Körper folgt.
 
 **Lymph — Das Fieber-System**
 
-Das Lymph-Subsystem ist das komplexeste und gefährlichste der drei. Es bildet die biologische Schnittstelle zwischen dem Spielercharakter und der Schwellenrealität.
+Das Lymph-Subsystem ist das komplexeste der drei. Es bildet die biologische Schnittstelle zwischen Spielercharakter und Schwellenrealität.
 
-*Trainiert durch:* Einnahme von Alchemika und Schwellensubstrat-Extrakten, Exposition in Dünnstellen (die tiefen Bereiche von Schwarzrand), Heilrituale des Ordens (die ebenfalls das Lymphsystem verändern, aber auf kontrollierte Weise), Kontakt mit dem Schwellenanker.
-
-*Vier Qualitätsstufen:*
+Trainiert durch: Einnahme von Alchemika und Schwellensubstrat-Extrakten, Exposition in Dünnstellen, Heilrituale des Ordens, Kontakt mit dem Schwellenanker.
 
 | Stufe | Bezeichnung | Auswirkung |
 |---|---|---|
-| I | Unangetastet | Baseline. Keine Schattenfieber-Symptome, keine Mutation, aber auch keine Vorteile durch das Lymphsystem |
-| II | Exponiert (Flüstern) | Erste Schattenfieber-Symptome. Sensorische Erweiterungen: Farben intensiver, Geräusche mit Nachklang. Gameplay-Vorteil: Wahrnehmen versteckter Schwellen-Objekte. |
-| III | Kontaminiert (Wandlung) | Sichtbare physische Veränderungen. Physische Buffs (Stärke, Ausdauer durch Fieber). Kognitive Kosten: Erinnerungen unzuverlässig, gelegentliche Wahrnehmungsstörungen im Gameplay |
-| IV | Durchdrungen (Entgrenzung) | Irreversibel. Massiver Power-Spike, aber der Spieler verliert zunehmend die Kontrolle. Nur über bestimmte Orden-Rituale oder Schwellenanker-Interaktion partiell stabilisierbar |
+| I | Unangetastet | Baseline. Keine Symptome, keine Transformation, aber auch keine Lymph-Vorteile |
+| II | Exponiert (*Flüstern*) | Sensorische Erweiterungen, Wahrnehmung versteckter Schwellen-Objekte |
+| III | Kontaminiert (*Wandlung*) | Physische Buffs, aber kognitive Kosten; sichtbare körperliche Veränderungen |
+| IV | Durchdrungen (*Entgrenzung*) | Irreversibel, massiver Power-Spike, zunehmender Kontrollverlust |
 
-*Kritische Eigenschaft:* Das Lymph-Subsystem kennt keine einfache Progression von I nach IV. Es gibt Kontaminations-Akkumulation, die sich durch Fieberquellen aufbaut, und Reduktions-Mechanismen:
-- Krone-Weg: Medizinische Unterdrückung — Lymph-Wert senken, aber kein Aufstieg in Stufe II–IV möglich
-- Gilden-Weg: Kontrollierte Nutzung — Lymph-Wert auf einem Plateau halten, Vorteile von Stufe II extrahieren
-- Orden-Weg: Destillation und Verstehen — langsamer Aufstieg mit Stabilisierung, tiefer Lore-Zugang, aber der Orden hat Forderungen
+**Kritisch — Körperreaktion als Variable:** Stufe II und III verlaufen nicht für jeden Spieler identisch. Die spezifische Transformation hängt von der individuellen Expositionsgeschichte ab (welche Substanzen, welche Dünnstellen, welcher Fraktionspfad). Kein Spieler durchläuft dieselbe Wandlung. Das ist die Spieler-Fantasie: *"Das Fieber macht etwas aus mir — etwas, das kein anderer Spieler sieht."*
 
-*Das Schattenfieber-Risiko:* Wer unkontrolliert in Dünnstellen operiert oder zu viele Extrakte nimmt, riskiert einen unkontrollierten Sprung von Stufe II zu Stufe III oder von III zu IV. Stufe IV ohne stabilisierende Intervention ist faktisch ein langsamer Game-Over-Zustand — der Spieler wird immer schwerer kontrollierbar, bis er die Handlungsfähigkeit verliert.
+Reduktions-Mechanismen: Krone-Weg (medizinische Unterdrückung), Gilden-Weg (Plateau-Stabilisierung), Orden-Weg (kontrollierter Aufstieg mit Verständnis).
 
 ### Qualitätsstufen-Übergänge
 
-Ein Qualitätsstufenwechsel ist ein Moment im Spiel. Keine Fanfare, keine Leveling-Bildschirme. Die Nervensystem-Ansicht zeigt kurz das aktive Subsystem aufleuchten — eine visuelle Bestätigung, keine Unterbrechung. Der Spieler merkt es an der veränderten Spielperformance, nicht durch eine UI-Meldung.
+Ein Qualitätsstufenwechsel ist ein Moment im Spiel. Keine Fanfare, keine Leveling-Bildschirme. Die Nervensystem-Ansicht zeigt kurz das aktive Subsystem aufleuchten. Der Spieler merkt es an der veränderten Performance, nicht durch eine UI-Meldung.
 
-Der Spieler kann aktiv "investieren": Wer weiß, dass ein schwerer Kampf bevorsteht, kann vorab gezielt das Muskel-Subsystem stimulieren (Kampfübungen mit einem Trainer, Schmiedearbeit). Das ist die optionale Vorbereitung — keine Pflicht, aber ein strategischer Hebel.
+Der Spieler kann aktiv "investieren": Wer einen schweren Kampf erwartet, kann vorab das Muskel-Subsystem stimulieren (Kampfübungen, Schmiedearbeit). Kein Pflichtprogramm — aber ein strategischer Hebel.
 
 ---
 
@@ -2062,49 +2250,42 @@ Der Spieler kann aktiv "investieren": Wer weiß, dass ein schwerer Kampf bevorst
 
 ### Designprinzipien
 
-Das Crafting-System von RELICS ist keine Item-Fabrik. Es ist ein Ausdruck der Fraktionspolitik und der Materialsprache der Welt. Materialien sind keine Zahlen — sie sind Hierarchien. Wer welches Material verarbeitet, definiert, wo er in der sozialen Ordnung steht.
+Das Crafting-System von RELICS ist keine Item-Fabrik. Es ist ein Ausdruck der Fraktionspolitik und der Materialsprache der Welt. Materialien sind keine Zahlen — sie sind Hierarchien.
 
 **Keine Loot-Inflation.** Ein Stück Tiegelstahl ist selten. Damaszener-Stahl ist eine Rarität. Schwellenlegierungen sind die gefährlichste und mächtigste Materialklasse, mit einem echten Preis.
 
 ### Materialklassen
 
-RELICS hat fünf Materialklassen. Jede ist mit einer Fraktionszugehörigkeit und einem sozialen Status verknüpft:
-
 | Klasse | Material-Beispiele | Zugang | Sozialer Status |
 |---|---|---|---|
 | **I — Unterschicht** | Eisen, Zinn, Knochen, ungefärbtes Leinen | Frei verfügbar, Markt und Schwarzmarkt | Gesetzlos, mittellos |
 | **II — Handwerker** | Gehärteter Tiegelstahl, Silber, Malachit, gefärbtes Leinen | Gilden-Markt (kein Ruf nötig) | Respektabler Handwerker |
-| **III — Meister** | Damaszener-Stahl, Bronzeguss, Bergkristall | Gilden-Zugang (Ruf: Anerkannt) | Gilden-Mitglied, mittlerer Stand |
-| **IV — Elite** | Titan-Legierungen, Roségold, Lapislazuli | Gilden-Zugang (Ruf: Vertraut) + Krone-Passierschein | Oberschicht, Gildenmeister |
-| **V — Schwellen** | Schwellenlegierungen, Schwellenfäden, Schwellentalg, Schwellenlinsen | Hoher Gildenruf (Ruf: Meister) ODER Schlund-Schwarzmarkt (mit Fieber-Risiko) | Verboten / Begehrt |
+| **III — Meister** | Damaszener-Stahl, Bronzeguss, Bergkristall | Gilden-Zugang (Ruf: Anerkannt) | Gilden-Mitglied |
+| **IV — Elite** | Titan-Legierungen, Roségold, Lapislazuli | Gilden-Zugang (Ruf: Vertraut) + Krone-Passierschein | Oberschicht |
+| **V — Schwellen** | Schwellenlegierungen, Schwellenfäden, Schwellentalg, Schwellenlinsen | Gildenruf: Meister ODER Schlund-Schwarzmarkt (mit Fieber-Risiko) | Verboten / Begehrt |
 
-**Materialklasse I–II** sind für den gesamten Spielverlauf das Brot-und-Butter-Material. Ein gut gefertigtes Tiegelstahl-Schwert von einem Spieler mit Muskel III übertrifft ein schlecht gehandhabtes Damaszener-Schwert von einem Spieler mit Muskel I. Das System belohnt Können, nicht nur Material.
+Ein gut gefertigtes Tiegelstahl-Schwert von einem Spieler mit Muskel III übertrifft ein schlecht gehandhabtes Damaszener-Schwert von einem Spieler mit Muskel I. Das System belohnt Können, nicht nur Material.
 
-**Materialklasse V (Schwellen-Materialien)** sind das Endgame-Crafting. Zwei Zugangswege:
-1. Gilden-Weg: Langer Ruf-Aufbau, sicher, legal, teuer
-2. Schwarzmarkt-Weg: Sofort verfügbar, illegal, und jedes Stück Schwellenmaterial, das nicht durch Gildenverarbeitung gesichert ist, trägt Schattenfieber-Exposition — jede Verarbeitung erhöht den Lymph-Wert
+**Materialklasse V (Schwellen-Materialien)** sind das Endgame-Crafting. Zwei Zugangswege: Gilden-Weg (langer Ruf-Aufbau, sicher, legal, teuer) oder Schwarzmarkt-Weg (sofort, illegal, jede Verarbeitung erhöht den Lymph-Wert).
+
+<!-- Darius: Tiervolk als dritter Zugangsweg zu Klasse-V-Materialien ist möglich — aber nur für spezifische Symbiose-Materialien (Tiervolk-Spezialroute), nicht generisch. Das ist in Abschnitt 2.6 ausgearbeitet. -->
 
 ### Handwerk-Mechanik
 
-Crafting in RELICS ist aktiv, nicht passiv. Der Spieler sitzt nicht in einem Menü — er steht an einer Werkbank (oder einem Schmiedefeuer) und führt eine vereinfachte Handwerks-Sequenz durch.
+Crafting ist aktiv, nicht passiv. Der Spieler steht an einer Werkbank oder einem Schmiedefeuer und führt eine vereinfachte Handwerks-Sequenz durch.
 
-**Werkzeug-Erfordernisse:** Verschiedene Materialien brauchen verschiedene Werkzeugqualitäten. Eisen lässt sich mit einer einfachen Feldschmiede verarbeiten. Damaszener-Stahl braucht eine Meister-Schmiede — die in der Regel Gilden-Territorium ist. Der Spieler muss also entweder Zugang zu Gilden-Infrastruktur erkaufen oder seine eigene Werkbank schrittweise ausbauen.
+**Werkzeug-Erfordernisse:** Damaszener-Stahl braucht eine Meister-Schmiede — die in der Regel Gilden-Territorium ist. Der Spieler muss Zugang erkaufen oder eine eigene Werkbank ausbauen.
 
-**Rezeptur-System:** Rezepturen sind keine automatischen Freischaltungen. Sie sind Wissen — Wissensgegenstände in der Welt:
-- Öffentliches Wissen (Rezepturen für Klasse I–II): In der Welt verfügbar, NPCs zeigen sie, Bücher enthalten sie
-- Gilden-Wissen (Rezepturen für Klasse III–IV): Nur durch Gilden-Zugehörigkeit oder Entwendung zugänglich
-- Geheimes Wissen (Rezepturen für Klasse V): Liegt in Gilden-Archiven, Orden-Archiven, oder bei bestimmten NPCs mit eigenem Preis
+**Rezeptur-System:** Rezepturen sind Wissensgegenstände, keine automatischen Freischaltungen. Öffentliches Wissen (Klasse I–II) ist frei verfügbar. Gilden-Wissen (Klasse III–IV) erfordert Zugang oder Entwendung. Geheimes Wissen (Klasse V) liegt in Gilden- und Orden-Archiven oder bei bestimmten NPCs.
 
-**Qualitätsstufen beim Crafting:** Ein Produkt kann in drei Qualitätsvarianten erzeugt werden — Grundlegend / Ordentlich / Meisterwerk. Die Variante hängt ab von: Materialqualität, Werkzeugqualität, und einer kleinen Skill-Komponente (die sich mit Wiederholung verbessert — Muskel-Subsystem-Synergy). Meisterwerke sind selten, aber real, und bei bestimmten NPCs hochbegehrt (Trade-Commodity).
+**Qualitätsstufen beim Crafting:** Ein Produkt kann in drei Qualitätsvarianten erzeugt werden — Grundlegend / Ordentlich / Meisterwerk. Die Variante hängt von Materialqualität, Werkzeugqualität und Wiederholungserfahrung ab.
 
 ### Rüstungsdesign als sozialer Ausdruck
 
-Die Rüstung des Spielers ist das visuelle Statusstatement. Das System erkennt das und macht es spielmechanisch relevant:
-
 - **Rüstungsklasse** (leicht / mittel / schwer) beeinflusst Ausdauerkosten und Beweglichkeit
-- **Material** definiert Schutzwerte und NPC-Reaktionen (ein Spieler in Tiegelstahl wird in Oberschicht-Bereichen anders angesprochen als einer in Eisen)
-- **Ausrüstungsmix:** Der Spieler kann jedes Körperteil unabhängig ausrüsten. Eine Kombination von schwerer Schulterpartie mit leichten Beinen ist möglich und sinnvoll.
-- **Verfall und Reparatur:** Rüstungen und Waffen nehmen Schaden. Reparatur ist eine Alltagshandlung. Das verhindert, dass der Spieler "set and forget" spielt — er muss aktiv mit seinem Equipment interagieren.
+- **Material** definiert Schutzwerte und NPC-Reaktionen
+- **Ausrüstungsmix:** Jedes Körperteil unabhängig ausrüstbar
+- **Verfall und Reparatur:** Rüstungen und Waffen nehmen Schaden — Reparatur ist eine Alltagshandlung
 
 ---
 
@@ -2116,52 +2297,44 @@ Die Rüstung des Spielers ist das visuelle Statusstatement. Das System erkennt d
 
 ### Designprinzipien
 
-Das Fraktionsruf-System ist kein Gut-/Böse-Barometer. Es ist eine Buchführung von Handlungen und ihren Konsequenzen. Jede Fraktion bewertet den Spieler nach eigener Logik — und die Logiken widersprechen sich.
+Das Fraktionsruf-System ist eine Buchführung von Handlungen und ihren Konsequenzen. Jede Fraktion bewertet den Spieler nach eigener Logik — und die Logiken widersprechen sich.
 
-Das System funktioniert nach dem Prinzip der kommunizierenden Röhren: Was bei der Krone gewinnt, verliert in der Regel bei den Gilden oder beim Orden. Ausnahmen existieren (neutrale Handlungen), aber echte Maximierung bei allen drei gleichzeitig ist nicht möglich.
+Das System funktioniert nach dem Prinzip der kommunizierenden Röhren: Was bei der Krone gewinnt, verliert in der Regel bei den Gilden oder beim Orden. Echte Maximierung bei allen drei gleichzeitig ist nicht möglich.
 
 ### Ruf-Stufen
 
-Jede Fraktion kennt fünf Ruf-Stufen:
+Jede der drei Hauptfraktionen kennt fünf Ruf-Stufen:
 
-| Stufe | Bezeichnung | Zugang | Hinweistext |
-|---|---|---|---|
-| I | **Unbekannt** | Basiszugang zu öffentlichen Bereichen der Fraktion | "Sie sind neu hier." |
-| II | **Bekannt** | Einfache Aufgaben verfügbar, Händler gewähren Basispreise, erste innere Tore offen | "Man hat von Ihnen gehört." |
-| III | **Anerkannt** | Mittlere Materialien zugänglich, wichtigere NPCs sprechen direkt, Zugang zu Fraktions-Infrastruktur (Schlafplatz, Werkstätte) | "Sie haben sich als nützlich erwiesen." |
-| IV | **Vertraut** | Elite-Materialien verfügbar, Insider-Informationen, Fraktions-Missionen auf hohem Niveau, spezifische Ausrüstung als Geschenk | "Sie sind einer von uns." |
-| V | **Meister** | Vollzugang. Schwellen-Materialien (Gilden), Kronpassagen (Krone), geheime Orden-Archive, Entscheidungen beeinflussen Fraktionspolitik | "Ich vertraue Ihnen mein Leben an." |
-
-**Ruf-Verlust:** Handlungen gegen eine Fraktion senken den Ruf. Ruf kann nicht "doppelt negativ" werden — die Mindststufe ist "Feindselig":
+| Stufe | Bezeichnung | Zugang |
+|---|---|---|
+| I | **Unbekannt** | Basiszugang zu öffentlichen Bereichen |
+| II | **Bekannt** | Einfache Aufgaben, Basispreise, erste innere Tore |
+| III | **Anerkannt** | Mittlere Materialien, Fraktions-Infrastruktur (Schlafplatz, Werkstätte) |
+| IV | **Vertraut** | Elite-Materialien, Insider-Informationen, spezifische Ausrüstung als Geschenk |
+| V | **Meister** | Vollzugang — Schwellen-Materialien (Gilden), Kronpassagen (Krone), geheime Orden-Archive |
 
 | Sonderstufe | Bezeichnung | Konsequenz |
 |---|---|---|
-| 0 | **Feindselig** | Tore geschlossen. NPCs greifen an oder fliehen. Keine Handelsinteraktion möglich. Nur über Quest-Lösung (spezifisch für jede Fraktion) auflösbar. |
+| 0 | **Feindselig** | Tore geschlossen, NPCs greifen an. Nur über spezifische Quest-Lösung auflösbar. |
 
 ### Ruf-Quellen
 
-Ruf wird erzeugt durch:
-- **Quests:** Hauptquelle. Direkte Fraktionsquests geben klaren Ruf-Gain. Offene Quests von Fraktions-NPCs geben Ruf bei der entsprechenden Fraktion.
-- **Handlungen in der Welt:** Wächter der Krone angreifen = Krone-Ruf verloren, unabhängig davon ob die Wachen "böse" waren. Gilden-Eigentum stehlen = Gilden-Ruf verloren. Das System beobachtet still.
-- **Dialoge und Entscheidungen:** Bestimmte Gespräche haben Ruf-Konsequenzen, die nicht explizit angezeigt werden. Der Spieler spürt sie an veränderten NPC-Reaktionen.
-- **Handels-Reputation:** Wer konsequent bei einer Fraktion kauft, gewinnt langfristig Ruf (klein, aber akkumulierend).
+Ruf wird erzeugt durch: Fraktionsquests (Hauptquelle), Handlungen in der Welt (stiller Buchhalter), Dialoge und Entscheidungen (nicht immer explizit), Handels-Reputation (klein, aber akkumulierend).
 
-### Konflikt-Mechanik: Wenn Fraktionen kollidieren
+### Konflikt-Mechanik
 
-Ab einem bestimmten Ruf-Niveau in zwei konkurrierenden Fraktionen verlangen beide, dass der Spieler "Farbe bekennt." Das ist kein Quest — das ist eine stille Kulminierung. Ein Gildenmeister sagt dem Spieler: "Ich habe gehört, Sie arbeiten auch für den Orden. Das ist eine Frage, die ich nicht nochmals stellen will." Das Spiel erzwingt keine Entscheidung — aber es macht deutlich, dass die Situation sich nicht halten lässt.
-
-**Point of No Return:** Jede Fraktion hat einen quest-spezifischen Punkt, an dem der Spieler sich endgültig entscheiden muss. Diese Punkte kommen nicht gleichzeitig und werden dem Spieler nicht explizit als "Point of No Return" angezeigt. Er merkt erst rückwirkend, wann er die Entscheidung getroffen hat.
+Ab einem bestimmten Ruf-Niveau in zwei konkurrierenden Fraktionen verlangen beide, dass der Spieler Farbe bekennt. Das ist keine erzwungene Entscheidung — aber die Situation hält sich nicht. **Point of No Return:** Jede Fraktion hat einen quest-spezifischen Punkt, der sich erst rückwirkend als solcher zeigt.
 
 ### Gilden-Monopolstruktur und Crafting-Zugang
 
-Das Fraktionsruf-System bei den Gilden ist speziell: Die Gilden sind kein monolithischer Block. Es gibt sieben große Gilden (Schmiede, Glasmacher, Weber, Gerber, Goldschmiede, Kerzenzieher, Pergamenter), und der Ruf bei der Gilden-Fraktion insgesamt beeinflusst den Basisrand. Darüber hinaus gibt es Einzel-Ruf bei spezifischen Gilden:
+Die Gilden sind kein monolithischer Block. Der Gesamt-Gildenruf beeinflusst den Basisrand. Darüber hinaus gibt es Einzel-Ruf bei spezifischen Gilden:
 
-- **Schmiede-Ruf:** Zugang zu Waffen und Rüstungen der Klasse III–IV
-- **Glasmacher-Ruf:** Zugang zu Optik-Instrumenten, Schwellenlinsen, alchemistischen Phiolen
-- **Gerber-Ruf:** Zugang zu Kanälen und dem Schlund — physischer Zugang, nicht nur Handel
+- **Schmiede-Ruf:** Waffen und Rüstungen der Klasse III–IV
+- **Glasmacher-Ruf:** Schwellenlinsen, Alchemie-Phiolen
+- **Gerber-Ruf:** Physischer Zugang zu Kanälen und dem Schlund
 - **Weber-Ruf:** Schwellenfäden und Elite-Textilien
 
-Wer nur Gilden-Gesamtruf sammelt, ohne einzelne Gilden zu pflegen, bekommt generischen Zugang. Wer gezielt eine Gilde hofiert, bekommt spezifische Tiefe.
+Wer nur Gilden-Gesamtruf sammelt, bekommt generischen Zugang. Wer gezielt eine Gilde hofiert, bekommt spezifische Tiefe.
 
 ---
 
@@ -2169,130 +2342,141 @@ Wer nur Gilden-Gesamtruf sammelt, ohne einzelne Gilden zu pflegen, bekommt gener
 
 ### Spieler-Fantasie
 
-*"Ich sehe, was das Fieber aus mir macht. Ich entscheide, wie weit ich gehe."*
+*"Ich sehe, was das Fieber aus mir macht. Es macht etwas anderes als aus anderen."*
 
 ### Designprinzipien
 
-Das Schattenfieber ist keine Krankheit, die man heilt. Es ist ein Zustand, den man navigiert. Drei Fraktionen, drei Strategien. Keine davon ist optimal — alle haben Kosten und Vorteile.
+Das Schattenfieber ist keine Krankheit, die man heilt. Es ist ein biologischer Zustand, den man navigiert. Die Körperreaktion ist individuell: gleiche Exposition, verschiedene Transformation. Das ist der Kern des Systems.
 
-Das Fieber ist direkt an das Lymph-Subsystem gekoppelt (→ Abschnitt 2.2). Die Stadien des Lymph-Subsystems entsprechen den Schattenfieber-Stufen. Dieser Abschnitt beschreibt die Gameplay-Konsequenzen und die Fraktions-Antworten im Detail.
+Das Fieber ist direkt an das Lymph-Subsystem gekoppelt (→ Abschnitt 2.2).
 
 ![Schwellenanker: Zustand Null — ruhend](../concepts/day02-vera/relics/relikt-zustand-null-ruhend_seedream-4-5.png)
 
-*Konzeptbild: Der Schwellenanker in Ruhezustand. Die visuelle Sprache des Ruhezustands spiegelt die Baseline des Lymph-Subsystems (Stufe I: Unangetastet).*
+*Konzeptbild: Der Schwellenanker in Ruhezustand — die visuelle Entsprechung von Lymph-Stufe I: Unangetastet.*
+
+### Körperreaktions-Varianz
+
+Dasselbe Schattenfieber-Stadium sieht bei drei Spielern verschieden aus. Die spezifische Transformation (welche Sinne sich schärfen, welche Fähigkeiten entstehen, welche Kosten der Körper zahlt) hängt ab von:
+
+1. **Expositionsquelle:** Schwellensubstrat-Extrakte erzeugen andere Muster als Dünnstellen-Aufenthalt
+2. **Fraktionspfad:** Orden-Rituale kanalisieren die Transformation anders als ungefilterte Exposition
+3. **Körperliche Baseline:** Muskel- und Cardio-Stand beeinflussen, welche physischen Transformationen dominant werden
+
+Das hat gameplay-mechanische Konsequenzen: Spieler können nicht vorab wissen, welche spezifischen Fähigkeiten ihre Transformation freischaltet. Das erzeugt Entdeckungsdruck und echte Differenzierung.
 
 ### Die drei Fieber-Stadien im Gameplay
 
-**Stadium I — Flüstern (Lymph-Stufe II: Exponiert)**
+**Stadium I — Flüstern (Lymph-Stufe II)**
 
-Das erste Stadium ist die Einladung. Es gibt nichts zu verlieren, aber etwas zu gewinnen:
+Das erste Stadium ist die Einladung. Vorteile: Erweiterte Sinneswahrnehmung (Schwellen-Objekte sichtbar, die für andere unsichtbar sind), leichte intuitive Kampfunterstützung (Körperreaktion-abhängig). Kosten: Gelegentliche Wahrnehmungsstörungen, leichte sichtbare Veränderungen unter bestimmtem Licht.
 
-*Vorteile:*
-- Erweiterte Sinneswahrnehmung: Der Spieler sieht Schwellen-Objekte, die für andere unsichtbar sind (bestimmte versteckte Durchgänge, Schwellensubstrat-Konzentrationen, die den Weg zu Schwarzmarkt-Ressourcen weisen)
-- Leichte intuitive Kampfunterstützung: Gegnerbewegungen werden einen Herzschlag früher "wahrgenommen" — kein Kampf-Autoziel, aber eine kleine Reaktionszeitverlängerung
+*Reversibilität:* Vollständig reversibel durch Entfernung von Fieberquellen und Krone-Medizin.
 
-*Kosten:*
-- Gelegentliche Wahrnehmungsstörungen: Schatten an falscher Stelle, Geräusche ohne Quelle. Keinen spielmechanischen Nachteil — aber der Spieler merkt, dass etwas nicht stimmt
-- Sichtbare leichte Veränderung: Unter bestimmtem Licht sind die Lymph-Muster unter der Haut sichtbar. Bestimmte NPCs reagieren darauf.
+**Stadium II — Wandlung (Lymph-Stufe III)**
 
-*Reversibilität:* Vollständig reversibel durch Entfernung von Fieberquellen und Krone-Medizin. Der Spieler kann hier jederzeit zurück.
+Das zweite Stadium ist der Preis für Macht. Vorteile: Physische Buffs (Stärke, Ausdauer), tiefere Schwellen-Wahrnehmung, Immunität gegen leichte Exposition. Kosten: Erinnerungsfragmentierung, sichtbare körperliche Veränderungen (dunkle Adern, Transparenz der Haut — individuell variierend), soziale Kosten (Krone-Ruf sinkt passiv).
 
-**Stadium II — Wandlung (Lymph-Stufe III: Kontaminiert)**
+*Reversibilität:* Nicht heilbar, aber managebar. Gilden: Stabilisierungspräparate (laufende Kosten). Orden: Kontroll-Rituale (mit Dankesschuld).
 
-Das zweite Stadium ist der Preis für Macht:
+**Stadium III — Entgrenzung (Lymph-Stufe IV)**
 
-*Vorteile:*
-- Deutliche physische Buffs: Erhöhte Stärke und Ausdauer (überlagert Muskel- und Cardio-Subsystem)
-- Tiefere Schwellen-Wahrnehmung: Der Spieler nimmt Dünnstellen intuitiv wahr, kann Schwellensubstrat "spüren" (Mechanik: Kompass-ähnlicher Puls in Dünnstellen-Richtung)
-- Immunität gegen leichte Schattenfieber-Exposition: Kontaminierte Bereiche, die andere töten würden, kann der Spieler bereisen
+Das dritte Stadium ist das Ende der kontrollierten Progression. Vorteile: Extremer Power-Spike, direkte Schwellen-Interaktion, Zugang zu bestimmten Questenden. Kosten: Kontrollverlust (Spieleraktionen durch Schwellen-Impulse überlagert), narrative Einengung, Irreversibilität ohne Schwellenanker-Intervention.
 
-*Kosten:*
-- Erinnerungsfragmentierung: Gelegentlich berichtet das Spiel eine Szene anders als beim ersten Erleben. Nicht gameplaymäßig einschränkend, aber psychologisch belastend
-- Sichtbare Mutation: Dunkle Adern, teilweise Transparenz der Haut, veränderte Augen. Oberschicht-NPCs verweigern Interaktion. Bestimmte Questlinien werden unzugänglich (Orden-Questlinie kürzt sich dramatisch).
-- Soziale Kosten: Krone-Ruf nimmt passiv ab, solange Stadium II aktiv ist
-
-*Reversibilität:* Nicht heilbar, aber managebar. Gilden bieten Stabilisierungspräparate (teuer, laufende Kosten). Orden bietet Kontroll-Rituale (kostenlos, aber mit Dankesschuld).
-
-**Stadium III — Entgrenzung (Lymph-Stufe IV: Durchdrungen)**
-
-Das dritte Stadium ist das Ende der kontrollierten Progression:
-
-*Vorteile:*
-- Extremer Power-Spike: Der Spieler ist physisch auf dem Maximum. Übernatürliche Stärke, Schwellenwahrnehmung permanent aktiv, temporäre Unverwundbarkeit möglich
-- Direkte Schwellen-Interaktion: Der Spieler kann Orte und Objekte berühren, die im normalen Zustand unzugänglich sind. Bestimmte Questenden werden erst hier zugänglich.
-
-*Kosten:*
-- Kontrollverlust: Spieleraktionen werden gelegentlich durch "Schwellen-Impulse" überlagert — die Figur handelt für Sekunden autonom
-- Narrativer Sackweg: Ab Stadium III sind bestimmte Quest-Outcomes unmöglich. Der Spieler kann die Geschichte nicht mehr in bestimmte Richtungen lenken.
-- Irreversibilität: Ohne Schwellenanker-Intervention oder Orden-Hochritual kein Zurück.
-
-*Der Schwellenanker als Stabilisator:* Ein Spieler, der den Schwellenanker hält (Hauptquest-Fortschritt), kann Stadium III partiell stabilisieren. Das ist keine Heilung — aber es verhindert das unkontrollierte Durchgleiten in den Identitätsverlust. Dies ist der narrative und mechanische Kern des Hauptquests.
+*Der Schwellenanker als Stabilisator:* Ein Spieler, der den Schwellenanker hält (Hauptquest-Fortschritt), kann Stadium III partiell stabilisieren. Das ist keine Heilung — aber es verhindert den unkontrollierten Identitätsverlust. Dies ist der narrative und mechanische Kern des Hauptquests.
 
 ![Schwellenanker: Zustand Drei — Auflösung](../concepts/day02-vera/relics/relikt-zustand-drei-aufloesung_seedream-4-5.png)
 
-*Konzeptbild: Zustand Drei. Der Schwellenanker in Auflösung — die visuelle Entsprechung von Lymph-Stufe IV. Die Grenzen zwischen Objekt und Umgebung lösen sich auf.*
+*Konzeptbild: Zustand Drei. Der Schwellenanker in Auflösung — die visuelle Entsprechung von Lymph-Stufe IV.*
 
 ### Die drei Fraktions-Antworten auf das Schattenfieber
 
 **Krone — Unterdrückung**
 
-Die Krone behandelt das Schattenfieber als militärisches Problem. Ihre Ärzte und Quartiermeister bieten Krone-Medizin: Suppressoren, die den Lymph-Wert aktiv senken und Stufe I reversieren.
-
-*Gameplay:*
-- Krone-Medizin ist kostenlos für Krone-Mitglieder, teuer für andere
-- Unterdrückung verhindert alle Fieber-Vorteile — aber auch alle Fieber-Kosten
-- Krone-Weg-Spieler sind das "saubere" Spielprofil: sozial akzeptiert, alle Questlinien offen, aber ohne Fieber-Buffs auf physische Ressourcen angewiesen
-
-*Trade-off:* Wer den Krone-Weg geht, verzichtet auf die Macht des Fiebers. Krone-Quests kompensieren das durch bessere Ausrüstung, Zugang zu Tiegelstahl-Waffen, und politische Unterstützung.
+Krone-Medizin senkt den Lymph-Wert aktiv und verhindert Stufe I–IV vollständig. Gameplay: Krone-Mitglieder erhalten Medizin kostenlos, andere zahlen teuer. Kein Fieber-Vorteil, keine Fieber-Kosten — aber Krone-Quests kompensieren durch bessere Ausrüstung und politische Unterstützung.
 
 **Gilden — Verwertung**
 
-Die Gilden sehen das Schattenfieber als Rohstoff. Ihre Alchemisten bieten Stabilisierungspräparate, die den Lymph-Wert auf einem Plateau halten: Die Vorteile von Stadium I bleiben zugänglich, die unkontrollierte Progression zu Stadium II wird verhindert.
-
-*Gameplay:*
-- Gilden-Präparate sind teuer und müssen regelmäßig erneuert werden (laufende Ressourcenkosten)
-- Wer mit Gilden-Zugang arbeitet, kann Stadium I kontrolliert halten — und bei Bedarf (für kurze Zeit, mit Nachkater) auf Stadium II übersteigen
-- Gilden-Weg-Spieler sind das "pragmatische" Spielprofil: sie nutzen das Fieber als Werkzeug, zahlen dafür regelmäßig, und halten Optionen offen
-
-*Trade-off:* Ressourcenintensiv. Wer keine konstante Einnahmequelle hat, kann den Gilden-Weg nicht aufrechterhalten. Das verknüpft Fieber-Management direkt mit der Wirtschaftsmechanik.
+Gilden-Präparate halten den Lymph-Wert auf einem Plateau: Vorteile von Stadium I bleiben zugänglich, unkontrollierte Progression wird verhindert. Auf Abruf (kurz, mit Nachkater) kann Stadium II überstiegen werden. Gameplay: Ressourcenintensiv, laufende Kosten. Verknüpft Fieber-Management direkt mit der Wirtschaftsmechanik.
 
 **Orden — Destillation und Verstehen**
 
-Der Orden behandelt das Schattenfieber als Prüfung und als Zugang zu Wissen. Ihre Rituale ermöglichen kontrollierten, langsamen Aufstieg durch die Stufen — mit Stabilisierung auf jeder Ebene.
-
-*Gameplay:*
-- Orden-Rituale sind kostenlos (Kosten: Zeit und Verpflichtung gegenüber dem Orden)
-- Wer den Orden-Weg geht, kann das Fieber tiefer nutzen als der Gilden-Weg — bis in Stadium II hinein, stabil
-- Orden-Weg-Spieler sind das "tiefste" Spielprofil: Sie verstehen das Schattenfieber am besten, haben den tiefsten Lore-Zugang, aber der Orden hat eine Agenda
-
-*Trade-off:* Der Orden will etwas. Jedes Ritual ist eine Schuld. Irgendwann fragt der Orden nach dem Schwellenanker.
+Orden-Rituale ermöglichen kontrollierten, langsamen Aufstieg durch die Stadien mit Stabilisierung auf jeder Ebene. Zugang bis Stadium II möglich. Gameplay: Kostenlos (Kosten: Zeit und Verpflichtung). Der Orden hat Forderungen — jedes Ritual ist eine Schuld. Irgendwann fragt der Orden nach dem Schwellenanker.
 
 ---
 
-## 2.6 Systeminteraktionen
+## 2.6 Händlernetz & Tiervolk
 
-Die fünf Kernsysteme existieren nicht isoliert. Ihre Stärke kommt aus den Wechselwirkungen:
+### Spieler-Fantasie
+
+*"Es gibt Händler, die andere nicht kennen — und Waren, die nur sie führen."*
+
+### Designprinzipien
+
+Das Händlernetz von RELICS ist kein monolithisches System. Neben den drei Fraktionsstrukturen (Krone-Lieferanten, Gilden-Händler, Orden-Ressourcen) existiert ein vierter Händlertyp mit eigener Logik: das Tiervolk.
+
+Das Tiervolk sind kosmologisch-fremde Wesen in dauerhafter, irreversibler Symbiose mit Tieren. Diese Symbiose ist keine Besonderheit — sie ist ihre biologische Grundlage. Ihre Handelsmotivation ist konkret: Sie benötigen spezifische Materialien zur Stabilisierung der Symbiose, die die drei Fraktionen weder verstehen noch kontrollieren. Das schafft ein echtes wechselseitiges Interesse.
+
+### Das Tiervolk als Händlertyp
+
+**Systemisch:** Das Tiervolk betreibt ein Netz aus fluktuierenden Handelspositionen, das sich nicht mit den Fraktionsterritorien deckt. Ihre Standorte ändern sich — nicht willkürlich, sondern nach einer internen Logik, die der Spieler über Zeit lernt. Sie sind dort, wo Schwellenphänomene komplex und interessant sind: Übergangszone Gürtel/Schlund, bestimmte Dünnstellen-Nähepunkte, Kanaleingänge, die die Gilden nicht vollständig kontrollieren.
+
+**Kein Fraktionsruf-System:** Das Tiervolk kennt keine Ruf-Stufen. Sie kennen **Vertrauens-Transaktionen**: Wer einmal unfair handelt, bekommt keinen zweiten Termin. Wer gut handelt, bekommt Zugang zu selteneren Waren. Das ist ein binäres, transaktionales System — kein skalierbarer Balken.
+
+**Eigene Ruf-Achse:** Tiervolk-Vertrauen akkumuliert unabhängig von Fraktionsruf. Ein Spieler, der bei allen drei Fraktionen "Feindselig" ist, kann beim Tiervolk trotzdem gut stehen. Das macht sie zum einzigen Händlernetz, das eine verbrannte Spielfigur noch versorgt.
+
+### Tiervolk-Warensortiment
+
+Das Tiervolk handelt mit drei Kategorien, die kein anderer Händlertyp führt:
+
+**Kategorie A — Symbiose-Materialien (Import):**
+Substanzen, die das Tiervolk selbst braucht. Sie kaufen aktiv vom Spieler: bestimmte Schwellensubstrat-Konzentrationen aus tiefen Dünnstellen, spezifische Schwellenpilz-Derivate, biologische Proben aus Stadium-II-Betroffenen (wenn der Spieler einwilligt oder selbst betroffen ist). Diese Kategorie schafft eine Quest-Logik: Das Tiervolk als Auftraggeber für Beschaffungsmissionen.
+
+**Kategorie B — Exklusive Waren (Export):**
+Waren, die das Tiervolk selbst produziert oder aus Regionen mitbringt, die die drei Fraktionen nicht kennen: Symbiose-Erzeugnisse (organische Materialien, die halb-biologisch, halb-schwellentechnisch sind), Navigationswissen (Informationen über Dünnstellen-Pfade, die weder Gilden-Karte noch Orden-Archiv kennt), und spezifische Alchemika, die die Körperreaktion bei Schattenfieber modifizieren — nicht heilen, modifizieren.
+
+**Kategorie C — Informationen:**
+Das Tiervolk ist das einzige Netz, das ohne Fraktionsbindung handelt. Ihre Informationen beziehen sich auf Verbindungen zwischen Dünnstellen, Verhaltensmuster von Schwellen-Fauna, und Gerüchte aus Regionen jenseits von Schwarzrand. Sie haben eine vierte Kosmologie — das Schattenfieber als Kommunikation, nicht als Krankheit.
+
+### Salva als Haupt-Kontakt
+
+Salva (→ GDD Kap. 4, Abschnitt 4.5) ist der erste und wichtigste Tiervolk-NPC. Er funktioniert als Kontext-Lieferant, Informationsbroker und Einführung in das Tiervolk-Handelssystem. Der Spieler lernt das System über Salva — nicht durch Tutorial-Text, sondern durch Transaktion.
+
+**Mechanische Besonderheit:** Salva erscheint nicht immer. Er hat ein Bewegungsmuster, das der Spieler erlernen kann. Wer weiß, wann und wo Salva auftaucht, hat einen strategischen Vorteil.
+
+### Symbiose-Stabilisierungs-Quest-Logik
+
+Das Tiervolk ist der einzige NPC-Typ, der den Spieler aktiv um etwas bittet, das mit seiner biologischen Notwendigkeit zusammenhängt. Das schafft eine Quest-Kategorie ohne Fraktionsstruktur: Beschaffungsaufträge für Symbiose-Materialien, Erkundungsaufträge zu unbekannten Dünnstellen, und — selten — Schutzaufträge, wenn ein Tiervolk-Händler in Gefahr ist.
+
+**Spieler-Fantasie dieser Quests:** *"Ich helfe jemandem, der sich selbst nicht helfen kann — weil er etwas ist, das die Welt nicht versteht."*
+
+---
+
+## 2.7 Systeminteraktionen
+
+Die sechs Kernsysteme existieren nicht isoliert. Ihre Stärke kommt aus den Wechselwirkungen:
 
 **Kampf × Nervensystem-Leveling**
-Jeder Kampf trainiert Cardio und Muskel. Ein Spieler, der kämpft, wird besser im Kampf. Das ist die direkteste Feedback-Schleife. Aber: Wer riskante Kämpfe mit Schwellensubstrat-Extrakten gewinnt, trainiert auch das Lymph-Subsystem — ungewollt.
+Jeder Kampf trainiert Cardio und Muskel. Wer riskante Kämpfe mit Schwellensubstrat-Extrakten gewinnt, trainiert ungewollt auch das Lymph-Subsystem.
 
 **Crafting × Fraktionsruf**
-Bessere Materialien erfordern höheren Fraktionsruf. Das bindet Crafting an Fraktionsentscheidungen. Wer den Orden hofiert, bekommt kein Damaszener-Stahl — der Orden handelt nicht mit Waffen. Wer die Gilden höfiert, verliert Krone-Ruf. Crafting-Optimierung ist Fraktions-Optimierung.
+Bessere Materialien erfordern höheren Fraktionsruf. Das bindet Crafting an Fraktionsentscheidungen. Wer den Orden hofiert, bekommt kein Damaszener-Stahl. Wer die Gilden höfiert, verliert Krone-Ruf.
 
 **Schattenfieber × Fraktionsruf**
-Der Fieber-Status des Spielers verändert Fraktions-Reaktionen. Ein Spieler in Stadium II ist bei der Krone nicht mehr willkommen. Ein Spieler in Stadium I wird vom Orden besonders aufmerksam behandelt (sie wollen wissen, wie weit er bereits ist). Die Gilden sind die einzige Fraktion, die aktive Fieber-Träger ohne Stigma bedient — weil sie sie als Kunden brauchen.
+Der Fieber-Status verändert Fraktions-Reaktionen. Ein Spieler in Stadium II ist bei der Krone nicht mehr willkommen. Die Gilden sind die einzige Fraktion, die Fieber-Träger ohne Stigma bedient.
 
 **Nervensystem-Leveling × Crafting**
-Muskel-Stufe III+ ist Voraussetzung für sinnvolle Nutzung von Klasse-IV-Ausrüstung. Der Spieler kann sich die besten Materialien kaufen — aber erst nutzen, wenn der Körper folgt. Das verhindert "Day-One-Endgame-Gear" und macht die Progression organisch.
+Muskel III+ ist Voraussetzung für sinnvolle Nutzung von Klasse-IV-Ausrüstung. Das verhindert "Day-One-Endgame-Gear".
 
 **Kampf × Schattenfieber**
-Wer mit Schwellensubstrat-Extrakten kämpft, gewinnt Macht und verliert Kontrolle. Der schnellste Weg zum Kampfsieg ist oft der direkteste Weg in Stadium III. Das ist die ultimative Abwägung des Systems.
+Wer mit Schwellensubstrat-Extrakten kämpft, gewinnt Macht und verliert Kontrolle. Das ist die ultimative Abwägung des Systems.
 
----
+**Tiervolk × Alle anderen Systeme**
+Das Tiervolk interagiert quer durch alle Systeme: Sie kaufen Schattenfieber-Produkte, liefern Crafting-Materialien der Klasse V (Sonderweg), sind unabhängig von Fraktionsruf, und liefern Informationen, die Quest-Pfade verändern. Sie sind das systemische Sicherheitsnetz für Spieler, die alle Fraktionen verbrannt haben.
 
-<!-- Darius: Offene Punkte für interne Klärung — nicht im sichtbaren Dokument. W-001/W-002 aus Emres WBB (Schwellensubstrat als Substanz vs. Feld, Kippmoment Stufe I → II) müssen vor v2 dieses Kapitels synchronisiert werden. Leo-QA-Pass auf Balancing-Werte (Ruf-Schwellenwerte, Lymph-Akkumulation) steht aus. -->
+**Tiervolk × Schattenfieber × Körperreaktion**
+Das Tiervolk verfügt über Alchemika, die die Körperreaktion bei Schattenfieber-Transformation modifizieren. Das ist nicht universell verfügbar — es setzt Tiervolk-Vertrauen voraus. Für Spieler, die ihre Transformation aktiv gestalten wollen, ist das Tiervolk der einzige Weg zu dieser Tiefe.
 
-*Versionsstatus: v1 — Alle fünf Kernsysteme ausgearbeitet. Balancing-Werte (konkrete Zahlenwerte) folgen in v2 nach Leo-QA-Sync. Systeminteraktionen definiert. Spieler-Fantasie-Statements verifiziert.*
+<!-- Darius: Systeminteraktionen vollständig auf sechs Systeme erweitert. Tiervolk-Interaktionen am Ende eingewoben. Körperreaktions-Varianz als eigenständiger Interaktions-Layer in Abschnitt 2.5 und 2.7 ausgearbeitet. -->
 
 \clearpage
 
@@ -2430,9 +2614,7 @@ Moin.
 
 # GDD Kapitel 03 — Erzählkonzept
 
-<!-- Status: v1 | Tag 3, Mittwoch | Autor: Darius Engel -->
-<!-- Darius: Dieses Kapitel ist in enger Abstimmung mit Nami Okafors GDD Kap. 4 entstanden. Nami hat Figuren und Quest-Skizzen geliefert; ich habe die systemische Struktur und die Spieler-Aktiv-Mechaniken hinzugefügt. Die Ablehn-Option (Spieler darf Fragment verweigern) ist CD-bestätigt und hier vollständig ausgearbeitet. -->
-<!-- Darius: Verwendete Quellen: GDD Kap. 4 v1 (Nami, Tag 2), WBB Kap. 1 v1 (Emre, Tag 2), Briefing. Nami hat die Figuren-Stimmen, ich habe die Quest-Mechanik. Das Erzählkonzept braucht v2 mit Namis ausformuliertem Halbseiten-Text zur Ablehn-Option (war für Mi 10:00 versprochen). -->
+<!-- Darius: v2 — Wesentliche Änderungen gegenüber v1: (1) Zeitlinie der Öffnung überarbeitet: jahrelange Anbahnung (Covid-Analogie), kein plötzlicher Ausbruch. Akt 1 trägt diese Logik: Spieler kommt in eine Stadt, die sich seit Jahren langsam verändert, nicht in eine Akutkatastrophe. (2) Tiervolk-Integration: Salva ist kein Exot — er ist Teil eines langen Musters, das Spieler und Stadt verbindet. (3) Cleanup: Autorenerwähnungen, Planungskommentare, Namis-Placeholder bereinigt. Ablehn-Option vollständig integriert (aus GDD Kap. 4 v2, Nami). -->
 
 ---
 
@@ -2442,11 +2624,37 @@ Das Erzählkonzept von RELICS: Der Schwellenanker definiert, wie die Geschichte 
 
 **Zentrales Erzählprinzip:** Der Spieler ist kein Held. Er ist ein Fremder, der in eine Situation hineingezogen wird, die ohne ihn bereits bestand. Die Geschichte ist nicht über den Spieler — sie ist eine Geschichte, in der der Spieler Entscheidungen trifft.
 
-**Erzählstruktur:** Drei Akte, drei Fraktionspfade, mehrere Questlinien, die sich überschneiden und widersprechen. Kein Akt ist vollständig linear. Jeder Akt hat einen "Open-World-Raum", in dem der Spieler die Welt erkundet, bevor er den nächsten narrativen Anker betritt.
+**Erzählstruktur:** Drei Akte, drei Fraktionspfade, mehrere Questlinien, die sich überschneiden und widersprechen. Kein Akt ist vollständig linear. Jeder Akt hat einen offenen Erkundungsraum, bevor der nächste narrative Anker kommt.
 
 ---
 
-## 3.1 Intro-Sequenz — "Was er in der Hand hielt"
+## 3.1 Die Zeitlinie der Öffnung — Erzählerischer Hintergrund
+
+### Die Covid-Logik: Jahrelange Anbahnung, kein Schlag
+
+Das wichtigste erzählerische Prinzip für Akt 1 ist das, was der Spieler nicht sieht: Die Öffnung der Ankerkammer war kein Schlag, der eine stabile Stadt zerbrochen hat. Es war ein langsamer Prozess — und Schwarzrand hat sich, wie jede Gesellschaft in einer schleichenden Krise, daran angepasst. Das ist die Covid-Analogie: keine plötzliche Apokalypse, sondern eine jahrelange Normalisierung des Abnormalen.
+
+**Was vor dem Spiel passiert ist (Spieler kennt das nicht, Welt trägt es):**
+
+Vor rund fünfundzwanzig Jahren öffnete eine Koalition aus Orden, Gilden und Krone die Ankerkammer. In den ersten Jahren schien wenig zu passieren. Das Schattenfieber war vorher schon da — als seltene Kuriosität im tiefen Schlund. Es wurde häufiger. Dann häufiger. Dann konnte man es nicht mehr ignorieren.
+
+Die erste Reaktion war das, was Schwarzrand immer macht: vertuschen, verwalten, einteilen. Quarantänezonen entstanden nicht als Notfallmaßnahme, sondern als schrittweise Normalisierung — zuerst für "die Schlimmsten", dann für immer mehr. Die drei Fraktionen haben die Katastrophe nie als Katastrophe bezeichnet. Sie haben sie in Bürokratie eingehüllt. Berichte. Komitees. Sonderzonen.
+
+Heute, fünfundzwanzig Jahre später, ist der Schlund das, was er ist: ein Ort, den die Stadt vergessen hat. Das Schattenfieber ist eine Realität, die alle kennen und niemand ausspricht. Die Fraktionen haben gelernt, damit zu leben — oder besser: damit Geld zu verdienen, Macht zu sichern, Wissen zu akkumulieren.
+
+**Was das für den Spieler bedeutet:**
+
+Der Fremde kommt nicht in eine akute Krise. Er kommt in eine Stadt, die in einem Dauerzustand der verwalteten Katastrophe lebt. Die Leute, die er trifft, sind nicht erschrocken — sie sind routiniert. Brenn hat die Quarantäne-Prozesse in- und auswendig. Kast hat ihr Destillationsarchiv seit Jahren. Scherer hat seinen Ur-Text seit drei Jahren kopiert.
+
+Das ist die erzählerische Stärke der Zeitlinie: Der Spieler betritt eine Welt, die sich bereits mit dem Bösen arrangiert hat. Das ist beklemmender als eine frische Katastrophe.
+
+**Der frühere Ausbruch weit weg:**
+
+Das Schattenfieber ist nicht auf Schwarzrand beschränkt. Vor Jahren gab es Berichte aus anderen Regionen — Dünnstellen-Aktivität an fernen Orten, kleine Ausbrüche, die rasch unter Kontrolle kamen oder nicht weiter verfolgt wurden. Die Karawane, die Salva fast vernichtete, war einer dieser frühen Fälle. Schwarzrand ist jetzt der Epizentrum-Fall — die lokale Eskalation, die alles andere in den Schatten stellt.
+
+---
+
+## 3.2 Intro-Sequenz — "Was er in der Hand hielt"
 
 ### Spieler-Fantasie
 
@@ -2456,9 +2664,9 @@ Das Erzählkonzept von RELICS: Der Schwellenanker definiert, wie die Geschichte 
 
 **Zeitpunkt:** Früher Morgen. Die Stadt Schwarzrand liegt im Nebel. Der Spieler betritt die Spielwelt zum ersten Mal.
 
-**Der Sterbende:** Hieronymus Vael liegt am Stadtrand, zwischen zwei ausrangierten Karrengeleisen. Freier Bote, gescheitert. Schattenfieber Stadium III. Er hat nicht mehr lange. Er hält etwas in der Hand: eine Scherbe aus einem Material, das der Spieler noch nicht einordnen kann. Unter einer bestimmten Neigung des Lichts leuchtet es — schwach, biolumineszent, unheimlich schön.
+**Der Sterbende:** Hieronymus Vael liegt am Stadtrand, zwischen zwei ausrangierten Karrengeleisen. Freier Bote, gescheitert. Schattenfieber Stadium III. Er hält eine Scherbe aus einem Material, das der Spieler noch nicht einordnen kann — unter einer bestimmten Neigung des Lichts leuchtet es biolumineszent, unheimlich schön.
 
-**Die Übergabe-Szene (Clip-Moment):** Hieronymus Vael sieht den Spieler. Er hat keine Kraft mehr für eine lange Erklärung. Er versucht es trotzdem. Die Szene dauert nicht länger als drei Minuten.
+**Die Übergabe-Szene (Clip-Moment):** Hieronymus sieht den Spieler. Er hat keine Kraft mehr für eine lange Erklärung. Die Szene dauert nicht länger als drei Minuten.
 
 > *"Nimm das. Geh nicht zurück, wo du herkamst — dort kennen sie deinen Weg. Versteh das nicht als Warnung. Versteh das als das Einzige, was ich dir noch geben kann."*
 
@@ -2466,43 +2674,40 @@ Er streckt die Hand mit der Scherbe aus.
 
 ### Die Ablehn-Option
 
-**CD-Entscheid:** Der Spieler darf das Fragment ablehnen.
-
-Das ist keine Illusion einer Wahl. Es ist eine echte Verzweigung.
+**CD-Entscheid:** Der Spieler darf das Fragment ablehnen. Das ist keine Illusion einer Wahl. Es ist eine echte Verzweigung.
 
 **Wenn der Spieler annimmt (Standard-Pfad):**
-- Das Fragment wechselt in das Inventar des Spielers
+- Das Fragment wechselt in das Inventar
 - Hieronymus Vael stirbt kurz danach
-- Schattenfieber-Exposition beginnt sofort: Lymph-Wert steigt minimal (kaum wahrnehmbar in Minute 15, signifikant in Stunde 3)
-- Die drei Boten erscheinen (→ Abschnitt 3.2)
+- Schattenfieber-Exposition beginnt sofort: Lymph-Wert steigt minimal
+- Die drei Boten erscheinen (→ Abschnitt 3.3)
 - Das Spiel öffnet sich in die volle Freiheit von Schwarzrand
 
 **Wenn der Spieler ablehnt (Alternativer Einstieg):**
 
-Der Spieler sagt Nein. Oder sagt nichts und wendet sich ab.
+Der Spieler sagt Nein. Oder sagt nichts und wendet sich ab. Hieronymus hat keine Energie für Überzeugungsarbeit. Er legt die Scherbe ins Gras, schließt die Augen.
 
-Hieronymus Vael schaut ihn an. Er hat keine Energie für Überzeugungsarbeit. Er legt die Scherbe ins Gras neben sich, schließt die Augen.
+*Sofortige Konsequenz:* Ein Fraktionsbote, der im Hintergrund wartete, nimmt die Scherbe. Der Clip-Moment passiert trotzdem — gedämpft. Das Schwellensubstrat ist bereits in der Luft, der Erde, dem Nebel.
 
-*Was dann passiert:*
+*Kurzfristige Konsequenz (erste Stunde):* Die drei Boten behandeln den Spieler als Zeugen, nicht als Fragment-Träger. Erster Fraktionskontakt ist Verhör, kein Angebot. Brenn ist die Bote-Fraktion, die die Scherbe aufgehoben hat — sie ist im Vorteil und will trotzdem den Zeugen.
 
-1. Vael stirbt. Die Scherbe liegt im Gras. Der Spieler kann Schwarzrand betreten.
-2. **Kurzfristige Konsequenz (erste Stunde):** Die drei Boten erscheinen trotzdem. Sie fragen nach der Scherbe. Der Spieler kann sagen, er habe sie nicht. Das stimmt. Alle drei Boten glauben ihm zunächst — aber die Glasmacher-Gilde hat Schwellenlinsen. Vreni Kast weiß, dass jemand in der Nähe des Toten war. Sie fragt nach.
-3. **Mittelfristige Konsequenz (Akt 1):** Die Scherbe bleibt an Hieronymus' Sterbeort. Sie ist nicht weg — sie liegt da. Wer sie sucht, findet sie. Andere Akteure (Fraktionsboten) finden sie innerhalb von Stunden, wenn der Spieler sie nicht aufhebt. Der Spieler hat ein Zeitfenster.
-4. **Langfristige Konsequenz:** Wer die Scherbe nie nimmt, spielt einen anderen Akt-1-Einstieg. Die Fraktionen nähern sich dem Spieler aus einem anderen Winkel — nicht als möglicher Träger des Fragments, sondern als möglicher Zeuge. Das öffnet bestimmte Quest-Optionen (Zeuge-Rolle), schließt andere (Fragment-Träger-Rolle). Spätestens in Akt 1, Beat 3 führt jeder Pfad zur selben zentralen Frage: Was ist das Fragment? Warum ist es hier? Warum stirbt jeder, der es trägt?
+*Mittelfristige Konsequenz (Akt 1):* Der Spieler muss das Fragment aufspüren, um Zugang zum Hauptquest zu bekommen. Der Weg ist länger — er durchquert mehr von Schwarzrand, lernt mehr über die Fraktionen, bevor die Haupthandlung ihn einholt.
 
-<!-- Darius: Namis Halbseite zur Ablehn-Option (versprochen Mi 10:00) sollte hier die konkreten Dialog-Optionen und den genauen Beat-Ablauf des Ablehn-Pfads ergänzen. Ich habe die systemische Struktur gesetzt; sie hat die Stimmen. -->
+*Schattenfieber-Frage:* Wer das Fragment nicht nimmt, bekommt trotzdem Schattenfieber — langsamer, aus der Umgebung, ohne Ankerpunkt. Stufe I beginnt nicht in Minute fünfzehn, sondern irgendwann in der ersten Spielstunde. Unmerklich. Das ist die härtere Version.
+
+*Langfristige Konsequenz:* Spätestens in Akt 1, Beat 3 führt jeder Pfad zur selben zentralen Frage: Was ist das Fragment? Warum ist es hier? Die Eintrittsperspektive (Träger vs. Zeuge) verändert, wie die Fraktionen den Spieler einsetzen — nicht, wohin die Geschichte führt.
 
 **Warum diese Entscheidung richtig ist:**
 
-Das Briefing fordert: Immersive Sim. Echte Wahlfreiheit. Ein Spiel, das vorgibt, man könne ablehnen, es dann aber erzwingend macht, ist keine Immersive Sim — es ist ein Schienenspiel mit Illusionsknöpfen. Die Ablehn-Option muss real sein, um das Vertrauen des Spielers zu verdienen. Wenn er weiß, dass "Nein" tatsächlich Nein bedeutet, wählt er mit anderen Augen.
+Ein Spiel, das vorgibt, man könne ablehnen, es dann aber erzwingt, ist keine Immersive Sim — es ist Theater. Die Ablehn-Option muss real sein. Wenn der Spieler weiß, dass "Nein" tatsächlich Nein bedeutet, wählt er mit anderen Augen.
 
 ### Beat-Struktur der Intro-Sequenz
 
-**Beat 1 — Ankunft:** Spieler betritt die Welt. Stadtrand. Nebel. Vael liegt da. Keine Erklärung, keine Exposition. Der Spieler sieht einen sterbenden Mann.
+**Beat 1 — Ankunft:** Spieler betritt die Welt. Stadtrand. Nebel. Vael liegt da. Keine Exposition. Der Spieler sieht einen sterbenden Mann.
 
-**Beat 2 — Die Scherbe:** Vael spricht. Kurz, erschöpft, klar. Die Übergabe-Szene. Spieler entscheidet: Nehmen oder ablehnen.
+**Beat 2 — Die Scherbe:** Vael spricht. Kurz, erschöpft, klar. Spieler entscheidet: Nehmen oder ablehnen.
 
-**Beat 3 — Die ersten Minuten nach Vael:** Der Spieler ist alleine. Drei Boten nähern sich — eine Uniformierte (Krone), ein ziviler junger Mann mit versiegeltem Brief (Orden), und... niemand. Die Gilden-Reaktion ist Vreni Kast, die "zufällig" auf dem Markt ist, wenn der Spieler die Stadt betritt.
+**Beat 3 — Die ersten Minuten nach Vael:** Drei Boten nähern sich — eine Uniformierte (Krone), ein ziviler junger Mann mit versiegeltem Brief (Orden), und Vreni Kast, die "zufällig" auf dem Markt ist.
 
 **Beat 4 — Erster Fraktionskontakt:** Der Spieler spricht mit einem der drei Boten zuerst. Das ist die erste nicht-erzwungene Entscheidung. Die Welt merkt sie sich.
 
@@ -2510,33 +2715,39 @@ Das Briefing fordert: Immersive Sim. Echte Wahlfreiheit. Ein Spiel, das vorgibt,
 
 ---
 
-## 3.2 Akt 1 — Das Fragment
+## 3.3 Akt 1 — Das Fragment
 
 ### Spieler-Fantasie
 
-*"Ich verstehe gerade, was dieser Ort bedeutet. Und ich beginne zu verstehen, dass ich in der Mitte von etwas bin, das schon lange vor mir lief."*
+*"Ich verstehe gerade, was dieser Ort bedeutet — eine Stadt, die sich seit Jahren langsam verändert. Und ich bin mittendrin gelandet."*
 
 ### Erzählraum
 
-Akt 1 ist die Exposition. Nicht durch Lore-Dumps — durch Erfahrung. Der Spieler erkundet Schwarzrand. Er trifft die Schlüssel-NPCs (→ GDD Kap. 4). Er beginnt, die Machtverhältnisse zu verstehen.
+Akt 1 ist die Exposition. Nicht durch Lore-Dumps — durch Erfahrung. Der Spieler erkundet Schwarzrand und lernt eine Stadt kennen, die den Dauerzustand der verwalteten Katastrophe normalisiert hat. Das ist keine Schockwelt — das ist eine Welt, die gelernt hat zu funktionieren, während etwas langsam falsch läuft.
 
-**Zeitliche Länge:** Akt 1 sollte die ersten 8–12 Spielstunden umfassen. Der Spieler soll Zeit haben, die Welt zu atmen, bevor der erste Act-1-Kulminationspunkt kommt.
+**Zeitliche Länge:** Akt 1 sollte die ersten 8–12 Spielstunden umfassen. Der Spieler soll die Welt atmen, bevor der erste Kulminationspunkt kommt.
 
 ### Schlüssel-Beats Akt 1
 
-**Die drei Fraktionskontakte:** Der Spieler lernt alle drei kennen. Das kann in beliebiger Reihenfolge geschehen. Adelhaid Brenn (Krone) will das Fragment. Ivo Scherer (Orden) will es untersuchen. Vreni Kast (Gilden) will es analysieren. Alle drei haben gute Argumente. Keines der Argumente ist vollständig wahr.
+**Die drei Fraktionskontakte:** Der Spieler lernt alle drei kennen. Das kann in beliebiger Reihenfolge geschehen. Adelhaid Brenn (Krone) will das Fragment. Ivo Scherer (Orden) will es untersuchen. Vreni Kast (Gilden) will es analysieren. Alle drei haben gute Argumente. Keines ist vollständig wahr.
 
-**Die erste Fraktionsentscheidung:** Ab einem bestimmten Punkt in Akt 1 verlangt eine Fraktion eine Entscheidung — eine Aufgabe, die signalisiert, mit wem der Spieler arbeitet. Dieser Moment ist keine Zwangshandlung; der Spieler kann sich verweigern. Aber die Fraktionen werden ungeduldiger, je länger er wartet.
+**Der Verwaltungs-Alltag:** Der Spieler sieht, dass Schwarzrand das Schattenfieber nicht als Ausnahmezustand behandelt — als Alltagsrealität. Quarantäne-Protokolle, die schon Jahre laufen. Schlundtor-Kontrollen, die routine-mechanisch durchgeführt werden. Händler, die Schwellenmaterialien verkaufen, ohne dabei nervös zu werden. Diese Routine ist der erste Riss in der Fassade: die Normalität des Abnormalen.
 
-**Salva und die vierte Perspektive:** Salva (Tiervolk) erscheint frühzeitig in Akt 1. Er ist kein Auftraggeber — er ist ein Kontext-Lieferant (→ GDD Kap. 4). Die Information, die er über das Fragment hat, verändert nicht den Questpfad, aber die Interpretation. Der Spieler, der Salva gründlich befragt, versteht mehr — und misstraut den drei Fraktionen früher.
+**Die erste Fraktionsentscheidung:** Ab einem bestimmten Punkt in Akt 1 verlangt eine Fraktion eine Entscheidung — eine Aufgabe, die signalisiert, mit wem der Spieler arbeitet. Der Spieler kann sich verweigern, aber die Fraktionen werden ungeduldiger je länger er wartet.
 
-**Das erste Fieberflüstern:** Irgendwann in Akt 1 bemerkt der Spieler das erste Schattenfieber-Symptom. Das ist kein Story-Trigger — es ist eine organische Konsequenz des Lymph-Wert-Anstiegs. Schatten bewegen sich nicht richtig. Ein Geräusch hallt nach. Der Spieler sieht etwas, das nicht da ist. Eine Sekunde. Dann ist es vorbei.
+**Salva und die vierte Perspektive:** Salva (Tiervolk) erscheint frühzeitig in Akt 1. Er ist kein Auftraggeber im Fraktionssinne — er ist ein Kontext-Lieferant. Er kennt das Muster: das Schattenfieber als langsame Eskalation, nicht als Schlag. Er kennt es, weil seine Karawane vor Jahren ein Frühwarnzeichen war. Die Information, die er über das Fragment hat, verändert nicht den Questpfad — sie verändert die Interpretation.
 
-**Der Akt-1-Kulminationspunkt:** Jeder Fraktionspfad hat einen Akt-1-Kulminationspunkt, der in den Akt-2-Raum führt. Beispiel Krone-Pfad: Brenn gibt dem Spieler den Auftrag, eine Schwarzmarkt-Scherbe zu sichern, bevor die Gilden es tun. Das führt den Spieler erstmals tief in den Schlund. Dort sieht er, was Brenns "kontrollierte Quarantäne" konkret bedeutet. Das ist die Moment der Kompliziertheit.
+**Das erste Fieberflüstern:** Irgendwann in Akt 1 bemerkt der Spieler das erste Schattenfieber-Symptom. Kein Story-Trigger — organische Konsequenz des Lymph-Wert-Anstiegs. Schatten bewegen sich nicht richtig. Ein Geräusch hallt nach. Eine Sekunde. Dann ist es vorbei.
+
+**Die Akt-1-Zeitlinie als Spieler-Lernbogen:**
+
+Das Besondere an Akt 1 in der v2-Struktur: Der Spieler lernt die Katastrophe rückwärts. Er sieht zuerst den Istzustand (Schwarzrand, wie es ist), dann — durch NPCs, Dokumente, Gespräche — was vor fünfundzwanzig Jahren geschah, wie die Verschlechterung verlief, wer davon gewusst hat. Die Geschichte ist keine Enthüllung. Es ist Verstehen.
+
+**Der Akt-1-Kulminationspunkt:** Jeder Fraktionspfad hat einen Akt-1-Kulminationspunkt. Beispiel Krone-Pfad: Brenn schickt den Spieler, eine Schwarzmarkt-Scherbe zu sichern, bevor die Gilden es tun. Das führt erstmals tief in den Schlund. Dort sieht der Spieler, was Brenns "kontrollierte Quarantäne" nach Jahren der Normalisierung konkret bedeutet. Das ist der Moment der Kompliziertheit.
 
 ---
 
-## 3.3 Hauptquest — "Der Schwellenanker"
+## 3.4 Hauptquest — "Der Schwellenanker"
 
 ### Spieler-Fantasie
 
@@ -2544,179 +2755,151 @@ Akt 1 ist die Exposition. Nicht durch Lore-Dumps — durch Erfahrung. Der Spiele
 
 ### Narrative Grundfrage
 
-Die zentrale Frage des Hauptquests: **War ich immer hier, oder hat der Schwellenanker mich gerufen?**
+**War ich immer hier, oder hat der Schwellenanker mich gerufen?**
 
 Diese Frage wird nie direkt beantwortet. Das ist keine Schwäche der Geschichte — das ist die Geschichte.
 
-Der Spieler kommt als Fremder. Ohne Gedächtnis an den Weg hierher. Ohne klare Motivation außer: Er war in der Nähe, als Vael starb. Oder: Er hat das Fragment genommen. Oder abgelehnt. In jedem Fall befindet er sich jetzt in Schwarzrand, und Schwarzrand hat Konsequenzen für ihn.
-
-Irgendwann, irgendwo zwischen Akt 1 und Akt 2, stellt der Spieler fest: Das Fragment reagiert auf ihn. Nicht auf jeden. Auf ihn spezifisch. Der Lymph-Wert steigt schneller als bei anderen. Visions-Fragmente zeigen Orte, die er noch nie gesehen hat. Der Schwellenanker kennt ihn irgendwie. Oder er kennt den Schwellenanker.
+Der Spieler kommt als Fremder. Irgendwann stellt er fest: Das Fragment reagiert auf ihn spezifisch. Der Lymph-Wert steigt schneller als bei anderen. Visions-Fragmente zeigen Orte, die er nie gesehen hat. Der Schwellenanker kennt ihn irgendwie.
 
 ### Akt-Struktur der Hauptquest
 
-**Akt 1 — Das Fragment (parallel zu Abschnitt 3.2)**
+**Akt 1 — Das Fragment (parallel zu Abschnitt 3.3)**
 
 Gameplay-Ziel: Den Ursprung des Fragments verstehen.
 Narrative Frage: Was habe ich in der Hand?
 
-Der Spieler sammelt Informationen aus drei Quellen (die drei Fraktionen liefern jeweils eine Teilwahrheit), Salva ergänzt eine vierte Perspektive, und das Fragment selbst "zeigt" gelegentlich Bilder — Dünnstellen, Kammern, Tiefen — die keiner erklären kann.
-
-Am Ende von Akt 1 weiß der Spieler: Das Fragment ist ein Stück von etwas Größerem. Dieses Größere liegt irgendwo unter Schwarzrand. Und alle drei Fraktionen suchen es seit einer Generation.
+Drei Fraktionen liefern jeweils eine Teilwahrheit. Salva liefert eine vierte Perspektive. Das Fragment selbst "zeigt" gelegentlich Bilder — Dünnstellen, Kammern, Tiefen. Am Ende von Akt 1 weiß der Spieler: Das Fragment ist ein Stück von etwas Größerem. Dieses Größere liegt unter Schwarzrand. Alle drei Fraktionen suchen es seit einer Generation.
 
 **Akt 2 — Das Muster**
 
 Gameplay-Ziel: Die anderen Fragmente finden.
-
 Narrative Frage: Wer hat den Schwellenanker zerstört, und warum?
 
-Das Fragment ist nicht einzigartig. In Akt 2 entdeckt der Spieler, dass der Schwellenanker in Stücke zerbrochen wurde — wann, durch wen, ob absichtlich. Die Fraktionen haben Fragmente, oder wissen wo sie sind, und halten diese Information zurück. Akt 2 ist ein Netz aus Halbwahrheiten und verdeckten Interessen.
+Das Fragment ist nicht einzigartig. In Akt 2 entdeckt der Spieler, dass der Schwellenanker in Stücke zerbrochen wurde. Die Fraktionen haben Fragmente oder wissen, wo sie sind. Akt 2 ist ein Netz aus Halbwahrheiten und verdeckten Interessen.
 
-**Mechanische Verknüpfung:** Jedes Fragment, das der Spieler findet oder berührt, erhöht den Lymph-Wert. Das ist keine Falle — es ist eine Einladung. Wer das Muster aktiv sucht, nähert sich der Schwelle. Der Spieler entscheidet, wie weit er geht.
+**Mechanische Verknüpfung:** Jedes Fragment, das der Spieler berührt, erhöht den Lymph-Wert. Wer das Muster aktiv sucht, nähert sich der Schwelle.
 
-**Die Koalitions-Enthüllung:** In Akt 2 entdeckt der Spieler, wer die Wurzelkammer geöffnet hat: Es war eine Koalition aus allen drei Fraktionen — Orden-Gelehrter, Gilden-Expedition, Kron-Beauftragter. Jeder gibt die Schuld den anderen. Alle haben sie. Das ist der Moment, in dem keine Fraktion mehr "richtig" sein kann — jede hat eine Leiche in ihrem Keller, buchstäblich.
+**Die Koalitions-Enthüllung:** In Akt 2 entdeckt der Spieler, wer die Ankerkammer geöffnet hat: eine Koalition aus allen drei Fraktionen — Orden-Gelehrter, Gilden-Expedition, Kron-Beauftragter. Jeder gibt die Schuld den anderen. Alle haben sie. Das ist der Moment, in dem keine Fraktion mehr "richtig" sein kann.
 
-**Akt 2 Kulminationspunkt:** Der Spieler findet den Weg zur Wurzelkammer. Er muss entscheiden, ob er hinabsteigt. Bis hierhin war die Geschichte verhandelbar. Ab hier nicht mehr.
+**Akt-2-Zeitlinie:** Der Spieler entdeckt, dass die Koalition nicht aus einem akuten Entscheid handelte — sondern aus einer jahrelangen Planung, die jeder der drei Parteien vernünftig erschien, bis es zu spät war. Das spiegelt die Covid-Logik auf der Täter-Seite: Es gab keinen Moment der Entscheidung für die Katastrophe. Es gab hundert kleine Entscheidungen, die sich akkumuliert haben.
+
+**Akt-2-Kulminationspunkt:** Der Spieler findet den Weg zur Ankerkammer. Er muss entscheiden, ob er hinabsteigt. Bis hierhin war die Geschichte verhandelbar. Ab hier nicht mehr.
 
 **Akt 3 — Die Schwelle**
 
-Gameplay-Ziel: Den Schwellenanker wiederherstellen oder zerstören oder keines von beidem.
-
+Gameplay-Ziel: Den Schwellenanker wiederherstellen, zerstören oder keines von beidem.
 Narrative Frage: Was tue ich mit dem, was ich weiß?
 
-Der Spieler erreicht die Wurzelkammer. Was er dort findet, hängt von seinen bisherigen Entscheidungen ab — aber die Kammer selbst ist real, konsistent, und physisch präsent. In ihr: die natürliche Position des Schwellenankers. Leer, seit einer Generation. Das Schattenfieber steigt von unten wie Grundwasser.
-
-Der Spieler hält Fragmente des Schwellenankers. Er kann sie zurücklegen. Er kann sie behalten. Er kann sie einer Fraktion überlassen. Er kann sie zerstören. Jede Entscheidung hat systemische Konsequenzen für die Welt von Schwarzrand.
+Der Spieler erreicht die Ankerkammer. Was er dort findet, hängt von seinen Entscheidungen ab — aber die Kammer selbst ist real, konsistent, und physisch präsent. In ihr: die natürliche Position des Schwellenankers. Leer, seit einer Generation. Das Schattenfieber steigt von unten wie Grundwasser.
 
 ### Die drei Hauptenden
 
 **Ende 1 — Restauration (Krone-affin)**
 
-Der Spieler legt alle Fragmente in die Wurzelkammer zurück. Der Schwellenanker stabilisiert die Schwelle. Das Schattenfieber reckt sich nicht. Schwarzrand überlebt.
+Der Spieler legt alle Fragmente in die Ankerkammer zurück. Der Schwellenanker stabilisiert die Schwelle. Das Schattenfieber reckt sich nicht.
 
-*Konsequenz:* Die Krone kontrolliert die Kammer militärisch. Das Schattenfieber wird zum Staatsgeheimnis verwaltet. Die untersten Schichten bleiben, wo sie sind. Die Welt ist stabiler — und ungerechter als je zuvor. Brenn bekommt, was sie will. Die Schwächsten zahlen weiter den Preis.
+*Konsequenz:* Die Krone kontrolliert die Kammer militärisch. Das Schattenfieber wird zum Staatsgeheimnis verwaltet. Die Welt ist stabiler — und ungerechter als je zuvor. Die Logik der letzten fünfundzwanzig Jahre wird institutionalisiert. Was als temporäre Notmaßnahme begann, ist jetzt Struktur.
 
 **Ende 2 — Destillation (Gilden-affin)**
 
-Der Spieler übergibt die Fragmente den Gilden. Die Glasmacher-Gilde synthetisiert den Schwellenanker als Rohstoff. Die Schwelle wird nutzbar — kontrollierbar, handelbar, profitierend. Das Schattenfieber eskaliert kurzfristig (Kontrollverlust in der Übergangsphase), dann stabilisiert die neue Gilden-Chemie.
+Der Spieler übergibt die Fragmente den Gilden. Die Glasmacher-Gilde synthetisiert den Schwellenanker als Rohstoff. Die Schwelle wird nutzbar — kontrollierbar, handelbar. Das Schattenfieber eskaliert kurzfristig, stabilisiert dann durch Gilden-Chemie.
 
-*Konsequenz:* Die Gilden monopolisieren die Schwelle als Ressource. Das ist der konsequenteste Ausdruck des Medieval-Cyberpunk-Paradigmas: Die Natur wird zur Ware. Vreni Kast triumphiert. Die Profite bleiben oben. Die Kosten bleiben unten.
+*Konsequenz:* Die Gilden monopolisieren die Schwelle als Ressource. Die Natur wird zur Ware. Das ist der konsequenteste Ausdruck des Medieval-Cyberpunk-Paradigmas. Die Kosten bleiben unten. Die Profite bleiben oben.
 
 **Ende 3 — Öffnung (Schwellenaffin)**
 
 Der Spieler gibt keine Fragmente ab. Er legt sie nicht zurück. Er hält sie. Und er bleibt in der Kammer.
 
-Was passiert: Die Schwelle öffnet sich weiter. Das ist kein Weltuntergang — es ist eine Transformation. Schattenfieber-Betroffene in Stadium II und III beginnen, zu verstehen, was sie sind. Etwas kommt durch. Es ist nicht nur Krankheit — es ist das, wovon das Tiervolk immer gesprochen hat: Kommunikation.
+Was passiert: Die Schwelle öffnet sich weiter. Das ist kein Weltuntergang — es ist eine Transformation. Schattenfieber-Betroffene in Stadium II und III beginnen zu verstehen, was sie sind. Etwas kommt durch. Es ist nicht nur Krankheit — es ist das, wovon das Tiervolk immer gesprochen hat: Kommunikation.
 
-*Konsequenz:* Schwarzrand verändert sich fundamental. Ob das besser oder schlechter ist, ist unklar. Der Orden verliert die Deutungshoheit. Die Krone verliert die Kontrolle. Die Gilden verlieren die Rohstoffquelle. Aber die Menschen in den untersten Schichten — die, die ohnehin schon tief in der Schwelle leben — werden zu etwas, das die anderen Fraktionen nicht mehr ignorieren können.
-
-*Dies ist das einzige Ende, das die Frage "Kommunikation oder Krankheit?" beantwortet. Und die Antwort ist: beide.*
+*Konsequenz:* Schwarzrand verändert sich fundamental. Ob das besser oder schlechter ist, ist unklar. Der Orden verliert die Deutungshoheit. Die Krone verliert die Kontrolle. Aber die Menschen in den untersten Schichten — die ohnehin schon tief in der Schwelle leben — werden zu etwas, das die anderen Fraktionen nicht mehr ignorieren können. Dies ist das einzige Ende, das die Frage "Kommunikation oder Krankheit?" beantwortet. Die Antwort ist: beides.
 
 ### Der Schwellenanker als mechanischer Hauptquest-Anker
 
-Der Schwellenanker ist im Hauptquest mehr als ein Aufgabenobjekt. Er ist eine mechanische Beziehung:
-
-- **Resonanz-Intensität:** Je höher der Lymph-Wert des Spielers, desto stärker "antwortet" der Schwellenanker. Visuelle Effekte intensivieren sich. Zusatz-Informationen werden zugänglich (Lore-Fragmente, die nur sichtbar sind, wenn der Spieler in Stadium I–II ist).
-- **Fragment-Auffinden:** Der Schwellenanker-Puls (→ Kap. 2.5, Lymph-Stufe III-Vorteil) ist kein abstraktes HUD-Element — er ist eine physische Empfindung im Spiel, die die Richtung von anderen Fragmenten anzeigt.
-- **Entscheidungspunkt:** Der finale Akt-3-Entscheid ist der einzige Moment im Spiel, an dem die Mechanik (Lymph-Wert, Fraktionsruf, verfügbare Fragmente) direkt die zugänglichen Enden bestimmt. Ein Spieler ohne ausreichenden Lymph-Wert kann Ende 3 nicht erreichen. Ein Spieler mit feindseligen Gilden kann Ende 2 nicht wählen.
+- **Resonanz-Intensität:** Je höher der Lymph-Wert, desto stärker antwortet der Schwellenanker. Lore-Fragmente werden zugänglich, die nur bei Stadium I–II sichtbar sind.
+- **Fragment-Auffinden:** Der Schwellenanker-Puls (Lymph-Stufe III-Vorteil) ist eine physische Empfindung im Spiel, die die Richtung anderer Fragmente anzeigt.
+- **Entscheidungspunkt:** Der finale Akt-3-Entscheid ist der einzige Moment, an dem Mechanik (Lymph-Wert, Fraktionsruf, verfügbare Fragmente) direkt die zugänglichen Enden bestimmt. Ohne ausreichenden Lymph-Wert ist Ende 3 nicht erreichbar. Mit feindseligen Gilden ist Ende 2 nicht wählbar.
 
 ---
 
-## 3.4 Fraktionsquests
-
-<!-- Darius: Diese Ausarbeitungen sind für v1 strukturell vollständig. Dialog-Details und spezifische Quest-Texte kommen in v2 mit Namis Kollaboration. -->
+## 3.5 Fraktionsquests
 
 ### Krone-Questlinie — "Das Erste Siegel"
 
 **Hauptkontakt:** Marschall Adelhaid Brenn
-
 **Questlinie-Fantasie:** *"Ich habe Legitimität erkauft. Jetzt zahle ich den Preis dafür."*
+**Kernspannung:** Die Krone will Ordnung. Brenn glaubt an Ordnung. Der Spieler kann daran glauben — bis er sieht, was Ordnung nach fünfundzwanzig Jahren verwalteter Katastrophe kostet.
 
-**Kernspannung der Krone-Linie:** Die Krone will Ordnung. Brenn glaubt an Ordnung. Der Spieler kann daran glauben — bis er sieht, was Ordnung kostet.
+**Quest 1 — "Passierschein"**
+Brenn braucht jemanden ohne Kronstempel für einen Auftrag in der Unterstadt. Der Spieler holt Informationen über eine Schwarzmarkt-Scherbe. Einführung: Bewegungsfreiheit als Ressource, Krone als Schutzmacht.
 
-**Quest-Verlauf:**
+**Quest 2 — "Quarantäne"**
+Eine Unterkanal-Zone ist gesperrt. Offiziell: Routineinspektion. Tatsächlich: Schattenfieber-Ausbruch, vierzig Zivilisten, bereits siebzehn gestorben. Brenn schickt den Spieler mit einem "Bericht". Er trifft Menschen, die nicht wissen, warum sie eingesperrt sind.
 
-*Quest 1 — "Passierschein"*
-Brenn braucht jemanden ohne Kronstempel, der einen Auftrag in der Unterstadt erledigt. Der Spieler holt Informationen über eine Schwarzmarkt-Scherbe. Einfache Einführung in die Krone-Mechanik: Bewegungsfreiheit als Ressource, Krone als Schutzmacht.
+*Entscheidungspunkt:* Brenns Anweisung befolgen / die Zone öffnen / die Information verkaufen (an Orden oder Gilden).
 
-*Quest 2 — "Quarantäne"*
-Eine Unterkanal-Zone wurde gesperrt. Offiziell: Routineinspektion. Tatsächlich: Schattenfieber-Ausbruch unter vierzig Zivilisten. Brenn hat die Zone versiegelt. Der Spieler wird geschickt, den "Bericht" zu überbringen. Er trifft Menschen, die nicht wissen, warum sie eingesperrt sind. Siebzehn sind bereits gestorben.
+**Quest 3 — "Das Archiv"**
+Brenn weiß von Kronarchiv-Akten, die das Relikt erwähnen. Sie darf sie nicht lesen. Was der Spieler findet: Die Krone kennt den Schwellenanker seit Generationen. Nicht das Fragment — das Original. Und hat nie gehandelt.
 
-*Entscheidungspunkt:* Der Spieler kann Brenns Anweisung befolgen (Bericht abliefern, zurückkehren). Er kann die Zone öffnen (Krone-Ruf sinkt, sieben der verbliebenen dreiundzwanzig überleben, Schattenfieber breitet sich in einen neuen Bereich aus). Er kann beides nicht tun und die Information verkaufen (an Orden oder Gilden).
-
-*Quest 3 — "Das Archiv"*
-Brenn weiß von Akten im Kronarchiv, die das Relikt erwähnen. Sie darf sie nicht lesen. Sie schickt den Spieler, sie zu stehlen. Was der Spieler findet: Die Krone kennt den Schwellenanker seit Generationen. Nicht das Fragment — das Original. Und hat nie gehandelt.
-
-*Quest 4 — "Point of No Return"*
-Brenn erfährt, was der Schwellenanker wirklich ist. Sie zieht sofort die militärische Konsequenz: Das muss der Krone gehören. Sie bittet den Spieler nicht. Sie verlangt. Dieser Moment definiert, ob der Spieler weiter mit der Krone geht — oder ob Brenn ab jetzt ein Hindernis ist.
+**Quest 4 — "Point of No Return"**
+Brenn erfährt, was der Schwellenanker wirklich ist. Ihre sofortige Konsequenz: Das muss der Krone gehören. Sie bittet nicht. Sie verlangt. Dieser Moment definiert, ob der Spieler weiter mit der Krone geht — oder ob Brenn ab jetzt ein Hindernis ist.
 
 ---
 
 ### Gilden-Questlinie — "Der Rohstoff"
 
 **Hauptkontakt:** Gildenmeisterin Vreni Kast
-
 **Questlinie-Fantasie:** *"Ich baue echte Macht auf. Ich sehe, was sie kostet."*
+**Kernspannung:** Die Gilden sind die ehrlichste Fraktion — sie sagen, was sie wollen. Aber Ehrlichkeit ist kein Schutz vor der Konsequenz dessen, was man tut.
 
-**Kernspannung der Gilden-Linie:** Die Gilden sind die ehrlichste Fraktion — sie sagen, was sie wollen, und was es kostet. Aber Ehrlichkeit ist kein Schutz vor der Konsequenz dessen, was man tut.
+**Quest 1 — "Das Angebot"**
+Kast trifft den Spieler "zufällig" auf dem Markt. Sie bietet Analyse des Fragments — nicht Besitz, Analyse. Zugang zu ihrer Werkstatt. Erste Einblicke in die Gilden-Infrastruktur und die Materialsprache.
 
-**Quest-Verlauf:**
+**Quest 2 — "Kanalrecht"**
+Die Gerber-Gilde hat einen tiefen Kanal-Abschnitt gesperrt. Kast braucht Zugang. Der Spieler verhandelt, kauft oder erzwingt den Zugang. Einführung in die Gilden-Mikropolitik: Die Gilden sind kein Block.
 
-*Quest 1 — "Das Angebot"*
-Kast trifft den Spieler "zufällig" auf dem Markt. Sie bietet Analyse des Fragments — nicht Besitz, Analyse. Zugang zu ihrer Werkstatt, ihrer Ausrüstung. Der Spieler bekommt erste Einblicke in die Gilden-Infrastruktur und die Materialsprache.
+**Quest 3 — "Das Destillationsarchiv"**
+Der Spieler findet Kasts Kellerarchiv: Destillationsversuche ohne Überlebende. Kast: "Das waren Freiwillige. Das Schattenfieber hätte sie trotzdem getötet." Der Spieler entscheidet, wie er damit umgeht.
 
-*Quest 2 — "Kanalrecht"*
-Die Gerber-Gilde kontrolliert die Kanäle. Kast braucht Zugang zu einem tiefen Kanal-Abschnitt, den die Gerber gesperrt haben. Der Spieler verhandelt, kauft oder erzwingt den Zugang. Einführung in die Gilde-Mikropolitik: Die Gilden sind kein Block.
-
-*Quest 3 — "Das Destillationsarchiv"*
-Der Spieler findet Kasts Kellerarchiv. Destillationsversuche ohne Überlebende. Kast verteidigt das Archiv nicht moralisch: "Das waren Freiwillige. Das Schattenfieber hätte sie trotzdem getötet." Der Spieler entscheidet, wie er damit umgeht.
-
-*Quest 4 — "Synthese"*
-Kast hat genug Daten. Sie kann das Schattenfieber synthetisieren — in einem kleinen Maßstab. Sie braucht nur noch den Schwellenanker als finalen Datenpunkt. Dieser Quest ist der Gilden-Point-of-No-Return.
+**Quest 4 — "Synthese"**
+Kast hat genug Daten. Sie kann das Schattenfieber synthetisieren — im kleinen Maßstab. Sie braucht den Schwellenanker als finalen Datenpunkt. Das ist der Gilden-Point-of-No-Return.
 
 ---
 
 ### Orden-Questlinie — "Die Prüfung"
 
 **Hauptkontakt:** Bruder Ivo Scherer
-
 **Questlinie-Fantasie:** *"Ich verstehe mehr als alle anderen. Der Preis dafür wird erst später fällig."*
+**Kernspannung:** Der Orden hat das tiefste Wissen. Aber Wissen ist Kontrolle — und der Orden will beides.
 
-**Kernspannung der Orden-Linie:** Der Orden hat das tiefste Wissen. Aber Wissen ist Kontrolle — und der Orden will beides.
+**Quest 1 — "Der Archivist"**
+Scherer bietet Zugang zu einem Teil des Archivs. Erste Fertigkeitsbücher (Nervensystem-Leveling-Unlock). Einführung: jede Information hat einen Preis.
 
-**Quest-Verlauf:**
+**Quest 2 — "Die Kopie"**
+Scherer zeigt dem Spieler seinen ur-Text-Fragmentfund — und die fehlenden Stellen beschreiben genau, wie man den Schwellenanker zerstört. Ob das Auslassung oder Vergessen war, bleibt offen. Scherer: "Ich weiß es nicht mehr."
 
-*Quest 1 — "Der Archivist"*
-Scherer bietet Zugang zu einem Teil des Archivs. Erster Lore-Zugang, erste Fertigkeitsbücher (→ Nervensystem-Leveling-Unlock). Einführung in Scherers Informationsbroker-Mechanik: jede Information hat einen Preis.
+**Quest 3 — "Deutungshoheit"**
+Ein Priester im unteren Orden-Rang predigt eine Abweichler-Version des Schöpfungsmythos — näher an der biologischen Wahrheit als der offizielle Orden. Scherer schickt den Spieler, ihn zum Schweigen zu bringen. Viele Formen möglich. Die erste offene Konfrontation mit dem Widerspruch zwischen Ordenslehre und Realität.
 
-*Quest 2 — "Die Kopie"*
-Scherer zeigt dem Spieler seinen ur-Text-Fragmentfund. Fragmentarisch — und die fehlenden Stellen beschreiben genau, wie man den Schwellenanker zerstört. Ob das Auslassung oder Vergessen war, bleibt offen. Der Spieler kann Scherer danach fragen. Scherer sagt: "Ich weiß es nicht mehr."
-
-*Quest 3 — "Deutungshoheit"*
-Ein Priester im unteren Orden-Rang predigt eine Abweichler-Version des Schöpfungsmythos — näher an der biologischen Wahrheit als der offizielle Orden. Scherer schickt den Spieler, den Priester zum Schweigen zu bringen. "Zum Schweigen bringen" kann viele Formen annehmen. Der Orden-Quest ist der erste, der den Spieler offen mit dem Widerspruch zwischen Ordenslehre und biologischer Realität konfrontiert.
-
-*Quest 4 — "Der Hochritus"*
-Scherer bietet Zugang zum Orden-Hochritus: ein Ritual, das Schattenfieber-Stadium III stabilisieren kann. Dafür braucht der Orden den Schwellenanker. Der Spieler muss entscheiden, ob er zahlt — und womit.
+**Quest 4 — "Der Hochritus"**
+Scherer bietet Zugang zum Hochritus: ein Ritual, das Schattenfieber-Stadium III stabilisieren kann. Dafür braucht der Orden den Schwellenanker. Der Spieler entscheidet, ob er zahlt — und womit.
 
 ---
 
-## 3.5 Nebenquests
+## 3.6 Nebenquests
 
 ### "Der Zeuge"
 
 **Typ:** Character-Quest
-**NPC:** Alter Mann in den untersten Slums von Schwarzrand, Zeuge der "Öffnung" vor einer Generation
+**NPC:** Benedikt Haas, alter Tunnel-Arbeiter, Schlund
 
 **Spieler-Fantasie:** *"Ich erfahre, was wirklich passiert ist — von jemandem, der dabei war."*
 
-**Kurzbeschreibung:** Der alte Mann heißt Benedikt Haas. Er war Tunnel-Arbeiter bei der Gilden-Expedition, die die Wurzelkammer geöffnet hat. Er lebt im Schlund, isoliert, paranoid. Er ist der einzige Mensch in Schwarzrand, der alle drei Fraktionen aus der Koalitions-Nacht erkannt hat. Und er hat Angst.
+Haas war bei der Gilden-Expedition, die die Ankerkammer öffnete. Er lebt im Schlund, isoliert, paranoid. Er ist der einzige Mensch in Schwarzrand, der alle drei Fraktionsvertreter der Koalitionsnacht erkannt hat.
 
-**Quest-Struktur:**
-- Der Spieler findet Haas über Salvas Hinweisnetz (Salva kennt ihn — oder kennt jemanden, der ihn kennt)
-- Haas erzählt nicht auf Befehl. Er testet den Spieler zuerst: Beweise, dass du niemandem von der Fraktionskoalition arbeitest. Das ist schwer, wenn man gerade dabei ist, genau das zu tun.
-- Wenn Haas vertraut: Er beschreibt die Nacht der Öffnung. Was er sah. Was die Fraktion-Vertreter sagten. Und warum er seither schweigt.
-- Dramatischer Schluss: Haas bittet den Spieler um eine Aufgabe. Er will sterben — aber nicht durch das Fieber. Er will, dass jemand weiß, was er weiß, bevor er geht. Der Spieler kann annehmen oder ablehnen.
+**Quest-Struktur:** Spieler findet Haas über Salvas Hinweisnetz. Haas testet zuerst: Beweise, dass du für niemanden aus der Fraktionskoalition arbeitest. Das ist schwer, wenn man gerade genau das tut. Wenn Haas vertraut: Er beschreibt die Nacht der Öffnung. Damals sahen die Beteiligten ihr Handeln als vernünftig — jede Partei glaubte, die Situation zu kontrollieren. Niemand konnte es. Das ist der Kern des Zeugenberichts.
 
-**Belohnung:** Haas gibt dem Spieler ein Objekt aus der Öffnungsnacht: Ein zerbrochenes Siegel, das alle drei Fraktionszeichen trägt. Unmöglich — aber real. Das ist der Beweis für die Koalition.
+**Belohnung:** Ein zerbrochenes Siegel mit allen drei Fraktionszeichen — der Beweis für die Koalition.
 
 ---
 
@@ -2727,12 +2910,9 @@ Scherer bietet Zugang zum Orden-Hochritus: ein Ritual, das Schattenfieber-Stadiu
 
 **Spieler-Fantasie:** *"Ich verstehe, wie Macht durch Material fließt."*
 
-**Kurzbeschreibung:** Greth Saal webt Schwellenfäden in Textilien — Fäden aus Organismen, die in Dünnstellen wachsen. Biolumineszent, reißfest, selbstreparierend. Begehrt von der Oberschicht. Und giftig für die Weber, die sie verarbeiten. Greth braucht jemanden außerhalb der Gilde, der ihr eine Ladung Fäden direkt aus dem Schlund beschafft — ohne den Gerber-Gilde-Zoll.
+Greth webt Schwellenfäden in Textilien. Begehrt von der Oberschicht. Giftig für die Weber, die sie verarbeiten. Sie braucht jemanden, der eine Ladung Fäden direkt aus dem Schlund beschafft — ohne Gerber-Gilde-Zoll.
 
-**Quest-Struktur:**
-- Der Spieler beschafft die Fäden im Schlund (Schattenfieber-Exposition-Bereich)
-- Dabei entdeckt er: die Weber, die in diesem Bereich arbeiten, leben alle in frühem Stadium II. Die Gilde weiß das. Das ist der Preis, den Greth nicht ausspricht.
-- Entscheidungspunkt: Der Spieler kann die Fäden liefern (Gilden-Ruf +, Weber-Mikropolitik-Zugang). Er kann sie behalten und anderweitig verkaufen. Er kann die Information über die kranken Weber an den Orden oder die Krone weitergeben.
+**Quest-Struktur:** Spieler beschafft die Fäden im Schlund. Dabei: die Weber, die in diesem Bereich arbeiten, leben alle in frühem Stadium II. Die Gilde weiß das. Das ist der Preis, den Greth nicht ausspricht. Entscheidungspunkt: Liefern (Gilden-Ruf +), behalten und anderweitig verkaufen, oder die Information weitergeben.
 
 **Belohnung:** Zugang zu einer Weber-Gilde-Werkstatt und Rezepturen für biolumineszente Textilien (Crafting-Klasse III–IV).
 
@@ -2743,43 +2923,44 @@ Scherer bietet Zugang zum Orden-Hochritus: ein Ritual, das Schattenfieber-Stadiu
 **Typ:** Tiervolk-Seitenquest, Lore-Quest
 **NPC:** Salva
 
-**Spieler-Fantasie:** *"Ich erfahre, was Salva wirklich ist — und was er wirklich weiß."*
+**Spieler-Fantasie:** *"Ich erfahre, was Salva wirklich ist — und was die Zeitlinie der Öffnung wirklich bedeutet."*
 
-**Kurzbeschreibung:** Salva verschwindet für eine Spielperiode. Wenn er zurückkommt, ist er verändert. Der Spieler kann nachfragen. Salva sagt: "Ich habe den Ursprungsort gefunden."
+Salva verschwindet für eine Spielperiode. Wenn er zurückkommt, ist er verändert. Was er gefunden hat: den Ursprungsort der Karawane, die vor Jahren verschwand — mit einem Objekt, das dem Schwellenanker ähnelte. Das war einer der frühen Ausbrüche weit weg, Jahre bevor Schwarzrand zum Epizentrum wurde. Salva war das einzige Überlebende. Er ist kein Mensch mehr im biologischen Ursprungssinn. Er ist etwas dazwischen — und er weiß, was das bedeutet.
 
-Was er gefunden hat: Den letzten bekannten Ort der Karawane, die vor Jahren verschwand — mit dem Objekt, das dem Schwellenanker ähnelte. Salva war das einzige Überlebende. Er war damals bereits in Dünnstellen-Nähe exponiert. Die Exposition hat ihn verändert — die Schuppenhaut, die erweiterten Sinne. Er ist kein Mensch mehr im biologischen Ursprungssinn. Er ist etwas dazwischen.
-
-**Quest-Struktur:**
-- Der Spieler kauft die Information über den Karawanenursprungsort von Salva (hoher Preis — Gold oder eine Gefälligkeit)
-- Der Ort ist ein verfallenes Handelsposten außerhalb von Schwarzrand. Dort findet der Spieler Überreste der Karawane und ein weiteres Fragment
-- Salva begleitet den Spieler optional. Er gibt keine Erklärungen. Er zeigt Richtungen.
-- Am Posten: Der Spieler sieht Spuren, die zeigen, dass die Karawane nicht von außen angegriffen wurde. Sie hat sich von innen aufgelöst. Das Fragment war der Auslöser.
+**Quest-Struktur:** Spieler kauft die Information über den Karawanenursprungsort (hoher Preis). Ein verfallenes Handelsposten außerhalb von Schwarzrand. Salva begleitet optional. Am Posten: Die Karawane hat sich von innen aufgelöst. Das Fragment war der Auslöser. Das war kein Unfall — das war ein Frühwarnzeichen, das niemand ernst genommen hat.
 
 **Belohnung:** Ein weiteres Fragment (Hauptquest-Fortschritt) + Salvas vollständiges Vertrauen (Zugang zu seinen tiefsten Informationen).
 
 ---
 
-## 3.6 Erzählerische Prinzipien
+## 3.7 Erzählerische Prinzipien
 
 ### Das epistemische Prinzip
 
-Kein NPC im Spiel kennt die vollständige Wahrheit über den Schwellenanker. Der Spieler auch nicht. Die Geschichte ist ein Puzzle, das der Spieler aus Halbwahrheiten zusammensetzt. Die "Wahrheit" des Endes hängt davon ab, welche Quellen der Spieler befragt hat und welchen er geglaubt hat.
+Kein NPC im Spiel kennt die vollständige Wahrheit über den Schwellenanker. Der Spieler auch nicht. Die Geschichte ist ein Puzzle aus Halbwahrheiten. Die "Wahrheit" des Endes hängt davon ab, welche Quellen der Spieler befragt und welchen er geglaubt hat.
 
-Das ist kein Versteck von Exposition. Es ist eine strukturelle Entscheidung: In einer Welt, in der drei Fraktionen aktiv konkurrierende Wahrheiten produzieren, kann kein Protagonist vollständige Wahrheit besitzen. Der Spieler erlebt dasselbe epistemische Problem wie die NPCs.
+Das ist keine versteckte Exposition. Es ist eine strukturelle Entscheidung: In einer Welt, in der drei Fraktionen aktiv konkurrierende Wahrheiten produzieren und alle drei zur selben Katastrophe beigetragen haben, kann kein Protagonist vollständige Wahrheit besitzen.
 
 ### Unreliable Memory
 
-Ab Schattenfieber-Stadium II (Wandlung) werden Erinnerungen fragmentarisch. Das Spiel zeigt gelegentlich Szenen anders als beim ersten Erleben — ein Satz, den Hieronymus Vael sagte, klingt plötzlich anders. Ein Detail in Brenns erstem Gespräch fehlt. Das ist keine Continuity-Fehler — es ist eine mechanikvermittelte Erfahrung des Kontrollverlusts.
+Ab Schattenfieber-Stadium II werden Erinnerungen fragmentarisch. Das Spiel zeigt gelegentlich Szenen anders als beim ersten Erleben — ein Satz, den Hieronymus Vael sagte, klingt plötzlich anders. Das ist keine Continuity-Fehler — es ist mechanikvermittelte Erfahrung des Kontrollverlusts.
 
-Der Spieler weiß nicht, welche Version wahr ist. Das ist Absicht.
+### Die Zeitlinie als Erzählschicht
+
+Die Covid-Analogie ist kein Gimmick — sie ist das Erzählgerüst für alle drei Akte:
+- **Akt 1:** Der Spieler versteht den Istzustand. Er lernt, dass das Abnormale normal geworden ist.
+- **Akt 2:** Der Spieler versteht den Prozess. Er sieht, wie die Normalisierung ablief — Entscheidung für Entscheidung, über Jahre.
+- **Akt 3:** Der Spieler entscheidet, ob er diese Normalisierung fortsetzt, ändert, oder bricht.
+
+Das ist die moralische Architektur des Spiels. Nicht: Gut oder Böse. Sondern: Weitermachen oder aufhören.
 
 ### Die Erzählgeschwindigkeit
 
 Akt 1: Langsam. Der Spieler soll Schwarzrand kennenlernen, bevor die Geschichte eskaliert.
-Akt 2: Mittel. Die Informationsdichte steigt. Fraktionskonflikte spitzen sich zu.
-Akt 3: Hoch. Alles läuft auf die Wurzelkammer zu. Der Spieler hat keine Zeit mehr für Ausweichen.
+Akt 2: Mittel. Informationsdichte steigt. Fraktionskonflikte spitzen sich zu.
+Akt 3: Hoch. Alles läuft auf die Ankerkammer zu. Keine Zeit mehr für Ausweichen.
 
-Die Spieler-Fantasie der ersten Stunde (Fremder betritt Sandbox) darf nicht gebrochen werden. Akt 1 muss diese Fantasie leben lassen. Die Geschichte zieht sich erst in Akt 2 eng.
+Die Spieler-Fantasie der ersten Stunde (Fremder betritt Sandbox) darf nicht gebrochen werden. Akt 1 muss diese Fantasie leben lassen.
 
 ---
 
@@ -2787,18 +2968,14 @@ Die Spieler-Fantasie der ersten Stunde (Fremder betritt Sandbox) darf nicht gebr
 
 *Konzeptbild: Stadtschnitt Schwarzrand — die drei vertikalen Schichten (Obere Ränder / Mittelwand / Schlund) bilden den Schauplatz aller drei Akte.*
 
----
-
-<!-- Darius: v2 dieses Kapitels braucht: Namis vollständige Ablehn-Option-Halbseite (Dialog-Optionen, Beat-Ablauf), ausformulierte Quest-Dialoge für mindestens zwei Quests, Leo-Feedback zur Erzählpacing-Logik. Quests 1-3 der Fraktionslinien sind strukturell gesetzt, aber textlich noch Stichpunkte. Das ist bewusst — das ist Namis Terrain. -->
-
-*Versionsstatus: v1 — Vollständige Akt-Struktur, alle drei Fraktionsquests skizziert, drei Nebenquests ausgearbeitet, Ablehn-Option systemisch integriert. Dialog-Ausarbeitung und Nami-Kollaboration folgen in v2.*
+<!-- Darius: v2 vollständig. Zeitlinie der Öffnung als langjährige Anbahnung (Covid-Analogie) durch alle Akte eingewoben. Akt 1 trägt die Logik: Spieler betritt keine Akutkatastrophe, sondern eine Gesellschaft im verwalteten Dauerzustand. Tiervolk-Quest ("Salvatore und die Karawane") aktualisiert: Karawane war ein Frühwarnzeichen der jahrelangen Anbahnung. Autorenvermerke und Nami-Platzhalter bereinigt. -->
 
 \clearpage
 
 # GDD Kapitel 04 — Schlüsselfiguren & NPCs
 
-<!-- Version 2 — Tag 3, Mittwoch -->
-<!-- Änderungen gegenüber v1: "Schwellenanker" als offizieller Relikt-Name gesetzt, Ablehn-Option eingebaut, Autor-Metadaten und Post-It-Verweise in HTML-Kommentare verschoben, Fragment-Szene ausformuliert -->
+<!-- Version 3 — Tag 4, Donnerstag -->
+<!-- Änderungen gegenüber v2: Salva vollständig neu (Symbiose-Kosmologie), Intro-Beat-1 überarbeitet (schleichendes Erkennen statt akute Krise), Cleanup (Autorenerwähnungen raus, Wolf-Checklisten raus), Arbeitshypothese Salva↔Schattenfieber eingebaut -->
 
 ---
 
@@ -2840,11 +3017,21 @@ Er kommt von woanders — woher, das wählt der Spieler bei der Charaktererstell
 
 ### Wer er ist
 
-Hieronymus Vael war Bote. Nicht Krone, nicht Orden, nicht Gilden — er war **freier Bote**, einer der wenigen, die zwischen allen Lagern liefen, weil alle Lager solche Leute brauchen. Er wusste zu viel von zu vielen. Und er hat etwas transportiert, das er nicht hätte transportieren sollen: die Scherbe des Schwellenankers. Jetzt stirbt er daran. Stufe 3 des Schattenfiebers — die Schwelle — und er weiß, dass er nicht zurückkommt.
+Hieronymus Vael war Bote. Nicht Krone, nicht Orden, nicht Gilden — er war **freier Bote**, einer der wenigen, die zwischen allen Lagern liefen, weil alle Lager solche Leute brauchen. Er wusste zu viel von zu vielen. Und er hat etwas transportiert, das er nicht hätte transportieren sollen: die Scherbe des Schwellenankers. Jetzt stirbt er daran.
 
 Er ist ca. fünfzig Jahre alt, sieht achtzig aus. Die Haut an seinen Händen ist dünn geworden wie Papier, darunter laufen Muster, die aussehen wie tinte-eingeschriebene Adern, aber dunkler. Er riecht nach Erde. Sein Atem geht in kurzen Stößen.
 
 Er liegt am Stadtrand, im Gras zwischen zwei ausrangierten Karrengeleisen. Es ist früher Morgen. Nebel. Er hat sich hierhin geschleppt, weil er wusste: die Stadt war nicht sicher. Nicht mit dem, was er trägt.
+
+### Der schleichende Beginn — Covid-Analogie
+
+Hieronymus Vael ist nicht heute Nacht krank geworden.
+
+Das ist der erste und wichtigste Unterschied zu dem, was der Spieler instinktiv erwartet. Vael zeigt seit Monaten Symptome — zunächst das Flimmern an den Rändern des Sichtfelds, dann der veränderte Geruchssinn, dann die langsam dunkler werdenden Adern an den Schläfen. Die Stadtbevölkerung kennt diese Progression. Sie haben sie bei anderen gesehen. Es gibt keinen Moment, in dem jemand sagt: *"Das Schattenfieber ist ausgebrochen."* Es gibt nur den Moment, in dem jemand sagt: *"Er sieht schlimmer aus als letzte Woche."*
+
+Für den Fremden ist das die erste Lektion über Schwarzrand: Die Bedrohung kündigt sich an. Die Menschen haben gelernt, die Ankündigung zu ignorieren, weil sie nicht aufhören wollen zu leben.
+
+Vael liegt nicht hier, weil er heute Nacht kollabiert ist. Er liegt hier, weil er noch einen letzten Auftrag hatte, der ihn außerhalb der Stadt führte, und nicht mehr die Kraft aufgebracht hat zurückzukehren. Er ist einfach stehengeblieben. Irgendwann. Und dann hat das Gras ihn aufgenommen.
 
 ### Was er vom Fremden will
 
@@ -2883,8 +3070,6 @@ Hieronymus stirbt in den ersten zwanzig Minuten. Aber: Wenn der Spieler im spät
 ---
 
 ## 4.3 Die Ablehn-Option — Wenn der Spieler das Fragment verweigert
-
-<!-- Neu in v2 — eingebaut nach CD-Entscheid: Spieler DARF ablehnen -->
 
 Dies ist kein Nebenpfad. Es ist eine vollwertige Möglichkeit mit eigener narrativer Logik.
 
@@ -2968,7 +3153,7 @@ Sie fragt viele Gegenfragen. Nicht als Verhörtaktik, sondern weil sie keine Ent
 
 #### Dramatischer Wendepunkt
 
-Brenn erfährt, was der Schwellenanker wirklich ist — ein Schwellen-Stabilisator, der die Grenze in der Gleichgewicht hält. Wenn sie das versteht, zieht sie sofort die politische Konsequenz: Wenn der Schwellenanker die Schwelle stabilisiert, und die Schwelle ist das, was das Schattenfieber kontrolliert, dann ist der Schwellenanker eine Waffe. Eine, die die Krone besitzen muss. Nicht aus Bosheit. Aus militärischer Logik. Das ist der Moment, in dem sie aufhört, eine Verbündete zu sein und anfängt, ein Hindernis zu werden — ohne dass sie sich verändert hat.
+Brenn erfährt, was der Schwellenanker wirklich ist — ein Schwellen-Stabilisator, der die Grenze im Gleichgewicht hält. Wenn sie das versteht, zieht sie sofort die politische Konsequenz: Wenn der Schwellenanker die Schwelle stabilisiert, und die Schwelle ist das, was das Schattenfieber kontrolliert, dann ist der Schwellenanker eine Waffe. Eine, die die Krone besitzen muss. Nicht aus Bosheit. Aus militärischer Logik. Das ist der Moment, in dem sie aufhört, eine Verbündete zu sein und anfängt, ein Hindernis zu werden — ohne dass sie sich verändert hat.
 
 ---
 
@@ -3062,25 +3247,36 @@ Der Spieler entdeckt das Destillationsarchiv. Das ist Kasts Point of No Return �
 
 ---
 
-## 4.5 Tiervolk — Salva
+## 4.5 Die Reisenden — Salva
 
-**Funktion:** Informationsbroker, Händler, Verbindung zur Unterstadt und zu Netzwerken außerhalb der Fraktionen
+**Funktion:** Informationsbroker, Verbindung zur Unterstadt und zu Netzwerken außerhalb der Fraktionen, vierte Kosmologie
 
-<!-- Tiervolk-Eigenname für Salva ist noch Platzhalter — wartet auf Namenssystem-Input -->
+<!-- Tiervolk-Eigenname für Salva: noch Platzhalter — Namenssystem-Input von Emre ausstehend -->
+<!-- Arbeitshypothese Salva↔Schattenfieber eingebaut — Emre muss das kosmologisch bestätigen oder korrigieren -->
 
-### Eine Vorbemerkung zum Tiervolk
+### Was das Tiervolk wirklich ist — Kosmologische Grundlage
 
-Das Tiervolk ist kein Volk. "Tiervolk" ist ein abwertender Begriff der Stadtbevölkerung für eine lose Gemeinschaft von Händlern und Informationsmaklern, die teilweise Merkmale aufweisen, die die Stadtbevölkerung als "tierisch" bezeichnet: Schuppenhaut, längere Gliedmaßen, Pupillen in anderen Formen, Geruchswahrnehmung, die über menschliche Norm geht. Das ist kein übernatürliches Merkmal. Es ist eine Anpassung — Generationen von Exposition an bestimmte Materialien und Umgebungen in bestimmten Regionen, deren Genaues nicht bekannt ist.
+"Tiervolk" ist ein Stadtbegriff. Abwertend, ungenau, und falsch in der Grundannahme: Es beschreibt keine ethnische Gruppe, keine biologisch angepasste Population. Es beschreibt etwas grundlegend Anderes.
+
+Die Wesen, die man als "Tiervolk" bezeichnet, sind **kosmologisch fremde Entitäten in dauerhafter, irreversibler Symbiose mit einem Tier der Stoffwelt.** Das fremde Wesen — was es vor der Symbiose ist, woher es kommt, ob es in der Schwelle existierte oder aus einer dritten Ebene stammt, ist ungeklärt — hat sich mit einem Tier als Anker in der Materie verbunden. Das Tier ist der Materialanker: Es gibt dem Fremden einen Körper, eine Form, eine Verwurzelung in der Stoffwelt. Das Fremde gibt dem Tier ein Bewusstsein, das über Tierinstinkt hinausgeht — aber auch über menschliche Kategorien.
+
+Die Symbiose ist nicht Fusion. Die beiden Teile bleiben unterscheidbar — aber untrennbar. Wer versucht, die Symbiose zu trennen, tötet beide. Kein Orden-Experiment, kein Gildenmittel hat je eine Trennung überlebt. Die Symbiose ist so dauerhaft wie eine Narbe: Sie verändert die Form und lässt sich nicht rückgängig machen.
+
+Das Ergebnis ist kein Mensch mit Tiermerkmalen. Es ist ein Wesen, das eine eigene ontologische Kategorie besetzt — zwischen Stoff und Kosmologischem, zwischen Tier und etwas, für das die Stadtsprache kein Wort hat.
 
 Sie nennen sich intern "die Reisenden." Das Wort Tiervolk benutzen sie für sich selbst nicht. Wer es ihnen gegenüber benutzt, bekommt höflich einen doppelten Preis.
 
-Die Reisenden verkaufen, was andere nicht verkaufen, wissen, was andere nicht wissen, und bewegen sich in Räumen, die für die drei Fraktionen unsichtbar sind.
-
 ### Wer Salva ist
+
+Salva trägt einen Habicht.
+
+Nicht in der Hand, nicht auf der Schulter — im Körper. Das ist die ungenaueste und gleichzeitig präziseste Art, es zu formulieren. Der Habicht war einmal ein Habicht. Er hat sich verändert. Er lebt noch — daran besteht kein Zweifel — aber er lebt in Salva und Salva lebt in ihm, und die Grenze zwischen beiden ist so durchlässig geworden, dass Salvas Pupillen sich bei Gefahr weiten wie die eines Raubvogels, seine Hörwahrnehmung in einem Frequenzband liegt, das Menschen nicht erreichen, und seine Orientierung im Raum — im Dunkeln, in engen Gassen, im Gewirr des Schlunds — so präzise ist, dass die Schlundbewohner sagen, er sehe mit Augen, die nicht in seinem Gesicht sitzen.
 
 Salva ist zwischen dreißig und fünfzig — das ist schwer zu sagen, und er gibt keine Auskunft darüber. Er ist Informationsbroker und Kontaktvermittler. Er hat keine Gilde-Mitgliedschaft, keine Kronen-Akkreditierung, keinen Ordensstatus. Er hat ein Netz aus Kontakten, das alle drei Fraktionen umspannt — ohne dass irgendjemand von den anderen weiß, dass er auch für sie arbeitet.
 
-Er hat schuppige Haut um die Schläfen und Handgelenke, einen länglichen Hals, Pupillen, die sich im Dunkeln weiten wie die eines Katers. Er trägt immer etwas Gestohlenes aus der Oberschicht — eine Faser Brokatseide als Tuchstreifen, eine einzelne Lapislazuli-Applikation an seiner Jacke. Das ist keine Zurschaustellung. Das ist Kompass: wo der Wert ist, war Salva zuerst.
+**Körperliche Erscheinung:** Salva sieht auf den ersten Blick unremarkabel aus — mittelgroß, mitteldunkel, das Gesicht in einer Neutralität, die bewusst gepflegt ist. Aber beim zweiten Blick stimmt etwas nicht. Die Schulterstruktur ist ungewöhnlich, als würde sie sich beim Gehen leicht anders verschieben als bei einem Menschen. Die Haut um Schläfen und Hals hat eine Textur, die schwer zu benennen ist — nicht Schuppen, nicht Narben, eher eine Art feines Gefiederrelief, das im Licht schimmert, wenn er sich bewegt. Seine Augen sind amber. Die Pupillen sind rund — außer in bestimmten Momenten.
+
+Er trägt immer etwas Gestohlenes aus der Oberschicht — eine Faser Brokatseide als Tuchstreifen, eine einzelne Lapislazuli-Applikation an seiner Jacke. Das ist keine Zurschaustellung. Das ist Kompass: wo der Wert ist, war Salva zuerst.
 
 ### Was er vom Fremden will
 
@@ -3088,9 +3284,23 @@ Explizit: Einen Kunden, der zahlt. Der Fremde ist neu, schuldet niemandem etwas,
 
 Versteckt: Schutz. Salva ist in einer gefährlichen Position. Alle drei Fraktionen dulden die Reisenden, weil sie nützlich sind — aber "dulden" ist kein Status, der anhält. Der Fremde, der keine Fraktion hat, ist vorübergehend unberührbar. Das ist nützlich.
 
+Noch tiefer versteckt: Salva weiß, was das Fragment ist. Nicht intellektuell — er hat keine Bücher gelesen, keine Archivtexte überprüft. Aber das kosmologisch Fremde in ihm empfängt etwas, wenn der Schwellenanker in der Nähe ist. Eine Art Resonanz. Er hat keine Worte dafür außer denen, die die Reisenden unter sich benutzen: *es ruft nicht, aber es ist nicht still.* Er will wissen, was das bedeutet, ohne zugeben zu müssen, dass er es empfindet.
+
 ### Was er nie zugeben würde
 
-Dass er den Schwellenanker schon einmal gesehen hat. Nicht dieses spezifische Fragment — aber etwas Ähnliches, vor Jahren, in einer Handelsroute weit südlich der Stadt. Es kam mit einer Karawane, und die Karawane kam nicht an. Er war das einzige Überlebende. Er hat nie darüber gesprochen, weil er keine Erklärung hat, die nicht verrückt klingt.
+Dass er den Schwellenanker schon einmal "gehört" hat. Nicht gesehen, nicht berührt — gehört, in dem Sinn, in dem das Fremde in ihm auf bestimmte Schwellenphänomene reagiert. Vor Jahren, auf einer Handelsroute weit südlich der Stadt. Eine Karawane. Er war das einzige Überlebende. Er hat nie darüber gesprochen, weil er keine Erklärung hat, die nicht verrückt klingt.
+
+Und: er weiß nicht, ob er der Fremde ist, der einen Habicht trägt — oder der Habicht, der einen Menschen trägt. Diese Frage wacht er manchmal mit auf.
+
+### Arbeitshypothese: Salva und das Schattenfieber
+
+<!-- Offene Frage an Emre: Bestätigung oder Korrektur dieser Arbeitshypothese wird für v4 benötigt -->
+
+Das kosmologisch Fremde in Salva ist **nicht dasselbe** wie das Schwellensubstrat, das das Schattenfieber verursacht. Es ist eine andere Art von kosmologischer Entität. Das Schwellensubstrat ist blind — es reagiert auf organisches Gewebe ohne Bewusstsein, ohne Absicht, ohne Signal. Das Fremde in Salva ist etwas anderes: es *wählt*. Es hat gewählt. Die Symbiose war keine Infektion, sie war eine Begegnung.
+
+Die praktische Konsequenz für Salva: Das Schattenfieber wirkt auf ihn anders. Nicht Immunität — er kann erkranken, er ist anfällig, seine Körperwirtschaft unterscheidet sich nicht grundlegend von der eines Menschen. Aber die Wahrnehmung der Exposition ist fundamental verschieden. Wo ein Mensch mit Stufe-1-Schattenfieber Verwirrung und Desorientierung erfährt, nimmt Salva etwas wie *Bedeutung* wahr. Nicht Sprache. Nicht Inhalt. Aber Struktur. Als würde das Schwellensubstrat ein Muster tragen, das er erkennt, ohne es lesen zu können.
+
+Das ist die Basis seiner "vierten Kosmologie": Das Schattenfieber ist Kommunikation. Er sagt das nicht oft, und er sagt es nicht laut. Aber wenn er es sagt, meint er es wörtlich — nicht als Metapher, nicht als Philosophie, sondern als Bericht über etwas, das er tatsächlich empfängt.
 
 ### Seine Stimme
 
@@ -3098,31 +3308,39 @@ Salva redet in Konjunktiven. "Man könnte sagen." "Es wäre denkbar, dass." Er m
 
 Er macht manchmal eine lange Pause mitten in einem Satz. Nicht für Dramatik — er hört gerade etwas, das andere nicht hören.
 
+Salva lacht selten. Wenn er lacht, ist es das kürzeste Geräusch der Welt — ein einziger scharfer Atemzug durch die Nase. Das ist sein Habicht.
+
 **Charakteristischer Satz:**
 
 > "Was Sie in der Hand halten, hat drei verschiedene Preisschilder — je nachdem, wen Sie fragen. Ich rate Ihnen, nicht alle drei zu fragen. Nicht gleichzeitig."
+
+Und, wenn der Spieler ihn direkt nach seiner Natur befragt:
+
+> "Es gibt eine Frage, die ich nicht beantworte. Nicht weil ich sie nicht kenne. Sondern weil die Antwort für Sie keine Verwendung hat, und ich keine Energie habe, etwas zu erklären, das Sie ohnehin nicht glauben würden."
 
 ### Spielerrelevanz
 
 - Salva ist der NPC, der dem Fremden am frühesten erklärt, wie die Stadt *wirklich* funktioniert — nicht die offizielle Version.
 - Er ist kein Quest-Geber. Er ist ein **Kontext-Lieferant**. Die Informationen, die er verkauft, verändern nicht den Verlauf von Quests, sondern wie der Spieler sie versteht.
 - Er reagiert auf Fraktionswahl: Wenn der Spieler einer Fraktion beitritt, wird Salva vorsichtiger. Nicht feindlich — vorsichtiger.
-- **Schattenfieber-Status:** Salva hat Exposition — nicht Krankheit, aber Nähe. Die Reisenden, die in bestimmten Unterstadt-Bereichen handeln, kommen regelmäßig in Kontakt mit Schwellenbereichen.
+- **Schattenfieber-Status:** Salva hat eine Schattenfieber-Exposition, die er weder als Stufe 1 noch als Stufe 2 einordnen würde. Er ist exponiert. Er interpretiert das anders als Krankheit.
 - Er ist der einzige NPC, der den Fremden beim ersten Treffen beim korrekten Namen nennt — obwohl der Fremde ihn ihm nicht gesagt hat. Das ist ein Rätsel, das das Spiel nicht auflöst.
 
-**Ablehn-Option-Variante:** Wenn der Spieler das Fragment nicht genommen hat, weiß Salva es — er war dort. Im Hintergrund, unsichtbar. "Ich habe gesehen, was Sie getan haben. Das war ungewöhnlich." Er verlangt nichts dafür. Noch nicht.
+**Ablehn-Option-Variante:** Wenn der Spieler das Fragment nicht genommen hat, weiß Salva es — er war dort. Im Hintergrund, unsichtbar. *"Ich habe gesehen, was Sie getan haben. Das war ungewöhnlich."* Er verlangt nichts dafür. Noch nicht.
 
 ### Dramatischer Wendepunkt
 
-Salva verschwindet für eine längere Spielperiode. Wenn er zurückkommt, sieht er verändert aus — nicht dramatisch, aber die Schuppenhaut hat sich ausgebreitet, sein Geruch ist anders. Er spricht nicht darüber. Wenn der Spieler fragt, sagt er: "Das ist irrelevant. Was ich gefunden habe, ist das Gegenteil."
+Salva verschwindet für eine längere Spielperiode. Wenn er zurückkommt, hat sich etwas verändert — nicht die Schuppenhaut-Ausdehnung der alten Version, sondern etwas Subtileres: Das Fremde in ihm ist präsenter geworden. Seine Pausen werden länger. Er antwortet manchmal auf Sätze, die noch nicht zu Ende gesprochen wurden. Er riecht das Schattenfieber an Menschen, bevor sie selbst es bemerken.
 
-Was er gefunden hat: den Ursprungsort des Fragments. Er gibt diese Information gegen einen sehr hohen Preis weiter.
+Er erklärt das nicht. Wenn der Spieler fragt, sagt er: *"Das ist irrelevant. Was ich gefunden habe, ist das Gegenteil."*
+
+Was er gefunden hat: Den Ursprungsort des Fragments — und etwas, das er nicht erwartet hat. Der Schwellenanker resoniert mit dem Fremden in ihm. Nicht als Gefahr. Als Verwandtes. Das verändert alles, was er bisher über die Reisenden-Kosmologie geglaubt hat. Er gibt diese Information gegen einen sehr hohen Preis weiter — nicht aus Geldgier, sondern weil er sicherstellen will, dass der Spieler weiß, wie ernst das ist.
 
 ---
 
 ## 4.6 Fraktionskosmologien — Narrative Grundlage
 
-<!-- Dieser Abschnitt wurde von den WBB-Ethos-Notizen in das GDD überführt, da er die NPC-Stimmen direkt bedingt -->
+<!-- Dieser Abschnitt begründet die NPC-Stimmen und die dramatischen Wendepunkte direkt -->
 
 ### Die drei Schöpfungserzählungen als Unreliable Narrators auf Weltebene
 
@@ -3138,11 +3356,15 @@ Die Gilden haben eine **Gründungschronik**: Wissen ist Arbeit. Material ist Wis
 
 **Was die Gilden nicht sagen:** Die Destillationsversuche der Glasmacher haben etwas Reproduzierbares ergeben. Ein Extrakt. Er stabilisiert Schattenfieber-Opfer in Stufe 1 — kurz. Danach beschleunigt er die Progression dramatisch. Die Gilden haben diese Information als nicht-brauchbar klassifiziert. Nicht als gefährlich. Als nicht-brauchbar.
 
-### Das Tiervolk — eine vierte Kosmologie
+### Die Reisenden — eine vierte Kosmologie
 
-Die Reisenden glauben, dass das Schattenfieber kein Durchsickern ist. Es ist eine **Kommunikation**. Etwas jenseits der Schwelle kommuniziert. Das, was wir Schattenfieber nennen, sind die Empfänger dieser Kommunikation — Körper, die versuchen, in einer Sprache zu antworten, die sie nicht sprechen können.
+Die Reisenden glauben nicht, was andere glauben — und zwar nicht aus Philosophie, sondern aus direkt zugänglicher Erfahrung. Das kosmologisch Fremde in ihnen *empfängt*.
 
-Kein NPC im Spiel bestätigt das. Kein Text widerlegt es.
+Was sie über Generationen akkumuliert haben: Das Schattenfieber ist keine Krankheit und keine Strafe und keine Ressource. Es ist **Signal**. Etwas jenseits der Schwelle kommuniziert — in einer Sprache, die organische Körper empfangen können, aber nicht verstehen. Das Schattenfieber ist die Übersetzungsstörung, nicht die Botschaft selbst.
+
+Das hat praktische Konsequenzen. Wer ein Signal empfängt, wird nicht notwendigerweise krank — die Progression hängt davon ab, ob der Körper versucht, zu *antworten*. Die Reisenden haben Praktiken entwickelt, die die Expositionsprogression verlangsamen. Warum das funktioniert, wissen sie nicht. Wie es funktioniert, geben sie nicht weiter.
+
+Kein NPC des Spiels bestätigt diese Kosmologie. Kein Text widerlegt sie.
 
 ---
 
@@ -3151,18 +3373,16 @@ Kein NPC im Spiel bestätigt das. Kein Text widerlegt es.
 ### Intro-Quest: "Was er in der Hand hielt"
 
 **Trigger:** Spieler betritt die Spielwelt. Früher Morgen, Stadtrand von Schwarzrand, Nebel.
-**Einstieg:** Hieronymus Vael stirbt. Übergabe der Scherbe des Schwellenankers. Drei Boten erscheinen innerhalb von Minuten.
+**Einstieg:** Hieronymus Vael stirbt. Die Übergabe der Scherbe. Drei Boten erscheinen.
 **Erste Entscheidung:** Zu welchem Boten geht der Spieler zuerst?
 
 Dies ist keine Moral-Entscheidung. Der Spieler kennt die Fraktionen noch nicht. Er geht zu dem Boten, dessen Angebot sich zuerst richtig anfühlt. Die Welt merkt es sich.
 
 **Struktur:**
 
-- Beat 1 — Hieronymus. Die Übergabe der Schwellenanker-Scherbe. Das Rauschen beginnt (Schattenfieber Stufe 1, kaum wahrnehmbar).
-- Beat 2 — Die drei Boten. Kurze Kontakte. Keine Entscheidung nötig — alle drei geben Adressen. Aber wer der erste Besuch ist, prägt die Eröffnungssequenz.
-- Beat 3 — Erste Adresse. Der Spieler betritt die Stadt zum ersten Mal richtig. Er bemerkt die Schichtung. Er hat keine Ahnung, wo er steht.
-
-**Clip-Moment:** Die Fragment-Übergabe. Hieronymus' letzter Satz. Das erste Rauschen — eine Sekunde lang sind die Schatten nicht dort, wo sie sein sollten.
+- **Beat 1 — Hieronymus.** Der Spieler findet den Sterbenden. Nicht durch einen Pfeil, nicht durch einen Marker — durch Geräusch, durch Schatten. Vael liegt nicht in einem dramatischen Kollaps. Er liegt einfach da, als wäre das der logische Abschluss von etwas, das vor Monaten begonnen hat. Das schleichende Erkennen: *Das Schattenfieber sieht so aus.* Es sieht aus wie ein Mensch, der aufgehört hat, sich dagegen zu wehren.
+- **Beat 2 — Die Scherbe.** Vael spricht. Kurz, erschöpft, klar. Die Übergabe. Spieler entscheidet: Nehmen oder ablehnen. Clip-Moment: die Schatten stimmen für eine Sekunde nicht.
+- **Beat 3 — Erste Adresse.** Der Spieler betritt die Stadt zum ersten Mal richtig. Er bemerkt die Schichtung. Er hat keine Ahnung, wo er steht.
 
 **Ablehn-Variante:**
 
@@ -3183,31 +3403,33 @@ Diese Frage wird nie direkt beantwortet. Das ist keine Schwäche der Story, das 
 
 **Act 2 — Das Muster:** Die Scherbe ist nicht einzigartig. Es gibt andere. Hinweise darauf, dass der Schwellenanker in Stücke zerbrochen wurde — wann, durch wen, warum. Die Fraktionen haben unterschiedliche Stücke. Oder wissen, wo die anderen sind. Der Spieler navigiert ein Netz aus Halbwahrheiten.
 
-**Act 3 — Die Schwelle:** Der Spieler erreicht den Ursprungsort — die Wurzelkammer in den Tiefen von Schwarzrand. Was er dort findet, hängt von seinen Entscheidungen ab. Der Schwellenanker stabilisiert die Schwelle. Wenn er zerstört wird, öffnet sich die Schwelle weiter. Wenn er erhalten wird, bleibt das Schattenfieber kontrollierbar — aber nichts ändert sich an den Bedingungen, unter denen die Stadt die Schwächsten behandelt.
+**Act 3 — Die Schwelle:** Der Spieler erreicht den Ursprungsort — die Ankerkammer in den Tiefen von Schwarzrand. Was er dort findet, hängt von seinen Entscheidungen ab. Der Schwellenanker stabilisiert die Schwelle. Wenn er zerstört wird, öffnet sich die Schwelle weiter. Wenn er erhalten wird, bleibt das Schattenfieber kontrollierbar — aber nichts ändert sich an den Bedingungen, unter denen die Stadt die Schwächsten behandelt.
 
-**Endkonsequenzen (drei Hauptäste, keine eindeutige "richtige" Entscheidung):**
+**Endkonsequenzen (drei Hauptäste):**
 
 1. Den Schwellenanker der Krone übergeben. Die Schwelle bleibt stabil. Die Krone kontrolliert das Schattenfieber militärisch. Die Stadt überlebt. Die untersten Schichten bleiben, wo sie sind.
 2. Den Schwellenanker dem Orden übergeben. Die Schwelle wird durch Ordenswissen verwaltet. Das Schattenfieber wird zur Theologie. Wer nicht unter Ordensdeutungshoheit lebt, ist ungeschützt.
-3. Den Schwellenanker niemandem geben. Die Schwelle öffnet sich weiter. Das Schattenfieber eskaliert. Aber etwas kommt durch — und was durchkommt, ist nicht nur Krankheit.
+3. Den Schwellenanker niemandem geben. Die Schwelle öffnet sich weiter. Das Schattenfieber eskaliert. Aber etwas kommt durch — und was durchkommt, ist nicht nur Krankheit. Es ist das, wovon die Reisenden immer gesprochen haben.
 
 ---
 
 ## 4.8 Noch offen
 
-<!-- Offene Punkte für interne Koordination -->
+<!-- Offene Punkte für Koordination -->
 
-- **Fragment-Szene (ausformuliert):** Halbe Seite für Finn/Leo — in diesem Dokument als Beat 1 in Abschnitt 4.7 skizziert. Ausformulierte Sequenz folgt als eigenständiges Szenarien-Dokument.
-- **Nebenquest-Ausarbeitung:** "Der Zeuge" (alter Mann in den Slums) und zwei weitere Ideen folgen in v3.
-- **Tiervolk-Eigenname für Salva:** Platzhalter — Namenssystem-Input noch ausstehend.
-- **Düsterkeit der Intro-Szene:** CD-Entscheid noch offen. Tonalität der Sterbeszene (kurz/ausgedehnt) beeinflusst Beat 1.
+- **Tiervolk-Eigenname für Salva:** Platzhalter — Namenssystem-Input von Emre ausstehend.
+- **Salva↔Schattenfieber-Verhältnis:** Arbeitshypothese formuliert (Abschnitt 4.5) — Emre muss kosmologisch bestätigen oder korrigieren.
+- **Habicht als Anker-Tier:** Vorschlag — kann geändert werden, wenn Emres Kosmologie-Entwicklung eine andere Tierart nahelegt.
+- **Düsterkeit der Intro-Szene:** CD-Entscheid noch offen. Beat-1-Tonalität (kurz/ausgedehnt) beeinflusst die Sterbeszene.
+- **Vera-Anfrage:** Salva-Figuren-Briefing für Konzeptbild liegt bereit — Übergabe sobald Habicht-Entscheid gesetzt.
 
 \clearpage
 
 # GDD Kapitel 05 — Visuelle Designsprache & Art Direction
 
-<!-- Vera: v1 | Tag 3, Mittwoch | Konzept Art + Art Direction -->
-<!-- Status: Erster Entwurf — vollständige Struktur, alle Abschnitte besetzt. Bilder aus Tag 2 und Tag 3 eingebettet. -->
+<!-- Vera: v2 | Tag 4, Donnerstag | Konzept Art + Art Direction -->
+<!-- Status: v2 — Tiervolk-Design-Prinzipien ergänzt (5.4.2), neue Bilder eingebettet (Tiervolk, Kanalzone v3, Relikt-Hero v2). Hero-Shot-Problem gelöst: Relikt-Hero v2 zeigt korrekte geologisch-organische Form. -->
+<!-- Änderungen gegenüber v1: Kap 5.4.2 Tiervolk vollständig neu (war Platzhalter), Stadtschnitt aktualisiert auf Kanalzone v3, Relikt-Hero aktualisiert auf v2. -->
 
 ---
 
@@ -3261,7 +3483,7 @@ Die Krone kontrolliert Militär und Tradition. Ihre Materialsprache ist Einschü
 
 ![Krone — Materialpalette: Titanrüstung, Obsidian-Intarsien, Blutrot-Signet, Damaszener-Stahl](../concepts/day02-vera/factions/fraktion-krone-materialpalette_seedream-4-5.png)
 
-<!-- Vera: Krone-Palette freigegeben vom CD. Weißer Hintergrund statt Schwarz (Prompt-Drift), aber Materiallesbarkeit und Akzentfarbe sitzen. Für v0.2 Iteration: Hintergrund auf Schwarzstein anpassen. -->
+<!-- Vera: Krone-Palette freigegeben vom CD. Weißer Hintergrund statt Schwarz (Prompt-Drift), aber Materiallesbarkeit und Akzentfarbe sitzen. Für v0.3 Iteration: Hintergrund auf Schwarzstein anpassen. -->
 
 **Architektur der Krone:**
 - Massives Gestein — Stampflehm und Kalkstein in brutalisierten Blöcken
@@ -3288,7 +3510,7 @@ Der Orden kontrolliert Bildung und Inquisition. Seine Materialsprache ist Reinhe
 
 ![Orden — Materialpalette: Weißes Leinengewand, Kristalllinse, Vellum-Manuskript, grüne Alchemiephiole](../concepts/day02-vera/factions/fraktion-orden-materialpalette_seedream-4-5.png)
 
-<!-- Vera: Orden-Palette freigegeben. Das Kreuz-Symbol auf dem Gewand: Modell hat ein christliches Kreuz ergänzt, das nicht gebrieeft war. Lore-Frage an Emre/Nami: Hat der Orden ein Kreuz-Symbol, oder ein anderes Signet? Für v0.2 Iteration klären und Prompt entsprechend anpassen. -->
+<!-- Vera: Orden-Palette freigegeben. Das Kreuz-Symbol: Lore-Frage an Emre/Nami noch offen. Für v0.3: Klärung abwarten, dann Prompt anpassen. -->
 
 **Architektur des Ordens:**
 - Romanische Elemente: Rundbögen, dicke Mauern, Krypta-Gewölbe
@@ -3316,7 +3538,7 @@ Die Gilden kontrollieren Produktion und Handel. Ihre Materialsprache ist akkumul
 
 ![Gilden — Materialpalette: Indigoseide, Malachit-Anhänger, Bernsteinkette, Bronzewerkzeug, Sattlerleder](../concepts/day03-vera/factions/fraktion-gilden-materialpalette-v2_nano-banana-2.png)
 
-<!-- Vera: Gilden-Palette v2 — kein Text mehr. Nano Banana 2 hat die Materialzusammenstellung sehr gut getroffen: Erdtöne dominant, Malachit und Bernstein als Farbakzente, Bronzehammer als Würdezeichen. Für v0.2: Kontraktbogen mit Wachssiegel expliziter machen (Gilden als Vertragsrechts-Akteur). -->
+<!-- Vera: Gilden-Palette v2 — kein Text mehr. Für v0.3: Kontraktbogen mit Wachssiegel expliziter machen (Gilden als Vertragsrechts-Akteur). -->
 
 **Architektur der Gilden:**
 - Bauhaus-Inspiration: klare Linien, Funktionalität als Ästhetik
@@ -3333,9 +3555,9 @@ Die Gilden kontrollieren Produktion und Handel. Ihre Materialsprache ist akkumul
 
 Schwarzrand ist eine gerichtete Stadt. Sie orientiert sich zur Schwelle hin — die Architektur schwillt, lehnt und greift in Richtung des Abgrunds. Das ist kein Fehler der Stadtplanung. Es ist die physische Manifestation einer Zivilisation, die ihre Existenz auf einer kosmologischen Dünnstelle errichtet hat.
 
-![Schwarzrand — Stadtschnitt: Vier Schichten in diagonaler Tiefenperspektive](../concepts/day03-vera/environments/stadtschnitt-schwarzrand-v2_gpt-image-1-5.png)
+![Schwarzrand — Kanalzone: Marktquai am Kanal, vertikale Stadtschichten im Hintergrund](../concepts/day04-vera/environments/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png)
 
-<!-- Vera: Stadtschnitt v2 — schräge Tiefenperspektive statt frontaler Querschnitt. Das Schwarzrand-Richtungskonzept (alles zeigt zur Schwelle) kommt jetzt durch. Dramatischer als v1. Für WBB Kap 2 (Topos): dieses Bild direkt einbetten als Orientierungsbild für die geographische Beschreibung. Tobi: bitte bei UE5-Aufbau als Referenz nutzen — die diagonale Orientierung ist kein Zufall. -->
+<!-- Vera: Stadtschnitt v3 — Kanalzone-Perspektive statt Querschnitt. Das Marktleben ist jetzt der Vordergrund, die vertikale Stadtstruktur ist im Hintergrund präsent aber nicht dominierend. Entspricht dem CD-Feedback: weniger vertikal, mehr Environment-Kontext. Für WBB Kap 2 (Topos): dieses Bild direkt einbetten als atmosphärische Einleitung der geographischen Beschreibung. Die Kanalzone als Einstiegspunkt ist zugänglicher als der abstrakte Querschnitt. -->
 
 ### Schicht 1 — Slums (Untergrund, Schwellenähe)
 
@@ -3356,6 +3578,7 @@ Historisches Herzstück: fränkische Fachwerkhäuser über romanischen Kellergew
 - **Licht:** Kleine Fenster mit einfachen Glasscheiben (Buntglas nur in Zunfthäusern). Laternen mit Tiertalg.
 - **Atmosphäre:** Laut, eng, lebendig. Märktreiben, Werkstattlärm, Stiefelgeräusch auf Kopfsteinpflaster.
 - **Hybridzonen:** An den Rändern zu Schicht 3 — Edelstahlbeschläge am Fachwerk, Bauhaus-Fensterrahmen in romanischen Bögen. Die Mittelschicht will aufsteigen und zeigt es.
+- **Kanalzone:** Der Kanal schneidet durch Schicht 2 — Handelsader und Geruchskanal zugleich. Quais als informeller Markt.
 
 **Designregel:** Hier ist die meiste spielerische Zeit. Lesbar, lebendig, nicht monoton — jede Gasse hat eine andere Gilde, jede Fassade ist ein anderer Zunftcharakter.
 
@@ -3386,7 +3609,7 @@ Das absolute Oben. Hier endet die Hierarchie.
 
 ## 5.4 Charakter-Design-Prinzipien
 
-### Hauptprinzip: Comme des Garçons trifft mittelalterliche Rüstung
+### 5.4.1 Hauptprinzip: Comme des Garçons trifft mittelalterliche Rüstung
 
 Silhouetten sind tailored, körperbetont, geschichtet. Kein Übergewicht an Schmuck. Jedes Detail hat Funktion.
 
@@ -3407,14 +3630,63 @@ Silhouetten sind tailored, körperbetont, geschichtet. Kein Übergewicht an Schm
 
 **Asymmetrie als Prinzip:** Avant-garde Silhouetten — kein symmetrisches Mittelalterkostüm. Eine Schulter breiter. Eine Seite Kettenhemd, andere Seite Platte. Das ist das "High Fashion"-Signal.
 
-### Tiervolk
+---
 
-Händler und Diebe. Leicht alien vs. menschlich clean. Nicht tribal.
+### 5.4.2 Das Tiervolk — Design-Prinzipien
 
-- Federleichte Materialien — Chitin-Applikationen, Beinlamellen aus natürlichen Quellen
-- Farben: Nicht die Fraktionspaletten. Eigenständige Erdtöne — sandigeres Braun, gedämpftes Ochre.
-- Silhouetten: Schlanker, beweglicher — Diebe-Ästhetik. Kein Plattenrüstungsgewicht.
-- Keine Stammesornamentik — der Fehler, der sich von "alien" trennt.
+Das Tiervolk lebt in dauerhafter kosmologischer Symbiose. Das bedeutet: das Tier ist erkennbar — es ist ein Fuchs, ein Marder, ein Rabe — aber es trägt etwas in sich, das nicht hineingehört. Die Fremdheit ist nie theatralisch. Sie ist subtil und präzise.
+
+**Das Kernprinzip: Subtile anatomische Verschiebung**
+
+Das Tiervolk ist NICHT monströs. Es ist leicht falsch. Der visuelle Unterschied zu einem "normalen" anthropomorphen Tier liegt in Details, die den Spieler verunsichern ohne ihn zu erschrecken:
+
+- **Augen:** Pupillen stimmen nicht — vertikal geschlitzt wie eine Katze, oder horizontal wie ein Ziege, oder ohne sichtbare Pupille mit einer internen Tiefe, als wäre das Licht im Auge gefangen
+- **Fell/Federstruktur:** Wächst an Nacken und Schultern gegen den Strich. Erzeugt Konter-Wirbelmuster. Bei Vögeln: sekundäres geometrisches Muster unter der natürlichen Federanordnung sichtbar
+- **Proportionen:** Fraktiell verschoben — Arme minimal zu lang, Hals dreht einen Tick zu weit, Finger biegen ein Gelenk zuviel
+- **Schatten:** Fallen nicht ganz richtig (für Concept Art: Schattenwinkel ist unabhängig von tatsächlicher Lichtquelle)
+- **Stillstand:** Das Tiervolk steht zu still. Kein Schaukeln, kein Blinzeln im normalen Rhythmus. Als würde der Körper auf Befehl ruhen, nicht aus Entspannung
+
+**Was das Tiervolk NICHT ist:**
+- Kein Tribal — kein Stammesschmuck, keine Knochenhalsketten, kein Totemismus
+- Kein Monster — keine Deformationen, kein Body-Horror, kein Ekel-Design
+- Kein Disney — keine großen Augen, keine "cute"-Proportion, keine Niedlichkeit
+- Keine Magier — das Tiervolk ist praktisch, händlerisch, geerdet in Material
+
+**Kleidung — nach Archetyp:**
+
+*Händler:* Zweckmäßig, gut genutzt, nicht arm. Schwerer dunkler Wollmantel, mehrere Ledertaschen am Gürtel, Schultertasche aus geöltem Segeltuch, lederbehandelte Hände. Keine Insignien. Farbe: Anthrazit, Sienna-Brauntöne, ein gedämpfter Indigoakzent — nie Fraktionsfarben.
+
+*Dieb/Kundschafter:* Eng anliegend, geschichtet, alles Schwarz oder Aschgrau. Lederstrapping, weiche Sohlen. Kein Metall sichtbar. Silhouette: schlank, komprimiert, bereit.
+
+*Bote/Informationshändler:* Mehrschichtige Roben, Dokumententasche aus schwerem Leder, Werkzeuggürtel mit knochengriffigen Instrumenten. Ein einzelner Farbakzent als Codierung (oxblood-roter Gürtelstrick = freie Bewegung in allen Distrikten).
+
+**Farbpalette Tiervolk:**
+Die Tiervolk-Palette liegt NEBEN den Fraktionspaletten — weder Krone noch Orden noch Gilden. Das ist Absicht: Tiervolk ist fraktionslos.
+- Anthrazit, Kohleschwarz, Aschgrau (Kleidung)
+- Warmes Sienna, sandigeres Braun, gedämpftes Ochre (Fell/Federfarben)
+- Maximal EIN Akzent, gedämpft — kein Fraktionssignal
+
+**Konzept-Bildmaterial — Tiervolk:**
+
+![Tiervolk — Händler Fuchs: Aufrechte Fuchsfigur im Marktkontext, Händler-Silhouette, subtile Fremdheit](../concepts/day04-vera/tiervolk/tiervolk-haendler-fuchs-exploration_seedream-4-5.png)
+
+<!-- Vera: Fuchs-Händler — Materiallesbarkeit gut: schwarzer Mantel, Ledertaschen, Sienna-Fell. Das Blau am Riemen ist zu kräftig, für v0.3 dämpfen. Die Markt-Atmosphäre funktioniert, Nacken-Wirbelmuster subtil sichtbar. -->
+
+![Tiervolk — Diebin Marder: Schlanke Marderfigur auf Dachvorsprung, Dieb-Silhouette, Augen leuchten foxfire-grün](../concepts/day04-vera/tiervolk/tiervolk-diebin-marder-exploration_seedream-4-5.png)
+
+<!-- Vera: Marder-Diebin — Stärkste Exploration. Das Foxfire-Grün in den Augen ist exakt das "Lumineszenz in stillem Wasser"-Gefühl. Knochengelenk-Details an Fingern erkennbar. Der Hintergrund ist etwas modern (Glockentürme statt Romanik), aber die Figur selbst ist sehr stark. -->
+
+![Tiervolk — Rabe-Bote: Rabenhumanoid im Steinbogen, Dokumentenbote, oxblood-Gürtel als Codierung](../concepts/day04-vera/tiervolk/tiervolk-rabe-bote-exploration_seedream-4-5.png)
+
+<!-- Vera: Rabe-Bote — Das geometrische Sekundärmuster auf Schultern/Brust ist sehr gut (Briefing: "sekundäre Musterebene unter der natürlichen Federanordnung"). Die oxblood-Gürtelschnur als Codierungs-Akzent funktioniert. Weniger "alien" als gewünscht — für v0.3: Augen-Anomalie deutlicher. -->
+
+![Tiervolk — Marktszene: Fuchs und Reiher unter Menschenmenge, integriert aber subtil anders](../concepts/day04-vera/tiervolk/tiervolk-marktszene-exploration_seedream-4-5.png)
+
+<!-- Vera: Marktszene — Das Integration-Konzept funktioniert gut: Tiervolk bewegt sich unter Menschen ohne Segregation. Der Reiher ist zu ghostly/glühend für v0.3, aber die Atmosphäre stimmt. Das "zu still stehen" beim Fuchs in der Bildmitte ist genau das gewünschte Gefühl. -->
+
+![Tiervolk — Hero-Sheet Fuchs: Charakter-Konzept mit Detailinsets, Symbiose-Zeichen erkennbar](../concepts/day04-vera/tiervolk/tiervolk-hero-symbiose_nano-banana-pro.png)
+
+<!-- Vera: Das stärkste Tiervolk-Bild. Das Modell hat eigenständig ein Concept-Art-Sheet-Format mit Detailinsets (verfremdetes Auge, Nackenwirbelmuster) erzeugt — exakt das richtige Kommunikationsformat für Charakter-Art-Direction. Für GDD und WBB: dieses Bild als Referenzbild für alle weiteren Tiervolk-Charakter-Entscheidungen nutzen. -->
 
 ---
 
@@ -3437,7 +3709,7 @@ Die Dramaturgie des Schwellenankern wird visuell über drei Zustände erzählt. 
 
 ![Schwellenanker — Drei Zustände: Ruhend | Aktiviert | Auflösung](../concepts/day03-vera/relics/relikt-drei-zustaende-v2_nano-banana-pro.png)
 
-<!-- Vera: Dreier-Vergleich v2 — kein Text mehr, geologisch-organische Form (kein Wirbelsäulenreferenz). Die drei Zustände sind klar unterscheidbar durch Materialzustand und Licht. Das Modell hat die Formkonsistenz zwischen den drei Objekten deutlich besser hinbekommen als v1. Für Darius/Kap 2-3: dieses Bild direkt als Mechanik-Illustration nutzen. -->
+<!-- Vera: Dreier-Vergleich v2 — geologisch-organische Form, kein Wirbelsäulenreferenz, kein Text. Die drei Zustände sind klar unterscheidbar. -->
 
 **Zustand Null — Ruhend:**
 Aschgrau. Kein Glanz, kein Licht. Die Mikro-Kanäle sind leer — dunkel, trocken, unremarkable. Auf 10 Meter Entfernung: ein Stein. Nur bei direkter Betrachtung verrät das pathologische Regelmäßigkeit der Kanäle etwas Außergewöhnliches.
@@ -3458,9 +3730,9 @@ Ränder evaporieren als feines mineralisches Partikelstaub. Inneres Leuchten: ü
 
 Der Schwellenanker in seiner atmosphärischen Präsentation: auf einem Altar in einem Gewölberaum, als einzige Lichtquelle. Die Spielerfigur am Bildrand, klein, awed.
 
-![Schwellenanker — Hero-Shot: Aktivierter Zustand auf Altar, Gewölberaum](../concepts/day02-vera/relics/relikt-hero-shot-aktiviert_gpt-image-1-5.png)
+![Schwellenanker — Hero-Shot v2: Geologische Formation auf Altar, Gewölbekrypta, Figur am Rand](../concepts/day04-vera/relics/relikt-hero-v2_nano-banana-pro.png)
 
-<!-- Vera: Hero-Shot ist die stärkste cineastische Darstellung. Das Problem: GPT hat eine zu kristalline Form erzeugt — zu clean, zu ordentlich, verliert die organisch-geologische Qualität. Für v0.2: Hero-Shot mit Nano Banana Pro iterieren (bessere Constraint-Adherence für organische Formen). -->
+<!-- Vera: Hero-Shot v2 — Problem aus v1 gelöst. Die geologisch-organische Form ist jetzt korrekt: kein Kristall, keine polierte Oberfläche, kein Sci-Fi-Glow. Das ist das "geological cluster, ossified mineral formation, spongy bone texture in stone". Das interne Leuchten kommt aus dem Netzwerk heraus, nicht von der Oberfläche. Die Figur am Rand (Mönch) gibt den richtigen Maßstab und die richtige emotionale Spannung. Freigegeben für alle weiteren Dokumente. -->
 
 ---
 
@@ -3489,6 +3761,10 @@ Das Schattenfieber ist biologisch. Seine visuelle Progression zeigt diesen biolo
 **Sichtbares Zeichen:** Material-Transition. Haut wird transluzent. Darunter: die Gefäßlinien leuchten kränklich gelbgrün — identische Farbverschiebung wie Schwellenanker-Zustand-Drei. Die Person evaporiert an den Rändern.
 
 **Design-Regel:** Stufe-3-Charaktere sind selten im Spiel sichtbar. Wenn, dann immer isoliert, immer traurig, nie als Bedrohung. Sie sind Warnung, nicht Monster.
+
+### Schattenfieber und das Tiervolk
+
+Das Tiervolk trägt die Symbiose in sich — aber ob das Schattenfieber und die kosmologische Symbiose des Tiervolks dieselbe Wurzel haben, ist eine offene Lore-Frage. Visuell: die Tiervolk-Anomalien (Augen, Fell-Gegenrichtung, Gelenke) sind KEINE Schattenfieber-Zeichen. Sie sind stabil, kongenital, nicht progressiv. Das ist der entscheidende visuelle Unterschied: Schattenfieber schreitet fort. Die Tiervolk-Fremdheit verändert sich nicht.
 
 ### UI-Korrespondenz
 
@@ -3536,6 +3812,7 @@ Die Levelingsicht (halbtransparentes Nervensystem — Cardio / Muskel / Lymph) e
 - **World of Warcraft:** Übergesättigte Farben, lesbares Fraktionssystem durch bunte Plakate. Das Gegenteil von RELICS.
 - **Generic Fantasy Stock:** Braune Schmutzoptik ohne Designwillen. RELICS ist Schmutz MIT Designwillen.
 - **Steampunk-Ornamentik:** Zahnräder als Dekoration. Bei uns sind Zahnräder, wenn überhaupt vorhanden, versteckt in Mechanismen.
+- **Furry-Ästhetik:** Das Tiervolk hat nichts mit Furry-Design zu tun. Kein Softfocus-Fell, keine großen Augen, keine Liebenswürdigkeit. Das Tiervolk ist befremdlich.
 
 ---
 
@@ -3551,15 +3828,19 @@ Jedes Asset (Umgebung, Charakter, UI, Effekt) muss gegen diese Liste geprüft we
 - [ ] **Materiallogik stimmt?** — Passt das Material zum Wohlstand der Figur/des Ortes?
 - [ ] **Schattenfieber berücksichtigt?** — Bei relevanten Charakteren/Orten: Blassviolett-Kanäle sichtbar?
 - [ ] **Licht als Privilege?** — Wer hat Zugang zu guter Beleuchtung? Zeigt das Asset das?
+- [ ] **Tiervolk-Test (nur Tiervolk-Assets):** Ist die Fremdheit subtil (nicht monströs)? Ist kein Tribal-Design sichtbar? Ist die Fraktionslosigkeit erkennbar?
 
 ---
 
-<!-- Vera: GDD Kap 5 v1 — vollständige Erstfassung. Fehlend für v0.2:
-     - Detailliertere Charakter-Konzepte (Krone-Soldat, Ordensbote, Gildenmeister als einzelne Figuren)
-     - Hero-Shot des Schwellenankern iterieren (zu kristallin in v1)
-     - Stadtschnitt auch in WBB Kap 2 einbetten (Tobi/Emre koordinieren)
-     - UI-Designsprache (Leveling-Sicht, Karten-Visualisierung) ist noch nicht abgedeckt — für v0.2
-     Frage an Darius: Soll Kap 5 auch die Leveling-UI (Nervensystem-Sicht) visuell spezifizieren, oder ist das Kap 2 (Mechaniken)?
+<!-- Vera: GDD Kap 5 v2 — Tiervolk-Design-Prinzipien vollständig ausgearbeitet (5.4.2). Hero-Shot v2 mit korrekter geologischer Form. Stadtschnitt auf Kanalzone v3 aktualisiert (CD-Feedback: weniger vertikal, mehr Environment-Kontext).
+
+Fehlend für v0.3:
+- Detaillierte Einzelcharakter-Konzepte: Kronensoldatin, Ordensbote, Gildenmeisterin als volle Figuren
+- Tiervolk v0.3: Reiher-Ghosting in Marktszene reduzieren, Fuchs-Taschenstrick-Blau dämpfen
+- Orden-Kreuz-Lore-Entscheidung (Emre/Nami) noch ausstehend → blockiert Orden-Palette v0.3
+- UI-Designsprache (Leveling-Sicht, Karten-Visualisierung) noch nicht abgedeckt
+Frage an Darius/Finn: Soll UI-Designsprache in Kap. 5 oder in Kap. 2 (Mechaniken) ausgearbeitet werden?
+Frage an Emre/Nami: Hat das Tiervolk eine Eigenbezeichnung? Und — kosmologische Symbiose und Schattenfieber: gleicher Ursprung?
 -->
 
 \clearpage
@@ -3568,9 +3849,9 @@ Jedes Asset (Umgebung, Charakter, UI, Effekt) muss gegen diese Liste geprüft we
 
 **RELICS: Schwellenanker**
 
-<!-- Tobi: v3-Änderungen gegenüber v2: (1) Interface-Spezifikation Lymph → PP-Trigger als neuer Abschnitt 6.4.7 ergänzt — das war Darius' Blocker, (2) Autorname aus sichtbarem Dokumentkopf in HTML-Kommentar verschoben, (3) "(Nami-Alignment)" und "(Nami)" aus sichtbarem Text entfernt, (4) "Tobi's System" auf neutral umformuliert, (5) Tippfehler "M_SchattenfiebertOverlay" in 6.4.5 korrigiert zu "M_SchattenfiebertOverlay" — nein: korrekter Name ist M_Schattenfieber_Overlay. -->
+<!-- Tobi: v4-Änderungen gegenüber v3: (1) Neuer Abschnitt 6.7 — Tiervolk-Symbiose-Shader (Dual-Layer: Tier-Biologie + Fremdes, Blend-Maske). Alter 6.7 (Houdini) wird zu 6.8, 6.8 (Color Science) zu 6.9, 6.9 (Release-Pipeline) zu 6.10, 6.10 (Risiko-Register) zu 6.11, 6.11 (Offene Fragen) zu 6.12. (2) 6.4.6 Kommentar aktualisiert — Tiervolk-Siedlungen-Frage erledigt (statisch, Layer-gebunden). (3) Risiko-Register: Tiervolk-Shader-Eintrag ergänzt. (4) Offene Fragen: Tiervolk-Zeile als erledigt. (5) Autorenerwähnung im v3-Kommentar lag bereits in HTML-Kommentar — belassen. -->
 
-<!-- Tobi: Verfasser Kap. 6: Tobias Richter, Technical Artist. Datum v1: Tag 2, Dienstag, 10:00 Uhr. -->
+<!-- Tobi: Verfasser Kap. 6: Tobias Richter, Technical Artist. v1: Tag 2. v2: Tag 3 Briefing. v3: Tag 3 WORK. v4: Tag 4 WORK. -->
 
 ---
 
@@ -3660,9 +3941,10 @@ Statt die Vertikale dem automatischen Streaming zu überlassen, strukturieren wi
 - Jeder Data Layer ist eine eigenständige Streaming-Einheit mit eigenem Post-Process-Volume-Stack
 - Manuelle Occlusion-Volumes an allen Schicht-Übergängen — Layer 3 cullt aggressiv Layer 0 und 1 wenn Sichtlinien getrennt
 - Ebenen-Übergänge (Treppen, Lifte, Schächte) sind als "Transition Zones" definiert — beide angrenzenden Layer gleichzeitig geladen für 60m Radius um den Übergang
-- **Schichtgrenzen-Entscheidung (Vera, Tag 2)**: oben fließend, unten diskret. World-Partition-Setup kann damit final geplant werden. Obere Ebenen (Layer 2–3) nutzen Blend-Volumes; untere Ebenen (Layer 0–1) haben harte Data-Layer-Cuts. Diese Frage ist abgeschlossen.
+- **Schichtgrenzen-Entscheidung (Vera, Tag 2)**: oben fließend, unten diskret. Obere Ebenen (Layer 2–3) nutzen Blend-Volumes; untere Ebenen (Layer 0–1) haben harte Data-Layer-Cuts.
+- **Tiervolk-Siedlungen (Emre, Tag 4)**: statisch, an festen kosmologisch dünnen Orten. Ambient-Werte bleiben Layer-gebunden — kein NPC-Proximity-System notwendig.
 
-<!-- Tobi: Vera-Abstimmung zu Schichtgrenzen ist erledigt (Tag 2 Meeting). -->
+<!-- Tobi: Vera-Abstimmung zu Schichtgrenzen erledigt (Tag 2). Emre-Abstimmung zu Tiervolk-Siedlungen erledigt (Tag 4): statisch → World Partition bleibt Layer-gebunden, keine Dynamik-Komplexität. -->
 
 ---
 
@@ -3702,7 +3984,7 @@ Für Cutscenes, Dialoge und Schwellenanker-Aktivierungs-Sequenzen nutzen wir **U
 - DOF: echtes Bokeh-DOF im Cinematic-Modus (Performance-Kosten akzeptiert für Kino-Qualität)
 - **Kamera-Führungsprinzip**: Statische Langzeiteinstellungen, langsame Zooms, keine handheld-Simulation. Die Kamera ruht — die Welt bewegt sich in ihr. Das gilt für alle Haupt-Cutscenes.
 
-<!-- Tobi: Tarkowski als Einfluss für Kamerastil, nach Nami-Input Tag 2. Im Fließtext keinen Autorname mehr. -->
+<!-- Tobi: Tarkowski als Einfluss für Kamerastil, nach Nami-Input Tag 2. Im Fließtext kein Autorname. -->
 
 ---
 
@@ -3711,11 +3993,11 @@ Für Cutscenes, Dialoge und Schwellenanker-Aktivierungs-Sequenzen nutzen wir **U
 ### 6.3.1 Material-Philosophie
 
 Jedes Material in RELICS muss auf drei Ebenen funktionieren:
-1. **Materiallesbarkeit** — der Spieler erkennt sofort den sozialen Status des Trägers/Besitzers (Dark Souls Design Works-Prinzip: Abnutzung und Kontext erzählen Geschichte)
+1. **Materiallesbarkeit** — der Spieler erkennt sofort den sozialen Status des Trägers/Besitzers
 2. **Physikalische Plausibilität** — kein Material sieht "falsch" aus. PBR-Werte innerhalb physikalischer Grenzen.
 3. **Performance-Budget** — jedes Material hat ein definiertes Instruction-Count-Limit
 
-**Material-Hierarchie nach sozialer Schicht** (technische Entsprechung des Briefings):
+**Material-Hierarchie nach sozialer Schicht:**
 
 | Schicht | Materialklasse | Roughness-Range | Metallic | Besonderheit |
 |---|---|---|---|---|
@@ -3723,7 +4005,7 @@ Jedes Material in RELICS muss auf drei Ebenen funktionieren:
 | Mittelschicht | Standard PBR | 0.3 – 0.6 | Partiell (Bronze, Silber) | Malachit-Einlagen via Masked-Layer |
 | Unterschicht | Dirty/Layered PBR | 0.6 – 0.95 | Selten | Wear-Maps, Schmutz-Parameter, gestohlene Akzente |
 
-*Globalregel*: Material-Kontrast-Hierarchie nach FFXIV-v2.0-Vorbild. Emissive-Elemente sitzen auf dunklen Basismaterialien — Lesbarkeit vor Sättigung.
+*Globalregel*: Emissive-Elemente sitzen auf dunklen Basismaterialien — Lesbarkeit vor Sättigung.
 
 ---
 
@@ -3733,24 +4015,21 @@ Biolumineszenz ist das Neon-Äquivalent dieser Welt. Phosphoreszierende Minerali
 
 **Klasse A — Hero Lights (echte Lumen-GI-Emitter):**
 - Mesh-Flag: `Cast Lumen Light = true`
-- Zweck: Setzt die narrative Lichtstimmung einer Szene
 - Budget: max. 8–12 Klasse-A-Emitter gleichzeitig im sichtbaren Bereich
-- Beispiele: Bergkristall-Linsen der Gildenmeister, große Alchemie-Lampen in Ordenskorridoren, der aktivierte Schwellenanker (Zustand 2)
-- Emissive-Intensität: 50–200 cd/m² (physikalisch plausibel für echte Glaslampen-Äquivalente)
+- Beispiele: Bergkristall-Linsen der Gildenmeister, große Alchemie-Lampen in Ordenskorridoren, der aktivierte Schwellenanker (Zustand 2), Tiervolk-Emissive im aktiven Zustand
+- Emissive-Intensität: 50–200 cd/m²
 
 **Klasse B — Ambient Glow (visuell emissiv, kein GI-Beitrag):**
 - Mesh-Flag: `Cast Lumen Light = false`
-- Zweck: Atmosphärische Dichte ohne Performance-Kosten
 - Budget: unbegrenzt — kein GI-Overhead
-- Beispiele: phosphoreszierende Schimmel-Patches in Untergeschossen, Alchemie-Phiolen im Regal, Kleinst-Buntglas-Elemente
-- Emissive-Intensität: 2–15 cd/m² — leuchten visuell, strahlen aber nicht in die Szene
+- Beispiele: phosphoreszierende Schimmel-Patches, Alchemie-Phiolen, Kleinst-Buntglas-Elemente, Tiervolk-Ruhezustand-Emissive
+- Emissive-Intensität: 2–15 cd/m²
 
 **Klasse C — Particle Glow (Niagara, organisch):**
 - Niagara-System mit Billboard-Sprites und Custom-Depth-Masking
-- Zweck: organische Biolumineszenz-Cluster (Pilze, Schimmel-Kolonie, Schattenfieber-Wucherungen)
 - Skalierbar über GPU-Simulationsstufen (Low/Medium/High)
-- Lodded ab 20m Distanz — Particle Count halbiert sich pro Distanzklasse
-- Beispiele: Slum-Pilz-Cluster, Kanal-Algen-Glühen, Schattenfieber-Pusteln an Infizierten
+- Lodded ab 20m Distanz
+- Beispiele: Slum-Pilz-Cluster, Kanal-Algen-Glühen, Schattenfieber-Pusteln, Tiervolk-Partikel-Ausstöße
 
 *Dokumentationspflicht*: Jeder platzierte Klasse-A-Emitter wird in einer Scene-Light-Bible dokumentiert. Keine undokumentierten Hero Lights in final gebauten Szenen.
 
@@ -3760,7 +4039,7 @@ Biolumineszenz ist das Neon-Äquivalent dieser Welt. Phosphoreszierende Minerali
 
 ### 6.4.1 Systemarchitektur
 
-Das Schattenfieber-PP-System ist das komplexeste Single-Feature im Projekt. Es muss drei klar definierte Stufen mit smoothem Übergang abbilden und darf kein hartcodiertes System sein — alle Parameter müssen Blueprint-seitig steuerbar bleiben, damit das Gameplay-Team Inhalte ohne Tech-Art-Beteiligung implementieren kann.
+Das Schattenfieber-PP-System ist das komplexeste Single-Feature im Projekt. Es muss drei klar definierte Stufen mit smoothem Übergang abbilden und darf kein hartcodiertes System sein — alle Parameter müssen Blueprint-seitig steuerbar bleiben.
 
 **Blueprint-Architektur:**
 
@@ -3777,77 +4056,69 @@ BP_Schattenfieber
 └── Accessibility-Override: "DisableVertexAnimation" (Bool)
 ```
 
-Der `ShadowFever_Intensity`-Wert wird vom Gameplay-Blueprint geschrieben (Lymph-Subsystem → Interface, siehe 6.4.7). Das PP-System liest den Wert und reagiert. Die genaue Interface-Definition steht in Abschnitt 6.4.7.
-
 **Übergänge**: Immer geblended über die Timeline-Kurve. Kein Hard-Switch zwischen Stufen. Minimum-Blend-Zeit: 2 Sekunden pro Stufe.
 
 ---
 
 ### 6.4.2 Stufe 0 — Basis (kein Schattenfieber)
 
-Normaler Spielzustand. Der PP_Stage_0-Stack ist trotzdem aktiv — er setzt die Color-Grading-Basis für RELICS.
+Normaler Spielzustand. Der PP_Stage_0-Stack setzt die Color-Grading-Basis.
 
 - **Color Grading**: ACES-Tonemapping, leicht kühle Schattenbereiche (Shadow Gain: RGB 0.95 / 0.95 / 1.02)
-- **Film Grain**: 0.2 Intensität, 1.0 Körnung — minimal, nicht bewusst wahrnehmbar
-- **Bloom**: Physikalisch kalibrierter Bloom-Mode, Schwellwert 1.2 — nur echte überbelichtete Stellen leuchten
+- **Film Grain**: 0.2 Intensität, 1.0 Körnung
+- **Bloom**: Physikalisch kalibrierter Bloom-Mode, Schwellwert 1.2
 - **Schärfe**: Temporal Anti-Aliasing (TAA), Schärfe-Boost 0.2
 
-*Begründung*: Die leicht kühlen Schatten bauen schon im Normalzustand eine latente Kälte auf — der Spieler fühlt sie nicht bewusst, aber sie ist da. Technische Narratologie.
+*Begründung*: Die leicht kühlen Schatten bauen schon im Normalzustand eine latente Kälte auf. Technische Narratologie.
 
 ---
 
 ### 6.4.3 Stufe 1 — Frühinfiltration (sensorisch, subtil)
 
-Der Spieler soll unsicher sein, ob er etwas sieht. Die Stufe ist so designt, dass erfahrene Spieler sie aktiv suchen müssen.
+Der Spieler soll unsicher sein, ob er etwas sieht.
 
 **Aktive Parameter:**
-- **Chromatic Aberration**: Randbereich +0.4 Pixel max, zentral 0 — nur die Peripherie ist betroffen
-- **Bloom-Tint**: Leicht Richtung Cyan verschoben (RGB-Multiplikator: 0.95 / 1.0 / 1.05)
-- **Film Grain**: hochgesetzt auf 0.45, Körnung feiner (0.7) — das "Rauschen" des einsetzenden Fiebers
-- **Schattenbereich-Kühlung**: Shadow Gain +0.05 auf Blaukanal — Schatten werden kälter
-- **Vignette**: 0.15 Intensität — kaum bemerkbar, rahmt aber den Blick
+- **Chromatic Aberration**: Randbereich +0.4 Pixel max, zentral 0
+- **Bloom-Tint**: Leicht Richtung Cyan (RGB-Multiplikator: 0.95 / 1.0 / 1.05)
+- **Film Grain**: hochgesetzt auf 0.45, Körnung feiner (0.7)
+- **Schattenbereich-Kühlung**: Shadow Gain +0.05 auf Blaukanal
+- **Vignette**: 0.15 Intensität
 
-**Was nicht aktiv ist**: kein DOF, keine Vertex-Animation, keine Geometrie-Eingriffe. Das kommt in Stufe 2.
-
-*Visuelles Konzept*: Die Chromatic Aberration ist das optische Echo — das Bild "klingt nach" im visuellen Sinne. Eine winzige Farb-Verschiebung, die sich wie ein Nachbild anfühlt.
-
-<!-- Tobi: Ursprünglicher Hinweis auf Sound-Design und Nami-Input aus Kommentar rausgenommen, da kein Autorenname im sichtbaren Text. -->
+*Visuelles Konzept*: Die Chromatic Aberration ist das optische Echo — das Bild "klingt nach" im visuellen Sinne.
 
 ---
 
 ### 6.4.4 Stufe 2 — Mutative Phase (eindeutig, riskant)
 
-Ab hier ist das Schattenfieber bewusst spürbar. Spieler wissen, dass sie infiziert sind. Die Wahrnehmung kompromittiert sich.
+Ab hier ist das Schattenfieber bewusst spürbar.
 
 **Aktive Parameter:**
 - **Chromatic Aberration**: 0.8 Pixel, leichte Oszillation (Sinuswelle, 0.5 Hz)
 - **Vignette**: 0.35, pulsierend (0.25 Hz Sinuswelle, Amplitude 0.1)
-- **Depth of Field**: Nahbereichs-DOF aktiviert, Focal Length 400cm, F-Stop 1.8 — Objekte näher als 4m werden scharf gestellt, Hintergrund unscharf. Simuliert veränderten Wahrnehmungs-Fokus.
-- **Color Grading Curves**: Schattenbereich Indigo-Tint — Shadow-Midpoint-Offset: RGB -0.03 / -0.03 / +0.08
-- **Vertex-Animation** (Umgebungsobjekte, separates System): ausgewählte organische Meshes im 15m-Radius um den Spieler oszillieren ±1.5 cm, 0.3–0.8 Hz (variiert pro Mesh). Das ist das "Atmen" der Welt.
+- **Depth of Field**: Nahbereichs-DOF aktiviert, Focal Length 400cm, F-Stop 1.8
+- **Color Grading Curves**: Shadow-Midpoint-Offset: RGB -0.03 / -0.03 / +0.08
+- **Vertex-Animation** (Umgebungsobjekte): ausgewählte organische Meshes im 15m-Radius oszillieren ±1.5 cm, 0.3–0.8 Hz
 
 **Accessibility-Option (Pflicht)**:
-- Einstellungsmenü: "Schattenfieber-Bewegungseffekte reduzieren"
-- Bei Aktivierung: Vertex-Animation deaktiviert, DOF-Pulsieren deaktiviert, Vignette-Pulsieren → statisch auf 0.3
-- Die Stufe bleibt erkennbar, aber Motion-Sickness-Trigger werden eliminiert
-- Dokumentation im Spielhandbuch: klarer Hinweis auf diese Option
+- "Schattenfieber-Bewegungseffekte reduzieren" — deaktiviert Vertex-Animation, DOF-Pulsieren, reduziert Vignette-Pulsieren auf statisch 0.3
+- Dokumentation im Spielhandbuch obligatorisch
 
 ---
 
 ### 6.4.5 Stufe 3 — Auflösung (Grenze zur anderen Seite)
 
-Der kritische Zustand. Spieler befinden sich an der Schwelle zu den "planes of existence beyond known reality". Das ist das einzige Übernatürliche im Spiel — und es muss sich so anfühlen.
+Das ist das einzige Übernatürliche im Spiel — und es muss sich so anfühlen.
 
 **Aktive Parameter:**
-- **Full-Screen-Overlay**: `M_Schattenfieber_Overlay` — ein Custom-Depth-Masking-Shader mit organischen Rissstrukturen. Die Risse entstehen an Bildrändern und wandern langsam zur Bildmitte. Bewegungsgeschwindigkeit abhängig von `ShadowFever_Intensity`.
-- **Geometrie-Lücken**: Ausgewählte Wand-Meshes zeigen temporäre schwarze Flächenbereiche — als würden Teile der Weltgeometrie nicht mehr existieren. Technisch: ein separater Render-Pass mit Masked-Visibility über Custom Stencil Buffer.
-- **Indigo-Bloom**: Emissive-Quellen bekommen starken Indigo-Halo — Bloom-Radius 8.0, Tint stark Richtung Indigo/Violett
+- **Full-Screen-Overlay**: `M_Schattenfieber_Overlay` — Custom-Depth-Masking-Shader mit organischen Rissstrukturen
+- **Geometrie-Lücken**: Masked-Visibility über Custom Stencil Buffer
+- **Indigo-Bloom**: Bloom-Radius 8.0, stark Richtung Indigo/Violett
 - **Chromatic Aberration**: 1.5 Pixel, chaotisch (Rauschwert statt Sinuswelle)
 - **Nervensystem-Visualisierung**: startet automatisch (→ 6.5)
 
-**Was diese Stufe mit dem Schwellenanker-Shader verbindet**: Der kritische Schwellenanker-Zustand (→ 6.6) nutzt dasselbe visuelle Vokabular wie Stufe 3 — Rissstrukturen, Innen-Leuchten, Indigo-Tönung. Das ist keine Koinzidenz. Der Schwellenanker und die Krankheit sprechen dieselbe Sprache. Intentionale Ambiguität.
+**Verbindung Schwellenanker**: Der kritische Schwellenanker-Zustand (→ 6.6) nutzt dasselbe visuelle Vokabular — Rissstrukturen, Innen-Leuchten, Indigo-Tönung. Das ist keine Koinzidenz. Intentionale Ambiguität.
 
-*Accessibility-Option*: Bei aktiviertem Modus werden Geometrie-Lücken deaktiviert, Overlay-Intensität auf 0.6 reduziert. Die Stufe bleibt narrativ funktional.
+*Accessibility-Option*: Geometrie-Lücken deaktiviert, Overlay-Intensität auf 0.6 reduziert.
 
 ---
 
@@ -3855,27 +4126,27 @@ Der kritische Zustand. Spieler befinden sich an der Schwelle zu den "planes of e
 
 Unabhängig vom Spieler-Infektionslevel haben die Data Layers eine Baseline Schattenfieber-Ambience:
 
-- Layer 0 (Untergrund): `ShadowFever_Ambient = 0.15` — die Schwelle ist hier dünn, das spürt man
+- Layer 0 (Untergrund): `ShadowFever_Ambient = 0.15` — die Schwelle ist hier dünn
 - Layer 1 (Straße): `ShadowFever_Ambient = 0.05`
 - Layer 2 (Arkaden): `ShadowFever_Ambient = 0.0`
 - Layer 3 (Türme): `ShadowFever_Ambient = 0.0`
 
-Der Ambient-Wert addiert auf den Spieler-Wert. Ein Spieler ohne Infektion in Layer 0 läuft bei effektiv 0.15 — im Normalzustand nicht bewusst, aber da. Technische Narratologie: die Architektur erzählt die Kosmologie.
+Der Ambient-Wert addiert auf den Spieler-Wert. Technische Narratologie: die Architektur erzählt die Kosmologie.
 
-<!-- Tobi: Offene Frage an Emre — sind Tiervolk-Siedlungen an festen "dünnen Orten" oder wandern die? Statisch = Ambient-Wert Layer-gebunden (bereits implementiert). Dynamisch = NPC-Proximity-gesteuert, deutlich aufwendiger. Antwort steht noch aus. -->
+<!-- Tobi: Tiervolk-Siedlungen sind statisch, an festen "dünnen Orten" (Emre, Tag 4 Briefing). Konsequenz: Ambient-Werte bleiben Layer-gebunden, wie hier implementiert. Keine NPC-Proximity-Dynamik nötig. Frage erledigt. -->
 
 ---
 
 ### 6.4.7 Interface-Spezifikation: Lymph-Subsystem → PP-Trigger
 
-<!-- Tobi: Das ist der Abschnitt, den Darius gebraucht hat. Vollständige Blueprint-Interface-Definition. Wer ShadowFever_Intensity schreibt, wer liest, welche Werte zu welchen PP-Stufen führen. Stand v3, Tag 3 Mittwoch. -->
+<!-- Tobi: Vollständige Blueprint-Interface-Definition. Wer ShadowFever_Intensity schreibt, wer liest, welche Werte zu welchen PP-Stufen führen. Gesetzt in v3, Tag 3. -->
 
-Das Lymph-Subsystem (Gameplay-Seite, Darius' Verantwortung) und das Schattenfieber-PP-System (Tech-Art-Seite) kommunizieren über ein klar definiertes Blueprint-Interface. Diese Spezifikation legt den Vertrag zwischen beiden Systemen fest.
+Das Lymph-Subsystem (Gameplay) und das Schattenfieber-PP-System (Tech-Art) kommunizieren über ein klar definiertes Blueprint-Interface.
 
 #### Überblick: Wer schreibt, wer liest
 
 ```
-Gameplay-Seite (Darius):          Tech-Art-Seite (Tobias):
+Gameplay-Seite (Darius):          Tech-Art-Seite:
 BP_LymphSubsystem                 BP_Schattenfieber
     │                                     │
     │── schreibt ──►  ShadowFever_Intensity (0.0–3.0)
@@ -3885,121 +4156,58 @@ BP_LymphSubsystem                 BP_Schattenfieber
     └── schreibt ──►  ShadowFever_Ambient (addiert, Layer-gebunden, READ ONLY für Gameplay)
 ```
 
-Das Gameplay-System schreibt `ShadowFever_Intensity`. Das PP-System schreibt nichts zurück — es feuert Events. Das Gameplay-System hört auf diese Events und reagiert (z.B. Gameplay-Konsequenzen bei Stufenwechsel).
-
----
+Das Gameplay-System schreibt `ShadowFever_Intensity`. Das PP-System feuert Events zurück. Keine Gegenrichtungs-Abhängigkeit.
 
 #### Interface-Funktion: `SetShadowFeverIntensity(float Value)`
-
-**Aufrufender**: `BP_LymphSubsystem` (Gameplay)
-**Empfänger**: `BP_Schattenfieber` (Tech-Art)
 
 ```
 Signatur:      void SetShadowFeverIntensity(float Value)
 Werte-Range:   0.0 – 3.0
-Einheit:       normierter Intensity-Wert, keine physikalische Einheit
-Clamp:         intern geclampt auf [0.0, 3.0] — Über-/Unterschreitung wird abgefangen
+Clamp:         intern geclampt auf [0.0, 3.0]
 ```
 
-**Mapping Lymph-Stufe → ShadowFever_Intensity-Wert:**
+**Mapping Lymph-Stufe → ShadowFever_Intensity:**
 
-| Lymph-Stufe (Darius) | ShadowFever_Intensity | PP-Stufe aktiv | Spielerlebnis |
+| Lymph-Stufe | ShadowFever_Intensity | PP-Stufe | Spielerlebnis |
 |---|---|---|---|
-| Untrained (Basis) | 0.0 – 0.2 | Stufe 0 (Basis) | Kein sichtbares Fieber |
-| Geübt | 0.2 – 0.8 | Stufe 0 → 1 (gleitend) | Peripherie-Rauschen, Spieler unsicher |
-| Fortgeschritten | 0.8 – 1.8 | Stufe 1 → 2 (gleitend) | Eindeutige Symptome, bewusst spürbar |
+| Untrained | 0.0 – 0.2 | Stufe 0 | Kein sichtbares Fieber |
+| Geübt | 0.2 – 0.8 | Stufe 0 → 1 (gleitend) | Peripherie-Rauschen |
+| Fortgeschritten | 0.8 – 1.8 | Stufe 1 → 2 (gleitend) | Eindeutige Symptome |
 | Meister | 1.8 – 3.0 | Stufe 2 → 3 (gleitend) | Auflösung, Schwellen-Erfahrung |
 
-*Wichtig*: Die Werte sind **kontinuierlich**, nicht diskret. Das PP-System blended fließend über die gesamte Range. Darius entscheidet, wie schnell die Lymph-Stufen steigen — das PP-System folgt.
-
-**Zusätzliche Gameplay-Einflüsse auf den Wert:**
-
-Der Wert setzt sich zusammen aus:
+**Wert-Zusammensetzung:**
 ```
 ShadowFever_Intensity = Lymph_BaseValue + Exposure_Delta + ShadowFever_Ambient
 ```
 
-- `Lymph_BaseValue`: der Kernwert aus dem Lymph-Fortschritt (Darius' System)
-- `Exposure_Delta`: temporäre Erhöhung durch Exposition (Slum-Bereiche, Infizierte NPCs, Schwellenanker-Kontakt) — klingt über Zeit ab
-- `ShadowFever_Ambient`: Layer-gebundener Basiswert (read-only für Gameplay, wird vom PP-System addiert)
-
-<!-- Tobi: Exposure_Delta ist ein Vorschlag meinerseits — Darius entscheidet, ob er das so implementiert oder anders strukturiert. Der PP-Empfänger braucht nur den finalen kombinierten Wert. Wie der zusammengesetzt wird, ist Gameplay-Logik. -->
-
----
+<!-- Tobi: Exposure_Delta ist ein Vorschlag — Darius entscheidet, ob er das so implementiert. Das PP-System braucht nur den finalen kombinierten Float. -->
 
 #### Interface-Event: `OnStageThresholdReached`
 
-**Sender**: `BP_Schattenfieber` (Tech-Art)
-**Empfänger**: `BP_LymphSubsystem` (Gameplay — abonniert dieses Event)
-
 ```
 Signatur:      Event OnStageThresholdReached(float Stage)
-Werte:         1.0 (Stufe 1 erreicht), 2.0 (Stufe 2 erreicht), 3.0 (Stufe 3 erreicht)
-Richtung:      Aufwärts UND Abwärts (Stage-Abfall unter Schwelle feuert ebenfalls)
+Werte:         1.0 / 2.0 / 3.0 (Aufwärts UND Abwärts)
 ```
 
-Das Gameplay-System kann auf dieses Event reagieren mit:
-- Gameplay-Mechanik-Freischaltung (z.B. Fähigkeiten bei Stufe 2+)
-- NPC-Reaktionen triggern (NPCs erkennen infizierte Spieler)
-- Journal-Eintrag / Narrative-Beat schreiben
-- Sound-Cue auslösen (Sound-Design-Verantwortung)
-
----
-
-#### Interface-Funktion: `GetCurrentShadowFeverStage()` (optional, read-only)
+#### Interface-Funktion: `GetCurrentShadowFeverStage()` (read-only)
 
 ```
 Signatur:      float GetCurrentShadowFeverStage()
 Rückgabe:      aktueller ShadowFever_Intensity-Wert (0.0–3.0)
-Zweck:         Gameplay-seitige Abfrage für z.B. HUD-Anzeige oder Dialogue-Conditionals
 ```
 
----
-
 #### Fraktions-Presets (optionale Erweiterung)
-
-Wenn Nami bestätigt, dass Fraktionswahl unterschiedliche PP-Presets erfordert, kann das Gameplay-System folgende Funktion aufrufen:
 
 ```
 Signatur:      void SetFactionPPPreset(EFaction Faction)
 Werte:         EFaction::Krone | EFaction::Gilden | EFaction::Orden
-Effekt:        Lädt einen Preset-Stack auf PP_Stage_0 — verändert die Basis-Tonalität
-               Krone:  wärmerer Basiston, Ambience reduziert (Unterdrückung sichtbar)
-               Gilden: neutraler Basiston, Emissive-Intensität leicht erhöht
-               Orden:  kühler Basiston, Schattenbereiche dunkler (Wissen = Tiefe)
 ```
 
-<!-- Tobi: Das ist ein Vorschlag, kein gesetztes Feature. Nami muss bestätigen, ob Fraktions-PP-Presets narrativ gewünscht sind. Wenn ja, ist das ein kleiner Aufwand (drei PP_Stage_0-Varianten). Wenn nein, brauchen wir nur den generischen Stage-0. -->
+<!-- Tobi: Optionaler Vorschlag — Nami muss bestätigen ob Fraktions-PP-Presets narrativ gewünscht sind. Kein gesetztes Feature. -->
 
----
+#### Zusammenfassung
 
-#### Blueprint-Verbindungsschema (schematisch)
-
-```
-BP_LymphSubsystem
-    │
-    ├── OnLymphLevelUp ──────────────────────────► BerechneIntensity()
-    │                                                    │
-    │                                           SetShadowFeverIntensity(value)
-    │                                                    │
-    │                                          BP_Schattenfieber
-    │                                                    │
-    │                                          Timeline blended PP-Stack
-    │                                                    │
-    │◄────────────── OnStageThresholdReached ────────────┘
-    │
-    ├── OnNarrativeTrigger (optional)
-    ├── OnNPCReaction (optional)
-    └── OnSoundCue (Sound-Design)
-```
-
----
-
-#### Zusammenfassung für Darius
-
-Das PP-System braucht von Gameplay-Seite genau **einen Float** (0.0–3.0). Wie dieser Float berechnet wird — aus Lymph-Fortschritt, Expositions-Akkumulation, Fraktions-Modifikatoren — ist vollständig in Darius' Hand. Das Tech-Art-System ist bewusst so gebaut, dass keine Abhängigkeit in die andere Richtung existiert: kein PP-Code greift auf Gameplay-Variablen zu.
-
-Das PP-System feuert Events zurück. Darius abonniert, was er braucht.
+Das PP-System braucht von Gameplay-Seite genau **einen Float** (0.0–3.0). Wie dieser Float berechnet wird, ist vollständig in Darius' Hand. Keine Abhängigkeit in die andere Richtung. Das PP-System feuert Events zurück. Darius abonniert, was er braucht.
 
 ---
 
@@ -4007,11 +4215,11 @@ Das PP-System feuert Events zurück. Darius abonniert, was er braucht.
 
 ### 6.5.1 Konzept
 
-Das Leveling-System (→ GDD Kap. 2) nutzt eine halbtransparente Nervensystem-Sicht als Visualisierung des Fortschritts. Drei Subsysteme — Cardio (Ausdauer), Muskel (Stärke), Lymph (Immunresistenz/Schattenfieber-Toleranz) — werden als Overlay auf den Charakter-Körper projiziert.
+Das Leveling-System nutzt eine halbtransparente Nervensystem-Sicht als Visualisierung des Fortschritts. Drei Subsysteme — Cardio, Muskel, Lymph — werden als Overlay auf den Charakter-Körper projiziert.
 
-Dieses System hat zwei Modi:
-1. **Statistik-Ansicht** (vom Spieler ausgelöst, Menü): Vollbild-Overlay, alle drei Systeme sichtbar, interaktiv
-2. **Echtzeit-Overlay** (kontextabhängig): schmales, halbtransparentes Overlay — aktiviert in Stufe 3 Schattenfieber, nach schweren Verletzungen, und optional permanent im HUD
+Modi:
+1. **Statistik-Ansicht** (Menü): Vollbild-Overlay, alle drei Systeme sichtbar, interaktiv
+2. **Echtzeit-Overlay** (kontextabhängig): schmales Overlay — aktiv in Stufe 3 Schattenfieber, nach schweren Verletzungen, optional permanent im HUD
 
 ---
 
@@ -4021,14 +4229,13 @@ Dieses System hat zwei Modi:
 - Overlay via Custom-Depth-Pass auf dem Charakter-Mesh
 - Drei Materialschichten (Cardio, Muskel, Lymph) mit eigenem Emissive-Kanal
 - Farb-Kodierung: Cardio = warmrot, Muskel = bernsteingelb, Lymph = kühles Grün-Weiß
-- Opazität: 0.4–0.7 je nach Kontext (Menü: 0.7, Echtzeit: 0.4)
-- Fortschritt sichtbar als Textur-Dichte und Emissive-Intensität — stärkeres Cardio-Subsystem = dichter gezeichnete rote Linien, die heller leuchten
+- Opazität: 0.4–0.7 je nach Kontext
+- Fortschritt sichtbar als Textur-Dichte und Emissive-Intensität
 
 **First-Person-Modus:**
-- Separates Arm-Mesh-Set (eigene Asset-Klasse: `SK_FP_Arms`)
+- Separates Arm-Mesh-Set (`SK_FP_Arms`)
 - Synchron animiert mit dem Haupt-Charakter-Mesh via Animation-Blueprint
-- Nervensystem-Overlay auf das `SK_FP_Arms`-Mesh — der Spieler sieht seine eigenen Unterarme, Hände, angedeutet die Schultern
-- **Aufwand-Klassifizierung**: mittel-hoch. Das Arm-Mesh braucht einen vollständigen eigenen Animations-Set. Synchronisation mit dem Haupt-Mesh ist der technische Hauptaufwand. Zeitschätzung: 3 Wochen für stabiles System.
+- **Aufwand-Klassifizierung**: mittel-hoch. Zeitschätzung: 3 Wochen für stabiles System.
 
 **Shader-Struktur (M_Nervensystem_Base):**
 ```
@@ -4037,9 +4244,7 @@ Inputs:
   - NervensystemMask_Cardio (Texture2D, R-Kanal)
   - NervensystemMask_Muskel (Texture2D, G-Kanal)
   - NervensystemMask_Lymph (Texture2D, B-Kanal)
-  - Fortschritt_Cardio (Scalar 0–1)
-  - Fortschritt_Muskel (Scalar 0–1)
-  - Fortschritt_Lymph (Scalar 0–1)
+  - Fortschritt_Cardio / _Muskel / _Lymph (Scalar 0–1 je)
   - Overlay_Opacity (Scalar 0–1)
 
 Outputs:
@@ -4055,58 +4260,38 @@ Outputs:
 
 ### 6.6.1 Konzept
 
-Der Schwellenanker — der kosmologische Resonanzpunkt, das namensgebende Artefakt dieser Spieliteration — existiert als ein einziges Mesh mit einem Master-Material und drei Material-Instanzen. Die Übergänge zwischen den Zuständen sind immer geblended, nie hart. Der Schwellenanker ist kein Gadget; er ist ein kosmologisches Instrument. Das muss im Material sichtbar sein.
+Der Schwellenanker — das namensgebende Artefakt dieser Spieliteration — existiert als ein einziges Mesh mit einem Master-Material und drei Material-Instanzen. Übergänge sind immer geblended, nie hart. Der Schwellenanker ist kein Gadget; er ist ein kosmologisches Instrument.
 
-**Zur Form**: Vera hat die Geometriebeschreibung auf "folded geological formation, compressed ossified mineral cluster" spezifiziert — weg von einer wirbelsäulenartigen Struktur. Das hat Shader-Konsequenzen: SSS-Radius und Riss-Topologie müssen auf eine verdichtete, mineralische Form kalibriert werden, nicht auf eine langgestreckte organische. Der Riss-Procedural-Noise (`T_Schwellenanker_Riss_01`) wird entsprechend neu kalibriert — komprimierte Rissstrukturen statt radialer Brüche.
+**Zur Form**: Vera hat die Geometriebeschreibung auf "folded geological formation, compressed ossified mineral cluster" spezifiziert. Shader-Konsequenz: SSS-Radius und Riss-Topologie sind auf verdichtete, mineralische Form kalibriert.
 
-<!-- Tobi: Vera hat die Form-Beschreibung geändert (Tag 3 Briefing). Shader-Konsequenz: SSS-Radius-Kalibrierung neu, T_Schwellenanker_Riss_01 Noise-Profil anpassen. Kein großer Aufwand — ein Parametertuning, kein Umbau. -->
+<!-- Tobi: Vera hat die Form-Beschreibung geändert (Tag 3 Briefing). Kein großer Umbau — Parametertuning. -->
 
 ---
 
 ### 6.6.2 Drei Zustände
 
 **Zustand 1 — Ruhezustand (dormant):**
-Der Schwellenanker ruht. Er ist nicht tot — er ist latent lebendig.
-
-- **Base Material**: transluzentes, mattes Grundmaterial
-- **Subsurface Scattering (SSS)**: aktiv, warme Untertonfarbe (RGB 1.0 / 0.85 / 0.7 — leicht goldenes Hautton-Unterlicht)
-- **SSS-Radius**: 0.8 cm — das Licht streut tief, wie durch organisches Gewebe. Bei mineralischer Kompression ggf. auf 0.5 cm reduzieren (Abstimmung nach erster Vera-Referenz).
-- **Roughness**: 0.55 — nicht spiegelnd, aber nicht stumpf. Polierter Knochen oder Elfenbein-Charakter. Bei mineralischer Form: ggf. Richtung 0.45 (glattere Kompressionsflächen).
-- **Emissive**: 0.0 — kein aktives Leuchten
-- **Lumen-Emitter**: deaktiviert
-
-*Designabsicht*: Der Schwellenanker soll schon im Ruhezustand anders aussehen als totes Material. Das SSS erzeugt innere Lebendigkeit — etwas ist da, schläft aber.
-
----
+- **Subsurface Scattering (SSS)**: aktiv, warme Untertonfarbe (RGB 1.0 / 0.85 / 0.7)
+- **SSS-Radius**: 0.5 cm (mineralisch komprimiert)
+- **Roughness**: 0.45–0.55
+- **Emissive**: 0.0
+- *Designabsicht*: Das SSS erzeugt innere Lebendigkeit — etwas ist da, schläft aber.
 
 **Zustand 2 — Aktiver Zustand (resonant):**
-Der Schwellenanker ist aktiviert. Er ist zur Lichtquelle geworden.
-
-- **Base Material**: dasselbe Grundmaterial, aber SSS-Intensität um 40% erhöht
-- **Emissive-Layer**: hochgefahren, Farbe = warmes Indigo-Weiß (RGB 0.85 / 0.8 / 1.2, überbelichtet bei 3.5)
-- **Lumen-Emitter**: aktiviert (Klasse A) — der Schwellenanker wirft echtes GI in die Szene, färbt umliegende Wände und Böden
-- **Lichtfarbe Lumen**: leicht violett-weiß (CCT 7500K mit Indigo-Bias) — kühler als natürliches Licht, kalt und klar
-- **Lichtradius**: 4m für direkte Lumen-Reichweite, darüber Bloom-Halo
-- **Bloom-Halo**: 6.0 Radius, Indigo-Tint — sichtbar auch auf Screenshots, nicht nur in Bewegung
-
-*Designabsicht*: Der aktivierte Schwellenanker soll sofort als Lichtquelle erkennbar sein. Er ist die wichtigste dynamische Lichtquelle in jeder Szene, in der er aktiv ist.
-
----
+- **Emissive-Layer**: warmes Indigo-Weiß (RGB 0.85 / 0.8 / 1.2, überbelichtet bei 3.5)
+- **Lumen-Emitter**: aktiviert (Klasse A), Lichtfarbe CCT 7500K mit Indigo-Bias
+- **Lichtradius**: 4m direkt, darüber Bloom-Halo (6.0 Radius, Indigo-Tint)
+- *Designabsicht*: Sofort als Lichtquelle erkennbar. Wichtigste dynamische Lichtquelle in jeder Szene, in der er aktiv ist.
 
 **Zustand 3 — Kritischer Zustand (überlastet):**
-Der Schwellenanker ist am Limit. Das kosmologische Instrument bricht unter Last.
+- **Riss-Overlay-Layer**: `T_Schwellenanker_Riss_01` — organische Rissstrukturen öffnen sich stufenlos per Blend-Parameter
+- **Innenleuchten**: lokale Emissive-Intensität an Riss-Kanten (8.0+, kalt-violett)
+- **SSS**: blau-violett getönt (RGB 0.7 / 0.6 / 1.3)
+- **Lumen-Emitter**: flackernd, instabil (2–8 Hz unregelmäßig)
+- **Vertex-Animation**: Mesh vibriert ±0.2mm, 12 Hz
+- *Designabsicht*: Visuelles Vokabular entspricht PP-Stufe 3. Der Schwellenanker und das Schattenfieber sprechen dieselbe Sprache. Riss-Blend-Parameter erlaubt sequenzielles Aufziehen für Act 3.
 
-- **Base Material**: Riss-Overlay-Layer aktiv — ein Masked-Texture-Layer projiziert organische Rissstrukturen auf die Oberfläche
-- **Riss-Struktur**: `T_Schwellenanker_Riss_01` (Procedural Noise-basiert, komprimierte Rissgeometrie passend zur mineralischen Grundform — kein symmetrisches Muster) — Risse öffnen sich im Laufe des kritischen Zustands (Blend-Parameter steuert Öffnungsgrad)
-- **Innenleuchten**: durch die Risse scheint das Emissive-Innere — lokal höhere Emissive-Intensität an Riss-Kanten (8.0+, kalt-violett)
-- **Subsurface Scattering**: jetzt blau-violett getönt (RGB 0.7 / 0.6 / 1.3) — die Wärme ist weg, das SSS-Licht ist kalt
-- **Lumen-Emitter**: flackernd, instabil (Blueprint-gesteuerte Intensitätsschwankung, 2–8 Hz unregelmäßig)
-- **Lichtfarbe**: hart-violett (CCT >10000K, stark ins Ultraviolett verschoben)
-- **Vertex-Animation**: das Mesh selbst vibriert leicht (±0.2mm, 12 Hz) — submillimeter, erzeugt nervöses Shimmern
-
-*Designabsicht*: Visuelles Vokabular entspricht bewusst PP-Stufe 3. Der Schwellenanker und das Schattenfieber sprechen dieselbe Sprache: Rissstrukturen, Kalt-Violett, Innenleuchten, Instabilität. Der Spieler sieht diese Verbindung — ob er sie versteht, ist Erzählung. Zustand 3 zeigt keine kontrollierte Instabilität, sondern ein Objekt kurz vor dem Bruch — das Riss-Blend-Parametersystem erlaubt es, diesen Brechpunkt für Act 3 sequenziell aufzuziehen.
-
-<!-- Tobi: Namis narrativer Kommentar (Tag 3 Briefing) — "ein Anker kann reißen" — ist für Act 3 relevant. Im Shader ist das angelegt: Rissstrukturen mit steuerbarem Öffnungsgrad. Kein neuer Shader-Aufwand nötig, nur Blueprint-Kurven-Authoring. -->
+<!-- Tobi: Namis "ein Anker kann reißen" (Tag 3 Briefing) ist für Act 3 angelegt. Kein neuer Shader-Aufwand — nur Blueprint-Kurven-Authoring. -->
 
 ---
 
@@ -4114,75 +4299,228 @@ Der Schwellenanker ist am Limit. Das kosmologische Instrument bricht unter Last.
 
 ```
 Parameter-Gruppen:
-  [Base]
-    Roughness (Scalar)
-    BaseColor (Vector)
-
-  [SSS]
-    SSS_Enabled (StaticBool)
-    SSS_Color (Vector)
-    SSS_Radius (Scalar)
-    SSS_Intensity (Scalar)
-
-  [Emissive]
-    Emissive_Enabled (StaticBool)
-    Emissive_Color (Vector)
-    Emissive_Intensity (Scalar)
-    Emissive_Flicker (Bool)
-    Emissive_FlickerFrequency (Scalar)
-
-  [Riss]
-    Riss_Enabled (StaticBool)
-    Riss_Mask (Texture2D)
-    Riss_BlendAmount (Scalar 0–1)
-    Riss_EmissiveBoost (Scalar)
-
-  [State_Blend]
-    State_Alpha (Scalar 0–2.0)
-    -- 0.0 = Zustand 1, 1.0 = Zustand 2, 2.0 = Zustand 3
-    -- Alle Parameter interpolieren im Blueprint anhand dieses Wertes
+  [Base]        Roughness (Scalar), BaseColor (Vector)
+  [SSS]         SSS_Enabled, SSS_Color, SSS_Radius, SSS_Intensity
+  [Emissive]    Emissive_Enabled, Emissive_Color, Emissive_Intensity,
+                Emissive_Flicker, Emissive_FlickerFrequency
+  [Riss]        Riss_Enabled, Riss_Mask (Texture2D),
+                Riss_BlendAmount (0–1), Riss_EmissiveBoost
+  [State_Blend] State_Alpha (0–2.0)
+                -- 0.0 = Zustand 1, 1.0 = Zustand 2, 2.0 = Zustand 3
 ```
 
-**Drei Material-Instanzen**: `MI_Schwellenanker_Dormant`, `MI_Schwellenanker_Resonant`, `MI_Schwellenanker_Critical` — alle vom selben Master. Blueprint interpoliert zwischen den Instanz-Parametern über `State_Alpha`.
+**Drei Material-Instanzen**: `MI_Schwellenanker_Dormant`, `MI_Schwellenanker_Resonant`, `MI_Schwellenanker_Critical` — alle vom selben Master. Blueprint interpoliert über `State_Alpha`.
 
 ---
 
-## 6.7 Houdini-Pipeline — Terrain und Prozedurale Systeme
+## 6.7 Tiervolk-Symbiose-Shader
 
-### 6.7.1 Terrain-Generierung
+<!-- Tobi: Neuer Abschnitt v4. Kosmologische Grundlage: Tiervolk = dauerhaft fremde Wesen in Symbiose mit Tieren (Emre, Tag 4 Briefing). Das ist keine Mutation, kein Effekt — das ist ontologischer Normalzustand. Konsequenz: eigene Materialklasse, nicht vom Schattenfieber-System abgeleitet. Vera hat Referenzbilder angefragt — 2–3 Typen. -->
 
-Die vertikale Stadt braucht eine Basis-Topografie: das Flusstal, die Hügelketten der umgebenden Mittelgebirgs-Landschaft, die natürlichen Erhebungen, auf denen die Stadtschichten gebaut sind.
+### 6.7.1 Kosmologische Grundlage und Shader-Konsequenz
+
+Das Tiervolk ist nicht krank. Es ist nicht mutiert. Es ist, was es ist — dauerhaft, kosmologisch anders. Die Symbiose zwischen tierischem Wirt und dem Fremden ist keine Infektion, sondern ein ontologischer Zustand. Technische Konsequenz: das Tiervolk-Material ist eine eigenständige Materialklasse. Es leitet sich weder vom Schattenfieber-PP-System ab noch vom Schwellenanker-Shader. Es teilt das visuelle Vokabular — Emissive, organisch, fremd — aber hat eine eigene Grammatik.
+
+**Abgrenzung zu verwandten Systemen:**
+
+| System | Zustand | Natur | Shader-Basis |
+|---|---|---|---|
+| Schattenfieber | Infektion, prozessual | pathologisch | PP-Blueprint + Overlay |
+| Schwellenanker | Instrument, drei Zustände | kosmologisch | M_Schwellenanker_Master |
+| Tiervolk-Symbiose | Dauerhafter Normalzustand | ontologisch fremd | M_Tiervolk_Symbiose_Master (neu) |
+
+Diese drei Systeme teilen das gleiche visuelle Vokabular — weil sie alle denselben kosmologischen Ursprung haben. Aber sie sind technisch getrennte Systeme. Das ist Absicht.
+
+---
+
+### 6.7.2 Dual-Layer-Architektur
+
+Der Tiervolk-Symbiose-Shader ist ein **Dual-Layer-System** in einem einzigen Master-Material:
+
+- **Layer 1 — Tier-Biologie**: das tierische Substrat. SSS, Mikrooberfläche, organische Textur-Variation. Das ist das Fleisch, das Fell, die Schuppe, der Knochen.
+- **Layer 2 — Das Fremde**: die kosmologische Präsenz, die von innen durch die Tier-Biologie hindurchscheint. Emissive-Maske, transluzentes Durchleuchten, eine andere Art von Licht.
+- **Blend-Maske**: bestimmt, wo sich das Fremde angesammelt hat — Gelenke, Augen, Maulwinkel, Wirbelsäulen-Verlauf, Membranzwischenräume. Die Maske ist pro Charakter individuell; das Master-Material parametrisiert sie.
+
+```
+M_Tiervolk_Symbiose_Master
+├── Layer 1: Tier-Biologie
+│   ├── BaseColor (Texture2D — Fell/Schuppe/Haut)
+│   ├── Roughness (Texture2D — Mikro-Oberfläche)
+│   ├── Normal (Texture2D — Oberflächendetail)
+│   ├── SSS_Color (Vector — Wärme des lebenden Gewebes)
+│   ├── SSS_Radius (Scalar — je nach Gewebedichte)
+│   └── SSS_Intensity (Scalar)
+│
+├── Layer 2: Das Fremde
+│   ├── Fremd_EmissiveColor (Vector — Farbe des Fremden)
+│   ├── Fremd_EmissiveIntensity (Scalar — Helligkeit, 0.0–15.0 cd/m²)
+│   ├── Fremd_Translucency (Scalar — wie tief scheint es durch)
+│   ├── Fremd_PulseFrequency (Scalar — langsames Atmen, Hz)
+│   └── Fremd_PulseAmplitude (Scalar — Intensitätsschwankung)
+│
+└── Blend-Kontrolle
+    ├── Symbiose_Mask (Texture2D — R-Kanal: wo sitzt das Fremde?)
+    ├── Symbiose_Intensity (Scalar 0.0–1.0 — Stärke der Symbiose)
+    └── Symbiose_EdgeSoftness (Scalar — Übergangsschärfe der Maske)
+```
+
+---
+
+### 6.7.3 Layer 1 — Tier-Biologie im Detail
+
+Das tierische Substrat muss organisch und physikalisch plausibel sein. PBR-Standardwerte, aber mit SSS — weil Gewebe Licht streut.
+
+**SSS-Konfiguration:**
+- **SSS-Farbe**: warm, je nach Tier-Typ leicht variiert (Säugetier-Ton: RGB 1.0 / 0.75 / 0.6; Reptil-Ton: RGB 0.8 / 0.85 / 0.65)
+- **SSS-Radius**: 0.6–1.2 cm je nach Gewebedicke und Fell-/Schuppenbedeckung
+- **SSS-Intensität**: 0.4–0.8 — lebendig, aber nicht übertrieben
+
+**Mikrooberfläche:**
+- Roughness variiert stark über die Fläche (Fell = hoch, 0.7–0.9; Schleimhäute = niedrig, 0.1–0.25; Knochen-Exposition = mittel, 0.4–0.6)
+- Normal-Map-Schichtung: Basis-Normal (Fellstruktur/Schuppenstruktur) + Detail-Normal (Porendetail, Narben, Kampfspuren)
+
+**Wichtig**: Layer 1 alleine muss ein überzeugendes Tier-Material sein. Das Fremde ist Ergänzung, kein Ersatz.
+
+---
+
+### 6.7.4 Layer 2 — Das Fremde im Detail
+
+Das Fremde scheint von innen durch. Es ist kein Aufkleber auf der Oberfläche — es ist ein Leuchten aus dem Inneren, das durch das Gewebe bricht.
+
+**Visuelle Charakterisierung:**
+- Farbe: kühl, nicht warm. Leicht ins Violett-Weiße oder Blau-Weiße verschoben — dieselbe kosmologische Farbtemperatur wie der Schwellenanker-Resonanz-Zustand. Das ist kein Zufall. Alle drei kosmologischen Entitäten (Schwellenanker, Schattenfieber-Stufe 3, Tiervolk-Symbiose) sprechen dieselbe Farbsprache: kalt, transluzent, von innen leuchtend.
+- Emissive-Intensität im Ruhezustand: 2–8 cd/m² (Klasse B — kein GI-Beitrag im Normalfall). In aktiven Momenten (Bedrohung, ritueller Kontext): bis 40–80 cd/m² (Klasse A, echter GI-Emitter).
+- **Pulsieren**: Das Fremde atmet. Langsam. 0.1–0.3 Hz, sehr niedrige Amplitude (±15% der Basisintensität). Das ist kein Flackern — das ist ein Herzschlag, der nicht der eigene ist.
+
+**Technisches Rendering:**
+- Das Durchscheinen wird über `Fremd_Translucency` gesteuert: bei hohem Wert scheint das Emissive durch mehrere Gewebe-Lagen hindurch (wie Licht durch eine Hand)
+- Custom Depth: das Fremde wird in einem separaten Compositing-Pass hinzugefügt, damit es nicht mit umgebenden Materialien blendet
+- `Fremd_PulseFrequency` und `Fremd_PulseAmplitude` werden via Blueprint gesteuert — kein hartcodiertes Pulsieren im Shader selbst
+
+---
+
+### 6.7.5 Blend-Maske — Wo sitzt das Fremde?
+
+Die `Symbiose_Mask` ist der entscheidende Freiheitsgrad. Sie bestimmt die Physiognomie jedes Tiervolk-Charakters: wo hat sich das Fremde angesammelt, wo ist die Tier-Biologie noch rein?
+
+**Erwartete Muster (basierend auf Emres Weltbeschreibung, zu verifizieren durch Vera-Referenzbilder):**
+
+| Muster-Typ | Beschreibung | Shader-Konsequenz |
+|---|---|---|
+| Gelenk-Konzentration | Das Fremde sammelt sich an Gelenkflächen — Knie, Ellbogen, Hüfte | Maske: runde Blobs an Gelenkpositionen, weiche Kanten |
+| Augen/Sensorik | Augen und Sinnesorgane als Hotspot — "sehen durch die Schwelle" | Maske: präzise Kreise, harte Kanten, höhere Emissive-Intensität |
+| Wirbelsäulen-Verlauf | Das Fremde folgt der Nervenbahn | Maske: lineare Struktur entlang Rückgrat, medium-weiche Kanten |
+| Diffuse Verteilung | Das Fremde ist gleichmäßig verteilt, nirgendwo konzentriert | Maske: gleichmäßiges Low-Intensity-Rauschen über gesamte Oberfläche |
+
+<!-- Tobi: Vera-Referenzbilder (2–3 Typen) sind der Schlüssel für die finalen Masken-Muster. Ohne Referenz schreibe ich Shader-Parameter ins Blaue. Sobald Vera liefert, kalibriere ich SSS-Radius und Masken-Topologie pro Typ. Die vier Muster-Typen hier sind Hypothesen — keine finalen Entscheidungen. -->
+
+**Masken-Erstellung in der Pipeline:**
+1. Character-Art erstellt UV-Layout pro Tiervolk-Charakter
+2. Masken-Textur wird in Substance Designer auf Basis des UV-Layouts gemalt (R-Kanal: Symbiose-Stärke, 0–1)
+3. Optional: prozedurale Variation über PCG für Crowd-Varianten (Hintergrund-NPCs)
+
+---
+
+### 6.7.6 Material-Instanzen und Varianten
+
+**Master-Material**: `M_Tiervolk_Symbiose_Master`
+
+**Geplante Instanz-Typen** (vorläufig — abhängig von Vera-Referenzbildern):
+
+| Instanz | Tier-Basis | Fremd-Farbe | Muster-Typ | Lumen-Klasse |
+|---|---|---|---|---|
+| `MI_TV_Saeugetier_Ruhig` | Fell, warm | Violett-Weiß | Gelenke | Klasse B |
+| `MI_TV_Saeugetier_Aktiv` | Fell, warm | Violett-Weiß, intensiver | Gelenke + Augen | Klasse A (aktiv) |
+| `MI_TV_Reptil_Ruhig` | Schuppe, kühl | Blau-Weiß | Diffus | Klasse B |
+| `MI_TV_Reptil_Aktiv` | Schuppe, kühl | Blau-Weiß, intensiver | Diffus + Wirbel | Klasse A (aktiv) |
+
+<!-- Tobi: Instanz-Anzahl und Tier-Typen sind nicht bestätigt. Das hier sind Platzhalter für die Pipeline-Planung. Emre und Vera müssen die finale Bandbreite der Tiervolk-Tierformen definieren. -->
+
+**Namens-Konvention Asset-Pipeline:**
+- Master: `M_Tiervolk_Symbiose_Master`
+- Instanzen: `MI_TV_{TierTyp}_{Zustand}` (Beispiele: `MI_TV_Wolf_Ruhig`, `MI_TV_Rabe_Aktiv`)
+- Masken: `T_TV_{CharName}_Symbiose_Mask` (per Charakter)
+- Blueprint: `BP_Tiervolk_Symbiose_Controller` (steuert Puls, Aktivierungs-Übergänge)
+
+---
+
+### 6.7.7 Animations-Verknüpfung und aktive Zustände
+
+Das Fremde reagiert auf den Kontext. Es hat zwei Zustände:
+
+**Ruhezustand (Standard):**
+- Pulsiert langsam (0.1–0.2 Hz)
+- Klasse B — kein GI-Overhead
+- `Symbiose_Intensity` = 0.4–0.7 je nach Charakter-Lore
+
+**Aktiver Zustand (Bedrohung, Ritual, Willenssetzung):**
+- `BP_Tiervolk_Symbiose_Controller` erhöht `Fremd_EmissiveIntensity` via Timeline
+- Lumen-Emitter-Flag wechselt zu Klasse A
+- Pulsfrequenz erhöht auf 0.6–1.2 Hz
+- Übergang: smooth geblended, mindestens 0.5 Sekunden
+- Trigger kommt aus dem Gameplay-Blueprint (AI-Zustandsmaschine oder Script-Event)
+
+**Interface zu Gameplay:**
+```
+Signatur:      void SetTiervolkSymbioseState(ETiervolkState State)
+Werte:         ETiervolkState::Ruhig | ETiervolkState::Aktiv
+```
+
+<!-- Tobi: Einfaches Interface — nur zwei Zustände, kein Float. Das Tiervolk hat keine Progression. Es ist, was es ist. -->
+
+---
+
+### 6.7.8 Aufwandsschätzung
+
+| Aufgabe | Aufwand | Wer |
+|---|---|---|
+| M_Tiervolk_Symbiose_Master bauen | 1 Woche | Tech-Art |
+| BP_Tiervolk_Symbiose_Controller | 3 Tage | Tech-Art |
+| Masken-Textur pro Hero-Charakter (Salva, weitere) | 2–3 Tage je | Character-Art |
+| Substance-Designer-Masken-Workflow dokumentieren | 1 Tag | Tech-Art |
+| PCG-Varianten für Crowd-NPCs | 1 Woche | Tech-Art + PCG-Artist |
+| **Gesamt (konservativ)** | **3–4 Wochen** | — |
+
+*Puffer einplanen*: Vera-Referenzbilder sind Voraussetzung für Masken-Kalibrierung. Ohne die liegen die Hero-Masken in der Luft. Drei bis vier Wochen gilt, sobald Vera liefert.
+
+---
+
+## 6.8 Houdini-Pipeline — Terrain und Prozedurale Systeme
+
+### 6.8.1 Terrain-Generierung
+
+Die vertikale Stadt braucht eine Basis-Topografie: das Flusstal, die Hügelketten, die natürlichen Erhebungen.
 
 **Workflow:**
 1. Basis-Terrain in **Houdini** procedural generiert (Houdini Heightfield-System)
 2. Export als `.hdr`-Heightmap nach UE5 (16-bit, 4096×4096 für Kernregion)
 3. In UE5: Landscape-System mit Nanite-Tessellation für Nahbereich
-4. Automatisches Foliage-Placement via PCG (Procedural Content Generation Graph, UE5 native)
+4. Automatisches Foliage-Placement via PCG
 
 **Houdini-Setup:**
 - Basis-Erosion: hydraulische Erosion für naturwirkende Täler und Rinnsale
-- Stadtplattform-Sculpting: manuelle Eingaben (Terrassen-Formen für die Stadtebenen) werden in Houdini als Kontrollkurven eingebracht
+- Stadtplattform-Sculpting: manuelle Terrassen-Formen als Kontrollkurven in Houdini
 - Fluss-System: Heightfield-Vexnet für Flussbettgenerierung
 - Output-Auflösungen: 4k für Terrain-Kern (2km Radius), 2k für äußere Bereiche (10km Radius)
 
-<!-- Tobi: Houdini-Terrain wartet auf Emres Topos-Kapitel. Stadtname, Sichtachsen, Gebirgs-Kontext fehlen noch. Emre hat Topos als Fokus für Tag 3 genannt — ich nehme an, bis Ende heute kommt genug Material für erste Constraint-Kurven. -->
+<!-- Tobi: Houdini-Terrain wartet auf Emres Topos-Kapitel (Stadtname, Sichtachsen, Gebirgs-Kontext). Sobald Topos verfügbar: erste Constraint-Kurven im Heightfield-Setup. -->
 
 ---
 
-### 6.7.2 Prozedurale Stadtdetails (PCG-Systeme)
+### 6.8.2 Prozedurale Stadtdetails (PCG-Systeme)
 
-Für wiederholende Stadtdetails (Pflasterstein-Muster, Mauer-Erosion, Fassaden-Ageing, Schimmel-Verteilung im Untergrund) wird ein PCG-System aufgebaut:
+Für wiederholende Stadtdetails wird ein PCG-System aufgebaut:
 
 - **Pflaster-Variation**: PCG platziert Stein-Typ, Rotation, Abnutzungsgrad basierend auf Nähe zu Fußwegen und Schicht-Tiefe
 - **Fassaden-Ageing**: prozedurale Wear-Maps generiert in Houdini, instanziiert via PCG
-- **Biolumineszenz-Cluster**: Niagara-Systeme werden via PCG in Layer-0-Bereichen platziert, Dichte abhängig von Nähe zu Wasserquellen (simuliert Feuchtigkeitskorrelation)
-- **Vegetation-Infiltration**: in Slum-Bereichen und verlassenen Abschnitten wachsen prozedurale Pflanzen-Cluster aus Rissen
+- **Biolumineszenz-Cluster**: Niagara-Systeme via PCG in Layer-0-Bereichen, Dichte abhängig von Wassernähe
+- **Vegetation-Infiltration**: prozedurale Pflanzen-Cluster in Slum-Bereichen aus Rissen
 
 ---
 
-## 6.8 Color Science & Display-Pipeline
+## 6.9 Color Science & Display-Pipeline
 
-### 6.8.1 Color-Management
+### 6.9.1 Color-Management
 
 RELICS nutzt **ACES** (Academy Color Encoding System) als Farbraum-Standard.
 
@@ -4192,57 +4530,60 @@ Kreativ-Input → ACEScg Arbeitsraum → ACES Tonemapping → Display-Transform 
 ```
 
 - Alle Texturen: in sRGB gespeichert, im Shader in lineares Licht konvertiert
-- Emissive-Werte: in physikalischen Einheiten (cd/m²) definiert, nicht als 0–1-Werte
-- LUT (Look-Up-Table): ein Basis-LUT für den RELICS-Look (kühle Schatten, gedämpfte Mitten, klare Lichter), drei Varianten (Normal / Schattenfieber-Stufe-2 / Schattenfieber-Stufe-3)
+- Emissive-Werte: in physikalischen Einheiten (cd/m²) definiert
+- LUT: ein Basis-LUT für den RELICS-Look, drei Varianten (Normal / Schattenfieber-Stufe-2 / Schattenfieber-Stufe-3)
 
-**Warum kein AgX?** AgX ist für Photography optimiert und komprimiert Highlights weicher. RELICS braucht scharfe, klare Lichter — die Bergkristall-Linsen, die Schwellenanker-Emitter müssen leuchten, nicht weich werden. ACES gibt uns das.
-
----
-
-### 6.8.2 Display-Kalibrierung (internes Studio)
-
-Alle Arbeitsstationen im Studio haben kalibrierte Displays (Delta-E < 2.0). Die Referenz-LUT läuft auf einem Samsung Odyssey OLED, der als "Goldstandard"-Display dient. Spieler-seitig gibt es keine Kontrolle — daher sind alle Emissive-Werte so kalibriert, dass sie auch auf einem Standard-SDR-Display (sRGB, 200 cd/m² Peak) korrekt wirken. HDR-Displays bekommen automatisch einen separaten Display-Transform mit erweiterten Highlight-Bereichen.
+**Warum kein AgX?** AgX komprimiert Highlights weicher — für Photography optimal, für RELICS falsch. Die Bergkristall-Linsen und der Schwellenanker müssen leuchten, nicht weich werden. ACES gibt uns das.
 
 ---
 
-## 6.9 Produktion & Release-Pipeline
+### 6.9.2 Display-Kalibrierung (internes Studio)
 
-### 6.9.1 Milestone-Übersicht
+Alle Arbeitsstationen haben kalibrierte Displays (Delta-E < 2.0). Referenz-Display: Samsung Odyssey OLED. Alle Emissive-Werte sind so kalibriert, dass sie auch auf Standard-SDR (sRGB, 200 cd/m² Peak) korrekt wirken. HDR-Displays bekommen automatisch einen separaten Display-Transform.
+
+---
+
+## 6.10 Produktion & Release-Pipeline
+
+### 6.10.1 Milestone-Übersicht
 
 | Milestone | Technischer Status | Schlüssel-Deliverables |
 |---|---|---|
-| **Pre-Alpha** | Prototyp-Pipeline | Rendering-Architektur steht, Material-Master-Systeme gebaut, World Partition Setup stabil |
-| **Alpha** (Streamer) | Feature-Freeze Rendering | Data Layers gesetzt, Lumen-Konfiguration fixiert, PP-System stabil, Schwellenanker-Shader stabil. Standard: stabil + konsistent, NICHT polished |
-| **Beta** | Tuning-Phase | Alle bestehenden Systeme werden getuned — Performance-Optimierung, visuelle Feinheit, Accessibility vollständig |
-| **Full Release** | Feinschliff + große Setpieces | Abschließende Lighting-Pass für alle Hauptorte, Cinematic-Sequenzen final |
-| **DLC** | Erweiterung auf stabiler Basis | Neue Assets auf bestehenden Systemen — kein neues technisches Risiko in DLC-Phase |
+| **Pre-Alpha** | Prototyp-Pipeline | Rendering-Architektur steht, Material-Master-Systeme gebaut, World Partition stabil |
+| **Alpha** (Streamer) | Feature-Freeze Rendering | Data Layers gesetzt, Lumen-Konfiguration fixiert, PP-System stabil, alle Shader-Master stabil |
+| **Beta** | Tuning-Phase | Performance-Optimierung, visuelle Feinheit, Accessibility vollständig |
+| **Full Release** | Feinschliff + große Setpieces | Abschließender Lighting-Pass, Cinematic-Sequenzen final |
+| **DLC** | Erweiterung auf stabiler Basis | Neue Assets auf bestehenden Systemen — kein neues technisches Risiko |
 
-**Alpha ist der härteste Freeze**: Nach Alpha-Abgabe sind folgende Systeme nicht mehr änderbar:
+**Alpha ist der härteste Freeze.** Nach Alpha-Abgabe sind folgende Systeme nicht mehr änderbar:
 - Data Layer-Struktur (Schichtanzahl, Naming, Streaming-Logik)
 - Lumen-Konfiguration (RT-Modus pro Layer)
 - Schattenfieber-PP-System-Architektur (Blueprint-Struktur, Parameter-Namen)
 - Schwellenanker-Master-Material-Struktur (Parameter-Gruppen, Slot-Namen)
+- Tiervolk-Symbiose-Master-Material-Struktur (Parameter-Gruppen, Slot-Namen)
 - Kamerasystem-Grundstruktur
-- **Interface-Spezifikation Lymph → PP-Trigger** (Funktionsnamen, Parameter-Typen, Event-Namen)
+- Interface-Spezifikation Lymph → PP-Trigger (Funktionsnamen, Parameter-Typen, Event-Namen)
+- Interface-Spezifikation Tiervolk → Gameplay (Funktionsnamen, Zustandstypen)
 
-*Begründung*: Diese Systeme sind die Säulen, auf denen alle anderen Content-Systeme aufbauen. Eine Änderung nach Alpha bricht zuverlässig abhängige Systeme. Tuning ist erlaubt. Umstrukturierung nicht.
+*Begründung*: Tuning ist erlaubt. Umstrukturierung bricht abhängige Systeme.
 
 ---
 
-### 6.9.2 Pre-Alpha — Technische Prioritäten
+### 6.10.2 Pre-Alpha — Technische Prioritäten
 
 **Woche 1–4: Foundation**
 - UE5 Projekt-Setup, Engine-Version fixieren
 - World Partition aktivieren, vier Data Layers anlegen und testen
-- Lumen-Konfiguration pro Layer einrichten (Software RT / Hardware RT, Hybrid Baked für Layer 0)
-- Erste Prototyp-Materialien: ein Oberschicht-Material, ein Unterschicht-Material, ein Emissive-Klasse-A
+- Lumen-Konfiguration pro Layer einrichten
+- Erste Prototyp-Materialien: Oberschicht, Unterschicht, Emissive-Klasse-A
 
 **Woche 5–8: Kernsysteme**
 - Schattenfieber-Blueprint (alle drei Stufen, smooth geblended)
 - Lymph-PP-Interface implementiert und mit Gameplay-Team getestet
 - Schwellenanker-Master-Material (alle drei Zustände)
+- Tiervolk-Symbiose-Master-Material (Prototyp mit einer Instanz)
 - Kamerasystem (Third/First Person Blend)
-- Nervensystem-Shader (Third-Person-Modus, First-Person folgt in Woche 10–12)
+- Nervensystem-Shader (Third-Person-Modus)
 
 **Woche 9–12: Integration**
 - Biolumineszenz-Pipeline (Klasse A/B/C operativ)
@@ -4253,28 +4594,27 @@ Alle Arbeitsstationen im Studio haben kalibrierte Displays (Delta-E < 2.0). Die 
 
 ---
 
-### 6.9.3 Monetarisierung — Technische Implikation
+### 6.10.3 Monetarisierung — Technische Implikation
 
-Das Briefing ist eindeutig: **Klassisch Premium, keine Mikrotransaktionen.** Das hat eine direkte technische Konsequenz, die ich hier festhalten will:
+Das Briefing ist eindeutig: **Klassisch Premium, keine Mikrotransaktionen.**
 
-Kein Live-Service-Backend. Keine Server-seitige Spielstand-Validierung. Keine DRM-Middleware, die Runtime-Overhead erzeugt. Das ist eine technische Erleichterung: die Architektur ist offline-first, save-game ist lokal, kein Always-Online-Requirement.
-
-DLC-Technisch: DLC-Content wird als Pak-Files geliefert (UE5 Standard). Das Basis-Spiel enthält keine Platzhalter für DLC-Content — DLC erweitert auf der stabilen Basis, belegt aber keine Speicherpunkte in der Hauptgame-Dateistruktur.
+Kein Live-Service-Backend. Offline-first, Save-Game ist lokal, kein Always-Online-Requirement. DLC-Content wird als Pak-Files geliefert. Kein Platzhalter für DLC im Basis-Spiel.
 
 ---
 
-## 6.10 Risiko-Register
+## 6.11 Risiko-Register
 
 | System | Priorität | Risiko | Mitigation |
 |---|---|---|---|
 | Lumen vertikale GI | HOCH | Degeneriert in tiefen Kanälen | Hybrid Baked für Layer 0, Lumen-Importance-Volumes |
 | World Partition vertikal | HOCH | UE5 primär horizontal konzipiert | Manuelle Data Layers, Occlusion Volumes an Ebenen-Übergängen |
-| Schattenfieber PP Accessibility | HOCH | Vertex-Animation und DOF-Pulsieren = Motion-Sickness-Risiko | Accessibility-Option Pflicht, intern getestet mit betroffenen Personen |
+| Schattenfieber PP Accessibility | HOCH | Vertex-Animation und DOF-Pulsieren = Motion-Sickness-Risiko | Accessibility-Option Pflicht, intern getestet |
 | Nanite dünne Geometrien | MITTEL | Absturz bei dünnen Meshes | Fallback-LOD-Workflow definiert, Asset-Klassifizierung obligatorisch |
-| Biolumineszenz Performance | MITTEL | Viele Emitter = GI-Overhead | Dreiklassen-System, Klasse-A-Budget: max. 12 gleichzeitig |
-| Nervensystem Arm-Mesh | MITTEL | Hoher Animations-Aufwand im FP-Modus | Eigenständiger Task, 3-Wochen-Schätzung, eigenständige Asset-Klasse |
+| Biolumineszenz Performance | MITTEL | Viele Emitter = GI-Overhead | Dreiklassen-System, Klasse-A-Budget max. 12 gleichzeitig |
+| Nervensystem Arm-Mesh | MITTEL | Hoher Animations-Aufwand im FP-Modus | Eigenständiger Task, 3-Wochen-Schätzung |
+| Tiervolk-Symbiose-Shader | MITTEL | Masken-Qualität abhängig von Vera-Referenzbildern | Blocker identifiziert — Vera-Referenzen vor Shader-Finalisierung |
 | Schwellenanker-Shader-Synchronität | NIEDRIG | State-Alpha-Drift zwischen Blueprint und Material | Interface-Konvention festgelegt, Parameternamen dokumentiert |
-| Lymph-PP-Interface-Drift | NIEDRIG | Gameplay ändert Parameternamen nach Alpha-Freeze | Interface-Namen in 6.4.7 festgeschrieben, Alpha-Freeze gilt explizit |
+| Lymph-PP-Interface-Drift | NIEDRIG | Gameplay ändert Parameternamen nach Alpha-Freeze | Interface-Namen in 6.4.7 festgeschrieben, Alpha-Freeze gilt |
 
 ---
 

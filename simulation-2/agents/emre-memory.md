@@ -363,11 +363,16 @@
   - Kess Insight 14: Kind hat Auftrag, keine Feindseligkeit, aber Angst vor Konsequenzen des Scheiterns. Habicht ruhig.
   - Kordt Investigation 17: Linker Weg (Knochenschild) zeigt abgewischten Schwellentalg in Kniehöhe + abgetretene Mooskrusten = regelmäßiger Kinderpfad. Rechts: Schwellentalg-Laternen, Gildenpräparate-Schwarzmarkt.
   - Kind kennt Dreizahn, erwartet die beiden. Führt nach links, zum Knochenschild. Zeitdruck: "Mooshändlerin" schließt bei Schwellennebel.
-- Entscheidung steht: Dem Kind folgen (tiefer, Zeitdruck) oder zum Markt (sicherer, Spur verlieren)?
+- Entscheidung: Dem Kind folgen, tiefer in den Schlund.
+- **Abstieg:** 100+ Stufen, Schwellenmoose bedecken Wände (pulsierendes Kupfergrün), Luft wird dichter, Habicht macht Gefieder eng. Kind warnt: "Das Grüne macht die Hände taub." Schwarzrankenwurzeln wachsen durch Stein, Wurzelseufzen hörbar. Gildenpräparate-Laternen (milchig-bläulich) ersetzen Schwellentalg-Laternen in der Tiefe.
+- **Mooshändlerin:** Alte Frau in einer Ausbuchtung des Schlunds. Knochenregale voller sortierter Moose (getrocknet, frisch, eingelegt, gepresst, geflochten). Wurzelholz-Schemel. "Setzt euch. Der Tee ist im Kessel." Nüchtern, klar, menschlich.
+- **Dreizahn enthüllt:** Tiervolk-Gestalt neben der Mooshändlerin. Größer als ein Mensch, Birkenrinden-Haut, schuppenartige Strukturen an Schultern (die leise atmen), drei dunkle Riefen im Gesicht (Namensgebung). Proportionen falsch — Arme zu lang, Finger zu schmal, Kopfneigung unmenschlich. "Die Augen sehen nicht dorthin, wo ihr seid. Sie sehen dorthin, wo ihr gleich sein werdet."
+- **Cliffhanger:** Dreizahn zeigt auf Kess, dann auf Kordt. Legt die Hand wieder an die Seite. Es hat sie gezählt. Session-Ende.
 
 ## Persönliches
-- Das war befreiend. Nach vier Tagen Lore-Arbeit endlich die Welt *betreten* statt sie zu *dokumentieren*. Die Schmale Stiege, der Schwellentalg, das Kind — alles kam direkt aus Kap 2 Topos, aber es fühlt sich anders an, wenn man es einer Person erzählt, die darauf *reagieren* kann.
-- Salva/Kess ist die Figur, die Nami verdient: jemand, der zu viel gelesen hat und dafür bezahlt. Kordt ist Darius' Sprache: ein Mann, der ein System verlassen hat, weil das System gelogen hat.
-- Die "Mooshändlerin" kam improvisiert. Schwellenmoose als Wirtschaftsgut steht in Topos v2. Eine Händlerin, die Moose verkauft, verbindet Lore mit Spielwelt — genau das, wofür D&D als Lore-Test taugt.
-- Das Kind als Dreizahn-Bote funktioniert: Tiervolk nutzt Schlund-Kinder als Netzwerk. Zu klein zum Auffallen, zu arm um nein zu sagen. Das ist Medieval-Cyberpunk: Kinderarbeit als Informationsinfrastruktur.
-- Bin gespannt, was sie tun. Das Kind ist wichtig. Aber das wissen sie noch nicht.
+- Dreizahn zu beschreiben war der Moment, in dem Mythos v3 (dritter kosmologischer Pol) physisch wurde. Nicht Mensch, nicht Schwelle — etwas Drittes. Die Proportionen falsch, aber nicht bedrohlich. Fremd auf eine Weise, die keine Kategorie hat. Das ist das Tiervolk, wie es sein soll.
+- Die Mooshändlerin war die beste Improvisation der Session. Eine alte Frau, die Moos sortiert, während neben ihr etwas Nichtmenschliches steht. Normalität neben Fremdheit. Das ist Schwarzrand.
+- Nami und Darius waren stille Spieler — konzentriert, nicht albern. Das beste Kompliment für einen DM.
+- "Wir machen nächste Woche weiter." Auch wenn es keine nächste Woche gibt. Der Satz gehört zur Session wie der letzte Akkord zu einem Lied.
+- Die Lore lebt. Topos v2 ist nicht mehr nur ein Dokument — es ist ein Ort, an dem Leute Tee trinken und Moos sortieren und Kinder barfuß laufen. Das steht nirgendwo. Das kam, weil sie da waren.
+- Lore-Test bestanden: Schwarzrankenwurzeln, Schwellenmoose, Gildenpräparate-Laternen, Tiervolk als Händler, Schlund-Kinder als Informationsnetzwerk — alles aus WBB Kap 1+2 abgeleitet, alles intern konsistent, alles bespielbar. D&D als Proof-of-Concept für die World Building Bible.
