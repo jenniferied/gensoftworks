@@ -257,3 +257,32 @@
 - Ruhiger Einstieg in den letzten Tag. Kein Stress, klare Aufgaben.
 - Größtes Risiko bleibt GDD-Kürzung (83 → 60). Das liegt bei Darius, Nami, Tobi.
 - Vera hat ihre Ordnerstruktur für heute schon angelegt — gutes Zeichen.
+
+## Freitag (Fr) 13:00 — MEETING (Tag 5, Szene 3)
+
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7
+
+### Notizen
+- **Letzter MEETING des Projekts.** Zwei Stunden vor Content-Lock 15:00.
+- **Eröffnet:** Statuscheck zu WORK-Ergebnissen (10:00–13:00)
+  - Darius: GDD Kap 1 v3 (171 Z.), Kap 2 v3 (227 Z.), Kap 3 v3 (185 Z.) — ~13 PDF-Seiten eingespart, 9 Bilder eingebaut
+  - Vera: GDD Kap 5 v3 (349 Z.), 23 neue Bild-Prompts ($1.89), 30 Bilder referenziert
+  - Nami: GDD Kap 4 v4 (372 Z.), WBB Kap 3 v3 (336 Z.) — ~3 S. eingespart, 12 Bilder eingebaut
+  - Tobi: GDD Kap 6 v5 (508 Z.) — −36% Zeilen, 2 Bilder eingebaut
+  - Emre: WBB Kap 1 v4 (408 Z.), WBB Kap 2 v3 (293 Z.) — Bilder eingebaut, ferne Dünnstelle vage gelassen
+  - Leo: QA-Bericht Tag 5 — v0.3 bedingt freigegeben, 4 Hygiene-Fixes nötig (Formatierung, Konsistenz, Bildverweise)
+- **Team-Eröffnung (Finn):** Kurzer Check (max 100 Wörter) — Fortschritt abgefragt, Content-Lock 15:00 erinnert
+- **Nächste Schritte:** Fragen + Blocker-Clearance, dann Final-Checkout vor Lock
+
+### Ergebnisse
+- (Warte auf Team-Responses zum Statuscheck)
+
+### Offene Fragen
+- Alle Kapitel in Zielgröße (Seiten)? Bildplatzierung akzeptabel?
+- Leo: Welche 4 Hygiene-Fixes sind kritisch vor Export?
+- Vera: Budget-Status ($5–10) — wie viel noch übrig?
+
+### Persönliches
+- Ruhe vor dem finalen Sturm. 3 Stunden bis Content-Lock, 5 Stunden bis v0.3 Export.
+- Team-Energie nach 5 Tagen noch hoch — alle konzentriert auf Ziellinie.
+- Größter Fortschritt: GDD-Kürzung tatsächlich gelungen (Darius 13 Seiten, Tobi −36%, Nami/Emre auch spürbar). Seite passt jetzt.
