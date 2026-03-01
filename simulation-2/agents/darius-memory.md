@@ -333,3 +333,33 @@
 ## Persönliches
 - 23 Seiten kürzen in vier Kapiteln an einem Tag — ambitioniert, aber machbar. Das ist Handwerk, nicht Kreativarbeit. Kürzen heißt: was bleibt, wird stärker.
 - Nichts Neues ausdenken ist die richtige Ansage. Die Versuchung, am letzten Tag noch "eine coole Idee" einzubauen, ist real. Nicht mitmachen.
+
+---
+
+# Tag 5 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Darius (alleine)
+
+## Notizen
+- Gelesene Quellen: GDD Kap. 01 v2, Kap. 02 v2, Kap. 03 v2 (eigene Vorarbeit), Briefing (Nordstern-Abgleich)
+- Siegel-Prüfung: In Kap. 1–3 kommt kein "Kreuz" vor, "Siegel" wird bereits korrekt verwendet (Krone-Questlinie "Das Erste Siegel", zerbrochenes Siegel als Beweis, Ordenssiegel). Kein Handlungsbedarf.
+- Kürzungsstrategie umgesetzt:
+  - Kap 1: High Concept gestrafft (1 Absatz kürzer), Spieler-Fantasie-Statement auf 3 Bullets, Game Feel auf 4 Bullets, Fraktionstabelle ohne Fantasie-Spalte, Abgrenzungstabelle kompakter, Tabelle 10 auf 6 Kurzzeilen, Zielgruppe auf 4 Einzeiler. 3 Fraktionspaletten-Bilder eingebaut.
+  - Kap 2: Subsystem-Tabellen in 2.2 zu einer Tabelle konsolidiert, Lymph-Detail in Fließtext statt 3 Einzeltabellen. Tiervolk 2.6 von Fließtext auf Vergleichstabelle. Systeminteraktionen 2.7 von 7 auf 4 konsolidiert. Balancing-Werte (Cardio/Muskel/Lymph-Zahlen, Ruf-Schwellenwerte) in HTML-Kommentare. 4 Bilder eingebaut (Relikt-Zustände, Hero Shot, 2× Tiervolk).
+  - Kap 3: Zeitlinie 3.1 auf halbe Länge (Details der 25-Jahre-Geschichte gestrichen, Funktion beibehalten). Ablehn-Option als Tabelle statt Fließtext. Akt-Struktur als Tabelle. Nebenquests von ausformulierten Abschnitten auf Stichpunkte. Erzählerische Prinzipien 3.7 auf halbe Länge. 2 Bilder eingebaut (Kanalzone, Tiervolk-Diebin).
+- Nichts Neues erfunden. Alle Inhalte kommen aus v2. Nur gekürzt, komprimiert, Tabellen statt Fließtext.
+
+## Ergebnisse
+- `simulation-2/gallery/gdd/01-spieluebersicht-v3.md` — Finale gekürzte Version. Geschätzt ~6 PDF-Seiten (v2 war ~8).
+- `simulation-2/gallery/gdd/02-kernmechaniken-v3.md` — Finale gekürzte Version. Geschätzt ~8 PDF-Seiten (v2 war ~14).
+- `simulation-2/gallery/gdd/03-erzaehlkonzept-v3.md` — Finale gekürzte Version. Geschätzt ~8 PDF-Seiten (v2 war ~13).
+- Gesamt-Einsparung in meinen drei Kapiteln: ca. 13 PDF-Seiten (von ~35 auf ~22).
+
+## Offene Fragen
+- Kap 5 (Art Direction): Vera macht v3 — ich helfe nicht direkt, aber muss Review machen wenn es kommt
+- Gesamtseiten-Check: Meine 3 Kapitel ~22 Seiten. Kap 4 (Nami) + Kap 5 (Vera) + Kap 6 (Tobi) müssen zusammen auf ~38 Seiten kommen, damit wir unter 60 bleiben. Das ist eng.
+
+## Persönliches
+- Das war reines Handwerk. Kürzen ist nicht kreativ im klassischen Sinne — aber es braucht Design-Urteil. Jede gestrichene Zeile war eine Entscheidung: Was ist systemisch relevant? Was lebt schon in einem anderen Kapitel? Was ist Redundanz?
+- Die Tabellen-Umstellung bei der Ablehn-Option und den Fieber-Stadien macht die Texte lesbarer. Manchmal ist eine Tabelle die bessere Prosa.
+- Balancing-Werte in HTML-Kommentare: Das ist die richtige Lösung. Die Zahlen existieren, sie sind zugänglich, aber sie stören nicht den Lesefluss. Wenn Leo oder ein Reviewer sie braucht, stehen sie da.
+- Fünf Tage, drei Kapitel, jeweils drei Versionen. Von der ersten Recherche-Notiz am Montag bis zur finalen Kürzung am Freitag. Das ist ein Bogen.
