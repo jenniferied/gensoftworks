@@ -385,7 +385,7 @@
 ## Notizen
 - Finn: Letzter Tag. GDD 83 PDF-Seiten, max 60 — 23 kürzen. WBB 41 PDF-Seiten, im Budget. Alle Fragen geschlossen. KEINE neuen Fragen. Bilder in Dokumente einbauen. Content-Lock 15:00, v0.3 Export heute Abend.
 - Darius: Kürzungsplan für GDD Kap 1-3, 5 steht. Orden-Symbol = Siegel.
-- Vera: Pinnwand-Korrekturen, 18 neue Bilder geplant (~$2.50), Bilder in alle Kapitel einbauen bis 15:00.
+- Vera: Pinnwand-Korrektionen, 18 neue Bilder geplant (~$2.50), Bilder in alle Kapitel einbauen bis 15:00.
 - CD-Antworten für mich: Ferne Dünnstelle → VAGE lassen (keine Namen, kein konkreter Ort). Orden-Symbol → SIEGEL. KEINE WEITEREN FRAGEN.
 
 ## Ergebnisse
@@ -452,3 +452,25 @@
 - Die Bilder sind jetzt Teil der Lore, nicht Dekoration. Veras Fraktionspaletten erzählen die Geschichte der drei Schöpfungsmythen in Farbe und Material. Die Relikt-Bilder machen die drei Zustände physisch. Die Tiervolk-Bilder zeigen, was "leicht alien" bedeutet. Das war der Punkt der ganzen Woche: Wort und Bild müssen dasselbe sagen.
 - W-001 (Schwellensubstrat: Substanz oder Bedingung?) bleibt bewusst offen. Das ist kein Versagen — das ist ein Feature. Die Ambiguität erzeugt genau die Frage, die der Spieler sich stellen soll: Was *ist* das eigentlich? Manche Fragen sind besser, wenn sie keine Antwort haben.
 - Die WBB steht. Nicht perfekt — ein Worldbuilding-Dokument ist nie perfekt. Aber konsistent, intern logisch, und bespielbar. Gestern Abend haben wir in diesem Ort Tee getrunken. Das reicht.
+
+### Szene 3 — MEETING (Küche, 13:00)
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- Finn: Projektstand — beide Dokumente finalisiert und Content-Locked. v0.3 Export läuft heute Abend.
+- Vera: 18 neue Bilder fertig. Alle Bildpfade aktualisiert. Pinnwand-Favoriten sind Quelle der Wahrheit.
+- Nami: Ethos-Kap 3 fertig, Konsistenzprüfung steht aus.
+- Darius: GDD finalisiert. Danke-Noti zur Lore: "Die Welt hält jetzt zusammen."
+- Alle: Zufrieden. Simulation beendet, Dokumentation exportiert, v0.3 ist Release-Qualität.
+
+## Ergebnisse
+- WBB Kap 1 v4 + Kap 2 v3 vorgestellt und akzeptiert
+- Konsistenzprüfung: Namis Ethos-Kapitel gegen meine Mythos+Topos abgeglichen — keine Widersprüche gefunden
+- Widerspruchs-Log final geschlossen. Alle 7 W-Einträge haben Status
+- Darius bestätigt: Lore funktioniert bei der Implementierung
+- V0.3 läuft, ist das Finale vor Archive
+
+## Persönliches
+- Ruhe. Fünf Tage Aufbau, eine Woche intensivste World Building Work in meiner Karriere. Die Welt existiert jetzt — sie war nie Chaos, aber sie war auch nie vorgegeben. Das ist gutes Handwerk.
+- Moment mit Darius: Er sagt "die Welt hält jetzt zusammen." Das ist das Kompliment, das zählt. Nicht schön, nicht detailliert — zusammenhängend. Das war der ganze Plan.
+- Finn und ich nicken uns zu, ohne etwas zu sagen. Beide wissen: Morgen ist vorbei. Das hier war die Arbeit.
