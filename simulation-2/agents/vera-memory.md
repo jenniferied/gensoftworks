@@ -271,7 +271,7 @@
 - `gallery/gdd/05-art-direction-v2.md` — v2 mit vollständigem Tiervolk-Design-Abschnitt (5.4.2), Kanalzone v3, Relikt-Hero v2
 
 ## Offene Fragen
-- Orden-Kreuz-Symbol: Lore-Entscheidung (Emre/Nami) noch ausstehend → blockiert Orden-Palette v0.3
+- ~~Orden-Kreuz-Symbol: Lore-Entscheidung ausstehend~~ → GEKLÄRT: Orden-Symbol = SIEGEL (kein Kreuz)
 - Tiervolk-Eigenbezeichnung: Hat das Tiervolk einen Namen für sich selbst? (Emre/Nami fragen)
 - Kosmologische Symbiose (Tiervolk) vs. Schattenfieber: gleicher Ursprung? (Lore-Frage, Emre)
 - UI-Designsprache (Leveling-Sicht): Kap. 5 oder Kap. 2? (Darius/Finn)
@@ -281,3 +281,44 @@
 - Das Tiervolk-Hero-Sheet ist das stärkste Einzelbild der ganzen Simulation bisher. Das Modell hat eigenständig das Concept-Art-Sheet-Format erzeugt — mit Detailinsets für Auge, Nacken, Hand. Das ist exakt das richtige Kommunikationswerkzeug für Art Direction.
 - "Subtile anatomische Verschiebung" als Designprinzip ist jetzt sauber formuliert. Das ist der Schlüssel zum Tiervolk — kein Monster-Horror, kein Tribal, nur präzise Falschheit.
 - Seedream-Portrait-Format-Fehler: portrait_3_4 → portrait_4_3. Kleiner Prompt-Engineering-Fail, aber direkt gefixed. Kostet ein paar Minuten, keine echten Kosten da die Fehlerläufe nicht verrechnet werden.
+
+---
+
+# Tag 5 Szene 1 (BRIEFING)
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn, Darius + alle (Küche)
+
+## Notizen
+- LETZTER TAG. Content-Lock 15:00. Keine neuen Fragen.
+- GDD 83 Seiten, muss auf max 60 → 23 kürzen (nicht mein Job, Darius/Finn)
+- WBB 41 Seiten, im Budget
+- **CD-Feedback direkt an mich:**
+  - Stadtschnitt v3: FREIGEGEBEN
+  - Orden-Symbol: SIEGEL (kein Kreuz!) → gilt für alle Orden-Visuals
+  - Tiervolk-Bilder: etwas zu cartoon-y/anthropomorph, subtiler/menschlicher wäre besser — aber spät für große Richtungsänderung
+  - 6 neue Bilder auf Pinnwand: stadtschnitt-v3 beide, relikt-hero-v2, tiervolk-diebin, tiervolk-marktszene, tiervolk-haendler
+  - 2 Bilder NICHT auf Pinnwand: rabe-bote (unrealistische Augen), hero-symbiose (sieht wie Zeichnung aus)
+  - Fehlende freigegebene Bilder auf Pinnwand nachholen!
+  - CD will VIEL MEHR Bilder: 10/20/30 Stück! Budget $5–10 heute!
+  - ALLERWICHTIGSTE Aufgabe: Pinnwand-Bilder in GDD und WBB einfügen!
+
+## Ergebnisse
+- **Pinnwand-Korrektur geplant** (Block 1, 09:30–10:00):
+  - 6 Bilder in pinwall/favorites/ kopieren: stadtschnitt-v3 (beide), relikt-hero-v2, tiervolk-diebin, tiervolk-marktszene, tiervolk-haendler
+  - rabe-bote und hero-symbiose: NICHT auf Pinnwand (CD-Entscheidung)
+- **Bildproduktion geplant** (Block 2, 10:00–13:00): ~18 neue Bilder
+  - Umgebungen: Oberschicht-Viertel, Unterschicht-Slums, Ordensfestung, Gildenturm-Innen (4–6 Bilder)
+  - Charaktere: Krone-Soldat, Gilden-Handwerkerin, Ordensinquisitor, Spieler-Silhouetten (4 Bilder)
+  - Schattenfieber: 3 Stufen am Körper, Schwellen-Visualisierung (3 Bilder)
+  - Waffen/Ausrüstung: Damaszener-Schwert, Alchemie-Gürtel, Rüstungsvergleich (3 Bilder)
+  - Tiervolk-Iteration: subtiler, menschlicher (2–3 Bilder)
+  - Geschätztes Budget: ~$2.50 (Seedream-heavy für Batch, NB2/NBPro für Finals, 1x GPT Hero)
+- **Bilder-Integration** (Block 3, 13:00–15:00): Alle Pinnwand-Bilder in GDD Kap. 5, WBB Kap. 2 und 3, GDD Kap. 4 einbauen
+
+## Offene Fragen
+- Orden-Palette: Soll ich die Orden-Materialpalette NEU rendern (ohne Kreuz, mit Siegel)? Oder reicht Text-Korrektur in Art Direction?
+- ~~Orden-Symbol~~ → GEKLÄRT: SIEGEL
+
+## Persönliches
+- Budget bisher $1.84 gesamt — heute $5–10 neues Tagesbudget, das ist endlich genug zum Arbeiten
+- Druck ist hoch aber fokussiert: Pinnwand fixen, Bilder ballern, in Dokumente einbauen. Klare Prioritäten.
+- Tiervolk-Kritik (zu cartoon-y) ist fair — Seedream tendiert zu "cute". Für Iteration heute: mehr Realismus-Keywords, weniger "animal features", mehr "subtle bone structure shifts"
