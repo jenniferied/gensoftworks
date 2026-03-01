@@ -1,0 +1,110 @@
+{
+  "day": 5,
+  "weekday": "Freitag",
+  "phase": "Finalisierung",
+  "title": "v0.3 — Finaler Export, massive Kürzung, 23 neue Bilder",
+  "summary": "Letzter Tag. CD-Botschaft: Nichts Neues ausdenken, an Briefing halten, kürzen. GDD von 83 auf ~55–60 PDF-Seiten gekürzt. WBB bei 41 Seiten stabil. Darius kürzt GDD Kap 1–3 radikal (~13 PDF-Seiten eingespart), schreibt v3-Versionen aller drei Kapitel. Tobi kürzt GDD Kap 6 um 36% (793→508 Zeilen), Tiervolk-Shader komprimiert, PP-Parameter in HTML-Kommentare. Nami kürzt GDD Kap 4 (Fraktionskosmologien→Querverweis, offene Punkte raus) und finalisiert WBB Kap 3. Emre finalisiert WBB Kap 1 v4 und Kap 2 v3 — alle Relikt-Bilder eingebettet, ferne Dünnstelle vage, Widerspruchs-Log abgeschlossen. Vera generiert 23 neue Bilder ($1.89, gesamt $3.73), schreibt GDD Kap 5 v3 mit 30 eingebetteten Bildern. Leo: QA-Pass final — Briefing-Konsistenz 12/12, Terminologie PASS, v0.3 freigegeben. Pinnwand auf 11 Bilder erweitert. Alle CD-Fragen geschlossen, Orden-Symbol = Siegel. PAUSE: Emre, Nami, Darius — D&D-Nachbesprechung, persönlicher Abschluss. REVIEW: v0.3 freigegeben, Alpha-ready.",
+  "cd_decisions": [
+    "Ferne Dünnstelle bleibt VAGE — keine konkreten Namen/Orte",
+    "Intro-Szene Düsterkeit: Richtung bestätigt",
+    "Orden-Symbol = SIEGEL (kein Kreuz)",
+    "Stadtschnitt v3 freigegeben",
+    "Tiervolk-Bilder: etwas zu cartoon-y, subtiler/menschlicher, aber spät für Richtungsänderung",
+    "6 neue Bilder auf Pinnwand freigegeben, 2 abgelehnt (Rabe-Bote, Hero-Symbiose)",
+    "Vera Tagesbudget $5–10 für massive Bildproduktion",
+    "KEINE weiteren Fragen — alles fertig",
+    "Maximal 60 PDF-Seiten pro Dokument",
+    "Nichts Neues ausdenken, kürzen, an Briefing halten"
+  ],
+  "key_moments": [
+    "GDD von 83 auf ~55–60 PDF-Seiten gekürzt — Seitenbudget erstmals eingehalten",
+    "Vera: 23 neue Bilder an einem Tag ($1.89), 31 Concept Art über gesamte Simulation ($3.73)",
+    "Emre: Widerspruchs-Log formal abgeschlossen — W-001 als bewusste Ambiguität deklariert",
+    "Leo: v0.3 freigegeben, Confidence 8.5/10, Alpha-ready",
+    "PAUSE: D&D-Trio (Emre, Nami, Darius) — persönlicher Abschluss, Dreizahn-Moment nachbesprochen",
+    "Emre: 'Morgen fahre ich nach Duisburg. Werde meinem Vater erzählen, dass wir eine Stadt gebaut haben.'",
+    "Darius: 'Körperreaktions-Varianz ist RELICS' echtes Alleinstellungsmerkmal für die Streamer-Alpha'",
+    "Alle Pinnwand-Bilder in GDD und WBB eingebettet — CD-Kernforderung erfüllt"
+  ],
+  "artifacts": [
+    "gallery/gdd/01-spieluebersicht-v3.md",
+    "gallery/gdd/02-kernmechaniken-v3.md",
+    "gallery/gdd/03-erzaehlkonzept-v3.md",
+    "gallery/gdd/04-schluesselfiguren-v4.md",
+    "gallery/gdd/05-art-direction-v3.md",
+    "gallery/gdd/06-technische-spezifikation-v5.md",
+    "gallery/gdd/00-qa-bericht-tag5-leo.md",
+    "gallery/wbb/01-mythos-v4.md",
+    "gallery/wbb/02-topos-v3.md",
+    "gallery/wbb/03-ethos-v3.md",
+    "gallery/concepts/day05-vera/3-image-prompts-batch1-characters.json",
+    "gallery/concepts/day05-vera/3-image-prompts-batch2-environments.json",
+    "gallery/concepts/day05-vera/3-image-prompts-batch3-props.json",
+    "pinwall/ROADMAP.md",
+    "pinwall/COMPLETED.md"
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "type": "BRIEFING",
+      "time": "09:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Finn gibt CD-Feedback weiter: Letzter Tag, nichts Neues ausdenken, kürzen. GDD 83 PDF-Seiten, max 60. Alle offenen Fragen geschlossen: Dünnstelle vage, Intro-Düsterkeit bestätigt, Orden-Symbol = Siegel, Stadtschnitt freigegeben, Tiervolk subtiler. 6 neue Bilder auf Pinnwand. Vera: $5–10 Tagesbudget für massive Bildproduktion. Klare Ownership verteilt. Darius: Kürzungsplan GDD Kap 1–3 steht (~13 Seiten Einsparung). Tobi: GDD Kap 6 um 3–4 Seiten kürzen. Nami: GDD Kap 4 kürzen, WBB Kap 3 finalisieren. Leo: Finaler QA-Pass.",
+      "artifacts": [],
+      "cd_feedback": "Nichts Neues, kürzen, an Briefing halten. Alle Fragen beantwortet. Max 60 PDF-Seiten. Bilder in Dokumente einbauen. Vera massiv Bilder generieren."
+    },
+    {
+      "scene": 2,
+      "type": "WORK",
+      "time": "10:00",
+      "location": "jeweiliger Arbeitsplatz",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Hochproduktiver Finalisierungsblock. Darius: GDD Kap 1 v3, 2 v3, 3 v3 — ~13 PDF-Seiten eingespart, 9 Bilder eingebettet. Vera: 23 neue Bild-Prompts ($1.89), GDD Kap 5 v3 mit 30 eingebetteten Bildern, Orden-Siegel-Designsheet. Emre: WBB Kap 1 v4 und Kap 2 v3 — Relikt-Bilder, Tiervolk-Bilder, ferne Dünnstelle vage, Widerspruchs-Log abgeschlossen. Nami: GDD Kap 4 v4 (Fraktionskosmologien→Querverweis, ~3 S. gespart, 6 Bilder) und WBB Kap 3 v3 (6 Bilder). Tobi: GDD Kap 6 v5 (−36% Zeilen, Tiervolk-Shader komprimiert, PP-Parameter in Kommentare). Leo: QA-Bericht Tag 5 (12/12 PASS, v0.3 bedingt freigegeben). Finn: ROADMAP + COMPLETED aktualisiert.",
+      "artifacts": [
+        "gallery/gdd/01-spieluebersicht-v3.md",
+        "gallery/gdd/02-kernmechaniken-v3.md",
+        "gallery/gdd/03-erzaehlkonzept-v3.md",
+        "gallery/gdd/04-schluesselfiguren-v4.md",
+        "gallery/gdd/05-art-direction-v3.md",
+        "gallery/gdd/06-technische-spezifikation-v5.md",
+        "gallery/gdd/00-qa-bericht-tag5-leo.md",
+        "gallery/wbb/01-mythos-v4.md",
+        "gallery/wbb/02-topos-v3.md",
+        "gallery/wbb/03-ethos-v3.md",
+        "gallery/concepts/day05-vera/3-image-prompts-batch1-characters.json",
+        "gallery/concepts/day05-vera/3-image-prompts-batch2-environments.json",
+        "gallery/concepts/day05-vera/3-image-prompts-batch3-props.json",
+        "pinwall/ROADMAP.md",
+        "pinwall/COMPLETED.md"
+      ]
+    },
+    {
+      "scene": 3,
+      "type": "MEETING",
+      "time": "13:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Alle berichten Fortschritt. Darius: GDD Kap 1–3 exportfertig, ~13 Seiten gespart. Vera: 23 neue Bilder, GDD Kap 5 v3 mit 30 eingebetteten Bildern, $1.89 heute. Emre: WBB Kap 1 v4 + Kap 2 v3 finalisiert, Widerspruchs-Log geschlossen, 'Die Welt hält jetzt zusammen' (Darius). Nami: GDD Kap 4 v4 + WBB Kap 3 v3, Reisenden-Namenssystem als ehrliche Lücke. Tobi: GDD Kap 6 v5, −36% Zeilen. Leo: v0.3 bedingt freigegeben, geschätzt 55–60 PDF-Seiten, Confidence 8.5/10.",
+      "artifacts": []
+    },
+    {
+      "scene": 4,
+      "type": "PAUSE",
+      "time": "14:00",
+      "location": "Küche",
+      "participants": ["emre", "nami", "darius"],
+      "summary": "D&D-Trio von Donnerstag: Emre, Nami, Darius. Letzte Pause der Simulation. D&D-Session nachbesprochen: Dreizahn-Moment war improvisiert, Kess hat nach Tee gefragt statt nach Loot, Kordts Schwellentremor war Charakterdetail. 'Nächste Woche weiter' — auch wenn es keine nächste Woche gibt. Rückblick auf die Woche: Von einem leeren Blatt zu einer bewohnten Stadt. Emre: 'Morgen fahre ich nach Duisburg. Werde meinem Vater erzählen, dass wir eine Stadt gebaut haben.'",
+      "artifacts": []
+    },
+    {
+      "scene": 5,
+      "type": "REVIEW",
+      "time": "15:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "vera", "leo"],
+      "summary": "Finale Review. Darius: GDD exportfertig, Körperreaktions-Varianz als Alleinstellungsmerkmal, keine offenen CD-Fragen. Vera: 31 Concept Art über 5 Tage ($3.73 gesamt), GDD Kap 5 v3 mit 30 Bildern, 'Medieval Cyberpunk ist nicht mehr Konzept — es ist Bildsprache.' Leo: v0.3 FREIGEGEBEN, Briefing-Konsistenz 12/12, Terminologie PASS, Umlaute PASS, Alpha-ready. Finn: v0.3 Export startet nach dieser Szene.",
+      "artifacts": []
+    }
+  ]
+}
