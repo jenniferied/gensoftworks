@@ -303,3 +303,25 @@ Quest-Skizzen:
 
 ## Persönliches
 - Das war's. Fünf Tage. Zwei Kapitel. Drei Kosmologien in einer Stadt. Fertig.
+
+---
+
+# Tag 5 Szene 4
+**Typ**: PAUSE | **Uhrzeit**: 14:00 | **Teilnehmer**: Emre, Darius, Nami (Küche)
+
+## Notizen
+- Letzte Pause. Emre hat über D&D gesprochen -- Dreizahn, Kess' Tee-Frage bei der Mooshändlerin, Schwarzrand als Ort statt Dokument
+- Zusammenhang zwischen Sables Tee-Frage und der Ablehn-Option im GDD: beides fragt, was passiert wenn jemand nicht das Erwartete tut
+- Salva dreimal umgeschrieben: jede Version war falsch, jede war nötig. Dienstag Signal-Empfang, Donnerstag Symbiose-Kosmologie, Freitag gekürzt auf das Wesentliche
+
+## Ergebnisse
+- Keine Deliverables. Gespräch.
+
+## Offene Fragen
+- Keine
+
+## Persönliches
+- Emres "Nächste Woche weiter" trifft den Nerv. Die Woche hat gezeigt, dass Kollaboration so funktioniert: eine Idee gehört niemandem, weil sie durch alle Hände gegangen ist. Salva ist Emres Kosmologie, meine Stimme, Veras Bild, Darius' Scope-Entscheidung.
+- Darius hat die Ablehn-Option durchgelassen und vierzig Pfade auf acht gekürzt. Beides war die richtige Entscheidung. Das habe ich ihm heute gesagt.
+- Schwarzrand ist ein Ort geworden. Nicht weil wir ihn beschrieben haben, sondern weil Kess dort Tee bestellt hat.
+- Das ist die beste Woche meiner bisherigen Karriere. Nicht wegen der Dokumente. Wegen der Art wie sieben Leute eine Welt gebaut haben, die keiner allein hätte bauen können.
