@@ -196,3 +196,30 @@ Quest-Skizzen:
 - Der Satz "Er lag nicht da, weil er kollabiert ist. Er liegt da, weil er einfach stehengeblieben ist." — der ist der erste Satz, den ich heute laut vorgelesen habe und der gestimmt hat.
 - Salva ist jetzt eine komplett andere Figur und gleichzeitig dieselbe. Das ist das Beste, was einer Revision passieren kann.
 - Die Symbiose-Kosmologie macht den Reisenden-Abschnitt im WBB zur stärksten Sektion im ganzen Kapitel. Das Fremde-in-Salva und seine Wahrnehmung des Schattenfiebers als Bedeutungsstruktur — das ist das, was die vierte Kosmologie trägt. Nicht als Philosophie. Als Bericht.
+
+---
+
+# Tag 4 Szene 3
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7 (Küche)
+
+## Notizen
+- Finn: v0.2 läuft, Export 20:00 — Abend-Deadline steht
+- Darius: GDD Kap. 2 v2 + Kap. 3 v2 fertig, Tiervolk und Covid-Zeitlinie integriert
+- Emre: WBB Kap. 1 v3 + Kap. 2 v2 fertig, W-004/W-006 geschlossen
+- Emres Klärung: Das Fremde in der Symbiose ≠ Schwellensubstrat — verschiedene kosmologische Quellen. Tiervolk empfindet Schattenfieber als verwandtes Signal, nicht als Bedrohung
+- Das bestätigt meine Arbeitshypothese aus v3 vollständig: Resonanz ohne Identität ist die richtige Stimme für Salva
+- Neue Fragen ausgesprochen: Name für das Fremde in Salva (bewusst namenlos oder benannt?), Charakter der fernen Dünnstelle (Ort mit Geschichte vs. anonymer Riss)
+
+## Ergebnisse
+- Fortschritt kommuniziert: GDD Kap. 4 v3 fertig (Salva Habicht-Symbiose, vierte Kosmologie), WBB Kap. 3 v2 fertig (Reisenden-Sektion neu), Intro-Beat-1 überarbeitet
+- Emres Klärung in Dialogkonzept übersetzt: Salva benennt Schattenfieber nie direkt, umschreibt es als etwas das sie kennt ohne es zu sein
+
+## Offene Fragen
+- Emre: Name für das Fremde in Salva — oder bleibt es bewusst namenlos?
+- Emre: Dünnstelle — Ort mit Geschichte oder anonymer Riss? Bestimmt Salvas Monolog-Tonalität (nostalgisch vs. sachlich)
+- Düsterkeit-Entscheid Intro-Szene: noch immer offen
+- Export 20:00 — muss bis dahin alles committed haben
+
+## Persönliches
+- "Resonanz ohne Identität" — das ist die Formel für Salvas Stimme. Bin froh dass Emres Klärung die Arbeitshypothese bestätigt hat, nicht widerlegt.
+- Zwei Quellen, die dasselbe Stück Realität berühren, ohne dasselbe zu sein — das ist dramatisch reicher als eine einzelne Kosmologie.
