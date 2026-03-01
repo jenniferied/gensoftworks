@@ -84,72 +84,88 @@
 | **Leo** | Konsistenz-Prüfung v0.1, erstellt Feedback-Liste | `.md` (Bericht) | Mi 18:00 | ✅ Delivered |
 | **Finn** | **Koordiniert Handoffs**, checkt Bilder-Integration, validiert gegen Briefing, aktualisiert ROADMAP & COMPLETED | Status | Mi 18:00 | ✅ DONE |
 
-#### 15:00–17:00 — WORK Block (Sprintpause)
-- Optional: Refinement auf Feedback
-
 #### 17:00 — MEETING (Küche)
-- ✅ **Checkpoint:** Alle v0.1 Drafts fertig? Blockers identifizieren?
+- ✅ **Checkpoint:** Alle v0.1 Drafts fertig, keine Blockers
 
 #### 18:00 — PDF v0.1 exportieren
-- ✅ **GDD v0.1:** Kap 1–3, 4, 6 (5 = Do)
-- ✅ **WBB v0.1:** Kap 1, 2 (3 = Do)
+- ✅ **GDD v0.1:** Kap 1–4, 6 (Kap 5 = Do)
+- ✅ **WBB v0.1:** Kap 1, 2 (Kap 3 = Do)
 - ✅ **Concept Art:** 9 Renders (Relikt-States, Fraktions-Paletten)
 
 ---
 
-### Donnerstag (🔵 IN PROGRESS): Vertiefung & Konsistenz
+### Donnerstag (✅ Abgeschlossen): Vertiefung & Konsistenz
 
 **Modus:** Leo-Feedback integrieren, v0.2 Build + Seitenkürzen
 
 #### 09:00 — BRIEFING (CD-Input für Do/Fr)
-**Themen:**
-- v0.1 Export erfolgreich abgeschlossen
-- **Seitenbudget:** Ziel ist max 60 Seiten pro Dokument (GDD + WBB derzeit 70–85 Seiten)
-- **Cleanup-Aktion:** Autorenerwähnungen, Checklisten, manche Anhänge entfernen oder in HTML-Kommentare
-- **Bilder:** Vera hat $5 Budget → mehr Konzepte (Tiervolk, Environment, Relikt-Hero v2)
-- **CD-Clarifications:** Tiervolk = Symbiose, Zeitlinie = Covid-Analogie, Schattenfieber = Körperreaktion
+- ✅ v0.1 Export erfolgreich
+- ✅ **Seitenbudget:** Ziel max 60 Seiten GDD, max 35 Seiten WBB
+- ✅ **Cleanup:** Autorenerwähnungen, Checklisten raus/HTML-Kommentare
+- ✅ **Vera:** $5 Budget → Tiervolk, Environment, Relikt-Hero v2
+- ✅ **CD-Clarifications:** Tiervolk = Symbiose, Zeitlinie = Covid-Analogie, Schattenfieber = Körperreaktion
 
 #### 10:00–15:00 — WORK Block (parallel)
 
-| Agent | Aufgabe | Output | Ziel | Status |
-|-------|---------|--------|------|--------|
-| **Darius** | GDD Kap 5: Art Direction (Bilder komplett, Text optimiert) | `.md` | Do 15:00 | 🔵 In Progress |
-| **Nami** | WBB Kap 3: Ethos (Völker, Kulturen, Alltagsleben) + Materialpaletten-Erzählungen | `.md` | Do 15:00 | 🔵 In Progress |
-| **Emre** | WBB Kap 2 kürzen, Geographie verfeinern, Wolf-Infrastrukturen abdecken | `.md` | Do 15:00 | 🔵 In Progress |
-| **Vera** | Concept Art v0.2 (Tiervolk-Designs, Environment-Iteration, Relikt-Hero v2 Varianten) | `.png` | Do 17:00 | 🔵 In Progress |
-| **Tobi** | GDD Kap 6 kürzen, Release-Roadmap, Monetarisierung, Timeline | `.md` | Do 15:00 | 🔵 In Progress |
-| **Leo** | Zweiter QA-Pass (Konsistenz, Cross-Referenzen, Lücken), Feedback-Liste aktualisieren | `.md` (Bericht) | Do 18:00 | 🔵 In Progress |
-| **Finn** | Seitenbudget-Audit, Ownership-Verteilung Do/Fr, Final-Review-Liste vorbereiten | Status | Do 19:00 | 🔵 ACTIVE |
+| Agent | Aufgabe | Output | Ziel | ✅ Status |
+|-------|---------|--------|------|----------|
+| **Darius** | GDD Kap 5: Art Direction (Bilder komplett, Text optimiert) | `.md` | Do 15:00 | ✅ Delivered (v2) |
+| **Nami** | WBB Kap 3: Ethos (Völker, Kulturen, Alltagsleben) | `.md` | Do 15:00 | ✅ Delivered (v2) |
+| **Emre** | WBB Kap 2 kürzen, Geographie verfeinern | `.md` | Do 15:00 | ✅ Delivered (v2) |
+| **Vera** | Concept Art v0.2 (Tiervolk, Environment, Relikt-Hero v2) | `.png` | Do 17:00 | ✅ 8 neue Bilder |
+| **Tobi** | GDD Kap 6 kürzen, Release-Roadmap | `.md` | Do 15:00 | ✅ Delivered (v4) |
+| **Leo** | QA-Pass 2 (Konsistenz, Cross-Referenzen) | `.md` | Do 18:00 | ✅ Bericht geliefert |
+| **Finn** | Seitenbudget-Audit, Ownership Do/Fr | Status | Do 19:00 | ✅ DONE |
 
-#### 15:00–17:00 — WORK Block (Sprintpause)
-- Optional: Leo-Feedback integrieren, kürzen
+#### 17:00 — MEETING
+- ✅ v0.2 Ready
 
-#### 17:00 — MEETING (Küche)
-- **Checkpoint:** v0.2 Ready? Seitenbudget-Status? Blockers für Freitag?
-
-#### 20:00 — PDF v0.2 exportieren (Zielzeit)
-- **GDD v0.2:** Kap 1–5, 6 (alle Kapitel, gekürzt)
-- **WBB v0.2:** Kap 1–3 (alle Kapitel)
-- **Concept Art:** 9 + ~10 neue Renders (v0.2 erweitert)
+#### 20:00 — PDF v0.2 exportieren
+- ✅ **GDD v0.2:** Alle 6 Kapitel, 83 PDF-Seiten (über Budget)
+- ✅ **WBB v0.2:** Alle 3 Kapitel, 41 PDF-Seiten (im Budget)
+- ✅ **Concept Art v0.2:** 17 Renders (9 + 8 neue)
+- ✅ **Pinnwand:** 11 Bilder (nach Korrektur)
 
 ---
 
-### Freitag (⏳ PENDING): Final & Submission
+### Freitag (🔴 AKTIV — Letzter Tag): Final & Submission
 
-**Modus:** Finale Polishing, Korrektionen, Export
+**Modus:** Radikales Kürzen (GDD 83 → 60 Seiten), Bilder massiv generieren + einbauen, v0.3 Final
 
-#### 09:00 — BRIEFING (Finale CD-Input)
-- **Qualitäts-Checkpoint:** Alle Links, Bild-Referenzen, Kapitel-Nummern korrekt?
-- **Export-Standard:** PDF-Format sauber, Inhaltsverzeichnis, Seitennummern?
+#### 09:00 — BRIEFING (Finale CD-Input) ✅
+- ✅ **GDD:** 83 PDF-Seiten → max 60 (23 Seiten kürzen!)
+- ✅ **WBB:** 41 PDF-Seiten → OK, Luft für mehr Bilder
+- ✅ **Pinnwand:** 11 Bilder (nach Korrektur), CD will 10–30
+- ✅ **Vera-Budget:** $5–10 (erhöht!) — massiv Bilder generieren
+- ✅ **Content-Lock:** 15:00
+- ✅ **KEINE weiteren Fragen an CD**
 
-#### 10:00–14:00 — WORK Block (Fehlerkorrektur)
-| Agent | Aufgabe | Output | Ziel |
-|-------|---------|--------|------|
-| **Alle** | Final-Review-Liste von Finn durcharbeiten, Fehler korrigieren, Feinschliff | `.md` (aktualisiert) | Fr 14:00 |
-| **Vera** | Final-Render v0.3: Alle Bilder, finale Bildordnung für PDF-Layout | `.png` | Fr 16:00 |
-| **Finn** | Build PDF v0.3, Format-Check, Links prüfen, Inhaltsverzeichnis, README | `.pdf` + `.md` | Fr 17:00 |
+#### 10:00–15:00 — WORK Block (parallel, 🔴 AKTIV)
 
-#### 17:30 — Finale PDF v0.3: Submission-Ready
+| Agent | Aufgabe | Output | Ziel | Status |
+|-------|---------|--------|------|--------|
+| **Darius** | GDD Kap 1, 2, 3, 5 kürzen + Bilder einbauen | `.md` | Fr 15:00 | 🔴 AKTIV |
+| **Nami** | GDD Kap 4 kürzen + WBB Kap 1, 3 Bilder einbauen | `.md` | Fr 15:00 | 🔴 AKTIV |
+| **Emre** | WBB Kap 2 Bilder einbauen, Dünnstelle vage lassen | `.md` | Fr 15:00 | 🔴 AKTIV |
+| **Vera** | Pinnwand korrigieren, massiv Bilder generieren ($5–10) | `.png` | Fr 15:00 | 🔴 AKTIV |
+| **Tobi** | GDD Kap 6 kürzen | `.md` | Fr 15:00 | 🔴 AKTIV |
+| **Leo** | QA-Pass 3 final (Seitenbudget, Konsistenz, Briefing-Abgleich) | `.md` | Fr 15:00 | 🔴 AKTIV |
+| **Finn** | Koordination, ROADMAP/COMPLETED, v0.3 Export | Status | Fr 18:00 | 🔴 AKTIV |
+
+#### 15:00 — CONTENT-LOCK
+- Alle Text-Änderungen einfrieren
+- Nur noch Bilder-Einbau und Formatierung
+
+#### 17:00 — MEETING (Finaler Check)
+- Seitenbudget-Status: GDD unter 60?
+- Alle Bilder eingebaut?
+- Letzte Korrekturen
+
+#### 18:00–20:00 — PDF v0.3 Final exportieren
+- **GDD v0.3:** Alle 6 Kapitel, Ziel max 60 PDF-Seiten
+- **WBB v0.3:** Alle 3 Kapitel, Ziel max 35 PDF-Seiten
+- **Concept Art v0.3:** 11+ Bilder auf Pinnwand, weitere in Dokumenten
+- **SUBMISSION READY**
 
 ---
 
@@ -157,49 +173,8 @@
 
 ```
 [BACKLOG] → [RESEARCH] → [DRAFT] → [REVISION] → [FINAL] → [SHIPPED]
-   ✅          ✅ (Di)      ✅ (Mi)       🔵 (Do)      ⏳ (Fr)       Fr
+   ✅          ✅ (Di)      ✅ (Mi)    ✅ (Do)      🔴 (Fr)    Fr 20:00
 ```
-
----
-
-## Offene Fragen / Blocker (Donnerstag 10:00)
-
-**Für CD (geklärt):**
-- ✅ Tiervolk = Symbiose-Volk (keine Spielbarkeit nötig)
-- ✅ Zeitlinie = Covid-Analogie (Schattenfieber-Trigger)
-- ✅ Schattenfieber = biologische Körperreaktion (nicht übernatürlich)
-
-**Für Team (Action Items Do):**
-1. **Seitenbudget:** Alle Kapitel auf max 60 Seiten pro Dokument kürzen
-2. **GDD Kap 5:** Alle Vera-Bilder eingebaut + Text optimiert (Darius)
-3. **WBB Kap 3:** Fertiggestellt + Ethos-Framework vollständig (Nami)
-4. **WBB Kap 2:** Gekürzt, verfeinert (Emre)
-5. **GDD Kap 6:** Gekürzt, Tech Spec + Release-Roadmap klar (Tobi)
-6. **Vera:** Tiervolk + Environment + Relikt-Hero v2 Varianten ($5 Budget)
-7. **Leo:** QA-Feedback auf Kürzungen validieren
-
----
-
-## Seitenbudget-Status (Do 10:00)
-
-**Aktuell (aus v0.1):**
-- GDD Kap 1–3: ~21 Seiten (Target: 15–18)
-- GDD Kap 4: ~10 Seiten (Target: 8–10) ✅
-- GDD Kap 5: ~6 Seiten (Target: 8–12) — wird erweitert
-- GDD Kap 6: ~14 Seiten (Target: 12–15)
-- **GDD gesamt:** ~51 Seiten (Target: ~50–60) — OK, aber etwas Luft
-
-**WBB:**
-- WBB Kap 1: ~9 Seiten (Target: 8–10) ✅
-- WBB Kap 2: ~11 Seiten (Target: 10–12) — etwas kürzen
-- WBB Kap 3: ~10 Seiten (Target: 10–12) — neu
-- **WBB gesamt:** ~30 Seiten (Target: ~30–35) ✅
-
-**Strategie:**
-- GDD Kap 5 erweitern (mit Vera-Bildern)
-- Kap 1–3 gezielt kürzen (Doppelungen, Details → HTML-Kommentare)
-- WBB Kap 2 leicht trimmen
-- **Ziel:** GDD ~60 Seiten, WBB ~35 Seiten = ~95 Seiten gesamt (mit Concept Art dann ~115 Seiten Total)
 
 ---
 
@@ -207,48 +182,54 @@
 
 - ✅ **Dienstag 17:00:** Darius-Fragen beantwortet → Vera-Sketches available
 - ✅ **Mittwoch 20:00:** v0.1 Lock (QA passt, Feedback aus)
-- 🔵 **Donnerstag 20:00:** v0.2 Lock (Konsistenz-Audit bestanden, gekürzt)
-- ⏳ **Freitag 17:30:** v0.3 Final (Release Ready)
+- ✅ **Donnerstag 20:00:** v0.2 Lock (alle Kapitel, 83+41 Seiten)
+- 🔴 **Freitag 15:00:** Content-Lock (Text eingefroren)
+- 🔴 **Freitag 18:00–20:00:** v0.3 Final (Submission Ready)
 
 ---
 
-## Ownership & Dependency-Verteilung (Do/Fr)
+## Seitenbudget-Status (Fr 10:00)
 
-```
-Do 10:00–15:00: Parallel Cleanup + Expansion
-├─ Darius: GDD Kap 5 (Art Direction) — hängt von Vera-Bildern ab
-├─ Nami: WBB Kap 3 (Ethos) — unabhängig, kann parallel
-├─ Emre: WBB Kap 2 Refinement — unabhängig
-├─ Vera: Concept Art v0.2 (3–5 Bilder, Tiervolk/Environment)
-├─ Tobi: GDD Kap 6 Finalization — unabhängig
-├─ Leo: QA-Pass 2 — läuft parallel, Feedback Do 18:00
-└─ Finn: Audit + Koordination — wartet auf Do 15:00 Status von allen
+**v0.2 Ist-Stand (aus PDF-Export):**
+- **GDD v0.2:** 83 PDF-Seiten (Target: max 60) — **23 Seiten über Budget!**
+- **WBB v0.2:** 41 PDF-Seiten (Target: max 35) — im Budget, Luft für Bilder
 
-Fr 10:00–14:00: Final Review & Fehlerkorrektur
-├─ Alle: Finn-Liste durcharbeiten
-├─ Vera: Final-Renders (Do v0.2 Bilder + Fr Feinschliff)
-└─ Finn: PDF-Build v0.3
-```
+**Kürzungsstrategie Freitag:**
+- GDD Kap 1–3: Doppelungen eliminieren, Details in HTML-Kommentare
+- GDD Kap 4: Figuren-Beschreibungen straffen
+- GDD Kap 5: Bilder statt Fließtext (Concept Art spricht für sich)
+- GDD Kap 6: Technische Details kürzen, Tabellen komprimieren
+- WBB: Bilder einbauen, Text halten oder leicht kürzen
+
+**Ziel v0.3:**
+- GDD: max 60 PDF-Seiten
+- WBB: max 35 PDF-Seiten (mit mehr Bildern)
 
 ---
 
-## Notizen für Finn (Do 10:00)
+## Pinnwand-Status (Fr 10:00)
 
-- ✅ **Memory aktualisiert** (gerade gemacht)
-- ✅ **ROADMAP aktualisiert** (für Do/Fr Status)
-- ✅ **COMPLETED.md aktualisiert** (Mi abgeschlossen, Do In Progress)
-- **10:00–11:00:** Seitenbudget-Analyse: Welche Kapitel kürzen?
-- **11:00–12:00:** Bildliste für Vera aktualisieren (Tiervolk, Environment, Relikt-Hero v2)
-- **12:00–15:00:** Team-Koordination, Handoff-Notizen schreiben
-- **15:00–17:00:** Status-Runde (alle Do-Outputs da?)
-- **17:00:** MEETING — v0.2 Ready?
-- **19:00–21:00:** v0.2 PDF Export starten, QA-Liste für Fr generieren
+**Aktuell: 11 Bilder auf Pinnwand** (`pinwall/favorites/`)
+1. fraktion-gilden-materialpalette-v2_nano-banana-2
+2. fraktion-krone-materialpalette_seedream-4-5
+3. fraktion-orden-materialpalette_seedream-4-5
+4. relikt-drei-zustaende-v2_nano-banana-pro
+5. relikt-hero-shot-aktiviert_gpt-image-1-5
+6. relikt-hero-v2_nano-banana-pro
+7. stadtschnitt-kanalzone-v3-final_gpt-image-1-5
+8. stadtschnitt-kanalzone-v3_nano-banana-2
+9. tiervolk-diebin-marder-exploration_seedream-4-5
+10. tiervolk-haendler-fuchs-exploration_seedream-4-5
+11. tiervolk-marktszene-exploration_seedream-4-5
+
+**Vera-Budget heute:** $5–10 → massiv erweitern (CD will 10–30 Bilder auf Pinnwand)
 
 ---
 
 ## Repos-Struktur
 
 - Alle Markdown-Outputs → `gallery/gdd/` und `gallery/wbb/`
-- Concept Art → `gallery/concepts/` (Versionierung: `day02/`, `day03/` etc.)
+- Concept Art → `gallery/concepts/` (Versionierung: `day02/`, `day03/`, `day04/`, `day05/`)
+- Pinnwand-Favoriten → `pinwall/favorites/`
 - Logs → `traces/`
-- **Priorität:** Konsistenz vor Perfektionismus. Kürzen &> Glanz.
+- **Priorität:** Kürzen vor Glanz. Seitenbudget einhalten.
