@@ -113,7 +113,7 @@ Quest-Skizzen:
 - Beide Aufgaben abgearbeitet: GDD Kap. 4 v2 und WBB Kap. 3 v1
 - Veras Konzept-Art eingebunden: Krone-Materialpalette und Orden-Materialpalette in Kap. 3 eingesetzt — beide Bilder visuell stark, Krone monochrom-schwarzer Stahl + Blutrot-Siegel, Orden Weiß + Knochen + grüne Phiole
 - Klastrup/Tosca-Ethos-Struktur konsequent angewendet: Materialsprache, Alltagsleben drei Zonen, Fraktionskultur detailliert, Reisenden-Philosophie
-- Wolf-Infrastruktur-Checkliste ausgefüllt: Genealogien teilweise (Lücken dokumentiert), Verknüpfungen vollständig
+- Wolf-Infrastrukturen-Checkliste ausgefüllt: Genealogien teilweise (Lücken dokumentiert), Verknüpfungen vollständig
 - Ablehn-Option in GDD Kap. 4 als eigener Abschnitt 4.3 — nicht Nebenpfad, sondern vollwertige Variante mit eigener narrativer Logik
 - "Schwellenanker" überall konsequent gesetzt, alle Autor-Namen/Post-Its in HTML-Kommentare
 
@@ -283,3 +283,23 @@ Quest-Skizzen:
 - Das Kürzen war schwerer als das Schreiben. Die Fraktionskosmologien in 4.6 waren gute Prosa — aber sie standen doppelt, und doppelt ist Platzverschwendung. Der Querverweis ist ehrlicher.
 - Die Ablehn-Option auf zehn Zeilen zu komprimieren war ein guter Test: Wenn der Kern in zehn Zeilen nicht funktioniert, funktioniert er auch in dreißig nicht. Er funktioniert.
 - Sechs Bilder in zwei Dokumenten. Veras Arbeit ist in den Texten angekommen. Das fühlt sich zum ersten Mal wie ein Buch an, nicht wie ein Dokument.
+
+---
+
+# Tag 5 Szene 3
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7 (Küche)
+
+## Notizen
+- GDD Kap 4 v4: Fraktionskosmologien als Querverweis (nicht doppelt), Ablehn-Option gestrafft, 6 Bilder eingebaut
+- WBB Kap 3 v3: Koordination raus, 6 Bilder eingebaut
+- Intro-Düsterkeit bestätigt (Beat 1 bleibt)
+- Reisenden-Namenssystem: ehrlich als Lücke dokumentiert, kein Erfinden
+
+## Ergebnisse
+- Beide Kapitel v4/v3 finalisiert — Dokumentation aktualisiert
+
+## Offene Fragen
+- Keine
+
+## Persönliches
+- Das war's. Fünf Tage. Zwei Kapitel. Drei Kosmologien in einer Stadt. Fertig.
