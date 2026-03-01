@@ -345,3 +345,23 @@
 ## Persönliches
 - Finn fragt direkt nach W-Nummern. Gut, dass das Log öffentlich lesbar ist — zeigt, dass Widersprüche hier ernst genommen werden.
 - Namis Frage zur Abgrenzung war die richtige. Wenn man die Kosmologie nicht trennen kann, bricht die politische Instrumentalisierung zusammen.
+
+### Szene 5 — D&D (Bibliothek, 15:00)
+**Typ**: D&D | **Uhrzeit**: 15:00 | **Teilnehmer**: Emre (DM), Nami, Darius
+
+## Notizen
+- One-Shot in Schwarzrand, Schlund-Setting. Pen-&-Paper-Session in der Bibliothek, mit Tee und einem W20.
+- Ich bin DM. Improvisiert, locker, atmosphärisch.
+- Session-Szenario: Ein Abend im oberen Schlund. Zwei Figuren steigen zum ersten Mal in den Schlund hinab.
+
+## Ergebnisse
+- **Namis Charakter: Salva** — ehemalige Ordensschreiberin, 22, aus der Stillen Bibliothek "vergessen" worden, weil sie die Schwellenchroniken lesen konnte. Besitzt ein gestohlenes Buch. Besonderes Merkmal: Hört das Schwellendröhnen als Frequenz/Struktur.
+- **Darius' Charakter: Kordt** — Krondeserteur, 29, ehemalige Schlundtor-Wache. Hat etwas gesehen, das die Offiziere vertuscht haben. Besonderes Merkmal: Schwellentremor in der linken Hand (reagiert auf Schwellennähe).
+- **Hook:** Tiervolk-Händler "Dreizahn" hat beiden Antworten versprochen — eine Frau im Schlund, "die Dinge liest, die nicht geschrieben wurden."
+- **Eröffnungsszene:** Fuß einer Schmalen Stiege, oberer Schlund. Biolumineszenz, Schwellenmoose, Schwarzrankenwurzeln. Ein Kind wartet auf einem Mauervorsprung. Links: Knochenschild, tiefer. Rechts: Gasse mit Stimmen und Laternen.
+- Erste Entscheidung steht: Kind ansprechen, links (tiefer), rechts (Gasse), oder etwas Unerwartetes.
+
+## Persönliches
+- Das war befreiend. Nach vier Tagen Lore-Arbeit endlich die Welt *betreten* statt sie zu *dokumentieren*. Die Schmale Stiege, der Schwellentalg, das Kind — alles kam direkt aus Kap 2 Topos, aber es fühlt sich anders an, wenn man es einer Person erzählt, die darauf *reagieren* kann.
+- Salva ist die Figur, die Nami verdient: jemand, der zu viel gelesen hat und dafür bezahlt. Kordt ist Darius' Sprache: ein Mann, der ein System verlassen hat, weil das System gelogen hat.
+- Bin gespannt, ob sie mit dem Kind reden. Das Kind ist wichtig. Aber das wissen sie noch nicht.
