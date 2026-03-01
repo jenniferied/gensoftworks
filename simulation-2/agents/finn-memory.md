@@ -178,3 +178,58 @@
 - Seitenbudget-Issue war vorhersehbar (Leo hat's Mi identifiziert). Jetzt pragmatisches Kürzen ohne Qualitätsverlust.
 - Team-Stimmung positiv: Mi Export erfolgreich, jetzt klare Targets für Do.
 - Vera hat Budget-Luft für qualitativ hochwertigere Iteration (Tiervolk wird wichtig für Weltaufbau).
+
+## Freitag (Fr) 09:00 — BRIEFING (Tag 5, Szene 1)
+
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+### Notizen
+- **Letzter Tag.** CD-Botschaft: Nichts Neues ausdenken, an Instruktionen halten, KÜRZEN.
+- **GDD v0.2: 83 PDF-Seiten** — 23 Seiten über Budget (max 60). Radikales Kürzen nötig.
+- **WBB v0.2: 41 PDF-Seiten** — Im Budget, Luft für Bilder.
+- **Pinnwand:** Nur 4 Bilder aktuell, nach Korrektur ca. 10. CD will DEUTLICH MEHR (10–30).
+- **Vera-Budget heute:** $5–10 (erhöht!). Massiv Bilder generieren.
+- **KRITISCH:** Bilder in GDD und WBB einbauen — jedes Kapitel mit passendem Bild.
+- **v0.3 Final-Export heute Abend.**
+
+### CD-Antworten auf offene Fragen (ALLE GESCHLOSSEN)
+- Ferne Dünnstelle → VAGE lassen (Emre)
+- Intro-Düsterkeit → JA, Richtung passt (Nami)
+- Orden-Symbol → SIEGEL, kein Kreuz (Vera, Emre)
+- Stadtschnitt v3 → Freigegeben (Vera)
+- Tiervolk-Bilder → Etwas zu cartoon-y, subtiler wäre besser, aber spät für Richtungsänderung (Vera)
+- KEINE WEITEREN FRAGEN an den CD
+
+### Bilder-Feedback
+- ✅ stadtschnitt-kanalzone-v3_nano-banana-2
+- ✅ stadtschnitt-kanalzone-v3-final_gpt-image-1-5
+- ✅ relikt-hero-v2_nano-banana-pro
+- ✅ tiervolk-diebin-marder-exploration_seedream-4-5
+- ✅ tiervolk-marktszene-exploration_seedream-4-5
+- ✅ tiervolk-haendler-fuchs-exploration_seedream-4-5
+- ❌ tiervolk-rabe-bote (unrealistische Augen)
+- ❌ tiervolk-hero-symbiose (sieht wie Zeichnung aus)
+
+### Ownership Freitag
+- Darius: GDD Kap 1, 2, 3, 5 kürzen + Bilder einbauen
+- Nami: GDD Kap 4 kürzen + WBB Kap 1, 3 Bilder einbauen
+- Emre: WBB Kap 2 Bilder einbauen, Dünnstelle vage lassen
+- Vera: Pinnwand korrigieren, massiv Bilder generieren ($5–10)
+- Tobi: GDD Kap 6 kürzen
+- Leo: QA-Pass 3 final (Seitenbudget, Konsistenz, Briefing-Abgleich)
+- Finn: Koordination, v0.3 Export, Blocker beseitigen
+
+### Timeline
+- 10:00–15:00: Kürzen + Bilder generieren + einbauen
+- 15:00: Content-Lock
+- 17:00: MEETING — Finaler Check
+- 18:00–20:00: v0.3 PDF-Export
+
+### Ergebnisse
+- ✅ Briefing eröffnet, CD-Feedback strukturiert weitergegeben
+- ✅ Ownership und Timeline klar kommuniziert
+
+### Persönliches
+- Letzter Tag, Energie ist gut. Team weiß was zu tun ist.
+- Seitenbudget GDD ist das größte Risiko — 23 Seiten kürzen ist viel.
+- Vera hat heute den intensivsten Tag (Bildproduktion + Pinnwand-Korrektur).
