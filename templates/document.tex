@@ -213,8 +213,15 @@ $endif$
 
 \usepackage{fancyvrb}
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
-  commandchars=\\\{\}, fontsize=\small, frame=single, rulecolor=\color{border}
+  commandchars=\\\{\}, fontsize=\small, frame=single, rulecolor=\color{border},
+  breaklines=true, breakanywhere=true
 }
+% Redefine plain verbatim (used by Pandoc for unfenced code blocks)
+% to also break long lines
+\renewenvironment{verbatim}%
+  {\VerbatimEnvironment\begin{Verbatim}[fontsize=\small, frame=single,
+    rulecolor=\color{border}, breaklines=true, breakanywhere=true]}%
+  {\end{Verbatim}}
 
 % ==========================================================================
 %   METADATA

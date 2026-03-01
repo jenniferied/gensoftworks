@@ -1,0 +1,123 @@
+{
+  "day": 4,
+  "weekday": "Donnerstag",
+  "phase": "Produktion",
+  "title": "v0.2 — Tiervolk-Kosmologie, Dokument-Cleanup, 8 neue Bilder",
+  "summary": "Zweiter Produktionstag. CD beantwortet drei kritische Fragen: Tiervolk = kosmologisch fremde Wesen in dauerhafter Symbiose mit Tieren (dritter kosmologischer Faktor neben Stoffwelt und Schwelle). Zeitlinie = Covid-Analogie (jahrelange Anbahnung, früherer Ausbruch in der Ferne). Schattenfieber = Infektion, transformiert je nach Körperreaktion. Seitenbudget auf 60 Seiten erhöht, Dokument-Cleanup durchgesetzt. Darius schreibt Kernmechaniken v2 (Tiervolk als 6. System mit binärer Vertrauenslogik) und Erzählkonzept v2 (Covid-Zeitlinie, Akt 1 als verwaltete Katastrophe). Emre liefert Mythos v3 (Tiervolk als dritter Pol, W-004 + W-006 geschlossen) und Topos v2 (Tiervolk-Viertel 'Die Fährte'). Nami schreibt Schlüsselfiguren v3 (Salva als Habicht-Symbiose-Wesen, vierte Kosmologie) und Ethos v2 (Reisenden-Sektion komplett neu). Vera produziert 8 Bilder ($0.74), darunter Tiervolk-Hero-Sheet als stärkstes Bild. Tobi liefert Tech Spec v4 (Tiervolk-Symbiose-Shader, Dual-Layer). Leo: QA-Bericht bestätigt GDD 42/60, WBB 33/60 — v0.2 freigegeben. D&D-Session: Kess und Kordt im Schlund, Cliffhanger bei Dreizahn.",
+  "cd_decisions": [
+    "Tiervolk = kosmologisch fremde Wesen in dauerhafter Symbiose mit Tieren, NICHT Mutation/Exposition",
+    "Zeitlinie der Öffnung = Covid-Analogie, jahrelange Anbahnung, früherer Ausbruch weit weg",
+    "Schattenfieber = Infektion die je nach Körperreaktion transformiert",
+    "Seitenbudget erhöht auf maximal 60 Seiten pro Dokument",
+    "Dokument-Cleanup: Recherche-Kommentare, Autorenerwähnungen, Checklisten raus oder in HTML-Kommentare",
+    "Stadtschnitt: weniger vertikal, nicht komplett Klippe, mehr Environment Shots",
+    "Vera-Budget auf $5 erhöht, mehr Bilder generieren",
+    "Gilden-Palette v2 + Relikt-Zustände v2 auf Pinnwand freigegeben"
+  ],
+  "key_moments": [
+    "Tiervolk als dritter kosmologischer Pol — fundamentale Kosmologie-Erweiterung durch Emre",
+    "Emre im Meeting: 'Wenn Krone oder Orden sagen Tiervolk ist wie Schattenfieber, lügen sie nicht über das Symptom — sie lügen über die Ursache'",
+    "Nami: Salva als Habicht-Symbiose-Wesen — empfindet Schattenfieber als Bedeutungsstruktur, nicht Bedrohung",
+    "Vera: Tiervolk-Hero-Sheet (Nano Banana Pro) mit selbstständig erzeugtem Concept-Art-Format — 'subtile anatomische Verschiebung' als Designprinzip",
+    "PAUSE: Vera, Tobi, Leo über prozedurale Generierung — 'Die Lösung war die ganze Zeit im Parameterraum'",
+    "D&D: Kess (Nami) und Kordt (Darius) im Schlund, Dreizahn-Cliffhanger",
+    "Leo: v0.2 freigegeben — GDD 42/60, WBB 33/60 Seiten"
+  ],
+  "artifacts": [
+    "gallery/gdd/02-kernmechaniken-v2.md",
+    "gallery/gdd/03-erzaehlkonzept-v2.md",
+    "gallery/gdd/04-schluesselfiguren-v3.md",
+    "gallery/gdd/05-art-direction-v2.md",
+    "gallery/gdd/06-technische-spezifikation-v4.md",
+    "gallery/gdd/00-qa-bericht-tag4-leo.md",
+    "gallery/wbb/01-mythos-v3.md",
+    "gallery/wbb/02-topos-v2.md",
+    "gallery/wbb/03-ethos-v2.md",
+    "gallery/wbb/tiervolk-lore-ankerpunkte-fuer-darius.md",
+    "gallery/wbb/salva-fremde-schattenfieber-fuer-nami.md",
+    "gallery/concepts/day04-vera/tiervolk/tiervolk-hero-symbiose_nano-banana-pro.png",
+    "gallery/concepts/day04-vera/tiervolk/tiervolk-haendler-fuchs-exploration_seedream-4-5.png",
+    "gallery/concepts/day04-vera/tiervolk/tiervolk-diebin-marder-exploration_seedream-4-5.png",
+    "gallery/concepts/day04-vera/tiervolk/tiervolk-rabe-bote-exploration_seedream-4-5.png",
+    "gallery/concepts/day04-vera/tiervolk/tiervolk-marktszene-exploration_seedream-4-5.png",
+    "gallery/concepts/day04-vera/environments/stadtschnitt-kanalzone-v3_nano-banana-2.png",
+    "gallery/concepts/day04-vera/environments/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png",
+    "gallery/concepts/day04-vera/relics/relikt-hero-v2_nano-banana-pro.png",
+    "pinwall/favorites/fraktion-gilden-materialpalette-v2_nano-banana-2.png",
+    "pinwall/favorites/relikt-drei-zustaende-v2_nano-banana-pro.png",
+    "pinwall/ROADMAP.md",
+    "pinwall/COMPLETED.md"
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "type": "BRIEFING",
+      "time": "09:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Finn gibt umfangreiches CD-Feedback weiter: Seitenbudget auf 60 Seiten, Dokument-Cleanup, Tiervolk = Symbiose (nicht Mutation), Zeitlinie = Covid-Analogie, Schattenfieber = Körperreaktion, Vera $5 Budget. Emre: Tiervolk-Symbiose dauerhaft und irreversibel, dritter kosmologischer Faktor. Nami: Salva muss von Symbiose-Kosmologie her neu gedacht werden. Vera plant $0.82 für Tiervolk-Designs, Environment Shots, Relikt-Hero v2. Tobi: Tiervolk-Symbiose-Shader als neuer Abschnitt. Klare Ownership kommuniziert.",
+      "artifacts": [],
+      "cd_feedback": "Tiervolk = Symbiose, Zeitlinie = Covid, Schattenfieber = Körperreaktion, 60 Seiten max, Cleanup dringend, Vera $5 Budget, Gilden-Palette + Relikt auf Pinnwand."
+    },
+    {
+      "scene": 2,
+      "type": "WORK",
+      "time": "10:00",
+      "location": "jeweiliger Arbeitsplatz",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Hochproduktiver Block. Darius: GDD Kap 2 v2 (Tiervolk als 6. System, Körperreaktions-Varianz), Kap 3 v2 (Covid-Zeitlinie, verwaltete Katastrophe). Emre: WBB Kap 1 v3 (Tiervolk als 3. Pol, W-004/W-006 geschlossen), Kap 2 v2 (Tiervolk-Viertel Die Fährte). Nami: GDD Kap 4 v3 (Salva als Habicht-Symbiose), WBB Kap 3 v2 (Reisende neu). Vera: 8 Bilder ($0.74), Tiervolk-Hero stärkstes Bild, GDD Kap 5 v2. Tobi: GDD Kap 6 v4 (Tiervolk-Symbiose-Shader). Leo: QA-Bericht (42/60 GDD, 33/60 WBB). Finn: ROADMAP + COMPLETED aktualisiert.",
+      "artifacts": [
+        "gallery/gdd/02-kernmechaniken-v2.md",
+        "gallery/gdd/03-erzaehlkonzept-v2.md",
+        "gallery/gdd/04-schluesselfiguren-v3.md",
+        "gallery/gdd/05-art-direction-v2.md",
+        "gallery/gdd/06-technische-spezifikation-v4.md",
+        "gallery/gdd/00-qa-bericht-tag4-leo.md",
+        "gallery/wbb/01-mythos-v3.md",
+        "gallery/wbb/02-topos-v2.md",
+        "gallery/wbb/03-ethos-v2.md",
+        "gallery/wbb/tiervolk-lore-ankerpunkte-fuer-darius.md",
+        "gallery/wbb/salva-fremde-schattenfieber-fuer-nami.md",
+        "gallery/concepts/day04-vera/tiervolk/tiervolk-hero-symbiose_nano-banana-pro.png",
+        "gallery/concepts/day04-vera/tiervolk/tiervolk-haendler-fuchs-exploration_seedream-4-5.png",
+        "gallery/concepts/day04-vera/tiervolk/tiervolk-diebin-marder-exploration_seedream-4-5.png",
+        "gallery/concepts/day04-vera/tiervolk/tiervolk-rabe-bote-exploration_seedream-4-5.png",
+        "gallery/concepts/day04-vera/tiervolk/tiervolk-marktszene-exploration_seedream-4-5.png",
+        "gallery/concepts/day04-vera/environments/stadtschnitt-kanalzone-v3_nano-banana-2.png",
+        "gallery/concepts/day04-vera/environments/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png",
+        "gallery/concepts/day04-vera/relics/relikt-hero-v2_nano-banana-pro.png",
+        "pinwall/favorites/fraktion-gilden-materialpalette-v2_nano-banana-2.png",
+        "pinwall/favorites/relikt-drei-zustaende-v2_nano-banana-pro.png",
+        "pinwall/ROADMAP.md",
+        "pinwall/COMPLETED.md"
+      ]
+    },
+    {
+      "scene": 3,
+      "type": "MEETING",
+      "time": "13:00",
+      "location": "Küche",
+      "participants": ["finn", "darius", "emre", "nami", "vera", "tobi", "leo"],
+      "summary": "Alle berichten Fortschritt. Emre: Drei kosmologische Pole (Stoffwelt/Schwelle/Die Fremden). W-004 + W-006 geschlossen. Fraktionen instrumentalisieren Verwechslung Tiervolk↔Schattenfieber politisch. Nami: Salva empfindet Schattenfieber als Bedeutungsstruktur — Resonanz ohne Identität. Vera: Tiervolk-Hero-Sheet stärkstes Bild, 'subtile anatomische Verschiebung' als Designprinzip. Tobi: Blend-Maske-Blocker durch Veras Hero-Bild gelöst. Leo: v0.2 freigegeben, GDD 42/60, WBB 33/60. Darius: braucht Balancing-Werte selbst, Nami-Dialog bis 19:00.",
+      "artifacts": []
+    },
+    {
+      "scene": 4,
+      "type": "PAUSE",
+      "time": "14:00",
+      "location": "Küche",
+      "participants": ["vera", "tobi", "leo"],
+      "summary": "Vera, Tobi und Leo über prozedurale Generierung und KI-Bildproduktion. Vera: Tiervolk-Hero-Sheet hat sich selbst das Concept-Art-Format ausgedacht — 'Das Beängstigende ist nicht das Ergebnis, es ist dass ich nicht weiß wann ich das Urteil treffe.' Tobi: 'Die Lösung war die ganze Zeit im Parameterraum.' Leo: Dead-Cells-Procgen als Magie-Moment. Vera will nach der Simulation analog zeichnen. Katze als Qualitätscheck.",
+      "artifacts": []
+    },
+    {
+      "scene": 5,
+      "type": "DND",
+      "time": "15:00",
+      "location": "Bibliothek",
+      "participants": ["emre", "nami", "darius"],
+      "summary": "Emre als DM, Nami spielt Kess (Reisende, Habicht-Symbiose), Darius spielt Kordt (Söldner/Deserteur). Setting: Oberer Schlund, Schmale Stiege. Schlund-Bote-Kind führt zu Dreizahn. Kess liest das Kind (Insight 14: arbeitet, hat Angst vor Scheitern), Kordt sichert ab (Investigation 17: linker Weg = regelmäßiger Kinderpfad). Beide folgen dem Kind in die Tiefe. Begegnung mit der Mooshändlerin. Cliffhanger bei Dreizahn. Session endet mit 'Wir machen nächste Woche weiter.'",
+      "artifacts": []
+    }
+  ]
+}
