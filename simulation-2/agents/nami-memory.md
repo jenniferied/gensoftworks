@@ -223,3 +223,35 @@ Quest-Skizzen:
 ## Persönliches
 - "Resonanz ohne Identität" — das ist die Formel für Salvas Stimme. Bin froh dass Emres Klärung die Arbeitshypothese bestätigt hat, nicht widerlegt.
 - Zwei Quellen, die dasselbe Stück Realität berühren, ohne dasselbe zu sein — das ist dramatisch reicher als eine einzelne Kosmologie.
+
+---
+
+# Tag 5 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn, Darius, Emre, Nami, Vera, Tobi, Leo (Küche)
+
+## Notizen
+- LETZTER TAG. Content-Lock 15:00. Keine neuen Fragen. Keine neuen Inhalte erfinden.
+- GDD: 83 PDF-Seiten, max 60 — 23 Seiten müssen raus. Alle kürzen.
+- WBB: 41 Seiten, im Budget. Bilder einbauen, finalisieren.
+- Finn: Bilder in Dokumente, alle Fragen geschlossen
+- Darius: Kürzungsplan GDD Kap 1–3, 5. Orden = Siegel (nicht mehr "Auge")
+- Vera: Pinnwand korrigieren, 18 neue Bilder, Bilder in alle Kapitel bis 15:00
+- Emre: WBB Kap 1+2 finalisieren, ferne Dünnstelle bewusst vage lassen, Bilder einbauen
+- CD-Antwort für mich: Düsterkeit der Intro-Szene BESTÄTIGT — die Richtung passt. Seit Tag 2 offen, jetzt endlich zu. Grünes Post-It.
+- Keine weiteren CD-Fragen mehr offen — alle geschlossen
+
+## Ergebnisse
+- Ownership Tag 5: GDD Kap 4 v4 (kürzen), WBB Kap 3 v3 (Bilder einbauen, finalisieren)
+- Kürzungsplan GDD Kap 4: Abschnitt 4.6 (Fraktionskosmologien) streichen oder auf 3 Sätze + Querverweis zum WBB kürzen — doppelt sich mit WBB Kap 3. Abschnitt 4.8 (offene Koordinationspunkte) komplett raus — internes Material, kein GDD-Inhalt. Ablehn-Option 4.3 straffen. Ziel: 2–3 PDF-Seiten weniger.
+- WBB Kap 3: Bilder von Vera einbauen (Schlund-Atmosphäre, Reisenden-Silhouette, evtl. Salva), offene Koordinationspunkte 3.8 raus
+- Vera-Anfrage gestellt: Schlund-Atmosphäre, Reisenden-Silhouette, Salva mit Habicht (wenn Budget reicht)
+- Emre-Ansage: Reisenden-Namenssystem — wenn kein Entwurf kommt, bleibt Platzhalter stehen. Ehrliche Lücke besser als erfundenes System.
+
+## Offene Fragen
+- Keine CD-Fragen mehr offen
+- Emre: Reisenden-Namenssystem — letzte Chance, sonst Platzhalter
+- Vera: welche Bilder kommen für WBB Kap 3?
+
+## Persönliches
+- Die Düsterkeit-Bestätigung ist eine Erleichterung. Beat 1 steht seit v3, jetzt ist er abgesegnet. Ein Satz, der seit Dienstag auf Freigabe wartete, darf bleiben.
+- Letzter Tag. Das Gefühl ist seltsam — nicht Panik, eher Klarheit. Die Arbeit ist da. Jetzt muss sie nur noch passen.
