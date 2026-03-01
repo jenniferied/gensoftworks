@@ -142,6 +142,60 @@
         color: #7a9ab8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
       }
 
+      /* Artifact notes — expandable blocks with white background */
+      .artifact-note { margin-bottom: 4px; }
+      .artifact-note-toggle {
+        background: #e8e4dc; border: 1px solid #d0c8b8; color: #444;
+        font-family: monospace; font-size: 10px; padding: 4px 8px;
+        border-radius: 3px; cursor: pointer; width: 100%; text-align: left;
+        display: flex; align-items: center; gap: 5px;
+      }
+      .artifact-note-toggle:hover { border-color: #aaa; color: #222; }
+      .artifact-note-toggle .arrow { font-size: 8px; transition: transform 0.15s; display: inline-block; }
+      .artifact-note-toggle .arrow.open { transform: rotate(90deg); }
+      .artifact-note-body {
+        display: none; max-height: 400px; overflow-y: auto;
+        font-size: 11px; color: #333; line-height: 1.6;
+        padding: 10px 12px; background: #f5f0e8; border: 1px solid #d8d0c0;
+        border-top: none; border-radius: 0 0 3px 3px;
+        word-wrap: break-word; overflow-wrap: break-word;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .artifact-note-body.open { display: block; }
+      .artifact-note-body h1 { font-size: 14px; font-weight: 600; color: #1a1a1a; margin: 12px 0 6px; border-bottom: 1px solid #d8d0c0; padding-bottom: 4px; }
+      .artifact-note-body h2 { font-size: 13px; font-weight: 600; color: #2a4a6a; margin: 10px 0 5px; }
+      .artifact-note-body h3 { font-size: 12px; font-weight: 600; color: #4a6a8a; margin: 8px 0 4px; }
+      .artifact-note-body p { margin-bottom: 8px; }
+      .artifact-note-body ul, .artifact-note-body ol { margin: 4px 0 8px 18px; padding: 0; }
+      .artifact-note-body li { margin-bottom: 3px; }
+      .artifact-note-body strong { color: #1a1a1a; font-weight: 600; }
+      .artifact-note-body em { color: #555; }
+      .artifact-note-body hr { border: none; border-top: 1px solid #d8d0c0; margin: 10px 0; }
+      .artifact-note-body blockquote {
+        border-left: 3px solid #c8c0b0; padding: 4px 10px; margin: 6px 0;
+        color: #555; background: #ede8e0; border-radius: 2px;
+      }
+
+      /* Artifact image thumbnails */
+      .artifact-thumbs {
+        display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0;
+      }
+      .artifact-thumb {
+        width: 72px; cursor: pointer; border-radius: 3px;
+        overflow: hidden; border: 1px solid #333355;
+        transition: border-color 0.15s, transform 0.15s;
+      }
+      .artifact-thumb:hover { border-color: #665; transform: translateY(-1px); }
+      .artifact-thumb img {
+        width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
+        background: #161210;
+      }
+      .artifact-thumb-label {
+        display: block; padding: 2px 3px; font-family: monospace;
+        font-size: 8px; color: #887; white-space: nowrap;
+        overflow: hidden; text-overflow: ellipsis; background: #0d0d1a;
+      }
+
       /* Agent details list */
       .agent-card { margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #1a1a2e; }
       .agent-card-header { display: flex; align-items: baseline; gap: 5px; margin-bottom: 2px; flex-wrap: wrap; }
@@ -192,6 +246,43 @@
       }
       .agent-feedback.given { color: #8ab; background: #1a2030; border-left: 2px solid #3a5a6a; }
       .agent-feedback.received { color: #ab8; background: #201a1a; border-left: 2px solid #5a4a3a; }
+
+      /* Trace blocks */
+      .trace-block { margin-top: 6px; border-top: 1px solid #1a1a2e; padding-top: 4px; }
+      .trace-block-label {
+        font-size: 9px; color: #556; text-transform: uppercase; letter-spacing: 0.5px;
+        margin-bottom: 3px;
+      }
+      .trace-toggle {
+        background: #1a1a2e; border: 1px solid #333355; color: #7a8a9a;
+        font-family: monospace; font-size: 10px; padding: 3px 8px;
+        border-radius: 3px; cursor: pointer; width: 100%; text-align: left;
+        margin-bottom: 2px; display: flex; align-items: center; gap: 5px;
+      }
+      .trace-toggle:hover { border-color: #556699; color: #aac8e8; }
+      .trace-toggle .arrow { font-size: 8px; transition: transform 0.15s; display: inline-block; }
+      .trace-toggle .arrow.open { transform: rotate(90deg); }
+      .trace-body {
+        display: none; max-height: 300px; overflow-y: auto;
+        font-size: 10px; color: #bbb; line-height: 1.5;
+        padding: 6px 8px; background: #0d0d1a; border-radius: 3px;
+        margin-bottom: 3px; word-wrap: break-word; overflow-wrap: break-word;
+      }
+      .trace-body.open { display: block; }
+      .trace-body .loading { color: #556; font-style: italic; }
+
+      /* Transcript list (chronological) */
+      .transcript-entry { margin-bottom: 2px; }
+      .transcript-agent { font-size: 10px; color: #aac8e8; font-weight: bold; margin-left: 2px; }
+      .transcript-turn { font-size: 9px; color: #c8a86e; margin-left: 4px; }
+      .transcript-role { font-size: 9px; color: #556; margin-left: 6px; }
+
+      /* GM transcript block — visually separated */
+      .transcript-gm {
+        margin-bottom: 8px; padding-bottom: 8px;
+        border-bottom: 1px solid #333355;
+      }
+      .gm-toggle { color: #c8a86e !important; }
 
       /* Agent hover tooltip */
       #agent-tooltip {
@@ -290,9 +381,8 @@
       #document-bar {
         display: flex; align-items: center; gap: 0;
         padding: 4px 10px; background: #0d0d1a; border-top: 1px solid #222233;
-        overflow-x: auto; min-height: 0;
+        overflow-x: auto; min-height: 32px;
       }
-      #document-bar:empty { display: none; }
       .doc-group {
         display: flex; align-items: center; gap: 6px; padding: 0 10px;
       }
@@ -380,16 +470,22 @@
       .doc-modal-content code { background: #ede8e0; padding: 2px 5px; border-radius: 3px; font-size: 12px; font-family: monospace; color: #6a4a2a; }
 
       /* --- Gallery icon in document bar --- */
+      #document-bar-content { display: flex; align-items: center; gap: 0; flex: 1; min-width: 0; overflow-x: auto; }
       .gallery-icon-btn {
-        position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+        margin-left: auto; flex-shrink: 0;
         background: none; border: 1px solid #333355; border-radius: 3px;
-        color: #556; font-size: 14px; cursor: pointer; padding: 2px 6px;
-        font-family: monospace; line-height: 1;
+        color: #556; font-size: 12px; cursor: pointer; padding: 2px 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1; display: flex; align-items: center; gap: 4px;
       }
-      .gallery-icon-btn::before { content: '\25A3'; } /* ▣ grid icon */
       .gallery-icon-btn:hover { color: #88aacc; border-color: #556699; }
       .gallery-icon-btn.has-art { color: #c8a86e; border-color: #5a4a2a; }
-      #document-bar { position: relative; }
+      .gallery-count {
+        font-size: 9px; font-family: monospace; background: #333355; color: #aac8e8;
+        padding: 0 4px; border-radius: 7px; min-width: 14px; text-align: center;
+        line-height: 14px; display: none;
+      }
+      .gallery-icon-btn.has-art .gallery-count { display: inline-block; background: #5a4a2a; color: #e8d0a0; }
 
       /* --- Gallery Board --- */
       #gallery-overlay {
@@ -447,12 +543,23 @@
         cursor: pointer;
       }
       #gallery-lightbox.open { display: flex; }
+      #gallery-lightbox { flex-direction: column; gap: 12px; }
       #gallery-lightbox img {
-        max-width: 92vw; max-height: 92vh; object-fit: contain;
+        max-width: 92vw; max-height: 80vh; object-fit: contain;
         border-radius: 4px; box-shadow: 0 4px 24px rgba(0,0,0,0.6);
       }
+      #gallery-lightbox-info {
+        max-width: 92vw; color: #ccc; font-size: 12px;
+        text-align: center; padding: 0 20px;
+      }
+      #gallery-lightbox-model {
+        color: #7a9ab8; font-weight: bold; font-size: 13px;
+        text-transform: uppercase; letter-spacing: 1px;
+      }
+      #gallery-lightbox-prompt { color: #aaa; margin: 4px 0 0; font-style: italic; }
     </style>
-    <script type="module" crossorigin src="/gensoftworks/assets/index-CQVn711n.js"></script>
+    <script type="module" crossorigin src="/gensoftworks/assets/main-BdTKBkV8.js"></script>
+    <link rel="modulepreload" crossorigin href="/gensoftworks/assets/StudioScene-DCgEznM_.js">
   </head>
   <body>
     <!-- Agent hover tooltip -->
@@ -493,7 +600,13 @@
     </div>
 
     <!-- Gallery lightbox -->
-    <div id="gallery-lightbox"><img id="gallery-lightbox-img" src="" alt=""></div>
+    <div id="gallery-lightbox">
+      <img id="gallery-lightbox-img" src="" alt="">
+      <div id="gallery-lightbox-info">
+        <span id="gallery-lightbox-model"></span>
+        <p id="gallery-lightbox-prompt"></p>
+      </div>
+    </div>
 
     <!-- Concept art gallery board -->
     <div id="gallery-overlay">
@@ -508,7 +621,7 @@
     <div id="wrapper">
       <div id="left">
         <div id="game-container"><div id="zone-overlay"></div></div>
-        <div id="document-bar"><button class="gallery-icon-btn" id="btn-gallery" title="Concept Art"></button></div>
+        <div id="document-bar"><div id="document-bar-content"></div><button class="gallery-icon-btn" id="btn-gallery" title="Concept Art">&#x1F5BC;&#xFE0E;<span class="gallery-count" id="gallery-count"></span></button></div>
         <div id="audio-bar">
           <div class="audio-controls">
             <button class="audio-btn active" id="btn-audio-toggle" title="Ton an/aus">&#9834;</button>
@@ -518,6 +631,7 @@
             Music: <a href="https://freesound.org/people/Seth_Makes_Sounds/sounds/670039/" target="_blank">Seth_Makes_Sounds</a> (CC0)
             &middot; Typing: <a href="https://freesound.org/people/stu556/sounds/450281/" target="_blank">stu556</a> (CC0)
             &middot; Paper: <a href="https://freesound.org/people/davidbain/sounds/136778/" target="_blank">davidbain</a> (CC0)
+            &middot; <a href="https://github.com/jenniferied/gensoftworks" target="_blank">GitHub</a>
           </div>
         </div>
         <div id="title-bar">GENSOFTWORKS — Gebäude 12, Obergeschoss</div>

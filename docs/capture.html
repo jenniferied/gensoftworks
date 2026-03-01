@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GenSoftworks — Capture</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #131317; overflow: hidden; }
+      #game-container { width: 100vw; height: 100vh; position: relative; }
+      #zone-overlay {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        pointer-events: none; overflow: hidden; z-index: 10;
+      }
+      .zone-label {
+        position: absolute; font-family: monospace; font-size: 20px;
+        color: rgba(255,255,255,0.65); text-align: center; white-space: pre-line;
+        text-shadow: 0 0 6px rgba(0,0,0,0.7);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script type="module" crossorigin src="/gensoftworks/assets/capture-BpSg1thS.js"></script>
+    <link rel="modulepreload" crossorigin href="/gensoftworks/assets/StudioScene-DCgEznM_.js">
+  </head>
+  <body>
+    <div id="game-container"><div id="zone-overlay"></div></div>
+    <div id="agent-tooltip" style="display:none;"><div class="tt-name"><span class="tt-gender"></span><span class="tt-label"></span><span class="tt-flag"></span></div><div class="tt-role"></div></div>
+  </body>
+</html>
