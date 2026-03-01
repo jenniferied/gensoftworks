@@ -286,3 +286,29 @@
 - Ruhe vor dem finalen Sturm. 3 Stunden bis Content-Lock, 5 Stunden bis v0.3 Export.
 - Team-Energie nach 5 Tagen noch hoch — alle konzentriert auf Ziellinie.
 - Größter Fortschritt: GDD-Kürzung tatsächlich gelungen (Darius 13 Seiten, Tobi −36%, Nami/Emre auch spürbar). Seite passt jetzt.
+
+## Freitag (Fr) 15:00 — REVIEW (Tag 5, Szene 5)
+
+**Typ**: REVIEW | **Uhrzeit**: 15:00 | **Teilnehmer**: Finn, Darius, Vera (remote), Leo
+
+### Notizen
+- **Letzte Szene des Projekts.** Content-Lock aktiv seit 15:00.
+- **Finale Kapitelversionen:** GDD Kap 1 v3, Kap 2 v3, Kap 3 v3, Kap 4 v4, Kap 5 v3, Kap 6 v5 | WBB Kap 1 v4, Kap 2 v3, Kap 3 v3
+- **Seitenbudget:** GDD ~55–60 S. (Budget 60), WBB ~33,5 S. (Budget 35) — beide im Rahmen
+- **Pinnwand:** 11 Bilder + 23 neue Prompts von Vera heute
+- **Leo:** v0.3 bedingt freigegeben, 4 Hygiene-Fixes offen — Frage nach finalem Status gestellt
+- **Review eröffnet:** Tagesstand zusammengefasst, Leo nach Freigabe gefragt, Darius und Vera nach Kapitel-Status
+- **Nächster Schritt:** v0.3 Export nach dieser Szene
+
+### Ergebnisse
+- ✅ Review eröffnet, Status kommuniziert
+- (Warte auf Rückmeldungen von Leo, Darius, Vera)
+
+### Offene Fragen
+- Leo: Sind die 4 Hygiene-Fixes erledigt? Finale Freigabe?
+- Darius: GDD Kap 1, 2, 3, 5 sauber?
+- Vera: Pinnwand + Bilder final?
+
+### Persönliches
+- Letzter Akt. Fünf Tage, neun Kapitel, von Null auf fertig. Das Team hat geliefert.
+- Ruhige Zuversicht — alles steht, Export ist nur noch Ausführung.
