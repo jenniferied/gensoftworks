@@ -1,0 +1,65 @@
+[
+  {
+    "name": "waffen-material-hierarchie",
+    "prompt": "Concept art flat-lay comparison of medieval weapons showing social class through material quality. Three weapons arranged horizontally against a dark stone surface. TOP: An upper-class Damascus steel longsword — the blade shows the distinctive flowing pattern of folded steel, the crossguard is inlaid with polished obsidian cabochons, the grip is wrapped in black shark skin with a gold thread accent, the pommel bears a pressed wax seal. The blade catches cold white light. CENTER: A middle-class crucible steel hand-axe — functional, well-made, the steel head is clean with geometric etched guild marks, the haft is oiled ash wood with a leather grip, a bronze fitting at the head junction. Honest craftsmanship, no luxury. BOTTOM: An underclass crude iron knife — pitted, poorly balanced, the blade shows hammer marks and uneven tempering, the handle is carved bone wrapped with cord, the edge is sharp but will not hold. The difference in material quality tells the entire social story without words. Color palette: dark stone background, cold steel highlights on the Damascus blade, warm amber on the middle weapon, grey-brown for the underclass knife. Dark fantasy weapon concept art, flat lay, painterly, even studio lighting, clean presentation.",
+    "model": "nano-banana-2",
+    "category": "weapons",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/weapons"
+  },
+  {
+    "name": "ruestung-oberschicht-vs-unterschicht",
+    "prompt": "Concept art side-by-side comparison of two armor sets from opposite social extremes in a medieval dark fantasy world. LEFT: Upper-class Crown elite armor — brushed dark titanium-alloy plate segments over black quilted gambeson, etched geometric rank patterns, asymmetric left pauldron, blood-red enamel crest, a short black brocade cape. The metal is pristine, every edge precise, every surface maintained. This armor IS status. RIGHT: Underclass salvaged protection — mismatched pieces scavenged from different sources: a dented iron chest plate two sizes too large, secured with rope and leather strips over layers of dirty undyed linen. One arm has a stolen chainmail sleeve, the other has layered leather scraps. A carved bone shoulder guard. The whole assembly held together by improvisation and necessity. No color, no heraldry, no identity. The contrast between the two must be immediate and visceral — same function, opposite worlds. Background: plain dark surface. Color palette: LEFT all-black with red accent and steel highlights. RIGHT grey-brown, rust, dirty cloth tones. Dark fantasy armor concept art, flat presentation, painterly, even lighting.",
+    "model": "seedream-4-5",
+    "category": "weapons",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/weapons"
+  },
+  {
+    "name": "tiervolk-salva-habicht-subtil",
+    "prompt": "Concept art of a hawk-humanoid figure named Salva — a beast-folk elder and information broker in a medieval dark fantasy city. Three-quarter portrait, upper body and head. Salva is tall, lean, with the head and facial structure of a sparrowhawk — sharp curved beak, intense forward-facing eyes — but rendered with an alien subtlety: the feathers on the face transition smoothly into something resembling skin texture at the jaw and throat, creating an uncanny valley where bird and human blur. The eyes are the most human element: intelligent, weary, knowing — but the pupils are horizontal bars instead of round, and the iris shifts between amber and pale grey depending on where the light falls. The feathers on the crown and nape lie flat and precise, but a secondary geometric pattern is visible beneath the natural feather alignment — as if something else organized the growth. The clothing: a heavy dark wool robe with a high mandarin collar, simple but well-made, no ornaments. One pale ash-grey hand visible — the fingers are human-length but the skin has a scaled texture. The expression: profound patience. This is someone who has outlived most of what surprised them. Background: dark stone, minimal. Color palette: warm brown and grey feather tones, charcoal wool, amber and pale grey eyes, muted earth tones only. Dark fantasy character concept art, painterly, intimate portrait lighting, atmospheric.",
+    "model": "nano-banana-pro",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/tiervolk"
+  },
+  {
+    "name": "tiervolk-subtil-menschlich-v2",
+    "prompt": "Concept art of a beast-folk figure reimagined with maximum subtlety — almost human, with only trace animal characteristics visible. Full body three-quarter view. The figure appears nearly human at first glance: a woman in her thirties wearing a dark charcoal merchant's coat, leather gloves, practical boots. But on closer inspection: the bone structure of the face is fractionally elongated at the jaw, the cheekbones are set slightly too high, the ears are positioned a centimeter above where human ears sit and taper to points hidden by dark hair. The eyes: large, amber-brown, with vertical slit pupils that could almost pass as unusual human eyes in low light. The skin at the temples has a barely visible texture shift — not fur, but a grain direction in the skin itself, as if the dermis remembers being covered. The hands in their leather gloves: the fingers are slightly too long, the last joint bends with a range that exceeds human. She stands in a doorway of a medieval stone building, half in shadow. The animal origin is fox — but this is a fox so far into human form that only an observer who knows what to look for would see it. Color palette: charcoal coat, warm amber interior light, dark shadow, natural skin tones with subtle warm amber undertone. Dark fantasy concept art, painterly, intimate lighting, atmospheric realism.",
+    "model": "seedream-4-5",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/tiervolk"
+  },
+  {
+    "name": "orden-siegel-designsheet",
+    "prompt": "Imagine a concept art design sheet showing the Order's official seal — the central symbol of the religious-military organization's authority in a medieval dark fantasy world. The seal is NOT a cross — it is a pressed wax seal stamp design. The sheet shows: TOP CENTER: the seal itself as a large detailed circular impression in dark red-brown wax. The design within the seal: concentric circles containing a stylized eye motif at the center — the Eye of Knowledge — surrounded by radiating geometric lines that suggest both a lens diagram and a web. The outer ring contains minute geometric patterns too small to read. The seal is the Order's identity — stamped on documents, branded on doorframes, pressed into the pale green wax of their official correspondence. SURROUNDING the main seal: smaller studies showing the seal applied in different contexts — stamped on a vellum document, branded into a stone doorframe lintel, pressed into green sealing wax on a leather scroll case, worn as a heavy silver pendant. The seal must read as authoritative, clinical, and slightly threatening — it says: we have recorded you. Color palette: dark red-brown wax, silver metal, pale green secondary wax, cream vellum background. MUST obey ALL: this is a design reference sheet with visual variations only, no written annotations. Dark fantasy prop design concept art, clean presentation, even lighting.",
+    "model": "gpt-image-1-5",
+    "category": "orden",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera/orden"
+  },
+  {
+    "name": "kronbastion-hero-cinematic",
+    "prompt": "A cinematic establishing shot of the Crown Fortress at dawn, viewed from a lower city district looking upward. The fortress dominates the upper portion of the frame: massive geometric brutalist stone platforms cantilevered out over the abyss, their undersides casting deep shadow over everything below. Crystal glass light shafts in the fortress walls catch the first pale dawn light and redirect it as precise beams cutting through the morning mist. Hanging gardens of dark ivy trail from the fortress edges, the only organic element against the geometric stone. The mid-ground shows the guild district — clean-cut limestone buildings with bronze fittings, partially obscured by mist. The foreground: rooftops of half-timbered middle-class houses, warm amber lantern light still burning in windows. The vertical layering of the city is visible in this single frame — three epochs of architecture stacked and pressing downward. A flock of birds spirals between the layers. The fortress LEANS toward the viewer, toward the threshold-edge — the directional architecture that defines this city. Color palette: cold pale dawn sky, warm amber in lower windows, charcoal stone, dark green ivy, mist-grey atmosphere. Dark fantasy environment concept art, painterly, cinematic aspect ratio, atmospheric perspective, dramatic scale.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/environments"
+  },
+  {
+    "name": "alchemie-guertel-ausruestung",
+    "prompt": "Concept art flat-lay study of an alchemist's belt and equipment — the tools of a player character specializing in alchemical preparation in a medieval dark fantasy world. Arranged on dark oiled leather: a wide brown leather belt with multiple attachment loops and pouches. Contents displayed: three glass phials of different sizes containing liquids — one pale green luminescent, one deep amber, one colorless. A small brass mortar and pestle. A bone-handled folding knife with a thin curved blade for harvesting ingredients. A leather roll containing dried herb bundles tied with twine. A palm-sized stone with a hollow depression for grinding minerals. Two sealed ceramic containers with wax stoppers. A thin copper measuring chain with marked segments. All items show use-wear and patina — these are working tools, not props. The glass phials are the visual focal point — particularly the pale green one, which provides the only luminescence. Color palette: dark brown leather, brass and bone, amber and green glass, warm amber overall lighting against dark background. Dark fantasy equipment concept art, flat lay, painterly, warm studio lighting.",
+    "model": "seedream-4-5",
+    "category": "weapons",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/weapons"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "kronbastion-aussen",
+    "prompt": "Concept art of the Crown Fortress exterior — the highest point of a medieval vertical city, a seat of decaying feudal power. The fortress is pure geometric brutalism in stone: massive rammed earth and cut limestone blocks forming cantilevered platforms that extend over a vast abyss below. No ornament whatsoever — the architecture IS the power statement. Crystal glass light shafts pierce the upper walls, catching pale sky light and directing it downward as controlled beams. Hanging gardens of dark ivy and pale lichen cling to the exposed edges where wind erosion has softened the stone. A narrow stone bridge connects a secondary tower to the main keep, silhouetted against an overcast sky. Two small figures — crown soldiers in dark armor — stand at the bridge entrance, dwarfed by the scale. The fortress leans slightly toward the abyss edge — the directional gesture of a city that orients itself toward the threshold. Color palette: pale limestone, charcoal shadows, cold white sky light through crystal, dark green ivy as organic contrast. Dark fantasy architectural concept art, cinematic wide shot, painterly, atmospheric perspective.",
+    "model": "seedream-4-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/environments"
+  },
+  {
+    "name": "gildenhof-innen",
+    "prompt": "Imagine an interior concept art of a guild court hall — the central trading and judicial space of the merchant guilds in a medieval vertical city. The architecture follows Bauhaus-inspired principles translated into medieval materials: clean geometric limestone walls, modular window bays with leaded glass panels, a visible load-bearing column structure of dark iron-reinforced stone pillars. The floor is polished dark stone with inlaid bronze guild crests at measured intervals. Along both walls: open workshop alcoves where craftspeople work at forges, looms, and grinding wheels — the production is VISIBLE as a deliberate display of guild power. A central raised platform with a heavy oak judicial bench where contract disputes are resolved. Warm amber light enters through high clerestory windows and mixes with the orange glow of forge fires. Several figures populate the space: guild clerks in indigo robes, an armored guild guard, a merchant presenting fabric samples. The ceiling is barrel-vaulted with geometric coffering. Color palette: warm amber forge light, dark polished stone floor, indigo textiles, bronze metal accents, cold grey limestone walls. MUST obey ALL: no modern elements, purely medieval materials. Dark fantasy interior concept art, painterly, warm-cold light contrast, atmospheric.",
+    "model": "nano-banana-2",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/environments"
+  },
+  {
+    "name": "stille-bibliothek-orden",
+    "prompt": "Concept art of the Order's Silent Library — a tower-form repository of all written knowledge in a medieval dark fantasy city. The interior viewed from below looking upward: a cylindrical stone tower, its inner walls lined floor to ceiling with manuscript shelves carved directly into pale limestone. The shelves spiral upward in a continuous helix, accessible by narrow stone walkways with no railings. The manuscripts are bound in pale vellum and dark leather, packed densely. The only light comes from narrow slit windows positioned to create controlled reading beams — light as privilege, rationed and directed. At the base level: a reading chamber with heavy oak desks where a single robed Order scholar works by the light of a pale green alchemical lantern — the green glow is the sole color in an otherwise monochrome space. The stone walls are pristine — bleached, maintained, obsessively clean. The atmosphere: vertical knowledge hoarding. The architecture says: we own what you may learn. Color palette: pale limestone white, vellum cream, dark leather brown, one pale green alchemical glow. Dark fantasy interior concept art, painterly, vertical composition, cold diffused light.",
+    "model": "seedream-4-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/environments"
+  },
+  {
+    "name": "schlund-unterstadt-atmosphaere",
+    "prompt": "Imagine an atmospheric concept art of the SCHLUND — the deepest underclass district beneath a medieval vertical city, where the boundary between normal reality and another plane of existence grows thin. The viewpoint is at ground level inside a low-ceiling tunnel carved from ancient bedrock. The ceiling is barely two meters high, forcing inhabitants to stoop. The walls are rough unhewn stone with patches of pale green-white bioluminescent lichen growing in the wet mortar joints — the only light source, creating a sickly diffuse glow. The tunnel opens into a small irregular chamber where makeshift dwellings are assembled from stolen bricks, salvaged timber, and cloth partitions. Three figures huddle around a small clay oil lamp: a woman with visible pale violet vein-lines on her forearms — early shadow fever — mending a child's shirt. A man sharpening a bone-handled knife. A teenager watching the tunnel entrance. Their clothing: layers of undyed linen, patched and repatched, rope belts, no metal. Water drips from the ceiling into a stone-cut channel. The atmosphere: claustrophobic, damp, organic. Not romantic poverty — real subsistence. The bioluminescent glow is beautiful and threatening simultaneously because it signals proximity to the threshold. MUST obey ALL: no modern materials, no bright colors, purely medieval underclass. Dark fantasy environment concept art, painterly, low ambient light, atmospheric.",
+    "model": "nano-banana-pro",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/environments"
+  },
+  {
+    "name": "markt-der-tausend-treppen",
+    "prompt": "Concept art of the Market of a Thousand Steps — a vast vertical market carved into the stone face of a medieval city's mid-level cliff, where the middle-class district transitions into the guild quarter above. Hundreds of narrow stone steps connect market platforms at different heights, creating a three-dimensional bazaar. Stalls are built into carved stone niches in the cliff face, sheltered by canvas awnings in faded earth tones. Merchants display their goods: bolts of dyed linen in indigo and madder red, ceramic vessels, leather goods, dried herbs hanging in bundles. The steps are worn smooth by centuries of traffic. Lanterns on iron brackets illuminate the scene with warm amber light. Dozens of figures move up and down the steps — porters carrying goods, guild apprentices, hooded buyers. The architecture shows the transition zone: lower levels have rough stone and simple timber framing, upper levels show cleaner cut stone with bronze fittings and guild crests. The vertical composition creates natural depth layers. Color palette: warm amber lantern light, charcoal stone, earth-toned fabrics, occasional indigo and madder accents. Dark fantasy environment concept art, vertical composition, painterly, warm atmospheric light.",
+    "model": "seedream-4-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/environments"
+  },
+  {
+    "name": "schattenfieber-stufe1-subtil",
+    "prompt": "Concept art character study showing early shadow fever — Stage 1, subtle and reversible. A close-up portrait and upper body view of a human figure, gender neutral, late twenties. The face appears normal, healthy, even attractive. But at the wrists and throat, under direct light: faint hairline vein-patterns are visible beneath the skin, in a pale blue-violet color identical to the glow of the activated relic. The veins form a branching pattern too regular to be natural blood vessels — they follow a secondary circulatory network. The subject seems unaware or unconcerned. The mood: beauty as trap. The figure wears simple charcoal linen, the wrist veins visible where the sleeve is pushed back. Background: warm amber interior light suggesting a tavern or workshop. The violet veins are SUBTLE — visible only on close inspection, only under direct light. This is the stage where the player might not notice, or might find it intriguing. Color palette: warm skin tones, charcoal clothing, one pale blue-violet vein pattern barely visible. Dark fantasy character study, painterly, intimate warm light, close crop.",
+    "model": "seedream-4-5",
+    "category": "schattenfieber",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera/schattenfieber"
+  },
+  {
+    "name": "schattenfieber-stufe2-mutativ",
+    "prompt": "Concept art character study showing shadow fever Stage 2 — mutative, manageable but visible. Upper body and hands view of a human figure in their thirties. The shadow fever vein-lines are now clearly visible: raised channels beneath the skin running along the forearms, neck, and temples. The skin around the channels has shifted tone — cooler, greyer, as if the blood beneath carries something other than warmth. The channels pulse faintly with a pale violet light that is visible even in ambient lighting. The figure's expression is focused, controlled — they are managing the condition, using it. One hand is extended palm-up, and along the inner forearm the channel network is fully visible: branching, regular, beautiful in a clinical way. The clothing: dark practical garments, the sleeves deliberately rolled back to expose the forearms. This is someone who has accepted the fever as power. The background: a dark stone alcove, cold light. Color palette: cool grey skin shift, pale violet luminescent channels clearly visible, charcoal clothing, cold ambient light. Dark fantasy character study, painterly, clinical but atmospheric, medium crop.",
+    "model": "nano-banana-2",
+    "category": "schattenfieber",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera/schattenfieber"
+  },
+  {
+    "name": "schattenfieber-stufe3-aufloesung",
+    "prompt": "Imagine a deeply unsettling character study concept art showing shadow fever Stage 3 — irreversible dissolution. Upper body view of a human figure in an advanced state of material transition. The skin has become translucent in patches, especially at the hands, forearms, and temples. Beneath the translucent skin, the vein-channel network glows with a sickly yellow-green light — the same color shift as the dissolving relic in its third state. The figure's edges are evaporating: at the fingertips and along the jaw, fine mineral particulate dust drifts away from the body as if the person is slowly becoming powder. The expression on the face is not pain but resignation — a profound quiet sadness. The figure sits alone on a stone bench in a bare chamber. The skin that remains opaque has a grey, ashen quality. The glow from within illuminates the figure from the inside out. This person is a warning, not a monster. They are isolated, always alone, always tragic. Color palette: ashen grey skin, sickly yellow-green internal glow, translucent skin patches, fine mineral dust at edges, dark stone background. MUST obey ALL: no horror aesthetics, no screaming, no monster design — this is medical tragedy, not spectacle. Dark fantasy character study, painterly, cold dim light, intimate and sorrowful.",
+    "model": "nano-banana-pro",
+    "category": "schattenfieber",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera/schattenfieber"
+  }
+]

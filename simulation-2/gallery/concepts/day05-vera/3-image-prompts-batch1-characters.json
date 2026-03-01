@@ -1,0 +1,74 @@
+[
+  {
+    "name": "krone-soldatin-brenn-silhouette",
+    "prompt": "Concept art of a female crown soldier in a medieval dark fantasy world. Full-body three-quarter view. She wears layered black plate armor segments over a charcoal quilted gambeson — the armor is brushed dark titanium alloy with etched geometric patterns, asymmetric shoulder pauldrons with the left one larger and cantilevered. A deep blood-red enamel crest on the chest plate, the only color. Heavy black brocade half-cape draped over one shoulder. Her face is partially visible under a geometric open-faced helm — stern, weathered, mid-thirties. She carries a straight-bladed longsword with a bone-inlaid crossguard. Her silhouette reads as broad-shouldered, compact, grounded — recognizable at distance as crown military. The stance is parade-ready but combat-worn. Background: minimal dark stone wall. Color palette: all-black armor, charcoal textile, one blood-red accent on the crest. Dark fantasy concept art, painterly, dramatic side lighting.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/characters"
+  },
+  {
+    "name": "krone-soldatin-hero",
+    "prompt": "Imagine a dramatic full-body character concept art of a female Crown soldier — an elite enforcer in a medieval feudal monarchy. She stands in three-quarter view against a dark stone colonnade. Her armor is the centerpiece: segments of brushed dark metal plate over a quilted charcoal-black gambeson, with an asymmetric left pauldron that extends outward like a cantilevered brutalist shelf. The plate surfaces are etched with faint geometric patterns — not decorative but identification markers of rank. One blood-red enamel insignia on the breastplate, shaped like a stylized seal stamp — the only color in the entire figure. A half-cape of heavy black brocade silk hangs from the right shoulder, weighted at the hem. Her helm is open-faced, geometric, angular — more architectural than ornamental. She holds a straight longsword point-down, resting on stone, her left hand on the pommel. Her face: mid-thirties, sharp features, a thin scar across the jawline, expression utterly neutral. Her boots are reinforced with dark metal greaves. The silhouette must read clearly at distance: wide shoulders, compact torso, grounded stance. MUST obey ALL: no bright colors besides the single red accent, no fantasy ornament, no flowing hair, no decorative elements. Painterly dark fantasy concept art, dramatic cold side lighting, atmospheric.",
+    "model": "nano-banana-pro",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/characters"
+  },
+  {
+    "name": "ordensbruder-scherer-siegel",
+    "prompt": "Concept art of a male Order inquisitor in a medieval dark fantasy setting. Full body, three-quarter view. He wears pristine white heavy linen robes with geometric silver thread embroidery along the edges — the fabric is stiff, layered, monastic. Around his neck hangs a large wax seal stamp on a silver chain — the Order's symbol of authority, a pressed seal impression rather than a cross. His hands are bare, long-fingered, holding a leather-bound codex. A belt of bleached leather carries glass phials filled with pale green alchemical fluid — the faint luminescence is the only color accent in the entire figure. His face: gaunt, clean-shaven, forties, with deep-set eyes that evaluate everything. A white cowl is pushed back from his head. His silhouette reads as tall, narrow, high-collared — distinctly different from the broad Crown soldiers. Background: minimal pale limestone wall. Color palette: all-white robes, silver details, one pale green luminescent accent in the phials. Dark fantasy concept art, painterly, soft diffused cold light.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/characters"
+  },
+  {
+    "name": "gildenmeisterin-kast",
+    "prompt": "Concept art of a female guild master in a medieval dark fantasy world. Full body three-quarter view. She is a master craftswoman in her late forties — powerful, wealthy, self-made. Her clothing layers: a deep midnight indigo brocade over-robe with woven gold border trim, over a brown leather artisan's apron still stained with workshop residue. A wide belt carries tool holders — brass calipers, a small hammer, measuring chains. Around her neck: a polished malachite cabochon pendant the size of a walnut, signaling trade status. Her hands are work-scarred but adorned with two heavy signet rings — bronze guild seals. Her hair is pulled back severely, secured with amber pins. Her expression: appraising, calculating, not unkind but transactional. The silhouette reads as substantial, grounded, between-worlds — not as martial as the Crown, not as austere as the Order. Background: warm amber workshop interior, a forge glow in the distance. Color palette: midnight indigo, warm amber, deep brown leather, gold and bronze accents, one malachite green focal point. Dark fantasy concept art, painterly, warm directional light.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/characters"
+  },
+  {
+    "name": "schlund-bewohner-unterschicht",
+    "prompt": "Concept art of an underclass slum dweller from the deepest layer of a medieval vertical city. Full body, frontal view. A figure of indeterminate age — could be thirty, could be fifty — wearing layers of patched undyed linen, a salvaged leather vest missing half its buckles, wrapped leg bindings of grey cloth. Their skin has an unhealthy pallor, and at the wrists and throat, faint pale violet vein-lines are barely visible — early signs of a contamination called shadow fever. They carry a bone-handled knife tucked in a rope belt and a shoulder bag made of stitched-together fabric scraps. Their eyes are alert, not defeated — survival sharpened. The background suggests an underground tunnel: low ceiling of rough stone with faint green-white bioluminescent lichen growing in the mortar joints, providing the only dim light. The ceiling is under two meters. The atmosphere: damp, cramped, organic glow. Color palette: grey, dirty brown, undyed cloth tones, one faint pale violet at the visible veins, faint greenish bioluminescence in the background. Dark fantasy concept art, painterly, low ambient light.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/characters"
+  },
+  {
+    "name": "spieler-silhouetten-drei-varianten",
+    "prompt": "Imagine a character concept art lineup showing three player character silhouette variants side by side against a plain dark stone background — representing light, medium, and heavy armor configurations in a medieval dark fantasy world. LEFT: Lightly armored — quilted gambeson, leather bracers, a short cloak, visible belt pouches with alchemical tools, soft boots. Silhouette is lean, mobile, angular. CENTER: Medium armored — chainmail segments over gambeson, one asymmetric shoulder plate, half-greaves, a longsword at the hip. Silhouette is balanced, functional, the most common player configuration. RIGHT: Heavily armored — overlapping dark plate segments, full greaves, a heavy shield on the back, a great helm held under one arm. Silhouette is wide, imposing, fortress-like. All three figures are gender-neutral and face-obscured (helms, hoods, or shadow). The clothing follows the Comme des Garcons meets medieval armor principle: tailored, body-conscious, layered, asymmetric. No bright colors — all charcoal, dark iron, weathered leather, patina at edges. The three figures must be clearly distinguishable at distance by silhouette alone. MUST obey ALL constraints: no bright colors, no fantasy ornament, no text or labels anywhere on the image. Dark fantasy character lineup concept art, painterly, even front lighting, clean presentation.",
+    "model": "nano-banana-pro",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera/characters"
+  },
+  {
+    "name": "spieler-silhouette-leicht",
+    "prompt": "Concept art of a lightly armored player character in a medieval dark fantasy world. Full body three-quarter view. Gender ambiguous, face hidden by a deep hood. The outfit: a fitted quilted gambeson in charcoal grey, forearm bracers of dark leather with brass buckles, a short asymmetric cloak draped over one shoulder, a tool belt with leather pouches containing glass phials and small bone instruments. Soft-soled boots for quiet movement. A curved dagger at the hip and a small hand crossbow slung on the back. The silhouette reads as lean, angular, mobile — a scout or alchemist rather than a warrior. The clothing is layered and tailored — avant-garde medieval, not costume. The fabric shows wear and patina at stress points. Background: simple dark wall. Color palette: charcoal grey, dark leather brown, brass accents, one faint amber glow from a phial at the belt. Dark fantasy concept art, painterly, atmospheric side light.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/characters"
+  },
+  {
+    "name": "spieler-silhouette-schwer",
+    "prompt": "Concept art of a heavily armored player character in a medieval dark fantasy world. Full body three-quarter view. Gender ambiguous, face fully enclosed in a geometric open-faced great helm with angular lines. The armor: overlapping dark brushed metal plate segments over visible chainmail at the joints, full leg greaves, reinforced gauntlets. The plate surfaces show etched rank patterns and heavy patina at edges — this armor has seen decades of service. A massive kite shield strapped to the back, its face bearing a single embossed seal impression. A broad-bladed war axe at the hip. A short heavy cloak of black wool, weighted at the hem with iron beads. The silhouette reads as wide, grounded, fortress-like — unmistakably heavy infantry. No bright colors, no ornamental flourishes — this is functional military equipment, not ceremonial. Background: simple dark stone. Color palette: dark iron, charcoal wool, brushed steel highlights, heavy shadow. Dark fantasy concept art, painterly, dramatic low-angle light.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera/characters"
+  }
+]

@@ -322,3 +322,89 @@
 - Budget bisher $1.84 gesamt — heute $5–10 neues Tagesbudget, das ist endlich genug zum Arbeiten
 - Druck ist hoch aber fokussiert: Pinnwand fixen, Bilder ballern, in Dokumente einbauen. Klare Prioritäten.
 - Tiervolk-Kritik (zu cartoon-y) ist fair — Seedream tendiert zu "cute". Für Iteration heute: mehr Realismus-Keywords, weniger "animal features", mehr "subtle bone structure shifts"
+
+---
+
+# Tag 5 Szene 2 (WORK)
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Vera (solo, remote Köln)
+
+## Notizen
+- LETZTER TAG. Content-Lock 15:00. Drei Blöcke: Pinnwand (GM erledigt), Bilder generieren, GDD Kap 5 v3
+- Pinnwand: 11 freigegebene Bilder bereits auf pinwall/favorites/ (GM hat Block 1 übernommen)
+- 23 neue Bilder in 3 Batches promptet — alle Prioritäten aus dem Briefing abgedeckt
+- GDD Kap 5 v3 geschrieben: Content-Lock-Fassung, gestrafft, alle Bilder eingebettet
+- Orden-Symbol = SIEGEL konsequent eingearbeitet (Designsheet + Text)
+- Tiervolk-Iteration: subtilere Variante (fast-menschlich) + Salva (Habicht) als benannter NPC
+
+## Ergebnisse
+
+**Neue Bilder (day05-vera/) — 23 Prompts in 3 Batches:**
+
+**Batch 1 — Charaktere (8 Bilder):**
+| Datei | Modell | Kosten |
+|-------|--------|--------|
+| `characters/krone-soldatin-brenn-silhouette` | seedream-4-5 | $0.04 |
+| `characters/krone-soldatin-hero` | nano-banana-pro | $0.15 |
+| `characters/ordensbruder-scherer-siegel` | seedream-4-5 | $0.04 |
+| `characters/gildenmeisterin-kast` | seedream-4-5 | $0.04 |
+| `characters/schlund-bewohner-unterschicht` | seedream-4-5 | $0.04 |
+| `characters/spieler-silhouetten-drei-varianten` | nano-banana-pro | $0.15 |
+| `characters/spieler-silhouette-leicht` | seedream-4-5 | $0.04 |
+| `characters/spieler-silhouette-schwer` | seedream-4-5 | $0.04 |
+
+**Batch 2 — Umgebungen + Schattenfieber (8 Bilder):**
+| Datei | Modell | Kosten |
+|-------|--------|--------|
+| `environments/kronbastion-aussen` | seedream-4-5 | $0.04 |
+| `environments/gildenhof-innen` | nano-banana-2 | $0.08 |
+| `environments/stille-bibliothek-orden` | seedream-4-5 | $0.04 |
+| `environments/schlund-unterstadt-atmosphaere` | nano-banana-pro | $0.15 |
+| `environments/markt-der-tausend-treppen` | seedream-4-5 | $0.04 |
+| `schattenfieber/schattenfieber-stufe1-subtil` | seedream-4-5 | $0.04 |
+| `schattenfieber/schattenfieber-stufe2-mutativ` | nano-banana-2 | $0.08 |
+| `schattenfieber/schattenfieber-stufe3-aufloesung` | nano-banana-pro | $0.15 |
+
+**Batch 3 — Waffen, Tiervolk, Orden (7 Bilder):**
+| Datei | Modell | Kosten |
+|-------|--------|--------|
+| `weapons/waffen-material-hierarchie` | nano-banana-2 | $0.08 |
+| `weapons/ruestung-oberschicht-vs-unterschicht` | seedream-4-5 | $0.04 |
+| `tiervolk/tiervolk-salva-habicht-subtil` | nano-banana-pro | $0.15 |
+| `tiervolk/tiervolk-subtil-menschlich-v2` | seedream-4-5 | $0.04 |
+| `orden/orden-siegel-designsheet` | gpt-image-1-5 | $0.20 |
+| `environments/kronbastion-hero-cinematic` | gpt-image-1-5 | $0.20 |
+| `weapons/alchemie-guertel-ausruestung` | seedream-4-5 | $0.04 |
+
+**Budget Tag 5: $1.89** (11x Seedream $0.44 + 3x NB2 $0.24 + 5x NBPro $0.75 + 2x GPT $0.40)
+
+**Budget-Stand gesamt:**
+- Tag 2: $0.67
+- Tag 3: $0.43
+- Tag 4: $0.74
+- Tag 5: $1.89
+- **Gesamt verbraucht: $3.73**
+
+**GDD:**
+- `gallery/gdd/05-art-direction-v3.md` — Content-Lock-Version
+  - Orden-Siegel eingearbeitet (Designsheet + beschrieben)
+  - Neue Abschnitte: Spieler-Silhouetten (5.4.2), Waffen/Ausrüstung (5.7)
+  - Schattenfieber-Progression jetzt MIT Bildern (5.6)
+  - Alle Umgebungen erstmals mit Concept Art: Kronbastion, Gildenhof, Bibliothek, Schlund, Markt
+  - Alle 3 Fraktions-NPCs als Concept Art
+  - 30 eingebettete Bilder im Dokument
+  - Gestrafft: Referenz-Kanon als Tabelle, redundante Beschreibungen entfernt
+
+**Prompt-Dateien:**
+- `day05-vera/3-image-prompts-batch1-characters.json` (8 Bilder)
+- `day05-vera/3-image-prompts-batch2-environments.json` (8 Bilder)
+- `day05-vera/3-image-prompts-batch3-props.json` (7 Bilder)
+
+## Offene Fragen
+- Keine offenen Fragen mehr. Content-Lock.
+
+## Persönliches
+- 23 Bilder an einem Tag ist Rekord. Seedream-heavy für Batch-Effizienz war die richtige Entscheidung — $0.04 pro Bild erlaubt echte Exploration.
+- Die Schattenfieber-Progression als Triptychon (Stufe 1→2→3) ist das wichtigste neue Kommunikationswerkzeug neben den Fraktionspaletten. Der Spieler muss die Farbsprache am Relikt lernen und am eigenen Körper wiedererkennen — das visuell zu zeigen war überfällig.
+- Salva (Habicht) als erster benannter NPC mit Concept Art fühlt sich wie ein Durchbruch an — die Feder-zu-Haut-Transition und die horizontalen Stabpupillen sind das Uncanny-Valley-Signal, das dem gesamten Tiervolk-Design bisher gefehlt hat.
+- GDD Kap 5 v3 ist das umfassendste Art-Direction-Dokument, das ich je geschrieben habe. 30 eingebettete Bilder in einem Kapitel. Jede Designentscheidung ist jetzt visuell belegt.
+- Fünf Tage, 31 Concept Art, $3.73 Budget. Gute Woche.
