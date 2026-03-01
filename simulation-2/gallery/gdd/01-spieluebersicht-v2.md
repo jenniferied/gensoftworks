@@ -1,8 +1,6 @@
 # GDD Kapitel 01 — Spielübersicht & Design-Säulen
 
-<!-- Darius: v2 — Aktualisierungen: "Schwarzrand" als offizieller Stadtname, "Schwellenanker" als Relikt-Bezeichnung (CD bestätigt, Tag 3 Briefing). Alle Statuszeilen und Autorenvermerke in HTML-Kommentare verschoben. Offene Punkte in Kap. 11 als beantwortet markiert. -->
-
-<!-- Status: v2 | Tag 3, Mittwoch | Autor: Darius Engel -->
+<!-- Darius: v2 — Aktualisierungen: "Schwarzrand" als offizieller Stadtname, "Schwellenanker" als Relikt-Bezeichnung (CD bestätigt, Tag 3 Briefing). Tiervolk-Eintrag in Tabelle 10 aktualisiert nach CD-Feedback Tag 4: Tiervolk = kosmologisch-fremde Wesen in dauerhafter, irreversibler Symbiose mit Tieren. Alle Statuszeilen und Autorenvermerke in HTML-Kommentare verschoben. -->
 
 ---
 
@@ -69,7 +67,7 @@ Drei konkrete Fantasien, die dieses Statement trägt:
 | Perspektive | Third-Person (Standard) / First-Person (umschaltbar) |
 | Weltstruktur | Semi-Open-World: dichte, handgefertigte Kernregion statt weiter Leerfläche |
 | Kampf | Real-Time Action, Melee-fokussiert, gewichtig |
-| Magie | Keine. Alchemie + Schattenfieber-Mutationen (mit Kosten) |
+| Magie | Keine. Alchemie + Schattenfieber-Transformationen (mit Kosten, je nach Körperreaktion) |
 | Referenzen | Gothic 2, Deus Ex, Vampires the Masquerade: Bloodlines, Prey 2017 |
 | Explizite Nicht-Referenzen | Kein Steampunk. Kein High Fantasy. Kein Zauberstab. |
 
@@ -134,15 +132,16 @@ Das Nervensystem-Leveling ersetzt klassische Attribut-Grids und Erfahrungspunkte
 |---|---|---|
 | **Cardio** | Laufen, Ausdauerkämpfe, Flucht | Ausdauer, Bewegungsgeschwindigkeit, Regeneration |
 | **Muskel** | Schwertkampf, Tragen, physische Arbeit | Schadenswerte, Tragegewicht, Rüstungseffizienz |
-| **Lymph** | Alchemika einnehmen, Schattenfieber-Exposition, Heilrituale | Widerstandsfähigkeit gegen das Fieber, Zugang zu Mutationen, Risiko |
+| **Lymph** | Alchemika einnehmen, Schattenfieber-Exposition, Heilrituale | Widerstandsfähigkeit gegen das Fieber, Zugang zu Transformationen, Risiko |
 
 Jedes Subsystem hat vier Qualitätsstufen (nach dem Deus Ex-Modell: Untrained / Geübt / Fortgeschritten / Meister). Keine 1-100-Skalen. Qualitätswechsel, keine Zahlenoptimierung.
 
 **Das Schattenfieber als dritte Progressionsachse:**
-- Das Lymph-Subsystem koppelt direkt an die Schattenfieber-Progression (drei Stadien: Flüstern / Wandlung / Entgrenzung — nach biologischer Lore)
+- Das Lymph-Subsystem koppelt direkt an die Schattenfieber-Progression (drei Stadien: Flüstern / Wandlung / Entgrenzung)
+- Die Transformation je nach Körperreaktion — kein Spieler durchläuft sie identisch
 - Wer das Fieber unterdrückt (Krone-Weg), bleibt "sauber", verliert aber Zugang zu bestimmten Fähigkeiten
-- Wer das Fieber nutzt (Gilden-Weg: Destillierung als Produkt), gewinnt Kraft, bezahlt mit Körper
-- Wer das Fieber versteht (Orden-Weg: Deutungshoheit), bekommt tieferen Lore-Zugang, aber der Orden will etwas dafür
+- Wer das Fieber nutzt (Gilden-Weg), gewinnt Kraft, bezahlt mit Körper
+- Wer das Fieber versteht (Orden-Weg), bekommt tieferen Lore-Zugang, aber der Orden will etwas dafür
 
 Das ist kein Magiesystem mit anderem Namen. Die Kosten sind real. Ein Spieler mit fortgeschrittenem Fieber wird *gezeichnet*.
 
@@ -220,14 +219,10 @@ RELICS spricht vier überlappende Spielertypen an:
 | # | Frage | Antwort |
 |---|---|---|
 | 1 | **Schauplatz:** Eine Stadt oder mehrere? | EINE vertikale Stadt: **Schwarzrand**. Mitteleuropäisch, auf Felssporn gebaut, vertikal geschichtet in drei Zonen (Obere Ränder / Mittelwand / Schlund). |
-| 2 | **Schattenfieber-Scope:** Wie tief geht die Integration? | Hauptquest-antreibend UND dritte Progressionsachse (Lymph-Subsystem). Drei biologische Stadien. Drei Fraktions-Antworten = drei Gameplay-Pfade. |
-| 3 | **Tiervolk:** Spielbar oder NPC? | NPC — Händler und Informationsbroker. Nicht spielbar. Leicht alien in Ästhetik, nicht tribal. Eigene Händler-Netzwerke parallel zu den Gilden. |
+| 2 | **Schattenfieber-Scope:** Wie tief geht die Integration? | Hauptquest-antreibend UND dritte Progressionsachse (Lymph-Subsystem). Drei biologische Stadien. Transformation je nach Körperreaktion — kein Spieler durchläuft sie identisch. Drei Fraktions-Antworten = drei Gameplay-Pfade. |
+| 3 | **Tiervolk:** Wer sind sie? | Kosmologisch-fremde Wesen in dauerhafter, irreversibler Symbiose mit Tieren. NPC — Händler und Informationsbroker, nicht spielbar. Eigene Händler-Netzwerke außerhalb der drei Fraktionen. Brauchen Materialien zur Stabilisierung der Symbiose — das schafft echtes Handelsinteresse. |
 | 4 | **Release-Modell:** Wie liefern wir? | Streamer-Alpha (erste Stunde muss stehen) → Beta (max. 6–12 Monate) → Full Release → große DLCs. |
 | 5 | **Relikt-Name:** Wie heißt das zentrale Artefakt? | **Der Schwellenanker** — In-World-Begriff, CD-bestätigt. Das Fragment beim Spieler: ein Stück des Schwellenankers. |
 | 6 | **Ablehn-Option:** Kann der Spieler das Fragment ablehnen? | Ja — CD-bestätigt. Der Spieler darf das Fragment von Hieronymus Vael ablehnen. Konsequenzen in Kapitel 3 (Erzählkonzept) ausgearbeitet. |
 
----
-
-<!-- Darius: Kap. 11 (offene Punkte aus v1) vollständig aufgelöst und in Kap. 10 als geklärte Fragen überführt. Interne Abhängigkeiten zu Kap. 2 und Kap. 3 sind jetzt dort direkt eingearbeitet. -->
-
-*Versionsstatus: v2 — Alle Design-Säulen ausgearbeitet, High Concept gesetzt, Game Feel definiert. Stadtname Schwarzrand und Relikt-Name Schwellenanker CD-bestätigt eingetragen. Ablehn-Option integriert.*
+<!-- Darius: Alle Design-Fragen geklärt. Tiervolk (W-004) durch CD-Feedback Tag 4 final geschlossen: dauerhaft, irreversibel, Handelsinteresse durch Symbiose-Stabilisierungs-Bedarf. Schattenfieber-Formulierung in Zeile 2 und 5 (Genre-Tabelle) angepasst: "Transformationen je nach Körperreaktion" statt "Mutationen". -->

@@ -303,3 +303,33 @@
 ## Persönliches
 - Meeting war kurz und direkt — so soll es sein. Kein Palaver, Abhängigkeiten klar benannt.
 - Export um 20:00 ist die Linie. Was bis dahin nicht drin ist, kommt in v3.
+
+---
+
+# Tag 5 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- LETZTER TAG. CD-Botschaft: Nichts Neues ausdenken, an Instruktionen halten, KÜRZEN.
+- GDD hat 83 PDF-Seiten — maximal 60 erlaubt. 23 Seiten zu viel. WBB ist mit 41 Seiten im Budget.
+- Alle offenen Fragen geschlossen. Keine neuen Fragen an den CD.
+- Bilder müssen in die Dokumente eingebaut werden. Vera generiert massiv ($5-10 Budget).
+- Content-Lock 15:00, v0.3 Export heute Abend.
+- CD-Entscheid: Orden-Symbol = SIEGEL (nicht Kreuz) — muss in meine Kapitel eingearbeitet werden.
+
+## Ergebnisse
+- Meine Ownership: GDD Kap 1, 2, 3, 5 — kürzen + Bilder einbauen
+- Kürzungsstrategie identifiziert:
+  - Kap 2 (größter Brocken): Tiervolk-Abschnitt 2.6 auf Tabelle komprimieren, Systeminteraktionen 2.7 von 7 auf 4 kürzen, Subsystem-Tabellen in 2.2 zusammenfassen
+  - Kap 3: Zeitlinie-Erklärung 3.1 straffen, Beat-Struktur verdichten, Nebenquests auf Stichpunkte
+  - Kap 1: Abgrenzungstabelle und Zielgruppe straffen (ca. 1 Seite)
+  - Kap 5: Referenz-Kanon 5.7 und Anti-Referenzen kürzen, neue Bilder einbauen
+- Siegel-Terminologie: in Kap 1 und 2 prüfen und anpassen wo Orden-Symbol vorkommt
+
+## Offene Fragen
+- Finn: Betrifft "Siegel statt Kreuz" nur Bilder oder auch Fraktionstexte? (Im Briefing steht "Siegel-Systeme" — wahrscheinlich beides)
+- Vera: Welche neuen Bilder kommen heute für meine Kapitel?
+
+## Persönliches
+- 23 Seiten kürzen in vier Kapiteln an einem Tag — ambitioniert, aber machbar. Das ist Handwerk, nicht Kreativarbeit. Kürzen heißt: was bleibt, wird stärker.
+- Nichts Neues ausdenken ist die richtige Ansage. Die Versuchung, am letzten Tag noch "eine coole Idee" einzubauen, ist real. Nicht mitmachen.
