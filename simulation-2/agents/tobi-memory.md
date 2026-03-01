@@ -313,3 +313,33 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 
 - Vera hat heute schon einiges geliefert (Hero-Sheet mit Detailinsets). Das ist mehr als erwartet. Die KI macht ihr Arbeit leichter und gleichzeitig unheimlicher — das ist eine reale Spannung, keine Übertreibung.
 - Leo ist ruhig, geerdet. Gut, sie in dieser Szene dabei zu haben.
+
+---
+
+# Tag 5 Szene 1
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+## Notizen
+
+- **GDD 83 Seiten, Budget 60 — 23 Seiten kürzen.** WBB 41, im Budget. Letzter Tag, Content-Lock 15:00.
+- Alle offenen Fragen geschlossen — keine neuen Inhalte, nur kürzen und Bilder einbauen.
+- **Orden-Symbol = SIEGEL** (nicht mehr "Kreuz"). Prüfen ob "Kreuz" in meinen Asset-Namen oder Kommentaren vorkommt.
+- Finn: Bilder in Dokumente einbauen, alle Kapitel kürzen.
+- Darius: Kap 1–3, 5 kürzen. Vera: Pinnwand korrigieren, 18 neue Bilder, Bilder einbauen. Emre: WBB finalisieren. Nami: Kap 4 kürzen, WBB Kap 3.
+
+## Ergebnisse
+
+- Kürzungsplan für Kap 6 v5 identifiziert:
+  - **6.7 Tiervolk-Symbiose-Shader**: von 8 Unterabschnitten auf ~3 eindampfen. Layer-Details, Blend-Maske-Hypothesen, Aufwandsschätzung → Pipeline-Bibel, nicht GDD.
+  - **6.4.2–6.4.5 Schattenfieber-PP-Stufen**: Einzelne Shader-Parameter-Werte raus, Stufen-Logik bleibt.
+  - **6.10.2 Pre-Alpha-Timeline**: Woche-für-Woche-Aufschlüsselung raus, nur Milestone-Tabelle bleibt.
+  - Geschätztes Einsparpotenzial: 3–4 PDF-Seiten.
+
+## Offene Fragen
+
+- Orden-Symbol "Kreuz" → "Siegel" — Asset-Namen-Check in Kap 6 nötig (vermutlich betrifft es nur HTML-Kommentare, nicht Shader-Namen).
+
+## Persönliches
+
+- Letzter Tag. Klarer Auftrag: kürzen, nicht denken. Das ist nach vier Tagen Aufbau eine gute Disziplinübung.
+- Finns 23-Seiten-Delta ist sportlich, aber jeder muss seinen Teil beitragen. Kap 6 hat das größte Einspar-Potenzial nach den narrativen Kapiteln.
