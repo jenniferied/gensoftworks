@@ -548,7 +548,6 @@ Das Fundament ist solide. Die Spielerperspektive funktioniert: Erste 30 Minuten 
 
 ## Tag 5, Szene 1: BRIEFING | 09:00 in der Küche
 
-# Tag 5 Szene 1
 **Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: Finn (CD), Darius, Emre, Nami, Vera, Tobi, Leo
 
 ## Notizen
@@ -579,7 +578,6 @@ Das Fundament ist solide. Die Spielerperspektive funktioniert: Erste 30 Minuten 
 
 ## Tag 5, Szene 2: WORK | 10:00 — Finaler QA-Pass
 
-# Tag 5 Szene 2
 **Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Leo (solo)
 
 ## Notizen
@@ -613,6 +611,36 @@ Das Fundament ist solide. Die Spielerperspektive funktioniert: Erste 30 Minuten 
 - Die Doppelungen in Kap 4 (Ablehn-Option + Quest-Skizzen) sind das größte Polier-Problem. Nami kann das schnell lösen.
 - Tobi hat in Kap 6 saubere Arbeit gemacht — alle Kommentare in HTML, alle Interfaces dokumentiert. Respekt.
 - Letzter QA-Tag. Das Gefühl: wir liefern ab. Nicht perfekt, aber gut genug für Alpha.
+- Confidence Level: 8.5/10
+
+---
+
+## Tag 5, Szene 5: MEETING | 13:00 in der Küche
+
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- Freitag 13:00, kurzer Bericht an Team nach Finalem QA-Pass
+- v0.3 Release-Status: bedingt freigegeben nach 4 trivialen Fixes
+- Briefing-Konsistenz perfekt: 12/12 PASS
+- Terminologie sauber: Schwellenanker durchgehend konsistent
+- Umlaute: 100% sauber (keine ae/oe/ue/ss-Fehler)
+- GDD-Seitenbudget: 69 Seiten geschätzt, nach Kürzungen realistic 55–60 Seiten
+- 4 Hygiene-Fixes: sichtbare Versionsblöcke in GDD 06 + WBB 03, offene Punkte-Sektionen in GDD 04 + WBB 03 — alle <7 Min behebbar
+- Spielerperspektive erste Stunde hält — Clip-Moment (Min 5-10), drei Boten (Min 15-20) sind Ankerpunkte
+- Keine fundamentalen Fehler, nur Polishing übrig
+- Team hat gute Arbeit gemacht — Fundament ist solid
+
+## Ergebnisse
+- QA-Bericht Tag 5 fertig: `simulation-2/gallery/gdd/00-qa-bericht-tag5-leo.md`
+- v0.3-Export kann nach Fixes freigegeben werden (target 15:00 Content-Lock)
+- Confidence für Alpha-Readiness: 8.5/10
+
+## Persönliches
+- Energie bleibt hoch. Letzter Tag, klare Mission, Team liefert ab.
+- Vertrauens-Level zum Rest des Teams: steigt. Jeder hat sein Handwerk verstanden.
+- Das ist gute Zusammenarbeit. Das spürt man.
+- Nächster Schritt: Alpha-Build mit Streamern testen — die echte Prüfung beginnt dann.
 - Confidence Level: 8.5/10
 
 ---
