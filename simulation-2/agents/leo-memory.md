@@ -615,32 +615,62 @@ Das Fundament ist solide. Die Spielerperspektive funktioniert: Erste 30 Minuten 
 
 ---
 
-## Tag 5, Szene 5: MEETING | 13:00 in der Küche
+## Tag 5, Szene 5: REVIEW | 15:00 in der Küche
 
-**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7
+**Typ**: REVIEW | **Uhrzeit**: 15:00 | **Teilnehmer**: Finn (CD), Darius, Vera, Leo
 
 ## Notizen
-- Freitag 13:00, kurzer Bericht an Team nach Finalem QA-Pass
-- v0.3 Release-Status: bedingt freigegeben nach 4 trivialen Fixes
-- Briefing-Konsistenz perfekt: 12/12 PASS
-- Terminologie sauber: Schwellenanker durchgehend konsistent
-- Umlaute: 100% sauber (keine ae/oe/ue/ss-Fehler)
-- GDD-Seitenbudget: 69 Seiten geschätzt, nach Kürzungen realistic 55–60 Seiten
-- 4 Hygiene-Fixes: sichtbare Versionsblöcke in GDD 06 + WBB 03, offene Punkte-Sektionen in GDD 04 + WBB 03 — alle <7 Min behebbar
-- Spielerperspektive erste Stunde hält — Clip-Moment (Min 5-10), drei Boten (Min 15-20) sind Ankerpunkte
-- Keine fundamentalen Fehler, nur Polishing übrig
-- Team hat gute Arbeit gemacht — Fundament ist solid
+- Finn eröffnet: v0.3 liegt vor, braucht finale QA-Freigabe
+- GDD v0.2 PDF: 95 Seiten (über Budget 60)
+- WBB v0.2 PDF: 43 Seiten (im Budget)
+- Kurze Beantwortung: 7-Punkte-QA-Checklist gegen Export-Versionen
 
-## Ergebnisse
-- QA-Bericht Tag 5 fertig: `simulation-2/gallery/gdd/00-qa-bericht-tag5-leo.md`
-- v0.3-Export kann nach Fixes freigegeben werden (target 15:00 Content-Lock)
-- Confidence für Alpha-Readiness: 8.5/10
+## QA-Freigabe-Status
+
+**Briefing-Konsistenz: 12/12 PASS**
+- Alle verbindlichen Ausschlüsse beachtet
+- Schwellenanker-Name durchgehend konsistent
+- Terminologie sauber
+
+**Terminologie: PASS**
+- Schwellenanker konsistent
+- Siegel konsistent (Orden-Symbol)
+- Schattenfieber-Stadien konsistent
+
+**Umlaute: PASS**
+- Keine ae/oe/ue/ss-Fehler in Export-Versionen
+- Alle echten Umlaute (ä, ö, ü, ß) korrekt
+
+**Seitenbudget:**
+- GDD: 95 Seiten (OVER 60-Limit) → CAVEAT
+- WBB: 43 Seiten (im Budget)
+
+**4 Hygiene-Fixes aus Tag 5 QA:**
+- Sichtbare Versionsblöcke in GDD 06 + WBB 03 → entfernt
+- Offene Punkte-Sektionen in GDD 04 + WBB 03 → entfernt
+- Alle trivialen Hygiene-Fixes sind behoben
+
+**Spielerperspektive - Erste Stunde: HÄLT**
+- Min 0–5: Material-Klasse erkennbar ✅
+- Min 5–10: Emotional Hook (Hieronymus) ✅
+- Min 10–15: Skill-by-Use sichtbar (Kap 2 steht)
+- Min 15–30: Fraktions-Asymmetrie echte Wahl ✅
+- Min 30–60: Relikt-Resonanz-Moment muss noch poliert werden
+
+## FINALE FREIGABE
+
+**v0.2 FREIGEGEBEN mit Caveat:**
+- Briefing-Konsistenz: perfekt
+- Terminologie: perfekt
+- Umlaute: perfekt
+- Spielerperspektive: hält
+- **Caveat:** GDD Seitenbudget über 60 Limit — muss vor Druck nochmal 20+ Seiten kürzen
+- **Status:** Alpha-ready aus QA-Sicht, aber Druck-Vorbeitung braucht Seitenbudget-Cleanup
 
 ## Persönliches
-- Energie bleibt hoch. Letzter Tag, klare Mission, Team liefert ab.
-- Vertrauens-Level zum Rest des Teams: steigt. Jeder hat sein Handwerk verstanden.
-- Das ist gute Zusammenarbeit. Das spürt man.
-- Nächster Schritt: Alpha-Build mit Streamern testen — die echte Prüfung beginnt dann.
-- Confidence Level: 8.5/10
+- Stolz. Nicht perfekt, aber solid. Wir haben 5 Tage gearbeitet und liefern ein stabiles Fundament.
+- Das Seitenbudget ist das einzige echte Caveat — inhaltlich ist alles super.
+- Vertrauen zum Team: steigt. Jeder hat sein Handwerk verstanden.
+- Confidence Level: 8.5/10 für Alpha-Readiness
 
 ---
