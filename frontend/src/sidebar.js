@@ -20,6 +20,22 @@ let simData = null;
 let currentDayIdx = 0;
 let currentSceneIdx = 0;
 
+/**
+ * Convert a day identifier to a numeric sort value.
+ * Normal days: 1, 2, 3 → 1, 2, 3
+ * Supplements: "5-supplement" → 5.5 (sorts after day 5, before day 6)
+ */
+function dayOrder(d) {
+  if (typeof d === 'number') return d;
+  const m = String(d).match(/^(\d+)-supplement$/);
+  return m ? parseInt(m[1]) + 0.5 : parseFloat(d) || 999;
+}
+
+/** Check if day entry is a supplement (no interactive scenes). */
+function isSupplement(dayEntry) {
+  return !!dayEntry?.is_supplement;
+}
+
 // DOM refs
 const simSelect = document.getElementById('sim-select');
 const daySelect = document.getElementById('day-select');
@@ -150,7 +166,13 @@ async function loadSimulation(filename) {
   for (let i = 0; i < simData.days.length; i++) {
     const opt = document.createElement('option');
     opt.value = i;
-    opt.textContent = `Tag ${simData.days[i].day}`;
+    const d = simData.days[i];
+    if (isSupplement(d)) {
+      const weekday = d.summary?.weekday || 'Supplement';
+      opt.textContent = `\u2728 ${weekday}`;
+    } else {
+      opt.textContent = `Tag ${d.day}`;
+    }
     daySelect.appendChild(opt);
   }
 
@@ -164,8 +186,9 @@ async function loadSimulation(filename) {
 
 function navigate(dir) {
   const day = simData.days[currentDayIdx];
+  const sceneCount = day.scenes.length || (isSupplement(day) ? 1 : 0);
   const newIdx = currentSceneIdx + dir;
-  if (newIdx >= 0 && newIdx < day.scenes.length) {
+  if (newIdx >= 0 && newIdx < sceneCount) {
     currentSceneIdx = newIdx;
     sceneSelect.value = currentSceneIdx;
     selectScene();
@@ -181,7 +204,8 @@ function navigate(dir) {
     currentDayIdx--;
     daySelect.value = currentDayIdx;
     populateScenes();
-    currentSceneIdx = simData.days[currentDayIdx].scenes.length - 1;
+    const prevDay = simData.days[currentDayIdx];
+    currentSceneIdx = isSupplement(prevDay) ? 0 : Math.max(0, prevDay.scenes.length - 1);
     sceneSelect.value = currentSceneIdx;
     selectScene();
   }
@@ -190,6 +214,15 @@ function navigate(dir) {
 function populateScenes() {
   sceneSelect.innerHTML = '';
   const day = simData.days[currentDayIdx];
+  if (isSupplement(day)) {
+    const opt = document.createElement('option');
+    opt.value = 0;
+    opt.textContent = day.summary?.phase || 'Supplement';
+    sceneSelect.appendChild(opt);
+    currentSceneIdx = 0;
+    sceneSelect.value = 0;
+    return;
+  }
   for (let i = 0; i < day.scenes.length; i++) {
     const s = day.scenes[i];
     const opt = document.createElement('option');
@@ -201,6 +234,14 @@ function populateScenes() {
 }
 
 function selectScene() {
+  const day = simData.days[currentDayIdx];
+
+  // Handle supplement view
+  if (isSupplement(day)) {
+    selectSupplement(day);
+    return;
+  }
+
   const scene = getCurrentScene();
   if (!scene) return;
 
@@ -245,6 +286,75 @@ function selectScene() {
   window.dispatchEvent(new CustomEvent('viewer:scene-change', {
     detail: { dayIndex: currentDayIdx, sceneIndex: currentSceneIdx },
   }));
+}
+
+function selectSupplement(day) {
+  const sup = day.supplement || {};
+  const summary = day.summary || {};
+
+  // Nav buttons
+  const isFirst = currentDayIdx === 0;
+  const isLast = currentDayIdx === simData.days.length - 1;
+  btnPrev.disabled = isFirst;
+  btnNext.disabled = isLast;
+
+  // Scene info area → supplement header
+  sceneBadge.textContent = 'Supplement';
+  sceneBadge.className = 'badge SUPPLEMENT';
+  sceneTime.textContent = summary.weekday || '';
+  sceneLocation.textContent = '';
+  sceneParticipants.innerHTML = '<span>Vera Morozova</span> (Opus-Modell)';
+  sceneSummary.textContent = summary.summary || summary.title || '';
+  keyMoment.style.display = 'none';
+
+  // Day summary
+  renderDaySummary();
+
+  // Supplement phases as artifact-like list
+  const phases = sup.phases || [];
+  let html = '';
+  for (const p of phases) {
+    html += `<div class="artifact-note-block" style="margin-bottom:8px">`;
+    html += `<strong>Phase ${p.phase}: ${p.title}</strong>`;
+    html += `<div style="margin-top:4px;opacity:0.85">${p.description}</div>`;
+    if (p.images_generated) {
+      html += `<div style="margin-top:4px;font-size:11px;opacity:0.7">${p.images_generated} Bilder \u00b7 ${p.cost}</div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Budget summary
+  const budget = sup.budget_total;
+  if (budget) {
+    html += `<div class="artifact-note-block" style="margin-top:12px">`;
+    html += `<strong>Budget gesamt</strong>`;
+    html += `<div style="margin-top:4px;font-size:12px">`;
+    html += `Simulation: ${budget.simulation_total}<br>`;
+    html += `Nachholen: ${budget.supplement_day5_catchup}<br>`;
+    html += `Supplement: ${budget.supplement_new}<br>`;
+    html += `<strong>Gesamt: ${budget.grand_total}</strong>`;
+    html += `</div></div>`;
+  }
+
+  // Model comparison
+  const ctx = sup.context;
+  if (ctx?.model_comparison) {
+    const mc = ctx.model_comparison;
+    html += `<div class="artifact-note-block" style="margin-top:12px">`;
+    html += `<strong>Modellvergleich</strong>`;
+    html += `<div style="margin-top:4px;font-size:12px">`;
+    html += `Simulation (${mc.simulation_model}): ${mc.simulation_images} Bilder \u00b7 ${mc.simulation_budget_used}<br>`;
+    html += `Supplement (${mc.supplement_model}): ${mc.supplement_images} Bilder \u00b7 ${mc.supplement_budget_used}`;
+    html += `</div></div>`;
+  }
+
+  artifactList.innerHTML = html;
+  agentList.innerHTML = '';
+
+  // Update document bar for current time
+  renderDocumentBar();
+
+  // No Phaser scene change for supplements — keep last scene visible
 }
 
 function getCurrentScene() {
@@ -624,7 +734,9 @@ function isBeforeOrAtCurrent(ap) {
   if (!ap) return false;
   const curDay = simData.days[currentDayIdx]?.day || 1;
   const curScene = simData.days[currentDayIdx]?.scenes[currentSceneIdx]?.scene || 1;
-  return ap.day < curDay || (ap.day === curDay && ap.scene <= curScene);
+  const apOrd = dayOrder(ap.day);
+  const curOrd = dayOrder(curDay);
+  return apOrd < curOrd || (apOrd === curOrd && (ap.scene || 0) <= curScene);
 }
 
 /** Check if a chapter exists at the current point (uses first_appeared). */
@@ -753,13 +865,7 @@ function docModalNavigate(dir) {
 function getVisibleArt() {
   const art = simData?.concept_art;
   if (!art?.length) return [];
-  const curDay = simData.days[currentDayIdx]?.day || 1;
-  const curScene = simData.days[currentDayIdx]?.scenes[currentSceneIdx]?.scene || 1;
-  return art.filter(a => {
-    const ap = a.appeared;
-    if (!ap) return false; // no timeline → hidden until referenced
-    return ap.day < curDay || (ap.day === curDay && ap.scene <= curScene);
-  });
+  return art.filter(a => isBeforeOrAtCurrent(a.appeared));
 }
 
 function renderGalleryBoard() {
