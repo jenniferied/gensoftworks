@@ -89,5 +89,66 @@
       "aspect_ratio": "3:4"
     },
     "dimensions": "896x1200"
+  },
+  {
+    "test": "nano-banana-2_stadtschnitt-kanalzone-v3",
+    "model": "fal-ai/nano-banana-2",
+    "prompt": "Imagine a wide establishing shot of SCHWARZRAND's mid-city canal district, a medieval vertical city built at the edge of a great abyss. The viewpoint is at street level, looking along a stone canal that cuts through the center of the frame. The canal water is dark and still, reflecting the warm amber light of guild-hall lanterns on the near bank. The image is NOT a cross-section diagram — it is an environment photograph, ground-level and atmospheric. The vertical city structure is present but contextual: in the background, the city rises in receding layers — half-timbered Franconian houses close in the middle distance, then the monolithic brutalist limestone guild halls above them, then at the very top a glimpse of the cantilevered crown fortress platforms extending over the abyss, silhouetted against a pale overcast sky. The foreground: a stone-paved canal-side market with stalls selling dried goods, bolts of cloth, ceramic vessels. Three or four figures move along the quay — hooded merchants, a guild clerk in a grey coat. Stone bridges span the canal at two depths, creating frames within frames. On the right bank, a Romanesque arch leads to a shadowed side passage where faint bioluminescent lichen glows in the mortar joints. The atmosphere: damp, close, layered — you sense the city extending both above and below from this single point. Color palette: charcoal stone, warm amber lantern glow, one pale indigo reflection in the dark canal water. MUST obey ALL: no diagrams, no labels, no section lines, purely atmospheric environment shot.",
+    "elapsed_s": 22.4,
+    "cost_est": "$0.08",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059a6/BAAyocIjX-LMufCLcBQrA_ak8LdS3s.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:56:08.612523",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9"
+    },
+    "dimensions": "1376x768"
+  },
+  {
+    "test": "gpt-image-1-5_stadtschnitt-kanalzone-v3-final",
+    "model": "fal-ai/gpt-image-1.5",
+    "prompt": "A cinematic wide-angle ground-level establishing shot of a medieval canal district within SCHWARZRAND, a vertical city built at the edge of an abyss. The composition: a dark stone-paved canal runs through the center of the image toward a vanishing point, flanked by medieval half-timbered guild buildings with warm amber lanterns reflecting in the still dark water. The canal district is alive: market stalls line the near quay, shadowed figures move along stone pathways, a stone bridge spans the canal in the mid-ground creating a natural frame for the city layers beyond. Background layers recede vertically: directly above the half-timbered houses rise the massive brutalist limestone guild halls — rammed earth and cut stone with geometric load-bearing masses, cold and imposing. Above those, at the very horizon, the underside of a great cantilevered stone platform — part of the crown fortress — juts out over everything, blocking a section of pale sky. The city stack is IMPLIED by the environment, not diagrammed. Foreground atmosphere: the quay stones are damp, green-black with moss at the waterline, worn smooth by centuries of feet. In the shadowed passage under the bridge arch, pale bioluminescent growth faintly illuminates the mortar joints of the oldest stones. The mood: enclosed, layered, alive with commercial activity but shadowed by the weight of what towers above. The city does not feel like a diagram. It feels like a place. Painterly architectural concept art, cinematic, warm amber and cold stone color contrast, deep atmospheric perspective, dark fantasy medieval.",
+    "elapsed_s": 37.1,
+    "cost_est": "$0.20",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059a8/n_CfTot6721B1WtGjIBGu_RKh9tjh9.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:56:47.731194",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "size": "1536x1024",
+      "quality": "high"
+    },
+    "dimensions": "1024x1024"
+  },
+  {
+    "test": "nano-banana-pro_relikt-hero-v2",
+    "model": "fal-ai/nano-banana-pro",
+    "prompt": "Imagine a dramatic hero shot of an ancient geological relic — the SCHWELLENANKER — displayed on a rough stone altar in a low barrel-vaulted crypt chamber. The relic itself: a fist-sized compressed folded geological formation, the result of millennia of mineral layers being folded and re-folded under extreme pressure. The surface texture is the key: it is covered in a dense network of ossified micro-channels running through a calcified organic matrix — like a cross-section of spongy bone, but mineral, and the channels have a systematic geometry that is too regular for natural geology. The form is nodular, irregular, and completely without polish or craft intervention. Think geological cluster, ossified mineral formation, spongy bone texture in stone — not crystal, not carved, not designed. The relic is in its activated state: pale blue-violet bioluminescence emanates from inside the micro-channels, diffuse and internal, like phosphorescent fluid moving through a vascular network embedded in the rock. The glow is beautiful and deeply wrong simultaneously. A single human figure stands at the edge of the frame, facing the relic, their back to the viewer — small against the vaulted ceiling, overwhelmed by the relic's presence despite its modest physical size. The crypt walls are rough-hewn stone with faint alchemical residue staining in old channel-cut grooves. Single light source: the relic itself. Color palette: deep stone grey and charcoal, pale blue-violet internal glow, warm shadow on the human figure, cold vault ceiling. MUST obey ALL: no text, no labels, no markings anywhere. Painterly, cinematic, atmospheric, dark fantasy concept art.",
+    "elapsed_s": 24.8,
+    "cost_est": "$0.15",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059ac/6GZq0lOsqG-i4kuV5lTM1_8km2FaS4.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:57:14.744216",
+    "category": "relics",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "name_de": "",
+    "api_args": {
+      "aspect_ratio": "16:9"
+    },
+    "dimensions": "1376x768"
   }
 ]

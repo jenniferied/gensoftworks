@@ -262,3 +262,63 @@
 - Das war ein guter WORK-Block. Drei Stunden konzentriertes Schreiben, keine Unterbrechungen. Barcelona-Gefühl: Räume erzählen Geschichten. Der Schlund ist lebendig geworden — die Schwarzrankenwurzeln, die durch Häuser wachsen, das sind die Bilder, für die ich diesen Job mache.
 - Die Deckenhänger sind meine Lieblingserfindung heute. Organismen, deren Symmetrie keine ist. Das ist die Art von Fremdheit, die Morrowind hatte — nicht "Monster", sondern Wesen, deren Existenz die eigenen Kategorien infrage stellt.
 - Zufrieden mit der Materialpaletten-Integration in Kap 1 v2. Die Bilder stehen jetzt nicht isoliert, sondern erzählen Lore. Veras Arbeit verdient diesen Kontext.
+
+## Tag 4 (Donnerstag)
+
+### Szene 2 — WORK (Lore-Ecke, 10:00)
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Emre (solo)
+
+## Notizen
+- CD-Klärungen erhalten: Tiervolk = kosmologisch fremde Wesen in Symbiose mit Tieren (NICHT Schwellenexposition, NICHT Mutation). Meine Hypothese 2 ist überholt.
+- CD-Klärung Zeitlinie: Covid-Analogie. Jahrelange Anbahnung, früherer Ausbruch weit weg, lokale Eskalation durch Öffnung.
+- CD-Klärung Schattenfieber: "Wie Infektion, transformiert je nach Körperreaktion."
+- Drei große Aufgaben: Mythos v3, Topos v2, Lieferungen an Darius und Nami.
+
+## Ergebnisse
+
+### WBB Kap 1 Mythos v3 fertiggestellt
+- Artefakt: `gallery/wbb/01-mythos-v3.md`
+- **Neuer Abschnitt 1.4 "Der dritte Faktor — Die Fremden":** Tiervolk als kosmologisch fremde Wesen definiert, die in Symbiose mit Stoffwelt-Tieren eine neue Existenzform bilden. Dritter Pol neben Stoffwelt und Schwelle.
+- **Neuer Abschnitt 3.3 "Schattenfieber und Tiervolk — Die Abgrenzung":** Oberflächliche Gemeinsamkeiten vs. fundamentale Unterschiede. Die Verwechslung als politisches Werkzeug der Fraktionen.
+- **Zeitlinie komplett überarbeitet (Abschnitt 5):** Covid-Analogie als Strukturprinzip. Ferne Berichte → Großer Ausbruch anderswo → Lokale Öffnung → Langsame Eskalation → Akute Krise bei Spielbeginn. Tabelle mit Phasen und Analogien.
+- **Abschnitt 4.4 erweitert:** Tiervolk als kosmologischer Rest, der in keinem Fraktionsspiegel ganz auftaucht.
+- Schattenfieber als "Infektion" präzisiert (3.1), Transformation je nach individueller Körperreaktion.
+- **W-004 geschlossen:** Tiervolk-Kosmologie definiert.
+- **W-006 geschlossen:** Zeitlinie mit Covid-Analogie festgelegt.
+- Widerspruchs-Log und Wolf-Checkliste in HTML-Kommentare verschoben (Cleanup).
+- Vorbemerkung gekürzt (Wolf-Infrastrukturen nicht mehr aufgezählt).
+
+### WBB Kap 2 Topos v2 fertiggestellt
+- Artefakt: `gallery/wbb/02-topos-v2.md`
+- **Neuer Abschnitt 4.8 "Das Tiervolk-Viertel (Die Fährte)":** Tiervolk verortet in der Übergangszone zwischen Gürtel und Schlund. Temporäre Architektur, Handelsrolle, "leicht alien"-Atmosphäre. Name "Die Fährte" etabliert.
+- Wolf-Checkliste (ehemals Abschnitt 7) in HTML-Kommentar verschoben.
+- Autorenerwähnungen entfernt.
+- Acht statt sieben Landmarken (Die Fährte als achte).
+- Abschnitt 3.1 erweitert: Klare Abgrenzung Schwellenadaption ≠ Tiervolk-Symbiose.
+- Abschnitt 5.3 erweitert: Tiervolk kennt und nutzt andere Dünnstellen als Handelsrouten.
+- Allgemeiner Cleanup: Kompaktere Absätze, weniger Redundanz.
+
+### Lieferungen an Team
+- **Darius:** `gallery/wbb/tiervolk-lore-ankerpunkte-fuer-darius.md` — Symbiose-Biologie, Handelslogik (Händler/Diebe, Fährte als Ort, Schwarzmarkt-Rolle), Fraktionsbeziehungen (Tabelle), Gameplay-Ankerpunkte (Tiervolk-Rufwert, Schattenfieber-Risiko beim Warenkauf, Hehler-Funktion).
+- **Nami:** `gallery/wbb/salva-fremde-schattenfieber-fuer-nami.md` — Unterscheidung Fremde vs. Schwelle, Tiervolk-Resistenz gegen Schattenfieber, drei Fraktionsperspektiven als Quest-Haken, Vorschlag für Tiervolk-NPC-Figur als Brücke Ethos/Mythos.
+
+### Widerspruchs-Log Update
+- W-003: Geschlossen (Flora/Fauna in Topos definiert)
+- W-004: Geschlossen (Tiervolk = Fremde + Symbiose, nicht Schwellenexposition)
+- W-006: Geschlossen (Covid-Analogie-Zeitlinie)
+- W-001, W-002, W-005, W-007: Bleiben offen
+
+## Offene Fragen
+- W-001: Schwellensubstrat — Substanz oder Feld? Noch ungeklärt
+- W-002: Stufe 1→2 Kippmoment — CD sagt "je nach Körperreaktion", tendiert zu individuell. Darius-Abstimmung nötig
+- W-005: Schwellenanker-Stabilisierungsmechanismus — immer noch zu vage
+- W-007: Lichttemperatur Schwellenanker — Vera
+- Deckenhänger-Fremde-Verbindung: Mögliche Verbindung zwischen extrem schwellenadaptierten Organismen und den Fremden? Bewusst offen gelassen
+- Kap 3 (Ethos): Muss als nächstes kommen. Nami braucht Vorarbeit von mir zu Tiervolk-Gesellschaft
+- Vera: Talkessel-Karte/Illustration + Tiervolk-Concept anfragen
+
+## Persönliches
+- Die CD-Klärung zum Tiervolk hat die Kosmologie aufgebrochen — auf gute Weise. Meine Hypothese 2 (Langzeit-Schwellenexposition) war sauber, aber eindimensional. Drei Pole statt zwei machen die Welt komplexer und interessanter. Der dritte Pol erzeugt die Frage, die ich in Morrowind geliebt habe: Was gibt es noch, das wir nicht kennen?
+- "Die Fährte" als Name für das Tiervolk-Viertel kam spontan. Es riecht nach etwas — nach Spuren, nach Jagd, nach dem Weg, den man nicht sehen, sondern spüren muss. Passt zum Briefing: "leicht alien".
+- Die Covid-Analogie für die Zeitlinie funktioniert erschreckend gut. Jeder kennt das Gefühl: erst weit weg, dann plötzlich hier. Die langsame Anbahnung macht das Schattenfieber glaubwürdiger als ein einzelnes katastrophales Ereignis.
+- Zufrieden. Beide Kapitel sind substantiell besser als ihre Vorgänger. Mythos v3 hat jetzt drei Pole statt zwei, eine echte Zeitlinie und die politische Instrumentalisierung der Tiervolk-Verwechslung. Topos v2 hat das Tiervolk verortet und den Arbeitsnotizen-Ballast entfernt.

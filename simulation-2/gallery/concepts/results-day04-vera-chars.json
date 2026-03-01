@@ -1,0 +1,62 @@
+[
+  {
+    "test": "seedream-4-5_tiervolk-haendler-fuchs-exploration",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Concept art of an upright fox-humanoid figure standing in a medieval market, serving as a traveling merchant. The figure is clearly recognizable as a fox — pointed muzzle, large ears, reddish-brown fur with white chest markings — but something is subtly wrong: the proportions are fractionally off-human, the limbs slightly too long, the posture too still, the amber eyes have vertical pupils that catch the light in a way that is not quite animal and not quite human. The fur along the nape and shoulders grows against the grain, creating a faint counter-swirl pattern. The clothing is deliberately unremarkable: a heavy deep-charcoal wool traveler's cloak, multiple leather belt pouches, a satchel of dark oiled canvas, fingerless gloves of undyed leather. No tribal ornament. No feathers or bones as decoration. The color palette: deep charcoal, warm ochre, unsaturated sienna fur tones, a single muted indigo accent on the satchel strap. The figure has the self-contained stillness of someone who watches everything and commits to nothing. Medieval dark fantasy concept art, full body, painterly, three-quarter view.",
+    "elapsed_s": 26.7,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059b8/QT6vpuZQitp9B2TP0XXN7_c0e812263bdd4c3fa906898028c7ea15.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:58:48.004877",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "name_de": "",
+    "api_args": {
+      "image_size": "portrait_4_3"
+    },
+    "dimensions": "3072x4096"
+  },
+  {
+    "test": "seedream-4-5_tiervolk-diebin-marder-exploration",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Concept art of a slender marten-humanoid figure in a medieval urban environment, crouched on a rooftop ledge at dusk. The figure is clearly a marten — narrow elongated face, dark mask-pattern fur, white throat patch, sinuous body — but with something displaced: the joints of the fingers bend in one too many places, the neck rotates a few degrees beyond where it should stop, the pale eyes have no visible pupil, only a faint luminescence deep inside like foxfire trapped in still water. The clothing: close-fitting dark charcoal linen wrapped in layers, leather strapping over the torso, flat-soled soft boots, no metal visible. No adornments. The silhouette reads: lean, self-sufficient, invisible by preference. The posture is perfect stillness — not tensed to spring, just present and waiting with a patience that reads as not quite biological. The city below shows warm amber candlelight in Romanesque windows. Color palette: near-black charcoal, deep ash grey, one muted green-blue luminescence in the eyes only. Medieval dark fantasy concept art, full figure, painterly, low dramatic light.",
+    "elapsed_s": 23.6,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059bb/qLNicF9hgP0P-fzrBCdp8_b16c273adea54d3e8093253840765c9e.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:59:15.519537",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "name_de": "",
+    "api_args": {
+      "image_size": "portrait_4_3"
+    },
+    "dimensions": "3072x4096"
+  },
+  {
+    "test": "seedream-4-5_tiervolk-rabe-bote-exploration",
+    "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+    "prompt": "Concept art of a raven-humanoid figure standing in a medieval stone archway, a messenger and information broker. The figure is recognizably avian — a sleek black-feathered head with a heavy curved beak, jet-black feathers covering the arms and shoulders — but displaced: the eyes are wrong, four of them arranged in a slight curve across the face where two should be, each one a different degree of open, giving the face an expression that reads as simultaneously attentive and absent. The feathers along the spine grow in interlocking layers that have a secondary geometric pattern beneath the natural arrangement. The clothing: layered black linen robes, a dark leather satchel stuffed with folded documents, a belt with small bone-handled tools. No color except a single deep oxblood red silk cord as a belt tie. The figure has one extra finger on the left hand. Standing perfectly still, the posture is that of someone who has already decided everything before you arrived. Medieval dark fantasy concept art, three-quarter portrait, painterly, low cold light, atmospheric.",
+    "elapsed_s": 23.0,
+    "cost_est": "$0.04",
+    "images": [
+      "https://v3b.fal.media/files/b/0a9059bd/zTNfpna2sEyAxYPuYHwls_cbee99860acc4e3ba58d4a08ef9446f1.png"
+    ],
+    "error": null,
+    "timestamp": "2026-03-01T00:59:42.782959",
+    "category": "tiervolk",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "name_de": "",
+    "api_args": {
+      "image_size": "portrait_4_3"
+    },
+    "dimensions": "3072x4096"
+  }
+]
