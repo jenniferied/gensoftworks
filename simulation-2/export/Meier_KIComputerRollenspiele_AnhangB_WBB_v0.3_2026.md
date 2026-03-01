@@ -210,7 +210,7 @@ Jede der drei Fraktionen hat eine eigene Kosmologie. Keine ist vollständig fals
 
 **Kernfunktion:** Herrschaftslegitimation. Die Krone *braucht* das Schattenfieber als existenzielle Bedrohung, weil ohne Bedrohung kein Bedarf für einen Beschützer besteht.
 
-![Materialpalette der Krone — Schwarz, Damaszener-Stahl, Blutsiegel, Kristallglas](../../pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png)
+![Materialpalette der Krone — Schwarz, Damaszener-Stahl, Blutsiegel, Kristallglas](../pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png)
 
 Die Materialsprache der Krone spiegelt ihre Kosmologie: Schwarz als Farbe der Souveränität, Stahl als Manifestation der Grenze, Siegel aus Blut und Wachs als Bindungsritual. Jedes Material behauptet Kontrolle über das Unbeherrschbare. Die Krone trägt die Schwelle nicht auf der Haut — sie versiegelt sie.
 
@@ -228,7 +228,7 @@ Die Materialsprache der Krone spiegelt ihre Kosmologie: Schwarz als Farbe der So
 
 **Kernfunktion:** Wissenslegitimation und soziale Kontrolle. Der Orden definiert, wer "rein" ist und wer nicht. Das Schattenfieber als moralisches Versagen zu deuten, erlaubt die Pathologisierung von Armut und Dissidenz.
 
-![Materialpalette des Ordens — Weiß, Grünglas, Pergament, Siegel](../../pinwall/favorites/fraktion-orden-materialpalette_seedream-4-5.png)
+![Materialpalette des Ordens — Weiß, Grünglas, Pergament, Siegel](../pinwall/favorites/fraktion-orden-materialpalette_seedream-4-5.png)
 
 <!-- Emre: CD-Entscheid Tag 5: Orden-Symbol = SIEGEL (nicht Kreuz). Orden ist keine christliche Institution. Siegel verweist auf Überwachung + Wissensmonopol. Entscheidung bestätigt. -->
 
@@ -248,7 +248,7 @@ Die Materialsprache des Ordens erzählt von Reinheit als Monopol: Weiß als Abwe
 
 **Kernfunktion:** Profitlegitimation. Die Schwelle als Rohstoffquelle zu behandeln, erlaubt Ausbeutung ohne schlechtes Gewissen. Der Preis wird externalisiert, der Gewinn privatisiert.
 
-![Materialpalette der Gilden — Erdtöne, Bronze, Ledergerbung, Werkzeugstahl](../../pinwall/favorites/fraktion-gilden-materialpalette-v2_nano-banana-2.png)
+![Materialpalette der Gilden — Erdtöne, Bronze, Ledergerbung, Werkzeugstahl](../pinwall/favorites/fraktion-gilden-materialpalette-v2_nano-banana-2.png)
 
 Die Materialsprache der Gilden spiegelt ihre Kosmologie: Erdtöne als Zeichen nüchterner Bodenhaftung, Bronze und Werkzeugstahl als Werkzeuge der Aneignung, Leder als Arbeitshaut. Kein Material behauptet Transzendenz — alles ist Mittel zum Zweck. Die Gilden schmücken sich nicht mit der Schwelle. Sie verarbeiten sie.
 
@@ -316,15 +316,15 @@ In seiner natürlichen Position — eingebettet in die Ankerkammer — hielt er 
 
 Die Expedition entfernte den Schwellenanker aus seiner Position. In diesem Moment verlor die Dünnstelle ihren Stabilisator, und die Schwelle begann unkontrolliert durchzusickern.
 
-![Schwellenanker — Drei Zustände: ruhend, resonant, aktiviert](../../pinwall/favorites/relikt-drei-zustaende-v2_nano-banana-pro.png)
+![Schwellenanker — Drei Zustände: ruhend, resonant, aktiviert](../pinwall/favorites/relikt-drei-zustaende-v2_nano-banana-pro.png)
 
 Der Schwellenanker existiert in mindestens drei wahrnehmbaren Zuständen: **ruhend** (in der Ankerkammer, stabilisierend — kaum sichtbar, eher spürbar), **resonant** (reagierend auf Schwellennähe oder Kontaktpersonen — Kontur wird sichtbar, kaltes blau-violettes Leuchten) und **aktiviert** (vollständige Interaktion mit der Schwelle — instabil, gefährlich, faszinierend). Die Übergänge zwischen den Zuständen sind fließend und nicht vollständig verstanden.
 
-![Schwellenanker — Hero-Shot, aktivierter Zustand](../../pinwall/favorites/relikt-hero-v2_nano-banana-pro.png)
+![Schwellenanker — Hero-Shot, aktivierter Zustand](../pinwall/favorites/relikt-hero-v2_nano-banana-pro.png)
 
 Im aktivierten Zustand wird der Schwellenanker zum visuellen Brennpunkt der Kosmologie: ein Objekt, das gleichzeitig in der Stoffwelt und in der Schwelle existiert, dessen Licht kalt und fremd ist — nicht die Wärme einer Kerze, sondern das Leuchten einer Quallenkolonie in der Tiefsee. Beide leuchten. Nur eines davon ist für den Betrachter gedacht.
 
-![Schwellenanker — Hero-Shot, aktiviert (Detail)](../../pinwall/favorites/relikt-hero-shot-aktiviert_gpt-image-1-5.png)
+![Schwellenanker — Hero-Shot, aktiviert (Detail)](../pinwall/favorites/relikt-hero-shot-aktiviert_gpt-image-1-5.png)
 
 <!-- Emre: CD bestätigt (Tag 3): Spieler darf Fragment des Schwellenankers ablehnen. Kein konkretes Wirbelsäule-Artefakt. Der Schwellenanker ist kein Gegenstand, den man "benutzt" — er ist eine Verantwortung, der man sich stellt oder entzieht. -->
 
@@ -480,11 +480,11 @@ Unterhalb des Gürtels, wo das Tageslicht kaum noch hinreicht und der Nebel perm
 
 Weiter unten hört die menschliche Baukunst auf und die Schwelle beginnt zu gestalten. Felswände zeigen kristalline Auswüchse in blassem Grün und Blau. Stalaktitenartige Formationen hängen von Gewölben, die nie von Menschenhand gemeißelt wurden. Wasser — oder etwas, das wie Wasser aussieht — sammelt sich in leise vibrierenden Becken. Die Luft ist dichter hier, wärmer als sie sein sollte. Sie schmeckt nach Kupfer und etwas Unbestimmtem.
 
-![Stadtschnitt Kanalzone — Übergang Gürtel/Schlund mit Schwellenphänomenen](../../pinwall/favorites/stadtschnitt-kanalzone-v3_nano-banana-2.png)
+![Stadtschnitt Kanalzone — Übergang Gürtel/Schlund mit Schwellenphänomenen](../pinwall/favorites/stadtschnitt-kanalzone-v3_nano-banana-2.png)
 
 Die Kanalzone markiert den Übergang, an dem menschliche Architektur und Schwellenwachstum ineinander übergehen. Hier verlaufen die Abwasserkanäle der Gerber-Gilde — massive Steinportale, die als Infrastruktur geplant wurden und längst zu Lebensraum, Handelsroute und Schwellenmaterial-Quelle geworden sind. Die Schichtgrenzen sind nicht sauber — der Schlund kriecht in den Gürtel, und die Grenze verschiebt sich mit jeder Schwellennebel-Periode.
 
-![Stadtschnitt Kanalzone — Detailansicht mit Beleuchtung und Bewohnern](../../pinwall/favorites/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png)
+![Stadtschnitt Kanalzone — Detailansicht mit Beleuchtung und Bewohnern](../pinwall/favorites/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png)
 
 <!-- Emre: Dishonored-Referenz: Flooded District-Atmosphäre, aber organischer, weniger verfallen, mehr gewachsen. -->
 
@@ -623,15 +623,15 @@ Das Tiervolk hat kein offizielles Viertel. Es hat die **Fährte** — ein loses 
 
 **Warum die Übergangszone:** Das Tiervolk lebt nicht im Schlund, weil es dort nicht leben *muss* — die Symbiose mit den Fremden schützt sie teilweise vor Schwelleneffekten. Sie leben nicht im Gürtel, weil die menschlichen Bewohner es nicht dulden. Die Übergangszone ist der Ort, den niemand will — und genau deshalb der Ort, der dem Tiervolk gehört.
 
-![Tiervolk-Marktszene — Handel in der Fährte](../../pinwall/favorites/tiervolk-marktszene-exploration_seedream-4-5.png)
+![Tiervolk-Marktszene — Handel in der Fährte](../pinwall/favorites/tiervolk-marktszene-exploration_seedream-4-5.png)
 
 Die Fährte ist ein Handelsknotenpunkt: Das Tiervolk bringt Waren aus Regionen mit, die kein menschlicher Händler bereist — andere Dünnstellen, entlegene Siedlungen, Orte, die auf keiner Karte stehen. Ihre Waren sind selten, oft unidentifizierbar, manchmal gefährlich. Die Gilden handeln offiziell nicht mit dem Tiervolk (der Orden verbietet es). Inoffiziell fließen Schwellenmaterialien, Informationen und Münze in beide Richtungen.
 
-![Tiervolk-Händler — Fuchsgestalt mit Handelsware](../../pinwall/favorites/tiervolk-haendler-fuchs-exploration_seedream-4-5.png)
+![Tiervolk-Händler — Fuchsgestalt mit Handelsware](../pinwall/favorites/tiervolk-haendler-fuchs-exploration_seedream-4-5.png)
 
 Die Tiervolk-Händler bewegen sich zwischen den Welten: Ihre Physiognomie erinnert an die Wirtstierspezies (Fuchs, Marder, Rabe, Hirsch und andere), doch die Proportionen sind subtil verschoben — Arme etwas zu lang, Finger zu schmal, Kopfneigung unmenschlich. Sie handeln nüchtern, präzise, ohne Sentimentalität. Was sie anbieten, hat keinen festen Preis — der Wert bemisst sich nach dem, was der Käufer zu geben bereit ist. Nicht alle ihre Geschäfte sind legal.
 
-![Tiervolk-Diebin — Mardergestalt in der Übergangszone](../../pinwall/favorites/tiervolk-diebin-marder-exploration_seedream-4-5.png)
+![Tiervolk-Diebin — Mardergestalt in der Übergangszone](../pinwall/favorites/tiervolk-diebin-marder-exploration_seedream-4-5.png)
 
 Das Briefing definiert das Tiervolk als "Händler und Diebe". Die Diebe des Tiervolks sind keine Straßenräuber. Sie sind Informationsbeschaffer, Schmuggler, Hehler — ein paralleles Wirtschaftsnetzwerk, das die offizielle Gildenstruktur unterwandert, ohne sie herauszufordern. Die Mardergestalt oben zeigt die typische Mischung: menschlich genug, um in der Menge unterzugehen; fremd genug, um nie ganz dazuzugehören.
 
@@ -752,13 +752,13 @@ Die Oberschicht besitzt *eines*. Einen Indigo-Akzent an der Schulter. Eine einze
 
 Das Konzept-Art zeigt die Krone-Materialpalette in ihrer charakteristischen Sprache: gebürstet-schwarzer Stahl, Blutrot-Siegel auf schieferglattem Untergrund, eine Kristallphiole mit tiefblauem Inhalt. Kein zweiter Farbton. Die Reduktion *ist* die Aussage.
 
-![Fraktion Krone — Materialpalette](../../pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png)
+![Fraktion Krone — Materialpalette](../pinwall/favorites/fraktion-krone-materialpalette_seedream-4-5.png)
 
 Für den Orden gilt dasselbe Prinzip, aber gespiegelt: **Weiß statt Schwarz**. Das Ordensweiß ist keine Reinheitsmetapher aus Tradition — es ist aus praktischer Notwendigkeit entstanden. Weiße Gewänder zeigen Kontamination sofort: eine Schattenfieber-Spur, ein Tintenfleck, Schmutz aus dem Schlund. Ein Ordensbruder, dessen Gewand weiß geblieben ist, war nicht in den Tiefen. Ein Ordensbruder, dessen Gewand nicht mehr ganz weiß ist, hat entweder schlecht gearbeitet oder zu tief geforscht. Das weiß jeder, der den Orden kennt.
 
 Der Orden trägt Knochen-Applikationen — Rosenkränze aus gebleichten Knochen, Ornamente aus Bein in weißgesticktem Leinen. Eine Lupe aus Messing als Zeichen des Forschungsrangs. Das Ordenssiegel aus dunkel geädertem Stein, kaum sichtbar an der Schlüsselbeinnähte. Und manchmal: eine kleine Phiole mit grünlicher Flüssigkeit. Was darin ist, erklärt kein Ordensmann auf Nachfrage.
 
-![Fraktion Orden — Materialpalette](../../pinwall/favorites/fraktion-orden-materialpalette_seedream-4-5.png)
+![Fraktion Orden — Materialpalette](../pinwall/favorites/fraktion-orden-materialpalette_seedream-4-5.png)
 
 ### Mittelschicht: Färbung als Aufstiegsanzeige
 
@@ -766,7 +766,7 @@ Im Gürtel — der Mittelzone Schwarzrands — spricht das Material anders. Hier
 
 Die Mittelschicht trägt auch Gildenzeichen — kleine emaillierte Plaketten an der Schulter oder am Mantelkragen, die Gildenzugehörigkeit und Ausbildungsrang anzeigen. Das System ist so komplex wie jede Heraldik.
 
-![Fraktion Gilden — Materialpalette](../../pinwall/favorites/fraktion-gilden-materialpalette-v2_nano-banana-2.png)
+![Fraktion Gilden — Materialpalette](../pinwall/favorites/fraktion-gilden-materialpalette-v2_nano-banana-2.png)
 
 Wer aufsteigt, tauscht aus. Eisen gegen Tiegelstahl. Leinen gegen gefärbtes Leinen. Gefärbtes Leinen gegen Lodenwalk. Lodenwalk gegen Brokatseide. Das ist nicht heimlich — es ist offen und sozial erwartet. Das nennt sich Tüchtigkeit.
 
@@ -860,7 +860,7 @@ Das Ergebnis ist eine eigene ontologische Kategorie. Nicht Mensch, nicht Tier, n
 
 Sie nennen sich intern "die Reisenden." Nicht wegen ihrer Mobilität. Wegen ihrer ontologischen Position: Sie reisen zwischen dem Kosmologischen und dem Materiellen.
 
-![Tiervolk — Händler (Fuchs-Symbiose)](../../pinwall/favorites/tiervolk-haendler-fuchs-exploration_seedream-4-5.png)
+![Tiervolk — Händler (Fuchs-Symbiose)](../pinwall/favorites/tiervolk-haendler-fuchs-exploration_seedream-4-5.png)
 
 ### Die Symbiose — wie sie entsteht und was sie bedeutet
 
@@ -872,7 +872,7 @@ Was die Symbiose für das Bewusstsein bedeutet: Das ist die Frage, die die Reise
 
 Das Tier selbst ist nicht verschwunden. Es lebt. Es trägt zur Wahrnehmung bei. Jemand in Symbiose mit einem Habicht nimmt Raum anders wahr als jemand in Symbiose mit einem Luchs oder einem Schlund-Aal aus den Tiefen. Diese Verschiedenheit innerhalb der Gemeinschaft ist kein Problem — sie ist ein Vorteil.
 
-![Tiervolk — Diebin (Marder-Symbiose)](../../pinwall/favorites/tiervolk-diebin-marder-exploration_seedream-4-5.png)
+![Tiervolk — Diebin (Marder-Symbiose)](../pinwall/favorites/tiervolk-diebin-marder-exploration_seedream-4-5.png)
 
 ### Sichtbare Merkmale
 
@@ -908,7 +908,7 @@ Das ist die Basis ihrer Überzeugung: Das Schattenfieber ist Kommunikation. Kein
 
 **Praktische Konsequenzen:** Die Reisenden gehen in Schwellennähezonen mit anderen Sicherheitsvorstellungen als die drei Fraktionen. Nicht aus Leichtsinn — aus einer anderen Risikoabwägung. Sie haben Praktiken entwickelt (weder beschreibbar als Medizin noch als Ritual — irgendwo dazwischen), die die Expositionsprogression verlangsamen. Wie es funktioniert, geben sie nicht weiter. Warum es funktioniert, wissen sie selbst nicht sicher.
 
-![Tiervolk — Marktszene](../../pinwall/favorites/tiervolk-marktszene-exploration_seedream-4-5.png)
+![Tiervolk — Marktszene](../pinwall/favorites/tiervolk-marktszene-exploration_seedream-4-5.png)
 
 ### Wirtschaftliche Rolle
 

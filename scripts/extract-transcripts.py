@@ -68,17 +68,87 @@ def parse_jsonl(path):
 
 
 def _extract_agent_from_prompt(prompt_text):
-    """Extract agent ID from the initial prompt text."""
-    m = re.search(r"Du bist (\w+ \w+)", prompt_text)
+    """Extract agent ID from the initial prompt text.
+
+    Supports two prompt formats:
+      - Legacy: "Du bist Darius Engel — ..."
+      - New:    "Du bist in einer Szene ... Reagiere als Emre ..."
+    Also checks memory file paths: agents/{name}-memory.md
+    """
+    # 1. Legacy: "Du bist {Full Name}" — try ALL matches, not just first
+    for m in re.finditer(r"Du bist (\w+ \w+)", prompt_text):
+        name = m.group(1).lower()
+        if name in _NAME_TO_ID:
+            return _NAME_TO_ID[name]
+    for m in re.finditer(r"Du bist (\w+)", prompt_text):
+        name = m.group(1).lower()
+        if name in _NAME_TO_ID:
+            return _NAME_TO_ID[name]
+
+    # 2. New format: "Reagiere als {Name}" or "arbeite als {Name}"
+    m = re.search(r"[Rr]eagiere als (\w+)", prompt_text)
     if m:
         name = m.group(1).lower()
         if name in _NAME_TO_ID:
             return _NAME_TO_ID[name]
-    m = re.search(r"Du bist (\w+)", prompt_text)
+    m = re.search(r"arbeite.*?als (\w+)", prompt_text)
     if m:
         name = m.group(1).lower()
         if name in _NAME_TO_ID:
             return _NAME_TO_ID[name]
+
+    # 3. Memory file path: agents/{name}-memory.md
+    m = re.search(r"agents/(\w+)-memory\.md", prompt_text)
+    if m:
+        name = m.group(1).lower()
+        if name in _NAME_TO_ID:
+            return _NAME_TO_ID[name]
+
+    # 4. Check for unique identifiers: "als {Name}" patterns
+    for agent_id, full_name in AGENT_NAMES.items():
+        first = full_name.split()[0]
+        if re.search(rf"als {first}\b", prompt_text, re.IGNORECASE):
+            return agent_id
+
+    # 5. "{Name} (du)" pattern — agent addressed in second person
+    for agent_id, full_name in AGENT_NAMES.items():
+        first = full_name.split()[0]
+        if re.search(rf"{first}\s*\(du\)", prompt_text, re.IGNORECASE):
+            return agent_id
+        # Also check short ID (e.g., "Leo (du)" for agent_id "leo")
+        if re.search(rf"{agent_id}\s*\(du\)", prompt_text, re.IGNORECASE):
+            return agent_id
+
+    # 6. D&D character → agent mapping
+    dnd_chars = {"kess": "nami", "kordt": "darius"}
+    for char, agent in dnd_chars.items():
+        if re.search(rf"du spielst {char}\b", prompt_text, re.IGNORECASE):
+            return agent
+
+    return None
+
+
+def _extract_agent_from_entries(entries):
+    """Extract agent ID by scanning all entries for memory file access patterns.
+
+    Checks Read/Write tool calls for agents/{name}-memory.md paths.
+    """
+    memory_pattern = re.compile(r"agents/(\w+)-memory")
+    for entry in entries:
+        msg = entry.get("message", {})
+        content = msg.get("content", [])
+        if not isinstance(content, list):
+            continue
+        for block in content:
+            if not isinstance(block, dict):
+                continue
+            if block.get("type") == "tool_use" and block.get("name") in ("Read", "Write", "Edit"):
+                fp = block.get("input", {}).get("file_path", "")
+                m = memory_pattern.search(fp)
+                if m:
+                    name = m.group(1).lower()
+                    if name in _NAME_TO_ID:
+                        return _NAME_TO_ID[name]
     return None
 
 
@@ -132,12 +202,28 @@ def identify_trace_dir(entries, sim_dir):
         return trace_dir_name, agent_id or "unknown"
 
     # --- Fallback: derive trace dir from prompt context ---
+    if not agent_id:
+        agent_id = _extract_agent_from_entries(entries)
     if not agent_id or not first_text:
         return None, None
 
-    # Look for "Tag N" + "Szene M: TYPE" in prompt
+    # Look for "Tag N" + "Szene M: TYPE" in prompt (with fallbacks)
     day_m = re.search(r"Tag\s+(\d+)", first_text)
-    scene_m = re.search(r"Szene\s+(\d+)(?::\s*(\w+))?", first_text)
+    if not day_m:
+        weekday_map = {"Montag": 1, "Dienstag": 2, "Mittwoch": 3, "Donnerstag": 4, "Freitag": 5}
+        for wd, num in weekday_map.items():
+            if wd in first_text:
+                day_m = type("M", (), {"group": lambda self, n, _v=num: str(_v)})()
+                break
+    scene_m = re.search(r"Szene\s+(\d+)(?::\s*([\w&]+))?", first_text)
+    if not scene_m and day_m:
+        type_m = re.search(r"\b(BRIEFING|WORK|MEETING|PAUSE|REVIEW|DND|D&D|Meeting|Pause|Review)\b", first_text)
+        if type_m:
+            sn = _infer_scene_num(int(day_m.group(1)), type_m.group(1).upper())
+            if sn:
+                scene_m = type("M", (), {
+                    "group": lambda self, n, _s=sn, _t=type_m.group(1).upper(): str(_s) if n == 1 else _t
+                })()
     if not day_m or not scene_m:
         return None, None
 
@@ -154,8 +240,31 @@ def identify_trace_dir(entries, sim_dir):
 SHARED_SCENE_TYPES = {"BRIEFING", "MEETING", "PAUSE", "REVIEW", "DND"}
 
 
+# Scene type → scene number mapping per day (from logbook)
+_DAY_SCENE_MAP = {
+    1: {"BRIEFING": 1, "WORK": 2, "MEETING": 3, "PAUSE": 4, "REVIEW": 5},
+    2: {"BRIEFING": 1, "WORK": 2, "MEETING": 3, "PAUSE": 4, "REVIEW": 5},
+    3: {"BRIEFING": 1, "WORK": 2, "MEETING": 3, "PAUSE": 4, "REVIEW": 5},
+    4: {"BRIEFING": 1, "WORK": 2, "MEETING": 3, "PAUSE": 4, "DND": 5},
+    5: {"BRIEFING": 1, "WORK": 2, "MEETING": 3, "PAUSE": 4, "REVIEW": 5},
+}
+
+
+def _infer_scene_num(day, scene_type):
+    """Infer scene number from day + scene type using logbook structure."""
+    # Normalize D&D → DND
+    if scene_type == "D&D":
+        scene_type = "DND"
+    day_map = _DAY_SCENE_MAP.get(day, {})
+    return day_map.get(scene_type)
+
+
 def _parse_scene_from_prompt(entries):
     """Extract (day, scene_num, scene_type, agent_id) from the first entry's prompt.
+
+    Supports both legacy and new prompt formats:
+      - Legacy: "Tag 1, Szene 2: WORK"
+      - New:    "Tag 2 (Dienstag), Szene 3: MEETING"
 
     Returns (day, scene, type, agent_id) or (None, None, None, None).
     """
@@ -167,8 +276,29 @@ def _parse_scene_from_prompt(entries):
     if not isinstance(prompt, str):
         return None, None, None, None
 
-    day_m = re.search(r"Tag (\d+)", prompt)
-    scene_m = re.search(r"Szene (\d+):\s*(\w+)", prompt)
+    # Match various prompt formats:
+    #   "Tag 1, Szene 2: WORK"
+    #   "Tag 2 (Dienstag), Szene 3: MEETING"
+    #   "**Tag:** 2 ... **Szene:** 5 — REVIEW"
+    day_m = re.search(r"Tag[:\s*]*\*?\*?\s*(\d+)", prompt)
+    if not day_m:
+        # Fallback: weekday → day number
+        weekday_map = {"Montag": 1, "Dienstag": 2, "Mittwoch": 3, "Donnerstag": 4, "Freitag": 5}
+        for wd, num in weekday_map.items():
+            if wd in prompt:
+                day_m = type("M", (), {"group": lambda self, n: str(num)})()
+                break
+    scene_m = re.search(r"Szene[:\s*]*\*?\*?\s*(\d+)\s*(?::\s*|—\s*|\s+)([\w&]+)", prompt)
+    if not scene_m:
+        # Fallback: infer scene number from scene type when explicit "Szene N" is missing
+        type_m = re.search(r"\b(BRIEFING|WORK|MEETING|PAUSE|REVIEW|DND)\b", prompt)
+        if type_m and day_m:
+            scene_type = type_m.group(1)
+            scene_num = _infer_scene_num(int(day_m.group(1)), scene_type)
+            if scene_num:
+                scene_m = type("M", (), {
+                    "group": lambda self, n, _s=scene_num, _t=scene_type: str(_s) if n == 1 else _t
+                })()
     if not day_m or not scene_m:
         return None, None, None, None
 
@@ -176,6 +306,10 @@ def _parse_scene_from_prompt(entries):
     scene_num = int(scene_m.group(1))
     scene_type = scene_m.group(2).upper()
     agent_id = _extract_agent_from_prompt(prompt)
+
+    # Fallback: scan all entries for memory file access
+    if not agent_id:
+        agent_id = _extract_agent_from_entries(entries)
 
     return day, scene_num, scene_type, agent_id
 
@@ -346,7 +480,7 @@ def _identify_gm_day(entries, sim_dir):
         for block in content:
             if not isinstance(block, dict):
                 continue
-            if block.get("type") == "tool_use" and block.get("name") == "Write":
+            if block.get("type") == "tool_use" and block.get("name") in ("Write", "Edit"):
                 fp = block.get("input", {}).get("file_path", "")
                 m = pattern.search(fp)
                 if m:
@@ -422,14 +556,30 @@ def extract_from_storage(args):
                 trace_dir_name = f"{prefix}-{agent_id}"
                 all_agent_data.append((session_id, jsonl_path, entries, trace_dir_name, agent_id, None))
 
-    # Assign turn numbers to shared scene agents (sorted by timestamp)
+    # Assign shared scene agents to individual dirs (day{N}-scene{M}-{agent}).
+    # When multiple JONLs exist for the same agent+scene, keep the one with the
+    # most entries (= the most complete transcript).
     for scene_key, agents in scene_groups.items():
         day, scene_num, scene_type = scene_key
         prefix = f"day{day:02d}-scene{scene_num}"
-        agents.sort(key=lambda x: x[0])  # sort by timestamp
-        for turn_num, (ts, agent_id, jsonl_path, entries, session_id) in enumerate(agents, 1):
-            trace_dir_name = f"{prefix}-t{turn_num}-{agent_id}"
-            all_agent_data.append((session_id, jsonl_path, entries, trace_dir_name, agent_id, turn_num))
+        # Group by agent_id, keep longest
+        by_agent = {}
+        for ts, agent_id, jsonl_path, entries, session_id in agents:
+            key = agent_id
+            if key not in by_agent or len(entries) > len(by_agent[key][2]):
+                by_agent[key] = (session_id, jsonl_path, entries)
+        for agent_id, (session_id, jsonl_path, entries) in by_agent.items():
+            trace_dir_name = f"{prefix}-{agent_id}"
+            all_agent_data.append((session_id, jsonl_path, entries, trace_dir_name, agent_id, None))
+
+    # --- Phase 1b: Deduplicate — when multiple JONLs map to the same trace dir,
+    # keep the one with the most entries (most complete transcript).
+    deduped = {}
+    for item in all_agent_data:
+        session_id, jsonl_path, entries, trace_dir_name, agent_id, turn_num = item
+        if trace_dir_name not in deduped or len(entries) > len(deduped[trace_dir_name][2]):
+            deduped[trace_dir_name] = item
+    all_agent_data = list(deduped.values())
 
     # --- Phase 2: Write all transcripts ---
     for session_id, jsonl_path, entries, trace_dir_name, agent_id, turn_num in all_agent_data:

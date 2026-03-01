@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ordensaeltester-forschungsleiter",
+    "prompt": "Imagine a character concept art of an Order Elder — the highest-ranking knowledge authority in a medieval dark fantasy city's monastic research order. Full body three-quarter view. An elderly figure, gender ambiguous, perhaps seventy. The robes are layers of pristine white heavy linen, the fabric quality visible even in its simplicity — hand-loomed, precisely cut, maintained with obsessive care. Over the shoulders: a pale grey-silver stole bearing the Order's seal repeated at intervals — the eye-within-concentric-circles motif pressed in dark green wax. Their hands are the focal point: long, thin, ink-stained at the fingertips, holding a brass magnification lens with a pale green glass element — one of the Order's proprietary threshold-detecting instruments. Their face: deep wrinkles, clean-shaven, intelligent eyes that evaluate constantly, a thin mouth that rarely speaks without purpose. Around the neck: a chain of bleached bone links with a single obsidian center element. The expression: someone who knows more than they reveal, and has decided this is a kindness. MUST obey ALL: no bright colors, monastic severity. Dark fantasy character concept art, painterly, cold diffused light, institutional atmosphere.",
+    "model": "nano-banana-pro",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/characters"
+  },
+  {
+    "name": "kronmarschall-militaerbefehlshaber",
+    "prompt": "Concept art of the Crown Marshal — the military commander of the garrison in a medieval dark fantasy vertical city. Full body, three-quarter view, standing on a stone parapet overlooking the city below. An imposing figure in his late fifties: tall, broad-shouldered, weathered face with a network of scars that are not displayed but not hidden. His armor is the most elaborate Crown equipment: layered dark plate with Damascus steel inlays showing flowing fold patterns, the surface brushed to a matte finish. The left pauldron bears the Crown's blood-red seal — the only color on his entire figure. A commander's heavy wool cloak in charcoal black, pinned with a threshold alloy brooch. His weapon: a straight longsword with an unusually dark blade — threshold-forged steel, the forbidden advantage the Crown officially condemns. His eyes look outward and downward, into the fog that fills the lower city. The expression: a man who enforces an order he suspects is hollow. Color palette: all-black and dark steel, Damascus fold patterns, one blood-red seal, charcoal cloak, fog-grey city below. Dark fantasy character concept art, painterly, dramatic overlook composition, cold atmospheric light.",
+    "model": "gpt-image-1-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/characters"
+  },
+  {
+    "name": "schlund-matriarchin-gemeinschaft",
+    "prompt": "Concept art of a Schlund Matriarch — an informal community leader in the deepest inhabited underground level of a medieval vertical city. Full body, three-quarter view. A woman in her sixties with an authority that comes from decades of survival, not appointment. Her clothing is the layered patchwork of the underclass: undyed linen, salvaged leather, rope bindings — but everything is maintained, clean as possible, carefully mended. At her waist: a bone-handled knife and a leather pouch of herbs. Her hands show deep calluses. Her face: weathered, sharp-eyed, with faint pale violet shadow fever vein-lines at the temples that she does not hide — in the Schlund, Stage 1 is normal. Around her neck: a stolen lapis lazuli fragment on a leather cord — the single beautiful object, worn as a compass, not decoration. She stands in a makeshift community hall — a widened tunnel section with cloth partitions and crude benches — addressing a small group. Behind her: bioluminescent moss provides the only light. Color palette: grey-brown patchwork clothing, faint violet veins, cool green-blue bioluminescence, one lapis blue accent. Dark fantasy character concept art, painterly, low ambient bioluminescent light, dignified atmosphere.",
+    "model": "nano-banana-pro",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/characters"
+  },
+  {
+    "name": "glasmacher-meisterin-linsen",
+    "prompt": "Concept art of a Glassmacher Guild master — a specialist who grinds threshold-detecting lenses in a medieval dark fantasy city. Three-quarter view, upper body focus. A woman in her forties wearing a leather work apron over guild-quality dyed linen in deep brown. Her hands hold her masterwork: a small lens mounted in a brass frame, the glass element tinted with a faint pale green from threshold spore-powder admixture. When you look through this lens, threshold substrate becomes visible. Her eyes are magnified behind heavy brass work-goggles pushed up on her forehead. On her workbench: grinding tools, raw glass blanks, small ceramic crucibles of powdered ingredients, a rack of finished lenses in different sizes. Her guild plaque — enameled glass over bronze — hangs on the wall behind her. The workshop is lit by a combination of natural light from a clerestory window and the warm glow of a glass furnace to one side. Color palette: warm brown leather, brass instrument gold, pale green lens tint, orange furnace glow, cool natural light from above. Dark fantasy character and workshop concept art, painterly, warm mixed lighting, craft atmosphere.",
+    "model": "nano-banana-2",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/characters"
+  },
+  {
+    "name": "tiervolk-hirsch-aeltester",
+    "prompt": "Concept art of a Traveller elder with a deer symbiosis — one of the oldest members of the non-human community in a medieval dark fantasy city. Full body three-quarter view. An impossibly tall, thin figure — perhaps two meters in height, with proportions that are fractionally wrong in every dimension: limbs slightly too long, neck a degree too upright, fingers too slender. The face is nearly human but uncanny: high cheekbones that cast shadows at wrong angles, horizontal pupil slits in dark amber eyes, a jawline that transitions subtly from skin to something harder — not bone, not horn, just different. Sparse patches along the temples where hair gives way to a finer texture reminiscent of short deer velvet. The clothing is layered earth-toned travel garments — heavy oiled wool, leather, a fur-collared cloak — all well-made but intentionally nondescript. No guild affiliation, no faction markers. Their expression: patience measured in decades, a quiet knowingness. One hand rests on a walking staff of dark wood inlaid with pale bone fragments. The other holds a sealed glass vessel containing a faintly luminescent organism. Color palette: warm earth tones, dark amber eyes, subtle skin-to-velvet texture shifts, cool bioluminescent accent in the glass vessel. Dark fantasy character concept art, painterly, soft ambient light, quiet dignity.",
+    "model": "gpt-image-1-5",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/characters"
+  },
+  {
+    "name": "stufe2-wandelnder-schlund-krieger",
+    "prompt": "Concept art of a Stage 2 shadow fever sufferer — a Wanderer — who has embraced the mutation as combat advantage in the underground slums of a medieval dark fantasy city. Full body, action-ready stance. A figure in their thirties with visible transformation: raised glowing violet channel-lines running along both forearms and up the neck, the skin around them shifted to a cool ashen grey. The hands show early structural change — the finger joints slightly thickened, the grip strength visibly enhanced. Their clothing is practical underclass: leather vest, arm wraps that deliberately leave the forearm channels exposed as intimidation, patched trousers, heavy boots. A weapon: a crude but effective mace with a chitin-plated head — threshold beetle shell over iron. Their expression: controlled ferocity, someone who has decided that the fever is a weapon rather than a curse. Behind them: the bioluminescent glow of the Schlund tunnels. The violet channels pulse faintly, brightest at the knuckles. Color palette: ashen grey skin, violet luminescent channels, dark practical clothing, chitin-black weapon accents, cool bioluminescent background. Dark fantasy character concept art, painterly, cold ambient light with violet accent glow, aggressive stance.",
+    "model": "nano-banana-2",
+    "category": "characters",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/characters"
+  },
+  {
+    "name": "kronwache-zollposten-steig",
+    "prompt": "Concept art of two Crown guards at a toll checkpoint on the Great Stair of a medieval vertical city. Two-figure composition at a stone landing platform. The guards wear standard Crown military equipment: dark brushed metal plate segments over charcoal gambeson, geometric open-faced helms, each bearing the blood-red seal on the chest plate. One guard stands at attention with a halberd, the other sits at a small stone desk checking documents — a ledger, an ink pot, a wax seal stamp. Their expressions: boredom and routine — this is bureaucratic enforcement, not heroic duty. The checkpoint has a wooden gate barrier across the stair, a wall-mounted iron bracket with a guttering torch, and a small stone guardhouse with a slit window behind them. Through the gate: the Great Stair descends into fog and the lower city. Traffic waits: a porter with a loaded pack, a guild apprentice holding a sealed tube. Color palette: dark Crown armor, charcoal fabric, blood-red seal accents, warm torch amber, grey stone, fog below. Dark fantasy scene concept art, painterly, checkpoint atmosphere, warm-cold light transition.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/characters"
+  },
+  {
+    "name": "kerzenzieher-geselle-talg",
+    "prompt": "Concept art of a chandler's guild journeyman preparing threshold-tallow candles in a medieval dark fantasy workshop. Upper body and workbench focus. A young man in his twenties wearing a heavy canvas apron stained with wax and tallow. He dips woven wicks into a vat of melted threshold-tallow — a mixture of regular animal fat and dried bioluminescent moss extract. The tallow in the vat has a faint blue-white sheen that is not normal candlemaking material. Finished candles on a drying rack beside him emit a subtle cool blue-white glow that contrasts with the warm amber of the workshop's regular oil lamp. His hands are covered in solidified tallow to the wrists. On the workbench: bundles of dried luminescent moss, measuring scales, ceramic grinding mortars, rolls of wicking. The workshop wall shows the chandler's guild sign — a simple candle flame embossed in tin. Color palette: warm amber workshop light, cool blue-white threshold-tallow glow, canvas and wax stains, tin guild sign. Dark fantasy craft scene concept art, painterly, warm workshop atmosphere with cool alchemical accent.",
+    "model": "seedream-4-5",
+    "category": "characters",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/characters"
+  }
+]

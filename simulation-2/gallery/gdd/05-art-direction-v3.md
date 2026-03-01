@@ -255,6 +255,10 @@ Haut wird transluzent. Darunter: kränklich gelbgrüne Kanäle (identisch mit Sc
 
 ![Schattenfieber Stufe 3 — Transluzente Haut, gelbgrüner Glow, Partikelauflösung an Fingerspitzen](../concepts/day05-vera/schattenfieber/schattenfieber-stufe3-aufloesung_nano-banana-pro.png)
 
+### Körper-Detailsheet
+
+![Schattenfieber — Körper-Detailsheet: Progression der Gefäßlinien, Transluzenz-Stufen](../concepts/day05-vera-supplement/schattenfieber/schattenfieber-koerper-detailsheet_gpt-image-1-5.png)
+
 ### Farbkorrespondenz Schattenfieber ↔ Schwellenanker
 
 | Stufe | Fieber-Farbe | Schwellenanker-Zustand |
@@ -295,7 +299,53 @@ Waffen und Ausrüstung erzählen soziale Herkunft. Derselbe Gegenstandstyp exist
 
 ---
 
-## 5.8 Art Direction-Checkliste
+## 5.8 Schwellenflora & -fauna — Organische Fremdheit
+
+Die Schwellennatur ist die visuelle Unterschrift der tieferen Stadtschichten. Biolumineszenz ist kein Effekt — sie ist Lebenszeichen einer Biologie, die teilweise der Schwelle gehorcht.
+
+![Schwellenpilze — Mannshohe Fruchtkörper, tiefes Blau-Pulsieren, Kavernenatmosphäre](../concepts/day05-vera-supplement/flora-fauna/schwellenpilze-kaverne-mannshoch_gpt-image-1-5.png)
+
+![Schwarzrankenwurzeln — Ledrige Wurzeln durchziehen Felswand, Harzaustritt](../concepts/day05-vera-supplement/flora-fauna/schwarzrankenwurzeln-felswand_gpt-image-1-5.png)
+
+![Schwelleninsekten — Biolumineszente Motten im Schlund](../concepts/day05-vera-supplement/flora-fauna/schwelleninsekten-motten-biolumineszent_nano-banana-pro.png)
+
+**Designregel:** Schwellenflora und -fauna leuchten kalt (blassgrün bis violett). Die Farbe ist schön und bedrohlich gleichzeitig — sie signalisiert Schwellennähe.
+
+---
+
+## 5.9 Die Ankerkammer & Schwellenlandschaft
+
+Der klimatische Ort der Hauptquest. Die Ankerkammer ist der tiefste erreichbare Punkt, wo Stoffwelt und Schwelle sich überlagern.
+
+![Ankerkammer — Abstieg zum tiefsten Punkt, instabile Geometrie](../concepts/day05-vera-supplement/schwelle/ankerkammer-eingang-abstieg_gpt-image-1-5.png)
+
+![Ankerkammer — Leerer Innenraum, wo der Schwellenanker einst lag](../concepts/day05-vera-supplement/schwelle/ankerkammer-innenraum-leer_gpt-image-1-5.png)
+
+![Schwellenlandschaft — Abstrakte Vision des Jenseit](../concepts/day05-vera-supplement/schwelle/schwellenlandschaft-jenseit-abstrakt_gpt-image-1-5.png)
+
+---
+
+## 5.10 Atmosphäre & Stimmung
+
+![Spieler-Eintritt — Establishing Shot: Schwarzrand aus der Ferne, vertikale Stadt im Talkessel](../concepts/day05-vera-supplement/atmosphere/spieler-eintritt-schwarzrand-establishing_gpt-image-1-5.png)
+
+![Morgengrauen — Obere Ränder, erste Lichtschächte durchbrechen den Nebel](../concepts/day05-vera-supplement/atmosphere/morgengrauen-talkessel-obere-raender_gpt-image-1-5.png)
+
+![Nachtszene — Gürtel bei Nacht, Laternen und Schwellenlichter](../concepts/day05-vera-supplement/atmosphere/nachtszene-guertel-laternen_gpt-image-1-5.png)
+
+---
+
+## 5.11 Schwellenmaterialien — Die Wirtschaftsbasis
+
+![Schwellenlegierung — Schmiede-Material, dunkler und dichter als Stahl](../concepts/day05-vera-supplement/materials/schwellenlegierung-schmiede-material_nano-banana-2.png)
+
+![Schwellenfäden — Weber-Textil, biolumineszent, selbstreparierend](../concepts/day05-vera-supplement/materials/schwellenfaeden-weber-textil_nano-banana-pro.png)
+
+![Schwellenlinse — Glasmacher-Instrument, macht Schwellensubstrat sichtbar](../concepts/day05-vera-supplement/materials/schwellenlinse-glasmacher-instrument_nano-banana-pro.png)
+
+---
+
+## 5.12 Art Direction-Checkliste
 
 Jedes Asset muss gegen diese Liste geprüft werden:
 

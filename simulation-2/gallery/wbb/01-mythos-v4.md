@@ -27,6 +27,8 @@ Die Welt von RELICS besteht aus zwei Existenzebenen:
 
 Die Schwelle ist keine Hölle, kein Himmel, kein Geisterreich. Sie hat keine bekannte Absicht. Sie ist einfach *da* — wie Gravitation, wie Gezeiten. Aber sie ist fremd in einem Ausmaß, das menschliche Kategorien übersteigt.
 
+![Schwellenlandschaft — Abstrakte Vision des Jenseit, nicht-euklidische Geometrie](../concepts/day05-vera-supplement/schwelle/schwellenlandschaft-jenseit-abstrakt_gpt-image-1-5.png)
+
 ### 1.2 Dünne Orte
 
 Die Grenze zwischen Stoffwelt und Schwelle ist nicht überall gleich stark. Es gibt Stellen, an denen die Trennung dünner ist — sogenannte **dünne Orte** (*Dünnstellen*). An Dünnstellen treten Phänomene auf, die anderswo unmöglich wären:
@@ -275,6 +277,8 @@ Das Schattenfieber kam nicht über Nacht. Es bahnte sich **über Jahrzehnte** an
 ### 5.2 Die Öffnung
 
 Im tiefsten Punkt von Schwarzrand, weit unterhalb des Schlunds, existiert eine natürliche Formation, die als **Ankerkammer** bekannt ist. Dort ist die Grenze zwischen Stoffwelt und Schwelle am dünnsten. Jahrhundertelang war die Ankerkammer versiegelt — nicht durch Magie, sondern durch massive Steinarchitektur, die die frühesten Bewohner errichtet hatten. Sie verstanden nicht, *was* sie versiegelten, aber sie verstanden, dass es versiegelt bleiben musste.
+
+![Ankerkammer — Abstieg in die Tiefe, instabile Geometrie](../concepts/day05-vera-supplement/schwelle/ankerkammer-eingang-abstieg_gpt-image-1-5.png)
 
 Vor etwa fünfundzwanzig Jahren öffnete eine Koalition die Ankerkammer.
 

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "morgengrauen-talkessel-obere-raender",
+    "prompt": "Concept art of dawn over the upper rim of Schwarzrand — a medieval vertical city at first light. The viewpoint is from the Crown Fortress parapet, looking east across the basin. The sky above the cliff rim shows the first pale light of morning — cold blue-grey with a thin band of warm amber at the horizon. The massive brutalist stone structures of the upper rim catch this early light on their eastern faces, their cantilevered platforms casting long shadows across the cliff face below. Hanging gardens along the fortress edges show dark ivy catching morning dew. Below: the middle city is still in shadow, only the highest timber-framed gables catching light. Below that: the fog layer, dense and white, filling the lower basin entirely — the Schlund invisible. Far across the basin: the opposite cliff wall with its guild halls and the Order's library perched on its promontory. The atmosphere: the brief moment when the upper city believes it lives in a normal world — before the fog reminds them what lies beneath. Color palette: cold blue-grey pre-dawn sky, warm amber horizon band, grey limestone catching first light, white fog layer below, dark shadow in mid-levels. Dark fantasy atmospheric concept art, painterly, wide panoramic composition, dawn light gradient.",
+    "model": "gpt-image-1-5",
+    "category": "atmosphere",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  },
+  {
+    "name": "nachtszene-guertel-laternen",
+    "prompt": "Concept art of a nighttime street scene in the Gürtel — the middle district of a medieval vertical city. A narrow cobblestone street between timber-framed buildings, their upper stories leaning inward until the rooflines nearly touch. The primary light: wrought-iron bracket lanterns on the building facades burning threshold-tallow candles — cool blue-white pools of light that cast sharp, clinical shadows. Secondary light: warm amber glow from workshop windows where craftspeople work late — a forge glow from a smithy, a candle from an upper window. The contrast between the two light temperatures defines the entire mood: the official cold blue-white of the guild-controlled lighting versus the warm human amber of private activity. A few figures on the street: a pair of Order brothers in white robes moving through a blue-white light pool, their clothing almost glowing; a guild guard with a lantern; a hooded figure disappearing into a dark alley between buildings. Wet cobblestones reflect both light colors in distorted puddle reflections. Color palette: cool blue-white threshold-tallow light, warm amber workshop glow, dark timber frame silhouettes, wet cobblestone reflections, white Order robes in cold light. Dark fantasy night scene concept art, painterly, dual light temperature atmosphere, noir mood.",
+    "model": "gpt-image-1-5",
+    "category": "atmosphere",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  },
+  {
+    "name": "nebel-uebergangszone-guertel-schlund",
+    "prompt": "Concept art of the fog transition zone between the middle city and the deep slums in a medieval vertical city. A descending stone passage where two atmospheric conditions collide: above — relatively clear air, warm torchlight, timber-framed buildings with guild signs — the last vestiges of the regulated city. Below — threshold fog creeping upward, cooler, denser, with that barely perceptible amber tint that distinguishes it from natural mist. The boundary between the two atmospheres is visible as a horizontal band across the composition — a ragged, shifting line where regulated civilization ends and something else begins. Figures near the boundary: a guild worker in a leather apron hesitating at the fog line, looking down. Within the fog, visible only as silhouettes: figures moving with the unhurried pace of those who have nowhere else to go. The architecture changes at the boundary too: clean masonry above, improvised patchwork below. Color palette: warm amber torchlight above, cool grey-amber fog below, dark stone transition, silhouette figures in fog. Dark fantasy atmospheric concept art, painterly, horizontal boundary composition, two-zone atmosphere.",
+    "model": "nano-banana-pro",
+    "category": "atmosphere",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  },
+  {
+    "name": "lichtschacht-kristallglas-krone",
+    "prompt": "Concept art of a crystal glass light shaft in the Crown district of a medieval vertical city — light as controlled privilege. A vertical shaft cut through massive stone architecture, lined with polished limestone. At the top: a lens assembly of faceted crystal glass that captures and concentrates natural daylight, directing it as a focused beam downward through the shaft. The beam of concentrated light falls through the shaft interior — dust motes visible in the column of light — and strikes a polished dark stone floor below, creating a precisely defined circle of brilliant white light. A figure in dark Crown armor walks through the light circle, momentarily illuminated in sharp detail while everything around them remains in deep shadow. The surrounding architecture is brutalist: massive stone blocks, right angles, no ornament. The light shaft is the only concession to beauty — and it is not beauty, it is power. Only the highest district has these shafts. Color palette: brilliant white concentrated light beam, deep shadow everywhere else, polished dark stone floor, pale limestone shaft walls, dark armor figure. Dark fantasy architectural detail concept art, painterly, dramatic light-and-shadow, vertical composition.",
+    "model": "nano-banana-2",
+    "category": "atmosphere",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  },
+  {
+    "name": "schattenfieber-koerper-detailsheet",
+    "prompt": "Imagine a medical illustration-style concept art showing shadow fever progression on a human body in a medieval dark fantasy world. The composition shows a single neutral human figure from the front, with three vertical panels showing the same body at three contamination stages. LEFT PANEL — Stage 1: Nearly normal skin, but at specific points — inner wrists, throat, behind the ears — hairline pale blue-violet vein patterns are visible under direct light, branching in a pattern too regular for natural vasculature. The lymph nodes at the neck are subtly swollen. MIDDLE PANEL — Stage 2: The vein-channel network is clearly raised and visible across the forearms, neck, temples, and chest. The channels pulse with pale violet light. Skin around the channels has shifted to cool ashen grey. The hands show early structural thickening at the joints. The figure's posture is tenser, more alert — the body is changing but functional. RIGHT PANEL — Stage 3: Skin translucent in patches at the hands, forearms, and temples. Beneath: sickly yellow-green channel glow. The fingertips dissolve into fine mineral particulate dust. Facial features partially obscured by translucency. The figure is seated, diminished. The three panels share a single background — dark stone — and a color gradient from warm-normal through violet to sickly yellow-green. MUST obey ALL: no horror, no screaming, medical observation tone. Dark fantasy medical progression concept art, painterly, three-panel comparison, clinical but empathetic lighting.",
+    "model": "gpt-image-1-5",
+    "category": "schattenfieber",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  },
+  {
+    "name": "schwellendrohnen-akustik-szene",
+    "prompt": "Concept art of the threshold hum — an acoustic anomaly visualized in a medieval dark fantasy underground setting. A stone chamber deep in the transitional zone where a figure sits with their hands pressed against the stone wall, eyes closed, feeling rather than hearing the deep sub-audible frequency that permeates the deep city. The concept art visualizes the invisible: concentric ripple patterns in a still water puddle on the floor, vibrating without any visible source. Dust particles suspended mid-air, arranged in standing wave patterns that reveal the frequency's structure. A hanging oil lamp flame that burns perfectly vertical despite no wind — the flame not flickering but gently pulsing at a rhythm too slow for normal combustion. The stone walls show hairline fractures that follow the same geometric pattern as the threshold mineral veins. The figure: a researcher in practical clothing with a brass listening horn pressed to the wall — a primitive stethoscope for geological anomalies. Color palette: dark stone grey, warm oil lamp amber, suspended dust catching light, ripple reflections in water, brass instrument. Dark fantasy atmospheric concept art, painterly, visualization of sound, meditative unsettling mood.",
+    "model": "nano-banana-2",
+    "category": "atmosphere",
+    "tier": 2,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  },
+  {
+    "name": "spieler-eintritt-schwarzrand-establishing",
+    "prompt": "Concept art establishing shot — the player character's first view of Schwarzrand from the basin rim road, approaching the medieval vertical city for the first time. The viewpoint: a narrow mountain road emerging from dense dark forest onto a cliff-edge overlook. Before the viewer: the vast basin opens up, and the city is revealed in its entirety for the first time. The scale is overwhelming: hundreds of meters of vertical architecture clinging to cliff walls, from brutalist stone fortresses at the top down through dense timber-framed middle city to fog-shrouded depths below. The player character's silhouette stands at the cliff edge in the lower third of the composition — small, alone, back to the viewer, gazing down at the city. Their equipment marks them as a traveler: a pack, a cloak, a visible weapon at the hip. The lighting: late afternoon, the sun low enough to cast the western cliff face in warm amber while the eastern face is already in shadow. The fog layer in the basin catches the golden light from above, glowing warm on its surface while remaining impenetrable below. This is the moment the game world becomes real to the player. Color palette: dark forest greens, warm amber cliff faces in sunlight, cool shadow on eastern walls, warm-gold fog surface, lone figure silhouette. Dark fantasy establishing shot concept art, painterly, epic scale, golden hour atmospheric light.",
+    "model": "gpt-image-1-5",
+    "category": "atmosphere",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  },
+  {
+    "name": "wintermarkt-gilden-fest",
+    "prompt": "Concept art of the Winter Market — the guild-organized seasonal festival in the Gürtel district of a medieval vertical city. A bustling vertical market scene across multiple connected platforms and staircases, lit by hundreds of threshold-tallow candles in iron brackets and paper lanterns strung between buildings on rope. The candle light creates a magical blue-white atmosphere against the dark winter sky visible between the buildings. Guild stalls display discounted goods: a weaver's stall with glowing threshold-fiber scarves draped over wooden frames, a smith's display of polished tools and knife sets, a chandler selling ornamental candles in bone holders. The crowd: workers from all levels — guild apprentices in colored aprons, Gürtel families bundled in wool, a few Schlund residents identifiable by their patched clothing, even hooded Order brothers and off-duty Crown soldiers. Children run between the stalls. Steam rises from a food vendor's cauldron. The atmosphere: the one time of year when the vertical hierarchy relaxes fractionally — the guilds' institutionalized generosity, social pressure release, everyone pretending the city works. Color palette: cool blue-white threshold-candle light, warm amber food vendor steam, dark winter sky, colorful textiles at stalls, bundled crowd in earth tones. Dark fantasy festival scene concept art, painterly, multi-level vertical composition, festive but melancholy atmosphere.",
+    "model": "nano-banana-pro",
+    "category": "atmosphere",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/atmosphere"
+  }
+]

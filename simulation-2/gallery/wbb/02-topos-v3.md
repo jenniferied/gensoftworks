@@ -87,6 +87,8 @@ Der natürliche Nebel vermischt sich in den unteren Ebenen mit Schwellenphänome
 
 **Schwellennebel:** Geringfügig wärmer als natürlicher Nebel. Bewegt sich langsamer, manchmal gegen den Wind. Reagiert auf Schall — laute Geräusche drängen ihn kurzzeitig zurück, Stille zieht ihn an. In seinen dichtesten Formen zeigt er Strukturen: Wirbel wie Fingerabdrücke, Verdichtungen wie Silhouetten, Lichtbrechungen, die es nicht geben sollte.
 
+![Schwellennebel — Bewegt sich gegen den Wind, Übergangszone Gürtel/Schlund](../concepts/day05-vera-supplement/schwelle/schwellennebel-gegen-den-wind_nano-banana-pro.png)
+
 **Biolumineszenz:** Organismen nahe der Schwelle entwickeln Leuchtfähigkeit. Im Schlund leuchten Flechten, Pilze und Insekten in einem Spektrum von Blassgrün über Tiefblau bis Violett. Das Licht ist kalt — es wärmt nicht und wirft konturlose Schatten. Schwellentalg-Kerzen reproduzieren dieses Licht künstlich.
 
 **Akustische Anomalien:** Echos, die vor dem Originallaut zu hören sind. Stimmen aus den Wänden — nachweisbar durch Resonanzlinsen der Glasmacher. Eine permanente Grundfrequenz, so tief, dass man sie fühlt statt hört — das "Schwellendröhnen", im Schlund allgegenwärtig.
@@ -113,19 +115,27 @@ Das Briefing nennt dies **Biotech-Futurismus**: Die "Technologie" von RELICS ist
 
 **Schwellenpilze** wachsen in den tieferen Kavernensystemen. Ihre Fruchtkörper erreichen ungewöhnliche Größen — manche stehen mannshoch. Sie leuchten in tieferem Blau und pulsieren in einem langsamen Rhythmus, der an Atemzüge erinnert. Ihre Sporen sind eine der Hauptquellen für Schwellensubstrat-Kontamination in geschlossenen Räumen. Die Gerber-Gilde schickt Erntetrupps mit primitiven Atemschutzmasken hinab.
 
+![Schwellenpilze — Mannshohe Fruchtkörper in tiefer Kaverne, biolumineszentes Blau-Pulsieren](../concepts/day05-vera-supplement/flora-fauna/schwellenpilze-kaverne-mannshoch_gpt-image-1-5.png)
+
 Aus dem Myzel bestimmter Schwellenpilzarten gewinnen die Gilden **Schwellenfäden**: biolumineszent, extrem reißfest, mit rudimentärer Selbstreparatur. Textilien aus Schwellenfäden sind das Prestige-Produkt der Weber-Gilde — sie leuchten schwach im Dunkeln, halten jahrzehntelang und kosten ein Vermögen.
 
 **Schwarzrankenwurzeln** sind die größte bekannte Schwellenpflanze — ein Wurzelsystem, dessen zugehörige Pflanze nie gefunden wurde. Die Wurzeln durchziehen die Felswände in den tieferen Schichten, schwarz, ledrig, dicker als ein Menschenarm, und sie *wachsen*. Manche Gebäude im unteren Gürtel sind mit den Wurzeln verwachsen. Die Schwarzrankenwurzeln produzieren **Schwellenharz** — ein dunkles, zähflüssiges Harz, das als Grundstoff für Bindemittel, Dichtungsmaterial und Brennstoff für warm-rötlich leuchtende Lampen dient.
 
+![Schwarzrankenwurzeln — Ledrige Wurzeln durchziehen Felswand, Harzaustritt, Biolumineszenz](../concepts/day05-vera-supplement/flora-fauna/schwarzrankenwurzeln-felswand_gpt-image-1-5.png)
+
 ### 3.3 Schwellenfauna
 
 **Schwelleninsekten** sind allgegenwärtig. Motten mit biolumineszenten Flügeln umschwirren Lichtquellen im Schlund. Käfer mit chitinösen Panzern wie dunkles Glas leben in den Wurzelgeflechten. Ihr Chitin ist ein begehrtes Material — die Schmiede-Gilde verarbeitet es zu leichten Panzerplatten, härter als Leder und leichter als Stahl.
+
+![Schwelleninsekten — Biolumineszente Motten umschwirren Lichtquelle im Schlund](../concepts/day05-vera-supplement/flora-fauna/schwelleninsekten-motten-biolumineszent_nano-banana-pro.png)
 
 **Schwellenratten** sind größer als gewöhnliche Ratten, mit dunklerer Fellstruktur und Augen, die im Dunkeln aus sich heraus leuchten. Aggressiver und intelligenter als ihre Artgenossen. Schlundbewohner halten sie als Wächter — sie reagieren auf Schwellensubstrat-Konzentrationen und werden unruhig, bevor Schwellenphänomene einsetzen.
 
 **Kanalfische** leben in den Wassersystemen des Schlunds — blinde, durchscheinende Geschöpfe, deren Organe durch die Haut sichtbar sind. Ihr Fleisch ist nahrhaft, geschmacklich "metallisch-süß". Die Gerber-Gilde kontrolliert die ergiebigsten Fischgründe.
 
 **Deckenhänger** sind die beunruhigendste Schwellenart. Fledermausartige Organismen in den Gewölben der tiefsten Kavernen, deren Anatomie allem widerspricht, was Naturforscher kennen. Ihre Flügel sind membranös und biolumineszent. Ihre Körper haben eine Symmetrie, die nicht bilateral ist — sie sehen aus verschiedenen Winkeln unterschiedlich aus, als wäre ihre Form eine Frage der Perspektive. Leise, einzelgängerisch, von Schlundbewohnern gemieden.
+
+![Deckenhänger — Nicht-bilaterale Symmetrie, membranöse biolumineszente Flügel, tiefe Kaverne](../concepts/day05-vera-supplement/flora-fauna/deckenhaenger-kaverne_nano-banana-pro.png)
 
 <!-- Emre: Die Deckenhänger markieren die Grenze zum Unbekannten — Organismen, die so stark adaptiert sind, dass ihre Herkunft unklar wird. Mögliche Verbindung zu den Fremden (Mythos 1.4)? Bewusst offen. -->
 
@@ -174,6 +184,8 @@ Hauptsitz des Ordens. Möglicherweise das älteste noch genutzte Bauwerk Schwarz
 
 Die Hauptverkehrsader Schwarzrands, breit genug für zwei Karren nebeneinander, mit Absätzen alle fünfzig Höhenmeter für Ladestationen, Zollposten und Rasthäuser. Gleichzeitig Kontrollzone: Die Krone betreibt Zollstationen, die Gilden die Ladestationen, der Orden eine Schreibstube auf halber Höhe. Wer den Steig benutzt, wird dreifach notiert. Wer ihn nicht benutzt, nimmt die Schmalen Stiegen — steile, unbeleuchtete Treppenschächte, die der Gerber-Gilde gehören.
 
+![Großer Steig — In den Fels gehauene Haupttreppe, Zollposten, Lastenverkehr](../concepts/day05-vera-supplement/environments/grosser-steig-haupttreppe_gpt-image-1-5.png)
+
 ### 4.5 Der Markt der tausend Treppen
 
 **Lage:** Zentraler Gürtel, wo mehrere Ebenen zusammentreffen.
@@ -186,11 +198,17 @@ Der größte Handelsplatz erstreckt sich über sechs Ebenen — verbunden durch 
 
 Ein massives Steinportal, errichtet von der Gerber-Gilde, besetzt mit einem permanenten Kronwachposten. Über dem Bogen Steinreliefs mit Stufe-3-Betroffenen in verschiedenen Stadien der Entgrenzung — alt und von Schwellenmoosen begrünt, was ihnen bei Dunkelheit eine biolumineszente Beleuchtung gibt. Jenseits des Schlundtors endet der faktische Einfluss der Krone an der zweiten Kanalebene. Danach regieren die Schlundgemeinschaften sich selbst.
 
+![Schlundtor — Massives Steinportal mit Stufe-3-Reliefs, Schwellenmoos-Biolumineszenz](../concepts/day05-vera-supplement/environments/schlundtor-steinportal_gpt-image-1-5.png)
+
 ### 4.7 Die Ankerkammer
 
 **Lage:** Tiefster erreichbarer Punkt, weit unterhalb des bewohnten Schlunds.
 
 Der Ort, an dem der Schwellenanker einst lag. Heute ein leerer *Zustand*, denn die Geometrie der Ankerkammer ist nicht stabil. Wände scheinen ihre Position zu ändern. Entfernungen sind unzuverlässig. Die Schwelle ist hier so nah, dass die Unterscheidung zwischen Stoffwelt und Jenseit praktisch aufgehoben ist. Offiziell gesperrt seit der Öffnung. Die Hauptquest führt hierher zurück.
+
+![Ankerkammer — Abstieg zum tiefsten Punkt, instabile Geometrie, Schwellennähe](../concepts/day05-vera-supplement/schwelle/ankerkammer-eingang-abstieg_gpt-image-1-5.png)
+
+![Ankerkammer — Leerer Innenraum, wo der Schwellenanker einst lag](../concepts/day05-vera-supplement/schwelle/ankerkammer-innenraum-leer_gpt-image-1-5.png)
 
 ### 4.8 Das Tiervolk-Viertel (*Die Fährte*)
 
@@ -201,6 +219,8 @@ Der Ort, an dem der Schwellenanker einst lag. Heute ein leerer *Zustand*, denn d
 Das Tiervolk hat kein offizielles Viertel. Es hat die **Fährte** — ein loses Netzwerk aus Handelsstätten, Lagerhäusern und Unterkünften, das sich durch die Übergangszone zwischen Gürtel und Schlund zieht. Der Name kommt von den Bewohnern des Gürtels, die behaupten, man könne den Weg zum Tiervolk *riechen*, nicht sehen. Das ist Vorurteil, aber nicht ganz falsch: Die Fährte hat einen eigenen Geruch — Tiermoschus, Schwellenmoos, Räucherwerk und Harze, die das Tiervolk aus entfernten Dünnstellen mitbringt.
 
 **Warum die Übergangszone:** Das Tiervolk lebt nicht im Schlund, weil es dort nicht leben *muss* — die Symbiose mit den Fremden schützt sie teilweise vor Schwelleneffekten. Sie leben nicht im Gürtel, weil die menschlichen Bewohner es nicht dulden. Die Übergangszone ist der Ort, den niemand will — und genau deshalb der Ort, der dem Tiervolk gehört.
+
+![Fährte — Tiervolk-Viertel in der Übergangszone, temporäre Zeltstrukturen, fremde Proportionen](../concepts/day05-vera-supplement/environments/faehrte-tiervolk-viertel_gpt-image-1-5.png)
 
 ![Tiervolk-Marktszene — Handel in der Fährte](../../pinwall/favorites/tiervolk-marktszene-exploration_seedream-4-5.png)
 

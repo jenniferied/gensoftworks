@@ -1,0 +1,83 @@
+[
+  {
+    "name": "schlundtor-steinportal",
+    "prompt": "Imagine a dramatic concept art of the Schlundtor — the Gate to the Deep — a massive stone portal marking the boundary between the middle city and the lawless underground in a medieval vertical city. The portal is built by the Tanner's Guild from enormous cut stone blocks, wide enough for two carts, with a barrel-vaulted ceiling. Above the arch: ancient stone relief carvings depicting Stage-3 shadow fever sufferers in various states of dissolution — figures whose limbs become translucent, whose edges evaporate. These reliefs are old, eroded, and overgrown with bioluminescent moss that gives them an eerie green glow at night — the warning and the danger illuminated by the same source. A permanent Crown guard post flanks the gate: two soldiers in dark armor standing beneath a guttering torch, dwarfed by the portal's scale. Beyond the gate: the passage descends steeply into fog-filled darkness, the transition from torchlight to bioluminescent glow visible as a temperature shift in the light. A few figures pass through: a tanner with a leather apron and face covering, a hooded figure carrying a wrapped bundle. MUST obey ALL: purely medieval architecture and materials. Dark fantasy architectural concept art, painterly, dramatic scale, warm torchlight transitioning to cold bioluminescent glow.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "grosser-steig-haupttreppe",
+    "prompt": "Concept art of the Great Stair — the main arterial route connecting the upper and lower districts of a medieval vertical city carved into cliff faces. A broad stone stairway cut directly into the rock, wide enough for two carts side by side, descending through the city in switchback sections. Every fifty meters of descent: a landing platform with a loading station, a toll booth with a crown guard, and a small rest house. The stairway is crowded with traffic: porters carrying goods upward on their backs, a mule-drawn cart being guided down, guild apprentices in colored aprons, a hooded Order scribe at a writing desk on a half-landing noting passage. The cliff face flanking the stair shows the layered architecture of the city: rough stone at the lowest visible level, timber-framed buildings with workshop balconies at mid-level, cleaner cut stone with guild crests higher up. Rope-and-pulley cargo lifts operate alongside the stair. The atmosphere: bustling vertical commerce, the circulatory system of the city. Color palette: warm sandstone, dark iron railings, earth-toned crowd, amber lantern light, cold grey sky visible at the top. Dark fantasy environment concept art, painterly, dramatic vertical composition, busy atmospheric.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "faehrte-tiervolk-viertel",
+    "prompt": "Concept art of the Fahrte — the Travellers' quarter in the transition zone between the middle city and the deep slums of a medieval vertical city. The architecture is deliberately temporary: heavy oiled canvas tents in dark earth tones, portable wooden frames that can be assembled and disassembled in hours, rope-lashed structures leaning against permanent stone walls they do not own. The proportions of the tent structures are subtly wrong — entrances too tall and too narrow, as if designed for beings with different body proportions. Interior spaces are visible through open tent flaps: trade goods stacked in unfamiliar arrangements, sealed glass vessels containing bioluminescent organisms that provide cold steady light unlike anything the chandler's guild produces. Several Traveller figures move through the space: humanoid but with subtle anatomical anomalies — a woman whose neck turns fractionally too far, a man whose fingers are one joint too long, a child whose eyes reflect light at the wrong angle. The air carries visible haze from incense or resin burning. Color palette: dark oiled canvas earth tones, cold bioluminescent blue-green light from within tents, warm amber from a central fire pit, stone walls behind. Dark fantasy environment concept art, painterly, atmospheric, alien domesticity.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "kahnzimmer-gasthof-geplauder",
+    "prompt": "Concept art interior of a Kahnzimmer — a discreet back room in a Gürtel tavern used for private conversations in a medieval vertical city. A small timber-paneled room behind a heavy door, barely large enough for four people. The walls are lined with dark oak planks that muffle sound. A single candle in a brass holder provides warm amber light, casting deep shadows. Two figures sit across a narrow table: a guild merchant in indigo wool with bronze ring-seals on their fingers, and a hooded figure whose face is in shadow — possibly a Traveller information broker, only the outline of an unusually angular jawline visible. On the table: a sealed leather map case, a small pouch of coins, two earthenware cups of dark ale. The atmosphere: intimacy, secrecy, commerce that officially does not happen. Through a small window behind them: the glow of the canal below, a sliver of reflected bioluminescent light from deeper levels. Color palette: warm amber candlelight, dark oak timber, indigo fabric, bronze metalwork, cold blue-green sliver from the canal window. Dark fantasy interior concept art, painterly, intimate close crop, chiaroscuro lighting.",
+    "model": "nano-banana-pro",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "ordenskrypta-schwellenchroniken",
+    "prompt": "Concept art of the Order's deepest crypt beneath the Silent Library — where the forbidden Threshold Chronicles are stored in a medieval dark fantasy city. A descending stone corridor with romanesque round arches, each arch progressively lower and narrower, creating a forced perspective of compression. The walls are pristine pale limestone, obsessively maintained even this deep. At the corridor's end: a heavy iron-bound oak door with an Order seal burned into the wood — the eye-within-circles motif. The door is slightly ajar, and through the gap: the faint pale green glow of the sealed archive chamber beyond. Along the corridor walls: carved niches holding sealed document cylinders in pale vellum, each bearing a wax seal. The floor is worn smooth by centuries of careful footsteps. A single Order brother in white robes descends the corridor carrying an alchemical lantern with pale green light — his shadow stretches behind him, too long for the light source position. Color palette: pale limestone white, iron-dark door and hardware, pale green alchemical glow, long shadows. Dark fantasy interior concept art, painterly, forced perspective corridor composition, cold clinical atmosphere.",
+    "model": "nano-banana-2",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "schmiedewerkstatt-gilde-innen",
+    "prompt": "Concept art interior of a guild smithy in the mid-level district of a medieval vertical city. An open-front workshop built into the cliff face, the forge fire visible from the street as a beacon of industry. The forge dominates the space: a massive stone hearth with iron bellows, the fire burning orange-hot with blue edges where alchemical flux is being used. The master smith — a broad figure in a scorched leather apron — works at an anvil, hammer raised mid-strike on a glowing bar of crucible steel. Behind: racks of completed work — swords, axe heads, armor plates, tools — arranged by quality grade from raw iron at the bottom to polished damascene steel at the top. The material hierarchy visible in the rack IS the social hierarchy. Apprentices tend the bellows and sort raw materials. The walls show guild heraldry: an embossed bronze forge-hammer plaque. Through the workshop's open front: the vertical city visible, stone steps ascending, timber-framed buildings across the narrow street. Color palette: orange forge fire, blue alchemical flame edges, dark iron and steel, scorched leather brown, bronze guild crest, grey stone walls. Dark fantasy interior concept art, painterly, dramatic forge lighting, warm-hot atmosphere.",
+    "model": "nano-banana-2",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "kronarchiv-dokumentenkammer",
+    "prompt": "Concept art of the Crown Archive — the bureaucratic heart of feudal power in a medieval dark fantasy city. A vaulted stone chamber of imposing proportions, its barrel ceiling supported by heavy square columns of polished dark limestone. Every wall surface is occupied by floor-to-ceiling shelving holding thousands of sealed document scrolls, leather-bound ledgers, and wax-sealed correspondence bundles. The organization is obsessive, military: each shelf section labeled with small iron plaques bearing embossed numbers. The floor is black polished stone reflecting the cold white light from crystal glass light shafts in the ceiling — light as controlled privilege, rationed from above. A heavy oak table in the center where a Crown administrator in black brocade reviews documents by the focused beam of a directed crystal lens. A guard in dark armor stands motionless at the doorway. The atmosphere: oppressive order, controlled knowledge, institutional memory as power. Three gaps in the shelving are visible — empty sections where documents have been removed. Deliberately visible. No one explains. Color palette: polished dark limestone, black brocade, cold white crystal light, iron and oak, three visible empty shelf gaps. Dark fantasy interior concept art, painterly, institutional cold light, oppressive atmosphere.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "talkessel-vogelperspektive-schwarzrand",
+    "prompt": "Concept art aerial view of Schwarzrand — an entire medieval vertical city built into the walls of a deep geological basin, viewed from above at an oblique angle. The basin is roughly two kilometers across, surrounded by steep cliff walls of layered limestone rising three hundred meters. The city clings to these cliff walls like a living organism: from the top — brutalist stone fortresses and guild halls with clean geometric forms and hanging gardens — through the middle — dense timber-framed buildings, workshops, staircases and bridges creating a three-dimensional urban mesh — to the bottom — where fog obscures the deepest levels and faint bioluminescent green-blue light glows through the haze. The Great Stair is visible as a broad switchback route cut into the eastern cliff face. The Crown Fortress dominates the northern rim. The Guild Court sits opposite on the southern rim. The Silent Library perches on an eastern promontory. Between and below: thousands of structures, bridges, rope-and-pulley systems, smoke from forges, the canal system glinting where light reaches. The city has a visible directional lean toward the basin floor — toward the threshold. Beyond the basin rim: dense forest and overcast sky. Color palette: pale limestone cliffs, timber brown mid-levels, fog-white and bioluminescent blue-green lower levels, overcast grey sky. Dark fantasy aerial concept art, painterly, wide establishing shot, atmospheric perspective.",
+    "model": "gpt-image-1-5",
+    "category": "environments",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/environments"
+  },
+  {
+    "name": "schmale-stiegen-geheimtreppen",
+    "prompt": "Concept art of the Narrow Steps — secret steep stairways owned by the Tanner's Guild, the unofficial alternative to the Great Stair in a medieval vertical city. A claustrophobic vertical shaft cut into raw rock, barely wide enough for one person, with irregular stone steps that are steep and uneven. No light except what the traveler brings — in this case a guttering tallow candle held by a hooded figure climbing upward, their shadow thrown against the rock wall in distorted proportion. The walls are damp, close, and show scratched tally marks from previous travelers counting steps. At a landing: a narrow slot in the wall where a Tanner's Guild toll collector sits in a carved-out niche, barely visible — just eyes and an extended hand for coin. The atmosphere: vertical claustrophobia, the price of avoiding official routes. Far above: a distant rectangle of grey light where the stairway exits. Far below: darkness. Color palette: near-black rock, warm amber candle glow on immediate surfaces, deep shadow everywhere else, a distant grey light rectangle above. Dark fantasy environment concept art, painterly, extreme vertical composition, claustrophobic.",
+    "model": "nano-banana-pro",
+    "category": "environments",
+    "tier": 2,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/environments"
+  }
+]

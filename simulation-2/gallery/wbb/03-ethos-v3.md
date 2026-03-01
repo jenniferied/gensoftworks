@@ -126,6 +126,8 @@ Gildenmitglieder frühstücken nicht allein. Neue Aufträge werden beim Frühst�
 
 **Die Gilden und das Fest:** Von den drei Fraktionen sind die Gilden die einzigen, die öffentliche Feste organisieren. Alle drei Jahreszeiten-Wendepunkte werden mit Marktfesten begangen: Frühlingsmarkt (neue Lehrverträge, Meisterstück-Vorführungen), Herbstmarkt (Jahresertrag, Rohstoffhandel), Wintermarkt (Schmuck, Geschenke, soziale Redistribution — die Gilden verkaufen zu reduzierten Preisen an die Unterschicht, als institutionalisierte Gnade). Der Orden hält die Feste für theologisch bedeutungslos. Die Krone toleriert sie, weil sie soziales Dampfventil sind. Beide kommen trotzdem.
 
+![Wintermarkt — Gildenfest mit Laternenbeleuchtung, Handel zwischen den Schichten](../concepts/day05-vera-supplement/atmosphere/wintermarkt-gilden-fest_nano-banana-pro.png)
+
 ---
 
 ## 3.3 Die Reisenden — Wesen an der Grenze
@@ -277,6 +279,8 @@ Im Gürtel ist alles lauter. Die Straßen sind enger, Handwerk und Wohnen vermis
 Die Bewohner des Gürtels sind verhandlungsgewandt. Sie verhandeln täglich: Preise, Leistungen, Fristen. Diese Verhandlungsorientierung prägt die Kommunikation insgesamt.
 
 Im Gürtel gibt es **Kahnzimmer** — kleine Hinterzimmer in Gasthäusern, die für diskrete Gespräche vermietet werden. Der Begriff kommt aus dem Kahnfahren: auf einem kleinen Kahn auf dem Kanal ist ein Gespräch vor Zuhörern sicher. Hier werden Geschäfte gemacht, die offiziell nicht stattfinden. Hier gibt Salva Informationen weiter.
+
+![Kahnzimmer — Diskretes Hinterzimmer im Gasthof, Kerzenlicht, vertrauliche Atmosphäre](../concepts/day05-vera-supplement/environments/kahnzimmer-gasthof-geplauder_nano-banana-pro.png)
 
 Im Gürtel gibt es auch erste Schattenfieber-Phänomene. Nicht Krankheitsfälle — aber gelegentliche Anomalien. Ein Schatten, der sich zu spät bewegt. Ein Spiegel, der für eine Sekunde nicht stimmt. Die meisten Gürtel-Bewohner haben diese Momente erlebt. Das nennt man "das Flimmern."
 

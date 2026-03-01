@@ -16,6 +16,7 @@ Usage:
 
 import argparse
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -42,7 +43,12 @@ def find_chapters(gallery_dir: Path) -> list[tuple[str, Path]]:
         if not m:
             continue
         chapter_id = m.group(1)
-        version = int(m.group(2)) if m.group(2) else 0
+        version_str = m.group(2)
+        # Skip non-chapter files: 00-* (research, QA, checklists) and
+        # unversioned files (handoffs, lists — no -vN suffix)
+        if chapter_id.startswith("00-") or version_str is None:
+            continue
+        version = int(version_str)
         chapters.setdefault(chapter_id, []).append((version, f))
 
     result = []
@@ -244,12 +250,85 @@ def build_markdown(gallery_dir: Path, doc_title: str,
     for chapter_id, path in chapters:
         content = path.read_text().strip()
         content = strip_meta(content)
+        # Fix image paths: chapters reference ../concepts/ (relative to
+        # gallery/gdd/), but export lives in export/ → rewrite to
+        # ../gallery/concepts/
+        content = content.replace("](../concepts/", "](../gallery/concepts/")
         lines.append(content)
         lines.append("")
         lines.append("\\clearpage")
         lines.append("")
 
     return "\n".join(lines)
+
+
+MAX_IMAGE_WIDTH = 1600  # px — fits A4 at 250 DPI
+JPEG_QUALITY = 85
+
+
+def optimize_images(md_path: Path, img_dir: Path) -> Path:
+    """Copy referenced images to img_dir, scaled to MAX_IMAGE_WIDTH.
+
+    Uses macOS `sips` for resizing (no extra dependencies).
+    Returns path to a patched Markdown with rewritten image paths.
+    """
+    content = md_path.read_text()
+    img_re = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
+    seen: dict[str, Path] = {}
+
+    for m in img_re.finditer(content):
+        rel_path = m.group(2)
+        src = (md_path.parent / rel_path).resolve()
+        if not src.exists() or src.suffix.lower() not in (".png", ".jpg", ".jpeg"):
+            continue
+        if str(src) in seen:
+            continue
+
+        dst = img_dir / src.name
+        shutil.copy2(src, dst)
+
+        # Resize if wider than MAX_IMAGE_WIDTH
+        result = subprocess.run(
+            ["sips", "-g", "pixelWidth", str(dst)],
+            capture_output=True, text=True,
+        )
+        width_line = [l for l in result.stdout.splitlines() if "pixelWidth" in l]
+        if width_line:
+            w = int(width_line[0].split()[-1])
+            if w > MAX_IMAGE_WIDTH:
+                subprocess.run(
+                    ["sips", "--resampleWidth", str(MAX_IMAGE_WIDTH), str(dst)],
+                    capture_output=True,
+                )
+
+        # Convert to JPEG for smaller file size (PNGs without transparency)
+        if dst.suffix.lower() == ".png":
+            jpg_dst = dst.with_suffix(".jpg")
+            subprocess.run(
+                ["sips", "-s", "format", "jpeg",
+                 "-s", "formatOptions", str(JPEG_QUALITY), str(dst),
+                 "--out", str(jpg_dst)],
+                capture_output=True,
+            )
+            if jpg_dst.exists():
+                dst.unlink()
+                dst = jpg_dst
+
+        seen[str(src)] = dst
+
+    # Rewrite image paths in markdown
+    def replace_path(match: re.Match) -> str:
+        alt = match.group(1)
+        rel = match.group(2)
+        src = (md_path.parent / rel).resolve()
+        if str(src) in seen:
+            return f"![{alt}]({seen[str(src)]})"
+        return match.group(0)
+
+    patched = img_re.sub(replace_path, content)
+    patched_md = img_dir / md_path.name
+    patched_md.write_text(patched)
+    return patched_md
 
 
 def build_pdf(md_path: Path, output_path: Path, template_path: Path,
@@ -272,11 +351,17 @@ def build_pdf(md_path: Path, output_path: Path, template_path: Path,
         patched_template = tmp_path / "document.tex"
         patched_template.write_text(template_text)
 
+        # Optimize images: resize + compress into temp dir
+        img_dir = tmp_path / "images"
+        img_dir.mkdir()
+        build_md = optimize_images(md_path, img_dir)
+        print(f"  Images optimized to {img_dir}")
+
         # Use string concat — .with_suffix() mangles names with dots (v0.2)
         output = str(output_path) + (".tex" if tex_only else ".pdf")
         cmd = [
             "pandoc",
-            str(md_path),
+            str(build_md),
             "-o", output,
             f"--template={patched_template}",
             "--pdf-engine=xelatex",
@@ -284,7 +369,7 @@ def build_pdf(md_path: Path, output_path: Path, template_path: Path,
 
         print(f"  Building: {md_path.name} -> {Path(output).name}")
         result = subprocess.run(cmd, capture_output=True, text=True,
-                                cwd=md_path.parent)
+                                cwd=build_md.parent)
         if result.returncode != 0:
             print(f"  Error:\n{result.stderr}")
             return 1

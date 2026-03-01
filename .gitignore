@@ -12,6 +12,7 @@ node_modules/
 
 # Secrets
 .env
+.env.local
 *.key
 
 # Large PDFs (library reference material)

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "schwellenlegierung-schmiede-material",
+    "prompt": "Concept art material study of threshold alloy production in a medieval dark fantasy forge. A specimen arrangement on a dark anvil surface showing the progression: raw iron ore on the left, standard crucible steel ingot in the center, and a finished threshold alloy bar on the right. The threshold alloy has a distinctive appearance — darker than any natural steel, with a surface that shows faint internal patterns resembling geological strata rather than metallic grain. When light hits it at certain angles, a deep blue-violet iridescence flashes briefly. Below each specimen: a small parchment label with guild inventory marks. In the background: the forge where threshold forging happens — the flame burns blue-edged rather than pure orange, indicating alchemical flux in the fuel. A pair of heavy tongs rests beside the specimens. The alloy bar has a quality that ordinary steel lacks — it looks denser, heavier, almost alive. Color palette: dark iron blacks, steel greys, deep blue-violet threshold alloy iridescence, orange-blue forge fire background, parchment cream labels. Dark fantasy material study, painterly, specimen arrangement, controlled forge lighting.",
+    "model": "nano-banana-2",
+    "category": "materials",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/materials"
+  },
+  {
+    "name": "schwellenfaeden-weber-textil",
+    "prompt": "Concept art material study of threshold-fiber textiles — the prestige product of the Weaver's Guild in a medieval dark fantasy city. A draped fabric sample arrangement on a dark wood table. The fabric is woven from threshold-fibers extracted from deep underground mushroom mycelium: the threads are thin, incredibly strong, and faintly bioluminescent. In daylight, the fabric appears as a fine pale grey silk. In shadow: it glows — a soft, steady, pale blue-white light emanating from the fiber structure itself. The display shows three stages: raw threshold fiber threads in a skein, the weaving in progress on a miniature loom frame, and a finished draped fabric sample revealing both its daylit and shadow-lit appearance simultaneously through controlled lighting. A weaver's shuttle and carding tools lie beside the samples. A small sealed glass jar contains the raw mycelium extract — pale blue filaments in clear liquid. Color palette: pale grey fabric in light, soft blue-white glow in shadow, dark wood table, brass and bone weaving tools. Dark fantasy material study, painterly, split lighting to show dual appearance, craft atmosphere.",
+    "model": "nano-banana-pro",
+    "category": "materials",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/materials"
+  },
+  {
+    "name": "schwellentalg-kerze-vergleich",
+    "prompt": "Concept art material study comparing ordinary tallow candles with threshold-tallow candles in a medieval dark fantasy setting. A dark stone shelf displaying both candle types side by side. LEFT: An ordinary tallow candle burning with a warm amber flame, casting soft warm shadows. RIGHT: A threshold-tallow candle burning with a distinctive cool blue-white flame, casting sharper, colder shadows that reveal slightly different details in the stone surface — as if the light shows a layer of reality that warm light does not illuminate. Between them: a zone where both light sources overlap, creating a color temperature gradient from warm to cold. On the shelf: a block of raw threshold tallow — darker than normal tallow, with a faint blue-white sheen in its solid state. A chandler's guild stamp tool. The threshold candle's light has a quality described as threshold-repelling — in its radius, the air appears clearer, the stone surfaces more solid. Color palette: warm amber versus cool blue-white, dark stone, tallow cream and blue-sheened tallow, brass stamp tool. Dark fantasy material comparison study, painterly, split warm-cold lighting, demonstrative composition.",
+    "model": "seedream-4-5",
+    "category": "materials",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/materials"
+  },
+  {
+    "name": "schwellenlinse-glasmacher-instrument",
+    "prompt": "Concept art of a threshold lens — a proprietary optical instrument of the Glassmacher Guild that makes threshold substrate visible, in a medieval dark fantasy setting. A detailed prop study: a brass-framed monocle-sized lens mounted on a bone handle, the glass element tinted pale green from threshold spore-powder admixture during grinding. Through the lens — shown as a visual cutaway — normally invisible threshold contamination becomes visible: faint blue-violet particles suspended in the air, denser near the ground, swirling in slow patterns. The lens transforms invisible danger into visible information — knowledge as the Glassmacher Guild's most valuable commodity. Beside the finished lens: the raw materials — a disc of clear glass, a ceramic pot of pale green spore powder, precision grinding tools in brass, a leather carrying case lined with wool. A guild certificate rolled beside it bearing the Glassmacher crest. Color palette: brass and bone instrument warm tones, pale green glass tint, blue-violet threshold particles visible through lens, leather and wool case, parchment certificate. Dark fantasy prop concept art, painterly, detailed specimen arrangement, controlled lighting.",
+    "model": "nano-banana-pro",
+    "category": "materials",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/materials"
+  },
+  {
+    "name": "waffen-fraktionsvergleich-dreier",
+    "prompt": "Concept art weapon comparison showing three faction-specific sword designs side by side in a medieval dark fantasy world. LEFT — Crown longsword: straight-bladed, Damascus steel with flowing fold patterns visible, bone-inlaid crossguard, blood-red enamel seal on the pommel, austere and lethal. CENTER — Guild trade-sword: slightly curved single-edged blade of crucible steel, etched guild registration marks along the spine, bronze crossguard with malachite cabochon, eschenwood grip with leather wrap, practical and valuable. RIGHT — Schlund improvised blade: a repurposed agricultural tool — a heavy cleaver-like blade of raw hammered iron, the edge uneven but sharp, a handle wrapped in salvaged rope and leather scraps, a single bone bead at the pommel as personal marker. Below each weapon: a small material swatch showing the metal quality — Damascus fold, clean crucible, rough hammered iron. The three weapons tell the entire social hierarchy in one image. Color palette: Damascus silver-dark patterns, crucible steel grey-blue, raw iron dark, bone white, blood-red seal, malachite green, leather brown. Dark fantasy weapon lineup concept art, painterly, clean presentation lighting, comparative layout.",
+    "model": "gpt-image-1-5",
+    "category": "weapons-armor",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/weapons-armor"
+  },
+  {
+    "name": "chitin-ruestung-leicht-gerber",
+    "prompt": "Concept art of a lightweight armor set made from threshold beetle chitin — the Tanner's Guild premium product in a medieval dark fantasy city. A full armor display arrangement on a wooden stand. The chitin plates are iridescent black-blue, faceted like dark glass, lighter than iron but harder than boiled leather. The plates overlap in a fish-scale pattern over a base layer of vegetable-tanned leather. The armor covers torso, shoulders, and forearms — light enough for mobility, offering protection comparable to chainmail at a fraction of the weight. Each chitin plate is individually shaped and hand-riveted to the leather backing with bronze pins. The surface catches light in sharp geometric reflections — beautiful and alien. Beside the armor: a raw threshold beetle carapace for comparison, and a leather worker's tools — awl, riveting hammer, cutting knife. Color palette: iridescent black-blue chitin, warm brown tanned leather, bronze rivets, dark wood stand. Dark fantasy armor concept art, painterly, specimen display lighting, craft and material focus.",
+    "model": "nano-banana-2",
+    "category": "weapons-armor",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/weapons-armor"
+  },
+  {
+    "name": "ordenswaffe-stab-siegel",
+    "prompt": "Concept art of an Order enforcement weapon — a ceremonial-yet-functional seal staff carried by Order inquisitors in a medieval dark fantasy city. A prop study showing the complete staff and detail callouts. The staff is roughly one and a half meters long, pale ash wood shaft wrapped in white leather at the grip. The head is a heavy bronze casting of the Order's eye-within-circles seal motif — simultaneously a stamp that can be pressed into wax to seal documents AND a blunt weapon capable of breaking bone. The seal face shows fine detail: concentric geometric rings surrounding a central stylized eye, the bronze patinated green at the edges. Below the seal head: a compartment in the shaft holding a small vial of green sealing wax and a flint striker. The base of the staff has an iron ferrule for stability. This weapon embodies the Order's dual nature: bureaucracy and violence in one instrument. Color palette: pale ash wood, white leather grip, green-patinated bronze seal head, iron ferrule, dark background. Dark fantasy weapon prop concept art, painterly, detailed callout layout, studio lighting.",
+    "model": "nano-banana-2",
+    "category": "weapons-armor",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/weapons-armor"
+  },
+  {
+    "name": "gilden-werkzeug-statusobjekt",
+    "prompt": "Concept art of guild master tools as status objects in a medieval dark fantasy world. A flat-lay specimen arrangement on dark velvet. Five tools displayed: a goldsmith's precision hammer with an electrum head and rosewood handle, a weaver's shuttle carved from a single piece of amber with inlaid silver thread guides, a stonemason's chisel with a Damascus steel blade and wrapped leather grip bearing a carved guildmark, a glassmaker's blowpipe with brass fittings and a bone mouthpiece, and a tanner's curved knife with a threshold-steel edge that shows the characteristic dark blue iridescence. Each tool is a masterwork — the maker's proof of guild membership, carried daily as both functional instrument and social credential. Beside the tools: small enamel guild plaques showing each guild's symbol. The tools gleam with use-polish, not display-polish — these are working instruments that happen to be beautiful. Color palette: electrum and amber gold tones, Damascus silver, dark threshold-steel blue, rosewood and leather browns, enamel bright accents, dark velvet background. Dark fantasy prop collection concept art, painterly, overhead flat-lay, warm studio lighting.",
+    "model": "gpt-image-1-5",
+    "category": "weapons-armor",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/weapons-armor"
+  }
+]

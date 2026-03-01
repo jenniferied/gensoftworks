@@ -1,0 +1,74 @@
+[
+  {
+    "name": "schwellenpilze-kaverne-mannshoch",
+    "prompt": "Concept art of a deep underground cavern in a medieval dark fantasy world, lit entirely by bioluminescent giant mushrooms. The mushroom fruiting bodies stand as tall as a person — pale translucent stalks with wide caps that glow deep blue, pulsing slowly in a rhythm that resembles breathing. The cavern walls are raw dark bedrock, slick with moisture. Smaller luminescent fungi cluster at the base in blue-green. The ground is covered in a web of pale mycelium threads that faintly glow where they cross. A single human figure in rough canvas clothing stands among the mushrooms for scale, their face lit from below by the cold blue glow. Spore clouds drift slowly upward, catching the light like underwater particles. The atmosphere is alien, beautiful, and threatening — this light sustains the underground economy but the spores contaminate. Color palette: deep cavern black, pale blue and deep blue bioluminescence, translucent mushroom flesh, cool grey stone. Dark fantasy environment concept art, painterly, atmospheric, cold bioluminescent light only.",
+    "model": "gpt-image-1-5",
+    "category": "flora-fauna",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  },
+  {
+    "name": "schwellenmoose-fugenleuchten",
+    "prompt": "Concept art material study of bioluminescent threshold moss growing in the mortar joints of ancient stone walls in a medieval underground tunnel. Extreme close-up detail shot. The moss fills the gaps between hand-cut limestone blocks, emitting a faint pale green-white glow that illuminates the immediate stone surface. The light is cold, steady, unreliable — it flickers at irregular intervals. The stone shows centuries of wear. Water condensation beads on the wall surface, catching the green glow in tiny reflections. Some moss patches are denser and brighter, others thin and barely visible. A few pale translucent insects crawl along the moss — tiny creatures drawn to the light. The overall impression: this is not decoration, this is the only light source for thousands of people living underground. Color palette: dark grey stone, pale green-white bioluminescent moss, condensation reflections, dark shadow between stones. Dark fantasy material study, painterly, extreme close-up, cold ambient glow.",
+    "model": "nano-banana-2",
+    "category": "flora-fauna",
+    "tier": 2,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  },
+  {
+    "name": "schwelleninsekten-motten-biolumineszent",
+    "prompt": "Concept art of bioluminescent threshold moths swarming around a crude oil lamp in a medieval underground passage. The moths have wingspans of five to eight centimeters — larger than natural moths — with translucent wings that glow pale violet-blue along the veins. Their bodies are dark, almost black, with compound eyes that reflect the lamp flame as tiny orange points. Dozens of them circle the flame in layered orbital paths, their wing-glow creating trails of cold light against the warm amber of the oil lamp. The passage walls are rough-hewn stone, wet with condensation. A few moths rest on the stone surface with wings spread flat, their bioluminescent wing patterns visible as delicate branching networks. One moth in the foreground is captured mid-flight in sharp focus — the wing membrane is semi-transparent, revealing internal structures. Color palette: warm amber lamp center, cold violet-blue moth glow surrounding it, dark stone passage, wet reflections. Dark fantasy creature study, painterly, warm-cold light contrast, atmospheric.",
+    "model": "nano-banana-pro",
+    "category": "flora-fauna",
+    "tier": 1,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  },
+  {
+    "name": "schwarzrankenwurzeln-felswand",
+    "prompt": "Concept art of massive black root tendrils growing through a stone cliff face in a medieval underground city. The roots — called Schwarzranken — are thick as a human arm, black and leathery, forcing their way between stone blocks and splitting ancient masonry. The roots ooze a dark viscous resin at the points where they penetrate stone — the resin catches the faint bioluminescent light from nearby moss, creating amber-dark reflections. Some roots have been incorporated into the architecture: wooden beams rest on them, rope bridges are tied to them, a makeshift dwelling is built into the cavity where a root cluster has displaced an entire wall section. The texture of the roots is organic but alien — surface ridges that follow patterns too regular for plant biology. A figure with a collection bucket scrapes resin from a root junction. Color palette: black leathery root surfaces, amber-dark resin glow, grey stone, bioluminescent green accents in moss. Dark fantasy environment detail, painterly, atmospheric, mixed warm-cold light.",
+    "model": "gpt-image-1-5",
+    "category": "flora-fauna",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  },
+  {
+    "name": "deckenhaenger-kaverne",
+    "prompt": "Concept art of a Deckenhanger — a deeply unsettling threshold-adapted cave organism in a medieval dark fantasy world. Viewed from below, hanging from the ceiling of a vast underground cavern. The creature is bat-like but wrong: membranous wings that glow faintly with a pale blue bioluminescence, a body whose symmetry is not bilateral — from one angle it appears to have four limbs, from another angle three, as if its form is a question of perspective rather than anatomy. The wing membranes are translucent, showing internal structures that resemble both vascular systems and geological crystal formations simultaneously. It hangs motionless, perfectly still — too still. Its eyes, if it has them, are not identifiable. The cavern ceiling around it shows stalactite formations that were never carved by human hands — organic, crystalline, pale green-blue. Several smaller specimens hang nearby, each slightly different in apparent anatomy. Color palette: deep cavern black, pale blue bioluminescent membrane glow, crystalline formations in blue-green, absolute darkness beyond. Dark fantasy creature concept art, painterly, unsettling, cold bioluminescent light, looking upward composition.",
+    "model": "nano-banana-pro",
+    "category": "flora-fauna",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  },
+  {
+    "name": "kanalfische-durchscheinend",
+    "prompt": "Concept art of blind canal fish from the underground waterways of a medieval dark fantasy city. A still pool of dark water in a stone canal, lit from below by bioluminescent sediment on the canal floor. Three fish are visible: elongated, eyeless, with completely translucent bodies — their internal organs, spine, and circulatory system are visible through the skin as darker structures within a glass-like body. The fish are pale, ghostly, drifting slowly in the still water. One fish is near the surface, its translucent dorsal fin breaking the water and catching the ambient cave light. The canal walls are hand-cut stone blocks, ancient and moss-covered. A crude fishing net on a stick rests against the wall — someone harvests these creatures for food. The water has an unnatural clarity despite the underground setting. Faint reflections of bioluminescent moss shimmer on the surface. Color palette: dark water, translucent pale fish bodies, blue-green bioluminescent underglow, grey stone canal walls. Dark fantasy creature study, painterly, underwater glow, atmospheric stillness.",
+    "model": "seedream-4-5",
+    "category": "flora-fauna",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  },
+  {
+    "name": "schwellenkaefer-chitinpanzer",
+    "prompt": "Concept art material study of threshold beetles — insects with chitinous shells like dark glass, used by guilds for lightweight armor plating. A specimen board arrangement: three beetles of different sizes displayed on a dark wood surface alongside processed chitin plates cut and shaped for armor use. The largest beetle is the size of a human palm — its carapace is a deep iridescent black-blue, faceted like obsidian, reflecting light in sharp geometric patterns. The processed chitin plates beside it show the same material cut into thin overlapping scales, polished and riveted onto a leather backing. A small alchemical jar contains ground chitin powder in pale blue. The beetles come from the root networks deep underground. Their shells are harder than boiled leather and lighter than iron. Color palette: iridescent black-blue chitin, dark wood surface, pale blue powder, leather brown backing. Dark fantasy material study concept art, painterly, specimen board arrangement, controlled studio lighting.",
+    "model": "nano-banana-2",
+    "category": "flora-fauna",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  },
+  {
+    "name": "schwellenratten-waechter",
+    "prompt": "Concept art of a threshold-adapted rat used as a living alarm system in the underground slums of a medieval dark fantasy city. The rat is larger than a natural rat — roughly cat-sized — with dense dark fur that appears almost black. Its eyes glow faintly from within, a dim amber-orange light that is visible in darkness. It sits alert on a stone ledge beside a sleeping figure wrapped in blankets in a makeshift shelter. The rat's posture is watchful, ears forward, body tense — it senses changes in threshold substrate concentration before humans can. Its intelligence is visible in its gaze: this is not a simple animal. Behind it, the tunnel wall shows bioluminescent moss. A leather collar around its neck bears a small bone token — ownership marker. Color palette: dark fur almost black, faint amber eye-glow, cool green-blue bioluminescent background, muted earth tones of the shelter. Dark fantasy creature concept art, painterly, intimate scene, low ambient light.",
+    "model": "seedream-4-5",
+    "category": "flora-fauna",
+    "tier": 2,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/flora-fauna"
+  }
+]

@@ -126,6 +126,12 @@
 \usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=gray, pdfusetitle]{hyperref}
 
 \usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
 \usepackage{float}
 \floatplacement{figure}{H}
 
@@ -211,17 +217,17 @@ $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
 
-\usepackage{fancyvrb}
+\usepackage{fvextra}
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
   commandchars=\\\{\}, fontsize=\small, frame=single, rulecolor=\color{border},
   breaklines=true, breakanywhere=true
 }
 % Redefine plain verbatim (used by Pandoc for unfenced code blocks)
 % to also break long lines
-\renewenvironment{verbatim}%
-  {\VerbatimEnvironment\begin{Verbatim}[fontsize=\small, frame=single,
-    rulecolor=\color{border}, breaklines=true, breakanywhere=true]}%
-  {\end{Verbatim}}
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+  fontsize=\small, frame=single, rulecolor=\color{border},
+  breaklines=true, breakanywhere=true
+}
 
 % ==========================================================================
 %   METADATA

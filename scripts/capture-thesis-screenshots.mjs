@@ -108,12 +108,12 @@ async function main() {
   }
 
   // --- 3. Thesis figure: full viewport with sidebar (busy scene) ---
-  // Pick Day 2 (most scenes/activity), mid-scene
-  const day2Idx = simData.days.findIndex(d => d.day === 2);
-  if (day2Idx >= 0) {
-    const day2 = simData.days[day2Idx];
-    const midScene = Math.floor(day2.scenes.length / 2);
-    await navigateToScene(page, day2Idx, midScene);
+  // Pick Day 4 (many artifacts accumulated), mid-scene
+  const day4Idx = simData.days.findIndex(d => d.day === 4);
+  if (day4Idx >= 0) {
+    const day4 = simData.days[day4Idx];
+    const midScene = Math.floor(day4.scenes.length / 2);
+    await navigateToScene(page, day4Idx, midScene);
   } else {
     // Fallback: last day, last scene
     const lastDay = simData.days.length - 1;

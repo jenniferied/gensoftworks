@@ -313,9 +313,21 @@ def load_concept_art(gallery_dir, days):
                     if img["filename"] in art and "appeared" not in img:
                         img["appeared"] = {"day": day_num, "scene": scene_num}
 
+    # Assign appearance for images that weren't referenced in scene artifacts
+    for key, img in images.items():
+        if "appeared" not in img:
+            cat = img.get("category", "")
+            cat_match = re.search(r"day(\d+)", cat)
+            if cat_match:
+                day_num = int(cat_match.group(1))
+                if "supplement" in cat:
+                    img["appeared"] = {"day": f"{day_num}-supplement", "scene": 0}
+                else:
+                    img["appeared"] = {"day": day_num, "scene": 0}
+
     # Sort by appearance, then filename
     result = sorted(images.values(),
-                    key=lambda i: (i.get("appeared", {}).get("day", 999),
+                    key=lambda i: (str(i.get("appeared", {}).get("day", 999)),
                                    i.get("appeared", {}).get("scene", 999),
                                    i["filename"]))
     return result
@@ -627,16 +639,26 @@ def load_logbook_v4(logbook_dir):
 def load_logbook_v5(logbook_dir):
     """Load dayDD.json index files (v5 format).
 
+    Also loads dayDD-supplement.json files as separate day entries.
     Returns list of day dicts with scenes[], or empty list if no v5 files found.
     """
-    pattern = re.compile(r"day(\d+)\.json$")
+    main_pattern = re.compile(r"day(\d+)\.json$")
+    supplement_pattern = re.compile(r"day(\d+)-supplement\.json$")
     days = []
+    supplements = []
     for f in sorted(logbook_dir.glob("day*.json")):
-        m = pattern.match(f.name)
+        sm = supplement_pattern.match(f.name)
+        if sm:
+            data = json.loads(f.read_text())
+            supplements.append(data)
+            continue
+        m = main_pattern.match(f.name)
         if not m:
             continue
         data = json.loads(f.read_text())
         days.append(data)
+    # Append supplements after main days
+    days.extend(supplements)
     return days
 
 
@@ -697,8 +719,25 @@ def main():
         days = []
         for day_data in v5_days:
             day_num = day_data["day"]
-            scenes = [build_scene_v5(s) for s in day_data.get("scenes", [])]
-            day_entry = {"day": day_num, "scenes": scenes}
+            is_supplement = isinstance(day_num, str) and "supplement" in day_num
+
+            if is_supplement:
+                # Supplement entries have phases instead of scenes
+                day_entry = {
+                    "day": day_num,
+                    "scenes": [],
+                    "is_supplement": True,
+                    "supplement": {
+                        "phases": day_data.get("phases", []),
+                        "context": day_data.get("context", {}),
+                        "budget_total": day_data.get("budget_total", {}),
+                        "image_inventory": day_data.get("image_inventory", {}),
+                    },
+                }
+            else:
+                scenes = [build_scene_v5(s) for s in day_data.get("scenes", [])]
+                day_entry = {"day": day_num, "scenes": scenes}
+
             # Day-level summary fields are inline in v5
             for k in ("weekday", "phase", "title", "summary",
                        "cd_decisions", "key_moments", "artifacts"):
@@ -785,6 +824,10 @@ def main():
             }
             for day_entry in days:
                 day_num = day_entry["day"]
+
+                # Skip supplement entries — they have no traces
+                if day_entry.get("is_supplement"):
+                    continue
 
                 # Discover GM transcript for this day
                 gm_dir = traces_dir / f"day{day_num:02d}-gm"

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "ankerkammer-eingang-abstieg",
+    "prompt": "Imagine a dramatic concept art of the entrance to the Anchor Chamber — the deepest accessible point beneath a medieval vertical city, where the boundary between material reality and another plane of existence is thinnest. The viewer descends a narrow stone stairway carved into raw bedrock, looking downward into a vast dark opening. The stairway is ancient — the steps worn smooth, their edges rounded by centuries of footsteps that stopped long ago. The walls of the descent show geological anomalies: crystal inclusions that match no known mineral, veins of dark glassy material that is neither obsidian nor basalt, and in places the rock itself seems to have organic structure — as if something grew into the stone from below. Bioluminescent lichen intensifies with each step down, shifting from pale green to deep blue-violet. The air visible as faint haze becomes denser, warmer. At the bottom of the visible stairway: a massive stone archway — the original seal, now broken open, its carved warning reliefs eroded and overgrown with crystalline formations. Beyond the archway: darkness that seems to have weight and texture. Two ancient stone columns frame the entrance, cracked and leaning inward. MUST obey ALL: purely medieval materials, this is geology and ancient architecture combined. Dark fantasy environment concept art, painterly, dramatic vertical descent composition, bioluminescent light increasing with depth.",
+    "model": "gpt-image-1-5",
+    "category": "schwelle",
+    "tier": 1,
+    "aspect_ratio": "portrait_4_3",
+    "output_dir": "day05-vera-supplement/schwelle"
+  },
+  {
+    "name": "ankerkammer-innenraum-leer",
+    "prompt": "Imagine a concept art of the Anchor Chamber interior — the climactic location of the main quest in a medieval dark fantasy world. A vast underground dome-shaped natural cavern, far larger than anything human-made. The geometry of the chamber is unstable: walls seem to curve differently depending on where the viewer focuses, distances feel unreliable, the ceiling both impossibly high and oppressively close. In the exact center: a stone plinth where the Anchor once rested — now empty, with scorch-like dark marks radiating outward from the empty socket in organic branching patterns across the cavern floor. The empty plinth is the visual and emotional focal point: absence as the most powerful presence. The cavern walls are covered in crystalline formations that pulse with a deep blue-violet light — not illuminating but emanating, as if the walls themselves are the light source. The floor is smooth, almost polished, but not by human hands. Puddles of water — or something that looks like water — reflect the crystal glow in patterns that do not match the overhead formations. The atmosphere: sacred, violated, waiting. This place needs something returned to it. MUST obey ALL: purely geological and ancient architecture. Dark fantasy environment concept art, painterly, vast scale, cold blue-violet ambient glow, central empty plinth composition.",
+    "model": "gpt-image-1-5",
+    "category": "schwelle",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/schwelle"
+  },
+  {
+    "name": "schwellenlandschaft-jenseit-abstrakt",
+    "prompt": "Concept art of the Threshold itself — the other plane of existence as perceived by a Stage 2 shadow fever sufferer in a medieval dark fantasy world. This is not a physical place but a perceptual state: the material world visible as a faded ghost layer, overlaid with something else entirely. The composition shows a stone tunnel of the underground city, but it is translucent, fading — and through it, another layer of reality becomes visible. The threshold layer has no ground, no sky, no horizon. It is structure without form: vast slow-moving patterns of blue-violet luminescence arranged in formations that resemble both geological crystal growth and neural branching networks simultaneously. The patterns are beautiful, hypnotic, and deeply wrong — they have a regularity that implies intention without revealing its purpose. Dark shapes move within the patterns, too large and too slow to be creatures — more like weather systems or tidal movements. The material world layer shows a figure sitting against a stone wall, their translucent skin glowing with the same blue-violet pattern visible in the threshold. They are seeing both realities at once. Color palette: faded grey material world layer, deep blue-violet threshold structures, luminescent pattern networks, absolute darkness in the spaces between. Dark fantasy metaphysical concept art, painterly, layered double-exposure composition, otherworldly.",
+    "model": "gpt-image-1-5",
+    "category": "schwelle",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/schwelle"
+  },
+  {
+    "name": "schwellennebel-gegen-den-wind",
+    "prompt": "Concept art of threshold fog moving against the wind in a medieval underground passage. A narrow stone corridor in the transitional zone between the middle city and the deep slums. Natural air current moves from left to right — visible in the guttering of a wall-mounted oil lamp whose flame bends right. But a dense, slow-moving fog creeps through the corridor from right to left, against the airflow. The fog is slightly warmer in appearance than natural mist — a barely perceptible amber tint against the cool grey of natural condensation. Where the fog is densest, it shows structures: slow spiral formations like fingerprints, momentary condensations that almost look like silhouettes before dissolving. A figure in heavy canvas workwear presses against the wall as the fog passes, their face covered with a crude cloth mask. The lamp flame flickers but the fog flows past it undisturbed. Color palette: cold grey stone, warm amber lamp light, slightly warm-tinted fog against cool natural mist, dark passage beyond. Dark fantasy atmospheric concept art, painterly, horizontal composition, tension between two light temperatures.",
+    "model": "nano-banana-pro",
+    "category": "schwelle",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/schwelle"
+  },
+  {
+    "name": "schwellengestein-anomalien-nahaufnahme",
+    "prompt": "Concept art material study of threshold-affected bedrock in a medieval dark fantasy underground setting. A cross-section of exposed rock face where geological anomalies are visible. The base material is layered limestone and slate — normal sedimentary geology. But running through it: veins of dark glassy material that is neither obsidian nor basalt, with an internal structure too regular for natural formation. Crystal inclusions that match no known mineral — pale blue-green, faceted, growing in branching patterns that recall both coral and circuit pathways. In one area, the rock itself appears organic — a section where the boundary between mineral and biological is impossible to determine, with porous structure resembling bone marrow or sponge. A stonemason's chisel and hammer lie beside the rock face, and a hand-drawn guild diagram on parchment shows a mapping attempt. Chalk marks on the rock indicate survey lines. Color palette: grey-brown limestone, dark glass veins, pale blue-green crystal inclusions, organic bone-like formations, cold ambient light. Dark fantasy geological study, painterly, close-up detail, scientific observation mood.",
+    "model": "nano-banana-2",
+    "category": "schwelle",
+    "tier": 2,
+    "aspect_ratio": "square",
+    "output_dir": "day05-vera-supplement/schwelle"
+  },
+  {
+    "name": "schwellenvibration-wasserbecken",
+    "prompt": "Concept art of a vibrating threshold water pool in the deepest caverns beneath a medieval vertical city. A still basin carved into raw stone — or perhaps naturally formed — filled with water that appears unnaturally clear. The water's surface vibrates in slow concentric patterns without any visible disturbance — no wind, no dripping, no current. The vibration creates standing wave patterns that catch bioluminescent light from the cavern ceiling, projecting rippling pale blue reflections onto the surrounding stone walls. The cavern ceiling above shows crystalline stalactite formations that were never carved by human hands — organic, asymmetric, faintly luminescent. The air above the pool is visibly denser, warmer — a faint heat shimmer that should not exist underground. A figure crouches at the pool's edge, collecting water in a leather flask, their reflection in the pool surface slightly delayed — not quite matching their actual movement. Color palette: dark cavern stone, pale blue water reflections, crystalline blue-green ceiling formations, warm heat shimmer. Dark fantasy environment detail, painterly, meditative unsettling atmosphere, cold-warm light tension.",
+    "model": "nano-banana-pro",
+    "category": "schwelle",
+    "tier": 1,
+    "aspect_ratio": "landscape_16_9",
+    "output_dir": "day05-vera-supplement/schwelle"
+  }
+]

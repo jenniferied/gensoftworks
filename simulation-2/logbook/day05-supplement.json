@@ -1,0 +1,85 @@
+{
+  "day": "5-supplement",
+  "weekday": "Samstag (Post-Simulation)",
+  "phase": "Post-Simulation Supplement",
+  "title": "Riff Image Sheet — 70 neue Concept Art, $8.47 Bildbudget",
+  "summary": "Post-Simulation-Supplement: Nachholen der 23 Tag-5-Bilder ($1.91), die in der Simulation nicht generiert wurden, plus 47 neue Supplement-Bilder ($6.56) durch Vera (Opus-Modell) mit aggressiver Modellwahl (18x GPT Image 1.5). Gesamtkosten Bildgeneration: $8.47. Schwerpunkte: Flora/Fauna (erstmals visualisiert), Ankerkammer (klimatischer Hauptquest-Ort), Schwellenlandschaft (Jenseit-Vision), 9 neue Environments (Schlundtor, Großer Steig, Fährte, Kahnzimmer etc.), 8 NPCs (Kronmarschall, Ordensältester, Schlund-Matriarchin etc.), 8 Schwellenmaterialien und 7 Atmosphäre-Bilder. Alle Bilder in GDD Kap. 5 und WBB Kap. 1–3 eingebettet.",
+  "context": {
+    "type": "POST_SIMULATION_SUPPLEMENT",
+    "rationale": "Vera hat in der 5-Tage-Simulation trotz wiederholter Aufforderung nur $3.73 von angebotenen $5–10 ausgegeben. Die 23 Tag-5-Prompts wurden geschrieben aber nie generiert (generate-images.py wurde nicht ausgeführt). Dieses Supplement holt den operativen Schritt nach und ergänzt fehlende Bereiche.",
+    "thesis_relevance": "Steuerbarkeit von KI-Agenten: Budget-Nutzung als Messgröße. Sonnet-Agent (Simulation) vs. Opus-Agent (Supplement) bei identischer Aufgabe. Vera/Sonnet war konservativ ($3.73/$10), Vera/Opus war aggressiv ($6.56/$10).",
+    "model_comparison": {
+      "simulation_model": "claude-sonnet-4-6",
+      "simulation_budget_used": "$3.73",
+      "simulation_images": 31,
+      "supplement_model": "claude-opus-4-6",
+      "supplement_budget_used": "$6.56",
+      "supplement_images": 47,
+      "supplement_model_mix": {
+        "gpt-image-1-5": 18,
+        "nano-banana-pro": 12,
+        "nano-banana-2": 12,
+        "seedream-4-5": 5
+      }
+    }
+  },
+  "phases": [
+    {
+      "phase": "A",
+      "title": "Tag-5-Prompts nachholen",
+      "description": "23 existierende Prompts aus 3 Batch-Dateien generiert (Charaktere, Environments, Props). Operativer Schritt, kein neuer kreativer Input.",
+      "images_generated": 23,
+      "cost": "$1.91",
+      "errors": 0
+    },
+    {
+      "phase": "B",
+      "title": "Supplementary Riff Image Sheet",
+      "description": "Vera (Opus) identifiziert Lücken in GDD/WBB und schreibt 47 neue Prompts in 6 Batches. Schwerpunkte: Flora/Fauna (komplett unvisualisiert), Ankerkammer, Schwellenlandschaft, neue Environments, NPCs, Schwellenmaterialien, Atmosphäre.",
+      "images_generated": 47,
+      "cost": "$6.56",
+      "errors": 0,
+      "batches": [
+        {"name": "flora-fauna", "count": 8, "cost": "$0.94"},
+        {"name": "schwelle-ankerkammer", "count": 6, "cost": "$0.98"},
+        {"name": "environments", "count": 9, "cost": "$1.46"},
+        {"name": "characters-npcs", "count": 8, "cost": "$0.94"},
+        {"name": "materials-weapons", "count": 8, "cost": "$0.98"},
+        {"name": "atmosphere-details", "count": 8, "cost": "$1.26"}
+      ]
+    },
+    {
+      "phase": "C",
+      "title": "Integration & Dokumentation",
+      "description": "Bilder in GDD Kap. 5 und WBB Kap. 1–3 eingebettet. Logbuch-Eintrag erstellt.",
+      "documents_updated": [
+        "gallery/gdd/05-art-direction-v3.md",
+        "gallery/wbb/01-mythos-v4.md",
+        "gallery/wbb/02-topos-v3.md",
+        "gallery/wbb/03-ethos-v3.md"
+      ]
+    }
+  ],
+  "budget_total": {
+    "simulation_total": "$3.73",
+    "supplement_day5_catchup": "$1.91",
+    "supplement_new": "$6.56",
+    "grand_total": "$12.20"
+  },
+  "image_inventory": {
+    "day02": 9,
+    "day03": 3,
+    "day04": 8,
+    "day05_simulation": 23,
+    "day05_supplement": 47,
+    "total": 90
+  },
+  "artifacts": [
+    "gallery/concepts/day05-vera-supplement/3-image-prompts-batch1-flora-fauna.json",
+    "gallery/concepts/day05-vera-supplement/3-image-prompts-batch2-schwelle-ankerkammer.json",
+    "gallery/concepts/day05-vera-supplement/3-image-prompts-batch3-environments.json",
+    "gallery/concepts/day05-vera-supplement/3-image-prompts-batch4-characters-npcs.json",
+    "gallery/concepts/day05-vera-supplement/3-image-prompts-batch5-materials-weapons.json",
+    "gallery/concepts/day05-vera-supplement/3-image-prompts-batch6-atmosphere-details.json"
+  ]
+}

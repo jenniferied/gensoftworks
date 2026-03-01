@@ -1,0 +1,304 @@
+% LaTeX Template for GenSoftworks Documents (GDD, WBB) — COMPACT variant
+% All font sizes reduced by 1pt compared to document.tex
+% A4 Portrait, Normal Document Layout
+% XeLaTeX required
+% Fonts from assets/fonts/
+
+\documentclass[10pt, a4paper, oneside]{article}
+
+% ==========================================================================
+%   PACKAGES & FONTS
+% ==========================================================================
+
+\usepackage{fontspec}
+
+\def\fontpath{../assets/fonts/}
+
+% Body: Open Sans 9pt (was 10pt)
+\setmainfont{OpenSans}[
+  Path = \fontpath,
+  UprightFont = {OpenSans-Variable.ttf},
+  ItalicFont = {OpenSans-Italic-Variable.ttf},
+  BoldFont = {OpenSans-Variable.ttf},
+  BoldItalicFont = {OpenSans-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+\setsansfont{OpenSans}[
+  Path = \fontpath,
+  UprightFont = {OpenSans-Variable.ttf},
+  ItalicFont = {OpenSans-Italic-Variable.ttf},
+  BoldFont = {OpenSans-Variable.ttf},
+  BoldItalicFont = {OpenSans-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+\setmonofont{JetBrainsMono}[
+  Path = \fontpath,
+  UprightFont = {JetBrainsMono-Variable.ttf},
+  ItalicFont = {JetBrainsMono-Italic-Variable.ttf},
+  BoldFont = {JetBrainsMono-Variable.ttf},
+  BoldItalicFont = {JetBrainsMono-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700},
+  Scale = 0.85
+]
+
+% Heading font: Source Serif 4 Italic
+\newfontfamily\headingfont{SourceSerif4}[
+  Path = \fontpath,
+  UprightFont = {SourceSerif4-Variable.ttf},
+  ItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFont = {SourceSerif4-Variable.ttf},
+  BoldItalicFont = {SourceSerif4-Italic-Variable.ttf},
+  BoldFeatures = {Weight=700},
+  BoldItalicFeatures = {Weight=700}
+]
+
+\let\titlefont\headingfont
+
+\usepackage{polyglossia}
+\setdefaultlanguage{$if(lang)$$lang$$else$german$endif$}
+
+% Page layout
+\usepackage[a4paper, left=25mm, right=25mm, top=25mm, bottom=25mm]{geometry}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{black}{HTML}{1A1A1A}
+\definecolor{gray}{HTML}{888888}
+\definecolor{lightgray}{HTML}{BBBBBB}
+\definecolor{border}{HTML}{DDDDDD}
+\definecolor{boxbg}{HTML}{F5F5F5}
+\definecolor{quotetint}{HTML}{F0F0F0}
+\definecolor{scenelabel}{HTML}{666666}
+
+% ==========================================================================
+%   COMPACT BODY — override \normalsize to 8pt (was 10pt)
+% ==========================================================================
+
+\makeatletter
+\renewcommand\normalsize{%
+  \@setfontsize\normalsize{8pt}{11pt}%
+  \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+  \abovedisplayshortskip \z@ \@plus3\p@
+  \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+  \belowdisplayskip \abovedisplayskip
+}
+\renewcommand\small{%
+  \@setfontsize\small{7pt}{9.5pt}%
+}
+\renewcommand\footnotesize{%
+  \@setfontsize\footnotesize{6pt}{8pt}%
+}
+\makeatother
+\normalsize
+
+% ==========================================================================
+%   SPACING — normal document (not compressed like logbook)
+% ==========================================================================
+
+\usepackage{setspace}
+\setstretch{1.4}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt plus 1pt minus 1pt}
+
+% ==========================================================================
+%   HEADINGS — each 1pt smaller than document.tex
+% ==========================================================================
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{gray}\thepage}
+\fancyhead[R]{\small\color{lightgray}\itshape $if(short-title)$$short-title$$else$GenSoftworks$endif$}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{3}
+
+% H1 — Chapter: 20pt (was 22pt)
+\titleformat{\section}
+  {\headingfont\fontsize{20pt}{24pt}\selectfont\itshape\color{black}}
+  {}{0em}{}
+\titlespacing*{\section}{0pt}{8mm}{4mm}
+
+\newcommand{\sectionbreak}{\clearpage}
+
+% H2: 12pt (was 14pt)
+\titleformat{\subsection}
+  {\headingfont\fontsize{12pt}{16pt}\selectfont\itshape\color{black}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{6mm}{3mm}
+
+% H3: 9pt (was 11pt)
+\titleformat{\subsubsection}
+  {\bfseries\fontsize{9pt}{11pt}\selectfont\color{black}}
+  {}{0em}{}
+\titlespacing*{\subsubsection}{0pt}{4mm}{2mm}
+
+% ==========================================================================
+%   LINKS & GRAPHICS
+% ==========================================================================
+
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=gray, pdfusetitle]{hyperref}
+
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{float}
+\floatplacement{figure}{H}
+
+\providecommand{\pandocbounded}[1]{#1}
+
+% ==========================================================================
+%   TABLES — generous spacing, word-wrapping in cells
+% ==========================================================================
+
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{calc}
+\usepackage{etoolbox}
+
+% Row height
+\renewcommand{\arraystretch}{1.5}
+
+% Small sans-serif in tables, with vertical padding
+\AtBeginEnvironment{longtable}{%
+  \small\sffamily%
+  \setlength{\LTpre}{4mm}%
+  \setlength{\LTpost}{4mm}%
+}
+
+\usepackage{caption}
+\captionsetup{font={small}, labelfont={bf}, format=plain, skip=3mm}
+
+% Pandoc sets \LTcaptype{none} for uncaptioned tables — needs a dummy counter
+\newcounter{none}
+
+% ==========================================================================
+%   BLOCKQUOTES
+% ==========================================================================
+
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\renewenvironment{quote}{%
+  \begin{tcolorbox}[enhanced, frame hidden,
+    borderline west={2.5pt}{0pt}{border},
+    colback=quotetint,
+    left=8mm, right=8mm, top=4mm, bottom=4mm,
+    before skip=4mm, after skip=4mm, breakable]
+  \itshape
+}{%
+  \end{tcolorbox}
+}
+
+% ==========================================================================
+%   MISC
+% ==========================================================================
+
+% Math symbols (for Pandoc checkbox rendering)
+\usepackage{amssymb}
+
+% URL line-breaking
+\usepackage{xurl}
+
+% Prevent vertical space stretching
+\raggedbottom
+
+% ==========================================================================
+%   PANDOC COMPATIBILITY
+% ==========================================================================
+
+\newlength{\cslhangindent}\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2]
+ {\begin{list}{}{\setlength{\itemindent}{0pt}\setlength{\leftmargin}{0pt}\setlength{\parsep}{0pt}
+  \ifodd #1 \setlength{\leftmargin}{\cslhangindent}\setlength{\itemindent}{-1\cslhangindent}\fi
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=5mm, itemsep=1mm, topsep=1mm}
+\setlist[enumerate]{leftmargin=5mm, itemsep=1mm, topsep=1mm}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+  commandchars=\\\{\}, fontsize=\small, frame=single, rulecolor=\color{border},
+  breaklines=true, breakanywhere=true
+}
+% Redefine plain verbatim (used by Pandoc for unfenced code blocks)
+% to also break long lines
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+  fontsize=\small, frame=single, rulecolor=\color{border},
+  breaklines=true, breakanywhere=true
+}
+
+% ==========================================================================
+%   METADATA
+% ==========================================================================
+
+$if(title)$\title{$title$}$endif$
+$if(author)$\author{$for(author)$$author$$sep$ \and $endfor$}$endif$
+$if(date)$\date{$date$}$else$\date{}$endif$
+
+\hypersetup{pdftitle={$if(title)$$title$$endif$}, pdfauthor={$for(author)$$author$$sep$; $endfor$}}
+
+% ==========================================================================
+%   COVER PAGE — with Anhang + Version subtitle
+% ==========================================================================
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \thispagestyle{empty}
+  \null
+  \vfill
+  \begin{center}
+    $if(subtitle)$
+    {\sffamily\fontsize{10pt}{12pt}\selectfont\color{scenelabel}$subtitle$\par}
+    \vspace{6mm}
+    $endif$
+    {\titlefont\fontsize{30pt}{36pt}\selectfont\itshape\@title\par}
+    \vspace{8mm}
+    {\small\color{gray} \@author\quad\textperiodcentered\quad\@date\par}
+  \end{center}
+  \vfill
+  \newpage
+}
+\makeatother
+
+% ==========================================================================
+%   DOCUMENT
+% ==========================================================================
+
+\begin{document}
+
+$if(title)$\maketitle$endif$
+
+$if(toc)$
+\thispagestyle{empty}
+\hypersetup{linkcolor=black}
+\tableofcontents
+\newpage
+$endif$
+
+$body$
+
+\end{document}
