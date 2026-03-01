@@ -255,3 +255,31 @@ Quest-Skizzen:
 ## Persönliches
 - Die Düsterkeit-Bestätigung ist eine Erleichterung. Beat 1 steht seit v3, jetzt ist er abgesegnet. Ein Satz, der seit Dienstag auf Freigabe wartete, darf bleiben.
 - Letzter Tag. Das Gefühl ist seltsam — nicht Panik, eher Klarheit. Die Arbeit ist da. Jetzt muss sie nur noch passen.
+
+---
+
+# Tag 5 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Nami (Schreibstube)
+
+## Notizen
+- Letzter Tag, Content-Lock 15:00. Keine neuen Inhalte. Nur kürzen, Bilder einbauen, finalisieren.
+- GDD Kap 4: v3 hatte 451 Zeilen, v4 hat deutlich weniger — Abschnitt 4.6 (Fraktionskosmologien) von ~30 Zeilen auf 4 Sätze + WBB-Querverweis reduziert, Abschnitt 4.8 (offene Koordination) komplett gestrichen, Abschnitt 4.3 (Ablehn-Option) von ~30 Zeilen auf ~10 gestrafft
+- WBB Kap 3: v2 → v3 — Abschnitt 3.8 (offene Koordination) gestrichen, Bilder eingebaut, Pinnwand-Pfade durchgehend gesetzt
+- Sechs Bilder eingebaut: 3 Fraktionspaletten (Krone, Orden, Gilden v2), 3 Tiervolk-Bilder (Händler-Fuchs, Diebin-Marder, Marktszene)
+- Gilden-Materialpalette v2 ist neu — nur im Pinnwand-Ordner, nicht in altem concepts-Pfad
+- Düsterkeit-Entscheid bestätigt — keine Tonalitätsänderung nötig, Beat 1 bleibt wie in v3
+- Reisenden-Namenssystem: Emres Input kam nicht rechtzeitig → ehrliche Lücke dokumentiert, kein Erfinden
+
+## Ergebnisse
+- `simulation-2/gallery/gdd/04-schluesselfiguren-v4.md` — GDD Kap 4 v4 FINAL
+- `simulation-2/gallery/wbb/03-ethos-v3.md` — WBB Kap 3 v3 FINAL
+- Kürzung GDD Kap 4: Fraktionskosmologien nicht mehr doppelt (nur Querverweis), offene Punkte weg, Ablehn-Option auf das Wesentliche
+- Bilder in beiden Dokumenten: Fraktionspaletten bei NPC-Abschnitten / Materialsprache-Abschnitt, Tiervolk-Bilder bei Salva / Reisenden-Abschnitt
+
+## Offene Fragen
+- Keine — alle CD-Fragen geschlossen, alle Inhalte final
+
+## Persönliches
+- Das Kürzen war schwerer als das Schreiben. Die Fraktionskosmologien in 4.6 waren gute Prosa — aber sie standen doppelt, und doppelt ist Platzverschwendung. Der Querverweis ist ehrlicher.
+- Die Ablehn-Option auf zehn Zeilen zu komprimieren war ein guter Test: Wenn der Kern in zehn Zeilen nicht funktioniert, funktioniert er auch in dreißig nicht. Er funktioniert.
+- Sechs Bilder in zwei Dokumenten. Veras Arbeit ist in den Texten angekommen. Das fühlt sich zum ersten Mal wie ein Buch an, nicht wie ein Dokument.
