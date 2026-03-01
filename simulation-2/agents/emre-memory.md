@@ -404,3 +404,51 @@
 - Letzter Tag. Das Gefühl ist ruhig, nicht hektisch. Die WBB steht. Vier Tage lang gebaut, heute wird poliert und versiegelt.
 - Finn sagt "keine neuen Fragen" — das ist gut. Es zwingt zur Disziplin. Was steht, steht.
 - Content-Lock 15:00 ist sechs Stunden. Reicht, wenn Vera die Bilder rechtzeitig liefert.
+
+### Szene 2 — WORK (Lore-Ecke, 10:00)
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Emre (solo)
+
+## Notizen
+- Finalisierungstag. Keine neuen Inhalte, nur Bilder einbauen, CD-Entscheide umsetzen, Widerspruchs-Log abschließen.
+- Pinnwand-Bilder als Quellen: 3 Fraktionspaletten, 3 Relikt-Bilder, 2 Stadtschnitt-Bilder, 3 Tiervolk-Bilder.
+- Alle Bildpfade auf `../../pinwall/favorites/` aktualisiert (vorher: `../concepts/day02-vera/...`).
+
+## Ergebnisse
+
+### WBB Kap 1 Mythos v4 fertiggestellt
+- Artefakt: `gallery/wbb/01-mythos-v4.md`
+- **Bildpfade aktualisiert:** Alle drei Fraktionspaletten (Krone, Orden, Gilden) zeigen jetzt auf Pinnwand-Favoriten
+- **Gilden-Materialpalette NEU eingefügt** nach Abschnitt 4.3 mit Lore-Kontextualisierung ("Erdtöne als nüchterne Bodenhaftung, Bronze als Werkzeug der Aneignung")
+- **Relikt-Bilder eingefügt** in Abschnitt 5.4: Drei-Zustände-Bild (ruhend/resonant/aktiviert) + zwei Hero-Shots. Beschreibende Absätze zu Zuständen und Lichttemperatur (Quallen-Analogie aus Tag 2 Review)
+- **Orden-Symbol:** Kommentar Zeile 225 aktualisiert — CD-Entscheid bestätigt: SIEGEL (nicht Kreuz). "Auge-Siegel" aus Bildunterschrift entfernt, durch "Siegel" ersetzt
+- **Ferne Dünnstelle:** Text in 5.1 leicht entschärft — konkretes "Dorf im Osten" und "Küstenstadt" durch vagere "Siedlungen" ersetzt. HTML-Kommentar: CD-Entscheid Tag 5, Details offen für zukünftige Iterationen
+- **Covid-Analogie-Tabelle:** Referenzen zu konkreten realen Orten (SARS, Wuhan, Lombardei) entfernt, durch abstraktere Formulierungen ersetzt
+- **Widerspruchs-Log finalisiert:** W-001 als "bewusst offen" deklariert, W-002 als "Designentscheidung: individuell", W-005 geschlossen (Drei Zustände visualisiert), W-007 geschlossen (Lichttemperatur in Bildunterschriften verankert). Alle 7 Einträge haben finalen Status.
+- **Wolf-Checkliste finalisiert:** Fraktionspaletten unter "Kultur" ergänzt
+
+### WBB Kap 2 Topos v3 fertiggestellt
+- Artefakt: `gallery/wbb/02-topos-v3.md`
+- **Stadtschnitt-Bilder eingefügt** im Schlund-Abschnitt (1.2): Kanalzone v3 + Kanalzone v3-final. Beschreibende Absätze zu Übergangszone Gürtel/Schlund, unsaubere Schichtgrenzen
+- **Altes Stadtschnitt-Bild entfernt** (war: `../concepts/day02-vera/environments/stadtschnitt-vertikale-schichtung_nano-banana-pro.png`)
+- **Tiervolk-Bilder eingefügt** in Abschnitt 4.8 (Die Fährte): Marktszene, Fuchshändler, Marderdiebin. Jeweils mit beschreibenden Absätzen
+- **Straffungen:** Vorbemerkung gekürzt (Klastrup/Tosca-Verweis kompakter), Obere-Ränder-Beschreibung leicht gekürzt, Redundanzen in Schwellenphänomene-Abschnitt entfernt, Landmarken-Beschreibungen kompakter
+- **Wolf-Checkliste finalisiert:** Stadtschnitt-Bilder unter "Karten" ergänzt
+
+### Widerspruchs-Log — Finaler Stand
+- W-001: Bewusst offen (narrative Ambiguität)
+- W-002: Designentscheidung: individuell (Darius implementiert)
+- W-003: Geschlossen
+- W-004: Geschlossen
+- W-005: Geschlossen (v4, Drei Zustände visualisiert)
+- W-006: Geschlossen
+- W-007: Geschlossen (v4, Lichttemperatur in Bildunterschriften)
+
+## Offene Fragen
+- Keine. Beide Kapitel sind finalisiert. Widerspruchs-Log abgeschlossen.
+- Konsistenzprüfung gegen Namis Ethos (Kap 3) steht noch aus — mache ich nach dem WORK-Block, wenn Namis Version vorliegt.
+
+## Persönliches
+- Fünf Tage, vier Versionen Mythos, drei Versionen Topos. Von einer leeren Seite zu einer Kosmologie mit drei Polen, einer vertikalen Stadt, einem Schattenfieber das nach Covid-Logik eskaliert, und einem Widerspruchs-Log, in dem jeder Eintrag einen Status hat.
+- Die Bilder sind jetzt Teil der Lore, nicht Dekoration. Veras Fraktionspaletten erzählen die Geschichte der drei Schöpfungsmythen in Farbe und Material. Die Relikt-Bilder machen die drei Zustände physisch. Die Tiervolk-Bilder zeigen, was "leicht alien" bedeutet. Das war der Punkt der ganzen Woche: Wort und Bild müssen dasselbe sagen.
+- W-001 (Schwellensubstrat: Substanz oder Bedingung?) bleibt bewusst offen. Das ist kein Versagen — das ist ein Feature. Die Ambiguität erzeugt genau die Frage, die der Spieler sich stellen soll: Was *ist* das eigentlich? Manche Fragen sind besser, wenn sie keine Antwort haben.
+- Die WBB steht. Nicht perfekt — ein Worldbuilding-Dokument ist nie perfekt. Aber konsistent, intern logisch, und bespielbar. Gestern Abend haben wir in diesem Ort Tee getrunken. Das reicht.
