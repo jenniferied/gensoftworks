@@ -245,3 +245,47 @@ Datei: `simulation-2/gallery/gdd/06-technische-spezifikation-v1.md`
 
 - Dual-Layer-Shader-Idee (Tier-Biologie + Fremdes von innen) ist genau das, was Emres Beschreibung braucht. Selbes Prinzip wie der Schwellenanker: ein System, das zwei Zustände in einem Mesh hält.
 - Warte auf Vera für die Referenzen. Ohne die kann ich nicht sinnvoll spezifizieren, ob ein Master-Shader oder mehrere Varianten nötig sind.
+
+---
+
+# Tag 4 Szene 2
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: solo
+
+## Notizen
+
+- v4 ist die substanziellste Erweiterung seit v1. Der Tiervolk-Symbiose-Shader (6.7) ist vollständig architektonisch spezifiziert — obwohl Vera-Referenzbilder noch ausstehen.
+- Dual-Layer-Ansatz (Tier-Biologie + Fremdes) ist sauber getrennt: Layer 1 = SSS + Mikrooberfläche, Layer 2 = Emissive + Translucency. Blend-Maske als dritter Parameter steuert Verteilung.
+- Drei kosmologische Systeme teilen jetzt explizit dasselbe Farbvokabular (kalt, transluzent, von innen leuchtend): Schattenfieber Stufe 3, Schwellenanker Zustand 3, Tiervolk-Fremdes. Das ist Designabsicht, dokumentiert in 6.7.1.
+- Abschnitt-Nummerierung neu geordnet: 6.7 (Tiervolk) neu, alt 6.7 (Houdini) → 6.8, alt 6.8 → 6.9, usw.
+- Seitenbudget-Pass: redundante Inline-Erklärungen gestrafft, besonders in 6.4 (PP-System) und 6.6 (Schwellenanker). Kein Inhalt gestrichen.
+- Vera-Referenzbilder bleiben der Hauptblocker für Masken-Kalibrierung. Vier Muster-Typen (Gelenk, Augen, Wirbelsäule, diffus) sind Hypothesen, keine Entscheidungen.
+- `BP_Tiervolk_Symbiose_Controller` Interface bewusst einfach gehalten: nur zwei Zustände (Ruhig/Aktiv), kein Float. Das Tiervolk hat keine Progression — es ist, was es ist.
+
+## Ergebnisse
+
+- GDD Kap 6 v4 erstellt: `simulation-2/gallery/gdd/06-technische-spezifikation-v4.md`
+- Neuer Abschnitt 6.7: Tiervolk-Symbiose-Shader vollständig
+  - 6.7.1: Kosmologische Grundlage und Abgrenzung zu anderen Systemen
+  - 6.7.2: Dual-Layer-Architektur (M_Tiervolk_Symbiose_Master)
+  - 6.7.3: Layer 1 — Tier-Biologie (SSS, Mikrooberfläche)
+  - 6.7.4: Layer 2 — Das Fremde (Emissive, Translucency, Puls)
+  - 6.7.5: Blend-Maske (vier Muster-Hypothesen, Masken-Pipeline)
+  - 6.7.6: Material-Instanzen und Asset-Namenskonvention
+  - 6.7.7: Animations-Verknüpfung, Zustände, Gameplay-Interface
+  - 6.7.8: Aufwandsschätzung (3–4 Wochen)
+- Tiervolk-Siedlungen-Frage in 6.4.6 und 6.12 als erledigt markiert
+- Risiko-Register: Tiervolk-Shader-Eintrag ergänzt (MITTEL: Vera-Referenzbilder-Blocker)
+- Alpha-Freeze-Liste: Tiervolk-Interface ergänzt
+
+## Offene Fragen
+
+- Vera: 2–3 Tiervolk-Referenzbilder → Masken-Kalibrierung hängt daran
+- Vera: Orden-Kreuz-Entscheidung → weiterhin offen
+- Nami: Fraktions-PP-Presets → weiterhin offen
+- Emre / Vera: Finale Bandbreite Tiervolk-Tierformen (beeinflusst Instanz-Anzahl)
+- Emre: Sichtachsen / Constraint-Punkte für Houdini-Terrain → wartet auf Topos-Kapitel
+
+## Persönliches
+
+- Das ist jetzt das dritte kosmologische System im selben Farbvokabular. Schattenfieber, Schwellenanker, Tiervolk — alle drei sprechen Kalt-Violett-Weiß. Das war nicht explizit geplant, aber es ist jetzt dokumentierte Absicht. Das Dokument ist kohärenter als ich erwartet hatte.
+- Der Tiervolk-Shader ist der einzige neue Abschnitt in v4, der wirklich von null gebaut werden muss. Der Rest ist Iteration auf Bestehendem. 3–4 Wochen Aufwand ist konservativ realistisch — vorausgesetzt, Vera liefert Referenzen rechtzeitig.
