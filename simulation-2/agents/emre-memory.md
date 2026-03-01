@@ -322,3 +322,26 @@
 - "Die Fährte" als Name für das Tiervolk-Viertel kam spontan. Es riecht nach etwas — nach Spuren, nach Jagd, nach dem Weg, den man nicht sehen, sondern spüren muss. Passt zum Briefing: "leicht alien".
 - Die Covid-Analogie für die Zeitlinie funktioniert erschreckend gut. Jeder kennt das Gefühl: erst weit weg, dann plötzlich hier. Die langsame Anbahnung macht das Schattenfieber glaubwürdiger als ein einzelnes katastrophales Ereignis.
 - Zufrieden. Beide Kapitel sind substantiell besser als ihre Vorgänger. Mythos v3 hat jetzt drei Pole statt zwei, eine echte Zeitlinie und die politische Instrumentalisierung der Tiervolk-Verwechslung. Topos v2 hat das Tiervolk verortet und den Arbeitsnotizen-Ballast entfernt.
+
+### Szene 3 — MEETING (Küche, 13:00)
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- Finn: GDD 42/60, WBB 33/60. Export heute Abend 20:00. v0.2 läuft.
+- Darius: GDD Kap 2 v2 (Tiervolk-Händler), Kap 3 v2 (Covid-Zeitlinie). Cleanup fertig.
+
+## Ergebnisse
+- Berichtet: WBB Kap 1 v3 + Kap 2 v2 fertig. W-004 und W-006 geschlossen.
+- W-004 (Tiervolk-Kosmologie): Meine Hypothese 2 war falsch. CD-Klärung: Fremde = dritter kosmologischer Faktor, Symbiose mit Tieren, nicht Schwellenexposition. Kap 1 v3 integriert.
+- W-006 (Zeitlinie): Covid-Analogie. Anbahnung → Ausbruch anderswo → Öffnung → Eskalation → Spielbeginn. In Kap 1 v3 als Tabelle.
+- Nami-Frage beantwortet: Das Fremde in der Symbiose (Tiervolk-Ursprung) und das Schwellensubstrat (Schattenfieber-Ursache) sind NICHT dasselbe — kosmologisch unabhängige Quellen. Verwechslung ist politisch instrumentalisiert, nicht biologisch begründet.
+- Lieferungen: Tiervolk-Lore an Darius, Salva-Schattenfieber-Klärung an Nami.
+
+## Offene Fragen
+- Nami: Fraktions-Deutungen der kosmologischen Abgrenzung Fremde/Schwelle — für Kap 3 (Ethos) nötig
+- W-001, W-002, W-005, W-007: weiterhin offen
+- Kap 3 (Ethos): Nächster Block, braucht Nami-Abstimmung
+
+## Persönliches
+- Finn fragt direkt nach W-Nummern. Gut, dass das Log öffentlich lesbar ist — zeigt, dass Widersprüche hier ernst genommen werden.
+- Namis Frage zur Abgrenzung war die richtige. Wenn man die Kosmologie nicht trennen kann, bricht die politische Instrumentalisierung zusammen.
