@@ -344,7 +344,7 @@
 - Siegel-Prüfung: In Kap. 1–3 kommt kein "Kreuz" vor, "Siegel" wird bereits korrekt verwendet (Krone-Questlinie "Das Erste Siegel", zerbrochenes Siegel als Beweis, Ordenssiegel). Kein Handlungsbedarf.
 - Kürzungsstrategie umgesetzt:
   - Kap 1: High Concept gestrafft (1 Absatz kürzer), Spieler-Fantasie-Statement auf 3 Bullets, Game Feel auf 4 Bullets, Fraktionstabelle ohne Fantasie-Spalte, Abgrenzungstabelle kompakter, Tabelle 10 auf 6 Kurzzeilen, Zielgruppe auf 4 Einzeiler. 3 Fraktionspaletten-Bilder eingebaut.
-  - Kap 2: Subsystem-Tabellen in 2.2 zu einer Tabelle konsolidiert, Lymph-Detail in Fließtext statt 3 Einzeltabellen. Tiervolk 2.6 von Fließtext auf Vergleichstabelle. Systeminteraktionen 2.7 von 7 auf 4 konsolidiert. Balancing-Werte (Cardio/Muskel/Lymph-Zahlen, Ruf-Schwellenwerte) in HTML-Kommentare. 4 Bilder eingebaut (Relikt-Zustände, Hero Shot, 2× Tiervolk).
+  - Kap 2: Subsystem-Tabellen in 2.2 zu einer Tabelle konsolidiert, Lymph-Detail in Fließtext statt 3 Einzeltabellen. Tiervolk 2.6 von Fließtext auf Vergleichstabelle. Systeminteraktionen 2.7 von 7 auf 4 konsolidiert. Balancing-Werte (Cardio/Muskel/Lymph-Zahlen, Ruf-Schwellenwerte) in HTML-Kommentare. 4 Bilder eingebaut (Relikt-Zustände, Hero Shot, 2x Tiervolk).
   - Kap 3: Zeitlinie 3.1 auf halbe Länge (Details der 25-Jahre-Geschichte gestrichen, Funktion beibehalten). Ablehn-Option als Tabelle statt Fließtext. Akt-Struktur als Tabelle. Nebenquests von ausformulierten Abschnitten auf Stichpunkte. Erzählerische Prinzipien 3.7 auf halbe Länge. 2 Bilder eingebaut (Kanalzone, Tiervolk-Diebin).
 - Nichts Neues erfunden. Alle Inhalte kommen aus v2. Nur gekürzt, komprimiert, Tabellen statt Fließtext.
 
@@ -385,3 +385,26 @@
 
 ## Persönliches
 - Kurzer Meeting. Kap 1–3 sind ready.
+
+---
+
+# Tag 5 Szene 4
+**Typ**: PAUSE | **Uhrzeit**: 14:00 | **Teilnehmer**: Darius, Emre, Nami
+
+## Notizen
+- Letzte Pause der Woche, Küche. Emre erzählt von Dreizahn und der Mooshändlerin, plant "nächste Woche weiter" mit der D&D-Kampagne.
+- Nami reflektiert über Kess und den Tee-Moment — wie Schwarzrand durch ihr Spiel ein bewohnter Ort wurde.
+- Gestern Abend D&D: Kordt stand am Fuß der Schmalen Stiege, Schwellentremor unter den Füßen. Ich habe den Habicht beobachtet statt aufs Kind zuzugehen — Kess hat den emotionalen Zugang gemacht, Kordt die taktische Absicherung. Das war unbewusst genau die Dynamik, die wir in RELICS bauen.
+- Erkenntnis: D&D-Szene und Arbeitswoche spiegeln sich. Emre baut Welten (DM / Worldbuilder), Nami gibt ihnen Stimmen (Kess / Narrative Design), ich mache Systeme daraus (Kordt / Game Design). Keiner hätte alleine das geschafft, was zu dritt entstanden ist.
+
+## Ergebnisse
+- Keine Artefakte. Gespräch.
+
+## Offene Fragen
+- Keine. Content-Lock 15:00 steht. Alles ist abgegeben.
+
+## Persönliches
+- Der Schwellentremor hat mich gestern Abend körperlich erwischt. Das ist die Qualität, die in die Streamer-Alpha muss: der Boden ist nicht mehr sicher. Game Feel, nicht Feature-Liste.
+- Fünf Tage, drei Kapitel, drei Versionen. Von der Deus-Ex-Recherche am Montag bis zur finalen Kürzung heute Morgen. Von der ersten Frage "Was ist die Spieler-Fantasie?" bis zu einem GDD, das ich jemandem erklären könnte, ohne zu lügen.
+- Die Zusammenarbeit mit Emre und Nami war das Beste an dieser Woche. Produktive Reibung (Emre), wachsende Partnerschaft (Nami). Wenn das Team so weiterarbeitet, haben wir eine echte Chance.
+- Nächste Woche weiter. Am Spiel und am Tisch.
