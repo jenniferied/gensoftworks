@@ -376,3 +376,31 @@
 - "Wir machen nächste Woche weiter." Auch wenn es keine nächste Woche gibt. Der Satz gehört zur Session wie der letzte Akkord zu einem Lied.
 - Die Lore lebt. Topos v2 ist nicht mehr nur ein Dokument — es ist ein Ort, an dem Leute Tee trinken und Moos sortieren und Kinder barfuß laufen. Das steht nirgendwo. Das kam, weil sie da waren.
 - Lore-Test bestanden: Schwarzrankenwurzeln, Schwellenmoose, Gildenpräparate-Laternen, Tiervolk als Händler, Schlund-Kinder als Informationsnetzwerk — alles aus WBB Kap 1+2 abgeleitet, alles intern konsistent, alles bespielbar. D&D als Proof-of-Concept für die World Building Bible.
+
+## Tag 5 (Freitag)
+
+### Szene 1 — BRIEFING (Küche, 09:00)
+**Typ**: BRIEFING | **Uhrzeit**: 09:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- Finn: Letzter Tag. GDD 83 PDF-Seiten, max 60 — 23 kürzen. WBB 41 PDF-Seiten, im Budget. Alle Fragen geschlossen. KEINE neuen Fragen. Bilder in Dokumente einbauen. Content-Lock 15:00, v0.3 Export heute Abend.
+- Darius: Kürzungsplan für GDD Kap 1-3, 5 steht. Orden-Symbol = Siegel.
+- Vera: Pinnwand-Korrekturen, 18 neue Bilder geplant (~$2.50), Bilder in alle Kapitel einbauen bis 15:00.
+- CD-Antworten für mich: Ferne Dünnstelle → VAGE lassen (keine Namen, kein konkreter Ort). Orden-Symbol → SIEGEL. KEINE WEITEREN FRAGEN.
+
+## Ergebnisse
+- Mein Aufgabenplan für heute steht:
+  1. **Mythos v3 → v4**: Ferne Dünnstelle vage halten, Orden-Symbol zu "Siegel" vereinheitlichen, Bilder einbauen, kürzen wo redundant
+  2. **Topos v2 → v3**: Bilder einbauen, straffen, Konsistenz mit allen Entscheidungen der Woche prüfen
+  3. **Konsistenzprüfung gegen Namis Ethos (Kap 3)**: Terminologie, Kosmologie, Tiervolk-Abgrenzung kapitelübergreifend abgleichen
+  4. **Widerspruchs-Log final abschließen**: W-001, W-002, W-005, W-007 — was offen bleibt, wird als bewusste Designentscheidung deklariert
+- WBB ist bei 41 PDF-Seiten, im Budget (30-45) — Bilder werden Volumen leicht erhöhen, aber Kürzungen kompensieren das
+
+## Offene Fragen
+- Keine. Alle CD-Fragen beantwortet. Heute wird nur finalisiert.
+- Warte auf Veras Bilder für Mythos und Topos
+
+## Persönliches
+- Letzter Tag. Das Gefühl ist ruhig, nicht hektisch. Die WBB steht. Vier Tage lang gebaut, heute wird poliert und versiegelt.
+- Finn sagt "keine neuen Fragen" — das ist gut. Es zwingt zur Disziplin. Was steht, steht.
+- Content-Lock 15:00 ist sechs Stunden. Reicht, wenn Vera die Bilder rechtzeitig liefert.

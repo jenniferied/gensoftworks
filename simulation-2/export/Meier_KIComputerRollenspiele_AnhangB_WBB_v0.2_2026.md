@@ -210,7 +210,7 @@ Jede der drei Fraktionen hat eine eigene Kosmologie. Keine ist vollständig fals
 
 **Kernfunktion:** Herrschaftslegitimation. Die Krone *braucht* das Schattenfieber als existenzielle Bedrohung, weil ohne Bedrohung kein Bedarf für einen Beschützer besteht.
 
-![Materialpalette der Krone — Schwarz, Damaszener-Stahl, Blutsiegel, Kristallglas](../concepts/day02-vera/factions/fraktion-krone-materialpalette_seedream-4-5.png)
+![Materialpalette der Krone — Schwarz, Damaszener-Stahl, Blutsiegel, Kristallglas](../gallery/concepts/day02-vera/factions/fraktion-krone-materialpalette_seedream-4-5.png)
 
 Die Materialsprache der Krone spiegelt ihre Kosmologie: Schwarz als Farbe der Souveränität, Stahl als Manifestation der Grenze, Siegel aus Blut und Wachs als Bindungsritual. Jedes Material behauptet Kontrolle über das Unbeherrschbare. Die Krone trägt die Schwelle nicht auf der Haut — sie versiegelt sie.
 
@@ -228,7 +228,7 @@ Die Materialsprache der Krone spiegelt ihre Kosmologie: Schwarz als Farbe der So
 
 **Kernfunktion:** Wissenslegitimation und soziale Kontrolle. Der Orden definiert, wer "rein" ist und wer nicht. Das Schattenfieber als moralisches Versagen zu deuten, erlaubt die Pathologisierung von Armut und Dissidenz.
 
-![Materialpalette des Ordens — Weiß, Grünglas, Pergament, Auge-Siegel](../concepts/day02-vera/factions/fraktion-orden-materialpalette_seedream-4-5.png)
+![Materialpalette des Ordens — Weiß, Grünglas, Pergament, Auge-Siegel](../gallery/concepts/day02-vera/factions/fraktion-orden-materialpalette_seedream-4-5.png)
 
 Die Materialsprache des Ordens erzählt von Reinheit als Monopol: Weiß als Abwesenheit von Schwelleneinfluss, Glas als Instrument der Durchsicht (wer sieht, versteht; wer versteht, ist rein), Pergament als kodifizierte Ordnung. Das Siegel verweist auf Überwachung als theologische Pflicht. Der Orden sieht — und was er sieht, beurteilt er.
 
@@ -434,7 +434,7 @@ Das ist die Dünnstelle. Keine sichtbare Grenze, kein leuchtender Riss in der Er
 
 Die Stadt ist keine Siedlung, die *in* einem Talkessel steht. Sie ist eine Siedlung, die den Talkessel *ist*. Jede Felswand, jeder Vorsprung, jede natürliche Terrasse wurde bebaut, untermauert, erweitert. Schwarzrand wächst nicht in die Fläche — es wächst nach oben und nach unten.
 
-![Stadtschnitt — Vertikale Schichtung von Schwarzrand](../concepts/day02-vera/environments/stadtschnitt-vertikale-schichtung_nano-banana-pro.png)
+![Stadtschnitt — Vertikale Schichtung von Schwarzrand](../gallery/concepts/day02-vera/environments/stadtschnitt-vertikale-schichtung_nano-banana-pro.png)
 
 Die drei Höhenzonen sind nicht nur soziale Schichten — sie sind physisch getrennte Lebensräume mit unterschiedlicher Architektur, unterschiedlichem Klima und unterschiedlicher Schwellenexposition.
 
@@ -726,13 +726,13 @@ Die Oberschicht besitzt *eines*. Einen Indigo-Akzent an der Schulter. Eine einze
 
 Das Konzept-Art zeigt die Krone-Materialpalette in ihrer charakteristischen Sprache: gebürstet-schwarzer Stahl, Blutrot-Siegel auf schieferglattem Untergrund, eine Kristallphiole mit tiefblauem Inhalt. Kein zweiter Farbton. Die Reduktion *ist* die Aussage.
 
-![Fraktion Krone — Materialpalette](../concepts/day02-vera/factions/fraktion-krone-materialpalette_seedream-4-5.png)
+![Fraktion Krone — Materialpalette](../gallery/concepts/day02-vera/factions/fraktion-krone-materialpalette_seedream-4-5.png)
 
 Für den Orden gilt dasselbe Prinzip, aber gespiegelt: **Weiß statt Schwarz**. Das Ordensweiß ist keine Reinheitsmetapher aus Tradition — es ist aus praktischer Notwendigkeit entstanden. Weiße Gewänder zeigen Kontamination sofort: eine Schattenfieber-Spur, ein Tintenfleck, Schmutz aus dem Schlund. Ein Ordensbruder, dessen Gewand weiß geblieben ist, war nicht in den Tiefen. Ein Ordensbruder, dessen Gewand nicht mehr ganz weiß ist, hat entweder schlecht gearbeitet oder zu tief geforscht. Das weiß jeder, der den Orden kennt.
 
 Der Orden trägt Knochen-Applikationen — Rosenkränze aus gebleichten Knochen, Ornamente aus Bein in weißgesticktem Leinen. Eine Lupe aus Messing als Zeichen des Forschungsrangs. Das Auge-Siegel aus dunkel geädertem Stein, kaum sichtbar an der Schlüsselbeinnähte. Und manchmal: eine kleine Phiole mit grünlicher Flüssigkeit. Was darin ist, erklärt kein Ordensmann auf Nachfrage.
 
-![Fraktion Orden — Materialpalette](../concepts/day02-vera/factions/fraktion-orden-materialpalette_seedream-4-5.png)
+![Fraktion Orden — Materialpalette](../gallery/concepts/day02-vera/factions/fraktion-orden-materialpalette_seedream-4-5.png)
 
 ### Mittelschicht: Färbung als Aufstiegsanzeige
 
