@@ -281,3 +281,25 @@
 - Tiervolk als sechstes System — das war die richtige Entscheidung. Es ist kein Add-on zur Gildenstruktur, es ist ein genuiner dritter Zugangspfad für verbrannte Spielfiguren. Das hat Systemrelevanz.
 - Die Covid-Analogie in Kap. 3 hat das Erzählkonzept stärker gemacht. "Verwaltete Katastrophe" als Istzustand ist überzeugender als eine frische Apokalypse — und passt zu den Fraktionen, die alle aus Routine böse handeln, nicht aus Bosheit.
 - Körperreaktions-Varianz ist das Feature, das RELICS von anderen RPGs unterscheidet. Drei Spieler, Stadium II, drei verschiedene Transformationen. Das muss in der Streamer-Alpha erlebbar sein — sonst verschenken wir das stärkste Alleinstellungsmerkmal.
+
+---
+
+# Tag 4 Szene 3
+**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: alle 7
+
+## Notizen
+- Fortschritt gemeldet: Kap. 2 v2 (sechstes System Tiervolk, Körperreaktions-Varianz), Kap. 3 v2 (Covid-Zeitlinie, Akt 1 verwaltete Katastrophe), Kap. 1 Cleanup fertig
+- Stärken benannt: Tiervolk als genuiner dritter Zugangspfad, Covid-Analogie macht Akt 1 überzeugender
+- Offene Abhängigkeiten klar kommuniziert: Leo (Balancing-Werte), Nami (Dialog-Ausarbeitung)
+
+## Ergebnisse
+- Statusmeldung im Meeting abgeliefert — alle drei GDD-Kapitel exportbereit bis 20:00
+
+## Offene Fragen
+- Leo: Balancing-Werte — kommen die heute noch?
+- Nami: Dialog für Kap. 3 — einspiel vor 20:00 oder erst v3?
+- Wenn Nami nichts einspielt: Kap. 3 geht als Strukturgerüst in den Export, Dialoge folgen in v3
+
+## Persönliches
+- Meeting war kurz und direkt — so soll es sein. Kein Palaver, Abhängigkeiten klar benannt.
+- Export um 20:00 ist die Linie. Was bis dahin nicht drin ist, kommt in v3.
