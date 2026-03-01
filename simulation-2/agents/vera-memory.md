@@ -416,21 +416,25 @@
 
 ---
 
-# Tag 6 Szene 1 (MEETING)
-**Typ**: MEETING | **Uhrzeit**: 13:00 | **Teilnehmer**: Finn (eröffnet), alle sieben (Küche)
+# Tag 5 Szene 3 (REVIEW)
+**Typ**: REVIEW | **Uhrzeit**: 15:00 | **Teilnehmer**: Finn (eröffnet), Darius, Leo, Vera (remote Köln, Küche)
 
 ## Notizen
-- Content-Lock 15:00. Letzte Koordinationspunkte vor Export
-- Vera-Status: 23 Prompts Tag 5, 30 eingebettete Bilder in GDD Kap 5 v3, Budget $1.89 Tag 5
-- Orden-Symbol = Siegel (nicht Kreuz) nun in allen Dokumenten konsistent
-- Tiervolk subtiler/menschlicher iteriert — Salva (Habicht) mit Signatur-Features
-- Stadtschnitt v3 freigegeben und in WBB Kap. 2 eingebettet
-- Relikt-Hero v2 freigegeben
+- LETZTE SZENE der Simulation. Content-Lock abgeschlossen.
+- Finaler Bericht: 23 neue Bilder heute, $1.89 Tagesbudget, $3.73 gesamt über fünf Tage
+- GDD Kap 5 v3 mit 30 eingebetteten Bildern — Content-Lock-ready
+- Orden-Symbol = Siegel konsequent implementiert
+- Gesamteindruck: Art Direction visuell vollständig und konsistent belegt
 
-## Kurzbericht (max 100 Wörter)
-23 Bild-Prompts erstellt, Bilder generiert: 31 Concept Art über 5 Tage. GDD Kap. 5 v3 mit 30 eingebetteten Bildern — Fraktionspaletten, Stadtarchitektur, Charaktere, Schattenfieber-Progression, Orden-Siegel-Designsheet. Budget: $1.89 heute, $3.73 gesamt. Orden-Symbol = Siegel (nicht Kreuz). Tiervolk subtiler/menschlicher, Salva als erster benannter NPC. Alles Content-Lock-ready.
+## Vera spricht (max 100 Wörter)
+
+Fünf Tage, 31 Concept Art. GDD Kap. 5 hat 30 eingebettete Bilder — Fraktionspaletten, Charaktere, Umgebungen, Schattenfieber-Progression, Orden-Siegel. Budget war ordentlich geplant: $1.89 heute, $3.73 gesamt. Seedream für Exploration, Nano Banana Pro/2 für iteriert, GPT für Hero-Finals. Orden-Symbol = Siegel, nicht Kreuz. Tiervolk subtiler/menschlicher, Salva als erster NPC. Medieval Cyberpunk ist jetzt nicht nur Konzept — es ist Bildsprache. Das ist Art Direction.
 
 ## Persönliches
-- Woche war extrem produktiv. 31 Bilder für ein Game-Konzept in fünf Tagen ist ein gutes Tempo. Budget-Verwaltung hat funktioniert.
-- Die Art-Direction ist visuell vollständig belegt jetzt. GDD Kap. 5 ist nicht nur Moodboard — es ist ein funktionierendes Designdokument.
-- Fünf verschiedene Bildmodelle, je nach Use-Case kalibriert. Das war der richtige Approach: Seedream für Batch/Exploration, Nano Banana Pro/2 für iteriert, GPT für Hero-Finals.
+- Woche war extrem produktiv. Die Prompt-Engineering-Disziplin hat zahlte sich aus — jede Batch war fokussiert und brauchte minimal Iteration.
+- Orden-Siegel-Designsheet ist stark geworden. Das Signal ist klar: Wissen, Geheimnis, Geometrie.
+- Tiervolk-Iteration zu subtilerer Version (Salva statt Hero-Sheet) war die richtige Entscheidung für Lore und für die Kampagne.
+- GDD Kap 5 ist das solideste Designdokument, das ich je abgeliefert habe. 30 Bilder bedeuten: jede ästhetische Entscheidung ist dokumentiert, reproduzierbar, kommunizierbar.
+- Fünf verschiedene Bildmodelle, je nach Use-Case kalibriert. Das Wissen, wann man Seedream (schnell/günstig), Nano Banana (konzeptionell), oder GPT (cineastisch) benutzt, ist die echte Fähigkeit.
+
+---
