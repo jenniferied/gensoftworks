@@ -219,3 +219,65 @@
 - Dreier-Vergleich v2 ist das stärkste Bild heute — die geologische Form funktioniert besser als die alte Wirbelsäulenmetapher. Weniger anatomisch, mehr kosmologisch.
 - Stadtschnitt v2: endlich die Richtung der Stadt spürbar. Das "gerichtete" Konzept war immer der Kern — v1 hat es nicht transportiert.
 - GDD Kap. 5 schreiben war ungewohnt (mehr Text als Bilder), aber das Art-Direction-Kapitel muss beides sein: zeigen UND beschreiben. Sonst ist es nur ein Moodboard.
+
+---
+
+# Tag 4 Szene 2 (WORK)
+**Typ**: WORK | **Uhrzeit**: 10:00 | **Teilnehmer**: Vera (solo, remote Köln)
+
+## Notizen
+- Budget: $5.00 gesamt, $1.10 bereits verbraucht — $3.90 verfügbar
+- Prioritäten abgearbeitet: Tiervolk-Konzepte (5 Bilder), Stadtschnitt v3 (2 Bilder), Relikt-Hero v2 (1 Bild)
+- Seedream kennt portrait_3_4 NICHT — korrekte Formate: portrait_4_3, portrait_16_9, square. Merken für alle zukünftigen Prompts.
+- Tiervolk-Designprinzip erarbeitet: "Subtile anatomische Verschiebung" — nicht monströs, präzise falsch
+- GDD Kap. 5 v2 fertiggestellt mit vollständigem Tiervolk-Abschnitt (5.4.2)
+
+## Ergebnisse
+
+**Neue Bilder (day04-vera/):**
+
+| Datei | Modell | Ergebnis |
+|-------|--------|---------|
+| `tiervolk/tiervolk-haendler-fuchs-exploration_seedream-4-5.png` | Seedream | ✅ stark — schwarzer Mantel, Marktplatz-Kontext, Nackenwirbel subtil |
+| `tiervolk/tiervolk-diebin-marder-exploration_seedream-4-5.png` | Seedream | ✅ sehr stark — Foxfire-Augen, Knochengelenke, Dächer |
+| `tiervolk/tiervolk-rabe-bote-exploration_seedream-4-5.png` | Seedream | ✅ gut — geometrisches Federsekundärmuster, oxblood-Gürtel |
+| `tiervolk/tiervolk-marktszene-exploration_seedream-4-5.png` | Seedream | ✅ stark — Integration funktioniert, Reiher zu ghostly (v0.3 dämpfen) |
+| `tiervolk/tiervolk-hero-symbiose_nano-banana-pro.png` | Nano Banana Pro | ✅ bestes Bild Tag 4 — Concept-Art-Sheet mit Detailinsets vom Modell selbst erzeugt |
+| `environments/stadtschnitt-kanalzone-v3_nano-banana-2.png` | Nano Banana 2 | ✅ solide — Kanalzone, weniger vertikal als v2, mehr Marktleben |
+| `environments/stadtschnitt-kanalzone-v3-final_gpt-image-1-5.png` | GPT Image 1.5 | ✅ cineastisch, warmes Licht, Kanalreflexion, Format hochkant (GPT-Bug) |
+| `relics/relikt-hero-v2_nano-banana-pro.png` | Nano Banana Pro | ✅ Problem aus v1 gelöst — geologische Form korrekt, kein Kristall |
+
+**Budget Tag 4:**
+| Name | Modell | Kosten |
+|------|--------|--------|
+| tiervolk-haendler-fuchs-exploration | seedream-4-5 | $0.04 |
+| tiervolk-diebin-marder-exploration | seedream-4-5 | $0.04 |
+| tiervolk-rabe-bote-exploration | seedream-4-5 | $0.04 |
+| tiervolk-marktszene-exploration | seedream-4-5 | $0.04 |
+| tiervolk-hero-symbiose | nano-banana-pro | $0.15 |
+| stadtschnitt-kanalzone-v3 | nano-banana-2 | $0.08 |
+| stadtschnitt-kanalzone-v3-final | gpt-image-1-5 | $0.20 |
+| relikt-hero-v2 | nano-banana-pro | $0.15 |
+| **Tag 4 gesamt** | | **$0.74** |
+
+**Budget-Stand gesamt:**
+- Tag 2: $0.67
+- Tag 3: $0.43
+- Tag 4: $0.74
+- **Gesamt verbraucht: $1.84 von $5.00**
+- **Noch verfügbar: $3.16**
+
+**GDD:**
+- `gallery/gdd/05-art-direction-v2.md` — v2 mit vollständigem Tiervolk-Design-Abschnitt (5.4.2), Kanalzone v3, Relikt-Hero v2
+
+## Offene Fragen
+- Orden-Kreuz-Symbol: Lore-Entscheidung (Emre/Nami) noch ausstehend → blockiert Orden-Palette v0.3
+- Tiervolk-Eigenbezeichnung: Hat das Tiervolk einen Namen für sich selbst? (Emre/Nami fragen)
+- Kosmologische Symbiose (Tiervolk) vs. Schattenfieber: gleicher Ursprung? (Lore-Frage, Emre)
+- UI-Designsprache (Leveling-Sicht): Kap. 5 oder Kap. 2? (Darius/Finn)
+- WBB Kap. 2 (Emre): Kanalzone-v3-Final direkt einbetten → Koordination
+
+## Persönliches
+- Das Tiervolk-Hero-Sheet ist das stärkste Einzelbild der ganzen Simulation bisher. Das Modell hat eigenständig das Concept-Art-Sheet-Format erzeugt — mit Detailinsets für Auge, Nacken, Hand. Das ist exakt das richtige Kommunikationswerkzeug für Art Direction.
+- "Subtile anatomische Verschiebung" als Designprinzip ist jetzt sauber formuliert. Das ist der Schlüssel zum Tiervolk — kein Monster-Horror, kein Tribal, nur präzise Falschheit.
+- Seedream-Portrait-Format-Fehler: portrait_3_4 → portrait_4_3. Kleiner Prompt-Engineering-Fail, aber direkt gefixed. Kostet ein paar Minuten, keine echten Kosten da die Fehlerläufe nicht verrechnet werden.
